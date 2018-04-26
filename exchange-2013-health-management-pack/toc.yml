@@ -1,0 +1,141 @@
+- name: Exchange 2013 管理組件健全設定
+  href: exchange-2013-management-pack-health-sets.md
+  items:
+  - name: 疑難排解 ActiveSync 健康情況設定
+    href: troubleshooting-activesync-health-set.md
+  - name: 疑難排解 ActiveSync.Protocol 健全設定
+    href: troubleshooting-activesync-protocol-health-set.md
+  - name: 疑難排解 ActiveSync.Proxy 健全設定
+    href: troubleshooting-activesync-proxy-health-set.md
+  - name: 疑難排解 AD 健全設定
+    href: troubleshooting-ad-health-set.md
+  - name: 疑難排解反惡意程式碼健康情況設定
+    href: troubleshooting-antimalware-health-set.md
+  - name: 疑難排解防垃圾郵件的健康情況設定
+    href: troubleshooting-antispam-health-set.md
+  - name: 疑難排解自動探索健康情況設定
+    href: troubleshooting-autodiscover-health-set.md
+  - name: 疑難排解 Autodiscover.Protocol 健全設定
+    href: troubleshooting-autodiscover-protocol-health-set.md
+  - name: 疑難排解 Autodiscover.Proxy 健全設定
+    href: troubleshooting-autodiscover-proxy-health-set.md
+  - name: 疑難排解分類健康情況設定
+    href: troubleshooting-classification-health-set.md
+  - name: 疑難排解 ClientAccess.Proxy 健全設定
+    href: troubleshooting-clientaccess-proxy-health-set.md
+  - name: 疑難排解規範健康情況設定
+    href: troubleshooting-compliance-health-set.md
+  - name: 疑難排解 DataProtection 健康情況設定
+    href: troubleshooting-dataprotection-health-set.md
+  - name: 疑難排解磁碟空間健康情況設定
+    href: troubleshooting-diskspace-health-set.md
+  - name: 疑難排解 ECP 健全設定
+    href: troubleshooting-ecp-health-set.md
+  - name: 疑難排解 ECP。Proxy 健全設定
+    href: troubleshooting-ecp-proxy-health-set.md
+  - name: 疑難排解 EDS 健康情況設定
+    href: troubleshooting-eds-health-set.md
+  - name: 疑難排解 EventAssistants 健康情況設定
+    href: troubleshooting-eventassistants-health-set.md
+  - name: 疑難排解 EWS 健全設定
+    href: troubleshooting-ews-health-set.md
+  - name: 疑難排解 EWS。通訊協定健全設定
+    href: troubleshooting-ews-protocol-health-set.md
+  - name: 疑難排解 EWS。Proxy 健全設定
+    href: troubleshooting-ews-proxy-health-set.md
+  - name: 疑難排解 FfoQuarantine 健康情況設定
+    href: troubleshooting-ffoquarantine-health-set.md
+  - name: 疑難排解 FfoTransport 健康情況設定
+    href: troubleshooting-ffotransport-health-set.md
+  - name: 疑難排解 FfoUmc 健康情況設定
+    href: troubleshooting-ffoumc-health-set.md
+  - name: 疑難排解 FfoWebService 健康情況設定
+    href: troubleshooting-ffowebservice-health-set.md
+  - name: 疑難排解 FIPS 健全設定
+    href: troubleshooting-fips-health-set.md
+  - name: 疑難排解 FreeBusy 健康情況設定
+    href: troubleshooting-freebusy-health-set.md
+  - name: 疑難排解 FrontendTransport 健全設定
+    href: troubleshooting-frontendtransport-health-set.md
+  - name: 疑難排解 HubTransport 健康情況設定
+    href: troubleshooting-hubtransport-health-set.md
+  - name: 疑難排解 IMAP 健全設定
+    href: troubleshooting-imap-health-set.md
+  - name: 疑難排解 IMAP。通訊協定健全設定
+    href: troubleshooting-imap-protocol-health-set.md
+  - name: 疑難排解 IMAP。Proxy 健全設定
+    href: troubleshooting-imap-proxy-health-set.md
+  - name: 疑難排解 MailboxMigration 健康情況設定
+    href: troubleshooting-mailboxmigration-health-set.md
+  - name: 疑難排解 MailboxSpace 健康情況設定
+    href: troubleshooting-mailboxspace-health-set.md
+  - name: 疑難排解 MailboxTransport 健康情況設定
+    href: troubleshooting-mailboxtransport-health-set.md
+  - name: 疑難排解郵件流程健康情況設定
+    href: troubleshooting-mailflow-health-set.md
+  - name: 疑難排解記憶體健康情況設定
+    href: troubleshooting-memory-health-set.md
+  - name: 疑難排解 MessageTracing 健康情況設定
+    href: troubleshooting-messagetracing-health-set.md
+  - name: 疑難排解監視健康情況設定
+    href: troubleshooting-monitoring-health-set.md
+  - name: 疑難排解 MRS 健全設定
+    href: troubleshooting-mrs-health-set.md
+  - name: 疑難排解 MSExchangeCertificateDeployment 健康情況設定
+    href: troubleshooting-msexchangecertificatedeployment-health-set.md
+  - name: 疑難排解網路狀況設定
+    href: troubleshooting-network-health-set.md
+  - name: 疑難排解 OAB 健康情況設定
+    href: troubleshooting-oab-health-set.md
+  - name: 疑難排解 OAB。Proxy 健全設定
+    href: troubleshooting-oab-proxy-health-set.md
+  - name: 疑難排解 Outlook 健康情況設定
+    href: troubleshooting-outlook-health-set.md
+  - name: 疑難排解 Outlook.Protocol 健全設定
+    href: troubleshooting-outlook-protocol-health-set.md
+  - name: 疑難排解 Outlook.Proxy 健全設定
+    href: troubleshooting-outlook-proxy-health-set.md
+  - name: 疑難排解 OWA 健全設定
+    href: troubleshooting-owa-health-set.md
+  - name: 疑難排解 OWA。通訊協定健全設定
+    href: troubleshooting-owa-protocol-health-set.md
+  - name: 疑難排解 OWA。Protocol.Dep 健全設定
+    href: troubleshooting-owa-protocol-dep-health-set.md
+  - name: 疑難排解 OWA。Proxy 健全設定
+    href: troubleshooting-owa-proxy-health-set.md
+  - name: 疑難排解 POP 健全設定
+    href: troubleshooting-pop-health-set.md
+  - name: 疑難排解 POP。通訊協定健全設定
+    href: troubleshooting-pop-protocol-health-set.md
+  - name: 疑難排解 POP。Proxy 健全設定
+    href: troubleshooting-pop-proxy-health-set.md
+  - name: 疑難排解 PowershellDataProvider 健康情況設定
+    href: troubleshooting-powershelldataprovider-health-set.md
+  - name: 疑難排解 PublicFolders 健康情況設定
+    href: troubleshooting-publicfolders-health-set.md
+  - name: 疑難排解 PushNotifications.Protocol 健全設定
+    href: troubleshooting-pushnotifications-protocol-health-set.md
+  - name: 疑難排解 RemoteMonitoring 健康情況設定
+    href: troubleshooting-remotemonitoring-health-set.md
+  - name: 疑難排解 RPS 健康情況設定
+    href: troubleshooting-rps-health-set.md
+  - name: 疑難排解 RPS。Proxy 健全設定
+    href: troubleshooting-rps-proxy-health-set.md
+  - name: 疑難排解搜尋健康情況設定
+    href: troubleshooting-search-health-set.md
+  - name: 疑難排解 SiteMailbox 健康情況設定
+    href: troubleshooting-sitemailbox-health-set.md
+  - name: 疑難排解 SMTP 健全設定
+    href: troubleshooting-smtp-health-set.md
+  - name: 疑難排解存放區的健康情況設定
+    href: troubleshooting-store-health-set.md
+  - name: 疑難排解傳輸健康情況設定
+    href: troubleshooting-transport-health-set.md
+  - name: 疑難排解 UM 健全設定
+    href: troubleshooting-um-health-set.md
+  - name: 疑難排解 UM。CallRouter 健全設定
+    href: troubleshooting-um-callrouter-health-set.md
+  - name: 疑難排解 UM。通訊協定健全設定
+    href: troubleshooting-um-protocol-health-set.md
+  - name: 疑難排解 UserThrottling 健康情況設定
+    href: troubleshooting-userthrottling-health-set.md
