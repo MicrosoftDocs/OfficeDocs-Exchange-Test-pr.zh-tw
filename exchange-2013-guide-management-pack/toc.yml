@@ -1,0 +1,19 @@
+- name: 瞭解 Exchange Server 2013 管理組件如何報告系統健康狀況
+  href: exchange-server-2013-management-pack-guide.md
+  items:
+  - name: 匯入 Exchange Server 2013 管理組件
+    href: import-the-exchange-server-2013-management-pack.md
+  - name: Exchange Server 2013 管理組件快速入門
+    href: getting-started-with-exchange-server-2013-management-pack.md
+  - name: 使用 Exchange Server 2013 管理組件進行疑難排解
+    href: using-the-exchange-server-2013-management-pack-for-troubleshooting.md
+  - name: 與部署相關的程序
+    href: procedures-related-to-deployment.md
+  - name: Procedures related to post-deployment operation
+    href: procedures-related-to-post-deployment-operation.md
+  - name: 瞭解 Exchange Server 2013 管理組件如何報告系統健康狀況
+    href: understanding-how-exchange-server-2013-management-pack-reports-system-health.md
+  - name: 'Appendix A: Exchange health sets'
+    href: appendix-a-exchange-health-sets.md
+  - name: 附錄 B：其他資源
+    href: appendix-b-additional-resources.md
