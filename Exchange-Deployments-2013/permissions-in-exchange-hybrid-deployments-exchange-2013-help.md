@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2018-05-02_
+_<strong>上次修改主題的時間：</strong>2018-05-02_
 
 Office 365 組織中的 Exchange Online 是以 Exchange Server 為基礎，並且就像內部部署組織一樣，也使用應用角色的存取控制 (RBAC) 來控制權限。系統管理員是透過管理角色群組獲得權限，而使用者則是透過管理角色指派原則獲得權限。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主題正在編輯中。  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 藉由建立混合部署，您就可以將現有內部部署 Exchange Server 組織內功能豐富的經驗與管理控制延伸至雲端。混合部署還會透過 Exchange Online 封存，為內部部署信箱提供雲端式封存解決方案，同時作為將內部部署信箱完整移轉至 Exchange Online 的中繼步驟。
 

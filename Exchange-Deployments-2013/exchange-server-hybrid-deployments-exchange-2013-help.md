@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2018-04-16_
+_<strong>上次修改主題的時間：</strong>2018-04-16_
 
-**摘要：**您對於規劃 Exchange 混合式部署需要知道的項目。
+**摘要：** 您對於規劃 Exchange 混合式部署需要知道的項目。
 
 混合部署為組織提供了從現有內部部署 Microsoft Exchange 組織將功能豐富的經驗與管理控制延伸至雲端的能力。混合部署在內部部署 Exchange 組織與 Microsoft Office 365 的 Exchange Online 之間提供了單一 Exchange 組織的完美外觀與感受。此外，混合部署還能夠當做一個中繼步驟，有助於完整移轉至 Exchange Online 組織。
 

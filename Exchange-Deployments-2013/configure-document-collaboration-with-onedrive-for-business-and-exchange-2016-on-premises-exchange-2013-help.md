@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 **摘要：**如何允許您的內部部署 Exchange Server 2016 使用者在混合式組態中利用與商務用 OneDrive 與 SharePoint Online 的文件共同作業。
 

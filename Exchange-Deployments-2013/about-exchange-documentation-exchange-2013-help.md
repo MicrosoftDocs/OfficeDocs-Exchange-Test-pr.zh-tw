@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 您正在閱讀召集主旨或 Microsoft Exchange 所使用的技術的概念與程序性主題的集合。您可以直接從目錄左窗格中，從另一個說明主題、 從搜尋結果或自己自訂我的最愛主題的清單中的連結存取每個主題。
 

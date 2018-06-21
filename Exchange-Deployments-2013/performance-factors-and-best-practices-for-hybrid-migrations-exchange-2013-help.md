@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 有許多方法可以將資料從內部部署電子郵件組織移轉至 Office 365 中。規劃移轉至 Office 365 時，常見的問題是如何提升資料移轉效能並最佳化移轉速度。本文討論 Exchange 混合式部署的移轉效能。如需有關其他移轉方法的效能資訊，請參閱 [Office 365 移轉效能和最佳作法](http://go.microsoft.com/fwlink/p/?linkid=623651)。
 

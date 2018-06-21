@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-01-27_
+_<strong>上次修改主題的時間：</strong>2016-01-27_
 
 Exchange ActiveSync 裝置可以在信箱從 Exchange 內部部署組織移至 Office 365 時自動重新設定。Exchange ActiveSync 會在 Office 365 中尋找新的信箱位置，並更新其組態以直接和 Office 365 交談。Exchange ActiveSync 裝置在成功重新導向至 Office 365 之後，將不會嘗試並連絡內部部署 Exchange 伺服器。除了少數的例外狀況以外 (詳細說明如下)，使用者不再需要手動設定他們的裝置，就可以讓郵件繼續運作。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-07-25_
+_<strong>上次修改主題的時間：</strong>2017-07-25_
 
 **摘要：**您的 Exchange 環境在您可以設定混合式部署之前需要的項目。
 
