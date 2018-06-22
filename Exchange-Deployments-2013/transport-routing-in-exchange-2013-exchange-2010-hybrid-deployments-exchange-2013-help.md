@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-07-29_
+_<strong>上次修改主題的時間：</strong>2016-07-29_
 
 本主題討論來回於網際網路之內送和外寄郵件的路由傳送選項。
 

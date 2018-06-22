@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 當您安裝 Exchange 伺服器時，伺服器上會自動安裝 Exchange 管理工具。您將使用下列工具來設定與管理內部部署 Exchange 與 Exchange Online 組織：
 

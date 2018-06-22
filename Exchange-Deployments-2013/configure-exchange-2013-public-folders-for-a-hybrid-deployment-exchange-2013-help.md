@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 **摘要：** 啟用 Exchange Online 使用者存取內部部署 Exchange 2013 環境中的公用資料夾的指示。
 

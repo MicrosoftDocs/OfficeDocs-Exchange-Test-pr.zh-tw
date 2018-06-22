@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 Microsoft 已發行新的混合式組態精靈，可以簡化混合式部署的組態，在使用混合式組態時更有彈性，並可確保您永遠執行最新版本的經驗。這個版本的混合式精靈內建至 Exchange 2016 以及從累積更新 10 開始的 Exchange 2013 版本，但是即使您執行較舊的 Exchange 2013 累積更新 (CU) 或 Exchange 2010 Service Pack 3 (SP3)，您仍然可以下載新的精靈。
 

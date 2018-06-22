@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上次修改主題的時間：**2016-12-06_
+_<strong>上次修改主題的時間：</strong>2016-12-06_
 
 了解如何讓內部部署的 Exchange 使用者可以在混和式部署中使用 Office 365 群組。
 

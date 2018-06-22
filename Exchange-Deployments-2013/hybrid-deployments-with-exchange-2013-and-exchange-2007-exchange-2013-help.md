@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主題正在編輯中。  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-07-07_
+_<strong>上次修改主題的時間：</strong>2015-07-07_
 
 使用混合組態精靈的最新改進功能和 Microsoft Exchange Server 2013 中引進的架構變更，可讓設定和管理 Exchange 2013 與 Exchange 2007 的混合部署較以往更為容易。無論您要連接 Exchange 2007 內部部署和 Exchange Online 組織進行長期共存，或是作為雲端遷移策略的一部分，您都必須先了解混合部署概念。
 

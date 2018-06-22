@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主題正在編輯中。  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 在混合式部署中，您可以將信箱放在內部部署 Exchange 組織中，也可放在 Exchange Online 組織中。兩個不同的組織之所以能夠對使用者以及在其之間交換的郵件顯示為一個合併組織，其中一個重要元件就是混合式傳輸。在採用混合傳輸的情況下，任一組織中的收件者之間傳送的郵件都會使用傳輸層安全性 (TLS) 進行驗證、加密及傳輸，並對傳輸規則、日誌及反垃圾郵件原則等 Exchange 元件顯示為「內部�?」。混合傳輸是由混合組態精靈在 Exchange 2013 中自動設定。
 

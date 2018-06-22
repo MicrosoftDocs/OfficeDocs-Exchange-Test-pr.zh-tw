@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-01-20_
+_<strong>上次修改主題的時間：</strong>2017-01-20_
 
 在 Exchange 混合式部署中，您可以透過 Exchange Online 內的雲端式封存信箱設定內部部署主要信箱。
 

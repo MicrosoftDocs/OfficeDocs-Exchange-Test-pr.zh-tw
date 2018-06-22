@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 在混合式部署中，數位憑證是保護內部部署 Exchange 組織與 Office 365 之間通訊安全相當重要的一環。憑證可讓 Exchange 組織信任彼此的識別。憑證也有助於確認每一個 Exchange 組織與正確的來源進行通訊。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-07-27_
+_<strong>上次修改主題的時間：</strong>2017-07-27_
 
 如果您已經準備好從 Exchange 混合式部署移轉到完整雲端實作，請閱讀本文章。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 本主題為您提供 Exchange 混合式部署組態程序、可用的混合式部署功能和選項，以及執行設定和更新混合式部署所需核心動作之「混合組態引擎」的概觀。
 

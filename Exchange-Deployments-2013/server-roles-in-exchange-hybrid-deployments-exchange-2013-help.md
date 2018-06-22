@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 您可以根據 Exchange 2013 和 Exchange 2016 設定混合式部署。需要設定哪些角色才能支援混合式部署，視您正在使用的 Exchange 而定。
 

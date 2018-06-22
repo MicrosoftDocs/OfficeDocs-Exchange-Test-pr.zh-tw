@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-04-29_
+_<strong>上次修改主題的時間：</strong>2016-04-29_
 
 利用混合式組態精靈在 Exchange 中設定混合式部署可以將混合式部署遇到問題的可能性降到最低。然而，如果混合式組態精靈範圍之外的部分區域設定錯誤，混合式部署中就可能會出現問題。本主題討論下列可能會發生問題的一般區域，並概述驗證或更正問題的基本步驟：
 

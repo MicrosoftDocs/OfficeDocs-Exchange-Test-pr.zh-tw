@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主題正在編輯中。  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 在 Exchange 2010 內部部署組織中安裝執行 Microsoft Exchange Server 2013 的伺服器時，系統會自動將 Exchange 2013 管理工具安裝在伺服器上。您將使用下列工具來設定與管理內部部署 Exchange 與 Exchange Online 組織的混合功能：
 

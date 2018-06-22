@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主題正在編輯中。  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 當您在 Exchange 2007 組織中設定混合部署時，必須至少安裝一個 Exchange 2013 伺服器，讓它具有現有 Exchange 2007 組織中的 Client Access 和 Mailbox server role。Exchange 2013 Client Access Server 和 Mailbox Server 會協調現有 Exchange 2007 內部部署組織與 Exchange Online 組織之間的通訊。此通訊包括內部部署與 Exchange Online 組織之間的郵件傳輸與訊息傳送功能。
 
