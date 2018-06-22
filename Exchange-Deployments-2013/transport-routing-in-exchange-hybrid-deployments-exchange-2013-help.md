@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-07-29_
+_**上次修改主題的時間：** 2016-07-29_
 
 本主題討論來回於網際網路之內送和外寄郵件的路由傳送選項。
 
@@ -79,7 +79,7 @@ _**上次修改主題的時間：**2016-07-29_
 </table>
 
 
-若集中式郵件傳輸為**「停用」**(Disabled) (預設組態) 狀態，內送網際網路郵件會依下述方式在混合式部署中路由傳送：
+若集中式郵件傳輸為 **「停用」** (Disabled) (預設組態) 狀態，內送網際網路郵件會依下述方式在混合式部署中路由傳送：
 
 1.  內送郵件是從網際網路件寄件者傳送到收件者 julie@contoso.com 與 david@contoso.com。Julie 的信箱位於內部部署組織的 Exchange Mailbox Server 上。David 的信箱位於 Exchange Online 中。
 
@@ -101,7 +101,7 @@ _**上次修改主題的時間：**2016-07-29_
 
 ![集中輸入至 EXO](images/JJ659050.f98341e0-088d-49f0-bf8e-09f35255bf9e(EXCHG.150).png "集中輸入至 EXO")
 
-若集中式郵件傳輸為**「啟用」**(Enabled) 狀態，內送網際網路郵件會依下述方式在混合式部署中路由傳送：
+若集中式郵件傳輸為 **「啟用」** (Enabled) 狀態，內送網際網路郵件會依下述方式在混合式部署中路由傳送：
 
 1.  內送郵件是從網際網路件寄件者傳送到收件者 julie@contoso.com 與 david@contoso.com。Julie 的信箱位於內部部署組織的 Exchange Mailbox Server 上。David 的信箱位於 Exchange Online 中。
 
