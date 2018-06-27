@@ -13,7 +13,8 @@ ms.translationtype: HT
 
  
 
-_<strong>上次修改主題的時間：</strong>2016-11-11_
+_**上次修改主題的時間：** 2016-11-11_
+
 
 了解如何為混合式環境中的雲端信箱使用者設定 網頁型 Outlook (Outlook Web App) 的 URL。
 
@@ -23,7 +24,7 @@ _<strong>上次修改主題的時間：</strong>2016-11-11_
 
 若要使用 網頁型 Outlook 讓受影響的使用者連線到他們的信箱，您有兩個選項︰
 
-  - **告訴使用者新的 URL (例如，https://outlook.com/owa/contoso.com)**   使用此選項會有以下問題︰
+  - **告訴使用者新的 URL (例如，https://outlook.com/owa/contoso.com)** 使用此選項會有以下問題︰
     
       - URL 較為複雜。
     
@@ -110,5 +111,5 @@ _<strong>上次修改主題的時間：</strong>2016-11-11_
 </table>
 
 
-**注意：**識別身分同盟要求按照主題 [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=83446) 所述，在 Internet Explorer 內部網路區域內設定 AD FS 端點，AD FS 需按照一般 Office 365 指導方針設定。
+**注意：** 識別身分同盟要求按照主題 [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=83446) 所述，在 Internet Explorer 內部網路區域內設定 AD FS 端點，AD FS 需按照一般 Office 365 指導方針設定。
 

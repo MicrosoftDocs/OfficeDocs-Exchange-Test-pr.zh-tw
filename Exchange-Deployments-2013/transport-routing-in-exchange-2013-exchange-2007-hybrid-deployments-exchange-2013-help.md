@@ -13,9 +13,10 @@ ms.translationtype: HT
 
  
 
-_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_<strong>上次修改主題的時間：</strong>2016-07-29_
+_**上次修改主題的時間：** 2016-07-29_
+
 
 本主題討論來回於網際網路之內送和外寄郵件的路由傳送選項。
 
@@ -55,7 +56,7 @@ _<strong>上次修改主題的時間：</strong>2016-07-29_
 
   - **如果您決定將 MX 記錄變更為指向 Office 365 中的 Exchange Online Protection 服務**   這是對於混合式部署的建議組態。傳送至任一組織中任何收件者的所有郵件都會先透過 Exchange Online 組織路由傳送。收件者地址位於內部部署組織中的郵件，將先透過 Exchange Online 組織路由傳送，然後再傳遞給內部部署組織中的收件者。如果 Exchange Online 組織中的收件者多於內部部署組織中的收件者，且您希望由 EOP 篩選郵件，則建議您使用此路由。此組態選項對於 Exchange Online Protection 提供掃描和封鎖垃圾郵件是必要選項。
 
-  - **如果您決定讓 MX 記錄繼續指向內部部署組織：   **傳送至任一組織中任何收件者的所有郵件都會先透過內部部署組織路由傳送。收件者地址位於 Exchange Online 中的郵件，將先透過內部部署組織路由傳送，然後再傳遞給 Exchange Online 中的收件者。如果組織訂有規範原則，要求傳送到組織及從組織送出的郵件都要由日誌解決方案檢查，這個路由就很有用。如果您選取此選項，Exchange Online Protection 無法有效地掃描垃圾郵件。
+  - **如果您決定讓 MX 記錄繼續指向內部部署組織：** 傳送至任一組織中任何收件者的所有郵件都會先透過內部部署組織路由傳送。收件者地址位於 Exchange Online 中的郵件，將先透過內部部署組織路由傳送，然後再傳遞給 Exchange Online 中的收件者。如果組織訂有規範原則，要求傳送到組織及從組織送出的郵件都要由日誌解決方案檢查，這個路由就很有用。如果您選取此選項，Exchange Online Protection 無法有效地掃描垃圾郵件。
 
 如需詳細資訊，請參閱 [Exchange Online 與 Office 365 （概觀） 的郵件流程最佳作法](https://technet.microsoft.com/zh-tw/library/jj937232\(v=exchg.150\))。
 

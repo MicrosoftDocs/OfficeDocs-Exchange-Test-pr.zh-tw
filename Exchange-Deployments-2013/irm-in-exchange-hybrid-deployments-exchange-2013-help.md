@@ -13,11 +13,13 @@ ms.translationtype: HT
 
  
 
-_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_<strong>上次修改主題的時間：</strong>2016-12-09_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-**摘要：**IRM 在 Exchange 混合式環境中如何運作，以及如何設定 IRM 以在 Exchange Online 與您的內部部署 Exchange 伺服器之間運作。
+_**上次修改主題的時間：** 2016-12-09_
+
+
+**摘要：** IRM 在 Exchange 混合式環境中如何運作，以及如何設定 IRM 以在 Exchange Online 與您的內部部署 Exchange 伺服器之間運作。
 
 資訊版權管理 (IRM) 可針對電子郵件訊息和附件提供持續性的線上及離線保護，以協助您防止敏感資訊外洩。您的 Exchange 內部部署組織以及 Office 365 企業版中的 Exchange Online 皆可支援 IRM。不過，這兩種執行方式之間會有一些差異，且您需要先在 Exchange Online 組織內設定 IRM，才能提供給該組織的使用者使用。
 
