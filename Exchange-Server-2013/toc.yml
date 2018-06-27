@@ -1,0 +1,2589 @@
+- name: Exchange Server 2013
+  href: exchange-server-2013-exchange-2013-help.md
+  items:
+  - name: Exchange 2013 的新功能
+    href: what-s-new-in-exchange-2013-exchange-2013-help.md
+    items:
+    - name: Exchange 2013 已中止的功能
+      href: what-s-discontinued-in-exchange-2013-exchange-2013-help.md
+    - name: Exchange 2013 中 Outlook Web App 的新功能
+      href: what-s-new-for-outlook-web-app-in-exchange-2013-exchange-2013-help.md
+    - name: 什麼是整合通訊新 Exchange 2013
+      href: what-s-new-for-unified-messaging-in-exchange-2013-exchange-2013-help.md
+    - name: 傳輸規則的新功能
+      href: what-s-new-for-transport-rules-exchange-2013-help.md
+    - name: Exchange 2013 版本資訊
+      href: release-notes-for-exchange-2013-exchange-2013-help.md
+    - name: 更新 Exchange 2013
+      href: updates-for-exchange-2013-exchange-2013-help.md
+  - name: 規劃及部署
+    href: planning-and-deployment-for-exchange-2013-installation-instructions.md
+    items:
+    - name: Exchange Server 部署助理
+      href: exchange-server-deployment-assistant-exchange-2013-help.md
+    - name: Active Directory
+      href: active-directory-exchange-2013-help.md
+      items:
+      - name: Active Directory 權
+        href: access-to-active-directory-exchange-2013-help.md
+      - name: Exchange 2013 Active Directory 架構變更
+        href: exchange-2013-active-directory-schema-changes-exchange-2013-help.md
+      - name: 斷續的命名空間案例
+        href: disjoint-namespace-scenarios-exchange-2013-help.md
+        items:
+        - name: 設定脫離的命名空間的 DNS 尾碼搜尋清單
+          href: configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md
+    - name: Exchange 2013 系統需求
+      href: exchange-2013-system-requirements-exchange-2013-help.md
+    - name: Exchange 2013 必要條件
+      href: exchange-2013-prerequisites-exchange-2013-help.md
+    - name: 準備 Active Directory 及網域
+      href: prepare-active-directory-and-domains-exchange-2013-help.md
+    - name: 部署 Exchange 2013 的新安裝
+      href: deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 檢查清單： 執行 Exchange 2013 全新安裝
+        href: checklist-perform-a-new-installation-of-exchange-2013-exchange-2013-help.md
+      - name: 使用安裝精靈安裝 Exchange 2013
+        href: install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md
+      - name: 使用自動模式安裝 Exchange 2013
+        href: install-exchange-2013-using-unattended-mode-exchange-2013-help.md
+      - name: 使用設定精靈安裝 Exchange 2013 Edge Transport role
+        href: install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md
+      - name: 委派安裝 Exchange 2013 server
+        href: delegate-the-installation-of-an-exchange-2013-server-exchange-2013-help.md
+    - name: 將 Exchange 2013 升級至最新的累計或服務套件
+      href: upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md
+    - name: 從 Exchange 2010 升級至 Exchange 2013
+      href: upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 檢查清單：從 Exchange 2010 升級
+        href: checklist-upgrade-from-exchange-2010-exchange-2013-help.md
+    - name: 從 Exchange 2007 升級至 Exchange 2013
+      href: upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 檢查清單：從 Exchange 2007 升級
+        href: checklist-upgrade-from-exchange-2007-exchange-2013-help.md
+    - name: 部署 Exchange 2013 的多個樹系拓撲
+      href: deploy-multiple-forest-topologies-for-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 部署跨樹系拓撲中的 Exchange 2013
+        href: deploy-exchange-2013-in-a-cross-forest-topology-exchange-2013-help.md
+      - name: 部署 Exchange 資源樹系拓撲中的 Exchange 2013
+        href: deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help.md
+    - name: Exchange 2013 後續安裝工作
+      href: exchange-2013-post-installation-tasks-exchange-2013-help.md
+      items:
+      - name: 輸入您的 Exchange 2013 產品金鑰
+        href: enter-your-exchange-2013-product-key-exchange-2013-help.md
+      - name: 設定郵件流程和用戶端存取
+        href: configure-mail-flow-and-client-access-exchange-2013-help.md
+      - name: 確認 Exchange 2013 安裝
+        href: verify-an-exchange-2013-installation-exchange-2013-help.md
+      - name: 安裝 Exchange 2013 管理工具
+        href: install-the-exchange-2013-management-tools-exchange-2013-help.md
+    - name: Exchange 2013 虛擬化
+      href: exchange-2013-virtualization-exchange-2013-help.md
+    - name: 與 SharePoint 和 Lync 整合
+      href: integration-with-sharepoint-and-lync-exchange-2013-help.md
+      items:
+      - name: 設定 SharePoint 2013 與 Lync 2013 的 OAuth 驗證
+        href: configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md
+    - name: 部署參考 （英文)
+      href: deployment-reference-exchange-2013-help.md
+      items:
+      - name: 當 Exchange 2013 安裝好之後，Active Directory 會有什麼變更？
+        href: what-changes-in-active-directory-when-exchange-2013-is-installed-exchange-2013-help.md
+      - name: Exchange 2013：版本
+        href: exchange-2013-editions-and-versions-exchange-2013-help.md
+      - name: Exchange Server Supportability Matrix
+        href: exchange-server-supportability-matrix-exchange-2013-help.md
+      - name: Exchange 2013 部署權限參考
+        href: exchange-2013-deployment-permissions-reference-exchange-2013-help.md
+      - name: 部署安全性檢查清單
+        href: deployment-security-checklist-exchange-2013-help.md
+      - name: Exchange 2013 調整大小和容量規劃
+        href: exchange-2013-sizing-and-capacity-planning-exchange-2013-help.md
+      - name: Exchange 2013 儲存裝置組態選項
+        href: exchange-2013-storage-configuration-options-exchange-2013-help.md
+      - name: Exchange 2013 中的 IPv6 支援
+        href: ipv6-support-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange 2013 語言支援
+        href: exchange-2013-language-support-exchange-2013-help.md
+      - name: Exchange 2013 整備檢查
+        href: exchange-2013-readiness-checks-exchange-2013-help.md
+        items:
+        - name: AD LDS 目錄位於預設位置
+          href: ad-lds-directory-exists-in-default-location-exchange-2013-help.md
+        - name: 在 Active Directory [AdInitErrorRule] 中存在重複的 Microsoft Exchange 系統物件容器
+          href: duplicate-microsoft-exchange-system-objects-container-exists-in-active-directory-exchange-2013-help.md
+        - name: 容錯移轉叢集的命令介面視窗功能不會安裝
+          href: failover-cluster-command-interface-windows-feature-not-installed-exchange-2013-help.md
+        - name: 用戶端存取伺服器角色是已安裝
+          href: client-access-server-role-is-already-installed-exchange-2013-help.md
+        - name: Active Directory 不存在或是無法連接
+          href: active-directory-does-not-exist-or-cannot-be-contacted-exchange-2013-help.md
+        - name: 本機電腦未加入 Active Directory 網域
+          href: the-local-computer-isn-t-joined-to-an-active-directory-domain-exchange-2013-help.md
+        - name: 安裝第一部 Exchange 組織中的伺服器無法受到委派
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help.md
+        - name: 安裝第一部 Exchange 組織中的伺服器無法受到委派
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_1.md
+        - name: 安裝第一部 Exchange 組織中的伺服器無法受到委派
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_2.md
+        - name: 安裝第一部 Exchange 組織中的伺服器無法受到委派
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_3.md
+        - name: 安裝第一部 Exchange 組織中的伺服器無法受到委派
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_4.md
+        - name: Active Directory 功能等級不是 Windows Server 2003 或更新版本
+          href: active-directory-functional-level-isn-t-windows-server-2003-or-later-exchange-2013-help.md
+        - name: 無法寫入至 Exchange 組織容器
+          href: cannot-write-to-the-exchange-organization-container-exchange-2013-help.md
+        - name: 通用需要更新
+          href: global-updates-required-exchange-2013-help.md
+        - name: DNS 資料庫中找不到本機電腦的主機記錄
+          href: the-host-record-for-the-local-computer-cannot-be-found-in-the-dns-database-exchange-2013-help.md
+        - name: Active Directory 分割權限 [InstallOnDCInADSplitPermissionMode] 不支援的網域控制站上安裝
+          href: installation-on-domain-controllers-is-not-supported-with-active-directory-split-permissions-exchange-2013-help.md
+        - name: 目前的帳戶不被登入 Active Directory 網域
+          href: the-current-account-isn-t-logged-into-an-active-directory-domain-exchange-2013-help.md
+        - name: 必須重新啟動電腦才能繼續執行安裝程式
+          href: the-computer-needs-to-be-restarted-before-setup-can-continue-exchange-2013-help.md
+        - name: 將登入使用者不是 Schema Admins 群組成員的
+          href: the-logged-on-user-is-not-a-member-of-the-schema-admins-group-exchange-2013-help.md
+        - name: 未安裝 UCMA 4.0, Core Runtime
+          href: ucma-4-0-core-runtime-not-installed-exchange-2013-help.md
+        - name: 無法移除信箱資料庫
+          href: cannot-remove-mailbox-database-exchange-2013-help.md
+        - name: 在網域控制站上安裝 Exchange 不建議使用
+          href: installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md
+        - name: 未安裝 KB2619234 更新
+          href: kb2619234-update-not-installed-exchange-2013-help.md
+        - name: 安裝第一部 Exchange 組織中的伺服器無法受到委派
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_5.md
+        - name: 沒有 Exchange 2010 或 Exchange 2007 伺服器偵測到
+          href: no-exchange-2010-or-exchange-2007-servers-detected-exchange-2013-help.md
+        - name: 必須重新啟動電腦才能繼續執行安裝程式
+          href: the-computer-needs-to-be-restarted-before-setup-can-continue-exchange-2013-help_1.md
+        - name: Exchange 2007 伺服器必須升級至 Service Pack 3 更新彙總套件 10
+          href: exchange-2007-servers-must-be-upgraded-to-service-pack-3-update-rollup-10-exchange-2013-help.md
+        - name: Exchange 2010 伺服器都必須升級至 Service Pack 3
+          href: exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help.md
+        - name: 未安裝 Office 2010 Filter Pack
+          href: office-2010-filter-pack-not-installed-exchange-2013-help.md
+        - name: 未安裝 Office 2010 Filter Pack SP1
+          href: office-2010-filter-pack-sp1-not-installed-exchange-2013-help.md
+        - name: 無法在 Exchange 2000 或 Exchange 2003 伺服器所在樹系中安裝 Exchange 2013。
+          href: can-t-install-exchange-2013-in-a-forest-containing-exchange-2000-or-exchange-2003-servers-exchange-2013-help.md
+        - name: 找到不相容的作業系統
+          href: an-incompatible-operating-system-was-found-exchange-2013-help.md
+        - name: Exchange 2010 伺服器都必須升級至 Service Pack 3
+          href: exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help_1.md
+        - name: 已定義 ExecutionPolicy GPO
+          href: executionpolicy-gpo-is-defined-exchange-2013-help.md
+        - name: 主要 DNS 尾碼遺漏
+          href: primary-dns-suffix-is-missing-exchange-2013-help.md
+        - name: 仍 installed_SMTPSvcInstalled 簡易郵件傳輸通訊協定。
+          href: the-simple-mail-transport-protocol-is-currently-installed-smtpsvcinstalled-exchange-2013-help.md
+        - name: SMTP 位址格式不 Supported_SMTPAddressLiteral
+          href: smtp-addressing-format-not-supported-smtpaddressliteral-exchange-2013-help.md
+        - name: World Wide Web Publishing 服務已停用] 或 [missing_ShouldReRunSetupForW3SVC
+          href: the-world-wide-web-publishing-service-is-disabled-or-missing-shouldrerunsetupforw3svc-exchange-2013-help.md
+        - name: 此伺服器為傳送 Connector_ServerIsSourceForSendConnector 的來源
+          href: this-server-is-the-source-for-a-send-connector-serverissourceforsendconnector-exchange-2013-help.md
+        - name: 本機電腦負責展開群組 membership_ServerIsGroupExpansionServer
+          href: the-local-computer-is-responsible-for-expanding-group-membership-serverisgroupexpansionserver-exchange-2013-help.md
+        - name: 本機電腦負責展開群組 membership_ServerIsDynamicGroupExpansionServer
+          href: the-local-computer-is-responsible-for-expanding-group-membership-serverisdynamicgroupexpansionserver-exchange-2013-help.md
+        - name: 電腦的完整網域名稱比對收件者 policy_ServerFQDNMatchesSMTPPolicy
+          href: the-fully-qualified-domain-name-of-the-computer-matches-a-recipient-policy-serverfqdnmatchessmtppolicy-exchange-2013-help.md
+        - name: 較舊的資料庫檔案 present_SecondSGFilesExist
+          href: older-database-files-present-secondsgfilesexist-exchange-2013-help.md
+        - name: 架構主機未執行 Windows Server 2003 Service Pack 1 或 later_SchemaFSMONotWin2003SPn
+          href: the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-schemafsmonotwin2003spn-exchange-2013-help.md
+        - name: 找不到收件者更新 service_RUSMissing
+          href: cannot-find-a-recipient-update-service-rusmissing-exchange-2013-help.md
+        - name: Active Directory 網域被混合 mode_RootDomainModeMixed
+          href: active-directory-domain-is-mixed-mode-rootdomainmodemixed-exchange-2013-help.md
+        - name: 主要的 DNS 伺服器無法受到 contacted_PrimaryDNSTestFailed
+          href: the-primary-dns-server-cannot-be-contacted-primarydnstestfailed-exchange-2013-help.md
+        - name: 若要執行 /PrepareDomain_PrepareDomainNotAdmin 的權限不足
+          href: insufficient-permissions-to-run-preparedomain-preparedomainnotadmin-exchange-2013-help.md
+        - name: Active Directory 網域被混合 mode_PrepareDomainModeMixed
+          href: active-directory-domain-is-mixed-mode-preparedomainmodemixed-exchange-2013-help.md
+        - name: 作業系統是在偵錯 mode_OSCheckedBuild
+          href: the-operating-system-is-in-debug-mode-oscheckedbuild-exchange-2013-help.md
+        - name: 將登入使用者不是本機系統管理員 group_NotLocalAdmin 成員
+          href: the-logged-on-user-is-not-a-member-of-the-local-administrators-group-notlocaladmin-exchange-2013-help.md
+        - name: 結構描述中未 master site/domain_NotInSchemaMasterSite
+          href: not-in-schema-master-site-domain-notinschemamastersite-exchange-2013-help.md
+        - name: 結構描述中未 master site/domain_NotInSchemaMasterDomain
+          href: not-in-schema-master-site-domain-notinschemamasterdomain-exchange-2013-help.md
+        - name: Active Directory 準備 Exchange 2010_NoE12ServerWarning 之後無法安裝 Exchange 2007 角色
+          href: cannot-install-exchange-2007-roles-after-you-prepare-active-directory-for-exchange-2010-noe12serverwarning-exchange-2013-help.md
+        - name: 安裝程式可以 continue_MSDTCStopped 之前必須啟動分散式交易協調器服務
+          href: the-distributed-transaction-coordinator-service-must-be-started-before-setup-can-continue-msdtcstopped-exchange-2013-help.md
+        - name: 一或多個 queues_MessagesInQueue 中目前存在的郵件
+          href: messages-currently-exist-in-one-or-more-queues-messagesinqueue-exchange-2013-help.md
+        - name: 儲存群組的磁碟機規格是 missing_MailboxLogDriveDoesNotExist
+          href: storage-group-drive-specification-is-missing-mailboxlogdrivedoesnotexist-exchange-2013-help.md
+        - name: 信箱資料庫的磁碟機規格是 missing_MailboxEDBDriveDoesNotExist
+          href: mailbox-database-drive-specification-is-missing-mailboxedbdrivedoesnotexist-exchange-2013-help.md
+        - name: Windows 處理程序啟用 Service-程序模型元件是 required_LonghornWASProcessModelInstalled
+          href: the-windows-process-activation-service-process-model-component-is-required-longhornwasprocessmodelinstalled-exchange-2013-help.md
+        - name: IIS 7 元件不 installed_LonghornIIS7WindowsAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7windowsauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7.NET 擴充性元件是 required_LonghornIIS7NetExt
+          href: iis-7-net-extensibility-component-is-required-longhorniis7netext-exchange-2013-help.md
+        - name: 解除安裝整合通訊語言 Packs_AdditionalUMLangPackExists
+          href: uninstall-unified-messaging-language-packs-additionalumlangpackexists-exchange-2013-help.md
+        - name: 若要準備 Active Directory_ADUpdateRequired 的權限不足
+          href: insufficient-permissions-to-prepare-active-directory-adupdaterequired-exchange-2013-help.md
+        - name: 未偵測到本機 site_BridgeheadRoleNotPresentInSite 集線傳輸角色
+          href: hub-transport-role-not-detected-in-local-site-bridgeheadrolenotpresentinsite-exchange-2013-help.md
+        - name: 移除所有的伺服器 roles_CannotUninstallDelegatedServer 的權限不足
+          href: insufficient-permissions-to-remove-all-server-roles-cannotuninstalldelegatedserver-exchange-2013-help.md
+        - name: 未偵測到本機 site_ClientAccessRoleNotPresentInSite 的用戶端存取角色
+          href: client-access-role-not-detected-in-local-site-clientaccessrolenotpresentinsite-exchange-2013-help.md
+        - name: 可以在叢集 server_ClusSvcInstalledRoleBlock 安裝信箱角色
+          href: only-the-mailbox-role-can-be-installed-on-a-cluster-server-clussvcinstalledroleblock-exchange-2013-help.md
+        - name: 安裝程式無法以唯讀網域 controller_ComputerRODC 安裝 Exchange
+          href: setup-cannot-install-exchange-to-a-read-only-domain-controller-computerrodc-exchange-2013-help.md
+        - name: 網域控制站會覆寫 Registry_ConfigDCHostNameMismatch 中設定
+          href: domain-controller-override-is-set-in-the-registry-configdchostnamemismatch-exchange-2013-help.md
+        - name: 若要準備 Active Directory_DomainPrepWithoutADUpdate 的權限不足
+          href: insufficient-permissions-to-prepare-active-directory-domainprepwithoutadupdate-exchange-2013-help.md
+        - name: 本機電腦已執行 Exchange Server_ExchangeAlreadyInstalled
+          href: the-local-computer-is-already-running-exchange-server-exchangealreadyinstalled-exchange-2013-help.md
+        - name: 較舊的資料庫檔案 present_FirstSGFilesExist
+          href: older-database-files-present-firstsgfilesexist-exchange-2013-help.md
+        - name: 一或多個 Active Directory 連接器伺服器已 found_ADCFound
+          href: one-or-more-active-directory-connector-servers-were-found-adcfound-exchange-2013-help.md
+        - name: Windows Server 2003 Service Pack 1 或 later_DomainControllerIsOutOfSite 的架構主機未執行
+          href: the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-domaincontrollerisoutofsite-exchange-2013-help.md
+        - name: 網域準備 required_DomainPrepRequired
+          href: domain-preparation-required-domainpreprequired-exchange-2013-help.md
+        - name: COM + 事件系統必須啟動服務之前安裝程式可以 continue_EventSystemStopped
+          href: the-com-event-system-service-must-be-started-before-setup-can-continue-eventsystemstopped-exchange-2013-help.md
+        - name: IIS 是在 32 位元的相容性 mode_IIS32BitMode
+          href: iis-is-in-32-bit-compatibility-mode-iis32bitmode-exchange-2013-help.md
+        - name: 存取控制清單 (ACL) 繼承是 blocked_InhBlockPublicFolderTree
+          href: access-control-list-acl-inheritance-is-blocked-inhblockpublicfoldertree-exchange-2013-help.md
+        - name: 安裝伺服器 role_InstallWatermark 時所發生的安裝程式失敗
+          href: setup-failure-occurred-while-installing-a-server-role-installwatermark-exchange-2013-help.md
+        - name: 解除安裝伺服器 role_InterruptedUninstallNotContinued 時發生安裝失敗
+          href: setup-failure-occurred-while-uninstalling-a-server-role-interrupteduninstallnotcontinued-exchange-2013-help.md
+        - name: 無法判斷 Active Directory site_InvalidADSite 的名稱
+          href: cannot-determine-the-name-of-the-active-directory-site-invalidadsite-exchange-2013-help.md
+        - name: 本機電腦是子 domain_LocalComputerIsDCInChildDomain 的網域控制站
+          href: the-local-computer-is-a-domain-controller-of-a-child-domain-localcomputerisdcinchilddomain-exchange-2013-help.md
+        - name: Active Directory 網域被混合 mode_LocalDomainModeMixed
+          href: active-directory-domain-is-mixed-mode-localdomainmodemixed-exchange-2013-help.md
+        - name: 必須是 updated_LocalDomainPrep 本機網域
+          href: the-local-domain-needs-to-be-updated-localdomainprep-exchange-2013-help.md
+        - name: IIS 6 相容性元件不 installed_LonghornIIS6MetabaseNotInstalled
+          href: iis-6-compatibility-components-not-installed-longhorniis6metabasenotinstalled-exchange-2013-help.md
+        - name: IIS 6 相容性元件不 installed_LonghornIIS6MgmtConsoleNotInstalled
+          href: iis-6-compatibility-components-not-installed-longhorniis6mgmtconsolenotinstalled-exchange-2013-help.md
+        - name: IIS 7 元件不 installed_LonghornIIS7BasicAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7basicauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7 元件不 installed_LonghornIIS7DigestAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7digestauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7 元件不 installed_LonghornIIS7HttpCompressionDynamicNotInstalled
+          href: iis-7-component-not-installed-longhorniis7httpcompressiondynamicnotinstalled-exchange-2013-help.md
+        - name: IIS 7 元件不 installed_LonghornIIS7HttpCompressionStaticNotInstalled
+          href: iis-7-component-not-installed-longhorniis7httpcompressionstaticnotinstalled-exchange-2013-help.md
+        - name: World Wide Web Publishing 服務已停用] 或 [missing_W3SVCDisabledOrNotInstalled
+          href: the-world-wide-web-publishing-service-is-disabled-or-missing-w3svcdisabledornotinstalled-exchange-2013-help.md
+        - name: 已 deleted_OffLineABServerDeleted OAB 伺服器。
+          href: oab-server-has-been-deleted-offlineabserverdeleted-exchange-2013-help.md
+      - name: Exchange 2013 中用戶端和郵件流程的網路連接埠
+        href: network-ports-for-clients-and-mail-flow-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange 2013 services 概觀
+        href: overview-of-exchange-2013-services-exchange-2013-help.md
+      - name: 在 Exchange 管理命令介面中的基本概念
+        href: basic-concepts-in-exchange-management-shell-exchange-2013-help.md
+        items:
+        - name: 指令程式
+          href: cmdlets-exchange-2013-help.md
+        - name: 身分識別
+          href: identity-exchange-2013-help.md
+        - name: 匯入及匯出在 Exchange 管理命令介面中的檔案
+          href: import-and-export-files-in-the-exchange-management-shell-exchange-2013-help.md
+        - name: 修改多重值內容
+          href: modifying-multivalued-properties-exchange-2013-help.md
+        - name: WhatIf、Confirm 及 ValidateOnly 參數
+          href: whatif-confirm-and-validateonly-switches-exchange-2013-help.md
+        - name: 使用命令輸出
+          href: working-with-command-output-exchange-2013-help.md
+      - name: Cmdlet 延伸代理程式
+        href: cmdlet-extension-agents-exchange-2013-help.md
+        items:
+        - name: 管理指令程式延伸代理程式
+          href: manage-cmdlet-extension-agents-exchange-2013-help.md
+      - name: Exchange 2013 的 Exchange 管理命令介面快速參考
+        href: exchange-management-shell-quick-reference-for-exchange-2013-exchange-2013-help.md
+      - name: -ContentFilter 參數的可篩選內容
+        href: filterable-properties-for-the-contentfilter-parameter.md
+    - name: Exchange 2013 中的多重租賃
+      href: multi-tenancy-in-exchange-2013-exchange-2013-help.md
+    - name: 更新 Exchange 組織日光節約時間或時區變更時
+      href: update-your-exchange-organization-when-daylight-saving-time-or-the-time-zone-changes-exchange-2013-help.md
+  - name: 權限
+    href: permissions-exchange-2013-help.md
+    items:
+    - name: 了解角色型存取控制
+      href: understanding-role-based-access-control-exchange-2013-help.md
+      items:
+      - name: 了解管理角色群組
+        href: understanding-management-role-groups-exchange-2013-help.md
+      - name: 了解管理角色指派原則
+        href: understanding-management-role-assignment-policies-exchange-2013-help.md
+      - name: 了解管理角色
+        href: understanding-management-roles-exchange-2013-help.md
+      - name: 了解管理角色範圍
+        href: understanding-management-role-scopes-exchange-2013-help.md
+        items:
+        - name: 了解管理角色範圍篩選器
+          href: understanding-management-role-scope-filters-exchange-2013-help.md
+        - name: 了解獨佔範圍
+          href: understanding-exclusive-scopes-exchange-2013-help.md
+      - name: 了解管理角色指派
+        href: understanding-management-role-assignments-exchange-2013-help.md
+      - name: 內建角色群組
+        href: built-in-role-groups-exchange-2013-help.md
+        items:
+        - name: 組織管理
+          href: organization-management-exchange-2013-help.md
+        - name: 僅限檢視組織管理
+          href: view-only-organization-management-exchange-2013-help.md
+        - name: 收件者管理
+          href: recipient-management-exchange-2013-help.md
+        - name: UM 管理
+          href: um-management-exchange-2013-help.md
+        - name: 服務台
+          href: help-desk-exchange-2013-help.md
+        - name: 檢疫管理
+          href: hygiene-management-exchange-2013-help.md
+        - name: 規範管理
+          href: compliance-management-exchange-2013-help.md
+        - name: 記錄管理
+          href: records-management-exchange-2013-help.md
+        - name: 探索管理
+          href: discovery-management-exchange-2013-help.md
+        - name: 公用資料夾管理
+          href: public-folder-management-exchange-2013-help.md
+        - name: 伺服器管理
+          href: server-management-exchange-2013-help.md
+        - name: 委派安裝
+          href: delegated-setup-exchange-2013-help.md
+      - name: 內建管理角色
+        href: built-in-management-roles-exchange-2013-help.md
+        items:
+        - name: Active Directory 權限角色
+          href: active-directory-permissions-role-exchange-2013-help.md
+        - name: 地址清單角色
+          href: address-lists-role-exchange-2013-help.md
+        - name: ApplicationImpersonation 角色
+          href: applicationimpersonation-role-exchange-2013-help.md
+        - name: ArchiveApplication 角色
+          href: archiveapplication-role-exchange-2013-help.md
+        - name: 稽核記錄 」 角色
+          href: audit-logs-role-exchange-2013-help.md
+        - name: Cmdlet 延伸代理程式角色
+          href: cmdlet-extension-agents-role-exchange-2013-help.md
+        - name: 資料外洩防護角色
+          href: data-loss-prevention-role-exchange-2013-help.md
+        - name: 資料庫可用性群組角色
+          href: database-availability-groups-role-exchange-2013-help.md
+        - name: 資料庫副本的角色
+          href: database-copies-role-exchange-2013-help.md
+        - name: 資料庫角色
+          href: databases-role-exchange-2013-help.md
+        - name: 嚴重損壞復原角色
+          href: disaster-recovery-role-exchange-2013-help.md
+        - name: 通訊群組角色
+          href: distribution-groups-role-exchange-2013-help.md
+        - name: Edge 訂閱角色
+          href: edge-subscriptions-role-exchange-2013-help.md
+        - name: 電子郵件地址原則角色
+          href: e-mail-address-policies-role-exchange-2013-help.md
+        - name: Exchange 連接器角色
+          href: exchange-connectors-role-exchange-2013-help.md
+        - name: Exchange Server 憑證角色
+          href: exchange-server-certificates-role-exchange-2013-help.md
+        - name: Exchange 伺服器角色
+          href: exchange-servers-role-exchange-2013-help.md
+        - name: Exchange 虛擬目錄角色
+          href: exchange-virtual-directories-role-exchange-2013-help.md
+        - name: 同盟的共用的角色
+          href: federated-sharing-role-exchange-2013-help.md
+        - name: 資訊版權管理角色
+          href: information-rights-management-role-exchange-2013-help.md
+        - name: 日誌記錄角色
+          href: journaling-role-exchange-2013-help.md
+        - name: 法律保留角色
+          href: legal-hold-role-exchange-2013-help.md
+        - name: LegalHoldApplication 角色
+          href: legalholdapplication-role-exchange-2013-help.md
+        - name: 擁有郵件功能的公用資料夾角色
+          href: mail-enabled-public-folders-role-exchange-2013-help.md
+        - name: 郵件建立收件者角色
+          href: mail-recipient-creation-role-exchange-2013-help.md
+        - name: 郵件收件者角色
+          href: mail-recipients-role-exchange-2013-help.md
+        - name: 郵件提示角色
+          href: mail-tips-role-exchange-2013-help.md
+        - name: 信箱匯入匯出角色
+          href: mailbox-import-export-role-exchange-2013-help.md
+        - name: 信箱搜尋角色
+          href: mailbox-search-role-exchange-2013-help.md
+        - name: MailboxSearchApplication 角色
+          href: mailboxsearchapplication-role-exchange-2013-help.md
+        - name: 郵件追蹤角色
+          href: message-tracking-role-exchange-2013-help.md
+        - name: 移轉角色
+          href: migration-role-exchange-2013-help.md
+        - name: 監視角色
+          href: monitoring-role-exchange-2013-help.md
+        - name: 移動信箱角色
+          href: move-mailboxes-role-exchange-2013-help.md
+        - name: 我自訂應用程式的角色
+          href: my-custom-apps-role-exchange-2013-help.md
+        - name: 我市集應用程式的角色
+          href: my-marketplace-apps-role-exchange-2013-help.md
+        - name: MyAddressInformation 角色
+          href: myaddressinformation-role-exchange-2013-help.md
+        - name: MyBaseOptions 角色
+          href: mybaseoptions-role-exchange-2013-help.md
+        - name: MyContactInformation 角色
+          href: mycontactinformation-role-exchange-2013-help.md
+        - name: MyDiagnostics 角色
+          href: mydiagnostics-role-exchange-2013-help.md
+        - name: MyDisplayName 角色
+          href: mydisplayname-role-exchange-2013-help.md
+        - name: MyDistributionGroupMembership 角色
+          href: mydistributiongroupmembership-role-exchange-2013-help.md
+        - name: MyDistributionGroups 角色
+          href: mydistributiongroups-role-exchange-2013-help.md
+        - name: MyMobileInformation 角色
+          href: mymobileinformation-role-exchange-2013-help.md
+        - name: 為 MyName 角色
+          href: myname-role-exchange-2013-help.md
+        - name: MyPersonalInformation 角色
+          href: mypersonalinformation-role-exchange-2013-help.md
+        - name: MyProfileInformation 角色
+          href: myprofileinformation-role-exchange-2013-help.md
+        - name: 我 ReadWriteMailbox 應用程式的角色
+          href: my-readwritemailbox-apps-role-exchange-2013-help.md
+        - name: MyRetentionPolicies 角色
+          href: myretentionpolicies-role-exchange-2013-help.md
+        - name: MyTeamMailboxes 角色
+          href: myteammailboxes-role-exchange-2013-help.md
+        - name: MyTextMessaging 角色
+          href: mytextmessaging-role-exchange-2013-help.md
+        - name: MyVoiceMail 角色
+          href: myvoicemail-role-exchange-2013-help.md
+        - name: OfficeExtensionApplication 角色
+          href: officeextensionapplication-role-exchange-2013-help.md
+        - name: Org 自訂應用程式角色
+          href: org-custom-apps-role-exchange-2013-help.md
+        - name: Org 市集應用程式角色
+          href: org-marketplace-apps-role-exchange-2013-help.md
+        - name: 組織用戶端存取角色
+          href: organization-client-access-role-exchange-2013-help.md
+        - name: 組織設定角色
+          href: organization-configuration-role-exchange-2013-help.md
+        - name: 組織傳輸設定角色
+          href: organization-transport-settings-role-exchange-2013-help.md
+        - name: POP3 與 IMAP4 通訊協定的角色
+          href: pop3-and-imap4-protocols-role-exchange-2013-help.md
+        - name: 公用資料夾角色
+          href: public-folders-role-exchange-2013-help.md
+        - name: 接收連接器角色
+          href: receive-connectors-role-exchange-2013-help.md
+        - name: 收件者原則角色
+          href: recipient-policies-role-exchange-2013-help.md
+        - name: 遠端和公認的網域角色
+          href: remote-and-accepted-domains-role-exchange-2013-help.md
+        - name: 重設密碼角色
+          href: reset-password-role-exchange-2013-help.md
+        - name: 保留管理角色
+          href: retention-management-role-exchange-2013-help.md
+        - name: 角色管理角色
+          href: role-management-role-exchange-2013-help.md
+        - name: 安全群組建立與成員資格的角色
+          href: security-group-creation-and-membership-role-exchange-2013-help.md
+        - name: 傳送連接器角色
+          href: send-connectors-role-exchange-2013-help.md
+        - name: 支援診斷角色
+          href: support-diagnostics-role-exchange-2013-help.md
+        - name: 小組信箱角色
+          href: team-mailboxes-role-exchange-2013-help.md
+        - name: TeamMailboxLifecycleApplication 角色
+          href: teammailboxlifecycleapplication-role-exchange-2013-help.md
+        - name: 傳輸代理程式角色
+          href: transport-agents-role-exchange-2013-help.md
+        - name: 傳輸檢疫角色
+          href: transport-hygiene-role-exchange-2013-help.md
+        - name: 傳輸佇列角色
+          href: transport-queues-role-exchange-2013-help.md
+        - name: 傳輸規則角色
+          href: transport-rules-role-exchange-2013-help.md
+        - name: UM 信箱角色
+          href: um-mailboxes-role-exchange-2013-help.md
+        - name: UM 提示角色
+          href: um-prompts-role-exchange-2013-help.md
+        - name: 整合的通訊角色
+          href: unified-messaging-role-exchange-2013-help.md
+        - name: 未限定範圍的角色管理角色
+          href: unscoped-role-management-role-exchange-2013-help.md
+        - name: 使用者選項角色
+          href: user-options-role-exchange-2013-help.md
+        - name: UserApplication 角色
+          href: userapplication-role-exchange-2013-help.md
+        - name: 僅檢視稽核記錄 」 角色
+          href: view-only-audit-logs-role-exchange-2013-help.md
+        - name: 僅檢視設定角色
+          href: view-only-configuration-role-exchange-2013-help.md
+        - name: 僅檢視收件者角色
+          href: view-only-recipients-role-exchange-2013-help.md
+        - name: WorkloadManagement 角色
+          href: workloadmanagement-role-exchange-2013-help.md
+    - name: 了解多重樹系權限
+      href: understanding-multiple-forest-permissions-exchange-2013-help.md
+    - name: 了解分割權限
+      href: understanding-split-permissions-exchange-2013-help.md
+    - name: 了解 Exchange 2007 與 Exchange 2010 的權限共存
+      href: understanding-permissions-coexistence-with-exchange-2007-and-exchange-2010-exchange-2013-help.md
+    - name: 管理角色群組
+      href: manage-role-groups-exchange-2013-help.md
+    - name: 管理角色群組成員
+      href: manage-role-group-members-exchange-2013-help.md
+    - name: 管理連結的角色群組
+      href: manage-linked-role-groups-exchange-2013-help.md
+    - name: 管理角色指派原則
+      href: manage-role-assignment-policies-exchange-2013-help.md
+    - name: 變更在信箱上的指派原則
+      href: change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md
+    - name: 建立鏡像內建角色群組的連結的角色群組
+      href: create-linked-role-groups-that-mirror-built-in-role-groups-exchange-2013-help.md
+    - name: 檢視有效的權限
+      href: view-effective-permissions-exchange-2013-help.md
+    - name: 功能權限
+      href: feature-permissions-exchange-2013-help.md
+      items:
+      - name: 角色管理權限
+        href: role-management-permissions-exchange-2013-help.md
+      - name: 郵件原則及符合性權限
+        href: messaging-policy-and-compliance-permissions-exchange-2013-help.md
+      - name: 反垃圾郵件和反惡意程式的權限
+        href: anti-spam-and-anti-malware-permissions-exchange-2013-help.md
+      - name: 郵件流程權限
+        href: mail-flow-permissions-exchange-2013-help.md
+      - name: 收件者權限
+        href: recipients-permissions-exchange-2013-help.md
+      - name: 電子信箱地址與通訊錄權限
+        href: email-address-and-address-book-permissions-exchange-2013-help.md
+      - name: 共用和協同作業的權限
+        href: sharing-and-collaboration-permissions-exchange-2013-help.md
+      - name: 用戶端和行動裝置權限
+        href: clients-and-mobile-devices-permissions-exchange-2013-help.md
+      - name: 整合的通訊權限
+        href: unified-messaging-permissions-exchange-2013-help.md
+      - name: 高可用性和站台回復性權限
+        href: high-availability-and-site-resilience-permissions-exchange-2013-help.md
+      - name: Exchange 及命令介面基礎結構權限
+        href: exchange-and-shell-infrastructure-permissions-exchange-2013-help.md
+      - name: 伺服器健康狀況與效能的權限
+        href: server-health-and-performance-permissions-exchange-2013-help.md
+    - name: 進階權限
+      href: advanced-permissions-exchange-2013-help.md
+      items:
+      - name: 管理角色和角色項目
+        href: management-roles-and-role-entries-exchange-2013-help.md
+        items:
+        - name: 建立角色
+          href: create-a-role-exchange-2013-help.md
+        - name: 檢視角色
+          href: view-a-role-exchange-2013-help.md
+        - name: 移除角色
+          href: remove-a-role-exchange-2013-help.md
+        - name: 將角色項目新增至角色
+          href: add-a-role-entry-to-a-role-exchange-2013-help.md
+        - name: 變更的角色項目
+          href: change-a-role-entry-exchange-2013-help.md
+        - name: 檢視角色項目
+          href: view-role-entries-exchange-2013-help.md
+        - name: 從角色移除角色項目
+          href: remove-a-role-entry-from-a-role-exchange-2013-help.md
+        - name: 建立未限定範圍的角色
+          href: create-an-unscoped-role-exchange-2013-help.md
+        - name: 變更未限定範圍的頂層角色的角色項目
+          href: change-a-role-entry-on-an-unscoped-top-level-role-exchange-2013-help.md
+        - name: 將角色項目新增至未限定範圍的頂層角色
+          href: add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md
+      - name: 管理角色範圍
+        href: management-role-scopes-exchange-2013-help.md
+        items:
+        - name: 建立規則或獨佔範圍
+          href: create-a-regular-or-exclusive-scope-exchange-2013-help.md
+        - name: 角色範圍變更
+          href: change-a-role-scope-exchange-2013-help.md
+        - name: 檢視角色範圍
+          href: view-role-scopes-exchange-2013-help.md
+        - name: 移除角色範圍
+          href: remove-a-role-scope-exchange-2013-help.md
+        - name: 使用資料庫範圍控制自動信箱發佈
+          href: control-automatic-mailbox-distribution-using-database-scopes-exchange-2013-help.md
+      - name: 管理角色指派
+        href: management-role-assignments-exchange-2013-help.md
+        items:
+        - name: 將角色新增至使用者或 USG
+          href: add-a-role-to-a-user-or-usg-exchange-2013-help.md
+        - name: 變更角色指派
+          href: change-a-role-assignment-exchange-2013-help.md
+        - name: 檢視角色指派
+          href: view-role-assignments-exchange-2013-help.md
+        - name: 移除使用者或 USG 的角色
+          href: remove-a-role-from-a-user-or-usg-exchange-2013-help.md
+        - name: 委派角色指派
+          href: delegate-role-assignments-exchange-2013-help.md
+      - name: 管理分割權限
+        href: managing-split-permissions-exchange-2013-help.md
+        items:
+        - name: 設定 Exchange 2013 分割權限
+          href: configure-exchange-2013-for-split-permissions-exchange-2013-help.md
+        - name: 如需共用權限設定 Exchange 2013
+          href: configure-exchange-2013-for-shared-permissions-exchange-2013-help.md
+  - name: 郵件原則及符合性
+    href: messaging-policy-and-compliance-exchange-2013-help.md
+    items:
+    - name: 就地封存 in Exchange 2013
+      href: in-place-archiving-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 管理 Exchange 2013 中的就地封存
+        href: manage-in-place-archives-in-exchange-2013-exchange-2013-help.md
+      - name: 修改封存原則
+        href: modify-archive-policies-exchange-2013-help.md
+      - name: 設定封存配額為 「 就地封存在 Exchange 2013
+        href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
+      - name: Lync 交談和會議內容封存至 Exchange
+        href: archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help.md
+      - name: 在 Exchange 混合式部署中使用 OAuth 驗證來支援封存
+        href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
+    - name: 就地保留與訴訟暫止
+      href: in-place-hold-and-litigation-hold-exchange-2013-help.md
+      items:
+      - name: 建立或移除就地保留
+        href: create-or-remove-an-in-place-hold-exchange-2013-help.md
+      - name: 將信箱設為訴訟暫止
+        href: place-a-mailbox-on-litigation-hold-exchange-2013-help.md
+      - name: 將所有的信箱就地保留
+        href: place-all-mailboxes-on-hold-exchange-2013-help.md
+      - name: 保留 [密件副本] 並展開的通訊群組收件者 ediscovery （英文）
+        href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery-exchange-2013-help.md
+    - name: 就地 eDiscovery
+      href: in-place-ediscovery-exchange-2013-help.md
+      items:
+      - name: Exchange 中指派 eDiscovery 權限
+        href: assign-ediscovery-permissions-in-exchange-exchange-2013-help.md
+      - name: 建立就地 eDiscovery 搜尋
+        href: create-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 將 eDiscovery 搜尋結果複製到探索信箱
+        href: copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md
+      - name: 將 eDiscovery 搜尋結果匯出至 PST 檔
+        href: export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md
+      - name: 郵件內容和搜尋運算子就地 ediscovery （英文）
+        href: message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md
+      - name: 建立探索信箱
+        href: create-a-discovery-mailbox-exchange-2013-help.md
+      - name: 啟動或停止就地 eDiscovery 搜尋
+        href: start-or-stop-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 修改就地 eDiscovery 搜尋
+        href: modify-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 建立就地 eDiscovery 搜尋的自訂管理範圍
+        href: create-a-custom-management-scope-for-in-place-ediscovery-searches-exchange-2013-help.md
+      - name: 移除就地 eDiscovery 搜尋
+        href: remove-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 搜尋並刪除郵件 - 管理中心說明
+        href: search-for-and-delete-messages-admin-help-exchange-2013-help.md
+      - name: 降低探索 Exchange 中信箱的大小
+        href: reduce-the-size-of-a-discovery-mailbox-in-exchange-exchange-2013-help.md
+      - name: 刪除並重新建立 Exchange 中預設的探索信箱
+        href: delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md
+      - name: 重新建立探索系統信箱
+        href: re-create-the-discovery-system-mailbox-exchange-2013-help.md
+      - name: 在 Exchange 混合式部署中使用 OAuth 驗證來支援 eDiscovery
+        href: using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md
+      - name: 設定 Exchange for SharePoint eDiscovery Center
+        href: configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md
+      - name: Exchange eDiscovery 中項目] 無法搜尋
+        href: unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md
+    - name: 通訊記錄管理
+      href: messaging-records-management-exchange-2013-help.md
+      items:
+      - name: 通訊記錄管理術語在 Exchange 2013
+        href: messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md
+      - name: 保留標記和保留原則
+        href: retention-tags-and-retention-policies-exchange-2013-help.md
+        items:
+        - name: 預設保留原則
+          href: default-retention-policy-in-exchange-online-and-exchange-server-exchange-2013-help.md
+        - name: 支援保留原則標記的預設資料夾
+          href: default-folders-that-support-retention-policy-tags-exchange-2013-help.md
+        - name: 保留期間的計算方式
+          href: how-retention-age-is-calculated-exchange-2013-help.md
+        - name: 檢查清單： 部署保留原則
+          href: checklist-deploying-retention-policies-exchange-2013-help.md
+        - name: 通訊記錄管理程序
+          href: messaging-records-management-procedures-exchange-2013-help.md
+          items:
+          - name: 建立保留原則
+            href: create-a-retention-policy-exchange-2013-help.md
+          - name: 若要保留標記中新增或移除保留標記的保留原則
+            href: add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md
+          - name: 將保留原則套用至信箱
+            href: apply-a-retention-policy-to-mailboxes-exchange-2013-help.md
+          - name: 設定受管理的資料夾助理員
+            href: configure-the-managed-folder-assistant-exchange-2013-help.md
+          - name: 就地保留信箱保留 」 狀態
+            href: place-a-mailbox-on-retention-hold-exchange-2013-help.md
+          - name: 匯出及匯入保留標記
+            href: export-and-import-retention-tags-exchange-2013-help.md
+          - name: 設定 Outlook 用戶端封鎖
+            href: configure-outlook-client-blocking-exchange-2013-help.md
+          - name: 從受管理的資料夾遷移
+            href: migrate-from-managed-folders-exchange-2013-help.md
+          - name: 關閉或擱置郵件記錄管理
+            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
+      - name: 監視通訊記錄管理
+        href: monitoring-messaging-records-management-exchange-2013-help.md
+        items:
+        - name: 檢視效能計數器的通訊記錄管理
+          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
+        - name: 通訊記錄管理的效能計數器
+          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
+        - name: 通訊記錄管理錯誤和事件
+          href: messaging-records-management-errors-and-events-exchange-2013-help.md
+    - name: 日誌
+      href: journaling-exchange-2013-help.md
+      items:
+      - name: 管理日誌
+        href: manage-journaling-exchange-2013-help.md
+      - name: 停用或啟用語音信箱和未接的來電通知的日誌記錄
+        href: disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md
+    - name: 郵件流程規則 （傳輸規則）
+      href: mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 郵件流程規則條件和例外狀況 (predicates)
+        href: mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md
+      - name: 郵件流程規則動作
+        href: mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md
+      - name: 設定郵件流程規則的最佳作法
+        href: best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md
+      - name: 使用傳輸規則檢查郵件附件
+        href: use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md
+      - name: 常見的附件封鎖案例
+        href: common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md
+      - name: 整個組織的免責聲明、簽章、頁尾或標頭
+        href: organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md
+      - name: 郵件流程或傳輸規則程序
+        href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
+        items:
+        - name: 管理郵件流程規則
+          href: manage-mail-flow-rules-exchange-2013-help.md
+        - name: 測試郵件流程規則
+          href: test-a-mail-flow-rule-exchange-2013-help.md
+        - name: 使用郵件流程規則讓郵件可以略過雜亂
+          href: use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md
+        - name: 使用清單中的文字、 片語或模式為基礎的路由電子郵件的郵件流程規則
+          href: use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md
+        - name: 對 Exchange 2013 註冊 Filter Pack IFilter
+          href: register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md
+      - name: 管理郵件核准
+        href: manage-message-approval-exchange-2013-help.md
+        items:
+        - name: 常見的郵件核准案例
+          href: common-message-approval-scenarios-exchange-2013-help.md
+        - name: 管理及疑難排解郵件核准
+          href: manage-and-troubleshoot-message-approval-exchange-2013-help.md
+    - name: 資料遺失防護
+      href: technical-overview-of-dlp-data-loss-prevention-in-exchange.md
+      items:
+      - name: DLP 規則如何套用至評估郵件
+        href: how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md
+      - name: 與傳輸規則整合敏感資訊規則
+        href: integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md
+      - name: 敏感資訊類型在找什麼
+        href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
+      - name: DLP 原則範本
+        href: dlp-policy-templates-exchange-2013-help.md
+        items:
+        - name: Exchange 中提供的 DLP 原則範本
+          href: dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md
+        - name: 來自 Microsoft 協力廠商的原則範本
+          href: policy-templates-from-microsoft-partners-exchange-2013-help.md
+      - name: DLP 程序
+        href: dlp-procedures-exchange-2013-help.md
+        items:
+        - name: 管理 DLP 原則
+          href: manage-dlp-policies-exchange-2013-help.md
+        - name: 從範本建立 DLP 原則
+          href: how-to-new-dlp-data-loss-prevention-policy-template.md
+        - name: 建立自訂的 DLP 原則
+          href: create-a-custom-dlp-policy-exchange-2013-help.md
+        - name: 從檔案匯入自訂的 DLP 原則範本
+          href: import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md
+        - name: 檢視 DLP 原則偵測報告
+          href: view-dlp-policy-detection-reports-exchange-2013-help.md
+        - name: 建立 DLP 原則偵測附隨報告
+          href: create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md
+        - name: 定義自己的 DLP 範本和資訊類型
+          href: define-your-own-dlp-templates-and-information-types-exchange-2013-help.md
+          items:
+          - name: 開發 DLP 原則範本檔案
+            href: xml-rule-schema-and-rule-structure-guide-for-dlp-policy-files.md
+          - name: 開發敏感資訊規則套件
+            href: technical-description-of-xml-schema-for-dlp-rule-packages.md
+          - name: 比對方法和規則套件的技術
+            href: technical-description-of-xsd-rule-matching-for-dlp-rule-packages.md
+          - name: 自訂內建的 DLP 敏感資訊類型
+            href: customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md
+          - name: 從 Exchange 匯出 DLP 敏感資訊類型
+            href: export-dlp-sensitive-information-types-from-exchange-2013-exchange-2013-help.md
+      - name: 原則提示
+        href: technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md
+        items:
+        - name: 管理原則提示
+          href: how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md
+      - name: 文件指紋
+        href: overview-of-document-fingerprinting-in-exchange.md
+        items:
+        - name: 保護含有文件指紋的表單資料
+          href: protect-form-data-with-document-fingerprinting-exchange-2013-help.md
+    - name: 資訊版權管理
+      href: information-rights-management-exchange-2013-help.md
+      items:
+      - name: 傳輸保護規則
+        href: transport-protection-rules-exchange-2013-help.md
+      - name: Outlook 保護規則
+        href: outlook-protection-rules-exchange-2013-help.md
+      - name: 傳輸解密
+        href: transport-decryption-exchange-2013-help.md
+      - name: 日誌報告解密
+        href: journal-report-decryption-exchange-2013-help.md
+      - name: Outlook Web App 中的資訊版權管理
+        href: information-rights-management-in-outlook-web-app-exchange-2013-help.md
+      - name: Exchange ActiveSync 中的資訊版權管理
+        href: information-rights-management-in-exchange-activesync-exchange-2013-help.md
+      - name: 資訊版權管理記錄
+        href: information-rights-management-logging-exchange-2013-help.md
+      - name: 資訊版權管理程序
+        href: information-rights-management-procedures-exchange-2013-help.md
+        items:
+        - name: 啟用或停用內部郵件的 IRM
+          href: enable-or-disable-irm-for-internal-messages-exchange-2013-help.md
+        - name: 建立傳輸保護規則
+          href: create-a-transport-protection-rule-exchange-2013-help.md
+        - name: 建立 Outlook 保護規則
+          href: create-an-outlook-protection-rule-exchange-2013-help.md
+        - name: Outlook 保護規則
+          href: remove-an-outlook-protection-rule-exchange-2013-help.md
+        - name: 至 AD RMS 超級使用者群組新增同盟信箱
+          href: add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md
+        - name: 啟用或停用傳輸解密
+          href: enable-or-disable-transport-decryption-exchange-2013-help.md
+        - name: 將 IRM 設定 Exchange 搜尋與就地 ediscovery （英文）
+          href: configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md
+        - name: 啟用或停用日誌報告解密
+          href: enable-or-disable-journal-report-decryption-exchange-2013-help.md
+        - name: 啟用或停用用戶端存取伺服器上的資訊版權管理
+          href: enable-or-disable-information-rights-management-on-client-access-servers-exchange-2013-help.md
+        - name: 啟用或停用資訊版權管理記錄
+          href: enable-or-disable-information-rights-management-logging-exchange-2013-help.md
+    - name: 為郵件簽章和加密的 S/MIME
+      href: s-mime-for-message-signing-and-encryption-exchange-2013-help.md
+      items:
+      - name: 設定 Outlook Web App 的 S/MIME 設定
+        href: configure-s-mime-settings-for-outlook-web-app-exchange-2013-help.md
+      - name: 設定驗證 S/MIME 的虛擬憑證集合
+        href: set-up-virtual-certificate-collection-to-validate-s-mime-exchange-2013-help.md
+      - name: 傳送及接收 S/MIME 簽署和加密的電子郵件
+        href: send-and-receive-s-mime-signed-and-encrypted-email-exchange-2013-help.md
+    - name: 信箱稽核記錄
+      href: mailbox-audit-logging-exchange-2013-help.md
+      items:
+      - name: 信箱稽核記錄程序
+        href: mailbox-audit-logging-procedures-exchange-2013-help.md
+        items:
+        - name: 啟用或停用信箱稽核記錄功能信箱
+          href: enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md
+        - name: 使用者帳戶從信箱稽核記錄略過
+          href: bypass-a-user-account-from-mailbox-audit-logging-exchange-2013-help.md
+        - name: 搜尋信箱的信箱稽核記錄
+          href: search-the-mailbox-audit-log-for-a-mailbox-exchange-2013-help.md
+        - name: 建立信箱稽核記錄搜尋
+          href: create-a-mailbox-audit-log-search-exchange-2013-help.md
+    - name: 系統管理員稽核記錄
+      href: administrator-audit-logging-exchange-2013-help.md
+      items:
+      - name: 系統管理員稽核記錄檔結構
+        href: administrator-audit-log-structure-exchange-2013-help.md
+      - name: 管理系統管理員稽核記錄
+        href: manage-administrator-audit-logging-exchange-2013-help.md
+    - name: Exchange 稽核報告
+      href: exchange-auditing-reports-exchange-2013-help.md
+      items:
+      - name: 匯出信箱稽核記錄
+        href: export-mailbox-audit-logs-exchange-2013-help.md
+      - name: 執行非擁有者信箱存取報告
+        href: run-a-non-owner-mailbox-access-report-exchange-online-help.md
+      - name: 執行個別信箱訴訟資料暫留報告
+        href: run-a-per-mailbox-litigation-hold-report-exchange-2013-help.md
+      - name: 搜尋角色群組變更或管理員稽核記錄檔
+        href: search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md
+      - name: 檢視系統管理員稽核記錄
+        href: view-the-administrator-audit-log-exchange-2013-help.md
+  - name: 反垃圾郵件和反惡意程式防護
+    href: anti-spam-and-anti-malware-protection-exchange-2013-help.md
+    items:
+    - name: 反垃圾郵件保護
+      href: anti-spam-protection-exchange-2013-help.md
+      items:
+      - name: Exchange Server 2013 上 Exchange Online Protection 中反垃圾郵件功能的優點
+        href: benefits-of-anti-spam-features-in-exchange-online-protection-over-exchange-server-2013-exchange-2013-help.md
+      - name: 啟用信箱伺服器上的反垃圾郵件功能
+        href: enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md
+      - name: 寄件者篩選
+        href: sender-filtering-exchange-2013-help.md
+        items:
+        - name: 管理寄件者篩選
+          href: manage-sender-filtering-exchange-2013-help.md
+      - name: 寄件者識別碼
+        href: sender-id-exchange-2013-help.md
+        items:
+        - name: 管理寄件者識別碼
+          href: manage-sender-id-exchange-2013-help.md
+      - name: 內容篩選
+        href: content-filtering-exchange-2013-help.md
+        items:
+        - name: 管理內容篩選
+          href: manage-content-filtering-exchange-2013-help.md
+        - name: 安全清單彙總
+          href: safelist-aggregation-exchange-2013-help.md
+          items:
+          - name: 管理安全清單彙總
+            href: manage-safelist-aggregation-exchange-2013-help.md
+          - name: 設定內容篩選要使用安全網域資料
+            href: configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md
+        - name: 垃圾郵件信賴等級閾值
+          href: spam-confidence-level-threshold-exchange-2013-help.md
+        - name: 在信箱上設定反垃圾郵件設定
+          href: configure-anti-spam-settings-on-mailboxes-exchange-2013-help.md
+      - name: 寄件者信譽和通訊協定分析代理程式
+        href: sender-reputation-and-the-protocol-analysis-agent-exchange-2013-help.md
+        items:
+        - name: 管理寄件者信譽
+          href: manage-sender-reputation-exchange-2013-help.md
+      - name: 在 Edge Transport Server 上的連線篩選
+        href: connection-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: 管理 Edge Transport Server 上的連線篩選
+          href: manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: Edge Transport Server 上的收件者篩選
+        href: recipient-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: 管理 Edge Transport server 上的收件者篩選
+          href: manage-recipient-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: Edge Transport server 上的附件篩選
+        href: attachment-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: 管理 Edge Transport server 上的附件篩選
+          href: manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: 垃圾郵件隔離
+        href: spam-quarantine-exchange-2013-help.md
+        items:
+        - name: 設定垃圾郵件隔離信箱
+          href: configure-a-spam-quarantine-mailbox-exchange-2013-help.md
+        - name: 將 Outlook 設定為顯示隔離信箱中的原始寄件者
+          href: configure-outlook-to-show-the-original-sender-in-the-quarantine-mailbox-exchange-2013-help.md
+        - name: 版本隔離的垃圾郵件隔離信箱的郵件
+          href: release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md
+      - name: 反垃圾郵件戳記
+        href: anti-spam-stamps-exchange-2013-help.md
+        items:
+        - name: 在 Outlook 中檢視反垃圾郵件戳記
+          href: view-anti-spam-stamps-in-outlook-exchange-2013-help.md
+    - name: 反惡意程式防護
+      href: anti-malware-protection-exchange-2013-help.md
+      items:
+      - name: 反惡意程式碼常見問題集
+        href: anti-malware-faq-exchange-2013-help.md
+      - name: 下載引擎和定義更新
+        href: download-engine-and-definition-updates-exchange-2013-help.md
+      - name: 設定反惡意程式碼原則
+        href: configure-anti-malware-policies-exchange-2013-help.md
+      - name: 重新掃描郵件已託管的篩選服務所掃描的惡意程式碼
+        href: rescan-messages-already-malware-scanned-by-the-hosted-filtering-service-exchange-2013-help.md
+      - name: 停用或略過反惡意程式碼掃描
+        href: disable-or-bypass-anti-malware-scanning-exchange-2013-help.md
+    - name: Exchange Server 的作業系統中的防毒軟體
+      href: anti-virus-software-in-the-operating-system-on-exchange-servers-exchange-2013-help.md
+  - name: 郵件流程
+    href: mail-flow-exchange-2013-help.md
+    items:
+    - name: 郵件路由
+      href: mail-routing-exchange-2013-help.md
+      items:
+      - name: 規劃使用 Active Directory 站台的路由傳送郵件
+        href: planning-to-use-active-directory-sites-for-routing-mail-exchange-2013-help.md
+      - name: 在 Active Directory 中設定 Exchange 郵件路由設定
+        href: configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help.md
+      - name: Active Directory 站台之間路由傳送郵件
+        href: route-mail-between-active-directory-sites-exchange-2013-help.md
+      - name: 收件者的解決方法
+        href: recipient-resolution-exchange-2013-help.md
+      - name: DNS 查詢失敗敏感度
+        href: dns-query-failure-sensitivity-exchange-2013-help.md
+      - name: 使用 Telnet 測試 SMTP 通訊
+        href: use-telnet-to-test-smtp-communication-exchange-2013-help.md
+      - name: 設定外部郵件管理員地址
+        href: configure-the-external-postmaster-address-exchange-2013-help.md
+    - name: 連接器
+      href: connectors-exchange-2013-help.md
+      items:
+      - name: 傳送連接器
+        href: send-connectors-exchange-2013-help.md
+        items:
+        - name: 建立電子郵件傳送至網際網路的傳送連接器
+          href: create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md
+        - name: 建立傳送連接器路由傳送到智慧主機的外寄電子郵件
+          href: create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md
+        - name: 建立協力廠商，套用傳輸層安全性 (TLS) 傳送電子郵件的傳送連接器
+          href: create-a-send-connector-to-send-email-to-a-partner-with-transport-layer-security-tls-applied-exchange-2013-help.md
+        - name: 設定跨樹系傳送連接器
+          href: configure-a-cross-forest-send-connector-exchange-2013-help.md
+      - name: 接收連接器
+        href: receive-connectors-exchange-2013-help.md
+        items:
+        - name: 接收連接器的權限
+          href: receive-connector-permissions-exchange-2013-help.md
+        - name: 接收連接器的驗證機制
+          href: receive-connector-authentication-mechanisms-exchange-2013-help.md
+        - name: 接收連接器的程序
+          href: receive-connector-procedures-exchange-2013-help.md
+          items:
+          - name: 建立從網際網路接收電子郵件的接收連接器
+            href: create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md
+          - name: 建立安全的接收連接器從協力廠商接收電子郵件
+            href: create-a-secure-receive-connector-to-receive-email-from-a-partner-exchange-2013-help.md
+          - name: 建立未執行 Exchange 系統中接收電子郵件的接收連接器
+            href: create-a-receive-connector-to-receive-email-from-a-system-not-running-exchange-exchange-2013-help.md
+          - name: 建立從內部 Exchange 伺服器接收郵件的接收連接器
+            href: create-a-receive-connector-to-receive-messages-from-an-internal-exchange-server-exchange-2013-help.md
+          - name: 修改接收連接器上的 SMTP 橫幅
+            href: modify-the-smtp-banner-on-a-receive-connector-exchange-2013-help.md
+      - name: 外部連接器
+        href: foreign-connectors-exchange-2013-help.md
+        items:
+        - name: 建立外部連接器將郵件傳送至非 SMTP 傳真閘道
+          href: create-a-foreign-connector-to-deliver-messages-to-a-non-smtp-fax-gateway-exchange-2013-help.md
+      - name: 傳遞代理程式及傳遞代理程式連接器
+        href: delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md
+      - name: 標頭防火牆
+        href: header-firewall-exchange-2013-help.md
+    - name: 網域
+      href: domains-exchange-2013-help.md
+      items:
+      - name: 公認的網域
+        href: accepted-domains-exchange-2013-help.md
+        items:
+        - name: 設定 Exchange 組織中公認的網域成為授權
+          href: configure-an-accepted-domain-within-your-exchange-organization-as-authoritative-exchange-2013-help.md
+        - name: 獨立業務單位設定公認的網域
+          href: configure-an-accepted-domain-for-an-independent-business-unit-exchange-2013-help.md
+        - name: 利用 Exchange 組織外部的信箱為業務單位設定公認的網域
+          href: configure-an-accepted-domain-for-a-business-unit-with-mailboxes-outside-your-exchange-organization-exchange-2013-help.md
+        - name: 將 Exchange 設定為接受多個授權網域的郵件
+          href: configure-exchange-to-accept-mail-for-multiple-authoritative-domains-exchange-2013-help.md
+      - name: 遠端網域
+        href: remote-domains-exchange-2013-help.md
+        items:
+        - name: 管理遠端網域
+          href: manage-remote-domains-exchange-2013-help.md
+        - name: 設定遠端網域外出回覆
+          href: configure-remote-domain-out-of-office-replies-exchange-2013-help.md
+        - name: 設定遠端網域的自動回覆
+          href: configure-remote-domain-automatic-replies-exchange-2013-help.md
+        - name: 設定遠端網域郵件報告
+          href: configure-remote-domain-message-reporting-exchange-2013-help.md
+        - name: 遠端網域支援的字元集
+          href: supported-character-sets-for-remote-domains-exchange-2013-help.md
+    - name: 傳輸代理程式
+      href: transport-agents-exchange-2013-help.md
+      items:
+      - name: 啟用支援的舊版傳輸代理程式
+        href: enable-support-for-legacy-transport-agents-exchange-2013-help.md
+      - name: 管理傳輸代理程式
+        href: manage-transport-agents-exchange-2013-help.md
+      - name: 傳輸管線中檢視傳輸代理程式
+        href: view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md
+    - name: 傳輸高可用性
+      href: transport-high-availability-exchange-2013-help.md
+      items:
+      - name: 陰影備援
+        href: shadow-redundancy-exchange-2013-help.md
+      - name: 安全網
+        href: safety-net-exchange-2013-help.md
+    - name: 傳輸記錄檔
+      href: transport-logs-exchange-2013-help.md
+      items:
+      - name: 反垃圾郵件代理程式記錄
+        href: anti-spam-agent-logging-exchange-2013-help.md
+        items:
+        - name: 設定反垃圾郵件代理程式記錄
+          href: configure-anti-spam-agent-logging-exchange-2013-help.md
+      - name: 連線記錄
+        href: connectivity-logging-exchange-2013-help.md
+        items:
+        - name: 設定連線記錄
+          href: configure-connectivity-logging-exchange-2013-help.md
+      - name: 管線追蹤
+        href: pipeline-tracing-exchange-2013-help.md
+        items:
+        - name: 設定管線追蹤
+          href: configure-pipeline-tracing-exchange-2013-help.md
+      - name: 通訊協定記錄
+        href: protocol-logging-exchange-2013-help.md
+        items:
+        - name: 設定通訊協定記錄
+          href: configure-protocol-logging-exchange-2013-help.md
+      - name: 設定路由表格記錄
+        href: configure-routing-table-logging-exchange-2013-help.md
+    - name: 郵件追蹤
+      href: message-tracking-exchange-2013-help.md
+      items:
+      - name: 設定郵件追蹤
+        href: configure-message-tracking-exchange-2013-help.md
+      - name: 搜尋郵件追蹤記錄檔
+        href: search-message-tracking-logs-exchange-2013-help.md
+    - name: 系統管理員的傳遞回報
+      href: delivery-reports-for-administrators-exchange-2013-help.md
+      items:
+      - name: 使用傳遞回報追蹤郵件
+        href: track-messages-with-delivery-reports-exchange-2013-help.md
+    - name: 內容轉換
+      href: content-conversion-exchange-2013-help.md
+      items:
+      - name: 設定內容傳輸編碼
+        href: configure-content-transfer-encoding-exchange-2013-help.md
+      - name: 郵件編碼選項
+        href: message-encoding-options-exchange-2013-help.md
+      - name: TNEF 轉換選項
+        href: tnef-conversion-options-exchange-2013-help.md
+      - name: 內容轉換追蹤
+        href: content-conversion-tracing-exchange-2013-help.md
+    - name: Dsn 和 Ndr in Exchange 2013
+      href: dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 管理 DSN 郵件
+        href: manage-dsn-messages-exchange-2013-help.md
+      - name: DSN 郵件識別碼
+        href: dsn-message-identity-exchange-2013-help.md
+      - name: DSN 郵件文字
+        href: dsn-message-text-exchange-2013-help.md
+      - name: 支援的語言的系統郵件
+        href: supported-languages-for-system-messages-exchange-2013-help.md
+    - name: 郵件大小限制
+      href: message-size-limits-exchange-2013-help.md
+      items:
+      - name: 郵件節流
+        href: message-throttling-exchange-2013-help.md
+      - name: 背壓
+        href: back-pressure-exchange-2013-help.md
+    - name: 佇列
+      href: queues-exchange-2013-help.md
+      items:
+      - name: 管理佇列
+        href: manage-queues-exchange-2013-help.md
+      - name: 使用 Exchange 管理命令介面管理佇列
+        href: use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md
+        items:
+        - name: 設定 Get-QueueDigest
+          href: configure-get-queuedigest-exchange-2013-help.md
+      - name: 佇列篩選器
+        href: queue-filters-exchange-2013-help.md
+      - name: 管理佇列中的郵件
+        href: manage-messages-in-queues-exchange-2013-help.md
+      - name: 佇列檢視器
+        href: queue-viewer-exchange-2013-help.md
+        items:
+        - name: 佇列檢視器中的伺服器連線
+          href: connect-to-a-server-in-queue-viewer-exchange-2013-help.md
+        - name: 設定佇列檢視器選項
+          href: set-queue-viewer-options-exchange-2013-help.md
+        - name: 在佇列檢視器中檢視已排入佇列的郵件內容
+          href: view-queued-message-properties-in-queue-viewer-exchange-2013-help.md
+        - name: 從佇列檢視器中匯出清單
+          href: export-lists-from-queue-viewer-exchange-2013-help.md
+      - name: 訊息篩選器
+        href: message-filters-exchange-2013-help.md
+      - name: 從佇列匯出訊息
+        href: export-messages-from-queues-exchange-2013-help.md
+      - name: 郵件重試、 重新提交、 及到期時間間隔
+        href: message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md
+        items:
+        - name: 設定郵件重試、 重新提交、 及到期時間間隔
+          href: configure-message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md
+      - name: 優先順序佇列
+        href: priority-queuing-exchange-2013-help.md
+        items:
+        - name: 啟用並設定優先順序佇列
+          href: enable-and-configure-priority-queuing-exchange-2013-help.md
+      - name: 變更佇列資料庫的位置
+        href: change-the-location-of-the-queue-database-exchange-2013-help.md
+    - name: 收取目錄和重新顯示] 目錄
+      href: pickup-directory-and-replay-directory-exchange-2013-help.md
+      items:
+      - name: 設定 [收取] 目錄和重新顯示目錄
+        href: configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md
+    - name: TLS 功能及相關術語
+      href: tls-functionality-and-related-terminology-exchange-2013-help.md
+      items:
+      - name: 案例： 將 Exchange 設定為支援 WAN 的最佳化控制站
+        href: scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md
+      - name: 停用 Active Directory 站台之間的 TLS
+        href: disable-tls-between-active-directory-sites-exchange-2013-help.md
+  - name: 收件者
+    href: recipients-exchange-2013-help.md
+    items:
+    - name: 建立使用者信箱
+      href: create-user-mailboxes-exchange-2013-help.md
+    - name: 管理使用者信箱
+      href: manage-user-mailboxes-exchange-2013-help.md
+      items:
+      - name: 新增或移除信箱的電子郵件地址
+        href: add-or-remove-email-addresses-for-a-mailbox-exchange-2013-help.md
+      - name: 設定信箱的郵件轉寄
+        href: configure-email-forwarding-for-a-mailbox-exchange-2013-help.md
+      - name: 設定信箱的郵件傳遞限制
+        href: configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md
+      - name: 設定信箱的郵件大小上限
+        href: configure-message-size-limits-for-a-mailbox-exchange-2013-help.md
+      - name: 設定信箱的儲存配額
+        href: configure-storage-quotas-for-a-mailbox-exchange-2013-help.md
+      - name: 轉換信箱
+        href: convert-a-mailbox-exchange-2013-help.md
+      - name: 啟用或停用信箱的 Exchange ActiveSync
+        href: enable-or-disable-exchange-activesync-for-a-mailbox-exchange-2013-help.md
+      - name: 啟用或停用信箱的 MAPI
+        href: enable-or-disable-mapi-for-a-mailbox-exchange-online-help.md
+      - name: 啟用或停用 Outlook Web App 信箱
+        href: enable-or-disable-outlook-web-app-for-a-mailbox-exchange-2013-help.md
+      - name: 啟用或停用單一項目復原的信箱
+        href: enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md
+    - name: 管理連結的信箱
+      href: manage-linked-mailboxes-exchange-2013-help.md
+    - name: 建立並管理通訊群組
+      href: create-and-manage-distribution-groups-exchange-2013-help.md
+      items:
+      - name: 建立通訊群組命名原則
+        href: create-a-distribution-group-naming-policy-exchange-2013-help.md
+      - name: 通訊群組命名原則會覆寫
+        href: override-the-distribution-group-naming-policy-exchange-2013-help.md
+    - name: 管理擁有郵件功能的安全性群組
+      href: manage-mail-enabled-security-groups-exchange-2013-help.md
+    - name: 管理動態通訊群組
+      href: manage-dynamic-distribution-groups-exchange-2013-help.md
+      items:
+      - name: 檢視群組成員的動態通訊群組
+        href: view-members-of-a-dynamic-distribution-group-exchange-online-help.md
+    - name: 管理郵件連絡人
+      href: manage-mail-contacts-exchange-2013-help.md
+      items:
+      - name: 啟用或停用郵件連絡人的電子郵件
+        href: enable-or-disable-email-for-a-mail-contact-exchange-2013-help.md
+    - name: 管理郵件使用者
+      href: manage-mail-users-exchange-2013-help.md
+      items:
+      - name: 啟用或停用郵件使用者的電子郵件
+        href: enable-or-disable-email-for-a-mail-user-exchange-2013-help.md
+    - name: 建立及管理會議室信箱
+      href: create-and-manage-room-mailboxes-exchange-2013-help.md
+    - name: 管理設備信箱
+      href: manage-equipment-mailboxes-exchange-2013-help.md
+    - name: 中斷連線的信箱
+      href: disconnected-mailboxes-exchange-2013-help.md
+      items:
+      - name: 停用或刪除信箱
+        href: disable-or-delete-a-mailbox-exchange-2013-help.md
+      - name: 連線已停用的信箱
+        href: connect-a-disabled-mailbox-exchange-2013-help.md
+      - name: 連線或還原已刪除的信箱
+        href: connect-or-restore-a-deleted-mailbox-exchange-2013-help.md
+      - name: 還原虛刪除信箱
+        href: restore-a-soft-deleted-mailbox-exchange-2013-help.md
+      - name: 管理信箱還原要求
+        href: manage-mailbox-restore-requests-exchange-2013-help.md
+      - name: 永久刪除信箱
+        href: permanently-delete-a-mailbox-exchange-2013-help.md
+    - name: 自訂屬性
+      href: custom-attributes-exchange-2013-help.md
+    - name: 管理收件者的權限
+      href: manage-permissions-for-recipients-exchange-online-help.md
+    - name: 不支援的字元的 Exchange 2013 物件名稱
+      href: unsupported-characters-for-exchange-2013-object-names-exchange-2013-help.md
+    - name: 自動信箱發佈
+      href: automatic-mailbox-distribution-exchange-2013-help.md
+  - name: 共同作業
+    href: collaboration-exchange-2013-help.md
+    items:
+    - name: 網站信箱
+      href: site-mailboxes-exchange-2013-help.md
+      items:
+      - name: 管理網站信箱佈建原則
+        href: manage-site-mailbox-provisioning-policies-exchange-2013-help.md
+    - name: 公用資料夾
+      href: public-folders-exchange-2013-help.md
+      items:
+      - name: 常見問題集：公用資料夾
+        href: faq-public-folders-exchange-2013-help.md
+      - name: 公用資料夾的限制
+        href: limits-for-public-folders-exchange-2013-help.md
+      - name: 部署公用資料夾時的考量
+        href: considerations-when-deploying-public-folders-exchange-2013-help.md
+      - name: 存取公用資料夾與 Outlook 2016 for Mac
+        href: accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md
+      - name: 將公用資料夾移轉至 Office 365 群組
+        href: migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md
+      - name: 公用資料夾程序
+        href: public-folder-procedures-exchange-2013-help.md
+        items:
+        - name: 設定新的組織中的公用資料夾
+          href: set-up-public-folders-in-a-new-organization-exchange-2013-help.md
+        - name: 為混合部署設定舊版的內部部署公用資料夾
+          href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: 設定混合式部署的 Exchange 2013 公用資料夾
+          href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: 設定 Exchange Online 公用資料夾以進行混合部署
+          href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: 使用者信箱位於 Exchange 2013 伺服器上時設定舊版公用資料夾
+          href: configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md
+        - name: 使用批次移轉公用資料夾從舊版移轉至 Exchange 2013
+          href: use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md
+        - name: 使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾
+          href: use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md
+        - name: 使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online
+          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md
+          items:
+          - name: 回復公用資料夾移轉從 Exchange 2013 至 Exchange Online
+            href: roll-back-a-public-folder-migration-from-exchange-2013-to-exchange-online-exchange-2013-help.md
+        - name: 使用批次移轉至 Exchange 2010 公用資料夾移轉到 Office 365 群組
+          href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help.md
+        - name: 使用批次移轉至 Exchange 2013 公用資料夾移轉到 Office 365 群組
+          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help.md
+        - name: 建立公用資料夾信箱
+          href: create-a-public-folder-mailbox-exchange-2013-help.md
+        - name: 建立公用資料夾
+          href: create-a-public-folder-exchange-2013-help.md
+        - name: 郵件啟用或停用郵件功能的公用資料夾
+          href: mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md
+        - name: 更新公用資料夾階層
+          href: update-the-public-folder-hierarchy-exchange-2013-help.md
+        - name: 移除公用資料夾
+          href: remove-a-public-folder-exchange-2013-help.md
+        - name: 使用網路上的 outlook 我的最愛公用資料夾
+          href: use-favorite-public-folders-in-outlook-on-the-web-exchange-2013-help.md
+        - name: 公用資料夾信箱移至不同信箱資料庫
+          href: move-a-public-folder-mailbox-to-a-different-mailbox-database-exchange-2013-help.md
+        - name: 將公用資料夾移至不同的公用資料夾信箱
+          href: move-a-public-folder-to-a-different-public-folder-mailbox-exchange-2013-help.md
+        - name: 從失敗的移動還原公用資料夾和公用資料夾信箱
+          href: restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md
+        - name: 公用資料夾和公用資料夾項目的檢視統計資料
+          href: view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md
+    - name: 共用信箱
+      href: shared-mailboxes-exchange-2013-help.md
+      items:
+      - name: 建立共用的信箱
+        href: create-a-shared-mailbox-exchange-2013-help.md
+  - name: 電子郵件地址和通訊錄
+    href: email-addresses-and-address-books-exchange-2013-help.md
+    items:
+    - name: 通訊錄原則
+      href: address-book-policies-exchange-2013-help.md
+      items:
+      - name: 案例： 部署通訊錄原則
+        href: scenario-deploying-address-book-policies-exchange-2013-help.md
+      - name: Address book 原則程序
+        href: address-book-policy-procedures-exchange-2013-help.md
+        items:
+        - name: 安裝及設定 Address Book Policy Routing 代理程式
+          href: install-and-configure-the-address-book-policy-routing-agent-exchange-2013-help.md
+        - name: 建立通訊錄原則
+          href: create-an-address-book-policy-exchange-2013-help.md
+        - name: 通訊錄原則指派給郵件使用者
+          href: assign-an-address-book-policy-to-mail-users-exchange-2013-help.md
+        - name: 變更通訊錄原則的設定
+          href: change-the-settings-of-an-address-book-policy-exchange-2013-help.md
+        - name: 移除通訊錄原則
+          href: remove-an-address-book-policy-exchange-2013-help.md
+    - name: 詳細資料範本
+      href: details-templates-exchange-2013-help.md
+      items:
+      - name: 自訂詳細資料範本
+        href: customize-details-templates-exchange-2013-help.md
+      - name: 還原設為預設組態的詳細資料範本
+        href: restore-a-details-template-to-the-default-configuration-exchange-2013-help.md
+    - name: 電子郵件地址原則
+      href: email-address-policies-exchange-2013-help.md
+      items:
+      - name: 電子郵件地址原則程序
+        href: email-address-policy-procedures-exchange-2013-help.md
+        items:
+        - name: 建立電子郵件地址原則
+          href: create-an-email-address-policy-exchange-2013-help.md
+        - name: 使用收件者篩選器來建立電子郵件地址原則
+          href: create-an-email-address-policy-by-using-recipient-filters-exchange-2013-help.md
+        - name: 編輯電子郵件地址原則
+          href: edit-an-email-address-policy-exchange-2013-help.md
+        - name: 移除電子郵件地址原則
+          href: remove-an-email-address-policy-exchange-2013-help.md
+    - name: 離線通訊錄
+      href: offline-address-books-exchange-2013-help.md
+      items:
+      - name: 離線通訊錄程序
+        href: offline-address-book-procedures-exchange-2013-help.md
+        items:
+        - name: 建立離線通訊錄
+          href: create-an-offline-address-book-exchange-2013-help.md
+        - name: 地址清單中新增或移除的通訊清單的離線通訊錄
+          href: add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md
+        - name: 變更預設離線通訊錄
+          href: change-the-default-offline-address-book-exchange-2013-help.md
+        - name: 佈建收件者的離線通訊錄下載
+          href: provision-recipients-for-offline-address-book-downloads-exchange-2013-help.md
+        - name: 移除離線通訊錄
+          href: remove-an-offline-address-book-exchange-2013-help.md
+        - name: 更新離線通訊錄
+          href: update-an-offline-address-book-exchange-2013-help.md
+        - name: 建立離線通訊錄虛擬目錄
+          href: create-an-offline-address-book-virtual-directory-exchange-2013-help.md
+        - name: 變更離線通訊錄產生排程
+          href: change-the-offline-address-book-generation-schedule-exchange-2013-help.md
+        - name: 設定離線通訊錄通訊群組屬性
+          href: configure-offline-address-book-distribution-properties-exchange-2013-help.md
+    - name: 通訊清單
+      href: address-lists-exchange-2013-help.md
+      items:
+      - name: 地址清單程序
+        href: address-list-procedures-exchange-2013-help.md
+        items:
+        - name: 建立通訊清單
+          href: create-an-address-list-exchange-2013-help.md
+        - name: 更新通訊清單
+          href: update-an-address-list-exchange-2013-help.md
+        - name: 使用收件者篩選器來建立通訊清單
+          href: create-an-address-list-by-using-recipient-filters-exchange-2013-help.md
+        - name: 移動通訊清單
+          href: move-an-address-list-exchange-2013-help.md
+        - name: 移除通訊清單
+          href: remove-an-address-list-exchange-2013-help.md
+        - name: 建立全域通訊清單
+          href: create-a-global-address-list-exchange-2013-help.md
+        - name: 設定全域通訊清單屬性
+          href: configure-global-address-list-properties-exchange-2013-help.md
+        - name: 移除全域通訊清單
+          href: remove-a-global-address-list-exchange-2013-help.md
+        - name: 更新全域通訊清單
+          href: update-a-global-address-list-exchange-2013-help.md
+    - name: 階層式通訊錄
+      href: hierarchical-address-books-exchange-2013-help.md
+      items:
+      - name: 啟用或停用階層式通訊錄
+        href: enable-or-disable-hierarchical-address-books-exchange-2013-help.md
+  - name: 共用
+    href: sharing-exchange-2013-help.md
+    items:
+    - name: 同盟
+      href: federation-exchange-2013-help.md
+      items:
+      - name: 同盟信任之信任的根憑證授權
+        href: trusted-root-certification-authorities-for-federation-trusts-exchange-2013-help.md
+      - name: 同盟程序
+        href: federation-procedures-exchange-2013-help.md
+        items:
+        - name: 設定同盟共用
+          href: configure-federated-sharing-exchange-2013-help.md
+        - name: 設定同盟信任
+          href: configure-a-federation-trust-exchange-2013-help.md
+        - name: 管理同盟信任
+          href: manage-a-federation-trust-exchange-2013-help.md
+        - name: 移除同盟信任
+          href: remove-a-federation-trust-exchange-2013-help.md
+        - name: 更新同盟憑證
+          href: renew-the-federation-certificate-exchange-2013-help.md
+        - name: 停用或重新啟用 Exchange 組織的同盟共用
+          href: disable-or-re-enable-federated-sharing-for-your-exchange-organization-exchange-2013-help.md
+        - name: 設定 Exchange 組織之間的同盟共用
+          href: configuring-federated-sharing-between-exchange-organizations-exchange-2013-help.md
+        - name: 設定 Exchange 與 Exchange Online 組織之間的 OAuth 驗證
+          href: configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md
+    - name: 組織關係
+      href: organization-relationships-exchange-2013-help.md
+      items:
+      - name: 建立組織關聯性
+        href: create-an-organization-relationship-exchange-2013-help.md
+      - name: 修改組織關聯性
+        href: modify-an-organization-relationship-exchange-2013-help.md
+      - name: 移除組織關係
+        href: remove-an-organization-relationship-exchange-2013-help.md
+    - name: 共用原則
+      href: sharing-policies-exchange-2013-help.md
+      items:
+      - name: 建立共用原則
+        href: create-a-sharing-policy-exchange-2013-help.md
+      - name: 將共用原則套用至信箱
+        href: apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md
+      - name: 修改、 停用或移除共用原則
+        href: modify-disable-or-remove-a-sharing-policy-exchange-2013-help.md
+      - name: 啟用網際網路行事曆發佈
+        href: enable-internet-calendar-publishing-exchange-2013-help.md
+      - name: 停用網際網路行事曆發佈
+        href: disable-internet-calendar-publishing-exchange-2013-help.md
+  - name: 用戶端和行動裝置
+    href: clients-and-mobile-exchange-2013-help.md
+    items:
+    - name: Outlook 無所不在
+      href: outlook-anywhere-exchange-2013-help.md
+      items:
+      - name: 測試 Outlook 無所不在連線
+        href: test-outlook-anywhere-connectivity-exchange-2013-help.md
+    - name: MAPI over HTTP
+      href: mapi-over-http-exchange-2013-help.md
+    - name: Exchange ActiveSync
+      href: exchange-activesync-exchange-2013-help.md
+      items:
+      - name: Direct Push
+        href: direct-push-exchange-2013-help.md
+      - name: 行動裝置信箱原則
+        href: mobile-device-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: 新增或移除使用者從行動裝置信箱原則
+          href: add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md
+        - name: 建立或修改行動裝置信箱原則
+          href: create-or-modify-a-mobile-device-mailbox-policy-exchange-2013-help.md
+        - name: Windows Phone 和裝置支援行動裝置信箱原則
+          href: supported-mobile-device-mailbox-policies-for-windows-phones-and-devices-exchange-2013-help.md
+      - name: 行動裝置
+        href: mobile-devices-exchange-2013-help.md
+        items:
+        - name: 遠端裝置資料抹除
+          href: remote-device-wipe-exchange-2013-help.md
+        - name: 檢視使用者的行動裝置資訊
+          href: view-mobile-device-information-for-users-exchange-2013-help.md
+        - name: 行動電話與平板功能
+          href: mobile-phone-and-tablet-features-exchange-2013-help.md
+        - name: 在行動電話上執行遠端清除
+          href: perform-a-remote-wipe-on-a-mobile-phone-exchange-2013-help.md
+        - name: 設定行動電話存取電子郵件
+          href: configure-mobile-phones-to-access-email-exchange-2013-help.md
+    - name: POP3 及 IMAP4
+      href: pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md
+      items:
+      - name: 啟動及停止 [POP3 服務
+        href: start-and-stop-the-pop3-services-exchange-2013-help.md
+      - name: 啟動及停止 IMAP4 服務
+        href: start-and-stop-the-imap4-services-exchange-2013-help.md
+      - name: 啟用 POP3
+        href: enable-pop3-in-exchange-2013-exchange-2013-help.md
+      - name: 啟用 Exchange 2016 的 IMAP4
+        href: enable-imap4-in-exchange-2013-exchange-2013-help.md
+      - name: 啟用或停用使用者的 POP3 存取
+        href: enable-or-disable-pop3-access-for-a-user-exchange-2013-help.md
+      - name: 啟用或停用使用者的 IMAP4 存取
+        href: enable-or-disable-imap4-access-for-a-user-exchange-2013-help.md
+      - name: 設定的 POP3 連線限制
+        href: set-connection-limits-for-pop3-exchange-2013-help.md
+      - name: 設定 IMAP4 的連線限制
+        href: set-connection-limits-for-imap4-exchange-2013-help.md
+      - name: 設定的 POP3 連線逾時限制
+        href: set-connection-time-out-limits-for-pop3-exchange-2013-help.md
+      - name: 設定 IMAP4 的連線逾時限制
+        href: set-connection-time-out-limits-for-imap4-exchange-2013-help.md
+      - name: 設定 POP3 行事曆選項
+        href: configure-calendar-options-for-pop3-exchange-2013-help.md
+      - name: 設定 IMAP4 的行事曆選項
+        href: configure-calendar-options-for-imap4-exchange-2013-help.md
+      - name: 設定 POP3 和 IMAP4 訊息擷取格式選項
+        href: configure-pop3-and-imap4-message-retrieval-format-options-exchange-2013-help.md
+      - name: 設定 IP 位址和 POP3 和 IMAP4 存取的連接埠
+        href: configure-ip-addresses-and-ports-for-pop3-and-imap4-access-exchange-2013-help.md
+      - name: 允許使用者在 Outlook Web App 中檢視 POP3、IMAP4 及 SMTP 伺服器設定
+        href: allow-pop3-imap4-and-smtp-server-settings-to-be-viewed-by-end-users-in-outlook-web-app-exchange-2013-help.md
+      - name: POP3 與 IMAP4 通訊協定記錄
+        href: protocol-logging-for-pop3-and-imap4-exchange-2013-help.md
+        items:
+        - name: 設定 POP3 與 IMAP4 通訊協定記錄
+          href: configure-protocol-logging-for-pop3-and-imap4-exchange-2013-help.md
+    - name: ITPro_R4_Stub_79
+      href: outlook-for-ios-and-android-exchange-2013-help.md
+      items:
+      - name: ITPro_R4_Stub_80
+        href: using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
+      - name: Outlook for iOS and Android
+        href: using-basic-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
+        items:
+        - name: 在 Outlook for iOS 及 Android 使用基本驗證的帳戶設定
+          href: account-setup-in-outlook-for-ios-and-android-using-basic-authentication-exchange-2013-help.md
+        - name: Passwords and Security in Outlook for iOS and Android for Exchange Server
+          href: passwords-and-security-in-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
+        - name: 管理裝置的 iOS Outlook 與 Exchange Server for android （英文）
+          href: managing-devices-for-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
+    - name: 用戶端通訊協定管理
+      href: client-protocol-management-exchange-2013-help.md
+      items:
+      - name: 虛擬目錄管理
+        href: virtual-directory-management-exchange-2013-help.md
+        items:
+        - name: Exchange ActiveSync 虛擬目錄的管理工作
+          href: exchange-activesync-virtual-directory-management-tasks-exchange-2013-help.md
+        - name: Exchange 虛擬目錄的預設設定
+          href: default-settings-for-exchange-virtual-directories-exchange-2013-help.md
+    - name: Outlook Web App
+      href: outlook-web-app-exchange-2013-help.md
+      items:
+      - name: Outlook Web App 信箱原則
+        href: outlook-web-app-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: Outlook Web App 信箱原則程序
+          href: outlook-web-app-mailbox-policy-procedures-exchange-2013-help.md
+          items:
+          - name: 建立 Outlook Web App 信箱原則
+            href: create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md
+          - name: 套用或移除信箱上的 Outlook Web App 信箱原則
+            href: apply-or-remove-an-outlook-web-app-mailbox-policy-on-a-mailbox-exchange-2013-help.md
+          - name: 從 Exchange 中移除 Outlook Web App 信箱原則
+            href: remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md
+          - name: 檢視或設定 Outlook Web App 信箱原則屬性
+            href: view-or-configure-outlook-web-app-mailbox-policy-properties-exchange-2013-help.md
+      - name: 將 Outlook Web App 與 Lync Server 的整合
+        href: integrate-outlook-web-app-with-lync-server-exchange-2013-help.md
+      - name: 檢視或設定 Outlook Web App 虛擬目錄
+        href: view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md
+      - name: 簡化 Outlook Web App URL
+        href: simplify-the-outlook-web-app-url-exchange-2013-help.md
+      - name: 建立 Outlook Web App 的佈景主題
+        href: create-a-theme-for-outlook-web-app-exchange-2013-help.md
+      - name: 自訂 Outlook Web App 登入、語言選擇與錯誤頁面
+        href: customize-the-outlook-web-app-sign-in-language-selection-and-error-pages-exchange-2013-help.md
+      - name: 設定裝置的 OWA 的推入通知代理
+        href: configuring-push-notifications-proxying-for-owa-for-devices-exchange-2013-help.md
+      - name: 將 AD FS 宣告式驗證用於 Outlook Web App 和 EAC
+        href: using-ad-fs-claims-based-authentication-with-outlook-web-app-and-eac-exchange-2013-help.md
+      - name: 使用 Outlook Web App 網頁組件
+        href: using-outlook-web-app-web-parts-exchange-2013-help.md
+    - name: MailTips
+      href: mailtips-exchange-2013-help.md
+      items:
+      - name: 啟用或停用郵件提示
+        href: enable-or-disable-mailtips-exchange-2013-help.md
+      - name: 設定您的組織的大型對象大小
+        href: configure-the-large-audience-size-for-your-organization-exchange-2013-help.md
+      - name: 設定收件者的自訂郵件提示
+        href: configure-custom-mailtips-for-recipients-exchange-2013-help.md
+      - name: 透過組織關聯性的郵件提示
+        href: mailtips-over-organization-relationships-exchange-2013-help.md
+        items:
+        - name: 管理郵件提示的組織關係
+          href: manage-mailtips-for-organization-relationships-exchange-2013-help.md
+      - name: 群組計量 」 和 「 郵件提示
+        href: group-metrics-and-mailtips-exchange-2013-help.md
+        items:
+        - name: 設定群組計量
+          href: configure-group-metrics-exchange-2013-help.md
+    - name: 適用於 Outlook 的應用程式
+      href: add-ins-for-outlook-exchange-2013-help.md
+      items:
+      - name: 安裝或移除 Outlook for 貴組織的應用程式
+        href: install-or-remove-add-ins-for-outlook-for-your-organization-exchange-2013-help.md
+      - name: 管理 outlook 的應用程式的使用者存取
+        href: manage-user-access-to-add-ins-for-outlook-exchange-online-help.md
+      - name: 指定系統管理員和使用者可安裝和管理適用於 Outlook 增益集
+        href: specify-the-administrators-and-users-who-can-install-and-manage-add-ins-for-outlook-exchange-2013-help.md
+    - name: 設定 SSL 卸載在 Exchange 2013
+      href: configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md
+  - name: 整合通訊
+    href: unified-messaging-exchange-2013-help.md
+    items:
+    - name: 新的語音信箱功能
+      href: new-voice-mail-features-exchange-2013-help.md
+      items:
+      - name: 語音的結構變更
+        href: voice-architecture-changes-exchange-2013-help.md
+      - name: 整合通訊中的 IPv6 支援
+        href: ipv6-support-in-unified-messaging-exchange-2013-help.md
+      - name: 語音郵件預覽增強功能
+        href: voice-mail-preview-enhancements-exchange-2013-help.md
+      - name: 整合的通訊 cmdlet 更新
+        href: unified-messaging-cmdlet-updates-exchange-2013-help.md
+    - name: 整合通訊的規劃
+      href: planning-for-unified-messaging-exchange-2013-help.md
+    - name: 部署語音信箱和 UM
+      href: deploying-voice-mail-and-um-exchange-2013-help.md
+      items:
+      - name: 部署 Exchange 2013 UM
+        href: deploy-exchange-2013-um-exchange-2013-help.md
+      - name: 檢查清單：部署 Exchange 2013 UM
+        href: checklist-deploy-exchange-2013-um-exchange-2013-help.md
+      - name: 將 Exchange 2010 UM 升級至 Exchange 2013 UM
+        href: upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: 檢查清單：將 Exchange 2010 UM 升級至 Exchange 2013 UM
+        href: checklist-upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: Exchange 2007 UM 升級至 Exchange 2013 UM
+        href: upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: 檢查清單：將 Exchange 2007 UM 升級至 Exchange 2013 UM
+        href: checklist-upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: 部署 Exchange 2013 UM 和 Lync Server 概觀 （英文）
+        href: deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md
+        items:
+        - name: 設定 UM 以搭配 Lync Server
+          href: configure-um-to-work-with-lync-server-exchange-2013-help.md
+        - name: 檢查清單： Lync Server 整合 Exchange 2013 UM
+          href: checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md
+        - name: 與 Office Communications Server 2007 R2 和 Lync Server 共存
+          href: coexistence-with-office-communications-server-2007-r2-and-lync-server-exchange-2013-help.md
+      - name: 部署 UM 憑證
+        href: deploying-certificates-for-um-exchange-2013-help.md
+        items:
+        - name: 部署 UM 程序的憑證
+          href: deploying-certificates-for-um-procedures-exchange-2013-help.md
+          items:
+          - name: 建立 um 憑證
+            href: create-certificates-for-um-exchange-2013-help.md
+          - name: 匯入或匯出 UM 憑證
+            href: import-or-export-certificates-for-um-exchange-2013-help.md
+          - name: 將憑證指派給 UM 及 UM 呼叫路由器服務
+            href: assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md
+    - name: UM 語言、 提示及問候語
+      href: um-languages-prompts-and-greetings-exchange-2013-help.md
+      items:
+      - name: 語音信箱問候語、 宣告、 功能表及提示
+        href: voice-mail-greetings-announcements-menus-and-prompts-exchange-2013-help.md
+      - name: UM 語言、 提示及問候語程序
+        href: um-languages-prompts-and-greetings-procedures-exchange-2013-help.md
+        items:
+        - name: 安裝 UM 語言套件
+          href: install-a-um-language-pack-exchange-2013-help.md
+        - name: 在 [撥號對應表上設定的預設語言
+          href: set-the-default-language-on-a-dial-plan-exchange-2013-help.md
+        - name: 自動語音應答選取的語言
+          href: select-the-language-for-an-auto-attendant-exchange-2013-help.md
+        - name: 移除 UM 語言套件
+          href: remove-a-um-language-pack-exchange-2013-help.md
+        - name: 匯入及匯出的自訂問候語、 宣告、 功能表及提示
+          href: import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md
+        - name: 匯入自訂提示從 Exchange 2007 到 Exchange 2013
+          href: import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md
+        - name: 啟用電話使用者介面使用的自訂提示錄製
+          href: enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md
+    - name: UM 電話系統整合
+      href: telephone-system-integration-with-um-exchange-2013-help.md
+      items:
+      - name: 電話語音概念及元件
+        href: telephony-concepts-and-components-exchange-2013-help.md
+      - name: PBX 與 IP PBX 組態
+        href: pbx-and-ip-pbx-configurations-exchange-2013-help.md
+      - name: UM 連接至電話系統
+        href: connect-um-to-your-telephone-system-exchange-2013-help.md
+        items:
+        - name: Exchange 2013 的電話語音 advisor
+          href: telephony-advisor-for-exchange-2013-exchange-2013-help.md
+        - name: 支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項
+          href: configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md
+        - name: 連線至 UM VoIP 閘道、 IP PBX 或工作階段邊界控制器
+          href: connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md
+        - name: 連線至受支援的 VoIP 閘道的 UM
+          href: connect-um-to-a-supported-voip-gateway-exchange-2013-help.md
+        - name: Connect a VoIP 閘道與 PBX 通訊
+          href: connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md
+        - name: 支援工作階段邊界控制器的組態注意事項
+          href: configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md
+    - name: 連線至您的電話網路的語音郵件系統
+      href: connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md
+      items:
+      - name: UM 撥號對應表
+        href: um-dial-plans-exchange-2013-help.md
+        items:
+        - name: 音訊轉碼器
+          href: audio-codecs-exchange-2013-help.md
+        - name: 次要撥號對應表
+          href: secondary-dial-plans-exchange-2013-help.md
+        - name: UM 撥號對應表規劃程序
+          href: um-dial-plan-procedures-exchange-2013-help.md
+          items:
+          - name: 建立 UM 撥號對應表
+            href: create-a-um-dial-plan-exchange-2013-help.md
+          - name: 管理 UM 撥號對應表
+            href: manage-a-um-dial-plan-exchange-2013-help.md
+          - name: 將信箱和用戶端存取伺服器新增至 SIP URI 撥號對應表
+            href: add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md
+          - name: 從 SIP URI 撥號對應表中移除 Mailbox 和 Client Access server
+            href: remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md
+          - name: 變更的音訊轉碼器
+            href: change-the-audio-codec-exchange-2013-help.md
+          - name: 設定最大的通話時間
+            href: configure-the-maximum-call-duration-exchange-2013-help.md
+          - name: 設定最大錄製持續時間
+            href: configure-the-maximum-recording-duration-exchange-2013-help.md
+          - name: 設定錄製閒置逾時值
+            href: configure-the-recording-idle-time-out-value-exchange-2013-help.md
+          - name: 設定 VoIP 安全性設定
+            href: configure-the-voip-security-setting-exchange-2013-help.md
+          - name: 設定撥號對應表具有相似名稱的使用者
+            href: configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md
+          - name: 刪除 UM 撥號對應表
+            href: delete-a-um-dial-plan-exchange-2013-help.md
+      - name: UM IP 閘道
+        href: um-ip-gateways-exchange-2013-help.md
+        items:
+        - name: UM IP 閘道程序
+          href: um-ip-gateway-procedures-exchange-2013-help.md
+          items:
+          - name: 建立 UM IP 閘道器
+            href: create-a-um-ip-gateway-exchange-2013-help.md
+          - name: 管理 UM IP 閘道器
+            href: manage-a-um-ip-gateway-exchange-2013-help.md
+          - name: 啟用 UM IP 閘道
+            href: enable-a-um-ip-gateway-exchange-2013-help.md
+          - name: 停用 UM IP 閘道器
+            href: disable-a-um-ip-gateway-exchange-2013-help.md
+          - name: 設定的完整的網域名稱
+            href: configure-a-fully-qualified-domain-name-exchange-2013-help.md
+          - name: 設定 IP 位址
+            href: configure-the-ip-address-exchange-2013-help.md
+          - name: 設定 [聆聽連接埠
+            href: configure-the-listening-port-exchange-2013-help.md
+          - name: 刪除 UM IP 閘道器
+            href: delete-a-um-ip-gateway-exchange-2013-help.md
+      - name: UM 群組搜尋
+        href: um-hunt-groups-exchange-2013-help.md
+        items:
+        - name: UM 群組搜尋的程序
+          href: um-hunt-group-procedures-exchange-2013-help.md
+          items:
+          - name: 建立 UM 群組搜尋
+            href: create-a-um-hunt-group-exchange-2013-help.md
+          - name: 檢視 UM 群組搜尋
+            href: view-a-um-hunt-group-exchange-2013-help.md
+          - name: 刪除 UM 群組搜尋
+            href: delete-a-um-hunt-group-exchange-2013-help.md
+      - name: UM 服務
+        href: um-services-exchange-2013-help.md
+        items:
+        - name: UM 通訊協定、 連接埠和服務
+          href: um-protocols-ports-and-services-exchange-2013-help.md
+        - name: UM 服務程序
+          href: um-services-procedures-exchange-2013-help.md
+          items:
+          - name: 管理信箱伺服器上的 UM 設定
+            href: manage-um-settings-on-a-mailbox-server-exchange-2013-help.md
+          - name: 管理的用戶端存取伺服器上的 UM 設定
+            href: manage-um-settings-on-a-client-access-server-exchange-2013-help.md
+          - name: 允許或防止自動答錄服務在信箱伺服器上
+            href: allow-or-prevent-call-answering-on-a-mailbox-server-exchange-2013-help.md
+          - name: 允許或防止自動答錄服務用戶端存取伺服器上
+            href: allow-or-prevent-call-answering-on-a-client-access-server-exchange-2013-help.md
+          - name: 設定信箱伺服器上的啟動模式
+            href: configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md
+          - name: 設定用戶端存取伺服器上的啟動模式
+            href: configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md
+          - name: 在信箱伺服器上設定來電的數目
+            href: configure-the-number-of-incoming-calls-on-a-mailbox-server-exchange-2013-help.md
+          - name: 啟動 Microsoft Exchange 整合通訊服務
+            href: start-the-microsoft-exchange-unified-messaging-service-exchange-2013-help.md
+          - name: 停止 Microsoft Exchange 整合通訊服務
+            href: stop-the-microsoft-exchange-unified-messaging-service-exchange-2013-help.md
+          - name: 啟動 Microsoft Exchange Unified Messaging Call Router 服務
+            href: start-the-microsoft-exchange-unified-messaging-call-router-service-exchange-2013-help.md
+          - name: 停止 Microsoft Exchange Unified Messaging Call Router 服務
+            href: stop-the-microsoft-exchange-unified-messaging-call-router-service-exchange-2013-help.md
+          - name: 用戶端存取伺服器上設定 TCP 聆聽連接埠
+            href: set-the-tcp-listening-port-on-a-client-access-server-exchange-2013-help.md
+          - name: 用戶端存取伺服器上設定 TLS 聆聽連接埠
+            href: set-the-tls-listening-port-on-a-client-access-server-exchange-2013-help.md
+    - name: 自動接聽和路由傳送來電
+      href: automatically-answer-and-route-incoming-calls-exchange-2013-help.md
+      items:
+      - name: DTMF 介面
+        href: dtmf-interface-exchange-2013-help.md
+      - name: UM 自動語音應答程序
+        href: um-auto-attendant-procedures-exchange-2013-help.md
+        items:
+        - name: 設定 UM 自動語音應答
+          href: set-up-a-um-auto-attendant-exchange-2013-help.md
+          items:
+          - name: 建立 UM 自動語音應答
+            href: create-a-um-auto-attendant-exchange-2013-help.md
+          - name: 新增自動語音應答的分機號碼
+            href: add-an-auto-attendant-extension-number-exchange-2013-help.md
+          - name: 設定營業時間
+            href: configure-business-hours-exchange-2013-help.md
+          - name: 若要建立假日排程
+            href: create-a-holiday-schedule-exchange-2013-help.md
+          - name: 輸入企業名稱
+            href: enter-a-business-name-exchange-2013-help.md
+          - name: 設定商務位置
+            href: set-a-business-location-exchange-2013-help.md
+          - name: 設定時間的時區
+            href: configure-the-time-zone-exchange-2013-help.md
+          - name: 啟用自訂的上班時間問候語
+            href: enable-a-customized-business-hours-greeting-exchange-2013-help.md
+          - name: 啟用自訂的上班時間功能表提示
+            href: enable-a-customized-business-hours-menu-prompt-exchange-2013-help.md
+          - name: 啟用自訂非上班時間問候語
+            href: enable-a-customized-non-business-hours-greeting-exchange-2013-help.md
+          - name: 啟用自訂非上班時間功能表提示
+            href: enable-a-customized-non-business-hours-menu-prompt-exchange-2013-help.md
+          - name: 啟用資訊的宣告
+            href: enable-an-informational-announcement-exchange-2013-help.md
+          - name: 建立功能表導覽
+            href: create-menu-navigation-exchange-2013-help.md
+          - name: 建立營業時間導覽功能表
+            href: create-business-hours-navigation-menus-exchange-2013-help.md
+          - name: 建立非上班時間導覽功能表
+            href: create-non-business-hours-navigation-menus-exchange-2013-help.md
+        - name: 管理 UM 自動語音應答
+          href: manage-a-um-auto-attendant-exchange-2013-help.md
+        - name: 設定 DTMF 後援自動語音應答
+          href: configure-a-dtmf-fallback-auto-attendant-exchange-2013-help.md
+        - name: 啟用 UM 自動語音應答
+          href: enable-a-um-auto-attendant-exchange-2013-help.md
+        - name: 停用 UM 自動語音應答
+          href: disable-a-um-auto-attendant-exchange-2013-help.md
+        - name: 刪除 UM 自動語音應答
+          href: delete-a-um-auto-attendant-exchange-2013-help.md
+        - name: 啟用或停用自動語音辨識
+          href: enable-or-disable-automatic-speech-recognition-exchange-2013-help.md
+        - name: 啟用或防止從自動語音應答轉接通話
+          href: enable-or-prevent-transferring-calls-from-an-auto-attendant-exchange-2013-help.md
+        - name: 啟用或停用傳送給使用者的語音訊息
+          href: enable-or-disable-sending-voice-messages-to-users-exchange-2013-help.md
+        - name: 啟用或停用目錄查閱服務
+          href: enable-or-disable-directory-lookups-exchange-2013-help.md
+        - name: 設定可連絡的使用者群組
+          href: configure-the-group-of-users-that-can-be-contacted-exchange-2013-help.md
+        - name: 設定具有相似名稱的使用者自動語音應答
+          href: configure-an-auto-attendant-for-users-who-have-similar-names-exchange-2013-help.md
+    - name: 設定使用者的語音信箱
+      href: set-up-voice-mail-for-users-exchange-2013-help.md
+      items:
+      - name: UM 信箱原則
+        href: um-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: UM 信箱原則程序
+          href: um-mailbox-policy-procedures-exchange-2013-help.md
+          items:
+          - name: 建立 UM 信箱原則
+            href: create-a-um-mailbox-policy-exchange-2013-help.md
+          - name: 管理 UM 信箱原則
+            href: manage-a-um-mailbox-policy-exchange-2013-help.md
+          - name: 刪除 UM 信箱原則
+            href: delete-a-um-mailbox-policy-exchange-2013-help.md
+      - name: 使用者的語音信箱
+        href: voice-mail-for-users-exchange-2013-help.md
+        items:
+        - name: 擁有郵件功能的語音使用者程序
+          href: voice-mail-enabled-user-procedures-exchange-2013-help.md
+          items:
+          - name: 啟用使用者的語音信箱
+            href: enable-a-user-for-voice-mail-exchange-2013-help.md
+          - name: 當使用者已啟用語音信箱時傳送電子郵件訊息中包含的文字
+            href: include-text-with-the-email-message-sent-when-a-user-is-enabled-for-voice-mail-exchange-2013-help.md
+          - name: 管理使用者的語音郵件設定
+            href: manage-voice-mail-settings-for-a-user-exchange-2013-help.md
+          - name: UM 信箱原則指派
+            href: assign-a-um-mailbox-policy-exchange-2013-help.md
+          - name: 變更 UM 撥號對應表
+            href: change-the-um-dial-plan-exchange-2013-help.md
+          - name: 啟用未啟用 UM 之使用者的通話
+            href: enable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+          - name: 停用未啟用 UM 之使用者的電話
+            href: disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+          - name: 讓來電者沒有留下語音訊息的來電者識別碼
+            href: allow-callers-without-a-caller-id-to-leave-a-voice-message-exchange-2013-help.md
+          - name: 時接收語音訊息傳送的電子郵件訊息中包含的文字
+            href: include-text-with-the-email-message-sent-when-a-voice-message-is-received-exchange-2013-help.md
+          - name: 防止來電者沒有來電者識別碼留下語音訊息
+            href: prevent-callers-without-a-caller-id-from-leaving-a-voice-message-exchange-2013-help.md
+          - name: 停用使用者的語音信箱
+            href: disable-voice-mail-for-a-user-exchange-2013-help.md
+          - name: 變更的 SIP 位址
+            href: change-a-sip-address-exchange-2013-help.md
+          - name: 變更分機號碼
+            href: change-an-extension-number-exchange-2013-help.md
+          - name: 新增 SIP 位址
+            href: add-a-sip-address-exchange-2013-help.md
+          - name: 移除 SIP 位址
+            href: remove-a-sip-address-exchange-2013-help.md
+          - name: 新增分機號碼
+            href: add-an-extension-number-exchange-2013-help.md
+          - name: 移除分機號碼
+            href: remove-an-extension-number-exchange-2013-help.md
+          - name: 變更為 E.164 號碼
+            href: change-an-e-164-number-exchange-2013-help.md
+          - name: 新增為 E.164 號碼
+            href: add-an-e-164-number-exchange-2013-help.md
+          - name: 移除 E.164 號碼
+            href: remove-an-e-164-number-exchange-2013-help.md
+    - name: 設定用戶端語音信箱功能
+      href: set-up-client-voice-mail-features-exchange-2013-help.md
+      items:
+      - name: 設定 Outlook 語音存取
+        href: setting-up-outlook-voice-access-exchange-2013-help.md
+        items:
+        - name: Outlook 語音存取命令
+          href: outlook-voice-access-commands-exchange-2013-help.md
+        - name: 隱藏 Outlook 語音存取功能表
+          href: navigating-menus-with-outlook-voice-access-exchange-2013-help.md
+        - name: 在電話上播放
+          href: play-on-phone-exchange-2013-help.md
+        - name: Outlook 語音存取程序
+          href: outlook-voice-access-procedures-exchange-2013-help.md
+          items:
+          - name: 啟用或停用使用者的 Outlook 語音存取
+            href: enable-or-disable-outlook-voice-access-for-users-exchange-2013-help.md
+          - name: 設定 Outlook 語音存取號碼
+            href: configure-an-outlook-voice-access-number-exchange-2013-help.md
+          - name: 停用的 Outlook 語音存取使用者所選取的功能
+            href: disable-selected-features-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: 設定 Outlook 語音存取使用者信箱功能
+            href: set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: 設定 Outlook 語音存取使用者信箱功能
+            href: set-mailbox-features-for-an-outlook-voice-access-user-exchange-2013-help.md
+          - name: 啟用或停用 Outlook 語音存取使用者的自動語音辨識
+            href: enable-or-disable-automatic-speech-recognition-for-an-outlook-voice-access-user-exchange-2013-help.md
+          - name: 啟用 Outlook Voice Access 使用者的宣告資訊
+            href: enable-an-informational-announcement-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: 啟用 Outlook 語音存取使用者的自訂的問候語
+            href: enable-a-customized-greeting-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: 啟用或停用 Outlook 語音存取使用者在電話上播放
+            href: enable-or-disable-play-on-phone-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: 啟用或停用從 Outlook 語音存取傳送語音訊息
+            href: enable-or-disable-sending-voice-messages-from-outlook-voice-access-exchange-2013-help.md
+          - name: 啟用或防止從 Outlook 語音存取轉接通話
+            href: enable-or-prevent-transferring-calls-from-outlook-voice-access-exchange-2013-help.md
+          - name: 設定 Outlook 語音存取使用者連入的使用者群組
+            href: configure-the-group-of-users-that-outlook-voice-access-users-can-contact-exchange-2013-help.md
+          - name: 設定 Outlook 語音存取使用者要搜尋的主要方法
+            href: configure-the-primary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+          - name: 設定 Outlook 語音存取使用者要搜尋的次要方法
+            href: configure-the-secondary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+          - name: Outlook 語音存取使用者中斷連線才能設定登入失敗的次數
+            href: configure-the-number-of-sign-in-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+          - name: Outlook 語音存取使用者中斷連線之前設定輸入失敗的次數
+            href: configure-the-number-of-input-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+          - name: 設定 Outlook 語音存取使用者的個人問候語上的限制
+            href: configure-the-limit-on-personal-greetings-for-outlook-voice-access-users-exchange-2013-help.md
+      - name: 允許語音郵件使用者可將來電轉接
+        href: allow-voice-mail-users-to-forward-calls-exchange-2013-help.md
+        items:
+        - name: 轉接通話程序
+          href: forwarding-calls-procedures-exchange-2013-help.md
+          items:
+          - name: 允許或防止使用者建立通話自動答錄服務規則
+            href: allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md
+          - name: 允許或防止使用者在相同的 UM 信箱原則建立通話自動答錄服務規則
+            href: allow-or-prevent-users-in-the-same-um-mailbox-policy-from-creating-call-answering-rules-exchange-2013-help.md
+          - name: 建立自動答錄規則
+            href: create-a-call-answering-rule-exchange-2013-help.md
+          - name: 檢視及管理自動答錄規則
+            href: view-and-manage-a-call-answering-rule-exchange-2013-help.md
+          - name: 啟用或停用自動答錄規則的使用者
+            href: enable-or-disable-a-call-answering-rule-for-a-user-exchange-2013-help.md
+          - name: 移除自動答錄規則的使用者
+            href: remove-a-call-answering-rule-for-a-user-exchange-2013-help.md
+      - name: 允許使用者撥
+        href: allow-users-to-make-calls-exchange-2013-help.md
+        items:
+        - name: 撥號代碼、電話首碼及電話號碼格式
+          href: dial-codes-number-prefixes-and-number-formats-exchange-2013-help.md
+        - name: 讓使用者能夠進行的通話程序
+          href: allowing-users-to-make-calls-procedures-exchange-2013-help.md
+          items:
+          - name: 啟用 UM IP 閘道器上的撥出電話
+            href: enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
+          - name: 停用 UM IP 閘道器上的撥出電話
+            href: disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
+          - name: 設定撥號代碼
+            href: configure-dial-codes-exchange-2013-help.md
+          - name: 建立使用者的撥號規則
+            href: create-dialing-rules-for-users-exchange-2013-help.md
+          - name: 授權使用撥號規則的通話
+            href: authorize-calls-using-dialing-rules-exchange-2013-help.md
+            items:
+            - name: 自動語音應答來電者的授權的通話
+              href: authorize-calls-for-auto-attendant-callers-exchange-2013-help.md
+            - name: 在 [撥號對應表授權之使用者的通話
+              href: authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md
+            - name: 授權的使用者群組的電話
+              href: authorize-calls-for-a-group-of-users-exchange-2013-help.md
+      - name: 允許使用者查看將語音郵件文字記錄
+        href: allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md
+        items:
+        - name: 語音郵件預覽顧問
+          href: voice-mail-preview-advisor-exchange-2013-help.md
+        - name: 語音郵件預覽程序
+          href: voice-mail-preview-procedures-exchange-2013-help.md
+          items:
+          - name: 設定使用者的語音郵件預覽合作夥伴服務
+            href: configure-voice-mail-preview-partner-services-for-users-exchange-2013-help.md
+            items:
+            - name: 設定語音郵件預覽協力廠商地址
+              href: set-the-voice-mail-preview-partner-address-exchange-2013-help.md
+            - name: 設定語音郵件預覽協力廠商識別碼
+              href: set-the-voice-mail-preview-partner-id-exchange-2013-help.md
+            - name: 設定語音郵件預覽協力廠商的最大郵件持續時間
+              href: set-the-maximum-message-duration-for-a-voice-mail-preview-partner-exchange-2013-help.md
+            - name: 設定語音郵件預覽協力廠商的最大傳遞延遲時間
+              href: set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner-exchange-2013-help.md
+          - name: 為使用者啟用語音郵件預覽
+            href: enable-voice-mail-preview-for-users-exchange-2013-help.md
+          - name: 停用使用者的語音郵件預覽
+            href: disable-voice-mail-preview-for-users-exchange-2013-help.md
+      - name: 啟用語音信箱使用者接收傳真
+        href: enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md
+        items:
+        - name: 傳真 advisor Exchange UM
+          href: fax-advisor-for-exchange-um-exchange-2013-help.md
+        - name: 設定傳入傳真
+          href: setting-up-incoming-faxing-exchange-2013-help.md
+          items:
+          - name: 傳真程序
+            href: faxing-procedures-exchange-2013-help.md
+            items:
+            - name: 設定協力廠商傳真伺服器 URI 允許傳真
+              href: set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md
+            - name: 接收傳真郵件時傳送的電子郵件訊息中包含的文字
+              href: include-text-with-the-email-message-sent-when-a-fax-message-is-received-exchange-2013-help.md
+            - name: 允許使用者接收傳真] 相同的撥號計劃中
+              href: allow-users-in-the-same-dial-plan-to-receive-faxes-exchange-2013-help.md
+            - name: 防止使用者在同一個撥號對應表中接收傳真
+              href: prevent-users-in-the-same-dial-plan-from-receiving-faxes-exchange-2013-help.md
+            - name: 啟用的一組使用者的傳真功能
+              href: enable-faxing-for-a-group-of-users-exchange-2013-help.md
+            - name: 停用的使用者群組傳真
+              href: disable-faxing-for-a-group-of-users-exchange-2013-help.md
+            - name: 讓使用者接收傳真
+              href: enable-a-user-to-receive-faxes-exchange-2013-help.md
+            - name: 防止使用者接收傳真
+              href: prevent-a-user-from-receiving-faxes-exchange-2013-help.md
+      - name: 保護語音信箱
+        href: protect-voice-mail-exchange-2013-help.md
+        items:
+        - name: 受保護的語音信箱程序
+          href: protected-voice-mail-procedures-exchange-2013-help.md
+          items:
+          - name: 從已驗證的來電者設定受保護的語音信箱
+            href: configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md
+          - name: 從未經過驗證的來電者設定受保護的語音信箱
+            href: configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help.md
+          - name: 啟用或停用受保護的語音訊息的多媒體播放
+            href: enable-or-disable-multimedia-playback-of-protected-voice-messages-exchange-2013-help.md
+          - name: 指定要顯示的電子郵件用戶端不支援 Windows Rights Management 的文字
+            href: specify-the-text-to-display-for-email-clients-that-don-t-support-windows-rights-management-exchange-2013-help.md
+      - name: 允許郵件等待指示器
+        href: allow-message-waiting-indicator-exchange-2013-help.md
+        items:
+        - name: 允許郵件等待指示器程序
+          href: allow-message-waiting-indicator-procedures-exchange-2013-help.md
+          items:
+          - name: 允許郵件等待指示器 (MWI) 上的 UM IP 閘道
+            href: allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md
+          - name: 防止訊息等待指示器 (MWI) 上的 UM IP 閘道
+            href: prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md
+          - name: 為使用者啟用訊息等待指示器 (MWI)
+            href: enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+          - name: 停用使用者訊息等待指示器 (MWI)
+            href: disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+          - name: 啟用未接的來電通知的使用者
+            href: enable-missed-call-notifications-for-a-user-exchange-2013-help.md
+          - name: 停用使用者未接的來電的通知
+            href: disable-missed-call-notifications-for-a-user-exchange-2013-help.md
+    - name: 設定 Outlook 語音存取 PIN 安全性
+      href: set-outlook-voice-access-pin-security-exchange-2013-help.md
+      items:
+      - name: PIN 安全性程序
+        href: pin-security-procedures-exchange-2013-help.md
+        items:
+        - name: 設定 Outlook 語音存取 PIN 原則
+          href: set-outlook-voice-access-pin-policies-exchange-2013-help.md
+        - name: 重設語音信箱 pin 碼
+          href: reset-a-voice-mail-pin-exchange-2013-help.md
+        - name: 擷取語音信箱的 PIN 資訊
+          href: retrieve-voice-mail-pin-information-exchange-2013-help.md
+        - name: 當 PIN 會重設時傳送電子郵件訊息中包含的文字
+          href: include-text-with-the-email-message-sent-when-a-pin-is-reset-exchange-2013-help.md
+        - name: 設定語音信箱的最小 PIN 長度
+          href: set-the-minimum-pin-length-for-voice-mail-exchange-2013-help.md
+        - name: 設定語音信箱的 PIN 存留期
+          href: set-the-pin-lifetime-for-voice-mail-exchange-2013-help.md
+        - name: 設定舊版的語音信箱 Pin 回收的數目
+          href: set-the-number-of-previous-voice-mail-pins-to-recycle-exchange-2013-help.md
+        - name: 停用一般的語音信箱的 PIN 模式
+          href: disable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+        - name: 啟用語音信箱的常見 PIN 模式
+          href: enable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+        - name: 設定 pin 碼重設語音信箱前的登入失敗的次數
+          href: set-the-number-of-sign-in-failures-before-a-voice-mail-pin-is-reset-exchange-2013-help.md
+        - name: 語音郵件使用者鎖定之前設定登入失敗的次數
+          href: set-the-number-of-sign-in-failures-before-a-voice-mail-user-is-locked-out-exchange-2013-help.md
+        - name: 啟用 PIN 較不登入的語音信箱
+          href: enable-pin-less-sign-ins-for-voice-mail-exchange-2013-help.md
+    - name: 針對語音信箱通話執行的報告
+      href: run-reports-for-voice-mail-calls-exchange-2013-help.md
+      items:
+      - name: UM 報告程序
+        href: um-reports-procedures-exchange-2013-help.md
+        items:
+        - name: 檢閱您組織中的語音信箱通話
+          href: review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md
+        - name: 檢閱使用者的語音信箱通話
+          href: review-the-voice-mail-calls-for-a-user-exchange-2013-help.md
+        - name: 調查組織中的語音通話的音訊品質
+          href: investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md
+        - name: 調查的使用者的語音通話的音訊品質
+          href: investigate-the-audio-quality-of-voice-calls-for-a-user-exchange-2013-help.md
+        - name: 解譯語音信箱通話記錄
+          href: interpret-voice-mail-call-records-exchange-2013-help.md
+    - name: 測試及疑難排解語音信箱
+      href: test-and-troubleshoot-voice-mail-exchange-2013-help.md
+      items:
+      - name: 測試及疑難排解與 UM 疑難排解工具
+        href: testing-and-troubleshooting-with-the-um-troubleshooting-tool-exchange-2013-help.md
+        items:
+        - name: 了解 Exchange UM 疑難排解工具
+          href: learn-about-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+        - name: 在 Windows 7 或 Windows 8 上執行 Exchange UM 疑難排解工具
+          href: run-the-exchange-um-troubleshooting-tool-on-windows-7-or-windows-8-exchange-2013-help.md
+        - name: 設定 Exchange UM 疑難排解工具搭配使用的認證
+          href: set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+        - name: 安裝 Exchange UM 疑難排解工具
+          href: install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+      - name: 利用 Test-umconnectivity 指令程式測試及疑難排解
+        href: testing-and-troubleshooting-with-the-test-umconnectivity-cmdlet-exchange-2013-help.md
+        items:
+        - name: 測試 UM 作業
+          href: test-um-operation-exchange-2013-help.md
+        - name: 測試 UM 與 VoIP 閘道和 Pbx 的連線
+          href: test-um-connectivity-to-voip-gateways-and-pbxs-exchange-2013-help.md
+    - name: UM 和語音郵件術語
+      href: um-and-voice-mail-terminology-exchange-2013-help.md
+  - name: Mailbox 和 Client Access server
+    href: mailbox-and-client-access-servers-exchange-2013-help.md
+    items:
+    - name: 信箱伺服器
+      href: mailbox-server-exchange-2013-help.md
+      items:
+      - name: 管理的儲存區
+        href: managed-store-exchange-2013-help.md
+        items:
+        - name: 受管理的儲存限制
+          href: managed-store-limits-exchange-2013-help.md
+      - name: 管理 Exchange 2013 中的信箱資料庫
+        href: manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: 設定信箱資料庫的循環記錄
+          href: configure-circular-logging-for-a-mailbox-database-exchange-2013-help.md
+        - name: 了解 Exchange 2013 分頁清空
+          href: understanding-exchange-2013-page-zeroing-exchange-2013-help.md
+      - name: Exchange 搜尋
+        href: exchange-search-exchange-2013-help.md
+        items:
+        - name: 依 Exchange 搜尋編製索引的檔案格式
+          href: file-formats-indexed-by-exchange-search-exchange-2013-help.md
+        - name: 依 Exchange 搜尋編製索引編製郵件內容
+          href: message-properties-indexed-by-exchange-search-exchange-2013-help.md
+        - name: Exchange 搜尋程序
+          href: exchange-search-procedures-exchange-2013-help.md
+          items:
+          - name: 停用或啟用 Exchange 搜尋
+            href: disable-or-enable-exchange-search-exchange-2013-help.md
+          - name: 診斷 Exchange 搜尋問題
+            href: diagnose-exchange-search-issues-exchange-2013-help.md
+          - name: 重新植入搜尋類別目錄
+            href: reseed-the-search-catalog-exchange-2013-help.md
+      - name: 在 Exchange 2013 移動信箱
+        href: mailbox-moves-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: 管理內部移動
+          href: manage-on-premises-moves-exchange-2013-help.md
+        - name: 將 Exchange 2010 系統信箱移至 Exchange 2013
+          href: move-the-exchange-2010-system-mailbox-to-exchange-2013-exchange-2013-help.md
+        - name: 準備跨樹系移動要求的信箱
+          href: prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md
+          items:
+          - name: 使用命令介面中準備 MoveRequest.ps1 指令碼的跨樹系移動準備信箱
+            href: prepare-mailboxes-for-cross-forest-moves-using-the-prepare-moverequest-ps1-script-in-the-shell-exchange-2013-help.md
+          - name: 準備使用程式碼範例的跨樹系移動信箱
+            href: prepare-mailboxes-for-cross-forest-moves-using-sample-code-exchange-2013-help.md
+        - name: 啟用遠端移動 MRS Proxy 端點
+          href: enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help.md
+        - name: 信箱移轉的 CSV 檔案
+          href: csv-files-for-mailbox-migration-exchange-2013-help.md
+      - name: 信箱匯入及匯出要求
+        href: mailbox-import-and-export-requests-exchange-2013-help.md
+      - name: Recreating arbitration mailboxes
+        href: recreating-arbitration-mailboxes-exchange-2013-help.md
+      - name: 可復原的項目資料夾
+        href: recoverable-items-folder-exchange-2013-help.md
+        items:
+        - name: 清除 [可復原的項目] 資料夾
+          href: clean-up-the-recoverable-items-folder-exchange-2013-help.md
+        - name: 設定已刪除的項目保留及可復原的項目配額
+          href: configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help.md
+        - name: 復原刪除的郵件使用者的信箱
+          href: recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md
+        - name: 取得可復原的項目資料夾統計資料
+          href: get-recoverable-items-folder-statistics-exchange-2013-help.md
+    - name: Client Access server
+      href: client-access-server-exchange-2013-help.md
+      items:
+      - name: Exchange Remote Connectivity Analyzer
+        href: exchange-remote-connectivity-analyzer-exchange-2013-help.md
+        items:
+        - name: 協助識別 「 我的行動裝置 （自動檢查） 上的傳送/接收電子郵件的問題
+          href: help-identify-my-issue-with-sending-receiving-email-on-a-mobile-device-automatic-checks-exchange-2013-help.md
+        - name: 協助識別 「 我的 Office Outlook （自動檢查） 中的傳送/接收電子郵件的問題
+          href: help-identify-my-issue-with-sending-receiving-email-in-office-outlook-automatic-checks-exchange-2013-help.md
+        - name: Azure： 協助識別 「 我的問題與自動檢查層 DNS 記錄
+          href: azure-help-identify-my-issue-with-automatic-checks-dns-records-exchange-2013-help.md
+        - name: 協助識別 「 我的問題自動檢查-3rd 廠商工具
+          href: help-identify-my-issues-with-automatic-checks-3rd-party-tools-exchange-2013-help.md
+        - name: 協助識別 「 我的自動檢查-Active Directory 的問題
+          href: help-identify-my-issue-with-automatic-checks-active-directory-exchange-2013-help.md
+        - name: 協助 Idenfity 自動檢查-將網域新增我問題
+          href: help-idenfity-my-issue-with-automatic-checks-adding-domains-exchange-2013-help.md
+        - name: 協助識別自動檢查-SSO 我問題
+          href: help-identify-my-issue-with-automatic-checks-sso-exchange-2013-help.md
+        - name: 協助識別 「 我的自動檢查-配額的問題
+          href: help-identify-my-issue-with-automatic-checks-quota-exchange-2013-help.md
+        - name: 協助識別 「 我的自動檢查-Office 部署的問題
+          href: help-identify-my-issue-with-automatic-checks-deploying-office-exchange-2013-help.md
+        - name: 協助識別 「 我的自動檢查-移轉問題
+          href: help-identify-my-issue-with-automatic-checks-migration-exchange-2013-help.md
+        - name: 協助識別 「 我的自動檢查-目錄同步作業問題
+          href: help-identify-my-issue-with-automatic-checks-directory-synchronization-exchange-2013-help.md
+      - name: Exchange 2013 用戶端存取伺服器組態
+        href: exchange-2013-client-access-server-configuration-exchange-2013-help.md
+      - name: 自動探索服務
+        href: autodiscover-service-for-exchange-2013.md
+      - name: 負載平衡
+        href: load-balancing-exchange-2013-help.md
+      - name: 設定負載平衡的 Client Access server 的 Kerberos 驗證
+        href: configuring-kerberos-authentication-for-load-balanced-client-access-servers-exchange-2013-help.md
+      - name: 在命令介面中使用 RollAlternateserviceAccountCredential.ps1 指令碼
+        href: using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md
+        items:
+        - name: 疑難排解 RollAlternateServiceAccountCredential.ps1 指令碼
+          href: troubleshooting-the-rollalternateserviceaccountcredential-ps1-script-exchange-2013-help.md
+      - name: 數位憑證和 SSL
+        href: digital-certificates-and-ssl-exchange-2013-help.md
+        items:
+        - name: 建立數位憑證要求
+          href: create-a-digital-certificate-request-exchange-2013-help.md
+        - name: Exchange 2013 憑證管理 UI
+          href: exchange-2013-certificate-management-ui-exchange-2013-help.md
+      - name: 設定用戶端特定的郵件大小限制
+        href: configure-client-specific-message-size-limits-exchange-2013-help.md
+      - name: Exchange 2013 中的可用性服務
+        href: availability-service-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: 設定跨樹系拓撲的可用性服務
+          href: configure-the-availability-service-for-cross-forest-topologies-exchange-2013-help.md
+  - name: Edge Transport Server
+    href: edge-transport-servers-exchange-2013-help.md
+    items:
+    - name: Edge 訂閱
+      href: edge-subscriptions-exchange-2013-help.md
+      items:
+      - name: EdgeSync 複寫資料
+        href: edgesync-replication-data-exchange-2013-help.md
+      - name: Edge 訂閱認證
+        href: edge-subscription-credentials-exchange-2013-help.md
+      - name: 管理 Edge 訂閱
+        href: manage-edge-subscriptions-exchange-2013-help.md
+      - name: 修改 AD LDS 組態
+        href: modify-ad-lds-configuration-exchange-2013-help.md
+      - name: 手動設定 Edge Transport server 郵件流程
+        href: manually-configure-edge-transport-server-mail-flow-exchange-2013-help.md
+      - name: 透過訂閱的 Edge Transport Server 設定網際網路郵件流程
+        href: configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md
+      - name: 不使用 EdgeSync 設定 Edge Transport server 到網際網路郵件流程
+        href: configure-internet-mail-flow-through-an-edge-transport-server-without-using-edgesync-exchange-2013-help.md
+      - name: Edge Transport Server 規劃
+        href: edge-transport-server-planning-exchange-2013-help.md
+    - name: Edge Transport server 複製的組態
+      href: edge-transport-server-cloned-configuration-exchange-2013-help.md
+      items:
+      - name: 使用複製的組態設定 Edge Transport server
+        href: configure-edge-transport-server-using-cloned-configuration-exchange-2013-help.md
+    - name: 使用 Exchange 2010 或 2007 Edge Transport server 在 Exchange 2013
+      href: use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md
+    - name: 地址修正 Edge Transport server 上
+      href: address-rewriting-on-edge-transport-servers-exchange-2013-help.md
+      items:
+      - name: 管理 Edge Transport server 上的地址修正
+        href: manage-address-rewriting-on-edge-transport-servers-exchange-2013-help.md
+      - name: 匯入地址修正 Edge Transport server 上的項目
+        href: import-address-rewrite-entries-on-edge-transport-servers-exchange-2013-help.md
+  - name: 高可用性和站台恢復
+    href: high-availability-and-site-resilience-exchange-2013-help.md
+    items:
+    - name: 變更至與舊版不同的高可用性與站台回復性
+      href: changes-to-high-availability-and-site-resilience-over-previous-versions-exchange-2013-help.md
+    - name: 資料庫可用性群組 (DAGs)
+      href: database-availability-groups-dags-exchange-2013-help.md
+      items:
+      - name: Active Manager
+        href: active-manager-exchange-2013-help.md
+      - name: 資料中心啟動協調模式
+        href: datacenter-activation-coordination-mode-exchange-2013-help.md
+      - name: 信箱資料庫副本
+        href: mailbox-database-copies-exchange-2013-help.md
+      - name: AutoReseed
+        href: autoreseed-exchange-2013-help.md
+    - name: 規劃高可用性及站台恢復
+      href: planning-for-high-availability-and-site-resilience-exchange-2013-help.md
+    - name: 部署高可用性和站台恢復
+      href: deploying-high-availability-and-site-resilience-exchange-2013-help.md
+    - name: 管理高可用性和站台恢復
+      href: managing-high-availability-and-site-resilience-exchange-2013-help.md
+      items:
+      - name: 管理資料庫可用性群組
+        href: managing-database-availability-groups-exchange-2013-help.md
+        items:
+        - name: 建立資料庫可用性群組
+          href: create-a-database-availability-group-exchange-2013-help.md
+        - name: 針對資料庫可用性群組預先接移叢集名稱物件
+          href: pre-stage-the-cluster-name-object-for-a-database-availability-group-exchange-2013-help.md
+        - name: 設定資料庫可用性群組內容
+          href: configure-database-availability-group-properties-exchange-2013-help.md
+        - name: 管理資料庫可用性群組成員資格
+          href: manage-database-availability-group-membership-exchange-2013-help.md
+        - name: 建立資料庫可用性群組網路
+          href: create-a-database-availability-group-network-exchange-2013-help.md
+        - name: 設定資料庫可用性群組網路內容
+          href: configure-database-availability-group-network-properties-exchange-2013-help.md
+        - name: AutoReseed 的設定資料庫可用性群組
+          href: configure-autoreseed-for-a-database-availability-group-exchange-2013-help.md
+        - name: 移除資料庫可用性群組
+          href: remove-a-database-availability-group-exchange-2013-help.md
+        - name: 使用 Microsoft Azure 虛擬機器為 DAG 見證伺服器
+          href: using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md
+      - name: 管理信箱資料庫副本
+        href: managing-mailbox-database-copies-exchange-2013-help.md
+        items:
+        - name: 新增信箱資料庫副本
+          href: add-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 設定信箱資料庫副本屬性
+          href: configure-mailbox-database-copy-properties-exchange-2013-help.md
+        - name: 移動信箱資料庫複本的信箱資料庫路徑
+          href: move-the-mailbox-database-path-for-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 設定信箱資料庫複本的啟動原則
+          href: configure-activation-policy-for-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 更新信箱資料庫副本
+          href: update-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 擱置或恢復信箱資料庫副本
+          href: suspend-or-resume-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 啟動信箱資料庫副本
+          href: activate-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 啟動延遲的信箱資料庫副本
+          href: activate-a-lagged-mailbox-database-copy-exchange-2013-help.md
+        - name: 移除信箱資料庫副本
+          href: remove-a-mailbox-database-copy-exchange-2013-help.md
+      - name: 監視資料庫可用性群組
+        href: monitoring-database-availability-groups-exchange-2013-help.md
+      - name: 轉換及容錯移轉
+        href: switchovers-and-failovers-exchange-2013-help.md
+        items:
+        - name: 資料中心轉換
+          href: datacenter-switchovers-exchange-2013-help.md
+        - name: 執行伺服器轉換
+          href: perform-a-server-switchover-exchange-2013-help.md
+    - name: 備份、還原和嚴重損壞修復
+      href: backup-restore-and-disaster-recovery-exchange-2013-help.md
+      items:
+      - name: 使用 Windows Server Backup 備份及還原 Exchange 資料
+        href: using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md
+        items:
+        - name: 使用 Windows Server Backup 來備份 Exchange
+          href: use-windows-server-backup-to-back-up-exchange-exchange-2013-help.md
+        - name: 使用 Windows Server Backup 還原 Exchange 的備份
+          href: use-windows-server-backup-to-restore-a-backup-of-exchange-exchange-2013-help.md
+      - name: 復原 Exchange Server
+        href: recover-an-exchange-server-exchange-2013-help.md
+      - name: 復原資料庫可用性群組成員伺服器
+        href: recover-a-database-availability-group-member-server-exchange-2013-help.md
+      - name: 復原資料庫
+        href: recovery-databases-exchange-2013-help.md
+        items:
+        - name: 建立復原資料庫
+          href: create-a-recovery-database-exchange-2013-help.md
+        - name: 使用復原資料庫還原資料
+          href: restore-data-using-a-recovery-database-exchange-2013-help.md
+      - name: 資料庫可攜性
+        href: database-portability-exchange-2013-help.md
+        items:
+        - name: 使用資料庫可攜性移動信箱資料庫
+          href: move-a-mailbox-database-using-database-portability-exchange-2013-help.md
+      - name: 撥號音可攜性
+        href: dial-tone-portability-exchange-2013-help.md
+        items:
+        - name: 執行撥號音復原
+          href: perform-a-dial-tone-recovery-exchange-2013-help.md
+    - name: 受管理的可用性
+      href: managed-availability-exchange-2013-help.md
+      items:
+      - name: 管理健全設定與伺服器健康情況
+        href: manage-health-sets-and-server-health-exchange-2013-help.md
+      - name: 設定受管理的可用性覆寫
+        href: configure-managed-availability-overrides-exchange-2013-help.md
+  - name: Exchange 2013 中的 Exchange 系統管理中心
+    href: exchange-admin-center-in-exchange-2013-exchange-2013-help.md
+    items:
+    - name: 常見問題集： Exchange 系統管理中心
+      href: faq-exchange-admin-center-exchange-2013-help.md
+    - name: 關閉 Exchange 系統管理中心存取
+      href: turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md
+    - name: 尋找內部和外部 Url 的 Exchange 系統管理中心
+      href: find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md
+    - name: Exchange 系統管理中心的鍵盤快速鍵
+      href: keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md
+  - name: 伺服器健康狀況與效能
+    href: server-health-and-performance-exchange-2013-help.md
+    items:
+    - name: Exchange Server 2013 效能建議
+      href: exchange-server-2013-performance-recommendations-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 大小和設定建議
+        href: exchange-2013-sizing-and-configuration-recommendations-exchange-2013-help.md
+      - name: Exchange 2013 的效能計數器
+        href: exchange-2013-performance-counters-exchange-2013-help.md
+      - name: IIS 記錄檔和記錄剖析器 Studio 報告
+        href: iis-logs-and-log-parser-studio-reports-exchange-2013-help.md
+    - name: Exchange 工作負載管理
+      href: exchange-workload-management-exchange-2013-help.md
+      items:
+      - name: 變更節流設定特定使用者的使用者
+        href: change-user-throttling-settings-for-specific-users-exchange-2013-help.md
+      - name: 變更使用者節流設定在組織中的所有使用者
+        href: change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md
+  - name: 關於 Exchange 文件
+    href: about-exchange-documentation-exchange-2013-help.md
+    items:
+    - name: 殘障人士的協助工具
+      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+    - name: 第三方著作權
+      href: third-party-copyright-notices-exchange-2013-help.md
