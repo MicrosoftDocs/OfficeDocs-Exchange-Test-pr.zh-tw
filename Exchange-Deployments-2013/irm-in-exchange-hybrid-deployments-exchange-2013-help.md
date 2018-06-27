@@ -13,9 +13,11 @@ ms.translationtype: HT
 
  
 
+
 _**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 _**上次修改主題的時間：** 2016-12-09_
+
 
 **摘要：** IRM 在 Exchange 混合式環境中如何運作，以及如何設定 IRM 以在 Exchange Online 與您的內部部署 Exchange 伺服器之間運作。
 

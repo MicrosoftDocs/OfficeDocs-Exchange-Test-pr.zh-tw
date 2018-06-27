@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-15_
+_<strong>上次修改主題的時間：</strong>2016-12-15_
 
 Microsoft 是認可其產品和服務進行更容易使用的任何人。下列各節提供資訊功能、 產品及讓殘障人士更容易存取 Microsoft Exchange 的服務：
 

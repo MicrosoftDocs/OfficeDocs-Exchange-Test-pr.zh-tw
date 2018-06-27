@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-04-29_
+_<strong>上次修改主題的時間：</strong>2016-04-29_
 
 混合式部署的其中一個主要優勢，就是能讓內部部署組織的使用者與 Exchange Online 組織的使用者共用空閒/忙錄 (行事曆可用性) 資訊。這兩個組織中的使用者可以檢視彼此的行事曆，就好像他們都在相同實體組織中一樣。這會使排程會議和資源更容易且有效率。
 

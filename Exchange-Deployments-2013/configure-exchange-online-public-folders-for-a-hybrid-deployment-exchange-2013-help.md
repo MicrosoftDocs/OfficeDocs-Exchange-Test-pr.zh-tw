@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-15_
+_<strong>上次修改主題的時間：</strong>2016-12-15_
 
 **摘要：** 說明啟用內部部署 Exchange 2013 使用者可以存取 Exchange Online 中的公用資料夾。
 

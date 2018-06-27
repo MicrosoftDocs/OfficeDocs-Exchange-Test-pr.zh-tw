@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主題正在編輯中。  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_<strong>上次修改主題的時間：</strong>2016-12-09_
 
 Microsoft Exchange 中的 Edge Transport Server 會部署在組織的內部部署周邊網路。這些非加入網域的電腦會處理網際網路對向郵件流程，並充當您內部網路中 Exchange 伺服器的 SMTP 轉送與智慧主機。
 

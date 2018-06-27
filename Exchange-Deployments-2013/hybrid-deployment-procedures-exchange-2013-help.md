@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-06-14_
+_<strong>上次修改主題的時間：</strong>2017-06-14_
 
 使用混合式組態精靈的最新改進功能，可讓設定和管理混合式部署較以往更為容易。無論您要連接 Exchange 內部部署和 Exchange Online 組織進行長期共存，或是做為雲端移轉策略的一部分，設定混合式部署都會是 Exchange 組織的第一步。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-01-29_
+_<strong>上次修改主題的時間：</strong>2016-01-29_
 
 單一登入功能可讓使用者以單一使用者名稱與密碼進入內部部署與 Office 365 組織。單一登入可提供使用者熟悉的單一登入體驗，並讓管理員能輕鬆地透過內部部署 Active Directory 管理工具來管理 Exchange Online 組織信箱的帳戶原則。雖然您不需要在啟用單一登入時設定混合部署，不過強烈建議您這麼做。沒有單一登入，使用者必須記住兩組不同的認證，一組用於內部部署組織，一組用於 Office 365。以下是單一登入的其他幾個優點：
 

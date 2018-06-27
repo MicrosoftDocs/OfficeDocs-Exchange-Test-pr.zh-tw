@@ -15,6 +15,7 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2016-11-11_
 
+
 了解如何為混合式環境中的雲端信箱使用者設定 網頁型 Outlook (Outlook Web App) 的 URL。
 
 組織從內部部署 Exchange 移至 Office 365 的主要考量，就是使用者體驗。使用者需要不受干擾地存取他們的信箱，不論他們的信箱移動的位置及時間為何。有了這個概念，可使兩者共存的 網頁型 Outlook (先前稱為 Outlook Web App) 便非常重要。

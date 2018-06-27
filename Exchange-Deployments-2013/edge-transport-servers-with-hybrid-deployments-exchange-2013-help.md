@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2018-04-16_
+_<strong>上次修改主題的時間：</strong>2018-04-16_
 
 Edge Transport server role 是選擇性角色，通常會部署在 Exchange 組織周邊網路中的電腦上，且會設計為將組織的攻擊面降到最低。Edge Transport server role 會處理所有網際網路對向郵件流程，這為您組織內部的內部部署 Exchange 伺服器提供 SMTP 轉送和智慧主機服務。
 

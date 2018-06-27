@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-10-02_
+_<strong>上次修改主題的時間：</strong>2017-10-02_
 
 利用 Exchange 型混合式部署，您可以選擇將內部部署 Exchange 信箱移至 Exchange Online 組織，或將 Exchange Online 信箱移至Exchange 組織。當您在內部部署和 Exchange Online 組織之間移動信箱時，您會使用移轉批次來執行遠端信箱移動的要求。這種方法可讓您移動現有的信箱，而不是建立新的使用者信箱並匯入使用者資訊。這種方法不同於將使用者信箱從內部部署 Exchange 組織移轉到 Exchange Online 做為完整 Exchange 遷移至雲端的一部份。本主題中討論的信箱移動是系統管理 Exchange 管理的一部份，其為內部部署 Exchange 和 Exchange Online 組織之間長期共存的關係。
 
@@ -67,7 +67,7 @@ _**上次修改主題的時間：**2017-10-02_
 
 在 Exchange 混合式部署中執行登入和登出遠端移動移轉之前，建議您先建立 Exchange 遠端移轉端點。移轉端點含有正在執行 MRS proxy 服務 (和 Exchange Online 之間執行遠端移動移轉的必要項) 的內部部署 Exchange 伺服器連結設定。
 
-如需逐步程序，請參閱 [建立遷移端點](https://technet.microsoft.com/zh-tw/library/jj874458\(v=exchg.150\))。
+如需逐步程序，請參閱 建立遷移端點。
 
 ## 步驟 2： 啟用 MRSProxy 服務
 

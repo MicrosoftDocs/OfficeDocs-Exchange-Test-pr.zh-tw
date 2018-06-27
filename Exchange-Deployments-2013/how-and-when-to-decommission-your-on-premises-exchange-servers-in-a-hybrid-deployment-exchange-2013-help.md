@@ -13,6 +13,7 @@ ms.translationtype: MT
 
  
 
+
 _**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
 _**上次修改主題的時間：** 2017-07-27_
