@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 了解 Outlook Web App，這呼叫 Outlook Web Access 2010 以前版本的 Microsoft Exchange。本文提供與解的實用的資訊連結的簡要概觀。
 

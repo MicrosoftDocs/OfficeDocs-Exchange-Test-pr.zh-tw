@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以啟用整合通訊 (UM) 撥號對應表上的資訊性宣告。資訊性宣告可用的一般宣告的變更經常超過歡迎使用問候語，或公司規範遵守原則所需的宣告。
 

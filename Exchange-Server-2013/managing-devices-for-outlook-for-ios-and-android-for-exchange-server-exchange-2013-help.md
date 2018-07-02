@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010, Exchange Server 2013_
+_**適用版本：** Exchange Server 2010, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-04-01_
+_**上次修改主題的時間：** 2018-04-01_
 
-**摘要：** 本文說明如何 Exchange Active Sync 可協助您管理行動裝置的 iOS Outlook 及 Android 中 Exchange 內部部署組織。
+**摘要：**  本文說明如何 Exchange Active Sync 可協助您管理行動裝置的 iOS Outlook 及 Android 中 Exchange 內部部署組織。
 
 Microsoft 建議用來存取內部部署環境中的 Exchange 信箱的行動裝置管理 Exchange ActiveSync。Exchange ActiveSync 是讓行動電話存取組織的資訊在執行 Microsoft Exchange 伺服器上的 Microsoft Exchange 同步處理通訊協定。
 
@@ -61,9 +61,9 @@ Exchange ActiveSync 可讓系統管理員從遠端清除裝置，例如 if 他�
 
 由於的雲端架構的 iOS Outlook 及 android （英文）、 Outlook 連線顯示為每位使用者的單一的行動裝置識別碼 (ID) Exchange 中。這表示每個使用者的行動裝置存取控制項會套用至與此裝置識別碼相關聯的所有裝置這項實作建立不同的兩個條件從如何傳統 Exchange ActiveSync 裝置存取控制項運作。
 
-  - **封鎖：** 封鎖規則封鎖所有裝置上的 Outlook 和支援的作業系統。您無法封鎖個別裝置或作業系統。
+  - **封鎖：**  封鎖規則封鎖所有裝置上的 Outlook 和支援的作業系統。您無法封鎖個別裝置或作業系統。
 
-  - **隔離：** 隔離程序的運作方式根據個別使用者，而不是每個裝置上。一旦使用者已從隔離區釋出的裝置，他們可以安裝及設定相同數目的其他裝置為他們想要在 Outlook。因為已從隔離區釋放使用者，任何新的裝置相關聯的使用者不會被隔離。
+  - **隔離：**  隔離程序的運作方式根據個別使用者，而不是每個裝置上。一旦使用者已從隔離區釋出的裝置，他們可以安裝及設定相同數目的其他裝置為他們想要在 Outlook。因為已從隔離區釋放使用者，任何新的裝置相關聯的使用者不會被隔離。
 
 備妥行動裝置信箱原則時，套用至所有相關裝置。因此，如果您強制執行特定信箱的 PIN 鎖定，連線至該信箱的所有裝置都需要 PIN。
 

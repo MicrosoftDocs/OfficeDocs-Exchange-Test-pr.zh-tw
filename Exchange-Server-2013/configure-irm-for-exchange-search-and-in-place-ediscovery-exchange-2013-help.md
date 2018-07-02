@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-16_
+_**上次修改主題的時間：** 2012-11-16_
 
 在 Microsoft Exchange Server 2013，您可以設定資訊版權管理 (IRM) 方便Exchange搜尋可編製索引受 IRM 保護的郵件。
 

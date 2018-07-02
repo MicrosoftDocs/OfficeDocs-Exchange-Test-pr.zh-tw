@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-02-24_
+_**上次修改主題的時間：** 2014-02-24_
 
 建立就地 eDiscovery 搜尋之後，您可以使用 EAC 將結果複製到探索信箱。您也可以使用命令介面來啟動已建立使用**New-MailboxSearch**指令程式會將結果複製到探索信箱時您建立搜尋所指定的 eDiscovery 搜尋。
 

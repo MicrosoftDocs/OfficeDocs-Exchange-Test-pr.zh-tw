@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-30_
+_**上次修改主題的時間：** 2012-11-30_
 
 當您啟用使用者的整合通訊 (UM) 和語音信箱時，您必須選取要與使用者的信箱建立關聯的 UM 信箱原則。您可以變更之後已啟用 um 的使用者與使用者的信箱關聯的 UM 信箱原則。
 

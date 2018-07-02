@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-19_
+_**上次修改主題的時間：** 2014-06-19_
 
 本主題說明如何使用 Microsoft Exchange Server 2013 安裝精靈將 Exchange 2013 Mailbox 和 Client Access role 安裝在電腦上。如需規劃與部署 Exchange 2013 的相關資訊，請參閱[規劃及部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 

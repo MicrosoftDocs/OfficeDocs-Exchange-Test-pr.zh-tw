@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-13_
+_**上次修改主題的時間：** 2013-02-13_
 
 您可以設定的語音郵件預覽協力廠商的最大郵件持續時間上的整合通訊 (UM) 信箱原則。您已設定的最大郵件工期後，設定會套用至所有已啟用 UM 之使用者所連結與該信箱原則。
 

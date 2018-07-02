@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-23_
+_**上次修改主題的時間：** 2013-02-23_
 
 您可以允許或防止使用者接收到的整合通訊 (UM) IP 閘道的電話語音信箱簡訊通知。如果您啟用此設定，UM IP 閘道可接收及傳送 SIP 通知訊息的使用者。訊息等待指示器 (MWI) 預設會啟用，並允許郵件等待將通知傳送給使用者，但您可以將它關閉視您的需求而定。
 

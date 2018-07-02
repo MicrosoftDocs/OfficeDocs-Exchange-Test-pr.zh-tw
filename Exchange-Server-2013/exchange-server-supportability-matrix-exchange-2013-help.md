@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2018-03-20_
+_**上次修改主題的時間：** 2018-03-20_
 
 Exchange Server 支援性一覽表提供集中來源，可讓 Microsoft Exchange 系統管理員輕鬆找到所有 Microsoft Exchange 版本的任何組態或必要元件可用支援等級的相關資訊。
 

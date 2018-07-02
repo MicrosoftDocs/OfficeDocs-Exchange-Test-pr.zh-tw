@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 只具有 Exchange 2013 的混合式部署是使用混合組態精靈來設定 OAuth 驗證。對於混合的 Exchange 2013/2010 和 Exchange 2013/2007 混合式部署，Office 365 與內部部署 Exchange 組織之間的新的混合式部署 OAuth 型驗證連線，並不是由混合組態精靈來設定。依預設，這些部署會繼續使用同盟信任程序。不過，整個組織必須使用新的 Exchange OAuth 驗證通訊協定，才能完整取得某些 Exchange 2013 功能。
 
@@ -142,7 +142,7 @@ _**上次修改主題的時間：**2016-12-09_
 
 ## 步驟 5： 利用 Azure Active Directory 註冊外部內部部署 Exchange HTTP 端點的所有主機名稱授權單位
 
-在此步驟中，您必須對內部部署 Exchange 組織中每個可公開存取的端點執行指令碼。我們建議您盡可能使用萬用字元。例如，假設 **https://mail.contoso.com/ews/exchange.asmx** 可對外提供 Exchange。在此情況下，可使用單一萬用字元：**\*.contoso.com**。這會涵蓋 autodiscover.contoso.com 與 mail.contoso.com 端點。但是不涵蓋最上層網域 **contoso.com**。在最上層主機名稱授權單位可外部存取 Exchange 2013 Client Access Server 的情況下，此主機名稱授權單位也必須註冊為 **contoso.com**。註冊其他外部主機名稱授權單位並無限制。
+在此步驟中，您必須對內部部署 Exchange 組織中每個可公開存取的端點執行指令碼。我們建議您盡可能使用萬用字元。例如，假設 **https://mail.contoso.com/ews/exchange.asmx** 可對外提供 Exchange。在此情況下，可使用單一萬用字元：** \*.contoso.com**。這會涵蓋 autodiscover.contoso.com 與 mail.contoso.com 端點。但是不涵蓋最上層網域 **contoso.com**。在最上層主機名稱授權單位可外部存取 Exchange 2013 Client Access Server 的情況下，此主機名稱授權單位也必須註冊為 **contoso.com**。註冊其他外部主機名稱授權單位並無限制。
 
 若不確定內部部署 Exchange 組織中的外部 Exchange 端點，可以在內部部署 Exchange 組織的 Exchange PowerShell 中執行下列命令，即可取得外部設定的 Web 服務端點清單。
 

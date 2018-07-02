@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 整合通訊 (UM) 呼叫報告提供來電轉接至或 UM 所撥打的相關資訊。若要監視、 疑難排解和報告在 UM 您的組織使用這些報告。您可以使用通話統計資料工具來存取整合通訊通話統計資料報告使用及存取已啟用 UM 之使用者的通話記錄的使用者通話記錄工具。
 

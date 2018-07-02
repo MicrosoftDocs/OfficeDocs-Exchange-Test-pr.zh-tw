@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft 會經過認可傳送至其產品和服務進行更容易使用的任何人。下列各節提供讓殘障人士更容易存取 Microsoft Exchange 與其他 Microsoft 產品和服務的快速鍵的相關資訊。
 

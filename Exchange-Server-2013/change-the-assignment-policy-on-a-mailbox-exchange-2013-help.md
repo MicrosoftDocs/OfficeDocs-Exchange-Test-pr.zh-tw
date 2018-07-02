@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-08_
+_**上次修改主題的時間：** 2012-10-08_
 
 您可以變更指派給信箱之管理角色指派原則。當您變更信箱指派原則時時，請變更生效一旦使用者會重新整理連線，例如下次他們登入他們的信箱或開啟信箱選項\] 頁面。如需 Microsoft Exchange Server 2013中指派原則的詳細資訊，請參閱[了解管理角色指派原則](understanding-management-role-assignment-policies-exchange-2013-help.md)。
 

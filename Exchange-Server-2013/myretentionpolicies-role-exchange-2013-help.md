@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `MyRetentionPolicies` 管理角色可讓個別使用者檢視其保留標記，以及檢視和修改其保留標記設定和預設值。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013、 信箱高可用性的主要機制是資料庫可用性群組 (DAG)。如需 Dag 的詳細資訊，請參閱[管理資料庫可用性群組](managing-database-availability-groups-exchange-2013-help.md)。*傳輸暫放*首度推出的Exchange 2007，且進一步已獲得改善Exchange 2010之後他們正在成功傳遞至信箱的 Dag 提供多餘郵件複本中。在Exchange 2010、 傳輸暫放有助於防止資料遺失所維護還沒有複寫至 DAG 中的被動信箱資料庫副本的已成功傳遞郵件的佇列。當失敗的信箱資料庫或伺服器所需的升級過期複本的信箱資料庫、 傳輸規則中的訊息暫放自動已提交至新的作用中信箱資料庫複本。
 

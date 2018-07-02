@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以設定用來聆聽的整合通訊 (UM) IP 閘道上的工作階段初始通訊協定 (SIP) 要求的 TCP 連接埠。根據預設，當您建立 UM IP 閘道器 TCP 的 SIP 聆聽連接埠號碼是設為 5060。無法設定或使用 EAC 變更 TCP 的 SIP 聆聽連接埠。您必須使用**Set-UMIPGateway**指令程式來設定 TCP 的 SIP 聆聽連接埠號碼。
 

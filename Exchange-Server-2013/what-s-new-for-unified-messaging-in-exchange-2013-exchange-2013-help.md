@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在 Microsoft Exchange Server 2013，我們正在使用舊版 Exchange 增強所引進的新功能和基礎結構變更。整合通訊 (UM) Exchange 2013中包含相同的功能集所Exchange 2010以及Exchange 2007，不過整合通訊不再是個別的伺服器角色。現在是在Exchange 2013中所提供的語音相關功能的元件。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-08-02_
+_**上次修改主題的時間：** 2013-08-02_
 
 [Exchange 2013：版本](exchange-2013-editions-and-versions-exchange-2013-help.md)
 

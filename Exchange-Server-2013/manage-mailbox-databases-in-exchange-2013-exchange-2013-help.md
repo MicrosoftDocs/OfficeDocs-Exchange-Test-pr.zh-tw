@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-04-29_
+_**上次修改主題的時間：** 2013-04-29_
 
 信箱資料庫是建立和儲存信箱的精細度單位。信箱資料庫將會儲存為 Exchange 資料庫 (.edb) 檔案。在 Microsoft Exchange Server 2013 中，每個信箱資料庫都有它自己內容可讓您設定。
 

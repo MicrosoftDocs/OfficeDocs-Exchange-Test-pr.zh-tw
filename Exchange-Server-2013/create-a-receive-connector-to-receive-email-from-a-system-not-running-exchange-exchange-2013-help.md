@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 您可能會有您要從未執行 Exchange 系統接收郵件之的情況。例如，如果您有執行網路 appliance 原則會檢查並再將郵件路由傳送至Exchange伺服器。我們在此案例假設 appliance 使用 SMTP。如果不是，您應該使用的外部連接器或傳遞代理程式連接器。
 

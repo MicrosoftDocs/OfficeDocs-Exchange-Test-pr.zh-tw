@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-10-04_
+_**上次修改主題的時間：** 2017-10-04_
 
 擁有郵件功能的安全性群組可用來發佈，以及郵件來授與存取權限給Active Directory中的資源。如需詳細資訊，請參閱[收件者](recipients-exchange-2013-help.md)。
 

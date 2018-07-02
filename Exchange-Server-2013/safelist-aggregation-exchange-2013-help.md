@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-09-30_
+_**上次修改主題的時間：** 2013-09-30_
 
 在 Microsoft Exchange Server 2013 中，「安全清單彙總」一詞指的是在 Microsoft Outlook 和 Exchange 之間共用的反垃圾郵件功能。此功能會從反垃圾郵件的 \[安全的收件者清單\]、\[安全的寄件者清單\]、\[封鎖的寄件者清單\] 以及 Outlook 使用者設定的連絡人資料中收集資料，並將該資料提供給 Exchange 反垃圾郵件代理程式。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以啟用將來電轉接至使用者透過自動語音應答的來電者或防止能力。預設此選項已啟用，且可讓來電者將來電轉接至已啟用 UM 之使用者的整合通訊 (UM) 撥號有關聯的 UM 自動語音應答。
 

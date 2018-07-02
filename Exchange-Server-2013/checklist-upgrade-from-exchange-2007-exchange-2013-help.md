@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 使用此檢查清單從 Microsoft Exchange Server 2007 升級至 Exchange Server 2013。開始使用此檢查清單之前，請確定您熟悉以下討論的概念：
 

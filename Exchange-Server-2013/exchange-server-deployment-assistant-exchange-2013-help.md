@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Exchange Server Deployment Assistant 是可協助您在 Microsoft Exchange Server 2016和Exchange Server 2013部署 Web 式工具。部署助理詢問您目前的環境的幾個問題，然後再產生的自訂檢查清單和協助簡化您的部署程序。若要存取 \[部署小幫手\]，請參閱[Exchange Server 部署助理](https://go.microsoft.com/fwlink/p/?linkid=277105)。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上次修改主題的時間：** 2016-11-11_
+_**上次修改主題的時間：**  2016-11-11_
 
 
 了解如何為混合式環境中的雲端信箱使用者設定 網頁型 Outlook (Outlook Web App) 的 URL。
@@ -54,7 +54,7 @@ _**上次修改主題的時間：** 2016-11-11_
     
         Set-OrganizationRelationship -TargetOWAUrl http://cloudowa.contoso.com/owa
     
-    **注意：**
+    **注意：** 
     
       - 使用 http，而不是 https。
     
@@ -111,5 +111,5 @@ _**上次修改主題的時間：** 2016-11-11_
 </table>
 
 
-**注意：** 識別身分同盟要求按照主題 [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=83446) 所述，在 Internet Explorer 內部網路區域內設定 AD FS 端點，AD FS 需按照一般 Office 365 指導方針設定。
+**注意：**  識別身分同盟要求按照主題 [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=83446) 所述，在 Internet Explorer 內部網路區域內設定 AD FS 端點，AD FS 需按照一般 Office 365 指導方針設定。
 

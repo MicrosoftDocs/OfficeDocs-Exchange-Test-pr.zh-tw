@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-03-08_
+_**上次修改主題的時間：** 2013-03-08_
 
 建立整合通訊 (UM) 自動語音應答後，由總機接聽人工運算子的外部電話號碼的來電會由自動語音應答接聽電話。不同於其他的整合通訊元件，例如 UM 撥號對應表計劃及 UM IP 閘道器\] 中，您不需要建立 UM 自動語音應答。但是，自動語音應答協助內部及外部來電者尋找使用者或部門的組織中存在，將來電轉接至它們。
 

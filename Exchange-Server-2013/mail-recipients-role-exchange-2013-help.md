@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Mail Recipients`管理角色可讓系統管理員管理現有的信箱、 郵件使用者及組織中的郵件連絡人。此角色不能建立這些收件者。若要建立這些使用`Mail Recipient Creation`角色。
 

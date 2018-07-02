@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Edge Transport Server 可在 Microsoft Exchange Server 2013 Service Pack 1 (SP1) 中取得。不過，您可以繼續使用周邊網路中部署的現有 Exchange Server 2007 或 Exchange Server 2010 Edge Transport Server。或者，對於新的或升級的 Exchange 2007 組織，您可以在周邊網路中安裝新的 Exchange 2010 或 Exchange 2013 Edge Transport Server。
 

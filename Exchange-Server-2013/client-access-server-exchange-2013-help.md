@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-07-02_
+_**上次修改主題的時間：** 2014-07-02_
 
 針對 Microsoft Exchange 2013，Exchange 伺服器角色的架構有一些重大改變。有別於 Exchange 2010 和 Exchange 2007 中出現的五個伺服器角色，在 Exchange 2013 中，伺服器的角色已減至三個：Client Access Server 和 Mailbox Server，以及裝上 Service Pack 1 之後的 Edge Transport server role。
 

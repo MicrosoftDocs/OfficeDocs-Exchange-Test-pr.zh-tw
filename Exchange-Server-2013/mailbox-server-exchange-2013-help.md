@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-19_
+_**上次修改主題的時間：** 2013-02-19_
 
 在 Microsoft Exchange Server 2010 中，信箱伺服器角色主控信箱與共用資料夾資料庫，且提供電子郵件儲存。現在，在 Exchange Server 2013 中，信箱伺服器角色同時包含用戶端存取通訊協定、傳輸服務、信箱資料庫以及整合通訊元件。
 

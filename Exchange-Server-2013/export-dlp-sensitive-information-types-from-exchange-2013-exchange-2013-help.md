@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-05-04_
+_**上次修改主題的時間：** 2016-05-04_
 
 您可以檢視或變更內 DLP 原則的詳細資料而不需使用Exchange 系統管理中心 (EAC) 或Exchange 管理命令介面指令程式來匯出原則、 儲存為 XML 檔案，並修改該 XML 檔案。通常您再將 XML 檔案匯回Exchange。如此一來，原則可以編輯缺少Exchange。不過，他們必須符合特定格式需求，也稱為 \[XML 結構描述才能正常運作。
 

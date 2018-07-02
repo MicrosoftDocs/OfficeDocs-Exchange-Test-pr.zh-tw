@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**New-MigrationBatch** cmdlet。您也可以透過 Exchange 系統管理中心 (EAC) 移動信箱。您可以從來源Exchange樹系信箱移至目標Exchange 2010樹系。
 

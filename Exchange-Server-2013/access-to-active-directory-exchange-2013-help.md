@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013儲存Active Directory目錄服務資料庫中的所有組態和收件者資訊。當執行Exchange 2013的電腦需要收件者的資訊和Exchange組織的組態資訊時，則必須查詢Active Directory存取資訊。Active Directory伺服器必須是可供Exchange 2013以正常運作。
 

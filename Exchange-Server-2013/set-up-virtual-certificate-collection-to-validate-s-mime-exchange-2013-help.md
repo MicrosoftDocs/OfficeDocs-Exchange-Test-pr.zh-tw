@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 如果您是租用戶系統管理員，您將必須設定用來驗證 S/MIME 憑證的虛擬憑證集合。此虛擬憑證集合會設定為具有 SST 副檔名的憑證存放區檔案類型。此 SST 檔案中包含所有在驗證 S/MIME 憑證時所將使用的根憑證和中繼憑證。
 

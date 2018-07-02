@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-13_
+_**上次修改主題的時間：** 2013-02-13_
 
 如果公用資料夾或公用資料夾信箱的移動要求失敗，只要符合下列條件就能還原資料夾或信箱：
 

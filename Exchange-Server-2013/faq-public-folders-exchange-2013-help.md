@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-03-27_
+_**上次修改主題的時間：** 2017-03-27_
 
 本主題提供與 Exchange Server 2013 中公用資料夾相關的常見問題清單。如要進一步瞭解公用資料夾，請參閱[公用資料夾](public-folders-exchange-2013-help.md)。
 

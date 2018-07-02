@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-14_
+_**上次修改主題的時間：** 2015-01-14_
 
 本主題提供解決方案和使用 RollAlternateServiceAccountPassword.ps1 指令碼時可能發生的常見錯誤的相關資訊。
 

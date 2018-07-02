@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-16_
+_**上次修改主題的時間：** 2012-11-16_
 
 您可以在命令提示字元處使用服務嵌入式管理單元中Microsoft Management Console (MMC) 或 cmd.exe，在信箱伺服器上啟動MicrosoftExchange整合通訊服務。根據預設， MicrosoftExchange整合通訊服務已啟動信箱伺服器已經安裝完成之後。不過，可能有要手動重新啟動MicrosoftExchange整合通訊服務，例如，當您已離線 Mailbox server，並使其回復上線時的時間。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-10-02_
+_**上次修改主題的時間：** 2014-10-02_
 
 如果您想讓使用者能夠使用 Microsoft Exchange Server 2013就地 eDiscovery，必須先將其授權透過將它們新增至探索管理角色群組。探索管理角色群組的成員有Exchange安裝程式會建立探索信箱的完整存取信箱權限。
 

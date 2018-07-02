@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-18_
+_**上次修改主題的時間：** 2012-11-18_
 
 您可以讓 Microsoft Exchange Unified Messaging Call Router 服務至新的接聽或防止這麼 Client Access server 上。根據預設，用戶端存取伺服器會啟用狀態安裝後。當您正在設定為接受傳入的語音、 傳真、 自動語音應答以及 Outlook Voice Access 電話的 Client Access server 時，您會使用**Set-ServerComponentState**指令程式。
 

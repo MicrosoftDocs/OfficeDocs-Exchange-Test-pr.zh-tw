@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 您可以使用命令介面來新增或移除離線通訊錄 (OAB) 的通訊清單。根據預設，沒有 OAB 名為預設離線通訊錄包含全域通訊清單 (GAL)。根據其所包含的地址清單產生 Oab。若要建立自訂使用者可以下載的 Oab，您可以新增或移除 Oab 中的地址清單。
 

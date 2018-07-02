@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-09_
+_**上次修改主題的時間：** 2012-12-09_
 
 您可以指定來電者可連絡到整合通訊 (UM) 自動語音應答呼叫時的使用者群組。根據預設，來電者可以連絡有關聯的 UM 自動語音應答同一個撥號對應表計劃中的使用者。不過，您可以變更使用者可允許將來電轉接或語音訊息傳送給使用者的來電者所在的組織通訊錄中或一組特定的使用者的群組。
 

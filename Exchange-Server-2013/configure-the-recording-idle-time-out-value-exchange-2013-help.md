@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-11_
+_**上次修改主題的時間：** 2012-11-11_
 
 您可以指定的系統可讓語音訊息未記錄之前通話結束時的無回應的秒數。對於大多數的組織而言，此值應設為預設值是 5 秒。
 

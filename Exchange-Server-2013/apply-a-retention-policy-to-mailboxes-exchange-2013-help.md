@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-10-01_
+_**上次修改主題的時間：** 2014-10-01_
 
 您可以使用保留原則，將一個或多個保留標記分組，然後套用至信箱以強制執行郵件保留設定。信箱不能有一個以上的保留原則。
 

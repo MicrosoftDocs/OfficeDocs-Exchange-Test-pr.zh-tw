@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-29_
+_**上次修改主題的時間：** 2012-11-29_
 
 使用者可以設定多個進行同步處理的行動裝置MicrosoftExchange Server 2013。您可以使用 EAC 或命令介面來檢視相關聯之特定使用者的行動裝置的清單。
 

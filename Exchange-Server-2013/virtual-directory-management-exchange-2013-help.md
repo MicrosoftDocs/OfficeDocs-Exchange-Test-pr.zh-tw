@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-05_
+_**上次修改主題的時間：** 2012-10-05_
 
 許多Exchange Server 2013搭配使用的用戶端通訊協定是透過虛擬目錄來存取。虛擬目錄用來允許存取像是Exchange ActiveSync、 Outlook Web App、 或自動探索服務的 web 應用程式的網際網路資訊服務 (IIS)。您可以管理Exchange 2013上的虛擬目錄設定的各種包括驗證、 安全性及報告設定。
 

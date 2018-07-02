@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 系統管理員稽核記錄檔包含的所有 cmdlet 和參數中Exchange管理命令介面和Exchange系統管理中心 (EAC) 所執行的記錄。若要建立隨選，時正在執行時系統管理員稽核記錄報告在 EAC 中，或您在命令介面中執行**New-AdminAuditLogSearch**指令程式。如需稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄](administrator-audit-logging-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange Server 2013可讓您設定 Microsoft Exchange Online 或其他Exchange組織的組織關係。建立組織關聯性可讓您有其他組織處理時提升使用者經驗。例如，您可以共用空閒或忙碌資料、 設定安全的郵件流程及啟用跨兩個組織的郵件追蹤。
 

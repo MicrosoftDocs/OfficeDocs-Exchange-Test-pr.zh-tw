@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以在他們的整合通訊 (UM) 或語音信箱 pin 碼重設時傳送給使用者的電子郵件訊息中包含其他文字。您這麼做**時重設使用者的 Outlook 語音存取 PIN** \] 方塊中輸入自訂文字在 UM 信箱原則。自訂的文字可以包含，例如已啟用 UM 之使用者的安全性相關資訊。
 

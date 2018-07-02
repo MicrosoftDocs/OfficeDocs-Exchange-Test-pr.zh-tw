@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 每次您建立Exchange郵件流程規則，也稱為傳輸規則，您應測試其之前忘記將其。如此一來，如果您不小心不完全與您想要或互動的條件搭配其他規則中建立意外的方式，則不需要任何後果。
 

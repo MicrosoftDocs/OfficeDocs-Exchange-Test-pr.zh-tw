@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-02-08_
+_**上次修改主題的時間：** 2017-02-08_
 
 您可以指定哪些系統管理員在組織中的已安裝和管理適用於 Outlook 增益集的權限。您也可以指定哪些使用者在組織中的已安裝和管理自己使用的增益集的權限。
 

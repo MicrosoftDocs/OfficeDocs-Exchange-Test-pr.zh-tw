@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-06-11_
+_**上次修改主題的時間：** 2013-06-11_
 
 當您要整合 Microsoft Lync Server 與 Exchange 整合通訊 (UM) 時，您必須在命令介面中執行 ExchUcUtil.ps1 指令碼。ExchUcUtil.ps1 指令碼可執行下列作業：
 

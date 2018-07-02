@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-04-12_
+_**上次修改主題的時間：** 2013-04-12_
 
 信箱位於 Exchange 組織中的資訊工作者所使用的最常見收件者類型。每個信箱相關聯的 Active Directory 使用者帳戶。使用者可以使用信箱傳送及接收的郵件，並儲存郵件、 約會 （英文）、 工作、 記事及文件。使用 EAC 或命令介面來建立使用者信箱。
 

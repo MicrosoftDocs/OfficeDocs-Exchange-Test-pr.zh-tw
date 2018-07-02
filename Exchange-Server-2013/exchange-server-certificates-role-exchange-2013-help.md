@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Exchange Server Certificates` 管理角色讓系統管理員可以建立、匯入、匯出及管理個別使用者的 Exchange 伺服器憑證。
 

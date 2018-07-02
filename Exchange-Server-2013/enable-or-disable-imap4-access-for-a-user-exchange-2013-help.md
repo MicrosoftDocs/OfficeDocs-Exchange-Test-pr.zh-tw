@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-01-18_
+_**上次修改主題的時間：** 2013-01-18_
 
 您可以對使用者啟用或停用 IMAP4。
 

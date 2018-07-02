@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-01-17_
+_**上次修改主題的時間：** 2018-01-17_
 
 就地 eDiscovery 使用系統信箱來儲存在就地 eDiscovery 搜尋的中繼資料。此探索系統信箱有顯示名稱為**SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9}**。因為系統信箱隱藏在 Exchange 系統管理中心 (EAC) 或Exchange地址清單中，他們會很少刪除不經意。
 

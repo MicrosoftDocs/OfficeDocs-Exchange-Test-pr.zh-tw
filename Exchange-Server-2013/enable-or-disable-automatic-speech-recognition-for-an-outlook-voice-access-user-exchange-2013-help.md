@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以設定已啟用整合通訊 (UM) 和語音信箱的使用者自動語音辨識 (ASR)。ASR Outlook語音存取使用者信箱啟用時，使用者可以移動到使用語音命令的信箱功能表。預設會啟用 ASR。如果停用 ASR 時，使用者必須使用複頻式訊號 (DTMF) 也稱為按鍵式輸入來瀏覽功能表。
 

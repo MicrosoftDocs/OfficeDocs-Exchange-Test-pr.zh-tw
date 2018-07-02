@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 *優先順序佇列*是 Microsoft Exchange Server 2013可讓已在 Microsoft Outlook 或Outlook Web Access影響信箱伺服器上的傳輸服務處理郵件的寄件者的郵件優先順序的功能。啟用優先順序佇列時，高優先順序的郵件傳送到其目的地之前一般優先順序的郵件和一般優先順序的郵件傳送到其目的地之前低優先順序的郵件。如需詳細資訊，請參閱[優先順序佇列](priority-queuing-exchange-2013-help.md)。
 

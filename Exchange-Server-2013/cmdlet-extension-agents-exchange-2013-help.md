@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Cmdlet 延伸代理程式是在 Cmdlet 執行時，由 Exchange Server 2013 Cmdlet 叫用的 Microsoft Exchange 2013 中的元件。顧名思義，Cmdlet 延伸代理程式會透過協助處理資料或根據 Cmdlet 的需求執行其他動作，來延伸叫用它們之 Cmdlet 的功能。Cmdlet 延伸代理程式適用於任何伺服器角色。
 

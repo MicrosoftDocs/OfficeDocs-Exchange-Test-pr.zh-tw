@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-16_
+_**上次修改主題的時間：** 2014-06-16_
 
 您可以利用資料庫可攜性在相同組織中的 Exchange Server 2013 Mailbox Server 之間移動 Microsoft Exchange 2013 信箱資料庫。這有助於減少某些失敗狀況的整體復原時間。若要深入了解，請參閱[資料庫可攜性](database-portability-exchange-2013-help.md)。
 

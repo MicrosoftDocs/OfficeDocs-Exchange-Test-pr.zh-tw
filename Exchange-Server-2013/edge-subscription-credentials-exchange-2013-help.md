@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 本主題說明 Edge 訂閱處理程序如何提供認證以確保 EdgeSync 同步處理程序的安全性，以及 EdgeSync 如何使用這些認證來建立 Exchange 2013 信箱伺服器與 Edge Transport Server 之間的安全 LDAP 連線。若要深入了解 Edge 訂閱程序，請參閱[Edge 訂閱](edge-subscriptions-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2014-09-17_
+_**上次修改主題的時間：** 2014-09-17_
 
 您可以測試整合通訊 (UM) 和相關連線電話語音設備的作業。執行下列程序時，Client Access Server 和 Mailbox Server 會測試語音信箱系統的完整端對端作業。這包含連接到 Client Access Server 和 Mailbox Server 的電話語音元件，包括 VoIP 閘道、專用交換機 (PBX)、IP PBX 和佈線。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在安裝 Microsoft Exchange Server 2013 之前，您需要準備 Active Directory 樹系及其網域。Exchange 需要準備 Active Directory，以便儲存使用者信箱的相關資訊及組織中的 Exchange 伺服器組態。如果您不熟悉 Active Directory 樹系或網域，請參閱＜[Active Directory 網域服務概觀](https://go.microsoft.com/fwlink/p/?linkid=399226)＞。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-03-20_
+_**上次修改主題的時間：** 2018-03-20_
 
 了解 Microsoft Exchange Server 2013 的更新程序如何變更。本文也提供最新版和上一版 Exchange 2013 所含功能與增強功能的相關資訊連結。
 

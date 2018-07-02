@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-01-09_
+_**上次修改主題的時間：** 2014-01-09_
 
 通訊錄原則路由代理程式是在 Mailbox Server 上執行的傳輸代理程式，其控制您組織中的收件者解析方式。安裝及設定 ABP 路由代理程式時，指派給不同 GAL 的使用者會顯示為外部收件者，因為他們不能檢視外部收件者的連絡人卡片。
 

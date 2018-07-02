@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-25_
+_**上次修改主題的時間：** 2013-04-25_
 
 如果您正在規劃及部署MicrosoftExchange 2013整合通訊 (UM) 網路上，您必須先了解整合通訊和電話語音的網路。本主題概述電話語音基礎結構概念及元件可協助您規劃及部署執行Exchange 2013伺服器整合通訊。
 

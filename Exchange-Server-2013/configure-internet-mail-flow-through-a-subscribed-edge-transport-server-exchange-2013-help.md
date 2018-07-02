@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 若要建立透過 Edge Transport Server 的網際網路郵件，請向 Active Directory 站台訂閱 Edge Transport Server。這麼做會自動建立網際網路郵件流程所需的兩個傳送連接器：
 

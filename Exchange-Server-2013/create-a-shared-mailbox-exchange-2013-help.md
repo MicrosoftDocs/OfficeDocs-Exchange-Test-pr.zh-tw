@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Office 365 Enterprise_
+_**適用版本：** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 **預估完成時間：5 分鐘**
 

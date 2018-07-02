@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013、*標頭防火牆*會為輸入及輸出郵件會移除特定的標頭欄位的機制。有兩種不同受到標頭防火牆的標頭欄位：
 
@@ -49,9 +49,9 @@ Organization X-headers and forest X-headers in Exchange
     
     如需組織 X-header 與樹系 X-header 的範例，請參閱本主題最後的 Organization X-headers and forest X-headers in Exchange 一節。
 
-  - **Received ︰ 路由標頭**  此標頭欄位的不同的執行個體的每一個郵件伺服器接受並將郵件轉寄給收件者新增至郵件標頭。**Received:**標頭通常包含郵件伺服器和日期-時間戳記的名稱。
+  - **Received ︰ 路由標頭**  此標頭欄位的不同的執行個體的每一個郵件伺服器接受並將郵件轉寄給收件者新增至郵件標頭。**Received:** 標頭通常包含郵件伺服器和日期-時間戳記的名稱。
 
-  - **重新傳送-\*: 路由標頭**  重新傳送標頭欄位是可用來判斷使用者是否已轉寄郵件的資訊的標頭欄位。下列最近的標頭欄位僅供 ︰ **Resent-Date:**、 **Resent-From:**、 **Resent-Sender:**、 **Resent-To:**、 **Resent-Cc:**、 **Resent-Bcc:**及**Resent-Message-ID:**。如此會出現訊息給收件者好像送直接的原始寄件者用**Resent-**欄位。收件者可以檢視探索誰轉寄郵件的郵件標頭。
+  - **重新傳送-\*: 路由標頭**  重新傳送標頭欄位是可用來判斷使用者是否已轉寄郵件的資訊的標頭欄位。下列最近的標頭欄位僅供 ︰ **Resent-Date:** 、 **Resent-From:** 、 **Resent-Sender:** 、 **Resent-To:** 、 **Resent-Cc:** 、 **Resent-Bcc:** 及**Resent-Message-ID:** 。如此會出現訊息給收件者好像送直接的原始寄件者用**Resent-**欄位。收件者可以檢視探索誰轉寄郵件的郵件標頭。
 
 Exchange 使用兩種不同方式，對郵件內的組織 X-header、樹系 X-header 和路由標頭套用標頭防火牆：
 
@@ -365,13 +365,13 @@ Exchange 使用兩種不同方式，對郵件內的組織 X-header、樹系 X-he
     
     但保留重新顯示目錄所提交之郵件中的路由標頭。
     
-    會保留還是移除重新顯示目錄中郵件的組織 X-header 和樹系 X-header，由郵件檔案中的 **X-CreatedBy:** 標頭欄位控制：
+    會保留還是移除重新顯示目錄中郵件的組織 X-header 和樹系 X-header，由郵件檔案中的 **X-CreatedBy:**  標頭欄位控制：
     
-      - 如果 **X-CreatedBy:** 的值是 `MSExchange15`，則保留郵件中的組織 X-header 和樹系 X-header。
+      - 如果 **X-CreatedBy:**  的值是 `MSExchange15`，則保留郵件中的組織 X-header 和樹系 X-header。
     
-      - 如果 **X-CreatedBy:** 的值不是 `MSExchange15`，則移除郵件中的組織 X-header 和樹系 X-header。
+      - 如果 **X-CreatedBy:**  的值不是 `MSExchange15`，則移除郵件中的組織 X-header 和樹系 X-header。
     
-      - 如果郵件檔案中沒有 **X-CreatedBy:** 標頭欄位，則移除郵件中的組織 X-header 和樹系 X-header。
+      - 如果郵件檔案中沒有 **X-CreatedBy:**  標頭欄位，則移除郵件中的組織 X-header 和樹系 X-header。
 
   - **放置目錄**  放置目錄用以 Mailbox server 上的外部連接器將郵件傳送至不使用 SMTP 傳輸郵件的郵件伺服器。如需外部連接器的詳細資訊，請參閱[外部連接器](foreign-connectors-exchange-2013-help.md)。
     

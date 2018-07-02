@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-02-01_
+_**上次修改主題的時間：** 2016-02-01_
 
 使用者傳送及接收電子郵件每天。如果左未受管理、 產生及接收每日的電子郵件的大量可以 inundate 使用者影響使用者產能，並且會公開風險貴組織。因此，電子郵件生命週期管理是用於大多數的組織的重要元件。
 
@@ -47,9 +47,9 @@ MRM 提供的彈性來實作最符合您的組織需求的記錄管理原則。�
 
 **將郵件移至封存信箱**  這項策略，實作 MRM 原則的項目移到使用者的封存信箱。封存信箱提供使用者維護舊的額外儲存空間和常存取內容。移動項目的保留標記亦稱為是*封存原則*。在相同的保留原則，您可以合併 DPT 及個人標記来移動項目和 DPT、 Rpt 及個人標記刪除項目。若要深入了解封存原則，請參閱：
 
-  - **Exchange Server 2013:** [就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [Exchange Online 中的封存信箱](https://technet.microsoft.com/zh-tw/library/dn922147\(v=exchg.150\))
+  - **Exchange Online:**  [Exchange Online 中的封存信箱](https://technet.microsoft.com/zh-tw/library/dn922147\(v=exchg.150\))
 
 <table>
 <thead>

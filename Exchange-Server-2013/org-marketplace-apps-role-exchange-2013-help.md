@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 組織市集應用程式管理角色可讓系統管理員檢視並修改其組織的應用程式，以及從 Microsoft Office Store 新增應用程式。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以防止與整合通訊 (UM) 撥號從接收傳真訊息連結已啟用 UM 的使用者。根據預設，會啟用整合通訊和連結與 UM 撥號對應表的使用者可以接收傳真訊息。不過，可能是您想来阻止特定 UM 撥號對應表從接收傳真與相關聯的使用者。
 

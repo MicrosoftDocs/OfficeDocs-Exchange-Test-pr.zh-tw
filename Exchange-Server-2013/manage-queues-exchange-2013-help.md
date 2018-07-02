@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-01-31_
+_**上次修改主題的時間：** 2014-01-31_
 
 在 Microsoft Exchange Server 2013 中，您可以使用 Exchange 工具箱或 Exchange 管理命令介面中的佇列檢視器來管理佇列。如需在 Exchange 管理命令介面中使用佇列管理指令程式的詳細資訊，請參閱[使用 Exchange 管理命令介面管理佇列](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md)。
 

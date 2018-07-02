@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 傳輸代理程式郵件移動到傳輸管線操作郵件上使用 SMTP 事件。大部分的 Microsoft Exchange Server 2013隨附的內建傳輸代理程式且不可見無法管理。不過，您可以安裝並在組織中設定 Exchange 伺服器上的第三方傳輸代理程式。如需傳輸代理程式的詳細資訊，請參閱[傳輸代理程式](transport-agents-exchange-2013-help.md)。
 

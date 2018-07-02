@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以設定階層式通訊錄 (HAB)，這是 Microsoft Outlook 2010 或更新版本中使用者可用的功能。透過 HAB，使用者可以使用以階層或管理結構為基礎的組織階層，尋找其 Exchange 組織中的收件者。若要深入瞭解 HAB，請參閱[階層式通訊錄](hierarchical-address-books-exchange-2013-help.md)。
 

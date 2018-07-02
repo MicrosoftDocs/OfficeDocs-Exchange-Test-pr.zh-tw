@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-30_
+_**上次修改主題的時間：** 2012-11-30_
 
 您可以啟用自訂非上班時間問候語整合通訊 (UM) 自動語音應答。非上班時間問候語是第一件事來電者聽到當 UM 自動語音應答的回答其通話期間非上班時間。您可能需要自訂問候語。
 

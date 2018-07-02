@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-18_
+_**上次修改主題的時間：** 2014-06-18_
 
 您可以使用 Windows Server Backup 來備份及還原 Exchange 資料庫。Exchange 包含 Windows Server Backup 的外掛程式，可讓您製作 Exchange 資料的大量陰影複製服務 (VSS) 型備份。
 

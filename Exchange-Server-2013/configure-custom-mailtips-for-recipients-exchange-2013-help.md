@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-01_
+_**上次修改主題的時間：** 2014-06-01_
 
 「郵件提示」是指使用者在編寫電子郵件的過程中執行下列任何動作時，在 Outlook Web App 和 Microsoft Outlook 2010 或更新版本的資訊列中對使用者顯示的參考訊息：
 

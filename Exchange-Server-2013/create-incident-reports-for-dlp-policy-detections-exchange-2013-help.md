@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 在Exchange Server 2013，您可以建立建立 DLP 原則規則集內附隨報告動作。此外，您可以向誰應該傳送報表以及如何處理原始郵件的項目。附隨報告可以包含任何下列的資訊。
 

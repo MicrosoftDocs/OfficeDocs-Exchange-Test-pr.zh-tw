@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Disaster Recovery`管理角色可讓系統管理員可以還原信箱與信箱資料庫、 建立信箱資料庫和執行資料中心轉換 switchbacks 為在組織中的資料庫可用性群組。
 

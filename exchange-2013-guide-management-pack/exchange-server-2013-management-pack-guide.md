@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上次修改主題的時間：** 2013-05-01_
+_**上次修改主題的時間：**  2013-05-01_
 
 Microsoft Exchange Server 2013 管理組件為 Exchange 組織提供全面性的服務健全狀態資訊。
 

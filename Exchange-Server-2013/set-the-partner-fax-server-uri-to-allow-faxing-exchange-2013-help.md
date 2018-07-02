@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以啟用和停用與整合通訊 (UM) 信箱原則關聯的使用者輸入傳真\]。根據預設，當您使用者啟用 UM，使用者無法接收傳真訊息直到啟用 UM 信箱原則上輸入傳真並指定協力廠商傳真伺服器的 URI。如果 UM 信箱原則上所設定的 Uri，但允許傳入傳真選項已停用 UM 撥號對應表或個別使用者，連結至 UM 信箱原則的啟用 UM 的使用者仍將不能夠接收傳真\]。
 

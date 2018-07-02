@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 背壓是一種系統資源，可監控存在於 Microsoft Exchange 2013 Mailbox Server 及 Edge Transport Server 的 Microsoft Exchange 傳輸服務。
 

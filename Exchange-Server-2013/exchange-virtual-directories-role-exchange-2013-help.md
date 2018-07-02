@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Exchange Virtual Directories` 管理角色可讓系統管理員管理個別伺服器上的 Microsoft Office Outlook Web App、Microsoft ActiveSync、離線通訊錄 (OAB)、自動探索、Windows PowerShell 及 Web 系統管理介面虛擬目錄。
 

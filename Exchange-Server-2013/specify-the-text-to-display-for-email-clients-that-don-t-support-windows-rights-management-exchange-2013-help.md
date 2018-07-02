@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以指定當使用者收到受保護的語音訊息但其電子郵件用戶端不支援資訊版權管理 (IRM) 或 Windows Rights Management 時，要傳送給該使用者的文字。
 

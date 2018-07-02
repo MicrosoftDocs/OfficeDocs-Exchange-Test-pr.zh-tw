@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 整合的通訊可以使用其中一個四種轉碼器建立語音郵件訊息的 ︰ MP3、 Windows Media Audio (WMA)、 群組系統電話 (GSM) 06.10 及 G.711 脈衝代碼調變 (PCM) 線性。根據預設，當您建立整合通訊 (UM) 撥號 UM 撥號對應表會使用到記錄的語音訊息 MP3 音訊轉碼器。MP3 音訊格式是跨多個作業系統、 電子郵件用戶端和 MP3 播放器所使用的熱門音訊格式。建立 UM 撥號對應表之後，您可以設定 UM 撥號對應表使用其中一種其他包括 WMA、 GSM 06.10 或 G.711 PCM 線性音訊轉碼器的音訊格式。若要接聽語音訊息、 行動電話或電腦必須安裝相容的音訊軟體應用程式。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-08-26_
+_**上次修改主題的時間：** 2013-08-26_
 
 Microsoft Exchange 整合通訊 (UM) 可以讓您根據組織的需求，建立一個或多個 UM 自動語音應答。與其他整合通訊元件 (如 UM 撥號對應表及 UM IP 閘道器) 不同的是，您不需要建立 UM 自動語音應答。不過，自動語音應答可以協助內部與外部來電者尋找組織中現有的使用者或部門，並將電話轉接給他們。本主題討論整合通訊中可用的 UM 自動語音應答。
 

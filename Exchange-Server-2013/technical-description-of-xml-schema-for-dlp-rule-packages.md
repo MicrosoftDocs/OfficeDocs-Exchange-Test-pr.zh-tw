@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-07-28_
+_**上次修改主題的時間：** 2016-07-28_
 
 XML 結構描述及本主題中的指導可協助您開始建立您自己的基本資料遺失防護 (DLP) XML 檔案的分類規則套件中定義您自己的敏感資訊類型。建立正確的 XML 檔案之後，您可以使用 Exchange 系統管理中心或 Exchange 管理命令介面以協助建立 Microsoft Exchange Server 2013 DLP 解決方案匯入它。為自訂的 DLP 原則範本 XML 檔案可以包含為您的分類規則套件的 XML。如需定義您自己的 DLP 範本為 XML 檔案的概觀，請參閱[定義自己的 DLP 範本和資訊類型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 

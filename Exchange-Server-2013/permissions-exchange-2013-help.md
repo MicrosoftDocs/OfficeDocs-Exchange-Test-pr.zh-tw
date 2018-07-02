@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange Server 2013包含大型，預先定義的權限，您可以輕鬆地授與權限給系統管理員和使用者立即使用角色型存取控制 (RBAC) 權限模型為基礎。您可以Exchange 2013中使用的權限功能，讓您可以取得新的組織設定且快速地執行。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以設定整合通訊 (UM) 設定您的使用者可以登入其語音郵件而不需使用 PIN。根據預設，會提示Outlook語音存取使用者輸入來登入其信箱並存取其語音信箱、 電子郵件、 行事曆、 個人連絡人、 目錄和個人選項的 PIN。
 

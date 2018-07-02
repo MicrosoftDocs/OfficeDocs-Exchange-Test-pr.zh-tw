@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 **HubTransport**健全設定監視信箱伺服器上傳輸管線負責在組織中的路由傳送郵件的整體狀況。如需詳細資訊，請參閱[郵件流程](https://technet.microsoft.com/zh-tw/library/aa996349\(v=exchg.150\))。
 

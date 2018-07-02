@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以設定整合通訊 (UM) 撥號對應表的預設語言。每個撥號對應表建立一開始會使用英文 (EN-US) 做為預設語言。英文 (EN-US) 的語言套件安裝在所有版本的MicrosoftExchange Server 2013上並不能移除。
 

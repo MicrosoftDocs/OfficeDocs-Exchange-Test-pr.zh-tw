@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以讓 Outlook 語音存取使用者可將來電轉接至整合通訊 (UM) 撥號有關聯的使用者或防止能力。根據預設，同時啟用此選項並**留下語音訊息而響鈴使用者的電話**\] 選項，使 Outlook 語音存取使用者可以傳輸通話中相同的 UM 的使用者撥號對應表為其留下語音訊息。此設定僅適用於 Outlook 語音存取使用者已輸入其 PIN 和驗證。
 

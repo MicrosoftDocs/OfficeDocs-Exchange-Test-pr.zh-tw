@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以測試的端對端用戶端Outlook無所不在連線使用介面或 Exchange Remote Connectivity Analyzer （exrca） 這是。這包括測試透過建立使用者設定檔及登入使用者的信箱的自動探索服務的連線。所有必要的值會從自動探索服務來擷取。
 

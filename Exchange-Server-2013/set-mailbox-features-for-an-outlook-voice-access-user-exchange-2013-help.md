@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 使用者存取的整合通訊 (UM) 系統使用Outlook語音存取時使用電話使用者介面 (TUI) 設定。當您修改已啟用 UM 之使用者 TUI 組態設定時，您可以修改內容及已啟用 UM 之使用者的信箱上其值。
 

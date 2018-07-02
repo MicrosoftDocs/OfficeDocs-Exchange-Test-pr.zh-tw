@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-19_
+_**上次修改主題的時間：** 2013-04-19_
 
 整合通訊 (UM) 自動語音應答設定營業時間時所定義之時間的組織已開啟、 一天及上班時間問候語和功能表提示來電者會聽到時所呼叫的自動語音應答設定分機號碼。如果來電者在您可以定義營業時間以外的時間達到的自動語音應答、 來電者會聽到的非上班時間提示和問候語。
 

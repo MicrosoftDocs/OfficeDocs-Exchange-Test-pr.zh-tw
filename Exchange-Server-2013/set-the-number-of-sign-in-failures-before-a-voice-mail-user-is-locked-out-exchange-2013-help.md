@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以設定允許Outlook語音存取使用者就會鎖定不在其信箱的登入失敗的次數。語音郵件使用者鎖定之前允許的登入失敗的次數設定整合通訊 (UM) 信箱原則\]，並套用至所有已啟用 UM 之使用者的 UM 信箱原則相關聯。根據預設它是設為 15。
 

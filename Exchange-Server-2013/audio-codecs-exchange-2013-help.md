@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 整合通訊 (UM) 使用音訊轉碼器來儲存語音信箱訊息。VoIP 閘道或 IP Private Branch eXchange (PBX) 與 Mailbox Server (執行 Microsoft Exchange Unified Messaging 服務) 或 Client Access Server (執行 Microsoft Exchange Unified Messaging Call Router 服務) 之間，使用另一種轉碼器。整合通訊可以使用下列四個音訊轉碼器中的任何一個來建立和儲存語音訊息：
 

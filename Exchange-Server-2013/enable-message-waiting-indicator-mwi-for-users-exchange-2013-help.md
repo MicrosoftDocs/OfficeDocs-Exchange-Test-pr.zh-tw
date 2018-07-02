@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 您可以啟用或停用使用者的整合通訊 (UM) 信箱原則相關聯訊息等待指示器。訊息等待指示器是最舊版的語音信箱系統中找到的功能。在其最常見的表單中，它會指出新的語音郵件訊息的顯示狀態的語音郵件訂閱者的電話上 lights 燈。訊息等待指示器也可以傳送文字郵件給已啟用 UM 之使用者的行動電話。會啟用預設設定。
 

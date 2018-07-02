@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-07-25_
+_**上次修改主題的時間：** 2017-07-25_
 
 工作階段邊界控制器 (SBC) 可讓您透過專用的公用 WAN 連線，將內部部署電話網路連接至 Microsoft 資料中心。SBC 用於內部部署 IP 網路的邊界，並用來連線到 Microsoft 資料中心的第二個 SBC。
 

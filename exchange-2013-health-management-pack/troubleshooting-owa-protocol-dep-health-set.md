@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 **OWA.Protocol.DEP**健全設定監視立即訊息 (IM) 服務中Outlook Web AppLync 2013和Exchange 2013之間整合的整體的狀況。如需啟用立即訊息中Outlook Web App的詳細資訊，請參閱 ＜[整合 Microsoft Lync Server 2013 與 Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/p/?linkid=280418)。
 

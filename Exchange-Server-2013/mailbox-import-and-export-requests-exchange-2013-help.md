@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 使用**MailboxImportRequest**或**MailboxExportRequest**指令程式會將 Exchange 管理命令介面中，您可以匯入的資料或將資料匯出至.pst 檔案。在啟動信箱匯入或匯出要求之後，程序是由Microsoft Exchange信箱複寫服務 (MRS) 以非同步方式完成。MRS 存在於所有Exchange 2010用戶端存取伺服器上，而且是負責移動信箱並匯入及匯出.pst 檔案的服務。
 

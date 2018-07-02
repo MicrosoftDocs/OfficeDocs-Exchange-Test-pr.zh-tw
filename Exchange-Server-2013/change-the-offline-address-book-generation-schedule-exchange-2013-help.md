@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-12-05_
+_**上次修改主題的時間：** 2012-12-05_
 
 離線通訊錄 (OAB) 是已下載的通訊錄副本，讓 Outlook 使用者可以在與伺服器中斷連線時存取其所包含的資訊。您可以使用 Set-MailboxServer Cmdlet 上的 *OABGeneratorWorkCycle* 與 *OABGeneratorWorkCycleCheckpoint* 參數設定產生 OAB 的頻率。
 

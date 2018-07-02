@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Exchange Server 2010 中存在的許多整合通訊 (UM) Cmdlet 已轉至 Exchange Server 2013，但其中一些 Cmdlet 也有所變更。此外，Exchange 2013 新增了一些 Cmdlet。
 

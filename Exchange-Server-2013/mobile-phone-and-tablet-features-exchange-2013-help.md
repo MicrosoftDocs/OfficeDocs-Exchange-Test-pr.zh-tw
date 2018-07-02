@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 使用者可以透過 Microsoft Exchange ActiveSync 存取其電子郵件、 行事曆、 連絡人和行動電話、 平板電腦和其他可攜式裝置上的 \[任務資訊。他們也可以使用它來設定其簽章與自動回覆。與 Exchange ActiveSync 搭配使用各種不同的行動電話和裝置。
 

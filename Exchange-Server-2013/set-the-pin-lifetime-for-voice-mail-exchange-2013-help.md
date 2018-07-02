@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以設定已啟用的整合通訊 (UM) 之使用者的 PIN 存留期。PIN 存留期為Outlook語音存取 PIN 將會是有效的已啟用 UM 之收件者的最長時間。PIN 存留期設定 UM 信箱原則上設定並套用至所有已啟用 UM 之使用者的 UM 信箱原則相關聯。
 

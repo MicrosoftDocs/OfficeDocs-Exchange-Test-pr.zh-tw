@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-09_
+_**上次修改主題的時間：** 2013-04-09_
 
 在您安裝執行 Microsoft Exchange Unified Messaging Call Router 服務的 Client Access Server 之後，您可以設定許多選項，包括同時來電數、TCP 和傳輸層安全性 (TLS) 接聽埠、狀態和啟動模式。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-08-22_
+_**上次修改主題的時間：** 2016-08-22_
 
 以下內容協助您在已安裝 Service Pack (SP1) 的 Exchange 2013 Client Access Server 上設定通訊協定和相關服務的 SSL 卸載。如果您有多部 Client Access Server，則必須在內部部署組織中已安裝 SP1 的每一部 Client Access Server 上，為每一個通訊協定或服務執行必要的步驟。當然，組織中的每一部 Client Access Server 必須有相同的設定。如果您要升級到較新的累計更新 (CU) 或 Service Pack，但想要繼續使用 SSL 卸載，則在升級或套用這些更新之後，您必須在 Exchange 2013 Client Access Server 上再次執行下列步驟。
 

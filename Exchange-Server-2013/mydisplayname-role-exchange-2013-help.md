@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-17_
+_**上次修改主題的時間：** 2012-10-17_
 
 `MyDisplayName`管理角色可讓個別使用者檢視和修改其顯示名稱。這是從[MyProfileInformation 角色](myprofileinformation-role-exchange-2013-help.md)父系角色建立自訂角色。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-15_
+_**上次修改主題的時間：** 2013-02-15_
 
 您可以在用戶端存取伺服器上指定的 Microsoft Exchange Unified Messaging Call Router 服務的啟動模式。根據預設，TCP 模式會開始的 Client Access server，但如果您使用傳輸層安全性 (TLS) 來加密 Voice over IP (VoIP) 流量，您必須設定使用 TLS 或雙重模式的用戶端存取伺服器。我們建議在用戶端存取伺服器設為雙作為啟動模式。這是因為可以回覆來電所有 um 撥號對應表，並以外的撥號對應表的所有用戶端存取和信箱伺服器可以有不同的安全性設定。如果您變更的啟動模式，您必須重新啟動 Microsoft Exchange Unified Messaging Call Router 服務的變更才會生效。
 

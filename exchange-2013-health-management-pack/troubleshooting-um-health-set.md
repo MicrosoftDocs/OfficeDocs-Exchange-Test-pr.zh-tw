@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 整合通訊 (UM) 健全設定會監視您組織中 UM 服務的整體健康狀況。
 
@@ -158,7 +158,7 @@ UM 服務是透過下列探查與監視器受到監視。
 
 更新 Mailbox Server 上的 UM 服務認證。
 
-**其他疑難排解步驟：**
+**其他疑難排解步驟：** 
 
 1.  啟動 \[IIS 管理員\]，然後連線到回報問題的伺服器，以判斷 **MSExchangeServicesAppPool** 應用程式集區是否正在執行。
 

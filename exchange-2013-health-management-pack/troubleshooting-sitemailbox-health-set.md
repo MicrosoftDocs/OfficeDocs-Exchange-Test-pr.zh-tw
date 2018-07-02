@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2013-02-11_
+_**上次修改主題的時間：** 2013-02-11_
 
 SiteMailbox 健全設定會監控您組織中站台信箱的整體健康狀況和可存取性。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-06-25_
+_**上次修改主題的時間：** 2013-06-25_
 
 本主題說明如何使用命令介面來測試語音信箱系統的作業。當您執行下列程序時，執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 會起始診斷工作階段初始通訊協定 (SIP) 呼叫，然後傳回 UM 服務的健全狀況狀態變數。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 *內容傳輸編碼*定義編碼方法將二進位電子郵件訊息資料轉換成 US-ASCII 純文字格式。這個轉換允許透過僅支援 US-ASCII 文字中的 \[郵件的舊 SMTP 郵件伺服器的一點傳輸訊息。內容傳輸編碼定義於 RFC 2045。傳輸編碼方法為儲存在郵件中**的內容傳輸編碼**標頭\] 欄位。在 Microsoft Exchange Server 2013、 內容傳輸編碼方法為可用的：
 

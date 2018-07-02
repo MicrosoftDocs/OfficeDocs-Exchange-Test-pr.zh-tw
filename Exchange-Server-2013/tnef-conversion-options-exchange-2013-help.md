@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 您可以指定 Transport Neutral Encapsulation Format (TNEF) 是否應該保留或移除保留Exchange組織的郵件。TNEF，也稱為Outlook Rtf 格式或Exchange Rtf 格式，是Microsoft-特定格式封裝 MAPI 編製郵件內容。所有版本的MicrosoftOutlook完全了都解 TNEF。Outlook Web App TNEF 轉譯 MAPI 並顯示格式化的郵件。不過，不了解 TNEF 通常會顯示 TNEF 其他電子郵件用戶端被設為 Winmail.dat 或 Win.dat 附件的純文字郵件的郵件。
 

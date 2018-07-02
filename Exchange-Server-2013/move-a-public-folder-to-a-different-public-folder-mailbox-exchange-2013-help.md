@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-11-16_
+_**上次修改主題的時間：** 2016-11-16_
 
 如果超過信箱配額開頭的公用資料夾信箱的內容，您可能需要將公用資料夾移至不同的公用資料夾信箱。有幾種方式可以執行這項作業。若要移動一或多個公用資料夾不包含子資料夾，您可以使用**PublicFolderMoveRequest**指令程式。如果您需要移動整個公用資料夾分支下 （其中包括上層公用資料夾及所有子資料夾），您可以使用當您安裝 Exchange 2013 `Move-PublicFolderBranch.ps1`指令碼。
 

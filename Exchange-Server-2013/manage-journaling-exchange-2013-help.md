@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 日誌記錄可協助您錄製內送和外寄電子郵件通訊以回應法律聲明、 法規及組織規範需求的組織。本主題顯示如何執行與管理Exchange 2013和Exchange Online日誌記錄相關的基本工作。
 

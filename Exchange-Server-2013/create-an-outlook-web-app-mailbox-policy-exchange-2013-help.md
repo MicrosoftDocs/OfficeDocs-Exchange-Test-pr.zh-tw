@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-05-30_
+_**上次修改主題的時間：** 2013-05-30_
 
 您可以建立 Outlook Web App 信箱原則來套用一組共通的原則設定。Outlook Web App 信箱原則在套用與標準化特定使用者群組的設定時相當實用，例如使用者特定群組的附件設定。
 

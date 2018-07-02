@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 若要防止遭到意外或惡意刪除，常已採取之前或期間訴訟暫止或調查努力探索 Microsoft Exchange Server 2013和Exchange Online使用 \[可復原項目\] 資料夾。可復原的項目\] 資料夾會取代稱為功能*暫放*舊版Exchange中。可復原的項目\] 資料夾使用下列Exchange功能：
 

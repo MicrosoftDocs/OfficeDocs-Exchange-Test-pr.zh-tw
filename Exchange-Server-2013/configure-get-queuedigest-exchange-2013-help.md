@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 **Get-QueueDigest** Cmdlet 可讓您使用單一命令，即可檢視 Exchange 組織中的部分或全部佇例的相關資訊。
 

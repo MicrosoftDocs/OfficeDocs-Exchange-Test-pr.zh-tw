@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 當您安裝 Microsoft Exchange Server 2013到現有的 Microsoft Exchange Server 2010或 Microsoft Exchange Server 2007組織時，您需要了解權限的新組織中的運作方式。閱讀下節的適用於您的組織。
 

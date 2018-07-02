@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-30_
+_**上次修改主題的時間：** 2012-10-30_
 
 當您新增信箱資料庫複本時，連續複寫會自動啟用現有的資料庫和資料庫副本之間。資料庫副本自動指派給 identity 的格式為 \<*DatabaseName*\> \\ \<*HostMailboxServerName*\>。例如，伺服器 MBX3 裝載 DB1 的複本是資料庫的 DB1\\MBX3。
 

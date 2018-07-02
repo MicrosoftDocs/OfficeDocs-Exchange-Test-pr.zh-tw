@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以在 Microsoft Exchange Server 2013 中使用 **Setup /m:RecoverServer** 參數復原遺失的伺服器。執行 Exchange 2013 之電腦的大部分設定都儲存在 Active Directory。*/m:RecoverServer* 參數會使用儲存在 Exchange 中的設定和其他資訊，以相同名稱重建 Active Directory 伺服器。
 

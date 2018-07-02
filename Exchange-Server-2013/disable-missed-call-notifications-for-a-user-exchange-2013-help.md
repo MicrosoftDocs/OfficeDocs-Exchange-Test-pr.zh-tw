@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-09_
+_**上次修改主題的時間：** 2012-12-09_
 
 您可以啟用或使用命令介面或 EAC 來停用整合通訊 (UM) 信箱原則的未接的來電通知。未接的來電通知使用者不會接聽來電時，傳送給使用者的電子郵件訊息，且來電者不會留下語音訊息。這是包含語音訊息離開的使用者與不同的電子郵件訊息。
 

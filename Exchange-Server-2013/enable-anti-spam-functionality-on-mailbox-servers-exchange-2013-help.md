@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-01-23_
+_**上次修改主題的時間：** 2014-01-23_
 
 在 Microsoft Exchange Server 2013中，信箱伺服器上的傳輸服務可使用下列反垃圾郵件代理程式，但其並非預設安裝：
 

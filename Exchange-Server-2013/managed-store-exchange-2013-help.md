@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-07-14_
+_**上次修改主題的時間：** 2014-07-14_
 
 所有舊版的 Exchange Server 上，從 Exchange Server 2010、 Exchange Server 4.0 有執行資訊儲存庫程序 (Store.exe) 之單一執行個體上都支援 Mailbox server role。此單一的存放區執行個體架設在伺服器上的所有資料庫 ︰ active、 被動、 延遲、 及復原。在舊版的 Exchange 架構，有一點，若有的話，隔離不同信箱伺服器上裝載的資料庫之間。單一信箱資料庫問題可能會造成負面的影響所有其他資料庫，而且當機次數所產生的信箱損毀可能會影響的資料庫架設在該伺服器的所有使用者的服務。
 

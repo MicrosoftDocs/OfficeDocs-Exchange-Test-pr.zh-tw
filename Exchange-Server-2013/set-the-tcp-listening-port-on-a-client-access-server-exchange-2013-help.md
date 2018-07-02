@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-09_
+_**上次修改主題的時間：** 2013-04-09_
 
 您可以設定用來接聽執行 Microsoft Exchange Unified Messaging Call Router 服務之用戶端存取伺服器上的 SIP 要求的 TCP 連接埠。根據預設，當您安裝用戶端存取伺服器、 SIP TCP 聆聽連接埠號碼設定為 5060 和 Client Access server 在 TCP 模式中啟動。無法使用 EAC 設定 SIP TCP 聆聽連接埠。您必須設定使用**Set-UMCallRouterSettings**指令程式的 SIP TCP 聆聽連接埠號碼。
 

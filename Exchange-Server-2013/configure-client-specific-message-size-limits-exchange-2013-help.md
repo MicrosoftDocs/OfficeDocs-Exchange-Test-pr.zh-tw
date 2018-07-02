@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-01-26_
+_**上次修改主題的時間：** 2017-01-26_
 
 Microsoft Exchange Server 2013 對於通過您 Exchange 組織的郵件設有數種不同的適用郵件大小限制。如需詳細資訊，請參閱 [郵件大小限制](message-size-limits-exchange-2013-help.md)。
 
@@ -266,7 +266,7 @@ Microsoft Exchange Server 2013 對於通過您 Exchange 組織的郵件設有數
 
 您也可以設定從命令列的特定用戶端的郵件大小限制而不是使用 \[記事本\]。開啟已提升權限的命令提示字元處Exchange伺服器 （您可以選取 \[**執行系統管理員身分**開啟命令提示字元視窗） 並執行的適當命令會針對您想要設定的限制。
 
-**附註：**
+**附註：** 
 
   - 在命令中的大小值是預設值，因此您需要對其進行變更。
 

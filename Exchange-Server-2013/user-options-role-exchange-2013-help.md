@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `User Options`管理角色可讓系統管理員能夠檢視組織中的使用者Outlook Web App選項。此角色可用來協助診斷設定問題。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-13_
+_**上次修改主題的時間：** 2012-12-13_
 
 您可以允許 Outlook Voice Access 使用者將語音信箱訊息傳送到與相同撥號對應表相關聯且已啟用 UM 功能的其他使用者，或是防止他們這樣做。
 

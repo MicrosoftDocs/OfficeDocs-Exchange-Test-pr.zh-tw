@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 Outlook語音存取包含兩個介面 ︰ 電話的使用者介面 (TUI) 和語音使用者介面 (VUI)。根據預設，當使用者撥入Outlook語音存取他們可以存取其行事曆、 電子郵件、 及個人連絡人及搜尋目錄。您可以使用命令介面來防止使用者存取其信箱Outlook語音存取時存取一或多個這些功能。當您修改整合通訊 (UM) 信箱原則上的Outlook語音存取功能時，您的變更會影響所有與 UM 信箱原則相關聯的使用者。
 

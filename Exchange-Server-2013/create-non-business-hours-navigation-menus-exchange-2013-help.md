@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 您可以啟用非上班時間按鍵對應的整合通訊 (UM) 自動語音應答。建立 UM 自動語音應答後，預設系統提示將會使用針對非上班時間主功能表提示問候語來電者聽到之後非-上班時間歡迎使用問候語播放。預設非上班時間主功能表提示會說明 「 歡迎使用MicrosoftExchange之後自動語音應答的時數 」。因為沒有按鍵對應未定義預設，沒有功能表選項會提供給來電者與他們聽到僅預設非上班時間主功能表提示。
 

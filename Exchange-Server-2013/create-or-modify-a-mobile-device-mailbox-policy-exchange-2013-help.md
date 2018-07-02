@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-16_
+_**上次修改主題的時間：** 2012-10-16_
 
 行動裝置信箱原則可讓您將一組通用的安全性與行動裝置設定套用至使用者群組。您可以建立多個行動裝置信箱原則。在組織中的每個收件者必須指派給他們的行動裝置信箱原則。當您安裝 Microsoft Exchange Server 2013時，會建立預設的行動裝置信箱原則和新的使用者會自動指派至此原則。若要指派特定使用者的行動裝置信箱原則，請參閱[新增或移除使用者從行動裝置信箱原則](add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md)。
 

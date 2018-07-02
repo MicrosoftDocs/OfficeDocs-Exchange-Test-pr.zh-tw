@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 *佈景主題*定義背景色彩、 字型、 醒目提示色彩、 圖示和MicrosoftOutlook Web App所使用的標頭。每一個佈景主題是一組媒體檔案和MicrosoftExchange中的伺服器安裝目錄 \\Client Access\\OWA\\prem\\*version*\\resources\\themes 中儲存的階層式樣式表 (.css) 檔案。每一個佈景主題會儲存在其專屬的 \\themes 子目錄。
 

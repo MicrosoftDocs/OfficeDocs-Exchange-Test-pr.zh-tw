@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-20_
+_**上次修改主題的時間：** 2013-02-20_
 
 本主題說明授與使用者已啟用 Exchange 整合通訊 (UM) 的存取權的電子郵件和語音信箱訊息在他們的信箱中的用戶端功能。這些功能可讓您提供使用者簡化的存取語音信箱和電子郵件和整體使用者體驗。
 

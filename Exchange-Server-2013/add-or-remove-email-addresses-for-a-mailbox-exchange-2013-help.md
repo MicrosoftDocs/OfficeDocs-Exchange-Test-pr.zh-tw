@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以設定多個相同信箱的電子郵件地址。其他地址稱為*proxy 位址*。Proxy 位址可讓使用者接收電子郵件傳送至不同的電子郵件地址。傳送給使用者的 proxy 位址任何電子郵件傳送到*主要 SMTP 位址*\] 或 \[*預設回覆地址*又稱做為其主要電子郵件地址。
 

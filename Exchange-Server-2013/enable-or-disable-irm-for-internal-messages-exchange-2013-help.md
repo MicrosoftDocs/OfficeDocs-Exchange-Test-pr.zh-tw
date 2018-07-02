@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-12_
+_**上次修改主題的時間：** 2012-10-12_
 
 在 Microsoft Exchange Server 2013、 內部郵件的預設會啟用資訊版權管理 (IRM)。這可讓您建立傳輸保護規則和 Microsoft Outlook保護規則 IRM 保護的郵件傳輸規則中與 Microsoft Outlook 2010及更新版本的用戶端上。啟用內部郵件的 IRM 是針對其他所有Exchange Server 2013，例如停用傳輸解密、 日誌規則解密、 IRM in Microsoft OfficeOutlook Web App，以及 Microsoft Exchange ActiveSync中的 IRM 的 IRM 功能的必要條件。
 

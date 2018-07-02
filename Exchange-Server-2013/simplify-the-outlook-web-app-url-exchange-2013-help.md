@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-07-16_
+_**上次修改主題的時間：** 2015-07-16_
 
-**摘要：** 使用本文中的程序簡化 URL，以存取 Exchange 2013 中的 OWA 您組織的使用者。
+**摘要：**  使用本文中的程序簡化 URL，以存取 Exchange 2013 中的 OWA 您組織的使用者。
 
 您可以簡化使用者用來存取其Exchange Server 2013信箱MicrosoftOutlook Web App URL。
 

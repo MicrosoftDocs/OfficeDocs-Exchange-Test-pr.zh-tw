@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-17_
+_**上次修改主題的時間：** 2012-11-17_
 
 根據預設，整合通訊 (UM) 自動語音應答使用 Mailbox server 建立的時區。不過，偶爾您可能必須變更為不同的時區時區 UM 自動語音應答。例如，如果您有兩個 UM 撥號對應表和每個撥號對應表代表不同的時區，您必須設定一個具有相同的時區為信箱伺服器的 UM 自動語音應答和其他 UM 自動語音應答有不同於信箱伺服器的時區。
 

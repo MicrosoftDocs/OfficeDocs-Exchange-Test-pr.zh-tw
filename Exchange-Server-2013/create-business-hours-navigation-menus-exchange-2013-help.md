@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 您可以啟用整合通訊 (UM) 自動語音應答的營業時間的按鍵對應。建立 UM 自動語音應答後，預設系統提示將用於營業時間主功能表提示問候語來電者聽到之後上班時間歡迎使用問候語播放。預設上班時間主功能表提示會說明 「 歡迎使用Microsoft Exchange自動語音應答 」。因為沒有按鍵對應未定義預設，沒有功能表選項會提供給來電者，且他們聽到僅預設主功能表提示。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-14_
+_**上次修改主題的時間：** 2013-02-14_
 
 您可以使用 EAC 或命令介面來管理在執行 Microsoft Exchange 整合通訊服務的 Mailbox server 上的整合通訊 (UM) 語言。不過，從 UM 撥號對應表上的清單中移除的語言，您必須移除適當的 UM 語言套件的信箱伺服器使用**Setup.exe /RemoveUmLanguagePack**命令。從信箱伺服器移除 UM 語言套件之後，語言不是設定 UM 撥號對應表或 UM 自動語音應答時可用。您可以檢視來檢視 Mailbox server 的屬性或使用**Get-UMService**指令程式會安裝 UM 語言套件。
 

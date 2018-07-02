@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您需要執行 Exchange 安裝的指引嗎？本文提供規劃和部署 Microsoft Exchange Server 2013 的指引，以及您在部署期間將需要的文章連結。
 

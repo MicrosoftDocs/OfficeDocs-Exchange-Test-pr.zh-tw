@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 若要檢視特定日期處理的 Exchange 伺服器通話的詳細的資訊，請呼叫將資料匯出當天的呼叫統計資料報告。每日通話即提供過去 90 天的資料可協助您診斷與音訊品質或已拒絕的通話的問題和稽核或組織中的 Exchange 伺服器上的報告提供的資訊。
 

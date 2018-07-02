@@ -13,23 +13,23 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-11-16_
+_**上次修改主題的時間：** 2017-11-16_
 
 您可以使用 CSV 檔案以大量移轉大量的使用者信箱。您可以指定 CSV 檔案時您使用 Exchange 系統管理中心 (EAC) 或**New-MigrationBatch**指令程式在Exchange 管理命令介面建立遷移批次。使用 CSV 來指定多個使用者的遷移批次中遷移支援下列遷移情況：
 
   - **在內部部署 Exchange 組織中移動**
     
-      - **本機移動：**本機移動是其中的信箱從一個信箱資料庫間移動。本機移動發生在單一樹系內。
+      - **本機移動：** 本機移動是其中的信箱從一個信箱資料庫間移動。本機移動發生在單一樹系內。
     
-      - **跨樹系企業移動：**在跨樹系企業移動，信箱會移至不同的樹系。跨樹系移動所啟動從目標樹系，也就是您想要信箱移至樹系，或從來源樹系，這是目前主控信箱之樹系。
+      - **跨樹系企業移動：** 在跨樹系企業移動，信箱會移至不同的樹系。跨樹系移動所啟動從目標樹系，也就是您想要信箱移至樹系，或從來源樹系，這是目前主控信箱之樹系。
 
   - **Exchange Online** 中的上架和下架
     
-      - **Onboarding 遠端移動遷移：**在Exchange混合式部署中，您可以將信箱從內部部署Exchange組織移至Exchange Online。這也稱為是因為*onboarding*遠端移動遷移您要Exchange Online內建的信箱。
+      - **Onboarding 遠端移動遷移：** 在Exchange混合式部署中，您可以將信箱從內部部署Exchange組織移至Exchange Online。這也稱為是因為*onboarding*遠端移動遷移您要Exchange Online內建的信箱。
     
-      - **下架遠端移動遷移：**您也可以執行「下架」遠端移動遷移，也就是將 Exchange Online 信箱遷移至您的內部部署 Exchange 組織。
+      - **下架遠端移動遷移：** 您也可以執行「下架」遠端移動遷移，也就是將 Exchange Online 信箱遷移至您的內部部署 Exchange 組織。
         
         <table>
         <thead>
@@ -44,9 +44,9 @@ _**上次修改主題的時間：**2017-11-16_
         </tbody>
         </table>
     
-      - **分段 Exchange 遷移：**您也可以從內部部署Exchange組織的信箱的子集將移轉至Exchange Online。這是另一種類型的 onboarding 移轉。您可以僅Exchange 2003和Exchange 2007使用遷移遷移信箱分段的Exchange 。Exchange 2010和Exchange 2013移轉信箱不支援使用分段的遷移。在執行分段式的移轉，您必須Exchange Online組織中使用目錄同步處理或其他方法來佈建的郵件使用者。
+      - **分段 Exchange 遷移：** 您也可以從內部部署Exchange組織的信箱的子集將移轉至Exchange Online。這是另一種類型的 onboarding 移轉。您可以僅Exchange 2003和Exchange 2007使用遷移遷移信箱分段的Exchange 。Exchange 2010和Exchange 2013移轉信箱不支援使用分段的遷移。在執行分段式的移轉，您必須Exchange Online組織中使用目錄同步處理或其他方法來佈建的郵件使用者。
     
-      - **IMAP 遷移：**此 onboarding 遷移類型會將信箱資料從 IMAP 伺服器 （包括Exchange） 移轉至Exchange Online。進行 IMAP 遷移時，您必須佈建Exchange Online中的信箱移轉信箱資料之前。
+      - **IMAP 遷移：** 此 onboarding 遷移類型會將信箱資料從 IMAP 伺服器 （包括Exchange） 移轉至Exchange Online。進行 IMAP 遷移時，您必須佈建Exchange Online中的信箱移轉信箱資料之前。
 
 <table>
 <thead>

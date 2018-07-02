@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-05-04_
+_**上次修改主題的時間：** 2016-05-04_
 
 在傳送郵件之前，由另一個人監督郵件有時很合理。您可以 Exchange 系統管理員的身分進行此設定。此程序稱為「仲裁」，而核准者稱為「仲裁者」。視哪些郵件需要核准而言，您可以使用以下兩種方法之一：
 

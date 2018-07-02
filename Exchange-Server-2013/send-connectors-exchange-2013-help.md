@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-15_
+_**上次修改主題的時間：** 2012-10-15_
 
 在 Microsoft Exchange Server 2013、 傳送連接器會控制來接收伺服器的輸出郵件流程。他們是執行的傳輸服務的 Mailbox server 上設定。最常您設定傳送到智慧主機或直接使用 DNS 其收件者的外寄電子郵件的傳送連接器。
 

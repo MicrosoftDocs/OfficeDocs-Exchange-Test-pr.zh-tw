@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-02-06_
+_**上次修改主題的時間：** 2017-02-06_
 
 ## Exchange 2013 的效能計數器
 

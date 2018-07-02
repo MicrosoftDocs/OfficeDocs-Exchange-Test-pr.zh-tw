@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 您可能需要將移至不同的 UM 撥號對應啟用的整合通訊 (UM) 之使用者或變更與使用者關聯的撥號。例如，您可能會想要已啟用 UM 的使用者移至 SIP URI 撥號對應表的電話分機撥號對應表。
 

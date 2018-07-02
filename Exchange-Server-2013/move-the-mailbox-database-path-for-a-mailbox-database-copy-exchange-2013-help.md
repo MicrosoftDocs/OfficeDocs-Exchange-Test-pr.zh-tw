@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-05-07_
+_**上次修改主題的時間：** 2014-05-07_
 
 建立信箱資料庫之後，您可以使用 EAC 或命令介面，將其移至另一個磁碟區、資料夾、位置或路徑。如需如何移動非覆寫信箱資料庫之信箱資料庫路徑的逐步指示，請參閱[Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-03-03_
+_**上次修改主題的時間：** 2014-03-03_
 
 Exchange Server 2013允許其他應用程式使用 OAuth 對 Exchange 進行驗證。應用程式必須設定為 Exchange 2013 中的夥伴應用程式。
 

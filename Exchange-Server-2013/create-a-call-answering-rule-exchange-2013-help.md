@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以使用命令介面，為使用者建立一或多個自動答錄規則。 您也可以在 Exchange 管理命令介面指令碼中使用 **New-UMCallAnsweringRule** 指令程式，為多個使用者建立自動答錄規則。
 

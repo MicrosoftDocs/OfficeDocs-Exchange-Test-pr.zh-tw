@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2013-02-18_
+_**上次修改主題的時間：** 2013-02-18_
 
 Microsoft Exchange Server 2013安裝程式無法繼續因為它找到重複的 Microsoft Exchange 系統物件容器中的 Active Directory 網域命名內容\]。當安裝程式會找出重複的 Microsoft Exchange 系統物件容器時，您必須刪除重複容器才可以繼續安裝程式。當存在重複的 Microsoft Exchange 系統物件容器中時，您無法再次執行**DomainPrep**來解決問題。您必須找出並刪除重複的 Microsoft Exchange 系統物件容器。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以使用命令介面啟用或停用一或多個使用者呼叫接聽規則。您也可以使用 Exchange 管理命令介面指令碼中的**Enable-UMCallAnsweringRule**或**Disable-UMCallAnsweringRule** cmdlet，啟用或停用一或多個多位使用者的呼叫接聽規則。
 

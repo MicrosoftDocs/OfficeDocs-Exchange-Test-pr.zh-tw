@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-30_
+_**上次修改主題的時間：** 2013-04-30_
 
 建立整合通訊 (UM) 自動語音應答後，您可以檢視或設定各種設定。例如，您可以新增、 移除和編輯相關聯的自動語音應答的分機號碼。您也可以啟用或停用自動語音辨識 (ASR) 自動語音應答並變更用於上班與非上班時間問候語。
 

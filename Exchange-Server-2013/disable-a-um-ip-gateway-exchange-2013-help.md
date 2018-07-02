@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-13_
+_**上次修改主題的時間：** 2012-11-13_
 
 根據預設，當您建立整合通訊 (UM) IP 閘道器已啟用 UM IP 閘道器的狀態。建立 UM IP 閘道之後，您可以藉由設定其狀態為 \[停用來停用閘道的作業。停用 UM IP 閘道器、 Voice over IP (VoIP) 閘道後 IP 專用交換機 (PBX) 或其已設定為使用的工作階段邊界控制器 (SBC) 不再可處理傳入的整合通訊呼叫。
 

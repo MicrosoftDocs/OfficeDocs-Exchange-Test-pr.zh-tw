@@ -17,7 +17,7 @@ _<strong>適用版本：</strong>Exchange Server 2013, Exchange Server 2016_
 
 _<strong>上次修改主題的時間：</strong>2016-12-09_
 
-**摘要：** 啟用 Exchange Online 使用者存取內部部署 Exchange 2013 環境中的公用資料夾的指示。
+**摘要：**  啟用 Exchange Online 使用者存取內部部署 Exchange 2013 環境中的公用資料夾的指示。
 
 在混合式部署中，您的使用者可以在 Exchange Online、 內部，或兩者，且您的公用資料夾其在 Exchange 線上\] 或 \[內部部署。有時 online 使用者可能會需要用來存取 Exchange Server 2013 內部部署環境中的公用資料夾。同樣地，Exchange 2013 使用者可能需要存取 Office 365 或 Exchange Online 中的公用資料夾。
 

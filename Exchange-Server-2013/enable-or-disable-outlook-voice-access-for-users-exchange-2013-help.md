@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-12_
+_**上次修改主題的時間：** 2012-12-12_
 
 您可以啟用或停用存取Outlook相關聯的整合通訊 (UM) 信箱原則已啟用 UM 之使用者的語音存取權。Outlook語音存取是透過電話存取其信箱已啟用 UM 之使用者所使用的功能。根據預設，會啟用此設定。
 

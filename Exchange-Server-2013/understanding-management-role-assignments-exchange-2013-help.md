@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-04_
+_**上次修改主題的時間：** 2012-10-04_
 
 *管理角色指派*，也就是在 Microsoft Exchange Server 2013中的角色型存取控制 (RBAC) 權限模型的一部分，是管理角色與角色受託人之間的連結。*角色受託人*為角色群組、 角色指派原則、 使用者或萬用安全性群組 (USG)。角色必須指派給角色受託人為其才會生效。如需 RBAC 的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。
 

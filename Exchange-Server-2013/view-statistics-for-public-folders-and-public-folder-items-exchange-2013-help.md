@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-14_
+_**上次修改主題的時間：** 2013-02-14_
 
 本主題說明如何擷取公用資料夾，例如顯示名稱、 建立時間、 上次修改的使用者、 最後一個使用者存取\] 和項目大小相關的統計資料。您可以使用這項資訊以進行刪除或保留 \[公用資料夾的相關決策。
 

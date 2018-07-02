@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 MicrosoftExchange 整合通訊 (UM) 依賴認證的傳真協力廠商解決方案的增強的傳真功能，例如外寄傳真或傳真路由。根據預設，Exchange 伺服器未設定為允許傳入的傳真傳送給啟用 um 的使用者。而是 Exchange 伺服器會重新導向至認證的傳真協力廠商解決方案的傳入傳真呼叫。傳真協力程式伺服器會接收傳真資料並再傳送給電子郵件中的使用者的信箱與為.tif 附件包含傳真。
 

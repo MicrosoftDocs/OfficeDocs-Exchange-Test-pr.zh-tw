@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-11-05_
+_**上次修改主題的時間：** 2014-11-05_
 
 因為登入的使用者沒有必要的帳戶權限，無法安裝組織中的第一台 Exchange 2013 伺服器，所以 Microsoft Exchange Server 2013 安裝程式無法繼續。
 

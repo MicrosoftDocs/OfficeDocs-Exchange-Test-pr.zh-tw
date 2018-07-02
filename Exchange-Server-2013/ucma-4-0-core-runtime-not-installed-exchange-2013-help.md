@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 因為本機電腦需要軟體更新，所以 Microsoft Exchange Server 2013 安裝程式無法繼續。需安裝此更新才可繼續 Exchange 2013 安裝程式。
 

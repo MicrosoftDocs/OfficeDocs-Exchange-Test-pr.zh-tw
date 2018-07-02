@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-13_
+_**上次修改主題的時間：** 2012-11-13_
 
 您可以啟用整合通訊 (UM) IP 閘道的撥出電話撥出電話已停用。當您選取的 UM IP 閘道屬性上的 \[**允許通過這個 UM IP 閘道的撥出電話**\] 選項時，您可以設定以接受並傳送 over IP (VoIP) 閘道、 專用交換機 (PBX) 啟用工作階段初始通訊協定 (SIP)、 IP PBX 或工作階段邊界控制器 (SBC) 撥出電話語音的 UM IP 閘道。雖然**允許通過這個 UM IP 閘道的撥出電話**設定控制是否能夠啟動使用者的撥出電話的 UM IP 閘道，它不會影響來電轉接或來電 VoIP 閘道、 PBX 啟用 SIP、 IP PBX 或 SBC。
 

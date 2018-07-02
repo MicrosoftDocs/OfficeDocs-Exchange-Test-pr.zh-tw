@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-12-03_
+_**上次修改主題的時間：** 2014-12-03_
 
 因為本機電腦遺漏必要的 Windows 功能，所以 Microsoft Exchange Server 2013 安裝程式無法繼續。您必須先安裝此 Windows 功能，Exchange 2013 安裝程式才能繼續。
 

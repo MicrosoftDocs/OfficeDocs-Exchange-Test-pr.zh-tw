@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-03-26_
+_**上次修改主題的時間：** 2018-03-26_
 
-**摘要：** 本文會告訴您如何將公用資料夾從 Exchange 2007 或 Exchange 2010 移至 Exchange 2013。
+**摘要：**  本文會告訴您如何將公用資料夾從 Exchange 2007 或 Exchange 2010 移至 Exchange 2013。
 
 本文說明如何將公用資料夾移轉從 Exchange Server 2010 SP3 RU8 或 Exchange 2007 SP3 RU15 Microsoft Exchange Server 2013 CU7 或稍後將在同一個樹系。
 

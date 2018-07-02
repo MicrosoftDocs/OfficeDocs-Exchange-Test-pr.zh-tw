@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 整合通訊 (UM) 撥號對應表包含相關電話語音網路的組態資訊。UM 撥號對應表建立自己的信箱的語音信箱啟用的使用者的電話分機號碼從的連結。當您建立 UM 撥號對應表時，您可以設定的分機號碼、 統一資源識別元 (URI) 類型及語音的數字數目 over IP (VoIP) 撥號對應表的安全性設定。
 

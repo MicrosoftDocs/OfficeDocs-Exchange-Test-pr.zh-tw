@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-11_
+_**上次修改主題的時間：** 2012-10-11_
 
 建立通訊錄原則 (ABP) 之後，您必須將其指派給信箱使用者。未指派給使用者的預設 ABP 建立其使用者帳戶時。如果您未將 ABP 指派給使用者，則會以透過 Outlook 和 Outlook Web App 使用者可以存取整個組織的全域通訊清單 (GAL)。若要深入了解，請參閱[通訊錄原則](address-book-policies-exchange-2013-help.md)。
 

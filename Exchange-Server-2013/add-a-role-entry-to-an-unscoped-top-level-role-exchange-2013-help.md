@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 您可以新增指令碼和非Exchange指令程式未限定範圍的頂層管理角色如果您想要讓新的指令碼或非Exchange指令程式可以使用現有的未限定範圍角色。這些指令碼和非Exchange cmdlet 會新增為管理角色項目未限定範圍的頂層管理角色。然後可以使用這些未限定範圍的頂層角色項目或任何未限定範圍的角色衍生自最上層角色。如需未限定範圍的角色項目的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

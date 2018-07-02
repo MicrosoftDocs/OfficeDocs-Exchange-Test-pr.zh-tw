@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-03-26_
+_**上次修改主題的時間：** 2018-03-26_
 
-**摘要：** 將 Exchange 2007 和 Exchange 2010 公用資料夾移至 Office 365 使用這些程序。
+**摘要：**  將 Exchange 2007 和 Exchange 2010 公用資料夾移至 Office 365 使用這些程序。
 
 本主題說明如何將您在轉換或分段遷移的公用資料夾從更新彙總套件 8 以Exchange Server 2010 Service Pack 3 (SP3) 或 Exchange 2007 SP3 的更新彙總套件 15 移轉至 Office 365 或 Exchange Online。
 

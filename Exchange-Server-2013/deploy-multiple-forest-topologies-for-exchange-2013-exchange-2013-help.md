@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題提供部署多個樹系拓撲中的 Microsoft Exchange Server 2013的概觀。您會發現下列主旨的相關資訊：
 

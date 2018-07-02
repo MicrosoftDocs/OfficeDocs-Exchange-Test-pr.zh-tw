@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-09-23_
+_**上次修改主題的時間：** 2012-09-23_
 
 [建立從網際網路接收電子郵件的接收連接器](create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md)
 

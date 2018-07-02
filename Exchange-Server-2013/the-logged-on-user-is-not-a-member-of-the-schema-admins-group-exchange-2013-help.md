@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-12-02_
+_**上次修改主題的時間：** 2014-12-02_
 
 Microsoft Exchange Server 2013安裝程式，因此無法繼續執行 Active Directory 結構描述的使用者帳戶更新程序不是 Schema Admins 和 Enterprise Admins 群組的成員。
 

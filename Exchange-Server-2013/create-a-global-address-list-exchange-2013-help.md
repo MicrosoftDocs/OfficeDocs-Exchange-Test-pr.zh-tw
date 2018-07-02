@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 全域通訊清單 (GAL) 是包含的每個群組、 使用者及組織實作MicrosoftExchange連絡人項目目錄。如果貴組織使用通訊錄原則，您可能會想要建立其他的 Gal。若要深入了解，請參閱[通訊錄原則](address-book-policies-exchange-2013-help.md)。
 

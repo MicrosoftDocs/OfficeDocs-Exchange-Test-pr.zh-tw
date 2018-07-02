@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 Exchange Server 2013自動會在安裝期間設定多個網際網路資訊服務 (IIS) 虛擬目錄。本主題包含預設 IIS 驗證設定與預設的用戶端存取和信箱伺服器的 Secure Sockets Layer (SSL) 設定的相關資訊。
 

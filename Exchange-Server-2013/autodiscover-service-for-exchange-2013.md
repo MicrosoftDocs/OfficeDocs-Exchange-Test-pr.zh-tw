@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 瞭解 Microsoft Exchange 2013 的 Exchange 自動探索服務。您將瞭解 Exchange 自動探索服務及其運作方式，以及有哪些部署選項。
 

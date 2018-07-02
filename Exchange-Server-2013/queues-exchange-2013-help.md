@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 「佇列」是訊息等候進入下一個處理階段或傳遞至目的地時的暫存位置。每個佇列都代表 Exchange Server 會以特定順序處理的一組邏輯訊息。在 Microsoft Exchange Server 2013 中，佇列中會存放進行傳遞之前、期間或之後的訊息。佇列存在於 Mailbox Server 和 Edge Transport Server 上。在本主題中，Mailbox Server 和 Edge Transport Server 皆稱為「傳輸伺服器」。
 

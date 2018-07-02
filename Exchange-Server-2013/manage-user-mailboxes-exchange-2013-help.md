@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-05-27_
+_**上次修改主題的時間：** 2014-05-27_
 
 建立使用者信箱後，您可以使用 EAC 或命令介面變更並設定額外屬性。
 

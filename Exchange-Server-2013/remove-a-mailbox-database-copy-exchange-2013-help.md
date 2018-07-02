@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-06_
+_**上次修改主題的時間：** 2012-11-06_
 
 下列程序會示範如何移除信箱資料庫的複本。您無法使用這些程序來移除信箱資料庫的最後一個複本。如需如何移除信箱資料庫最後一個副本的詳細步驟，請參閱＜[移除信箱資料庫](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)＞或＜[Remove-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/aa997931\(v=exchg.150\))＞。
 

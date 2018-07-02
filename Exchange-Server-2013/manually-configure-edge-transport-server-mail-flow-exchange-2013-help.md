@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-02-21_
+_**上次修改主題的時間：** 2014-02-21_
 
 本主題說明對 Edge Transport Server 管理郵件流程的方式進行手動組態變更的程序。這些程序旨在處理特定案例；除非您的組織對於進行手動組態變更有特定的需求，否則最好在訂閱 Edge Transport Server 時使用預設組態。
 

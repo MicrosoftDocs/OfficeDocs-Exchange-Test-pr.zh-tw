@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-19_
+_**上次修改主題的時間：** 2014-06-19_
 
 若要執行自動安裝，則必須從命令提示字元安裝 Microsoft Exchange Server 2013。如需規劃與部署 Exchange 2013 的相關資訊，請參閱[規劃及部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 

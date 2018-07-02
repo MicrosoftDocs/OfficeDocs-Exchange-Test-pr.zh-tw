@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Exchange 整合通訊 (UM) 可讓您提供語音信箱服務給組織內的使用者。當您部署整合通訊時，必須將 Exchange 伺服器部署與您組織現有的電話語音系統或 Microsoft Lync Server 整合。成功的部署需要仔細分析您現有的電話基礎結構，並執行正確的規劃步驟以部署和管理整合通訊中的語音信箱。若您將 Exchange 與 Lync Server 整合，也需熟悉該產品：
 

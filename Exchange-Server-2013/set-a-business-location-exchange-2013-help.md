@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-23_
+_**上次修改主題的時間：** 2013-02-23_
 
 您可以指定公司的位置上的整合通訊 (UM) 自動語音應答使來電者播放的位置。根據預設，會將輸入沒有商務位置。
 

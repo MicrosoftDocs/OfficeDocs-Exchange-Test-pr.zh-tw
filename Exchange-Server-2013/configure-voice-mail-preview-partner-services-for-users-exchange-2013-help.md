@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以在整合通訊 (UM) 信箱原則上設定語音郵件預覽協力廠商。您已在 UM 信箱原則上設定語音郵件預覽協力廠商設定，例如語音郵件預覽協力廠商識別碼和語音郵件預覽協力廠商地址後，您設定會套用至所有已啟用 UM 之使用者所連結與該信箱原則。
 

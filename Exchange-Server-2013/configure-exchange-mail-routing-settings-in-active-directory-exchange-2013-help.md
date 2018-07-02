@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 根據預設 Microsoft Exchange Server 2013參考來協助您決定最低成本路由路徑的 Active Directory 中的 IP 站台連結物件。不過，如果您決定 Active Directory IP 站台連結成本和流量流程模式不最佳的路由 Exchange 中的郵件，您可以設定只能由 Exchange 用來協助最佳化郵件流程的 Active Directory 中。
 

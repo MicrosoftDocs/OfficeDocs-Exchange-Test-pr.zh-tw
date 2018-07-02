@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-25_
+_**上次修改主題的時間：** 2013-04-25_
 
 語音郵件訊息送達之後，使用者可選擇收聽透過其電腦的喇叭或耳機語音郵件訊息或電話的功能上使用 \[播放。電話的功能上播放功能隨附於 Microsoft Outlook 和 Outlook Web App，且在電話上播放的設定可在**電話上播放**\] 區段中**的語音信箱**\] 選項下。本主題說明如何啟用整合通訊 UM 功能的使用者可以使用 \[播放上電話功能。
 

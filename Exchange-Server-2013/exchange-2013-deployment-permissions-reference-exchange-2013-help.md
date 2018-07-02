@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題說明設定 Microsoft Exchange Server 2013 組織所需的權限。與管理角色群組相關聯的萬用安全性群組 (USG)，以及其他 Windows 安全性群組與安全性主體，都會新增到各種 Active Directory 物件的存取控制清單 (ACL) 中。ACL 會控制每個物件上能夠執行的作業。了解已將哪些權限授與每個角色群組、安全性群組或安全性主體，即可判斷安裝 Exchange 2013 所需的最低權限。
 

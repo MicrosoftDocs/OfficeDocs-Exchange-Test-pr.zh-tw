@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 當您建立整合通訊 (UM) IP 閘道器時，會啟用 Exchange 伺服器連線至新 Voice over IP (VoIP) 閘道、 專用交換機 (PBX) 啟用工作階段初始通訊協定 (SIP)、 IP PBX 或工作階段邊界控制器 (SBC)。立即建立 UM IP 閘道器之後，您應建立新的 UM 群組搜尋及再建立與 UM IP 閘道的關聯的 UM 群組搜尋。您可以建立一個或多個 UM 群組搜尋產生關聯的 UM IP 閘道的一或多個 UM 撥號。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-03-27_
+_**上次修改主題的時間：** 2017-03-27_
 
 如何讓 Exchange 2013 或 Exchange 2016 使用者存取 Exchange 2010 或更舊版本公用資料夾 （也稱為舊版公用資料夾）。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-05-04_
+_**上次修改主題的時間：** 2016-05-04_
 
 您可以使用 Exchange 管理命令介面來刪除預設探索信箱、重新建立信箱，然後指派權限給它。
 

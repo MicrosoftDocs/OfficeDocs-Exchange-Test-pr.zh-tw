@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以啟用或停用共同Outlook語音存取使用者的整合通訊 (UM) PIN 模式。如果您啟用或停用 UM 信箱原則上設定的通用 PIN 模式，請設定會套用至所有已啟用 UM 之使用者的 UM 信箱原則相關聯。預設已啟用 UM 的使用者無法使用常見模式時所建立的 PIN。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `MyDistributionGroupMembership` 管理角色可讓個別使用者在組織的通訊群組中檢視和修改其成員資格，使那些通訊群組可以進行群組成員資格的操作。
 

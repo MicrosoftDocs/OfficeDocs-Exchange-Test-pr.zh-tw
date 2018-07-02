@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-14_
+_**上次修改主題的時間：** 2012-10-14_
 
 將信箱設定保留暫停處理保留原則或該信箱的受管理的資料夾信箱原則。保留旨在協助使用者暫時正在休假或離開等情況。
 

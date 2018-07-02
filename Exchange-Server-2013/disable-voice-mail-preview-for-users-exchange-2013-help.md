@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 您可以停用使用者的整合通訊 (UM) 信箱原則相關聯的語音郵件預覽功能。停用此設定可防止使用者接收電子郵件訊息本文中的語音信箱訊息或文字訊息的文字。會啟用預設設定。
 

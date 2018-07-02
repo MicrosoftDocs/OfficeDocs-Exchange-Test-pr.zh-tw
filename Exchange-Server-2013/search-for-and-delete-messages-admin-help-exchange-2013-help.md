@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-12-20_
+_**上次修改主題的時間：** 2017-12-20_
 
 系統管理員可以使用 **Search-Mailbox** Cmdlet 來搜尋使用者信箱，然後刪除信箱中的郵件。
 
@@ -31,9 +31,9 @@ _**上次修改主題的時間：**2017-12-20_
 
   - 您必須同時被指派下列管理角色，才能在使用者的信箱中搜尋並刪除郵件：
     
-      - **信箱搜尋：**這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+      - **信箱搜尋：** 這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
     
-      - **信箱匯入匯出：**這個角色可讓您從使用者的信箱中刪除郵件。依預設，此角色不會指派給任何角色群組。若要從使用者的信箱中刪除郵件，您可以將信箱匯入匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)中的＜Add a role to a role group＞。
+      - **信箱匯入匯出：** 這個角色可讓您從使用者的信箱中刪除郵件。依預設，此角色不會指派給任何角色群組。若要從使用者的信箱中刪除郵件，您可以將信箱匯入匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)中的＜Add a role to a role group＞。
 
   - 如果您要從中刪除郵件的信箱已啟用單一項目復原，則必須先停用該功能。如需詳細資訊，請參閱[啟用或停用單一項目復原的信箱](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md)。
 

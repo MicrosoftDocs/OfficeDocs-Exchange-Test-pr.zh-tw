@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 使用連結的管理角色群組中的 Microsoft Exchange Server 2013，您可以在外部使用者樹系中連結Exchange 2013資源樹系中的角色群組與萬用安全性群組 (USG)。當您想要使用者樹系內擁有帳戶的系統管理員管理資源樹系中執行Exchange伺服器，這很有用。如需詳細資訊連結的角色群組的詳細資訊，請參閱[了解管理角色群組](understanding-management-role-groups-exchange-2013-help.md)。
 

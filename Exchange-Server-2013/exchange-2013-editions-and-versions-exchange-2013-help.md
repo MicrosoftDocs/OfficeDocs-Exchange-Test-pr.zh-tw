@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013 有兩種伺服器版本：Standard Edition 及 Enterprise Edition。Enterprise Edition 的量產發行 (RTM) 與累計更新 1 (CU1) 版本可擴充到每台伺服器 50 個裝載資料庫，而累計更新 2 (CU2) 與更新版本可擴充到每台伺服器 100 個裝載資料庫；Standard Edition 則限制為每台伺服器 5 個裝載資料庫。裝載資料庫是指正在使用的資料庫。裝載資料庫可以是為了給用戶端使用而裝載的主動信箱資料庫，或是在復原過程中，為了進行記錄複寫與重播而裝載的被動信箱資料庫。您可以建立超過上述數目限制的資料庫，但最多僅能裝載上述數目的資料庫。復原資料庫不在此限制的計算內。
 
@@ -43,9 +43,9 @@ Microsoft Exchange Server 2013 有兩種伺服器版本：Standard Edition 及 
 
 Exchange 2013 以伺服器/用戶端存取授權 (CAL) 模式授權，類似於 Exchange 2010 的方式。授權類型如下：
 
-  - **伺服器授權：**一份授權必須指派給每一個執行伺服器軟體的執行個體。伺服器授權以兩種伺服器版本進行販售：Standard Edition 及 Enterprise Edition。
+  - **伺服器授權：** 一份授權必須指派給每一個執行伺服器軟體的執行個體。伺服器授權以兩種伺服器版本進行販售：Standard Edition 及 Enterprise Edition。
 
-  - **用戶端存取授權 (CAL)：**Exchange 2013 也提供兩種用戶端存取授權 (CAL) 版本，即標準 CAL 與企業 CAL。您可以將各種伺服器版本與 CAL 類型混搭。例如，您可使用 Enterprise CAL 與 Exchange 2013 Standard Edition。同樣地，也可以使用 Standard CAL 搭配 Exchange 2013 Enterprise Edition。
+  - **用戶端存取授權 (CAL)：** Exchange 2013 也提供兩種用戶端存取授權 (CAL) 版本，即標準 CAL 與企業 CAL。您可以將各種伺服器版本與 CAL 類型混搭。例如，您可使用 Enterprise CAL 與 Exchange 2013 Standard Edition。同樣地，也可以使用 Standard CAL 搭配 Exchange 2013 Enterprise Edition。
 
 如需 Exchange 授權類型的詳細資訊，請參閱[授權](https://go.microsoft.com/fwlink/p/?linkid=392675)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 可以從您的組織移除不再需要的管理角色。您只可以移除您所建立的管理角色。無法移除內建管理角色。如需 Microsoft Exchange Server 2013中的管理角色的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

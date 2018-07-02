@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-04-13_
+_**上次修改主題的時間：** 2016-04-13_
 
 建立Outlook Web App信箱原則之後，您可以設定各種選項來控制使用者Outlook Web App中可用的功能。例如，您可以啟用或停用收件匣規則或建立允許的附件檔案類型清單。
 

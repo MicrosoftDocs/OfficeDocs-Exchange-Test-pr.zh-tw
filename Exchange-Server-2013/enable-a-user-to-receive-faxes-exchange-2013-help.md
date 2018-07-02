@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以啟用整合通訊 (UM) 使用者接收傳真\]。根據預設，當您啟用使用者的整合通訊時所將能夠接收傳真\] 如果您啟用傳真並連結到使用者的 UM 信箱原則上設定傳真協力程式的 URI。傳真可啟用或停用在 UM 撥號對應表計劃、 UM 信箱原則或已啟用 UM 之使用者的信箱。
 

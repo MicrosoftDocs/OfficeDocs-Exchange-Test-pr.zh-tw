@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 共用權限可以讓您的 Microsoft Exchange Server 2013，系統管理員身分建立Active Directory安全性主體，如使用者並再將它們設定為Exchange收件者。不同分割權限、 分隔Exchange系統管理員群組和Active Directory管理員之間的管理工作，請於有不進行分隔的任務與共用權限。
 

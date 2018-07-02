@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-03-20_
+_**上次修改主題的時間：** 2017-03-20_
 
 本主題針對 Microsoft Exchange 2013 Mailbox、Client Access 和 Edge Transport server role，提供安裝必要的 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 Service Pack 1 (SP1) 作業系統先決條件的步驟。另外也提供在 Windows 8、Windows 8 1 和 Windows 7 用戶端電腦上安裝 Exchange 2013 管理工具所需的先決條件。
 

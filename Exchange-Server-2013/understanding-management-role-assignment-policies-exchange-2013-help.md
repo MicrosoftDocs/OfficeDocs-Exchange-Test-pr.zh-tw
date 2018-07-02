@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 *管理角色指派原則*是一組一或多個使用者管理角色可讓使用者能管理自己 Microsoft Exchange Server 2013信箱和通訊群組設定。角色指派原則是在Exchange 2013中的角色型存取控制 (RBAC) 權限模型的一部分，可讓您控制哪些特定信箱及通訊群組組態設定可以修改您的使用者。不同的使用者群組可以有角色指派原則專門給他們。
 

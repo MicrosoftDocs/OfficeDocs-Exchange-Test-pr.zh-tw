@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 除了允許使用者存取語音信箱、 整合通訊 (UM) 可讓您建立一或多個 UM 自動語音應答根據組織的需求而定。UM 自動語音應答可以用來建立可讓組織語音功能表系統外部與內部來電者找出、 放置，或將來電轉接至公司使用者或組織內的部門。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-12_
+_**上次修改主題的時間：** 2012-12-12_
 
 您可以啟用或停用使用者的整合通訊 (UM) 信箱原則相關聯的電話功能上播放。此選項會預設為啟用與可讓使用者透過任何電話播放其語音郵件訊息。此選項無法使用具有MicrosoftExchange Server 2007伺服器上的信箱已啟用 UM 的使用者。
 

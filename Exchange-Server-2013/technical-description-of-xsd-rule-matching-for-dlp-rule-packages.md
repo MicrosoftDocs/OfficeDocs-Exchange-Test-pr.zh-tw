@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-07-28_
+_**上次修改主題的時間：** 2016-07-28_
 
 本主題說明如何符合模式和證據資料外洩防護 (DLP) XML 檔案包含您自己的自訂的敏感資訊類型規則套件的設計元素。建立正確的 XML 檔案之後，您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange 管理命令介面以協助建立 Microsoft Exchange Server 2013 DLP 解決方案匯入檔案。您可以設定之前，請使用此處所述的對應方法，您應該已啟動 DLP XML 檔案。如需定義您自己的 DLP 範本和 XML 檔案的詳細資訊，請參閱[定義自己的 DLP 範本和資訊類型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 

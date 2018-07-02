@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 建立整合通訊 (UM) IP 閘道器之後，您可以檢視或設定各種設定。例如，您可以設定的 IP 位址或完整的網域名稱 (FQDN)、 設定撥出電話設定，並啟用或停用郵件等待指示器。
 

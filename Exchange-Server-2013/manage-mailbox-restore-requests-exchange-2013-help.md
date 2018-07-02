@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 信箱還原要求可用來還原已中斷連線的信箱。中斷連線的信箱已在 Exchange 信箱資料庫與 Active Directory 使用者帳戶沒有關聯的信箱。信箱成為中斷時所要停用、 刪除或移至另一個資料庫。如需詳細資訊，請參閱[中斷連線的信箱](disconnected-mailboxes-exchange-2013-help.md)。
 

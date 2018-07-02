@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 個別管理 Microsoft Exchange Server 2013物件及Active Directory物件的組織會使用項目已呼叫*分割權限*模型。分割權限可以讓組織對組織內的特定群組指派特定權限和相關的工作。此區分工作協助維護標準與工作流程，並協助控制變更組織中。
 

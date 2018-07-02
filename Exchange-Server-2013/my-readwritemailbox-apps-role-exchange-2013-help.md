@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**上次修改主題的時間：**2017-02-08_
+_**上次修改主題的時間：** 2017-02-08_
 
 「 我的 ReadWriteMailbox 應用程式角色可讓個別使用者新增增益集，要求在其資訊清單中的 「 ReadWriteMailbox 」 權限。
 

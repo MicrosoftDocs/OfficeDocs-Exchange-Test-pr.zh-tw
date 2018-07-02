@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 連線篩選是連線篩選代理程式所提供的反垃圾郵件功能，而連線篩選代理程式只有 Microsoft Exchange 2013 的 Edge Transport Server 上才有。連線篩選使下列功能可以使用：
 

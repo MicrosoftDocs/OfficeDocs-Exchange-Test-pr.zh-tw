@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-09_
+_**上次修改主題的時間：** 2014-06-09_
 
 未限定範圍的管理角色可以用來為系統管理員和專家使用者提供 Windows PowerShell 指令碼和非 Exchange Cmdlet 的存取權。您可以建立未限定範圍的頂層角色，並將指令碼或非 Exchange Cmdlet 新增到該角色，或根據現有未限定範圍的頂層角色來建立角色。在建立和自訂未限定範圍的角色之後，可以將角色指派給管理角色群組、使用者和萬用安全性群組 (USG)。未限定範圍的角色不能指派給管理角色指派原則。如需未限定範圍的角色的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

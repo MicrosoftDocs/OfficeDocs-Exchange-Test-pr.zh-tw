@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-17_
+_**上次修改主題的時間：** 2012-10-17_
 
 Microsoft Exchange Server 2013 包含 15 部署擴充屬性。您可以使用這些屬性来新增的收件者，例如 「 員工識別碼、 組織單位 (OU) 或現有的屬性並未一些其他自訂值的相關資訊。這些自訂屬性會在Active Directory標示為透過**ms-Exch-Extension-Attribute15ms-Exch-Extension-Attribute1** 。Exchange管理命令介面，在對應的參數會是透過*CustomAttribute15CustomAttribute1* 。這些屬性不使用任何Exchange元件。因此可用來儲存Active Directory資料不必擴充Active Directory結構描述。
 

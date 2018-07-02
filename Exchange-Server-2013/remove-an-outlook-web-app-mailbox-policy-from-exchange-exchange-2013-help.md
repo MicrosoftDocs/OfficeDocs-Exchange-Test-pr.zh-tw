@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-03-15_
+_**上次修改主題的時間：** 2013-03-15_
 
 您可以使用 EAC 或命令介面，從 Microsoft 組織中移除 Outlook Web AppExchange 信箱原則。
 

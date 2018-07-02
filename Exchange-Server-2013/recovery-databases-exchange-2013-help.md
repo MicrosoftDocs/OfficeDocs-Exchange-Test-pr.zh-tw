@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-02_
+_**上次修改主題的時間：** 2012-11-02_
 
 復原資料庫 (RDB) 是一種特殊的信箱資料庫，讓您能裝載還原的信箱資料庫並從還原的資料庫擷取資料復原作業的一部分。您可以使用[New-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829875\(v=exchg.150\))指令程式以從 RDB 擷取資料。擷取之後, 可以匯出至資料夾或合併到現有的信箱資料。Rdb 可讓您從備份或沒有妨礙使用者存取的資料庫副本的復原資料至目前的資料。
 

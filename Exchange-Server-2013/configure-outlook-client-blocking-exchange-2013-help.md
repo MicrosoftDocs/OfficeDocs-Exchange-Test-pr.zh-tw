@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Exchange Server 2013 中，您可以使用保留原則或受管理的資料夾，以進行通訊記錄管理 (MRM)。 只有執行 Microsoft Outlook 2010 和更新版本的使用者才能存取保留原則的所有用戶端功能。 但不管使用者的 Outlook 用戶端版本為何，「受管理的資料夾助理員」一律會將保留原則套用在 Mailbox Server 上。 較舊版的 Outlook 用戶端並不會顯示這些功能的 MRM 功能。 例如，因為 Outlook 2007 不支援保留原則，使用者無法將個人標籤套用到項目或資料夾上。
 

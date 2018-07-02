@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 啟用停用傳輸解密可讓 Microsoft Exchange Server 2013上的傳輸規則代理程式來存取內容的資訊版權管理 (IRM) 保護之訊息中的信箱伺服器。因此，其他傳輸代理程式可以存取郵件內容和可能是進行變更。例如，「 傳輸規則代理程式 」 可能需要檢查郵件內容並套用傳輸規則 （如要對郵件套用免責聲明的規則）。成功解密受 IRM 保護的郵件，您必須將同盟傳遞信箱新增至[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) server 上設定的超級使用者群組。
 

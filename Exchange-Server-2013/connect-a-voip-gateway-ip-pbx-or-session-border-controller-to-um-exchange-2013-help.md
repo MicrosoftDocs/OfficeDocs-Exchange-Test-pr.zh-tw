@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您必須設定 Voice over IP (VoIP) 閘道與 IP 專用交換機進行交換 (Pbx) 的正確當您部署整合通訊 (UM) 的組織。如果您正在部署 UM 在混合環境中，您也需要正確設定您的工作階段邊界控制器 (Sbc)。為達成此目的，您需要設定的介面或 VoIP 閘道、 IP Pbx 和 Sbc 與執行 Microsoft Exchange Unified Messaging Call Router 服務的用戶端存取伺服器與執行 Microsoft Exchange 整合通訊服務的 Mailbox server 通訊的介面。
 

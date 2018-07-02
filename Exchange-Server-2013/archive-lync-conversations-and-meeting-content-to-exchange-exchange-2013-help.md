@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以封存Lync Online內容，例如 IM 交談， Exchange Online中使用者的信箱。您可以在內部部署封存Lync 2013Exchange 2013信箱內容。 在兩者線上及內部部署環境中，您必須進行此使用者的信箱上放置訴訟暫止狀態或就地保留。當 Lync 內容會永久刪除的使用者信箱位於所保留、 封存的 Lync 內容保留在使用者的信箱中 \[可復原的項目\] 資料夾。不是可讓使用者看到，但它隨附於 eDiscovery 搜尋。
 

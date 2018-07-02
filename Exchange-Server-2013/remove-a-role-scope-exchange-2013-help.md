@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-02_
+_**上次修改主題的時間：** 2012-10-02_
 
 管理角色範圍決定哪些物件會對可用的使用者，然後變更使用的指令程式和參數指派給使用者的物件。如果您不再使用的範圍，您可以予以移除。如需 Microsoft Exchange Server 2013中的管理角色範圍的詳細資訊，請參閱[了解管理角色範圍](understanding-management-role-scopes-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 POP 健全設定監視的整體狀況與可用性的Microsoft Exchange POP3 服務和 POP3 用戶端連線。下列的健全設定密切相關 POP 健全設定：
 

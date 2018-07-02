@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 在您將 Edge Transport Server 訂閱至 Exchange 組織之前，您可以使用 **ConfigureAdam.ps1** 指令碼 (位於 $env:ExchangeInstallPath\\Scripts 中)，修改 Edge Transport Server 的預設 Active Directory 輕量型目錄服務 (AD LDS) 組態。
 

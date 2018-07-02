@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以匯入音訊檔包含的自訂問候語、 宣告、 功能表及提示從Exchange 2007整合通訊 (UM) 至 Exchange 2013 Unified Messaging。使用命令介面指令碼、 提示會匯入 Exchange 系統信箱名為 {e0dc1c29-89c3-4034-b678-e6c29d823ed9} 當您安裝 Microsoft Exchange 2013 中所建立。此系統信箱整合通訊中用以儲存撥號對應表和自動語音應答的自訂問候語、 宣告、 功能表、 提示及 UM 報告。
 

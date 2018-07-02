@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-16_
+_**上次修改主題的時間：** 2012-10-16_
 
 您可以使用命令介面來建立電子郵件地址原則使用收件者篩選器。若要深入了解電子郵件地址原則，請參閱[電子郵件地址原則](email-address-policies-exchange-2013-help.md)。
 

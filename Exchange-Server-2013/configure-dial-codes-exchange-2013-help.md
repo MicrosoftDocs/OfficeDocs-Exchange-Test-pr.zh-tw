@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以設定撥號代碼、 電話首碼及用以由整合通訊撥號對應表已啟用 um 之使用者的來電及撥出電話號碼格式。在大多數情況下，您將與撥號代碼、 首碼及電話語音網路上目前設定的數字格式設定撥號對應表。
 

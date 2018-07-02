@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-05-17_
+_**上次修改主題的時間：** 2013-05-17_
 
 系統管理員稽核記錄中 Microsoft Exchange Server 2013可讓您建立每次執行指定的指令程式會在記錄項目。記錄項目提供給您何種 cmdlet 所執行、 已使用哪些參數、 誰執行此指令程式，及受哪些物件相關資訊。如需關於系統管理員稽核記錄，請參閱[系統管理員稽核記錄](administrator-audit-logging-exchange-2013-help.md)。
 

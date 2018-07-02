@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-09_
+_**上次修改主題的時間：** 2012-11-09_
 
 您可以設定整合通訊 (UM) IP 閘道 IP 位址或完整的網域名稱 (FQDN)。當您建立 UM IP 閘道時，您必須定義的 IP 位址或 FQDN 上的 VoIP 閘道、 IP PBX 或您正在使用的工作階段邊界控制器 (SBC) 設定。您可以變更的 IP 位址或 FQDN 之後建立 UM IP 閘道。
 

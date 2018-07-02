@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-12-02_
+_**上次修改主題的時間：** 2014-12-02_
 
 Microsoft Exchange Server 2013安裝程式無法繼續因為偵測到目前的帳戶不登入 Active Directory 網域。您必須登入使用 Active Directory 帳戶已安裝 Exchange Server 2013 所需的權限。
 

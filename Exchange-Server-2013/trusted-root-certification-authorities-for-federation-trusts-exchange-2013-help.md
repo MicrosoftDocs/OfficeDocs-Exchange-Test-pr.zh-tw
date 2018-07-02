@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-07-26_
+_**上次修改主題的時間：** 2017-07-26_
 
 若要建立同盟信任 Microsoft Exchange Server 2013組織和[Azure Active Directory 驗證系統](https://go.microsoft.com/fwlink/p/?linkid=135986)之間，您需要用來建立信任Exchange伺服器上安裝數位憑證。我們強烈建議使用自我簽署的憑證。建立及使用Exchange 系統管理中心 (EAC) 中的 \[**啟用同盟信任**\] 精靈時自動安裝的自我簽署的憑證。
 

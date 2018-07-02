@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2012-11-12_
+_**上次修改主題的時間：** 2012-11-12_
 
 Microsoft Exchange Server 2013安裝程式偵測到您嘗試在 Active Directory 網域控制站上執行安裝程式與下列其中一項為真：
 

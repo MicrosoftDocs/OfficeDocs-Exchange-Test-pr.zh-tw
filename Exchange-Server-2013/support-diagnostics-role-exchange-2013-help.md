@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Support Diagnostics` 管理角色可讓系統管理員在 Microsoft 客戶服務及支援的指示下，於組織中執行進階診斷。
 

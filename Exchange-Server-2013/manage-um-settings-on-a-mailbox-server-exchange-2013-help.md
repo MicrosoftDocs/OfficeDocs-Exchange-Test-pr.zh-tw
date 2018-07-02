@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-11_
+_**上次修改主題的時間：** 2013-02-11_
 
 安裝執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 之後，就可以設定數個選項，包括同時呼叫數、TCP 和傳輸層安全性 (TLS) 接聽通訊埠、狀態，以及 UM 啟動模式。
 

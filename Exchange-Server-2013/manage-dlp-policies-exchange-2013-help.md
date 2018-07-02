@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-14_
+_**上次修改主題的時間：** 2015-01-14_
 
 您可以檢視、 變更或移除現有資料外洩防護 (DLP) 原則中 Microsoft Exchange，使用 Exchange 系統管理中心 (EAC) 或 Exchange 管理命令介面。
 

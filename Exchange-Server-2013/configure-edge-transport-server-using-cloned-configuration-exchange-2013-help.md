@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-13_
+_**上次修改主題的時間：** 2015-04-13_
 
 您可以使用隨附的 Exchange 管理命令介面指令碼 (位於 %ExchangeInstallPath%Scripts 中) 來複製 Edge Transport Server 的設定。此處理程序稱為*「複製組態」*。*「複製組態」*是根據先前設定之來源伺服器的組態資訊來部署新 Edge Transport Server 的作法。先前設定的來源伺服器之組態資訊會複製及匯出至 XML 檔，然後該檔案會匯入至目標伺服器。如需此程序的概觀，請參閱[Edge Transport server 複製的組態](edge-transport-server-cloned-configuration-exchange-2013-help.md)。
 

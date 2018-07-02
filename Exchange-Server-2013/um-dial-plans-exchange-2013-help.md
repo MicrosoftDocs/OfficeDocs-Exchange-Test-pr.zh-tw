@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 整合通訊 (UM) 撥號對應表整合通訊的主要元件，才能順利部署於您的網路整合通訊語音信箱。下列各節將討論 UM 撥號對應表及如何在 UM 部署中正在使用。
 

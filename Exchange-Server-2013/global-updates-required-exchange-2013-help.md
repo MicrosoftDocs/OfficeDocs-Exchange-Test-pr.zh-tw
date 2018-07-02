@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-12-02_
+_**上次修改主題的時間：** 2014-12-02_
 
 安裝程式無法繼續 Microsoft Exchange Server 2013因為已登入使用者沒有對 Active Directory 進行全域更新所需的帳戶權限。
 

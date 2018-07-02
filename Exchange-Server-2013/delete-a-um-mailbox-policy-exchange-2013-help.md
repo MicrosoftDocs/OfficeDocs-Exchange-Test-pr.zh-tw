@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 當您刪除整合通訊 (UM) 信箱原則時，UM 信箱原則將不再提供要與已正在啟用 UM 之收件者相關聯。如果它參照任何已啟用 UM 的信箱，且您無法刪除 UM 撥號對應表與它相關聯的 UM 信箱原則時，您無法刪除 UM 信箱原則。
 

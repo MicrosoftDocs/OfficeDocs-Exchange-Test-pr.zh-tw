@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 使用 Microsoft Outlook保護規則，您可以藉由套用在Outlook 2010Active Directory Rights Management Services (AD RMS) 範本之前傳送的郵件保護使用資訊版權管理 (IRM) 的郵件。
 

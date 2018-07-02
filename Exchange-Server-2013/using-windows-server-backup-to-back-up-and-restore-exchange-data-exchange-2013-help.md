@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft 的[慣用的架構](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx)的Exchange Server 2013如何運用稱為Exchange原生資料保護概念。Exchange原生資料保護依賴原生Exchange功能來保護您的信箱資料、 不使用傳統的備份。但如果您想要建立備份， Exchange包含Windows Server備份 (WSB) 可讓您建立 Exchange 感知的磁碟區陰影複製服務 VSS 型Exchange資料備份外掛程式。若要使 Exchange 感知的備份，您必須安裝 WSB 功能。
 

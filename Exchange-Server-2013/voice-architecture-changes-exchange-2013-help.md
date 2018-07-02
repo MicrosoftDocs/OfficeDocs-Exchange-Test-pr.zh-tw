@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange Server 2013架構是不同於Exchange Server 2007和Exchange Server 2010的架構。在Exchange 2007和Exchange 2010，類型的伺服器已分為多個伺服器角色： Client Access、 Mailbox、 集線傳輸和整合通訊。在Exchange 2013、 伺服器角色會結合成兩種類型的伺服器，然後的同一部實體伺服器或用戶端存取和信箱的兩個不同伺服器上執行所有的元件或伺服器角色中的服務。在新模型中，執行 Microsoft Exchange Unified Messaging Call Router 服務之用戶端存取伺服器會重新導向至信箱伺服器之傳入呼叫產生的工作階段初始化通訊協定 (SIP) 流量。然後媒體 （即時傳輸通訊協定 (RTP) 或安全 RTP (SRTP)） 通道 VoIP 閘道或 IP 專用交換機 (PBX) 建立以主控使用者的信箱的信箱伺服器。在Exchange 2013、 信箱伺服器具有相同的程序為 Unified Messaging server role Exchange 2007和Exchange 2010中。信箱伺服器在執行 Microsoft Exchange 整合通訊服務和 UM 工作者處理序。用戶端存取伺服器會執行 Microsoft Exchange Unified Messaging Call Router 服務，會收到來電並將其轉寄到信箱伺服器。
 

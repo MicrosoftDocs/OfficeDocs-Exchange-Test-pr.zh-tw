@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以匯入及匯出您已記錄在整合通訊 (UM) 撥號對應表和自動語音應答上使用的音訊檔案。例如，可能會想要匯出並儲存的音訊檔案複本如果您從舊版 Exchange 的升級。或者，您可能需要匯入一份錄製的音訊提示之前設定撥號對應表或自動語音應答。
 

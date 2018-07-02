@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010, Exchange Server 2013_
+_**適用版本：** Exchange Server 2010, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-04-01_
+_**上次修改主題的時間：** 2018-04-01_
 
-**摘要：** 本文說明密碼和安全性的 iOS Outlook 及 Android 與 Exchange Server 中運作的方式。
+**摘要：**  本文說明密碼和安全性的 iOS Outlook 及 Android 與 Exchange Server 中運作的方式。
 
 IOS 及 Android 的 Outlook 應用程式執行 Exchange 內部部署環境中的第一次 Outlook 就會產生隨機的 AES 128 機碼。此機碼 」 稱為 「*裝置機碼*並儲存只在使用者的裝置上。
 

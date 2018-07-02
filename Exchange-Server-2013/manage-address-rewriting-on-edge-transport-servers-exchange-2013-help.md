@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以在 Edge Transport Server 上使用 Exchange 管理命令介面，以進行所有與地址修正和地址修正代理程式有關的管理工作。如需地址修正的相關資訊，請參閱[地址修正 Edge Transport server 上](address-rewriting-on-edge-transport-servers-exchange-2013-help.md)。
 

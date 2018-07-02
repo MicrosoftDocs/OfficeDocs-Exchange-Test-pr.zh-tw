@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-14_
+_**上次修改主題的時間：** 2015-01-14_
 
 您可以使用的資料遺失防護 (DLP) 原則範本開始使用中 Microsoft Exchange 2013DLP 解決方案。DLP 原則範本是一種模式原則。您可以選取至開始建立您自己的自訂的 DLP 原則的程序的範本。在您的 DLP 原則，您可以自訂規則，以確保符合您的業務需求的資料外洩防護。由 Microsoft 所提供數個原則範本，但這些不是唯一的方式在Exchange中實作的資料遺失防護解決方案。
 

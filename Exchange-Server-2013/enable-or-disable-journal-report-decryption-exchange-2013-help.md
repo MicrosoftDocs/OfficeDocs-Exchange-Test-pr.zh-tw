@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 啟用日誌報告解密允許要解密的權限保護之訊息的複本附加至日誌報告的日誌代理程式。啟用日誌報告解密之前，您必須在您的[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)伺服器上設定超級使用者群組新增同盟傳遞信箱。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-05_
+_**上次修改主題的時間：** 2012-10-05_
 
 使用 MicrosoftOutlook Web App信箱原則可建立組織層級原則，以管理對 Outlook Web App 中功能的存取。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-02-01_
+_**上次修改主題的時間：** 2016-02-01_
 
 在Exchange Server 2013和Exchange Online，您可以使用自動將信箱項目移至個人 （內部） 或雲端式封存的封存原則。封存原則是使用 \[**移至封存**\] 保留動作的保留標記。
 
@@ -25,9 +25,9 @@ Exchange 安裝程式會建立稱為 「**預設 MRM 原則**的保留原則。�
 
 封存與相關的其他管理工作，請參閱：
 
-  - **Exchange Server 2013:** [管理 Exchange 2013 中的就地封存](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [管理 Exchange 2013 中的就地封存](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [在 Exchange Online 中啟用或停用封存信箱](https://technet.microsoft.com/zh-tw/library/jj984357\(v=exchg.150\))
+  - **Exchange Online:**  [在 Exchange Online 中啟用或停用封存信箱](https://technet.microsoft.com/zh-tw/library/jj984357\(v=exchg.150\))
 
 <table>
 <thead>

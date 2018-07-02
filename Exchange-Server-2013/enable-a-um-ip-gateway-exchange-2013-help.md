@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 根據預設，建立整合通訊 (UM) IP 閘道器之後，其狀態設為已啟用。不過，您可能需要停用讓離線並不允許其接聽傳入或傳出電話的 UM IP 閘道。建立 UM IP 閘道器之後，您可以藉由設定它的狀態變數\] 以啟用或停用來控制其作業和功能。
 

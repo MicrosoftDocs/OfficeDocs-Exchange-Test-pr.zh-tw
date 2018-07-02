@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-06-04_
+_**上次修改主題的時間：** 2015-06-04_
 
 瞭解 Exchange Server 2013 中的 Exchange DAG。本文討論資料庫可用性群組 (DAG) 生命週期，以及使用 DAG 來取得高可用性和站台回復性。
 

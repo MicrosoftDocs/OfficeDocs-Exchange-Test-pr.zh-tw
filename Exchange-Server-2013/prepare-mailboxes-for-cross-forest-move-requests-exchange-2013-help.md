@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-11-22_
+_**上次修改主題的時間：** 2017-11-22_
 
-**摘要：** 了解的跨樹系移動Exchange 2013中準備信箱。
+**摘要：**  了解的跨樹系移動Exchange 2013中準備信箱。
 
 Microsoft Exchange 2013支援信箱移動和移轉使用 Exchange 管理命令介面中，特別是**New-MoveRequest**和**New-MigrationBatch**指令程式。您也可以移動信箱透過 Exchange 系統管理中心 (EAC)。請注意您可以將 Exchange 2010 和 Exchange 2013 信箱移至 Exchange 2013 樹系。
 

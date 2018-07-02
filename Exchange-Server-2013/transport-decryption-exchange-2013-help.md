@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 在 Microsoft Exchange Server 2013、 Microsoft Outlook 2010和更新版本、 Microsoft OfficeOutlook Web App，使用者可以使用資訊版權管理 (IRM) 來保護其訊息。您可以建立Outlook自動將 IRM 保護套用至郵件它們傳送自Outlook 2010用戶端之前的保護規則。您也可以建立傳輸保護規則將 IRM 保護套用至符合的規則條件的郵件傳輸。停用傳輸解密允許以強制執行郵件原則受 IRM 保護之訊息內容的存取權。
 

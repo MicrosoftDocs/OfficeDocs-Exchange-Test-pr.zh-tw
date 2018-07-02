@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-06-02_
+_**上次修改主題的時間：** 2016-06-02_
 
 了解如何啟用 IMAP4 用戶端連線中Exchange 2016使用 Microsoft Management Console (MMC) 或Exchange 管理命令介面 （EMS）。
 

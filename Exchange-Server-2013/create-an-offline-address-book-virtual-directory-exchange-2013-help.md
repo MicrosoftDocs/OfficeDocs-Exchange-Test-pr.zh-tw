@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-16_
+_**上次修改主題的時間：** 2012-10-16_
 
 OAB 虛擬目錄是通訊的 oab。根據預設，在安裝 Microsoft Exchange Server 2013時新增名為 OAB 虛擬目錄建立預設內部網站在網際網路資訊服務 (IIS) 中。如果您有連線至MicrosoftOutlook從組織防火牆外的用戶端的使用者，您可以新增的外部網站。或者，當您在命令介面中執行**New-OABVirtualDirectory**指令程式，新建立虛擬目錄名稱 OAB 中的本機Exchange伺服器上的預設 IIS 網站。
 

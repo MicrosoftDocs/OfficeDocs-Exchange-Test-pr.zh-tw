@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 每日、 資訊工作者 exchange 電子郵件，包括財務報表及資料、 客戶與員工資訊和機密的產品資訊及規格的機密資訊。在 Microsoft Exchange Server 2013、 Microsoft Outlook、 和 Microsoft OfficeOutlook Web App，使用者可以套用資訊版權管理 (IRM) 保護郵件套用Active Directory Rights Management Services (AD RMS) 權限原則範本。這需要 AD RMS 部署在組織中。如需 AD RMS 的詳細資訊，請參閱 ＜ [Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?linkid=129823)。
 

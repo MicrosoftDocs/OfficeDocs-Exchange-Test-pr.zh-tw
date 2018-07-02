@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-17_
+_**上次修改主題的時間：** 2012-10-17_
 
 `MyMobileInformation`管理角色可讓個別使用者檢視和修改其行動電話和呼叫器號碼。這是從[MyContactInformation 角色](mycontactinformation-role-exchange-2013-help.md)父系角色建立自訂角色。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-09-25_
+_**上次修改主題的時間：** 2012-09-25_
 
 內容轉換追蹤會擷取 Microsoft Exchange Server 2013 信箱伺服器上，信箱傳輸服務對輸入與輸出郵件執行之 MAPI 內容轉換中的失敗。
 

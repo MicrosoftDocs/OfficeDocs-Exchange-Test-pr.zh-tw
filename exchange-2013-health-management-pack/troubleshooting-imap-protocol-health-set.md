@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-07_
+_**上次修改主題的時間：** 2013-02-07_
 
 IMAP。通訊協定健全的 Mailbox server 上設定監視器 IMAP4 通訊協定。如果您收到警示，會指定 IMAP。通訊協定健全設定為不健康，這表示會影響警示中所述的信箱伺服器上將 IMAP4 通訊協定的問題。
 

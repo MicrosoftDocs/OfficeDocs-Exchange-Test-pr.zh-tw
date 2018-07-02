@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 整合通訊 (UM) 及 Microsoft Lync Server 可部署在一起，為您組織中的使用者提供語音訊息、立即訊息、增強的使用者出席、視聽會議，以及整合的電子郵件和訊息使用體驗。整合通訊可用來提供自動語音答錄服務、Outlook 語音存取及自動語音應答服務。Microsoft Lync Server 提供 Enterprise Voice 更多進階功能，如立即訊息 (IM)、會議管理，以及撥入和撥出電話。本主題討論如何設定整合通訊及 Microsoft Lync Server 以支援這些功能。
 

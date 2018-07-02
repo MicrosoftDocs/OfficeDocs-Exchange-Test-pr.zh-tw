@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-11-16_
+_**上次修改主題的時間：** 2016-11-16_
 
 您可能需要在組織中移除不再使用的公用資料夾。若要協助您決定應該移除公用資料夾，請參閱[公用資料夾和公用資料夾項目的檢視統計資料](view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md)。
 

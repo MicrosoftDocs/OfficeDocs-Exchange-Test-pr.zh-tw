@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-02-10_
+_**上次修改主題的時間：** 2014-02-10_
 
 在 Microsoft Exchange Server 2013 中，您可以在 Edge Transport Server 上使用附件篩選，控制使用者在電子郵件中接收到的附件。附件篩選是由附件篩選代理程式 (只在 Edge Transport Server 上提供) 所執行。
 

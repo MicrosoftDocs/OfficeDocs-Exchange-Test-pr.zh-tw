@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-01-28_
+_**上次修改主題的時間：** 2013-01-28_
 
 使用 Microsoft Exchange Server 2013 管理工具，您可以遠端配置並管理您的 Exchange 組織。Exchange 2013 管理工具包括 Exchange 管理命令介面與 Exchange 工具箱。本主題將說明如何使用 Setup.exe 或自動安裝模式來安裝 Exchange 2013 管理工具。
 

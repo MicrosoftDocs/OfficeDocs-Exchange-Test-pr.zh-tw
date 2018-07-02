@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 因為在網域名稱系統 (DNS) 資料庫中找不到此電腦的主機 (A) 記錄，所以 Microsoft Exchange Server 2013 安裝程式無法繼續。
 

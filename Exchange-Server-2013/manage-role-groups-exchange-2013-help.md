@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-08_
+_**上次修改主題的時間：** 2012-10-08_
 
 本主題顯示如何新增、 移除、 複製及檢視 Microsoft Exchange Server 2013中的管理角色群組。它也會顯示如何新增、 移除及列出在角色群組的管理角色以及如何變更管理範圍和角色群組的代理人。如需Exchange 2013中的角色群組的詳細資訊，請參閱[了解管理角色群組](understanding-management-role-groups-exchange-2013-help.md)。
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-14_
+_**上次修改主題的時間：** 2012-10-14_
 
 您可以在 Exchange 中為每個離線通訊錄 OAB 發佈點設定二個 URL：一個是內部 URL，只能從您公司的內部網路存取；一個是外部 URL，可從網際網路存取。
 

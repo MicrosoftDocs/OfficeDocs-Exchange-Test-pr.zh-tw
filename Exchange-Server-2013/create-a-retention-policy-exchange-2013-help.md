@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在Exchange Online和Exchange Server 2013，您可以使用保留原則來管理電子郵件生命週期。建立保留標記、 將它們新增至保留原則，並將原則套用到信箱使用者套用保留原則。
 

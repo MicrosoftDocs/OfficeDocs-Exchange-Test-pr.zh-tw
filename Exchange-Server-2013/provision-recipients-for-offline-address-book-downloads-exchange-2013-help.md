@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-15_
+_**上次修改主題的時間：** 2013-02-15_
 
 如果您在組織中使用多個離線通訊錄 (OAB)，有幾種方式可以指定哪些收件者下載哪些 OAB：
 

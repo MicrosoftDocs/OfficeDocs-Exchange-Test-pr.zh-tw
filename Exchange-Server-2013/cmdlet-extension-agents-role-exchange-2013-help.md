@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Cmdlet Extension Agents` 管理角色可讓系統管理員啟用、停用或設定組織中的 Cmdlet 延伸代理程式優先順序。
 

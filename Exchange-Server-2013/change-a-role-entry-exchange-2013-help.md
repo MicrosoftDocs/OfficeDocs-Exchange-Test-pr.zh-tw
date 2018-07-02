@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 管理角色每個管理角色項目代表單一指令程式。將參數加入至或來自會新增至管理角色、 角色項目移除參數來控制這些參數是否可在該指令程式。如需管理角色項目在 Microsoft Exchange Server 2013的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-10-03_
+_**上次修改主題的時間：** 2014-10-03_
 
 在 Microsoft Exchange Server 2013中，傳輸規則新增了數種改善功能。此主題提供部分主要變更與加強功能的簡述概覽。若要深入了解傳輸規則的相關資訊，請參閱[郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 管理角色可以各種方式，根據您想要的資訊列。例如，您可以選擇傳回特定角色類型、 只包含特定的 cmdlet 與參數的角色的角色或檢視特定的管理角色的詳細資料。如需 Microsoft Exchange Server 2013中的管理角色的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

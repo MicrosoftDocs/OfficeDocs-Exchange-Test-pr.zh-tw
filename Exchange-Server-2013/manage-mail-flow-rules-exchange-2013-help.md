@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 郵件流程規則，也稱為傳輸規則可用來尋找特定條件郵件通過組織並採取動作。本主題說明如何建立、複製、調整順序、啟用或停用、刪除或匯入或匯出規則以及如何監視規則使用。
 

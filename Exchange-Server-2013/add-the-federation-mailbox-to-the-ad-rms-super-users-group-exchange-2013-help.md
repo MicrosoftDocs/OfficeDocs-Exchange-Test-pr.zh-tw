@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 下列 Microsoft Exchange Server 2013資訊版權管理 (IRM) 功能的啟用，您必須將同盟信箱 （ Exchange 2013安裝程式所建立的系統信箱） 新增至貴組織的[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)叢集中的超級使用者群組：
 

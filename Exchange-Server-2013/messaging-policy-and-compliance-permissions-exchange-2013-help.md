@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 設定郵件原則及符合性時，所需的權限視要執行的程序或您想執行的指令程式而有所不同。如需訊息原則及符合性的相關資訊，請參閱[郵件原則及符合性](messaging-policy-and-compliance-exchange-2013-help.md)。
 

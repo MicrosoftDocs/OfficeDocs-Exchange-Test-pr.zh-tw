@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-12-20_
+_**上次修改主題的時間：** 2017-12-20_
 
 在 Microsoft Exchange Server 2013 中，我們已在 Microsoft Outlook Web App 中加入了幾項新功能並更新其設計。
 
@@ -348,7 +348,7 @@ Exchange 2013 中目前無法使用下列 Outlook Web App 功能。其中一些�
 
   - **搜尋範圍** Outlook Web App 使用者同時搜尋其主要信箱和線上封存的能力也不再適用於 Exchange 2013。若要搜尋線上封存，使用者必須先瀏覽到封存，然後進行搜尋。
 
-  - **通訊群組清單仲裁：**Exchange 2013 中目前無法從 Microsoft Outlook Web App 仲裁通訊群組清單。
+  - **通訊群組清單仲裁：** Exchange 2013 中目前無法從 Microsoft Outlook Web App 仲裁通訊群組清單。
 
   - **自訂郵件標幟上的日期**   Outlook Web App 2013 不提供在郵件標幟上設定自訂日期的功能。您可以使用 Outlook 設定自訂日期。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-19_
+_**上次修改主題的時間：** 2013-04-19_
 
 您可以在 UM 自動語音應答上**商務名稱**\] 方塊中輸入貴公司的名稱。根據預設，未商務輸入名稱。如果您輸入的企業名稱，預設的問候語提示的企業名稱與播放來電者在他們撥入的整合通訊 (UM) 自動語音應答時。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-07-14_
+_**上次修改主題的時間：** 2014-07-14_
 
 在 Microsoft Exchange Server 2013，您可以使用就地 eDiscovery 來搜尋信箱內容。您可以移除任何時候就地 eDiscovery 搜尋。當您移除的就地 eDiscovery 搜尋時，搜尋結果移除探索信箱。
 

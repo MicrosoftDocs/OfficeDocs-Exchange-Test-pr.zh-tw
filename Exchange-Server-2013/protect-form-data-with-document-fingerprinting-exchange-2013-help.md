@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-09-11_
+_**上次修改主題的時間：** 2014-09-11_
 
 如果您的組織使用表單收集敏感資訊，使用者可能會嘗試透過電子郵件將這些表單傳送給外部連絡人，而產生安全性風險。Exchange 中的資料外洩防護 (DLP) 可使用[文件指紋](overview-of-document-fingerprinting-in-exchange.md)來偵測此類資訊，協助您保護資訊的安全。若要使用文件指紋，請直接上載空白表單，例如智慧財產文件、政府表單，或是您的組織中使用的其他標準表單。接著，請將產生的文件指紋新增至 DLP 原則或傳輸規則。方法如下。
 

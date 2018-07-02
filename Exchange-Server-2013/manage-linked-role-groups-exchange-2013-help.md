@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-09_
+_**上次修改主題的時間：** 2012-10-09_
 
 您可以使用連結的管理角色群組讓管理 Microsoft Exchange Server 2013組織資源Active Directory樹系中的萬用安全性群組 (USG) 外部Active Directory樹系中的成員。關聯連結的角色群組中的外部樹系中的 USG，該成員 USG 都會授與管理角色指派給連結的角色群組所提供的權限。如需詳細資訊連結的角色群組的詳細資訊，請參閱[了解管理角色群組](understanding-management-role-groups-exchange-2013-help.md)。
 

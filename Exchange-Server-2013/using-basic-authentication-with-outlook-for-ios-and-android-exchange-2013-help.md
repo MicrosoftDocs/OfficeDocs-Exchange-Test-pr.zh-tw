@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010, Exchange Server 2013_
+_**適用版本：** Exchange Server 2010, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-04-02_
+_**上次修改主題的時間：** 2018-04-02_
 
-**摘要：** 本文包含架構及安全性資訊系統管理員的 iOS Outlook 及 Android in Exchange 2013 內部部署環境。
+**摘要：**  本文包含架構及安全性資訊系統管理員的 iOS Outlook 及 Android in Exchange 2013 內部部署環境。
 
 IOS 及 Android 的 Outlook 應用程式的設計目的在於結合電子郵件、 行事曆、 連絡人及其他檔案，讓使用者在組織中的執行多從其行動裝置。 本文提供架構的概觀及應用程式儲存設計，讓 Exchange 系統管理員可以部署及維護其 Exchange 組織中的 Outlook for iOS 及 android （英文）。
 

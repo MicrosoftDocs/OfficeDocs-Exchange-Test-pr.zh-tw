@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-13_
+_**上次修改主題的時間：** 2012-12-13_
 
 您可以讓來電者在傳送語音訊息給使用者的整合通訊 (UM) 自動語音應答，或防止能力。根據預設，此選項已啟用，且可讓來電者在傳送語音訊息給使用者的 UM 撥號對應表已與之相關聯的 UM 自動語音應答。如果您停用此選項，自動語音應答將不會邀請來電者在系統提示時傳送語音訊息。
 

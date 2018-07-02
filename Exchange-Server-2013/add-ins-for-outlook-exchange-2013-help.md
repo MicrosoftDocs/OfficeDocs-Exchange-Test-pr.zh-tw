@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-03-13_
+_**上次修改主題的時間：** 2017-03-13_
 
-**摘要：** 增益集的 Outlook 與 Windows 及 MacIntosh 電腦上行動裝置上及 Outlook Web App 和 Outlook web 上的 Outlook 搭配使用的概觀。
+**摘要：**  增益集的 Outlook 與 Windows 及 MacIntosh 電腦上行動裝置上及 Outlook Web App 和 Outlook web 上的 Outlook 搭配使用的概觀。
 
 Outlook的增益集是透過新增資訊或您的使用者可以使用不必離開 Outlook 的工具來擴充 Outlook 用戶端實用性的應用程式。增益集由協力廠商開發人員建置及可安裝檔案或 URL 或來自 Office 市集。根據預設，所有的使用者可以安裝新增寫 Exchange 系統管理員可以使用角色來控制使用者能夠安裝的增益集。
 
@@ -81,7 +81,7 @@ Outlook 用戶端支援增益集提供 Office 市集透過各種的不同。Outl
 
 有幾個 Exchange 系統管理員管理組織中的常見案例。
 
-**如果您想要讓使用者安裝的所有 Outlook 用戶端上的 Outlook 增益集進行下列變更給 Exchange 系統管理中心中的角色：**
+**如果您想要讓使用者安裝的所有 Outlook 用戶端上的 Outlook 增益集進行下列變更給 Exchange 系統管理中心中的角色：** 
 
   - 若要防止使用者安裝 Office 市集的增益集，移除**「 我的服務商場**角色它們。
 

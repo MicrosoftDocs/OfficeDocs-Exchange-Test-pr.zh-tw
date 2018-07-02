@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在 Microsoft Exchange Server 2013 和 Exchange Online 中，通訊記錄管理 (MRM) 可協助組織管理電子郵件生命週期並降低與電子郵件及其他通訊相關的法律風險。MRM 可讓您更容易地保留遵循公司原則、政府法令或法律規定所需的郵件，並移除不法或不具商業價值的內容。
 

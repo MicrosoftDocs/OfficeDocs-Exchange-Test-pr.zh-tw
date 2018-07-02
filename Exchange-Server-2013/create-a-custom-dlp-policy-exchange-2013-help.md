@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-03-18_
+_**上次修改主題的時間：** 2016-03-18_
 
 自訂資料外洩防護 (DLP) 原則可讓您建立條件、 規則及動作，有助於符合貴組織的特定需求及其中可能未涵蓋的其中一個現有的 DLP 範本。
 

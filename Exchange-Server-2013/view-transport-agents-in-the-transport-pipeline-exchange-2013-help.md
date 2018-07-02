@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以使用 Exchange 管理命令介面來檢視 Microsoft Exchange Server 2013信箱伺服器與用戶端存取伺服器上的傳輸管線中的傳輸代理程式清單。尤其是**Get-TransportPipeline**指令程式會顯示下列類型的傳輸代理程式的相關資訊傳輸管線中：
 

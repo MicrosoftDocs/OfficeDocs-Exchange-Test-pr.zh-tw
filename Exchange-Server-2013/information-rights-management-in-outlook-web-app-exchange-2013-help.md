@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 資訊工作者逐漸使用電子郵件交換敏感資訊。為了安全這項資訊、 組織可以使用資訊版權管理 (IRM) 套用至訊息內容的持續性的保護。在 Microsoft Exchange Server 2010、 之前有效地利用 IRM 保護限於Outlook用戶端。在Exchange Server 2007、 Microsoft Outlook Web Access使用者才能下載版權管理增益集的 Microsoft Internet Explorer ，讓他們可以存取受 IRM 保護的內容。
 

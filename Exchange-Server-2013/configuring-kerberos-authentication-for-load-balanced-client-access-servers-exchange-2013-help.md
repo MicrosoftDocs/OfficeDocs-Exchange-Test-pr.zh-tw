@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
-**摘要：**說明如何使用 Kerberos 驗證與負載平衡的 Client Access server 在 Exchange 2013。
+**摘要：** 說明如何使用 Kerberos 驗證與負載平衡的 Client Access server 在 Exchange 2013。
 
 為了讓您使用負載平衡用戶端存取伺服器使用 Kerberos 驗證，您需要完成本文中所述的設定步驟。
 
@@ -75,7 +75,7 @@ _**上次修改主題的時間：**2016-12-09_
     
         New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    **範例：**
+    **範例：** 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -85,7 +85,7 @@ _**上次修改主題的時間：**2016-12-09_
     
         Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    **範例：**
+    **範例：** 
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 如果您在 Exchange 2013 混合式部署中，且使用 Exchange Online Archiving (EOA) for Exchange Serve，則在升級到 Exchange 2013 累計更新 5 (CU5) 之後，您必須在內部部署與 Exchange Online 組織之間設定 OAuth 驗證。EOA 可讓您提供雲端式封存給具有內部部署信箱的使用者。在此情況下，內部部署信箱伺服器上的通訊記錄管理 (MRM) 助理會套用封存原則，並自動將使用者信箱中的郵件移至雲端式封存。在 Exchange 2013 CU5 中是使用 OAuth 驗證。
 

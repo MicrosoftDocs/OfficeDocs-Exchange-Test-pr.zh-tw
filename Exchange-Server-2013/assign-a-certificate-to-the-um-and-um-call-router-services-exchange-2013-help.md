@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-29_
+_**上次修改主題的時間：** 2013-04-29_
 
 您可以使用 EAC 或命令介面來指派給自我簽署、 內部公開金鑰基礎結構 (PKI) 或特定的 Exchange 服務的協力廠商商業憑證。當您使用**New-ExchangeCertificate**指令程式來指派憑證給 Exchange 服務與*Services*參數時，系統會提示您將憑證指派給 Exchange 服務。如果您可以使用 EAC 來建立憑證，新增 Exchange 憑證\] 精靈將不會提示您將憑證指派給 Exchange 服務。您要編輯之憑證的內容並選取您想要將它指派給哪些的服務，以指派憑證。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 **MailboxTransport**健全設定監視信箱伺服器上的信箱傳輸提交及信箱傳輸服務的整體狀況。這些服務會負責將郵件傳送到與信箱資料庫。如需詳細資訊，請參閱[郵件流程](https://technet.microsoft.com/zh-tw/library/aa996349\(v=exchg.150\))。
 

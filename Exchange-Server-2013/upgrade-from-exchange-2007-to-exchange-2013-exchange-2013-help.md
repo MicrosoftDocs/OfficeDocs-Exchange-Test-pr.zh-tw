@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange Server 2010 和 Exchange Server 2007 具有多個伺服器角色：Client Access、Mailbox、Hub Transport、Unified Messaging 和 Edge Transport。在 Exchange Server 2013 中，我們將伺服器角色的數量從五個減少為三個：Client Access、Mailbox 和 Edge Transport。目前，整合通訊被視為一種元件或 Exchange 2013 中提供之語音相關功能的子功能。(如需相關變更的詳細資訊，請參閱 [Exchange 2013 的新功能](what-s-new-in-exchange-2013-exchange-2013-help.md)中的「Exchange 2013 架構」。)
 

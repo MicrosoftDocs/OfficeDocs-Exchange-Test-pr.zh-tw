@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013 SP1_
+_**適用版本：** Exchange Server 2013 SP1_
 
-_**上次修改主題的時間：**2015-12-02_
+_**上次修改主題的時間：** 2015-12-02_
 
 轉換和容錯移轉是 Microsoft Exchange Server 2013 中的兩種中斷形式：
 

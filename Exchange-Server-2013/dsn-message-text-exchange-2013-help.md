@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 您可以在 Microsoft Exchange Server 2013 的自訂傳遞狀態通知 (DSN) 郵件中加入文字，並將該段文字格式化為 HTML。
 

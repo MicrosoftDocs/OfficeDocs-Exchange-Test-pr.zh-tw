@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-02-23_
+_**上次修改主題的時間：** 2017-02-23_
 
 您的組織可能會需要特定類型的郵件會封鎖或已拒絕以符合法律或規範需求，或以實作特定業務需求。以下是一些常見的案例封鎖您可以設定在Exchange中使用的傳輸規則的所有附件的範例：
 
@@ -51,7 +51,7 @@ _**上次修改主題的時間：**2017-02-23_
 
 5.  選取條件和您想要的動作。
 
-**請注意：** 在 EAC 中，您可以輸入最小附件大小為 1 kb，應該會偵測到大部分的附件。不過，如果您想要偵測之任何規模的每個可能的附件，您需要使用 PowerShell 1 個位元組附件大小調整為您在 EAC 中建立規則之後。若要了解如何在內部部署 Exchange 組織中開啟 Exchange 管理命令介面，請參閱[開啟命令介面。](https://technet.microsoft.com/zh-tw/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 連線到 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
+**請注意：**  在 EAC 中，您可以輸入最小附件大小為 1 kb，應該會偵測到大部分的附件。不過，如果您想要偵測之任何規模的每個可能的附件，您需要使用 PowerShell 1 個位元組附件大小調整為您在 EAC 中建立規則之後。若要了解如何在內部部署 Exchange 組織中開啟 Exchange 管理命令介面，請參閱[開啟命令介面。](https://technet.microsoft.com/zh-tw/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 連線到 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
 
 將現有的規則名稱取代*\<Rule Name\>*並執行下列命令以將附件大小設為 1 個位元組：
 

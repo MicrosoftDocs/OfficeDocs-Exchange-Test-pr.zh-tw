@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-28_
+_**上次修改主題的時間：** 2012-11-28_
 
 如果您有使用 POP3 或 IMAP4 連線至其 MicrosoftExchange Server 2013 信箱的使用者，他們必須知道正確的伺服器設定才能順利連線。完成預設的 Exchange 2013 安裝之後，您的使用者就無法查詢他們自己的傳入 POP3 或 IMAP4 伺服器設定或傳出 SMTP 伺服器設定。但是，您可以設定 Exchange，讓使用者能使用 MicrosoftOutlook Web App 查詢自己的設定。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft整合通訊 (UM) 依賴認證的傳真協力廠商解決方案的增強的傳真功能，例如外寄傳真或傳真路由。根據預設，使用者未設定為允許傳遞給已啟用 UM 之使用者的傳入傳真訊息。Exchange 伺服器會將傳真要求傳送到認證的傳真協力廠商解決方案。傳真協力程式伺服器會接收傳真資料，然後傳送給電子郵件中的收件者的信箱與為.tif 附件包含傳真。如需詳細資訊，請參閱[啟用語音信箱使用者接收傳真](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)。
 

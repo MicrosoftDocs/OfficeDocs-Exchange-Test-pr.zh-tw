@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 您可以使用逗點分隔值 (CSV) 檔案大量建立地址修正資訊或將它匯入至 Edge Transport Server。下列清單描述需要您這麼做的常見案例：
 

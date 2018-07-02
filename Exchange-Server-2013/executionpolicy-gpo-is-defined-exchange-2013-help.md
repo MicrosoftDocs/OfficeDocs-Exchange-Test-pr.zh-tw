@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-15_
+_**上次修改主題的時間：** 2016-12-15_
 
 Microsoft Exchange Server 2013 安裝程式偵測到 **ExecutionPolicy** 群組原則物件 (GPO) 定義下列其中一個或兩個原則，因此無法繼續：
 

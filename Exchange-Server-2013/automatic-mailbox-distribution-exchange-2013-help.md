@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-08-13_
+_**上次修改主題的時間：** 2013-08-13_
 
 當您建立或移動信箱，或郵件啟用現有使用者時，該信箱必須存放在信箱資料庫中。在 Microsoft Exchange Server 2013 中，您可以選擇讓 Exchange 使用自動信箱發佈來為您選擇資料庫。
 

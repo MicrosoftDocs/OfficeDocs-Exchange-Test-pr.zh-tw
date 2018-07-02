@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2012-11-08_
+_**上次修改主題的時間：** 2012-11-08_
 
 因為沒有Exchange Server 2010或Exchange Server 2007伺服器角色存在於組織中 Microsoft Exchange Server 2013安裝程式會顯示這個警告。
 

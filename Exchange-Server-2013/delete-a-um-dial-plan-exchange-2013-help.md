@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-11_
+_**上次修改主題的時間：** 2012-11-11_
 
 您可以刪除現有的整合通訊 (UM) 撥號。當您刪除 UM 撥號對應表、 它將不再提供的 UM IP 閘道器、 UM 信箱原則，及 UM 群組搜尋。您無法刪除 UM 撥號對應表，則它已由參照或與 UM 信箱原則、 UM 自動語音應答、 UM IP 閘道相關聯 UM 群組搜尋。
 

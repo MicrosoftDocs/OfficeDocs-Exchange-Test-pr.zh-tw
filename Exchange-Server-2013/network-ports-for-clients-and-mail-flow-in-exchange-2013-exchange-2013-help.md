@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題提供 MicrosoftExchange Server 2013 與電子郵件用戶端、網際網路郵件伺服器和本機 Exchange 組織外部的其他服務進行通訊所使用的網路連接埠的相關資訊。在我們進入該內容之前，先了解下列的基本規則：
 
@@ -41,7 +41,7 @@ Edge Transport Server 的郵件流程所需的網路連接埠
 
 電子郵件用戶端存取 Exchange 組織中的信箱及其他服務所需的網路連接埠如下圖表所述。
 
-**附註：**
+**附註：** 
 
   - 這些用戶端和服務的目的地是 Client Access Server。這可以是獨立的 Client Access Server，或是一部 Client Access Server 與 Mailbox Server 安裝在相同電腦上。
 

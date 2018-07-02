@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-07-21_
+_**上次修改主題的時間：** 2015-07-21_
 
 您可能需要將公用資料夾信箱移至不同信箱資料庫伺服器的負載平衡用途或將更接近資源移至其地理位置。類似移動一般信箱，您使用**MoveRequest**指令程式來移動公用資料夾信箱。如需移動信箱的詳細資訊，請參閱[在 Exchange 2013 移動信箱](mailbox-moves-in-exchange-2013-exchange-2013-help.md)。
 

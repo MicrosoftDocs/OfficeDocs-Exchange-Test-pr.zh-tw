@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 訊息等待指示器 (MWI) 是在大部分的舊版的語音信箱系統中找到的功能。它可讓使用者知道有新的或技術面貌語音郵件訊息。在其最常見的表單中，這項功能 lights 燈表示新的或技術面貌語音訊息平台服務使用者的電話上。
 

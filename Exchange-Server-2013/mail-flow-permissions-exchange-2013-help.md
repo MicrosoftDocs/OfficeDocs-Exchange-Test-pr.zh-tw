@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 執行與郵件流程相關之工作所需的權限，因所執行的程序或您要執行的 Cmdlet 而異。如需傳輸功能的相關資訊，請參閱 [郵件流程](mail-flow-exchange-2013-help.md)。
 

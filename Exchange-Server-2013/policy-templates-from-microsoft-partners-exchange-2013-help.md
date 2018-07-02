@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-01-31_
+_**上次修改主題的時間：** 2013-01-31_
 
 資料遺失防護 (DLP) 功能可協助您識別和監控許多類別中的機密資訊。在您設定您的 DLP 原則，您可選擇来用以作為 DLP 原則範本的 Microsoft Exchange外部來源匯入檔案。Microsoft 合作夥伴公司可以開發和散佈這些類型的範本。本主題將會更新包含可協助您尋找這些公司之後有提供這些連結。
 

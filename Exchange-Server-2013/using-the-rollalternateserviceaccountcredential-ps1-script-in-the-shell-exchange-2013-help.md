@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 您可以使用 RollAlternateServiceAccountPassword.ps1 指令碼中的 「 Exchange Server 2013 fto 更新備用服務帳戶認證 （ASA 認證） 並散發至指定的用戶端存取伺服器的更新。
 

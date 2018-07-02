@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 如果您想要確定您接收特定郵件，您可以建立可確保將這些訊息略過雜亂資料夾對 Exchange 傳輸規則。檢查出[排序低優先順序郵件 Outlook Web App 中的使用雜亂](https://go.microsoft.com/fwlink/p/?linkid=528411)上雜亂的詳細資訊。
 

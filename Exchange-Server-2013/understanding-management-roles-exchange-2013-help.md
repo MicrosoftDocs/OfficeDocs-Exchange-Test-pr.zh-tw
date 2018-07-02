@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 管理角色是用於 Microsoft Exchange Server 2013 的角色存取控制 (Role Based Access Control，RBAC) 權限模式的一部分。角色可當作指令程式邏輯群組的一部分整合，提供您存取權限來檢視或修改 Exchange 2013 元件 (如信箱、傳輸規則和收件者) 的組態。管理角色可進一步整合到稱為管理角色群組和管理角色指派原則的較大群組中，以便管理功能範圍和接收者組態。角色群組和角色指派原則會分別將權限指派給系統管理員和一般使用者。如需管理角色群組和管理角色指派原則的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。
 

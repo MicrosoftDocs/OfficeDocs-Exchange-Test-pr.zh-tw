@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-07-26_
+_**上次修改主題的時間：** 2017-07-26_
 
 同盟信任會建立 Microsoft Exchange 2013組織和Azure Active Directory驗證系統之間的信任關係。透過設定同盟信任，您可以設定與共用行事曆空閒/忙碌資訊的收件者之間其他同盟 Exchange 組織的同盟共用。兩個同盟的Exchange 2013組織之間或同盟的Exchange 2013組織和同盟的Exchange 2010組織之間可以設定同盟共用。您也可以設定與 Office 365 組織共用。
 
@@ -183,7 +183,7 @@ _**上次修改主題的時間：**2017-07-26_
     
         Get-FederatedDomainProof -DomainName contoso.com
     
-    **附註：**
+    **附註：** 
     
       - 每個網域或子網域的同盟信任需要證明網域擁有權 TXT 記錄，所以您可能需要執行此程序設定命令時間使用不同*DomainName*值的倍數。
     

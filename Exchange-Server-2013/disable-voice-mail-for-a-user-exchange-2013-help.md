@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 您可以停用已啟用 UM 的使用者的整合通訊 (UM)。當您這麼做時，使用者無法再使用整合通訊中的語音信箱功能。如果您偏好，當您停用 UM 的使用者，您可以保留使用者的 UM 設定。
 

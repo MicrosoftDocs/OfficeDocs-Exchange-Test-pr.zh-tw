@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-05_
+_**上次修改主題的時間：** 2012-10-05_
 
 依預設、 兩個 IMAP4 服務、 Microsoft Exchange IMAP4 服務和 Microsoft Exchange IMAP4 後端服務未執行MicrosoftExchange Server 2013的電腦上啟動。您必須先啟動允許您的電子郵件用戶端連線至 Exchange 使用 IMAP4 這兩項服務。這些服務會執行時， Exchange 2013接受不安全的 IMAP4 用戶端通訊連接埠 143 和透過連接埠 993 使用 Secure Sockets Layer (SSL)。
 

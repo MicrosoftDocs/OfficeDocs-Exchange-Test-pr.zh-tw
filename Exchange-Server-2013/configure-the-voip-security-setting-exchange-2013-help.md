@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2014-10-16_
+_**上次修改主題的時間：** 2014-10-16_
 
 您可以啟用 Voice over IP (VoIP) 安全性整合通訊 (UM) 撥號。預設會建立 UM 撥號對應表之後，它會使用非安全的模式或未加密。Exchange 伺服器可以接聽來電的單一或多個 UM 撥號對應表和可以具有不同的 VoIP 安全性設定的撥號接聽來電。在 Office 365 和 Exchange Online 安全模式，無法停用。
 

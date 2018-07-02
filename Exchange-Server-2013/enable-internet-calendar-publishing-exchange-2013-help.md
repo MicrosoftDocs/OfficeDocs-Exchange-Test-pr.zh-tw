@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-08-22_
+_**上次修改主題的時間：** 2016-08-22_
 
-**摘要：** 若要啟用與外部組織共用行事曆空閒/忙碌資訊的 OWA 使用者在 Exchange 2013 組織中使用這些程序。
+**摘要：**  若要啟用與外部組織共用行事曆空閒/忙碌資訊的 OWA 使用者在 Exchange 2013 組織中使用這些程序。
 
 Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織中的使用者和可存取網際網路的其他人，共用行事曆可用性 (空閒/忙碌) 資訊。網際網路行事曆發佈可提供較大的彈性，並增加能夠共用行事曆可用性資訊的使用者數量。
 

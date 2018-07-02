@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013 包含可搭配 Microsoft SharePoint Server 2013 和 Microsoft Lync Server 2013 使用的功能，也稱為*協力應用程式*。若要確保這些協力應用程式可以存取其他資源，您必須設定伺服器對伺服器驗證。
 

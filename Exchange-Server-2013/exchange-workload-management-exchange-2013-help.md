@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-11-16_
+_**上次修改主題的時間：** 2014-11-16_
 
 Exchange 工作負載為 Exchange Server 功能、通訊協定或明確定義為 Exchange 系統資源管理的服務。每一個 Exchange 工作負載會耗用系統資源，如 CPU、信箱資料庫作業，或 Active Directory 要求，以執行使用者要求或背景工作。Exchange 工作負載的範例包含 Outlook Web App, Exchange ActiveSync、信箱移轉，以及信箱助理員。
 

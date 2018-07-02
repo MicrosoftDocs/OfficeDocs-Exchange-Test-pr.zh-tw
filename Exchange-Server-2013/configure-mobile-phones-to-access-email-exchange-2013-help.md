@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-12_
+_**上次修改主題的時間：** 2015-03-12_
 
 您可以設定行動電話，例如Windows電話，使用MicrosoftExchange ActiveSync。您應該在組織中的每個行動電話上執行此程序。
 

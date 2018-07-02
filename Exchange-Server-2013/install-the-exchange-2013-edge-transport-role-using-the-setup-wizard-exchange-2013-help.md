@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-19_
+_**上次修改主題的時間：** 2014-06-19_
 
 本主題說明如何使用 Microsoft Exchange Server 2013 安裝精靈將 Exchange 2013 Edge Transport server role 安裝在電腦上。Exchange 2013 Service Pack 1 (SP1) 或更新版本提供 Edge Transport role。如需規劃與部署 Exchange 2013 的相關資訊，請參閱[規劃及部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 

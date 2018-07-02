@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 「SMTP 橫幅」是遠端 SMTP 郵件伺服器在連線至 Microsoft Exchange Server 2013 電腦上所設定的接收連接器之後，所收到的 SMTP 連線回應。
 

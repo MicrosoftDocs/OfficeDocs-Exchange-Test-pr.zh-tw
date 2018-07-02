@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-01-23_
+_**上次修改主題的時間：** 2017-01-23_
 
 建議您使用 Edge 訂閱程序，在 Exchange 組織與 Edge Transport Server 之間建立郵件流程。不過，特定情況可能會讓您無法使用 Edge 訂閱程序。將 Edge Transport Server 訂閱至 Exchange 組織。若要手動建立 Exchange 組織與 Edge Transport Server 間的郵件流程，您必須在 Edge Transport Server 上和 Exchange 組織的 Mailbox Server 上，建立並設定傳送連接器及接收連接器。
 

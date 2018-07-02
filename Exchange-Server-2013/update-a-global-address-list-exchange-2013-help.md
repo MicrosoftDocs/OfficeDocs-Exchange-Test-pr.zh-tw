@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 您可以使用命令介面來更新全域通訊清單 (GAL)。GAL 是一個目錄，內含組織執行 MicrosoftExchange 時所使用的每個群組、使用者與連絡人的項目。
 

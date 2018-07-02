@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Active Directory Permissions`管理角色可讓系統管理員在組織中設定Active Directory權限。使用Active Directory權限或存取控制清單 (ACL) 的一些功能包括傳輸接收及傳送連接器，以下列傳送與代表信箱的權限傳送。
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 產品金鑰會告知Exchange Server 2013您已購買 Standard 或 Enterprise Edition 授權。如果您所購買的產品金鑰未 Enterprise Edition 授權，它可讓您針對每部伺服器以及每個項目所適用的標準版授權的五個以上資料庫裝載。如果您想要閱讀更多 Exchange 授權，請參閱[Exchange 2013：版本](exchange-2013-editions-and-versions-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-08-14_
+_**上次修改主題的時間：** 2014-08-14_
 
 在環境中所在的電腦帳戶建立僅限於或非預設的電腦容器、 容器中建立電腦帳戶的其中您可以預先接叢集名稱物件 (CNO)，然後佈建 CNO 的權限指派給它。預先接移 CNO 也是必要的 Windows Server 2012 及 Windows Server 2012 R2 DAG 成員因為 Windows 的電腦物件的權限變更。部署時使用執行 Windows Server 2012 的信箱伺服器或 Windows Server 2012 R2 資料庫可用性群組 (DAG)，您必須預先設置及佈建 CNO，除非您要部署沒有叢集管理存取點之 DAG。沒有叢集管理存取點的 Dag 不使用 CNOs;因此預先接移不需要的那些 Dag。
 

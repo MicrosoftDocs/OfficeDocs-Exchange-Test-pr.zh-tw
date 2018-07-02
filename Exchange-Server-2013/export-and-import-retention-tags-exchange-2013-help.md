@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-11-15_
+_**上次修改主題的時間：** 2017-11-15_
 
 在以下數個案例中，您可能想要匯出或匯入保留標記：
 

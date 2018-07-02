@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 部分舊型專用交換機 (PBX) 和 IP PBX 電話語音系統可讓來電者將語音信箱訊息標示為私人，以防止訊息的預定收件者轉寄給其他人。 在整合的語音信箱系統中，有許多方式可以存取語音訊息，因此更難以防止將已標示為私人的語音訊息洩露給非預定的接聽者。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-16_
+_**上次修改主題的時間：** 2012-11-16_
 
 您可以在命令提示字元處使用服務嵌入式管理單元中Microsoft Management Console (MMC) 或 cmd.exe，在用戶端存取伺服器上啟動MicrosoftExchange Unified Messaging Call Router 服務。根據預設，用戶端存取伺服器已經安裝完成之後，會啟動MicrosoftExchange整合通訊呼叫路由器服務。不過，可能有要重新啟動或MicrosoftExchange Unified Messaging Call Router 服務以手動方式停止，例如，當您已離線用戶端存取伺服器，並使其回復上線時的時間。
 

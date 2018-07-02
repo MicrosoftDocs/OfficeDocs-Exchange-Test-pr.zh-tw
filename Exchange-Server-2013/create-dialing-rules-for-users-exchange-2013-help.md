@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 撥號規則群組包含撥號規則項目。撥號規則可用來修改電話號碼，再將它傳送至內部電話系統 (PBX) 或 IP PBX 針對撥出電話。撥號規則做兩種用途：
 

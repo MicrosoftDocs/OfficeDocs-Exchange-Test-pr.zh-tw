@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Exchange Web 服務 (EWS) 健全設定會監視 EWS 服務的整體健康狀況。EWS 健全設定與下列健全設定密切相關：
 

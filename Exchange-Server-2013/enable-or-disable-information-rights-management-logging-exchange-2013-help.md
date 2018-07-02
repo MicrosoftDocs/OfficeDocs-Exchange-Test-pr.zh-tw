@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-12_
+_**上次修改主題的時間：** 2012-10-12_
 
 在Exchange Server 2013，您可以使用資訊版權管理 (IRM) 記錄檔來監視及疑難排解 IRM 作業。預設會啟用 IRM 記錄。
 

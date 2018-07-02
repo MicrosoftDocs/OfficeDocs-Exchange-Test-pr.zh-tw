@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-11-15_
+_**上次修改主題的時間：** 2013-11-15_
 
 在建立 OAB 或修改 OAB 設定之後，所做的變更要等到 OAB 產生 (OABGen) 處理程序完成後才可供使用者使用。
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-10-04_
+_**上次修改主題的時間：** 2017-10-04_
 
 郵件連絡人是擁有郵件功能的目錄服務物件包含的人員或組織存在 Exchange 或Exchange Online組織外部的相關資訊。每個郵件連絡人都有外部的電子郵件地址。如需郵件連絡人的詳細資訊，請參閱[收件者](recipients-exchange-2013-help.md)。
 

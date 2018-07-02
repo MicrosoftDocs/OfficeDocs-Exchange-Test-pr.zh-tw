@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2010, Exchange Server 2013_
+_**適用版本：** Exchange Server 2010, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-11-16_
+_**上次修改主題的時間：** 2014-11-16_
 
 離線通訊錄 (OAB) 是已下載的通訊清單集合副本，可讓 Microsoft Outlook 使用者在與伺服器中斷連線時存取通訊錄資訊。Microsoft Exchange 會產生新的 OAB 檔案，壓縮檔案，然後將檔案放在本機共用上。您可以選擇離線工作的使用者可以用哪些通訊清單，也可以設定散佈通訊錄的方法。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-05-03_
+_**上次修改主題的時間：** 2013-05-03_
 
 [建立 UM IP 閘道器](create-a-um-ip-gateway-exchange-2013-help.md)
 

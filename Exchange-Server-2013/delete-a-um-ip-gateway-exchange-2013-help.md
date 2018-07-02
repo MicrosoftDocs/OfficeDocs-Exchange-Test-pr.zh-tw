@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 當您刪除整合通訊 (UM) IP 閘道時，Exchange 伺服器就無法再接受來自 Voice over IP (VoIP) 閘道、已啟用工作階段初始通訊協定 (SIP) 的 Private Branch eXchange (PBX)、IP PBX，或與 UM IP 閘道相關聯的工作階段邊界控制器 (SBC) 的來電。
 

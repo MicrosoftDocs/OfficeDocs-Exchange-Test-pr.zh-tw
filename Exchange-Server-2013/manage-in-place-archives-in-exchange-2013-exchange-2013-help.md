@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-02-01_
+_**上次修改主題的時間：** 2016-02-01_
 
 就地封存可協助您帶來需要個人存放區 (.pst) 檔案，並讓您以符合組織的郵件保留和 eDiscovery 需求取回貴組織的郵件資料的控制權。與封存功能，使用者可以使用MicrosoftOutlook和Outlook Web App是可以存取封存信箱中儲存的郵件。
 

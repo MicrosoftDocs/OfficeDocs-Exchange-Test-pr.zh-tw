@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-19_
+_**上次修改主題的時間：** 2013-02-19_
 
 Microsoft Exchange Server 2013 支援在某些拓撲的 Mailbox Server 之間停用 SMTP 通訊的 TLS，在這些拓撲中，會使用 WAN 最佳化控制器 (WOC) 裝置來壓縮 SMTP 流量。
 

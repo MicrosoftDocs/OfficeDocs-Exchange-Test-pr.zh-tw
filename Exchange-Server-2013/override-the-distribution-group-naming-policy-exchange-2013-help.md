@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-13_
+_**上次修改主題的時間：** 2012-10-13_
 
 群組的通訊群組命名原則只會套用到使用者所建立的群組。當您或其他管理員使用 Exchange 系統管理中心 (EAC) 來建立通訊群組時、 群組命名原則會忽略並不會套用到的群組名稱。
 

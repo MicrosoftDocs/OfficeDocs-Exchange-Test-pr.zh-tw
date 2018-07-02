@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 刪除整合通訊 (UM) 群組搜尋後，UM 群組搜尋相關聯的 UM IP 閘道將不再 service 或接聽來電。如果刪除的 UM 群組搜尋留下沒有任何剩餘的搜尋設定的群組的 UM IP 閘道、 UM IP 閘道器無法處理或 UM 呼叫。
 

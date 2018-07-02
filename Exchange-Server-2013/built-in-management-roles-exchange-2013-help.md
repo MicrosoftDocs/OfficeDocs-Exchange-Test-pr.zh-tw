@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-08-21_
+_**上次修改主題的時間：** 2012-08-21_
 
 Microsoft Exchange Server 2013預設包含許多管理角色。下列角色指派給管理角色群組或授與權限管理並使用Exchange 2013所提供之功能的各種組合中的管理角色指派原則。如需角色的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

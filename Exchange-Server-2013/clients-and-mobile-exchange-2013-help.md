@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 有許多不同的用戶端可用來存取 Microsoft Exchange Server 2013 信箱中的資訊。這些用戶端包含 Microsoft Outlook 及 Outlook Web App 等桌面程式，以及行動電話、平板電腦及其他行動裝置等行動用戶端。各個用戶端均提供各種功能。
 

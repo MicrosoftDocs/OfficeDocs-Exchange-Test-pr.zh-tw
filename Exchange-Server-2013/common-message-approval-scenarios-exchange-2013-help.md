@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-09-29_
+_**上次修改主題的時間：** 2014-09-29_
 
 您的組織可能需要以符合法律或規範需求，或以實作特定商務工作流程核准特定類型的郵件。以下是一些您可以使用Exchange設定的常見案例的範例：
 

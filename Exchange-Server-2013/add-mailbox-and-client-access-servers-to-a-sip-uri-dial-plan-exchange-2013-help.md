@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 您可以將用戶端存取和信箱伺服器新增至 SIP URI 撥號對應表。用戶端存取和信箱伺服器無法與電話分機號碼或 E.164 撥號對應表產生關聯但伺服器會接聽所有來電。
 

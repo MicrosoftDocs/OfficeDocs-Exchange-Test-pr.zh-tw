@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-20_
+_**上次修改主題的時間：** 2013-02-20_
 
 Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件寄件者的未傳遞回報 (Ndr) 及其他狀態的郵件。您可以使用內建 Dsn，或是您可以建立自訂 DSN 郵件以符合組織的需求。
 

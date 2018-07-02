@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-01-15_
+_**上次修改主題的時間：** 2014-01-15_
 
 因為您要在安裝 Exchange 的電腦的主要網域名稱系統 (DNS) 尾碼尚未設定的 Microsoft Exchange Server 2013安裝程式無法繼續執行。
 

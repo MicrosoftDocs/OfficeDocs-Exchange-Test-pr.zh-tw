@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Edge Subscriptions`管理角色可讓系統管理員管理 Microsoft Exchange Server 2010 Edge Transport server 與組織中的 Microsoft Exchange Server 2013 信箱伺服器之間 edge 同步處理和訂閱設定。
 

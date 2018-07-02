@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-05-03_
+_**上次修改主題的時間：** 2016-05-03_
 
 在 Microsoft Exchange Online Protection (EOP)、Microsoft Exchange Online 和 Microsoft Exchange 2013 中，您可以使用 Exchange 系統管理中心 (EAC) 搜尋並檢視*系統管理員稽核記錄*中的項目。系統管理員稽核記錄會按照 Exchange 管理命令介面 Cmdlet，記錄由系統管理員以及已被指派系統管理權限的使用者所執行的特定動作。系統管理員稽核記錄中的項目會提供執行的 Cmdlet、使用的參數、Cmdlet 的執行者，以及受影響的物件的相關資訊。
 

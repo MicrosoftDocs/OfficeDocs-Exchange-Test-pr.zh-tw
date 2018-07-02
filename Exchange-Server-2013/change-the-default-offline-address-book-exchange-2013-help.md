@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 根據預設，當您安裝信箱伺服器角色會建立名為預設離線通訊錄 Web 式預設離線通訊錄 (OAB)。您可以為預設 OAB Exchange組織中設定任何 OAB。這個新的預設 OAB 相關聯的所有新建立的信箱資料庫。您可以在組織中有一個預設 OAB。如果您刪除預設 OAB， MicrosoftExchange不會自動指派給另一個 OAB 為預設值。您必須手動指定另一個 OAB 為預設值。
 

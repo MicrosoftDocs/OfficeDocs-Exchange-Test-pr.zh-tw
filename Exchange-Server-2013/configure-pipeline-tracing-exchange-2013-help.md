@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 管線追蹤可在電子郵件通過 Mailbox Server 及 Edge Transport Server 上傳輸服務或信箱傳輸服務中的傳輸管線時擷取其複本。
 

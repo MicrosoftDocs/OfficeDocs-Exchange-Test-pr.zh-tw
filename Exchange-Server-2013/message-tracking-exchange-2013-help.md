@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在 Microsoft Exchange Server 2013 中，郵件追蹤記錄檔會在信箱伺服器上的傳輸服務、信箱伺服器上的信箱和邊緣傳輸伺服器上傳入及傳出郵件時詳細記錄所有的郵件活動。您可以使用郵件追蹤記錄檔進行郵件鑑識、郵件流程分析、報告及疑難排解等工作。
 
@@ -120,15 +120,15 @@ Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄�
 
 郵件追蹤記錄檔是包含逗號分隔值 (CSV) 格式之資料的文字檔。每個郵件追蹤記錄檔都有包含下列資訊的標頭：
 
-  - **\#Software：**郵件追蹤記錄檔的建立軟體名稱。一般情況下，這個值是 Microsoft Exchange Server。
+  - **\#Software：** 郵件追蹤記錄檔的建立軟體名稱。一般情況下，這個值是 Microsoft Exchange Server。
 
-  - **\#Version：**郵件追蹤記錄檔的建立軟體版本號碼。目前這個值為 15.0.0.0。
+  - **\#Version：** 郵件追蹤記錄檔的建立軟體版本號碼。目前這個值為 15.0.0.0。
 
-  - **\#Log-Type：**記錄類型值，即 Message Tracking Log。
+  - **\#Log-Type：** 記錄類型值，即 Message Tracking Log。
 
-  - **\#Date：**   建立記錄檔的 UTC 日期時間。以 ISO 8601 日期時間格式表示 UTC 日期時間：*yyyy-mm-dd*T*hh:mm:ss.fff*Z，其中 *yyyy* = 年、*mm* = 月、*dd* = 日，T 表示時間元件的開頭，*hh* = 時、*mm* = 分、*ss* = 秒、*fff* = 秒的分數，以及另外一個表示 UTC 的方法 Z 代表 Zulu。
+  - **\#Date：**    建立記錄檔的 UTC 日期時間。以 ISO 8601 日期時間格式表示 UTC 日期時間：*yyyy-mm-dd*T*hh:mm:ss.fff*Z，其中 *yyyy* = 年、*mm* = 月、*dd* = 日，T 表示時間元件的開頭，*hh* = 時、*mm* = 分、*ss* = 秒、*fff* = 秒的分數，以及另外一個表示 UTC 的方法 Z 代表 Zulu。
 
-  - **\#Fields：**郵件追蹤記錄檔中所使用的以逗號分隔欄位名稱。
+  - **\#Fields：** 郵件追蹤記錄檔中所使用的以逗號分隔欄位名稱。
 
 回到頁首
 

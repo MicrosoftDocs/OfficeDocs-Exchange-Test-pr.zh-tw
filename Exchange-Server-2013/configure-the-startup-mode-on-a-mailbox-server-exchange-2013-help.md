@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-15_
+_**上次修改主題的時間：** 2013-02-15_
 
 您可以在信箱伺服器上指定的 Microsoft Exchange 整合通訊服務的啟動模式。根據預設，TCP 模式會開始 Mailbox server，但如果您使用傳輸層安全性 (TLS) 來加密 Voice over IP (VoIP) 流量，您必須設定使用 TLS 或雙重模式的信箱伺服器。建議的信箱伺服器設定為雙作為啟動模式。這是因為所有 Client Access server 和 Mailbox server 可以回覆來電所有 um 撥號對應表，並以外的撥號對應表可以都有不同的安全性設定 （「 不安全 」、 SIP 安全 」 或 「 安全 」）。如果您變更的啟動模式，您必須重新啟動 Microsoft Exchange 整合通訊服務的變更才會生效。
 

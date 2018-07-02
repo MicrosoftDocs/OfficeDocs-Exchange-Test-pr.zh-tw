@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 含有附件掃描條件的傳輸規則會在分析附件內容時執行文字擷取。Exchange 2013 可掃描最常用的原生附件類型。透過使用 Exchange 2013 註冊 IFilter，可納入其他附件類型。本主題顯示如何註冊由 Microsoft 和協力廠商提供者所發行的 IFilter。
 

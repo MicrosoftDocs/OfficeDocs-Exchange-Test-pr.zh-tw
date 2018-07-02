@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以強制使用者會收到受保護的語音郵件訊息，以其訊息接聽電話的功能上使用 \[播放。或者，如果用戶端軟體不支援版權管理，使用者必須使用Outlook語音存取聆聽的郵件。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-05-26_
+_**上次修改主題的時間：** 2016-05-26_
 
 使用 Exchange 反垃圾郵件保護而非 Microsoft Exchange Server 2013，充分運用 Microsoft Exchange Server 2010為相同的內建反垃圾郵件功能且在雲端 （Microsoft Exchange Online或 Microsoft Exchange Online Protection） 的好處如下：
 

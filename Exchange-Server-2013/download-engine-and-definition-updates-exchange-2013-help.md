@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 Microsoft Exchange Server 2013系統管理員可以手動下載反惡意程式碼引擎和定義 （簽章） 更新。我們強烈建議您下載引擎和定義更新之前先將它放在生產環境中Exchange伺服器上。
 

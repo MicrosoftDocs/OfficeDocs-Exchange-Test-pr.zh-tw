@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 您可以啟用或停用使用者未啟用的整合通訊 (UM) 的來電。根據預設，整合通訊可讓來電轉接至已啟用 UM 的使用者透過自動語音應答未經過驗證的來電者。啟用此設定，與組織外部的使用者可以將來電轉接至已啟用 UM 的使用者。
 

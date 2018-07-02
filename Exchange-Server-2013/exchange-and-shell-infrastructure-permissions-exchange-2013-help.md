@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 執行設定 Microsoft Exchange Server 2013 各種元件之工作所需的權限，視正在執行的程序或要執行的 Cmdlet 而定。請參閱本主題中的每個章節，以取得其各自功能的詳細資訊。
 

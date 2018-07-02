@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 郵件使用者類似於郵件連絡人。 這兩者都擁有外部電子郵件地址，也都包含 Exchange 或 Exchange Online 組織外的人員相關資訊，而這些資訊都可顯示在共用通訊錄和其他通訊清單中。 不過，和郵件連絡人不同的是，郵件使用者在您的 Exchange 或 Office 365 組織中具有登入認證，並且可以存取資源。 如需詳細資訊，請參閱 [收件者](recipients-exchange-2013-help.md)。
 

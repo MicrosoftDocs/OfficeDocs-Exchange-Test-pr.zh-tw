@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-06-04_
+_**上次修改主題的時間：** 2015-06-04_
 
 了解 Exchange 共用信箱的 Microsoft Exchange Server 2013\]、 使用方式、 原因及如何轉換到 Exchange 委派的信箱共用信箱。
 
@@ -35,9 +35,9 @@ _**上次修改主題的時間：**2015-06-04_
 
 共用的信箱是一種都不會有自己的使用者名稱和密碼的使用者信箱。因此，使用者無法登入其它們直接。若要存取共用的信箱，使用者必須先取得信箱傳送\] 或 \[完整存取權限。一旦完成，使用者登入他們自己的信箱並再將它新增至其 Outlook 設定檔存取共用的信箱。在 Exchange 2003 及舊版共用的信箱已只是一般信箱的系統管理員可以授與委派存取。共用的信箱從 Exchange 2007 開始，變成他們自己的收件者類型：
 
-  - **RecipientType:** UserMailbox
+  - **RecipientType:**  UserMailbox
 
-  - **RecipientTypeDetails:** SharedMailbox
+  - **RecipientTypeDetails:**  SharedMailbox
 
 在舊版 Exchange 中，建立共用的信箱已多步驟的程序之前，才可完成之工作的一些使用 Exchange 管理命令介面。在 Exchange 2013，您可以使用 Exchange 系統管理中心 (EAC) 一步驟中建立共用的信箱。如需詳細資訊，請參閱[建立共用的信箱](create-a-shared-mailbox-exchange-2013-help.md)。事實上，EAC 具有完全專設共用信箱的功能區。剛瀏覽至 \[**收件者**\>**共用信箱**移轉至檢視的所有管理工作共用信箱。
 

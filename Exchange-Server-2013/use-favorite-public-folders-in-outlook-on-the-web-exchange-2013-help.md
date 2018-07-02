@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-06-24_
+_**上次修改主題的時間：** 2016-06-24_
 
 在 Outlook 用戶端在組織中的使用者可以新增其**我的最愛**資料夾公用資料夾。然後，根據組織的原則他們可以使用網頁型 Outlook將這些相同的公用資料夾新增至其我的最愛並網頁型 Outlook ，因此在 Outlook 用戶端中執行某些功能。
 

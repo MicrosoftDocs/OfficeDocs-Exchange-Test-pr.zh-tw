@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 您可以啟用整合通訊 (UM) 自動語音應答上的撥號授權。在自動語音應答的撥號授權可用來禁止使用者撥打國家/地區或國際電話通話或*撥出*通話的自動語音應答。撥出時執行的動作整合通訊會撥出電話的使用者他們已呼叫到 UM 自動所設定的電話號碼之後語音應答。
 

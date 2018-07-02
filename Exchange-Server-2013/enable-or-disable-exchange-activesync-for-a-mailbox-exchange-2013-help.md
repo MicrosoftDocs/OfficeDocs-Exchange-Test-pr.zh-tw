@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-13_
+_**上次修改主題的時間：** 2012-11-13_
 
 您可以使用 EAC 或命令介面啟用或停用使用者信箱的 Microsoft Exchange ActiveSync 。Exchange ActiveSync是可讓使用者同步處理行動裝置與 Exchange 信箱的用戶端通訊協定。建立使用者信箱時預設會啟用Exchange ActiveSync 。若要深入了解，請參閱[Exchange ActiveSync](exchange-activesync-exchange-2013-help.md)。
 

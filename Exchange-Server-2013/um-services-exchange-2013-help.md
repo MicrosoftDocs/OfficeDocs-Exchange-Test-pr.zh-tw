@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-18_
+_**上次修改主題的時間：** 2012-11-18_
 
 執行 Microsoft Exchange 整合通訊呼叫路由器服務的用戶端存取伺服器和執行 Microsoft Exchange 整合通訊服務的信箱伺服器都可讓您為組織中的使用者部署整合通訊 (UM) 和語音信箱功能。
 

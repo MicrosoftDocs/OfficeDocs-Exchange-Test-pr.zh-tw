@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-03-13_
+_**上次修改主題的時間：** 2013-03-13_
 
 依預設、 兩個 POP3 服務、 Microsoft Exchange POP3 服務和 Microsoft Exchange POP3 後端服務未執行MicrosoftExchange Server 2013的電腦上啟動。您必須先啟動允許您的電子郵件用戶端連線至 Exchange 使用 POP3 這兩項服務。這些服務會執行時， Exchange 2013接受不安全的 POP3 用戶端通訊連接埠 110 和透過連接埠 995 使用 Secure Sockets Layer (SSL)。
 

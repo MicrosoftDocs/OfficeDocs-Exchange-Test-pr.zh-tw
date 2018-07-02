@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 MicrosoftExchange 整合通訊 (UM) 包含呼叫語音郵件預覽使用自動語音辨識 (ASR) 將語音郵件音訊檔的文字版本新增到語音郵件訊息的功能。ASR 不是完全精確，尤其是當它是透過電話含有未知的聲音及雜音用於錄製音訊時。有些組織需要可持續無錯誤的 （或附近-無錯誤的） 的語音訊息的文字記錄。語音郵件預覽協力廠商程式可協助這類組織符合這些需求。
 

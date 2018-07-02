@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題說明您可以使用就地 eDiscovery 和保留搜尋的Exchange電子郵件的內容Exchange Server 2013和Exchange Online中。主題也會說明搜尋布林運算子和其他可用來調整 eDiscovery 搜尋結果的搜尋查詢技術。
 

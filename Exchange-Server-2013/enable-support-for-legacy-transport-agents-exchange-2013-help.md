@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013，預設支援使用 Microsoft.NET Framework 4.0 版所建立的傳輸代理程式。預設不啟用Exchange 2013支援傳輸代理程式使用舊版的.NET Framework 但支援針對下列舊版傳輸代理程式所建立。若要啟用支援的舊版傳輸代理程式，您需要修改適當的 XML 應用程式設定檔。您要修改的檔案傳輸代理程式安裝位置而定：
 

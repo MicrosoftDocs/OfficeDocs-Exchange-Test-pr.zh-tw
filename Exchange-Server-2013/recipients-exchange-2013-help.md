@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 傳送和接收郵件的人員與資源是任何郵件和協同作業系統的核心。在 Exchange 組織中，這些人員和資源稱之為*收件者*。收件者是指在 Active Directory 中，Microsoft Exchange 可以傳遞或路由郵件到該位置之任何擁有郵件功能的物件。
 

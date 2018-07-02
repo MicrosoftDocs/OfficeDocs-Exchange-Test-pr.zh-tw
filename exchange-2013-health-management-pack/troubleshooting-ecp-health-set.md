@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Exchange 控制台 (ECP) 健全設定監視Exchange系統管理中心 (EAC) 和Outlook Web App (OWA) 使用者設定服務的整體狀況。下列狀況一組密切相關 ECP 健全設定：
 

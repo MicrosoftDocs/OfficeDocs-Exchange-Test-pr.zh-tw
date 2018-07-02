@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-16_
+_**上次修改主題的時間：** 2012-11-16_
 
 當您永久刪除作用中信箱和中斷連線的信箱從 Exchange 信箱資料庫，會清除所有的信箱內容和資料遺失是永久性動作。當您永久刪除作用中的信箱時，也會刪除相關聯的 Active Directory 使用者帳戶。
 

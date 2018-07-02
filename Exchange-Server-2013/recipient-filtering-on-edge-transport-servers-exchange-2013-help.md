@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-05-07_
+_**上次修改主題的時間：** 2014-05-07_
 
 收件者篩選器是 Microsoft Exchange Server 2013 中一個反垃圾郵件的功能，依賴 RCPT TO SMTP 標頭 (若有的話)，來決定要對輸入郵件採取的動作。收件者篩選器是由收件者篩選器代理程式執行。
 

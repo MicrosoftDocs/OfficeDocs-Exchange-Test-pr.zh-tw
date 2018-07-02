@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 通訊協定記錄會記錄郵件傳遞的一部分的郵件伺服器之間發生的 SMTP 交談。傳送連接器和用戶端存取伺服器、 信箱伺服器上的傳輸服務及 Mailbox server 上的 Mailbox Transport service 的前端傳輸服務中存在的接收連接器上發生這些 SMTP 交談。您可以使用通訊協定記錄診斷郵件流程問題。
 

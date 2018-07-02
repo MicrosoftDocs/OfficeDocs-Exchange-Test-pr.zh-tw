@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 安裝及部署整合通訊 (UM) 及Microsoft Lync Server 2013 中使用此檢查清單。本主題中 「 Lync Server 」 也參照至 Lync Server 2010。不過，Microsoft Office Communications Server 2007 R2 也可以部署與整合通訊。
 

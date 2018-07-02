@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2017-02-03_
+_**上次修改主題的時間：** 2017-02-03_
 
 您可以安裝或移除增益集的您的組織的 Outlook 使用 EAC 或命令介面。
 

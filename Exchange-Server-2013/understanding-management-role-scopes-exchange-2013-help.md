@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 *管理角色範圍*可讓您建立管理角色指派時定義影響特定範圍或管理角色的影響。當您將套用的範圍時，指派給角色的角色受託人只能修改包含在該範圍內的物件。角色受託人可管理角色群組、 管理角色、 管理角色指派原則、 使用者或萬用安全性群組 (USG)。如需管理角色的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。
 

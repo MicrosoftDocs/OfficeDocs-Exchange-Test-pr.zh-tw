@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-12-02_
+_**上次修改主題的時間：** 2013-12-02_
 
 您可以搜尋系統管理員稽核記錄，以查明是誰變更組織、伺服器和收件者組態。在嘗試追蹤意外行為的原因時，這有助於識別惡意的系統管理員，或驗證是否符合規範需求。如需有關系統管理員稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄](administrator-audit-logging-exchange-2013-help.md)。
 

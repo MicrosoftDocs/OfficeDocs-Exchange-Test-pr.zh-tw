@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 您可以啟用整合通訊 (UM) 撥號對應表上的撥號授權。在 \[撥號對應表的撥號授權可用來禁止未經過驗證的 Outlook 語音存取使用者撥打國家/地區或國際電話通話或*撥出*。撥出時執行的動作他們已呼叫 UM 撥號對應表設定 Outlook 語音存取電話號碼之後整合通訊 places 撥出電話的使用者。當您設定設定在 UM 撥號對應表計劃，以設定會套用到所有未驗證的使用者撥打 Outlook 語音存取號碼。
 

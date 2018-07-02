@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以將重設 Outlook Voice Access 使用者的 PIN 碼之前允許的登入失敗次數設定為介於 1 到 998 之間的數字。預設值為 5。重設 PIN 碼之前允許的登入失敗次數是在整合通訊 (UM) 信箱原則上設定，並且套用至與該 UM 信箱原則相關聯的所有 Outlook Voice Access 使用者。
 

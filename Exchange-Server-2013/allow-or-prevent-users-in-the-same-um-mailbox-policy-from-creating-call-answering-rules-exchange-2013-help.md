@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以讓與整合通訊 (UM) 信箱原則來設定通話自動答錄規則、 相關聯的使用者或防止能力。如果選項可設定自動答錄規則已停用 UM 撥號對應表上，將與 UM 信箱原則相關聯的已啟用 UM 之使用者可呼叫接聽規則功能。會啟用預設設定。
 

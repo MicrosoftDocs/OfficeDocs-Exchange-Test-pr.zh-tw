@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 本主題提供的新 Exchange 系統管理中心 (EAC) 中 Microsoft Exchange Server 2013常見問題集的清單。有其他疑問 EAC 未回應以下吗？電子郵件至 ex2013helpfeedback 在[Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com)。
 

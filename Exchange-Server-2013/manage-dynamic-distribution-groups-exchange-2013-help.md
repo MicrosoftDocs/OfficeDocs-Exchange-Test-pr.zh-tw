@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 動態通訊群組是擁有郵件功能的 Active Directory 群組物件，建立的用途在於加快 Microsoft Exchange 組織內大量傳送電子郵件與其他訊息的速度。
 

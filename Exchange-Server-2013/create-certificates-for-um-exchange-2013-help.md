@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-29_
+_**上次修改主題的時間：** 2013-04-29_
 
 您可以使用 EAC 或命令介面中的 \[新增 Exchange 憑證\] 精靈來建立自我簽署的憑證或內部公開金鑰基礎結構 (PKI) 憑證的憑證要求。整合通訊 (UM)，您可以使用這些憑證的其中一個 Microsoft Exchange 整合通訊服務和 Microsoft Exchange Unified Messaging Call Router 服務。您可以使用這兩個服務的相同的憑證或不同的每個服務。您也可以購買及匯入 UM 服務的協力廠商商業憑證。如果您使用自我簽署的憑證 um，您可能需要在主體替代名稱 (SAN) 中包含用戶端存取和信箱伺服器的名稱。
 

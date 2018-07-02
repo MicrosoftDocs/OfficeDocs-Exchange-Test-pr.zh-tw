@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-04-26_
+_**上次修改主題的時間：** 2017-04-26_
 
 將信箱轉換成不同類型是信箱的非常類似經驗在 Exchange 2010。您仍必須在命令介面中使用 Set-mailbox 指令程式來執行轉換作業。
 

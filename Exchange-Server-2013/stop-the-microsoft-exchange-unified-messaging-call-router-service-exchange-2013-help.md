@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-16_
+_**上次修改主題的時間：** 2012-11-16_
 
 您可以在命令提示字元處使用服務嵌入式管理單元Microsoft Management Console (MMC) 中或 cmd.exe，用戶端存取伺服器上停止MicrosoftExchange整合通訊呼叫路由器服務。可能您需要停止這個服務，例如時您必須讓用戶端存取伺服器離線。當您停止MicrosoftExchange Unified Messaging Call Router 服務時、 用戶端存取伺服器將不會能夠接受與處理來電。
 

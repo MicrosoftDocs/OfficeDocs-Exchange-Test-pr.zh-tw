@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2013-03-22_
+_**上次修改主題的時間：** 2013-03-22_
 
 Microsoft Exchange Server 2013安裝程式無法繼續因為偵測到本機電腦不是 Active Directory 網域的成員。您可以安裝Exchange Server 2013之前您必須加入 Active Directory 網域的本機電腦。如果您登入本機電腦上使用者帳戶，而不是網域使用者帳戶具有足夠的系統管理權限安裝Exchange 2013，您也可能會看到此訊息。
 

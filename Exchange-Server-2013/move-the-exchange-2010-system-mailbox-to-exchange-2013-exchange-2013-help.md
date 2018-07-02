@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 Exchange 2010、 Microsoft Exchange 系統信箱是用來儲存整個組織資料例如系統管理員稽核記錄檔、 中繼資料的 eDiscovery 搜尋和整合通訊的資料，例如功能表仲裁信箱的撥號對應表計劃及自訂問候語。Microsoft Exchange 系統信箱名為**SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9}**;顯示名稱是**Microsoft Exchange**。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 如果資料庫可用性群組 (DAG) 成員的信箱伺服器遺失或否則失敗並無法復原且需要取代，您可以執行伺服器復原作業。Microsoft Exchange Server 2013安裝程式會包含參數*/m:RecoverServer*可以用來執行 server 復原作業。執行安裝程式與*/m:RecoverServer*交換器原因安裝程式以閱讀該伺服器的組態資訊從Active Directory具有相同名稱您正在執行安裝程式之伺服器的伺服器。伺服器設定後從Active Directory、 Exchange原始檔案收集資訊的伺服器上，然後會安裝服務和角色與已儲存在Active Directory設定則套用至伺服器。
 

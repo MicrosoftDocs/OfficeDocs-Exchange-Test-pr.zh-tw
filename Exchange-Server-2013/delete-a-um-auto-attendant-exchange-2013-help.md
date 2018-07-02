@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-30_
+_**上次修改主題的時間：** 2012-11-30_
 
 刪除整合通訊 (UM) 自動語音應答後，必須由人工運算子接聽傳入呼叫所佔的 UM 自動語音應答。如果它具有相關聯 UM 撥號對應表作為預設 UM 自動語音應答無法刪除 UM 自動語音應答。
 

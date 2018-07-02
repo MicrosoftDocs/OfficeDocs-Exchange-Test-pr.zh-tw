@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-07-31_
+_**上次修改主題的時間：** 2015-07-31_
 
 您可使用MicrosoftOfficeOutlook Web App指定開啟信箱的網頁組件、 開啟、，信箱內的資料夾和內容檢視可使用。
 
@@ -185,11 +185,11 @@ Outlook Web App網頁組件可以是也可手動輸入網頁瀏覽器中。例�
 
 下列範例顯示如何直接存取一般的 Outlook Web App 檢視︰
 
-  - **收件匣：** https://*\<server name\>*/owa/?cmd = 內容模組 = 收件匣
+  - **收件匣：**  https://*\<server name\>*/owa/?cmd = 內容模組 = 收件匣
 
-  - **行事曆 （今天）：**https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆 exsvurl = 1
+  - **行事曆 （今天）：** https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆 exsvurl = 1
 
-  - **行事曆 （每週）：** https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆檢視 = 每週 exsvurl = 1
+  - **行事曆 （每週）：**  https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆檢視 = 每週 exsvurl = 1
 
   - **（每月） 的行事曆︰** https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆檢視 = 月 exsvurl = 1
 

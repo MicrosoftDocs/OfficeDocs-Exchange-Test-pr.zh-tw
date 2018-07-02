@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題說明如何部署Exchange 2013在跨樹系拓撲中使用 Microsoft Forefront Identity Manager 2010 R2 SP1。若要部署Exchange 2013跨樹系拓撲中，必須先安裝Exchange 2013每個樹系中，並再連線樹系\]，讓使用者可以看見跨樹系的地址及可用性的資料。
 

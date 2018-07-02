@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在執行 Microsoft Exchange 整合通訊呼叫路由器服務的用戶端存取伺服器上，以及執行 Microsoft Exchange 整合通訊服務的信箱伺服器上，執行工作所需的權限端視正在執行的程序或您要執行的 Cmdlet 而定。
 

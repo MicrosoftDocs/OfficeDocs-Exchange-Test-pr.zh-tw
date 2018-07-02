@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-18_
+_**上次修改主題的時間：** 2013-02-18_
 
 電話語音群組搜尋提供一種方式來散佈至多個副檔名的電話通話從單一數字或電話號碼。在整合通訊 (UM)、 UM 群組搜尋群組的電話語音搜尋，以邏輯方式呈現，且其連結至 UM 撥號對應表 UM IP 閘道器。
 

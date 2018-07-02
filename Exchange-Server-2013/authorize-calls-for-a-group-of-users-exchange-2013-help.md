@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 您可以啟用整合通訊 (UM) 信箱原則上的撥號授權。您可以使用信箱原則上的撥號授權來禁止經驗證的 Outlook 語音存取使用者撥打國家/地區或國際電話通話或*撥出*連結至 UM 信箱原則。撥出時執行的動作他們已呼叫 UM 撥號對應表設定 Outlook 語音存取電話號碼之後整合通訊 places 撥出電話的使用者。當您設定 UM 信箱原則\] 設定套用至所有已啟用 UM 的使用者與 UM 信箱原則連結。
 

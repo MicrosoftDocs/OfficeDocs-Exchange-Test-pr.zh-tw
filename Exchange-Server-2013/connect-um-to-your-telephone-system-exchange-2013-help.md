@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-30_
+_**上次修改主題的時間：** 2012-11-30_
 
 整合通訊 (UM) 結合語音訊息和電子郵件訊息到一個可從許多不同的裝置存取的信箱。使用者可以從其電子郵件收件匣或從任何電話使用 Outlook 語音存取聆聽其語音郵件訊息。
 

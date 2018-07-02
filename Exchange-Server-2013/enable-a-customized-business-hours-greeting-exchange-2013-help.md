@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-19_
+_**上次修改主題的時間：** 2013-04-19_
 
 您可以啟用整合通訊 (UM) 自動語音應答問候語自訂的營業時間。營業時間問候語是第一件事來電者聽到 UM 自動語音應答時接聽其來電在營業時間。您可能需要自訂問候語。
 

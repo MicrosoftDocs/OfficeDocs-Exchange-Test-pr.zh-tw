@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 分割權限可讓兩個不同的群組 (例如 Active Directory Administrators 和 Microsoft Exchange Server 2013 Administrators) 管理各自的服務、物件和屬性。Active Directory Administrators 管理安全性主體 (例如使用者)，提供存取 Active Directory 樹系的權限。Exchange Administrators 管理 Active Directory 物件上與 Exchange 相關的屬性，以及建立和管理 Exchange 特定的物件。
 

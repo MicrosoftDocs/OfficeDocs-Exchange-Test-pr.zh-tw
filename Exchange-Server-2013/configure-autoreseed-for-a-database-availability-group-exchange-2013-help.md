@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-04-15_
+_**上次修改主題的時間：** 2013-04-15_
 
 AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁碟失敗，儲存在該磁碟上的資料庫副本會自動重新植入 Mailbox server 上預先設定備用磁碟。您可以使用本主題中的步驟來設定 AutoReseed 的資料庫可用性群組 (DAG)。
 

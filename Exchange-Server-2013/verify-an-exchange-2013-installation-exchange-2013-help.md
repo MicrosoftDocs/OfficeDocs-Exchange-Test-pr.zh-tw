@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 在您安裝 Microsoft Exchange Server 2013之後，建議您確認安裝執行**Get-ExchangeServer**指令程式並透過檢閱安裝記錄檔。如果安裝程序失敗或在安裝期間發生錯誤，您可以使用安裝程式記錄檔來追蹤問題的來源。
 

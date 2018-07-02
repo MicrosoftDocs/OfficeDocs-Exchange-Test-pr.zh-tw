@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-02-24_
+_**上次修改主題的時間：** 2014-02-24_
 
 公用資料夾的設計目的在於共用存取，並提供簡易有效率的方式來收集及組織資訊，以及與工作群組或組織中的其他人員共用資訊。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行通訊記錄管理 (MRM)。保留原則是可以套用至信箱的一組保留標記。如需詳細資訊，請參閱[保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)。不支援受管理的資料夾 (Exchange Server 2007 中引進的 MRM 技術)。
 
@@ -274,7 +274,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 您可以在這個步驟中使用兩種方法：
 
-  - **根據受管理的資料夾及其對應的受管理內容設定來建立保留標記：**使用此方法時，您在 **New-RetentionPolicyTag** 指令程式中需要指定 *ManagedFolderToUpgrade* 參數。當您指定此參數時，對應的保留標記就會自動套用到受管理的資料夾。
+  - **根據受管理的資料夾及其對應的受管理內容設定來建立保留標記：** 使用此方法時，您在 **New-RetentionPolicyTag** 指令程式中需要指定 *ManagedFolderToUpgrade* 參數。當您指定此參數時，對應的保留標記就會自動套用到受管理的資料夾。
     
     <table>
     <thead>
@@ -291,7 +291,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
     </table>
 
 
-  - **手動指定保留設定來建立保留標記：**使用此方法時，您在 **New-RetentionPolicyTag** 指令程式中不需要指定 *ManagedFolderToUpgrade* 參數。當您未指定此參數時，就會對預設資料夾套用新增到原則的任何保留原則標記，並對整個信箱套用預設原則標記。不過，新增到原則的任何個人標記不會自動套用到受管理的資料夾。
+  - **手動指定保留設定來建立保留標記：** 使用此方法時，您在 **New-RetentionPolicyTag** 指令程式中不需要指定 *ManagedFolderToUpgrade* 參數。當您未指定此參數時，就會對預設資料夾套用新增到原則的任何保留原則標記，並對整個信箱套用預設原則標記。不過，新增到原則的任何個人標記不會自動套用到受管理的資料夾。
 
 <table>
 <thead>

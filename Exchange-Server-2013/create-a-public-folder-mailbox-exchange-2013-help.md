@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2014-10-23_
+_**上次修改主題的時間：** 2014-10-23_
 
 建立公用資料夾之前，您必須先建立公用資料夾信箱。公用資料夾信箱包含公用資料夾的階層資訊及內容。您建立的第一個公用資料夾信箱是主要階層信箱，其中包含唯一可寫入的階層副本。您建立的其他任何公用資料夾信箱都是次要信箱，其中包含唯讀的階層副本。
 

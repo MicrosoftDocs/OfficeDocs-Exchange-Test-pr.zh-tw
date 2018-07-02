@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 因為偵測到目前的 Active Directory 樹系的樹系功能層級不是 Windows Server 2003 原生或更新版本的 Microsoft Exchange Server 2013安裝程式無法繼續執行。您可以安裝Exchange 2013之前，您必須引發的樹系功能層級為 Windows Server 2003 或更新版本。
 

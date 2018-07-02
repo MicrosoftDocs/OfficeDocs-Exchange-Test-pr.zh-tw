@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `View-Only Configuration`管理角色可讓系統管理員能夠檢視組織內的所有非收件者Exchange組態設定。檢視組態範例是伺服器組態、 傳輸組態、 資料庫組態和整個組織的組態。
 

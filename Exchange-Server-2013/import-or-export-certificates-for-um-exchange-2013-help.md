@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-12-18_
+_**上次修改主題的時間：** 2013-12-18_
 
 您可使用 EAC 或「命令介面」來匯入或匯出自我簽署、內部公開金鑰基礎結構 (PKI) 或協力廠商商業憑證。在整合通訊 (UM) 中，這其中一個憑證可同時用於 Microsoft Exchange Unified Messaging 服務與 Microsoft Exchange Unified Messaging Call Router 服務。這兩個服務可以使用相同的憑證，或者，每個服務使用不同的憑證。
 

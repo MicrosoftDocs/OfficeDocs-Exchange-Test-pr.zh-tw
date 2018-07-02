@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-09_
+_**上次修改主題的時間：** 2012-11-09_
 
 您可以指定的循序成功登入嘗試次數之前中斷連線的來電者允許的。此設定的值可以是介於 1 到 20。將此值得太低可以讓使用者不耐煩。對於大多數的組織而言，此值應設為預設值是三個嘗試。
 

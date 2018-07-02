@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 瞭解 Exchange Server 2013 的 Exchange ActiveSync 用戶端通訊協定。您將瞭解 Exchange ActiveSync 的功能 (包括安全性功能)、您可以管理的事物、如何使其安全，以及如何避免在同步至 Windows Phone 7 時發生問題。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-02_
+_**上次修改主題的時間：** 2012-10-02_
 
 管理角色指派給使用者或萬用安全性群組 (USG) 指派管理角色。如果您移除角色指派，指派角色的使用者將不再有可用的 cmdlet 來存取該角色上。如需 Microsoft Exchange Server 2013中的管理角色指派的詳細資訊，請參閱[了解管理角色指派](understanding-management-role-assignments-exchange-2013-help.md)。
 

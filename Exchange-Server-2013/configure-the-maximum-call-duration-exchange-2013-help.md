@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-09_
+_**上次修改主題的時間：** 2012-11-09_
 
 您可以指定來電可連接至系統沒有之前結束通話轉接至有效的分機號碼的分鐘數數目上限。對於大多數的組織而言，此值應設為預設值： 30 分鐘。此設定會套用到所有通話，包括 Outlook 語音存取來電、 語音通話內部組織、 語音通話將整合通訊 (UM) 自動語音應答及從放置在組織外的傳真呼叫。
 

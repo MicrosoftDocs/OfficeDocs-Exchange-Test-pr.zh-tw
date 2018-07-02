@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Mail Recipient Creation`管理角色可讓系統管理員可以在組織中建立信箱、 郵件使用者、 郵件連絡人、 通訊群組和動態通訊群組。此角色可以結合與`Mail Recipients`角色能建立及管理收件者。如需詳細資訊，請參閱[郵件收件者角色](mail-recipients-role-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-10-01_
+_**上次修改主題的時間：** 2014-10-01_
 
 *受管理的資料夾助理員*是MicrosoftExchange信箱助理員套用保留原則中設定的郵件保留設定。
 

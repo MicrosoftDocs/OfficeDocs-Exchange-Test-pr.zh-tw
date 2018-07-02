@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-04-16_
+_**上次修改主題的時間：** 2018-04-16_
 
 歡迎使用 Microsoft Exchange Server 2013！本主題包含成功部署 Exchange 2013 所需了解的重要資訊。請在開始部署之前，仔細閱讀本主題。
 

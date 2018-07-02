@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-07-21_
+_**上次修改主題的時間：** 2015-07-21_
 
 在 MicrosoftExchange Server 2013 和 Exchange Online 中，「Exchange 搜尋」包含篩選器來為常見被加成郵件附件的檔案格式類型製作索引。您也可以安裝篩選器，以製作其他檔案類型的索引。
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-03-08_
+_**上次修改主題的時間：** 2013-03-08_
 
 您可以建立整合通訊 (UM) 信箱原則套用至一組已啟用 UM 之信箱的一組通用的 UM 原則設定，例如 PIN 原則設定\] 或 \[撥號限制。UM 信箱原則連結已啟用 UM 的使用者與 UM 撥號對應表和套用至一組已啟用 UM 之信箱的一組通用原則\] 或 \[安全性設定。UM 信箱原則可用套用並標準化的已啟用 UM 之使用者的 UM 組態設定。
 

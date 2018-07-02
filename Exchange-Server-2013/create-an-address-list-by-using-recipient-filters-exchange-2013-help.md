@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 本主題說明如何使用收件者篩選器來建立通訊清單。若要深入了解通訊清單，請參閱[通訊清單](address-lists-exchange-2013-help.md)。
 

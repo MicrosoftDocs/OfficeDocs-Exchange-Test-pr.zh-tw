@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題說明如何部署 Microsoft Exchange 2013Exchange資源樹系拓撲中。Exchange資源樹系也稱為專用的Exchange樹系。本主題假設您不需要現有Exchange 2013拓撲。
 

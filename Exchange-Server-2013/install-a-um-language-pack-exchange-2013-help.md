@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 若要提供一種語言的 UM 撥號對應表或 UM 自動語音應答上的可用整合通訊語言清單中，您必須先安裝適當的 UM 語言套件。您使用特定語言的自我解壓縮可執行檔或**setup.exe /AddUmLanguagePack**命令執行 Microsoft Exchange 整合通訊服務的信箱伺服器上安裝語言套件。您可以安裝 UM 語言套件之前，必須先將它下載至本機資料夾的 Mailbox server 上。您可以從[Exchange Server 2013 UM 語言套件](https://go.microsoft.com/fwlink/p/?linkid=266542)下載的 UM 語言套件。沒有每種語言的個別可執行檔。
 

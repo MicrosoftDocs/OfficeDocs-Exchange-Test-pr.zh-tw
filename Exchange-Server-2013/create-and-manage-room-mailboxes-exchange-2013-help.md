@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-02-02_
+_**上次修改主題的時間：** 2017-02-02_
 
 預估完成時間：5 分鐘。
 
@@ -294,7 +294,7 @@ _**上次修改主題的時間：**2017-02-02_
 
 ## 使用 Exchange PowerShell 來變更會議室信箱內容
 
-使用下列 Cmdlet 集，可以檢視和變更會議室信箱內容：**Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視與變更會議室信箱的一般內容及電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** 指令程式來檢視與變更代理人及預約選項。
+使用下列 Cmdlet 集，可以檢視和變更會議室信箱內容：** Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視與變更會議室信箱的一般內容及電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** 指令程式來檢視與變更代理人及預約選項。
 
   - **Get-User** 與 **Set-User**   使用這些 Cmdlet 來檢視與設定位置、部門和公司名稱等一般內容。
 

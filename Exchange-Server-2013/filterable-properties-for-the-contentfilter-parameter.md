@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-09-10_
+_**上次修改主題的時間：** 2015-09-10_
 
 本主題列出 *ContentFilter* 參數的可篩選屬性。*ContentFilter* 參數用於將郵件匯出至符合篩選器的 .pst 檔案。[New-MailboxExportRequest](https://technet.microsoft.com/zh-tw/library/ff607299\(v=exchg.150\)) 指令程式中使用 *ContentFilter* 參數。
 

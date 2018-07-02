@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2018-04-26_
+_**上次修改主題的時間：** 2018-04-26_
 
 建立整合通訊 (UM) 撥號對應表之後，您可以檢視及設定各種設定。例如，您可以設定 Voice over IP (VoIP) 安全性、 音訊轉碼器，以及撥號限制的層級。您設定在 \[UM 撥號計劃影響連結與撥號對應表透過 UM 信箱原則的所有使用者。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-23_
+_**上次修改主題的時間：** 2013-02-23_
 
 您可以設定執行 Microsoft Exchange 整合通訊服務的信箱伺服器會接受的傳入並行連線數目。這包括所有來電包括 Outlook 語音存取、 來電接聽、 自動語音應答和傳真呼叫。當您增加的信箱伺服器上的並行連線數目時更多的系統資源是必要的比您如果減少並行通話數目。愈低並行通話數目特別重要的是較慢的電腦上安裝整合通訊服務。並行語音通話數目的範圍是 0 到 200。預設值為 100。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013安裝程式無法繼續因為偵測到一或多個Exchange Server 2007伺服器尚未已升級至Exchange Server 2007 Service Pack 3 (SP3) 10 (RU10) 縮合。您可以安裝Exchange 2013之前，貴組織中的所有Exchange 2007伺服器都必須都升級至Exchange 2007 SP3 RU10。這項需求包括Exchange 2007 Edge Transport server。如需詳細資訊，請參閱[從 Exchange 2007 升級至 Exchange 2013](upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)。
 

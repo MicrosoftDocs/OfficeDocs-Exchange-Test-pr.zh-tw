@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Outlook Voice Access 號碼可讓整合通訊 (UM) 及語音信箱啟用的使用者存取使用Outlook語音存取其信箱。當您設定 Outlook 語音存取或訂戶存取號碼撥號對應表時、 已啟用 UM 的使用者可以撥打的號碼、 登入他們的信箱和存取其電子郵件、 語音信箱、 行事曆及個人連絡資訊。
 

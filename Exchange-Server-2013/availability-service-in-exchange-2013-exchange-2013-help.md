@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Exchange 2013 可用性服務會對 Microsoft Outlook 和 Outlook Web App 用戶端提供空閒/忙碌資訊。可用性服務會提供安全、一致且最新的空閒及忙碌資訊，以提升資訊工作者在行事曆及會議排程方面的體驗。
 

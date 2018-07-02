@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-08-09_
+_**上次修改主題的時間：** 2016-08-09_
 
 您可以管理透過 DLP 原則的機密資訊匯入包含原則資訊設定檔案。DLP 原則範本可以被開發獨立的 Exchange 化為 XML 檔案。不過，使用者必須符合特定格式需求才能正常運作。或者，匯出從舊版 Exchange 的原則可以匯入 Microsoft Exchange Server 2013。
 

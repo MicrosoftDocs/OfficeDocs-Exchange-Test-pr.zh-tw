@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 接收連接器會控制輸入到 Exchange 組織的郵件流程。它們可在利用傳輸服務執行 Microsoft Exchange Server 2013 的電腦或在用戶端存取伺服器上的前端服務中設定。可建立於 Exchange 系統管理中心 (EAC) 或 Exchange 管理命令介面。
 

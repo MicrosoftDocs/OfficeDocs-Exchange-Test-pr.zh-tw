@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-11-30_
+_**上次修改主題的時間：** 2016-11-30_
 
 `ApplicationImpersonation` 管理角色可讓應用程式模擬組織中的使用者，以代表使用者執行工作。
 

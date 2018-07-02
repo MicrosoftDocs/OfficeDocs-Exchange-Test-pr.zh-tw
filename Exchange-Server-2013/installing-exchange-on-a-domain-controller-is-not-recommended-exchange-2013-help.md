@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2013-03-22_
+_**上次修改主題的時間：** 2013-03-22_
 
 Microsoft Exchange Server 2013安裝程式已偵測到您正在嘗試安裝Exchange 2013上之電腦的 Active Directory 網域控制站。在網域控制站上安裝Exchange 2013不建議使用。
 

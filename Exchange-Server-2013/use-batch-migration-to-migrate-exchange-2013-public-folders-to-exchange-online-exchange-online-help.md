@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**上次修改主題的時間：**2018-03-26_
+_**上次修改主題的時間：** 2018-03-26_
 
-**摘要：** 本文會告訴您如何從 Exchange 2013 的現代的公用資料夾移至 Office 365。
+**摘要：**  本文會告訴您如何從 Exchange 2013 的現代的公用資料夾移至 Office 365。
 
 將您的 Exchange 2013 公用資料夾遷移至 Exchange Online 需要 Exchange Server 2013 CU15 或更新版本執行內部部署環境中。
 
@@ -137,7 +137,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName <target domain> -DomainType InternalRelay
     
-    **範例：**
+    **範例：** 
     
         New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName "contoso.mail.onmicrosoft.com" -DomainType InternalRelay
     
@@ -320,7 +320,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         .\Export-ModernPublicFolderStatistics.ps1 <Folder-to-size map path>
     
-    **範例：**
+    **範例：** 
     
         .\Export-ModernPublicFolderStatistics.ps1 stats.csv
 
@@ -349,7 +349,7 @@ _**上次修改主題的時間：**2018-03-26_
     
       - `Folder-to-mailbox map path`是您要在此步驟中建立資料夾至信箱.csv 檔案的檔案路徑。如果您只指定的檔案名稱，該檔案會產生於本機電腦的目前 PowerShell 目錄中。
 
-**範例：**
+**範例：** 
 
     .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 
@@ -567,7 +567,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         Add-RecipientPermission -Identity <mail-enabled public folder primary SMTP address> -Trustee <name of user to be assigned permission> -AccessRights SendAs
     
-    **範例：**
+    **範例：** 
     
         Add-RecipientPermission -Identity send1 -Trustee Exo1 -AccessRights SendAs
     
@@ -575,7 +575,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         Set-MailPublicFolder -Identity <name of public folder> -GrantSendOnBehalfTo <user or comma-separated list of users>
     
-    **範例：**
+    **範例：** 
     
         Set-MailPublicFolder send2 -GrantSendOnBehalfTo exo1,exo2
 

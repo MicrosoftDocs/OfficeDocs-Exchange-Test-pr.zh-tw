@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以在整合通訊 (UM) 信箱原則上設定 PIN 原則。UM 信箱原則可用來增加使用 Outlook 語音存取所需以符合組織的預先定義的 PIN 原則的使用者啟用 UM 之使用者的安全性層級。
 

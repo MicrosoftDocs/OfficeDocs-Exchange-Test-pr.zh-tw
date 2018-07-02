@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-08-12_
+_**上次修改主題的時間：** 2013-08-12_
 
 可以使用 EAC 或命令介面檢視或設定 Outlook Web App 虛擬目錄的內容。
 

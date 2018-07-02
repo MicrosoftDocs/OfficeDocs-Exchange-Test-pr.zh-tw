@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-01_
+_**上次修改主題的時間：** 2015-01-01_
 
 同盟信任會建立 Microsoft Exchange 2013組織和Azure Active Directory驗證系統之間的信任關係，並且支援與其他同盟 Exchange 組織的同盟共用。一般而言，您不應該有可管理或會在建立之後修改的同盟信任。不過，可能需要新增或移除同盟的網域或重設用來設定同盟信任的組織識別碼 (OrgID) 的網域的情況。
 

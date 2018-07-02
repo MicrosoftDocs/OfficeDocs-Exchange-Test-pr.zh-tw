@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `MyDistributionGroups` 管理角色可讓個別使用者建立、修改和檢視通訊群組，並為其所擁有的通訊群組修改、檢視、移除和新增成員。
 

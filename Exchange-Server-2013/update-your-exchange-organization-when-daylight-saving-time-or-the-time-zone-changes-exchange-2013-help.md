@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 如果您的組織或某些使用者所在的國家或地區變更了本身對日光節約時間 (DST) 的認知原則，或者透過世界協調時 (UTC) 變更本地時間差距，則您可能需要更新 Microsoft Windows、Microsoft Exchange、Microsoft Outlook 或其他程式以順應這些變更。
 

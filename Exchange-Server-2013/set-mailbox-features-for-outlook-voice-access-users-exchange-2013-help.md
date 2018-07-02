@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 Outlook語音存取包含兩個介面 ︰ 電話使用者介面 (TUI) 和語音使用者介面 (VUI)。您可以設定已啟用 UM 之使用者 TUI 當使用者存取Exchange 2013中使用整合通訊 (UM) 系統信箱時。當您修改已啟用 UM 之使用者 TUI 設定 UM 信箱原則上的時，所做的變更會影響所有與 UM 信箱原則相關聯的使用者。您可以修改下列 TUI 設定 UM 信箱原則上：
 

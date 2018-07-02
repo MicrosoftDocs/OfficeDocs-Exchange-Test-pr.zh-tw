@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-13_
+_**上次修改主題的時間：** 2012-10-13_
 
 [建立電子郵件地址原則](create-an-email-address-policy-exchange-2013-help.md)
 

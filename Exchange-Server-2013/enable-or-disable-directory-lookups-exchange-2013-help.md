@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-05-10_
+_**上次修改主題的時間：** 2016-05-10_
 
 您可以使來電者撥打整合通訊 (UM) 自動語音應答可以查詢中使用其電話按鍵之目錄的名稱，但是無法使用搜尋 directory 語音輸入來啟用目錄查閱服務。預設會啟用此設定。如果已停用此設定，來電者將無法使用按鍵式特定人員搜尋目錄或語音命令。
 

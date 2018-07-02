@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-12-05_
+_**上次修改主題的時間：** 2012-12-05_
 
 您可以為 Exchange 組織中停用現有的郵件連絡人的電子郵件。當您停用郵件連絡人的電子郵件時，它已從 Exchange 和貴組織的通訊錄。如果郵件連絡人的通訊群組的成員，連絡人不會再收到郵件傳送至群組。另外，Exchange 屬性已從 Active Directory 中，擁有郵件功能的連絡人物件，但連絡人和非 Exchange 屬性 （如連絡人及組織資訊） 都會保留在 Active Directory 中。
 

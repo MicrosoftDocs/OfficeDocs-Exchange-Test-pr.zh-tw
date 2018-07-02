@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-09-07_
+_**上次修改主題的時間：** 2017-09-07_
 
 您可以使用Exchange 系統管理中心 (EAC) 中的 eDiscovery 匯出工具為 「 就地 eDiscovery 搜尋結果匯出至 Outlook 資料檔案，也稱為 PST 檔案。系統管理員可以分散給您的組織，像是人力資源管理員或記錄管理員內其他人或敵對顧問法律案例中的搜尋結果。搜尋結果匯出至 PST 檔案之後，您或其他使用者可以開啟其檢閱或列印郵件搜尋結果中傳回在 Outlook 中。也可以與協力廠商 eDiscovery 及報告應用程式中開啟 PST 檔案。本主題顯示如何達成此目的，以及疑難排解您可能會有任何問題。
 

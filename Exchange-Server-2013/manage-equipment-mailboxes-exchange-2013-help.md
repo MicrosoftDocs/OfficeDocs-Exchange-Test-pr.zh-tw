@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-10-09_
+_**上次修改主題的時間：** 2014-10-09_
 
 *設備信箱*是指派給沒有具體位置之資源的資源信箱，如可攜式電腦、投影機、麥克風或公務車。在系統管理員建立設備信箱之後，使用者可以透過在會議邀請中包含對應設備信箱，輕鬆預約設備。您可以使用 EAC 和命令介面，建立設備信箱或變更設備信箱內容。如需詳細資訊，請參閱[收件者](recipients-exchange-2013-help.md)。
 
@@ -273,7 +273,7 @@ _**上次修改主題的時間：**2014-10-09_
 
 ## 使用命令介面變更設備信箱內容
 
-使用下列 Cmdlet 集可以檢視和變更設備信箱內容：**Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視和變更設備信箱的一般內容和電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** Cmdlet 來檢視與變更代理人及預約選項。
+使用下列 Cmdlet 集可以檢視和變更設備信箱內容：** Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視和變更設備信箱的一般內容和電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** Cmdlet 來檢視與變更代理人及預約選項。
 
   - **Get-User** 與 **Set-User**   使用這兩個 Cmdlet 可檢視和設定一般內容，例如，部門和公司名稱。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-09_
+_**上次修改主題的時間：** 2012-10-09_
 
 如果您想要自訂的權限指派給一群使用者，建立新的自訂管理角色指派原則。指派原則您建立可自訂以符合使用者的特定需求。如需 Microsoft Exchange Server 2013中指派原則的詳細資訊，請參閱[了解管理角色指派原則](understanding-management-role-assignment-policies-exchange-2013-help.md)。
 

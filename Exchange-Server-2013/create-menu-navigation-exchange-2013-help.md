@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 您可以使用**新的功能表導覽項目**頁面來建立單一或多個關鍵對應的商務或非上班時間主功能表提示自動語音應答。您可以定義時電話鍵盤上按下按鍵，例如呼叫轉接至分機號碼或另一個自動語音應答所執行的動作。
 

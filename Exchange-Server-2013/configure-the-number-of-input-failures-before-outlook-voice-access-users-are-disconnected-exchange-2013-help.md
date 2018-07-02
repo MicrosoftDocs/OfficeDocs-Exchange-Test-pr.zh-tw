@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-09_
+_**上次修改主題的時間：** 2012-11-09_
 
 您可以設定撥打 Outlook 語音存取號碼的使用者可以輸入不正確的資料之前所要中斷連線的次數。此設定會套用到Outlook語音存取使用者與未經過驗證的來電者使用目錄搜尋。
 

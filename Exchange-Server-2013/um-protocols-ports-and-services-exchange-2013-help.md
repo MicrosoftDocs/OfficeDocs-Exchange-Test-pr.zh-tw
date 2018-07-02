@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange 2013整合通訊 (UM) 要求數個 TCP 及使用者資料包通訊協定 (UDP) 的連接埠用來建立伺服器執行Exchange 2013和其他裝置之間的通訊。藉由允許存取透過這些 IP 連接埠，您啟用整合通訊以正常運作。本主題討論Exchange 2013中所使用的 TCP 及 UDP 連接埠整合通訊。
 

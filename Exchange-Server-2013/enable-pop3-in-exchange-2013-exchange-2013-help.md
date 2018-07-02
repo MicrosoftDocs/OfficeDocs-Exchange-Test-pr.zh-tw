@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-03-28_
+_**上次修改主題的時間：** 2017-03-28_
 
 了解如何在 Exchange 2016 中使用 Microsoft Management Console (MMC) 或 Exchange 管理命令介面 (EMS) 啟用 POP3 用戶端連線。
 

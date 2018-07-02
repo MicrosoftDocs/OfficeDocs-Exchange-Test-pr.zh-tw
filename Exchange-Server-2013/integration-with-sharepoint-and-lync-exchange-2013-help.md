@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013包含整合Microsoft SharePoint 2013及Microsoft Lync 2013的許多功能。這些產品提供功能可讓企業 eDiscovery 等使用站台信箱的共同作業案例可能的套件。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-11-15_
+_**上次修改主題的時間：** 2017-11-15_
 
 <table>
 <thead>
@@ -277,7 +277,7 @@ Exchange 2013 仍提供於 Exchange 2010 中所引進用以保留 eDiscovery 資
 
   - **啟用封存信箱和開啟自動展開封存**   您只要啟用封存信箱，然後開啟 Exchange Online 中的自動展開封存功能，就可以啟用 \[可復原的項目\] 資料夾的無限制儲存容量。如此，主要信箱中的 \[可復原的項目\] 資料夾會有 100 GB，而使用者封存中的 \[可復原的項目\] 資料夾會有無限制的儲存容量。請參閱作法：[在 Office 365 安全與規範中心啟用封存信箱](https://go.microsoft.com/fwlink/p/?linkid=863320)以及[在 Office 365 中啟用無限制封存](https://go.microsoft.com/fwlink/p/?linkid=844569)。
     
-    **附註：**
+    **附註：** 
     
       - 針對快要超過 \[可復原的項目\] 資料夾儲存配額的信箱，在啟用封存之後，您可以執行「受管理的資料夾助理員」來手動觸發助理員處理此信箱，讓過期的項目移至封存信箱中的 \[可復原的項目\] 資料夾。如需相關指示，請參閱[為處於保留狀態的信箱增加 \[可復原的項目\] 配額](https://go.microsoft.com/fwlink/p/?linkid=786479)中的步驟 4。
     

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-10-13_
+_**上次修改主題的時間：** 2012-10-13_
 
 在您完成電話語音或與 Exchange 整合通訊 (UM) 整合的 Microsoft Lync Server 連線時，且已建立並設定所需的 UM 元件，必須設定使用者的語音信箱。
 

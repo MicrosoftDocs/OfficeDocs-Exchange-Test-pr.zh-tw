@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Exchange搜尋索引的信箱與支援Exchange信箱中的附件。增加磁碟區的電子郵件、 信箱大小與儲存配額，佈建封存信箱的使用者，以及執行探索搜尋的就地 eDiscovery 增加Exchange搜尋是 Microsoft Exchange Server 2013組織中的信箱伺服器的重要元件。問題Exchange搜尋可以影響使用者產能及影響就地 eDiscovery 功能。
 

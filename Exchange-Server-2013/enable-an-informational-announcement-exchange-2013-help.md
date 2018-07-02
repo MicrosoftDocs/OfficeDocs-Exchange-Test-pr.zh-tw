@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-19_
+_**上次修改主題的時間：** 2013-04-19_
 
 您可以啟用整合通訊 (UM) 自動語音應答的資訊的宣告。資訊性宣告啟用時，它會播放後面的商務或非上班時間問候語。根據預設，不被設定資訊的宣告。若要啟用資訊的宣告，建立.wav 或.wma 檔案做為參考的宣告，然後再設定要使用此聲音檔的自動語音應答。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-19_
+_**上次修改主題的時間：** 2012-11-19_
 
 This topic shows you how to enable, disable, view, and change the priority of cmdlet extension agents in Microsoft Exchange Server 2013. For more information about cmdlet extension agents in Exchange 2013, see [Cmdlet 延伸代理程式](cmdlet-extension-agents-exchange-2013-help.md).
 

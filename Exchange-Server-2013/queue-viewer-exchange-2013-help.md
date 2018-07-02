@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-09-25_
+_**上次修改主題的時間：** 2012-09-25_
 
 佇列檢視器 」 是 Microsoft Management Console 嵌入式管理單元中已安裝 Mailbox server 或 Edge Transport server 上。佇列檢視器位於 Exchange 工具箱主控台的 \[**郵件流程工具**\] 區段。您可以使用這項工具以檢視上的傳輸伺服器和在於這些佇列中的郵件的佇列資訊和佇列和郵件項目上執行管理動作。佇列檢視器很有用的疑難排解郵件流程及用來識別垃圾郵件。
 

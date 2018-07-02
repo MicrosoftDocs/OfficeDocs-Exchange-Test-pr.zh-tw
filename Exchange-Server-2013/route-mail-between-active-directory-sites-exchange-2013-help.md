@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Active Directory 站台是以實體網路層面為基礎的邏輯組態元件。建立 Active Directory 站台的主要用途是定義網路中的哪些子網路，是以最佳化 Active Directory 複寫流量控制的方式連線。Microsoft Exchange Server 2013 可以辨識資料庫可用性群組 (DAG) 和 Active Directory 站台作為路由界限，而 Exchange 2013 伺服器會根據 Active Directory 站台拓撲進行路由決策。
 

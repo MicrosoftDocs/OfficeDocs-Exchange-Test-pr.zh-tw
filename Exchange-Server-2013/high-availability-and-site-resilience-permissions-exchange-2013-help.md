@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-11-12_
+_**上次修改主題的時間：** 2015-11-12_
 
 設定高可用性所需的權限而異正在執行的程序或您想要執行此指令程式。如需高可用性的詳細資訊，請參閱[高可用性和站台恢復](high-availability-and-site-resilience-exchange-2013-help.md)。
 

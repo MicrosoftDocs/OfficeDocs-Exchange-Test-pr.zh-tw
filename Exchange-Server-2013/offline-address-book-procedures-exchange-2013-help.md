@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-04_
+_**上次修改主題的時間：** 2012-10-04_
 
 [建立離線通訊錄](create-an-offline-address-book-exchange-2013-help.md)
 

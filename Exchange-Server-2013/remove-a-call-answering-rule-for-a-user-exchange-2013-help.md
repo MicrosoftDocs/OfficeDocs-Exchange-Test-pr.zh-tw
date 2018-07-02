@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 您可以使用命令介面，移除使用者的一或多個自動答錄規則。 您也可以在 Exchange 管理命令介面指令碼中使用 **Remove-UMCallAnsweringRule** 指令程式，來移除多個使用者的一或多個自動答錄規則。
 

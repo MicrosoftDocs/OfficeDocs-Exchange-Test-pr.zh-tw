@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 整合通訊 (UM) 群組搜尋是專用交換機 (PBX) 或 IP PBX 群組以邏輯方式呈現。連線或連結的 UM IP 閘道和 UM 撥號對應表扮演 UM 群組搜尋。
 

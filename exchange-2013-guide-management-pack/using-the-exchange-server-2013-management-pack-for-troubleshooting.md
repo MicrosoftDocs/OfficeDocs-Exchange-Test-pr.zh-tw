@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上次修改主題的時間：** 2013-04-09_
+_**上次修改主題的時間：**  2013-04-09_
 
 [Exchange Server 2013 管理組件快速入門](getting-started-with-exchange-server-2013-management-pack.md)會提供管理組件儀表板的概觀。本主題會帶領您了解如何使用此儀表板進行問題疑難排解。整個程序用範例最能清楚說明。請考慮下列案例：
 

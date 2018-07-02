@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-12-31_
+_**上次修改主題的時間：** 2017-12-31_
 
 您可以使用Exchange 系統管理中心或Exchange 管理命令介面啟用或停用 MAPI 使用者信箱。啟用 MAPI 時，可以Outlook或其他 MAPI 電子郵件用戶端存取使用者的信箱。當停用 MAPI 時，它不能存取Outlook或其他 MAPI 用戶端。不過，信箱會繼續接收電子郵件訊息，並假設信箱會啟用以支援存取這些用戶端，使用者可以存取權傳送及接收電子郵件使用Outlook Web App、 POP 電子郵件用戶端或 IMAP 用戶端的信箱。
 

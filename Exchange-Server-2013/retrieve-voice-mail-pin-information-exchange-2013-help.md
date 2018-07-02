@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-03_
+_**上次修改主題的時間：** 2013-04-03_
 
 您可以擷取已啟用的整合通訊 (UM) 之使用者的 PIN 資訊。使用者已啟用之後已啟用 UM 和 PIN 會產生或建立、 PIN 已加密及儲存在使用者的信箱。
 

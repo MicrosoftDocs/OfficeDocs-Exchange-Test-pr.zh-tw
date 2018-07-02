@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 Microsoft Exchange 整合通訊 (UM) 可讓語音信箱訊息傳遞至使用者的信箱中，並可讓使用者在其信箱內接收傳真。 在 UM 中，傳真會以內含影像檔案 (副檔名為 .tif) 的電子郵件形式傳送至使用者信箱。 使用者可以使用能夠開啟及檢視副檔名為 .tif 之影像檔案的軟體應用程式，開啟附加的檔案。 本主題討論傳真及其在 UM 中的運作方式。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013安裝程式會建立預設探索信箱。探索信箱中Exchange Online，也會建立預設。探索信箱可用為目標信箱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)搜尋Exchange 系統管理中心 (EAC) 中。您可以建立所需的其他探索信箱。建立新的探索信箱後，您必須將完整存取權限指派給適當的使用者，讓他們可以存取 eDiscovery 搜尋結果時，複製到探索信箱。
 

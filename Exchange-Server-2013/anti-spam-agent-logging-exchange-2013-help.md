@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 代理程式記錄檔記錄所 Microsoft Exchange Server 2013中的特定反垃圾郵件代理程式郵件上執行的動作。只有下列代理程式可寫入代理程式記錄檔資訊：
 

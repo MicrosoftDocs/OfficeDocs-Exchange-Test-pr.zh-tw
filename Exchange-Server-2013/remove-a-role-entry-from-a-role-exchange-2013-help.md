@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 管理角色上的管理角色項目決定何種 cmdlets 及參數上可用的管理角色。移除角色項目或角色項目的參數，您可以限制使用者指派管理角色可以執行。如需管理角色項目在 Microsoft Exchange Server 2013的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

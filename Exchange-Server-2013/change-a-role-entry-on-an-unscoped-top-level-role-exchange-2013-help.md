@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 在未限定範圍的頂層管理角色的管理角色項目，請參閱指令碼和非Exchange cmdlet 以及您想要提供給這些指派角色及其參數。變更的角色項目上可用的參數，您控制哪些那些指派角色可以執行指令碼或非Exchange指令程式。如需未限定範圍的角色項目的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

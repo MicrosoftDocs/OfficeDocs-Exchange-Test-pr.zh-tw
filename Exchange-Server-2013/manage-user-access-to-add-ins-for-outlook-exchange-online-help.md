@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2018-04-17_
+_**上次修改主題的時間：** 2018-04-17_
 
 您可以使用 EAC 或 Exchange Online PowerShell 來管理增益集的使用者存取 outlook。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 當您建立整合通訊 (UM) 撥號時，您可以設定的主要和次要方式來電者可搜尋的名稱來尋找使用者撥打電話Outlook語音存取號碼\] 或 \[與撥號對應表關聯的 UM 自動語音應答時。來電者可以使用按鍵式輸入來尋找已啟用 UM 的使用者。
 

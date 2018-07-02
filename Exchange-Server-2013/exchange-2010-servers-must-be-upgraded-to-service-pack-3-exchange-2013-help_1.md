@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-11-05_
+_**上次修改主題的時間：** 2014-11-05_
 
 Microsoft Exchange Server 2013 安裝程式無法繼續，因為偵測到一部或多部 Microsoft Exchange Server 2010 伺服器尚未升級為 Exchange Server 2010 Service Pack 3 (SP3)。組織內所有的 Exchange 2010 伺服器都必須升級為 Exchange 2010 SP3，才能安裝 Exchange 2013。此需求包括 Exchange 2010 Edge Transport server。如需詳細資訊，請參閱[從 Exchange 2010 升級至 Exchange 2013](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md)。
 

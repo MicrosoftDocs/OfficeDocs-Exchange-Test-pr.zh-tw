@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 不在他們的信箱使用 Outlook 語音存取，因為他們嘗試使用不正確的 pin 碼多次登入或他們忘記其 PIN 鎖定已啟用整合通訊 UM 語音郵件使用者時您可以使用下列程序之一來重設使用者的 pin 碼。當重設使用者的Outlook語音存取 PIN 時，您可以設定 UM 以自動產生 PIN 或您可以手動指定的 pin 碼。新的 PIN 傳送給使用者的電子郵件。您可以指定其他 PIN 選項，例如需要使用者在第一次登入時重設其 pin 碼。使用者也可以重設使用Outlook或Outlook Web App其 UM PIN。
 

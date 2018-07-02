@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Mail Enabled Public Folders` 管理角色可讓系統管理員設定組織中的個別公用資料夾為啟用郵件或停用郵件。
 

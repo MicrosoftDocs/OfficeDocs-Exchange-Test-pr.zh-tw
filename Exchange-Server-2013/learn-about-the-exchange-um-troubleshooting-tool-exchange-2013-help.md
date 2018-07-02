@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange 2010整合通訊疑難排解工具是名為**Test-ExchangeUMCallFlow**Exchange管理命令介面 cmdlet。您可以使用這項工具在組織中進行一系列的診斷測試的整合通訊 (UM)。如果測試的任何失敗，此工具會報告失敗和可能的解決方案來修正此問題的原因。您只可以在Exchange 2010或更新版本的伺服器上使用 UM 疑難排解工具。
 

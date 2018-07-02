@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-07-21_
+_**上次修改主題的時間：** 2016-07-21_
 
 當您啟用 UM 的使用者並將它們連結到電話分機撥號時，EUM proxy 位址會建立包含使用者的分機號碼的使用者。您必須定義至少一個的分機號碼若要讓語音信箱可以傳送給使用者的信箱使用 um。當使用者撥打 Outlook 語音存取號碼也會使用的分機號碼。
 

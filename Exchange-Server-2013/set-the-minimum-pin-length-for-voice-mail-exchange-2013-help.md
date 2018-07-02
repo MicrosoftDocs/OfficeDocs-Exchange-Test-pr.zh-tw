@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以設定 Outlook 語音存取使用者已啟用的整合通訊 (UM) 之最小 PIN 長度。您在 UM 信箱原則設定 pin 碼設定會套用至所有已啟用 UM 之使用者的 UM 信箱原則相關聯。
 

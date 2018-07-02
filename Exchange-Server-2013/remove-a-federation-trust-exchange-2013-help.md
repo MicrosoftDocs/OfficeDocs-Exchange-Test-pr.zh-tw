@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-04_
+_**上次修改主題的時間：** 2015-01-04_
 
 同盟信任會建立 Microsoft Exchange 2013組織和Azure Active Directory驗證系統之間的信任關係，並且支援與其他同盟 Exchange 組織共用。移除同盟信任從內部部署 Exchange 組織會停用同盟共用與其他同盟 Exchange 組織與 Office 365 組織連線到組織的混合部署的一部分。您應該謹慎考量組織之前先移除同盟信任的整體的影響。
 

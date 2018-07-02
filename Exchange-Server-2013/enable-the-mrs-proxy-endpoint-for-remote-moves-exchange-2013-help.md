@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-07-02_
+_**上次修改主題的時間：** 2013-07-02_
 
 信箱複寫服務 Proxy (MRS Proxy) 有助於跨樹系信箱移動及遠端移動遷移內部Exchange組織與Exchange Online之間。在Exchange 2013、 MRS Proxy 隨附於信箱伺服器角色 （也稱為*信箱伺服器*）。在跨樹系及遠端移動遷移期間用戶端存取伺服器會做為傳入的移動要求之信箱伺服器的 proxy。預設為停用用戶端存取伺服器接受這些要求的能力。若要允許用戶端存取伺服器接受傳入的移動要求，您必須啟用 MRS Proxy 端點。
 

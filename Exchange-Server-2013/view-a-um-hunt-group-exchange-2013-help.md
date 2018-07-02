@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 整合通訊 (UM) 群組搜尋的內容檢視時，您可以檢視使用單一的 UM 群組搜尋或所有 UM 群組搜尋相關聯的單一的 UM IP 閘道相關聯的屬性。如果指定這兩個參數，則會傳回所有 UM 群組搜尋。您無法使用 EAC 來檢視 UM 搜尋群組內容 ；您必須使用命令介面。
 

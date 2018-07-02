@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2014-06-24_
+_**上次修改主題的時間：** 2014-06-24_
 
 整合通訊 (UM) IP 閘道可代替 VoIP (Voice over IP) 閘道、IP 專用交換機 (PBX) 或工作階段邊界控制器 (SBC) 硬體裝置。在 VoIP 閘道、IP PBX 或 SBC 可以用來接聽來電並為語音信箱使用者傳送撥出號碼前，必須在目錄服務中建立 UM IP。
 

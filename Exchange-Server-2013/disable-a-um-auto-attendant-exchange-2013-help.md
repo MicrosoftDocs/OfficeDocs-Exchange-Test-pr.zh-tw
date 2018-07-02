@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 根據預設，當建立整合通訊 (UM) 自動語音應答時，其狀態設為 \[停用。建立 UM 自動語音應答後，您可以改其狀態控制項是否它可以接聽來電。例如，您可能要正在錄製或重新錄製自訂的提示和訊息時停用 UM 自動語音應答。
 

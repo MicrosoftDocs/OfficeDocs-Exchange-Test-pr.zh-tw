@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-04_
+_**上次修改主題的時間：** 2013-02-04_
 
 Exchange 系統管理中心 (EAC) 是在 Exchange Server 2013 中的 web 式管理主控台，因為您存取其網頁瀏覽器使用的 ECP 虛擬目錄的 URL。本主題顯示如何尋找 ECP 虛擬目錄的 URL。
 

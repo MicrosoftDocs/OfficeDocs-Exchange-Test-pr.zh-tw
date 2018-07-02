@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 當電話連線到語音郵件系統整合通訊 (UM) 的使用者時，他們會使用Outlook語音存取瀏覽功能表系統。使用者可存取語音信箱系統之前，系統會提示他們進入他們的 pin 碼。以管理員身分，您可設定 pin 碼設定和需求及執行 PIN 管理工作。使用者已啟用語音信箱和未產生 PIN 之後，使用者的 pin 碼會儲存在使用者的信箱中加密。
 

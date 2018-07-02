@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-14_
+_**上次修改主題的時間：** 2012-11-14_
 
 當您啟用 UM 的使用者並將它們連結到的 SIP URI 撥號對應表時，會建立兩個 EUM proxy 位址。其中包含使用者的分機號碼與另一個包含使用者的 SIP 位址。當使用者撥打 Outlook 語音存取號碼使用分機號碼。
 

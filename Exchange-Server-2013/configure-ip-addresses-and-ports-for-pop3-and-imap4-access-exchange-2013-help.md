@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-28_
+_**上次修改主題的時間：** 2012-11-28_
 
 您可以使用 EAC 與命令介面來設定Microsoft Exchange POP3 和 IMAP4 服務使用的 IP 位址和與預設設定不同的連接埠。
 

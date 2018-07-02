@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 與舊版的 Exchange 一樣，您可以在 Exchange Server 2013 中使用 Exchange 管理命令介面，來檢視佇列和佇列中郵件的相關資訊，以及對佇列和郵件執行管理動作。在 Exchange 2013 中，佇列位於 Mailbox Server 和 Edge Transport Server 上。本主題將這些伺服器稱為 *Transport Server*。
 

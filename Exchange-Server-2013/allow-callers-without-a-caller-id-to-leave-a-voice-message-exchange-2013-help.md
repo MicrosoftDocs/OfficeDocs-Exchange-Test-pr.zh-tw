@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以讓已啟用 UM 的使用者從匿名來電者會收到語音郵件訊息或防止能力。根據預設，當使用者已啟用整合通訊 (UM) 和語音信箱可以接聽電話匿名且不含來電者識別碼資訊。
 

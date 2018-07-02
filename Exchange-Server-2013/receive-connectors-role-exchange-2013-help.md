@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Receive Connectors` 管理角色可讓系統管理員管理傳輸「接收」連接器組態，例如個別伺服器上的大小限制。
 

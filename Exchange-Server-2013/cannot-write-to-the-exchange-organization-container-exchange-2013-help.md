@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-11-05_
+_**上次修改主題的時間：** 2014-11-05_
 
 安裝程式無法繼續 Microsoft Exchange Server 2013因為已登入使用者沒有寫入至 Active Directory 目錄服務中容器的組織所需的帳戶權限。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-03-25_
+_**上次修改主題的時間：** 2014-03-25_
 
 使用此程序移除通訊錄原則 (ABP)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 在 Microsoft Exchange Server 2013 中，您可以在 Mailbox Server 上的傳輸服務和 Edge Transport Server 中設定郵件重試、重新提交及到期間隔。 如需這些設定的說明，請參閱[郵件重試、 重新提交、 及到期時間間隔](message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md)。
 

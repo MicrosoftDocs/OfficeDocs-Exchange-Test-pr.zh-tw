@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-07_
+_**上次修改主題的時間：** 2015-01-07_
 
 您可以開始您的郵件環境中使用的資料遺失防護 (DLP) 解決方案使用下列程序。若要了解概念與目標的 DLP，請參閱[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
 

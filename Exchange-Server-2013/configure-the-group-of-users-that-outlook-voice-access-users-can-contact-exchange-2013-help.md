@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-09_
+_**上次修改主題的時間：** 2012-11-09_
 
 您可以指定哪些使用者可以接收轉接的通話或語音信箱訊息從 Outlook 語音存取使用者。根據預設，**只有撥號計劃中**已選取選項。您可以變更此設定可讓 Outlook 語音存取使用者將來電轉接或語音訊息傳送給現有 UM 自動語音應答，或特定分機號碼整個組織中的使用者。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013無法繼續因為 Active Directory 樹系中找不到執行Exchange 2000 Server或Exchange Server 2003的一或多部電腦。您可以安裝Exchange 2013之前，所有Exchange 2000和Exchange 2003伺服器必須先都移除樹系。信箱、 公用資料夾及所有其他 Exchange 物件或元件必須升級至Exchange Server 2007或Exchange Server 2010。您無法從Exchange 2000或Exchange 2003將直接升級至Exchange 2013。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-16_
+_**上次修改主題的時間：** 2012-12-16_
 
 當使用者的信箱已啟用整合通訊 (UM) 的語音信箱時、 電子郵件訊息會傳送之歡迎至 \[整合通訊的使用者。此訊息包含使用者將會使用第一次存取語音信箱系統的 PIN 資訊。
 

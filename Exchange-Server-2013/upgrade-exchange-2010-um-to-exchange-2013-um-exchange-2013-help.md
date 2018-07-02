@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在將具有整合通訊 (UM) 能力的 Microsoft Exchange 2010 組織升級至 Exchange 2013 整合通訊時，需要經過數個必要步驟，以及其他在部署 Exchange 2010 UM 時已完成的步驟。依照您的電話語音環境以及為了支援 Exchange 2010 中的整合通訊而建立和設定的 UM 元件而定，您可能需要部署其他電話語音設備，包括 VoIP (Voice over IP) 閘道、IP 專用交換機 (PBX)，或傳統式或已啟用 SIP 的 PBX，然後建立並設定 Exchange 2013 UM 所需的所有其他 UM 元件。
 
@@ -155,7 +155,7 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
   - 協力廠商商業性憑證
 
-根據預設，在安裝 Exchange 2013 時，會建立兩個自我簽署憑證：**Microsoft Exchange Server Auth Certificate** 及 **Microsoft Exchange**。**Microsoft Exchange** 自我簽署憑證可供 UM 用來加密資料，但是您必須將憑證指派給 UM 及 UM 呼叫路由器服務。此自我簽署憑證可以經複製後，在 VoIP 閘道、IP PBX 及已啟用 SIP 的 PBX 上匯入。不過，在整合 UM 與 Microsoft Lync Server 時則無法使用。
+根據預設，在安裝 Exchange 2013 時，會建立兩個自我簽署憑證：** Microsoft Exchange Server Auth Certificate** 及 **Microsoft Exchange**。**Microsoft Exchange** 自我簽署憑證可供 UM 用來加密資料，但是您必須將憑證指派給 UM 及 UM 呼叫路由器服務。此自我簽署憑證可以經複製後，在 VoIP 閘道、IP PBX 及已啟用 SIP 的 PBX 上匯入。不過，在整合 UM 與 Microsoft Lync Server 時則無法使用。
 
 若要讓 UM 可以加密在 Exchange 2013 伺服器與 VoIP 閘道、IP PBX 及已啟用 SIP 的 PBX 之間傳送的資料，您需要執行下列動作：
 

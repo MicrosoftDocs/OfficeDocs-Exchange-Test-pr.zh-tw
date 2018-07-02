@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 順利部署整合通訊 (UM)，您必須使用基本的電話語音概念和電話語音元件的確實了解。了解電話語音基礎後，UM 可以整合至 Exchange 組織。基本概念及元件包括：
 

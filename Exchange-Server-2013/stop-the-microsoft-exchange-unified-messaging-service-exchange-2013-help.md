@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-16_
+_**上次修改主題的時間：** 2012-11-16_
 
 您可以在命令提示字元處使用服務嵌入式管理單元中Microsoft Management Console (MMC) 或 cmd.exe，信箱伺服器上停止MicrosoftExchange整合通訊服務。可能您需要停止此服務，例如，當您有信箱伺服器設成離線。當您停止MicrosoftExchange整合通訊服務時，Mailbox server 將無法接受與處理來電。
 

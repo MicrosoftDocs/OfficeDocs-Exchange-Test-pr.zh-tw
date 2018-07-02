@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 當您建立撥號對應表時，您可以設定的主要和次要*撥號對應表名稱方法所*或來電者可搜尋的名稱的方式。來電者會使用這些撥號對應表名稱方法所要查詢來找出及連絡人時在他們撥入Outlook語音存取號碼或當他們撥入 UM 自動語音應答與撥號對應表相關聯的使用者名稱。來電者可以使用按鍵式輸入來尋找已啟用 UM 的使用者。
 

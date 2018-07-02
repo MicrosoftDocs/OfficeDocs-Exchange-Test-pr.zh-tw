@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 您可以移除用戶端存取和信箱伺服器的 SIP URI 撥號對應表。當您正在部署 Microsoft Lync Server 時、 啟用傳出呼叫正確運作，您必須手動將所有用戶端存取和信箱伺服器加入您已建立 Lync Server 的 SIP URI 撥號。不過，您可能需要的 Client Access server 或信箱伺服器移除 Lync 部署，例如，如果您正在執行維護或離線伺服器。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-14_
+_**上次修改主題的時間：** 2012-11-14_
 
 您可以使用 EAC 或命令介面啟用或停用Outlook Web App使用者信箱。啟用Outlook Web App時，使用者可以使用Outlook Web App傳送及接收電子郵件。如果Outlook Web App已停用、 信箱會繼續以接收電子郵件使用者可以存取它傳送及接收電子郵件使用 MAPI 用戶端，例如 Microsoft Outlook 或使用 POP 或 IMAP 電子郵件用戶端，假設信箱的已啟用以支援存取這些用戶端。
 

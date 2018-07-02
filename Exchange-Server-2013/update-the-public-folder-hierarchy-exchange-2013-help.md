@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2014-04-03_
+_**上次修改主題的時間：** 2014-04-03_
 
 只有在您要手動叫用階層同步器和信箱助理員時，才需要更新公用資料夾階層。對於組織中的每一個公用資料夾信箱，這兩種至少要每 24 小時叫用一次。如果有任何使用者是透過 Microsoft Outlook 或 Microsoft Exchange Web 服務用戶端登入到次要信箱，則每 15 分鐘會叫用階層同步器一次。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-14_
+_**上次修改主題的時間：** 2013-02-14_
 
 若要符合個別、 IT、 或業務需求，您可能需要關閉或暫時擱置郵件記錄管理 (MRM) 或個別使用者的信箱伺服器。您可能需要關閉或暫停 MRM 的原因包括：
 

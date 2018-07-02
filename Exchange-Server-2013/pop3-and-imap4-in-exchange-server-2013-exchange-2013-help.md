@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-08-16_
+_**上次修改主題的時間：** 2016-08-16_
 
 深入了解 Exchange Server 2013 中 POP3 和 IMAP4 通訊協定的差異，以及如何設定選項以從各種電子郵件程式存取 Exchange 2013 信箱。
 

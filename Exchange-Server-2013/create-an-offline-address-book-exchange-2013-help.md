@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-24_
+_**上次修改主題的時間：** 2015-04-24_
 
 離線通訊錄 (OAB) 的Exchange Server 2013是允許存取資訊時從伺服器中斷連線的 Outlook 使用者通訊錄下載的複本。Exchange 系統管理員可以決定叢書離線、 工作及他們也可以設定的通訊錄所依據的方法的使用者可提供使用的地址分散式 （web 式發佈或公用資料夾通訊群組）。
 

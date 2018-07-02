@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 此概觀說明資料遺失防護 (DLP) 原則範本檔案之 XML 架構定義的元件，並提供 XML 格式的範例原則檔案。此將有助於在開始之前，了解整個 DLP 架構以及規則發展程序。如需詳細資訊，請參閱[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)及[定義自己的 DLP 範本和資訊類型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 

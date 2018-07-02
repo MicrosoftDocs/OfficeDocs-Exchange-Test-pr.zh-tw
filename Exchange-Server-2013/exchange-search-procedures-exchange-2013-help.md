@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-05_
+_**上次修改主題的時間：** 2013-02-05_
 
 [停用或啟用 Exchange 搜尋](disable-or-enable-exchange-search-exchange-2013-help.md)
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-02_
+_**上次修改主題的時間：** 2015-03-02_
 
 您可以新增至保留原則原則會在建立時的保留標記或任何時候之後。如需如何建立保留原則的詳細資訊，包括如何同時新增保留標記，請參閱[建立保留原則](create-a-retention-policy-exchange-2013-help.md)。
 

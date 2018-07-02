@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-14_
+_**上次修改主題的時間：** 2012-11-14_
 
 您可以為 Exchange 組織中停用現有郵件使用者的電子郵件。當您停用郵件使用者的電子郵件時，它已從 Exchange 與您組織的通訊錄。如果郵件使用者的通訊群組的成員，使用者不會再收到寄送至群組的郵件。另外，Exchange 屬性已從 Active Directory 中的使用者物件，但使用者物件和非 Exchange 屬性 （如連絡人及組織資訊） 都會保留在 Active Directory 中。
 

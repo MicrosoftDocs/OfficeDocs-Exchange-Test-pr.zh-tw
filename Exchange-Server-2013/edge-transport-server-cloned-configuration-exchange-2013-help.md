@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Edge Transport Server 會將其組態資訊儲存在 Active Directory 輕量型目錄服務 (AD LDS) 中。您可以在周邊網路中安裝多部 Edge Transport Server，並使用 DNS 循環配置，協助平衡 Edge Transport Server 中的網路流量。循環配置是 DNS 伺服器所使用的一項簡單機制，可共用以及分配網路資源的負載。
 

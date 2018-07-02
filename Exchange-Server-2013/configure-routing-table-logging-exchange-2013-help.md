@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 路由表記錄功能會定期記錄 Microsoft Exchange Server 2013 使用的路由表快照，以便將郵件路由傳送至其目的地。
 

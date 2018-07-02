@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 當Outlook語音存取使用者撥入 Outlook 語音存取號碼時，系統會提示他們輸入其 PIN 以便語音郵件系統可以進行驗證。他們通過驗證之後，他們可以從任何電話存取語音信箱、 電子郵件、 行事曆，並在他們的信箱中的個人連絡人資訊。
 

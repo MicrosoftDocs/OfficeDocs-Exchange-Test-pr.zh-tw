@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-11_
+_**上次修改主題的時間：** 2012-10-11_
 
 [建立通訊錄原則](create-an-address-book-policy-exchange-2013-help.md)
 

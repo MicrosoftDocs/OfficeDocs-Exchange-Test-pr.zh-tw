@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-17_
+_**上次修改主題的時間：** 2013-02-17_
 
 您可以設定用來接聽 SIP 要求執行 Microsoft Exchange Unified Messaging Call Router 服務之用戶端存取伺服器上的傳輸層安全性 (TLS) 連接埠。根據預設，當您安裝 Client Access server，SIP TLS 聆聽連接埠號碼設定為 5061。
 
