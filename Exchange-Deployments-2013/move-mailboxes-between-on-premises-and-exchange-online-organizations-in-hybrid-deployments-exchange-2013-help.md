@@ -21,21 +21,9 @@ _<strong>上次修改主題的時間：</strong>2017-10-02_
 
 如需將內部部署 Exchange 組織移轉至 Exchange Online 的詳細資訊，請參閱[將多個電子郵件帳戶移轉到 Office 365 的方法](https://go.microsoft.com/fwlink/p/?linkid=524030)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須設定內部部署 Exchange 和 Exchange Online 組織之間的混合式部署，以完成本主題中的信箱移動程序。如需混合式部署的詳細資訊，請參閱 <a href="exchange-server-hybrid-deployments-exchange-2013-help.md">Exchange Server 混合部署</a>。<br />
-<br />
-在您將已啟用整合通訊 (UM) 的信箱移至 Exchange Online 之前，您必須確定內部部署商務用 Skype 2015、商務用 Skype Online 和 Exchange Online，都符合<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署必要條件</a>中指定的需求。如需如何將您的內部部署 UM 信箱原則對應至 Exchange Online 中的原則，請參閱 <a href="https://technet.microsoft.com/zh-tw/library/bb124903(v=exchg.150)">Set-UMMailboxPolicy</a>。</td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> 您必須設定內部部署 Exchange 和 Exchange Online 組織之間的混合式部署，以完成本主題中的信箱移動程序。如需混合式部署的詳細資訊，請參閱 <a href="exchange-server-hybrid-deployments-exchange-2013-help.md">Exchange Server 混合部署</a>。<br />
+> 在您將已啟用整合通訊 (UM) 的信箱移至 Exchange Online 之前，您必須確定內部部署商務用 Skype 2015、商務用 Skype Online 和 Exchange Online，都符合<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署必要條件</a>中指定的需求。如需如何將您的內部部署 UM 信箱原則對應至 Exchange Online 中的原則，請參閱 <a href="https://technet.microsoft.com/zh-tw/library/bb124903(v=exchg.150)">Set-UMMailboxPolicy</a>。
 
 ## 開始之前有哪些須知？
 
@@ -49,18 +37,8 @@ _<strong>上次修改主題的時間：</strong>2017-10-02_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](https://technet.microsoft.com/zh-tw/library/jj150484\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 步驟 1： 建立移轉端點

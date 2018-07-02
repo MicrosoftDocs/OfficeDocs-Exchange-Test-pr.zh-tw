@@ -27,19 +27,9 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 EAC 可讓您在內部部署 Exchange 伺服器與 Exchange Online 組織中，執行許多部署工作及最常見的日常系統管理工作。預設會在每一部 Exchange 2013 伺服器上安裝。此外，由於這是一個 Web 管理主控台，因此您還可以使用網路中其他電腦上的 Web 瀏覽器或透過網際網路使用 ECP 虛擬目錄 URL 來存取它。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果想要使用信箱位於 Exchange 2007 信箱伺服器上的帳戶 (如網域系統管理員帳戶) 來存取 EAC，則必須在瀏覽器中使用下列網址來存取 EAC：<br />
-https://<em>&lt;FQDN of Exchange 2013 Client Access server&gt;</em>/ECP? ExchClientVer=15</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果想要使用信箱位於 Exchange 2007 信箱伺服器上的帳戶 (如網域系統管理員帳戶) 來存取 EAC，則必須在瀏覽器中使用下列網址來存取 EAC：
+> https://<em>&lt;FQDN of Exchange 2013 Client Access server&gt;</em>/ECP? ExchClientVer=15
 
 
 您可以藉由選取 Office 365 \[跨單位導覽\] 索引標籤存取 EAC 中的 Exchange Online 組織。跨單位導覽可讓您在 Exchange Online 與內部部署 Exchange 組織之間輕鬆切換。如果您已設定混合式部署，則選取 \[Office 365\] 索引標籤可讓您管理 Exchange Online 組織和收件者物件。如果您沒有 Exchange Online 組織，則選取 Office 365 連結會將您導向 Office 365 註冊頁面。

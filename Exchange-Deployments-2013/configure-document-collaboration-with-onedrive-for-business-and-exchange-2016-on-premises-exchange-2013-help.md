@@ -59,18 +59,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](https://technet.microsoft.com/zh-tw/library/jj150484\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 設定 Exchange 2016 以在混合式環境中啟用文件共同作業
@@ -85,18 +75,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
   - 必須安裝驗證伺服器，並且同步處理所有使用者。您可以使用 [Get-AuthServer](https://technet.microsoft.com/zh-tw/library/jj218613\(v=exchg.150\)) Cmdlet 來尋找您的驗證伺服器。我們建議從 Exchange 2016 伺服器使用 HCW 進行任何必要的 OAuth 組態。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2016 與 Office 365 之間的 OAuth 必須正確設定。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn594521(v=exchg.150)">設定 Exchange 與 Exchange Online 組織之間的 OAuth 驗證</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Exchange 2016 與 Office 365 之間的 OAuth 必須正確設定。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn594521(v=exchg.150)">設定 Exchange 與 Exchange Online 組織之間的 OAuth 驗證</a>。
 
 
   - 使用者必須擁有適當的授權。具有商務用 OneDrive 帳戶的使用者必須獲得 SharePoint Online 或商務用 OneDrive 的授權。您可以驗證使用者的授權，方法是在 Office 365 入口網站中選取使用者，然後選取 **\[編輯\]** 按鈕。

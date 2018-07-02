@@ -116,18 +116,8 @@ _<strong>上次修改主題的時間：</strong>2017-07-25_
 
   - **EdgeSync**   如果您已在內部部署組織中部署 Edge Transport Server，而且想要設定 Edge Transport Server 進行混合式安全郵件傳輸，則必須在使用混合式組態精靈之前先設定 EdgeSync。每次將新的累積更新或更新彙總套件套用至 Edge Transport Server 時，也須執行 EdgeSync。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然 EdgeSync 是使用 Edge Transport Server 的部署中所必需，但是當您設定 Edge Transport Server 進行混合安全郵件傳輸時，仍需要進行其他手動傳輸組態設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 雖然 EdgeSync 是使用 Edge Transport Server 的部署中所必需，但是當您設定 Edge Transport Server 進行混合安全郵件傳輸時，仍需要進行其他手動傳輸組態設定。
     
     若要深入了解，請參閱 [Edge Transport server 與混合式部署](edge-transport-servers-with-hybrid-deployments-exchange-2013-help.md)。
 

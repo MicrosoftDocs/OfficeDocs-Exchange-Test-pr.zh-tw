@@ -27,18 +27,8 @@ Office 365 組織中的 Exchange Online 是以 Exchange Server 為基礎，並�
 
 您可以根據需要進行的管理工作，在 Exchange Online 組織中新增額外的系統管理員。例如，您可以新增額外的組織系統管理員和收件者系統管理員、讓專家使用者執行合規工作 (例如探索)、設定自訂權限等。Office 365 系統管理員的所有 Exchange Online 權限管理工作，必須在 Exchange Online 組織中使用 Exchange 系統管理中心 (EAC) 或遠端 PowerShell 執行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內部部署組織與 Office 365 組織之間不會移轉權限。您在內部部署組織內定義的權限必須在 Office 365 組織中重新建立。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 內部部署組織與 Office 365 組織之間不會移轉權限。您在內部部署組織內定義的權限必須在 Office 365 組織中重新建立。
 
 
 如需詳細資訊，請參閱[管理角色群組](https://technet.microsoft.com/zh-tw/library/jj657480\(v=exchg.150\))及[管理角色群組成員](https://technet.microsoft.com/zh-tw/library/jj657492\(v=exchg.150\))。
