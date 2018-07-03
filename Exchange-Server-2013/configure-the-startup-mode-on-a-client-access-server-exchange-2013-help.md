@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2013-02-15_
 
 您可以在用戶端存取伺服器上指定的 Microsoft Exchange Unified Messaging Call Router 服務的啟動模式。根據預設，TCP 模式會開始的 Client Access server，但如果您使用傳輸層安全性 (TLS) 來加密 Voice over IP (VoIP) 流量，您必須設定使用 TLS 或雙重模式的用戶端存取伺服器。我們建議在用戶端存取伺服器設為雙作為啟動模式。這是因為可以回覆來電所有 um 撥號對應表，並以外的撥號對應表的所有用戶端存取和信箱伺服器可以有不同的安全性設定。如果您變更的啟動模式，您必須重新啟動 Microsoft Exchange Unified Messaging Call Router 服務的變更才會生效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，用戶端存取伺服器可用來接聽來電。您不需要新增至 UM 撥號對應至處理序 UM 呼叫除非您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 的用戶端存取伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 根據預設，用戶端存取伺服器可用來接聽來電。您不需要新增至 UM 撥號對應至處理序 UM 呼叫除非您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 的用戶端存取伺服器。
+
+
 
 
 如需其他與整合通訊和用戶端存取伺服器相關的管理工作，請參閱 [UM 服務程序](um-services-procedures-exchange-2013-help.md)。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：** 2013-02-15_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

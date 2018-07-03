@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2012-10-13_
 
 \[傳遞回報\] 是 Exchange 系統管理中心 (EAC) 中一個郵件追蹤工具，您可以用來搜尋以特定主旨寄給或寄自組織通訊錄中之使用者的電子郵件傳遞狀態。您可追蹤組織中任何特定信箱的寄件或收件傳遞資訊。傳遞回報中不會傳回郵件內文的內容，但是在結果中會顯示主旨行。您可在傳送或接收傳遞回報後，追蹤最長 14 天的郵件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>傳遞回報會追蹤使用 Microsoft Outlook 或 Outlook Web App 電子郵件用戶端的人所傳送的郵件。它不會追蹤寄自 POP 或 IMAP 電子郵件用戶端 (如 Windows Mail、Outlook Express 或 Mozilla Thunderbird) 的郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 傳遞回報會追蹤使用 Microsoft Outlook 或 Outlook Web App 電子郵件用戶端的人所傳送的郵件。它不會追蹤寄自 POP 或 IMAP 電子郵件用戶端 (如 Windows Mail、Outlook Express 或 Mozilla Thunderbird) 的郵件。
+
+
 
 
 ## 開始之前有哪些須知？

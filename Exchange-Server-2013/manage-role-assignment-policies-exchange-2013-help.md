@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2012-10-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -51,18 +44,11 @@ _**上次修改主題的時間：** 2012-10-09_
 
 ## 使用 EAC 建立新的指派原則
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只能建立使用 Exchange 系統管理中心 (EAC) 的明確指派原則。如果您想要建立新的預設指派原則時，您必須使用Exchange管理命令介面。如需詳細資訊，請參閱本主題稍後的 「 使用命令介面建立預設指派原則 」 一節。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您只能建立使用 Exchange 系統管理中心 (EAC) 的明確指派原則。如果您想要建立新的預設指派原則時，您必須使用Exchange管理命令介面。如需詳細資訊，請參閱本主題稍後的 「 使用命令介面建立預設指派原則 」 一節。
+
+
 
 
 1.  在 EAC 中導覽至 \[權限\] \> \[使用者角色\]，然後按一下 \[新增\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
@@ -223,18 +209,11 @@ _**上次修改主題的時間：** 2012-10-09_
 
 您可以變更指派給新的信箱所建立的管理角色指派原則。變更預設角色指派原則不會變更指派原則指派給現有的信箱。若要變更指派原則指派給現有的信箱，請參閱[變更在信箱上的指派原則](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來變更預設指派原則。您必須使用命令介面。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來變更預設指派原則。您必須使用命令介面。
+
+
 
 
 ## 使用命令介面來變更預設的指派原則
@@ -247,18 +226,11 @@ _**上次修改主題的時間：** 2012-10-09_
 
     Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>新的信箱即使原則尚未指派管理角色指派預設指派原則。指定與未指派的管理角色指派原則的信箱無法存取任何 Microsoft Outlook Web App 中的信箱設定功能。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 新的信箱即使原則尚未指派管理角色指派預設指派原則。指定與未指派的管理角色指派原則的信箱無法存取任何 Microsoft Outlook Web App 中的信箱設定功能。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Set-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638090\(v=exchg.150\))。

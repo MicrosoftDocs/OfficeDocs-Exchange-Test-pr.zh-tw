@@ -56,18 +56,11 @@ _**上次修改主題的時間：** 2015-03-09_
     $AMDN = $AM.DistinguishedName
     Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仲裁信箱會指定使用辨別的名稱 (DN)。如果您知道仲裁信箱的 DN，您可以執行單一命令 ︰ <code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 仲裁信箱會指定使用辨別的名稱 (DN)。如果您知道仲裁信箱的 DN，您可以執行單一命令 ︰ <code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>。
+
+
 
 
 ## 步驟 2： 使用命令介面來指定不同的仲裁信箱或停用收件者的仲裁

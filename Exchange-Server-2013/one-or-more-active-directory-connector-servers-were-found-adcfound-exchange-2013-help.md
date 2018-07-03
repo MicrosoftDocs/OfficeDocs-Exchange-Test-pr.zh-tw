@@ -46,18 +46,11 @@ Exchange 2007 或 Exchange 2010 安裝程式需要會移除所有 ADC 元件。
 <li><p>將<strong>啟動類型</strong>變更為 [<strong>已停用</strong>。下次啟動電腦時，ADC 服務不會啟動。</p></li>
 <li><p>按一下 [<strong>套用</strong>]，然後按一下 [<strong>確定</strong>]。</p></li>
 <li><p>若要解除安裝 ADC 服務，使用 Active Directory 安裝精靈在 Microsoft Exchange 2000 Server 或 Microsoft Exchange Server 2003 CD 上。開啟 [\ADC\I386 資料夾並連按兩下 Setup.exe 程式。遵循提示來<strong>移除所有</strong>ADC 服務元件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須完成步驟 6 和<strong>移除所有</strong>ADC 元件來解決這個問題。停用 ADC 服務不足。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您必須完成步驟 6 和<strong>移除所有</strong>ADC 元件來解決這個問題。停用 ADC 服務不足。
+
+
 
 </li>
 </ol></td>

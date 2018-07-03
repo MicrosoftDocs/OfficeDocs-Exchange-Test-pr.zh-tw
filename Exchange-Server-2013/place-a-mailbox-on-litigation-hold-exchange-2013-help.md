@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2016-10-18_
 
 將信箱設為訴訟暫止狀態以保留所有信箱內容，包括已刪除的項目和已修改項目的原始版本。當您將使用者的信箱設為訴訟暫止，使用者封存信箱 (若已啟用) 中的內容也會處於暫止狀態。已刪除和修改過的項目會保留一段指定的期間，或直到信箱退出「訴訟暫止」狀態為止。[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 搜尋時會傳回這類信箱項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>訴訟暫止會保留使用者信箱內 [可復原的項目] 資料夾中的項目。根據刪除或修改的項目數量和大小，信箱 [可復原的項目] 資料夾的大小可能會快速增加。[可復原的項目] 資料夾預設以高配額設定。在 Exchange Online 中，當您將信箱設為訴訟暫止，就會自動增加此配額。在 Exchange Server 2013 中，我們建議您每週監控處於訴訟暫止的信箱，以確保它們不會達到 [可復原的項目] 的配額限制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 訴訟暫止會保留使用者信箱內 [可復原的項目] 資料夾中的項目。根據刪除或修改的項目數量和大小，信箱 [可復原的項目] 資料夾的大小可能會快速增加。[可復原的項目] 資料夾預設以高配額設定。在 Exchange Online 中，當您將信箱設為訴訟暫止，就會自動增加此配額。在 Exchange Server 2013 中，我們建議您每週監控處於訴訟暫止的信箱，以確保它們不會達到 [可復原的項目] 的配額限制。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -81,18 +74,11 @@ _**上次修改主題的時間：** 2016-10-18_
 
     Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您將信箱設為無限期訴訟暫止狀態 (藉由不指定時間週期)，<em>LitigationHoldDuration</em> 屬性信箱的值會設為 <code>Unlimited</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您將信箱設為無限期訴訟暫止狀態 (藉由不指定時間週期)，<em>LitigationHoldDuration</em> 屬性信箱的值會設為 <code>Unlimited</code>。
+
+
 
 
 ## 使用命令介面將信箱設為訴訟暫止，並在指定的期間保留項目

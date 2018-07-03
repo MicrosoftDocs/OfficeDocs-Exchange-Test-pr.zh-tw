@@ -96,18 +96,11 @@ _**上次修改主題的時間：** 2014-02-24_
 
     New-PublicFolder -Name Reports -Path \Marketing\2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立公用資料夾時，請勿在名稱中使用反斜線 (\)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建立公用資料夾時，請勿在名稱中使用反斜線 (\)。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [New-PublicFolder](https://technet.microsoft.com/zh-tw/library/aa996405\(v=exchg.150\))。
@@ -126,16 +119,9 @@ _**上次修改主題的時間：** 2014-02-24_
     
         Get-PublicFolder -Recurse
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

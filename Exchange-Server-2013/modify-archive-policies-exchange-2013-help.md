@@ -29,18 +29,11 @@ Exchange 安裝程式會建立稱為 「**預設 MRM 原則**的保留原則。�
 
   - **Exchange Online:**  [在 Exchange Online 中啟用或停用封存信箱](https://technet.microsoft.com/zh-tw/library/jj984357\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以在Exchange混合式部署中，啟用雲端式封存信箱的內部部署主要信箱。如果您將封存原則指派給內部部署信箱，項目所移至雲端式封存。如果項目移至封存信箱時，其複本不保留在內部部署信箱。如果內部部署信箱處於保留狀態，封存原則仍會指定保留期間的保留位置的雲端式封存信箱移動項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您可以在Exchange混合式部署中，啟用雲端式封存信箱的內部部署主要信箱。如果您將封存原則指派給內部部署信箱，項目所移至雲端式封存。如果項目移至封存信箱時，其複本不保留在內部部署信箱。如果內部部署信箱處於保留狀態，封存原則仍會指定保留期間的保留位置的雲端式封存信箱移動項目。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -51,18 +44,11 @@ Exchange 安裝程式會建立稱為 「**預設 MRM 原則**的保留原則。�
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作

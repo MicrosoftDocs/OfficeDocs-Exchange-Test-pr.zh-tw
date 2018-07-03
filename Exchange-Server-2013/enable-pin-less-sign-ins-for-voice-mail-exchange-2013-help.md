@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
 您可以設定整合通訊 (UM) 設定您的使用者可以登入其語音郵件而不需使用 PIN。根據預設，會提示Outlook語音存取使用者輸入來登入其信箱並存取其語音信箱、 電子郵件、 行事曆、 個人連絡人、 目錄和個人選項的 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於啟用語音信箱的單一使用者或使用者群組來說，啟用不需 PIN 碼登入會降低語音信箱的安全性等級，對組織造成安全性風險。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 對於啟用語音信箱的單一使用者或使用者群組來說，啟用不需 PIN 碼登入會降低語音信箱的安全性等級，對組織造成安全性風險。
+
+
 
 
 若要啟用 PIN 較不登入，您必須`$true`參數*AllowPinlessVoiceMailAccess*設在 UM 信箱原則並將參數*PinlessAccessToVoiceMailEnabled*設定 UM 信箱`$true` 。根據預設，這兩個參數會設為`$false`，需要Outlook語音存取使用者存取其語音信箱時輸入其 PIN。

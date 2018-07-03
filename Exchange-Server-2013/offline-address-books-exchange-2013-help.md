@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2014-11-16_
 
 若要深入了解通訊清單，請參閱[通訊清單](address-lists-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OAB 資料是由 Microsoft Exchange OABGen 服務產生，該服務是一個信箱助理員。如果您使用安全性描述元來避免使用者檢視 Active Directory 中的特定收件者，則下載 OAB 的使用者將能夠檢視那些隱藏的收件者。因此，若要隱藏通訊清單中的收件者，請設定 <a href="https://technet.microsoft.com/zh-tw/library/aa998596(v=exchg.150)">Set-PublicFolder</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995950(v=exchg.150)">Set-MailContact</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995971(v=exchg.150)">Set-MailUser</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123981(v=exchg.150)">Set-Mailbox</a> 和 <a href="https://technet.microsoft.com/zh-tw/library/bb124955(v=exchg.150)">Set-DistributionGroup</a> Cmdlet 上的參數 <em>HiddenFromAddressListsEnabled</em>。或者也可以建立一個新的預設 OAB，其中不含隱藏的收件者。如需如何在 OAB 中新增或移除通訊清單的詳細資訊，請參閱<a href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">地址清單中新增或移除的通訊清單的離線通訊錄</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> OAB 資料是由 Microsoft Exchange OABGen 服務產生，該服務是一個信箱助理員。如果您使用安全性描述元來避免使用者檢視 Active Directory 中的特定收件者，則下載 OAB 的使用者將能夠檢視那些隱藏的收件者。因此，若要隱藏通訊清單中的收件者，請設定 <a href="https://technet.microsoft.com/zh-tw/library/aa998596(v=exchg.150)">Set-PublicFolder</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995950(v=exchg.150)">Set-MailContact</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995971(v=exchg.150)">Set-MailUser</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123981(v=exchg.150)">Set-Mailbox</a> 和 <a href="https://technet.microsoft.com/zh-tw/library/bb124955(v=exchg.150)">Set-DistributionGroup</a> Cmdlet 上的參數 <em>HiddenFromAddressListsEnabled</em>。或者也可以建立一個新的預設 OAB，其中不含隱藏的收件者。如需如何在 OAB 中新增或移除通訊清單的詳細資訊，請參閱<a href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">地址清單中新增或移除的通訊清單的離線通訊錄</a>。
+
+
 
 
 要尋找與 OAB 相關的管理工作嗎？請參閱[離線通訊錄程序](offline-address-book-procedures-exchange-2013-help.md)。

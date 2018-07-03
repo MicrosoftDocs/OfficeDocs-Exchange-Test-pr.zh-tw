@@ -39,18 +39,11 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
     
       - 已安裝 Exchange 2013 的目標樹系 (信箱移動的目標)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 Prepare-MoveRequest.ps1 指令碼準備信箱的跨樹系移動
@@ -59,18 +52,11 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
 若要指派特定的驗證認證的遠端樹系的網域控制站，必須先執行Windows PowerShell **Get-Credential**指令程式並儲存在暫存變數的使用者輸入。當您執行**Get-Credential**指令程式時，此指令程式會詢問使用者名稱與驗證遠端樹系的網域控制站與期間使用的帳戶密碼。您然後可以準備 MoveRequest.ps1 指令碼中使用之暫存變數。如需**Get-Credential**指令程式的詳細資訊，請參閱[Get-credential](https://go.microsoft.com/fwlink/p/?linkid=142122)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>呼叫此指令碼時，請確定對本機樹系和遠端樹系使用兩個單獨的認證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 呼叫此指令碼時，請確定對本機樹系和遠端樹系使用兩個單獨的認證。
+
+
 
 
 1.  執行下列命令以取得本機樹系和遠端樹系認證。
@@ -129,18 +115,11 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 <td><p>選用</p></td>
 <td><p><em>DisableEmailAddressPolicy</em> 參數可指定在目標樹系中建立 <strong>MailUser</strong> 物件時，是否應停用可電子郵件地址原則 (EAP)。</p>
 <p>如果指定此參數，則不會套用目標樹系中的 EAP。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您指定此參數時， <strong>MailUser</strong>物件不會加上戳記本機樹系網域中有電子郵件地址對應。這通常是由 EAP 上戳記。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您指定此參數時， <strong>MailUser</strong>物件不會加上戳記本機樹系網域中有電子郵件地址對應。這通常是由 EAP 上戳記。
+
+
 
 </td>
 </tr>

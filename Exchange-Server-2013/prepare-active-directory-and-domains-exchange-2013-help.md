@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 在安裝 Microsoft Exchange Server 2013 之前，您需要準備 Active Directory 樹系及其網域。Exchange 需要準備 Active Directory，以便儲存使用者信箱的相關資訊及組織中的 Exchange 伺服器組態。如果您不熟悉 Active Directory 樹系或網域，請參閱＜[Active Directory 網域服務概觀](https://go.microsoft.com/fwlink/p/?linkid=399226)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不論這是您第一次在環境中安裝 Exchange，或是您已經有舊版的 Exchange Server 正在執行，您需要準備適用於 Exchange 2013 的 Active Directory。您可以參閱 <a href="exchange-2013-active-directory-schema-changes-exchange-2013-help.md">Exchange 2013 Active Directory 架構變更</a>以取得 Exchange 2013 新增至 Active Directory 的新架構類別與屬性的詳細資料，包括 Service Packs (SP) 和 累積更新 (CU) 所做的變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 不論這是您第一次在環境中安裝 Exchange，或是您已經有舊版的 Exchange Server 正在執行，您需要準備適用於 Exchange 2013 的 Active Directory。您可以參閱 <a href="exchange-2013-active-directory-schema-changes-exchange-2013-help.md">Exchange 2013 Active Directory 架構變更</a>以取得 Exchange 2013 新增至 Active Directory 的新架構類別與屬性的詳細資料，包括 Service Packs (SP) 和 累積更新 (CU) 所做的變更。
+
+
 
 
 有幾種方法可以為 Exchange 準備 Active Directory。第一種是讓 Exchange 2013 安裝精靈為您準備。如果您沒有大型的 Active Directory 部署，也沒有獨立的團隊來管理 Active Directory，則建議使用精靈。您使用的帳戶必須同時為 Schema Admins 與 Enterprise Admins 安全性群組的成員。如需有關如何使用安裝精靈的詳細資訊，請參閱＜[使用安裝精靈安裝 Exchange 2013](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)＞。
@@ -61,18 +54,11 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - 從每個網域中，在具有可寫入通用類別目錄伺服器的 Active Directory 站台安裝第一個 Exchange 伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 1\. 擴充 Active Directory 架構
@@ -89,18 +75,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 擴充 Exchange 架構的唯一方法是使用本主題中的步驟，或使用 Exchange 2013 安裝程式。不支援以其他方法來擴充架構。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您沒有獨立的團隊來管理 Active Directory 架構，請略過此步驟，直接進入準備 Active Directory。如果在步驟 1 中未擴充架構，則步驟 2 的命令會為您擴充架構。如果決定略過步驟 1，您仍然必須謹記上述資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 如果您沒有獨立的團隊來管理 Active Directory 架構，請略過此步驟，直接進入準備 Active Directory。如果在步驟 1 中未擴充架構，則步驟 2 的命令會為您擴充架構。如果決定略過步驟 1，您仍然必須謹記上述資訊。
+
+
 
 
 準備好時，請執行下列動作來擴充 Active Directory 架構。如果您有多個 Active Directory 樹系，請確定您登入正確的樹系。
@@ -207,18 +186,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 完成上述所有步驟之後，您可以檢查來確定一切已順利進行。若要這麼做，您需要使用一個稱為 Active Directory 服務介面編輯器 (ADSI 編輯器) 的工具。在 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 中，ADSI 編輯器隨附於 Active Directory 網域服務工具功能中。如需此工具的詳細資訊，請參閱＜[ADSI 編輯器 (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?linkid=294644)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除非得到 Microsoft 技術支援人的指示，否則請勿在 ADSI 編輯器中變更任何值。在 ADSI 編輯器中變更任何值可能對 Exchange 組織和 Active Directory 造成無法彌補的損害。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 除非得到 Microsoft 技術支援人的指示，否則請勿在 ADSI 編輯器中變更任何值。在 ADSI 編輯器中變更任何值可能對 Exchange 組織和 Active Directory 造成無法彌補的損害。
+
+
 
 
 在 Exchange 延伸您的 Active Directory 結構描述，並為 Exchange 準備 Active Directory 之後，數個屬性會更新以顯示準備已完成。請使用下列清單中的資訊，確定這些屬性的值正確。每個屬性必須符合下表中您所安裝之 Exchange 2013 版本的值。

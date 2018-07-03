@@ -48,18 +48,11 @@ _**上次修改主題的時間：** 2017-11-16_
     
       - **IMAP 遷移：** 此 onboarding 遷移類型會將信箱資料從 IMAP 伺服器 （包括Exchange） 移轉至Exchange Online。進行 IMAP 遷移時，您必須佈建Exchange Online中的信箱移轉信箱資料之前。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>轉換Exchange移轉不支援使用 CSV 檔案因為所有內部部署使用者信箱都會移轉至Exchange Online單一批次中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 轉換Exchange移轉不支援使用 CSV 檔案因為所有內部部署使用者信箱都會移轉至Exchange Online單一批次中。
+
+
 
 
 ## 進行大量移動或遷移時所支援在 CSV 檔中使用的屬性
@@ -68,34 +61,20 @@ _**上次修改主題的時間：** 2017-11-16_
 
 使用 EAC 或Exchange 管理命令介面建立遷移批次時使用的相同參數時 CSV 檔案中的屬性值會覆寫對應參數的值。如需詳細資訊和範例，請參閱\] 區段中的 CSV 檔案中的屬性值會覆寫遷移批次的值。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用任何文字編輯器來建立 CSV 檔案，但使用諸如 Microsoft Excel 的應用程式可讓您輕鬆將資料匯入及設定以及組織 CSV 檔案。請務必將 CSV 檔案儲存為.csv 或.txt 檔案。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以使用任何文字編輯器來建立 CSV 檔案，但使用諸如 Microsoft Excel 的應用程式可讓您輕鬆將資料匯入及設定以及組織 CSV 檔案。請務必將 CSV 檔案儲存為.csv 或.txt 檔案。
+
+
 
 
 下列各節說明每種遷移類型的 CSV 檔案的標題列的支援的屬性。每一節包含列出每個支援的屬性表是否有必要，若要使用的屬性和描述值的範例。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列各節中，<em>來源環境</em>表示使用者信箱或資料庫的目前位置。<em>目標環境</em>表示將信箱移轉至的位置或信箱要移至資料庫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 下列各節中，<em>來源環境</em>表示使用者信箱或資料庫的目前位置。<em>目標環境</em>表示將信箱移轉至的位置或信箱要移至資料庫。
+
+
 
 
 ## 本機移動
@@ -136,18 +115,11 @@ _**上次修改主題的時間：** 2017-11-16_
 <td><p>選用</p></td>
 <td><p>資料庫名稱</p></td>
 <td><p>指定使用者的封存信箱 （如果存在的話） 會移至的信箱資料庫。您可以在不同的資料列的 CSV 檔案，可讓您將在相同的遷移批次中的封存信箱移至不同的資料庫指定不同的資料庫。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您未指定的封存資料庫、 封存信箱移至相同的資料庫做為主要信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您未指定的封存資料庫、 封存信箱移至相同的資料庫做為主要信箱。
+
+
 
 </td>
 </tr>
@@ -156,18 +128,11 @@ _**上次修改主題的時間：** 2017-11-16_
 <td><p>選用</p></td>
 <td><p><code>Unlimited</code>，或 <code>0</code> (預設值) 到最大值 <code>2147483647</code> 之間的非負值整數</p></td>
 <td><p>指定略過如果遷移服務發生損毀的項目在信箱中的錯誤項目數目。如果您在 CSV 檔案中包含此屬性，它會覆寫預設值或指定如果在建立遷移批次使用 EAC 或Exchange 管理命令介面時包含<em>BadItemLimit</em>參數的值。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您使用預設值 0，而且只有在特定使用者的移動或遷移失敗時，才對此使用者提高不良項目限制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 建議您使用預設值 0，而且只有在特定使用者的移動或遷移失敗時，才對此使用者提高不良項目限制。
+
+
 
 <p></p></td>
 </tr>
@@ -220,18 +185,11 @@ _**上次修改主題的時間：** 2017-11-16_
 <td><p>選用</p></td>
 <td><p><code>Unlimited</code>，或 <code>0</code> (預設值) 到最大值 <code>2147483647</code> 之間的非負值整數</p></td>
 <td><p>指定略過如果遷移服務發生損毀的項目在信箱中的錯誤項目數目。如果您在 CSV 檔案中包含此屬性，它會覆寫預設值或指定如果在建立遷移批次使用 EAC 或Exchange 管理命令介面時包含<em>BadItemLimit</em>參數的值。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您使用預設值 0，而且只有在特定使用者的移動或遷移失敗時，才對此使用者提高不良項目限制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 建議您使用預設值 0，而且只有在特定使用者的移動或遷移失敗時，才對此使用者提高不良項目限制。
+
+
 
 </td>
 </tr>
@@ -310,18 +268,11 @@ _**上次修改主題的時間：** 2017-11-16_
 <td><p>選用</p></td>
 <td><p><code>Unlimited</code>，或 <code>0</code> (預設值) 到最大值 <code>2147483647</code> 之間的非負值整數</p></td>
 <td><p>指定略過如果遷移服務發生損毀的項目在信箱中的錯誤項目數目。如果您在 CSV 檔案中包含此屬性，它會覆寫預設值或指定如果在建立遷移批次使用 EAC 或Exchange 管理命令介面時包含<em>BadItemLimit</em>參數的值。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您使用預設值 0，而且只有在特定使用者的移動或遷移失敗時，才對此使用者提高不良項目限制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 建議您使用預設值 0，而且只有在特定使用者的移動或遷移失敗時，才對此使用者提高不良項目限制。
+
+
 
 </td>
 </tr>
@@ -388,18 +339,11 @@ _**上次修改主題的時間：** 2017-11-16_
 <td><p>選用</p></td>
 <td><p><code>True</code>或<code>False</code></p></td>
 <td><p>指定使用者第一次登入 Exchange Online 信箱時，是否必須變更密碼。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在內部部署組織中部署 Active Directory Federation Services 2.0 (AD FS 2.0) 來實作單一登入解決方案，您必須使用<code>False</code>此屬性的值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您已在內部部署組織中部署 Active Directory Federation Services 2.0 (AD FS 2.0) 來實作單一登入解決方案，您必須使用<code>False</code>此屬性的值。
+
+
 
 </td>
 </tr>
@@ -464,18 +408,11 @@ IMAP 遷移批次的 CSV 檔案可以有最大值為 50000 個列。但是很好
 
     New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>預設值是要移動主要和封存信箱，因為您沒有明確地指定Exchange 管理命令介面命令中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 預設值是要移動主要和封存信箱，因為您沒有明確地指定Exchange 管理命令介面命令中。
+
+
 
 
 此遷移批次所用的 CrossForestBatch1.csv 檔有一部分看起來像這樣：

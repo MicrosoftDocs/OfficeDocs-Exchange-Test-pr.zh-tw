@@ -179,18 +179,11 @@ EAC 包含一個通知檢視器，會顯示長時間執行之程序的狀態，�
 
 為獲得 EAC 的最佳經驗，請使用標示為 "Premium" 的其中一種作業系統與瀏覽器的組合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援上表中未列出的其他作業系統和瀏覽器組合，包括觸控式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 不支援上表中未列出的其他作業系統和瀏覽器組合，包括觸控式。
+
+
 
 
   - **Premium：** 所有操作功能都受到支援且經過完整測試。

@@ -95,18 +95,11 @@ Order of precedence for TNEF conversion options
 
 寄件者可以控制 TNEF 郵件傳送至 Exchange 組織之外的所有收件者的預設 TNEF 郵件對話選項。這些選項會呼叫*網際網路郵件格式*選項。用於遠端收件者，而不適用於 Exchange 組織中的收件者，僅適用於選項。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列選項定義將包含 Outlook RTF 的郵件傳送給外部收件者時，如何處理這些郵件。 如果使用的郵件格式為 HTML 或純文字，則這些設定不適用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 下列選項定義將包含 Outlook RTF 的郵件傳送給外部收件者時，如何處理這些郵件。 如果使用的郵件格式為 HTML 或純文字，則這些設定不適用。
+
+
 
 
 在 Outlook 中有下列 TNEF 轉換選項：

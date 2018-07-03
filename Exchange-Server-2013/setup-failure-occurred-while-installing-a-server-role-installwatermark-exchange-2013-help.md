@@ -90,18 +90,11 @@ Exchange 2007 的安裝程式要求失敗的伺服器角色安裝都必須有成
     
     例如，若要將 Hub Transport server role 新增至現有的信箱伺服器，輸入下列︰ **%LocalExchangeInstallationDir%\\bin\\Setup.com /role:HubTransport /Mode:Install**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果任何 Exchange Server 2007 伺服器角色先前安裝成功，精靈會維護模式中執行安裝程式。如果先前已成功不安裝任何 Exchange 2007 伺服器角色，將從停止其中啟動 [安裝精靈]。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果任何 Exchange Server 2007 伺服器角色先前安裝成功，精靈會維護模式中執行安裝程式。如果先前已成功不安裝任何 Exchange 2007 伺服器角色，將從停止其中啟動 [安裝精靈]。
+
+
 
 
 在維護模式中使用 \[Exchange Server 2007 安裝精靈\] 以重新安裝失敗的伺服器角色

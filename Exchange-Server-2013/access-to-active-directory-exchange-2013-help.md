@@ -87,18 +87,11 @@ Exchange 2013是偏好的目錄伺服器位於相同的網站以最佳化網路�
 
 根據預設，每當Exchange 2013 server 開始，它繫結至隨機選取的網域控制站和自己站台中的通用類別目錄伺服器。您可以在 Exchange 管理命令介面中使用**Get-ExchangeServer**指令程式來檢視所選取的目錄伺服器。您也可以使用**Set-ExchangeServer**指令程式來設定靜態清單中的網域控制站的Exchange 2013伺服器應該繫結或排除的網域控制站清單。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Server 2008網域控制站可以設定為唯讀目錄伺服器。當您想要部署網域控制站或通用類別目錄伺服器的遠端網站的驗證和授權的目的，但不想要允許管理員可以在該網站將變更寫入Active Directory，這個設定特別有用。不過，您不能Exchange 2013 server 部署中含有只有唯讀目錄伺服器的任何網站。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Windows Server 2008網域控制站可以設定為唯讀目錄伺服器。當您想要部署網域控制站或通用類別目錄伺服器的遠端網站的驗證和授權的目的，但不想要允許管理員可以在該網站將變更寫入Active Directory，這個設定特別有用。不過，您不能Exchange 2013 server 部署中含有只有唯讀目錄伺服器的任何網站。
+
+
 
 
 ## Mailbox server role

@@ -41,18 +41,11 @@ DAC 模式用來控制啟動行為的 DAG 裝載資料庫。此控制項的設�
 
   - 如果 DACP 位元已設定的時間會比見證伺服器開機時間近，系統會假設 DAG 成員已重新開機因任何原因 (或許排定的維護已執行或許系統損毀或 power 中斷遺失 isolated 至 DAG 成員)，與 DAG 成員可裝載資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為見證伺服器的啟動時間用於判斷 DAG 成員是否可以在啟動時裝載作用中的資料庫，您應該永遠不重新啟動見證伺服器和唯一的 DAG 成員在同一時間。這麼可能會保持在其中它不能裝載狀態的 DAG 成員的資料庫上啟動。如果發生這種情況，您必須執行<a href="https://technet.microsoft.com/zh-tw/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a>指令程式在 DAG。這會重設為 DACP 元並允許 DAG 成員來裝載資料庫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 因為見證伺服器的啟動時間用於判斷 DAG 成員是否可以在啟動時裝載作用中的資料庫，您應該永遠不重新啟動見證伺服器和唯一的 DAG 成員在同一時間。這麼可能會保持在其中它不能裝載狀態的 DAG 成員的資料庫上啟動。如果發生這種情況，您必須執行<a href="https://technet.microsoft.com/zh-tw/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a>指令程式在 DAG。這會重設為 DACP 元並允許 DAG 成員來裝載資料庫。
+
+
 
 
 ## 其他的 DAC 模式的優點

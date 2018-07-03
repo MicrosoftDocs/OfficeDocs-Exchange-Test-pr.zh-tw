@@ -31,31 +31,21 @@ DLP 相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-
 
   - 對於任何 DLP 原則，您可以選取下列其中一種模式：
     
-      -  
-        **強制**   系統會針對所有郵件和支援的檔案類型評估原則內的規則。 如果偵測到符合原則條件的資料，郵件流程可能會中斷。 原則內所述的所有動作都會執行。
+      -    **強制**   系統會針對所有郵件和支援的檔案類型評估原則內的規則。 如果偵測到符合原則條件的資料，郵件流程可能會中斷。 原則內所述的所有動作都會執行。
     
-      -  
-        **測試 DLP 原則並顯示原則提示**   系統會針對所有郵件和支援的檔案類型評估原則內的規則。 如果偵測到符合原則條件的資料，郵件流程將不會中斷。 也就是說，郵件不會遭到攔截。 如果設有原則提示，使用者就會看到提示。
+      -    **測試 DLP 原則並顯示原則提示**   系統會針對所有郵件和支援的檔案類型評估原則內的規則。 如果偵測到符合原則條件的資料，郵件流程將不會中斷。 也就是說，郵件不會遭到攔截。 如果設有原則提示，使用者就會看到提示。
     
-      -  
-        **不搭配原則提示的測試 DLP 原則**  原則內的規則所評估的所有郵件及支援檔案類型。如果資料會偵測符合原則的條件，不會中斷郵件流程。也就是未封鎖的郵件。如果設定原則提示，他們是不會顯示給使用者。
+      -    **不搭配原則提示的測試 DLP 原則**  原則內的規則所評估的所有郵件及支援檔案類型。如果資料會偵測符合原則的條件，不會中斷郵件流程。也就是未封鎖的郵件。如果設定原則提示，他們是不會顯示給使用者。
 
   - DLP 原則內的個別規則可以擁有其所屬的模式設定。 如果原則模式與該原則內的規則模式不同，則規則設定的優先順序較高且將根據其模式進行評估。
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -72,18 +62,11 @@ DLP 相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-
 
 3.  在 \[編輯 DLP 原則\] 頁面按一下 \[規則\]。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以建立 DLP 原則，並讓它保持非啟動或停用模式。 在此模式中，不會強制執行原則，而且您可以在測試或開始強制執行之前，變更與其規則相關的任何述詞、動作或值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以建立 DLP 原則，並讓它保持非啟動或停用模式。 在此模式中，不會強制執行原則，而且您可以在測試或開始強制執行之前，變更與其規則相關的任何述詞、動作或值。
+
+
 
 
 ## 使用命令介面檢視現有 DLP 原則內的詳細資料

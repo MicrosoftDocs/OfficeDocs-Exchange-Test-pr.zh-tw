@@ -33,18 +33,11 @@ Exchange搜尋索引的信箱與支援Exchange信箱中的附件。增加磁碟�
 
 您可以使用[Get-FailedContentIndexDocuments](https://technet.microsoft.com/zh-tw/library/dd351154\(v=exchg.150\))指令程式來擷取無法成功索引Exchange搜尋無法搜尋之信箱項目清單。您可以針對信箱伺服器、 信箱資料庫或特定信箱執行此指令程式。此指令程式會傳回無法建立搜尋每個項目的詳細資訊。原因有幾個為何無法搜尋的信箱項目 ；例如，電子郵件訊息可能包含無法編製索引的搜尋的附件檔案類型或因為未安裝或已停用搜尋篩選。使用該檔案類型的搜尋篩選時，您可以Exchange伺服器上安裝它。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 所提供的搜尋篩選器皆會進行測試，且受到 Microsoft 的支援。將任何協力廠商搜尋篩選器安裝到生產環境中的 Exchange 伺服器之前，建議先在測試環境中進行測試。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Microsoft 所提供的搜尋篩選器皆會進行測試，且受到 Microsoft 的支援。將任何協力廠商搜尋篩選器安裝到生產環境中的 Exchange 伺服器之前，建議先在測試環境中進行測試。
+
+
 
 
 如需無法搜尋之項目的詳細資訊，請參閱：

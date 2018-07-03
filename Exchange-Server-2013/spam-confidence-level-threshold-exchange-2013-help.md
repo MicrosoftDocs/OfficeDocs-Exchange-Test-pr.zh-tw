@@ -17,18 +17,11 @@ _**適用版本：** Exchange Server 2013_
 
 _**上次修改主題的時間：** 2016-11-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。
+
+
 
 
 在 Microsoft Exchange Server 2013 中，您可以根據垃圾郵件信賴等級 (SCL) 閾值來定義特定的動作。例如，您可以定義不同閾值，來拒絕、刪除或隔離正在執行內容篩選代理程式之 Exchange 伺服器上的郵件。

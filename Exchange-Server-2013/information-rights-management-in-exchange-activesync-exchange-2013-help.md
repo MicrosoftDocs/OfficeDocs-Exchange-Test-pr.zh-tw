@@ -94,18 +94,11 @@ IRM 在Exchange ActiveSync不解密受 IRM 保護之用戶端存取伺服器上�
 <td><p>啟用行動裝置的加密。</p></td>
 <td><p>選取 [需要密碼] 核取方塊，然後選取 [需要加密裝置] 核取方塊。</p></td>
 <td><p>將 <em>RequireDeviceEncryption</em> 參數設為 <code>$true</code>。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您將 <em>RequireDeviceEncryption</em> 參數設為 <code>$true</code> 時，不支援裝置加密的行動裝置將無法連線。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您將 <em>RequireDeviceEncryption</em> 參數設為 <code>$true</code> 時，不支援裝置加密的行動裝置將無法連線。
+
+
 
 </td>
 </tr>

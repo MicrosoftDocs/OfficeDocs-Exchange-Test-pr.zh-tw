@@ -95,18 +95,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p>Active Directory 分割權限</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">組織管理</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要搭配 <em>PrepareAD</em> 和 <em>ActiveDirectorySplitPermissions</em> 參數執行 <code>setup.exe</code> 命令，您使用的帳戶必須是 Schema Admins 和 Enterprise Administrators 群組的成員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 若要搭配 <em>PrepareAD</em> 和 <em>ActiveDirectorySplitPermissions</em> 參數執行 <code>setup.exe</code> 命令，您使用的帳戶必須是 Schema Admins 和 Enterprise Administrators 群組的成員。
+
+
 
 </td>
 </tr>

@@ -31,18 +31,11 @@ This topic shows you how to enable, disable, view, and change the priority of cm
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## What do you want to do?
@@ -51,18 +44,11 @@ This topic shows you how to enable, disable, view, and change the priority of cm
 
 When you enable a cmdlet extension agent in Exchange 2013, the agent is run on every server running Exchange 2013 in the organization. When an agent is enabled, it's made available to cmdlets, which can then use the agent to perform additional operations.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Before you enable an agent, be sure that you're aware of how the agent works and what impact the agent will have on your organization.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> Before you enable an agent, be sure that you're aware of how the agent works and what impact the agent will have on your organization.
+
+
 
 
 This example enables a cmdlet extension agent by using the **Enable-CmdletExtensionAgent** cmdlet. You must specify the name of the agent you want to enable when you run the cmdlet. Before you enable the `Scripting Agent`, you need to make sure that you've deployed the `ScriptingAgentConfig.xml` configuration file to all the servers in your organization. If you don't deploy the configuration file first and you enable the `Scripting ``Agent`, all non-**Get** cmdlets fail when they're run. This example enables the `Scripting Agent`.
@@ -75,18 +61,11 @@ For detailed syntax and parameter information, see [Enable-CmdletExtensionAgent]
 
 When you disable a cmdlet extension agent in Exchange 2013, the agent is disabled on every server running Exchange 2013 in the organization. When an agent is disabled, it's not made available to cmdlets. Cmdlets can no longer use the agent to perform additional operations.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Before you disable an agent, be sure that you're aware of how the agent works and what impact disabling the agent will have on your organization.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> Before you disable an agent, be sure that you're aware of how the agent works and what impact disabling the agent will have on your organization.
+
+
 
 
 To disable a cmdlet extension agent, use the **Disable-CmdletExtensionAgent** cmdlet. Specify the name of the agent you want to disable when you run the cmdlet. This example disables the `Scripting Agent`.
@@ -117,18 +96,11 @@ For detailed syntax and parameter information, see [Get-CmdletExtensionAgent](ht
 
 The ability to change the priority of a cmdlet extension agent in Exchange 2013 is useful when you want a certain agent to be called by a cmdlet before another agent. This is especially useful if you create a custom script that's run in the `Scripting Agent`, and you want that script to take precedence over a built-in agent. For more information about the `Scripting Agent`, see [Cmdlet 延伸代理程式](cmdlet-extension-agents-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Changing the priority or replacing the functionality of a built-in agent is an advanced operation. Be sure that you completely understand the changes you're making.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> Changing the priority or replacing the functionality of a built-in agent is an advanced operation. Be sure that you completely understand the changes you're making.
+
+
 
 
 Agents are ordered from zero to the maximum number of agents. The closer to zero the agent is, the higher the priority of the agent. Agents with a higher priority are called first. For more information about agent priorities, see [Cmdlet 延伸代理程式](cmdlet-extension-agents-exchange-2013-help.md).

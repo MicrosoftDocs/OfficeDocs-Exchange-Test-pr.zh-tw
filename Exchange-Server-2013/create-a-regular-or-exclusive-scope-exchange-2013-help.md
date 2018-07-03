@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 管理角色範圍決定哪些物件可提供使用給使用者以便可變更物件使用的指令程式和指派給他們的參數。新增的管理範圍，您可以讓使用者可以管理特定伺服器、 資料庫、 收件者\] 和其他物件時要變更其他物件限制在組織中的設定管理角色指派。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立的規則或獨佔範圍時，您覆寫您要指派的管理角色定義寫入範圍。您不能覆寫已在 「 管理 」 角色的讀取的範圍。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您建立的規則或獨佔範圍時，您覆寫您要指派的管理角色定義寫入範圍。您不能覆寫已在 「 管理 」 角色的讀取的範圍。
+
+
 
 
 您可以建立自訂管理範圍和新增或變更的管理角色指派。如果您想要使用預先建立或組織單位 (OU) 」 管理範圍建立管理角色指派，請參閱[將角色新增至使用者或 USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)。
@@ -53,18 +46,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -87,18 +73,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
     New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您希望篩選器套用到管理角色整個隱含的讀取範圍，而不是只套用到特定 OU 中，您可以省略 <em>RecipientRoot</em> 參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您希望篩選器套用到管理角色整個隱含的讀取範圍，而不是只套用到特定 OU 中，您可以省略 <em>RecipientRoot</em> 參數。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd335137\(v=exchg.150\))。
@@ -137,18 +116,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 使用*DatabaseRestrictionFilter*參數在**New-ManagementScope**指令程式可建立資料庫篩選器型組態範圍。資料庫篩選器可讓您建立僅適用於資料庫符合您指定此篩選條件的範圍。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>資料庫範圍與相關聯的角色指派只適用於連線到執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 的伺服器的使用者或更新版本或Exchange 2013。如果指派資料庫範圍與相關聯的角色指派的使用者連線至預先Exchange 2010 SP1 的伺服器、 角色指派不會套用至該使用者，並不會授與使用者角色指派所提供的任何權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 資料庫範圍與相關聯的角色指派只適用於連線到執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 的伺服器的使用者或更新版本或Exchange 2013。如果指派資料庫範圍與相關聯的角色指派的使用者連線至預先Exchange 2010 SP1 的伺服器、 角色指派不會套用至該使用者，並不會授與使用者角色指派所提供的任何權限。
+
+
 
 
 如需管理範圍篩選器的詳細資訊，以及可篩選之資料庫內容的清單，請參閱[了解管理角色範圍篩選器](understanding-management-role-scope-filters-exchange-2013-help.md)。
@@ -167,18 +139,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 使用*DatabaseList*參數在**New-ManagementScope**指令程式可建立資料庫\] 清單為基礎的組態範圍。資料庫清單範圍可讓您建立僅適用於您在清單中指定之資料庫的範圍。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>資料庫範圍與相關聯的角色指派只適用於連線到執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 的伺服器的使用者或更新版本或Exchange 2013。如果指派資料庫範圍與相關聯的角色指派的使用者連線至預先Exchange 2010 SP1 的伺服器、 角色指派不會套用至該使用者，並不會授與使用者角色指派所提供的任何權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 資料庫範圍與相關聯的角色指派只適用於連線到執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 的伺服器的使用者或更新版本或Exchange 2013。如果指派資料庫範圍與相關聯的角色指派的使用者連線至預先Exchange 2010 SP1 的伺服器、 角色指派不會套用至該使用者，並不會授與使用者角色指派所提供的任何權限。
+
+
 
 
 使用下列語法，可建立資料庫清單範圍。
@@ -195,18 +160,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 使用**New-ManagementScope**指令程式所建立的任何範圍可以指定為獨佔範圍。若要建立獨佔範圍，您使用同一個命令中其中一個以上的區段建立收件者篩選器型範圍、 伺服器篩選器型範圍、 伺服器清單型範圍、 資料庫篩選器型範圍或資料庫清單型範圍並再將*Exclusive*參數新增至命令。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立獨佔管理範圍時，只指派獨佔範圍包含要修改的物件的角色 assignees 可以存取這些物件。僅在以獨佔範圍的角色指派的管理員可以存取這些獨佔或受保護，物件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 當您建立獨佔管理範圍時，只指派獨佔範圍包含要修改的物件的角色 assignees 可以存取這些物件。僅在以獨佔範圍的角色指派的管理員可以存取這些獨佔或受保護，物件。
+
+
 
 
 此範例會建立符合 Executives 部門中任何使用者的獨佔收件者篩選器式範圍。

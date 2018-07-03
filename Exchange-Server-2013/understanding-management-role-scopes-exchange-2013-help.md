@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 *管理角色範圍*可讓您建立管理角色指派時定義影響特定範圍或管理角色的影響。當您將套用的範圍時，指派給角色的角色受託人只能修改包含在該範圍內的物件。角色受託人可管理角色群組、 管理角色、 管理角色指派原則、 使用者或萬用安全性群組 (USG)。如需管理角色的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。
+
+
 
 
 每個管理角色、 內建角色或自訂的角色，是否具有管理範圍。管理範圍可以是下列其中一項：
@@ -835,18 +828,11 @@ Exchange 2013提供數個預先定義的相對寫入可用來修改管理角色�
 
 除了控制哪些資料庫角色 assignees 可管理資料庫範圍也可讓您的資料庫角色 assignees 可以建立信箱上的控制項。這是分開控制哪些角色受託人可管理的收件者。如果角色受託人建立新的信箱、 擁有郵件功能的現有的使用者，或移出信箱的權限，您可以進一步讓其權限使用資料庫範圍控制在其建立信箱、 或哪些資料庫的信箱移至的資料庫中。控制哪些角色受託人可管理的收件者已完成使用收件者範圍參數中所指定*CustomRecipientWriteScope***New-ManagementRoleAssignment**或**Set-ManagementRoleAssignment**指令程式上。控制哪些信箱可在建立或移至的資料庫是使用的相同指令程式*CustomConfigurationWriteScope*參數中指定的資料庫範圍控制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用資料庫範圍控制自動信箱發佈。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 可以使用資料庫範圍控制自動信箱發佈。
+
+
 
 
 Exchange功能可能會需要伺服器範圍、 資料庫範圍，或兩者都設為進行管理。如果功能需要伺服器和資料庫範圍來管理，必須建立並指派給角色受託人可以存取管理功能的兩種角色指派。一個角色指派應該要關聯至伺服器範圍，和一個角色指派應資料庫範圍與相關聯。

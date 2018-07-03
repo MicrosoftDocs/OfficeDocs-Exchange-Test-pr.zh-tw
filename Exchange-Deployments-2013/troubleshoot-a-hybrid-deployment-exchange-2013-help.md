@@ -142,12 +142,11 @@ _<strong>上次修改主題的時間：</strong>2016-04-29_
 
   - **訊息：「伺服器 \<伺服器名稱\> 上找不到預設接收連接器」**   如果下列屬性中列出之任何 Exchange 伺服器上的接收連接器不接聽 TCP 連接埠 25 上的 IPv4 和 IPv6 通訊協定，就會出現這個訊息：`(Get-HybridConfiguration).ReceivingTransportServers.`
     
-      -  
-        若要驗證當您執行 `(Get-HybridConfiguration).ReceivingTransportServers.` 時列出的 Exchange 伺服器上的接收連接器擁有正確的繫結，請在 Exchange 管理命令介面 中執行下列命令。
+      -    若要驗證當您執行 `(Get-HybridConfiguration).ReceivingTransportServers.` 時列出的 Exchange 伺服器上的接收連接器擁有正確的繫結，請在 Exchange 管理命令介面 中執行下列命令。
         
-            Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
+      Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
         
-        您應該會看到下列為 Exchange 伺服器所列出的項目：`{[::]:25, 0.0.0.0:25}`
+      您應該會看到下列為 Exchange 伺服器所列出的項目：`{[::]:25, 0.0.0.0:25}`
         
-        如果未列出此繫結，您必須使用 **Set-ReceiveConnector** 指令程式的 *Bindings* 參數，將它新增到您的接收連接器。如需詳細資料，請參閱 [Set-ReceiveConnector](https://technet.microsoft.com/zh-tw/library/bb125140\(v=exchg.150\))。
+      如果未列出此繫結，您必須使用 **Set-ReceiveConnector** 指令程式的 *Bindings* 參數，將它新增到您的接收連接器。如需詳細資料，請參閱 [Set-ReceiveConnector](https://technet.microsoft.com/zh-tw/library/bb125140\(v=exchg.150\))。
 

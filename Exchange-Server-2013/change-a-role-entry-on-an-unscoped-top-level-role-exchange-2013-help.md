@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
 在未限定範圍的頂層管理角色的管理角色項目，請參閱指令碼和非Exchange cmdlet 以及您想要提供給這些指派角色及其參數。變更的角色項目上可用的參數，您控制哪些那些指派角色可以執行指令碼或非Exchange指令程式。如需未限定範圍的角色項目的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要變更包含 Exchange Cmdlet 之管理角色上的角色項目，請參閱<a href="change-a-role-entry-exchange-2013-help.md">變更的角色項目</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果要變更包含 Exchange Cmdlet 之管理角色上的角色項目，請參閱<a href="change-a-role-entry-exchange-2013-help.md">變更的角色項目</a>。
+
+
 
 
 要尋找與角色相關的其他管理工作嗎？請參閱[進階權限](advanced-permissions-exchange-2013-help.md)。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -97,18 +83,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
   - 指定*UnscopedTopLevel*參數表示您要變更未限定範圍的頂層角色的角色項目。如果您未指定此參數變更未限定範圍角色的角色項目時，會發生錯誤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法復原移除作業。如果您遭移除的角色項目參數，則必須再次手動新增。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 您無法復原移除作業。如果您遭移除的角色項目參數，則必須再次手動新增。
+
+
 
 
 若要從角色項目移除參數，請使用下列語法。
@@ -133,18 +112,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
 如果您不想讓指令碼或非Exchange指令程式的存取權的角色，移除完全而不是只移除參數的角色相關聯的角色項目。如需如何從角色移除角色項目，請參閱[從角色移除角色項目](remove-a-role-entry-from-a-role-exchange-2013-help.md)的詳細資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法復原移除作業。如果您遭移除角色項目的所有參數，則必須再次手動新增。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 您無法復原移除作業。如果您遭移除角色項目的所有參數，則必須再次手動新增。
+
+
 
 
 若要從角色項目移除所有參數，請使用下列語法。
@@ -165,18 +137,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
   - 指定*UnscopedTopLevel*參數表示您要變更未限定範圍角色的角色項目。如果您未指定此參數變更未限定範圍的頂層角色的角色項目時，會發生錯誤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您指定只<em>Parameters</em>參數時，只有在命令中指定的參數隨附在角色項目。會移除所有其他參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 當您指定只<em>Parameters</em>參數時，只有在命令中指定的參數隨附在角色項目。會移除所有其他參數。
+
+
 
 
 若要指定特定的一組參數，請使用下列語法。

@@ -31,18 +31,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面設定防垃圾郵件代理程式記錄
@@ -53,17 +46,13 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會設定名為 Mailbox01 的 Mailbox server 的下列代理程式記錄檔設定：
 
-  -  
-    將 D:\\Anti-Spam 代理程式記錄檔位置的代理程式記錄檔。請注意是否資料夾不存在，它會為您建立。
+  -  將 D:\\Anti-Spam 代理程式記錄檔位置的代理程式記錄檔。請注意是否資料夾不存在，它會為您建立。
 
-  -  
-    將代理程式日誌檔的最大大小設定為 20 MB。
+  -  將代理程式日誌檔的最大大小設定為 20 MB。
 
-  -  
-    將代理程式記錄目錄的最大大小設定為 400 MB。
+  -  將代理程式記錄目錄的最大大小設定為 400 MB。
 
-  -  
-    將代理程式日誌檔的最大保留天數設定為 14 天。
+  -  將代理程式日誌檔的最大保留天數設定為 14 天。
 
 <!-- end list -->
 

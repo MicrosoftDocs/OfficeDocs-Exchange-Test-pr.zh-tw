@@ -65,18 +65,11 @@ Store 服務處理序控制器極細和非常可靠，但如果它故障了或�
 
 Exchange 2013 所使用的靜態演算法會根據實體 RAM 的每個儲存區工作者處理序的 ESE 快取的配置記憶體。這被稱為資料庫的*最大快取目標*。25%的總伺服器記憶體配置給 ESE 快取。這被稱為*伺服器快取大小目標*。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>伺服器快取大小 Target 與因此配置給之儲存區的 ESE 快取的記憶體數量可以覆寫 （設定的值是跨所有存放區處理序配置頁數 32KB） 的 Active Directory 中使用<em>InformationStore</em>物件的<em>msExchESEParamCacheSizeMax</em>屬性。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 伺服器快取大小 Target 與因此配置給之儲存區的 ESE 快取的記憶體數量可以覆寫 （設定的值是跨所有存放區處理序配置頁數 32KB） 的 Active Directory 中使用<em>InformationStore</em>物件的<em>msExchESEParamCacheSizeMax</em>屬性。
+
+
 
 
 此快取靜態量配置給主動與被動副本。只有當服務作用中資料庫副本時，存放區的工作者處理序會配置最大快取目標。被動資料庫副本的配置的最大快取目標的 20%。其餘部分是由 「 儲存 」、 保留和如果將資料庫從被動轉換成作用中的工作者處理序配置。

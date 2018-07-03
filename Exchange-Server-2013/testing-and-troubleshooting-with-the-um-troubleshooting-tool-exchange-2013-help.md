@@ -27,18 +27,11 @@ Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow
 
 根據預設，當您正在執行 UM 疑難排解工具，它會使用登入電腦時使用的認證。使用的認證是所指定的撥號方。您必須設定或指定`SIPClient`模式中執行 UM 疑難排解工具時要使用的認證。不過，您不需要`Gateway`模式中執行 UM 疑難排解工具時設定的認證。如果您將`SIPClient`模式中使用 UM 疑難排解工具，必須符合數個其他 Office Communications Server 2007 R2 或 Lync Server 需求和先決條件。如需詳細資訊，請參閱 ＜[檢查清單： 部署 Office Communications Server 2007 R2 和 Exchange 2010 Unified Messaging](https://go.microsoft.com/fwlink/p/?linkid=311961)或[檢查清單： Lync Server 整合 Exchange 2013 UM](checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必須使用<strong>Test-ExchangeUMCallFlow</strong>指令程式來測試僅之語音信箱功能的 Microsoft Exchange Server 2010整合通訊伺服器Exchange 2010安裝 Service Pack 1 (SP1) 或 Microsoft Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 必須使用<strong>Test-ExchangeUMCallFlow</strong>指令程式來測試僅之語音信箱功能的 Microsoft Exchange Server 2010整合通訊伺服器Exchange 2010安裝 Service Pack 1 (SP1) 或 Microsoft Exchange 2013。
+
+
 
 
 **Test-ExchangeUMCallFlow** Cmdlet 可以安裝在本機 Exchange 2010 Unified Messaging Server、Exchange 2013 Mailbox Server，或執行下列項目的其他 64 位元電腦上：

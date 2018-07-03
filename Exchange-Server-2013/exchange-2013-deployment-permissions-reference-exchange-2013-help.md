@@ -174,18 +174,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本節的權限表會顯示您執行 `Setup /PrepareAD` 命令時設定的權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節描述的權限是您使用共用權限模式部署 Exchange 2013 時所設定的預設權限。如果是使用 Active Directory 分割權限模式來部署 Exchange 2013，則預設的權限會不同。如需有關使用 Active Directory 分割權限時預設權限變更的詳細資訊，以及共用和分割權限模式的整體資訊，請參閱＜<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>＞中的＜<a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>＞。如果您安裝 Exchange 時未選擇使用 Active Directory 分割權限，Exchange 會使用共用權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本節描述的權限是您使用共用權限模式部署 Exchange 2013 時所設定的預設權限。如果是使用 Active Directory 分割權限模式來部署 Exchange 2013，則預設的權限會不同。如需有關使用 Active Directory 分割權限時預設權限變更的詳細資訊，以及共用和分割權限模式的整體資訊，請參閱＜<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>＞中的＜<a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>＞。如果您安裝 Exchange 時未選擇使用 Active Directory 分割權限，Exchange 會使用共用權限。
+
+
 
 
 ## Microsoft Exchange 容器權限
@@ -1712,18 +1705,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 以下表格顯示您執行 `Setup /PrepareDomain` 命令時設定的權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節描述的權限是您使用共用權限模式部署 Exchange 2013 時所設定的預設權限。如果是使用 Active Directory 分割權限模式來部署 Exchange 2013，則預設的權限會不同。如需有關使用 Active Directory 分割權限時預設權限變更的詳細資訊，以及共用和分割權限模式的整體資訊，請參閱＜<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>＞中的＜<a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>＞。如果您安裝 Exchange 時未選擇使用 Active Directory 分割權限，Exchange 會使用共用權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本節描述的權限是您使用共用權限模式部署 Exchange 2013 時所設定的預設權限。如果是使用 Active Directory 分割權限模式來部署 Exchange 2013，則預設的權限會不同。如需有關使用 Active Directory 分割權限時預設權限變更的詳細資訊，以及共用和分割權限模式的整體資訊，請參閱＜<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>＞中的＜<a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>＞。如果您安裝 Exchange 時未選擇使用 Active Directory 分割權限，Exchange 會使用共用權限。
+
+
 
 
 ### 物件的辨別名稱：DC=\<domain\>

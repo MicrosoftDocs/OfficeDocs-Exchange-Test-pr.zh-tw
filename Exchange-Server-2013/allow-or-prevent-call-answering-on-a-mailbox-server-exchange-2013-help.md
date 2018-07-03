@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2012-11-18_
 
 在Exchange 2007和Exchange 2010，有無法用來控制的整合通訊伺服器的操作狀態的狀態參數。在Exchange 2013、 無狀態參數是提供該**Set-UMService** cmdlet 針對信箱伺服器上的目的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>它不被必要的用戶端存取和信箱伺服器新增至 UM 撥號對應表之前他們可以處理來電整合通訊，除了您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 時。根據預設，在組織中的所有用戶端存取和信箱伺服器可用來接聽來電。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 它不被必要的用戶端存取和信箱伺服器新增至 UM 撥號對應表之前他們可以處理來電整合通訊，除了您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 時。根據預設，在組織中的所有用戶端存取和信箱伺服器可用來接聽來電。
+
+
 
 
 如需與信箱伺服器相關的其他管理工作，請參閱 [UM 服務程序](um-services-procedures-exchange-2013-help.md)。
@@ -53,18 +46,11 @@ _**上次修改主題的時間：** 2012-11-18_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用命令介面允許或阻止在信箱伺服器上自動答錄

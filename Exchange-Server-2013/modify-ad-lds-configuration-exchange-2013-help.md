@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
 在您將 Edge Transport Server 訂閱至 Exchange 組織之前，您可以使用 **ConfigureAdam.ps1** 指令碼 (位於 $env:ExchangeInstallPath\\Scripts 中)，修改 Edge Transport Server 的預設 Active Directory 輕量型目錄服務 (AD LDS) 組態。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>ConfigureAdam.ps1</strong> 指令碼會呼叫 <strong>dsdbutil</strong> 命令，以變更 AD LDS 的登錄設定。<strong>dsdbutil</strong> 命令是專門提供給經驗豐富之系統管理員使用的 AD LDS 管理工具；若要變更 AD LDS 組態，建議您使用 <strong>ConfigureAdam.ps1</strong>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> <strong>ConfigureAdam.ps1</strong> 指令碼會呼叫 <strong>dsdbutil</strong> 命令，以變更 AD LDS 的登錄設定。<strong>dsdbutil</strong> 命令是專門提供給經驗豐富之系統管理員使用的 AD LDS 管理工具；若要變更 AD LDS 組態，建議您使用 <strong>ConfigureAdam.ps1</strong>。
+
+
 
 
 下表列出可用於 **ConfigureAdam.ps1** 指令碼的參數。您可以使用其中一個參數、所有參數或其任意組合來修改 AD LDS。
@@ -83,18 +76,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
   - 您只能使用命令介面來執行此程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 修改 Edge Transport Server 的 AD LDS 組態

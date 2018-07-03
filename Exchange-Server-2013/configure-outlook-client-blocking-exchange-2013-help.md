@@ -113,18 +113,11 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>進行任何變更之前，請注意 Hotfix 及 Service Pack 版本可能會影響用戶端版本字串。 因為伺服器端 Exchange 元件也必須使用 MAPI 登入，所以限制用戶端存取權時請小心。 部分元件會將它們的用戶端版本報告為元件名稱 (例如 SMTP 或 OLE DB)，而其他元件則會報告 Exchange 組建號碼 (例如 6.0.4712.0)。 因此，請避免限制其版本號碼為 6.&lt;<em>x</em>.<em>x</em>.&gt; 開頭的用戶端。 例如，若要完全防止 MAPI 存取，請指定兩個範圍，讓伺服器元件可以登入，而不要指定 <strong>0.0.0-6.5535.65535.65535</strong>。 例如，指定下列項目： <strong>0.0.0-5.9.9; 7.0.0-</strong>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 進行任何變更之前，請注意 Hotfix 及 Service Pack 版本可能會影響用戶端版本字串。 因為伺服器端 Exchange 元件也必須使用 MAPI 登入，所以限制用戶端存取權時請小心。 部分元件會將它們的用戶端版本報告為元件名稱 (例如 SMTP 或 OLE DB)，而其他元件則會報告 Exchange 組建號碼 (例如 6.0.4712.0)。 因此，請避免限制其版本號碼為 6.&lt;<em>x</em>.<em>x</em>.&gt; 開頭的用戶端。 例如，若要完全防止 MAPI 存取，請指定兩個範圍，讓伺服器元件可以登入，而不要指定 <strong>0.0.0-6.5535.65535.65535</strong>。 例如，指定下列項目： <strong>0.0.0-5.9.9; 7.0.0-</strong>.
+
+
 
 
 執行這些程序之後，請注意如果封鎖使用者使其無法存取他們的信箱，則他們會接收到下列警告訊息。
@@ -178,18 +171,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 這個例子封鎖了 12.0.0 版本之前的 Outlook 用戶端，使其無法存取 Exchange 2010 或更新版本之 Client Access Server 上的信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>範例為與 <em>BlockedClientVersions</em> 參數搭配使用的值。您可以剖析 <code>%ExchangeInstallPath%Logging\RPC Client Access</code> 中的 RPC Client Access 記錄檔，以判斷正確的用戶端軟體版本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 範例為與 <em>BlockedClientVersions</em> 參數搭配使用的值。您可以剖析 <code>%ExchangeInstallPath%Logging\RPC Client Access</code> 中的 RPC Client Access 記錄檔，以判斷正確的用戶端軟體版本。
+
+
 
 
     Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"

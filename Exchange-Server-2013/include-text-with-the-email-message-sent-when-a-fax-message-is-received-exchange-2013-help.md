@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 您可以由誰整合通訊 (UM) 的語音信箱啟用與傳真功能且當 UM 信箱原則已正確設定以使用傳真協力廠商提供者的使用者接收傳真訊息時傳送電子郵件訊息中包含其他文字。根據預設，包含時已啟用 UM 的使用者接收傳真訊息的文字會指出僅使用者已收到傳真訊息。不過，您可以將文字新增 UM 信箱原則上**時使用者接收傳真訊息**方塊中建立的自訂訊息。例如，文字可以包含系統安全性原則的相關資訊及說明的正確的方式來處理您組織中的傳真訊息。新增文字後，它將會包含每個相關聯的 UM 信箱原則已啟用 UM 的使用者接收傳真訊息時傳送的電子郵件中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>傳真訊息內含的自訂文字長度限制在 512 個字元內，其中可包括簡單的 HTML 文字。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 傳真訊息內含的自訂文字長度限制在 512 個字元內，其中可包括簡單的 HTML 文字。
+
+
 
 
 如需傳真協力廠商的詳細資訊，請參閱[Microsoft PinPoint 傳真協力廠商](https://go.microsoft.com/fwlink/?linkid=190238)。
@@ -49,18 +42,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

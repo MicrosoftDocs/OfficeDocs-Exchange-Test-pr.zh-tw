@@ -47,18 +47,11 @@ Exchange 2007 安裝需要的通訊群組清單延伸移除目前的 Bridgehead 
     
     4.  在 \[值\] 方塊中，按一下 \[**瀏覽**\] 按鈕以選取 Bridgehead 伺服器的目前做為擴充伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下一個步驟是選擇性的。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 下一個步驟是選擇性的。
+
+
 
 
 1.  按一下 \[**新增運算式**，以指定其他的篩選準則。會顯示符合所有的篩選條件的郵件。

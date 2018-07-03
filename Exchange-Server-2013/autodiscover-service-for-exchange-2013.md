@@ -73,36 +73,22 @@ MicrosoftExchange 2013 包含一個名為自動探索服務的服務。本主題
 
 SCP 物件會包含樹系之自動探索服務 URL 的授權清單。您可以使用 **Set-ClientAccessServer** Cmdlet 更新 SCP 物件。如需詳細資訊，請參閱[Set-ClientAccessServer](https://technet.microsoft.com/zh-tw/library/bb125157\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在執行 <strong>Set-ClientAccessServer</strong> Cmdlet 前，請確定用戶端存取伺服器上已驗證的使用者帳戶，具有該 SCP 物件的讀取權限。如果使用者的權限不正確，將無法搜尋及讀取項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在執行 <strong>Set-ClientAccessServer</strong> Cmdlet 前，請確定用戶端存取伺服器上已驗證的使用者帳戶，具有該 SCP 物件的讀取權限。如果使用者的權限不正確，將無法搜尋及讀取項目。
+
+
 
 
 如需 SCP 物件的詳細資訊，請參閱[使用服務連線點進行發佈](https://go.microsoft.com/fwlink/p/?linkid=72744)。
 
 若是外部存取或使用 DNS，用戶端會利用使用者電子郵件地址的主要 SMTP 網域位址，在網際網路上尋找自動探索服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須在 DNS 中提供主機服務 (SRV) 資源記錄，讓 Outlook 用戶端使用 DNS 探索自動探索服務。如需相關資訊，請參閱您的 Windows 文件內有關 DNS 設定資訊，並參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=85214">白皮書：Exchange 2007 自動探索服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須在 DNS 中提供主機服務 (SRV) 資源記錄，讓 Outlook 用戶端使用 DNS 探索自動探索服務。如需相關資訊，請參閱您的 Windows 文件內有關 DNS 設定資訊，並參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=85214">白皮書：Exchange 2007 自動探索服務</a>。
+
+
 
 
 視是否在個別站台上設定自動探索服務而定，自動探索服務 URL 會是 https://\<*smtp-address-domain*\>/autodiscover/autodiscover.xml 或 https://autodiscover.\<*smtp-address-domain*\>/autodiscover/autodiscover.xml，其中 ://\<*smtp-address-domain*\> 是主要 SMTP 網域位址。例如，如果使用者的電子郵件地址是 tony@contoso.com，則主要 SMTP 網域位址是 .contoso.com。當用戶端連接至 Active Directory時，用戶端會尋找安裝期間所建立的 SCP 物件。在包含多部 Client Access Server 的部署中，會針對每一部 Client Access Server 建立一個自動探索 SCP 物件。SCP 物件包含 *ServiceBindingInfo* 屬性，此屬性含有 Client Access Server 的網域全名 (FQDN)，其格式為 https://CAS01/autodiscover/autodiscover.xml，其中 CAS01 為 Client Access Server 的 FQDN。利用使用者認證，Outlook 2007、Outlook 2010 或 Outlook 2013 用戶端會驗證 Active Directory，並搜尋自動探索 SCP 物件。在用戶端取得並列舉自動探索服務的執行個體之後，用戶端會連接至列舉清單中的第一部 Client Access Server，並取得格式為 XML 資料的設定檔資訊，此設定檔資訊為連接至使用者的信箱及可用的 Exchange 功能所需的資訊。

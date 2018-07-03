@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
 當您刪除整合通訊 (UM) IP 閘道時，Exchange 伺服器就無法再接受來自 Voice over IP (VoIP) 閘道、已啟用工作階段初始通訊協定 (SIP) 的 Private Branch eXchange (PBX)、IP PBX，或與 UM IP 閘道相關聯的工作階段邊界控制器 (SBC) 的來電。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只能在完全了解用 VoIP 閘道、IP PBX 或 SBC 停用通訊所造成的影響時，才能刪除 UM IP 閘道。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您只能在完全了解用 VoIP 閘道、IP PBX 或 SBC 停用通訊所造成的影響時，才能刪除 UM IP 閘道。
+
+
 
 
 如需與 UM IP 閘道相關的其他管理工作，請參閱[UM IP 閘道程序](um-ip-gateway-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

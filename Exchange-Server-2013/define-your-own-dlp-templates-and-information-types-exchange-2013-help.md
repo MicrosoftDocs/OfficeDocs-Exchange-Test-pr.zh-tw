@@ -36,18 +36,11 @@ Exchange Online：DLP 是付費功能，需要 Exchange Online 計劃 2 授權�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文不涵蓋推薦業務模式、檔案封裝的相關資訊或敏感資訊規則的部署方針，或討論如何散佈這些規則。此外，本文也不討論自訂開發規則的保護機制 (例如加密)，以及如何應用此類機制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 本文不涵蓋推薦業務模式、檔案封裝的相關資訊或敏感資訊規則的部署方針，或討論如何散佈這些規則。此外，本文也不討論自訂開發規則的保護機制 (例如加密)，以及如何應用此類機制。
+
+
 
 
 ## 擴充資訊類型，以滿足您的需求

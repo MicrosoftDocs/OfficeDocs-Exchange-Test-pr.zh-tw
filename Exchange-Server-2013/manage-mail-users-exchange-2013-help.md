@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -282,18 +275,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 使用\[連絡人資訊\]：這個區段可用來檢視或變更使用者的連絡人資訊。 此頁的資訊顯示於通訊錄中。 按一下\[更多選項\]以顯示其他方塊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用 [州/省]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以使用 [州/省]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。
+
+
 
 
 ## 組織
@@ -386,18 +372,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 使用 \[郵件提示\] 區段加入「郵件提示」，以便在將郵件傳送給此收件者前，警示使用者潛在的問題。 「郵件提示」是在此收件者加入至新電子郵件的 \[收件者\]、\[副本\] 或 \[密件副本\] 行時，顯示在資訊列中的文字。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。 自訂郵件提示的長度不能超過 175 個顯示的字元。 HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。 自訂郵件提示的長度不能超過 175 個顯示的字元。 HTML 標記則不包括在此限制內。
+
+
 
 
 ## 使用命令介面變更郵件使用者內容
@@ -498,18 +477,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本節提供使用目錄同步處理 Exchange Online 中管理電子郵件使用者相關資訊。目錄同步處理的混合式客戶與內部部署和雲端託管信箱，且完全託管的 Exchange Online 客戶其 Active Directory 為內部部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用目錄同步作業來管理收件者，您仍可在 Office 365 系統管理中心 中新增和管理使用者，但這些使用者不會和您的內部部署 Active Directory 同步處理。這是因為目錄同步作業只會從內部部署 Active Directory 同步收件者至雲端。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您使用目錄同步作業來管理收件者，您仍可在 Office 365 系統管理中心 中新增和管理使用者，但這些使用者不會和您的內部部署 Active Directory 同步處理。這是因為目錄同步作業只會從內部部署 Active Directory 同步收件者至雲端。
+
+
 
 
 <table>

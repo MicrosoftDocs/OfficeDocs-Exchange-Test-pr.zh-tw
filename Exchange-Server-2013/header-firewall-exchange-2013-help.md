@@ -147,18 +147,11 @@ Exchange 使用兩種不同方式，對郵件內的組織 X-header、樹系 X-he
 <li><p>Hub Transport Server</p></li>
 <li><p>Edge Transport Server</p></li>
 <li><p>Exchange 伺服器</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅在 Hub Transport server 上</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 僅在 Hub Transport server 上
+
+
 
 </li>
 </ul></td>
@@ -183,18 +176,11 @@ Exchange 使用兩種不同方式，對郵件內的組織 X-header、樹系 X-he
 <li><p>Hub Transport Server</p></li>
 <li><p>Edge Transport Server</p></li>
 <li><p>Exchange 伺服器</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅限 Hub Transport server</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 僅限 Hub Transport server
+
+
 
 </li>
 <li><p>以外部方式保護安全的伺服器</p></li>
@@ -269,18 +255,11 @@ Exchange 使用兩種不同方式，對郵件內的組織 X-header、樹系 X-he
 <li><p>Hub Transport Server</p></li>
 <li><p>Edge Transport Server</p></li>
 <li><p>Exchange 伺服器</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅在 Hub Transport server 上</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 僅在 Hub Transport server 上
+
+
 
 </li>
 <li><p>以外部方式保護安全的伺服器</p></li>
@@ -294,18 +273,11 @@ Exchange 使用兩種不同方式，對郵件內的組織 X-header、樹系 X-he
 <li><p>Hub Transport Server</p></li>
 <li><p>Edge Transport Server</p></li>
 <li><p>Exchange 伺服器</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅在 Hub Transport server 上</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 僅在 Hub Transport server 上
+
+
 
 </li>
 <li><p>以外部方式保護安全的伺服器</p></li>

@@ -231,18 +231,11 @@ Managing personal options and contacts
 
 ![隱藏電子郵件交談](images/Dn205138.edd4d500-9eb4-4f83-9292-6829d768d974(EXCHG.150).gif "隱藏電子郵件交談")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當交談隱藏的時則會隱藏僅針對目前工作階段。使用者若登出，然後再重新登入至其信箱、 語音郵件系統將會讀取相同交談中的電子郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當交談隱藏的時則會隱藏僅針對目前工作階段。使用者若登出，然後再重新登入至其信箱、 語音郵件系統將會讀取相同交談中的電子郵件。
+
+
 
 
 回到頁首
@@ -443,18 +436,11 @@ Managing personal options and contacts
 
 如果使用者有一些與客戶相關的重要資訊需要與客戶經理連絡，該使用者可以撥打 Outlook 語音存取的專用號碼、透過電話按鍵使用目錄搜尋功能來尋找客戶經理，然後撥打電話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用者存取 [個人選項] 功能表時，必須使用電話按鍵。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用者存取 [個人選項] 功能表時，必須使用電話按鍵。
+
+
 
 
 ## 錄製個人問候語
@@ -491,18 +477,11 @@ Managing personal options and contacts
 
 ![錄製您的個人問候語](images/Dn205138.4201f8a8-453c-4c6c-a8a4-29e862cd9649(EXCHG.150).gif "錄製您的個人問候語")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當使用者變更其電話問候語時，也可以選擇要開啟或關閉其電子郵件的自動回覆訊息。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當使用者變更其電話問候語時，也可以選擇要開啟或關閉其電子郵件的自動回覆訊息。
+
+
 
 
 回到頁首

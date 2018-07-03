@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 安裝適當的 UM 語言套件之後，您可以檢視已安裝 UM 語言套件的清單檢視 UM 撥號對應表或 UM 自動語音應答的 \[**一般**\] 頁面上**的自動的語音介面的語言**下拉式清單的 \[**設定**\] 頁面上的下拉式清單中。您也可以在 UM 撥號對應表和自動語音應答上設定的預設語言是英文 (EN-US) 以外的語言。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013信箱伺服器上無法使用 Microsoft Exchange Server 2007或Exchange 2007 Service Pack 1 (SP1)，SP2、 或 SP3 或 Exchange 2010 Service Pack 1 SP1、 SP2、 或 SP3 的 UM 語言套件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> Exchange 2013信箱伺服器上無法使用 Microsoft Exchange Server 2007或Exchange 2007 Service Pack 1 (SP1)，SP2、 或 SP3 或 Exchange 2010 Service Pack 1 SP1、 SP2、 或 SP3 的 UM 語言套件。
+
+
 
 
 如需其他與 UM 語言相關的工作，請參閱 [UM 語言、 提示及問候語程序](um-languages-prompts-and-greetings-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -89,18 +75,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
     setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您未使用 /IAcceptExchangeServerLicenseTerms 參數，您會看見下列錯誤： 歡迎使用 Microsoft Exchange Server 2013 自動安裝。您必須接受授權條款] 以安裝 Microsoft Exchange Server 2013。若要閱讀授權合約，請造訪 http://go.microsoft.com/fwlink/p/?LinkId=150127。若要接受授權合約，將新增至您正在執行命令的 /IAcceptExchangeServerLicenseTerms 參數。如需詳細資訊，請執行安裝程式 /？ ＞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 如果您未使用 /IAcceptExchangeServerLicenseTerms 參數，您會看見下列錯誤： 歡迎使用 Microsoft Exchange Server 2013 自動安裝。您必須接受授權條款] 以安裝 Microsoft Exchange Server 2013。若要閱讀授權合約，請造訪 http://go.microsoft.com/fwlink/p/?LinkId=150127。若要接受授權合約，將新增至您正在執行命令的 /IAcceptExchangeServerLicenseTerms 參數。如需詳細資訊，請執行安裝程式 /？ ＞。
+
+
 
 
 如需可用的 UM 語言和文化特性代碼的詳細資訊，請參閱[UM 語言、 提示及問候語](um-languages-prompts-and-greetings-exchange-2013-help.md)。

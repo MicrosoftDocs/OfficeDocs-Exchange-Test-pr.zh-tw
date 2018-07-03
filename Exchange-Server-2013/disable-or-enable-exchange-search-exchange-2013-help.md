@@ -54,18 +54,11 @@ _**上次修改主題的時間：** 2014-05-07_
 
 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [收件者權限](recipients-permissions-exchange-2013-help.md)主題中的「Exchange 搜尋」項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC，來針對信箱資料庫停用或啟用 Exchange 搜尋。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC，來針對信箱資料庫停用或啟用 Exchange 搜尋。
+
+
 
 
 此命令會針對名稱為 EXCH01 的信箱資料庫停用 Exchange 搜尋。

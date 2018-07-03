@@ -85,18 +85,11 @@ Exchange 2013隨附稱為 「*仲裁信箱*的五個系統信箱。仲裁信箱�
 
 使用下列指示以重新建立特定類型的仲裁信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列各節中的所有步驟必須從都執行相同的目錄擷取 Exchange 安裝媒體中的位置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 下列各節中的所有步驟必須從都執行相同的目錄擷取 Exchange 安裝媒體中的位置。
+
+
 
 
 ## 重新建立 Microsoft Exchange 同盟信箱
@@ -175,16 +168,9 @@ Exchange 2013隨附稱為 「*仲裁信箱*的五個系統信箱。仲裁信箱�
 
 檢視命令來確認已重新建立該適當的系統信箱，其中會根據名稱或從上方\] 表格中的顯示名稱的結果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

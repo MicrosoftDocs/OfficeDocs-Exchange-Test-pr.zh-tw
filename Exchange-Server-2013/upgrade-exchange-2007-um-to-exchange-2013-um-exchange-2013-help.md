@@ -31,18 +31,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 該怎麼做？
@@ -53,18 +46,11 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 根據預設，安裝 Exchange 2013 Mailbox Server 時，會安裝美式英文 (EN-US) 語言套件。此為撥號對應表唯一可用的語言選項，除非您安裝其他 UM 語言套件(美式英文無法移除，除非您從電腦移除 Mailbox Server)。在 Exchange 2013 Mailbox Server 上安裝 UM 語言套件之後，當設定撥號對應表的預設語言時，與語言套件關聯的語言將列示為可用選項。根據預設，因為 UM 自動語音應答會在建立時連結至 UM 撥號對應表，所以它會使用所連結 UM 撥號對應表的預設語言設定。不過，在建立 UM 自動語音應答之後，可以變更此設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您只要使用美式英文作為撥號對應表的語言，則可跳過此步驟並移至步驟 2。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若您只要使用美式英文作為撥號對應表的語言，則可跳過此步驟並移至步驟 2。
+
+
 
 
 您可以使用 setup.exe 命令或您已從[Exchange Server 2013 UM 語言套件](https://go.microsoft.com/fwlink/p/?linkid=266542)下載 UM 語言套件之後執行*\<UMLanguagePack\>*.exe 安裝程式來新增的 UM 語言套件。如需詳細資訊，請參閱[安裝 UM 語言套件](install-a-um-language-pack-exchange-2013-help.md)。
@@ -95,18 +81,11 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 3.  在命令介面的提示字元下，輸入 **".\\MigrateUMCustomPrompts"**，然後按下 Enter。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用<strong>Import-UMPrompt</strong>指令程式也匯個別自訂提示。Exchange 2007 UM <strong>Copy-UMCustomPrompt</strong>指令程式不支援將自訂提示複製到 Exchange 2013 UM。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用<strong>Import-UMPrompt</strong>指令程式也匯個別自訂提示。Exchange 2007 UM <strong>Copy-UMCustomPrompt</strong>指令程式不支援將自訂提示複製到 Exchange 2013 UM。
+
+
 
 
 當您執行 MigrateUMCustomPrompts.ps1 指令碼從 Exchange 2013 伺服器時，指令碼所執行的 GUID 或物件的識別碼查閱的撥號對應表或自動語音應答在 Active Directory 與查詢以判斷是否有任何的自訂問候語、 宣告、 功能表或提示。如果找到的自訂問候語、 宣告、 功能表及提示將會匯入名為 {e0dc1c29-89c3-4034-b678-e6c29d823ed9} 的系統信箱。
@@ -364,18 +343,11 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
     New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法設定或變更 UM 群組搜尋的設定。如果想要變更 UM 群組搜尋的組態設定，您必須刪除它，然後利用正確設定來新增 UM 群組搜尋。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您無法設定或變更 UM 群組搜尋的設定。如果想要變更 UM 群組搜尋的組態設定，您必須刪除它，然後利用正確設定來新增 UM 群組搜尋。
+
+
 
 
 ## 步驟 9： 建立或設定 UM 自動語音應答
@@ -584,14 +556,11 @@ Exchange 2013 Client Access Server 是任何來電或整合通訊之工作階段
 
 在升級至 Exchange 2013 UM 的程序中，最後一個步驟是將 VoIP 閘道、IP PBX 或已啟用 SIP 的 PBX 設定為傳送來電 (包括想要留下語音郵件給使用者的來電者、撥打 Outlook 語音存取的啟用 UM 的使用者的來電，以及撥打 UM 自動語音應答的來電者的來電) 至 Exchange 2013 Client Access Server。所有這些來電會先由 VoIP 閘道、IP PBX 或已啟用 SIP 的 PBX 接收，然後轉接給 Exchange 2013 組織中的 Exchange 2013 Client Access Server。如需詳細資訊，請參閱下列資源：
 
-  -  
-    [UM 服務](um-services-exchange-2013-help.md)
+  -  [UM 服務](um-services-exchange-2013-help.md)
 
-  -  
-    [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## 步驟 14： 停用自動答錄在 Exchange 2007 Unified Messaging server
 
@@ -615,18 +584,11 @@ Exchange 2013 Client Access Server 是任何來電或整合通訊之工作階段
 
     Disable-UMServer -Identity MyUMServer -Immediate $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以從 Exchange 2007 UM Server 中使用 <strong>Disable-UMServer</strong> 指令程式，或從 Exchange 2013 Mailbox Server 中使用 <strong>Disable-UMService</strong> 指令程式，來停用自動答錄服務。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以從 Exchange 2007 UM Server 中使用 <strong>Disable-UMServer</strong> 指令程式，或從 Exchange 2013 Mailbox Server 中使用 <strong>Disable-UMService</strong> 指令程式，來停用自動答錄服務。
+
+
 
 
 ## 步驟 15： 從撥號對應表移除 Exchange 2007 Unified Messaging server
@@ -662,18 +624,11 @@ Exchange 2013 Client Access Server 是任何來電或整合通訊之工作階段
 
     Set-UMServer -id MyUMServer -DialPlans SipDP1
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以在 Exchange 2007 Unified Messaging server 命令介面或 Exchange 2013 Mailbox server 上的<strong>Set-UMService</strong>指令程式中使用<strong>Set-UMServer</strong>指令程式從單一或多個撥號對應表移除 Exchange 2007 UM 伺服器。例如，以移除所有撥號對應表 UM 伺服器，請執行下列命令： <code>Set-UMServer -identity MyUMServer -DialPlan $null</code></td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以在 Exchange 2007 Unified Messaging server 命令介面或 Exchange 2013 Mailbox server 上的<strong>Set-UMService</strong>指令程式中使用<strong>Set-UMServer</strong>指令程式從單一或多個撥號對應表移除 Exchange 2007 UM 伺服器。例如，以移除所有撥號對應表 UM 伺服器，請執行下列命令： <code>Set-UMServer -identity MyUMServer -DialPlan $null</code>
+
+
 
 
 ## 如何才能了解這是否正常運作？

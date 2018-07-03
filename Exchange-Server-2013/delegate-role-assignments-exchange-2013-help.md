@@ -38,18 +38,11 @@ _**上次修改主題的時間：** 2012-10-02_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題討論管理角色指派委派。如果您要委派 「 可將成員新增至或移除成員從角色群組，也就是委派的建議的方法，請參閱<a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題討論管理角色指派委派。如果您要委派 「 可將成員新增至或移除成員從角色群組，也就是委派的建議的方法，請參閱<a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a>。
+
+
 
 
 如需一般角色指派與委派管理角色指派的相關資訊，請參閱[了解管理角色指派](understanding-management-role-assignments-exchange-2013-help.md)。
@@ -66,18 +59,11 @@ _**上次修改主題的時間：** 2012-10-02_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面委派管理角色
@@ -88,18 +74,11 @@ _**上次修改主題的時間：** 2012-10-02_
 
   - [將角色新增至使用者或 USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能將委派角色指派建立到管理角色指派原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您不能將委派角色指派建立到管理角色指派原則。
+
+
 
 
 此範例會建立委派角色指派，讓「資深系統管理員」角色群組的成員可以指派「郵件收件者」角色給 Exchange 組織中的任一角色受託人。

@@ -21,32 +21,18 @@ _**上次修改主題的時間：** 2012-10-03_
 
 您無法修改內建管理角色上的角色項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題不會討論如何修改未限定範圍的管理角色上未限定範圍的管理角色項目。如需如何修改未限定範圍的角色項目的詳細資訊，請參閱<a href="create-a-role-exchange-2013-help.md">建立角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題不會討論如何修改未限定範圍的管理角色上未限定範圍的管理角色項目。如需如何修改未限定範圍的角色項目的詳細資訊，請參閱<a href="create-a-role-exchange-2013-help.md">建立角色</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要新增或移除角色項目中的參數，您必須使用<em>AddParameter</em>或<em>RemoveParameter</em>參數。如果省略了<em>AddParameter</em>或<em>RemoveParameter</em>參數執行<strong>Set-ManagementRoleEntry</strong>指令程式時，僅使用<em>Parameters</em>參數指定的參數將會包含在角色項目。將移除角色項目中的所有其他參數。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!CAUTION]  
+> 若要新增或移除角色項目中的參數，您必須使用<em>AddParameter</em>或<em>RemoveParameter</em>參數。如果省略了<em>AddParameter</em>或<em>RemoveParameter</em>參數執行<strong>Set-ManagementRoleEntry</strong>指令程式時，僅使用<em>Parameters</em>參數指定的參數將會包含在角色項目。將移除角色項目中的所有其他參數。
+
+
 
 
 要尋找與角色相關的其他管理工作嗎？請參閱[進階權限](advanced-permissions-exchange-2013-help.md)。
@@ -65,18 +51,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -115,18 +94,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
 從角色項目移除所有參數時最適合您想要在指令程式提供只有幾個參數清單與排除的所有其他參數。如果您不想的角色存取權給指令程式，移除完全而不是只移除參數的角色相關聯的角色項目。如需如何從角色移除角色項目，請參閱[從角色移除角色項目](remove-a-role-entry-from-a-role-exchange-2013-help.md)的詳細資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法復原移除作業。如果您遭移除角色項目的所有參數，則必須再次手動新增。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 您無法復原移除作業。如果您遭移除角色項目的所有參數，則必須再次手動新增。
+
+
 
 
 若要從角色項目移除所有參數，請使用下列語法。

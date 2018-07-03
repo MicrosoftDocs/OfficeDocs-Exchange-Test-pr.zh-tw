@@ -58,34 +58,20 @@ RBAC 是存在於執行Exchange 2013每台伺服器的元件。RBAC 會檢查是
 
 如果 RBAC 允許繼續進行的動作，是Exchange受信任子系統的內容而不是使用者的內容中執行的動作。Exchange受信任子系統是高權萬用安全性群組 (USG) 可讀取/寫入存取每個Exchange- Exchange組織中的相關的物件。它也是系統管理員本機安全性群組與Exchange Windows 權限 USG，可讓Exchange來建立及管理Active Directory物件的成員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未變更任何手動對Exchange受信任子系統安全性群組的成員資格。此外，不將它新增或移除物件的存取控制清單 (Acl)。變更Exchange受信任子系統 USG 自行，您就會造成造成無法挽回的損害Exchange組織。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 未變更任何手動對Exchange受信任子系統安全性群組的成員資格。此外，不將它新增或移除物件的存取控制清單 (Acl)。變更Exchange受信任子系統 USG 自行，您就會造成造成無法挽回的損害Exchange組織。
+
+
 
 
 請務必了解並不重要Active Directory權限的使用者具有時使用Exchange管理工具。若授權使用者，透過 RBAC，若要執行巨集指令中Exchange管理工具\] 中上的使用者可以執行不論其Active Directory權限的巨集指令。相反地，如果使用者是企業系統管理員在Active Directory中但不已授權可執行的動作，例如Exchange中管理工具\] 建立信箱，巨集指令會將不會成功因為使用者沒有根據 RBAC 的必要權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然的 RBAC 權限模型不會套用至Active Directory使用者和電腦管理工具， Active Directory使用者及電腦無法管理Exchange組態。所以雖然使用者可能會有修改Active Directory物件，例如使用者的顯示名稱的某些屬性存取使用者必須使用Exchange管理工具] 中，與因此必須授權 RBAC，來管理Exchange屬性。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 雖然的 RBAC 權限模型不會套用至Active Directory使用者和電腦管理工具， Active Directory使用者及電腦無法管理Exchange組態。所以雖然使用者可能會有修改Active Directory物件，例如使用者的顯示名稱的某些屬性存取使用者必須使用Exchange管理工具] 中，與因此必須授權 RBAC，來管理Exchange屬性。
+
+
 
 
 回到頁首
@@ -324,18 +310,11 @@ Exchange 2013透過ExchangeWindows權限安全性\] 群組中移除的權限和�
 
 如需變更時，發生ExchangeWindows權限安全性群組及其他Exchange元件啟用或停用Active Directory分割權限的清單，請參閱下表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>啟用Active Directory分割權限時移除角色指派給角色群組可讓Exchange系統管理員建立安全性主體。這是要移除的存取權時他們正在執行，因為沒有建立關聯的Active Directory物件的權限否則會產生錯誤的 cmdlet。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 啟用Active Directory分割權限時移除角色指派給角色群組可讓Exchange系統管理員建立安全性主體。這是要移除的存取權時他們正在執行，因為沒有建立關聯的Active Directory物件的權限否則會產生錯誤的 cmdlet。
+
+
 
 
 ### Active Directory 分割權限變更

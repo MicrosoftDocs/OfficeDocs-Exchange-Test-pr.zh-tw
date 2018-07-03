@@ -45,18 +45,11 @@ Exchange 2010 SP2 及 SP1、 UCMA 2.0 中安裝是必要的整合通訊伺服器
 
   - UCMA 4.0 安裝程式包括所有 Exchange 2013 的必要條件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您要安裝Exchange 2013安裝 UCMA 4.0。如需 UCMA 4.0 和安裝需求的詳細資訊，請參閱<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。若要升級至 UCMA 最新版本，您必須先解除安裝任何舊版 UCMA 安裝使用 [新增/移除程式]。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您要安裝Exchange 2013安裝 UCMA 4.0。如需 UCMA 4.0 和安裝需求的詳細資訊，請參閱<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。若要升級至 UCMA 最新版本，您必須先解除安裝任何舊版 UCMA 安裝使用 [新增/移除程式]。
+
+
 
 
 ## 語音郵件預覽改良功能

@@ -58,18 +58,11 @@ Exchange Server 2013和Exchange Online、 預設的探索信箱的大小上限�
 
 ## 使用Exchange 管理命令介面來刪除並重新建立預設的探索信箱
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用Exchange 系統管理中心 (EAC)，因為探索信箱未出現在 EAC 中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用Exchange 系統管理中心 (EAC)，因為探索信箱未出現在 EAC 中。
+
+
 
 
 1.  執行下列命令以刪除預設的探索信箱。

@@ -41,18 +41,11 @@ Exchange 2013 和脫離的命名空間
 
   - **NetBIOS 網域名稱**   通常，NetBIOS 網域名稱是 DNS 網域名稱的子網域。例如，如果 DNS 網域名稱是 contoso.com，則 NetBIOS 網域名稱是 contoso。如果 DNS 網域名稱是 corp.contoso.com，則 NetBIOS 網域名稱是 corp。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需尋找執行 Windows Server 2008 電腦的 DNS 和 NetBIOS 資訊，請參閱檢視執行 Windows Server 2008 之電腦的 DNS 和 NetBIOS 名稱相關資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如需尋找執行 Windows Server 2008 電腦的 DNS 和 NetBIOS 資訊，請參閱檢視執行 Windows Server 2008 之電腦的 DNS 和 NetBIOS 名稱相關資訊。
+
+
 
 
 在 Active Directory 網域中的電腦也具有主要 DNS 尾碼，而且可能還有其他 DNS 尾碼。根據預設，主要 DNS 尾碼與 DNS 網域名稱相同。如需如何變更主要 DNS 尾碼的詳細步驟，請參閱本主題稍後的程序。
@@ -79,18 +72,11 @@ Exchange 2013 支援以下三個案例在具有脫離命名空間的網域中部
 
 這些案例將在以下幾節中詳述。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>目前支援在此主題中說明的任何脫離的命名空間案例中執行 Exchange 2013。不過，如果脫離的命名空間案例不屬於本主題中所說明的案例之一，請務必與 Microsoft 服務合作來部署 Exchange 2013。如需相關資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft 服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 目前支援在此主題中說明的任何脫離的命名空間案例中執行 Exchange 2013。不過，如果脫離的命名空間案例不屬於本主題中所說明的案例之一，請務必與 Microsoft 服務合作來部署 Exchange 2013。如需相關資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft 服務</a>。
+
+
 
 
 ## 案例：主要 DNS 尾碼和 DNS 網域名稱不同

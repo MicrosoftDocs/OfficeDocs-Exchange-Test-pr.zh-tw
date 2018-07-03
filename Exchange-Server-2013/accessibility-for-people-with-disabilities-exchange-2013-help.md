@@ -43,18 +43,11 @@ Microsoft 是認可其產品和服務進行更容易使用的任何人。下列�
 
 下列各節提供功能、 產品及服務，讓殘障人士更容易存取 Microsoft Windows的相關資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節中的資訊只適用於在美國的 Microsoft 產品的授權的使用者。如果您已取得美國以外此產品，請造訪<a href="https://www.microsoft.com/enable">Microsoft 協助工具網站</a>的電話號碼清單及地址後的 Microsoft 支援服務。您可以連絡分公司以了解本節所述的產品與服務的類型是否可在您的區域中。您可以深入了解包含在 Microsoft 產品的網站中的協助工具的 Microsoft 產品的協助工具功能。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本節中的資訊只適用於在美國的 Microsoft 產品的授權的使用者。如果您已取得美國以外此產品，請造訪<a href="https://www.microsoft.com/enable">Microsoft 協助工具網站</a>的電話號碼清單及地址後的 Microsoft 支援服務。您可以連絡分公司以了解本節所述的產品與服務的類型是否可在您的區域中。您可以深入了解包含在 Microsoft 產品的網站中的協助工具的 Microsoft 產品的協助工具功能。
+
+
 
 
 ## Windows 的協助工具功能

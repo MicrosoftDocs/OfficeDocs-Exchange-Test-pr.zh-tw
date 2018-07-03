@@ -17,18 +17,11 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2017-01-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地 eDiscovery 搜尋 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的搜尋。若要建立 eDiscovery 搜尋，請開始在 Office 365 安全與規範中心中使用 [<a href="https://go.microsoft.com/fwlink/?linkid=847843">內容搜尋</a>]。在我們解除委任新就地 eDiscovery 搜尋後，您仍然可以修改現有的就地搜尋，而在 Exchange Server 2013 和 Exchange 混合部署中建立新的就地 eDiscovery 搜尋仍會受到支援。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地 eDiscovery 搜尋 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的搜尋。若要建立 eDiscovery 搜尋，請開始在 Office 365 安全與規範中心中使用 [<a href="https://go.microsoft.com/fwlink/?linkid=847843">內容搜尋</a>]。在我們解除委任新就地 eDiscovery 搜尋後，您仍然可以修改現有的就地搜尋，而在 Exchange Server 2013 和 Exchange 混合部署中建立新的就地 eDiscovery 搜尋仍會受到支援。
+
+
 
 
 如果您的組織遵守法律調查需求 （相關機構政策、 規範、 或訴訟）、 Microsoft Exchange Server 2013和Exchange Online中的就地 eDiscovery 可協助您執行探索搜尋信箱內的相關內容。Exchange 2013和Exchange Online也提供同盟的搜尋功能，與Microsoft SharePoint 2013和Microsoft SharePoint Online整合。使用 SharePoint eDiscovery 中心，您可以搜尋並保留案例，包括SharePoint 2013和SharePoint Online網站、 文件、 SharePoint (SharePoint 2013只)，以編製索引的檔案共用中Exchange、 信箱內容和封存的Lync 2013內容相關的所有內容。您也可以使用 Exchange 混合式環境中的就地 eDiscovery 來搜尋中相同的搜尋內部部署和雲端架構信箱。
@@ -67,18 +60,11 @@ In-Place eDiscovery limits and throttling policies
 
 In-Place eDiscovery documentation
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>就地 eDiscovery 是一個強大的功能，可讓具有正確權限的使用者得以存取整個 Exchange 2013 或 Exchange Online 組織中所儲存的所有通訊記錄。這對於控制與監視探索活動而言很重要，包括將成員新增至探索管理角色群組、指派信箱搜尋管理角色，以及指派探索信箱的信箱存取權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 就地 eDiscovery 是一個強大的功能，可讓具有正確權限的使用者得以存取整個 Exchange 2013 或 Exchange Online 組織中所儲存的所有通訊記錄。這對於控制與監視探索活動而言很重要，包括將成員新增至探索管理角色群組、指派信箱搜尋管理角色，以及指派探索信箱的信箱存取權限。
+
+
 
 
 ## 就地 eDiscovery 運作方式
@@ -113,18 +99,11 @@ In-Place eDiscovery documentation
 
 依預設，執行就地 eDiscovery 相關工作的權限未指派給任何使用者或 Exchange 系統管理員。Exchange 系統管理員為組織管理群組的成員，能將使用者新增至探索管理角色群組，並建立自訂角色群組，將探索管理員的範圍縮小到一部分使用者。若要深入了解將使用者新增至探索管理角色群組，請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用者尚未新增至探索管理角色群組，或未被指派信箱搜尋角色，則 EAC 中不會顯示 <strong>[就地 eDiscovery &amp; 保留]</strong> 使用者介面，在 Exchange 管理命令介面中也無法使用就地 eDiscovery 指令程式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果使用者尚未新增至探索管理角色群組，或未被指派信箱搜尋角色，則 EAC 中不會顯示 <strong>[就地 eDiscovery &amp; 保留]</strong> 使用者介面，在 Exchange 管理命令介面中也無法使用就地 eDiscovery 指令程式。
+
+
 
 
 稽核 RBAC 角色的改變 (預設為啟用)，可確保保有充足的記錄可供追蹤探索管理角色群組的指派。您可以利用系統管理員角色群組報告來搜尋系統管理員角色群組的變更。如需詳細資訊，請參閱 [搜尋角色群組變更或管理員稽核記錄檔](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
@@ -289,18 +268,11 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
 完成就地 eDiscovery 搜尋後，您便能在 EAC 中的 \[詳細資料\] 窗格中檢視搜尋結果預估。預估包括所傳回的項目數和那些項目的總大小。您也能檢視關鍵字統計資料，該資料傳回的詳細資料，是關於每個用於搜尋查詢的關鍵字所傳回的項目數。此資訊在確定查詢效率方面十分實用。如果查詢太廣，有可能會傳回較大的資料集，進行檢視時可能會需要更多資源並因此提高 eDiscovery 成本。如果查詢太狹隘，可能會大幅減少傳回的記錄數目，或完全未傳回記錄。您能使用預估和關鍵字統計資料來微調查詢，使其達到您的需求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，關鍵字統計資料也包括非關鍵字內容的統計資料，例如在搜尋查詢中所指定的日期、郵件類型和寄件者/收件者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2013 中，關鍵字統計資料也包括非關鍵字內容的統計資料，例如在搜尋查詢中所指定的日期、郵件類型和寄件者/收件者。
+
+
 
 
 您也能預覽搜尋結果，以進一步確認傳回的郵件包含您所搜尋的內容，並視需求進一步微調查詢。eDiscovery 搜尋預覽功能會顯示從每個搜尋的信箱所傳回的郵件數，以及搜尋所傳回的郵件總數。很快就會產生預覽，不需要複製郵件至探索信箱。
@@ -347,18 +319,11 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
   - **完整記錄** 完整記錄包含搜尋所傳回所有訊息的相關資訊。系統會在包含基本記錄資訊的電子郵件中附加一個以逗號分隔值 (.csv) 的檔案來提供此資訊，該 .csv 檔案的名稱則使用該搜尋的名稱。您可能需要此資訊以供遵循法規或保持記錄之用。若要啟用完整記錄功能，當在 EAC 中將搜尋結果複製到探索信箱時，請務必選取 **\[啟用完整記錄\]** 選項。如果您正在使用命令介面，請使用 *LogLevel* 參數來指定完整記錄選項。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用命令介面建立或修改就地 eDiscovery 搜尋時，您也可以停用記錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用命令介面建立或修改就地 eDiscovery 搜尋時，您也可以停用記錄。
+
+
 
 
 複製搜尋結果至探索信箱時，除了包含了搜尋記錄，Exchange 也記錄了由 EAC 或命令介面用於建立、修改或移除就地 eDiscovery 搜尋的指令程式。此資訊會記錄在管理稽核記錄項目中。如需詳細資訊，請參閱[系統管理員稽核記錄](administrator-audit-logging-exchange-2013-help.md)。
@@ -379,18 +344,11 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
 當員工離開組織時，停用或移除其信箱是常見的做法。在您停用信箱之後，就會中斷與使用者帳戶的連線，但會保留在信箱裡一段時間，預設值為 30 天。受管理的資料夾助理員不會處理中斷連線的信箱，且在這段期間，均不會套用任何保留原則。您無法搜尋中斷連線的信箱之內容。一旦達到信箱資料庫已設定之刪除的信箱保留期限時，便會將該信箱從信箱資料庫中清除。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online 中，就地 eDiscovery 可搜尋非作用中信箱中的內容。非使用中的信箱是指設為就地保留或訴訟資料暫留狀態然後移除的信箱。非作用中的信箱在暫停使用期間會一直保留。當非使用中的信箱從就地保留中移除或當訴訟資料暫留停用時，就會永久刪除信箱。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn144876(v=exchg.150)">管理 Exchange Online 中的非使用中信箱</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在 Exchange Online 中，就地 eDiscovery 可搜尋非作用中信箱中的內容。非使用中的信箱是指設為就地保留或訴訟資料暫留狀態然後移除的信箱。非作用中的信箱在暫停使用期間會一直保留。當非使用中的信箱從就地保留中移除或當訴訟資料暫留停用時，就會永久刪除信箱。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn144876(v=exchg.150)">管理 Exchange Online 中的非使用中信箱</a>。
+
+
 
 
 在內部部署中，如果您的組織要求在已不在組織裡的員工之郵件上套用保留設定，或是如果您可能必須保留前任員工的信箱，用於目前的或未來的 eDiscovery 搜尋之用途，請勿停用或移除該信箱。您可以採取下列步驟，以確保無法存取該信箱，且不會傳遞新的郵件到該信箱。
@@ -415,18 +373,11 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
 3.  設定信箱的傳遞限制，如此無人能寄送郵件至該信箱。如需詳細資訊，請參閱[設定信箱的郵件傳遞限制](configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須採取以上步驟及任何其他由您組織所要求的帳戶管理程序，但卻不停用或移除信箱或移除關聯的使用者帳戶。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您必須採取以上步驟及任何其他由您組織所要求的帳戶管理程序，但卻不停用或移除信箱或移除關聯的使用者帳戶。
+
+
 
 
 當您規劃為郵件保留管理 (MRM) 或就地 eDiscovery 而實施信箱保留時，您必須考慮員工的流動率。長期保留前任員工的信箱將必須在信箱伺服器上具備額外的儲存空間，而且也會導致 Active Directory 資料庫的增加，因為這必須在相同期間內保留關聯的使用者帳戶。此外，這可能也會要求變更您組織的帳戶佈建與管理程序。
@@ -458,18 +409,11 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 <td><p>DiscoveryMaxConcurrency</p></td>
 <td><p>可以在組織中的同一時間執行的就地 eDiscovery 搜尋的數目上限。</p></td>
 <td><p>2</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果啟動 eDiscovery 搜尋時仍執行兩個先前搜尋時，第三個搜尋不會排入佇列並將會改用失敗。您必須等到其中一個舊版搜尋完成時才能成功啟動新的搜尋。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果啟動 eDiscovery 搜尋時仍執行兩個先前搜尋時，第三個搜尋不會排入佇列並將會改用失敗。您必須等到其中一個舊版搜尋完成時才能成功啟動新的搜尋。
+
+
 
 </td>
 </tr>
@@ -483,18 +427,11 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 <td><p>DiscoveryMaxStatsSearchMailboxes</p></td>
 <td><p>可搜尋仍可讓您檢視關鍵字統計資料在單一就地 eDiscovery 搜尋中的信箱數目上限。</p></td>
 <td><p>100</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>執行 eDiscovery 搜尋估計值之後，您可以檢視關鍵字統計資料。這些統計資料顯示詳細資料相關的每個關鍵字搜尋查詢中使用傳回的項目數。如果在搜尋中包含 100 個以上的來源信箱，如果您嘗試檢視關鍵字統計資料會傳回錯誤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 執行 eDiscovery 搜尋估計值之後，您可以檢視關鍵字統計資料。這些統計資料顯示詳細資料相關的每個關鍵字搜尋查詢中使用傳回的項目數。如果在搜尋中包含 100 個以上的來源信箱，如果您嘗試檢視關鍵字統計資料會傳回錯誤。
+
+
 
 </td>
 </tr>
@@ -517,18 +454,11 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1如果您起始的 eDiscovery 搜尋中SharePoint OnlineOffice 365組織中的 eDiscovery 中心從，您可以搜尋 1500 個信箱的最大值在單一搜尋。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 1如果您起始的 eDiscovery 搜尋中SharePoint OnlineOffice 365組織中的 eDiscovery 中心從，您可以搜尋 1500 個信箱的最大值在單一搜尋。
+
+
 
 
 在 Exchange Server 2013 中，您可以變更這些參數的預設值來配合您的需求，或建立其他節流原則，並將它們指派給具備委派探索管理權限的使用者。在 Exchange Online 中，您無法變更這些節流參數的預設值。

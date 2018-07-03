@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2016-02-01_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -180,18 +173,11 @@ _**上次修改主題的時間：** 2016-02-01_
 
 為了進行疑難排解，或是如果您正把信箱移至不支援個人封存的 Exchange 版本，您可能會想要停用使用者的個人 (內部部署) 或原有範圍封存。如果您停用內部部署封存，封存中的所有資訊將保留在信箱資料庫中，直到信箱保留時間已屆，該封存便會永久刪除(依預設，Exchange 將保留已中斷連線的信箱，包括封存信箱，持續三十天)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>停用封存會將封存從信箱移除，並且在信箱資料庫中將其標示為刪除。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 停用封存會將封存從信箱移除，並且在信箱資料庫中將其標示為刪除。
+
+
 
 
 如果您想要將內部部署封存重新連線到該信箱，可以使用 [Connect-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997878\(v=exchg.150\)) 指令程式搭配 *Archive* 參數。
@@ -275,32 +261,18 @@ _**上次修改主題的時間：** 2016-02-01_
 
 當您停用封存信箱時，將會中斷連接。中斷連線的封存信箱會在指定的時間內保留在信箱資料庫中。Exchange 預設會保留中斷連線的封存 30 天。在這段時間內，可以藉由讓封存與現有信箱產生關聯的方式來復原個人封存。您可以修改已刪除信箱的保留期間，來增減保留已刪除信箱或封存的時間。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您停用使用者封存然後啟用相同使用者的封存，使用者將獲得新的封存。新的封存將不會包含在使用者連線中斷的封存中的資料。若您想要重新連接使用者與他或她的連線中斷封存，必須執行此步驟。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 若您停用使用者封存然後啟用相同使用者的封存，使用者將獲得新的封存。新的封存將不會包含在使用者連線中斷的封存中的資料。若您想要重新連接使用者與他或她的連線中斷封存，必須執行此步驟。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不可使用 EAC 來將連線中斷的封存連接至信箱使用者。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 您不可使用 EAC 來將連線中斷的封存連接至信箱使用者。
+
+
 
 
 ## 使用命令介面

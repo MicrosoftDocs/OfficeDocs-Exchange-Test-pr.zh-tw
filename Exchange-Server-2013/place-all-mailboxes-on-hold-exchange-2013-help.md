@@ -17,18 +17,11 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2017-01-18_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地保留 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的就地保留。使用就地保留的替代方法是，您可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=780738">eDiscovery 案例</a>或 Office 365 安全性和規範中心的<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留原則</a>。在我們解除委任新就地保留後，您仍然可以修改現有的就地保留，而在 Exchange Server 2013 和 Exchange混合部署中建立新的就地保留仍會受到支援。而且，您依然能夠讓信箱處於「訴訟暫止」。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地保留 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的就地保留。使用就地保留的替代方法是，您可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=780738">eDiscovery 案例</a>或 Office 365 安全性和規範中心的<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留原則</a>。在我們解除委任新就地保留後，您仍然可以修改現有的就地保留，而在 Exchange Server 2013 和 Exchange混合部署中建立新的就地保留仍會受到支援。而且，您依然能夠讓信箱處於「訴訟暫止」。
+
+
 
 
 您的組織可能需要以保留指定期限內的所有信箱資料。您可以使用訴訟暫止狀態或就地保留功能來滿足此需求。將信箱置於訴訟暫止或就地保留功能之後，可修改或永久刪除的信箱項目會保留在 \[可復原的項目\] 資料夾。如需詳細資訊，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
@@ -121,18 +114,11 @@ _**上次修改主題的時間：** 2017-01-18_
 
 您可以使用 EAC 來選取最多 500 個信箱並保留它們。如需詳細資訊，請參閱[建立或移除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要將 500 個以上的使用者設為就地保留，使用命令介面。請參閱<a href="https://technet.microsoft.com/zh-tw/library/dd298064(v=exchg.150)">New-MailboxSearch</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 若要將 500 個以上的使用者設為就地保留，使用命令介面。請參閱<a href="https://technet.microsoft.com/zh-tw/library/dd298064(v=exchg.150)">New-MailboxSearch</a>。
+
+
 
 
 ## 其他資訊

@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 使用者可以透過 Microsoft Exchange ActiveSync 存取其電子郵件、 行事曆、 連絡人和行動電話、 平板電腦和其他可攜式裝置上的 \[任務資訊。他們也可以使用它來設定其簽章與自動回覆。與 Exchange ActiveSync 搭配使用各種不同的行動電話和裝置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然我們一致地參照至行動電話以存取Exchange Server 2013的裝置，有許多裝置可存取Exchange 2013但沒有行動電話功能。這些裝置，以及參照此文件中的 「 行動電話 」 的字詞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 雖然我們一致地參照至行動電話以存取Exchange Server 2013的裝置，有許多裝置可存取Exchange 2013但沒有行動電話功能。這些裝置，以及參照此文件中的 「 行動電話 」 的字詞。
+
+
 
 
 ## Exchange ActiveSync 相容裝置
@@ -79,18 +72,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>需要裝置加密</p></li>
 <li><p>遠端清除</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果貴組織使用其他行動裝置信箱原則設定，您需要將<strong>允許非可提供裝置</strong>原則設定為 true。因為仍可進行同步處理其他行動電話和裝置的不符合您的行動裝置原則設定的所有需求可以為您組織的安全性含意。如需詳細資訊，請參閱<a href="mobile-device-mailbox-policies-exchange-2013-help.md">行動裝置信箱原則</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 如果貴組織使用其他行動裝置信箱原則設定，您需要將<strong>允許非可提供裝置</strong>原則設定為 true。因為仍可進行同步處理其他行動電話和裝置的不符合您的行動裝置原則設定的所有需求可以為您組織的安全性含意。如需詳細資訊，請參閱<a href="mobile-device-mailbox-policies-exchange-2013-help.md">行動裝置信箱原則</a>。
+
+
 
 </td>
 </tr>

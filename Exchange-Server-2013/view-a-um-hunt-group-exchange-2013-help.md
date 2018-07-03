@@ -37,18 +37,11 @@ _**上次修改主題的時間：** 2012-11-05_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面來檢視的 UM 群組搜尋屬性
@@ -61,16 +54,9 @@ _**上次修改主題的時間：** 2012-11-05_
 
     Get-UMHuntGroup -identity MyUMIPGateway\MyUMHuntGroup | Format-List
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您使用<strong>Get-UMHuntGroup</strong>指令程式時，您無法輸入 UM 群組搜尋的名稱。您也必須包含與 UM 群組搜尋關聯的 UM IP 閘道的名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您使用<strong>Get-UMHuntGroup</strong>指令程式時，您無法輸入 UM 群組搜尋的名稱。您也必須包含與 UM 群組搜尋關聯的 UM IP 閘道的名稱。
+
+
 

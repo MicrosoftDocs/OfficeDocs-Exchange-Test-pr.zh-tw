@@ -115,18 +115,11 @@ _**上次修改主題的時間：** 2016-05-04_
 
 根據預設，每個 Exchange 組織使用一個仲裁信箱。如果您有自己的 Exchange Server 且需要更多仲裁信箱進行負載平衡，請依照[管理及疑難排解郵件核准](manage-and-troubleshoot-message-approval-exchange-2013-help.md)中的指示新增仲裁信箱。仲裁信箱是系統信箱，不需要 Exchange 授權。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>如果您有Exchange 2007：</strong>Microsoft Exchange Server 2007 不支援仲裁收件者。如果傳送給仲裁通訊群組的郵件在 Exchange 2007 集線傳輸伺服器上展開，則郵件會略過仲裁並傳遞給通訊群組的所有成員。如果您的 Exchange 組織中有 Exchange 2007 集線傳輸伺服器，請務必將一個 Exchange Server 2013 信箱伺服器委派為仲裁通訊群組的擴充伺服器。這樣可確保所有傳送給通訊群組的郵件都經過仲裁。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>如果您有Exchange 2007：</strong>Microsoft Exchange Server 2007 不支援仲裁收件者。如果傳送給仲裁通訊群組的郵件在 Exchange 2007 集線傳輸伺服器上展開，則郵件會略過仲裁並傳遞給通訊群組的所有成員。如果您的 Exchange 組織中有 Exchange 2007 集線傳輸伺服器，請務必將一個 Exchange Server 2013 信箱伺服器委派為仲裁通訊群組的擴充伺服器。這樣可確保所有傳送給通訊群組的郵件都經過仲裁。
+
+
 
 
 回到頁首

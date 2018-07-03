@@ -67,18 +67,11 @@ Outlook 使用 Exchange 自動探索服務來取得可用性服務的 URL。如�
 
 內部 URL 是從內部網路使用，外部 URL 則是從網際網路使用。如果您希望內部及外部流量使用相同的 URL，請務必正確設定 DNS，以便將內部流量直接路由傳送到內部 URL。此外，務必確定無論從內部或外部都可存取 URL。若要讓自動探索和可用性服務運作，您需要設定 DNS，讓 mail.\<*domain name*\>.com 和 autodiscover.mail.\<*domain name*\>.com 指向負載平衡解決方案的虛擬 IP (VIP)，其中 \<*domain name*\> 是您網域的名稱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=45959">網路負載平衡技術參考 （英文)</a>和<a href="https://go.microsoft.com/fwlink/p/?linkid=49315">網路負載平衡的叢集</a>。您也可以搜尋的協力廠商負載平衡軟體網站。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=45959">網路負載平衡技術參考 （英文)</a>和<a href="https://go.microsoft.com/fwlink/p/?linkid=49315">網路負載平衡的叢集</a>。您也可以搜尋的協力廠商負載平衡軟體網站。
+
+
 
 
 ## 用來擷取空閒/忙碌資訊的方法

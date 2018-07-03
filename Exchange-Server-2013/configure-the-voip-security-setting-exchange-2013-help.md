@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2014-10-16_
 
 當您設定 UM 撥號對應表使用工作階段初始通訊協定 (SIP) 安全或安全模式時，為該 UM 撥號對應表接聽電話的 Exchange 伺服器會將 SIP 訊號流量 (適用 SIP 安全模式) 加密，或將即時傳輸通訊協定 (RTP) 媒體通道和 SIP 訊號流量 (適用安全模式) 兩者都加密。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>就內部部署與混合部署而言，當您在執行 Microsoft Exchange 整合通訊呼叫路由器服務的 Client Access Server 或在執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 上設定 SipTCPListeningPort、SipTLSListeningPort 或 UMStartUpMode 時，您將需要正確設定 Windows 防火牆規則，以允許 SIP 和 RTP 網路流量。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 就內部部署與混合部署而言，當您在執行 Microsoft Exchange 整合通訊呼叫路由器服務的 Client Access Server 或在執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 上設定 SipTCPListeningPort、SipTLSListeningPort 或 UMStartUpMode 時，您將需要正確設定 Windows 防火牆規則，以允許 SIP 和 RTP 網路流量。
+
+
 
 
 如需與 UM 撥號對應表相關的其他管理工作，請參閱 [UM 撥號對應表規劃程序](um-dial-plan-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：** 2014-10-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

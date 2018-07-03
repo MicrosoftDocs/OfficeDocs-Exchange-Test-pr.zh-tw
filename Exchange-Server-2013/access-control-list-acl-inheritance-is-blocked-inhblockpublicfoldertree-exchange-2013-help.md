@@ -64,18 +64,11 @@ Exchange 安裝程式需要的權限繼承會啟用下列 Exchange 物件：
 <p><strong>值</strong>： 1</p></li>
 <li><p>結束登錄編輯程式。</p></li>
 </ol>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，在組態物件的屬性] 方塊中未啟用 [<strong>安全性</strong>] 索引標籤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，在組態物件的屬性] 方塊中未啟用 [<strong>安全性</strong>] 索引標籤。
+
+
 
 </li>
 <li><p>開啟 [Exchange 系統管理員、 尋找物件有問題、 物件上按一下滑鼠右鍵並選取 [<strong>內容</strong>]。</p></li>
@@ -88,18 +81,11 @@ Exchange 安裝程式需要的權限繼承會啟用下列 Exchange 物件：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您不正確地修改 Active Directory 物件的屬性使用 ADSI Edit、 LDP 工具或其他 LDAP 第 3 版用戶端時，您可能會導致嚴重問題。這些問題可能會要求您安裝 Microsoft Windows Server™ 2003年、 Exchange 伺服器，或兩者。修改自行承擔 Active Directory 物件屬性。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 如果您不正確地修改 Active Directory 物件的屬性使用 ADSI Edit、 LDP 工具或其他 LDAP 第 3 版用戶端時，您可能會導致嚴重問題。這些問題可能會要求您安裝 Microsoft Windows Server™ 2003年、 Exchange 伺服器，或兩者。修改自行承擔 Active Directory 物件屬性。
+
+
 
 
 

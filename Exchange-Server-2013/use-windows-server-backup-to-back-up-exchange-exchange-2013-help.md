@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2014-06-18_
 
   - 在備份作業期間，會執行 Exchange 資料檔的一致性檢查，以確保檔案處於良好狀態且可用於復原。如果一致性檢查成功，Exchange 資料就可用於從該備份復原。如果一致性檢查失敗，Exchange 資料便無法用於復原。Windows Server 在備份用的快照上執行一致性檢查。因此，將檔案從快照中複製到備份媒體前，會知道備份的一致性，而且會通知使用者一致性檢查結果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用 Windows Server Backup 來備份 Exchange

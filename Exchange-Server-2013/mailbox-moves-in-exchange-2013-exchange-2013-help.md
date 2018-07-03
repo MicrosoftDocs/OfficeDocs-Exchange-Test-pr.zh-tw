@@ -57,32 +57,18 @@ Microsoft Exchange Server 2013介紹*批次移動*與*移轉端點*的概念。�
 
 在 Exchange 2013 中，您必須從 Exchange 2013 系統管理中心 (EAC) 和 Exchange 管理命令介面才能在 Exchange 2007 和 Exchange 2010 以及 Exchange 2013 之間移動信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在 Exchange 2013 中移動單一信箱，仍可使用 Exchange Server 2010 中的類似方法，以 EAC 或移動要求或移轉批次指令程式進行。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要在 Exchange 2013 中移動單一信箱，仍可使用 Exchange Server 2010 中的類似方法，以 EAC 或移動要求或移轉批次指令程式進行。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能將內部部署信箱從 Exchange Server 2003 移動到 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 您不能將內部部署信箱從 Exchange Server 2003 移動到 Exchange 2013。
+
+
 
 
 如需管理新的和現有移動作業之詳細資訊，請參閱[管理內部移動](manage-on-premises-moves-exchange-2013-help.md)。

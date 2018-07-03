@@ -72,11 +72,9 @@ Exchange 管理員可以移至 **\[Exchange 系統管理中心\]** \> **\[郵件
 
 此處所列條件的 Exchange 管理命令介面 名稱是需要 `TransportRule` 指令程式的參數。
 
-  -  
-    若要深入了解此指令程式，請參閱＜[New-TransportRule](https://technet.microsoft.com/zh-tw/library/bb125138\(v=exchg.150\))＞。
+  -  若要深入了解此指令程式，請參閱＜[New-TransportRule](https://technet.microsoft.com/zh-tw/library/bb125138\(v=exchg.150\))＞。
 
-  -  
-    若要深入了解這些條件的屬性類型，請參閱＜[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)＞。
+  -  若要深入了解這些條件的屬性類型，請參閱＜[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)＞。
 
 傳輸規則只能檢查受支援檔案類型的內容。如果傳輸規則代理程式碰到不在支援的檔案類型清單中的附件，則會觸發 `AttachmentIsUnsupported` 條件。下節會列出支援的檔案類型。未列出的任何檔案都會觸發 `AttachmentIsUnsupported` 條件。
 
@@ -213,11 +211,9 @@ Exchange 管理員可以移至 **\[Exchange 系統管理中心\]** \> **\[郵件
 
 此處所列條件的 Exchange 管理命令介面 名稱是需要 `TransportRule` 指令程式的參數。
 
-  -  
-    若要深入了解此指令程式，請參閱＜[New-TransportRule](https://technet.microsoft.com/zh-tw/library/bb125138\(v=exchg.150\))＞。
+  -  若要深入了解此指令程式，請參閱＜[New-TransportRule](https://technet.microsoft.com/zh-tw/library/bb125138\(v=exchg.150\))＞。
 
-  -  
-    若要深入了解這些條件的屬性類型，請參閱＜[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)＞。
+  -  若要深入了解這些條件的屬性類型，請參閱＜[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)＞。
 
 ## 傳輸規則檢查支援的可執行檔類型
 

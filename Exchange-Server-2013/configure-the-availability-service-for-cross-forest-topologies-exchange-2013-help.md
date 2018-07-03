@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2014-10-22_
 
 透過提供執行 MicrosoftOutlook 的用戶端安全、一致且最新的空閒/忙碌資訊，可用性服務改善了增進資訊工作者的空閒/忙碌資訊。依預設，此服務會與 Exchange Server 2013 一起安裝。在所有連接的用戶端都執行 Outlook 的跨樹系拓撲中，可用性服務是擷取空閒/忙碌資訊的唯一方法。您可以使用命令介面來設定跨樹系拓撲的可用性服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來設定跨樹系拓撲的可用性服務。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來設定跨樹系拓撲的可用性服務。
+
+
 
 
 ## 在信任和不信任的樹系中使用「可用性」服務
@@ -55,18 +48,11 @@ _**上次修改主題的時間：** 2014-10-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -82,18 +68,11 @@ _**上次修改主題的時間：** 2014-10-22_
 
     Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要設定雙向跨樹系可用性，請在目標樹系中重複這些步驟。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要設定雙向跨樹系可用性，請在目標樹系中重複這些步驟。
+
+
 
 
 如果您選擇設定信任的跨樹系可用性，且同時選擇使用服務帳戶 (而非指定全組織或每位使用者的認證)，您必須依照 \[使用命令介面，設定服務帳戶之信任的跨樹系可用性\] 區段中的範例所示擴充權限。在目標樹系中執行該程序，會將序列化原始使用者內容的權限授予來源樹系中的 Mailbox Server。

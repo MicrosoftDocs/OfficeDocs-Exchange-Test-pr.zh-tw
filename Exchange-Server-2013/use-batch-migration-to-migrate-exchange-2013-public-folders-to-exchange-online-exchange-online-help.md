@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2018-03-26_
 
 將您的 Exchange 2013 公用資料夾遷移至 Exchange Online 需要 Exchange Server 2013 CU15 或更新版本執行內部部署環境中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您組織中有 Exchange 2013 和 Exchange 2016 的公用資料夾與您想要移往所有 Exchange Online，使用<a href="https://go.microsoft.com/fwlink/p/?linkid=845314">本文的 Exchange 2016 版本</a>來規劃及執行移轉。Exchange 2013 伺服器仍需要有 CU15 或稍後安裝。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您組織中有 Exchange 2013 和 Exchange 2016 的公用資料夾與您想要移往所有 Exchange Online，使用<a href="https://go.microsoft.com/fwlink/p/?linkid=845314">本文的 Exchange 2016 版本</a>來規劃及執行移轉。Exchange 2013 伺服器仍需要有 CU15 或稍後安裝。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -77,18 +70,11 @@ _**上次修改主題的時間：** 2018-03-26_
 
   - 開始之前，請閱讀本文全文。某些步驟有所需的停機時間。在此停機時間、 期間將無法人都能夠存取公用資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 步驟 1： 下載移轉指令碼
@@ -353,18 +339,11 @@ _**上次修改主題的時間：** 2018-03-26_
 
     .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們不支援將公用資料夾遷移至 Exchange Online 的 Exchange Online 中的唯一的公用資料夾信箱數目時超過 100。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們不支援將公用資料夾遷移至 Exchange Online 的 Exchange Online 中的唯一的公用資料夾信箱數目時超過 100。
+
+
 
 
 ## 步驟 4： 在 Exchange Online 中建立公用資料夾信箱

@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 如果您已經有 Office 365 使用者帳戶，請選取 \[登入\]。您不需要 Azure ID 帳戶。您可能會要求使用者帳戶一次執行檢查。若是如此，您的使用者帳戶是在 username@youroffice365login.domain 和您的密碼的格式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在 Office 365 入口網站中的同步作業伺服器事件記錄檔] 或 [不健康的目錄同步作業電子郵件通知從 Microsoft Online Services 錯誤收到 sync 警告訊息，您可能需要某種類型的目錄同步作業問題。<a href="https://aka.ms/dsup">目錄同步處理的疑難排解員</a>是 Web 式診斷工具的設計用來協助識別的同步處理失敗的一般類型及擬定目標的解決方案移轉至任何發現的問題。目錄同步處理的疑難排解員必須 DirSync 伺服器上執行。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您在 Office 365 入口網站中的同步作業伺服器事件記錄檔] 或 [不健康的目錄同步作業電子郵件通知從 Microsoft Online Services 錯誤收到 sync 警告訊息，您可能需要某種類型的目錄同步作業問題。<a href="https://aka.ms/dsup">目錄同步處理的疑難排解員</a>是 Web 式診斷工具的設計用來協助識別的同步處理失敗的一般類型及擬定目標的解決方案移轉至任何發現的問題。目錄同步處理的疑難排解員必須 DirSync 伺服器上執行。
+
+
 
 
 ## 必要條件

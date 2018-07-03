@@ -152,18 +152,11 @@ DTMF 需要來電者在電話鍵台上，按下對應到整合通訊功能表選
 
 有時使用者的名字、姓氏或電子郵件別名，會在使用者已啟用 UM 之後變更。使用者的 DTMF 對應值將不會自動更新。如果來電者輸入了使用者的新名字或電子郵件別名，且使用者的 DTMF 對應並未更新以反映名字或電子郵件別名的變更，則來電者將無法在目錄中尋找使用者、寄送訊息給使用者，或是將來電轉接到該使用者。如果您必須在使用者已啟用 UM 後更新其 DTMF 對應，可以搭配使用 **Set-User** 指令程式與 *-CreateDtmfMap* 參數。您也可以使用這個指令程式建立 Exchange 管理命令介面指令碼，以更新多位已啟用 UM 之使用者的 DTMF 對應。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您不要使用 ADSI Edit 之類的工具手動變更使用者的 DTMF 值，因為可能會導致設定不一致或是其他的錯誤。建議您只用 <strong>Set-UMService</strong> 指令程式或 <strong>Set-User</strong> 指令程式來為使用者建立或更新 DTMF 對應。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 建議您不要使用 ADSI Edit 之類的工具手動變更使用者的 DTMF 值，因為可能會導致設定不一致或是其他的錯誤。建議您只用 <strong>Set-UMService</strong> 指令程式或 <strong>Set-User</strong> 指令程式來為使用者建立或更新 DTMF 對應。
+
+
 
 
 ## 相關資訊

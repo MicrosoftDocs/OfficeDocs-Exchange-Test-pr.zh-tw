@@ -33,18 +33,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如需管理範圍篩選的相關資訊，請參閱[了解管理角色範圍篩選器](understanding-management-role-scope-filters-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當對任何管理角色元件 (包括獨佔範圍) 進行變更時，Active Directory 複寫時間應予以考慮。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當對任何管理角色元件 (包括獨佔範圍) 進行變更時，Active Directory 複寫時間應予以考慮。
+
+
 
 
 如果您有包含一個以上的獨佔範圍內的物件時，被指派給任一獨佔範圍提供物件的存取權。如需詳細資訊，請參閱本主題稍後的獨佔和定期領域互動。

@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2013-04-09_
 
 在您安裝執行 Microsoft Exchange Unified Messaging Call Router 服務的 Client Access Server 之後，您可以設定許多選項，包括同時來電數、TCP 和傳輸層安全性 (TLS) 接聽埠、狀態和啟動模式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>則不需要用戶端存取伺服器要新增至 UM 撥號對應表計劃之前它可處理呼叫的整合通訊 (UM)，除了時您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server。根據預設，在組織中的所有用戶端存取伺服器可用來接聽來電。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 則不需要用戶端存取伺服器要新增至 UM 撥號對應表計劃之前它可處理呼叫的整合通訊 (UM)，除了時您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server。根據預設，在組織中的所有用戶端存取伺服器可用來接聽來電。
+
+
 
 
 如需其他與整合通訊和用戶端存取伺服器相關的工作，請參閱 [UM 服務程序](um-services-procedures-exchange-2013-help.md)。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：** 2013-04-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

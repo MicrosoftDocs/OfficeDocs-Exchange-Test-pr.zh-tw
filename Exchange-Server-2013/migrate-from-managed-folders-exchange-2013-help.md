@@ -21,32 +21,18 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 您可以遷移已套用受管理的資料夾信箱原則的信箱，以使用保留原則。若要這樣做，您建立的保留標記必須等同於連結至使用者之受管理資料夾信箱原則的受管理資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您先在測試環境中測試處理程序，再於生產環境中從受管理的資料夾遷移至保留原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建議您先在測試環境中測試處理程序，再於生產環境中從受管理的資料夾遷移至保留原則。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以為信箱設定保留功能，以暫停處理保留原則或受管理資料夾信箱原則。在遷移案例中設定信箱的保留功能很實用，在測試信箱或少量工作信箱上測試新的原則設定之前，可避免刪除郵件或移至封存。如需詳細資訊，請參閱<a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">就地保留信箱保留 」 狀態</a>。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!TIP]  
+> 您可以為信箱設定保留功能，以暫停處理保留原則或受管理資料夾信箱原則。在遷移案例中設定信箱的保留功能很實用，在測試信箱或少量工作信箱上測試新的原則設定之前，可避免刪除郵件或移至封存。如需詳細資訊，請參閱<a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">就地保留信箱保留 」 狀態</a>。
+
+
 
 
 如需有關 MRM 的其他管理工作相關資訊，請參閱[通訊記錄管理程序](messaging-records-management-procedures-exchange-2013-help.md)。
@@ -57,18 +43,11 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 受管理的資料夾支援一個資料夾有不同的受管理內容設定，且各有不同的郵件類別 (例如電子郵件項目或行事項項目)。保留標記不需要單獨的受管理內容設定物件，因為已在標記的內容中指定保留設定。除了語音信箱郵件的預設原則標記 (DPT)，不支援為特定郵件類別建立保留標記。保留標記也不允許您使用受管理的資料夾助理員所執行的日誌。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>日誌規則 (用來將郵件副本和日誌報告傳送至日誌信箱) 由日誌代理程式在傳輸管線中強制執行，而且與 MRM 無關。如需詳細資訊，請參閱<a href="journaling-exchange-2013-help.md">日誌</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 日誌規則 (用來將郵件副本和日誌報告傳送至日誌信箱) 由日誌代理程式在傳輸管線中強制執行，而且與 MRM 無關。如需詳細資訊，請參閱<a href="journaling-exchange-2013-help.md">日誌</a>。
+
+
 
 
 下表會比較在使用保留標記或受管理的資料夾時可用的 MRM 功能。
@@ -293,18 +272,11 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
   - **手動指定保留設定來建立保留標記：** 使用此方法時，您在 **New-RetentionPolicyTag** 指令程式中不需要指定 *ManagedFolderToUpgrade* 參數。當您未指定此參數時，就會對預設資料夾套用新增到原則的任何保留原則標記，並對整個信箱套用預設原則標記。不過，新增到原則的任何個人標記不會自動套用到受管理的資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您是使用Exchange 2013和Exchange 2010伺服器的混合環境中，您可以使用<strong>的連接埠受管理的資料夾</strong>精靈在 Exchange 管理主控台 (EMC) 輕鬆地連接埠受管理的資料夾Exchange 2010伺服器上與對應受管理的內容設定可保留標記。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您是使用Exchange 2013和Exchange 2010伺服器的混合環境中，您可以使用<strong>的連接埠受管理的資料夾</strong>精靈在 Exchange 管理主控台 (EMC) 輕鬆地連接埠受管理的資料夾Exchange 2010伺服器上與對應受管理的內容設定可保留標記。
+
+
 
 
 **根據受管理的資料夾建立保留標記**
@@ -323,18 +295,11 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 **手動建立保留標記**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 EAC 手動建立保留標記 (而不是根據受管理資料夾中的設定)。如需詳細資訊，請參閱<a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以使用 EAC 手動建立保留標記 (而不是根據受管理資料夾中的設定)。如需詳細資訊，請參閱<a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a>。
+
+
 
 
 此範例會根據 Contoso 受管理的資料夾信箱原則中顯示的受管理資料夾和對應的受管理內容設定，來建立保留標記。保留設定是以手動方式指定，而未使用 *ManagedFolderToUpgrade* 參數。
@@ -353,18 +318,11 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [郵件原則及符合性權限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主題中的「郵件記錄管理」項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 EAC 建立保留原則，並將保留標記新增至原則。如需詳細資訊，請參閱<a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以使用 EAC 建立保留原則，並將保留標記新增至原則。如需詳細資訊，請參閱<a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a>。
+
+
 
 
 此範例會建立保留原則 RP-Corp，並將最近建立的保留標記連結到該原則。
@@ -385,18 +343,11 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [郵件原則及符合性權限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主題中的「套用保留原則」項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 EAC 將保留原則套用至使用者。如需詳細資訊，請參閱<a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">將保留原則套用至信箱</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以使用 EAC 將保留原則套用至使用者。如需詳細資訊，請參閱<a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">將保留原則套用至信箱</a>。
+
+
 
 
 此範例會將最近建立的保留原則 RP-Corp 套用到信箱使用者 Ken Kwok。

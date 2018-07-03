@@ -21,18 +21,11 @@ Exchange 工作負載為 Exchange Server 功能、通訊協定或明確定義為
 
 您管理 Exchange 工作負載控制 （有時稱為節流 Exchange 2010 中的使用者） 的個別使用者耗用資源的方式。控制個別使用者耗用 Exchange 系統資源的方式已經可能在Exchange Server 2010，並已展開這項功能的Exchange Server 2013。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>藉由監視貴組織中的 Exchange 伺服器上的系統資源的健康狀況管理工作負載只應依據 Microsoft 客戶服務與支援部門。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 藉由監視貴組織中的 Exchange 伺服器上的系統資源的健康狀況管理工作負載只應依據 Microsoft 客戶服務與支援部門。
+
+
 
 
 ## 藉由控制個別使用者耗用資源的方式來管理工作負載
@@ -93,16 +86,9 @@ Exchange 工作負載為 Exchange Server 功能、通訊協定或明確定義為
 
   - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/zh-tw/library/ff459231\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>*-ResourcePolicy</strong>、 <strong>*-WorkloadManagementPolicy</strong>及<strong>*-WorkloadPolicy</strong>系統工作負載管理指令程式已被取代。應該只在 Microsoft 客戶服務及支援的方向下自訂系統工作負載管理設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>*-ResourcePolicy</strong>、 <strong>*-WorkloadManagementPolicy</strong>及<strong>*-WorkloadPolicy</strong>系統工作負載管理指令程式已被取代。應該只在 Microsoft 客戶服務及支援的方向下自訂系統工作負載管理設定。
+
+
 

@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2012-11-14_
 
 停用郵件使用者的電子郵件之後，您可以啟用郵件功能之使用者再次使用**Enable-MailUser**指令程式在命令介面中。您也可以使用此指令程式來啟用任何 Active Directory 使用者的郵件功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>郵件使用者 （也稱為<em>擁有郵件功能的使用者</em>） 的方式不同於組織中沒有信箱的使用者。主要差異是郵件使用者代表 Exchange 組織外部的使用者具有的外部電子郵件地址。沒有在組織中的信箱。如需有您組織中的信箱的使用者和郵件使用者之間的差異的詳細資訊，請參閱<a href="recipients-exchange-2013-help.md">收件者</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 郵件使用者 （也稱為<em>擁有郵件功能的使用者</em>） 的方式不同於組織中沒有信箱的使用者。主要差異是郵件使用者代表 Exchange 組織外部的使用者具有的外部電子郵件地址。沒有在組織中的信箱。如需有您組織中的信箱的使用者和郵件使用者之間的差異的詳細資訊，請參閱<a href="recipients-exchange-2013-help.md">收件者</a>。
+
+
 
 
 關於與郵件使用者相關的其他管理工作，請參閱[管理郵件使用者](manage-mail-users-exchange-2013-help.md)。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：** 2012-11-14_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

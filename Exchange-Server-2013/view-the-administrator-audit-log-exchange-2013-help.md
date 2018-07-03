@@ -58,18 +58,11 @@ _**上次修改主題的時間：** 2016-05-03_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 EAC 檢視系統管理員稽核記錄
@@ -96,16 +89,9 @@ _**上次修改主題的時間：** 2016-05-03_
 
 如果您已成功執行系統管理員稽核記錄報告，在您指定的日期範圍內進行的組態變更會顯示在搜尋結果窗格中。如果沒有結果，請變更日期範圍，然後再次執行報告。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在組織中所進行的變更最長可能需要 15 分鐘才會出現在稽核記錄搜尋結果中。如果變更未出現在系統管理員稽核記錄中，請等待幾分鐘再重新執行搜尋。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在組織中所進行的變更最長可能需要 15 分鐘才會出現在稽核記錄搜尋結果中。如果變更未出現在系統管理員稽核記錄中，請等待幾分鐘再重新執行搜尋。
+
+
 

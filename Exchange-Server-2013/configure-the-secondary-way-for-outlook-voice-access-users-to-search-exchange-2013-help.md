@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 當您建立撥號對應表時，您可以設定的主要和次要*撥號對應表名稱方法所*或來電者可搜尋的名稱的方式。來電者會使用這些撥號對應表名稱方法所要查詢來找出及連絡人時在他們撥入Outlook語音存取號碼或當他們撥入 UM 自動語音應答與撥號對應表相關聯的使用者名稱。來電者可以使用按鍵式輸入來尋找已啟用 UM 的使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果<strong>沒有任何</strong>選取第二種方式，讓來電者在搜尋的名稱為僅搜尋名稱的主要方法會提供來電者想要尋找使用者。如果您設定這兩個主要和次要方式來電者可搜尋的名稱，會提示來電者的這兩種方法。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果<strong>沒有任何</strong>選取第二種方式，讓來電者在搜尋的名稱為僅搜尋名稱的主要方法會提供來電者想要尋找使用者。如果您設定這兩個主要和次要方式來電者可搜尋的名稱，會提示來電者的這兩種方法。
+
+
 
 
 如需與 UM 撥號對應表相關的其他管理工作，請參閱 [UM 撥號對應表規劃程序](um-dial-plan-procedures-exchange-2013-help.md)。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

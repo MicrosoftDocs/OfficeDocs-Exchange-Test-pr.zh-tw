@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 設定與外部商業夥伴共用行事曆資訊的組織關聯性。您可以設定兩個同盟的Exchange 2013組織之間或同盟的Exchange 2013組織和同盟的Exchange 2010組織之間的組織關係。您也可以在內部部署 Exchange 組織與 Office 365 組織之間設定組織關聯性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立組織關係是建立 Exchange 組織中同盟共用的數個步驟之一，且需要內部部署 Exchange 組織的同盟信任組態。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建立組織關係是建立 Exchange 組織中同盟共用的數個步驟之一，且需要內部部署 Exchange 組織的同盟信任組態。
+
+
 
 
 若要深入了解同盟共用，請參閱[共用](sharing-exchange-2013-help.md)。
@@ -123,16 +116,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
     Get-OrganizationRelationship | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

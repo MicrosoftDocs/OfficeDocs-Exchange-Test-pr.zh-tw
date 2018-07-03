@@ -51,18 +51,11 @@ UM 撥號對應表會用於整合通訊以確保是唯一的使用者電話分�
 
 整合的通訊會要求您建立至少一個 UM 撥號對應表。是否在組織中建立一個或多個撥號對應表、 所有 Exchange 伺服器會接聽來電。也必須與撥號對應表相關聯的單一或多個 UM IP 閘道。在內部部署和混合部署安裝您的 Exchange 伺服器並建立 UM IP 閘道的關聯之後，所有 Exchange 伺服器會都接聽來電的所有撥號對應表。不過，內部部署或混合式部署中，當您正在將整合 Exchange 及 Lync Server\]，您必須建立 SIP URI 撥號對應表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立 UM 撥號對應表，每次也建立預設的 UM 信箱原則。UM 信箱原則命名為 &lt;<em>Dial Plan Name</em>&gt; 預設原則。可以刪除或不同的方式設定此 UM 信箱原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建立 UM 撥號對應表，每次也建立預設的 UM 信箱原則。UM 信箱原則命名為 &lt;<em>Dial Plan Name</em>&gt; 預設原則。可以刪除或不同的方式設定此 UM 信箱原則。
+
+
 
 
 當您建立的第一個的 UM IP 閘道並指定 UM 撥號對應表次您建立時，也會建立預設 UM 群組搜尋。建立這些元件可讓接聽 VoIP 閘道、 IP PBX 或 SBC 及然後處理這些來電的使用者與 UM 撥號對應表相關聯的 Exchange 伺服器。在內部部署或混合式部署中，當通話是 VoIP 閘道、 IP PBX 或 SBC 時，它將用戶端存取伺服器的呼叫。Client Access server 然後將轉送呼叫 Mailbox server 和 Mailbox server 嘗試比對關聯的 UM 撥號對應表之使用者的分機號碼。

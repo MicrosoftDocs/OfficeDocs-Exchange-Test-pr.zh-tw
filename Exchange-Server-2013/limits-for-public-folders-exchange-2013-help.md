@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 下表列出在內部部署 Exchange Server 2013 中的公用資料夾的限制。除非限制特別另有說明，所建議，此表格中所列的值所支援的限制的公用資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尋找 Office 365 的 Exchange Online 限制吗？請參閱<a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 尋找 Office 365 的 Exchange Online 限制吗？請參閱<a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。
+
+
 
 
 

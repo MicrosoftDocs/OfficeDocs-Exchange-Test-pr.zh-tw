@@ -33,18 +33,11 @@ UM features that operate differently for secondary dial plans
 
 如果您使用電話分機撥號對應表與需要使用者提供相同的分機號碼，您需要建立次要撥號對應表、 啟用 UM 的使用者和使用者提供相同的分機號碼。這是因為必須是唯一撥號計劃中的分機號碼
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以為已啟用 UM 的使用者新增次要的分機號碼數不受限制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您可以為已啟用 UM 的使用者新增次要的分機號碼數不受限制。
+
+
 
 
 可能的使用者時一起出差位置之間、 有兩個或多個電話，或想要接收上一個直接向內撥號 (DID) 分機號碼的語音信箱及接收傳真\] 在不同的 DID 分機號碼的次數。若要達到此目的，您必須將其他 DID 副檔名新增至使用者的信箱並，在某些情況下，新增次要撥號對應表。

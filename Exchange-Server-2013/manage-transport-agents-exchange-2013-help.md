@@ -31,18 +31,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -51,18 +44,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
 您無法使用 Exchange 管理命令介面來管理 Client Access server 上 Front End Transport 服務中的傳輸代理程式。而您需要在用戶端存取伺服器上，開啟 Windows PowerShell，然後再匯入 Windows PowerShell 工作階段的 \[Exchange cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援 Windows PowerShell 中執行 Exchange cmdlet 的非管理傳輸代理程式的前端傳輸服務中的工作。在 Windows PowerShell 中執行 Exchange cmdlet 有嚴重導致若您略過的 Exchange 管理命令介面和角色型存取控制 (RBAC) 的後果。您一律應在 Exchange 管理命令介面中執行 Exchange 指令程式。如需詳細資訊，請參閱<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 不支援 Windows PowerShell 中執行 Exchange cmdlet 的非管理傳輸代理程式的前端傳輸服務中的工作。在 Windows PowerShell 中執行 Exchange cmdlet 有嚴重導致若您略過的 Exchange 管理命令介面和角色型存取控制 (RBAC) 的後果。您一律應在 Exchange 管理命令介面中執行 Exchange 指令程式。如需詳細資訊，請參閱<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a>。
+
+
 
 
 若要在前端傳輸服務中執行本主題所述的任一傳輸代理程式程序，您必須執行下列額外步驟：

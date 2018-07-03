@@ -7483,18 +7483,11 @@ _**上次修改主題的時間：** 2018-05-03_
 <tr class="odd">
 <td><p>格式</p></td>
 <td><p>9 位數，可採用格式化或未格式化模式</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SSN 發出 mid 2011 之前，是否具有強式格式設定其中某些部分的數字必須落在有效特定範圍 （但沒有具總和檢查碼）。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> SSN 發出 mid 2011 之前，是否具有強式格式設定其中某些部分的數字必須落在有效特定範圍 （但沒有具總和檢查碼）。
+
+
 
 </td>
 </tr>

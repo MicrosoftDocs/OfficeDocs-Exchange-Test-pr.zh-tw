@@ -35,18 +35,11 @@ Outlook語音存取包含兩個介面 ︰ 電話的使用者介面 (TUI) 和語�
 
 如需與 UM 信箱相關的其他管理工作，請參閱[使用者的語音信箱](voice-mail-for-users-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只可以使用命令介面，在 UM 信箱原則上或在單一已啟用 UM 之使用者的信箱上，為已啟用 UM 的使用者修改 Outlook Voice Access 功能。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您只可以使用命令介面，在 UM 信箱原則上或在單一已啟用 UM 之使用者的信箱上，為已啟用 UM 的使用者修改 Outlook Voice Access 功能。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -63,18 +56,11 @@ Outlook語音存取包含兩個介面 ︰ 電話的使用者介面 (TUI) 和語�
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

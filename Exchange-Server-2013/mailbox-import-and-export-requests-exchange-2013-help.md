@@ -75,18 +75,11 @@ Exporting mailbox data
 
 使用**MailboxImportRequest**指令程式將資料從.pst 檔案匯入至信箱或個人封存。以下是您可以指定從.pst 檔案匯入信箱資料時的選項清單：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>匯入資料的信箱必須存在。您不能沒有信箱的使用者帳戶來匯入資料。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 匯入資料的信箱必須存在。您不能沒有信箱的使用者帳戶來匯入資料。
+
+
 
 
   - 您可以比一個從中它已匯出為不同的使用者帳戶來匯入資料。例如，您可以從 john@contoso.com 匯出資料並匯入 legaldiscovery@contoso.com。

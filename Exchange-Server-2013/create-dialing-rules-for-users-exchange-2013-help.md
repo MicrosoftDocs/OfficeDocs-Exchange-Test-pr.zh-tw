@@ -25,18 +25,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 若要指定您想要允許的 UM 撥號對應表的撥出電話的類型，您可以建立撥號規則群組具有撥號規則，然後利用這些授權 Outlook 語音存取使用者和撥入 UM 自動語音應答的來電者的撥出電話。您建立不同的撥號規則群組國家/地區及國際電話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要整合 UM 與 Microsoft Lync Server，建議您至少建立一個撥號規則群組，然後在 SIP URI 撥號對應表、UM 信箱原則與 UM 自動語音應答上授權該撥號規則群組，以允許將所有的撥出電話轉接至 Lync Server。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您要整合 UM 與 Microsoft Lync Server，建議您至少建立一個撥號規則群組，然後在 SIP URI 撥號對應表、UM 信箱原則與 UM 自動語音應答上授權該撥號規則群組，以允許將所有的撥出電話轉接至 Lync Server。
+
+
 
 
 如需了解其他的撥出管理工作，請參閱[讓使用者能夠進行的通話程序](allowing-users-to-make-calls-procedures-exchange-2013-help.md)。
@@ -94,18 +87,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用 EAC 建立撥號規則

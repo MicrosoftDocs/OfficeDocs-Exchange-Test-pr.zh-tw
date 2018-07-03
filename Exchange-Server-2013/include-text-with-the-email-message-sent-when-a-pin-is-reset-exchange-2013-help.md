@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 根據預設，Outlook 語音存取用來在重設 PIN 由整合通訊或語音信箱系統如果失敗的登入嘗試數目超過 5。使用者也可以重設其使用包含在Outlook Web App或 Outlook 2010 或更新版本，或使用Outlook語音存取從電話的 UM 功能的 Pin。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此方塊中輸入文字的限制為 512 個字元，並可包含簡易 HTML 文字。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在此方塊中輸入文字的限制為 512 個字元，並可包含簡易 HTML 文字。
+
+
 
 
 如需瞭解與 Outlook Voice Access PIN 碼安全性相關的其他工作，請參閱 [PIN 安全性程序](pin-security-procedures-exchange-2013-help.md)。
@@ -49,18 +42,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

@@ -48,18 +48,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -82,18 +75,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 修改註冊，以便使用 Exchange 2013 註冊 Ifilter。這將允許 Exchange 支援檔案格式的附件掃描。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須在組織中所有的信箱伺服器上執行此程序。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您必須在組織中所有的信箱伺服器上執行此程序。
+
+
 
 
 1.  下載並從[Microsoft 下載中心](https://go.microsoft.com/fwlink/?linkid=191548)儲存 Microsoft Office 2010 Filter Pack (`FilterPack64bit.exe`)。
@@ -182,36 +168,22 @@ _**上次修改主題的時間：** 2016-12-09_
 
 您可以註冊其他協力廠商 IFilter，擴充其他檔案類型的附件掃描功能。在每一部信箱伺服器上安裝並註冊檔案類型的 IFilter，可新增其他檔案支援。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 尚未使用傳輸規則測試協力廠商 IFilter，因此建議您先在測試環境中部署和測試任何協力廠商 IFilter，再部署至實際執行環境。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Microsoft 尚未使用傳輸規則測試協力廠商 IFilter，因此建議您先在測試環境中部署和測試任何協力廠商 IFilter，再部署至實際執行環境。
+
+
 
 
 ## 部署 Adobe PDF IFilter
 
 此程序將示範如何部署[Adobe PDF IFilter](https://www.adobe.com/support/downloads/detail.jsp?ftpid=4025)傳輸規則中支援的 PDF 附件處理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 預設會支援傳輸規則中的 PDF 檔案掃描。簡單使用此處的 PDF 範例，說明您可以如何使用協力廠商 IFilter 來擴充支援其他檔案類型。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange 2013 預設會支援傳輸規則中的 PDF 檔案掃描。簡單使用此處的 PDF 範例，說明您可以如何使用協力廠商 IFilter 來擴充支援其他檔案類型。
+
+
 
 
 1.  下載[Adobe PDF IFilter](https://www.adobe.com/support/downloads/detail.jsp?ftpid=4025)與然後按照安裝指示。

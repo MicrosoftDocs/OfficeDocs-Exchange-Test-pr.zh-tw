@@ -41,36 +41,22 @@ UM 轉寄至專用的傳真協力廠商解決方案，然後建立傳真寄件�
 
 您可以設定您內部部署或混合式傳真前的組織必須已成功部署用戶端存取和信箱伺服器及設定支援的 Voice over IP (VoIP) 閘道允許傳真。如需如何部署 UM，請參閱[部署 Exchange 2013 UM](deploy-exchange-2013-um-exchange-2013-help.md)的詳細資訊。如需如何部署 VoIP 閘道和 IP 專用交換機 (Pbx) 的詳細資訊，請參閱[UM 連接至電話系統](connect-um-to-your-telephone-system-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在整合了整合通訊及 MicrosoftOffice Communications Server 2007 R2 或 Microsoft Lync Server 的環境中，不支援使用 T.38 或 G.711 來傳送及接收傳真。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在整合了整合通訊及 MicrosoftOffice Communications Server 2007 R2 或 Microsoft Lync Server 的環境中，不支援使用 T.38 或 G.711 來傳送及接收傳真。
+
+
 
 
 ## 步驟 2： 設定傳真協力程式伺服器
 
 接下來，必須啟用傳入傳真並需要在組織中每個 UM 信箱原則上設定傳真協力程式的 URI。順利部署傳入傳真，您必須與 Exchange 整合通訊整合認證的傳真協力廠商解決方案。如需詳細資訊，請參閱[傳真 advisor Exchange UM](fax-advisor-for-exchange-um-exchange-2013-help.md)。如需認證的傳真協力廠商的清單，請參閱[傳真協力廠商的 Microsoft Pinpoint](https://go.microsoft.com/fwlink/?linkid=190238)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為您組織外部的傳真協力廠商伺服器即防火牆連接埠必須設定為允許 T.38 通訊協定啟用傳真透過 IP 型網路的連接埠。根據預設，T.38 通訊協定使用 TCP 連接埠 6004。它也可以使用使用者資料包通訊協定 (UDP) 連接埠 6044，但這將會定義硬體廠商。防火牆連接埠必須設定為允許使用 TCP 或 UDP 連接埠或連接埠範圍製造商所定義的傳真資料。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 因為您組織外部的傳真協力廠商伺服器即防火牆連接埠必須設定為允許 T.38 通訊協定啟用傳真透過 IP 型網路的連接埠。根據預設，T.38 通訊協定使用 TCP 連接埠 6004。它也可以使用使用者資料包通訊協定 (UDP) 連接埠 6044，但這將會定義硬體廠商。防火牆連接埠必須設定為允許使用 TCP 或 UDP 連接埠或連接埠範圍製造商所定義的傳真資料。
+
+
 
 
 ## 步驟 3： 啟用傳真在整合通訊

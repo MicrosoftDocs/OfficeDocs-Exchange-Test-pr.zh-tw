@@ -110,18 +110,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>Sales (True)</p></td>
 <td><p>IT Manager (True)</p></td>
 <td><p>因為<strong>Title</strong>評估為 True，則為 true。因為<strong>Title</strong>會評估為 True，滿足篩選查詢條件則會捨棄<strong>City</strong>和<strong>Department</strong>比較的結果。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IT Manager 符合篩選器查詢條件，因為已使用 <strong>Like</strong> 比較運算子，其符合當篩選器查詢中使用萬用字元 (*) 時的部分字串。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> IT Manager 符合篩選器查詢條件，因為已使用 <strong>Like</strong> 比較運算子，其符合當篩選器查詢中使用萬用字元 (*) 時的部分字串。
+
+
 
 </td>
 </tr>

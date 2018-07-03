@@ -39,18 +39,11 @@ Cmdlet 延伸代理程式只能由 Exchange 2013 與 Microsoft Exchange Server 2
 
   - 讓代理程式的優先順序保持不變，並確定 `Scripting agent` 下執行的指令碼採用其他代理程式提供的值。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>變更內建代理程式的優先順序或取代其功能是進階作業。請確定您完全了解所要進行的變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 變更內建代理程式的優先順序或取代其功能是進階作業。請確定您完全了解所要進行的變更。
+
+
 
 
 如需變更代理程式優先順序的詳細資訊，請參閱[管理指令程式延伸代理程式](manage-cmdlet-extension-agents-exchange-2013-help.md)。
@@ -63,18 +56,11 @@ Exchange 2013 包括可在 Cmdlet 執行時叫用的數個代理程式。下表�
 
 代理程式的設定會儲存在組織層級。啟用或停用代理程式或設定其優先順序時，您可以跨組織中的每個伺服器來設定該代理程式的設定。將指令碼新增至 `Scripting agent` 則是例外狀況。您必須個別更新每個伺服器上的指令碼。如需設定指令碼以使用`Scripting agent`的詳細資訊，請參閱本主題稍後的＜指令碼處理代理程式＞一節。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您沒有完全了解每個代理程式的功能以及它們與 Exchange Cmdlet 互動的方式，變更代理程式的優先順序，或者啟用或停用代理程式可能會造成無法預期的結果。在您變更任何代理程式的設定之前，請確定您完全了解您想要的變更與結果，並確認您的自訂指令碼會如預期般運作。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 如果您沒有完全了解每個代理程式的功能以及它們與 Exchange Cmdlet 互動的方式，變更代理程式的優先順序，或者啟用或停用代理程式可能會造成無法預期的結果。在您變更任何代理程式的設定之前，請確定您完全了解您想要的變更與結果，並確認您的自訂指令碼會如預期般運作。
+
+
 
 
 ### Exchange 2013 Cmdlet 延伸代理程式
@@ -151,18 +137,11 @@ Exchange 2013 包括可在 Cmdlet 執行時叫用的數個代理程式。下表�
 
 您可以使用 Exchange 2013 中的 `Scripting agent` Cmdlet 延伸代理程式將您自己的指令碼處理邏輯插入 Exchange Cmdlet 的執行中。使用 `Scripting agent`，您可以新增條件、覆寫值，以及設定報告。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您啟用 <code>Scripting agent</code> Cmdlet 延伸代理程式時，每當在執行 Exchange 2013 的伺服器上執行 Cmdlet 時，就會叫用該代理程式。這不只包含您在 Exchange 管理命令介面中直接執行的 Cmdlet，也包含由 Exchange 服務和 Exchange 系統管理中心 (EAC) 執行的 Cmdlet。我們強烈建議您在將更新的組態檔複製到 Exchange 2013 Server 並啟用 <code>Scripting agent</code> Cmdlet 延伸代理程式之前，先測試您的指令碼及您對組態檔所做的任何變更，</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 當您啟用 <code>Scripting agent</code> Cmdlet 延伸代理程式時，每當在執行 Exchange 2013 的伺服器上執行 Cmdlet 時，就會叫用該代理程式。這不只包含您在 Exchange 管理命令介面中直接執行的 Cmdlet，也包含由 Exchange 服務和 Exchange 系統管理中心 (EAC) 執行的 Cmdlet。我們強烈建議您在將更新的組態檔複製到 Exchange 2013 Server 並啟用 <code>Scripting agent</code> Cmdlet 延伸代理程式之前，先測試您的指令碼及您對組態檔所做的任何變更，
+
+
 
 
 每次當 Exchange Cmdlet 執行時，該 Cmdlet 都會叫用 `Scripting agent` Cmdlet 延伸代理程式。當叫用此代理程式時，該 Cmdlet 會檢查 Cmdlet 是否設定叫用任何指令碼。如果應該針對 Cmdlet 執行指令碼，該 Cmdlet 會嘗試叫用指令碼中定義的任何 API。下列 API 可以使用，而且是以下列順序叫用：
@@ -175,18 +154,11 @@ Exchange 2013 包括可在 Cmdlet 執行時叫用的數個代理程式。下表�
 
 4.  **OnComplete**   當所有 Cmdlet 處理皆完成時，會使用此 API。它可以用來執行處理後的工作，例如將資料寫入外部資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當具有 <code>Get</code> 動詞的 Cmdlet 執行時，則不會呼叫 <code>Scripting agent</code> 延伸代理程式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當具有 <code>Get</code> 動詞的 Cmdlet 執行時，則不會呼叫 <code>Scripting agent</code> 延伸代理程式。
+
+
 
 
 ## 指令碼處理代理程式組態檔

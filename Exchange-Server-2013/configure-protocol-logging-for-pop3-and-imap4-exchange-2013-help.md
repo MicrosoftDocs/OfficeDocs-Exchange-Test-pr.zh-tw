@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2012-11-27_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -52,18 +45,11 @@ _**上次修改主題的時間：** 2012-11-27_
     Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
     Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您是否已變更的 POP3 或 IMAP4 通訊協定記錄設定之後，您必須重新啟動無論您正在使用的服務： POP3 或 IMAP4。如需如何重新啟動 POP3 與 IMAP4 服務的資訊，請參閱<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">啟動及停止 [POP3 服務</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您是否已變更的 POP3 或 IMAP4 通訊協定記錄設定之後，您必須重新啟動無論您正在使用的服務： POP3 或 IMAP4。如需如何重新啟動 POP3 與 IMAP4 服務的資訊，請參閱<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">啟動及停止 [POP3 服務</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Set-ImapSettings](https://technet.microsoft.com/zh-tw/library/aa998252\(v=exchg.150\)) 與 [Set-PopSettings](https://technet.microsoft.com/zh-tw/library/aa997154\(v=exchg.150\))。
@@ -75,18 +61,11 @@ _**上次修改主題的時間：** 2012-11-27_
     Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
     Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您是否已變更的 POP3 或 IMAP4 通訊協定記錄設定之後，您必須重新啟動無論您正在使用的服務： POP3 或 IMAP4。如需如何重新啟動 POP3 與 IMAP4 服務的資訊，請參閱<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">啟動及停止 [POP3 服務</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您是否已變更的 POP3 或 IMAP4 通訊協定記錄設定之後，您必須重新啟動無論您正在使用的服務： POP3 或 IMAP4。如需如何重新啟動 POP3 與 IMAP4 服務的資訊，請參閱<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">啟動及停止 [POP3 服務</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Set-ImapSettings](https://technet.microsoft.com/zh-tw/library/aa998252\(v=exchg.150\)) 與 [Set-PopSettings](https://technet.microsoft.com/zh-tw/library/aa997154\(v=exchg.150\))。
@@ -123,18 +102,11 @@ _**上次修改主題的時間：** 2012-11-27_
     
         Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您是否已變更的 POP3 或 IMAP4 通訊協定記錄設定之後，您必須重新啟動無論您正在使用的服務： POP3 或 IMAP4。如需如何重新啟動 POP3 與 IMAP4 服務的資訊，請參閱<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">啟動及停止 [POP3 服務</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您是否已變更的 POP3 或 IMAP4 通訊協定記錄設定之後，您必須重新啟動無論您正在使用的服務： POP3 或 IMAP4。如需如何重新啟動 POP3 與 IMAP4 服務的資訊，請參閱<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">啟動及停止 [POP3 服務</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Set-ImapSettings](https://technet.microsoft.com/zh-tw/library/aa998252\(v=exchg.150\)) 與 [Set-PopSettings](https://technet.microsoft.com/zh-tw/library/aa997154\(v=exchg.150\))。

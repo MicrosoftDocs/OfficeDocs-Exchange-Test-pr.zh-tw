@@ -35,18 +35,11 @@ Mac，以及 CU14 for Exchange 2013 和 Exchange 2016 的 CU2 的 Outlook 2016 �
 
 下表摘要 Mac 用戶端嘗試存取 Exchange 2013、 Exchange 2016 和 Exchange Online 公用資料夾的使用者與 Outlook 2016 支援的拓撲。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表所示的案例假設 for Mac Outlook 2016 年 4 月 2016年更新已套用至所有用戶端。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 下表所示的案例假設 for Mac Outlook 2016 年 4 月 2016年更新已套用至所有用戶端。
+
+
 
 
 

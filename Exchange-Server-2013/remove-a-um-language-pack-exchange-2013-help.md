@@ -31,18 +31,11 @@ _**上次修改主題的時間：** 2013-02-14_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用 Setup.exe 移除 UM 語言套件
@@ -53,16 +46,9 @@ _**上次修改主題的時間：** 2013-02-14_
 
 在上述命令中，*\<UmLanguagePackName\>* 是 UM 語言套件的名稱。例如 fr-FR。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 Setup.exe 檔案位於您已安裝任何更新之後移除 UM 語言套件的 \Bin 資料夾中。您必須使用 Setup.exe 檔案從Exchange 2013 DVD 或下載的來源檔案。如果您不會看到下列錯誤： 沒有執行的應用程式與安裝的應用程式版本不符。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 您無法使用 Setup.exe 檔案位於您已安裝任何更新之後移除 UM 語言套件的 \Bin 資料夾中。您必須使用 Setup.exe 檔案從Exchange 2013 DVD 或下載的來源檔案。如果您不會看到下列錯誤： 沒有執行的應用程式與安裝的應用程式版本不符。
+
+
 

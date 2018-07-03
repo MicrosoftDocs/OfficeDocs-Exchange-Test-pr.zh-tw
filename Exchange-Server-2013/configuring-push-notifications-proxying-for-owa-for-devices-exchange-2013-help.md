@@ -53,18 +53,11 @@ Exchange Server 2013 使用單一、標準化方式進行伺服器對伺服器�
 
 OAuth 驗證通常與三個元件有關：一個授權伺服器以及兩個需要彼此通訊的領域。安全性權杖是由授權伺服器 (也稱為安全性權杖伺服器) 發行給兩個需要通訊的領域；這些權杖會確認源自其中一個領域的通訊應受到另一個領域的信任。例如，授權伺服器發行的權杖可確認來自特定 Lync Server 2013 領域的使用者能夠存取指定的 Exchange 2013 領域 (反之亦然)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>領域是安全性容器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 領域是安全性容器。
+
+
 
 
 不過，內部部署伺服器對伺服器的驗證不需要使用協力廠商權杖伺服器。各項伺服器產品 (如 Lync Server 2013 和 Exchange 2013) 都有內建的權杖伺服器，可用於驗證其他支援伺服器對伺服器驗證的 Microsoft 伺服器 (如 SharePoint Server)。例如，Lync Server 2013 可以自行發行並簽署安全性權杖，然後使用該權杖來與 Exchange 2013 通訊。在這種情況下，便不需要協力廠商權杖伺服器。

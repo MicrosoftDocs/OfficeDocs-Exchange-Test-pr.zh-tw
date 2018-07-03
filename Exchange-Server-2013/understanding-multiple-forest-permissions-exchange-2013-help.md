@@ -75,18 +75,11 @@ RBAC 適用於單一樹系內的所有Exchange物件的權限，並在每個樹�
 
 授與的 RBAC 權限只允許使用者檢視或修改特定樹系內Exchange物件。不過，您可以授與檢視和修改該樹系以外的使用者在樹系中的Exchange物件的權限。使用跨界限的權限，您可以集中在單一樹系，而不必驗證每個個別的樹系來執行工作的Exchange管理帳戶。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>權限授與給Exchange樹系以外的使用者仍僅適用於該特定Exchange樹系。例如，如果 ForestA 位於 「 組織管理連結的角色群組的成員外部樹系中的使用者，使用者可以管理只包含內 ForestA Exchange物件。使用者必須要授與權限管理每個樹系的每個Exchange樹系中所做之連結的角色群組的成員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 權限授與給Exchange樹系以外的使用者仍僅適用於該特定Exchange樹系。例如，如果 ForestA 位於 「 組織管理連結的角色群組的成員外部樹系中的使用者，使用者可以管理只包含內 ForestA Exchange物件。使用者必須要授與權限管理每個樹系的每個Exchange樹系中所做之連結的角色群組的成員。
+
+
 
 
 跨界限權限也可讓您將角色指派原則套用至Exchange樹系中具有信箱之使用者的信箱，但是有位於帳戶樹系中的使用者帳戶。Exchange 2013支援跨界限上使用連結的角色群組和下列各節所討論的連結的信箱的權限。

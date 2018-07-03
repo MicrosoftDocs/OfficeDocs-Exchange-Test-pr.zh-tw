@@ -35,40 +35,29 @@ Exchange 2013 中的資料外洩防護 (DLP) 功能可協助組織減少敏感�
 
 ## 新述詞
 
-  -  
-    **AttachmentExtensionMatchesWords** 用於偵測包含特定副檔名附件的郵件訊息。
+  -  **AttachmentExtensionMatchesWords** 用於偵測包含特定副檔名附件的郵件訊息。
 
-  -  
-    **AttachmentHasExecutableContent**   用於偵測包含可執行檔附件的郵件訊息。
+  -  **AttachmentHasExecutableContent**   用於偵測包含可執行檔附件的郵件訊息。
 
-  -  
-    **HasSenderOverride** 用於偵測寄件人選擇覆寫 DLP 原則限制的郵件訊息。
+  -  **HasSenderOverride** 用於偵測寄件人選擇覆寫 DLP 原則限制的郵件訊息。
 
-  -  
-    **MessageContainsDataClassifications**   用於偵測郵件內文與任何附件中的敏感資訊。如需可用的資料分類清單，請參閱[在 Exchange 中的敏感資訊類型外觀](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)。
+  -  **MessageContainsDataClassifications**   用於偵測郵件內文與任何附件中的敏感資訊。如需可用的資料分類清單，請參閱[在 Exchange 中的敏感資訊類型外觀](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)。
 
-  -  
-    **MessageSizeOver**   用於偵測整體容量大於或等於指定上限的郵件訊息。
+  -  **MessageSizeOver**   用於偵測整體容量大於或等於指定上限的郵件訊息。
 
-  -  
-    **SenderIPRanges**   用於偵測特定 IP 位址範圍中傳送的郵件訊息。
+  -  **SenderIPRanges**   用於偵測特定 IP 位址範圍中傳送的郵件訊息。
 
 ## 新動作
 
-  -  
-    **GenerateIncidentReport**   產生傳送至指定 SMTP 地址的附隨報告。動作同時含有稱為 *IncidentReportOriginalMail* 的參數，可接受兩個值之一：IncludeOriginalMail 或 DoNotIncludeOriginalMail。
+  -  **GenerateIncidentReport**   產生傳送至指定 SMTP 地址的附隨報告。動作同時含有稱為 *IncidentReportOriginalMail* 的參數，可接受兩個值之一：IncludeOriginalMail 或 DoNotIncludeOriginalMail。
 
-  -  
-    **NotifySender**   控制如何通知違反 DLP 原則的郵件寄件者。可選擇僅通知寄件者並以正常方式路由傳送郵件，或者可選擇拒絕郵件並通知寄件者。
+  -  **NotifySender**   控制如何通知違反 DLP 原則的郵件寄件者。可選擇僅通知寄件者並以正常方式路由傳送郵件，或者可選擇拒絕郵件並通知寄件者。
 
-  -  
-    **StopRuleProcessing**   停止處理郵件上的所有後續規則。
+  -  **StopRuleProcessing**   停止處理郵件上的所有後續規則。
 
-  -  
-    **ReportSeverityLevel**   設定附隨報告中指定的嚴重性。此動作的值為：\[參考\]、\[低\]、\[中等\]、\[高\] 以及 \[關閉\]。
+  -  **ReportSeverityLevel**   設定附隨報告中指定的嚴重性。此動作的值為：\[參考\]、\[低\]、\[中等\]、\[高\] 以及 \[關閉\]。
 
-  -  
-    **RouteMessageOutboundRequireTLS**   在組織外路由傳送此郵件時需要傳輸層安全性 (TLS) 加密。若不支援 TLS 加密，郵件將被拒絕且不會傳送。
+  -  **RouteMessageOutboundRequireTLS**   在組織外路由傳送此郵件時需要傳輸層安全性 (TLS) 加密。若不支援 TLS 加密，郵件將被拒絕且不會傳送。
 
 ## 傳輸規則中的其他變更
 

@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 Outlook語音存取已啟用 UM 的使用者用以存取語音信箱、 電子郵件、 行事曆和位於自己的信箱中的個人連絡人資訊。不過，他們就可以存取其信箱之前，他們必須輸入 PIN，以便他們可以驗證語音郵件系統。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您變更的最小 PIN 長度值，現有的 Outlook 語音存取使用者將會提示輸入新的 PIN 前其可以繼續包含新的最小的數字數目。預設值為 6。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您變更的最小 PIN 長度值，現有的 Outlook 語音存取使用者將會提示輸入新的 PIN 前其可以繼續包含新的最小的數字數目。預設值為 6。
+
+
 
 
 如需與 Outlook 語音存取 PIN 碼相關的其他工作，請參閱 [PIN 安全性程序](pin-security-procedures-exchange-2013-help.md)。
@@ -49,18 +42,11 @@ Outlook語音存取已啟用 UM 的使用者用以存取語音信箱、 電子�
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

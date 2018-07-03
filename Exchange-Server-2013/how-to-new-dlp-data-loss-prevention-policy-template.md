@@ -31,18 +31,11 @@ Exchange 2013: [檢視 DLP 原則偵測報告](view-dlp-policy-detection-reports
 
 Exchange Online: [檢視 \[Exchange Online\] 的 DLP 原則偵測報告](https://technet.microsoft.com/zh-tw/library/dn904484\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在生產環境中執行 DLP 原則之前，您應先在測試模式中啟用這些原則。在這類測試期間，建議您設定範例使用者信箱，然後傳送叫用測試原則的測試郵件，以便確認結果。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 在生產環境中執行 DLP 原則之前，您應先在測試模式中啟用這些原則。在這類測試期間，建議您設定範例使用者信箱，然後傳送叫用測試原則的測試郵件，以便確認結果。
+
+
 
 
 從範本建立 DLP 原則相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-2013-help.md)Exchange Server 2013或[\[Exchange Online\] 的 DLP 程序](https://technet.microsoft.com/zh-tw/library/jj938003\(v=exchg.150\))Exchange Online。
@@ -59,18 +52,11 @@ Exchange Online: [檢視 \[Exchange Online\] 的 DLP 原則偵測報告](https:/
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 EAC 自範本設定 DLP 原則
@@ -103,18 +89,11 @@ Exchange Online: [檢視 \[Exchange Online\] 的 DLP 原則偵測報告](https:/
     
     5.  按一下 \[儲存\] 以完成建立原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了特定範本內的規則，組織可能有其他套用至郵件環境中法規資料的期望或公司原則。Exchange 2013 讓您可輕鬆變更基本範本新增動作，這樣 Exchange 郵件環境即能符合您自己的要求。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 除了特定範本內的規則，組織可能有其他套用至郵件環境中法規資料的期望或公司原則。Exchange 2013 讓您可輕鬆變更基本範本新增動作，這樣 Exchange 郵件環境即能符合您自己的要求。
+
+
 
 
 一旦原則已儲存在您的 Exchange 2013 環境中，即可在其中編輯規則修改原則。範例規則變更可能包含將特定人員排除在原則或傳送通知之外，以及若發現郵件具有敏感內容則會封鎖郵件。如需訊息編輯原則與規則的相關資訊，請參閱[管理 DLP 原則](manage-dlp-policies-exchange-2013-help.md)。

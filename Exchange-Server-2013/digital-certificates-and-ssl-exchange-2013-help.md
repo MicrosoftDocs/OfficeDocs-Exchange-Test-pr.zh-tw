@@ -55,18 +55,11 @@ Digital certificates best practices
 
 當您安裝 Exchange 2013 時，即會自動設定 Mailbox Server 的自我簽署的憑證。自我簽署的憑證會由建立它的應用程式簽署。憑證的主旨與名稱會相符。憑證上會定義簽發者與主旨。這個自我簽署的憑證可用於加密 Client Access Server 與 Mailbox Server 之間的通訊。Client Access Server 會自動信任 Mailbox Server 上自我簽署的憑證，所以 Mailbox Server 上不需要協力廠商憑證。當您安裝 Exchange 2013 時，也會在 Client Access Server 上建立自我簽署的憑證。這個自我簽署的憑證可允許某些用戶端通訊協定使用 SSL 進行通訊。Exchange ActiveSync 和 Outlook Web App 可以使用自我簽署的憑證來建立 SSL 連線。Outlook Anywhere 無法與 Client Access Server 上的自我簽署的憑證搭配使用。自我簽署的憑證必須以手動方式複製到用戶端電腦或行動裝置上的信任根憑證儲存區中。當用戶端透過 SSL 連接至伺服器且伺服器提供自我簽署的憑證時，系統會提示用戶端確認該憑證是由受信任的授權單位所發出。用戶端必須明確地信任發出憑證的授權單位。如果用戶端確認信任，接著 SSL 通訊就可以繼續。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>依預設，Mailbox Server 上安裝的數位憑證是自我簽署的憑證。您不需要將組織中 Mailbox Server 上的自我簽署的憑證更換為受信任的協力廠商憑證。Client Access Server 會自動信任 Mailbox Server 上的自我簽署憑證，所以 Mailbox Server 上的憑證不需要其他設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 依預設，Mailbox Server 上安裝的數位憑證是自我簽署的憑證。您不需要將組織中 Mailbox Server 上的自我簽署的憑證更換為受信任的協力廠商憑證。Client Access Server 會自動信任 Mailbox Server 上的自我簽署憑證，所以 Mailbox Server 上的憑證不需要其他設定。
+
+
 
 
 小型組織通常會決定不使用協力廠商的憑證，或是安裝自己的 PKI 來發出自己的憑證。他們會因為這些解決方案太過昂貴，且/或他們的系統管理員缺乏建立自己憑證階層的經驗及知識，而做出這項決定。當您使用自我簽署的憑證時，成本最低，設定也很簡單。然而，若要建立憑證週期管理、更新、信任管理及撤銷的基礎結構時，使用自我簽署憑證的難度會高出許多。

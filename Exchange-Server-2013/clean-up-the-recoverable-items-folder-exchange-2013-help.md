@@ -55,18 +55,11 @@ _**上次修改主題的時間：** 2015-09-30_
 
     Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要刪除信箱中的項目而不將其複製到另一個信箱，使用不含<em>TargetMailbox</em>和<em>TargetFolder</em>參數以上的命令。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要刪除信箱中的項目而不將其複製到另一個信箱，使用不含<em>TargetMailbox</em>和<em>TargetFolder</em>參數以上的命令。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Search-Mailbox](https://technet.microsoft.com/zh-tw/library/dd298173\(v=exchg.150\))。

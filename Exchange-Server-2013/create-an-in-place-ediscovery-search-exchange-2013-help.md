@@ -17,18 +17,11 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2017-01-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地 eDiscovery 搜尋 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的搜尋。若要建立 eDiscovery 搜尋，請開始在 Office 365 安全與規範中心中使用 [<a href="https://go.microsoft.com/fwlink/?linkid=847843">內容搜尋</a>]。在我們解除委任新就地 eDiscovery 搜尋後，您仍然可以修改現有的就地搜尋，而在 Exchange Server 2013 和 Exchange 混合部署中建立新的就地 eDiscovery 搜尋仍會受到支援。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地 eDiscovery 搜尋 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的搜尋。若要建立 eDiscovery 搜尋，請開始在 Office 365 安全與規範中心中使用 [<a href="https://go.microsoft.com/fwlink/?linkid=847843">內容搜尋</a>]。在我們解除委任新就地 eDiscovery 搜尋後，您仍然可以修改現有的就地搜尋，而在 Exchange Server 2013 和 Exchange 混合部署中建立新的就地 eDiscovery 搜尋仍會受到支援。
+
+
 
 
 使用[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 可搜尋所有信箱內容，包括使用者放入[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)的已刪除項目和已修改項目的原始版本。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：** 2017-01-17_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 EAC 建立就地 eDiscovery 搜尋
@@ -156,34 +142,20 @@ _**上次修改主題的時間：** 2017-01-17_
 
   - 記錄層級：完整
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果不指定執行就地 eDiscovery 搜尋時的其他搜尋參數，則結果會傳回所指定來源信箱中的所有項目。如果不指定要搜尋的信箱，則會搜尋 Exchange 或 Exchange Online 組織中的所有信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果不指定執行就地 eDiscovery 搜尋時的其他搜尋參數，則結果會傳回所指定來源信箱中的所有項目。如果不指定要搜尋的信箱，則會搜尋 Exchange 或 Exchange Online 組織中的所有信箱。
+
+
 
 
     New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 <em>StartDate</em> 和 <em>EndDate</em> 參數時，即使本機電腦設定已設為使用不同的日期格式 (如 dd/mm/yyyy)，您仍必須使用日期格式 mm/dd/yyyy。例如，若要搜尋在 2013 年 4 月 1 日與 2013 年 7 月 1 日之間傳送的郵件，您會使用 <strong>04/01/2013</strong> 和 <strong>07/01/2013</strong> 作為開始和結束日期。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用 <em>StartDate</em> 和 <em>EndDate</em> 參數時，即使本機電腦設定已設為使用不同的日期格式 (如 dd/mm/yyyy)，您仍必須使用日期格式 mm/dd/yyyy。例如，若要搜尋在 2013 年 4 月 1 日與 2013 年 7 月 1 日之間傳送的郵件，您會使用 <strong>04/01/2013</strong> 和 <strong>07/01/2013</strong> 作為開始和結束日期。
+
+
 
 
 此範例會建立名為電子郵件以 2015年傳送由 Alex Darrow Sara Davis HRCase090116 可以搜尋的就地 eDiscovery 搜尋。

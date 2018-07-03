@@ -21,18 +21,11 @@ Exchange Service Pack 1 中重新引進了 Edge Transport server role。Edge Tra
 
 您可以將 Edge Transport Server 新增至現有 Exchange 2013 組織。安裝 Edge Transport Server 時，您不需要執行任何其他 Active Directory 準備步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要新增邊際傳輸至現有Exchange 2010或Exchange 2007組織，您將需要特定彙總套件更新舊版伺服器上安裝之前先安裝Exchange 2013邊際傳輸。如需詳細資訊，請參閱<a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系統需求</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您要新增邊際傳輸至現有Exchange 2010或Exchange 2007組織，您將需要特定彙總套件更新舊版伺服器上安裝之前先安裝Exchange 2013邊際傳輸。如需詳細資訊，請參閱<a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系統需求</a>。
+
+
 
 
 計劃部署 Edge Transport Server 之前，您應考量下列問題：

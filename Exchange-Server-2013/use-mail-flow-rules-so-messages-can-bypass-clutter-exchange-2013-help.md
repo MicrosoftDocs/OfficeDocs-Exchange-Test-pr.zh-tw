@@ -49,18 +49,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
     New-TransportRule -Name <name_of_the_rule> -SubjectContainsWords "Meeting" -SetHeaderName "X-MS-Exchange-Organization-BypassClutter" -SetHeaderValue "true"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在這個範例中，&quot;X-MS-Exchange-組織-BypassClutter&quot;和&quot;true&quot;是區分大小寫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在這個範例中，&quot;X-MS-Exchange-組織-BypassClutter&quot;和&quot;true&quot;是區分大小寫。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [New-TransportRule](https://technet.microsoft.com/zh-tw/library/bb125138\(v=exchg.150\))。
@@ -69,16 +62,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 您可以檢查電子郵件訊息標頭以查看是否電子郵件因為雜亂傳輸規則收件匣中登陸略過。選擇電子郵件訊息的已略過套用傳輸規則雜亂貴組織中的信箱。查看上戳記在郵件標頭及您應該會看見**X-MS-Exchange 位組織-BypassClutter： true**標頭。這表示略過正常運作。 查看如何尋找標頭資訊資訊的[檢視的電子郵件的網際網路標頭資訊](https://go.microsoft.com/fwlink/p/?linkid=822530)主題。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行事曆項目，例如會議接受、 傳送或拒絕不會在其上有這些標頭。我們使用推出擴充雜亂功能給這些行事曆項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 行事曆項目，例如會議接受、 傳送或拒絕不會在其上有這些標頭。我們使用推出擴充雜亂功能給這些行事曆項目。
+
+
 

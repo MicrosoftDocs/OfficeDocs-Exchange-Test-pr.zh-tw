@@ -31,18 +31,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 如果您想要在 UM IP 閘道和處於 \[SIP 安全\] 或 \[安全\] 模式的撥號對應表之間使用相互 TLS，當您建立 UM IP 閘道時，必須使用完整網域名稱 (FQDN) 設定它，然後使用命令介面設定 UM IP 閘道在 TCP 連接埠 5061 上接聽。您也必須確認已設定任何 VoIP 閘道、支援 SIP 的 PBX、IP PBX 和 SBC 在連接埠 5061 上接聽相互 TLS 要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立 UM IP 閘道使用 FQDN 時，您必須建立 DNS 正向對應區域中的適當的主機 (A) 記錄。如果您建立 UM IP 閘道器使用 FQDN] 中，並變更 UM IP 閘道的 DNS 設定，您必須停用及啟用以確定 UM IP 閘道的組態資訊正確更新的 UM IP 閘道。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您建立 UM IP 閘道使用 FQDN 時，您必須建立 DNS 正向對應區域中的適當的主機 (A) 記錄。如果您建立 UM IP 閘道器使用 FQDN] 中，並變更 UM IP 閘道的 DNS 設定，您必須停用及啟用以確定 UM IP 閘道的組態資訊正確更新的 UM IP 閘道。
+
+
 
 
 如需與 UM IP 閘道相關的其他管理工作，請參閱[UM IP 閘道程序](um-ip-gateway-procedures-exchange-2013-help.md)。
@@ -59,18 +52,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用命令介面設定 TCP 接聽連接埠

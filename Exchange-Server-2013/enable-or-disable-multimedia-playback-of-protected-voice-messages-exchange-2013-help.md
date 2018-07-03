@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 若要聆聽語音訊息、 已啟用整合通訊 UM 的使用者可以電話的功能上使用 \[播放或電腦或行動裝置上使用多媒體軟體。多媒體播放可讓已啟用 UM 的使用者電腦的喇叭透過使用媒體播放或行動裝置上使用媒體播放聽到語音訊息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有在使用Outlook支援版權管理的版本的用戶端上使用受保護的語音信箱。如果用戶端軟體不支援版權管理，使用者必須使用Outlook語音存取其電話接聽。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 只有在使用Outlook支援版權管理的版本的用戶端上使用受保護的語音信箱。如果用戶端軟體不支援版權管理，使用者必須使用Outlook語音存取其電話接聽。
+
+
 
 
 根據預設，UM 信箱原則上**RequireProtectedPlayOnPhone**屬性的值設為 false。這表示已啟用 UM 的使用者相關聯的 UM 信箱原則可以收聽由受保護的語音訊息：
@@ -67,18 +60,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

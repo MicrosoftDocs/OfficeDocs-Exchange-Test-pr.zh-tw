@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2012-10-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -55,18 +48,11 @@ _**上次修改主題的時間：** 2012-10-16_
 
 您可以使用 EAC 建立新的行動裝置信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只能在 EAC 中設定行動裝置信箱原則設定的子集。若要設定的所有行動裝置信箱原則設定，您必須使用命令介面。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您只能在 EAC 中設定行動裝置信箱原則設定的子集。若要設定的所有行動裝置信箱原則設定，您必須使用命令介面。
+
+
 
 
 1.  在 EAC 中，按一下 \[行動電話\] \> \[行動裝置信箱原則\]，然後按一下 \[新增\]。
@@ -93,18 +79,11 @@ _**上次修改主題的時間：** 2012-10-16_
 
 您可以使用 New-MobileDeviceMailboxPolicy Cmdlet 建立新的行動裝置信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有兩個指令程式可以用來建立新的行動裝置信箱原則。<strong>New-ActiveSyncMailboxPolicy</strong>指令程式和<strong>New-MobileDeviceMailboxPolicy</strong> cmdlet 執行相同的工作。在 Microsoft Exchange Server 的未來版本，將會移除<strong>New-ActiveSyncMailboxPolicy</strong>指令程式。我們建議您更新您的指令碼和使用<strong>New-MobileDeviceMailboxPolicy</strong>指令程式的程序。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 有兩個指令程式可以用來建立新的行動裝置信箱原則。<strong>New-ActiveSyncMailboxPolicy</strong>指令程式和<strong>New-MobileDeviceMailboxPolicy</strong> cmdlet 執行相同的工作。在 Microsoft Exchange Server 的未來版本，將會移除<strong>New-ActiveSyncMailboxPolicy</strong>指令程式。我們建議您更新您的指令碼和使用<strong>New-MobileDeviceMailboxPolicy</strong>指令程式的程序。
+
+
 
 
 1.  在命令介面中，執行下列命令。
@@ -131,18 +110,11 @@ _**上次修改主題的時間：** 2012-10-16_
 
 您可以使用 EAC 編輯行動裝置信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只可以編輯在 EAC 中的行動裝置信箱原則設定的子集。若要編輯所有的行動裝置信箱原則設定，您需要使用命令介面。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您只可以編輯在 EAC 中的行動裝置信箱原則設定的子集。若要編輯所有的行動裝置信箱原則設定，您需要使用命令介面。
+
+
 
 
 1.  在 EAC 中，按一下 \[行動電話\] \> \[行動裝置信箱原則\]。
@@ -157,18 +129,11 @@ _**上次修改主題的時間：** 2012-10-16_
 
 您可以使用命令介面編輯行動裝置信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有兩個指令程式可以用來編輯行動裝置信箱原則。Set-ActiveSyncMailboxPolicy指令程式和Set-MobileDeviceMailboxPolicy cmdlet 執行相同的工作。在 Microsoft Exchange Server 的未來版本，將會移除<strong>Set-ActiveSyncMailboxPolicy</strong>指令程式。我們建議您更新您的指令碼和使用<strong>Set-MobileDeviceMailboxPolicy</strong>指令程式的程序。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 有兩個指令程式可以用來編輯行動裝置信箱原則。Set-ActiveSyncMailboxPolicy指令程式和Set-MobileDeviceMailboxPolicy cmdlet 執行相同的工作。在 Microsoft Exchange Server 的未來版本，將會移除<strong>Set-ActiveSyncMailboxPolicy</strong>指令程式。我們建議您更新您的指令碼和使用<strong>Set-MobileDeviceMailboxPolicy</strong>指令程式的程序。
+
+
 
 
 1.  在命令介面中，執行下列命令。

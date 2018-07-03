@@ -41,18 +41,11 @@ _**上次修改主題的時間：** 2014-03-26_
 
   - Amy Alberts 為 `25`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 <em>SeniorityIndex</em> 參數未設定，或對於兩個或多個使用者來說是相等，則 HAB 排序順序會使用 <em>PhoneticDisplayName</em> 參數值以遞增英文字母順序來列出使用者。如果 <em>PhoneticDisplayName</em> 參數值未設定，則 HAB 排序順序預設為 <em>DisplayName</em> 參數值，並以遞增英文字母順序列出使用者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果 <em>SeniorityIndex</em> 參數未設定，或對於兩個或多個使用者來說是相等，則 HAB 排序順序會使用 <em>PhoneticDisplayName</em> 參數值以遞增英文字母順序來列出使用者。如果 <em>PhoneticDisplayName</em> 參數值未設定，則 HAB 排序順序預設為 <em>DisplayName</em> 參數值，並以遞增英文字母順序列出使用者。
+
+
 
 
 ## 設定階層式通訊錄

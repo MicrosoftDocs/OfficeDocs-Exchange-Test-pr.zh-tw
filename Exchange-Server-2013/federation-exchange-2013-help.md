@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 資訊工作者常常需要與外部收件者、廠商、合作夥伴與客戶合作，並共用其空閒/忙碌 (也就是所謂的行事曆可用性) 資訊。Microsoft Exchange Server 2013 中的同盟有助於這些合作。*「同盟」*是指支援*「同盟共用」*的基礎信任基礎結構，對使用者而言，這是與其他外部同盟組織中的收件者共用行事曆資訊的簡易方法。若要深入了解同盟共用，請參閱[共用](sharing-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
+
+
 
 
 **目錄**
@@ -150,18 +143,11 @@ Azure Active Directory驗證系統，由 Microsoft 提供的免費雲端式服�
 
 可隨時從同盟信任中新增或移除接受的網域。如果您要啟用或停用組織中的所有同盟共用功能，只要啟用或停用同盟信任的 OrgID 即可。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您變更 OrgID、公認的網域或用於同盟信任的 AppID，組織中的所有同盟共用功能都會受到影響。這也會影響所有的外部同盟 Exchange 組織，包括 Exchange Online 以及混合部署組態。建議您通知所有外部同盟夥伴關於這些同盟信任組態設定的所有變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您變更 OrgID、公認的網域或用於同盟信任的 AppID，組織中的所有同盟共用功能都會受到影響。這也會影響所有的外部同盟 Exchange 組織，包括 Exchange Online 以及混合部署組態。建議您通知所有外部同盟夥伴關於這些同盟信任組態設定的所有變更。
+
+
 
 
 回到頁首
@@ -198,18 +184,11 @@ Contoso 員工使用的其中一個下電子郵件位址網域： contoso.com、
 
   - **增強金鑰使用方法**   憑證必須包含增強金鑰使用方法 (EKU) 類型 \[用戶端驗證 (1.3.6.1.5.5.7.3.2)\]。此使用方法類型用來向遠端電腦證明您的身分識別。如果您使用 EAC 或命令介面產生憑證要求，則預設會包含此使用方法類型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為憑證未用於驗證，所以沒有任何的主體名稱或主體別名需求。您可以使用其主體名稱與主機名稱、網域名稱或其他任何名稱相同的憑證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 因為憑證未用於驗證，所以沒有任何的主體名稱或主體別名需求。您可以使用其主體名稱與主機名稱、網域名稱或其他任何名稱相同的憑證。
+
+
 
 
 回到頁首
@@ -220,18 +199,11 @@ Contoso 員工使用的其中一個下電子郵件位址網域： contoso.com、
 
 確認憑證的通訊群組狀態之後，您可以設定以使用新的憑證的信任。後切換憑證，目前的憑證指派為先前的憑證，並將新的憑證指定為目前的憑證。將新的憑證發佈至Azure AD驗證系統並使用新的憑證加密所有新的權杖交換Azure AD驗證系統。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此憑證轉換程序僅由同盟使用。如果您為其他需要憑證的 Exchange 2013 功能使用相同的憑證，則當規劃取得、安裝或轉換成新憑證時，您必須將該功能需求納入考量。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此憑證轉換程序僅由同盟使用。如果您為其他需要憑證的 Exchange 2013 功能使用相同的憑證，則當規劃取得、安裝或轉換成新憑證時，您必須將該功能需求納入考量。
+
+
 
 
 回到頁首

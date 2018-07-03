@@ -39,18 +39,11 @@ Microsoft Exchange 安裝程式需要 Exchange 組織中的伺服器的 FQDN 不
 
 4.  按一下**\[確定\]**以關閉 \[**系統內容**\] 對話方塊。系統會提示您重新啟動電腦以套用變更。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要重新命名之電腦的網域控制站，請參閱 「 重新命名的網域控制站&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您想要重新命名之電腦的網域控制站，請參閱 「 重新命名的網域控制站&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。
+
+
 
 
 若要修改的收件者原則 SMTP 位址

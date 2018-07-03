@@ -33,18 +33,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 啟用或停用郵件追蹤記錄檔中的郵件主旨記錄。預設值是啟用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 Exchange 系統管理中心 (EAC) 來啟用或停用郵件追蹤，以及指定郵件追蹤記錄檔的位置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以使用 Exchange 系統管理中心 (EAC) 來啟用或停用郵件追蹤，以及指定郵件追蹤記錄檔的位置。
+
+
 
 
 Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄來限制郵件追蹤記錄檔，以助控制郵件追蹤記錄檔所使用的硬碟空間。

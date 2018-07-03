@@ -27,18 +27,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 傳輸保護規則可讓您使用 IRM 保護的郵件傳輸規則所套用的[Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?linkid=129823) (AD RMS) 權限原則範本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AD RMS 是使用 Rights Management Service RMS 功能的應用程式及用戶端來保護機密資訊線上及離線的運作方式的資訊保護技術。若要使用 IRM 保護在內部部署Exchange部署中， Exchange 2013需要執行Windows Server 2008或更新版本的 AD RMS 的內部部署。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> AD RMS 是使用 Rights Management Service RMS 功能的應用程式及用戶端來保護機密資訊線上及離線的運作方式的資訊保護技術。若要使用 IRM 保護在內部部署Exchange部署中， Exchange 2013需要執行Windows Server 2008或更新版本的 AD RMS 的內部部署。
+
+
 
 
 AD RMS 允許相容啟用 IRM 的應用程式將一致的保護原則套用至使用以 XML 為基礎的原則範本。中Windows Server 2008和更新版本、 AD RMS 伺服器會公開的 Web 服務，可用來列舉並取得範本。Exchange 2013附有 \[不要轉寄\] 範本。

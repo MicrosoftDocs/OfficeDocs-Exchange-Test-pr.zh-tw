@@ -17,18 +17,11 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2017-01-18_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地保留 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的就地保留。使用就地保留的替代方法是，您可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=780738">eDiscovery 案例</a>或 Office 365 安全性和規範中心的<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留原則</a>。在我們解除委任新就地保留後，您仍然可以修改現有的就地保留，而在 Exchange Server 2013 和 Exchange混合部署中建立新的就地保留仍會受到支援。而且，您依然能夠讓信箱處於「訴訟暫止」。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地保留 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的就地保留。使用就地保留的替代方法是，您可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=780738">eDiscovery 案例</a>或 Office 365 安全性和規範中心的<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留原則</a>。在我們解除委任新就地保留後，您仍然可以修改現有的就地保留，而在 Exchange Server 2013 和 Exchange混合部署中建立新的就地保留仍會受到支援。而且，您依然能夠讓信箱處於「訴訟暫止」。
+
+
 
 
 就地保留會保留所有信箱內容，包括已刪除的項目和已修改項目的原始版本。在[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)搜尋會傳回所有這類信箱項目。 當您在使用者的信箱就地保留上放置時，相對應的封存信箱中的內容 （如果已啟用） 已也處於保留狀態，並傳回 eDiscovery 搜尋中。
@@ -105,18 +98,11 @@ _**上次修改主題的時間：** 2017-01-18_
 
 此範例會建立一個名為 Hold-CaseId012 的就地保留並新增 mailbox joe@contoso.com 到就地保留中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您未指定就地保留的搜尋參數，特定信箱的所有項目皆會被就地保留。 如果您未指定 <em>ItemHoldPeriod</em> 參數，所有項目都會被無限期保留，或者會被保留到該信箱從就地保留中移除或刪除就地保留時才終止保留。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 若您未指定就地保留的搜尋參數，特定信箱的所有項目皆會被就地保留。 如果您未指定 <em>ItemHoldPeriod</em> 參數，所有項目都會被無限期保留，或者會被保留到該信箱從就地保留中移除或刪除就地保留時才終止保留。
+
+
 
 
     New-MailboxSearch "Hold-CaseId012"-SourceMailboxes "joe@contoso.com" -InPlaceHoldEnabled $true
@@ -135,18 +121,11 @@ _**上次修改主題的時間：** 2017-01-18_
 
 ## 刪除就地保留
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，信箱搜尋可用於就地保留和就地 eDiscovery。 您無法移除就地保留所使用的信箱搜尋。 您必須先取消勾選 <strong>[就地保留設定]</strong> 頁面上的 <strong>[將符合搜尋查詢的內容放入保留的所選信箱]</strong> 核取方塊，或在命令介面中將 <em>InPlaceHoldEnabled</em> 參數設定為 <code>$false</code>，才能停用就地保留。 您也可以使用搜尋中所指定的 <em>SourceMailboxes</em> 參數來移除信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在 Exchange 2013 中，信箱搜尋可用於就地保留和就地 eDiscovery。 您無法移除就地保留所使用的信箱搜尋。 您必須先取消勾選 <strong>[就地保留設定]</strong> 頁面上的 <strong>[將符合搜尋查詢的內容放入保留的所選信箱]</strong> 核取方塊，或在命令介面中將 <em>InPlaceHoldEnabled</em> 參數設定為 <code>$false</code>，才能停用就地保留。 您也可以使用搜尋中所指定的 <em>SourceMailboxes</em> 參數來移除信箱。
+
+
 
 
 **使用 EAC 移除就地保留**

@@ -23,18 +23,11 @@ OAB 虛擬目錄是通訊的 oab。根據預設，在安裝 Microsoft Exchange S
 
 如需與 OAB 相關的其他管理工作，請參閱[離線通訊錄程序](offline-address-book-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在建立 OAB 虛擬目錄之前，請確定您的使用者會察覺可讓您的變更。此程序可能會中斷 OAB 下載程序的使用者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在建立 OAB 虛擬目錄之前，請確定您的使用者會察覺可讓您的變更。此程序可能會中斷 OAB 下載程序的使用者。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -55,36 +48,22 @@ OAB 虛擬目錄是通訊的 oab。根據預設，在安裝 Microsoft Exchange S
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面來建立 OAB 虛擬目錄
 
 若要使用的所有預設設定都建立 OAB 虛擬目錄，您可以執行**New-OABVirtualDirectory**指令程式不含任何參數。使用下列程序來建立自訂設定 OAB 虛擬目錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立 OAB 虛擬目錄時，建議您啟用 SSL。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 建立 OAB 虛擬目錄時，建議您啟用 SSL。
+
+
 
 
 此範例會在名為 CASServer01 並已啟用 SSL 且具有外部 URL 的用戶端存取伺服器上，建立 OAB 虛擬目錄。

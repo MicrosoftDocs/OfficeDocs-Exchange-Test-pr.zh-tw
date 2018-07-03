@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 *管理角色群組*是一個萬用安全性群組 (USG) 用於 Microsoft Exchange Server 2013中的角色型存取控制 (RBAC) 權限模型。管理角色群組簡化指派的管理角色的使用者群組。角色群組中的所有成員都指派角色相同的一組。系統管理員和專家角色定義Exchange 2013等組織管理、 收件者管理及其他工作中主要的管理工作指派角色群組。角色群組可讓您更輕鬆地指派龐大的一組權限給群組管理員或專家使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。
+
+
 
 
 **目錄**
@@ -49,18 +42,11 @@ Role group membership
 
 Role group creation workflow
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要將權限指派給使用者，讓他們管理其自己的信箱或通訊群組，請參閱<a href="understanding-management-role-assignment-policies-exchange-2013-help.md">了解管理角色指派原則</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您要將權限指派給使用者，讓他們管理其自己的信箱或通訊群組，請參閱<a href="understanding-management-role-assignment-policies-exchange-2013-help.md">了解管理角色指派原則</a>。
+
+
 
 
 ## 角色群組層
@@ -130,18 +116,11 @@ Role group creation workflow
 <td><p><a href="add-a-role-entry-to-a-role-exchange-2013-help.md">將角色項目新增至角色</a></p>
 <p><a href="change-a-role-entry-exchange-2013-help.md">變更的角色項目</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">從角色移除角色項目</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>變更管理角色的角色群組中的管理角色項目是進階的任務以及通常不需要在大多數情況下。而您可以使用符合您需求的原先既管理角色。如需詳細資訊，請參閱<a href="built-in-role-groups-exchange-2013-help.md">內建角色群組</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 變更管理角色的角色群組中的管理角色項目是進階的任務以及通常不需要在大多數情況下。而您可以使用符合您需求的原先既管理角色。如需詳細資訊，請參閱<a href="built-in-role-groups-exchange-2013-help.md">內建角色群組</a>。
+
+
 
 </td>
 </tr>
@@ -259,18 +238,11 @@ Role group creation workflow
 
 若未在角色群組上設定 **ManagedBy** 內容，則只有屬於 組織管理 角色成員或是直接或間接被指派角色管理管理角色的使用者，才能修改角色群組或角色群組成員資格。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用委派角色指派可能會指派角色指派給角色群組。使用委派角色指派，已指派委派的角色的角色群組的成員可以將該角色指派給其他角色群組、 指派原則、 使用者或 USG。角色群組的成員可以指派只有該角色並無法委派角色] 群組中，除非他們正在也會新增至<strong>ManagedBy</strong>屬性。如需委派的角色指派的詳細資訊，請參閱<a href="understanding-management-role-assignments-exchange-2013-help.md">了解管理角色指派</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用委派角色指派可能會指派角色指派給角色群組。使用委派角色指派，已指派委派的角色的角色群組的成員可以將該角色指派給其他角色群組、 指派原則、 使用者或 USG。角色群組的成員可以指派只有該角色並無法委派角色] 群組中，除非他們正在也會新增至<strong>ManagedBy</strong>屬性。如需委派的角色指派的詳細資訊，請參閱<a href="understanding-management-role-assignments-exchange-2013-help.md">了解管理角色指派</a>。
+
+
 
 
 如需如何管理角色群組委派的詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)。

@@ -83,18 +83,11 @@ Exchange 2013 採取新的方法，原生地使用一項稱為*受管理的可�
 
 以下是週期性探查的基本知識： 啟動每個*RecurrenceIntervalSeconds*並檢查 （或探查） 某些方面的狀況。如果元件是狀況良好，探查會傳遞和資訊性事件寫入 3 *ResultType* Microsoft.Exchange.ActiveMonitoring\\ProbeResult 通道。如果核取失敗或逾時，探查失敗，並將 error 事件寫入至相同的通道。4 *ResultType*表示無法檢查和其逾時的 1 表示*ResultType* 。如果重新執行許多探查他們逾時，最多個*MaxRetryAttempts*屬性的值。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>附註</strong> Crimson 通道可以取得非常忙碌數百 ProbeResult 探查執行每隔幾分鐘，並記錄事件，因此可以有實際影響的 Exchange 伺服器的效能如果您嘗試對實際執行環境中的事件記錄檔的高成本查詢。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>附註</strong> Crimson 通道可以取得非常忙碌數百 ProbeResult 探查執行每隔幾分鐘，並記錄事件，因此可以有實際影響的 Exchange 伺服器的效能如果您嘗試對實際執行環境中的事件記錄檔的高成本查詢。
+
+
 
 
 通知是未執行狀況管理員 framework，但一些其他服務的伺服器的探查。這些服務執行他們自己的監控，並再送入其資料的受管理的可用性架構直接編寫探查結果。當此通道僅說明將受管理的可用性 framework 執行的探查就無法看到這些探查 ProbeDefinition 通道中。例如，就會由 MSExchangeDAGMgmt 服務所撰寫的探查結果觸發 ServerOneCopyMonitor 監視器。此服務會執行它自己的監控、 會決定是否有問題及記錄檔的探查結果。大部分的通知探查有開啟監視器的狀況不良的紅色事件及進行監視狀況良好再次綠色事件記錄的功能。

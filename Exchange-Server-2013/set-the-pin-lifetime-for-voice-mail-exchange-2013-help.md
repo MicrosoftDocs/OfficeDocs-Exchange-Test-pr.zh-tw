@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 可以在 UM 信箱原則上設定 pin 碼相關的數個設定。設定控制項的時間間隔，PIN 存留期天，從日期Outlook語音存取使用者上次變更其 PIN 為他們將強制能夠再次變更他們的 pin 碼的日期。範圍是從 0 到 999 及預設值為 60 天。如果您輸入 0，將不會過期使用者的 PIN。我們建議您不要此設定為 0，因為依照這麼明顯減輕在網路的安全性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>整合通訊不會通知使用者他們的 PIN 碼即將到期。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 整合通訊不會通知使用者他們的 PIN 碼即將到期。
+
+
 
 
 如需與 Outlook 語音存取 PIN 碼相關的其他工作，請參閱 [PIN 安全性程序](pin-security-procedures-exchange-2013-help.md)。
@@ -49,18 +42,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

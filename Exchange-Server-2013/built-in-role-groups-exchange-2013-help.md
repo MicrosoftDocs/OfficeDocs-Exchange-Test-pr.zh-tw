@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2012-08-21_
 
 Microsoft Exchange Server 2013預設包含數個管理角色群組。下列的內建角色群組提供給您一組預先設定可以指派給不同的系統管理員和專家使用者在組織中的角色。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>角色群組不控制使用者信箱功能的存取權。若要控制使用者信箱功能的存取權，請參閱<a href="understanding-management-role-assignment-policies-exchange-2013-help.md">了解管理角色指派原則</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 角色群組不控制使用者信箱功能的存取權。若要控制使用者信箱功能的存取權，請參閱<a href="understanding-management-role-assignment-policies-exchange-2013-help.md">了解管理角色指派原則</a>。
+
+
 
 
   - [組織管理](organization-management-exchange-2013-help.md)

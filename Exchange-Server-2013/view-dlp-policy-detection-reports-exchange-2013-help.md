@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2016-12-16_
 
 如需建立事件報告及單一原則偵測事件的詳細資訊，請參閱[建立 DLP 原則偵測附隨報告](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)。 如需郵件記錄的相關資訊，請參閱 [使用傳遞回報追蹤郵件](track-messages-with-delivery-reports-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。
+
+
 
 
 ## 稽核資訊

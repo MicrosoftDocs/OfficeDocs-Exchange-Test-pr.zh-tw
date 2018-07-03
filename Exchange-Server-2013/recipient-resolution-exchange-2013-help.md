@@ -53,18 +53,11 @@ _**上次修改主題的時間：** 2016-03-17_
 
 版面配置區 \<*Type*\> 識別的非 SMTP 位址，例如`EX`、 `X400`或`FAX`類型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然<code>SMTP</code>和<code>X500</code>理論上有效值的 &lt;<em>Type</em>&gt;、 Exchange 收件者解析會拒絕使用其中一個這類的所有進行 IMCEA 編碼 」 地址。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 雖然<code>SMTP</code>和<code>X500</code>理論上有效值的 &lt;<em>Type</em>&gt;、 Exchange 收件者解析會拒絕使用其中一個這類的所有進行 IMCEA 編碼 」 地址。
+
+
 
 
 版面配置區 \<*address*\> 是編碼的原始地址。版面配置區 \<*domain*\> 代表用來封裝的非 SMTP 位址，例如，contoso.com 的 SMTP 網域
@@ -378,18 +371,11 @@ Exchange 中的 SMTP 電子郵件地址的最大長度是 571 個字元。此限
 
 展開的收件者數目太大時，分類程式會將郵件分割成多份。作法上是郵件擴充期間減少系統資源使用。在郵件中的信封收件者數目上限是*ExpansionSizeLimit*鍵`%ExchangeInstallPath%Bin\EdgeTransport.exe.config`應用程式設定檔中所控制。預設值為 1000年。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們建議您不要修改在實際執行環境中部署 Exchange 傳輸伺服器<em>ExpansionSizeLimit</em>機碼的值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 我們建議您不要修改在實際執行環境中部署 Exchange 傳輸伺服器<em>ExpansionSizeLimit</em>機碼的值。
+
+
 
 
 回到頁首

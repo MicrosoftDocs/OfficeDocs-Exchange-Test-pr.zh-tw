@@ -173,18 +173,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 使用 64 位元的 Active Directory 網域控制站能夠提高 Exchange 2013 的目錄服務效能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在多網域環境中，於 Active Directory 語言地區設定設為日文的 Windows Server 2008 網域控制站上，伺服器可能無法接收於輸入複寫期間儲存在物件上的某些屬性。如需詳細資訊，請參閱 Microsoft 知識庫文章 949189：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">設定為日文語言地區設定的 Windows Server 2008 網域控制站，可能無法在輸入複寫期間將更新套用至物件上的屬性</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在多網域環境中，於 Active Directory 語言地區設定設為日文的 Windows Server 2008 網域控制站上，伺服器可能無法接收於輸入複寫期間儲存在物件上的某些屬性。如需詳細資訊，請參閱 Microsoft 知識庫文章 949189：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">設定為日文語言地區設定的 Windows Server 2008 網域控制站，可能無法在輸入複寫期間將更新套用至物件上的屬性</a>。
+
+
 
 
 ## 在目錄伺服器上安裝 Exchange 2013
@@ -419,18 +412,11 @@ Exchange 2013支援下列版本的 Outlook 和 Entourage for Mac：
 
 如需 Exchange 支援的 Outlook 版本清單，請參閱 [Outlook 更新](https://go.microsoft.com/fwlink/p/?linkid=513459)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>強烈建議您安裝可用的最新版 Service Packs 與更新，才能讓您的使用者在連接至 Exchange 時獲得最佳使用體驗。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 強烈建議您安裝可用的最新版 Service Packs 與更新，才能讓您的使用者在連接至 Exchange 時獲得最佳使用體驗。
+
+
 
 
 不支援使用早於 Outlook 2007 的 Outlook 用戶端。不支援需要 DAV 的 Mac 作業系統電子郵件用戶端，例如 Entourage 2008 for Mac RTM 以及 Entourage 2004。

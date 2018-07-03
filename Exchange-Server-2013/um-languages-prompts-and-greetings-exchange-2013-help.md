@@ -61,18 +61,11 @@ Client language selection process
 
 UM 語言套件包含預先錄製的提示 TTS 轉換支援特定的語言，並在某些情況下，ASR 的支援。在多語言環境中，您可能因為某些來電者偏好在不同的語言，系統會提示或時接收電子郵件以多種語言安裝額外的 UM 語言套件。您必須安裝多個 UM 語言套件可支援讀取電子郵件因為 TTS 轉換系統必須包含一個以上的語言，指示要讀取郵件的文字為基礎的語言選取信箱伺服器的能力。如果尚未安裝整合通訊語言套件，電子郵件訊息都會不合邏輯與不一致時讀取傳回給使用者。安裝適當的語言套件可讓 TTS 引擎Outlook語音存取使用者讀取電子郵件和行事曆項目使用正確的語言和整合通訊\] 也提供特定語言的預先錄製的提示。在某些情況下，他們也可以提供 ASR 的支援。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>TTS 引擎將轉換成文字轉換語音，但它並不會為文字轉換語音。已啟用 UM 的使用者可以傳送電子郵件已附加至另一位使用者的語音檔案。不過，使用者無法建立與傳送文字型的電子郵件訊息給另一位使用者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> TTS 引擎將轉換成文字轉換語音，但它並不會為文字轉換語音。已啟用 UM 的使用者可以傳送電子郵件已附加至另一位使用者的語音檔案。不過，使用者無法建立與傳送文字型的電子郵件訊息給另一位使用者。
+
+
 
 
 當您安裝語言套件時，安裝程式會執行下列動作：
@@ -87,18 +80,11 @@ UM 語言套件包含預先錄製的提示 TTS 轉換支援特定的語言，並
 
 您可以使用**Setup.exe**命令或您已從[Exchange Server 2013 UM 語言套件](https://go.microsoft.com/fwlink/p/?linkid=266542)下載 UM 語言套件之後執行*\<UMLanguagePack\>*.exe 安裝程式來新增 UM 語言套件。不過，您必須使用 Setup.exe 命令移除 UM 語言套件。有無Exchange Management Shell 指令程式可用於新增或移除語言從信箱伺服器。如需如何安裝 UM 語言套件的詳細資訊，請參閱[安裝 UM 語言套件](install-a-um-language-pack-exchange-2013-help.md)。如需如何移除 UM 語言套件的詳細資訊，請參閱[移除 UM 語言套件](remove-a-um-language-pack-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，當您安裝信箱伺服器，美國英文 (EN-US) 安裝語言套件。除非電腦中移除的信箱伺服器即無法予以移除。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，當您安裝信箱伺服器，美國英文 (EN-US) 安裝語言套件。除非電腦中移除的信箱伺服器即無法予以移除。
+
+
 
 
 回到頁首
@@ -335,18 +321,11 @@ UM 語言套件包含預先錄製的提示 TTS 轉換支援特定的語言，並
 
   - 使用者的預設語音信箱問候語
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在使用者錄製個人化的語音信箱問候之後，將不再使用其語音問候的 TTS 版本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在使用者錄製個人化的語音信箱問候之後，將不再使用其語音問候的 TTS 版本。
+
+
 
 
 ## 自動語音辨識

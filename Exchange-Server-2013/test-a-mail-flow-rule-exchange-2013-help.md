@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 每次您建立Exchange郵件流程規則，也稱為傳輸規則，您應測試其之前忘記將其。如此一來，如果您不小心不完全與您想要或互動的條件搭配其他規則中建立意外的方式，則不需要任何後果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>等待 30 分鐘後您測試之前建立規則。如果您在測試建立規則後，您可能會收到不一致的行為。如果您使用Exchange Server而且有多部Exchange server 時，可能需要更長接收之規則的所有伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 等待 30 分鐘後您測試之前建立規則。如果您在測試建立規則後，您可能會收到不一致的行為。如果您使用Exchange Server而且有多部Exchange server 時，可能需要更長接收之規則的所有伺服器。
+
+
 
 
 ## 步驟 1： 在測試模式中建立規則
@@ -115,18 +108,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 5.  選取**儲存**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要避免意外，通知您使用者關於新的規則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 若要避免意外，通知您使用者關於新的規則。
+
+
 
 
 ## 疑難排解的建議
@@ -155,18 +141,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 若要檢視Office 365 系統管理中心規則報告，，選取 \[**報告**\]。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>報告中的大部分資料都在 24 小時內，但有些資料可能需要 5 天才會出現。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 報告中的大部分資料都在 24 小時內，但有些資料可能需要 5 天才會出現。
+
+
 
 
 ![顯示規則使用狀況的報告](images/Dn831862.df5bf202-741d-432a-b71d-b37143f0ec0a(EXCHG.150).png "顯示規則使用狀況的報告")

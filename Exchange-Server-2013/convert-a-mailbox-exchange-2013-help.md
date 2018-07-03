@@ -33,18 +33,11 @@ _**上次修改主題的時間：** 2017-04-26_
 
 請注意是否貴組織使用混合式 Exchange 環境，您需要使用內部部署 Exchange 管理工具來管理您的部署信箱。若要轉換的信箱中的混合式環境，您可能需要將信箱移回內部部署 Exchange、 將信箱類型、 轉換和然後將它移回至 Office 365。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您將使用者信箱轉換成共用信箱，您也應該從之前轉換信箱中移除任何行動裝置或您應該轉換後要封鎖行動裝置信箱的存取權。這是因為一旦信箱會轉換為共用信箱、 行動功能將無法正常運作。如需有關封鎖存取的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=847873">移除先前的員工從 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您將使用者信箱轉換成共用信箱，您也應該從之前轉換信箱中移除任何行動裝置或您應該轉換後要封鎖行動裝置信箱的存取權。這是因為一旦信箱會轉換為共用信箱、 行動功能將無法正常運作。如需有關封鎖存取的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=847873">移除先前的員工從 Office 365</a>。
+
+
 
 
 ## 使用命令介面來轉換信箱
@@ -79,16 +72,9 @@ _**上次修改主題的時間：** 2017-04-26_
 
 如需詳細的語法及參數資訊，請參閱 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

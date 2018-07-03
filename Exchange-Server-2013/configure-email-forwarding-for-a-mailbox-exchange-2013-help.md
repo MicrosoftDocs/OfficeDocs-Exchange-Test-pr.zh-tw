@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 郵件轉寄可讓您設定將傳送至某個信箱的電子郵件轉寄至另一個使用者的信箱 (組織內或組織外)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用商務用 Office 365，您的電子郵件轉寄功能應透過 <a href="https://go.microsoft.com/fwlink/p/?linkid=834774">Office 365 系統管理中心：在 Office 365 中設定電子郵件轉寄功能</a>進行設定</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您使用商務用 Office 365，您的電子郵件轉寄功能應透過 <a href="https://go.microsoft.com/fwlink/p/?linkid=834774">Office 365 系統管理中心：在 Office 365 中設定電子郵件轉寄功能</a>進行設定
+
+
 
 
 如果您的組織使用內部部署 Exchange 或混合式 Exchange 環境，您應使用內部部署 Exchange 系統管理中心 (EAC) 來建立及管理共用信箱。

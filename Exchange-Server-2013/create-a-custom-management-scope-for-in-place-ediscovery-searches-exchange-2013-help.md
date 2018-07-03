@@ -111,18 +111,11 @@ _**上次修改主題的時間：** 2015-01-21_
 
     Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Discovery Mailbox"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要開啟探索信箱和檢視搜尋結果，探索管理員必須獲指派探索信箱的「完整存取」權限。如需詳細資訊，請參閱 <a href="create-a-discovery-mailbox-exchange-2013-help.md">建立探索信箱</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要開啟探索信箱和檢視搜尋結果，探索管理員必須獲指派探索信箱的「完整存取」權限。如需詳細資訊，請參閱 <a href="create-a-discovery-mailbox-exchange-2013-help.md">建立探索信箱</a>。
+
+
 
 
 ## 如何知道這是否正常運作？

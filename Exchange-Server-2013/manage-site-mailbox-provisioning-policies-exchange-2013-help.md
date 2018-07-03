@@ -33,18 +33,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
   - 您無法使用 Exchange 系統管理中心 (EAC) 執行此程序。您必須使用命令介面。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -93,34 +86,20 @@ _**上次修改主題的時間：** 2013-02-21_
 
 此範例會變更預設佈建原則，並將 *AliasPrefix* 設為 FOREST01。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於有多個樹系的部署，建議在每個樹系中使用不同的前置詞，以避免如果在兩個以上的樹系中建立了同名的站台信箱，當物件在樹系之間同步處理時發生衝突。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 對於有多個樹系的部署，建議在每個樹系中使用不同的前置詞，以避免如果在兩個以上的樹系中建立了同名的站台信箱，當物件在樹系之間同步處理時發生衝突。
+
+
 
 
     Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>但如果是必須 Exchange 內部部署的混合式部署與 Office 365 中，所有的雲端架構的站台信箱會建立具有前置詞<strong>SMO-</strong>。前置詞是不同 Office 365 與 Exchange 內部部署，因此將不會遇到混合客戶衝突如果站台信箱在兩個位置中所建立且再同步處理跨部署。AliasPrefix 參數會優先於 DefaultAliasPrefixEnabled 參數 ；因此，如果<em>AliasPrefix</em>參數設為有效，非 null 字串每個新的站台信箱必須加上別名前面的字串。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 但如果是必須 Exchange 內部部署的混合式部署與 Office 365 中，所有的雲端架構的站台信箱會建立具有前置詞<strong>SMO-</strong>。前置詞是不同 Office 365 與 Exchange 內部部署，因此將不會遇到混合客戶衝突如果站台信箱在兩個位置中所建立且再同步處理跨部署。AliasPrefix 參數會優先於 DefaultAliasPrefixEnabled 參數 ；因此，如果<em>AliasPrefix</em>參數設為有效，非 null 字串每個新的站台信箱必須加上別名前面的字串。
+
+
 
 
 ## 刪除網站信箱佈建原則
@@ -129,18 +108,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
     Remove-SiteMailboxProvisioningPolicy -Identity Default
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須先建立並指定預設原則，才能移除命名為 [預設] 的原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您必須先建立並指定預設原則，才能移除命名為 [預設] 的原則。
+
+
 
 
 ## 相關資訊

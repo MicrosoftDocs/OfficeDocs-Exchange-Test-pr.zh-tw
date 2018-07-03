@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2012-12-16_
 
 您可以設定要使用的使用者使用相似名稱的自動語音應答**處理活頁簿及運算子存取**選項方法或您可以在自動語音應答維持預設設定並在撥號對應表相關聯的自動語音應答上設定此設定。根據預設，自動語音應答可以釐清之間兩個或多個使用者的自動語音應答上設定的預設值是**從撥號對應表繼承**因為具有相同或類似的名稱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要讓隨附於類似名稱之使用者的資訊正常運作，您必須在 Microsoft Exchange 組織中提供收件者的職稱、部門和位置資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要讓隨附於類似名稱之使用者的資訊正常運作，您必須在 Microsoft Exchange 組織中提供收件者的職稱、部門和位置資訊。
+
+
 
 
 如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](um-auto-attendant-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：** 2012-12-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

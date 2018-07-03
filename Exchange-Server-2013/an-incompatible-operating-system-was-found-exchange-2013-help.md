@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2014-01-30_
 
 Microsoft Exchange Server 2013 安裝程式無法繼續，因為偵測到不相容的作業系統。在安裝 Exchange 2013 之前，您必須先在此電腦上安裝相容的作業系統。下表顯示與 Exchange 2013 相容的作業系統。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 不支援 Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的 Server Core 安裝選項。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Exchange 2013 不支援 Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的 Server Core 安裝選項。
+
+
 
 
 **Exchange 2013 所支援的作業系統**

@@ -187,18 +187,11 @@ Outlook語音存取使用者、 時撥入 Outlook 語音存取號碼，您正在
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要之後您刪除其使用Outlook語音存取存取電子郵件訊息，您可以使用Outlook Web App或Outlook將從 [刪除的郵件] 資料夾移回至適當的資料夾之電子郵件。您無法使用Outlook語音存取來存取已刪除的項目] 資料夾。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您需要之後您刪除其使用Outlook語音存取存取電子郵件訊息，您可以使用Outlook Web App或Outlook將從 [刪除的郵件] 資料夾移回至適當的資料夾之電子郵件。您無法使用Outlook語音存取來存取已刪除的項目] 資料夾。
+
+
 
 
 ## 行事曆選項命令參考

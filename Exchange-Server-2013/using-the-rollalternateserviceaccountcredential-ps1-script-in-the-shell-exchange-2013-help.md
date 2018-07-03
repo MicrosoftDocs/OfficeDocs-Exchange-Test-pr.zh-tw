@@ -19,32 +19,18 @@ _**上次修改主題的時間：** 2015-03-09_
 
 您可以使用 RollAlternateServiceAccountPassword.ps1 指令碼中的 「 Exchange Server 2013 fto 更新備用服務帳戶認證 （ASA 認證） 並散發至指定的用戶端存取伺服器的更新。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange管理命令介面不會自動載入指令碼。您需要使用的所有指令碼前面加上&quot;<strong>。 \</strong>&quot;例如，若要執行 RollAlternateServiceAccountPassword.ps1 指令碼，請輸入 [ <code>.\RollAlternateServiceAccountPassword.ps1</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange管理命令介面不會自動載入指令碼。您需要使用的所有指令碼前面加上&quot;<strong>。 \</strong>&quot;例如，若要執行 RollAlternateServiceAccountPassword.ps1 指令碼，請輸入 [ <code>.\RollAlternateServiceAccountPassword.ps1</code>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此指令碼僅提供英文版。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 此指令碼僅提供英文版。
+
+
 
 
 如需如何使用和撰寫指令碼的詳細資訊，請參閱[使用 Exchange 管理命令介面撰寫指令碼](https://technet.microsoft.com/zh-tw/library/bb123798\(v=exchg.150\))。
@@ -87,18 +73,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果您想要建立排定的工作來維護持續密碼的指令碼，請使用*CreateScheduledTask*參數。此參數需要針對您想要建立的工作名稱的字串。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>執行指令碼，並驗證其運作正常在手動模式中建立自動排程的任務之前。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 執行指令碼，並驗證其運作正常在手動模式中建立自動排程的任務之前。
+
+
 
 
 指令碼建立.cmd 檔案指令碼所在的資料夾中。接著會建立執行該.cmd 檔案每三個星期工作。您可以使用Windows工作排程器來修改排定的工作，例如、 將其設為增加或減少經常執行。根據預設，會為目前登入使用者執行工作。此外，指令碼時才會執行使用者登入電腦。我們建議您修改不論使用者登入與否均執行排定的工作。若該帳戶具有Active Directory重設密碼為 Exchange 企業系統管理員角色的權限您也可以選擇執行不同的帳戶下。建立排定的工作，將自動會以自動模式執行指令碼。
@@ -184,18 +163,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><em>ToArrayMembers</em></p></td>
 <td><p>選用</p></td>
 <td><p><em>ToArrayMembers</em>參數是針對指令碼以特定的用戶端存取伺服器陣列中的所有成員。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用<em>ToArrayMembers</em>參數或<em>ToSpecificServers</em>參數，您需要指定的伺服器名稱或使用<em>Identity</em>參數的伺服器陣列名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您使用<em>ToArrayMembers</em>參數或<em>ToSpecificServers</em>參數，您需要指定的伺服器名稱或使用<em>Identity</em>參數的伺服器陣列名稱。
+
+
 
 </td>
 </tr>
@@ -203,18 +175,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><em>ToSpecificServers</em></p></td>
 <td><p>選用</p></td>
 <td><p><em>ToSpecificServers</em>參數是針對特定伺服器的指令碼。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用<em>ToArrayMembers</em>參數或<em>ToSpecificServers</em>參數，您需要指定的伺服器名稱或使用<em>Identity</em>參數的伺服器陣列名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您使用<em>ToArrayMembers</em>參數或<em>ToSpecificServers</em>參數，您需要指定的伺服器名稱或使用<em>Identity</em>參數的伺服器陣列名稱。
+
+
 
 </td>
 </tr>
@@ -242,18 +207,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><em>CreateScheduledTask&lt;String&gt;</em></p></td>
 <td><p>選用</p></td>
 <td><p><em>CreateScheduledTask</em>參數指示指令碼建立排定的工作來執行 ASA 認證更新。字串值是工作的要建立排定的名稱。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此指令碼建立.cmd 檔案指令碼所在的資料夾中。排定的工作會執行一次每三個星期.cmd 檔案。您可以編輯任務直接在Windows工作排程器來變更工作的頻率。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此指令碼建立.cmd 檔案指令碼所在的資料夾中。排定的工作會執行一次每三個星期.cmd 檔案。您可以編輯任務直接在Windows工作排程器來變更工作的頻率。
+
+
 
 </td>
 </tr>

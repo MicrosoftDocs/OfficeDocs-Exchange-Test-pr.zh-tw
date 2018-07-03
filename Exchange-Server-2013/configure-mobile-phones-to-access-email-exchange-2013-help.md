@@ -25,18 +25,11 @@ _**上次修改主題的時間：** 2015-03-12_
 
   - 您的組織中已啟用 Exchange ActiveSync。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對特定裝置的資訊設定 Microsoft Exchange 式電話或平板電腦上的電子郵件請參閱<a href="https://support.office.com/en-us/article/set-up-a-mobile-device-using-office-365-for-business-7dabb6cb-0046-40b6-81fe-767e0b1f014f">設定行動裝置使用 Office 365 企業版</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 針對特定裝置的資訊設定 Microsoft Exchange 式電話或平板電腦上的電子郵件請參閱<a href="https://support.office.com/en-us/article/set-up-a-mobile-device-using-office-365-for-business-7dabb6cb-0046-40b6-81fe-767e0b1f014f">設定行動裝置使用 Office 365 企業版</a>。
+
+
 
 
 ## 設定行動電話以使用 Exchange ActiveSync

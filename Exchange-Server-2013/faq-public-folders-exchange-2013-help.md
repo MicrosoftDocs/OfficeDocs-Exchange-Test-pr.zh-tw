@@ -87,18 +87,11 @@ Outlook Web App 支援，但有一些限制。 您可以新增和移除我的最
 
   - 存取執行舊版 Exchange 的伺服器上的公用資料夾
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只能建立包含項目<strong>回覆使用特定範本</strong>中啟用郵件功能的公用資料夾的公用資料夾規則。有可能包含<strong>使用特定範本的回覆</strong>的前現有規則會繼續處理非擁有郵件功能的公用資料夾，但那些資料夾上無法使用此範本項目建立新的規則或編輯現有規則的這個項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您只能建立包含項目<strong>回覆使用特定範本</strong>中啟用郵件功能的公用資料夾的公用資料夾規則。有可能包含<strong>使用特定範本的回覆</strong>的前現有規則會繼續處理非擁有郵件功能的公用資料夾，但那些資料夾上無法使用此範本項目建立新的規則或編輯現有規則的這個項目。
+
+
 
 
 在混合式案例中，在 web 上的 Outlook 和 Outlook 2011 for Mac 不支援跨部署公用資料夾。使用者必須位於相同的位置存取其有 Outlook 2011 for Mac 或 Outlook web 上的公用資料夾。如果所依循的[混合式部署程序](https://technet.microsoft.com/en-us/library/jj200788\(v=exchg.150\).aspx)下的程序，與 Outlook 2016 for Mac 中的年 4 月 2016年更新已安裝在所有的用戶端上的 Outlook 2016 for Mac 使用者可以存取公用資料夾的混合式案例。

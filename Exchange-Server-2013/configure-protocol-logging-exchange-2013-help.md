@@ -33,18 +33,11 @@ _**上次修改主題的時間：** 2013-03-15_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -157,17 +150,13 @@ _**上次修改主題的時間：** 2013-03-15_
 
 此範例會設定信箱伺服器 Mailbox01 上傳輸服務中的下列通訊協定記錄設定：
 
-  -  
-    設定位置的所有接收連接器通訊協定記錄至 D:\\Hub 接收 SMTP 記錄檔和所有傳送連接器通訊協定記錄檔 D:\\Hub 傳送 SMTP 記錄檔。請注意是否資料夾不存在，它會為您建立。
+  -  設定位置的所有接收連接器通訊協定記錄至 D:\\Hub 接收 SMTP 記錄檔和所有傳送連接器通訊協定記錄檔 D:\\Hub 傳送 SMTP 記錄檔。請注意是否資料夾不存在，它會為您建立。
 
-  -  
-    將接收連接器通訊協定記錄檔和傳送連接器通訊協定記錄檔大小上限設為 20 MB。
+  -  將接收連接器通訊協定記錄檔和傳送連接器通訊協定記錄檔大小上限設為 20 MB。
 
-  -  
-    將接收連接器通訊協定記錄資料夾和傳送連接器通訊協定記錄資料夾大小上限設為 400 MB。
+  -  將接收連接器通訊協定記錄資料夾和傳送連接器通訊協定記錄資料夾大小上限設為 400 MB。
 
-  -  
-    將接收連接器通訊協定記錄檔和傳送連接器通訊協定記錄檔的最大保留天數設為 45 天。
+  -  將接收連接器通訊協定記錄檔和傳送連接器通訊協定記錄檔的最大保留天數設為 45 天。
 
 <!-- end list -->
 

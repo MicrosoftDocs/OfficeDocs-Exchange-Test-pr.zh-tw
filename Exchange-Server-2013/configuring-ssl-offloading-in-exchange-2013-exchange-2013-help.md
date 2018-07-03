@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2016-08-22_
 
 SSL 卸載最大的優點之一是可讓您更輕鬆管理已使用的憑證。不必為每一部已安裝 SP1 的 Client Access Server 準備個別的 SSL 憑證，只要使用一個 SSL 憑證並匯入到所有 Client Access Server 即可。可使用現有的或最新建立的 SSL 憑證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您使用網際網路資訊服務 (IIS) 管理員、 Exchange 管理命令介面或命令列介面來設定 SSL 卸載時，請注意也會在<strong>預設的網站</strong>和<strong>Exchange Back End</strong>站台。Ssl 卸載，僅限設定<strong>預設的網站</strong>和<strong>Exchange Back End</strong>網站不進行任何變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 當您使用網際網路資訊服務 (IIS) 管理員、 Exchange 管理命令介面或命令列介面來設定 SSL 卸載時，請注意也會在<strong>預設的網站</strong>和<strong>Exchange Back End</strong>站台。Ssl 卸載，僅限設定<strong>預設的網站</strong>和<strong>Exchange Back End</strong>網站不進行任何變更。
+
+
 
 
 **目錄**
@@ -79,18 +72,11 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 設定 Outlook Web App 的 SSL 卸載
@@ -196,18 +182,11 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使是在 Client Access Server 上重新啟動 IIS，您也必須等待服務主機處理程序每 15 分鐘將 Active Directory 的任何變更套用至 Internet Information Services (IIS)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 即使是在 Client Access Server 上重新啟動 IIS，您也必須等待服務主機處理程序每 15 分鐘將 Active Directory 的任何變更套用至 Internet Information Services (IIS)。
+
+
 
 
 回到頁首
@@ -376,18 +355,11 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
 
 如果您與具有多部 Exchange 2013 Client Access Server 的大型組織合作，您可能希望加速進行前述已完成的步驟。您可以將下列任一段指令碼中的命令複製到記事本，進行任何變更，.ps1 副檔名儲存檔案，然後從 Exchange 管理命令介面執行它。根據需求而定，不論是一或多部 Client Access Server，這兩段指令碼可用來設定所有通訊協定和服務的 SSL 卸載。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Set-OutlookAnywhere</strong>指令程式項目，將&quot;MyServer&quot;用戶端存取伺服器的名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>Set-OutlookAnywhere</strong>指令程式項目，將&quot;MyServer&quot;用戶端存取伺服器的名稱。
+
+
 
 
 **使用 Set-WebConfigurationProperty**
@@ -405,18 +377,11 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
 
 **使用 appcmd**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Set-OutlookAnywhere</strong>指令程式項目，將&quot;MyServer&quot;用戶端存取伺服器的名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>Set-OutlookAnywhere</strong>指令程式項目，將&quot;MyServer&quot;用戶端存取伺服器的名稱。
+
+
 
 
     Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic

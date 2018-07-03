@@ -46,18 +46,11 @@ Windows Server 2008和較新版本，而不是可以封存原則範本的權限�
 
 Outlook保護規則就類似於傳輸保護規則。同時套用根據郵件條件，並同時套用 AD RMS 權限保護範本來保護郵件。不過，傳輸保護規則是由傳輸規則代理程式套用的 Mailbox server 上的傳輸服務中。Outlook保護規則套用Outlook 2010，才能將郵件保留在使用者的電腦。受到Outlook保護規則的郵件會進入傳輸管線搭配已套用 IRM 保護。此外， Outlook保護規則以受保護的郵件也會儲存在寄件者的信箱傳送的項目資料夾中加密的格式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果停用傳輸解密Exchange組織中啟用，是由您組織中使用的 AD RMS 伺服器Outlook保護規則受 IRM 保護的郵件進行解密由解密代理程式上傳輸服務。可以由傳輸規則代理程式及其他安裝上的傳輸服務的傳輸代理程式檢查郵件內容。如需停用傳輸解密的詳細資訊，請參閱<a href="transport-decryption-exchange-2013-help.md">傳輸解密</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果停用傳輸解密Exchange組織中啟用，是由您組織中使用的 AD RMS 伺服器Outlook保護規則受 IRM 保護的郵件進行解密由解密代理程式上傳輸服務。可以由傳輸規則代理程式及其他安裝上的傳輸服務的傳輸代理程式檢查郵件內容。如需停用傳輸解密的詳細資訊，請參閱<a href="transport-decryption-exchange-2013-help.md">傳輸解密</a>。
+
+
 
 
 當您使用傳輸保護規則時，使用者會擁有一則訊息是否要自動保護上的傳輸服務沒有指示。當Outlook保護規則套用至訊息的Outlook 2010使用者知道是否一則訊息會受 IRM 保護。如有需要，使用者也可以選取不同的權限原則範本。

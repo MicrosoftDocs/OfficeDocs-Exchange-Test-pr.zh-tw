@@ -25,18 +25,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 當用戶端存取伺服器上啟用 IRM 時，則Outlook Web App使用者可以藉由套用 AD RMS 叢集上建立一個[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)範本 IRM 保護的郵件。Outlook Web App使用者也可以檢視受 IRM 保護的郵件和支援的附件。在用戶端存取伺服器上啟用 IRM 之前，您必須以 AD RMS 叢集的超級使用者群組新增同盟信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>超級使用者授與擁有者群組的成員可以使用授權時所要求的授權從 AD RMS 叢集。這可讓它們可以由該叢集解密受 RMS 保護的所有內容。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 超級使用者授與擁有者群組的成員可以使用授權時所要求的授權從 AD RMS 叢集。這可讓它們可以由該叢集解密受 RMS 保護的所有內容。
+
+
 
 
 若欲瞭解更多與 IRM 相關的管理工作，請參閱 [資訊版權管理程序](information-rights-management-procedures-exchange-2013-help.md)。

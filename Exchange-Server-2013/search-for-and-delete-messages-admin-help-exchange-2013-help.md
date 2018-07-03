@@ -63,18 +63,11 @@ _**上次修改主題的時間：** 2017-12-20_
 
 此範例會搜尋 April Stewart 的信箱中 \[主旨\] 欄位中包含 "Your bank statement" 字詞的郵件，並從來源信箱刪除這些郵件，而不將搜尋結果複製到其他資料夾。如先前所述，您必須取得「信箱匯入匯出」管理角色，才能刪除使用者信箱中的郵件。 。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您使用包含 <em>DeleteContent</em> 參數的 <strong>Search-Mailbox</strong> 指令程式時，郵件會從來源信箱永久刪除。在您永久刪除郵件之前，建議您使用 <em>LogOnly</em> 參數產生在搜尋中找到之郵件的記錄，然後再進行刪除，或者在從來源信箱刪除郵件時，先將這些郵件複製到其他信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您使用包含 <em>DeleteContent</em> 參數的 <strong>Search-Mailbox</strong> 指令程式時，郵件會從來源信箱永久刪除。在您永久刪除郵件之前，建議您使用 <em>LogOnly</em> 參數產生在搜尋中找到之郵件的記錄，然後再進行刪除，或者在從來源信箱刪除郵件時，先將這些郵件複製到其他信箱。
+
+
 
 
     Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent

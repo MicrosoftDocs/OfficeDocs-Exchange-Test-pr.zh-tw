@@ -45,18 +45,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用命令介面修改已啟用 UM 之單一使用者的 TUI 設定
@@ -65,16 +58,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
     Set-UMMailbox -Identity tony@contoso.com TUIAccessToCal True -TUIAccessToEmail True -OperatorNumber 111111 -DisableMissedCallNotification False -AnonCallBlock True
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用者的 TUI 設定也包含可在 UM 信箱原則。修改 TUI 設定 UM 信箱原則上的會影響所有與 UM 信箱原則相關聯的使用者。如需如何修改 TUI 設定 UM 信箱原則的詳細資訊，請參閱<a href="set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md">設定 Outlook 語音存取使用者信箱功能</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用者的 TUI 設定也包含可在 UM 信箱原則。修改 TUI 設定 UM 信箱原則上的會影響所有與 UM 信箱原則相關聯的使用者。如需如何修改 TUI 設定 UM 信箱原則的詳細資訊，請參閱<a href="set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md">設定 Outlook 語音存取使用者信箱功能</a>。
+
+
 

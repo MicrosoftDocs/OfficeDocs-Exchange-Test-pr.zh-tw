@@ -156,18 +156,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>MSExchange Managed Folder Assistant</p></td>
 <td><p>指出根據使用者動作而被指派預設原則標記 (DPT) 的項目數，例如，當使用者選取具有個人標記的郵件且選取 <strong>[使用資料夾原則]</strong> 時。</p>
 <p>如果將具 DPT 的保留原則指派給新使用者，則計數器會依據由於保留原則而被指派 DPT 的項目數來遞增。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用者擁有具 DPT 的保留原則，則透過傳輸送達的新郵件會取得預設標記，且不會由此計數器追蹤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果使用者擁有具 DPT 的保留原則，則透過傳輸送達的新郵件會取得預設標記，且不會由此計數器追蹤。
+
+
 
 </td>
 </tr>

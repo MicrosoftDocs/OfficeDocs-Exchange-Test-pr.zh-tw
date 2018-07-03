@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2017-02-03_
 
 您可以安裝或移除增益集的您的組織的 Outlook 使用 EAC 或命令介面。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，針對您的組織安裝增益集之後的增益集是可供您組織中的所有使用者。安裝之後，您可以使用 EAC 或命令介面可讓增益集選用或需要您的使用者，並指定您是否要啟用或停用增益集。如需如何變更增益集的預設設定，請參閱<a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">管理 outlook 的應用程式的使用者存取</a>。若要限制的增益集至組織中的特定使用者的可用性，您必須使用命令介面。如需詳細資訊，請參閱<a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">管理 outlook 的應用程式的使用者存取</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，針對您的組織安裝增益集之後的增益集是可供您組織中的所有使用者。安裝之後，您可以使用 EAC 或命令介面可讓增益集選用或需要您的使用者，並指定您是否要啟用或停用增益集。如需如何變更增益集的預設設定，請參閱<a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">管理 outlook 的應用程式的使用者存取</a>。若要限制的增益集至組織中的特定使用者的可用性，您必須使用命令介面。如需詳細資訊，請參閱<a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">管理 outlook 的應用程式的使用者存取</a>。
+
+
 
 
 其他管理工作，請參閱[適用於 Outlook 的應用程式](add-ins-for-outlook-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：** 2017-02-03_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -102,18 +88,11 @@ _**上次修改主題的時間：** 2017-02-03_
 
     New-App -OrganizationApp -FileData <File location for add-in manifest file>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您使用命令介面您的組織安裝增益集時，您可以安裝增益集和同時設定為其設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 當您使用命令介面您的組織安裝增益集時，您可以安裝增益集和同時設定為其設定。
+
+
 
 
 如需語法及參數，請參閱 [New-App](https://technet.microsoft.com/zh-tw/library/jj218722\(v=exchg.150\))。
@@ -130,18 +109,11 @@ _**上次修改主題的時間：** 2017-02-03_
 
 您可以使用命令介面從您的組織移除增益集。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>執行下列命令以安裝您的組織的 outlook 查閱的顯示名稱和所有增益集的應用程式識別碼。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 執行下列命令以安裝您的組織的 outlook 查閱的顯示名稱和所有增益集的應用程式識別碼。
+
+
 
 
     Get-App -OrganizationApp |FL DisplayName,AppID

@@ -33,36 +33,22 @@ Exchange Server 2013可讓您設定自動資料中心容錯移轉資料庫可用
 
 在年 6 月 2014 Microsoft Azure 導入多個網站 VPN 支援啟用連線至相同的 Azure 虛擬網路的多個資料中心的組織。這項變更也使它具有兩個資料中心的組織可以運用 Microsoft Azure 做為第三個位置以放置其 DAG 見證伺服器。若要深入了解在 Azure 中的多個網站 VPN 功能，請參閱 ＜[設定多個網站 VPN](http://go.microsoft.com/fwlink/?linkid=522621)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此設定會 Azure 虛擬機器與多個網站 VPN 運用部署見證伺服器和不會使用 Azure 雲端見證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此設定會 Azure 虛擬機器與多個網站 VPN 運用部署見證伺服器和不會使用 Azure 雲端見證。
+
+
 
 
 ## Microsoft Azure 檔案伺服器見證
 
 下圖是使用 Microsoft Azure 檔案伺服器 VM 為 DAG 見證的概觀。您需要 Azure 虛擬網路，會在資料中心來連接至 Azure 虛擬網路和網域控制站部署在 Azure 虛擬機器上的檔案伺服器的多個網站 VPN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>它是針對此目的而使用單一的 Azure 虛擬機器和網域控制站上放置檔案見證共用可行。 但是，這會導致不必要的權限提高權限。因此，它不是建議的組態。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 它是針對此目的而使用單一的 Azure 虛擬機器和網域控制站上放置檔案見證共用可行。 但是，這會導致不必要的權限提高權限。因此，它不是建議的組態。
+
+
 
 
 **Microsoft Azure 上的 DAG 見證伺服器**
@@ -81,18 +67,11 @@ Exchange Server 2013可讓您設定自動資料中心容錯移轉資料庫可用
 
 4.  設定 DAG 見證
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文中的指導重要部分涉及Microsoft Azure組態。因此，每當適用可以用 Azure 的文件連結。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本文中的指導重要部分涉及Microsoft Azure組態。因此，每當適用可以用 Azure 的文件連結。
+
+
 
 
 ## 必要條件
@@ -215,18 +194,11 @@ Exchange Server 2013可讓您設定自動資料中心容錯移轉資料庫可用
 
 若要建立在 Azure 端 VPN 閘道，請遵循[設定虛擬網路閘道 Management Portal 中](http://msdn.microsoft.com/en-us/library/azure/jj156210.aspx)的 \[[啟動虛擬網路閘道](http://msdn.microsoft.com/en-us/library/azure/jj156210.aspx#bkmk_startgateway) \] 區段中的指示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅執行步驟&quot;開始的虛擬網路閘道 」 章節中的文章和請勿繼續後續各節。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 僅執行步驟&quot;開始的虛擬網路閘道 」 章節中的文章和請勿繼續後續各節。
+
+
 
 
 ## 匯出虛擬網路組態設定
@@ -327,18 +299,11 @@ Microsoft Azure 提供支援的 VPN 裝置 VPN 裝置組態指令碼。按一下
 
 您也可以透過 Azure management portal 中檢視虛擬網路儀表板驗證連線。兩個網站的 \[**狀態**\] 欄位會顯示為**已連接**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>它可能需要數分鐘後會出現在 Azure 管理入口網站中的狀態變更為已成功建立連線。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 它可能需要數分鐘後會出現在 Azure 管理入口網站中的狀態變更為已成功建立連線。
+
+
 
 
 ## 階段 3： 設定虛擬機器

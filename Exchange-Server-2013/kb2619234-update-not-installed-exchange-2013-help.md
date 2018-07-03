@@ -23,18 +23,11 @@ Exchange 2013安裝程式要求必須允許 「 Outlook 無所不在 」 （前�
 
 自下列 URL 下載並安裝 64 位元更新，然後按一下 \[**整備檢查**\]頁面上的 \[**重試**\]。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若此更新需要重新開啟才可完成安裝，需離開 Exchange 2013 安裝程式、重新開機然後再次啟動安裝程式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若此更新需要重新開啟才可完成安裝，需離開 Exchange 2013 安裝程式、重新開機然後再次啟動安裝程式。
+
+
 
 
 Microsoft 知識庫文章 KB2619234、 [hotfix 是可用來啟用關聯性 Cookie/GUID rpc over HTTP 用來 RPC 層級 Windows 7 及 Windows Server 2008 R2 中也可用於)](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)

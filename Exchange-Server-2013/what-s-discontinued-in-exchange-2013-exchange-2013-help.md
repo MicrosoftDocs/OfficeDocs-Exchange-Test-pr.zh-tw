@@ -206,18 +206,11 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="even">
 <td><p>Hub Transport 伺服器上的連接篩選代理程式</p></td>
 <td><p>在 Exchange 2010 中，當您已於 Hub Transport Server 上啟動反垃圾郵件代理程式時，附件篩選代理程式是唯一無法使用的反垃圾郵件代理程式。在 Exchange 2013 中，當您在 Mailbox Server 上啟用反垃圾郵件代理程式時，無法使用附件篩選器代理程式與連接篩選代理程式。連接篩選代理程式提供 IP 允許清單與 IP 封鎖清單功能。如需了解如何在 Mailbox server 啟用反垃圾郵件代理程式，請參閱 <a href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">啟用信箱伺服器上的反垃圾郵件功能</a>。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法在 Exchange 2013 Client Access Server 上啟用反垃圾郵件代理程式。因此，取得連線篩選代理程式的唯一方法，就是在周邊網路中安裝 Edge Transport Server。如需詳細資訊，請參閱＜<a href="edge-transport-servers-exchange-2013-help.md">Edge Transport Server</a>＞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法在 Exchange 2013 Client Access Server 上啟用反垃圾郵件代理程式。因此，取得連線篩選代理程式的唯一方法，就是在周邊網路中安裝 Edge Transport Server。如需詳細資訊，請參閱＜<a href="edge-transport-servers-exchange-2013-help.md">Edge Transport Server</a>＞。
+
+
 
 </td>
 </tr>
@@ -243,18 +236,11 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p>受管理的資料夾</p></td>
 <td><p>在Exchange 2010，您可以使用受管理的資料夾通訊保留管理 (MRM)。在Exchange 2013、 受管理的資料夾不受支援。您必須使用保留原則的 MRM。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>與受管理的資料夾相關的指令程式仍然可用。您可建立受管理的資料夾、受管理的內容設定與受管理的資料夾信箱原則，並將受管理的資料夾信箱原則套用至一位使用者，但是 MRM 助理員會略過已套用受管理的資料夾信箱原則的信箱之處理程序。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 與受管理的資料夾相關的指令程式仍然可用。您可建立受管理的資料夾、受管理的內容設定與受管理的資料夾信箱原則，並將受管理的資料夾信箱原則套用至一位使用者，但是 MRM 助理員會略過已套用受管理的資料夾信箱原則的信箱之處理程序。
+
+
 
 </td>
 </tr>
@@ -568,18 +554,11 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p>受管理的資料夾</p></td>
 <td><p>在 Exchange 2007 中，您為郵件保留受管理 (MRM) 使用受管理的資料夾。Exchange 2013 中不支援受管理的資料夾。MRM 必須使用保留原則。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>與受管理的資料夾相關的指令程式仍然可用。您可建立受管理的資料夾、受管理的內容設定與受管理的資料夾信箱原則，並將受管理的資料夾信箱原則套用至一位使用者，但是 MRM 助理員會略過已套用受管理的資料夾信箱原則的信箱之處理程序。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 與受管理的資料夾相關的指令程式仍然可用。您可建立受管理的資料夾、受管理的內容設定與受管理的資料夾信箱原則，並將受管理的資料夾信箱原則套用至一位使用者，但是 MRM 助理員會略過已套用受管理的資料夾信箱原則的信箱之處理程序。
+
+
 
 </td>
 </tr>

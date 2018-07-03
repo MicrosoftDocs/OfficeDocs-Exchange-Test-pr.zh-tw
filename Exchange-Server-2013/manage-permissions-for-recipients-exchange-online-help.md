@@ -27,18 +27,11 @@ _**上次修改主題的時間：** 2018-04-20_
 
   - **\[代理傳送者\]**   此權限同時允許代理人使用此信箱傳送郵件。將此權限指派給代理人後，代理人所傳送郵件中的 **\[寄件者\]** 地址指出郵件是由代理人代表信箱擁有者傳送。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您指派完整存取]、 傳送者] 或 [傳送代理者] 權限以存取地址清單隱藏的信箱] 代理人將無法開啟信箱或傳送的郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您指派完整存取]、 傳送者] 或 [傳送代理者] 權限以存取地址清單隱藏的信箱] 代理人將無法開啟信箱或傳送的郵件。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -49,18 +42,11 @@ _**上次修改主題的時間：** 2018-04-20_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -215,18 +201,11 @@ _**上次修改主題的時間：** 2018-04-20_
 
 下列範例說明如何在 Exchange Server 2013 和 Exchange Online 中管理 \[以下列傳送\] 權限。在 Exchange 2013 中，您必須使用 **Add-ADPermission** 和 **Remove-ADPermission** 指令程式；在 Exchange Online 中，您必須使用 **Add-RecipientPermission** 和 **Remove-RecipientPermission** 指令程式。在這兩個情況中，您可使用 *Identity* 參數來指定應新增或移除 \[以下列傳送\] 權限的信箱名稱，以及使用 *User* 或 *Trustee* 參數來指定將指派或取消指派 \[以下列傳送\] 權限的代理人 (例如使用者或群組)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 <strong>Get-Recipient</strong> 指令程式以擷取信箱和代理人的 <em>Name</em> 內容。使用這些值來指派 [以下列傳送] 權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 使用 <strong>Get-Recipient</strong> 指令程式以擷取信箱和代理人的 <em>Name</em> 內容。使用這些值來指派 [以下列傳送] 權限。
+
+
 
 
 ## Exchange Server 2013
@@ -341,18 +320,11 @@ _**上次修改主題的時間：** 2018-04-20_
 
 下列範例說明如何在 Exchange Server 2013 和 Exchange Online 中管理群組的 \[以下列傳送\] 權限。在 Exchange 2013 中，您必須使用 **Add-ADPermission** and **Remove-ADPermission** 指令程式。在 Exchange Online 中，您必須使用 **Add-RecipientPermission** 和 **Remove-RecipientPermission** 指令程式。在這兩個情況中，您可使用 *Identity* 參數來指定應新增或移除 \[以下列傳送\] 權限的群組名稱，以及使用 *User* 或 *Trustee* 參數來指定將指派或取消指派 \[以下列傳送\] 權限的代理人 (例如使用者或群組)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 <strong>Get-Recipient</strong> 指令程式擷取群組和代理人的 <em>Name</em> 內容。使用這些值來指派 [以下列傳送] 權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 使用 <strong>Get-Recipient</strong> 指令程式擷取群組和代理人的 <em>Name</em> 內容。使用這些值來指派 [以下列傳送] 權限。
+
+
 
 
 ## Exchange Server 2013

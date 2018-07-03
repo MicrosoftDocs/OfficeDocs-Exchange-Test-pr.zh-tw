@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2017-10-04_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -171,36 +164,22 @@ _**上次修改主題的時間：** 2017-10-04_
 
 使用**電子郵件選項**\] 區段中新增或移除的郵件連絡人的 proxy 位址或編輯現有的 proxy 位址。郵件連絡人的主要 SMTP 位址也會顯示在這個部分，但是您無法將其變更。若要變更其，您必須變更連絡人的 \[**一般**\] 區段中的外部電子郵件地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>[<strong>電子郵件選項</strong>] 區段中Exchange Server 2013只有。不提供Exchange Online。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> [<strong>電子郵件選項</strong>] 區段中Exchange Server 2013只有。不提供Exchange Online。
+
+
 
 
 ## 郵件提示
 
 使用 \[郵件提示\] 區段加入「郵件提示」，以便在將郵件傳送給此收件者前，警示使用者潛在的問題。 「郵件提示」是在此收件者加入至新電子郵件的 \[收件者\]、\[副本\] 或 \[密件副本\] 行時，顯示在資訊列中的文字。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。 自訂郵件提示的長度不能超過 175 個顯示的字元。 HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。 自訂郵件提示的長度不能超過 175 個顯示的字元。 HTML 標記則不包括在此限制內。
+
+
 
 
 ## 使用命令介面來變更郵件連絡人內容

@@ -65,18 +65,11 @@ Exchange 包括數種明確的收件者類型。Exchange Administration Center (
 <tr class="odd">
 <td><p>郵件樹系連絡人</p></td>
 <td><p>代表來自另一個樹系之收件者物件的郵件連絡人。郵件樹系連絡人通常是由 Microsoft Identity Integration Server (MIIS) 同步處理建立。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>郵件樹系連絡人是唯讀的收件者物件，只會透過 MIIS 或類似的自訂同步處理更新。您無法使用 EAC 或命令介面來移除或修改郵件樹系連絡人。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 郵件樹系連絡人是唯讀的收件者物件，只會透過 MIIS 或類似的自訂同步處理更新。您無法使用 EAC 或命令介面來移除或修改郵件樹系連絡人。
+
+
 
 </td>
 </tr>
@@ -141,36 +134,22 @@ Exchange 包括數種明確的收件者類型。Exchange Administration Center (
 
 每個信箱是由 Active Directory 使用者以及儲存在 Exchange 信箱資料庫的信箱資料所組成 (如下圖所示)。信箱的所有組態資料會儲存在 Active Directory 使用者物件的 Exchange 屬性中。信箱資料庫包含位於與使用者帳戶關聯之信箱中的實際資料。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立新使用者或現有使用者的信箱時，信箱所需的 Exchange 屬性會新增至 Active Directory 中的使用者物件。要等到信箱接收郵件或使用者登入信箱之後，才會建立關聯的信箱資料。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建立新使用者或現有使用者的信箱時，信箱所需的 Exchange 屬性會新增至 Active Directory 中的使用者物件。要等到信箱接收郵件或使用者登入信箱之後，才會建立關聯的信箱資料。
+
+
 
 
 **信箱元件**
 
 ![組成信箱的組件](images/Bb201680.5fcb5e6d-656e-42ae-871f-0eef8aea456b(EXCHG.150).gif "組成信箱的組件")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果移除信箱，則儲存在 Exchange 信箱資料庫中的信箱資料會標示為要刪除，並且也會從 Active Directory 刪除關聯的使用者帳戶。若要保留使用者帳戶而只刪除信箱資料，您必須停用信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 如果移除信箱，則儲存在 Exchange 信箱資料庫中的信箱資料會標示為要刪除，並且也會從 Active Directory 刪除關聯的使用者帳戶。若要保留使用者帳戶而只刪除信箱資料，您必須停用信箱。
+
+
 
 
 ## 信箱類型
@@ -257,18 +236,11 @@ Exchange 支援下列信箱類型：
 
 通訊群組是擁有郵件功能的 Active Directory 群組物件，主要用於將郵件發佈給多位收件者。任何收件者類型都可以是通訊群組的成員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請注意 Active Directory 和 Exchange 之間的術語差異。在 Active Directory 中，通訊群組是指任何沒有安全性內容的群組 (無論是否擁有郵件功能)。在 Exchange 中，所有擁有郵件功能的群組指的是通訊群組 (不論是否具有安全性內容)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 請注意 Active Directory 和 Exchange 之間的術語差異。在 Active Directory 中，通訊群組是指任何沒有安全性內容的群組 (無論是否擁有郵件功能)。在 Exchange 中，所有擁有郵件功能的群組指的是通訊群組 (不論是否具有安全性內容)。
+
+
 
 
 Exchange 支援下列類型的通訊群組：
@@ -299,18 +271,11 @@ Exchange 支援下列類型的通訊群組：
 
 和一般通訊群組不同，每次郵件傳送給動態通訊群組時，會根據您指定的篩選器和條件來計算該群組的成員清單。將郵件傳到動態通訊群組時，會將該郵件傳給與針對動態通訊群組所定義的準則相符之組織的所有收件者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在傳送郵件時，動態通訊群組會納入 Active Directory 中有符合該群組篩選器之屬性的收件者。如果修改收件者的內容來符合此群組的篩選器，則該收件者會意外地成為群組成員並開始接收傳送至動態通訊群組的郵件。嚴謹、一致的帳戶供應程序可減少發生這種問題的機會。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在傳送郵件時，動態通訊群組會納入 Active Directory 中有符合該群組篩選器之屬性的收件者。如果修改收件者的內容來符合此群組的篩選器，則該收件者會意外地成為群組成員並開始接收傳送至動態通訊群組的郵件。嚴謹、一致的帳戶供應程序可減少發生這種問題的機會。
+
+
 
 
 為了協助您建立動態通訊群組的收件者篩選器，您可以使用預先定義的篩選器。*預先定義篩選器*是常用的篩選器，可用於比對各種收檢者篩選準則。您可以使用這些篩選器來指定要併入動態通訊群組中的收件者類型。此外，也可以指定收件者必須符合的條件清單。您可以根據下列內容來建立預先定義的條件：
@@ -343,18 +308,11 @@ Exchange 支援下列類型的通訊群組：
 
 另一個案例是在組織中為您不想維護其 Exchange 信箱的人員建立郵件使用者。例如，在併購之後，被併購的公司可以維持其不同的郵件基礎結構，但也可能需要存取您網路上的資源。對那些使用者而言，您可能需要建立郵件使用者而非信箱使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 EAC 中，使用 [收件者組態] [連絡人] &gt; 頁面來建立並管理郵件使用者。郵件使用者沒有個別的頁面。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 EAC 中，使用 [收件者組態] [連絡人] &gt; 頁面來建立並管理郵件使用者。郵件使用者沒有個別的頁面。
+
+
 
 
 ## 擁有郵件功能的公用資料夾
@@ -369,18 +327,11 @@ Microsoft Exchange 收件者是特殊收件者物件，可提供一致且已知�
 
 Microsoft Exchange 收件者不是一般的收件者物件 (例如信箱、郵件使用者或郵件連絡人)，而且不是使用一般收件者工具來管理。然而，您可以使用命令介面中的 [Set-OrganizationConfig](https://technet.microsoft.com/zh-tw/library/aa997443\(v=exchg.150\)) 指令程式來設定 Microsoft Exchange 收件者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>系統產生的郵件傳送至外部寄件者時，不會使用 Microsoft Exchange 收件者作為郵件的寄件者，而是使用 <a href="https://technet.microsoft.com/zh-tw/library/bb124151(v=exchg.150)">Set-TransportConfig</a> 指令程式中的 <em>ExternalPostmasterAddress</em> 參數所指定的電子郵件地址。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 系統產生的郵件傳送至外部寄件者時，不會使用 Microsoft Exchange 收件者作為郵件的寄件者，而是使用 <a href="https://technet.microsoft.com/zh-tw/library/bb124151(v=exchg.150)">Set-TransportConfig</a> 指令程式中的 <em>ExternalPostmasterAddress</em> 參數所指定的電子郵件地址。
+
+
 
 
 ## 收件者文件

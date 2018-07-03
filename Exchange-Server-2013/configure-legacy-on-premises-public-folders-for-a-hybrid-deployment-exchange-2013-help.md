@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2018-05-22_
 
 本主題將說明當您的使用者存在於 Office 365，而 Exchange 2010 SP3 或 Exchange 2007 SP3 RU10 公用資料夾存在於內部部署時，要如何同步處理具有郵件功能的公用資料夾。不過，不是由 MailUser 物件內部部署代表的 Office 365 使用者 (目標公用資料夾階層的本機)，不能存取舊版或 Exchange 2013 內部部署公用資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題中將 Exchange 2010 SP3 和 Exchange 2007 SP3 RU10 伺服器統稱為「舊版 Exchange 伺服器」。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題中將 Exchange 2010 SP3 和 Exchange 2007 SP3 RU10 伺服器統稱為「舊版 Exchange 伺服器」。
+
+
 
 
 您將使用下列指令碼對具有郵件功能的公用資料夾進行同步處理，而這些指令碼會由內部部署環境中執行的 Windows 工作啟動：
@@ -90,18 +83,11 @@ _**上次修改主題的時間：** 2018-05-22_
 
 無法支援使用 Exchange 2003 公用資料夾的混合式設定。如果您的組織中執行 Exchange 2003，您必須將所有的公用資料夾資料庫與複本移至 Exchange 2007 SP3 RU10 或更新版本。Exchange 2003 上無法保留任何公用資料庫複本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 2016 不支援存取 Exchange 2007 舊版公用資料夾。如果您有 Outlook 2016 的使用者，您必須將公用資料夾移至較新版本的 Exchange。有關 Outlook 2016 和 Office 2016 與 Exchange 2007 和較舊版本的相容性詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=849053">此文章</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook 2016 不支援存取 Exchange 2007 舊版公用資料夾。如果您有 Outlook 2016 的使用者，您必須將公用資料夾移至較新版本的 Exchange。有關 Outlook 2016 和 Office 2016 與 Exchange 2007 和較舊版本的相容性詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=849053">此文章</a>。
+
+
 
 
 ## 步驟 1：開始之前有哪些須知？
@@ -200,18 +186,11 @@ _**上次修改主題的時間：** 2018-05-22_
 
 「目錄同步處理」服務不會同步處理具有郵件功能的公用資料夾。執行下列指令碼，將會跨部署來同步處理具有郵件功能的公用資料夾。需要在雲端裡重新建立指派給具有郵件功能公用資料夾的特殊權限，因為混合部署案例不支援跨部署權限。如需詳細資訊，請參閱 [Exchange Server 2013 混合式部署](https://technet.microsoft.com/zh-tw/59e32000-4fcf-417f-a491-f1d8f9aeef9b\(exchg.150\)#doc)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為了郵件流程用途，已同步的具有郵件功能公用資料夾會顯示為郵件連絡人物件，而不可在 Exchange 系統管理中心 中檢視。請參閱 Get-MailPublicFolder 命令。若要在雲端中重新建立 SendAs 權限，請使用 Add-RecipientPermission 命令。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 為了郵件流程用途，已同步的具有郵件功能公用資料夾會顯示為郵件連絡人物件，而不可在 Exchange 系統管理中心 中檢視。請參閱 Get-MailPublicFolder 命令。若要在雲端中重新建立 SendAs 權限，請使用 Add-RecipientPermission 命令。
+
+
 
 
 1.  在舊版 Exchange 伺服器上，執行下列命令將本機內部部署 Active Directory 中具有郵件功能的公用資料夾與 O365 同步處理。
@@ -247,18 +226,11 @@ _**上次修改主題的時間：** 2018-05-22_
 
 您必須等到 ActiveDirectory 同步處理完成後，才會看見變更。這個過程最多需要 3 小時才能完成。如果您不想等待每三小時執行的週期性同步處理，您可以隨時強制執行目錄同步處理。如需強制執行目錄同步處理的詳細步驟，請參閱＜[強制執行目錄同步處理](http://technet.microsoft.com/zh-tw/library/jj151771.aspx)＞。Office 365 隨機選取此命令中提供的其中一個公用資料夾信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>沒有由 MailUser 物件內部部署代表的 Office 365 使用者 (目標公用資料夾階層的本機)，不能存取舊版或 Exchange 2013 內部部署公用資料夾。請參閱知識庫文章＜<a href="https://go.microsoft.com/fwlink/p/?linkid=699451">Exchange Online 使用者無法存取舊版內部部署公用資料夾</a>＞，查看解決方案。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 沒有由 MailUser 物件內部部署代表的 Office 365 使用者 (目標公用資料夾階層的本機)，不能存取舊版或 Exchange 2013 內部部署公用資料夾。請參閱知識庫文章＜<a href="https://go.microsoft.com/fwlink/p/?linkid=699451">Exchange Online 使用者無法存取舊版內部部署公用資料夾</a>＞，查看解決方案。
+
+
 
 
 ## 如何知道這是否正常運作？

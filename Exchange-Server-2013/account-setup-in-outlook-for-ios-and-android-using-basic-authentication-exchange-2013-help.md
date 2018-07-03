@@ -33,18 +33,11 @@ Outlook iOS 及 Android 提供 Exchange 系統管理員帳戶設定 「 推送"�
 
 如果您使用 Microsoft Intune 做為您的行動裝置管理提供者，下列步驟可讓您將部署您運用 ActiveSync 通訊協定的基本驗證的內部部署信箱的帳戶組態設定。設定建立之後，您可以依照下一步\] 區段中指定組態設定的使用者群組指派設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您組織中的使用者會使用 iOS 及 Android 工時裝置，您需要建立不同的應用程式設定原則的每個平台。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您組織中的使用者會使用 iOS 及 Android 工時裝置，您需要建立不同的應用程式設定原則的每個平台。
+
+
 
 
 1.  登入 Azure 入口網站。

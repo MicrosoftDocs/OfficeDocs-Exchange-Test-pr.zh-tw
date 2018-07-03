@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 需要與電話分機號碼、 SIP 統一資源識別元 (URI) 或 E.164 撥號對應表關聯每位使用者的分機號碼。分機號碼必須是正確的號碼的數字，指定在 UM 撥號對應表的 UM 信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須新增、 移除或修改所有已啟用 UM 之使用者的分機號碼使用 EAC 或命令介面中，即使其所連結的 SIP URI 或撥號對應表 E.164。若要新增、 移除或修改 SIP 位址或使用者的 E.164 號碼、 您需要使用命令介面，因為這些選項不適用於 live @ EAC。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須新增、 移除或修改所有已啟用 UM 之使用者的分機號碼使用 EAC 或命令介面中，即使其所連結的 SIP URI 或撥號對應表 E.164。若要新增、 移除或修改 SIP 位址或使用者的 E.164 號碼、 您需要使用命令介面，因為這些選項不適用於 live @ EAC。
+
+
 
 
 如需與啟用語音信箱之使用者相關的其他管理工作，請參閱[擁有郵件功能的語音使用者程序](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

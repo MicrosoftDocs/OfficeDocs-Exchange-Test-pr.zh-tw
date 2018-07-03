@@ -75,18 +75,11 @@ Enabling safelist aggregation
 
 安全清單集合儲存於使用者的信箱伺服器上。使用者的安全清單集合中，最多可包含 1,024 個唯一的項目。Exchange 2013 裡有一個信箱助理員 (稱為垃圾郵件選項信箱助理員)，負責監視信箱裡安全清單集合的變更。此助理員會接著將這些變更複寫至 Active Directory，並將安全清單集合儲存在每個使用者物件上。當安全清單集合儲存在 Active Directory 裡的使用者物件上時，安全清單集合就會彙總 Exchange 2013 的反垃圾郵件功能，並且進行最佳化讓儲存及複寫量降至最低。Exchange 在內容篩選過程中會使用安全清單集合資料。如果您的周邊網路中有訂閱的 Edge Transport Server，Microsoft Exchange EdgeSync 服務會將安全清單集合複寫至 Edge Transport Server 上的 Active Directory 輕量型目錄服務 (AD LDS) 執行個體。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然安全的收件者資料儲存在 Outlook 中，並可彙總成為安全清單集合，但內容篩選功能不會對安全的收件者資料採取動作。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 雖然安全的收件者資料儲存在 Outlook 中，並可彙總成為安全清單集合，但內容篩選功能不會對安全的收件者資料採取動作。
+
+
 
 
 回到頁首

@@ -119,18 +119,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><code>N/A</code></p></td>
 <td><p>此標籤含有所有已執行此指令程式所修改的屬性。<code>Property</code>標記為此標籤的子項。</p>
 <p>沒有<code>Event</code>標記每一個<code>ModifiedProperties</code>標籤。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果<strong>Set-AdminAuditLogConfig</strong>指令程式上的<em>LogLevel</em>參數設為<code>Verbose</code>僅填入此標籤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果<strong>Set-AdminAuditLogConfig</strong>指令程式上的<em>LogLevel</em>參數設為<code>Verbose</code>僅填入此標籤。
+
+
 
 </td>
 </tr>

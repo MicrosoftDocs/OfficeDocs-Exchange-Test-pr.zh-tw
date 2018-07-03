@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2014-10-01_
 
 您可以使用保留原則，將一個或多個保留標記分組，然後套用至信箱以強制執行郵件保留設定。信箱不能有一個以上的保留原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>郵件會根據連結到原則的保留標記中所定義的設定而到期。這些設定包含如移動郵件到封存或永久刪除它們等動作。在套用保留原則到一個或多個信箱之前，我們建議您先測試原則，並檢查與它關聯的每個保留標記。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 郵件會根據連結到原則的保留標記中所定義的設定而到期。這些設定包含如移動郵件到封存或永久刪除它們等動作。在套用保留原則到一個或多個信箱之前，我們建議您先測試原則，並檢查與它關聯的每個保留標記。
+
+
 
 
 如需與通訊記錄管理 (MRM) 相關的其他管理工作，請參閱[通訊記錄管理程序](messaging-records-management-procedures-exchange-2013-help.md)。
@@ -43,18 +36,11 @@ _**上次修改主題的時間：** 2014-10-01_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作

@@ -17,18 +17,11 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2017-11-15_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地保留 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的就地保留。使用就地保留的替代方法是，您可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=780738">eDiscovery 案例</a>或 Office 365 安全性和規範中心的<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留原則</a>。在我們解除委任新就地保留後，您仍然可以修改現有的就地保留，而在 Exchange Server 2013 和 Exchange混合部署中建立新的就地保留仍會受到支援。而且，您依然能夠讓信箱處於「訴訟暫止」。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地保留 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的就地保留。使用就地保留的替代方法是，您可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=780738">eDiscovery 案例</a>或 Office 365 安全性和規範中心的<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留原則</a>。在我們解除委任新就地保留後，您仍然可以修改現有的就地保留，而在 Exchange Server 2013 和 Exchange混合部署中建立新的就地保留仍會受到支援。而且，您依然能夠讓信箱處於「訴訟暫止」。
+
+
 
 
 如果合理預期到訴訟的可能性，組織就需要保留與案件相關的電子儲存資訊 (ESI)，包括電子郵件。了解案件的特定資料之前通常會有此預期心理，而且需要保留的資料範圍通常很廣。組織可能必須保留所有與特定主題相關的電子郵件，或是有關特定個人的所有電子郵件。取決於組織的電子化探索 (eDiscovery) 實務，可以採取下列措施來保留電子郵件：
@@ -121,18 +114,11 @@ Exchange 2013 仍提供於 Exchange 2010 中所引進用以保留 eDiscovery 資
 
 當信箱上同時設定了一或多項就地保留以及訴訟暫止 (未設定持續時間)，則會無限期保留所有項目或是直到撤除保留狀態為止。如果在撤除訴訟暫止之後，使用者仍處於一項或多項就地保留，便會按該保留設定所指定的持續時間保留符合就地保留標準的項目。當您將 Exchange 2010 中設定為訴訟暫止狀態的信箱移至 Exchange 2013 信箱伺服器時，則會持續套用訴訟暫止設定，以確保在移動期間和之後能符合規範要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您對信箱進行就地保留或訴訟暫止時，會同時保留主要和封存信箱。如果您在 Exchange 混合式部署中對內部部署主要信箱進行保留，雲端型封存信箱 (如果已啟用) 也會保留。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您對信箱進行就地保留或訴訟暫止時，會同時保留主要和封存信箱。如果您在 Exchange 混合式部署中對內部部署主要信箱進行保留，雲端型封存信箱 (如果已啟用) 也會保留。
+
+
 
 
 如需詳細資訊，請參閱：
@@ -145,34 +131,20 @@ Exchange 2013 仍提供於 Exchange 2010 中所引進用以保留 eDiscovery 資
 
 已經新增至 [探索管理](discovery-management-exchange-2013-help.md) 角色型存取控制 (RBAC) 角色群組，或是已經指派合法保留及信箱搜尋管理角色的授權使用者，可以將信箱使用者設定為就地保留狀態。您可以將工作委派給組織法務部門裡的記錄管理員、法務人員或是律師，但指派最少的權限。若要了解關於指派 探索管理 角色群組的相關資訊，請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2010 中，合法保留角色已提供使用者足夠的權限將信箱設定為訴訟暫止狀態。在 Exchange 2013 中，您可以使用相同的權限設定信箱無限期或以時間為基礎的就地保留功能。不過，若想建立一個查詢式就地保留，必須將信箱搜尋角色指派給使用者。探索管理 角色群組同時具有這兩個指派的角色。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在 Exchange 2010 中，合法保留角色已提供使用者足夠的權限將信箱設定為訴訟暫止狀態。在 Exchange 2013 中，您可以使用相同的權限設定信箱無限期或以時間為基礎的就地保留功能。不過，若想建立一個查詢式就地保留，必須將信箱搜尋角色指派給使用者。探索管理 角色群組同時具有這兩個指派的角色。
+
+
 
 
 在 Exchange 2013 中，就地保留功能已和就地 eDiscovery 搜尋整合在一起。您可以使用 Exchange 系統管理中心 (EAC) 中的**就地 eDiscovery &保留**精靈或 Exchange 管理命令中的 **New-MailboxSearch** 的相關指令程式將信箱設定為就地保留狀態。若要深入了解將信箱設定為就地保留的相關資訊，請參閱[建立或移除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用 Exchange Online 封存為內部部署信箱佈建一個雲端型封存，則必須從您的內部部署 Exchange 2013 組織中管理就地保留。保留設定會透過 DirSync 自動傳播至雲端型封存。如先前所述，當您對內部部署信箱進行保留，對應的雲端型封存也會保留。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您使用 Exchange Online 封存為內部部署信箱佈建一個雲端型封存，則必須從您的內部部署 Exchange 2013 組織中管理就地保留。保留設定會透過 DirSync 自動傳播至雲端型封存。如先前所述，當您對內部部署信箱進行保留，對應的雲端型封存也會保留。
+
+
 
 
 許多組織會要求當使用者處於保留狀態時，必須通知使用者。此外，當信箱處於保留狀態，就不需要暫停任何適用信箱使用者的保留原則。由於郵件會如預期持續遭到刪除，使用者可能不會注意到自己正處於保留狀態。如果您的組織要求通知處於保留狀態的使用者，您可以將通知郵件新增至信箱使用者的 **Retention Comment** 屬性，並使用 **RetentionUrl** 屬性來連結至包含更多資訊的網頁。Outlook 2010 和更新版本會在背景區顯示該通知和 URL。您必須使用命令介面為信箱新增並管理這些屬性。
@@ -249,18 +221,11 @@ Exchange 2013 仍提供於 Exchange 2010 中所引進用以保留 eDiscovery 資
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當收到出席者的會議回應以及更新會議的追蹤資訊時，召集人信箱中的行事曆項目會停用寫入時複製。對於行事曆項目和有設定提醒的項目，會停用 ReminderTime 及 ReminderSignalTime 內容的寫入時複製。寫入時複製不會擷取對這些內容所做的變更。寫入時複製不會擷取對 RSS 摘要所做的變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當收到出席者的會議回應以及更新會議的追蹤資訊時，召集人信箱中的行事曆項目會停用寫入時複製。對於行事曆項目和有設定提醒的項目，會停用 ReminderTime 及 ReminderSignalTime 內容的寫入時複製。寫入時複製不會擷取對這些內容所做的變更。寫入時複製不會擷取對 RSS 摘要所做的變更。
+
+
 
 
 雖然使用者看不到 \[DiscoveryHold\]、\[清除\] 與 \[版本\] 資料夾，Exchange 搜尋還是會對 \[可復原的項目\] 資料夾中的所有項目編製索引，以便透過就地 eDiscovery 來搜索所有項目。當撤除信箱使用者的就地保留或訴訟暫止狀態後，受管理的資料夾助理員會清除 \[DiscoveryHold\]、\[清除\] 與 \[版本\] 資料夾中的項目。
@@ -337,18 +302,11 @@ Exchange 2013、Microsoft Lync 2013 和 Microsoft SharePoint 2013 提供整合�
 
   - 如果內部部署信箱處於訴訟暫止或就地保留狀態，\[可復原的項目\] 資料夾中的所有內容都會移至 Exchange Online 信箱中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您將 Exchange Online 信箱移動 (下架) 至您的內部部署 Exchange 2013 組織時，[可復原的項目] 資料夾中的保留設定和內容會同時保留。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您將 Exchange Online 信箱移動 (下架) 至您的內部部署 Exchange 2013 組織時，[可復原的項目] 資料夾中的保留設定和內容會同時保留。
+
+
 
 
 還有其他方法可將內部部署電子郵件資料移轉至 Office 365，例如使用階段性 Exchange 移轉或 Exchange 完全移轉。
@@ -357,18 +315,11 @@ Exchange 2013、Microsoft Lync 2013 和 Microsoft SharePoint 2013 提供整合�
 
   - 完全移轉可用來將信箱從 Exchange 2003、Exchange 2007 與 Exchange 2010 移轉至 Office 365。 如先前所述，Exchange 2003 和 Exchange 2007 信箱沒有要移轉的 \[可復原的項目\] 資料夾。 因為 \[可復原的項目\] 資料夾是在 Exchange 2010 中引進，所以當您使用完全移轉來移轉 Exchange 2010 信箱時，\[可復原的項目\] 資料夾中的內容就已經移轉至 Office 365。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於 Exchange 2013 和 Exchange 2010，建議您使用 Exchange 混合部署將內部部署信箱移轉至 Office 365。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 對於 Exchange 2013 和 Exchange 2010，建議您使用 Exchange 混合部署將內部部署信箱移轉至 Office 365。
+
+
 
 
 回到頁首

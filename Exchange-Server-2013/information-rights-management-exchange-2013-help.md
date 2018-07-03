@@ -103,18 +103,11 @@ Extend Rights Management with the Rights Management connector
 
 AD RMS 使用以可延伸版權標記語言 (XrML) 為基礎的憑證和授權，來認證電腦和使用者並保護內容。使用 AD RMS 來保護文件或郵件等內容時，會附加 XrML 授權，其中包含授權使用者對該內容所擁有的權限。若要存取受 IRM 保護的內容，已啟用 AD RMS 的應用程式必須為 AD RMS 叢集中的授權使用者取得使用授權。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，Prelicensing 代理程式會將使用授權附加至使用組織中的 AD RMS 叢集來保護的郵件。如需相關資訊，請參閱本主題稍後的Prelicensing。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2013 中，Prelicensing 代理程式會將使用授權附加至使用組織中的 AD RMS 叢集來保護的郵件。如需相關資訊，請參閱本主題稍後的Prelicensing。
+
+
 
 
 用來建立內容的應用程式必須已啟用 RMS，才能使用 AD RMS 對內容套用持續性的保護。Microsoft Office 應用程式 (如 Word、Excel、PowerPoint 和 Outlook) 已啟用 RMS，可用來建立和取用受保護的內容。
@@ -269,18 +262,11 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 
 在 Exchange 2013 中，已使用信箱伺服器之傳輸服務中的傳輸代理程式啟用 IRM 功能。IRM 代理程式會由 Exchange 安裝程式在信箱伺服器上安裝。您無法使用傳輸代理程式的管理工作來控制 IRM 代理程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，IRM 代理程式是內建代理程式。內建代理程式不包含在 <strong>Get-TransportAgent</strong> 指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2013 中，IRM 代理程式是內建代理程式。內建代理程式不包含在 <strong>Get-TransportAgent</strong> 指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。
+
+
 
 
 下表列出了信箱伺服器的傳輸服務中實作的 IRM 代理程式。
@@ -390,32 +376,18 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>AD RMS叢集</em>這個詞彙是用來描述組織中的 AD RMS 部署，包括單一伺服器部署。AD RMS 是一種 Web 服務。該服務不需要您設定 Windows Server 容錯移轉叢集。為達到高可用性與負載平衡，您可在叢集中部署多個 AD RMS 伺服器，並使用網路負載平衡。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <em>AD RMS叢集</em>這個詞彙是用來描述組織中的 AD RMS 部署，包括單一伺服器部署。AD RMS 是一種 Web 服務。該服務不需要您設定 Windows Server 容錯移轉叢集。為達到高可用性與負載平衡，您可在叢集中部署多個 AD RMS 伺服器，並使用網路負載平衡。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在實際執行環境中，不支援將 AD RMS 和 Exchange 安裝在相同的伺服器上。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!IMPORTANT]  
+> 在實際執行環境中，不支援將 AD RMS 和 Exchange 安裝在相同的伺服器上。
+
+
 
 
 Exchange 2013Microsoft Office 檔案格式支援的 IRM 功能。您可以藉由部署自訂保護裝置延長 IRM 保護為其他檔案格式。更多自訂保護裝置的相關資訊，如資訊保護及控制協力廠商的[獨立軟體廠商](https://go.microsoft.com/fwlink/p/?linkid=210336)。

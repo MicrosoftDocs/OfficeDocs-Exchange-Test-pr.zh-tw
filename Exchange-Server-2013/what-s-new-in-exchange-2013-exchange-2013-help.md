@@ -63,18 +63,11 @@ Exchange 2013 架構
 
 Exchange 工作負載管理
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需 Exchange Server 2013 中已移除、中止或更換之舊版 Exchange 的相關功能資訊，請參閱<a href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">Exchange 2013 已中止的功能</a>。另外，您可能對 <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a> 有興趣。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如需 Exchange Server 2013 中已移除、中止或更換之舊版 Exchange 的相關功能資訊，請參閱<a href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">Exchange 2013 已中止的功能</a>。另外，您可能對 <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a> 有興趣。
+
+
 
 
 ## Exchange 系統管理中心

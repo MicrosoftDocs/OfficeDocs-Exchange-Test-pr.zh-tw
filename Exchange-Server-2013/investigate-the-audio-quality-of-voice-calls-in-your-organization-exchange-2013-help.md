@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
 如果您的組織發生 Unified Messaging (UM) 呼叫與語音郵件訊息的音訊品質問題，請使用呼叫統計資料報告以協助您瞭解問題的肇因。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不涵蓋報告中的因素會受通話的音訊品質。例如，如果您的 Exchange 伺服器負載大量記憶體或 CPU 負載量，使用者可能會報告收訊不良通話品質即使報告顯示實用的音訊品質。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 不涵蓋報告中的因素會受通話的音訊品質。例如，如果您的 Exchange 伺服器負載大量記憶體或 CPU 負載量，使用者可能會報告收訊不良通話品質即使報告顯示實用的音訊品質。
+
+
 
 
 有關與呼叫統計資料相關的額外工作，請參閱 [UM 報告程序](um-reports-procedures-exchange-2013-help.md)。
@@ -43,18 +36,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用 EAC 以取得您組織的音訊品質統計資料

@@ -19,32 +19,18 @@ _**上次修改主題的時間：** 2014-06-09_
 
 未限定範圍的管理角色可以用來為系統管理員和專家使用者提供 Windows PowerShell 指令碼和非 Exchange Cmdlet 的存取權。您可以建立未限定範圍的頂層角色，並將指令碼或非 Exchange Cmdlet 新增到該角色，或根據現有未限定範圍的頂層角色來建立角色。在建立和自訂未限定範圍的角色之後，可以將角色指派給管理角色群組、使用者和萬用安全性群組 (USG)。未限定範圍的角色不能指派給管理角色指派原則。如需未限定範圍的角色的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>顧名思義，未限定範圍的角色不需套用管理範圍，因此其權利是很強大的。這表示該角色可以針對 Exchange 組織中的任何物件執行其所包含的指令碼和非 Exchange Cmdlet。當新增指令碼或非 Exchange Cmdlet 到未限定範圍的角色時，以及指派未限定範圍的角色時，可考慮到這點。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 顧名思義，未限定範圍的角色不需套用管理範圍，因此其權利是很強大的。這表示該角色可以針對 Exchange 組織中的任何物件執行其所包含的指令碼和非 Exchange Cmdlet。當新增指令碼或非 Exchange Cmdlet 到未限定範圍的角色時，以及指派未限定範圍的角色時，可考慮到這點。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要建立包含 Exchange Cmdlet 的角色，則必須根據現有的管理角色來建立角色。如需建立包含 Exchange Cmdlet 的角色的詳細資訊，請參閱<a href="create-a-role-exchange-2013-help.md">建立角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 如果您要建立包含 Exchange Cmdlet 的角色，則必須根據現有的管理角色來建立角色。如需建立包含 Exchange Cmdlet 的角色的詳細資訊，請參閱<a href="create-a-role-exchange-2013-help.md">建立角色</a>。
+
+
 
 
 要尋找與角色相關的其他管理工作嗎？請參閱[進階權限](advanced-permissions-exchange-2013-help.md)。
@@ -65,18 +51,11 @@ _**上次修改主題的時間：** 2014-06-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -117,18 +96,11 @@ _**上次修改主題的時間：** 2014-06-09_
 
     Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增指令碼中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後新增或移除參數，您必須手動更新包含指令碼的角色項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增指令碼中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後新增或移除參數，您必須手動更新包含指令碼的角色項目。
+
+
 
 
 ## 步驟 2b：新增非 Exchange Cmdlet 角色項目
@@ -147,36 +119,22 @@ _**上次修改主題的時間：** 2014-06-09_
 
     Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增 Cmdlet 中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後變更 Cmdlet 並新增或移除參數，您必須手動更新包含 Cmdlet 的角色項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增 Cmdlet 中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後變更 Cmdlet 並新增或移除參數，您必須手動更新包含 Cmdlet 的角色項目。
+
+
 
 
 ## 步驟 3：指派管理角色
 
 建立與設定角色的最後一個步驟是將其指派給角色受託人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無法在指派未限定範圍之角色的角色指派上設定管理範圍。不論您選擇的是為角色群組、使用者還是 USG 建立角色指派，您都必須選擇建立不含管理範圍之角色指派的選項。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 無法在指派未限定範圍之角色的角色指派上設定管理範圍。不論您選擇的是為角色群組、使用者還是 USG 建立角色指派，您都必須選擇建立不含管理範圍之角色指派的選項。
+
+
 
 
 您可以將新角色指派給角色群組、使用者或 USG。如需詳細資訊，請參閱下列主題：
@@ -195,18 +153,11 @@ _**上次修改主題的時間：** 2014-06-09_
 
 新的未限定範圍之下層角色可以現有的未限定範圍角色為基礎。建立角色時，會將現有的角色及其管理角色項目複製到新的角色。現有的角色會成為新下層角色的父項。如果您根據另一個未限定範圍的角色建立未限定範圍的角色，則必須選擇包含所有 Cmdlet 的角色，以及需要使用的參數，然後再移除不要的項目。未限定範圍的下層角色不可擁有不存在於上層角色的管理角色項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要建立包含不存在於任何其他未限定範圍角色中的指令碼或非 Exchange Cmdlet 的未限定範圍角色，請建立未限定範圍的頂層角色。如需詳細資訊，請參閱本主題稍早的Create an unscoped top-level management role。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您需要建立包含不存在於任何其他未限定範圍角色中的指令碼或非 Exchange Cmdlet 的未限定範圍角色，請建立未限定範圍的頂層角色。如需詳細資訊，請參閱本主題稍早的Create an unscoped top-level management role。
+
+
 
 
 使用下列語法建立新角色。
@@ -239,18 +190,11 @@ _**上次修改主題的時間：** 2014-06-09_
 
 建立與設定角色的最後一個步驟是將其指派給角色指派者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無法在指派未限定範圍之角色的角色指派上設定管理範圍。不論您選擇的是為角色群組、使用者還是 USG 建立角色指派，您都必須選擇建立不含管理範圍之角色指派的選項。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 無法在指派未限定範圍之角色的角色指派上設定管理範圍。不論您選擇的是為角色群組、使用者還是 USG 建立角色指派，您都必須選擇建立不含管理範圍之角色指派的選項。
+
+
 
 
 您可以將新角色指派給角色群組、使用者或 USG。如需相關資訊，請參閱下列主題：

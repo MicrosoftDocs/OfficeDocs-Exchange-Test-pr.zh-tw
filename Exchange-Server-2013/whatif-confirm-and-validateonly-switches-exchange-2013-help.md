@@ -21,32 +21,18 @@ Both experienced administrators and script writers, and administrators who are n
 
 The *WhatIf*, *Confirm*, and *ValidateOnly* switches are especially useful when you use them with commands that modify objects that are returned by using a filter or by using a **Get** command in a pipeline. This topic describes each switch and also provides an example command for each switch.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>If you want to use the <em>WhatIf</em>, <em>Confirm</em>, and <em>ValidateOnly</em> switches with commands in a script, you must add the appropriate switch to each command in the script, and not on the command line that calls the script.</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> If you want to use the <em>WhatIf</em>, <em>Confirm</em>, and <em>ValidateOnly</em> switches with commands in a script, you must add the appropriate switch to each command in the script, and not on the command line that calls the script.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>WhatIf</em>, <em>Confirm</em>, and <em>ValidateOnly</em> are called switch parameters. For more information about switch parameters, see <a href="https://technet.microsoft.com/zh-tw/library/bb124388(v=exchg.150)">參數</a>.</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> <em>WhatIf</em>, <em>Confirm</em>, and <em>ValidateOnly</em> are called switch parameters. For more information about switch parameters, see <a href="https://technet.microsoft.com/zh-tw/library/bb124388(v=exchg.150)">參數</a>.
+
+
 
 
 ## WhatIf switch
@@ -117,18 +103,11 @@ If you want to override the default behavior of the Shell and suppress the confi
 
 In this case, no confirmation prompt is displayed.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The default value of the <em>Confirm</em> switch is <code>$True</code>. The default behavior of the Shell is to automatically display a confirmation prompt. If you suppress this default behavior, you instruct the command to suppress all confirmation prompts for the duration of that command. The command will process all objects that meet the criteria for the command without confirmation.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> The default value of the <em>Confirm</em> switch is <code>$True</code>. The default behavior of the Shell is to automatically display a confirmation prompt. If you suppress this default behavior, you instruct the command to suppress all confirmation prompts for the duration of that command. The command will process all objects that meet the criteria for the command without confirmation.
+
+
 
 
 ## ValidateOnly switch

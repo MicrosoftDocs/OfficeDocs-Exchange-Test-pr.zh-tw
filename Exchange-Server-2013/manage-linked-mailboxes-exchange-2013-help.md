@@ -25,18 +25,11 @@ _**上次修改主題的時間：** 2012-11-27_
 
 ![具有資源樹系的複雜 Exchange 組織](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "具有資源樹系的複雜 Exchange 組織")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 樹系與至少一個帳戶樹系之間的信任必須設定才可建立連結的信箱。在最低限度下，您必須設定單向、 傳出信任，讓 Exchange 樹系信任帳戶樹系。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj156983(v=exchg.150)">深入了解設定為支援連結的信箱的樹系信任</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange 樹系與至少一個帳戶樹系之間的信任必須設定才可建立連結的信箱。在最低限度下，您必須設定單向、 傳出信任，讓 Exchange 樹系信任帳戶樹系。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj156983(v=exchg.150)">深入了解設定為支援連結的信箱的樹系信任</a>。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -53,18 +46,11 @@ _**上次修改主題的時間：** 2012-11-27_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -176,18 +162,11 @@ _**上次修改主題的時間：** 2012-11-27_
 
 您也可以同時變更多個連結信箱內容。如需詳細資訊，請參閱區段、 [管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)主題中的 「 大量編輯使用者信箱 」 小節。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>完成這項工作的預估時間隨著要檢視或變更的內容數目而不同。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 完成這項工作的預估時間隨著要檢視或變更的內容數目而不同。
+
+
 
 
 ## 使用 EAC 變更連結信箱內容
@@ -248,18 +227,11 @@ _**上次修改主題的時間：** 2012-11-27_
 
   - \[信箱使用量\]   這個區域顯示信箱的總大小，以及已使用的信箱總配額百分比。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要取得的舊的兩個方塊中顯示的資訊，請 EAC 查詢主控信箱的信箱資料庫。如果 EAC 無法通訊與 Exchange 儲存區包含信箱資料庫，上述方塊會是空白。如果使用者尚未登入至信箱的第一次，顯示一則警告訊息。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要取得的舊的兩個方塊中顯示的資訊，請 EAC 查詢主控信箱的信箱資料庫。如果 EAC 無法通訊與 Exchange 儲存區包含信箱資料庫，上述方塊會是空白。如果使用者尚未登入至信箱的第一次，顯示一則警告訊息。
+
+
 
 
 按一下 \[更多選項\]，檢視或變更信箱儲存配額，以及針對信箱已刪除的項目的保留設定。
@@ -434,18 +406,11 @@ _**上次修改主題的時間：** 2012-11-27_
 
 使用 \[**提示**\] 區段可新增郵件提示的潛在的問題的警示使用者如果將訊息傳送給此收件者。郵件提示是收件者 」 新增至 \[收件者\]、 \[副本\] 或 \[密件副本\] 行中的新的電子郵件時顯示在資訊列中的文字。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。
+
+
 
 
 ## \[信箱委派\]

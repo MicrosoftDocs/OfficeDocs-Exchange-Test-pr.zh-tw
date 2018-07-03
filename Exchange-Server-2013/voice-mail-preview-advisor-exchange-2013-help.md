@@ -59,18 +59,11 @@ VoIP or media gateways and IP PBX support
 
 當您註冊與語音郵件預覽的合作夥伴間時，貴組織中的 Exchange 伺服器語音將郵件重新導向與附加到語音郵件預覽協力廠商語音訊息的產生語音郵件預覽文字和送出至使用者信箱的語音訊息的音訊檔案。語音郵件預覽協力廠商所產生的語音郵件預覽文字的電子郵件然後送出至以傳遞給收件者的信箱在組織中的 Exchange 伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您打算部署整合通訊的所有客戶都取得協助的 UM 專家。UM 專員可協助您確保已順利地轉換到 UM 從舊版的語音信箱系統。執行新部署或升級舊版的語音郵件系統要求 VoIP 閘道、 IP Pbx、 Pbx、 工作階段邊界控制器 (Sbc) 相關的重要知識和整合通訊。如需如何連絡 UM 專家的詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 整合通訊 (UM) 專家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">整合通訊的 Microsoft Pinpoint</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建議您打算部署整合通訊的所有客戶都取得協助的 UM 專家。UM 專員可協助您確保已順利地轉換到 UM 從舊版的語音信箱系統。執行新部署或升級舊版的語音郵件系統要求 VoIP 閘道、 IP Pbx、 Pbx、 工作階段邊界控制器 (Sbc) 相關的重要知識和整合通訊。如需如何連絡 UM 專家的詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 整合通訊 (UM) 專家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">整合通訊的 Microsoft Pinpoint</a>。
+
+
 
 
 回到頁首

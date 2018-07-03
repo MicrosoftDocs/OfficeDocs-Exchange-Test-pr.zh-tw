@@ -39,18 +39,11 @@ Applying Outlook Web App mailbox policies
 
 預設Outlook Web App信箱原則會在安裝Exchange時自動建立。根據預設，所有啟用兩個選項的預設Outlook Web App信箱原則上。您可以視以符合組織的需求建立相同數目的Outlook Web App信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>預設的 Outlook Web App 信箱原則不會自動套用到任何信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 預設的 Outlook Web App 信箱原則不會自動套用到任何信箱。
+
+
 
 
 如需建立或移除信箱原則的相關資訊，請參閱 [建立 Outlook Web App 信箱原則](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md) 與 [從 Exchange 中移除 Outlook Web App 信箱原則](remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md)。

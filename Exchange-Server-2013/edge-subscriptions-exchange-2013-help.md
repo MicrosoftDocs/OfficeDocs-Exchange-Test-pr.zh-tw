@@ -119,36 +119,22 @@ Edge Transport Server 沒有 Active Directory 的直接存取權。Edge Transpor
 
     New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>CreateInternetSendConnector</em> 和 <em>CreateInboundSendConnector</em> 參數的預設值都是 <code>$true</code>。此處的參數僅供示範之用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <em>CreateInternetSendConnector</em> 和 <em>CreateInboundSendConnector</em> 參數的預設值都是 <code>$true</code>。此處的參數僅供示範之用。
+
+
 
 
 此範例會匯出 Edge 訂閱檔案。
 
     New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在邊際傳輸伺服器上執行 <strong>New-EdgeSubscription</strong> Cmdlet 時，會收到提示，要求您認可將停用的命令以及邊際傳輸伺服器上將被覆寫的組態。若要略過此項確認，您必須使用 <em>Force</em> 參數。此參數適用於您編寫 <strong>New-EdgeSubscription</strong> Cmdlet。<em>Force</em> 參數也用來在您重新訂閱邊際傳輸伺服器時，以您正在建立之檔案的相同名稱，覆寫現有的檔案。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在邊際傳輸伺服器上執行 <strong>New-EdgeSubscription</strong> Cmdlet 時，會收到提示，要求您認可將停用的命令以及邊際傳輸伺服器上將被覆寫的組態。若要略過此項確認，您必須使用 <em>Force</em> 參數。此參數適用於您編寫 <strong>New-EdgeSubscription</strong> Cmdlet。<em>Force</em> 參數也用來在您重新訂閱邊際傳輸伺服器時，以您正在建立之檔案的相同名稱，覆寫現有的檔案。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [New-EdgeSubscription](https://technet.microsoft.com/zh-tw/library/bb123800\(v=exchg.150\))。
@@ -244,18 +230,11 @@ Edge 訂閱程序提供下列傳送連接器：
 <tr class="odd">
 <td><p><em>SourceTransportServers</em></p></td>
 <td><p>&lt;<em>Edge 訂閱名稱</em>&gt;</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Edge 訂閱的名稱會與已訂閱 Edge Transport Server 的名稱相同。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Edge 訂閱的名稱會與已訂閱 Edge Transport Server 的名稱相同。
+
+
 
 </td>
 </tr>
@@ -337,32 +316,18 @@ EdgeSync 會使用相互驗證及授權的安全 LDAP 通道，將資料從信�
 
 這種鎖定及租用方法，可防止 EdgeSync 服務的多個執行個體同時將資料發送至同一部 Edge Transport Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在已訂閱的 Active Directory 站台中也有 Exchange 2010 或 Exchange 2007 信箱伺服器，Exchange 2013 信箱伺服器將一律具有優先權，並執行複寫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您在已訂閱的 Active Directory 站台中也有 Exchange 2010 或 Exchange 2007 信箱伺服器，Exchange 2013 信箱伺服器將一律具有優先權，並執行複寫。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您將 Edge Transport Server 訂閱至 Active Directory 站台時，該 Active Directory 站台上當時已安裝的所有信箱伺服器都將可加入 EdgeSync 同步處理程序中。若移除其中一部伺服器，在其餘信箱伺服器上執行的 EdgeSync 服務仍會繼續進行資料同步程序。但若您後續又在 Active Directory 站台中安裝新的信箱伺服器，這些伺服器將不會自動加入 EdgeSync 同步處理中。如果您要讓這些新的信箱伺服器加入 EdgeSync 同步處理中，您必須重新訂閱 Edge Transport Server。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 當您將 Edge Transport Server 訂閱至 Active Directory 站台時，該 Active Directory 站台上當時已安裝的所有信箱伺服器都將可加入 EdgeSync 同步處理程序中。若移除其中一部伺服器，在其餘信箱伺服器上執行的 EdgeSync 服務仍會繼續進行資料同步程序。但若您後續又在 Active Directory 站台中安裝新的信箱伺服器，這些伺服器將不會自動加入 EdgeSync 同步處理中。如果您要讓這些新的信箱伺服器加入 EdgeSync 同步處理中，您必須重新訂閱 Edge Transport Server。
+
+
 
 
 下表列出與鎖定和租用相關的 EdgeSync 屬性。您可以使用 **Set-EdgeSyncServiceConfig** 指令程式來設定這些內容。

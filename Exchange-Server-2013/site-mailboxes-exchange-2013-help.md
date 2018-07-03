@@ -99,18 +99,11 @@ Site mailbox provisioning policies
 
 在 SharePoint 中使用 eDiscovery 主控台，站台信箱可以屬於就地 eDiscovery 範圍和您可以針對使用者信箱或站台信箱的關鍵字搜尋。此外，您可以將站台信箱置於法務保存措施。如需詳細資訊，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>網站信箱置於Office 365中的合法持有，它必須被指派Exchange Online (Plan 2) 授權。如果站台信箱指派Exchange Online (計劃 1) 授權，您必須將它放在不同Exchange Online封存授權保留指派。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 網站信箱置於Office 365中的合法持有，它必須被指派Exchange Online (Plan 2) 授權。如果站台信箱指派Exchange Online (計劃 1) 授權，您必須將它放在不同Exchange Online封存授權保留指派。
+
+
 
 
 回到頁首

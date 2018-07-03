@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2015-01-07_
 
 [檢視 DLP 原則偵測報告](view-dlp-policy-detection-reports-exchange-2013-help.md)   追蹤原則違規的侵害。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>資料外洩防護是付費功能，需要企業版用戶端存取授權 (CAL)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 資料外洩防護是付費功能，需要企業版用戶端存取授權 (CAL)。
+
+
 
 
 ## 相關資訊

@@ -19,34 +19,20 @@ _**上次修改主題的時間：** 2017-03-27_
 
 公用資料夾的設計目的在於共用存取，並提供簡易有效率的方式來收集及組織資訊，以及與工作群組或組織中的其他人員共用資訊。公用資料夾有助於以易於瀏覽的深層階層來組織內容。使用者可在 Outlook 中看到完整階層，讓他們更容易瀏覽想找的內容。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列 Outlook 用戶端提供公用資料夾：Outlook Web App for Exchange 2013、Outlook 2007、Outlook 2010、Outlook 2013 和 Outlook for Mac。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 下列 Outlook 用戶端提供公用資料夾：Outlook Web App for Exchange 2013、Outlook 2007、Outlook 2010、Outlook 2013 和 Outlook for Mac。
+
+
 
 
 公用資料夾也可作為通訊群組的封存方法。當您對公用資料夾啟用郵件功能並將其新增為通訊群組的成員，傳送給該群組的電子郵件都會自動加入公用資料夾，供日後參考。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用 Outlook 2007 或更新版本才能存取 Exchange 2013 伺服器上的公用資料夾。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須使用 Outlook 2007 或更新版本才能存取 Exchange 2013 伺服器上的公用資料夾。
+
+
 
 
 公用資料夾不被設計來執行下列動作：
@@ -91,18 +77,11 @@ Exchange 2013 中的公用資料夾已使用信箱基礎結構重新設計，可
 
   - **次要階層信箱**  次要階層信箱包含公用資料夾內容以及公用資料夾階層的唯讀複本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>公用資料夾信箱不支援保留原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 公用資料夾信箱不支援保留原則。
+
+
 
 
 公用資料夾信箱有兩種管理方法：
@@ -133,36 +112,22 @@ Exchange 2013 中的公用資料夾已使用信箱基礎結構重新設計，可
 
   - 公用資料夾樹狀目錄內資料夾的位置，包含其父項及子項資料夾
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>階層不會儲存已啟用郵件功能之公用資料夾的電子郵件地址相關資訊。電子郵件地址是儲存在 Active Directory 的目錄物件上。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 階層不會儲存已啟用郵件功能之公用資料夾的電子郵件地址相關資訊。電子郵件地址是儲存在 Active Directory 的目錄物件上。
+
+
 
 
 ## 階層同步
 
 公用資料夾階層同步程序使用遞增值同步處理 (ICS)，此方法可提供監控和同步 Exchange 儲存區階層或內容之變更的機制。變更包括建立、修改和刪除資料夾及郵件。當使用者連線到內容信箱及使用內容信箱時，每 15 分鐘就會進行一次同步。如果沒有使用者連線到內容信箱，則觸發同步的頻率較低 (每 24 小時)。如果在主要階層執行寫入作業 (如建立資料夾)，則會立即 (同時) 觸發內容信箱的同步。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為只有一個可寫入的階層副本，資料夾建立程序會由使用者連線到的內容信箱透過 Proxy 傳送到階層信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 因為只有一個可寫入的階層副本，資料夾建立程序會由使用者連線到的內容信箱透過 Proxy 傳送到階層信箱。
+
+
 
 
 在大型組織中，當您建立新的公用資料夾信箱時，階層必須先同步至該公用資料夾，之後使用者才能與其連線。否則，使用者在連線到 Outlook 時可能會看到不完整的公用資料夾結構。若要在同步進行期間不讓使用者嘗試連線到新的公用資料夾信箱，在建立公用資料夾信箱時請對 **New-Mailbox** 指令程式設定 *IsExcludedFromServingHierarchy* 參數。此參數可防止使用者連線到新建立的公用資料夾信箱。同步完成後，執行 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) 指令程式並將 *IsExcludedFromServingHierarchy* 參數設為 `false`，表示該公用資料夾信箱已準備好可供連線。您也可以使用 [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/zh-tw/library/jj218720\(v=exchg.150\)) 指令程式，根據 *SyncInfo* 和 *AssistantInfo* 內容來檢視同步狀態。
@@ -173,18 +138,11 @@ Exchange 2013 中的公用資料夾已使用信箱基礎結構重新設計，可
 
 公用資料夾內容可包含電子郵件、文章、文件和 eForms。這些內容儲存在公用資料夾信箱中，但不會複寫到多個公用資料夾信箱。所有使用者都是存取同一個公用資料夾信箱中的同一個內容集。您可以對公用資料夾內容執行全文搜尋，但無法在多個公用資料夾之間搜尋公用資料夾內容，Exchange 搜尋也未對內容編制索引。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App 支援，但有限制。您可以新增和移除我的最愛公用資料夾並執行項目層級作業，例如建立、 編輯、 刪除文章及回覆的文章。不過，您無法建立或刪除公用資料夾從 Outlook Web App。此外，唯一的電子郵件、 文章、 行事曆及連絡人公用資料夾可新增至 Outlook Web App 中的 [我的最愛] 清單。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook Web App 支援，但有限制。您可以新增和移除我的最愛公用資料夾並執行項目層級作業，例如建立、 編輯、 刪除文章及回覆的文章。不過，您無法建立或刪除公用資料夾從 Outlook Web App。此外，唯一的電子郵件、 文章、 行事曆及連絡人公用資料夾可新增至 Outlook Web App 中的 [我的最愛] 清單。
+
+
 
 
 ## 移轉公用資料夾

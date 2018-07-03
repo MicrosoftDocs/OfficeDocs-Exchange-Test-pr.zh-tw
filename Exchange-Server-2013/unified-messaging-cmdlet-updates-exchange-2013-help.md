@@ -91,36 +91,22 @@ Exchange Server 2010 中存在的許多整合通訊 (UM) Cmdlet 已轉至 Exchan
 <tr class="even">
 <td><p>Disable-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-Immediate &lt;$true | $false&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Cmdlet 只適用於 Exchange 2007 和 2010 的 UM 伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此 Cmdlet 只適用於 Exchange 2007 和 2010 的 UM 伺服器。
+
+
 
 </td>
 </tr>
 <tr class="odd">
 <td><p>Enable-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Cmdlet 只適用於 Exchange 2007 和 2010 的 UM 伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此 Cmdlet 只適用於 Exchange 2007 和 2010 的 UM 伺服器。
+
+
 
 </td>
 </tr>

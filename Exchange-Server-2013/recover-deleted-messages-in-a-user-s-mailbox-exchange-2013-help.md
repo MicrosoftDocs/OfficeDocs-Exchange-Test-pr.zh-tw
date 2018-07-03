@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 系統管理員可以搜尋並復原已刪除的電子郵件訊息中使用者的信箱。這例如指派給使用者信箱的保留原則包含項目永久刪除 （清除） 的人員 （藉由使用Outlook或Outlook Web App中復原刪除的郵件功能），或自動化程序所刪除的項目。 在下列情況下，無法由使用者復原已清除的項目。 但系統管理員可以使用若尚未到期的項目刪除項目保留期間復原已清除的郵件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了可以使用此程序來搜尋和復原刪除的項目 (在啟用單一項目復原或訴訟保留的情況下，這些項目會被移至 [可復原的項目]\[清除] 資料夾中) 之外，您也可以使用此程序來搜尋信箱內其他資料夾中的項目，並從來源信箱刪除項目 (又稱為「搜尋與摧毀」)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 除了可以使用此程序來搜尋和復原刪除的項目 (在啟用單一項目復原或訴訟保留的情況下，這些項目會被移至 [可復原的項目]\[清除] 資料夾中) 之外，您也可以使用此程序來搜尋信箱內其他資料夾中的項目，並從來源信箱刪除項目 (又稱為「搜尋與摧毀」)。
+
+
 
 
 ## 開始之前您必須瞭解的資訊
@@ -121,18 +114,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
     Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "Discovery Search Mailbox" -TargetFolder "April Stewart Recovery" -LogLevel Full
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用時<strong>Search-Mailbox</strong>指令程式，您可使用<em>SearchQuery</em>參數來指定使用關鍵字查詢語言 (KQL) 格式化的查詢範圍搜尋。您也可以使用<em>SearchDumpsterOnly</em>參數來搜尋只有項目可復原的項目] 資料夾中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用時<strong>Search-Mailbox</strong>指令程式，您可使用<em>SearchQuery</em>參數來指定使用關鍵字查詢語言 (KQL) 格式化的查詢範圍搜尋。您也可以使用<em>SearchDumpsterOnly</em>參數來搜尋只有項目可復原的項目] 資料夾中。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Search-Mailbox](https://technet.microsoft.com/zh-tw/library/dd298173\(v=exchg.150\))。
@@ -145,18 +131,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [郵件原則及符合性權限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主題中的「就地 eDiscovery」項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 以還原復原項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 以還原復原項目。
+
+
 
 
 郵件已復原到探索信箱後，您可以還原至使用者的信箱使用**Search-Mailbox**指令程式。在Exchange 2013，您也可以使用**New-MailboxExportRequest**及**New-MailboxImportRequest**指令程式來匯出至訊息或匯入訊息從.pst 檔案。

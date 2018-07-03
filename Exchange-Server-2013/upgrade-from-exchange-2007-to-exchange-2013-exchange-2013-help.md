@@ -27,18 +27,11 @@ Microsoft Exchange Server 2010 和 Exchange Server 2007 具有多個伺服器角
 
 您無法將現有的 Exchange 2003 組織直接升級至 Exchange 2013。您必須先將 Exchange 2003 組織升級至 Exchange 2007 或 Exchange 2010 組織，然後才能將 Exchange 2007 或 Exchange 2010 組織升級至 Exchange 2013。我們建議您先將組織從 Exchange 2003 升級至 Exchange 2010，然後再從 Exchange 2010 升級至 Exchange 2013。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須先將 Exchange 2003 的所有執行個體都從組織中移除，才能升級至 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 您必須先將 Exchange 2003 的所有執行個體都從組織中移除，才能升級至 Exchange 2013。
+
+
 
 
 您可以將所有的 Exchange 2003 信箱都移轉至 Exchange Online。如需此方法的詳細資訊，請參閱[將多個電子郵件帳戶移轉至 Office 365 的方法](https://go.microsoft.com/fwlink/p/?linkid=524030)。

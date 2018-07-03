@@ -270,18 +270,11 @@ _**上次修改主題的時間：** 2017-02-06_
 
 下表顯示使用中記錄 I/O 延遲需求計數器和其可接受的閾值。當已超出臨界值時，而且會降低用戶端體驗。例如，使用者可能會遇到郵件傳遞延遲或慢速系統效能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一般儲存體延遲指導 in Exchange 2013 是非常類似的指引從 Exchange 2010。其他資料庫計數器可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">信箱伺服器計數器</a>中找到。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 一般儲存體延遲指導 in Exchange 2013 是非常類似的指引從 Exchange 2010。其他資料庫計數器可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">信箱伺服器計數器</a>中找到。
+
+
 
 
 
@@ -499,18 +492,11 @@ _**上次修改主題的時間：** 2017-02-06_
 
 下表顯示可接受的閾值與資訊儲存庫計數器的相關資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一般儲存體延遲指導在 Exchange 2013 是指導來從 Exchange 2010 非常類似。其他資訊儲存庫計數器可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">信箱伺服器計數器</a>中找到。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 一般儲存體延遲指導在 Exchange 2013 是指導來從 Exchange 2010 非常類似。其他資訊儲存庫計數器可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">信箱伺服器計數器</a>中找到。
+
+
 
 
 

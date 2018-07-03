@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2013-02-14_
 
 本主題說明如何擷取公用資料夾，例如顯示名稱、 建立時間、 上次修改的使用者、 最後一個使用者存取\] 和項目大小相關的統計資料。您可以使用這項資訊以進行刪除或保留 \[公用資料夾的相關決策。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 系統管理中心 (EAC)，您可以檢視由瀏覽至 [<strong>公用資料夾</strong>的公用資料夾的配額及使用方式資訊的一些 &gt;<strong>編輯</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" /> &gt;<strong>信箱使用量</strong>。不過，這項資訊不完整，因此建議您使用命令介面來檢視公用資料夾統計資料。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 系統管理中心 (EAC)，您可以檢視由瀏覽至 [<strong>公用資料夾</strong>的公用資料夾的配額及使用方式資訊的一些 &gt;<strong>編輯</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" /> &gt;<strong>信箱使用量</strong>。不過，這項資訊不完整，因此建議您使用命令介面來檢視公用資料夾統計資料。
+
+
 
 
 如需與管理公用資料夾相關的其他管理工作，請參閱[公用資料夾程序](public-folder-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：** 2013-02-14_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -69,18 +55,11 @@ _**上次修改主題的時間：** 2013-02-14_
 
     Get-PublicFolderStatistics -Identity \Marketing | Format-List
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Identity</em>參數的值必須包含公用資料夾的路徑。例如，如果 Marketing 父系資料夾商務下已經存在的公用資料夾，會提供下列值： <code>\Business\Marketing</code></td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <em>Identity</em>參數的值必須包含公用資料夾的路徑。例如，如果 Marketing 父系資料夾商務下已經存在的公用資料夾，會提供下列值： <code>\Business\Marketing</code>
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Get-PublicFolderStatistics](https://technet.microsoft.com/zh-tw/library/aa998663\(v=exchg.150\))。

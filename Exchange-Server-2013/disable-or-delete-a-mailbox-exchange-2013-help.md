@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果您需要刪除 Exchange Online 中的信箱，請參閱＜[刪除或還原 Exchange Online 中的使用者信箱](https://technet.microsoft.com/zh-tw/library/dn186233\(v=exchg.150\))＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>已停用或已刪除的信箱稱為「中斷連線信箱」。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 已停用或已刪除的信箱稱為「中斷連線信箱」。
+
+
 
 
 刪除和停用信箱的主要差異在於，當您停用信箱時，Exchange 屬性會從對應的 Active Directory 使用者帳戶移除，但使用者帳戶仍保留下來。當您刪除信箱時，會同時刪除 Exchange 屬性和 Active Directory 使用者帳戶。此差異也會決定重新連線或還原已停用和已刪除信箱時的選項。
@@ -111,18 +104,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

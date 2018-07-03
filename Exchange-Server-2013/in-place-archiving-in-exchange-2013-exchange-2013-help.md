@@ -79,18 +79,11 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 <tr class="odd">
 <td><p>Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App</p></td>
 <td><p>是。Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App 使用者可以將項目從主要信箱複製或移動至封存信箱，也可以使用保留原則將項目移至封存。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 2010 與更新版本和 Outlook 2007 使用者可以也複製或將項目從.pst 檔案移到封存信箱。Outlook 2007 使用者需要 2011 年 2 月 Office 2007 累計更新。Outlook 2010 及更新版本及 Outlook 2007 之間存在封存支援的一些差異。如需詳細資訊，請參閱 Exchange 團隊部落格文章，請參閱<a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">是維吉尼亞州、 有 Outlook 2007 中的 Exchange 2010 封存支援</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook 2010 與更新版本和 Outlook 2007 使用者可以也複製或將項目從.pst 檔案移到封存信箱。Outlook 2007 使用者需要 2011 年 2 月 Office 2007 累計更新。Outlook 2010 及更新版本及 Outlook 2007 之間存在封存支援的一些差異。如需詳細資訊，請參閱 Exchange 團隊部落格文章，請參閱<a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">是維吉尼亞州、 有 Outlook 2007 中的 Exchange 2010 封存支援</a>。
+
+
 
 </td>
 </tr>
@@ -102,18 +95,11 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>就地封存 premium 功能，且需要 Exchange 企業用戶端存取授權 (CAL)。如需如何授權 Exchange 的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server 授權</a>。如需詳細資訊 Outlook 存取封存信箱所需的版本，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237276">個人封存和保留原則的授權需求</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 就地封存 premium 功能，且需要 Exchange 企業用戶端存取授權 (CAL)。如需如何授權 Exchange 的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server 授權</a>。如需詳細資訊 Outlook 存取封存信箱所需的版本，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237276">個人封存和保留原則的授權需求</a>。
+
+
 
 
 即使已設定為使用 Exchange 快取模式 (離線)，Outlook 也不會在使用者的電腦上建立封存信箱的本機副本。使用者只能在線上模式下存取封存信箱。
@@ -168,18 +154,11 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 
 Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和保留原則。此原則內含具有 \[移至封存\] 動作的保留標記，如下表中所示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2010 中，Exchange 安裝程式所建立的預設封存和保留原則名為 <strong>[預設封存和保留原則]</strong>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2010 中，Exchange 安裝程式所建立的預設封存和保留原則名為 <strong>[預設封存和保留原則]</strong>。
+
+
 
 
 
@@ -238,18 +217,11 @@ Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和�
 
   - 如何套用個人標記 (顯示於 Outlook 和 Outlook Web App 的 \[封存原則\] 功能表中)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您將保留原則套用至擁有封存信箱的使用者，保留原則會取代預設 MRM 原則。您可以建立一或多個擁有 [移至封存] 動作的保留標記，然後將標記連結至保留原則。您也可以將預設的 [移至封存] 標記 (安裝程式所建立，並連結至預設 MRM 原則) 新增至您所建立的任何保留原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您將保留原則套用至擁有封存信箱的使用者，保留原則會取代預設 MRM 原則。您可以建立一或多個擁有 [移至封存] 動作的保留標記，然後將標記連結至保留原則。您也可以將預設的 [移至封存] 標記 (安裝程式所建立，並連結至預設 MRM 原則) 新增至您所建立的任何保留原則。
+
+
 
 
 規範與封存在 Outlook 2010 和更新版本的相關資訊，請參閱[規劃規範與封存在 Outlook 2010](https://go.microsoft.com/fwlink/?linkid=210902)。

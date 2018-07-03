@@ -65,18 +65,11 @@ Custom attribute example with ExtensionCustomAttributes parameter
 
 在許多Exchange部署中，建立的 OU 中的所有收件者的電子郵件地址原則是常見的案例。OU 不是可在電子郵件地址原則或通訊清單的*RecipientFilter*參數可篩選屬性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>動態通訊群組有額外的參數可用於將它限制在特定 OU 或容器的收件者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 動態通訊群組有額外的參數可用於將它限制在特定 OU 或容器的收件者。
+
+
 
 
 如果該 OU 中的收件者未共用任何進行篩選時可依據的共同內容，例如部門或位置，則您可使用共同的值填入其中一個自訂屬性，如此範例所示。
@@ -95,18 +88,11 @@ Custom attribute example with ExtensionCustomAttributes parameter
 
     New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用<em>IncludedRecipients</em>參數如果您使用<em>Conditional</em>參數。此外，您無法使用<em>Conditional</em>參數若您使用<em>RecipientFilter</em>參數。如果您想要包含其他篩選器來建立動態通訊群組中，電子郵件地址原則或通訊清單，您應該使用<em>RecipientFilter</em>參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須使用<em>IncludedRecipients</em>參數如果您使用<em>Conditional</em>參數。此外，您無法使用<em>Conditional</em>參數若您使用<em>RecipientFilter</em>參數。如果您想要包含其他篩選器來建立動態通訊群組中，電子郵件地址原則或通訊清單，您應該使用<em>RecipientFilter</em>參數。
+
+
 
 
 ## 使用 ExtensionCustomAttributes 參數自訂屬性範例

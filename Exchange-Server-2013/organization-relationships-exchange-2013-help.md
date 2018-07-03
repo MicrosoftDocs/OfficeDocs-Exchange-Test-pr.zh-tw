@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2014-02-20_
 
   - 可存取空閒/忙碌資訊，包括時間、主旨與地點
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用者不要將其空閒/忙碌資訊與他人共用，他們可變更 Outlook 中的預設權限項目。若要執行此動作，使用者可移至 <strong>[行事曆內容]</strong> &gt; <strong>[權限]</strong> 索引標籤，選取 <strong>[預設]</strong> 權限，然後選取 <strong>[權限層級]</strong> 清單中的 <strong>[無]</strong>。內部或外部使用者將看不見其空閒/忙碌資訊，即使有組織關係存在亦然。此時會套用使用者所設定的權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果使用者不要將其空閒/忙碌資訊與他人共用，他們可變更 Outlook 中的預設權限項目。若要執行此動作，使用者可移至 <strong>[行事曆內容]</strong> &gt; <strong>[權限]</strong> 索引標籤，選取 <strong>[預設]</strong> 權限，然後選取 <strong>[權限層級]</strong> 清單中的 <strong>[無]</strong>。內部或外部使用者將看不見其空閒/忙碌資訊，即使有組織關係存在亦然。此時會套用使用者所設定的權限。
+
+
 
 
 下列主題將協助您設定及管理組織關係，作為組織共用機制的一部分：

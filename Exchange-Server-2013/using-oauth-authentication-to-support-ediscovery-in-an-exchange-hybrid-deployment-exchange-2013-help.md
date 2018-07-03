@@ -63,18 +63,11 @@ OAuth 驗證通常涉及三方：一個授權伺服器以及兩個需要彼此�
 <tr class="even">
 <td><p>使用由管理員或法務人員從 Exchange 內部部署組織所起始的 eDiscovery 搜尋中，搜尋內部部署信箱。</p></td>
 <td><p>否</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>之前討論過，如果內部部署信箱是以雲端式封存信箱來設定，則需要 OAuth 驗證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 之前討論過，如果內部部署信箱是以雲端式封存信箱來設定，則需要 OAuth 驗證。
+
+
 
 </td>
 </tr>

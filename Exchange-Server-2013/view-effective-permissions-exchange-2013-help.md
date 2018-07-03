@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2012-10-09_
 
 使用*Role*參數時*GetEffectiveUsers*參數可搭配**Get-ManagementRoleAssignment**指令程式。藉由指定此參數與特定角色， **Get-ManagementRoleAssignment**指令程式會檢查指定給的角色、 角色群組、 指派原則和 Usg，例如的所有角色 assignees，並列出每個成員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>GetEffectiveUser</em>參數不會列出連結的外部索引角色群組之成員的使用者。而不是使用者的清單，如果找到連結的角色群組，就會顯示<strong>所有連結的群組成員</strong>。如需在多個樹系中的權限的詳細資訊，請參閱<a href="understanding-multiple-forest-permissions-exchange-2013-help.md">了解多重樹系權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <em>GetEffectiveUser</em>參數不會列出連結的外部索引角色群組之成員的使用者。而不是使用者的清單，如果找到連結的角色群組，就會顯示<strong>所有連結的群組成員</strong>。如需在多個樹系中的權限的詳細資訊，請參閱<a href="understanding-multiple-forest-permissions-exchange-2013-help.md">了解多重樹系權限</a>。
+
+
 
 
 如需管理角色、 角色群組和指派原則的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。如需管理角色指派的詳細資訊，請參閱[了解管理角色指派](understanding-management-role-assignments-exchange-2013-help.md)。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：** 2012-10-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面來列出所有有效的使用者

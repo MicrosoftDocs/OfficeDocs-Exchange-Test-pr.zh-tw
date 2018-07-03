@@ -51,18 +51,11 @@ Considerations for content conversion tracing
 
   - 系統：完全控制
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內容轉換追蹤複製完整的電子郵件的內容。若要避免不想要機密資訊的揭露，您需要設定適當的安全性權限的內容轉換位置追蹤檔案。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 內容轉換追蹤複製完整的電子郵件的內容。若要避免不想要機密資訊的揭露，您需要設定適當的安全性權限的內容轉換位置追蹤檔案。
+
+
 
 
 回到頁首

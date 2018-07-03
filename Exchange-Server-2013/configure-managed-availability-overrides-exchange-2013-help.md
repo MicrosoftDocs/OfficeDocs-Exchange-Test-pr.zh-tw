@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2015-11-30_
 
 有兩種類型的覆寫： 本機和全域。如其名稱暗示，本機覆寫為僅適用於伺服器建立、 和全域覆寫可用來套用至多部伺服器覆寫。針對特定期間或Exchange、 但不可同時在同一時間的特定版本可以建立這兩種類型的覆寫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立的覆寫時，它不會立即生效。Microsoft Exchange狀況管理服務的組態變更檢查每隔 10 分鐘並載入任何偵測到的設定變更。如果您不想要等待，您可以重新啟動服務。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您建立的覆寫時，它不會立即生效。Microsoft Exchange狀況管理服務的組態變更檢查每隔 10 分鐘並載入任何偵測到的設定變更。如果您不想要等待，您可以重新啟動服務。
+
+
 
 
 如需其他與受管理可用性相關的管理工作資訊，請參閱[管理健全設定與伺服器健康情況](manage-health-sets-and-server-health-exchange-2013-help.md)。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：** 2015-11-30_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -71,18 +57,11 @@ _**上次修改主題的時間：** 2015-11-30_
 
     Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立的覆寫時， <em>Identity</em>參數中所使用的值會區分大小寫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您建立的覆寫時， <em>Identity</em>參數中所使用的值會區分大小寫。
+
+
 
 
 此範例會停用回應程式`ActiveDirectoryConnectivityConfigDCServerReboot`名 EXCH03 為 20 天的伺服器上的本機覆寫。
@@ -125,18 +104,11 @@ _**上次修改主題的時間：** 2015-11-30_
 
     Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立的覆寫時， <em>Identity</em>參數中所使用的值會區分大小寫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您建立的覆寫時， <em>Identity</em>參數中所使用的值會區分大小寫。
+
+
 
 
 此範例會停用`OnPremisesInboundProxy`探查 30 天的全域覆寫。

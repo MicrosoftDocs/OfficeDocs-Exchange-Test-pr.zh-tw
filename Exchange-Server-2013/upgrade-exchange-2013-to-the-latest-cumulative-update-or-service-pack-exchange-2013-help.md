@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-09-04_
 
 如果您已安裝 Microsoft Exchange Server 2013，則可以將它升級至最新的 Exchange 2013 累計更新或 Service Pack。您可以使用 Exchange 2013 安裝精靈升級您目前的 Exchange 2013 版本。如需最新 Exchange 2013 累計更新或 Service Pack 的詳細資訊，請參閱 [更新 Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md)。若要深入了解 Exchange 2013，請參閱 [Exchange 2013 的新功能](what-s-new-in-exchange-2013-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您將 Exchange 2013 升級至較新的累計更新或 Service Pack 之後，就無法解除安裝新版本以還原為舊版本。如果您解除安裝新版本，就會從伺服器移除 Exchange。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 在您將 Exchange 2013 升級至較新的累計更新或 Service Pack 之後，就無法解除安裝新版本以還原為舊版本。如果您解除安裝新版本，就會從伺服器移除 Exchange。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -57,18 +50,11 @@ _**上次修改主題的時間：** 2015-09-04_
 
   - 安裝累計更新或 Service Pack 之後，您必須重新啟動電腦，才能對登錄和作業系統進行變更。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 安裝 Exchange 2013 累計更新或 Service Pack

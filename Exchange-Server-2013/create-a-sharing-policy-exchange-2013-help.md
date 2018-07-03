@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 您可以使用共用原則，控制 Exchange 組織中的使用者如何與組織外的使用者共用行事曆資訊。共用原則可讓使用者自行建立，與不同類型的外部使用者對其行事曆資訊進行人員對人員共用。這些原則支援與外部同盟組織 (如 Office 365 或其他內部部署 Exchange 組織)、外部非同盟組織以及可存取網際網路的個人共用行事曆資訊。若要將特定的共用原則套用至使用者，請參閱[將共用原則套用至信箱](apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立共用原則是其中一個設定 Exchange 組織中的同盟共用的數個步驟。您必須設定內部部署 Exchange 組織的Azure Active Directory驗證系統的同盟信任之前可以與其他同盟 Exchange 組織共用行事曆資訊。同盟信任不一定網際網路共用原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建立共用原則是其中一個設定 Exchange 組織中的同盟共用的數個步驟。您必須設定內部部署 Exchange 組織的Azure Active Directory驗證系統的同盟信任之前可以與其他同盟 Exchange 組織共用行事曆資訊。同盟信任不一定網際網路共用原則。
+
+
 
 
 若要深入了解同盟共用，請參閱[共用](sharing-exchange-2013-help.md)。
@@ -151,16 +144,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
     Get-SharingPolicy <policy name> | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

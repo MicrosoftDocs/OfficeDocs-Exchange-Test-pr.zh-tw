@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
 您可以新增指令碼和非Exchange指令程式未限定範圍的頂層管理角色如果您想要讓新的指令碼或非Exchange指令程式可以使用現有的未限定範圍角色。這些指令碼和非Exchange cmdlet 會新增為管理角色項目未限定範圍的頂層管理角色。然後可以使用這些未限定範圍的頂層角色項目或任何未限定範圍的角色衍生自最上層角色。如需未限定範圍的角色項目的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要變更包含 Exchange Cmdlet 之管理角色上的角色項目，請參閱<a href="change-a-role-entry-exchange-2013-help.md">變更的角色項目</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果要變更包含 Exchange Cmdlet 之管理角色上的角色項目，請參閱<a href="change-a-role-entry-exchange-2013-help.md">變更的角色項目</a>。
+
+
 
 
 要尋找與角色相關的其他管理工作嗎？請參閱[進階權限](advanced-permissions-exchange-2013-help.md)。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -83,18 +69,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
     Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增指令碼中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後新增或移除參數，您必須手動更新包含指令碼的角色項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增指令碼中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後新增或移除參數，您必須手動更新包含指令碼的角色項目。
+
+
 
 
 ## 新增非 Exchange Cmdlet 角色項目到未限定範圍的頂層角色
@@ -113,18 +92,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
     Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增 Cmdlet 中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後變更 Cmdlet 並新增或移除參數，您必須手動更新包含 Cmdlet 的角色項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增 Cmdlet 中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後變更 Cmdlet 並新增或移除參數，您必須手動更新包含 Cmdlet 的角色項目。
+
+
 
 
 ## 其他工作

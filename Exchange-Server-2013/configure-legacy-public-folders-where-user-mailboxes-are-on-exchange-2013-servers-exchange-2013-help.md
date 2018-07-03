@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2017-03-27_
 
 信箱位於 Exchange Server 2013 或 Exchange Server 2016 的使用者將無法存取舊版公用資料夾從 Outlook Web App、 在 web 上的 Outlook 或 Outlook for mac。本文中的步驟適用於 Exchange 2013 和 Exchange 2016。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 2016 for Mac 使用者可以存取舊版公用資料夾後您依照本文中的步驟。如果您組織中的用戶端使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取並行或混合式拓撲中的公用資料夾。如需詳細資訊，請參閱<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">存取公用資料夾與 Outlook 2016 for Mac</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook 2016 for Mac 使用者可以存取舊版公用資料夾後您依照本文中的步驟。如果您組織中的用戶端使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取並行或混合式拓撲中的公用資料夾。如需詳細資訊，請參閱<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">存取公用資料夾與 Outlook 2016 for Mac</a>。
+
+
 
 
 ## 步驟 1：將 Exchange 2010 公用資料夾設為可探索
@@ -99,18 +92,11 @@ _**上次修改主題的時間：** 2017-03-27_
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須等到 ActiveDirectory 同步處理完成後，才會看見變更。此程序可能會花幾小時的時間。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須等到 ActiveDirectory 同步處理完成後，才會看見變更。此程序可能會花幾小時的時間。
+
+
 
 
 ## 如何知道這是否正常運作？

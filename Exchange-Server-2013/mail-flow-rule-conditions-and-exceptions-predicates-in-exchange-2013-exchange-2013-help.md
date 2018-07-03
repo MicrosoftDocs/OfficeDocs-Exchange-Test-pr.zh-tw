@@ -304,18 +304,11 @@ _**上次修改主題的時間：** 2017-12-20_
 
 ## 郵件主旨或內文
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。
+
+
 
 
 
@@ -752,18 +745,11 @@ _**上次修改主題的時間：** 2017-12-20_
 <p><em>ExceptIfMessageTypeMatches</em></p></td>
 <td><p><code>MessageType</code></p></td>
 <td><p>將指定之類型的郵件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。
+
+
 
 </td>
 <td><p>Exchange 2010或更新版本</p></td>
@@ -812,18 +798,11 @@ _**上次修改主題的時間：** 2017-12-20_
 
 ## 郵件標頭
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。
+
+
 
 
 
@@ -1008,18 +987,11 @@ _**上次修改主題的時間：** 2017-12-20_
 
 下表說明可用的條件和例外狀況的屬性類型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果此內容是字串，則尾端不能有空格。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果此內容是字串，則尾端不能有空格。
+
+
 
 
 
@@ -1146,18 +1118,11 @@ _**上次修改主題的時間：** 2017-12-20_
 <li><p><strong>核准要求</strong>(<code>ApprovalRequest</code>)</p></li>
 <li><p><strong>讀取回條</strong>(<code>ReadReceipt</code>)</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。
+
+
 
 </td>
 </tr>
@@ -1210,18 +1175,11 @@ _**上次修改主題的時間：** 2017-12-20_
 <li><p>寄件者的電子郵件地址不在公認的網域。</p></li>
 <li><p>寄件者的電子郵件地址是設定為外部轉送網域的公認網域中。</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要判斷郵件連絡人會被視為內部或外部組織，寄件者地址會比較與組織的公認網域。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要判斷郵件連絡人會被視為內部或外部組織，寄件者地址會比較與組織的公認網域。
+
+
 
 </td>
 </tr>

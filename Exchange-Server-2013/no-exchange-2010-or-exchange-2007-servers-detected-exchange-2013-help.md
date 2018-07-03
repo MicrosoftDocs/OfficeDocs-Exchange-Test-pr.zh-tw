@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2012-11-08_
 
 因為沒有Exchange Server 2010或Exchange Server 2007伺服器角色存在於組織中 Microsoft Exchange Server 2013安裝程式會顯示這個警告。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您繼續執行Exchange Server 2013安裝，您將不能夠Exchange 2010或Exchange 2007伺服器新增至未來組織。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 如果您繼續執行Exchange Server 2013安裝，您將不能夠Exchange 2010或Exchange 2007伺服器新增至未來組織。
+
+
 
 
 在部署之前Exchange 2013、 考慮可能需要您部署Exchange 2010或Exchange 2007伺服器後的再部署Exchange 2013下列因素：

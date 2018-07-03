@@ -176,18 +176,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 上述命令設定 DAG1 使用 CAS4 的備用見證伺服器及使用 CAS1 上設定之相同路徑的 CAS4 上的備用見證目錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用相同路徑並非必要；Contoso 選擇這樣做是為了標準化其組態。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用相同路徑並非必要；Contoso 選擇這樣做是為了標準化其組態。
+
+
 
 
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
@@ -257,18 +250,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 雖然在 WAN 上的其他位置中，每個作用中的資料庫有兩個副本，但是透過 WAN 植入只會執行一次。這是因為 Contoso 利用 Exchange 2013 功能將資料庫的被動副本當作植入的來源。使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd298105\(v=exchg.150\)) 指令程式搭配 *SeedingPostponed* 參數，可防止該工作自動植入已建立的新資料庫副本。然後，系統管理員可以擱置未植入的副本，並且透過使用 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335201\(v=exchg.150\)) 指令程式搭配 *SourceServer* 參數，將資料庫的本機副本指定為植入作業的來源。因此，新增至每個位置的第二個資料庫副本植入會在本機上進行，而不會透過 WAN 進行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在上述範例中，非延遲資料庫副本是透過 WAN 植入，然後該副本會用來植入與非延遲副本在相同資料中心中的資料庫延遲副本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在上述範例中，非延遲資料庫副本是透過 WAN 植入，然後該副本會用來植入與非延遲副本在相同資料中心中的資料庫延遲副本。
+
+
 
 
 Contoso 已經將每個信箱資料庫的其中一個被動副本設定為延遲資料庫副本，以提供保護，預防極少發生但卻極端嚴重的資料庫邏輯損毀。因此，系統管理員會使用 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd351074\(v=exchg.150\)) 指令程式搭配 *ActivationOnly* 參數，將延遲副本設定為阻止啟動。這可確保如果發生資料庫或伺服器容錯移轉，延遲資料庫副本將不會啟動。

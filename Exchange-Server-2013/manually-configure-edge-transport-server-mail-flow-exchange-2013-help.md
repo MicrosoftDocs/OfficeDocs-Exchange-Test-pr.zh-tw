@@ -85,18 +85,11 @@ Configure Send connectors for external relay domains
 
     New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此範例不會指定任何智慧主機驗證機制。請確定設定正確的驗證機制，並在您於自己的 Exchange 組織中建立智慧主機連接器時提供所有必要認證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此範例不會指定任何智慧主機驗證機制。請確定設定正確的驗證機制，並在您於自己的 Exchange 組織中建立智慧主機連接器時提供所有必要認證。
+
+
 
 
 ## 設定外部轉送網域的傳送連接器

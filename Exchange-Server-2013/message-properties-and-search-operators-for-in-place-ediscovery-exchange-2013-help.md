@@ -173,36 +173,22 @@ _**上次修改主題的時間：** 2016-12-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   如需收件者的屬性值，您可以使用 SMTP 位址、顯示名稱或別名來指定使用者。例如，您可以使用 annb@contoso.com、annb 或「Ann Beebe」來指定使用者 Ann Beebe。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 1   如需收件者的屬性值，您可以使用 SMTP 位址、顯示名稱或別名來指定使用者。例如，您可以使用 annb@contoso.com、annb 或「Ann Beebe」來指定使用者 Ann Beebe。
+
+
 
 
 ## 支援的搜尋運算子
 
 布林值搜尋運算子，例如**AND**、 **OR**，可協助您藉由包括或排除搜尋查詢中的特定字詞定義更精確的信箱搜尋。其他技術，例如使用屬性運算子 (例如 \> = 或..)、 引號括號，且萬用字元，協助您調整 eDiscovery 搜尋查詢。下表列出您可以使用縮小或擴大搜尋結果的運算子。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須在搜尋查詢中使用大寫布林運算子。例如，使用<strong>AND</strong>;請勿使用<strong>and</strong>。在搜尋查詢中使用小寫運算子會傳回錯誤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您必須在搜尋查詢中使用大寫布林運算子。例如，使用<strong>AND</strong>;請勿使用<strong>and</strong>。在搜尋查詢中使用小寫運算子會傳回錯誤。
+
+
 
 
 
@@ -305,18 +291,11 @@ _**上次修改主題的時間：** 2016-12-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   對具有日期或數值的屬性使用這個運算子。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 1   對具有日期或數值的屬性使用這個運算子。
+
+
 
 
 ## 在搜尋查詢中不支援的字元

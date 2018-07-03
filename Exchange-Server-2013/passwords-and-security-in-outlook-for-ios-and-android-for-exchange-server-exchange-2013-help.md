@@ -41,18 +41,11 @@ Outlook 服務已解密的密碼執行階段後，服務可再連線至 Exchange
 
   - 沒有可用的裝置，防止 Outlook 與 Exchange 同步處理的網際網路連線。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 將不會變成非作用中只是因為使用者無法開啟應用程式的一段時間，例如週末或在休假上。只要背景應用程式重新整理已啟用 （這是 Outlook for iOS 及 Android 的預設值），推入通知和背景同步處理的電子郵件的功能將會視為活動。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook 將不會變成非作用中只是因為使用者無法開啟應用程式的一段時間，例如週末或在休假上。只要背景應用程式重新整理已啟用 （這是 Outlook for iOS 及 Android 的預設值），推入通知和背景同步處理的電子郵件的功能將會視為活動。
+
+
 
 
 **清除加密密碼\] 和 \[訊息從硬碟的快取**

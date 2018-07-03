@@ -23,18 +23,11 @@ Outlook Web App 登入、語言選擇與錯誤頁面是根據主題資源資料�
 
 如果您有多部支援 Outlook Web App 的伺服器，且希望它們全都使用相同的登入、語言與錯誤頁面，則必須將修改的檔案複製到每部伺服器中。您也應該建立自訂檔案的備份副本。如果您重新安裝或升級 Exchange，將會覆寫主題資料夾中的所有檔案。在重新安裝或升級完成之後，您必須將自訂檔案複製回適當的資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您開始建立自訂的登入與登出頁面之前，請先將所有您會變更的檔案備份。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在您開始建立自訂的登入與登出頁面之前，請先將所有您會變更的檔案備份。
+
+
 
 
 如需建立自訂主題的詳細資訊，請參閱[建立 Outlook Web App 的佈景主題](create-a-theme-for-outlook-web-app-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ Outlook Web App 登入、語言選擇與錯誤頁面是根據主題資源資料�
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -135,16 +121,9 @@ Outlook Web App 登入、語言選擇與錯誤頁面是根據主題資源資料�
 
 5.  重新整理瀏覽器視窗。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要查看變更的效果，可將正在編輯的 .css 檔保持開啟，並且在每次儲存變更之後重新整理瀏覽器視窗。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 若要查看變更的效果，可將正在編輯的 .css 檔保持開啟，並且在每次儲存變更之後重新整理瀏覽器視窗。
+
+
 

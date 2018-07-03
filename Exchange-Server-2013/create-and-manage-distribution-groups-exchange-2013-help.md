@@ -102,18 +102,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 5.  完成作業後，請按一下\[儲存\] 以建立通訊群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>依預設，新的通訊群組會要求所有寄件者經過驗證。如此便可防止外部寄件者傳送郵件給通訊群組。若要設定通訊群組接受來自所有寄件者的郵件，則必須修改該通訊群組的郵件傳遞限制設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 依預設，新的通訊群組會要求所有寄件者經過驗證。如此便可防止外部寄件者傳送郵件給通訊群組。若要設定通訊群組接受來自所有寄件者的郵件，則必須修改該通訊群組的郵件傳遞限制設定。
+
+
 
 
 ## 使用命令介面建立通訊群組
@@ -134,18 +127,11 @@ _**上次修改主題的時間：** 2016-12-09_
     
         Get-DistributionGroup <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以只建立萬用通訊群組或啟用萬用通訊群組的郵件功能。若要將網域本機或全域群組轉換至萬用群組，您可以使用命令介面中的 <a href="https://technet.microsoft.com/zh-tw/library/bb123770(v=exchg.150)">Set-Group</a> Cmdlet。您可能會有從舊版 Exchange 遷移之擁有郵件功能的群組，但這些群組不是萬用群組。您可以使用 EAC 或命令介面來管理這些群組</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 可以只建立萬用通訊群組或啟用萬用通訊群組的郵件功能。若要將網域本機或全域群組轉換至萬用群組，您可以使用命令介面中的 <a href="https://technet.microsoft.com/zh-tw/library/bb123770(v=exchg.150)">Set-Group</a> Cmdlet。您可能會有從舊版 Exchange 遷移之擁有郵件功能的群組，但這些群組不是萬用群組。您可以使用 EAC 或命令介面來管理這些群組
+
+
 
 
 ## 變更通訊群組內容
@@ -339,18 +325,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本區段可用來新增「寄件提醒」，以便在使用者傳送郵件給此群組時，通知使用者潛在的問題。「寄件提醒」是在此群組新增至新電子郵件的 \[收件者\]、\[副本\] 或 \[密件副本\] 行時，顯示在資訊列中的文字。例如，您可以將郵件提示新增至大型群組，以便警告可能的寄件者，表示其郵件將傳送至大量人員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。
+
+
 
 
 ## 群組代理人

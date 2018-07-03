@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 ![保留的位置 Lync 項目](images/Dn508399.691d2324-9fac-4689-8527-c78d387e0e3e(EXCHG.150).jpg "保留的位置 Lync 項目")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以設定為 「 就地保留來排除 Lync 項目。例如，組織可能會希望比其他類型的內容更短的期間內保留立即訊息和語音信箱項目。若要實作此類型的保留原則，您可以建立的一段時間 （例如 7 年） 保留內容並排除此保留在 Lync 項目為 「 就地保留。然後您可以建立另一個 In-place Hold 保留只有 Lync 項目更短保留持續時間。您還可以指定應保留內容的時間。如需建立保留特定持續時間的詳細資訊，請參閱<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留與訴訟暫止</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以設定為 「 就地保留來排除 Lync 項目。例如，組織可能會希望比其他類型的內容更短的期間內保留立即訊息和語音信箱項目。若要實作此類型的保留原則，您可以建立的一段時間 （例如 7 年） 保留內容並排除此保留在 Lync 項目為 「 就地保留。然後您可以建立另一個 In-place Hold 保留只有 Lync 項目更短保留持續時間。您還可以指定應保留內容的時間。如需建立保留特定持續時間的詳細資訊，請參閱<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留與訴訟暫止</a>。
+
+
 
 
 請參閱下列主題的逐步指示將使用者放置在保留：

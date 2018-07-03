@@ -33,18 +33,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 下表說明可以出現在反垃圾郵件報告中的篩選器資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>反垃圾郵件報告只會顯示已套用至特定郵件的篩選器資訊。反垃圾郵件報告通常不會包含下表所列的所有資訊。例如，可能會收到下列反垃圾郵件報告： <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 反垃圾郵件報告只會顯示已套用至特定郵件的篩選器資訊。反垃圾郵件報告通常不會包含下表所列的所有資訊。例如，可能會收到下列反垃圾郵件報告： <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。
+
+
 
 
 ### 反垃圾郵件報告中的篩選器資訊

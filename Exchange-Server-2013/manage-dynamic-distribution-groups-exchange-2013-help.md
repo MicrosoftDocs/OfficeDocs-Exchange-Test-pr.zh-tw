@@ -23,18 +23,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 與一般通訊不同動態通訊群組是包含已定義的一組成員，成員資格清單的群組會計算每一則訊息傳送至\] 群組中，根據篩選器的時間與您定義的條件。當動態通訊群組傳送電子郵件訊息時，它會傳送給所有收件者在組織中符合該群組所定義的條件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>動態通訊群組會包含任何收件者中Active Directory符合其篩選的屬性值。若要比對 filter 會修改收件者的屬性、 無法不經意會成為群組成員並啟動接收寄至群組的郵件收件者。周詳、 一致帳戶佈建程序會減少這個問題發生的機率。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 動態通訊群組會包含任何收件者中Active Directory符合其篩選的屬性值。若要比對 filter 會修改收件者的屬性、 無法不經意會成為群組成員並啟動接收寄至群組的郵件收件者。周詳、 一致帳戶佈建程序會減少這個問題發生的機率。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -45,18 +38,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -184,18 +170,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 8.  當您完成後，按一下 \[儲存\] 以建立動態通訊群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要指定規則屬性可在 EAC 中以外，您必須使用命令介面來建立動態通訊群組。請記住的篩選及條件動態通訊群組具有自訂的收件者篩選器可以管理設定只能使用命令介面。例如如何使用自訂查詢建立動態通訊群組中，請參閱上使用命令介面來建立動態通訊群組的下一節。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您想要指定規則屬性可在 EAC 中以外，您必須使用命令介面來建立動態通訊群組。請記住的篩選及條件動態通訊群組具有自訂的收件者篩選器可以管理設定只能使用命令介面。例如如何使用自訂查詢建立動態通訊群組中，請參閱上使用命令介面來建立動態通訊群組的下一節。
+
+
 
 
 ## 使用命令介面建立動態通訊群組
@@ -379,18 +358,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 這個區段可用來新增郵件提示的潛在問題的使用者發出警示之前傳送的郵件時加入此群組。郵件提示是此群組 」 新增至 \[收件者\]、 \[副本\] 或 \[密件副本\] 行中的新的電子郵件時顯示在資訊列中的文字。例如，您可以加入大型群組警告他們的訊息就會傳送給人員大量的潛在寄件者 」 郵件提示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。
+
+
 
 
 ## \[群組代理人\]

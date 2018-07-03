@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2012-12-09_
 
 當您停用 UM 信箱原則上的未接的來電通知時，您會防止從接收電子郵件訊息的 UM 信箱原則相關聯的所有使用者當他們不接聽來電與來電者不會留下語音訊息。根據預設，會建立每個 UM 信箱原則啟用未接的來電通知。也根據預設，每次您建立 UM 撥號對應表會建立 UM 信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您在整合整合通訊與 Microsoft Lync Server 時，信箱位於 Exchange 2007 或 Exchange 2010 Mailbox Server 上的使用者，當使用者在來電尚未傳送給執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 之前中斷連線時，將無法使用未接來電通知。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您在整合整合通訊與 Microsoft Lync Server 時，信箱位於 Exchange 2007 或 Exchange 2010 Mailbox Server 上的使用者，當使用者在來電尚未傳送給執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 之前中斷連線時，將無法使用未接來電通知。
+
+
 
 
 如需其他與 UM 信箱原則相關的管理工作，請參閱 [管理 UM 信箱原則](manage-a-um-mailbox-policy-exchange-2013-help.md)。
@@ -49,18 +42,11 @@ _**上次修改主題的時間：** 2012-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

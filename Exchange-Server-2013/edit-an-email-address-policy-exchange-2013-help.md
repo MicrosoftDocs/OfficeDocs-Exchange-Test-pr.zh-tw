@@ -35,18 +35,11 @@ _**上次修改主題的時間：** 2012-12-10_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -75,18 +68,11 @@ _**上次修改主題的時間：** 2012-12-10_
 
     Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然位於 Georgia、Alabama 及 Louisiana 的收件者已套用電子郵件地址原則，仍必須將他們加入參數內，因為參數會覆寫值，而不是將值附加到現有的值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 雖然位於 Georgia、Alabama 及 Louisiana 的收件者已套用電子郵件地址原則，仍必須將他們加入參數內，因為參數會覆寫值，而不是將值附加到現有的值。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Set-EmailAddressPolicy](https://technet.microsoft.com/zh-tw/library/bb124517\(v=exchg.150\))。

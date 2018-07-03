@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2013-12-02_
 
 如果您要搜尋信箱稽核記錄，請參閱[信箱稽核記錄](mailbox-audit-logging-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online 中，您可以使用 EAC 來檢視系統管理員稽核記錄中的項目。如需詳細資訊，請參閱 <a href="view-the-administrator-audit-log-exchange-2013-help.md">檢視系統管理員稽核記錄</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 在 Exchange Online 中，您可以使用 EAC 來檢視系統管理員稽核記錄中的項目。如需詳細資訊，請參閱 <a href="view-the-administrator-audit-log-exchange-2013-help.md">檢視系統管理員稽核記錄</a>。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -66,18 +59,11 @@ _**上次修改主題的時間：** 2013-12-02_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -100,18 +86,11 @@ _**上次修改主題的時間：** 2013-12-02_
 
 如果您要建立 XML 檔案，其中包含組織的變更，您可以在 ECP 中使用 \[匯出系統管理員稽核記錄\] 報告。您可以使用 \[匯出系統管理員稽核記錄\] 報告來指定日期範圍，以搜尋包含您指定之使用者所做變更的稽核記錄項目。然後，XML 檔案會以電子郵件附件形式傳送給收件者。XML 檔案的大小上限為 10 MB。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，Outlook Web App 不允許您在開啟 XML 附件。您可以設定 Exchange 以允許使用 Outlook Web App 檢視 XML 附件，或是使用其他電子郵件用戶端 (如 Microsoft Outlook) 來檢視附件。如需如何設定 Outlook Web App 以允許檢視 XML 附件的相關資訊，請參閱<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">檢視或設定 Outlook Web App 虛擬目錄</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，Outlook Web App 不允許您在開啟 XML 附件。您可以設定 Exchange 以允許使用 Outlook Web App 檢視 XML 附件，或是使用其他電子郵件用戶端 (如 Microsoft Outlook) 來檢視附件。如需如何設定 Outlook Web App 以允許檢視 XML 附件的相關資訊，請參閱<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">檢視或設定 Outlook Web App 虛擬目錄</a>。
+
+
 
 
 1.  在 EAC 中，選取 \[相符性管理\] \> \[稽核\]，然後按一下 \[匯出系統管理員稽核記錄\]。
@@ -134,18 +113,11 @@ _**上次修改主題的時間：** 2013-12-02_
 
     Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，<strong>Search-AdminAuditLog</strong> 指令程式最多會傳回 1,000 個記錄項目。請使用 <em>ResultSize</em> 參數指定最多 250,000 個記錄檔項目。或者，使用 <code>Unlimited</code> 值傳回所有項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，<strong>Search-AdminAuditLog</strong> 指令程式最多會傳回 1,000 個記錄項目。請使用 <em>ResultSize</em> 參數指定最多 250,000 個記錄檔項目。或者，使用 <code>Unlimited</code> 值傳回所有項目。
+
+
 
 
 此範例使用下列準則，執行所有稽核記錄項目的搜尋：
@@ -213,18 +185,11 @@ _**上次修改主題的時間：** 2013-12-02_
 
 您可以使用命令介面來搜尋符合指定準則的稽核記錄項目，然後以 XML 檔案附件形式將這些結果傳送給您指定的收件者。結果會在 15 分鐘內傳送給收件者。如需搜尋準則的清單，請參閱[系統管理員稽核記錄](administrator-audit-logging-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，Outlook Web App 不允許您在開啟 XML 附件。您可以設定 Exchange 以允許使用 Outlook Web App 檢視 XML 附件，或是使用其他電子郵件用戶端 (如 Microsoft Outlook) 來檢視附件。如需如何設定 Outlook Web App 以允許檢視 XML 附件的相關資訊，請參閱<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">檢視或設定 Outlook Web App 虛擬目錄</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，Outlook Web App 不允許您在開啟 XML 附件。您可以設定 Exchange 以允許使用 Outlook Web App 檢視 XML 附件，或是使用其他電子郵件用戶端 (如 Microsoft Outlook) 來檢視附件。如需如何設定 Outlook Web App 以允許檢視 XML 附件的相關資訊，請參閱<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">檢視或設定 Outlook Web App 虛擬目錄</a>。
+
+
 
 
 若要搜尋指定準則的稽核記錄，請使用下列語法。
@@ -247,18 +212,11 @@ _**上次修改主題的時間：** 2013-12-02_
 
     New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, ProhibitSendReceiveQuota, IssueWarningQuota, MaxSendSize, MaxReceiveSize -StartDate 08/04/2012 -EndDate 10/03/2012 -UserIds davids, chrisd, kima -StatusMailRecipients davids@contoso.com -Name "Mailbox limit changes"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>New-AdminAuditLogSearch</strong> 指令程式產生的報告以 10 MB 為大小上限。如果您執行的搜尋傳回大於 10 MB 的報告，請變更您指定的搜尋準則。例如，縮小日期範圍並執行多個報告，各報告為原始日期範圍的一部分。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>New-AdminAuditLogSearch</strong> 指令程式產生的報告以 10 MB 為大小上限。如果您執行的搜尋傳回大於 10 MB 的報告，請變更您指定的搜尋準則。例如，縮小日期範圍並執行多個報告，各報告為原始日期範圍的一部分。
+
+
 
 
 如需 XML 檔案格式的相關資訊，請參閱[系統管理員稽核記錄檔結構](administrator-audit-log-structure-exchange-2013-help.md)。

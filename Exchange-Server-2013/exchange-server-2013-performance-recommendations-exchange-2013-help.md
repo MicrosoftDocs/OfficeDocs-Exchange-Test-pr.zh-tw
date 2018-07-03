@@ -25,18 +25,11 @@ Exchange 效能小組所撰寫本節中的文章。它們包含從 Exchange 產�
 
 TechNet 上與[Exchange 團隊部落格](https://go.microsoft.com/fwlink/p/?linkid=35786)中已經記載 Exchange 2013 的架構變更。 我們先將觸控時應考慮以進一步暸解效能的一些高階變更成本及調整大小。然後，下方，我們包含清單中的內容及下列重要方面的背景進一步提供建議的參照。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請參閱<a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虛擬化</a>如需在虛擬環境中部署 Exchange Server 2013 效能最佳化指引。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 請參閱<a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虛擬化</a>如需在虛擬環境中部署 Exchange Server 2013 效能最佳化指引。
+
+
 
 
 在 Exchange 2013 Client Access server role 為無狀態的 proxy 伺服器。 現在的用戶端存取伺服器角色的主要責任，來驗證傳入的要求，然後 proxy 至適當的信箱伺服器每次要求一個架設的使用者信箱的主動副本。 這表示不再需要設定用戶端存取伺服器之間的相似性及負載平衡器特定通訊協定。

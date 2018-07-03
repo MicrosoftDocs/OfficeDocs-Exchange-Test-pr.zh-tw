@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2013-02-19_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -127,18 +120,11 @@ SCL 隔離臨界值是在特定的郵件會被識別為潛在的垃圾郵件已�
 
   - 使用相同的 Outlook 設定檔的垃圾郵件隔離信箱復原隔離的郵件。不支援將權限套用至不同的 Outlook 設定檔復原的郵件。您無法使用不同的 Outlook 設定檔來復原或釋出郵件的垃圾郵件隔離信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>會刪除會被識別為垃圾郵件的 Ndr，即使其 scl 指出應隔離。Ndr 未傳遞至垃圾郵件隔離信箱。若要追蹤這類郵件、 使用代理程式記錄檔或追蹤記錄檔的郵件。如需詳細資訊，請參閱<a href="anti-spam-agent-logging-exchange-2013-help.md">反垃圾郵件代理程式記錄</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 會刪除會被識別為垃圾郵件的 Ndr，即使其 scl 指出應隔離。Ndr 未傳遞至垃圾郵件隔離信箱。若要追蹤這類郵件、 使用代理程式記錄檔或追蹤記錄檔的郵件。如需詳細資訊，請參閱<a href="anti-spam-agent-logging-exchange-2013-help.md">反垃圾郵件代理程式記錄</a>。
+
+
 
 
 ## 步驟 6： 調整 SCL 隔離臨界值

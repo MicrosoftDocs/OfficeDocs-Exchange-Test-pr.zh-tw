@@ -113,18 +113,11 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 您可以使用 Setup.exe 命令或您已從[Exchange Server 2013 UM 語言套件](https://go.microsoft.com/fwlink/p/?linkid=266542)下載 UM 語言套件之後執行*\<UMLanguagePack\>*.exe 安裝程式來新增 UM 語言套件。不過，您必須使用 Setup.exe 命令移除 UM 語言套件。沒有任何Exchange管理命令介面指令程式可用來新增或移除信箱伺服器的語言。如需如何安裝 UM 語言套件的詳細資訊，請參閱[安裝 UM 語言套件](install-a-um-language-pack-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，安裝信箱伺服器時，會安裝美式英文語言 (EN-US)。必須自電腦移除 Mailbox server 才能將它移除。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，安裝信箱伺服器時，會安裝美式英文語言 (EN-US)。必須自電腦移除 Mailbox server 才能將它移除。
+
+
 
 
 回到頁首
@@ -362,18 +355,11 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
   - [啟用語音信箱使用者接收傳真](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>整合您的整合通訊環境和 Microsoft Lync Server 時，還有一些額外的規劃考量。如需詳細資訊，請參閱<a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">部署 Exchange 2013 UM 和 Lync Server 概觀 （英文）</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 整合您的整合通訊環境和 Microsoft Lync Server 時，還有一些額外的規劃考量。如需詳細資訊，請參閱<a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">部署 Exchange 2013 UM 和 Lync Server 概觀 （英文）</a>。
+
+
 
 
 回到頁首

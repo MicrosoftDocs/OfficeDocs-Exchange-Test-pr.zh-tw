@@ -21,18 +21,11 @@ Microsoft Exchange 2010整合通訊疑難排解工具是名為**Test-ExchangeUMC
 
 UM 疑難排解工具可測試在內部及跨部門部署時，語音信箱是否正確運作。您可以在包含 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 2010 或更新版本的 UM 部署中，或在包含 VoIP 閘道、IP 專用交換機 (IP PBX) 或工作階段邊界控制器 (SBC) 的 UM 部署中使用此工具。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UM 疑難排解工具是用於測試及疑難排解。反之，<strong>Test-UMConnectivity</strong> 指令程式則是用於監視。<strong>Test-UMConnectivity</strong> Cmdlet 可與用來監控 Exchange 2010 UM 伺服器或 Exchange 2013 Client Access Server 和 Mailbox Server 及電話語音元件的 System Center Operations Manager (SCOM) 管理組件搭配使用。<strong>Test-UMConnectivity</strong> 指令程式會執行本機 SCOM 測試及信箱的本機登入測試，也可當做 SCOM 工作來執行。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> UM 疑難排解工具是用於測試及疑難排解。反之，<strong>Test-UMConnectivity</strong> 指令程式則是用於監視。<strong>Test-UMConnectivity</strong> Cmdlet 可與用來監控 Exchange 2010 UM 伺服器或 Exchange 2013 Client Access Server 和 Mailbox Server 及電話語音元件的 System Center Operations Manager (SCOM) 管理組件搭配使用。<strong>Test-UMConnectivity</strong> 指令程式會執行本機 SCOM 測試及信箱的本機登入測試，也可當做 SCOM 工作來執行。
+
+
 
 
 若要下載 UM 疑難排解工具，請參閱 ＜[整合通訊疑難排解工具](https://go.microsoft.com/fwlink/p/?linkid=182625)。

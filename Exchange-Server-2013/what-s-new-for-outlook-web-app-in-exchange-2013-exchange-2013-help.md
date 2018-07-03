@@ -156,32 +156,18 @@ Outlook Web APP 強調一個精簡且支援觸控功能的使用者介面，以�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在舊版中，Outlook Web App 具有內建的拼字檢查程式。在 Exchange Server 2013，Outlook Web App 必須透過瀏覽器進行拼字檢查，且版本 10 以前的 Internet Explorer 無法支援。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在舊版中，Outlook Web App 具有內建的拼字檢查程式。在 Exchange Server 2013，Outlook Web App 必須透過瀏覽器進行拼字檢查，且版本 10 以前的 Internet Explorer 無法支援。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Internet Explorer 8 時，Office 365 會受限於 Outlook Web App Light 版。信箱位於本機受管理 Exchange Server 的使用者會在使用 Internet Explorer 8 時繼續看到標準版的 Outlook Web App，但可能會遇到速度緩慢或令人不滿意的效能。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 使用 Internet Explorer 8 時，Office 365 會受限於 Outlook Web App Light 版。信箱位於本機受管理 Exchange Server 的使用者會在使用 Internet Explorer 8 時繼續看到標準版的 Outlook Web App，但可能會遇到速度緩慢或令人不滿意的效能。
+
+
 
 
 ### 其他的 Windows 作業系統和瀏覽器組合
@@ -217,18 +203,11 @@ Outlook Web APP 強調一個精簡且支援觸控功能的使用者介面，以�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未列出的作業系統與瀏覽器組合可顯示精簡版的 Outlook Web App。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 未列出的作業系統與瀏覽器組合可顯示精簡版的 Outlook Web App。
+
+
 
 
 ## 平板電腦與智慧型手機上可支援的瀏覽器
@@ -328,18 +307,11 @@ OWA for Android 應用程式可讓您：
 
 在本週 Garage Series 上深入了解 OWA for Android 的背景資訊。請參閱＜[Garage Series 深入了解：不斷進化的 Exchange ActiveSync 和 OWA for Devices](https://blogs.office.com/2014/6/11/the-garage-series-under-the-hood-evolving-exchange-activesync-and-owa-for-devices)＞
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個應用程式不適用於 Outlook.com (先前的 Hotmail) 信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 這個應用程式不適用於 Outlook.com (先前的 Hotmail) 信箱。
+
+
 
 
 ## 無法使用的功能

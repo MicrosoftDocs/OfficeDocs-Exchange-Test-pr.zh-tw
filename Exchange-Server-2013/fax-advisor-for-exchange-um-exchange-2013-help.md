@@ -19,18 +19,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 Microsoft整合通訊 (UM) 依賴認證的傳真協力廠商解決方案的增強的傳真功能，例如外寄傳真或傳真路由。根據預設，使用者未設定為允許傳遞給已啟用 UM 之使用者的傳入傳真訊息。Exchange 伺服器會將傳真要求傳送到認證的傳真協力廠商解決方案。傳真協力程式伺服器會接收傳真資料，然後傳送給電子郵件中的收件者的信箱與為.tif 附件包含傳真。如需詳細資訊，請參閱[啟用語音信箱使用者接收傳真](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們建議在規劃部署整合通訊的所有客戶都取得協助的整合通訊的專員。整合通訊的專員可協助您確保已順利地轉換至 [整合通訊從舊版的語音郵件系統。執行新部署或升級舊版的語音郵件系統需要 Pbx 和整合通訊相關的重要知識。更多如何連絡 Unified Messaging 專員的相關資訊，如<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 整合通訊 (UM) 專家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft Pinpoint 整合通訊</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 我們建議在規劃部署整合通訊的所有客戶都取得協助的整合通訊的專員。整合通訊的專員可協助您確保已順利地轉換至 [整合通訊從舊版的語音郵件系統。執行新部署或升級舊版的語音郵件系統需要 Pbx 和整合通訊相關的重要知識。更多如何連絡 Unified Messaging 專員的相關資訊，如<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 整合通訊 (UM) 專家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft Pinpoint 整合通訊</a>。
+
+
 
 
 ## Exchange 整合通訊傳真協力程式
@@ -49,18 +42,11 @@ Microsoft整合通訊 (UM) 依賴認證的傳真協力廠商解決方案的增�
 
 適用 VoIP 閘道和 IP PBX 的 [Microsoft Unified Communications Open Interoperability Program](http://go.microsoft.com/fwlink/p/?linkid=140722) 資格計畫，確保客戶在搭配使用合格的電話語音閘道和 IP-PBX 與 Microsoft Unified Communications 軟體時，擁有完美無缺的安裝和支援體驗。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在整合了整合通訊和 Communications Server 2007 R2 或 Microsoft Lync Server 的環境中，不支援使用 T.38 或 G.711 來傳送及接收傳真。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在整合了整合通訊和 Communications Server 2007 R2 或 Microsoft Lync Server 的環境中，不支援使用 T.38 或 G.711 來傳送及接收傳真。
+
+
 
 
 ## 部署和設定傳真

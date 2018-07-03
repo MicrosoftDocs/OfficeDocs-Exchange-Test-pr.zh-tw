@@ -25,18 +25,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 這是一般性的檢查清單，針對一般升級案例提供指引。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 部署助理提供您如何部署 Exchange Server 的自訂逐步指導。部署助理可協助您部署 Exchange Server 2013 的全新安裝、將舊版產品升級至 Exchange 2013，或是設定 Exchange 2013 與 Exchange Online 的混合式部署。若要深入了解，請參閱<a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange Server 部署助理提供您如何部署 Exchange Server 的自訂逐步指導。部署助理可協助您部署 Exchange Server 2013 的全新安裝、將舊版產品升級至 Exchange 2013，或是設定 Exchange 2013 與 Exchange Online 的混合式部署。若要深入了解，請參閱<a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
+
+
 
 
 ## 從 Exchange 2007 升級至 Exchange 2013 的檢查清單
@@ -73,18 +66,11 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td> </td>
 <td><p>4. 設定脫離的命名空間</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在組織執行脫離的命名空間才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在組織執行脫離的命名空間才需要。
+
+
 
 </td>
 <td><p><a href="configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md">設定脫離的命名空間的 DNS 尾碼搜尋清單</a></p></td>
@@ -146,18 +132,11 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>12. 設定 Edge Transport Server</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在組織正在使用 Edge Transport Server 時才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在組織正在使用 Edge Transport Server 時才需要。
+
+
 
 </td>
 <td><p><a href="configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md">透過訂閱的 Edge Transport Server 設定網際網路郵件流程</a></p></td>
@@ -165,18 +144,11 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="even">
 <td> </td>
 <td><p>13. 設定整合通訊</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在您想在組織中使用整合通訊時才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在您想在組織中使用整合通訊時才需要。
+
+
 
 </td>
 <td><p><a href="planning-for-unified-messaging-exchange-2013-help.md">整合通訊的規劃</a></p>
@@ -210,18 +182,11 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="even">
 <td> </td>
 <td><p>19. 將公用資料夾資料從 Exchange 2013 移至 Exchange 2013</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在組織正在使用公用資料夾時才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在組織正在使用公用資料夾時才需要。
+
+
 
 </td>
 <td><p><a href="public-folders-exchange-2013-help.md">公用資料夾</a></p>

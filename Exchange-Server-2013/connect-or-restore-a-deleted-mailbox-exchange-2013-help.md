@@ -109,36 +109,22 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 使用命令介面中的**Connect-Mailbox**指令程式來連線至未啟用郵件功能的使用者帳戶的刪除的信箱。您必須指定您要連接的信箱的類型。下列範例顯示重新連線使用者、 連結、 會議室、 設備及共用的信箱的語法。在所有的範例中，選擇性*Alias*參數用來指定電子郵件別名，這是在左邊的電子郵件地址的部分在 (@) 符號。如果您未包含*Alias*參數， *User*或*LinkedMasterAccount*參數中指定的值用來建立 reconnected 信箱的電子郵件地址的別名。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如前所述，當您連接連結信箱、資源信箱或共用信箱時，您必須停用欲連結信箱的 Active Directory 使用者帳戶。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如前所述，當您連接連結信箱、資源信箱或共用信箱時，您必須停用欲連結信箱的 Active Directory 使用者帳戶。
+
+
 
 
 此範例會連線使用者信箱。*Identity*參數會指定已刪除的信箱保留在名為 MBXDB01 信箱資料庫中的顯示名稱。*User*參數會指定要連線至信箱的 Active Directory 使用者帳戶。
 
     Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 內容的值來識別被刪除的信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 內容的值來識別被刪除的信箱。
+
+
 
 
 此範例會連線連結的信箱。*Identity*參數會指定已刪除的信箱上名為 MBXDB02 的信箱資料庫。*LinkedMasterAccount*參數會指定您想要連線的信箱帳戶樹系中 Active Directory 使用者帳戶。*LinkedDomainController*參數會指定帳戶樹系中的網域控制站。
@@ -157,18 +143,11 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
     Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 的值來識別被刪除的信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 的值來識別被刪除的信箱。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Connect-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997878\(v=exchg.150\))。
@@ -193,18 +172,11 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 信箱還原要求成功完成後，它會保留 30 天內，根據預設之前就會被刪除。您可以移除它更早使用**Remove-StoreMailbox**指令程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來還原被刪除的信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來還原被刪除的信箱。
+
+
 
 
 ## 使用命令介面還原被刪除的信箱

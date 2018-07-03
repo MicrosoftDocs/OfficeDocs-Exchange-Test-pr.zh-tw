@@ -21,18 +21,11 @@ _**上次修改主題的時間：** 2018-04-02_
 
 IOS 及 Android 的 Outlook 應用程式的設計目的在於結合電子郵件、 行事曆、 連絡人及其他檔案，讓使用者在組織中的執行多從其行動裝置。 本文提供架構的概觀及應用程式儲存設計，讓 Exchange 系統管理員可以部署及維護其 Exchange 組織中的 Outlook for iOS 及 android （英文）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://support.office.com/en-us/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6">IOS 及 Android 說明中心 Outlook</a>是提供給使用者，包括使用特定裝置上的應用程式與疑難排解資訊的說明。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <a href="https://support.office.com/en-us/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6">IOS 及 Android 說明中心 Outlook</a>是提供給使用者，包括使用特定裝置上的應用程式與疑難排解資訊的說明。
+
+
 
 
 ## 適用於 iOS 和 Android 架構的 Outlook

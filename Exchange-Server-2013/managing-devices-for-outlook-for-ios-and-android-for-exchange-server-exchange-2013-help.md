@@ -43,18 +43,11 @@ Exchange ActiveSync 可讓系統管理員從遠端清除裝置，例如 if 他�
 
 遠端抹除命令之後的 iOS Outlook 及 android （英文） 顯示為使用者的行動裝置下單一的行動裝置關聯 Exchange 中，會移除資料，並從執行 Outlook （iPhone、 iPad、 Android） 相關聯的所有裝置刪除同步關係該使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於背後的 iOS Outlook 及 Android 的雲端架構、 遠端裝置抹除的結果會不報告回至 Exchange。即使抹除成功時，則狀態會顯示為<strong>擱置</strong>。此為已知的問題和開發解決方案。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 由於背後的 iOS Outlook 及 Android 的雲端架構、 遠端裝置抹除的結果會不報告回至 Exchange。即使抹除成功時，則狀態會顯示為<strong>擱置</strong>。此為已知的問題和開發解決方案。
+
+
 
 
 ## 裝置識別碼及存取控制
@@ -67,18 +60,11 @@ Exchange ActiveSync 可讓系統管理員從遠端清除裝置，例如 if 他�
 
 備妥行動裝置信箱原則時，套用至所有相關裝置。因此，如果您強制執行特定信箱的 PIN 鎖定，連線至該信箱的所有裝置都需要 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為裝置識別碼不由任何<em>實體裝置</em>識別碼，他們可以變更不另行通知。在這種情況下，它會導致非預期的後果時裝置識別碼用於為現有允許' 裝置可能會意外封鎖或隔離由 Exchange 管理使用者的裝置。因此，我們建議系統管理員只能設定行動裝置原則允許/封鎖根據裝置類型或裝置型號的裝置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 因為裝置識別碼不由任何<em>實體裝置</em>識別碼，他們可以變更不另行通知。在這種情況下，它會導致非預期的後果時裝置識別碼用於為現有允許' 裝置可能會意外封鎖或隔離由 Exchange 管理使用者的裝置。因此，我們建議系統管理員只能設定行動裝置原則允許/封鎖根據裝置類型或裝置型號的裝置。
+
+
 
 
 ## 裝置管理與 Exchange ActiveSync 常見問題集

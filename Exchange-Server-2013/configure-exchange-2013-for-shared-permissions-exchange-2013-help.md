@@ -61,18 +61,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -121,18 +114,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 您可以選擇性地移除授與給Active Directory管理員如果您不想再他們能夠建立或管理使用Exchange管理工具的Active Directory物件的權限。如果您想要移除Active Directory系統管理員的權限，請執行此程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然您可以移除Active Directory系統管理員可以管理使用Exchange管理工具的Active Directory物件的權限，可以繼續Active Directory系統管理員管理Active Directory物件及其Active Directory權限允許它會使用Active Directory管理工具]。不，但要能夠管理Exchange- Active Directory物件的特定屬性。如需詳細資訊，請參閱<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 雖然您可以移除Active Directory系統管理員可以管理使用Exchange管理工具的Active Directory物件的權限，可以繼續Active Directory系統管理員管理Active Directory物件及其Active Directory權限允許它會使用Active Directory管理工具]。不，但要能夠管理Exchange- Active Directory物件的特定屬性。如需詳細資訊，請參閱<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>。
+
+
 
 
 若要移除Exchange-相關的分割權限從Active Directory管理員執行下列動作：
@@ -155,18 +141,11 @@ _**上次修改主題的時間：** 2015-04-07_
 
 從Active Directory分割權限切換至Exchange 2013共用權限，您必須重新執行Exchange停用Active Directory分割權限在Exchange部署組織中的安裝程式並再建立角色群組和建立郵件收件者角色與安全性群組建立與成員資格角色之間的角色指派。在預設的共用權限設定， 組織管理角色群組包含每個角色。因此， 組織管理角色群組是在此程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此程序中的 setup.com 命令會針對Active Directory進行變更。您必須使用已可進行這些變更所需的權限的帳戶。此帳戶可能不是相同的帳戶已建立使用<strong>New-ManagementRoleAssignment</strong>指令程式的角色指派的權限。使用順利完成此程序中的每個步驟所需的權限的帳戶或帳戶。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此程序中的 setup.com 命令會針對Active Directory進行變更。您必須使用已可進行這些變更所需的權限的帳戶。此帳戶可能不是相同的帳戶已建立使用<strong>New-ManagementRoleAssignment</strong>指令程式的角色指派的權限。使用順利完成此程序中的每個步驟所需的權限的帳戶或帳戶。
+
+
 
 
 若要從切換Active Directory分割共用權限的權限，請執行下列動作：

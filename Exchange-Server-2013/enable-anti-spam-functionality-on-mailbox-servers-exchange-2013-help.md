@@ -29,18 +29,11 @@ _**上次修改主題的時間：** 2014-01-23_
 
 不過，您可使用 Exchange 管理命令介面中的指令碼安裝這些反垃圾郵件代理程式。一般來說，您只能在組織接受所有內送郵件時，且未經任何反垃圾郵件篩選，信箱伺服器才能安裝反垃圾郵件代理程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然您可以在 Mailbox Server 上使用收件者篩選代理程式，但是不應該進行設定。Mailbox Server 上的收件者篩選在含有其他有效收件者的郵件中偵測到一個無效或已封鎖收件者時，即會拒絕郵件。雖然預設會啟用收件者篩選代理程式，但是不會將它設定為封鎖任何收件者。如需詳細資訊，請參閱<a href="manage-recipient-filtering-on-edge-transport-servers-exchange-2013-help.md">管理 Edge Transport server 上的收件者篩選</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 雖然您可以在 Mailbox Server 上使用收件者篩選代理程式，但是不應該進行設定。Mailbox Server 上的收件者篩選在含有其他有效收件者的郵件中偵測到一個無效或已封鎖收件者時，即會拒絕郵件。雖然預設會啟用收件者篩選代理程式，但是不會將它設定為封鎖任何收件者。如需詳細資訊，請參閱<a href="manage-recipient-filtering-on-edge-transport-servers-exchange-2013-help.md">管理 Edge Transport server 上的收件者篩選</a>。
+
+
 
 
 若您在郵件伺服器的傳輸服務中安裝可用的反垃圾郵件代理程式，但在送達信箱伺服器前，您的郵件也有其他的 Exchange 反垃圾郵件代理程式在作業，這會發生什麼狀況？例如，若您在周邊網路有 Edge Transport Server 會發生什麼狀況？信箱伺服器上的反垃圾郵件代理程式辨識到反垃圾郵件 X-header 值，並由其他反垃圾郵件代理程式新增至郵件，而這些包含 X-header 的郵件未重新掃描即可通過。不過，信箱伺服器會由件者篩選器代理程式再次執行收件者查詢。
@@ -55,18 +48,11 @@ _**上次修改主題的時間：** 2014-01-23_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
