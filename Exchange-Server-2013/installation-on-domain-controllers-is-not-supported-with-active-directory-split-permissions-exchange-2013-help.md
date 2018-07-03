@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Active Directory 分割權限 不支援的網域控制站上安裝
+# Active Directory 分割權限 [InstallOnDCInADSplitPermissionMode] 不支援的網域控制站上安裝
 
  
 

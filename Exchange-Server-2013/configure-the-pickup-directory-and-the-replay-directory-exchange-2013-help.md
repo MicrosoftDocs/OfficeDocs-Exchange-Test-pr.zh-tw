@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 設定 目錄和重新顯示目錄
+# 設定 [收取] 目錄和重新顯示目錄
 
  
 

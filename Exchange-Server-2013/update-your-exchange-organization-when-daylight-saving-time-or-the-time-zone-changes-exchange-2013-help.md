@@ -39,7 +39,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  如果您正在執行 Office 365，更新任何伺服器互動的 Office 365 驗證系統，例如 DirSync 或 AD FS 伺服器。必須更新這些伺服器以確保上線時間百分比。
 
-**附註**  如果您正在更新伺服器叢集，請確定您依照更新叢集的一般程序。您第一次更新被動 server、 容錯移轉至被動伺服器 （會變成使用中），然後再更新舊名為作用中 （現在被動） 伺服器。如需如何更新伺服器叢集與高可用性伺服器叢集的詳細資訊，請參閱[Update Exchange Server Clusters and High Availability Servers](https://technet.microsoft.com/zh-tw/library/hh530052\(v=exchg.150\))和[如何更新 Windows Server 容錯移轉叢集](https://support.microsoft.com/en-us/kb/174799)。
+**附註**  如果您正在更新伺服器叢集，請確定您依照更新叢集的一般程序。您第一次更新被動 server、 容錯移轉至被動伺服器 （會變成使用中），然後再更新舊名為作用中 （現在被動） 伺服器。如需如何更新伺服器叢集與高可用性伺服器叢集的詳細資訊，請參閱Update Exchange Server Clusters and High Availability Servers和[如何更新 Windows Server 容錯移轉叢集](https://support.microsoft.com/en-us/kb/174799)。
 
 ## 步驟 3： 更新 Exchange 和 Outlook 中，在必要時，用戶端和桌面的電腦上
 

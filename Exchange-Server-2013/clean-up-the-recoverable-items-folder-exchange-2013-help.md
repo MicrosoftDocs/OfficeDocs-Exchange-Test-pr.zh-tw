@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 清除 資料夾
+# 清除 [可復原的項目] 資料夾
 
  
 

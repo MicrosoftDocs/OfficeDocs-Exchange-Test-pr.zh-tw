@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 在 Active Directory 中存在重複的 Microsoft Exchange 系統物件容器
+# 在 Active Directory [AdInitErrorRule] 中存在重複的 Microsoft Exchange 系統物件容器
 
  
 

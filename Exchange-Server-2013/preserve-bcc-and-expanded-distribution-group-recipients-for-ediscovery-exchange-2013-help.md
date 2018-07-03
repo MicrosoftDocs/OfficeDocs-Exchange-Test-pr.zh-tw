@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 保留 並展開的通訊群組收件者 ediscovery （英文）
+# 保留 [密件副本] 並展開的通訊群組收件者 ediscovery （英文）
 
  
 
