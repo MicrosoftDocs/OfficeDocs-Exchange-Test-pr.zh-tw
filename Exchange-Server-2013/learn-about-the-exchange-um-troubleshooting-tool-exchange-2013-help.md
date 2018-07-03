@@ -230,7 +230,7 @@ UM 疑難排解工具可安裝在執行下列作業系統的本機整合通訊�
     </table>
 
 
-  - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   請參閱 Microsoft 知識庫文章 968930 [Windows 管理架構核心封裝 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   請參閱 Microsoft 知識庫文章 968930 [Windows 管理架構核心封裝 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi) 請參閱[Unified 的 Communications Managed API 2.0 Core Runtime （64 位元）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 

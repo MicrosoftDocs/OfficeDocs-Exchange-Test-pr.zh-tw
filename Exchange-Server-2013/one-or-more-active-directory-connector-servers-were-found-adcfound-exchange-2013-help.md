@@ -61,9 +61,9 @@ Exchange 2007 或 Exchange 2010 安裝程式需要會移除所有 ADC 元件。
 
 如需 ADC 的詳細資訊，請參閱下列 Microsoft 知識庫文章：
 
-  - 325300，"支援網路廣播： 簡介 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300))。
+  - 325300，"支援網路廣播： 簡介 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300))。
 
-  - 325221，"支援網路廣播： Microsoft 進階 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221))。
+  - 325221，"支援網路廣播： Microsoft 進階 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221))。
 
-  - 312632，"如何安裝及 Exchange 2000 Server 中設定 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632))。
+  - 312632，"如何安裝及 Exchange 2000 Server 中設定 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632))。
 

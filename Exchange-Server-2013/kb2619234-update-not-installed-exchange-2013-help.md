@@ -30,7 +30,7 @@ Exchange 2013安裝程式要求必須允許 「 Outlook 無所不在 」 （前�
 
 
 
-Microsoft 知識庫文章 KB2619234、 [hotfix 是可用來啟用關聯性 Cookie/GUID rpc over HTTP 用來 RPC 層級 Windows 7 及 Windows Server 2008 R2 中也可用於)](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)
+Microsoft 知識庫文章 KB2619234、 [hotfix 是可用來啟用關聯性 Cookie/GUID rpc over HTTP 用來 RPC 層級 Windows 7 及 Windows Server 2008 R2 中也可用於)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
 

@@ -155,7 +155,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <li><p>單一標籤網域</p></li>
 <li><p>斷續</p></li>
 </ul>
-<p>如需有關 Exchange 所支援 DNS 命名空間的詳細資訊，請參閱 Microsoft 知識庫文章 2269838：<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">單一標籤網域、斷續命名空間和不連續命名空間與 Microsoft Exchange 的相容性</a>。</p></td>
+<p>如需有關 Exchange 所支援 DNS 命名空間的詳細資訊，請參閱 Microsoft 知識庫文章 2269838：<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">單一標籤網域、斷續命名空間和不連續命名空間與 Microsoft Exchange 的相容性</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 支援</p></td>

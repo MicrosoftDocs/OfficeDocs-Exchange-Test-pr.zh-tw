@@ -205,7 +205,7 @@ Exchange 2013 也提供讓系統管理員處理間歇性故障的功能。間歇
 
 Exchange 2013 還包含一個協力廠商複寫 API，它可讓組織使用協力廠商的同步複寫解決方案，代替內建的連續複寫功能。Microsoft 可支援使用此 API 的協力廠商解決方案，前提是解決方案需提供必要的功能來取代因為使用 API 而停用的所有原生連續複寫功能。只有當 DAG 在內部使用此 API 來管理及啟動信箱資料庫副本時，才支援解決方案。不支援在這些界限以外使用 API。此外，該解決方案必須滿足適用的 Windows 硬體支援要求。(支援不需要測試驗證)
 
-部署時使用內建協力廠商複寫 API 的解決方案，請注意解決方案廠商負責主要支援的解決方案。Microsoft 支援 Exchange 資料的複寫與非複寫解決方案。Microsoft 知識庫文章 895847、 [Exchange server 支援多個網站資料複寫](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=895847)中所述資料複寫的 Microsoft 支援原則必須依照使用資料複寫的解決方案。此外，使用 Windows 容錯移轉叢集資源模型的解決方案必須符合 Windows 叢集支援能力需求 Microsoft 知識庫文章 943984， [Microsoft 支援原則的 Windows Server 2008 或 Windows Server 2008 R2 容錯移轉叢集](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=943984)或[Microsoft 支援原則的 Windows Server 2012 容錯移轉叢集](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2775067)中所述。
+部署時使用內建協力廠商複寫 API 的解決方案，請注意解決方案廠商負責主要支援的解決方案。Microsoft 支援 Exchange 資料的複寫與非複寫解決方案。Microsoft 知識庫文章 895847、 [Exchange server 支援多個網站資料複寫](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=895847)中所述資料複寫的 Microsoft 支援原則必須依照使用資料複寫的解決方案。此外，使用 Windows 容錯移轉叢集資源模型的解決方案必須符合 Windows 叢集支援能力需求 Microsoft 知識庫文章 943984， [Microsoft 支援原則的 Windows Server 2008 或 Windows Server 2008 R2 容錯移轉叢集](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=943984)或[Microsoft 支援原則的 Windows Server 2012 容錯移轉叢集](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2775067)中所述。
 
 Microsoft 對於使用協力廠商複寫 API 型解決方案之部署的備份與還原支援原則，與原生連續複寫部署相同。
 

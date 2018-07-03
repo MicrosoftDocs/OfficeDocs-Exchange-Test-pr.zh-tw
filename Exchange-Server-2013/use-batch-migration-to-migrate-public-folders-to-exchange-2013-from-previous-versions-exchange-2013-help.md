@@ -76,7 +76,7 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
   - 在 Exchange 2007 中，您需要 Exchange 組織系統管理員角色或 Exchange Server 系統管理員角色指派。此外，您需要指派公用資料夾系統管理員角色和目標伺服器的本機管理員群組。如需詳細資訊，請參閱 ＜[如何新增使用者或系統管理員角色群組](https://go.microsoft.com/fwlink/p/?linkid=81779)。
 
-  - 在 Exchange 2007 伺服器上，升級為 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 在 Exchange 2007 伺服器上，升級為 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 在遷移之前，您應考量[公用資料夾的限制](limits-for-public-folders-exchange-2013-help.md)。
 

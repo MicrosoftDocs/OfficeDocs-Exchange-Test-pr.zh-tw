@@ -37,7 +37,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 請確保 Windows Update 並未安裝 Windows 遠端管理。
 
-  - 安裝Windows PowerShell 和Windows遠端管理。如需詳細資訊，請參閱 Microsoft 知識庫文章 968930、 [Windows 管理架構核心套件 （Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 安裝Windows PowerShell 和Windows遠端管理。如需詳細資訊，請參閱 Microsoft 知識庫文章 968930、 [Windows 管理架構核心套件 （Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 下載 Forefront Identity Manager 2010 R2 SP1。請參閱[Microsoft Forefront Identity Manager 2010 R2 SP1 的下載](https://go.microsoft.com/fwlink/p/?linkid=279868)。
 

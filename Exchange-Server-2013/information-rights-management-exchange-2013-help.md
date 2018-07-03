@@ -341,7 +341,7 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 <tr class="odd">
 <td><p>AD RMS 叢集</p></td>
 <td><ul>
-<li><p><strong>作業系統</strong>   需要 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2 (具備 Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973247">Windows Server 2008 中的 Active Directory Rights Management Services 角色</a>)。</p></li>
+<li><p><strong>作業系統</strong>   需要 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2 (具備 Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Windows Server 2008 中的 Active Directory Rights Management Services 角色</a>)。</p></li>
 <li><p><strong>服務連線點</strong>   Exchange 2010和 AD RMS 感知應用程式使用Active Directory中登錄的服務連線點來探索 AD RMS 叢集與 Url。AD RMS 可讓您以登錄服務連線點從 AD RMS 安裝程式中。如果用來設定 AD RMS 的帳戶不是 Enterprise Admins 安全性群組的成員，服務連線點註冊可以執行安裝程式完成後。沒有 AD RMS Active Directory樹系中只有一個服務連線點。</p></li>
 <li><p><strong>權限</strong>   必須指派 AD RMS 伺服器憑證管線 (AD RMS 伺服器上的 <code>ServerCertification.asmx</code> 檔案) 的讀取和執行權限給下列項目：</p>
 <ul>
@@ -356,7 +356,7 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>Exchange 2010或更新版本，則需要。</p></li>
-<li><p>Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973136">FIX：當 .NET Framework 2.0 SP2 型應用程式嘗試處理非同步 ASP.NET Web 服務要求的零長度內容回應時，傳回 ArgumentNullException 例外狀況錯誤訊息：「值不能為 null」</a> 建議用於 Microsoft .NET Framework 2.0 SP2。</p></li>
+<li><p>Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">FIX：當 .NET Framework 2.0 SP2 型應用程式嘗試處理非同步 ASP.NET Web 服務要求的零長度內容回應時，傳回 ArgumentNullException 例外狀況錯誤訊息：「值不能為 null」</a> 建議用於 Microsoft .NET Framework 2.0 SP2。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

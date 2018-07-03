@@ -31,7 +31,7 @@ UM 疑難排解工具可以安裝在本機 Unified Messaging Server、Exchange 2
     
       - 如果Windows Vista或Windows Server 2008電腦上執行此工具，請參閱[Windows Vista x64、 和 Windows Server 2008 x64 的 Microsoft.NET Framework 3.5 Family 更新](https://go.microsoft.com/fwlink/p/?linkid=178998)。
     
-      - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。請參閱 Microsoft 知識庫文章 968930：[Windows 管理架構核心套件 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+      - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。請參閱 Microsoft 知識庫文章 968930：[Windows 管理架構核心套件 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
     
       - Microsoft Unified Communications Managed 的 API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi)。請參閱[Unified 的 Communications Managed API 2.0 Core Runtime （64 位元）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 

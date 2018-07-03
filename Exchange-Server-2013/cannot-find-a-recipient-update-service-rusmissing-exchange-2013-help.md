@@ -54,11 +54,11 @@ Microsoft Exchange 安裝程式會要求在現有的 Exchange 組織中每個網
 
 如需收件者更新服務的詳細資訊，請參閱下列 Microsoft 知識庫文章：
 
-  - "How 收件者更新服務會套用收件者原則 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=328738))。
+  - "How 收件者更新服務會套用收件者原則 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738))。
 
-  - "How 收件者更新服務會填入通訊清單 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253828))。
+  - "How 收件者更新服務會填入通訊清單 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253828))。
 
-  - 」 如何檢查進度的 Exchange 收件者更新服務 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=246127))。
+  - 」 如何檢查進度的 Exchange 收件者更新服務 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127))。
 
-  - "Exchange 收件者更新服務所執行的工作 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253770))。
+  - "Exchange 收件者更新服務所執行的工作 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770))。
 

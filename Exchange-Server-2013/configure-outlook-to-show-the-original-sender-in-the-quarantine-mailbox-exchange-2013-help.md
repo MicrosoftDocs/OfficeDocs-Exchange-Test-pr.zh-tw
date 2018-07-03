@@ -127,7 +127,7 @@ _**上次修改主題的時間：** 2016-12-09_
         
           - *\<OfficeVersion\>*   對於 Outlook 2007，此值為 `Office12`。若是 Outlook 2010，值為 `Office14`。若是 Outlook 2013，值為 `Office15`。
         
-          - *\<LCID\>*   這是您的地區識別碼 (LCID) 值。例如，美式英文的 LCID 為 1033。如需更多資訊，請參閱 [KB221435：在 Word 中支援的地區識別碼清單](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=221435)。
+          - *\<LCID\>*   這是您的地區識別碼 (LCID) 值。例如，美式英文的 LCID 為 1033。如需更多資訊，請參閱 [KB221435：在 Word 中支援的地區識別碼清單](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435)。
     
       - **名稱**   對於此程序其餘部分，請假定檔案名為 `QTNE.cfg`。檔案的名稱並不重要，但務必在該值加上括弧，以便可以 QTNE.cfg 而不是 QTNE.cfg.txt 儲存檔案。
     
