@@ -125,7 +125,7 @@ _**上次修改主題的時間：** 2016-12-09_
         </thead>
         <tbody>
         <tr class="odd">
-        <td>如需如何讓 Exchange 2013 和 Exchange 2003 組織之間的空閒/忙碌共用運作正常的相關資訊，公用資料夾階層中必須存在 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾。在 Exchange 2010 設定過程中，只有在您配置 Outlook 2003 支援用戶端設定的同時選取建立公用資料夾的選項，才會自動在 Exchange 2003 組織內的 Exchange 2010 Mailbox 伺服器上建立此資料夾。此外，Exchange 2010 信箱伺服器必須是組織中第一個安裝的信箱伺服器，此選項才會在安裝過程中出現。若未在安裝過程中建立 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾，您將必須手動建立此資料夾。如需有關如何建立此公用資料夾的詳細資料，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2555008">在 Microsoft Office 365 企業環境中，使用 Exchange 聯盟時，如何疑難排解閒置/忙碌的問題</a>。</td>
+        <td>如需如何讓 Exchange 2013 和 Exchange 2003 組織之間的空閒/忙碌共用運作正常的相關資訊，公用資料夾階層中必須存在 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾。在 Exchange 2010 設定過程中，只有在您配置 Outlook 2003 支援用戶端設定的同時選取建立公用資料夾的選項，才會自動在 Exchange 2003 組織內的 Exchange 2010 Mailbox 伺服器上建立此資料夾。此外，Exchange 2010 信箱伺服器必須是組織中第一個安裝的信箱伺服器，此選項才會在安裝過程中出現。若未在安裝過程中建立 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾，您將必須手動建立此資料夾。如需有關如何建立此公用資料夾的詳細資料，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">在 Microsoft Office 365 企業環境中，使用 Exchange 聯盟時，如何疑難排解閒置/忙碌的問題</a>。</td>
         </tr>
         </tbody>
         </table>

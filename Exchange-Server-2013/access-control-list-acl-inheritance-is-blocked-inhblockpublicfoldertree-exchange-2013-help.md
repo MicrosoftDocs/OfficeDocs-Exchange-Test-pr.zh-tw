@@ -119,7 +119,7 @@ Exchange 安裝程式需要的權限繼承會啟用下列 Exchange 物件：
 <li><p>選取 [<strong>安全性</strong>] 索引標籤，然後按一下 [<strong>進階]</strong>。</p></li>
 <li><p>選取 [<strong>允許從傳播到此物件及所有子物件的父項繼承權限</strong>重新啟用權限繼承。</p></li>
 <li><p>選取 [<strong>確定]</strong>兩次，以套用變更]。</p></li>
-<li><p>等待 Active Directory 複寫傳播變更或強制執行 Active Directory 複寫遵循 Microsoft 知識庫文章 232072，&quot;初始化複寫之間 Active Directory 直接複寫協力廠商 」 (<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>) 中的指導。</p></li>
+<li><p>等待 Active Directory 複寫傳播變更或強制執行 Active Directory 複寫遵循 Microsoft 知識庫文章 232072，&quot;初始化複寫之間 Active Directory 直接複寫協力廠商 」 (<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>) 中的指導。</p></li>
 </ol></td>
 </tr>
 </tbody>

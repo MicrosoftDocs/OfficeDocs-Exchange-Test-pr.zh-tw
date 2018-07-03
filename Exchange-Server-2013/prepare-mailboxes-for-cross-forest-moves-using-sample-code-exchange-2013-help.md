@@ -27,7 +27,7 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
   - 從 \[[準備線上信箱移動](https://go.microsoft.com/fwlink/p/?linkid=177882) \] 頁面上的 Microsoft 下載中心下載的範例程式碼。
 
-  - 若要執行的範例程式碼，您需要 ILM 2007 Feature Pack 1 Service Pack 1 (SP1)。若要下載此 feature pack，請參閱 Microsoft 知識庫文章 977791、 [Service Pack 1 （組建 3.3.1139.2） 是可供 Identity 生命週期 Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=977791)。
+  - 若要執行的範例程式碼，您需要 ILM 2007 Feature Pack 1 Service Pack 1 (SP1)。若要下載此 feature pack，請參閱 Microsoft 知識庫文章 977791、 [Service Pack 1 （組建 3.3.1139.2） 是可供 Identity 生命週期 Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791)。
 
   - 您還需要下列各項：
     

@@ -407,7 +407,7 @@ _**上次修改主題的時間：** 2016-12-09_
 </tr>
 <tr class="odd">
 <td><p>使用者資料包通訊協定 (UDP) 通知</p></td>
-<td><p>Exchange 2013 中已移除對使用者資料包通訊協定 (UDP) 通知的支援。這會影響當 Outlook 2003 用戶端連線到其在 Exchange 2013 伺服器上的信箱時的使用者經驗。如需詳細資訊，請參閱 Microsoft 知識庫文章 2009942：<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2009942">當 Exchange Server 2010 使用者在線上模式使用 Outlook 2003 時，資料夾的更新時間過長</a>。</p></td>
+<td><p>Exchange 2013 中已移除對使用者資料包通訊協定 (UDP) 通知的支援。這會影響當 Outlook 2003 用戶端連線到其在 Exchange 2013 伺服器上的信箱時的使用者經驗。如需詳細資訊，請參閱 Microsoft 知識庫文章 2009942：<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2009942">當 Exchange Server 2010 使用者在線上模式使用 Outlook 2003 時，資料夾的更新時間過長</a>。</p></td>
 </tr>
 </tbody>
 </table>

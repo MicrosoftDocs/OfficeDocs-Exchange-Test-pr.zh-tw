@@ -29,7 +29,7 @@ Microsoft Exchange Server 2013 安裝程式偵測到 **ExecutionPolicy** 群組�
 
 若要允許安裝程式繼續，您需要暫時移除 **ExecutionPolicy** GPO 中的任何 **MachinePolicy** 或 **UserPolicy** 定義。
 
-如需如何移除**ExecutionPolicy** GPO 中的任何**MachinePolicy**或**UserPolicy**定義的資訊，請參閱[知識庫文章 KB981474](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=981474)。
+如需如何移除**ExecutionPolicy** GPO 中的任何**MachinePolicy**或**UserPolicy**定義的資訊，請參閱[知識庫文章 KB981474](https://go.microsoft.com/fwlink/?linkid=3052&kbid=981474)。
 
 <table>
 <thead>

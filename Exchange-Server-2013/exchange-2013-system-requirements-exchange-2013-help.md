@@ -155,7 +155,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <li><p>單一標籤網域</p></li>
 <li><p>斷續</p></li>
 </ul>
-<p>如需有關 Exchange 所支援 DNS 命名空間的詳細資訊，請參閱 Microsoft 知識庫文章 2269838：<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">單一標籤網域、斷續命名空間和不連續命名空間與 Microsoft Exchange 的相容性</a>。</p></td>
+<p>如需有關 Exchange 所支援 DNS 命名空間的詳細資訊，請參閱 Microsoft 知識庫文章 2269838：<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">單一標籤網域、斷續命名空間和不連續命名空間與 Microsoft Exchange 的相容性</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 支援</p></td>
@@ -181,7 +181,7 @@ _**上次修改主題的時間：** 2016-12-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td>在多網域環境中，於 Active Directory 語言地區設定設為日文的 Windows Server 2008 網域控制站上，伺服器可能無法接收於輸入複寫期間儲存在物件上的某些屬性。如需詳細資訊，請參閱 Microsoft 知識庫文章 949189：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">設定為日文語言地區設定的 Windows Server 2008 網域控制站，可能無法在輸入複寫期間將更新套用至物件上的屬性</a>。</td>
+<td>在多網域環境中，於 Active Directory 語言地區設定設為日文的 Windows Server 2008 網域控制站上，伺服器可能無法接收於輸入複寫期間儲存在物件上的某些屬性。如需詳細資訊，請參閱 Microsoft 知識庫文章 949189：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">設定為日文語言地區設定的 Windows Server 2008 網域控制站，可能無法在輸入複寫期間將更新套用至物件上的屬性</a>。</td>
 </tr>
 </tbody>
 </table>

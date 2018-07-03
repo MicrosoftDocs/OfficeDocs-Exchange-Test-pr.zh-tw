@@ -120,7 +120,7 @@ _**上次修改主題的時間：** 2018-05-22_
 
 7.  在 Exchange 2007，您必須獲指派為「Exchange 組織系統管理員」角色或「Exchange Server 系統管理員」角色。除此之外，您必須獲指派為「公用資料夾系統管理員」角色和目標伺服器的本機 Administrators 群組。如需詳細資訊，請參閱＜[如何新增使用者或群組至系統管理員角色](https://go.microsoft.com/fwlink/p/?linkid=81779)＞。
 
-8.  如果您在 Windows Server 2008 x64 上執行 Exchange Server 2007，您必須升級至 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。如果您在 Windows Server 2003 x64 上執行 Exchange Server 2007，您必須升級至 Windows PowerShell 2.0。如需詳細資訊，請參閱 [Windows Server 2003 x64 版本的更新](https://www.microsoft.com/en-us/download/details.aspx?id=10512)。
+8.  如果您在 Windows Server 2008 x64 上執行 Exchange Server 2007，您必須升級至 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。如果您在 Windows Server 2003 x64 上執行 Exchange Server 2007，您必須升級至 Windows PowerShell 2.0。如需詳細資訊，請參閱 [Windows Server 2003 x64 版本的更新](https://www.microsoft.com/en-us/download/details.aspx?id=10512)。
 
 9.  若要能夠跨部署來存取公用資料夾，使用者必須將其 Outlook 用戶端升級至 2012 年 11 月或更新的 Outlook 公用更新。
     

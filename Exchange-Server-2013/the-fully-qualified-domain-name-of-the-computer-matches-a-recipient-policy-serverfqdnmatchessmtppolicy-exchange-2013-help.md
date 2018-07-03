@@ -63,5 +63,5 @@ Microsoft Exchange 安裝程式需要 Exchange 組織中的伺服器的 FQDN 不
 
 4.  按一下 \[**電子郵件地址**\] 索引標籤，並變更適當的 SMTP 位址
 
-如需詳細 Recipient 原則命名問題，查看 Microsoft 知識庫文章 288175，"XCON： Recipient 原則不符合組織、 5.4.8 中任何伺服器的 FQDN Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175))。
+如需詳細 Recipient 原則命名問題，查看 Microsoft 知識庫文章 288175，"XCON： Recipient 原則不符合組織、 5.4.8 中任何伺服器的 FQDN Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175))。
 

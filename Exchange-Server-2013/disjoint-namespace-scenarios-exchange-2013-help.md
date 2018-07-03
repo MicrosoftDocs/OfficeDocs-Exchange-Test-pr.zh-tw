@@ -117,7 +117,7 @@ Exchange 2013 支援以下三個案例在具有脫離命名空間的網域中部
 
   - [群組原則常見問題集 (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [在 Windows Server 2003 中 DNS 的新群組原則](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [在 Windows Server 2003 中 DNS 的新群組原則](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [群組原則](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

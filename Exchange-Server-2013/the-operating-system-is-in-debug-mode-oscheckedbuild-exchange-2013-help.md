@@ -41,5 +41,5 @@ Windows 偵錯模式已切換 Boot.ini 檔案中**新增/debug**參數。Windows
 
 5.  儲存並關閉檔案，然後再重新啟動 Exchange Server 電腦讓變更生效。
 
-更多可用 Boot.ini 檔案中的參數的詳細資訊，請參閱 Microsoft 知識庫文章 833721、 「 Windows XP 及 Windows Server 2003 Boot.ini 檔可用的切換參數選項 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=833721))。
+更多可用 Boot.ini 檔案中的參數的詳細資訊，請參閱 Microsoft 知識庫文章 833721、 「 Windows XP 及 Windows Server 2003 Boot.ini 檔可用的切換參數選項 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052&kbid=833721))。
 
