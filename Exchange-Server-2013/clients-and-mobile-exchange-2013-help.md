@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 有許多不同的用戶端可用來存取 Microsoft Exchange Server 2013 信箱中的資訊。這些用戶端包含 Microsoft Outlook 及 Outlook Web App 等桌面程式，以及行動電話、平板電腦及其他行動裝置等行動用戶端。各個用戶端均提供各種功能。
 
@@ -51,7 +51,7 @@ _**上次修改主題的時間：**2015-03-09_
 <td><p>深入了解使用者如何透過採用 POP3 或 IMAP4 的電子郵件程式存取其 Exchange 2013 電子郵件。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/zh-tw/library/jj150495(v=exchg.150)">Office Web Apps Server 整合</a></p></td>
+<td><p>Office Web Apps Server 整合</p></td>
 <td><p>瞭解 Microsoft Office Web Apps Server 的整合如何有助於提供 Outlook Web App 的多樣化附件預覽功能。</p></td>
 </tr>
 <tr class="odd">

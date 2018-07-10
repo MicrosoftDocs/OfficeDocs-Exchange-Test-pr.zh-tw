@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-05-05_
+_**上次修改主題的時間：** 2014-05-05_
 
 當您從佇列將郵件匯出到檔案時，並不會從佇列中移除郵件。而會在指定的位置中以純文字檔形式建立郵件的複本。您可以在文字編輯器之類的應用程式或是電子郵件用戶端應用程式中檢視結果檔案，或是使用 Exchange 組織內外的任何其他 Mailbox Server 或 Edge Transport Server 上的重新顯示目錄來重新提交郵件檔案。
 
@@ -41,18 +41,11 @@ _**上次修改主題的時間：**2014-05-05_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -91,16 +84,9 @@ _**上次修改主題的時間：**2014-05-05_
 
     Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果省略 <em>Server</em> 參數，則命令會在本機伺服器上執行。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果省略 <em>Server</em> 參數，則命令會在本機伺服器上執行。
+
+
 

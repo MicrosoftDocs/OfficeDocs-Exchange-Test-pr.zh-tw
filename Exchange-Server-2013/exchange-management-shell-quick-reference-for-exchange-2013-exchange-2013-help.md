@@ -13,24 +13,17 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 This topic describes the most frequently used cmdlets available in the release to manufacturing (RTM) and later versions of Microsoft Exchange Server 2013 and provides examples of their use.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>More content will be added about other areas of Exchange 2013 soon.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> More content will be added about other areas of Exchange 2013 soon.
+
+
 
 
 For more information about the Exchange Management Shell in Exchange 2013 and all the available cmdlets, see the following topics:

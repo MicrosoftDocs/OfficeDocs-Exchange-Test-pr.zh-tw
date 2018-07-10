@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 日誌記錄可協助您錄製內送和外寄電子郵件通訊以回應法律聲明、 法規及組織規範需求的組織。本主題顯示如何執行與管理Exchange 2013和Exchange Online日誌記錄相關的基本工作。
 
@@ -59,18 +59,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。如果您無法使用<strong>JournalingReportDNRTo</strong>信箱，查看<a href="https://go.microsoft.com/fwlink/p/?linkid=331674">傳輸和信箱在 Exchange Online 中的規則未如預期般運作</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。如果您無法使用<strong>JournalingReportDNRTo</strong>信箱，查看<a href="https://go.microsoft.com/fwlink/p/?linkid=331674">傳輸和信箱在 Exchange Online 中的規則未如預期般運作</a>。
+
+
 
 
 ## 建立日誌規則
@@ -169,18 +162,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 ## 啟用或停用日誌規則
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您提用日誌規則時，日誌代理程式將停止記錄規則所鎖定的郵件。停用日誌規則時，一般由規則記錄的任何郵件將不予記錄。確定您並未因為停用日誌規則而破壞您組織的規定或規範需求。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您提用日誌規則時，日誌代理程式將停止記錄規則所鎖定的郵件。停用日誌規則時，一般由規則記錄的任何郵件將不予記錄。確定您並未因為停用日誌規則而破壞您組織的規定或規範需求。
+
+
 
 
 ## 使用 EAC 啟用或停用日誌規則
@@ -239,18 +225,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 ## 啟用或停用每個信箱的資料庫日誌
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>停用信箱資料庫的郵件日誌可能導致您的組織不符合任何適用郵件保留原則的規範。停用信箱資料庫的郵件日誌時，對於信箱資料庫上的信箱所傳送或接收的郵件，將不再傳送日誌回條。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 停用信箱資料庫的郵件日誌可能導致您的組織不符合任何適用郵件保留原則的規範。停用信箱資料庫的郵件日誌時，對於信箱資料庫上的信箱所傳送或接收的郵件，將不再傳送日誌回條。
+
+
 
 
 ## 使用 EAC 啟用或停用每個信箱資料庫日誌

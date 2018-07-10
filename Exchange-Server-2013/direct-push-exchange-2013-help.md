@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-07-11_
+_**上次修改主題的時間：** 2012-07-11_
 
 Direct Push 是內建於 Microsoft Exchange Server 2013功能。Direct Push 持續在行動裝置目前透過行動電話或無線網路連線。它會通知行動裝置時新內容已準備好要同步處理。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-10-30_
+_**上次修改主題的時間：** 2017-10-30_
 
 若要協助您遵守貴組織的電子郵件的使用者，您可以使用Exchange傳輸規則來決定如何路由傳送電子郵件，其中包含特定字詞或模式。簡短的單字或片語清單，您可以使用Exchange 系統管理中心。較長的清單中，您可能要使用ExchangeWindows PowerShell模組以文字檔案中讀取清單。
 

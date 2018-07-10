@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-07_
+_**上次修改主題的時間：** 2013-02-07_
 
 在某些情況下，您可能想要透過協力廠商智慧主控來路由傳輸電子郵件，例如您擁有對於輸出郵件執行原則檢查的網路裝置的情況。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>第三方智慧主機必須使用 SMTP 的傳輸。如果沒有，您應該使用的外部連接器或傳遞代理程式連接器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 第三方智慧主機必須使用 SMTP 的傳輸。如果沒有，您應該使用的外部連接器或傳遞代理程式連接器。
+
+
 
 
 對於案例感興趣一角與使用此程序？請參閱下列主題：
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2013-02-07_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 EAC 來建立傳送連接器以路由傳輸透過智慧型主機輸出電子郵件

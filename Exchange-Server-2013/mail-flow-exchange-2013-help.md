@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013中，郵件流程會通過傳輸管線發生。\[傳輸管線\]* * 是服務、連線、元件及佇列的集合，這些項目會一起運作，將所有郵件路由傳送到組織內部之信箱伺服器上傳輸服務的分類程式。
 
@@ -59,18 +59,11 @@ _**上次修改主題的時間：**2015-03-09_
 
   - **安裝在不同電腦上的信箱伺服器和 Client Access Server**   在此組態中，輸入郵件流程會略過 Client Access Server。郵件會從 Edge Transport Server 上的傳輸服務流向信箱伺服器上的傳輸服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在周邊網路中安裝了 Exchange 2010 或 Exchange 2007 Edge Transport Server，則郵件流程一律會在 Edge Transport Server 與信箱伺服器上的傳輸服務之間直接進行。如需詳細資訊，請參閱 <a href="use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md">使用 Exchange 2010 或 2007 Edge Transport server 在 Exchange 2013</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您在周邊網路中安裝了 Exchange 2010 或 Exchange 2007 Edge Transport Server，則郵件流程一律會在 Edge Transport Server 與信箱伺服器上的傳輸服務之間直接進行。如需詳細資訊，請參閱 <a href="use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md">使用 Exchange 2010 或 2007 Edge Transport server 在 Exchange 2013</a>。
+
+
 
 
 ## 來自內部寄件者的郵件

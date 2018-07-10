@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-11_
+_**上次修改主題的時間：** 2012-11-11_
 
 建立整合通訊 (UM) IP 閘道器之前，必須先在 VoIP 閘道、 IP PBX 或工作階段邊界控制器 (SBC) 您正在使用設定的 IP 位址或完整的網域名稱 (FQDN)。然後，當您建立 UM IP 閘道，您設定的 IP 位址或 FQDN。稍後可以變更的 IP 位址或 FQDN。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2012-11-11_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -59,18 +52,11 @@ _**上次修改主題的時間：**2012-11-11_
 
 3.  按一下 **\[儲存\]** 以儲存變更。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的 UM IP 閘道器是使用 FQDN 而非 IP 位址，請確認已建立正確的 DNS 記錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您的 UM IP 閘道器是使用 FQDN 而非 IP 位址，請確認已建立正確的 DNS 記錄。
+
+
 
 
 ## 使用命令介面在 UM IP 閘道器上設定 IP 位址

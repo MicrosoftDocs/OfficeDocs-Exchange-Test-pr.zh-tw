@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-04_
+_**上次修改主題的時間：** 2012-10-04_
 
 *管理角色指派*，也就是在 Microsoft Exchange Server 2013中的角色型存取控制 (RBAC) 權限模型的一部分，是管理角色與角色受託人之間的連結。*角色受託人*為角色群組、 角色指派原則、 使用者或萬用安全性群組 (USG)。角色必須指派給角色受託人為其才會生效。如需 RBAC 的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。
+
+
 
 
 本主題討論指派的角色群組和角色指派原則的角色及直接角色指派給使用者和 Usg。它不會會談的角色群組或角色指派原則給使用者的工作分派。如需有關角色群組和角色指派原則已指派給使用者的權限的建議的方式，請參閱下列主題：
@@ -89,18 +82,11 @@ _**上次修改主題的時間：**2012-10-04_
 
 委派角色指派不會授與存取管理功能。委派角色指派讓角色受託人將指定的角色指派給其他角色 assignees。角色群組角色受託人時，任何角色群組的成員可將角色指派給其他角色受託人。根據預設，只有組織管理角色群組具有能夠將角色指派給其他角色 assignees。僅限使用者安裝Exchange 2013是預設 「 組織管理角色群組的成員。您可以，但是新增其他使用者依需要此角色群組或建立其他角色群組和指派委派角色指派給這些群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>委派角色指派可讓角色 assignees 委派管理角色至其他角色 assignees。這不會啟用使用者委派角色群組。如需有關角色群組委派的詳細資訊，請參閱<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色群組</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 委派角色指派可讓角色 assignees 委派管理角色至其他角色 assignees。這不會啟用使用者委派角色群組。如需有關角色群組委派的詳細資訊，請參閱<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色群組</a>。
+
+
 
 
 如果您希望使用者可以管理功能，並將授與使用該功能之權限的角色指派給其他使用者，請進行下列指派：

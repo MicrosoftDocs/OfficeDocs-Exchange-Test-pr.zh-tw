@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2014-06-24_
+_**上次修改主題的時間：** 2014-06-24_
 
 整合通訊 (UM) IP 閘道可代替 VoIP (Voice over IP) 閘道、IP 專用交換機 (PBX) 或工作階段邊界控制器 (SBC) 硬體裝置。在 VoIP 閘道、IP PBX 或 SBC 可以用來接聽來電並為語音信箱使用者傳送撥出號碼前，必須在目錄服務中建立 UM IP。
 
@@ -33,18 +33,11 @@ Enabling and disabling a UM IP gateway
 
 一般而言，*「閘道」*是描述連線兩個不相容網路之實體裝置的術語。使用 Exchange 整合通訊及其他整合通訊解決方案時，會使用 VoIP 閘道轉譯公用交換電話網路 (PSTN)/分時多工 (TDM)，或電路切換型電話語音網路及 IP 或封包切換型資料網路。IP PBX 也會在 PSTN 網路和封包切換型網路之間進行轉譯，所以使用 IP PBX 時，就需要 VoIP 閘道。VoIP 閘道只有在連接傳統 PBX 硬體裝置與 UM 部署時需要使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>封包切換型網路是指封包 (郵件或郵件片段) 在 VoIP 閘道、IP PBX 和 SBC 等裝置之間個別路由的網路。這與電路切換網路相反，此網路會設定兩個節點間的專用連線，以在通訊期間獨佔使用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 封包切換型網路是指封包 (郵件或郵件片段) 在 VoIP 閘道、IP PBX 和 SBC 等裝置之間個別路由的網路。這與電路切換網路相反，此網路會設定兩個節點間的專用連線，以在通訊期間獨佔使用。
+
+
 
 
 Exchange 整合通訊依賴 VoIP 閘道的功能，將 TDM 或電話語音電路切換型的通訊協定 (例如整合服務數位網路 (ISDN) 或 QSIG) 從 PBX 轉譯成以 VoIP 或 IP 為基礎的通訊協定 (例如工作階段初始通訊協定 (SIP)、即時傳輸通訊協定 (RTP) 或進行即時傳真傳輸的 T.38)。
@@ -91,18 +84,11 @@ Exchange UM 仍必須直接與可能在其軟體或韌體支援 IPv6 的 SIP 對
 
 3.  當您設定 UM IP 閘道後，您也必須在網路上設定 VoIP 閘道、IP PBX 和 SBC 以支援 IPv6。詳細資料可參閱您硬體廠商所提供支援 IPv6 的裝置清單以及如何正確設定的方式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每個撥號對應表最多有 200 個 UM IP 閘道。如果建立超過 200 個，則 UM 服務不會啟動。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 每個撥號對應表最多有 200 個 UM IP 閘道。如果建立超過 200 個，則 UM 服務不會啟動。
+
+
 
 
 ## 啟用及停用 UM IP 閘道

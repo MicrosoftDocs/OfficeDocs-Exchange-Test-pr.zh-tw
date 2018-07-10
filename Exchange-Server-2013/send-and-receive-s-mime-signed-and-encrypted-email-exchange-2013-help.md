@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 傳送或回覆至 S/MIME 加密訊息的 Microsoft Outlook是非常類似於非加密郵件的體驗。讀取或從Outlook Web App例如電子郵件程式傳送 S/MIME 加密訊息的相關詳細資訊，請參閱[使用 Outlook 傳送和回覆 S/MIME 加密郵件](https://go.microsoft.com/fwlink/p/?linkid=392520)。
 

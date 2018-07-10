@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-17_
+_**上次修改主題的時間：** 2012-10-17_
 
 您可以建立管理角色、 變更管理角色項目，則需要，然後將角色指派給角色受託人可將新增範圍。您應該幾乎不需要執行此程序。我們建議您檢查是否可以使用內建管理角色，而不是建立管理角色。如需內建管理角色的清單，請參閱[內建管理角色](built-in-management-roles-exchange-2013-help.md)。
 
 如需 Microsoft Exchange Server 2013 中管理角色的相關資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題不會討論如何建立未限定範圍的管理角色。如需如何建立未限定範圍的管理角色的資訊，請參閱<a href="create-an-unscoped-role-exchange-2013-help.md">建立未限定範圍的角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題不會討論如何建立未限定範圍的管理角色。如需如何建立未限定範圍的管理角色的資訊，請參閱<a href="create-an-unscoped-role-exchange-2013-help.md">建立未限定範圍的角色</a>。
+
+
 
 
 要尋找與角色相關的其他管理工作嗎？請參閱[進階權限](advanced-permissions-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2012-10-17_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？

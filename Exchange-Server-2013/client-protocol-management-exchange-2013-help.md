@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 管理 Exchange ActiveSync、 Outlook Web App、 POP3、 IMAP4、 自動探索服務、 Exchange Web 服務及可用性服務的用戶端通訊協定發生在三個不同的區域： Exchange 系統管理中心 (EAC)、 Exchange 管理命令介面及網際網路資訊服務 (IIS) 管理員\]。管理每個位置中的設定而異每個用戶端通訊協定。
 

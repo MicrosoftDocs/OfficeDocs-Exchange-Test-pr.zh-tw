@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-04-28_
+_**上次修改主題的時間：** 2017-04-28_
 
 郵件提示是在使用者撰寫郵件時讓他們看到的資訊訊息。Microsoft Exchange Server 2013 會分析郵件，包含寄送郵件之郵件收件者的清單，而且如果偵測到潛在問題，還會在傳送郵件之前以郵件提示通知使用者。藉由郵件提示提供的資訊協助，寄件者可以調整正在撰寫的郵件，以避免不想發生的狀況或未傳遞回報 (NDR)。
 
@@ -127,18 +127,11 @@ _**上次修改主題的時間：**2017-04-28_
 <p>根據預設，此郵件提示是關閉的。您可以使用 <strong>Set-OrganizationConfig</strong> 指令程式開啟郵件提示。如需詳細資訊，請參閱<a href="mailtips-over-organization-relationships-exchange-2013-help.md">透過組織關聯性的郵件提示</a>。</p>
 <p>若您的部分使用者信箱在 Exchange Online 上主控，且出現與 Exchange Online 共存的情況，則表示組織遠端部分之遠端網域物件的設定對處理此郵件提示的方式有直接影響。</p>
 <p>若將遠端網域設為內部網域 (透過將遠端網域物件上的 <em>IsInternal</em> 參數設為 <code>$true</code>)，則會將此遠端網域中的任何收件者皆視為內部收件者，因此不會顯示「外部收件者」郵件提示。不過，若未將遠端網域設為內部網域，則會將該網域中的收件者視為外部收件者，且為這些收件者撰寫郵件時，會顯示此郵件提示。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為遠端網域中的通訊群組撰寫郵件時，不會評估此郵件提示。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 為遠端網域中的通訊群組撰寫郵件時，不會評估此郵件提示。
+
+
 
 </td>
 </tr>
@@ -175,18 +168,11 @@ _**上次修改主題的時間：**2017-04-28_
 <li><p>收件者的信箱上所設定的接收大小上限</p></li>
 <li><p>組織的郵件大小上限</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為執行的複雜性緣故，組織中連接器上的郵件大小限制並不列入考量。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 因為執行的複雜性緣故，組織中連接器上的郵件大小限制並不列入考量。
+
+
 
 </td>
 </tr>

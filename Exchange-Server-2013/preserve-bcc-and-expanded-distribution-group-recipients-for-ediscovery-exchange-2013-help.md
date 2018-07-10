@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 保留 並展開的通訊群組收件者 ediscovery （英文）
+# 保留 [密件副本] 並展開的通訊群組收件者 ediscovery （英文）
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Office 365 Enterprise_
+_**適用版本：** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
 
-_**上次修改主題的時間：**2017-06-19_
+_**上次修改主題的時間：** 2017-06-19_
 
 就地保留、 訴訟暫止狀態、 和[Office 365 的保留原則](http://go.microsoft.com/fwlink/?linkid=827811)（在Office 365 安全規範中心中建立） 可讓您以保留信箱內容以符合法規遵循與 eDiscovery 需求。收件者的相關資訊直接定址及 \[副本\] 欄位的訊息中的所有郵件根據預設，包含但您的組織可能需要的功能來搜尋並重現相關之訊息的所有收件者的詳細資訊。這包括：
 

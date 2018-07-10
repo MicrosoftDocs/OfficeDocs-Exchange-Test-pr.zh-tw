@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-07-22_
+_**上次修改主題的時間：** 2016-07-22_
 
 本主題說明檔案等級防毒程式對執行 Microsoft Exchange Server 2013 之電腦的影響。如果您執行本主題中所述的建議，即可協助增強 Exchange 組織的安全性及健康情況。
 

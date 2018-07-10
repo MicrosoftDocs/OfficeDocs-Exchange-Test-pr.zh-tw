@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 設定電子郵件地址和地址通訊錄功能所需的權限而異正在執行的程序或您想要執行此指令程式。如需電子郵件地址和通訊錄的詳細資訊，請參閱[電子郵件地址和通訊錄](email-addresses-and-address-books-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-02_
+_**上次修改主題的時間：** 2014-12-02_
 
 在 Microsoft Exchange Server 2013 中，您可以調整 DNS 查詢敏感度，以在目的網域發生 DNS 錯誤時，能讓郵件傳遞速度稍微快一點。 不過，視 DNS 錯誤而定，這個調整在某些情況下可能會造成傳遞失敗。
 
@@ -57,16 +57,9 @@ Exchange 伺服器會查詢設定的 DNS 伺服器，以尋找傳遞郵件所需
 
 在 `Normal` 模式與 `Lenient` 模式中，絕不會快取無效 MX 記錄的 DNS 查詢結果。 下次執行 DNS 查詢時，將會嘗試為目的網域解析 MX 記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您安裝 Exchange 累計更新 (CU) 後，將會覆寫您在 Exchange XML 應用程式組態檔 (例如 Client Access Server 上的 web.config 檔案，或 Mailbox Server 上的 EdgeTransport.exe.config 檔案) 中任何自訂的個別伺服器設定。請務必儲存此資訊，以便安裝後能輕易地重新設定伺服器。在安裝 Exchange CU 後，您必須重新配置這些設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在您安裝 Exchange 累計更新 (CU) 後，將會覆寫您在 Exchange XML 應用程式組態檔 (例如 Client Access Server 上的 web.config 檔案，或 Mailbox Server 上的 EdgeTransport.exe.config 檔案) 中任何自訂的個別伺服器設定。請務必儲存此資訊，以便安裝後能輕易地重新設定伺服器。在安裝 Exchange CU 後，您必須重新配置這些設定。
+
+
 

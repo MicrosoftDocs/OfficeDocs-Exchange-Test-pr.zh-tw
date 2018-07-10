@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2014-09-17_
+_**上次修改主題的時間：** 2014-09-17_
 
 您可使用電話使用者介面 (TUI)，以透過命令介面來記錄「整合通訊」(UM) 撥號對應表與自動語音應答的自訂提示和問候語。 若您想要使用 EAC 或命令介面變更自訂問候語或宣告，或是遇到組織因天候惡劣而關閉等緊急情況，這項功能即可派上用場。 變更 UM 自動語音應答的自訂問候語或宣告時，您必須在 UM 自動語音應答連結的撥號對應表上啟用 TUI 提示錄製。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2014-09-17_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -99,18 +92,11 @@ _**上次修改主題的時間：**2014-09-17_
     
         Set-UMDialPlan -identity MyUMDialPlan -TUIPromptEditingEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須登入錄製提示時設定的信箱，才能啟用自訂提示或問候語錄製功能。 錄製新的提示或問候語後，您必須先登出然後再重新登入，才能在使用 TUI 時聽見新的提示或問候語。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須登入錄製提示時設定的信箱，才能啟用自訂提示或問候語錄製功能。 錄製新的提示或問候語後，您必須先登出然後再重新登入，才能在使用 TUI 時聽見新的提示或問候語。
+
+
 
 
 ## 在 UM 自動語音應答上執行 TUI 提示錄製

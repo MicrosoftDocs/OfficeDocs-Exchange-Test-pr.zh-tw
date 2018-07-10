@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -64,18 +64,11 @@ Exchange 安裝程式需要的權限繼承會啟用下列 Exchange 物件：
 <p><strong>值</strong>： 1</p></li>
 <li><p>結束登錄編輯程式。</p></li>
 </ol>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，在組態物件的屬性] 方塊中未啟用 [<strong>安全性</strong>] 索引標籤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，在組態物件的屬性] 方塊中未啟用 [<strong>安全性</strong>] 索引標籤。
+
+
 
 </li>
 <li><p>開啟 [Exchange 系統管理員、 尋找物件有問題、 物件上按一下滑鼠右鍵並選取 [<strong>內容</strong>]。</p></li>
@@ -88,18 +81,11 @@ Exchange 安裝程式需要的權限繼承會啟用下列 Exchange 物件：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您不正確地修改 Active Directory 物件的屬性使用 ADSI Edit、 LDP 工具或其他 LDAP 第 3 版用戶端時，您可能會導致嚴重問題。這些問題可能會要求您安裝 Microsoft Windows Server™ 2003年、 Exchange 伺服器，或兩者。修改自行承擔 Active Directory 物件屬性。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 如果您不正確地修改 Active Directory 物件的屬性使用 ADSI Edit、 LDP 工具或其他 LDAP 第 3 版用戶端時，您可能會導致嚴重問題。這些問題可能會要求您安裝 Microsoft Windows Server™ 2003年、 Exchange 伺服器，或兩者。修改自行承擔 Active Directory 物件屬性。
+
+
 
 
 
@@ -119,7 +105,7 @@ Exchange 安裝程式需要的權限繼承會啟用下列 Exchange 物件：
 <li><p>選取 [<strong>安全性</strong>] 索引標籤，然後按一下 [<strong>進階]</strong>。</p></li>
 <li><p>選取 [<strong>允許從傳播到此物件及所有子物件的父項繼承權限</strong>重新啟用權限繼承。</p></li>
 <li><p>選取 [<strong>確定]</strong>兩次，以套用變更]。</p></li>
-<li><p>等待 Active Directory 複寫傳播變更或強制執行 Active Directory 複寫遵循 Microsoft 知識庫文章 232072，&quot;初始化複寫之間 Active Directory 直接複寫協力廠商 」 (<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>) 中的指導。</p></li>
+<li><p>等待 Active Directory 複寫傳播變更或強制執行 Active Directory 複寫遵循 Microsoft 知識庫文章 232072，&quot;初始化複寫之間 Active Directory 直接複寫協力廠商 」 (<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>) 中的指導。</p></li>
 </ol></td>
 </tr>
 </tbody>

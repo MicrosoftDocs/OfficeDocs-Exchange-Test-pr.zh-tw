@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 深入了解 Exchange Server 2013 和 Exchange Online 中的 DLP 原則，包括其包含項目以及如何進行測試。您也將了解 Exchange DLP 中的新功能。
 

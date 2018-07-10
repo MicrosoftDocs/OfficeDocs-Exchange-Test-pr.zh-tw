@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange 2013整合通訊 (UM) 要求數個 TCP 及使用者資料包通訊協定 (UDP) 的連接埠用來建立伺服器執行Exchange 2013和其他裝置之間的通訊。藉由允許存取透過這些 IP 連接埠，您啟用整合通訊以正常運作。本主題討論Exchange 2013中所使用的 TCP 及 UDP 連接埠整合通訊。
 
@@ -23,18 +23,11 @@ Microsoft Exchange 2013整合通訊 (UM) 要求數個 TCP 及使用者資料包�
 
 Exchange 2013整合通訊功能與服務依賴靜態及動態 TCP 及 UDP 連接埠以確保正確作業執行 Microsoft Exchange Unified Messaging Call Router 服務的用戶端存取伺服器與執行 Microsoft Exchange 整合通訊服務的 Mailbox server。Exchange 2013安裝時，即會為Exchange新增靜態輸入的Windows防火牆規則。如果您變更用戶端存取和信箱伺服器所使用的 TCP 連接埠，則您可能需要重新設定Windows防火牆規則，以允許整合通訊才能正常運作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在Exchange 2013用戶端存取和信箱執行 UM 元件和服務的伺服器、 Exchange 安裝程式會建立內送的防火牆規則的允許沒有任何 TCP 連接埠限制的輸入的通訊。新增 UM 服務的下列輸入的規則：</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在Exchange 2013用戶端存取和信箱執行 UM 元件和服務的伺服器、 Exchange 安裝程式會建立內送的防火牆規則的允許沒有任何 TCP 連接埠限制的輸入的通訊。新增 UM 服務的下列輸入的規則：
+
+
 
 
 1.  **SESWorker (GFW) (TCP-In)**

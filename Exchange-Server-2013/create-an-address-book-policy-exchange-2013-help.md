@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 通訊錄原則 (Abp) 允許您線段使用者到特定群組提供貴組織的全域通訊清單 (GAL) 的自訂的檢視。建立 ABP，您可以對原則指派 GAL、 離線通訊錄 (OAB)、 \[聊天室\] 清單中及一或多個地址清單。然後您可指派 ABP 提供這些到 Outlook 和 Outlook Web App 中的自訂 GAL 存取的信箱使用者。目標是提供簡易的機制來完成需要多個 Gal 的內部部署組織的 GAL 區隔。若要深入了解 Abp，請參閱[通訊錄原則](address-book-policies-exchange-2013-help.md)。
 
@@ -43,15 +43,15 @@ _**上次修改主題的時間：**2014-12-16_
 
 這個範例會建立具有下列設定的 ABP：
 
-  - **名稱：** All Fabrikam ABP
+  - **名稱：**  All Fabrikam ABP
 
-  - **GAL：** All Fabrikam
+  - **GAL：**  All Fabrikam
 
-  - **OAB：** Fabrikam 所有 OAB
+  - **OAB：**  Fabrikam 所有 OAB
 
-  - **會議室清單：** 所有 Fabrikam 聊天室
+  - **會議室清單：**  所有 Fabrikam 聊天室
 
-  - **通訊清單：** All Fabrikam、 All Fabrikam Mailboxes、 All Fabrikam DLs、 及 All Fabrikam Contacts
+  - **通訊清單：**  All Fabrikam、 All Fabrikam Mailboxes、 All Fabrikam DLs、 及 All Fabrikam Contacts
 
 <!-- end list -->
 

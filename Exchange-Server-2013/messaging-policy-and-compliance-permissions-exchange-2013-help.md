@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 設定郵件原則及符合性時，所需的權限視要執行的程序或您想執行的指令程式而有所不同。如需訊息原則及符合性的相關資訊，請參閱[郵件原則及符合性](messaging-policy-and-compliance-exchange-2013-help.md)。
 
@@ -43,18 +43,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 如果您要將管理功能的能力委派給另一個使用者，請參閱[委派角色指派](delegate-role-assignments-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您要管理的某些功能可能存在於 Edge Transport server 上。若要管理 Edge Transport server 上的功能，您必須在要管理的 Edge Transport server 上是本機系統管理員群組的成員。Edge Transport server 不會使用角色型存取控制 (RBAC)。在下表中，可以在 Edge Transport server 上管理的功能會於 [需要的權限] 欄中顯示「邊際傳輸本機系統管理員」。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您要管理的某些功能可能存在於 Edge Transport server 上。若要管理 Edge Transport server 上的功能，您必須在要管理的 Edge Transport server 上是本機系統管理員群組的成員。Edge Transport server 不會使用角色型存取控制 (RBAC)。在下表中，可以在 Edge Transport server 上管理的功能會於 [需要的權限] 欄中顯示「邊際傳輸本機系統管理員」。
+
+
 
 
 ## 郵件原則及符合性權限
@@ -93,18 +86,11 @@ _**上次修改主題的時間：**2016-12-09_
 <td><p>刪除信箱內容 (使用 <a href="https://technet.microsoft.com/zh-tw/library/dd298173(v=exchg.150)">Search-Mailbox</a> 指令程式搭配 <em>DeleteContent</em> 參數)</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">探索管理</a> <strong>與</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">信箱匯入匯出角色</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，「信箱匯入匯出」角色並未指派給任何角色群組。您可以指派管理角色給內建或自訂的角色群組、使用者或萬用安全性群組。建議將角色指派給角色群組。如需詳細資訊，請參閱<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">將角色新增至使用者或 USG</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，「信箱匯入匯出」角色並未指派給任何角色群組。您可以指派管理角色給內建或自訂的角色群組、使用者或萬用安全性群組。建議將角色指派給角色群組。如需詳細資訊，請參閱<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">將角色新增至使用者或 USG</a>。
+
+
 
 </td>
 </tr>
@@ -136,18 +122,11 @@ _**上次修改主題的時間：**2016-12-09_
 <tr class="even">
 <td><p>原有範圍 eDiscovery</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">探索管理</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，探索管理角色群組沒有任何成員。沒有使用者 (包括系統管理員) 擁有搜尋信箱的必要權限。如需詳細資訊，請參閱<a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange 中指派 eDiscovery 權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，探索管理角色群組沒有任何成員。沒有使用者 (包括系統管理員) 擁有搜尋信箱的必要權限。如需詳細資訊，請參閱<a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange 中指派 eDiscovery 權限</a>。
+
+
 
 </td>
 </tr>

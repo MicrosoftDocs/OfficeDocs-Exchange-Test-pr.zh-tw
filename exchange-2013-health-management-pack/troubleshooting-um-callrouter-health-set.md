@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange 整合通訊 (UM) 呼叫路由器健全設定能監視 UM 呼叫路由器服務的整體健全情況。
 
@@ -122,7 +122,7 @@ Microsoft Exchange 整合通訊 (UM) 呼叫路由器健全設定能監視 UM 呼
 
 檢閱 CAS 上的 UM 呼叫路由器服務憑證。
 
-**其他疑難排解步驟：**
+**其他疑難排解步驟：** 
 
 1.  啟動 IIS 管理員，接著連線到報告問題的伺服器以判斷 **MSExchangeServicesAppPool** 應用程式集區是否正在執行。
 

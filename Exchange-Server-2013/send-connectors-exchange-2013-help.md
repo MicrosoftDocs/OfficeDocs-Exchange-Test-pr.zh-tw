@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-15_
+_**上次修改主題的時間：** 2012-10-15_
 
 在 Microsoft Exchange Server 2013、 傳送連接器會控制來接收伺服器的輸出郵件流程。他們是執行的傳輸服務的 Mailbox server 上設定。最常您設定傳送到智慧主機或直接使用 DNS 其收件者的外寄電子郵件的傳送連接器。
 
 Exchange 2013執行的傳輸服務的 mailbox server 需要傳送連接器將郵件傳送至其目的地的方式在下一個躍點。傳送連接器在信箱伺服器上建立儲存在Active Directory以及可用來在組織中執行的傳輸服務的所有信箱伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您部署Exchange 2013時，輸出郵件流程不可以設定路由外寄郵件傳送至網際網路的傳送連接器之前發生。如需詳細資訊，請參閱<a href="create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md">建立電子郵件傳送至網際網路的傳送連接器</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您部署Exchange 2013時，輸出郵件流程不可以設定路由外寄郵件傳送至網際網路的傳送連接器之前發生。如需詳細資訊，請參閱<a href="create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md">建立電子郵件傳送至網際網路的傳送連接器</a>。
+
+
 
 
 ## 選取 \[傳送連接器類型

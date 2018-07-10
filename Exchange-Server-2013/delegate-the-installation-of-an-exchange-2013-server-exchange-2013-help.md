@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-07-31_
+_**上次修改主題的時間：** 2014-07-31_
 
 Exchange Server 2013可讓您不Exchange 2013組織管理角色群組之成員的人員委派Exchange伺服器的安裝。這通常是很有幫助大型公司中安裝及設定伺服器的人員其中不相同管理服務，例如Exchange的人員。如果此聲音想要執行的某個項目，本主題會為您。
 

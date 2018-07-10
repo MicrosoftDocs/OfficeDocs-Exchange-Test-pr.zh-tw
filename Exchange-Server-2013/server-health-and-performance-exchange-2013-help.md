@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 了解伺服器健康狀況與效能十分重要來設計和維護高效能訊息基礎結構。Microsoft Exchange Server 2013介紹伺服器健康狀況與效能改良的功能。
 

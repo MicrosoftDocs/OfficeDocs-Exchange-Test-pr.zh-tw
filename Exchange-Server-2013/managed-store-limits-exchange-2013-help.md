@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**上次修改主題的時間：**2016-09-15_
+_**上次修改主題的時間：** 2016-09-15_
 
-**摘要：** 關於受管理的存放區的連線限制和設定方式。
+**摘要：**  關於受管理的存放區的連線限制和設定方式。
 
 在MicrosoftExchange Server 2013、 連線和流量限制已放置在Exchange受管理存放區，以防止單一應用程式或單一使用者使用受管理存放區的所有可用的連線。若要使用的所有連線允許單一使用者或應用程式，其他使用者或應用程式無法能夠存取受管理存放區，可能會導致停機時間。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於具有管理權限的帳戶所進行的任何連線，最大工作階段限制有增加到 64000。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 對於具有管理權限的帳戶所進行的任何連線，最大工作階段限制有增加到 64000。
+
+
 
 
 ## 術語
@@ -178,32 +171,18 @@ _**上次修改主題的時間：**2016-09-15_
 
 您只能修改預設的工作階段限制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要修改的工作階段限制，您必須加以修改任何資料庫可用性群組 (Dag) 內的所有信箱伺服器上。如果您未在所有伺服器上進行相同的變更，則結果將是不一致。若要增加用戶端存取伺服器上的工作階段限制， <code>RCAMaxConcurrency</code>值必須增加上的節流原則。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您想要修改的工作階段限制，您必須加以修改任何資料庫可用性群組 (Dag) 內的所有信箱伺服器上。如果您未在所有伺服器上進行相同的變更，則結果將是不一致。若要增加用戶端存取伺服器上的工作階段限制， <code>RCAMaxConcurrency</code>值必須增加上的節流原則。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不正確編輯登錄會造成嚴重問題，可能需要重新安裝作業系統。如因不正確編輯登錄造成任何問題，這些問題可能無法解決。編輯登錄前請先備份所有珍貴資料。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!CAUTION]  
+> 不正確編輯登錄會造成嚴重問題，可能需要重新安裝作業系統。如因不正確編輯登錄造成任何問題，這些問題可能無法解決。編輯登錄前請先備份所有珍貴資料。
+
+
 
 
 1.  啟動 \[登錄編輯程式\] (regedit)。
@@ -324,32 +303,18 @@ _**上次修改主題的時間：**2016-09-15_
 
 您可以將限制可同時使用 MAPI 用戶端的資源數目上限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要修改的開啟項目限制，您需要加以修改任何 Dag 和用戶端存取陣列內的所有信箱伺服器上。如果您未在所有伺服器上進行相同的變更，則結果將是不一致。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您想要修改的開啟項目限制，您需要加以修改任何 Dag 和用戶端存取陣列內的所有信箱伺服器上。如果您未在所有伺服器上進行相同的變更，則結果將是不一致。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不正確編輯登錄會造成嚴重問題，可能需要重新安裝作業系統。如因不正確編輯登錄造成任何問題，這些問題可能無法解決。編輯登錄前請先備份所有珍貴資料。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!CAUTION]  
+> 不正確編輯登錄會造成嚴重問題，可能需要重新安裝作業系統。如因不正確編輯登錄造成任何問題，這些問題可能無法解決。編輯登錄前請先備份所有珍貴資料。
+
+
 
 
 1.  啟動 \[登錄編輯程式\] (regedit)。

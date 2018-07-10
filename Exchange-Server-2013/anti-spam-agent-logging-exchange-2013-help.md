@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 代理程式記錄檔記錄所 Microsoft Exchange Server 2013中的特定反垃圾郵件代理程式郵件上執行的動作。只有下列代理程式可寫入代理程式記錄檔資訊：
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2015-03-09_
 
   - 寄件者識別碼代理程式
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無法使用 Mailbox server 上的連線篩選代理程式與 Edge 規則代理程式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 無法使用 Mailbox server 上的連線篩選代理程式與 Edge 規則代理程式。
+
+
 
 
 代理程式記錄中寫入的資訊，會視 SMTP 事件以及對郵件執行的動作而定。
@@ -120,18 +113,11 @@ Search the agent logs
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無法使用 Mailbox server 上的連線篩選代理程式與 Edge 規則代理程式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 無法使用 Mailbox server 上的連線篩選代理程式與 Edge 規則代理程式。
+
+
 
 
 如需代理程式、SMTP 事件及代理程式優先順序的相關資訊，請參閱[傳輸代理程式](transport-agents-exchange-2013-help.md)。

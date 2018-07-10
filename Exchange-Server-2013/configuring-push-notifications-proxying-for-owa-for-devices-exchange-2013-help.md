@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 針對 Microsoft Exchange 2013 的內部部署啟用 裝置的 OWA (OWA for iPhone 和 OWA for iPad) 的推播通知，可讓使用者在自己的 OWA for iPhone 和 OWA for iPad 的 Outlook Web App 圖示上接收更新，以指出使用者收件匣中的未讀郵件數目。如果未設定並啟用推播通知，則具有 裝置的 OWA 的使用者在未啟動該應用程式的情況下，便無法得知收件匣中有未讀郵件。有新的郵件送達時，使用者裝置上的 裝置的 OWA 徽章會更新，看起來就像下列徽章。
 
@@ -53,26 +53,18 @@ Exchange Server 2013 使用單一、標準化方式進行伺服器對伺服器�
 
 OAuth 驗證通常與三個元件有關：一個授權伺服器以及兩個需要彼此通訊的領域。安全性權杖是由授權伺服器 (也稱為安全性權杖伺服器) 發行給兩個需要通訊的領域；這些權杖會確認源自其中一個領域的通訊應受到另一個領域的信任。例如，授權伺服器發行的權杖可確認來自特定 Lync Server 2013 領域的使用者能夠存取指定的 Exchange 2013 領域 (反之亦然)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>領域是安全性容器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 領域是安全性容器。
+
+
 
 
 不過，內部部署伺服器對伺服器的驗證不需要使用協力廠商權杖伺服器。各項伺服器產品 (如 Lync Server 2013 和 Exchange 2013) 都有內建的權杖伺服器，可用於驗證其他支援伺服器對伺服器驗證的 Microsoft 伺服器 (如 SharePoint Server)。例如，Lync Server 2013 可以自行發行並簽署安全性權杖，然後使用該權杖來與 Exchange 2013 通訊。在這種情況下，便不需要協力廠商權杖伺服器。
 
 若要將內部部署的 Exchange Server 2013 實作的伺服器對伺服器驗證設定為 Office 365，您必須完成兩個步驟：
 
-  -  
-    **步驟 1 – 將憑證指派給內部部署 Exchange Server 的內建權杖發行者。**首先，內部部署 Exchange 系統管理員必須使用下列 Exchange 管理命令介面指令碼來建立憑證 (如果先前尚未建立憑證)，並將該憑證指派給內部部署 Exchange Server 的內建權杖發行者。這項程序只需進行一次；憑證建立好之後，便可重複用於其他驗證情況且不會被取代。務必要將 *$tenantDomain* 的值更新為您的網域名稱。若要這麼做，請複製並貼上下列程式碼。
+  - **步驟 1 – 將憑證指派給內部部署 Exchange Server 的內建權杖發行者。** 首先，內部部署 Exchange 系統管理員必須使用下列 Exchange 管理命令介面指令碼來建立憑證 (如果先前尚未建立憑證)，並將該憑證指派給內部部署 Exchange Server 的內建權杖發行者。這項程序只需進行一次；憑證建立好之後，便可重複用於其他驗證情況且不會被取代。務必要將 *$tenantDomain* 的值更新為您的網域名稱。若要這麼做，請複製並貼上下列程式碼。
     
     <table>
     <thead>
@@ -167,8 +159,7 @@ OAuth 驗證通常與三個元件有關：一個授權伺服器以及兩個需�
     </table>
 
 
-  -  
-    **步驟 2 – 設定 Office 365 以便與內部部署 Exchange 2013 通訊。**將要作為 Exchange Server 2013 通訊對象的 Office 365 伺服器設定為合作夥伴應用程式。例如，若內部部署 Exchange Server 2013 需要與 Office 365 通訊，您就必須將內部部署 Exchange 設定為合作夥伴應用程式。合作夥伴應用程式就是 Exchange 2013 可以與其直接交換安全性權杖，而不必經過協力廠商安全性權杖伺服器的應用程式。內部部署 Exchange 2013 系統管理員必須使用下列 Exchange 管理命令介面指令碼，將要作為 Exchange 2013 通訊對象的 Office 365 租用戶設定為夥伴應用程式。在執行期間，系統將會提示輸入 Office 365 租用戶網域的系統管理員使用者名稱和密碼 (例如，administrator@fabrikam.com)。如果先前的指令碼並未建立憑證，請務必將 *$CertFile* 的值更新為憑證的位置。若要這麼做，請複製並貼上下列程式碼。
+  - **步驟 2 – 設定 Office 365 以便與內部部署 Exchange 2013 通訊。** 將要作為 Exchange Server 2013 通訊對象的 Office 365 伺服器設定為合作夥伴應用程式。例如，若內部部署 Exchange Server 2013 需要與 Office 365 通訊，您就必須將內部部署 Exchange 設定為合作夥伴應用程式。合作夥伴應用程式就是 Exchange 2013 可以與其直接交換安全性權杖，而不必經過協力廠商安全性權杖伺服器的應用程式。內部部署 Exchange 2013 系統管理員必須使用下列 Exchange 管理命令介面指令碼，將要作為 Exchange 2013 通訊對象的 Office 365 租用戶設定為夥伴應用程式。在執行期間，系統將會提示輸入 Office 365 租用戶網域的系統管理員使用者名稱和密碼 (例如，administrator@fabrikam.com)。如果先前的指令碼並未建立憑證，請務必將 *$CertFile* 的值更新為憑證的位置。若要這麼做，請複製並貼上下列程式碼。
     
         # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
         
@@ -242,7 +233,7 @@ OAuth 驗證通常與三個元件有關：一個授權伺服器以及兩個需�
 
 在完成上述步驟之後，就可以透過下列其中一種方式測試推播通知：
 
-  - **將測試電子郵件傳送到使用者的信箱：**
+  - **將測試電子郵件傳送到使用者的信箱：** 
     
     1.  在行動裝置上於「裝置的 OWA」中設定帳戶，以便訂閱通知。
     
@@ -252,7 +243,7 @@ OAuth 驗證通常與三個元件有關：一個授權伺服器以及兩個需�
     
     4.  如此一來，應用程式圖示應該就會在幾分鐘內顯示未讀郵件計數。
 
-  - **啟用監控：**另一種測試推播通知或調查通知失敗原因的方式，就是對貴組織的信箱伺服器啟用監控。內部部署 Exchange 2013 伺服器系統管理員必須使用下列指令碼來叫用推播通知 Proxy 監控。若要這麼做，請複製並貼上下列程式碼。
+  - **啟用監控：** 另一種測試推播通知或調查通知失敗原因的方式，就是對貴組織的信箱伺服器啟用監控。內部部署 Exchange 2013 伺服器系統管理員必須使用下列指令碼來叫用推播通知 Proxy 監控。若要這麼做，請複製並貼上下列程式碼。
     
         # Send a push notification to verify connectivity.
         

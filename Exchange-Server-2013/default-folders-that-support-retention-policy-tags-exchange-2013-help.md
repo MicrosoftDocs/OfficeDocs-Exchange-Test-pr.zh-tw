@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-04-20_
+_**上次修改主題的時間：** 2017-04-20_
 
 您可以使用[保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)來管理電子郵件生命週期。保留原則包含保留標記是可用來指定封存或應刪除訊息自動要移動時設定。
 

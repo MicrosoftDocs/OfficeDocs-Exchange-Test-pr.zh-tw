@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 使用此檢查清單可協助您將 Exchange 2007 整合通訊 (UM) 升級至 Exchange 2013 UM。在將 Exchange 2007 組織和 UM 部署升級至 Exchange 2013 時，請務必參考此資訊。如需升級至 Exchange 2013 UM 的逐步指示，請參閱[Exchange 2007 UM 升級至 Exchange 2013 UM](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md)。
 

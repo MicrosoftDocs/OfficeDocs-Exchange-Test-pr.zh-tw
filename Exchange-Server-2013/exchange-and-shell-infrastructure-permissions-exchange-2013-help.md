@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 執行設定 Microsoft Exchange Server 2013 各種元件之工作所需的權限，視正在執行的程序或要執行的 Cmdlet 而定。請參閱本主題中的每個章節，以取得其各自功能的詳細資訊。
 
@@ -43,18 +43,11 @@ _**上次修改主題的時間：**2015-03-09_
 
 如果您要將管理功能的能力委派給另一個使用者，請參閱[委派角色指派](delegate-role-assignments-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>某些功能可能會要求您在要管理的伺服器上具備本機系統管理員權限。若要管理這些功能，您必須是該伺服器上本機系統管理員群組的成員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 某些功能可能會要求您在要管理的伺服器上具備本機系統管理員權限。若要管理這些功能，您必須是該伺服器上本機系統管理員群組的成員。
+
+
 
 
 ## Exchange 基礎結構權限
@@ -119,18 +112,11 @@ _**上次修改主題的時間：**2015-03-09_
 <td><p>僅檢視系統管理員稽核記錄</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">組織管理</a></p>
 <p><a href="records-management-exchange-2013-help.md">記錄管理</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以手動指派僅檢視稽核記錄檔管理角色給管理角色群組。如需相關資訊，請參閱<a href="view-only-audit-logs-role-exchange-2013-help.md">僅檢視稽核記錄 」 角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以手動指派僅檢視稽核記錄檔管理角色給管理角色群組。如需相關資訊，請參閱<a href="view-only-audit-logs-role-exchange-2013-help.md">僅檢視稽核記錄 」 角色</a>。
+
+
 
 </td>
 </tr>

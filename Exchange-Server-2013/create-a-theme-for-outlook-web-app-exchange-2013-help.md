@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 *佈景主題*定義背景色彩、 字型、 醒目提示色彩、 圖示和MicrosoftOutlook Web App所使用的標頭。每一個佈景主題是一組媒體檔案和MicrosoftExchange中的伺服器安裝目錄 \\Client Access\\OWA\\prem\\*version*\\resources\\themes 中儲存的階層式樣式表 (.css) 檔案。每一個佈景主題會儲存在其專屬的 \\themes 子目錄。
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 建立主題之後，您可能也想要[自訂 Outlook Web App 登入、語言選擇與錯誤頁面](customize-the-outlook-web-app-sign-in-language-selection-and-error-pages-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Light 版 Outlook Web App 不支援主題。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Light 版 Outlook Web App 不支援主題。
+
+
 
 
 <table>
@@ -78,18 +71,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 該怎麼做？
@@ -140,18 +126,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 佈景主題圖像儲存在 \\themes*\\\<theme name\>*\\images\\ 中的兩個資料夾中。\\Images\\0 資料夾包含將使用中 （如英文）、 以從左至右語言的圖像及讀取從右至左的語言會使用 \\images\\rtl 資料夾中的圖像。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>\images\rtl 資料夾中有些影像與 \images\0 資料夾中的影像相同，但為鏡像影像。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> \images\rtl 資料夾中有些影像與 \images\0 資料夾中的影像相同，但為鏡像影像。
+
+
 
 
 若要自訂主題，可使用影像編輯工具來開啟和修改下列影像：

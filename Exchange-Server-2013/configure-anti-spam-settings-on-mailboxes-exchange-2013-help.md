@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-11-17_
+_**上次修改主題的時間：** 2016-11-17_
 
 您可以在不同的套用至 Exchange 組織中信箱的其餘部分的反垃圾郵件設定的個別信箱上設定特定的反垃圾郵件設定。當您在信箱上設定反垃圾郵件設定時，該設定會覆寫對應全組織內容篩選或組織設定反垃圾郵件設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2016-11-17_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作

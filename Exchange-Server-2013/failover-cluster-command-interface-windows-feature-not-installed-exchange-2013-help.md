@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-12-03_
+_**上次修改主題的時間：** 2014-12-03_
 
 因為本機電腦遺漏必要的 Windows 功能，所以 Microsoft Exchange Server 2013 安裝程式無法繼續。您必須先安裝此 Windows 功能，Exchange 2013 安裝程式才能繼續。
 
@@ -23,18 +23,11 @@ Exchange 2013安裝程式需要**容錯移轉叢集命令介面**Windows 功能�
 
 依下列方式在這部電腦上安裝 Windows 功能。若此功能需要重新開啟才可完成安裝，需離開 Exchange 2013 安裝程式、重新開機然後再次啟動安裝程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可能需要先安裝其他 Windows 功能或更新，Exchange 2013 安裝程式才能繼續。如需必要 Windows 功能和更新的完整清單，請查看 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 可能需要先安裝其他 Windows 功能或更新，Exchange 2013 安裝程式才能繼續。如需必要 Windows 功能和更新的完整清單，請查看 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。
+
+
 
 
 1.  本機電腦上開啟 Windows PowerShell。

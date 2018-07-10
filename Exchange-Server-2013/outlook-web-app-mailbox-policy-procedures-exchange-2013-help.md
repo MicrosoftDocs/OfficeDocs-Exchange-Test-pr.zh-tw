@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-09-22_
+_**上次修改主題的時間：** 2012-09-22_
 
 [建立 Outlook Web App 信箱原則](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)
 

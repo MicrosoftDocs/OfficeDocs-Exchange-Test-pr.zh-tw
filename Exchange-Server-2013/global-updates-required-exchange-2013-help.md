@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-12-02_
+_**上次修改主題的時間：** 2014-12-02_
 
 安裝程式無法繼續 Microsoft Exchange Server 2013因為已登入使用者沒有對 Active Directory 進行全域更新所需的帳戶權限。
 
@@ -23,18 +23,11 @@ _**上次修改主題的時間：**2014-12-02_
 
 若要解決此問題，請授與登入的使用者正確權限，或是使用具有那些權限的帳戶登入，然後重新執行 Exchange 2013 安裝程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援 Exchange 2013 的跨樹系安裝。請使用您要在其中安裝 Exchange 2013 之 Active Directory 樹系的成員帳戶。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 不支援 Exchange 2013 的跨樹系安裝。請使用您要在其中安裝 Exchange 2013 之 Active Directory 樹系的成員帳戶。
+
+
 
 
 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。

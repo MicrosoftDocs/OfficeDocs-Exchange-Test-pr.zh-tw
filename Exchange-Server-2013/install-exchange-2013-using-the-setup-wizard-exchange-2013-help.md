@@ -15,40 +15,26 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-19_
+_**上次修改主題的時間：** 2014-06-19_
 
 本主題說明如何使用 Microsoft Exchange Server 2013 安裝精靈將 Exchange 2013 Mailbox 和 Client Access role 安裝在電腦上。如需規劃與部署 Exchange 2013 的相關資訊，請參閱[規劃及部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 
 如果您要在電腦上安裝 Exchange 2013 Edge Transport role，請參閱＜[使用設定精靈安裝 Exchange 2013 Edge Transport role](install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md)＞。Edge Transport role 不能與 Mailbox 或 Client Access server role 安裝在相同的電腦上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您是否曾聽過 Exchange Server 部署助理？這是一項免費的線上工具，該工具會詢問您一些問題並特別為您建立一份自訂的部署檢查清單，以協助您在組織中快速部署 Exchange 2013。若想要深入了解，請移至 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您是否曾聽過 Exchange Server 部署助理？這是一項免費的線上工具，該工具會詢問您一些問題並特別為您建立一份自訂的部署檢查清單，以協助您在組織中快速部署 Exchange 2013。若想要深入了解，請移至 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在執行 Exchange 2013 的電腦上安裝任何伺服器角色之後，就無法使用 Exchange 2013 安裝精靈，將任何的其他伺服器角色新增至此電腦。如果想要將多個伺服器角色新增至電腦，則必須使用 [控制台] 的 [新增或移除程式]，或從 [命令提示字元] 視窗使用 Setup.exe。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 在執行 Exchange 2013 的電腦上安裝任何伺服器角色之後，就無法使用 Exchange 2013 安裝精靈，將任何的其他伺服器角色新增至此電腦。如果想要將多個伺服器角色新增至電腦，則必須使用 [控制台] 的 [新增或移除程式]，或從 [命令提示字元] 視窗使用 Setup.exe。
+
+
 
 
 如需要在安裝後完成之工作的相關資訊，請參閱 [Exchange 2013 後續安裝工作](exchange-2013-post-installation-tasks-exchange-2013-help.md)。
@@ -71,36 +57,22 @@ _**上次修改主題的時間：**2014-06-19_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在伺服器上安裝 Exchange 之後，就不得變更伺服器名稱。在安裝 Exchange 伺服器角色之後，就不支援重新命名伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 在伺服器上安裝 Exchange 之後，就不得變更伺服器名稱。在安裝 Exchange 伺服器角色之後，就不支援重新命名伺服器。
+
+
 
 
 ## 安裝 Exchange Server 2013
 
 如果是安裝組織中的第一部 Exchange 2013 伺服器，而且尚未執行 Active Directory 準備步驟，您必須使用具有 Enterprise Administrators 群組成員資格的帳戶。若您先前尚未備妥 Active Directory 架構，則帳戶也必須是 Schema Admins 群組的成員。如需如何準備 Active Directory 的 Exchange 2013，請參閱[準備 Active Directory 及網域](prepare-active-directory-and-domains-exchange-2013-help.md)。如果您已經執行架構和 Active Directory 準備步驟，您使用的帳戶必須是 Delegated Setup 管理角色群組或 Organization Management 角色群組的成員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要下載最新版本的 Exchange 2013，請參閱＜<a href="updates-for-exchange-2013-exchange-2013-help.md">更新 Exchange 2013</a>＞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要下載最新版本的 Exchange 2013，請參閱＜<a href="updates-for-exchange-2013-exchange-2013-help.md">更新 Exchange 2013</a>＞。
+
+
 
 
 1.  登入要在其上安裝 Exchange 2013 的電腦。

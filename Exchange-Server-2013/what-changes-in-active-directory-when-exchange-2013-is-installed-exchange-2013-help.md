@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-05-26_
+_**上次修改主題的時間：** 2014-05-26_
 
 安裝 Exchange 2013 時會變更 Active Directory 樹系和網域。Exchange 這樣做是為了儲存組織中的 Exchange 伺服器、信箱和 Exchange 相關的其他物件的相關資訊。當您執行 Exchange 2013 安裝精靈時，或在 Exchange 2013 命令列安裝期間執行 *PrepareSchema*、*PrepareAD* 和 *PrepareDomains* 命令時 (關於如何使用這些命令，請參閱＜[準備 Active Directory 及網域](prepare-active-directory-and-domains-exchange-2013-help.md)＞)，將會為您完成這些變更。如果想要了解 Exchange 對 Active Directory 所做的變更，請參閱本主題。其中說明 Exchange 在準備 Active Directory 的每一個步驟中所執行的動作。
 

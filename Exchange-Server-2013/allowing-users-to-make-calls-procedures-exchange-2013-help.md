@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-05-03_
+_**上次修改主題的時間：** 2013-05-03_
 
 [啟用 UM IP 閘道器上的撥出電話](enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md)
 

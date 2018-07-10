@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-04_
+_**上次修改主題的時間：** 2012-10-04_
 
 The *Identity* parameter is a special parameter that you can use with most cmdlets. The *Identity* parameter gives you access to the unique identifiers that refer to a specific object in Microsoft Exchange Server 2013. This capability lets you perform actions on a specific Exchange 2013 object.
 

@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-01-18_
+_**上次修改主題的時間：** 2013-01-18_
 
 您可以對使用者啟用或停用 IMAP4。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您已啟用或停用使用者的 IMAP4 之後，您必須重新啟動 Microsoft Exchange IMAP4 服務和 Microsoft Exchange IMAP4 後端服務。如需如何重新啟動 IMAP4 服務的詳細資訊，請參閱<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您已啟用或停用使用者的 IMAP4 之後，您必須重新啟動 Microsoft Exchange IMAP4 服務和 Microsoft Exchange IMAP4 後端服務。如需如何重新啟動 IMAP4 服務的詳細資訊，請參閱<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">啟動及停止 IMAP4 服務</a>。
+
+
 
 
 如需管理使用者信箱的相關資訊，請參閱[管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：**2013-01-18_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

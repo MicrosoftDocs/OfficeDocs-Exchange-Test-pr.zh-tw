@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Active Directory 分割權限 不支援的網域控制站上安裝
+# Active Directory 分割權限 [InstallOnDCInADSplitPermissionMode] 不支援的網域控制站上安裝
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2012-11-12_
+_**上次修改主題的時間：** 2012-11-12_
 
 Microsoft Exchange Server 2013安裝程式偵測到您嘗試在 Active Directory 網域控制站上執行安裝程式與下列其中一項為真：
 
@@ -27,18 +27,11 @@ Microsoft Exchange Server 2013安裝程式偵測到您嘗試在 Active Directory
 
 如果您想要在網域控制站上安裝Exchange 2013 ，您必須設定 Exchange 組織的角色型存取控制 (RBAC) 分割權限或共用的權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們不建議在 Active Directory 網域控制站上安裝Exchange 2013 。如需詳細資訊，請參閱<a href="installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md">在網域控制站上安裝 Exchange 不建議使用</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 我們不建議在 Active Directory 網域控制站上安裝Exchange 2013 。如需詳細資訊，請參閱<a href="installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md">在網域控制站上安裝 Exchange 不建議使用</a>。
+
+
 
 
 如果您想要繼續使用 Active Directory 分割權限，您必須安裝Exchange 2013成員伺服器。

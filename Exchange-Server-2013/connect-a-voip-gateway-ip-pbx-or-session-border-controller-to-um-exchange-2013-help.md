@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您必須設定 Voice over IP (VoIP) 閘道與 IP 專用交換機進行交換 (Pbx) 的正確當您部署整合通訊 (UM) 的組織。如果您正在部署 UM 在混合環境中，您也需要正確設定您的工作階段邊界控制器 (Sbc)。為達成此目的，您需要設定的介面或 VoIP 閘道、 IP Pbx 和 Sbc 與執行 Microsoft Exchange Unified Messaging Call Router 服務的用戶端存取伺服器與執行 Microsoft Exchange 整合通訊服務的 Mailbox server 通訊的介面。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您執行管理工作如 VoIP 閘道、 IP PBX 或 SBC 使用網頁瀏覽器中時，未加密的 HTTP 要求透過網路傳送。若要增加 VoIP 閘道、 IP Pbx 或 Sbc 您網路上的安全性層級使用網際網路通訊協定安全性 (IPsec) 或 Secure Sockets Layer (SSL) 可協助保護系統管理認證和透過網路傳送的資料。也建議您使用的強式驗證機制模式和複雜的管理密碼來保護裝置的系統管理認證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您執行管理工作如 VoIP 閘道、 IP PBX 或 SBC 使用網頁瀏覽器中時，未加密的 HTTP 要求透過網路傳送。若要增加 VoIP 閘道、 IP Pbx 或 Sbc 您網路上的安全性層級使用網際網路通訊協定安全性 (IPsec) 或 Secure Sockets Layer (SSL) 可協助保護系統管理認證和透過網路傳送的資料。也建議您使用的強式驗證機制模式和複雜的管理密碼來保護裝置的系統管理認證。
+
+
 
 
 ## 電話語音 IP 裝置介面
@@ -63,16 +56,9 @@ _**上次修改主題的時間：**2016-12-09_
 
 在 Client Access server 和信箱伺服器將只與 VoIP 閘道、 IP PBX 或已列為信任的工作階段初始通訊協定 (SIP) 對等的 SBC 通訊。當多個 DNS 主機共用相同的 IP 位址會記錄與識別碼 1175年事件。如果您已設定 DNS 區域 fqdn 為 VoIP 閘道網路上，可能會發生此事件。Unified Messaging 提供保護，避免未經授權的要求，以擷取信箱伺服器上的整合通訊的 Web 服務虛擬目錄的內部 URL，然後使用 URL 建立清單的 Fqdn 為受信任的 SIP 對等。兩個 Fqdn 解析為相同的 IP 位址之後，就會記錄此事件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須重新啟動MicrosoftExchange整合通訊服務如果在 VoIP 閘道、 IP PBX、 SBC 設定為具有 FQDN 和 DNS 記錄之 VoIP 閘道、 IP PBX 或 SBC 變更之後啟動服務。如果您不重新啟動服務，Mailbox server 將無法找到 VoIP 閘道、 IP PBX 或 SBC。因為在信箱伺服器維護所有 VoIP 閘道、 IP Pbx 或 Sbc 在記憶體中的快取且僅時重新啟動服務執行 DNS 解析或已變更的 VoIP 閘道、 IP PBX 或 SBC 設定這時發生。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須重新啟動MicrosoftExchange整合通訊服務如果在 VoIP 閘道、 IP PBX、 SBC 設定為具有 FQDN 和 DNS 記錄之 VoIP 閘道、 IP PBX 或 SBC 變更之後啟動服務。如果您不重新啟動服務，Mailbox server 將無法找到 VoIP 閘道、 IP PBX 或 SBC。因為在信箱伺服器維護所有 VoIP 閘道、 IP Pbx 或 Sbc 在記憶體中的快取且僅時重新啟動服務執行 DNS 解析或已變更的 VoIP 閘道、 IP PBX 或 SBC 設定這時發生。
+
+
 

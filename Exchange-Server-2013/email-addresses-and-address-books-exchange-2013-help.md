@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 收件者 (包括使用者、資源、連絡人及群組) 是指在 Active Directory 中任何擁有郵件功能的物件，Microsoft Exchange 可以傳遞或路由傳送郵件到該位置。收件者必須擁有一個電子郵件地址，才能夠接收或傳送電子郵件。通訊錄是使用者尋找彼此以傳送電子郵件的方法。有許多不同的方法可用來組織通訊錄。如需 Exchange Server 2013 中通訊錄功能的詳細描述，請參閱Key terminology。
 

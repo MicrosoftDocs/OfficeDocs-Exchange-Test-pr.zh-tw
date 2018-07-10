@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 若要檢視特定日期處理的 Exchange 伺服器通話的詳細的資訊，請呼叫將資料匯出當天的呼叫統計資料報告。每日通話即提供過去 90 天的資料可協助您診斷與音訊品質或已拒絕的通話的問題和稽核或組織中的 Exchange 伺服器上的報告提供的資訊。
 
@@ -53,18 +53,11 @@ _**上次修改主題的時間：**2013-02-22_
 
 匯出的 UM 通話資料包含 UM 於該日所處理之每個通話的下列詳細資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「呼叫統計資料」報告中顯示的日期為 UTC 時間。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「呼叫統計資料」報告中顯示的日期為 UTC 時間。
+
+
 
 
   - **CallStartTime**日期與時間的 UM 處理來電，以 UTC。UTC 時間和日期表示以下列格式： *YYYY-MM-DD hh:mm:SSZ*，其中*YYYY* = year， *MM* = 月、 *DD* = 日、 *hh* = 小時、 在 24 小時制， *mm* = 分鐘、 ss = 秒。Z 代表祖魯文，這是一種方式皆 UTC (例如 +*hh*:*mm*或*hh*:*mm*，進而讓時間位移的 UTC)。因為在此報告中的所有通話時間都是在 UTC 時間，這一律為 Z。

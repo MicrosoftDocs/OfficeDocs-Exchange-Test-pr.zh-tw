@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-03-05_
+_**上次修改主題的時間：** 2018-03-05_
 
 您可以使用系統管理員稽核記錄中 Microsoft Exchange Server 2013至使用者或管理員在組織中，進行變更時登入。依保持所做的變更記錄檔，您可以追蹤變更、 已實作增強詳細記錄的變更與您變更記錄、 符合法規需求並徵求探索與其他人的變更。
 
@@ -62,18 +62,11 @@ Admin Audit Log agent
 
 根據預設，如果啟用稽核記錄的記錄項目建立每次執行任何指令程式。如果您不想以稽核在執行的每個指令程式，您可以設定稽核記錄稽核只有 cmdlet 和您感興趣的參數。您可以設定稽核記錄功能與**Set-AdminAuditLogConfig**指令程式。下列各節中所參照的參數會搭配這個指令程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不論受稽核的指令程式清單中是否包含 <strong>Set-AdministratorAuditLog</strong> 指令程式，且不論稽核記錄是否啟用或停用，對管理員稽核記錄組態所做的變更會一律予以記錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 不論受稽核的指令程式清單中是否包含 <strong>Set-AdministratorAuditLog</strong> 指令程式，且不論稽核記錄是否啟用或停用，對管理員稽核記錄組態所做的變更會一律予以記錄。
+
+
 
 
 執行命令時， Exchange會檢查所用的 cmdlet。如果已執行此指令程式符合任何*AdminAuditLogConfigCmdlets*參數所提供的 cmdlet， Exchange接著會檢查*AdminAuditLogConfigParameters*參數中指定的參數。如果 \[參數\] 清單中的至少一或多個參數的比對， Exchange記錄檔中使用*AdminAuditLogMailbox*參數所指定的信箱已執行此指令程式。下列各節包含稽核記錄組態的各方面的詳細資訊。
@@ -175,18 +168,11 @@ Admin Audit Log agent
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
 <td><p>此欄位會包含在<code>ObjectModified</code> ] 欄位中的物件所修改的屬性。也儲存在此欄位中，但不是可見的預設輸出中，且舊屬性的值已儲存的新值。如需如何存取此欄位中的其他資訊，請參閱<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">搜尋角色群組變更或管理員稽核記錄檔</a>的詳細資訊。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有在 <strong>Set-AdminAuditLogConfig</strong>指令程式上的 <em>LogLevel</em> 參數設定為 <code>Verbose</code> 時，才會填入此欄位。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 只有在 <strong>Set-AdminAuditLogConfig</strong>指令程式上的 <em>LogLevel</em> 參數設定為 <code>Verbose</code> 時，才會填入此欄位。
+
+
 
 </td>
 </tr>
@@ -270,18 +256,11 @@ Admin Audit Log agent
 
 執行**New-AdminAuditLogSearch**指令程式之後， Exchange可能需要 15 分鐘的時間將傳送至指定的收件者的報表。XML 檔附加報告可以為最大值為 10 mb (MB)。XML 檔案包含稽核記錄檔目錄中的表格中所述的相同資訊。如需 XML 檔案結構的詳細資訊，請參閱[系統管理員稽核記錄檔結構](administrator-audit-log-structure-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，Outlook Web App 不允許您在開啟 XML 附件。您可以設定 Exchange 以允許使用 Outlook Web App 檢視 XML 附件，或是使用其他電子郵件用戶端 (如 Microsoft Outlook) 來檢視附件。如需如何設定 Outlook Web App 以允許檢視 XML 附件的相關資訊，請參閱<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">檢視或設定 Outlook Web App 虛擬目錄</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，Outlook Web App 不允許您在開啟 XML 附件。您可以設定 Exchange 以允許使用 Outlook Web App 檢視 XML 附件，或是使用其他電子郵件用戶端 (如 Microsoft Outlook) 來檢視附件。如需如何設定 Outlook Web App 以允許檢視 XML 附件的相關資訊，請參閱<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">檢視或設定 Outlook Web App 虛擬目錄</a>。
+
+
 
 
 如需如何使用 **New-AdminAuditLogSearch**指令程式的詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。

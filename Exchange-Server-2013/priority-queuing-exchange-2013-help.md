@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 *「優先佇列」(Priority Queuing)* 是 Exchange Server 2013 的一項功能，可啟用寄件者定義的郵件優先順序，以影響 Mailbox Server 的傳輸服務對郵件的處理方式。
 

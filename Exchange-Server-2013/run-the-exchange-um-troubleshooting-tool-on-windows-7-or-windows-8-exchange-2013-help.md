@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow** 的 Exchange 管理命令介面指令程式。您可以使用指令程式來診斷自動答錄案例的特定組態錯誤，以及測試語音信箱在內部部署和跨單位部署 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更新版本的 UM 中是否正常運作。您可以在具有 Microsoft Office Microsoft Lync Server 2010 或更新版本的部署或具有 Vo IP 閘道、IP PBX 或工作階段邊界控制器 (SBC) 的 UM 部署中使用此指令程式。
 
@@ -41,7 +41,7 @@ Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow
     
       - 如果Windows Vista 或Windows Server 2008電腦上執行此工具，請參閱[Windows Vista x64，及 Windows Server 2008 x64 的 Microsoft.NET Framework 3.5 Family 更新](https://go.microsoft.com/fwlink/p/?linkid=178998)。
     
-      - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。請參閱 Microsoft 知識庫文章 968930：[Windows 管理架構核心套件 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+      - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。請參閱 Microsoft 知識庫文章 968930：[Windows 管理架構核心套件 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
     
       - Microsoft Unified Communications Managed 的 API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi)。請參閱[Unified 的 Communications Managed API 2.0 Core Runtime （64 位元）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 
@@ -67,18 +67,11 @@ Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 在 Windows Vista、Windows 7 或 Windows 8 上執行 UM 疑難排解工具

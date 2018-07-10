@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-16_
+_**上次修改主題的時間：** 2012-11-16_
 
 在 Microsoft Exchange Server 2013，您可以設定資訊版權管理 (IRM) 方便Exchange搜尋可編製索引受 IRM 保護的郵件。
 
 當探索管理角色群組的成員執行[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)搜尋時，受 IRM 保護的郵件搜尋結果中傳回且複製到探索信箱搜尋中指定。此外，探索管理角色群組的成員可以使用Outlook Web App來存取已複製到探索信箱因為探索搜尋的受 IRM 保護之訊息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>探索管理角色群組的成員無法存取受 IRM 保護之訊息的探索信箱匯出至另一個信箱或.pst 檔案。只能透過使用Outlook Web App可以存取受 IRM 保護郵件中的探索信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 探索管理角色群組的成員無法存取受 IRM 保護之訊息的探索信箱匯出至另一個信箱或.pst 檔案。只能透過使用Outlook Web App可以存取受 IRM 保護郵件中的探索信箱。
+
+
 
 
 若欲瞭解更多與 IRM 相關的管理工作，請參閱 [資訊版權管理程序](information-rights-management-procedures-exchange-2013-help.md)。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：**2012-11-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -71,18 +57,11 @@ _**上次修改主題的時間：**2012-11-16_
 
 此範例會設定 IRM 以允許Exchange搜尋編製索引受 IRM 保護的郵件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設， <em>SearchEnabled</em>參數設為<code>$true</code>。若要停用受 IRM 保護之訊息的編製索引，請將它設為<code>$false</code>。停用編製索引的受 IRM 保護之訊息防止這些使用者搜尋信箱或時探索管理員使用就地 eDiscovery 搜尋結果中所傳回。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設， <em>SearchEnabled</em>參數設為<code>$true</code>。若要停用受 IRM 保護之訊息的編製索引，請將它設為<code>$false</code>。停用編製索引的受 IRM 保護之訊息防止這些使用者搜尋信箱或時探索管理員使用就地 eDiscovery 搜尋結果中所傳回。
+
+
 
 
     Set-IRMConfiguration -SearchEnabled $true
@@ -93,18 +72,11 @@ _**上次修改主題的時間：**2012-11-16_
 
 此範例會啟用探索信箱內的受 IRM 保護郵件存取 「 探索管理角色群組的成員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設， <em>EDiscoverySuperUserEnabled</em>參數設為<code>$true</code>。若要停用受 IRM 保護之訊息的存取探索管理角色群組的成員，請將它設為<code>$false</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設， <em>EDiscoverySuperUserEnabled</em>參數設為<code>$true</code>。若要停用受 IRM 保護之訊息的存取探索管理角色群組的成員，請將它設為<code>$false</code>。
+
+
 
 
     Set-IRMConfiguration -EDiscoverySuperUserEnabled $true

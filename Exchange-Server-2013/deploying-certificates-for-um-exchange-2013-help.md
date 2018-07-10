@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-29_
+_**上次修改主題的時間：** 2013-04-29_
 
 您可以使用相互傳輸層安全性 (相互 TLS) 若要啟用整合通訊 (UM) 以加密資料的 Microsoft Exchange 2013 伺服器與 VoIP 閘道、 IP Pbx、 工作階段邊界控制器 (Sbc) 之間傳送和 Microsoft Lync Server。憑證繫結兩個電子機碼 （公用及私人） 的憑證擁有者用來加密及數位簽署資訊的身分識別。
 

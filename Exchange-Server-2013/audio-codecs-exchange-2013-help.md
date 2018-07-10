@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 整合通訊 (UM) 使用音訊轉碼器來儲存語音信箱訊息。VoIP 閘道或 IP Private Branch eXchange (PBX) 與 Mailbox Server (執行 Microsoft Exchange Unified Messaging 服務) 或 Client Access Server (執行 Microsoft Exchange Unified Messaging Call Router 服務) 之間，使用另一種轉碼器。整合通訊可以使用下列四個音訊轉碼器中的任何一個來建立和儲存語音訊息：
 
@@ -27,18 +27,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - G.711 脈衝碼調制 (PCM) 線性
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>G.711 (PCMA 和 PCMU) 和 G.723.1 轉碼器是 VoIP 閘道與 Client Access Server 和 Mailbox Server 之間使用的 VoIP 轉碼器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> G.711 (PCMA 和 PCMU) 和 G.723.1 轉碼器是 VoIP 閘道與 Client Access Server 和 Mailbox Server 之間使用的 VoIP 轉碼器。
+
+
 
 
 規劃 UM 系統時，需要根據組織的需求來選取正確的音訊轉碼器。本主題討論 UM 可使用的音訊轉碼器，可利用它來協助規劃 UM 部署。
@@ -155,34 +148,20 @@ Client Access Server 或 Mailbox Server 和受支援的 VoIP 閘道或 IP PBX �
 
 RTAudio 寬頻或高逼真度音訊錄製語音訊息也是可作為音訊轉碼器。不過，使用 RTAudio 高畫質音訊才可使用您已成功地整合通訊與整合[Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=202010)。若要啟用 RTAudio 做線路轉碼器，縮小或是寬頻、 UM 撥號對應表必須設定為工作階段初始通訊協定 (SIP) URI 類型撥號對應表和您必須設定來電接聽轉碼器上的撥號 MP3 或 WMA 啟用寬頻音訊 (16khz)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未部署 Lync Server 的環境無法使用 RTAudio。這是因為在未整合 Lync Server 的環境中，撥號對應表會設為電話分機號碼或 E.164，而非 SIP URI。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 未部署 Lync Server 的環境無法使用 RTAudio。這是因為在未整合 Lync Server 的環境中，撥號對應表會設為電話分機號碼或 E.164，而非 SIP URI。
+
+
 
 
 每通來電都有兩個媒體資料流：輸入至 Client Access Server，以及從 Mailbox Server 輸出。當撥號對應表類型設為 SIP URI 且撥號對應表上的自動答錄轉碼器設為 MP3 或 WMA 時，Client Access Server 會嘗試為輸入媒體資料流選取 RTAudio VoIP 轉碼器。如果交涉成功，輸入資料流的 RTAudio 轉碼器就會用於自動答錄服務通話，或從 Lync 用戶端或伺服器發出的通話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用「在電話上播放」功能撥出的通話不會使用 RTAudio 轉碼器。使用「在電話上播放」所撥出通話的輸入資料流會使用 G.711 或 G.723.1 轉碼器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用「在電話上播放」功能撥出的通話不會使用 RTAudio 轉碼器。使用「在電話上播放」所撥出通話的輸入資料流會使用 G.711 或 G.723.1 轉碼器。
+
+
 
 
 使用 RTAudio 轉碼器時，所錄製的語音訊息會以高逼真度進行錄音，並儲存為具有 .mp3 或 .wma 副檔名的音訊檔案，視如何設定撥號對應表而定。在 Outlook 或 Outlook Web App 中將這些語音訊息播放給使用者時，他們會聽到高逼真度音訊形式的語音訊息。若交涉失敗，則會使用 G.711 或 G.723.1 轉碼器。G.711 和 G.723.1 轉碼器都是窄頻轉碼器，將它們用作 VoIP 轉碼器時，語音訊息會錄製並儲存為窄頻音訊檔案，並具有 mp3 或 .wma 副檔名。
@@ -249,18 +228,11 @@ UM 語音訊息的大小視附件所包含的語音資料大小而定。而附�
 
 下圖針對三種您可以在 UM 中使用的音訊轉碼器，說明語音信箱錄音的時間長短對音訊檔案大小的影響。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此圖中，自動答錄之語音訊息的平均長度大約是 30 秒。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在此圖中，自動答錄之語音訊息的平均長度大約是 30 秒。
+
+
 
 
 **音訊檔案大小**
@@ -275,18 +247,11 @@ UM 語音訊息的大小視附件所包含的語音資料大小而定。而附�
 
 WMA 是三種轉碼器中壓縮比最高的音訊轉碼器。壓縮後，每 10 秒音訊大約需要 11,000 個位元組。不過，.wma 檔案格式的標頭區段遠比 .wav 檔案格式大。.wma 檔案的標頭區段大約是 7 KB，而 .wav 檔案的標頭區段則小於 100 個位元組。雖然 WMA 音訊記錄記錄了超過 15 秒的時間，所需空間卻比 GSM 音訊記錄小。因此，若需要最小但品質最高的音訊檔案，請使用 WMA 音訊轉碼器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您對裝置的 OWA 使用內部部署的推播通知，則您無法使用 WMA 格式。裝置的 OWA 只支援 MP3 檔案格式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您對裝置的 OWA 使用內部部署的推播通知，則您無法使用 WMA 格式。裝置的 OWA 只支援 MP3 檔案格式。
+
+
 
 
 ## G.711 PCM 線性

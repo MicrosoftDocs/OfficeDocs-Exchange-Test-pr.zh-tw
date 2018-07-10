@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-08-26_
+_**上次修改主題的時間：** 2016-08-26_
 
 在資料庫可用性群組 (DAG) 已建立、設定並填入信箱伺服器成員後，您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange 管理命令介面，透過彈性且精細的方式新增信箱資料庫副本。
 
@@ -57,18 +57,11 @@ _**上次修改主題的時間：**2016-08-26_
 
 除了選取植入信箱資料庫副本的特定來源伺服器之外，您也可以使用命令介面指定要使用的 DAG 網路，並在植入作業期間選擇性地覆寫 DAG 網路的壓縮和加密設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>植入內容索引類別目錄才有可能透過 MAPI 網路。即使您可以將 Update-mailboxdatabasecopy 指令程式<code>-Network</code>參數也是如此。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 植入內容索引類別目錄才有可能透過 MAPI 網路。即使您可以將 Update-mailboxdatabasecopy 指令程式<code>-Network</code>參數也是如此。
+
+
 
 
 若要指定要用於植入的網路，請在執行 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335201\(v=exchg.150\)) 指令程式時使用 *Network* 參數，並指定要使用的 DAG 網路。如果您不使用 *Network* 參數，系統會使用下列在植入作業時用於選取要使用之網路的預設行為：

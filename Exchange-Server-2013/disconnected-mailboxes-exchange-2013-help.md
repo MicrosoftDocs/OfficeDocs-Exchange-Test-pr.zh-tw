@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 每個 Microsoft Exchange 信箱是由儲存在 Exchange 信箱資料庫的 Active Directory 使用者帳戶和信箱資料所組成。信箱的所有設定資料會儲存在 Active Directory 使用者物件的 Exchange 屬性中。信箱資料庫包含的郵件資料位於與使用者帳戶關聯的信箱中。下圖顯示信箱的元件。
 

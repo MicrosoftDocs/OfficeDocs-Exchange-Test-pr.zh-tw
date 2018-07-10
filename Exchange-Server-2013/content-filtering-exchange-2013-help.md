@@ -13,22 +13,15 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。
+
+
 
 
 內容篩選器代理程式評估的內送的電子郵件並評估垃圾郵件的內送的郵件是合法的機率。與許多其他篩選技術不同的內容篩選器代理程式會使用從統計大幅樣本的電子郵件的特性。此範例中的合法郵件包含減少錯誤的機會。因為內容篩選器代理程式可辨識的合法的郵件和垃圾郵件特性，增加其正確性。透過[Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836)定期更新的內容篩選器代理程式可用。
@@ -57,18 +50,11 @@ Configuring the Content Filter agent
 
 您可以調整的 SCL 閾值行為不同 SCL 評等指派給每個這些動作。如需如何調整以符合組織需求的 SCL 閾值與每個收件者 SCL 閾值的相關的詳細資訊，請參閱[垃圾郵件信賴等級閾值](spam-confidence-level-threshold-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>已超過 11 MB 不智慧型郵件篩選器所掃描的郵件。而這些通過內容篩選器不掃描。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 已超過 11 MB 不智慧型郵件篩選器所掃描的郵件。而這些通過內容篩選器不掃描。
+
+
 
 
 ## Allow 片語及 Block 片語
@@ -99,18 +85,11 @@ Configuring the Content Filter agent
 
 使用 Exchange 管理命令介面設定內容篩選器代理程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>設定對 Exchange 管理命令介面中內容篩選器代理程式所做的變更只會對本機電腦上進行。如果您在組織中的多部 Exchange 伺服器上執行的內容篩選器代理程式，您必須對每一部電腦進行內容篩選器組態變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 設定對 Exchange 管理命令介面中內容篩選器代理程式所做的變更只會對本機電腦上進行。如果您在組織中的多部 Exchange 伺服器上執行的內容篩選器代理程式，您必須對每一部電腦進行內容篩選器組態變更。
+
+
 
 
 內容篩選器代理程式取決於更新，以判斷是否可以使用它不是垃圾郵件信賴傳遞訊息。這些更新包含網路釣魚網站的相關資料、 Microsoft SmartScreen 垃圾郵件 heuristics，以及其他智慧型郵件篩選更新。內容篩選器更新通常包含約 6 MB 的其他反垃圾郵件更新資料進行較長的時間很有用的資料。

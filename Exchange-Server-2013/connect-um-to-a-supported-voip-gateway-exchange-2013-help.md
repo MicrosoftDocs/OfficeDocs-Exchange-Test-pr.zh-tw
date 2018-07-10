@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-19_
+_**上次修改主題的時間：** 2013-04-19_
 
 您正在設定設定整合通訊 (UM)，您必須設定語音 over IP (VoIP) 閘道、 IP Pbx、 已啟用 SIP 的 Pbx 或工作階段邊界控制器 (Sbc) 與執行 Microsoft Exchange Unified Messaging Call Router 服務的 Client Access server 和 Mailbox server Exchange組織中執行 Microsoft Exchange 整合通訊服務通訊網路上。您也必須設定的用戶端存取和信箱伺服器與 VoIP 閘道、 IP Pbx、 已啟用 SIP 的 Pbx 或 Sbc 通訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>將用戶端存取伺服器和信箱伺服器連線到您資料網路上的 VoIP 閘道、IP PBX、啟用 SIP 的 PBX 或 SBC 之後，您必須建立需要的 UM 元件並為使用者啟用整合通訊，讓他們能夠使用語音信箱系統。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 將用戶端存取伺服器和信箱伺服器連線到您資料網路上的 VoIP 閘道、IP PBX、啟用 SIP 的 PBX 或 SBC 之後，您必須建立需要的 UM 元件並為使用者啟用整合通訊，讓他們能夠使用語音信箱系統。
+
+
 
 
 ## 步驟

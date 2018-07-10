@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Office 365 Enterprise_
+_**適用版本：** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 **預估完成時間：5 分鐘**
 
@@ -109,18 +109,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 這個範例會建立共用信箱「銷售部門」，並對於安全性群組 MarketingSG 授與「完整存取」和「代理傳送者」權限。屬於安全性群組成員的使用者被授與信箱的權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此範例假設您已建立安全性群組 MarketingSG，且該安全性群組擁有郵件功能。請參閱<a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理擁有郵件功能的安全性群組</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此範例假設您已建立安全性群組 MarketingSG，且該安全性群組擁有郵件功能。請參閱<a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理擁有郵件功能的安全性群組</a>。
+
+
 
 
     New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
@@ -141,16 +134,9 @@ _**上次修改主題的時間：**2016-12-09_
 
 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

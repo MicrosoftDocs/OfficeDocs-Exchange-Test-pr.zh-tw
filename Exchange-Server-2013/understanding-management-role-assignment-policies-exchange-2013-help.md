@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 *管理角色指派原則*是一組一或多個使用者管理角色可讓使用者能管理自己 Microsoft Exchange Server 2013信箱和通訊群組設定。角色指派原則是在Exchange 2013中的角色型存取控制 (RBAC) 權限模型的一部分，可讓您控制哪些特定信箱及通訊群組組態設定可以修改您的使用者。不同的使用者群組可以有角色指派原則專門給他們。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。
+
+
 
 
 如需有關 RBAC 的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。
@@ -133,18 +126,11 @@ Exchange 2013包括提供最常用的權限的使用者預設角色指派原則�
 <td><p><a href="add-a-role-entry-to-a-role-exchange-2013-help.md">將角色項目新增至角色</a></p>
 <p><a href="change-a-role-entry-exchange-2013-help.md">變更的角色項目</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">從角色移除角色項目</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>變更管理角色的角色指派原則中的管理角色項目是進階的任務以及通常不需要在大多數情況下。您可能會，而能夠使用已經存在的管理角色符合您需求。如需詳細資訊，請參閱<a href="built-in-role-groups-exchange-2013-help.md">內建角色群組</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 變更管理角色的角色指派原則中的管理角色項目是進階的任務以及通常不需要在大多數情況下。您可能會，而能夠使用已經存在的管理角色符合您需求。如需詳細資訊，請參閱<a href="built-in-role-groups-exchange-2013-help.md">內建角色群組</a>。
+
+
 
 </td>
 </tr>

@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以設定多個相同信箱的電子郵件地址。其他地址稱為*proxy 位址*。Proxy 位址可讓使用者接收電子郵件傳送至不同的電子郵件地址。傳送給使用者的 proxy 位址任何電子郵件傳送到*主要 SMTP 位址*\] 或 \[*預設回覆地址*又稱做為其主要電子郵件地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用 Office 365 企業版，您應該新增或移除使用者信箱的電子郵件地址中<a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Office 365 系統管理中心： 新增至 Office 365 中的使用者的其他電子郵件別名</a></td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您使用 Office 365 企業版，您應該新增或移除使用者信箱的電子郵件地址中<a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Office 365 系統管理中心： 新增至 Office 365 中的使用者的其他電子郵件別名</a>
+
+
 
 
 管理收件者與相關的其他管理工作，請參閱 ＜ [收件者](recipients-exchange-2013-help.md)的 「 收件者文件 」 表格。
@@ -203,18 +196,11 @@ _**上次修改主題的時間：**2016-12-09_
 
     Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-Mailbox $_.Mailbox -EmailAddresses @{add=$_.NewEmailAddress}}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 CSV 檔 (<code>Mailbox,NewEmailAddress</code>) 的第一列的欄名是任意的。不論您使用欄名，請確定您在命令介面命令中使用相同的資料行名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此 CSV 檔 (<code>Mailbox,NewEmailAddress</code>) 的第一列的欄名是任意的。不論您使用欄名，請確定您在命令介面命令中使用相同的資料行名稱。
+
+
 
 
 ## 如何知道這是否正常運作？
@@ -235,16 +221,9 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 確認新的電子郵件地址包含在結果中的每個信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 

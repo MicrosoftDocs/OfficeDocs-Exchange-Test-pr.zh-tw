@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-02-17_
+_**上次修改主題的時間：** 2014-02-17_
 
 如果屬於您組織的網率主控 SMTP 命名空間所有收件者的信箱，該網域便屬於授權網域。根據預設，一個公認的網域將被設定為 Exchange 組織的授權網域。如果您的組織有多個 SMTP 命名空間，可以設定多個公認的網域成為授權網域。
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2014-02-17_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 EAC 設定公認的網域成為授權網域
@@ -61,18 +54,11 @@ _**上次修改主題的時間：**2014-02-17_
 
 5.  按一下 \[儲存\]。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要設定已經建立的公認網域，請從公認的網域清單中選取網域，並且按一下 [編輯]<img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" />。您可以設定多個網域成為授權網域。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 若要設定已經建立的公認網域，請從公認的網域清單中選取網域，並且按一下 [編輯]<img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" />。您可以設定多個網域成為授權網域。
+
+
 
 
 ## 如何知道這是否正常運作？

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-04-28_
+_**上次修改主題的時間：** 2017-04-28_
 
 您可以使用 \[郵件流程規則 （也稱為傳輸規則） 來識別和流程透過Exchange 2013組織的郵件採取動作。郵件流程規則就類似於Outlook和Outlook Web App中可用的收件匣規則。主要差異在於郵件流程規則採取動作的郵件不斷活躍傳輸，並不之後將郵件傳遞至信箱。郵件流程規則包含更豐富一組條件、 例外狀況和動作\]，可提供讓您實作許多類型的郵件原則的彈性。
 
@@ -253,7 +253,7 @@ _**上次修改主題的時間：**2017-04-28_
 
 建立及設定 Mailbox server 上的郵件流程規則會儲存在Active Directory，與它們讀取，而且套用的組織中所有 Mailbox server 上的傳輸服務。當您建立、 修改或移除郵件流程規則時，變更為您組織中的網域控制站之間複寫。這可讓Exchange整個組織提供一組連續的郵件流程規則。
 
-**附註：**
+**附註：** 
 
   - 網域控制站之間複寫不控制由Exchange （例如Active Directory網站數目、） 和網路連結速度的因素而定。因此，您需要在組織中實作郵件流程規則時，請考慮複寫延遲。如需Active Directory複寫的詳細資訊，請參閱 ＜ [Active Directory 複寫及拓撲管理使用 Windows PowerShell 簡介](https://go.microsoft.com/fwlink/p/?linkid=274904)。
 

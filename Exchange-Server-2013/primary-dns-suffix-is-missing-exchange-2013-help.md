@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-01-15_
+_**上次修改主題的時間：** 2014-01-15_
 
 因為您要在安裝 Exchange 的電腦的主要網域名稱系統 (DNS) 尾碼尚未設定的 Microsoft Exchange Server 2013安裝程式無法繼續執行。
 
 若要解決此問題，請使用下列步驟，在電腦上新增主要 DNS 尾碼，然後重新執行安裝程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援您安裝 Exchange 2013 後變更主要 DNS 尾碼的電腦名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 不支援您安裝 Exchange 2013 後變更主要 DNS 尾碼的電腦名稱。
+
+
 
 
 1.  以您要安裝 Edge Transport role 之電腦上本機系統管理員群組成員的使用者身分登入。

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以使用稽核記錄來追蹤系統管理員所做的特定變更，藉以疑難排解組態問題，以及協助您符合法規、規範符合性和訴訟需求。Microsoft Exchange 提供了兩種稽核記錄：
 
@@ -144,18 +144,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 此動作可讓使用者選擇 EAC 中的 \[規範管理\] \> \[稽核\] 以執行任何報告。使用者也可以匯出信箱稽核記錄，並匯出和檢視系統管理員稽核記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>注意：若要允許使用者執行稽核報告，但不允許匯出稽核記錄，請使用前一個命令來指派「僅檢視稽核記錄」角色。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 注意：若要允許使用者執行稽核報告，但不允許匯出稽核記錄，請使用前一個命令來指派「僅檢視稽核記錄」角色。
+
+
 
 
 ## 設定 Outlook Web App 允許 XML 附件

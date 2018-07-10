@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 本主題說明 Edge 訂閱處理程序如何提供認證以確保 EdgeSync 同步處理程序的安全性，以及 EdgeSync 如何使用這些認證來建立 Exchange 2013 信箱伺服器與 Edge Transport Server 之間的安全 LDAP 連線。若要深入了解 Edge 訂閱程序，請參閱[Edge 訂閱](edge-subscriptions-exchange-2013-help.md)。
 
@@ -101,18 +101,11 @@ Edge 訂閱 XML 檔案包含下表所列的資料。
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ESBRA 認證會以純文字格式寫入至 Edge 訂閱檔案。您在整個訂閱處理程序中都必須保護此檔案。將 Edge 訂閱檔案匯入 Exchange 組織後，您應立即將 Edge 訂閱檔案從 Edge Transport Server、用以將檔案匯入 Exchange 組織的網路共用，以及任何卸除式媒體中刪除。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> ESBRA 認證會以純文字格式寫入至 Edge 訂閱檔案。您在整個訂閱處理程序中都必須保護此檔案。將 Edge 訂閱檔案匯入 Exchange 組織後，您應立即將 Edge 訂閱檔案從 Edge Transport Server、用以將檔案匯入 Exchange 組織的網路共用，以及任何卸除式媒體中刪除。
+
+
 
 
 回到頁首

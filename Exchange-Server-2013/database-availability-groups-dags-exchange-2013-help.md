@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-06-04_
+_**上次修改主題的時間：** 2015-06-04_
 
 瞭解 Exchange Server 2013 中的 Exchange DAG。本文討論資料庫可用性群組 (DAG) 生命週期，以及使用 DAG 來取得高可用性和站台回復性。
 
@@ -37,18 +37,11 @@ DAG 中的任何伺服器都可以主控來自 DAG 中任何其他伺服器的�
 
 DAG 會利用*「增量部署」*(Incremental Deployment) 的概念，可在 Exchange 安裝完畢後，針對所有信箱伺服器與資料庫部署服務與資料可用性。當您部署 Exchange 2013 信箱伺服器之後，可以建立 DAG、將信箱伺服器新增至 DAG，然後在 DAG 成員之間複寫信箱資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是伺服器和解決方案符合 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系統需求</a>以及 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虛擬化</a>中所設定的需求，則可支援建立包含實體 Mailbox Server 與虛擬 Mailbox Server 組合的 DAG。與所有 Exchange 高可用性組態相同，您必須確定已適當地調整 DAG 中的所有信箱伺服器，以處理排定及未排定中斷期間的必要工作量。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若是伺服器和解決方案符合 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系統需求</a>以及 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虛擬化</a>中所設定的需求，則可支援建立包含實體 Mailbox Server 與虛擬 Mailbox Server 組合的 DAG。與所有 Exchange 高可用性組態相同，您必須確定已適當地調整 DAG 中的所有信箱伺服器，以處理排定及未排定中斷期間的必要工作量。
+
+
 
 
 使用 [New-DatabaseAvailabilityGroup](https://technet.microsoft.com/zh-tw/library/dd351107\(v=exchg.150\)) 指令程式可建立一個 DAG。DAG 一開始是在 Active Directory 中建立的空物件。目錄物件是用於儲存 DAG 的相關資訊，例如伺服器成員資格資訊以及部分 DAG 組態設定。當您新增第一個伺服器到 DAG 時，就會自動為 DAG 建立容錯移轉叢集。這個容錯移轉叢集由 DAG 獨佔使用，而且必須專供 DAG 使用，不支援將此叢集用於其他任何用途。

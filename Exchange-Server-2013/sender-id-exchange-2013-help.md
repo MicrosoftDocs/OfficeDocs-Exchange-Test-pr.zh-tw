@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 寄件者識別碼代理程式是在 Microsoft Exchange Server 2013反垃圾郵件代理程式。寄件者識別碼代理程式依賴收到的 SMTP 標頭及傳送的系統 DNS 服務來決定何種巨集指令，內送郵件採取的任何查詢。
 

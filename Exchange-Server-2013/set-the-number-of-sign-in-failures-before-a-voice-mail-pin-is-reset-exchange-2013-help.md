@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以將重設 Outlook Voice Access 使用者的 PIN 碼之前允許的登入失敗次數設定為介於 1 到 998 之間的數字。預設值為 5。重設 PIN 碼之前允許的登入失敗次數是在整合通訊 (UM) 信箱原則上設定，並且套用至與該 UM 信箱原則相關聯的所有 Outlook Voice Access 使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以將 [重設 PIN 碼前允許的登入失敗次數] 設定為小於 5 的數字，以提高安全性。將該設定設定為大於 5 的數字，則會降低安全性。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您可以將 [重設 PIN 碼前允許的登入失敗次數] 設定為小於 5 的數字，以提高安全性。將該設定設定為大於 5 的數字，則會降低安全性。
+
+
 
 
 如需與 Outlook 語音存取 PIN 碼安全性相關的其他工作資訊，請參閱 [PIN 安全性程序](pin-security-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 下列 Microsoft Exchange Server 2013資訊版權管理 (IRM) 功能的啟用，您必須將同盟信箱 （ Exchange 2013安裝程式所建立的系統信箱） 新增至貴組織的[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)叢集中的超級使用者群組：
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 擁有郵件功能的通訊群組可以設定為超級使用者群組中的通訊群組的 AD 您成員會授與擁有者時所要求的授權從 AD RMS 叢集使用授權。這可讓其解密發佈該叢集中的所有與 RMS 受保護的內容。是否使用現有通訊群組或建立通訊群組，以及將它設定為在 AD RMS 超級使用者群組，我們建議您針對此目的而專為通訊群組並設定適當設定核准、 稽核、 及監視成員資格變更。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>設定 AD RMS 超級使用者群組允許解密受 IRM 保護之內容的群組成員。我們建議您以控制及監視群組成員資格採取適當的量值並啟用稽核追蹤成員資格變更。您也可以限制不想要的變更群組成員資格做為受限制的群組使用群組原則設定群組。如需詳細資訊，請參閱 ＜<a href="https://technet.microsoft.com/en-us/library/cc756802(v=ws.10).aspx">受限制的群組原則設定</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 設定 AD RMS 超級使用者群組允許解密受 IRM 保護之內容的群組成員。我們建議您以控制及監視群組成員資格採取適當的量值並啟用稽核追蹤成員資格變更。您也可以限制不想要的變更群組成員資格做為受限制的群組使用群組原則設定群組。如需詳細資訊，請參閱 ＜<a href="https://technet.microsoft.com/en-us/library/cc756802(v=ws.10).aspx">受限制的群組原則設定</a>。
+
+
 
 
 若欲瞭解更多與 IRM 相關的管理工作，請參閱 [資訊版權管理程序](information-rights-management-procedures-exchange-2013-help.md)。
@@ -57,18 +50,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？

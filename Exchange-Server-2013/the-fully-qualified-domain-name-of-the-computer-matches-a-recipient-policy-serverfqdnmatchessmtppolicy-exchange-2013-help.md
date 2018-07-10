@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -39,18 +39,11 @@ Microsoft Exchange 安裝程式需要 Exchange 組織中的伺服器的 FQDN 不
 
 4.  按一下**\[確定\]**以關閉 \[**系統內容**\] 對話方塊。系統會提示您重新啟動電腦以套用變更。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要重新命名之電腦的網域控制站，請參閱 「 重新命名的網域控制站&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您想要重新命名之電腦的網域控制站，請參閱 「 重新命名的網域控制站&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。
+
+
 
 
 若要修改的收件者原則 SMTP 位址
@@ -63,5 +56,5 @@ Microsoft Exchange 安裝程式需要 Exchange 組織中的伺服器的 FQDN 不
 
 4.  按一下 \[**電子郵件地址**\] 索引標籤，並變更適當的 SMTP 位址
 
-如需詳細 Recipient 原則命名問題，查看 Microsoft 知識庫文章 288175，"XCON： Recipient 原則不符合組織、 5.4.8 中任何伺服器的 FQDN Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175))。
+如需詳細 Recipient 原則命名問題，查看 Microsoft 知識庫文章 288175，"XCON： Recipient 原則不符合組織、 5.4.8 中任何伺服器的 FQDN Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175))。
 

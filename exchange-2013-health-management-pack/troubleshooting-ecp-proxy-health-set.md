@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 ECP。Proxy 健全設定監視用戶端存取伺服器 (CAS) 上的Exchange系統管理中心 (EAC) proxy 基礎結構的可用性。ECP。下列狀況一組密切相關 proxy 健全設定：
 

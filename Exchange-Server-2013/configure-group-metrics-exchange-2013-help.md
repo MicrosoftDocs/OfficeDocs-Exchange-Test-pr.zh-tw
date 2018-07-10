@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 提供資訊的通訊群組和動態通訊群組大小的郵件提示會依賴群組計量資料。在指定的信箱伺服器上產生群組計量資料。如需群組計量的詳細資訊，請參閱[群組計量 」 和 「 郵件提示](group-metrics-and-mailtips-exchange-2013-help.md)。
 
@@ -33,34 +33,20 @@ _**上次修改主題的時間：**2015-04-08_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面啟用或停用產生群組計量
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，負責產生離線通訊錄 (OAB) 的任何伺服器上產生群組計量資料。這些範例只都未使用 Oab 的組織。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，負責產生離線通訊錄 (OAB) 的任何伺服器上產生群組計量資料。這些範例只都未使用 Oab 的組織。
+
+
 
 
 若要啟用或停用信箱伺服器上的群組計量產生作業，請執行以下命令：

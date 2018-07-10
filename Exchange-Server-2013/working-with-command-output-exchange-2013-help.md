@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Exchange 管理命令介面提供數個方法，供您用來格式化命令輸出。本主題討論下列主題：
 
@@ -241,18 +241,11 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 若要使用此指令碼，請將它儲存到要執行此指令碼之電腦上的 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 目錄中。將該檔案命名為 `Out-Ie.ps1`。儲存該檔案之後，您就可以使用該指令碼做為一般 Cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在 Exchange 2013 中執行指令碼，必須新增指令碼至未限定範圍的管理角色，且您必須直接獲派管理角色，或透過管理角色群組獲派管理角色。如需詳細資訊，請參閱<a href="understanding-management-roles-exchange-2013-help.md">了解管理角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要在 Exchange 2013 中執行指令碼，必須新增指令碼至未限定範圍的管理角色，且您必須直接獲派管理角色，或透過管理角色群組獲派管理角色。如需詳細資訊，請參閱<a href="understanding-management-roles-exchange-2013-help.md">了解管理角色</a>。
+
+
 
 
 `Out-Ie` 指令碼會假設它接收的資料是有效的 HTML。若要將您想檢視的資料轉換成 HTML，必須以管線將命令的結果傳輸至 **ConvertTo-Html** Cmdlet。然後，以管線將該命令的結果傳輸至 `Out-Ie` 指令碼。下列範例會顯示如何在 Internet Explorer 視窗中檢視目錄清單：

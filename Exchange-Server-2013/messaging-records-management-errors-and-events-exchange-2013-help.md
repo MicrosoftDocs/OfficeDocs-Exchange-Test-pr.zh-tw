@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 通訊記錄管理 (MRM) 就會產生您可以檢視事件檢視器中的事件。這可讓您疑難排解並確認受管理的資料夾助理員的效能。事件檢視器來追蹤下列類型的事件依下列順序，根據重要性：
 
@@ -160,18 +160,11 @@ _**上次修改主題的時間：**2015-03-09_
 <td><p>參考</p></td>
 <td><p>LogAlways</p></td>
 <td><p>服務 &lt;<em>service</em>&gt;。資料庫 &lt;<em>database</em>&gt; 的 &lt;<em>service</em>&gt; 正在結束已排程的時間範圍。&lt;<em>number</em>&gt; 個信箱當中已順利處理 &lt;<em>number</em>&gt; 個。&lt;<em>number</em>&gt; 個信箱由於發生錯誤已經略過。&lt;<em>number</em>&gt; 個信箱已經單獨處理。&lt;<em>number</em>&gt; 個信箱由於時間不足而未處理。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>受管理的資料夾助理員會在下次執行時從上次未完成的地方繼續處理。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 受管理的資料夾助理員會在下次執行時從上次未完成的地方繼續處理。
+
+
 
 </td>
 </tr>

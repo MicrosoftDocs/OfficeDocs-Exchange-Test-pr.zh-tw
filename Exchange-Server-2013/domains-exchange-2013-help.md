@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Office 365_
+_**適用版本：** Exchange Server 2013, Office 365_
 
-_**上次修改主題的時間：**2012-10-11_
+_**上次修改主題的時間：** 2012-10-11_
 
 網域代表的電子郵件的目錄與信箱已設定的 SMTP 命名空間。藉由使用 Microsoft Exchange Server 2013組織設定之網域的互動，您可以設定Exchange如何處理與不同網域的電子郵件。
 

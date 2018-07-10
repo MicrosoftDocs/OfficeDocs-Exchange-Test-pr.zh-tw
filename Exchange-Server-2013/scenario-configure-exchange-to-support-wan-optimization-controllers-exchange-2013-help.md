@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-09-28_
+_**上次修改主題的時間：** 2012-09-28_
 
 在 Microsoft Exchange Server 2013、 傳輸層安全性 (TLS) 加密是必要的 Mailbox server 之間的傳輸服務中的所有 SMTP 通訊。這會增加 Mailbox server 之間的傳輸服務通訊的整體的安全性。不過，在某些可用 WAN 最佳化控制器 (WOC) 裝置的拓撲中，可能會非預期 SMTP 流量 TLS 加密。您可以停用這些特定案例的 Mailbox server 之間的傳輸服務通訊 TLS。
 

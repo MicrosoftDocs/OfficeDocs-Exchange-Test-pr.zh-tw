@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 調整大小和容量規劃的Exchange Server 2013是Exchange 2013部署的重要部分。設定系統有最佳的效能是反覆執行程序。花時間來了解所有會影響您的系統，包括使用者設定檔、 架構及硬體的變數。使用此知識，可以建立標準評量的系統，而調整系統效能。如的詳細資訊和指導調整大小和容量規劃的Exchange組織，請參閱 Exchange 團隊部落格文章[要求 Qfe Guy： 調整大小的 Exchange 2013 部署](https://go.microsoft.com/fwlink/p/?linkid=301990)和[Exchange Server 2013 效能建議](exchange-server-2013-performance-recommendations-exchange-2013-help.md)。
 

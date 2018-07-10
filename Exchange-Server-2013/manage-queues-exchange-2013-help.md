@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-01-31_
+_**上次修改主題的時間：** 2014-01-31_
 
 在 Microsoft Exchange Server 2013 中，您可以使用 Exchange 工具箱或 Exchange 管理命令介面中的佇列檢視器來管理佇列。如需在 Exchange 管理命令介面中使用佇列管理指令程式的詳細資訊，請參閱[使用 Exchange 管理命令介面管理佇列](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md)。
 
@@ -27,18 +27,11 @@ _**上次修改主題的時間：**2014-01-31_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -73,18 +66,11 @@ _**上次修改主題的時間：**2014-01-31_
 
 **Get-QueueDigest** 指令程式可提供特定範圍中所有伺服器上的佇列狀態高階、彙總檢視，例如 DAG、Active Directory 站台、伺服器清單，或是整個 Active Directory 樹系。請注意，結果中不會包含周邊網路中已訂閱的 Edge Transport Server 上的佇列。此外，**Get-QueueDigest** 也可在 Edge Transport Server 上使用，但結果只會顯示 Edge Transport Server 上的佇列。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>依預設，<strong>Get-QueueDigest</strong> 指令程式會顯示包含十封郵件以上的傳遞佇列，而且會是一到二分鐘之前的結果。如需如何變更這些預設值的指示，請參閱<a href="configure-get-queuedigest-exchange-2013-help.md">設定 Get-QueueDigest</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 依預設，<strong>Get-QueueDigest</strong> 指令程式會顯示包含十封郵件以上的傳遞佇列，而且會是一到二分鐘之前的結果。如需如何變更這些預設值的指示，請參閱<a href="configure-get-queuedigest-exchange-2013-help.md">設定 Get-QueueDigest</a>。
+
+
 
 
 若要檢視多部 Exchange 伺服器上的佇列摘要資訊，請執行以下命令：
@@ -219,18 +205,11 @@ _**上次修改主題的時間：**2014-01-31_
 
 您可以藉由繼續郵件來重新提交毒藥郵件佇列中的郵件。您可以使用佇列檢視器或命令介面來重新提交毒藥郵件佇列中的郵件。請注意，只有在毒藥郵件佇列中有郵件時，您才能在佇列檢視器中看到毒藥郵件佇列。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>毒藥郵件佇列包含在伺服器失敗之後，被判斷為對 Exchange 系統有害的郵件。郵件的內容或格式可能的確是有害。或者，郵件可能是因設計不良的代理程式在處理可能有害的郵件時，造成 Exchange 伺服器無法運作的犧牲品。如果您不確定毒藥郵件佇列中的郵件是否安全，則應將郵件匯出到檔案以進行檢驗。如需詳細資訊，請參閱 <a href="export-messages-from-queues-exchange-2013-help.md">從佇列匯出訊息</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 毒藥郵件佇列包含在伺服器失敗之後，被判斷為對 Exchange 系統有害的郵件。郵件的內容或格式可能的確是有害。或者，郵件可能是因設計不良的代理程式在處理可能有害的郵件時，造成 Exchange 伺服器無法運作的犧牲品。如果您不確定毒藥郵件佇列中的郵件是否安全，則應將郵件匯出到檔案以進行檢驗。如需詳細資訊，請參閱 <a href="export-messages-from-queues-exchange-2013-help.md">從佇列匯出訊息</a>。
+
+
 
 
 ## 使用 Exchange 工具箱內的佇列檢視器來重新提交毒藥郵件佇列中的郵件

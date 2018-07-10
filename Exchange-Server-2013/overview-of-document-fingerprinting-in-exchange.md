@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-09-11_
+_**上次修改主題的時間：** 2014-09-11_
 
 組織中的資訊工作者在其日常工作中會處理許多不同的敏感資訊。*「文件指紋」*可識別您的組織中所使用的標準表單，以協助您保護此類資訊。本主題說明文件指紋的基礎概念。如果您想要了解如何建立文件指紋，請參閱[保護含有文件指紋的表單資料](protect-form-data-with-document-fingerprinting-exchange-2013-help.md)。
 

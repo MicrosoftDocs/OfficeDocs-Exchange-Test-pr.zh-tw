@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**New-MigrationBatch** cmdlet。您也可以透過 Exchange 系統管理中心 (EAC) 移動信箱。您可以從來源Exchange樹系信箱移至目標Exchange 2010樹系。
 
@@ -27,7 +27,7 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
   - 從 \[[準備線上信箱移動](https://go.microsoft.com/fwlink/p/?linkid=177882) \] 頁面上的 Microsoft 下載中心下載的範例程式碼。
 
-  - 若要執行的範例程式碼，您需要 ILM 2007 Feature Pack 1 Service Pack 1 (SP1)。若要下載此 feature pack，請參閱 Microsoft 知識庫文章 977791、 [Service Pack 1 （組建 3.3.1139.2） 是可供 Identity 生命週期 Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=977791)。
+  - 若要執行的範例程式碼，您需要 ILM 2007 Feature Pack 1 Service Pack 1 (SP1)。若要下載此 feature pack，請參閱 Microsoft 知識庫文章 977791、 [Service Pack 1 （組建 3.3.1139.2） 是可供 Identity 生命週期 Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791)。
 
   - 您還需要下列各項：
     
@@ -39,18 +39,11 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？

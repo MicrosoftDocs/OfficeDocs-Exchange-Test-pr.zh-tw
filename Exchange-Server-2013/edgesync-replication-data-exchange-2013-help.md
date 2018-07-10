@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 當您部署 Edge Transport Server 時，該伺服器沒有 Active Directory 的存取權。為了執行收件者查閱及安全清單彙總工作，及使用相互傳輸層安全性 (MTLS) 驗證來實作網域安全性，Edge Transport Server 需要取得 Active Directory 中的資料。此資料是利用 EdgeSync 複寫到 Edge Transport Server，而 Edge Transport Server 會以 Active Directory 輕量型目錄服務 (AD LDS) 儲存所有複寫的資訊。
 

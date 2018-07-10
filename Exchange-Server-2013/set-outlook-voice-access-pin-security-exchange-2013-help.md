@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 當電話連線到語音郵件系統整合通訊 (UM) 的使用者時，他們會使用Outlook語音存取瀏覽功能表系統。使用者可存取語音信箱系統之前，系統會提示他們進入他們的 pin 碼。以管理員身分，您可設定 pin 碼設定和需求及執行 PIN 管理工作。使用者已啟用語音信箱和未產生 PIN 之後，使用者的 pin 碼會儲存在使用者的信箱中加密。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 語音存取使用者必須使用按鍵式 （也稱為複頻式訊號 (DTMF)） 輸入輸入存取已啟用 UM 信箱 pin 碼。語音辨識不適用於 PIN 項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook 語音存取使用者必須使用按鍵式 （也稱為複頻式訊號 (DTMF)） 輸入輸入存取已啟用 UM 信箱 pin 碼。語音辨識不適用於 PIN 項目。
+
+
 
 
 **目錄**
@@ -57,88 +50,53 @@ PIN 是，讓使用者可以進行驗證，而獲得存取系統用於特定系�
 
 **最小 PIN 長度**設定指定信箱 pin 碼必須包含的數字數目最小值。該範圍是 4 到 24，並預設為 6。如果您輸入 0 時，使用者不需要輸入 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此設定零不是建議的作法。如果要設定為零的設定，您大幅降低安全性層級為您的網路。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此設定零不是建議的作法。如果要設定為零的設定，您大幅降低安全性層級為您的網路。
+
+
 
 
 如果將最小 PIN 碼長度的值變更為較高的值，則會先提示 Outlook 語音存取使用者建立一個含有最小位數的新 PIN 碼，才能繼續執行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>增加此數字會建立更安全的 UM 環境。不過，設得太高可能會導致使用者忘記他們的 pin 碼。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 增加此數字會建立更安全的 UM 環境。不過，設得太高可能會導致使用者忘記他們的 pin 碼。
+
+
 
 
 ## 強制執行 PIN 碼存留時間
 
 **強制執行 PIN 存留期**設定控制項的時間間隔，天日期 Outlook 語音存取使用者上次變更其 PIN 為他們將強制能夠再次變更他們的 pin 碼的日期。範圍是從 0 到 999 及預設值為 60 天。如果輸入 0，將不會過期的 pin 碼。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>整合通訊不會通知使用者他們的 PIN 碼即將到期。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 整合通訊不會通知使用者他們的 PIN 碼即將到期。
+
+
 
 
 ## 重設 PIN 碼前允許的登入失敗次數
 
 **登入失敗次數之前 pin 碼重設**設定指定循序成功登入嘗試的次數前自動重設 PIN 的信箱。若要停用此功能，設定此設定為 unlimited。否則它必須設定為數小於**鎖定前的登入失敗的次數**\] 設定。該範圍是 1 到 998，及預設值為 5。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要提高具備 UM 功能之使用者的安全性，請輸入一個比 5 還小的數字。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要提高具備 UM 功能之使用者的安全性，請輸入一個比 5 還小的數字。
+
+
 
 
 ## 鎖定前允許的登入失敗次數
 
 Outlook 語音存取使用者可以在之前進行他們正在鎖定不在其信箱的後續通話中**的鎖定前的登入失敗次數**\] 設定會指定在多少 PIN 項目錯誤。根據預設，會進行 5 次之後，PIN 會自動重設。該範圍是 1 到 999 及預設值為 15。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要增加安全性，減少失敗的嘗試允許的數目。但是請記住降低更加低於預設值為號碼可能會導致必要遭到鎖定的使用者。整合的通訊會產生警告事件如果已啟用 UM 之使用者的 PIN 驗證失敗或使用者是在嘗試登入系統失敗時使用事件檢視器可檢視。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要增加安全性，減少失敗的嘗試允許的數目。但是請記住降低更加低於預設值為號碼可能會導致必要遭到鎖定的使用者。整合的通訊會產生警告事件如果已啟用 UM 之使用者的 PIN 驗證失敗或使用者是在嘗試登入系統失敗時使用事件檢視器可檢視。
+
+
 
 
 ## 允許共同 PIN 碼模式
@@ -159,34 +117,20 @@ Outlook 語音存取使用者可以在之前進行他們正在鎖定不在其信
 
 規劃時 Outlook 語音存取 Pin，您必須選擇適當的安全性層級的組織。您必須謹慎考慮 Outlook 語音存取 PIN 需求和 PIN 安全性設定符合或超過貴組織的安全性原則的方式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>它是安全性的最佳作法來實作強式 Outlook 語音存取使用者的 PIN 需求。這可以強制執行藉由建立 UM 信箱原則 PIN 原則需要六個或多個字的 Pin，其會增加為您的網路安全性層級。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 它是安全性的最佳作法來實作強式 Outlook 語音存取使用者的 PIN 需求。這可以強制執行藉由建立 UM 信箱原則 PIN 原則需要六個或多個字的 Pin，其會增加為您的網路安全性層級。
+
+
 
 
 設定 Outlook 語音存取 PIN 需求之後，您必須建立並設定 UM 信箱原則來強制執行組織的 pin 碼需求。如需如何建立 UM 信箱原則的詳細資訊，請參閱[建立 UM 信箱原則](create-a-um-mailbox-policy-exchange-2013-help.md)。如需有關如何管理 UM 信箱原則的詳細資訊，請參閱[管理 UM 信箱原則](manage-a-um-mailbox-policy-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立 UM 信箱原則之後，您必須連結的啟用 UM 之使用者或使用者與適當的 UM 信箱原則。使用<strong>Enable-UMMailbox</strong>指令程式在Exchange管理命令介面或使用 Exchange 系統管理中心 (EAC) 您可以這麼做。如需Exchange管理命令介面 cmdlet 的詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/aa998033(v=exchg.150)">Enable-UMMailbox</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 建立 UM 信箱原則之後，您必須連結的啟用 UM 之使用者或使用者與適當的 UM 信箱原則。使用<strong>Enable-UMMailbox</strong>指令程式在Exchange管理命令介面或使用 Exchange 系統管理中心 (EAC) 您可以這麼做。如需Exchange管理命令介面 cmdlet 的詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/aa998033(v=exchg.150)">Enable-UMMailbox</a>。
+
+
 
 
 偶爾 Outlook 語音存取使用者忘記其 PIN 或移出信箱的語音信箱存取鎖定。不論執行哪項中可能需要重設已啟用 UM 之使用者的 PIN。如需詳細資訊，請參閱[重設語音信箱 pin 碼](reset-a-voice-mail-pin-exchange-2013-help.md)。

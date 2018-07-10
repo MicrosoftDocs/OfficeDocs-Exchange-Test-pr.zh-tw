@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-10-04_
+_**上次修改主題的時間：** 2017-10-04_
 
 資料庫可用性群組 (DAG) 是最多有 16 個 Microsoft Exchange Server 2013 Mailbox 伺服器的組合，提供從資料庫、伺服器或是網路失敗時，自動的資料庫層級復原能力。DAG 使用連續複寫與 Windows 容錯移轉叢集技術子集，提供高可用性與站台回覆性。DAG 中的信箱伺服器可以監視彼此是否出現失敗情況。當您將 Mailbox Server 新增至 DAG 後，它即可與 DAG 中其他的伺服器搭配使用，以在資料庫失敗時提供自動的資料庫層級復原功能。
 
@@ -51,18 +51,11 @@ Installing updates on DAG members
 
 DAG使用 Windows 容錯移轉叢集技術子集，例如叢集律動、叢集網路以及層級資料庫 (可儲存變更或是快速變更的資料，例如資料庫狀態從主動變被動或是從被動變主動，或是從已裝載變為已卸載或是已卸載變為已裝載)。因為 DAG 倚賴 Windows 容錯移轉叢集，所以只能在執行 Windows Server 2008 R2 Enterprise or Datacenter 作業系統、Windows Server 2012 Standard 或 Datacenter 作業系統或 Windows Server 2012 R2 Standard 或 Datacenter 作業系統的 Exchange 2013 Mailbox Server 上建立。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由 DAG 建立及使用的容錯移轉叢集必須供 DAG 專用。該叢集不可供任何其他高可用性解決方案或任何其他目的使用。例如，容錯移轉叢集不可用來叢集其他應用程式或服務。不支援針對非 DAG 目的使用 DAG 的基礎容錯移轉叢集。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 由 DAG 建立及使用的容錯移轉叢集必須供 DAG 專用。該叢集不可供任何其他高可用性解決方案或任何其他目的使用。例如，容錯移轉叢集不可用來叢集其他應用程式或服務。不支援針對非 DAG 目的使用 DAG 的基礎容錯移轉叢集。
+
+
 
 
 ## DAG 見證伺服器與見證目錄
@@ -98,18 +91,11 @@ DAG使用 Windows 容錯移轉叢集技術子集，例如叢集律動、叢集�
 
 見證伺服器和見證目錄都不需要具備容錯能力，或使用任何形式的備援或具備高可用性。不需要為見證伺服器使用叢集檔案伺服器，或為見證伺服器使用任何其他形式的恢復功能。這樣做有幾個原因。在需要見證伺服器之前，必須使用幾個較大的 DAG (例如，六個或更多成員) 來處理失敗。因爲六個成員的 DAG 最多可以容忍兩個 Voter 失敗而不遺失仲裁，因此在需要使用見證伺服器來維護仲裁之前，它最多可處理三個 Voter 的失敗。而且，如果發生影響到目前見證伺服器的失敗 (例如，由於硬體失敗而遺失見證伺服器)，則可以使用 [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/zh-tw/library/dd297934\(v=exchg.150\)) Cmdlet 來設定新的見證伺服器和見證目錄 (只要您有仲裁)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果見證伺服器遺失其儲存裝置，或者如果某人變更了見證目錄或共用權限，您還可以使用 <strong>Set-DatabaseAvailabilityGroup</strong> Cmdlet 在原始位置設定見證伺服器和見證目錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果見證伺服器遺失其儲存裝置，或者如果某人變更了見證目錄或共用權限，您還可以使用 <strong>Set-DatabaseAvailabilityGroup</strong> Cmdlet 在原始位置設定見證伺服器和見證目錄。
+
+
 
 
 ## 見證伺服器位置的考量
@@ -185,18 +171,11 @@ DAG 的見證伺服器位置取決於您的業務需求與您的組織使用的�
 
 形成 DAG 時，其最初會使用「節點多數」仲裁模型。當新增第二個 Mailbox Server 到 DAG 時，仲裁會自動變更為「節點和檔案共用多數」仲裁模型。發生此變更時，DAG 的叢集會開始使用見證伺服器以維護仲裁。如果見證目錄不存在，Exchange 會自動建立及共用該目錄，並為 DAG 的 CNO 電腦帳戶佈建具有完整控制權限的共用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援使用為分散式檔案系統 (DFS) 名稱空間一部分的檔案分享。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 不支援使用為分散式檔案系統 (DFS) 名稱空間一部分的檔案分享。
+
+
 
 
 如果建立 DAG 之前已在見證伺服器上啟用 Windows 防火牆，可能會封鎖 DAG 的建立。Exchange 使用 Windows Management Instrumentation (WMI) 在見證伺服器上建立目錄及檔案共用。如果 Windows 防火牆已在見證伺服器上啟用，且沒有為 WMI 設定任何防火牆例外狀況，則 **New-DatabaseAvailabilityGroup** Cmdlet 會因錯誤而失敗。如果您指定見證伺服器，但未指定見證目錄，則會收到下列錯誤訊息。
@@ -258,18 +237,11 @@ DAG 的見證伺服器位置取決於您的業務需求與您的組織使用的�
 
 建立 DAG 後，您可以使用 EAC 中的管理資料庫可用性群組精靈，或是在命令介面中使用 **Add-DatabaseAvailabilityGroupServer** 或 **Remove-DatabaseAvailabilityGroupServer** 命令程式在 DAG 上新增伺服器或從 DAG 移除伺服器。如需有關如何管理 DAG 成員資格的詳細步驟，請參閱[管理資料庫可用性群組成員資格](manage-database-availability-group-membership-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每個屬於 DAG 成員的 Mailbox Server 也都會是 DAG 所使用之基礎叢集中的節點。因此，在任何時間，Mailbox Server 只可以是一個 DAG 的成員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 每個屬於 DAG 成員的 Mailbox Server 也都會是 DAG 所使用之基礎叢集中的節點。因此，在任何時間，Mailbox Server 只可以是一個 DAG 的成員。
+
+
 
 
 如果新增到 DAG 的 Mailbox Server 未安裝容錯移轉叢集元件，則會使用新增伺服器 (例如，**Add-DatabaseAvailabilityGroupServer** 指令程式或「管理資料庫可用性群組」精靈) 的方法來安裝容錯移轉叢集功能。
@@ -306,36 +278,22 @@ DAG 的見證伺服器位置取決於您的業務需求與您的組織使用的�
 
   - 使用裝載資料庫的相關資訊更新叢集資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仲裁模型變更應該會自動發生。不過，如果仲裁模型未自動變更為正確模型，則可以執行只包含 <em>Identity</em> 參數的 <strong>Set-DatabaseAvailabilityGroup</strong> 指令程式來修正 DAG 的仲裁設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 仲裁模型變更應該會自動發生。不過，如果仲裁模型未自動變更為正確模型，則可以執行只包含 <em>Identity</em> 參數的 <strong>Set-DatabaseAvailabilityGroup</strong> 指令程式來修正 DAG 的仲裁設定。
+
+
 
 
 ## 預先接移 DAG 的叢集名稱物件
 
 CNO 是在 Active Directory 中建立，且與叢集之名稱資源關聯的電腦帳戶。叢集的名稱資源會繫結至 CNO，CNO 是已啟用 Kerberos 功能的物件，用來當作叢集的識別碼並提供叢集的安全性內容。當新增第一個成員至 DAG 時，會執行 DAG 之基礎叢集和該叢集之 CNO 的形成。第一個伺服器新增至 DAG 時，遠端 PowerShell 會在新增時聯絡 Mailbox 伺服器上的 Microsoft Exchange 複寫服務。Microsoft Exchange 複寫服務會安裝容錯移轉叢集功能 (如果尚未安裝)，並開始叢集建立程序。Microsoft Exchange 複寫服務會在 LOCAL SYSTEM 安全性內容下執行，且叢集建立就是在這個內容下執行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的 DAG 成員正執行 Windows Server 2012，您必須在新增第一個伺服器到 DAG 之前先預先接移 CNO。如果您的 DAG 成員執行的是 Windows Server 2012 R2，而且您建立沒有叢集管理存取點的 DAG，則不會建立 CNO，而且您不需要建立 DAG 的 CNO。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 如果您的 DAG 成員正執行 Windows Server 2012，您必須在新增第一個伺服器到 DAG 之前先預先接移 CNO。如果您的 DAG 成員執行的是 Windows Server 2012 R2，而且您建立沒有叢集管理存取點的 DAG，則不會建立 CNO，而且您不需要建立 DAG 的 CNO。
+
+
 
 
 在電腦帳戶建立受到限制的環境中，或者電腦帳戶是在預設電腦容器以外的容器中建立時，您可以預先設置並佈建 CNO。您可以為 CNO 建立和停用電腦帳戶，然後執行下列其中一項動作：
@@ -472,18 +430,11 @@ DAG 網路是用於複寫流量或 MAPI 流量的一或多個子網路的集合�
 
 在雙網路介面卡組態中，有一個網路通常為專用複寫流量和其他網路主要用於 MAPI 流量。您也可以新增至每個 DAG 成員的網路介面卡並將其他 DAG 網路設定為複寫網路。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用多個複寫網路時，無法指定網路使用的優先順序。Exchange 會從複寫網路的群組隨機選取複寫網路，以便用於記錄傳送。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 使用多個複寫網路時，無法指定網路使用的優先順序。Exchange 會從複寫網路的群組隨機選取複寫網路，以便用於記錄傳送。
+
+
 
 
 在 Exchange 2010 中，有許多情況必須手動配置 DAG 網路。根據在 Exchange 2013 中的預設，系統會自動配置 DAG 網路。建立或修改 DAG 網路之前，您必須先執行下列指令啟用手動 DAG 網路控制：
@@ -502,18 +453,11 @@ DAG 網路是用於複寫流量或 MAPI 流量的一或多個子網路的集合�
 
   - **啟用複寫**   在 EAC 中，選取核取方塊以讓 DAG 網路專門負責複寫流量與阻擋 MAPI 流量。清除核取方塊避免使用 DAG 網路進行複寫並且允許 MAPI 流量。在命令介面中，使用 [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/zh-tw/library/dd298008\(v=exchg.150\)) 指令程式中的 *ReplicationEnabled* 參數啟用和停用複寫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>停用 MAPI 網路上的複寫不能保證系統不會使用該 MAPI 網路進行複寫。當所有設定的複寫網路為離線、失敗或無法使用，並且只剩下 MAPI 網路 (已設定為停用複寫) 時，系統會使用 MAPI 網路進行複寫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 停用 MAPI 網路上的複寫不能保證系統不會使用該 MAPI 網路進行複寫。當所有設定的複寫網路為離線、失敗或無法使用，並且只剩下 MAPI 網路 (已設定為停用複寫) 時，系統會使用 MAPI 網路進行複寫。
+
+
 
 
 系統所建立的初始 DAG 網路 (例如，MapiDagNetwork 和 ReplicationDagNetwork01) 是以由叢集服務列舉之子網路為基礎。每個 DAG 成員必須具備相同數目的網路介面卡，而且每個網路介面卡必須具備唯一子網路上的 IPv4 位址 (或者也可以選擇性地具備 IPv6 位址)。多個 DAG 成員可以具備相同子網路上的 IPv4 位址，但是特定 DAG 成員中的每個網路介面卡與 IP 網址配對必須是唯一的子網路。此外，只有 MAPI 網路使用的介面卡應該設定預設閘道。複寫網路不應該設定預設閘道。

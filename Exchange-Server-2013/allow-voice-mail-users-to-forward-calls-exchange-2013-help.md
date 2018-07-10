@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 呼叫自動答錄服務規則功能首度推出Exchange 2010中。使用這項功能、 已啟用語音信箱的使用者可以控制處理其來電轉接的方式。呼叫接聽規則會套用至來電轉接的方式類似收件匣規則會套用至內送電子郵件。
 

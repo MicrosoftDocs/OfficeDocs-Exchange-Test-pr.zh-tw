@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-08-22_
+_**上次修改主題的時間：** 2016-08-22_
 
-**摘要：** 若要啟用與外部組織共用行事曆空閒/忙碌資訊的 OWA 使用者在 Exchange 2013 組織中使用這些程序。
+**摘要：**  若要啟用與外部組織共用行事曆空閒/忙碌資訊的 OWA 使用者在 Exchange 2013 組織中使用這些程序。
 
 Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織中的使用者和可存取網際網路的其他人，共用行事曆可用性 (空閒/忙碌) 資訊。網際網路行事曆發佈可提供較大的彈性，並增加能夠共用行事曆可用性資訊的使用者數量。
 
@@ -29,18 +29,11 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 3.  特別針對網際網路行事曆發佈建立一個專用的共用原則，或更新預設的共用原則來支援 \[匿名\] 網域。任一種方法都可讓 Exchange 組織中的使用者邀請其他可存取網際網路的使用者來存取所發佈的 URL，以檢視有限的行事曆可用性資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>後完成步驟 3，使用者則須將其從 Outlook 行事曆發佈。行事曆發佈會建立使用者可提供給其組織外部人員的 Url。一個 URL 可讓訂閱行事曆使用 Outlook 或 Outlook Web 應用程式及其他屬性可讓收件者檢視在網頁瀏覽器中的行事曆的收件者。每位使用者可以控制其他人可以看到多少詳細資料。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 後完成步驟 3，使用者則須將其從 Outlook 行事曆發佈。行事曆發佈會建立使用者可提供給其組織外部人員的 Url。一個 URL 可讓訂閱行事曆使用 Outlook 或 Outlook Web 應用程式及其他屬性可讓收件者檢視在網頁瀏覽器中的行事曆的收件者。每位使用者可以控制其他人可以看到多少詳細資料。
+
+
 
 
 如需與共用原則相關的其他管理工作，請參閱[共用原則](sharing-policies-exchange-2013-help.md)。
@@ -59,18 +52,11 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -106,18 +92,11 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 ## 步驟 2：使用命令介面啟用發佈虛擬目錄
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來啟用發佈虛擬目錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來啟用發佈虛擬目錄。
+
+
 
 
 此範例在 Client Access Server CAS01 上啟用發佈虛擬目錄。
@@ -136,18 +115,11 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 ## 步驟 3： 建立或設定專用於網際網路行事曆發佈共用原則
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>步驟 3 中的下列選項僅適用於 Exchange Online 環境。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 步驟 3 中的下列選項僅適用於 Exchange Online 環境。
+
+
 
 
 您必須選擇建立共用原則的網際網路行事曆發佈 （選項 1） 或設定預設共用原則網際網路行事曆發佈 （選項 2）。 使用這兩個選項您需要使用 EAC 或命令介面中的選擇。

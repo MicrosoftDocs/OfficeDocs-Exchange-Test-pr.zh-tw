@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013 SP1_
+_**適用版本：** Exchange Server 2013 SP1_
 
-_**上次修改主題的時間：**2016-03-17_
+_**上次修改主題的時間：** 2016-03-17_
 
 在站台恢復組態中，站台層級失敗之後的自動復原可能在 DAG 內進行，可讓郵件系統維持在正常運作狀態。此組態至少需要三個位置，因為需要將 DAG 成員部署在兩個位置，而 DAG 的見證伺服器在第三個位置。
 
@@ -178,18 +178,11 @@ Reestablishing Site Resilience
 
 假設 DNS 記錄受到組織控制，則啟動 Edge Transport Server 就包括更新由伺服器主控之每個 SMTP 網域的 MX 資源記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果組織使用的 MX 資源記錄不是在組織的控制下由 DNS 伺服器主控，則您可以考慮參照 MX 資源記錄中的 CNAME 記錄，並在組織的控制下使用可以更新的 CNAME 記錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果組織使用的 MX 資源記錄不是在組織的控制下由 DNS 伺服器主控，則您可以考慮參照 MX 資源記錄中的 CNAME 記錄，並在組織的控制下使用可以更新的 CNAME 記錄。
+
+
 
 
 DNS 更新會啟用內送流量，而啟動站台 (含有操作中的 Edge Transport Server) 的信箱資料庫時，則會處理外寄流量：

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 執行工作以管理收件者所需的權限，因所執行的程序或您要執行的指令程式而異。
 
@@ -27,18 +27,8 @@ _**上次修改主題的時間：**2015-03-09_
 
 3.  現在，執行 **Get-ManagementRoleAssignment** Cmdlet，查看指派給您的角色群組或管理角色，以瞭解您是否有管理該功能所需的權限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須獲指派「角色管理」管理角色，才能執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet。如果您沒有執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet 的權限，請詢問您的 Exchange 系統管理員，以取得角色群組或是獲指派管理角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您必須獲指派「角色管理」管理角色，才能執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet。如果您沒有執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet 的權限，請詢問您的 Exchange 系統管理員，以取得角色群組或是獲指派管理角色。
 
 
 如果您要將管理功能的能力委派給另一個使用者，請參閱[委派角色指派](delegate-role-assignments-exchange-2013-help.md)。
@@ -85,18 +75,11 @@ _**上次修改主題的時間：**2015-03-09_
 <td><p><a href="organization-management-exchange-2013-help.md">組織管理</a></p>
 <p><a href="view-only-organization-management-exchange-2013-help.md">僅限檢視組織管理</a></p>
 <p>支援診斷角色</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援診斷角色不指派給角色群組。如需詳細資訊，請參閱<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">將角色新增至使用者或 USG</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 支援診斷角色不指派給角色群組。如需詳細資訊，請參閱<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">將角色新增至使用者或 USG</a>。
+
+
 
 </td>
 </tr>
@@ -108,18 +91,11 @@ _**上次修改主題的時間：**2015-03-09_
 <tr class="odd">
 <td><p>匯入匯出</p></td>
 <td><p>信箱匯入匯出角色</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>信箱匯入匯出角色不指派給角色群組。如需詳細資訊，請參閱<a href="mailbox-import-export-role-exchange-2013-help.md">信箱匯入匯出角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 信箱匯入匯出角色不指派給角色群組。如需詳細資訊，請參閱<a href="mailbox-import-export-role-exchange-2013-help.md">信箱匯入匯出角色</a>。
+
+
 
 </td>
 </tr>

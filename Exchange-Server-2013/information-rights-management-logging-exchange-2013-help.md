@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013、 資訊版權管理 (IRM) 作業會記錄 IRM 記錄檔中。IRM 記錄檔可協助您監視及疑難排解Exchange 2013伺服器上的 Rights Management Services (RMS) 用戶端與您組織中的Active Directory Rights Management Services (AD RMS) 叢集間的互動。
 

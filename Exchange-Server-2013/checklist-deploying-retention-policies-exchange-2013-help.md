@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 使用此檢查清單來部署MicrosoftExchange Server 2013組織中的保留原則。您開始使用此檢查清單之前，請確定您已熟悉下列主題中的概念：
 

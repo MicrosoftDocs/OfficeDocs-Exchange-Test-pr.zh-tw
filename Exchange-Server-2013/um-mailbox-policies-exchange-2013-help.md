@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-15_
+_**上次修改主題的時間：** 2012-11-15_
 
 當您啟用使用者的整合通訊整合通訊 (UM) 信箱原則是必要的。您建立 UM 信箱原則套用至一組語音郵件使用者的信箱的一組通用原則\] 或 \[安全性設定。UM 信箱原則用來指定 UM 設定如下所示：
 

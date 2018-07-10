@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 與舊版的 Exchange 一樣，您可以在 Exchange Server 2013 中使用 Exchange 管理命令介面，來檢視佇列和佇列中郵件的相關資訊，以及對佇列和郵件執行管理動作。在 Exchange 2013 中，佇列位於 Mailbox Server 和 Edge Transport Server 上。本主題將這些伺服器稱為 *Transport Server*。
 
@@ -249,18 +249,11 @@ Exchange 2013 的 `Get-Queue` 指令程式含有 *Include* 和 *Exclude* 參數�
 
 Exchange 2013 新增了名為 **Get-QueueDigest** 的佇列指令程式。此指令程式能讓您使用單一命令檢視 Exchange 組織中部分或全部佇列的相關資訊。具體來說，**Get-QueueDigest** 指令程式可讓您根據佇列在伺服器、DAG、Active Directory 站台或整個 Active Directory 樹系中的位置，來檢視佇列的相關資訊。請注意，結果中不會包含周邊網路中已訂閱的 Edge Transport Server 上的佇列。此外，**Get-QueueDigest** 也可在 Edge Transport Server 上使用，但結果只會顯示 Edge Transport Server 上的佇列。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>依預設，<strong>Get-QueueDigest</strong> 指令程式會顯示包含十封郵件以上的傳遞佇列，而且會是一到二分鐘之前的結果。如需如何變更這些預設值的指示，請參閱<a href="configure-get-queuedigest-exchange-2013-help.md">設定 Get-QueueDigest</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 依預設，<strong>Get-QueueDigest</strong> 指令程式會顯示包含十封郵件以上的傳遞佇列，而且會是一到二分鐘之前的結果。如需如何變更這些預設值的指示，請參閱<a href="configure-get-queuedigest-exchange-2013-help.md">設定 Get-QueueDigest</a>。
+
+
 
 
 下表說明可用來搭配 **Get-QueueDigest**指令程式的篩選和排序參數。

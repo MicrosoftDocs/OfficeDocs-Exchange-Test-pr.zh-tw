@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 「佇列」是訊息等候進入下一個處理階段或傳遞至目的地時的暫存位置。每個佇列都代表 Exchange Server 會以特定順序處理的一組邏輯訊息。在 Microsoft Exchange Server 2013 中，佇列中會存放進行傳遞之前、期間或之後的訊息。佇列存在於 Mailbox Server 和 Edge Transport Server 上。在本主題中，Mailbox Server 和 Edge Transport Server 皆稱為「傳輸伺服器」。
 
@@ -216,18 +216,11 @@ EdgeTransport.exe.config 檔的 `<appSettings>` 區段，是您可以新增索�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您安裝 Exchange 累計更新 (CU) 後，將會覆寫您在 Exchange XML 應用程式組態檔 (例如 Client Access Server 上的 web.config 檔案，或 Mailbox Server 上的 EdgeTransport.exe.config 檔案) 中任何自訂的個別伺服器設定。請務必儲存此資訊，以便安裝後能輕易地重新設定伺服器。在安裝 Exchange CU 後，您必須重新配置這些設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在您安裝 Exchange 累計更新 (CU) 後，將會覆寫您在 Exchange XML 應用程式組態檔 (例如 Client Access Server 上的 web.config 檔案，或 Mailbox Server 上的 EdgeTransport.exe.config 檔案) 中任何自訂的個別伺服器設定。請務必儲存此資訊，以便安裝後能輕易地重新設定伺服器。在安裝 Exchange CU 後，您必須重新配置這些設定。
+
+
 
 
 回到頁首
@@ -513,18 +506,11 @@ Exchange 2013 會測量訊息進入及離開佇列的速度，並將這些值存
 
 Exchange 2013 引入的 **Get-QueueDigest** 指令程式，可提供特定範圍中所有伺服器上佇列狀態的高階和彙總檢視，例如，DAG、Active Directory 站台、伺服器清單，或是整個 Active Directory 樹系。請注意，結果中不會包含周邊網路中已訂閱的 Edge Transport Server 上的佇列。此外，**Get-QueueDigest** 也可在 Edge Transport Server 上使用，但結果只會顯示 Edge Transport Server 上的佇列。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>依預設，<strong>Get-QueueDigest</strong> 指令程式會顯示包含十封郵件以上的傳遞佇列，而且會是一到二分鐘之前的結果。如需如何變更這些預設值的指示，請參閱<a href="configure-get-queuedigest-exchange-2013-help.md">設定 Get-QueueDigest</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 依預設，<strong>Get-QueueDigest</strong> 指令程式會顯示包含十封郵件以上的傳遞佇列，而且會是一到二分鐘之前的結果。如需如何變更這些預設值的指示，請參閱<a href="configure-get-queuedigest-exchange-2013-help.md">設定 Get-QueueDigest</a>。
+
+
 
 
 下表說明您可以在佇列或是佇列中的訊息上執行的管理工作。

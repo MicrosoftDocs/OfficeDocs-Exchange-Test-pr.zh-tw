@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-11-10_
+_**上次修改主題的時間：** 2015-11-10_
 
 執行用戶端與行動裝置工作所需的權限，因所執行的程序或您要執行的指令程式而異。如需用戶端和行動裝置功能的詳細資訊，請參閱[用戶端和行動裝置](clients-and-mobile-exchange-2013-help.md)。
 
@@ -43,18 +43,11 @@ _**上次修改主題的時間：**2015-11-10_
 
 如果您要將管理功能的能力委派給另一個使用者，請參閱[委派角色指派](delegate-role-assignments-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>某些功能可能會要求您在要管理的伺服器上具備本機系統管理員權限。若要管理這些功能，您必須是該伺服器上本機系統管理員群組的成員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 某些功能可能會要求您在要管理的伺服器上具備本機系統管理員權限。若要管理這些功能，您必須是該伺服器上本機系統管理員群組的成員。
+
+
 
 
 ## Client Access Server 權限

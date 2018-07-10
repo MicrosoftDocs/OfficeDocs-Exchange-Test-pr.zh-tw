@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-05_
+_**上次修改主題的時間：** 2012-11-05_
 
 您可能需要將移至不同的 UM 撥號對應啟用的整合通訊 (UM) 之使用者或變更與使用者關聯的撥號。例如，您可能會想要已啟用 UM 的使用者移至 SIP URI 撥號對應表的電話分機撥號對應表。
 
@@ -37,36 +37,22 @@ _**上次修改主題的時間：**2012-11-05_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 該怎麼做？
 
 ## 步驟 1： 建立新的 UM 撥號對應表
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要將已啟用 UM 的使用者遷移至整合的 Microsoft Office Communications Server 2007 R2 或移至 Microsoft Lync Server，則必須先建立 SIP URI 撥號對應表。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您要將已啟用 UM 的使用者遷移至整合的 Microsoft Office Communications Server 2007 R2 或移至 Microsoft Lync Server，則必須先建立 SIP URI 撥號對應表。
+
+
 
 
 如需詳細指示，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
@@ -77,18 +63,11 @@ _**上次修改主題的時間：**2012-11-05_
 
 ## 步驟 3： 整合通訊讓使用者在新的 UM 撥號對應表
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您正在將使用者移至具有Office Communications Server 2007 R2 或 Lync Server 的環境，您還必須在啟用 um 時加入使用者的 SIP 資源識別項。您也必須選取與 SIP 撥號對應表關聯的 UM 信箱原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您正在將使用者移至具有Office Communications Server 2007 R2 或 Lync Server 的環境，您還必須在啟用 um 時加入使用者的 SIP 資源識別項。您也必須選取與 SIP 撥號對應表關聯的 UM 信箱原則。
+
+
 
 
 如需詳細指示，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。

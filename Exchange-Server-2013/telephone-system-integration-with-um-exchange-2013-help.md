@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 順利部署整合通訊 (UM)，您必須使用基本的電話語音概念和電話語音元件的確實了解。了解電話語音基礎後，UM 可以整合至 Exchange 組織。基本概念及元件包括：
 
@@ -77,16 +77,9 @@ Exchange UM 路由元件會處理語音郵件路由之間 Lync Server 與 Exchan
 
 如需 Microsoft Lync Server 的詳細資訊，查看[Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您正在將 Unified Messaging 和 Lync Server 整合在內部部署或混合式部署中，未接來電通知都無法提供使用者沒有信箱位於 Exchange 2007 或 Exchange 2010 信箱伺服器。當使用者中斷通話傳送至信箱伺服器之前，會產生未接的來電通知。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 當您正在將 Unified Messaging 和 Lync Server 整合在內部部署或混合式部署中，未接來電通知都無法提供使用者沒有信箱位於 Exchange 2007 或 Exchange 2010 信箱伺服器。當使用者中斷通話傳送至信箱伺服器之前，會產生未接的來電通知。
+
+
 

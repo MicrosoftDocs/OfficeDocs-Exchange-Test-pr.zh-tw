@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-06-25_
+_**上次修改主題的時間：** 2013-06-25_
 
 在安裝 Client Access Server 和 Mailbox Server 並設定整合通訊之後，您可以使用多項診斷測試和電話應用程式軟體來測試整合通訊服務的電話語音連線和作業。
 

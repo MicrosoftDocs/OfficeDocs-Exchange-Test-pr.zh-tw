@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-14_
+_**上次修改主題的時間：** 2012-11-14_
 
 如果您啟用 UM 的使用者將它們連結到撥號對應表 E.164，會建立兩個 EUM proxy 位址。其中包含使用者的分機號碼與另一個包含使用者的 E.164 號碼。當使用者撥打 Outlook 語音存取號碼使用分機號碼。
 
@@ -43,18 +43,11 @@ _**上次修改主題的時間：**2012-11-14_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -75,18 +68,11 @@ _**上次修改主題的時間：**2012-11-14_
 
 此範例會變更已啟用 UM 之使用者 Tony Smith 的 E.164 號碼。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>變更使用命令介面為 E.164 號碼之前，您必須決定要變更的 EUM proxy 位址的位置。若要判斷位置，請使用<strong>$mbx.EmailAddresses</strong>命令。第一個 EUM proxy 位址是預設值 （主要） 的 E.164 電話號碼和其 0 清單中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 變更使用命令介面為 E.164 號碼之前，您必須決定要變更的 EUM proxy 位址的位置。若要判斷位置，請使用<strong>$mbx.EmailAddresses</strong>命令。第一個 EUM proxy 位址是預設值 （主要） 的 E.164 電話號碼和其 0 清單中。
+
+
 
 
     $mbx=Get-Mailbox tony.smith

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-06-25_
+_**上次修改主題的時間：** 2013-06-25_
 
 在組織中安裝 Client Access Server 和 Mailbox Server 後，您可能必須測試整合通訊 (UM) 的功能。在下列情況中，您會用到 Exchange 2013 隨附的診斷工具和 Cmdlet 或 UM 疑難排解工具：
 

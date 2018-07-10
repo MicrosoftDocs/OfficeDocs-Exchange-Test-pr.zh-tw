@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 *獨佔範圍*是可與管理角色指派相關聯的明確的管理範圍的特殊類型。獨佔範圍的設計被用來啟用其中 CEO 信箱，如有高價值物件的群組，而您想要緊密控制哪些人可以存取管理這些物件的情況。
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2015-03-09_
 
 如需管理範圍篩選的相關資訊，請參閱[了解管理角色範圍篩選器](understanding-management-role-scope-filters-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當對任何管理角色元件 (包括獨佔範圍) 進行變更時，Active Directory 複寫時間應予以考慮。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當對任何管理角色元件 (包括獨佔範圍) 進行變更時，Active Directory 複寫時間應予以考慮。
+
+
 
 
 如果您有包含一個以上的獨佔範圍內的物件時，被指派給任一獨佔範圍提供物件的存取權。如需詳細資訊，請參閱本主題稍後的獨佔和定期領域互動。

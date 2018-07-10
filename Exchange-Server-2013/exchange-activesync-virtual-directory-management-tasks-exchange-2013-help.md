@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-05_
+_**上次修改主題的時間：** 2012-10-05_
 
 您可以管理數個Exchange ActiveSync應用程式中設定Exchange Server 2013透過Exchange ActiveSync虛擬目錄。虛擬目錄用來允許存取像是Exchange ActiveSync的 web 應用程式的網際網路資訊服務 (IIS)。您可以針對Exchange ActiveSync來管理虛擬目錄設定的一些包括驗證、 安全性及報告。
 

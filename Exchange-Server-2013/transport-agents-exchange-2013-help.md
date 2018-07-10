@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 傳輸代理程式可讓您安裝 Microsoft、 協力廠商或組織的 Exchange 伺服器上建立的自訂軟體。此軟體可然後處理通過傳輸管線的電子郵件。在 Microsoft Exchange Server 2013、 傳輸管線是進行下列程序：
 

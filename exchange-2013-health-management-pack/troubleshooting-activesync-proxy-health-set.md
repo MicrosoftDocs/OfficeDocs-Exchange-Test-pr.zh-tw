@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-09-22_
+_**上次修改主題的時間：** 2014-09-22_
 
 ActiveSync.Proxy 健全設定會監控 Client Access Server (CAS) 上 Exchange ActiveSync 基礎結構的健全狀態。 如果收到的警示指出 ActiveSync.Proxy 健全設定為狀況不良，這表示可能影響警示所指出之 CAS 上 Exchange ActiveSync 元件的問題。
 

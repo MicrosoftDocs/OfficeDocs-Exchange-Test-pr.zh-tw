@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010, Exchange Server 2013_
+_**適用版本：** Exchange Server 2010, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-04-01_
+_**上次修改主題的時間：** 2018-04-01_
 
-**摘要：** 本文說明如何 Exchange Active Sync 可協助您管理行動裝置的 iOS Outlook 及 Android 中 Exchange 內部部署組織。
+**摘要：**  本文說明如何 Exchange Active Sync 可協助您管理行動裝置的 iOS Outlook 及 Android 中 Exchange 內部部署組織。
 
 Microsoft 建議用來存取內部部署環境中的 Exchange 信箱的行動裝置管理 Exchange ActiveSync。Exchange ActiveSync 是讓行動電話存取組織的資訊在執行 Microsoft Exchange 伺服器上的 Microsoft Exchange 同步處理通訊協定。
 
@@ -43,42 +43,28 @@ Exchange ActiveSync 可讓系統管理員從遠端清除裝置，例如 if 他�
 
 遠端抹除命令之後的 iOS Outlook 及 android （英文） 顯示為使用者的行動裝置下單一的行動裝置關聯 Exchange 中，會移除資料，並從執行 Outlook （iPhone、 iPad、 Android） 相關聯的所有裝置刪除同步關係該使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於背後的 iOS Outlook 及 Android 的雲端架構、 遠端裝置抹除的結果會不報告回至 Exchange。即使抹除成功時，則狀態會顯示為<strong>擱置</strong>。此為已知的問題和開發解決方案。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 由於背後的 iOS Outlook 及 Android 的雲端架構、 遠端裝置抹除的結果會不報告回至 Exchange。即使抹除成功時，則狀態會顯示為<strong>擱置</strong>。此為已知的問題和開發解決方案。
+
+
 
 
 ## 裝置識別碼及存取控制
 
 由於的雲端架構的 iOS Outlook 及 android （英文）、 Outlook 連線顯示為每位使用者的單一的行動裝置識別碼 (ID) Exchange 中。這表示每個使用者的行動裝置存取控制項會套用至與此裝置識別碼相關聯的所有裝置這項實作建立不同的兩個條件從如何傳統 Exchange ActiveSync 裝置存取控制項運作。
 
-  - **封鎖：** 封鎖規則封鎖所有裝置上的 Outlook 和支援的作業系統。您無法封鎖個別裝置或作業系統。
+  - **封鎖：**  封鎖規則封鎖所有裝置上的 Outlook 和支援的作業系統。您無法封鎖個別裝置或作業系統。
 
-  - **隔離：** 隔離程序的運作方式根據個別使用者，而不是每個裝置上。一旦使用者已從隔離區釋出的裝置，他們可以安裝及設定相同數目的其他裝置為他們想要在 Outlook。因為已從隔離區釋放使用者，任何新的裝置相關聯的使用者不會被隔離。
+  - **隔離：**  隔離程序的運作方式根據個別使用者，而不是每個裝置上。一旦使用者已從隔離區釋出的裝置，他們可以安裝及設定相同數目的其他裝置為他們想要在 Outlook。因為已從隔離區釋放使用者，任何新的裝置相關聯的使用者不會被隔離。
 
 備妥行動裝置信箱原則時，套用至所有相關裝置。因此，如果您強制執行特定信箱的 PIN 鎖定，連線至該信箱的所有裝置都需要 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為裝置識別碼不由任何<em>實體裝置</em>識別碼，他們可以變更不另行通知。在這種情況下，它會導致非預期的後果時裝置識別碼用於為現有允許' 裝置可能會意外封鎖或隔離由 Exchange 管理使用者的裝置。因此，我們建議系統管理員只能設定行動裝置原則允許/封鎖根據裝置類型或裝置型號的裝置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 因為裝置識別碼不由任何<em>實體裝置</em>識別碼，他們可以變更不另行通知。在這種情況下，它會導致非預期的後果時裝置識別碼用於為現有允許' 裝置可能會意外封鎖或隔離由 Exchange 管理使用者的裝置。因此，我們建議系統管理員只能設定行動裝置原則允許/封鎖根據裝置類型或裝置型號的裝置。
+
+
 
 
 ## 裝置管理與 Exchange ActiveSync 常見問題集

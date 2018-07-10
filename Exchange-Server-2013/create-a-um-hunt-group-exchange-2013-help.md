@@ -15,38 +15,24 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 整合通訊 (UM) 群組搜尋是專用交換機 (PBX) 或 IP PBX 群組以邏輯方式呈現。連線或連結的 UM IP 閘道和 UM 撥號對應表扮演 UM 群組搜尋。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在建立 UM IP 閘道時讓 UM 撥號對應表與 UM IP 閘道產生關聯，則還會建立 UM 搜尋群組。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您在建立 UM IP 閘道時讓 UM 撥號對應表與 UM IP 閘道產生關聯，則還會建立 UM 搜尋群組。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要變更 UM 群組搜尋設定，則必須刪除該群組搜尋，然後再建立另一個具有適當設定值的群組搜尋。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 如果您要變更 UM 群組搜尋設定，則必須刪除該群組搜尋，然後再建立另一個具有適當設定值的群組搜尋。
+
+
 
 
 如需其他與 UM 群組搜尋相關的管理工作資訊，請參閱 [UM 群組搜尋的程序](um-hunt-group-procedures-exchange-2013-help.md)。
@@ -63,18 +49,11 @@ _**上次修改主題的時間：**2013-04-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

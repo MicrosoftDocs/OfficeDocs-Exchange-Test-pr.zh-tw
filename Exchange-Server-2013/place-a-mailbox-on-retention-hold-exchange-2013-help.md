@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-14_
+_**上次修改主題的時間：** 2012-10-14_
 
 將信箱設定保留暫停處理保留原則或該信箱的受管理的資料夾信箱原則。保留旨在協助使用者暫時正在休假或離開等情況。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2012-10-14_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -77,18 +70,11 @@ _**上次修改主題的時間：**2012-10-14_
 
 此指令擷取所有在 Exchange 組織中的信箱、篩選置於保留的信箱、並以每個信箱得保留原則列出。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為<em>RetentionHoldEnabled</em>不是在Exchange 2013可篩選屬性，您無法使用<em>Filter</em>參數與篩選信箱的保留保留在伺服器端<strong>Get-Mailbox</strong>指令程式。此命令會擷取所有信箱和用戶端執行命令介面工作階段的篩選的清單。在大型環境中使用千分位的信箱，此命令可能需要長的時間才能完成。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 因為<em>RetentionHoldEnabled</em>不是在Exchange 2013可篩選屬性，您無法使用<em>Filter</em>參數與篩選信箱的保留保留在伺服器端<strong>Get-Mailbox</strong>指令程式。此命令會擷取所有信箱和用戶端執行命令介面工作階段的篩選的清單。在大型環境中使用千分位的信箱，此命令可能需要長的時間才能完成。
+
+
 
 
     Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionHoldEnabled -eq $true} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto

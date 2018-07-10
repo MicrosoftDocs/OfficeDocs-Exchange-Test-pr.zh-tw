@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-19_
+_**上次修改主題的時間：** 2013-04-19_
 
 您可以自訂在營業時間使用整合通訊 (UM) 自動語音應答功能表提示。建立 UM 自動語音應答後，預設系統提示 （「 歡迎使用整合通訊 」） 會做為來電者聽到歡迎使用問候語播放營業時間之後功能表提示。雖然我取代或變更系統提示字元中，您可以自訂問候語和功能表提示所使用的 UM 自動語音應答。建立自訂的上班時間功能表提示音訊檔之後，您必須啟用功能表導覽項目上的 UM 自動語音應答的上班時間。
 
 如果您只想要包含組織或商務一部分的預設系統提示的名稱，您可以在**企業名稱**\] 方塊中輸入名稱上的 UM 自動語音應答。如需詳細資訊，請參閱[輸入企業名稱](enter-a-business-name-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須在自動語音應答上設定營業時間。如需詳細資訊，請參閱<a href="configure-business-hours-exchange-2013-help.md">設定營業時間</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您必須在自動語音應答上設定營業時間。如需詳細資訊，請參閱<a href="configure-business-hours-exchange-2013-help.md">設定營業時間</a>。
+
+
 
 
 如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](um-auto-attendant-procedures-exchange-2013-help.md)。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：**2013-04-19_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

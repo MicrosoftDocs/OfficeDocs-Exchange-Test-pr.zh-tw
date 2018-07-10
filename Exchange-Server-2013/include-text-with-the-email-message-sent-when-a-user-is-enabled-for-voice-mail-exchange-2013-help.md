@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-16_
+_**上次修改主題的時間：** 2012-12-16_
 
 當使用者的信箱已啟用整合通訊 (UM) 的語音信箱時、 電子郵件訊息會傳送之歡迎至 \[整合通訊的使用者。此訊息包含使用者將會使用第一次存取語音信箱系統的 PIN 資訊。
 
 您可以自訂在 UM 信箱原則的**使用者啟用整合通訊時**\] 方塊中新增文字傳送歡迎電子郵件訊息中的文字。您可以包含為 UM 技術支援電話號碼或其他 Outlook 語音存取號碼這類資訊。新增文字後，它將會包含在關聯的 UM 信箱原則的使用者啟用整合通訊時傳送的電子郵件訊息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>加入歡迎使用郵件中的自訂文字最多為 512 個字元，其中可包括簡單的 HTML 文字。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 加入歡迎使用郵件中的自訂文字最多為 512 個字元，其中可包括簡單的 HTML 文字。
+
+
 
 
 如需其他與 UM 信箱原則相關的管理工作，請參閱 [UM 信箱原則程序](um-mailbox-policy-procedures-exchange-2013-help.md)。
@@ -49,18 +42,11 @@ _**上次修改主題的時間：**2012-12-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

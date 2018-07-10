@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2009-11-03_
+_**上次修改主題的時間：** 2009-11-03_
 
 [檢視效能計數器的通訊記錄管理](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
 

@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Outlook 2013_
+_**適用版本：** Exchange Server 2013, Outlook 2013_
 
-_**上次修改主題的時間：**2015-02-27_
+_**上次修改主題的時間：** 2015-02-27_
 
 您可能會需要與不同組織的人或是親友協調排程，以便合作執行專案或規劃社交活動。透過 Exchange 2013，系統管理員將可設定不同層級的行事曆存取，讓企業能夠與其他企業共同合作，並且讓使用者可將其排程與他人共用。企業對企業的行事曆共用可藉由建立「組織關係」來設定。使用者對使用者的行事曆共用，則可藉由套用「共用原則」來設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
+
+
 
 
 **目錄**

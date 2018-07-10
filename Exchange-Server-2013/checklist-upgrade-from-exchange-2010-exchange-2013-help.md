@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 從 Microsoft Exchange 2010升級至Exchange 2013使用此檢查清單。您開始使用此檢查清單之前，請確定您已熟悉中討論的概念：
 
@@ -25,18 +25,11 @@ _**上次修改主題的時間：**2015-04-07_
 
 這是一般性的檢查清單，針對一般升級案例提供指引。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 部署助理提供您如何部署 Exchange Server 的自訂逐步指導。部署助理可協助您部署 Exchange Server 2013 的全新安裝、將舊版產品升級至 Exchange 2013，或是設定 Exchange 2013 與 Exchange Online 的混合式部署。若要深入了解，請參閱<a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange Server 部署助理提供您如何部署 Exchange Server 的自訂逐步指導。部署助理可協助您部署 Exchange Server 2013 的全新安裝、將舊版產品升級至 Exchange 2013，或是設定 Exchange 2013 與 Exchange Online 的混合式部署。若要深入了解，請參閱<a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
+
+
 
 
 ## 從 Exchange 2010 升級至 Exchange 2013 的檢查清單
@@ -73,18 +66,11 @@ _**上次修改主題的時間：**2015-04-07_
 <tr class="odd">
 <td><p></p></td>
 <td><p>4. 設定脫離的命名空間</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在組織執行脫離的命名空間才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在組織執行脫離的命名空間才需要。
+
+
 
 </td>
 <td><p><a href="configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md">設定脫離的命名空間的 DNS 尾碼搜尋清單</a></p></td>
@@ -140,18 +126,11 @@ _**上次修改主題的時間：**2015-04-07_
 <tr class="even">
 <td><p></p></td>
 <td><p>11. 設定整合通訊</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在您想在組織中使用整合通訊時才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在您想在組織中使用整合通訊時才需要。
+
+
 
 </td>
 <td><p><a href="upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md">將 Exchange 2010 UM 升級至 Exchange 2013 UM</a></p>
@@ -160,18 +139,11 @@ _**上次修改主題的時間：**2015-04-07_
 <tr class="odd">
 <td><p></p></td>
 <td><p>12. 設定 Edge Transport Server</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在組織正在使用 Edge Transport Server 時才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在組織正在使用 Edge Transport Server 時才需要。
+
+
 
 </td>
 <td><p><a href="configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md">透過訂閱的 Edge Transport Server 設定網際網路郵件流程</a></p></td>

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 可以從您的組織移除不再需要的管理角色。您只可以移除您所建立的管理角色。無法移除內建管理角色。如需 Microsoft Exchange Server 2013中的管理角色的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2012-10-03_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -65,18 +58,11 @@ _**上次修改主題的時間：**2012-10-03_
 
 如果您想要移除的角色具有子系角色，您必須也移除所有子系角色。如果您嘗試移除具有除非您使用*Recurse*參數的子系角色的角色，收到錯誤訊息。如果您使用*Recurse*參數移除角色時，會移除您指定的角色和其所有子系角色。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用<em>Recurse</em>參數時，也會移除指定您想要移除之角色的所有子系角色。請確定您知道的何種角色將會移除才可執行此命令。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 如果您使用<em>Recurse</em>參數時，也會移除指定您想要移除之角色的所有子系角色。請確定您知道的何種角色將會移除才可執行此命令。
+
+
 
 
 若要確定您移除您要移除的角色，使用*WhatIf*參數與您的命令來確認其正確。使用下列語法。

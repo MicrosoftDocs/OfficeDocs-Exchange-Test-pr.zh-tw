@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 EWS。通訊協定健全設定監視Exchange Mailbox server 上的 Web 服務 (EWS) 通訊協定。EWS。下列的健全設定密切相關通訊協定健全設定：
 

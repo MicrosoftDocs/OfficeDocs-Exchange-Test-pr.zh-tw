@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Exchange ActiveSync健全設定監視ActiveSync服務您組織中的行動用戶端的整體狀況。下列的健全設定密切相關ActiveSync健全設定：
 

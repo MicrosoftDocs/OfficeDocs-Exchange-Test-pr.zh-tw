@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-09-11_
+_**上次修改主題的時間：** 2014-09-11_
 
 如果您的組織使用表單收集敏感資訊，使用者可能會嘗試透過電子郵件將這些表單傳送給外部連絡人，而產生安全性風險。Exchange 中的資料外洩防護 (DLP) 可使用[文件指紋](overview-of-document-fingerprinting-in-exchange.md)來偵測此類資訊，協助您保護資訊的安全。若要使用文件指紋，請直接上載空白表單，例如智慧財產文件、政府表單，或是您的組織中使用的其他標準表單。接著，請將產生的文件指紋新增至 DLP 原則或傳輸規則。方法如下。
 
@@ -47,18 +47,11 @@ _**上次修改主題的時間：**2014-09-11_
 
 ## 根據文件指紋使用命令介面建立分類規則套件
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然您可以建立及修改命令介面中的分類規則套件，您可能會發現建立文件指紋是在 EAC 中更簡單。我們建議您試試看發生前嘗試這個命令介面中的程序。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 雖然您可以建立及修改命令介面中的分類規則套件，您可能會發現建立文件指紋是在 EAC 中更簡單。我們建議您試試看發生前嘗試這個命令介面中的程序。
+
+
 
 
 DLP 會使用分類規則套件偵測郵件中的敏感內容。若要根據文件指紋建立分類規則套件，請使用 **New-Fingerprint** 和 **New-DataClassification** 指令程式。由於 **New-Fingerprint** 的結果不會儲存在資料分類規則外部，因此您一律會在相同的 PowerShell 工作階段中執行 **New-Fingerprint** 和 **New-DataClassification** 或 **Set-DataClassification**。下列範例會根據 C:\\My Documents\\Contoso Employee Template.docx 檔案建立新的文件指紋。您可以將新的指紋儲存為變數，讓您可以將它與相同 PowerShell 工作階段中的 **New-DataClassification** 指令程式搭配使用。

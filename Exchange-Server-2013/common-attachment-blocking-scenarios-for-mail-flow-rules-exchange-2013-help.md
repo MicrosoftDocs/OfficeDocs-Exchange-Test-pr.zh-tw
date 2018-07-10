@@ -13,23 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-02-23_
+_**上次修改主題的時間：** 2017-02-23_
 
 您的組織可能會需要特定類型的郵件會封鎖或已拒絕以符合法律或規範需求，或以實作特定業務需求。以下是一些常見的案例封鎖您可以設定在Exchange中使用的傳輸規則的所有附件的範例：
 
-  -  
-    範例 1： 封鎖郵件含有附件，並通知寄件者
+  -  範例 1： 封鎖郵件含有附件，並通知寄件者
 
-  -  
-    範例 2： 通知時封鎖內送的郵件預定的收件者
+  -  範例 2： 通知時封鎖內送的郵件預定的收件者
 
-  -  
-    範例 3： 修改通知的主旨列
+  -  範例 3： 修改通知的主旨列
 
-  -  
-    範例 4： 適用於時間限制的規則
+  -  範例 4： 適用於時間限制的規則
 
 如需其他範例顯示如何封鎖特定的附件，請參閱：
 
@@ -51,7 +47,7 @@ _**上次修改主題的時間：**2017-02-23_
 
 5.  選取條件和您想要的動作。
 
-**請注意：** 在 EAC 中，您可以輸入最小附件大小為 1 kb，應該會偵測到大部分的附件。不過，如果您想要偵測之任何規模的每個可能的附件，您需要使用 PowerShell 1 個位元組附件大小調整為您在 EAC 中建立規則之後。若要了解如何在內部部署 Exchange 組織中開啟 Exchange 管理命令介面，請參閱[開啟命令介面。](https://technet.microsoft.com/zh-tw/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 連線到 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
+**請注意：**  在 EAC 中，您可以輸入最小附件大小為 1 kb，應該會偵測到大部分的附件。不過，如果您想要偵測之任何規模的每個可能的附件，您需要使用 PowerShell 1 個位元組附件大小調整為您在 EAC 中建立規則之後。若要了解如何在內部部署 Exchange 組織中開啟 Exchange 管理命令介面，請參閱[開啟命令介面。](https://technet.microsoft.com/zh-tw/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 連線到 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
 
 將現有的規則名稱取代*\<Rule Name\>*並執行下列命令以將附件大小設為 1 個位元組：
 
@@ -126,18 +122,11 @@ _**上次修改主題的時間：**2017-02-23_
 
   - 第二個規則封鎖郵件並將通知訊息傳送給寄件者使用新的原始郵件的主旨。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這兩個規則必須具有相同的條件。規則處理順序，因此的第一個規則將新增 「 無法傳遞 」 的字和第二個規則封鎖郵件，並通知收件者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 這兩個規則必須具有相同的條件。規則處理順序，因此的第一個規則將新增 「 無法傳遞 」 的字和第二個規則封鎖郵件，並通知收件者。
+
+
 
 
 以下是新的第一個規則看起來如果您想要新增 「 無法傳遞 」 主題：

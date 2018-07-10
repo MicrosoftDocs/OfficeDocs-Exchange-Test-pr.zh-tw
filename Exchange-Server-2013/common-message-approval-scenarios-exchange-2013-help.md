@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-09-29_
+_**上次修改主題的時間：** 2014-09-29_
 
 您的組織可能需要以符合法律或規範需求，或以實作特定商務工作流程核准特定類型的郵件。以下是一些您可以使用Exchange設定的常見案例的範例：
 
@@ -65,18 +65,11 @@ _**上次修改主題的時間：**2014-09-29_
 
 若要開始，請移至 EAC \>**郵件流程**\>**規則**，並建立新的規則使用 \[**傳送至仲裁者的郵件**\] 範本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 [<strong>新增規則</strong>] 頁面上的預設的一些條件和動作，包括轉寄給寄件者的經理處於隱藏狀態。若要查看所有條件和動作，選取 [<strong>其他選項</strong>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在 [<strong>新增規則</strong>] 頁面上的預設的一些條件和動作，包括轉寄給寄件者的經理處於隱藏狀態。若要查看所有條件和動作，選取 [<strong>其他選項</strong>。
+
+
 
 
 ## 範例 3： 設定郵件核准鏈結
@@ -117,18 +110,11 @@ _**上次修改主題的時間：**2014-09-29_
 
 ![使用第二個規則的例外狀況](images/Dd298007.c39bbdcf-c619-4f84-8922-114ad1da824d(EXCHG.150).png "使用第二個規則的例外狀況")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 [<strong>新增規則</strong>] 頁面上的預設會隱藏例外狀況。若要查看所有條件和動作，選取 [<strong>其他選項</strong>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 [<strong>新增規則</strong>] 頁面上的預設會隱藏例外狀況。若要查看所有條件和動作，選取 [<strong>其他選項</strong>。
+
+
 
 
 ## 範例 5 ︰ 轉寄郵件包含敏感資訊

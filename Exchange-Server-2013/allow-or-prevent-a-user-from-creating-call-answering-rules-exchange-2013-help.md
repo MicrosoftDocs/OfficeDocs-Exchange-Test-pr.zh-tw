@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以指定是否要讓個別使用者可以建立和管理自己自動答錄規則來設定其信箱內容。根據預設，他們可以建立自動答錄規則。
 
 您可以在 UM 撥號對應表或 UM 信箱原則中設定自動答錄規則，針對整合通訊 (UM) 啟用的多位使用者啟用或停用自動答錄規則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來設定此功能。您必須使用命令介面啟用或停用語音郵件使用者的通話自動答錄服務規則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來設定此功能。您必須使用命令介面啟用或停用語音郵件使用者的通話自動答錄服務規則。
+
+
 
 
 若要瞭解其他與允許使用者轉接電話相關的管理工作，請參閱[轉接通話程序](forwarding-calls-procedures-exchange-2013-help.md)。
@@ -51,18 +44,11 @@ _**上次修改主題的時間：**2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用命令介面為已啟用 UM 的使用者啟用或停用自動答錄規則

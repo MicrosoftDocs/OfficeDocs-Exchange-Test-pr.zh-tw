@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-03-27_
+_**上次修改主題的時間：** 2017-03-27_
 
 Exchange 2013 會比舊版的 Exchange 系統資源的多個要求。 透過正確大小調整您的 Exchange 2013 基礎結構，並再進行一些建議採用的設定 Exchange 相關元件的基礎結構內，您可以配置以最佳方式執行部署的基礎。
 

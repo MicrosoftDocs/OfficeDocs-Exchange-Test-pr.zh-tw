@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
 資料遺失防護 (DLP) 原則偵測管理廣泛定義組織執行以識別、 調查及解決 DLP 原則違規的活動。若要管理事件，您需要存取識別項目已偵測到的 DLP 原則的資訊。此偵測資訊整合現有的 Microsoft Exchange Server 2013資料和記錄檔格式，讓您可以運用現有的豐富型系統的資料來管理您的郵件流程事件。
 
 如需建立事件報告及單一原則偵測事件的詳細資訊，請參閱[建立 DLP 原則偵測附隨報告](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)。 如需郵件記錄的相關資訊，請參閱 [使用傳遞回報追蹤郵件](track-messages-with-delivery-reports-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。
+
+
 
 
 ## 稽核資訊

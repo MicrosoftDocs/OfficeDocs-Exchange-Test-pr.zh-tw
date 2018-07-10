@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-08_
+_**上次修改主題的時間：** 2012-10-08_
 
 本主題顯示如何新增、 移除、 複製及檢視 Microsoft Exchange Server 2013中的管理角色群組。它也會顯示如何新增、 移除及列出在角色群組的管理角色以及如何變更管理範圍和角色群組的代理人。如需Exchange 2013中的角色群組的詳細資訊，請參閱[了解管理角色群組](understanding-management-role-groups-exchange-2013-help.md)。
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2012-10-08_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -81,18 +74,11 @@ _**上次修改主題的時間：**2012-10-08_
 
 如果您擁有的角色群組包含要授予使用者的權限，但是您希望套用其他管理範圍，或者希望移除或新增一個或兩個管理角色，而不必手動新增所有其他角色，則可以複製現有角色群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 將複製的角色群組若您使用Exchange管理命令介面來設定多個管理角色範圍或獨佔範圍的角色群組上。如果您已設定多個範圍或獨佔範圍的角色群組上，您必須使用本主題稍後的命令介面程序將複製的角色群組。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您無法使用 EAC 將複製的角色群組若您使用Exchange管理命令介面來設定多個管理角色範圍或獨佔範圍的角色群組上。如果您已設定多個範圍或獨佔範圍的角色群組上，您必須使用本主題稍後的命令介面程序將複製的角色群組。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。
+
+
 
 
 1.  在 EAC 中，瀏覽至 \[權限\] \> \[管理員角色\]。
@@ -216,18 +202,11 @@ _**上次修改主題的時間：**2012-10-08_
 
 ## 使用 EAC 將管理角色新增至角色群組
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 將角色新增至角色群組若您使用命令介面來設定多個管理角色範圍或獨佔範圍的角色群組上。如果您已設定多個範圍或獨佔範圍的角色群組上，您必須使用本主題稍後的命令介面程序將角色新增至角色群組。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您無法使用 EAC 將角色新增至角色群組若您使用命令介面來設定多個管理角色範圍或獨佔範圍的角色群組上。如果您已設定多個範圍或獨佔範圍的角色群組上，您必須使用本主題稍後的命令介面程序將角色新增至角色群組。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。
+
+
 
 
 1.  在 EAC 中，瀏覽至 \[權限\] \> \[管理員角色\]。
@@ -361,18 +340,11 @@ _**上次修改主題的時間：**2012-10-08_
 
 ## 使用 EAC 從角色群組中移除管理角色
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 如果您使用命令介面來設定多個範圍或獨佔範圍上的角色群組角色移除角色群組。如果您已設定多個範圍或獨佔範圍的角色群組上，您必須使用本主題稍後的命令介面程序來移除角色群組中的角色。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您無法使用 EAC 如果您使用命令介面來設定多個範圍或獨佔範圍上的角色群組角色移除角色群組。如果您已設定多個範圍或獨佔範圍的角色群組上，您必須使用本主題稍後的命令介面程序來移除角色群組中的角色。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。
+
+
 
 
 1.  在 EAC 中，瀏覽至 \[權限\] \> \[管理員角色\]。
@@ -425,18 +397,11 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 當您使用 EAC 來變更範圍的角色群組時、 您要實際變更角色群組和每個管理角色指派給角色群組之間的所有角色指派的範圍。如果您想要變更特定角色指派的範圍，您必須使用命令介面程序本主題稍後的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 中，如果您已使用命令介面在這些角色指派上設定多個範圍或獨佔範圍管理角色和角色群組之間的角色指派範圍。如果您已在這些角色指派上設定多個範圍或獨佔範圍，您必須使用本主題稍後的命令介面程序來管理範圍。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您無法使用 EAC 中，如果您已使用命令介面在這些角色指派上設定多個範圍或獨佔範圍管理角色和角色群組之間的角色指派範圍。如果您已在這些角色指派上設定多個範圍或獨佔範圍，您必須使用本主題稍後的命令介面程序來管理範圍。如需管理角色範圍的詳細資訊，請參閱<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色範圍</a>。
+
+
 
 
 1.  在 EAC 中，瀏覽至 \[權限\] \> \[管理員角色\]。
@@ -473,18 +438,11 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
     Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用<em>WhatIf</em>參數來確認已變更只想要變更的角色指派。執行上述命令與<em>WhatIf</em>參數以確認結果，並移除<em>WhatIf</em>交換器以套用變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您可以使用<em>WhatIf</em>參數來確認已變更只想要變更的角色指派。執行上述命令與<em>WhatIf</em>參數以確認結果，並移除<em>WhatIf</em>交換器以套用變更。
+
+
 
 
 如需變更管理角色指派的詳細資訊，請參閱[變更角色指派](change-a-role-assignment-exchange-2013-help.md)。
@@ -560,18 +518,11 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAM 將委派新增至角色群組。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAM 將委派新增至角色群組。
+
+
 
 
 ## 使用命令介面新增代理人到角色群組

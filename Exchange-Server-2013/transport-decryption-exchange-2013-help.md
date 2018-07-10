@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 在 Microsoft Exchange Server 2013、 Microsoft Outlook 2010和更新版本、 Microsoft OfficeOutlook Web App，使用者可以使用資訊版權管理 (IRM) 來保護其訊息。您可以建立Outlook自動將 IRM 保護套用至郵件它們傳送自Outlook 2010用戶端之前的保護規則。您也可以建立傳輸保護規則將 IRM 保護套用至符合的規則條件的郵件傳輸。停用傳輸解密允許以強制執行郵件原則受 IRM 保護之訊息內容的存取權。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2015-04-07_
 
 Exchange 2013、 中的 IRM 功能會解決這些挑戰。如果受 IRM 保護的郵件，停用傳輸解密可讓您將其解密傳送過程中。解密代理程式規範為主傳輸代理程式所對進行解密受 IRM 保護的郵件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在Exchange 2013、 解密代理程式會為內建的代理程式。內建的代理程式未含的<strong>Get-TransportAgent</strong>指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在Exchange 2013、 解密代理程式會為內建的代理程式。內建的代理程式未含的<strong>Get-TransportAgent</strong>指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。
+
+
 
 
 解密代理程式將解密下列類型的 IRM 保護郵件：
@@ -57,32 +50,18 @@ Exchange 2013、 中的 IRM 功能會解決這些挑戰。如果受 IRM 保護�
 
   - Outlook 與 Outlook 2010中由 Exchange 2013 保護規則自動以 IRM 保護的郵件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有組織中由 AD RMS Server 以 IRM 保護的郵件可由解密代理程式進行解密。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 只有組織中由 AD RMS Server 以 IRM 保護的郵件可由解密代理程式進行解密。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>受保護的郵件傳送過程中使用傳輸的保護規則都可省略解密代理程式所進行解密。解密代理程式就會引發<strong>OnEndOfData</strong>和<strong>OnSubmit</strong>傳輸事件。傳輸保護規則會套用由傳輸規則代理程式，就會引發<strong>OnRoutedMessage</strong>事件，並 IRM 保護套用由加密代理程式上<strong>OnRoutedMessage</strong>事件。如需傳輸代理程式並在其他們可以註冊的 SMTP 事件清單的詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 受保護的郵件傳送過程中使用傳輸的保護規則都可省略解密代理程式所進行解密。解密代理程式就會引發<strong>OnEndOfData</strong>和<strong>OnSubmit</strong>傳輸事件。傳輸保護規則會套用由傳輸規則代理程式，就會引發<strong>OnRoutedMessage</strong>事件，並 IRM 保護套用由加密代理程式上<strong>OnRoutedMessage</strong>事件。如需傳輸代理程式並在其他們可以註冊的 SMTP 事件清單的詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。
+
+
 
 
 停用傳輸解密是在第一個Exchange 2013處理Active Directory樹系中的郵件的傳輸服務上執行。如果郵件傳送給其他Active Directory樹系中的傳輸服務之後，會再次解密訊息。解密之後, 未加密的內容是可在該伺服器上的其他傳輸代理程式。例如上傳輸服務, 的傳輸規則代理程式可檢查郵件內容並套用傳輸規則。在未加密的郵件採取任何規則，例如套用免責聲明或修改任何其他方法中的郵件中指定的動作。第三方傳輸代理程式，例如防毒掃描程式，可以描病毒和惡意程式碼的郵件。之後其他傳輸代理程式已檢查訊息和可能進行修改它，它會再次使用加密前解密代理程式所要解密的相同使用者權限。解密的相同郵件不是一次由其他傳輸服務在組織中其他 Mailbox server 上。
@@ -112,18 +91,11 @@ Exchange 2013、 中的 IRM 功能會解決這些挑戰。如果受 IRM 保護�
 
 停用傳輸解密Exchange管理命令介面中使用[Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))指令程式來設定。不過，您設定停用傳輸解密之前，您必須提供Exchange 2013伺服器解密受保護您的 AD RMS 伺服器的內容的權限。做法是設定在組織中的 AD RMS 叢集超級使用者群組新增同盟信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在跨樹系 AD RMS 部署中必須在每個樹系中部署 AD RMS 叢集，您必須將同盟信箱新增至每個樹系中的 AD RMS 叢集的超級使用者群組允許Exchange 2013 Mailbox server 或解密針對每個 AD RMS 叢集受保護的郵件Exchange 2010 Hub Transport server 上的傳輸服務。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在跨樹系 AD RMS 部署中必須在每個樹系中部署 AD RMS 叢集，您必須將同盟信箱新增至每個樹系中的 AD RMS 叢集的超級使用者群組允許Exchange 2013 Mailbox server 或解密針對每個 AD RMS 叢集受保護的郵件Exchange 2010 Hub Transport server 上的傳輸服務。
+
+
 
 
 如需詳細資訊，請參閱[至 AD RMS 超級使用者群組新增同盟信箱](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md)。

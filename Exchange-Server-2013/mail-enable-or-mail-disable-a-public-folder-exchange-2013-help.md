@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-06-15_
+_**上次修改主題的時間：** 2016-06-15_
 
 公用資料夾的設計目的在於共用存取並提供簡易有效率的方式來收集、 組織及與工作群組或組織中其他人共用資訊。啟用公用資料夾的擁有郵件功能可讓使用者透過它傳送電子郵件訊息張貼至公用資料夾。公用資料夾時啟用郵件之其他設定變成可用才能進行Exchange系統管理中心 (EAC)，例如電子郵件地址與信箱配額的公用資料夾。在命令介面中的公用資料夾是擁有郵件功能之前您使用**Set-PublicFolder**指令程式來管理其所有設定。公用資料夾擁有郵件功能後，您使用**Set-PublicFolder**和**Set-MailPublicFolder**指令程式來管理設定。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2016-06-15_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作

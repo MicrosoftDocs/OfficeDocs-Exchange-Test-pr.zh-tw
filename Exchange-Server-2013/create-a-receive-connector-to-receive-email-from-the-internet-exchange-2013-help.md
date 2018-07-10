@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-15_
+_**上次修改主題的時間：** 2012-10-15_
 
 該程序將顯示如何從網際網路設定接收連接器以接收電子郵件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在大多數情況下，您不需要明確設定的接收連接器從網際網路接收郵件因為為接受來自網際網路的郵件的接收連接器隱含建立時的Exchange安裝。請參閱<a href="receive-connectors-exchange-2013-help.md">接收連接器</a>如需詳細資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在大多數情況下，您不需要明確設定的接收連接器從網際網路接收郵件因為為接受來自網際網路的郵件的接收連接器隱含建立時的Exchange安裝。請參閱<a href="receive-connectors-exchange-2013-help.md">接收連接器</a>如需詳細資訊。
+
+
 
 
 對於案例感興趣一角與使用此程序？請參閱下列主題：
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2012-10-15_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 EAC 來從網際網路建立接收連接器以接收郵件

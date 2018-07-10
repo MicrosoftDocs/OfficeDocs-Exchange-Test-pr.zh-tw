@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-02-15_
+_**上次修改主題的時間：** 2014-02-15_
 
 共用原則屬於同盟共用的一部份，可讓使用者自行建立，與不同類型的外部使用者對其行事曆資訊進行人員對人員共用。系統管理員套用至使用者信箱的共用原則可以判斷使用者可共用以及與誰共用的存取層級。如果您未做任何變更，則預設共用原則會套用到所有使用者。如果您建立新的共用原則，則必須將該原則套用至信箱，它才會生效。共用原則可套用於單一使用者信箱，也可同時套用於多個使用者信箱。系統管理員也可以停用使用者的共用原則，以防止外部存取行事曆。
 
@@ -85,16 +85,9 @@ _**上次修改主題的時間：**2014-02-15_
     
         Get-Mailbox <user name> | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

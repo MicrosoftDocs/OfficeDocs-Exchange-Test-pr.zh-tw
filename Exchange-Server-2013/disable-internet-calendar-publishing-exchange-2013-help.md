@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-02-15_
+_**上次修改主題的時間：** 2014-02-15_
 
 停用網際網路行事曆發佈的方法取決於您如何啟用它。如果您建立了網際網路行事曆發佈專用的共用原則，您可以停用該原則或將它一併刪除。如果您將網際網路行事曆發佈設定作為預設共用原則的共用規則，則只要從 \[匿名\] 網域中移除該共用規則即可。
 
 如果您停用網際網路行事曆發佈，佈建為使用該共用原則的使用者將無法與原則中指定的 \[匿名\] 網際網路網域共用行事曆資訊。但是，在佈建為使用共用原則的使用者將其信箱的原則設定移除之前，您無法刪除或停用該共用原則。如需與變更使用者之共用原則設定相關的詳細資訊，請參閱[管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您停用或刪除共用原則時，佈建為使用該原則的使用者將可繼續共用資訊，直到執行共用原則助理員為止。若要指定共用原則助理執行的頻率，請使用 <a href="https://technet.microsoft.com/zh-tw/library/aa998651(v=exchg.150)">Set-MailboxServer</a> 指令程式搭配 <em>SharingPolicySchedule</em> 參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您停用或刪除共用原則時，佈建為使用該原則的使用者將可繼續共用資訊，直到執行共用原則助理員為止。若要指定共用原則助理執行的頻率，請使用 <a href="https://technet.microsoft.com/zh-tw/library/aa998651(v=exchg.150)">Set-MailboxServer</a> 指令程式搭配 <em>SharingPolicySchedule</em> 參數。
+
+
 
 
 若要完全停用網際網路行事曆發佈，您還應停用用於行事曆發佈的 Outlook Web App 虛擬目錄。執行此作業將禁止存取 Exchange 組織使用者和外部網際網路使用者先前共用的已發佈行事曆連結。本主題稍後會詳述此步驟。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2014-02-15_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -105,34 +91,20 @@ _**上次修改主題的時間：**2014-02-15_
 
 如需詳細的語法及參數資訊，請參閱 [Get-SharingPolicy](https://technet.microsoft.com/zh-tw/library/dd335081\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 步驟 2：使用命令介面停用 Outlook Web App 虛擬目錄匿名功能
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來停用 Outlook Web App 虛擬目錄的「匿名」功能。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來停用 Outlook Web App 虛擬目錄的「匿名」功能。
+
+
 
 
 此範例會停用用戶端存取伺服器 CAS01 上 Outlook Web App 虛擬目錄的匿名功能。
@@ -149,16 +121,9 @@ _**上次修改主題的時間：**2014-02-15_
 
 如需詳細的語法及參數資訊，請參閱 [Get-OwaVirtualDirectory](https://technet.microsoft.com/zh-tw/library/aa998588\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2012-11-08_
+_**上次修改主題的時間：** 2012-11-08_
 
 Microsoft Exchange Server 2013安裝程式無法繼續因為它無法從本機伺服器移除使用者信箱資料庫不產生可能遺失資料。
 

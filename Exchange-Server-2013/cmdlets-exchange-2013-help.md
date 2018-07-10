@@ -13,42 +13,28 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 A *cmdlet*, pronounced "command-let", is the smallest unit of functionality in the Exchange Management Shell. Cmdlets resemble built-in commands in other shells, for example, the `dir` command found in `cmd.exe`. Like these familiar commands, cmdlets can be called directly from the command line in the Shell and run under the context of the Shell, not as a separate process.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Since Microsoft Exchange Server 2007, there have been changes to how Exchange 2013 uses cmdlets internally due to the use of Windows PowerShell remoting functionality. These changes have little to no impact on how you need to use cmdlets, but they may offer additional flexibility in how you manage your Exchange servers.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Since Microsoft Exchange Server 2007, there have been changes to how Exchange 2013 uses cmdlets internally due to the use of Windows PowerShell remoting functionality. These changes have little to no impact on how you need to use cmdlets, but they may offer additional flexibility in how you manage your Exchange servers.
+
+
 
 
 Cmdlets are usually designed around repetitive administrative tasks, and, in the Shell, several hundred cmdlets are provided for Exchange-specific management tasks. These cmdlets are available in addition to the non-Exchange system cmdlets included in the basic Windows PowerShell shell design. For information about how to open the Exchange Management Shell, see [開啟命令介面。](https://technet.microsoft.com/zh-tw/library/dd638134\(v=exchg.150\)).
 
 All cmdlets in the Shell are presented in verb-noun pairs. The verb-noun pair is always separated by a hyphen (-) without spaces, and the cmdlet nouns are always singular. Verbs refer to the action that the cmdlet takes. Nouns refer to the object on which the cmdlet takes action. For example, in the **Get-SystemMessage** cmdlet, the verb is **Get**, and the noun is **SystemMessage**. All Shell cmdlets that manage a specific feature share the same noun. The following table provides examples of some verbs available in the Shell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>By default, if the verb is omitted, the Shell assumes the <strong>Get</strong> verb. For example, when you call <strong>Mailbox</strong>, you retrieve the same results as when you call <strong>Get-Mailbox</strong>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> By default, if the verb is omitted, the Shell assumes the <strong>Get</strong> verb. For example, when you call <strong>Mailbox</strong>, you retrieve the same results as when you call <strong>Get-Mailbox</strong>.
+
+
 
 
 ### Examples of verbs in the Exchange Management Shell
@@ -76,18 +62,11 @@ All cmdlets in the Shell are presented in verb-noun pairs. The verb-noun pair is
 <tr class="odd">
 <td><p><strong>Get</strong></p></td>
 <td><p><strong>Get</strong> cmdlets retrieve information about a specific Exchange object.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Most <strong>Get</strong> cmdlets only return summary information when you run them. To tell the <strong>Get</strong> cmdlet to return verbose information when you run a command, pipe the command to the <strong>Format-List</strong> cmdlet. For more information about the <strong>Format-List</strong> command, see <a href="working-with-command-output-exchange-2013-help.md">使用命令輸出</a>. For more information about pipelining, see <a href="https://technet.microsoft.com/zh-tw/library/aa998260(v=exchg.150)">管線</a>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Most <strong>Get</strong> cmdlets only return summary information when you run them. To tell the <strong>Get</strong> cmdlet to return verbose information when you run a command, pipe the command to the <strong>Format-List</strong> cmdlet. For more information about the <strong>Format-List</strong> command, see <a href="working-with-command-output-exchange-2013-help.md">使用命令輸出</a>. For more information about pipelining, see <a href="https://technet.microsoft.com/zh-tw/library/aa998260(v=exchg.150)">管線</a>.
+
+
 
 </td>
 </tr>

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Exchange 中的郵件編碼選項指定郵件特性，例如 MIME 和非 MIME 字元集、二進位編碼和附件格式。您可以在下列位置指定郵件編碼選項：
 

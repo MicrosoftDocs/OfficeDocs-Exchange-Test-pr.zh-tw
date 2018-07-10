@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2014-11-05_
+_**上次修改主題的時間：** 2014-11-05_
 
 因為登入的使用者沒有必要的帳戶權限，無法安裝組織中的第一台 Exchange 2013 伺服器，所以 Microsoft Exchange Server 2013 安裝程式無法繼續。
 
 雖然 Exchange 2013 安裝程式允許使用委派來安裝後續的伺服器角色，但安裝程式要求在安裝組織中的第一台 Exchange 2013 伺服器時，登入使用者必須是 Enterprise Admins Windows 安全性群組的成員。這是因為 Exchange 2013 安裝程式在安裝期間需在 Active Directory 的 Exchange 組織容器中建立並設定物件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您先前尚未備妥 Exchange 2013 的 Active Directory 架構，則登入使用者也必須是 Schema Admins Windows 安全性群組的成員。或者，身為 Schema Admins Windows 群組成員的另一名使用者可以在安裝 Exchange 2013 前先備妥 Active Directory 架構。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若您先前尚未備妥 Exchange 2013 的 Active Directory 架構，則登入使用者也必須是 Schema Admins Windows 安全性群組的成員。或者，身為 Schema Admins Windows 群組成員的另一名使用者可以在安裝 Exchange 2013 前先備妥 Active Directory 架構。
+
+
 
 
 若要解決此問題，請將登入使用者加入 Enterprise Admins 安全性群組。或是以 Enterprise Admins 安全性群組成員的帳戶登入。然後再次執行 Exchange 2013 安裝程式。

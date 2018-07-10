@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-03-18_
+_**上次修改主題的時間：** 2016-03-18_
 
 自訂資料外洩防護 (DLP) 原則可讓您建立條件、 規則及動作，有助於符合貴組織的特定需求及其中可能未涵蓋的其中一個現有的 DLP 範本。
 
 您可以在單一原則中使用的規則條件包括除了[在 Exchange 中的敏感資訊類型外觀](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)所述的敏感資訊類型的所有傳統傳輸規則。如需傳輸規則的詳細資訊，請參閱[郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange 2013) 或[Exchange Online 中的郵件流程規則 (傳輸規則)](https://technet.microsoft.com/zh-tw/library/jj919238\(v=exchg.150\)) (Exchange Online)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您應該啟用 DLP 原則以測試模式執行它們在實際執行環境之前。期間這類測試，建議您設定範例使用者信箱並傳送測試郵件之測試原則以確認結果。如需測試的詳細資訊，請參閱<a href="test-a-mail-flow-rule-exchange-2013-help.md">測試郵件流程規則</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 您應該啟用 DLP 原則以測試模式執行它們在實際執行環境之前。期間這類測試，建議您設定範例使用者信箱並傳送測試郵件之測試原則以確認結果。如需測試的詳細資訊，請參閱<a href="test-a-mail-flow-rule-exchange-2013-help.md">測試郵件流程規則</a>。
+
+
 
 
 建立自訂的 DLP 原則相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-2013-help.md)(Exchange 2013) 或[\[Exchange Online\] 的 DLP 程序](https://technet.microsoft.com/zh-tw/library/jj938003\(v=exchg.150\)) (Exchange Online)。
@@ -47,32 +40,18 @@ _**上次修改主題的時間：**2016-03-18_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於客戶環境中的差異，Microsoft 客戶支援服務 (CSS) 無法參與開發或測試的自訂規則運算式指令碼 （&quot;RegEx 指令碼&quot;）。RegEX 自訂指令碼開發、 測試及偵錯時，Office 365 客戶必須依賴內部 IT 資源。或者，Office 365 客戶可以選擇使用外部諮詢資源如 Microsoft 諮詢服務 (ATL-MCS-001)。不論指令碼開發資源 CSS EXO 與 EOP 支援工程師不可用來協助客戶指令碼查詢的自訂 RegEx 相關。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 由於客戶環境中的差異，Microsoft 客戶支援服務 (CSS) 無法參與開發或測試的自訂規則運算式指令碼 （&quot;RegEx 指令碼&quot;）。RegEX 自訂指令碼開發、 測試及偵錯時，Office 365 客戶必須依賴內部 IT 資源。或者，Office 365 客戶可以選擇使用外部諮詢資源如 Microsoft 諮詢服務 (ATL-MCS-001)。不論指令碼開發資源 CSS EXO 與 EOP 支援工程師不可用來協助客戶指令碼查詢的自訂 RegEx 相關。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用 EAC 來建立不含任何現有規則的自訂 DLP 原則

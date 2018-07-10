@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 此頁面提供組態注意事項建立及測試Microsoft或 VoIP 閘道協力廠商的連結。Microsoft或協力廠商部署整合通訊與新的 VoIP 閘道及 PBX 或 IP PBX 組態，都記載的先決條件和組態設定。此資訊用來建立組態注意事項。
 

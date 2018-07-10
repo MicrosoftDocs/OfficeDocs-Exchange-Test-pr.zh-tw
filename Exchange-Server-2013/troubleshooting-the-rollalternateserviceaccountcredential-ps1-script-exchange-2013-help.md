@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-14_
+_**上次修改主題的時間：** 2015-01-14_
 
 本主題提供解決方案和使用 RollAlternateServiceAccountPassword.ps1 指令碼時可能發生的常見錯誤的相關資訊。
 
@@ -59,18 +59,11 @@ _**上次修改主題的時間：**2015-01-14_
 
 已移除 RPC Client Access 服務之後，伺服器不會傳回陣列成員身分的[Get-ClientAccessArray](https://technet.microsoft.com/zh-tw/library/dd297976\(v=exchg.150\))並將指令碼將不會目標它。一旦伺服器是一次正常運作，您可以重新使用**New-RpcClientAccess**指令程式來新增 RPC Client Access 服務。當重新加入 RPC Client Access 服務時，請務必重新啟動受影響的伺服器上的 Microsoft Exchange 通訊錄服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>從伺服器移除 RPC Client Access 服務之前，請參閱主題<a href="https://technet.microsoft.com/zh-tw/library/dd298151(v=exchg.150)">Remove-RPCClientAccess</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 從伺服器移除 RPC Client Access 服務之前，請參閱主題<a href="https://technet.microsoft.com/zh-tw/library/dd298151(v=exchg.150)">Remove-RPCClientAccess</a>。
+
+
 
 
 ## 相關資訊

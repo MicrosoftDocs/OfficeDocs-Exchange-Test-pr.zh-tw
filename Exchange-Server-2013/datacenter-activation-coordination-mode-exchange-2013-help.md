@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-07-14_
+_**上次修改主題的時間：** 2014-07-14_
 
 資料中心啟動協調 (DAC) 模式為資料庫可用性群組 (DAG) 的屬性。DAC 模式預設為停用但應啟用的所有 Dag 使用連續複寫的兩個或多個成員。不應該啟用使用協力廠商複寫模式，除非和協力廠商所指定的 Dag 的 DAC 模式。
 
@@ -41,18 +41,11 @@ DAC 模式用來控制啟動行為的 DAG 裝載資料庫。此控制項的設�
 
   - 如果 DACP 位元已設定的時間會比見證伺服器開機時間近，系統會假設 DAG 成員已重新開機因任何原因 (或許排定的維護已執行或許系統損毀或 power 中斷遺失 isolated 至 DAG 成員)，與 DAG 成員可裝載資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為見證伺服器的啟動時間用於判斷 DAG 成員是否可以在啟動時裝載作用中的資料庫，您應該永遠不重新啟動見證伺服器和唯一的 DAG 成員在同一時間。這麼可能會保持在其中它不能裝載狀態的 DAG 成員的資料庫上啟動。如果發生這種情況，您必須執行<a href="https://technet.microsoft.com/zh-tw/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a>指令程式在 DAG。這會重設為 DACP 元並允許 DAG 成員來裝載資料庫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 因為見證伺服器的啟動時間用於判斷 DAG 成員是否可以在啟動時裝載作用中的資料庫，您應該永遠不重新啟動見證伺服器和唯一的 DAG 成員在同一時間。這麼可能會保持在其中它不能裝載狀態的 DAG 成員的資料庫上啟動。如果發生這種情況，您必須執行<a href="https://technet.microsoft.com/zh-tw/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a>指令程式在 DAG。這會重設為 DACP 元並允許 DAG 成員來裝載資料庫。
+
+
 
 
 ## 其他的 DAC 模式的優點

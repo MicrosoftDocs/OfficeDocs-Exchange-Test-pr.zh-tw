@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-18_
+_**上次修改主題的時間：** 2013-02-18_
 
 連線記錄會記錄用來傳輸訊息從 Exchange 伺服器上傳輸服務的輸出連線活動。 連線記錄會記錄連線來源、 destination、 訊息與傳輸的位元組數目及連線失敗資訊。
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2013-02-18_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -69,17 +62,13 @@ _**上次修改主題的時間：**2013-02-18_
 
 本範例設定下列在名為 Mailbox01 的信箱伺服器上之傳輸服務之連線記錄檔設定：
 
-  -  
-    設定記錄檔位置的連線 D:\\Hub 連線記錄檔。請注意是否資料夾不存在，它會為您建立。
+  -  設定記錄檔位置的連線 D:\\Hub 連線記錄檔。請注意是否資料夾不存在，它會為您建立。
 
-  -  
-    將連線記錄檔案的最大大小設定為 20 MB。
+  -  將連線記錄檔案的最大大小設定為 20 MB。
 
-  -  
-    將連線記錄檔目錄的最大大小設定為1.5 GB。
+  -  將連線記錄檔目錄的最大大小設定為1.5 GB。
 
-  -  
-    將連線記錄檔案的最長期限設定為 45 天。
+  -  將連線記錄檔案的最長期限設定為 45 天。
 
 <!-- end list -->
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-20_
+_**上次修改主題的時間：** 2013-04-20_
 
 為組織部署所有必要的電話語音設備 (包括 VoIP 閘道、IP PBX 和具有 SIP 功能的 PBX 或 Microsoft Lync Server) 之後，您必須建立所有必要的整合通訊 (UM) 元件，讓您的電話語音裝置能夠與組織中的伺服器進行通訊。
 

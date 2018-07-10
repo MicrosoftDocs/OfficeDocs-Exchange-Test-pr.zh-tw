@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-08-13_
+_**上次修改主題的時間：** 2013-08-13_
 
 當您建立或移動信箱，或郵件啟用現有使用者時，該信箱必須存放在信箱資料庫中。在 Microsoft Exchange Server 2013 中，您可以選擇讓 Exchange 使用自動信箱發佈來為您選擇資料庫。
 
@@ -23,18 +23,11 @@ _**上次修改主題的時間：**2013-08-13_
 
 當您在 **New-Mailbox** 和 **Enable-Mailbox** 指令程式上未指定 *Database* 參數，或者未在 **New-MoveRequest** 指令程式上指定 *TargetDatabase* 參數時，會使用自動發佈。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有當信箱是在 Exchange 2013 伺服器上建立、移到 Exchange 2013 伺服器或者使用者已啟用郵件時，才會執行自動信箱發佈。<strong>New-Mailbox</strong>、<strong>New-MoveRequest</strong> 及 <strong>Enable-Mailbox</strong> Cmdlet 必須是從執行 Exchange 2013 的伺服器上執行。Exchange 不會自動根據伺服器負載，重新發佈信箱以將負載分散給各資料庫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 只有當信箱是在 Exchange 2013 伺服器上建立、移到 Exchange 2013 伺服器或者使用者已啟用郵件時，才會執行自動信箱發佈。<strong>New-Mailbox</strong>、<strong>New-MoveRequest</strong> 及 <strong>Enable-Mailbox</strong> Cmdlet 必須是從執行 Exchange 2013 的伺服器上執行。Exchange 不會自動根據伺服器負載，重新發佈信箱以將負載分散給各資料庫。
+
+
 
 
 可以使用下列處理程序來尋找其中具有新增或所移動信箱的合適信箱資料庫：
@@ -57,18 +50,11 @@ _**上次修改主題的時間：**2013-08-13_
 
 根據預設，自動信箱發佈可以選擇本機 Exchange 2013 站台之 Active Directory 伺服器上的所有連線及健全的信箱資料庫，以存放新的或移動的信箱。不過，您可能會基於各種原因，而從發佈處理程序中排除某些資料庫。例如，您可能將信箱資料庫指定為日誌資料庫，其中應該只有手動指定的信箱。或者，可能要從輪替中暫時移除資料庫，以執行排定的維護。Exchange 2013 會提供一些選項，讓您使用 *IsExcludedFromProvisioning* 參數 (可透過 **Set-MailboxDatabase** Cmdlet 加以設定) 從排除處理程序中永久或暫時排除資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 <strong>Set-MailboxDatabase</strong> Cmdlet 中還有另外兩個參數 (<em>IsSuspendedFromProvisioning</em> 和 <em>IsExcludedFromInitialProvisioning</em> ) 可用。後續的 Exchange 版本會移除這些參數，因此不支援使用這些參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 <strong>Set-MailboxDatabase</strong> Cmdlet 中還有另外兩個參數 (<em>IsSuspendedFromProvisioning</em> 和 <em>IsExcludedFromInitialProvisioning</em> ) 可用。後續的 Exchange 版本會移除這些參數，因此不支援使用這些參數。
+
+
 
 
 *IsExcludedFromProvisioning* 參數有兩個有效值：`$True` 和 `$False`。當您將此內容設定為 `$True` 時，此信箱資料庫便會排除在自動發佈處理程序之外。當您將此內容設定為 `$False` 時，此信箱資料庫便會納入到自動發佈處理程序中。預設值為 `$False`。

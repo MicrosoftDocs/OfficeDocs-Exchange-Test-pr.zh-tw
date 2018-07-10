@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-18_
+_**上次修改主題的時間：** 2014-06-18_
 
 您可以使用 Windows Server Backup 來備份及還原 Exchange 資料庫。Exchange 包含 Windows Server Backup 的外掛程式，可讓您製作和還原 Exchange 資料的大量陰影複製服務 (VSS) 型備份。如需詳細資訊，請參閱[使用 Windows Server Backup 備份及還原 Exchange 資料](using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md)。
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2014-06-18_
 
   - 還原資料庫到其原始位置時，資料庫可以維持在不正常關機狀態，並可由系統裝載。還原至替代位置時 (例如，為了準備使用復原資料庫)，必須使用 Exchange 伺服器資料庫公用程式 (Eseutil.exe)，手動讓資料庫進入正常關閉狀態。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用 Windows Server Backup 還原 Exchange 的備份

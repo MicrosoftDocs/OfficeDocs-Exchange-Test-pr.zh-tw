@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-12_
+_**上次修改主題的時間：** 2012-10-12_
 
 連接器會用來控制的 Microsoft Exchange Server 2013輸入及輸出郵件流程。與連接器，您可以路由傳送至郵件以及接收郵件的收件者到組織外，透過安全通道或郵件處理 appliance 協力廠商。
 

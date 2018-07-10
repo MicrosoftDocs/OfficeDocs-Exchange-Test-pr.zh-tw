@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 整合通訊 (UM) 及 Microsoft Lync Server 可部署在一起，為您組織中的使用者提供語音訊息、立即訊息、增強的使用者出席、視聽會議，以及整合的電子郵件和訊息使用體驗。整合通訊可用來提供自動語音答錄服務、Outlook 語音存取及自動語音應答服務。Microsoft Lync Server 提供 Enterprise Voice 更多進階功能，如立即訊息 (IM)、會議管理，以及撥入和撥出電話。本主題討論如何設定整合通訊及 Microsoft Lync Server 以支援這些功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Office Communications Server 2007 R2 也可以和整合通訊一起部署。本主題中，&amp;quot;Microsoft Lync Server&amp;quot; 係指 Microsoft Lync Server 2010 或 Microsoft Lync Server 2013。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> Microsoft Office Communications Server 2007 R2 也可以和整合通訊一起部署。本主題中，&amp;quot;Microsoft Lync Server&amp;quot; 係指 Microsoft Lync Server 2010 或 Microsoft Lync Server 2013。
+
+
 
 
 尋找 Microsoft Lync Server 的詳細資訊吗？請參閱[Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752)。
@@ -278,18 +271,11 @@ For more information
 
 設定好 Lync 伺服器和整合通訊伺服器之後，您必須讓使用者能夠使用 Lync 伺服器，以及將 Lync 伺服器安裝在使用者的用戶端電腦上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您在整合整合通訊與 Lync 伺服器時，信箱位於 Exchange 2007 或 Exchange 2010 信箱伺服器上的使用者無法使用未接來電通知。未接來電通知需於使用者在來電尚未傳送給信箱伺服器前中斷連接才可產生。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您在整合整合通訊與 Lync 伺服器時，信箱位於 Exchange 2007 或 Exchange 2010 信箱伺服器上的使用者無法使用未接來電通知。未接來電通知需於使用者在來電尚未傳送給信箱伺服器前中斷連接才可產生。
+
+
 
 
 回到頁首

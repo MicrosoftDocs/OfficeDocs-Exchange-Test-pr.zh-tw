@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 當您規劃整合通訊 (UM) 部署時，有許多能夠順利部署 UM，您必須考慮的因素。您必須了解整合通訊和每個元件和功能的不同的元素，您可以適當地規劃整合通訊基礎架構與部署。配置時間規劃及完成這些問題可協助您部署在組織中的 \[整合通訊時防止發生的問題。
 
@@ -79,18 +79,11 @@ Mailbox server 依賴用戶端存取伺服器轉送的 SIP 流量從來電然後
 
 如需 Microsoft Lync Server 的詳細資訊，查看[Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>規劃和部署整合通訊造成某些挑戰。根據您與 Exchange 和語音郵件系統的技術功能，可能會想要取得協助的整合通訊的專員。Exchange 整合通訊專家可協助確保已從舊版或協力廠商語音信箱系統順利地轉換到 Exchange 整合通訊。執行新部署或升級舊版的語音郵件系統要求 VoIP 閘道、 Pbx 和整合通訊相關的重要知識。如需如何連絡整合通訊的專員，請參閱<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 整合通訊 (UM) 專家</a>的詳細資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 規劃和部署整合通訊造成某些挑戰。根據您與 Exchange 和語音郵件系統的技術功能，可能會想要取得協助的整合通訊的專員。Exchange 整合通訊專家可協助確保已從舊版或協力廠商語音信箱系統順利地轉換到 Exchange 整合通訊。執行新部署或升級舊版的語音郵件系統要求 VoIP 閘道、 Pbx 和整合通訊相關的重要知識。如需如何連絡整合通訊的專員，請參閱<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 整合通訊 (UM) 專家</a>的詳細資訊。
+
+
 
 
 ## 部署步驟

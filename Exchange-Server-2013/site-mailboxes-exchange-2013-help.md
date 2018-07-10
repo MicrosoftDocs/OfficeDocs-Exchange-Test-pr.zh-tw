@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 傳統上兩個唯一與不同的資料存放庫中保留電子郵件和文件。大部分組織共同作業使用這兩種媒體。挑戰是確認電子郵件和文件會存取使用不同的用戶端。這通常會產生減少使用者產能與效能降低的使用者經驗。
 
@@ -87,7 +87,7 @@ Site mailbox provisioning policies
 
 透過 SharePoint 管理的站台信箱生命週期。它會透過 SharePoint 您應該執行建立以及移除站台信箱的所有網站信箱工作。此外，您可以建立 SharePoint 生命週期原則來管理網站信箱的生命週期。例如，您可以建立生命週期原則自動 6 個月之後關閉所有站台信箱的 SharePoint 中。如果使用者仍然需要使用站台信箱，使用者可以重新啟用透過 SharePoint 網站信箱。我們建議您使用是在伺服器陣列中的應用程式生命週期。以手動方式刪除作用中網站信箱從 Exchange 會導致孤立的網站信箱。.
 
-當 SharePoint 中的技術支援週期應用程式會關閉站台信箱時，站台信箱會保留上文生命週期原則處於關閉狀態的期間。由使用者或管理員從 SharePoint 再重新啟用信箱。保留期間之後存放信箱資料庫中的 Exchange 網站信箱必須與加其名稱**MDEL:**指出其具有已標記為刪除。您必須手動移除這些站台信箱的信箱資料庫以免費的儲存空間及別名。如果您不需要啟用 SharePoint 生命週期原則，您將會失去來決定哪一個站台信箱已標記為待刪除的能力。已由系統管理員移除站台信箱，為仍可復原的信箱內容。
+當 SharePoint 中的技術支援週期應用程式會關閉站台信箱時，站台信箱會保留上文生命週期原則處於關閉狀態的期間。由使用者或管理員從 SharePoint 再重新啟用信箱。保留期間之後存放信箱資料庫中的 Exchange 網站信箱必須與加其名稱**MDEL:** 指出其具有已標記為刪除。您必須手動移除這些站台信箱的信箱資料庫以免費的儲存空間及別名。如果您不需要啟用 SharePoint 生命週期原則，您將會失去來決定哪一個站台信箱已標記為待刪除的能力。已由系統管理員移除站台信箱，為仍可復原的信箱內容。
 
 可使用下列命令來搜尋並移除已標記為待刪除的網站信箱。
 
@@ -99,18 +99,11 @@ Site mailbox provisioning policies
 
 在 SharePoint 中使用 eDiscovery 主控台，站台信箱可以屬於就地 eDiscovery 範圍和您可以針對使用者信箱或站台信箱的關鍵字搜尋。此外，您可以將站台信箱置於法務保存措施。如需詳細資訊，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>網站信箱置於Office 365中的合法持有，它必須被指派Exchange Online (Plan 2) 授權。如果站台信箱指派Exchange Online (計劃 1) 授權，您必須將它放在不同Exchange Online封存授權保留指派。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 網站信箱置於Office 365中的合法持有，它必須被指派Exchange Online (Plan 2) 授權。如果站台信箱指派Exchange Online (計劃 1) 授權，您必須將它放在不同Exchange Online封存授權保留指派。
+
+
 
 
 回到頁首

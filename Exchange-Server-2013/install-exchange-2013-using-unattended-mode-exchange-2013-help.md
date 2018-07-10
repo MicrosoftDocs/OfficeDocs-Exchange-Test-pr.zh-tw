@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-06-19_
+_**上次修改主題的時間：** 2014-06-19_
 
 若要執行自動安裝，則必須從命令提示字元安裝 Microsoft Exchange Server 2013。如需規劃與部署 Exchange 2013 的相關資訊，請參閱[規劃及部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 
 建議將 Edge Transport role 安裝在組織內部 Active Directory 樹系外的周邊網路中。雖然可以將 Edge Transport server role 安裝在加入網域的電腦上，但這樣只會啟用 Windows 功能和設定的網域管理。Edge Transport role 本身不使用 Active Directory。反之，它使用 Active Directory 輕量型目錄服務 (AD LDS) Windows 功能和儲存組態和收件者資訊。如需 Edge Transport role 的詳細資訊，請參閱＜[Edge Transport Server](edge-transport-servers-exchange-2013-help.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您是否曾聽過 Exchange Server 部署助理？這是一項免費的線上工具，該工具會詢問您一些問題並特別為您建立一份自訂的部署檢查清單，以協助您在組織中快速部署 Exchange 2013。若想要深入了解，請移至 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您是否曾聽過 Exchange Server 部署助理？這是一項免費的線上工具，該工具會詢問您一些問題並特別為您建立一份自訂的部署檢查清單，以協助您在組織中快速部署 Exchange 2013。若想要深入了解，請移至 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
+
+
 
 
 <table>
@@ -64,18 +57,11 @@ Edge Transport role 不能與 Mailbox 或 Client Access server role 安裝在相
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在伺服器上安裝 Exchange 之後，就不得變更伺服器名稱。在安裝 Exchange 伺服器角色之後，就不支援重新命名伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 在伺服器上安裝 Exchange 之後，就不得變更伺服器名稱。在安裝 Exchange 伺服器角色之後，就不支援重新命名伺服器。
+
+
 
 
 下列資訊適用於 Exchange 2013 Mailbox 和 Client Access server role。
@@ -104,18 +90,11 @@ Edge Transport role 不能與 Mailbox 或 Client Access server role 安裝在相
 
 ## 在自動模式中使用 Setup.exe 安裝 Exchange 2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要下載最新版本的 Exchange 2013，請參閱＜<a href="updates-for-exchange-2013-exchange-2013-help.md">更新 Exchange 2013</a>＞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要下載最新版本的 Exchange 2013，請參閱＜<a href="updates-for-exchange-2013-exchange-2013-help.md">更新 Exchange 2013</a>＞。
+
+
 
 
 1.  登入要在其上安裝 Exchange 2013 的電腦。

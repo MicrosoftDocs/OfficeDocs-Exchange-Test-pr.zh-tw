@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-14_
+_**上次修改主題的時間：** 2015-01-14_
 
 您可以在 Microsoft Exchange Server 2013 外部開發防止資料遺失 (DLP) 原則範本做為 XML 檔案，然後使用 Exchange 系統管理中心或 Exchange 管理命令介面匯入這些檔案。本節說明撰寫及調整 DLP XML 檔案以用於 DLP 解決方案的程序和詳細資訊。您不需要自行開發 DLP XML 檔案，因為 Exchange 系統管理中心提供用於掃描郵件的現有 DLP 原則範本和傳輸規則，供您快速入門。
 
@@ -36,18 +36,11 @@ Exchange Online：DLP 是付費功能，需要 Exchange Online 計劃 2 授權�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文不涵蓋推薦業務模式、檔案封裝的相關資訊或敏感資訊規則的部署方針，或討論如何散佈這些規則。此外，本文也不討論自訂開發規則的保護機制 (例如加密)，以及如何應用此類機制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 本文不涵蓋推薦業務模式、檔案封裝的相關資訊或敏感資訊規則的部署方針，或討論如何散佈這些規則。此外，本文也不討論自訂開發規則的保護機制 (例如加密)，以及如何應用此類機制。
+
+
 
 
 ## 擴充資訊類型，以滿足您的需求

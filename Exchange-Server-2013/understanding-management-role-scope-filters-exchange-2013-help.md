@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 管理角色範圍篩選器可以用來定義是高度可自訂的管理範圍。您可以使用範圍篩選器來建立範圍符合如何您分割您的收件者、 資料庫及伺服器，讓系統管理員能夠管理應該具有存取權的物件。範圍篩選器可以使用幾乎任何收件者、 資料庫或伺服器的物件屬性。
 
@@ -110,18 +110,11 @@ _**上次修改主題的時間：**2015-03-09_
 <td><p>Sales (True)</p></td>
 <td><p>IT Manager (True)</p></td>
 <td><p>因為<strong>Title</strong>評估為 True，則為 true。因為<strong>Title</strong>會評估為 True，滿足篩選查詢條件則會捨棄<strong>City</strong>和<strong>Department</strong>比較的結果。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IT Manager 符合篩選器查詢條件，因為已使用 <strong>Like</strong> 比較運算子，其符合當篩選器查詢中使用萬用字元 (*) 時的部分字串。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> IT Manager 符合篩選器查詢條件，因為已使用 <strong>Like</strong> 比較運算子，其符合當篩選器查詢中使用萬用字元 (*) 時的部分字串。
+
+
 
 </td>
 </tr>

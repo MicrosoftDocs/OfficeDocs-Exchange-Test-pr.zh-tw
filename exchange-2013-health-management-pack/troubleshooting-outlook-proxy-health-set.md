@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 ECP.Proxy 健全設定會對 Client Access Server (CAS) 上的 Outlook 無所不在 Proxy 基礎結構進行可用性監視。
 

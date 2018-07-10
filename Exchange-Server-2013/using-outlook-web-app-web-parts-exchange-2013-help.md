@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-07-31_
+_**上次修改主題的時間：** 2015-07-31_
 
 您可使用MicrosoftOfficeOutlook Web App指定開啟信箱的網頁組件、 開啟、，信箱內的資料夾和內容檢視可使用。
 
 Outlook Web App網頁組件可讓您直接從 URL 存取Outlook Web App內容。可以輸入至網頁瀏覽器或內嵌於應用程式 URL。一般而言，未手動建立網頁組件。而它們根據，建立以程式設計方式進行使用者介面 (UI) 中的選取範圍或他們正在內嵌直接在 SharePoint Server\] 頁面等的應用程式中。程式碼後置 UI 接著會建立 URL。一個用於Outlook Web App網頁組件是在 SharePoint 頁面上顯示使用者的收件匣或行事曆。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在相同的Active Directory樹系中必須位於使用者的信箱與信箱正在開啟透過網頁組件使用Outlook Web App網頁組件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在相同的Active Directory樹系中必須位於使用者的信箱與信箱正在開啟透過網頁組件使用Outlook Web App網頁組件。
+
+
 
 
 ## 使用 Outlook Web Access 網頁組件的權限
@@ -123,18 +116,11 @@ Outlook Web App網頁組件可用來建立不同的複雜性的 Url。簡單的�
 <li><p>每日的行事曆</p></li>
 <li><p>郵件的郵件</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>預設檢視的字串就會自動編碼的 URL。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 預設檢視的字串就會自動編碼的 URL。
+
+
 
 <p>檢視預設排序是會排序資料夾，如果從中開啟Outlook Web App用戶端中的方式。</p>
 <p>用於識別檢視字串不當地語系化並不區分大小寫。</p></td>
@@ -185,11 +171,11 @@ Outlook Web App網頁組件可以是也可手動輸入網頁瀏覽器中。例�
 
 下列範例顯示如何直接存取一般的 Outlook Web App 檢視︰
 
-  - **收件匣：** https://*\<server name\>*/owa/?cmd = 內容模組 = 收件匣
+  - **收件匣：**  https://*\<server name\>*/owa/?cmd = 內容模組 = 收件匣
 
-  - **行事曆 （今天）：**https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆 exsvurl = 1
+  - **行事曆 （今天）：** https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆 exsvurl = 1
 
-  - **行事曆 （每週）：** https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆檢視 = 每週 exsvurl = 1
+  - **行事曆 （每週）：**  https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆檢視 = 每週 exsvurl = 1
 
   - **（每月） 的行事曆︰** https://*\<server name\>*/owa/?cmd = 內容模組 = 行事曆檢視 = 月 exsvurl = 1
 

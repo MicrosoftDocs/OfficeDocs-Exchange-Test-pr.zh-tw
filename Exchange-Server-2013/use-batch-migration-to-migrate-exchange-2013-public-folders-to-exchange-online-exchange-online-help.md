@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**上次修改主題的時間：**2018-03-26_
+_**上次修改主題的時間：** 2018-03-26_
 
-**摘要：** 本文會告訴您如何從 Exchange 2013 的現代的公用資料夾移至 Office 365。
+**摘要：**  本文會告訴您如何從 Exchange 2013 的現代的公用資料夾移至 Office 365。
 
 將您的 Exchange 2013 公用資料夾遷移至 Exchange Online 需要 Exchange Server 2013 CU15 或更新版本執行內部部署環境中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您組織中有 Exchange 2013 和 Exchange 2016 的公用資料夾與您想要移往所有 Exchange Online，使用<a href="https://go.microsoft.com/fwlink/p/?linkid=845314">本文的 Exchange 2016 版本</a>來規劃及執行移轉。Exchange 2013 伺服器仍需要有 CU15 或稍後安裝。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您組織中有 Exchange 2013 和 Exchange 2016 的公用資料夾與您想要移往所有 Exchange Online，使用<a href="https://go.microsoft.com/fwlink/p/?linkid=845314">本文的 Exchange 2016 版本</a>來規劃及執行移轉。Exchange 2013 伺服器仍需要有 CU15 或稍後安裝。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -77,18 +70,11 @@ _**上次修改主題的時間：**2018-03-26_
 
   - 開始之前，請閱讀本文全文。某些步驟有所需的停機時間。在此停機時間、 期間將無法人都能夠存取公用資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 步驟 1： 下載移轉指令碼
@@ -137,7 +123,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName <target domain> -DomainType InternalRelay
     
-    **範例：**
+    **範例：** 
     
         New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName "contoso.mail.onmicrosoft.com" -DomainType InternalRelay
     
@@ -320,7 +306,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         .\Export-ModernPublicFolderStatistics.ps1 <Folder-to-size map path>
     
-    **範例：**
+    **範例：** 
     
         .\Export-ModernPublicFolderStatistics.ps1 stats.csv
 
@@ -349,22 +335,15 @@ _**上次修改主題的時間：**2018-03-26_
     
       - `Folder-to-mailbox map path`是您要在此步驟中建立資料夾至信箱.csv 檔案的檔案路徑。如果您只指定的檔案名稱，該檔案會產生於本機電腦的目前 PowerShell 目錄中。
 
-**範例：**
+**範例：** 
 
     .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們不支援將公用資料夾遷移至 Exchange Online 的 Exchange Online 中的唯一的公用資料夾信箱數目時超過 100。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們不支援將公用資料夾遷移至 Exchange Online 的 Exchange Online 中的唯一的公用資料夾信箱數目時超過 100。
+
+
 
 
 ## 步驟 4： 在 Exchange Online 中建立公用資料夾信箱
@@ -567,7 +546,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         Add-RecipientPermission -Identity <mail-enabled public folder primary SMTP address> -Trustee <name of user to be assigned permission> -AccessRights SendAs
     
-    **範例：**
+    **範例：** 
     
         Add-RecipientPermission -Identity send1 -Trustee Exo1 -AccessRights SendAs
     
@@ -575,7 +554,7 @@ _**上次修改主題的時間：**2018-03-26_
     
         Set-MailPublicFolder -Identity <name of public folder> -GrantSendOnBehalfTo <user or comma-separated list of users>
     
-    **範例：**
+    **範例：** 
     
         Set-MailPublicFolder send2 -GrantSendOnBehalfTo exo1,exo2
 

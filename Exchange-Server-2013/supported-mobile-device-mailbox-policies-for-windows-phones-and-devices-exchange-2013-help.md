@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 使用 Windows Phone 8、 Windows 8 和 Windows RT 的版本，有支援 Exchange ActiveSync 和行動裝置信箱原則的裝置數目。每個裝置作業系統支援一組特定的行動裝置信箱原則設定。
 

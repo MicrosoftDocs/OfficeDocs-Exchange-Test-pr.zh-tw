@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 您可以識別根據其語法的自訂的傳遞狀態通知 (DSN) 郵件。Identity 為自訂的 DSN 郵件的 GUID 或下列值所組成的字串：
 

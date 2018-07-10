@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 設定共用和協同作業功能所需的權限而異正在執行的程序或您想要執行此指令程式。如需共用和協同作業的詳細資訊，請參閱[共同作業](collaboration-exchange-2013-help.md)和[共用](sharing-exchange-2013-help.md)。
 

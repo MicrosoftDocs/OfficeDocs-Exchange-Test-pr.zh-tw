@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-01-30_
+_**上次修改主題的時間：** 2013-01-30_
 
 [從已驗證的來電者設定受保護的語音信箱](configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md)
 

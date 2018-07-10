@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Communications Server 2007 R2 和 Lync Server 提供許多使用者功能，包括立即訊息 (IM)、 目前狀態、 多方 IM 和其語音信箱功能整合與 Exchange 整合通訊 (UM)。整合 Lync Server 2010 或 2013年的部署，使用者可以啟用 Enterprise voice，可讓使用者啟用語音信箱存取其語音郵件使用 Lync Server 元件。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題說明如何使用 Telnet 來測試郵件伺服器之間的簡易郵件傳送通訊協定 (SMTP) 通訊。SMTP 預設會接聽通訊埠 25。如果您在通訊埠 25 上使用 Telnet，則可輸入用來連接 SMTP 伺服器的 SMTP 命令，並將您的 Telnet 工作階段當成 SMTP 郵件伺服器一樣來傳送郵件。您可以查看連線以及郵件提交程序中每個步驟的成敗。
 
@@ -39,18 +39,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -95,18 +88,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 5.  準備結束 Nslookup 工作階段時，請輸入 **exit**，然後按 ENTER 鍵。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在組織內部網路上設定的防火牆或網際網路 Proxy 限制，可能會阻擋您使用 Nslookup 工具查詢網際網路上的公用 DNS 伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在組織內部網路上設定的防火牆或網際網路 Proxy 限制，可能會阻擋您使用 Nslookup 工具查詢網際網路上的公用 DNS 伺服器。
+
+
 
 
 ## 步驟 3：在通訊埠 25 上使用 Telnet 測試 SMTP 通訊
@@ -232,18 +218,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 **可能的失敗原因**   網域名稱中有無效字元。或者，目的 SMTP 伺服器上有連線限制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EHLO 是 RFC 2821 中定義的延伸簡易郵件傳送通訊協定 (ESMTP) 動詞。ESMTP 伺服器會在初始連線期間通告其功能。這些功能包括其可接受的最大郵件大小，以及所支援的驗證方法。HELO 是 RFC 821 中定義的舊 SMTP 動詞。大部分 SMTP 郵件伺服器都支援 ESMTP 及 EHLO。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> EHLO 是 RFC 2821 中定義的延伸簡易郵件傳送通訊協定 (ESMTP) 動詞。ESMTP 伺服器會在初始連線期間通告其功能。這些功能包括其可接受的最大郵件大小，以及所支援的驗證方法。HELO 是 RFC 821 中定義的舊 SMTP 動詞。大部分 SMTP 郵件伺服器都支援 ESMTP 及 EHLO。
+
+
 
 
 ## MAIL FROM:chris@contoso.com

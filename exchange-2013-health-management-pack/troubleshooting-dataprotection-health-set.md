@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 DataProtection 健全設定會監視資料庫可用性群組 (DAG) 中各資料庫的備援性。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-12_
+_**上次修改主題的時間：** 2012-10-12_
 
 寄件者篩選都十分仰賴 MAIL FROM： 要決定何種巨集指令，才會內送的電子郵件上的任何 SMTP 標頭。寄件者篩選是由寄件者篩選器代理程式所提供。
 
@@ -27,18 +27,11 @@ _**上次修改主題的時間：**2012-10-12_
 
 您可以指定 \[封鎖的寄件者及定義對自封鎖的寄件者的郵件寄件者篩選器代理程式應該採取的動作。如需如何設定寄件者篩選器代理程式的詳細資訊，請參閱[管理寄件者篩選](manage-sender-filtering-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MAIL FROM： 可以詐騙 SMTP 標頭。因此，您不應該依賴僅寄件者篩選器代理程式。搭配使用寄件者篩選器代理程式和寄件者識別碼代理程式。寄件者識別碼代理程式使用傳送伺服器的原始 IP 位址來確認網域中 MAIL FROM: SMTP 標頭符合註冊的網域。如需寄件者識別碼代理程式的詳細資訊，請參閱<a href="sender-id-exchange-2013-help.md">寄件者識別碼</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> MAIL FROM： 可以詐騙 SMTP 標頭。因此，您不應該依賴僅寄件者篩選器代理程式。搭配使用寄件者篩選器代理程式和寄件者識別碼代理程式。寄件者識別碼代理程式使用傳送伺服器的原始 IP 位址來確認網域中 MAIL FROM: SMTP 標頭符合註冊的網域。如需寄件者識別碼代理程式的詳細資訊，請參閱<a href="sender-id-exchange-2013-help.md">寄件者識別碼</a>。
+
+
 
 
 ## 使用寄件者篩選器代理程式封鎖郵件

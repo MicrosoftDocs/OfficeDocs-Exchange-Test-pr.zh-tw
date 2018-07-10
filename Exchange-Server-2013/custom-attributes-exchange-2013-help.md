@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-17_
+_**上次修改主題的時間：** 2012-10-17_
 
 Microsoft Exchange Server 2013 包含 15 部署擴充屬性。您可以使用這些屬性来新增的收件者，例如 「 員工識別碼、 組織單位 (OU) 或現有的屬性並未一些其他自訂值的相關資訊。這些自訂屬性會在Active Directory標示為透過**ms-Exch-Extension-Attribute15ms-Exch-Extension-Attribute1** 。Exchange管理命令介面，在對應的參數會是透過*CustomAttribute15CustomAttribute1* 。這些屬性不使用任何Exchange元件。因此可用來儲存Active Directory資料不必擴充Active Directory結構描述。
 
@@ -65,18 +65,11 @@ Custom attribute example with ExtensionCustomAttributes parameter
 
 在許多Exchange部署中，建立的 OU 中的所有收件者的電子郵件地址原則是常見的案例。OU 不是可在電子郵件地址原則或通訊清單的*RecipientFilter*參數可篩選屬性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>動態通訊群組有額外的參數可用於將它限制在特定 OU 或容器的收件者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 動態通訊群組有額外的參數可用於將它限制在特定 OU 或容器的收件者。
+
+
 
 
 如果該 OU 中的收件者未共用任何進行篩選時可依據的共同內容，例如部門或位置，則您可使用共同的值填入其中一個自訂屬性，如此範例所示。
@@ -95,18 +88,11 @@ Custom attribute example with ExtensionCustomAttributes parameter
 
     New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用<em>IncludedRecipients</em>參數如果您使用<em>Conditional</em>參數。此外，您無法使用<em>Conditional</em>參數若您使用<em>RecipientFilter</em>參數。如果您想要包含其他篩選器來建立動態通訊群組中，電子郵件地址原則或通訊清單，您應該使用<em>RecipientFilter</em>參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須使用<em>IncludedRecipients</em>參數如果您使用<em>Conditional</em>參數。此外，您無法使用<em>Conditional</em>參數若您使用<em>RecipientFilter</em>參數。如果您想要包含其他篩選器來建立動態通訊群組中，電子郵件地址原則或通訊清單，您應該使用<em>RecipientFilter</em>參數。
+
+
 
 
 ## 使用 ExtensionCustomAttributes 參數自訂屬性範例

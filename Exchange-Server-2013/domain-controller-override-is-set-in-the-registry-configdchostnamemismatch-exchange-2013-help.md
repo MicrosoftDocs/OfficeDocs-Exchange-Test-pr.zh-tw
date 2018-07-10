@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-15_
+_**上次修改主題的時間：** 2016-12-15_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -27,5 +27,5 @@ Exchange 2007 的安裝程式需要在 setup 命令中指定的網域控制站�
 
 若要一次解決這個問題，執行安裝程式，指定的靜態對應的網域控制站**/DomainController: \<***FQDN of thestatically mapped domain controller***\>**參數。
 
-如需 DSAccess 與目錄服務偵測，請參閱 Microsoft 知識庫文章 250570，"目錄服務伺服器偵測及 DSAccess 使用量"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=250570)) 的詳細資訊。
+如需 DSAccess 與目錄服務偵測，請參閱 Microsoft 知識庫文章 250570，"目錄服務伺服器偵測及 DSAccess 使用量"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)) 的詳細資訊。
 

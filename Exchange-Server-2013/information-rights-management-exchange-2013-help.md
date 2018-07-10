@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 資訊工作者每天都會使用電子郵件來交換機密資訊，例如財務報表和資料、法律合約、機密產品資訊、銷售報告和預測、競爭分析、研究和專利資訊，以及客戶和員工資訊。由於人員現在幾乎可從任何位置存取其電子郵件，因此信箱已轉換為包含大量潛在機密資訊的存放庫。因此，資訊外洩可能會對組織造成嚴重威脅。為了防止資訊外洩，Microsoft Exchange Server 2013 包含資訊版權管理 (IRM) 功能，可針對電子郵件訊息和附件提供持續性的線上和離線保護。
 
@@ -103,18 +103,11 @@ Extend Rights Management with the Rights Management connector
 
 AD RMS 使用以可延伸版權標記語言 (XrML) 為基礎的憑證和授權，來認證電腦和使用者並保護內容。使用 AD RMS 來保護文件或郵件等內容時，會附加 XrML 授權，其中包含授權使用者對該內容所擁有的權限。若要存取受 IRM 保護的內容，已啟用 AD RMS 的應用程式必須為 AD RMS 叢集中的授權使用者取得使用授權。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，Prelicensing 代理程式會將使用授權附加至使用組織中的 AD RMS 叢集來保護的郵件。如需相關資訊，請參閱本主題稍後的Prelicensing。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2013 中，Prelicensing 代理程式會將使用授權附加至使用組織中的 AD RMS 叢集來保護的郵件。如需相關資訊，請參閱本主題稍後的Prelicensing。
+
+
 
 
 用來建立內容的應用程式必須已啟用 RMS，才能使用 AD RMS 對內容套用持續性的保護。Microsoft Office 應用程式 (如 Word、Excel、PowerPoint 和 Outlook) 已啟用 RMS，可用來建立和取用受保護的內容。
@@ -269,18 +262,11 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 
 在 Exchange 2013 中，已使用信箱伺服器之傳輸服務中的傳輸代理程式啟用 IRM 功能。IRM 代理程式會由 Exchange 安裝程式在信箱伺服器上安裝。您無法使用傳輸代理程式的管理工作來控制 IRM 代理程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，IRM 代理程式是內建代理程式。內建代理程式不包含在 <strong>Get-TransportAgent</strong> 指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2013 中，IRM 代理程式是內建代理程式。內建代理程式不包含在 <strong>Get-TransportAgent</strong> 指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。
+
+
 
 
 下表列出了信箱伺服器的傳輸服務中實作的 IRM 代理程式。
@@ -355,7 +341,7 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 <tr class="odd">
 <td><p>AD RMS 叢集</p></td>
 <td><ul>
-<li><p><strong>作業系統</strong>   需要 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2 (具備 Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973247">Windows Server 2008 中的 Active Directory Rights Management Services 角色</a>)。</p></li>
+<li><p><strong>作業系統</strong>   需要 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2 (具備 Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Windows Server 2008 中的 Active Directory Rights Management Services 角色</a>)。</p></li>
 <li><p><strong>服務連線點</strong>   Exchange 2010和 AD RMS 感知應用程式使用Active Directory中登錄的服務連線點來探索 AD RMS 叢集與 Url。AD RMS 可讓您以登錄服務連線點從 AD RMS 安裝程式中。如果用來設定 AD RMS 的帳戶不是 Enterprise Admins 安全性群組的成員，服務連線點註冊可以執行安裝程式完成後。沒有 AD RMS Active Directory樹系中只有一個服務連線點。</p></li>
 <li><p><strong>權限</strong>   必須指派 AD RMS 伺服器憑證管線 (AD RMS 伺服器上的 <code>ServerCertification.asmx</code> 檔案) 的讀取和執行權限給下列項目：</p>
 <ul>
@@ -370,7 +356,7 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>Exchange 2010或更新版本，則需要。</p></li>
-<li><p>Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973136">FIX：當 .NET Framework 2.0 SP2 型應用程式嘗試處理非同步 ASP.NET Web 服務要求的零長度內容回應時，傳回 ArgumentNullException 例外狀況錯誤訊息：「值不能為 null」</a> 建議用於 Microsoft .NET Framework 2.0 SP2。</p></li>
+<li><p>Hotfix <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">FIX：當 .NET Framework 2.0 SP2 型應用程式嘗試處理非同步 ASP.NET Web 服務要求的零長度內容回應時，傳回 ArgumentNullException 例外狀況錯誤訊息：「值不能為 null」</a> 建議用於 Microsoft .NET Framework 2.0 SP2。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -390,32 +376,18 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>AD RMS叢集</em>這個詞彙是用來描述組織中的 AD RMS 部署，包括單一伺服器部署。AD RMS 是一種 Web 服務。該服務不需要您設定 Windows Server 容錯移轉叢集。為達到高可用性與負載平衡，您可在叢集中部署多個 AD RMS 伺服器，並使用網路負載平衡。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <em>AD RMS叢集</em>這個詞彙是用來描述組織中的 AD RMS 部署，包括單一伺服器部署。AD RMS 是一種 Web 服務。該服務不需要您設定 Windows Server 容錯移轉叢集。為達到高可用性與負載平衡，您可在叢集中部署多個 AD RMS 伺服器，並使用網路負載平衡。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在實際執行環境中，不支援將 AD RMS 和 Exchange 安裝在相同的伺服器上。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!IMPORTANT]  
+> 在實際執行環境中，不支援將 AD RMS 和 Exchange 安裝在相同的伺服器上。
+
+
 
 
 Exchange 2013Microsoft Office 檔案格式支援的 IRM 功能。您可以藉由部署自訂保護裝置延長 IRM 保護為其他檔案格式。更多自訂保護裝置的相關資訊，如資訊保護及控制協力廠商的[獨立軟體廠商](https://go.microsoft.com/fwlink/p/?linkid=210336)。

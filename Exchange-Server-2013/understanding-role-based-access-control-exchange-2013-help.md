@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-01-31_
+_**上次修改主題的時間：** 2018-01-31_
 
 *Role Based Access Control*(RBAC) 是 Microsoft Exchange Server 2013中所使用的權限模型。與 RBAC，您不需要修改和管理存取控制清單 (Acl)，其中已完成Exchange Server 2007中。Acl Exchange 2007，例如而導致非預期的後果、 維護 ACL 修改透過升級，以及疑難排解問題發生因為使用 Acl 的非標準的方式修改 Acl 中建立數個挑戰。
 
@@ -23,18 +23,11 @@ RBAC 可讓您控制，在這兩種列出與細微的層級、 哪些系統管�
 
 RBAC 有兩種權限指派給您的組織根據使用者是系統管理員或專家使用者的使用者的主要方法： 管理角色群組和管理角色指派原則。每一種方法會執行其工作所需的權限與關聯的使用者。第三個、 更進階方法會直接使用者角色指派，也可以使用。本主題中的下列各節說明 RBAC 並提供其使用的範例。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。
+
+
 
 
 **目錄**
@@ -133,18 +126,11 @@ Jane 為中等大小的 Contoso 公司的管理員。她負責管理其溫哥華
 
 除了收件者管理 -溫哥華自訂角色群組、 Jane 也需要管理自己的信箱組態設定的角色指派原則。組織系統管理員已決定的所有使用者，但不包括資深管理相同的權限時都收到他們管理自己的信箱。它們可設定其語音信箱、 設定保留原則及變更其地址資訊。預設角色指派原則隨附於Exchange 2013現在會反映這些需求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可能已經注意到 Jane 由於收件者管理 -溫哥華自訂角色群組的成員，應給其管理自己的信箱的權限。這是 true;不過，角色群組不提供其所有管理功能的使用者信箱的所有必要的權限。管理語音信箱所需的權限和保留原則設定都包含在其角色群組。這些提供只能由預設角色指派原則指派給他。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您可能已經注意到 Jane 由於收件者管理 -溫哥華自訂角色群組的成員，應給其管理自己的信箱的權限。這是 true;不過，角色群組不提供其所有管理功能的使用者信箱的所有必要的權限。管理語音信箱所需的權限和保留原則設定都包含在其角色群組。這些提供只能由預設角色指派原則指派給他。
+
+
 
 
 若要允許這，請考慮角色群組中，透過溫哥華收件者提供 Jane 的管理權限：

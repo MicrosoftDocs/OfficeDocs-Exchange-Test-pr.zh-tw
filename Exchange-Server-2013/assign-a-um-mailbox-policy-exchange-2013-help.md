@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-11-30_
+_**上次修改主題的時間：** 2012-11-30_
 
 當您啟用使用者的整合通訊 (UM) 和語音信箱時，您必須選取要與使用者的信箱建立關聯的 UM 信箱原則。您可以變更之後已啟用 um 的使用者與使用者的信箱關聯的 UM 信箱原則。
 
@@ -27,18 +27,11 @@ _**上次修改主題的時間：**2012-11-30_
 
   - 其他一般 UM 信箱原則屬性
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每次您建立 UM 撥號對應表建立預設的 UM 信箱原則。您可以刪除預設的 UM 信箱原則或建立額外的 UM 信箱原則根據組織的需求。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 每次您建立 UM 撥號對應表建立預設的 UM 信箱原則。您可以刪除預設的 UM 信箱原則或建立額外的 UM 信箱原則根據組織的需求。
+
+
 
 
 如需與啟用語音信箱之使用者相關的其他管理工作，請參閱[擁有郵件功能的語音使用者程序](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
@@ -57,18 +50,11 @@ _**上次修改主題的時間：**2012-11-30_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

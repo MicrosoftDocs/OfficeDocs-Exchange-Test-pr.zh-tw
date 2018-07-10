@@ -13,26 +13,19 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您需要執行 Exchange 安裝的指引嗎？本文提供規劃和部署 Microsoft Exchange Server 2013 的指引，以及您在部署期間將需要的文章連結。
 
 下列區段包含規劃和部署 Microsoft Exchange Server 2013 相關資訊的連結。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請務必先閱讀 <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a>主題，然後再開始部署。版本資訊包含部署期間和之後可能遇到的問題的重要相關資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 請務必先閱讀 <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a>主題，然後再開始部署。版本資訊包含部署期間和之後可能遇到的問題的重要相關資訊。
+
+
 
 
 **目錄**
@@ -49,18 +42,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 使用以下連結存取資訊以協助您規劃如何在您的組織中部署 Exchange Server 2013。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需有關在測試環境中安裝 Exchange 2013 的相關資訊，請參閱本主題稍後的建立測試環境。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如需有關在測試環境中安裝 Exchange 2013 的相關資訊，請參閱本主題稍後的建立測試環境。
+
+
 
 
   - [Mailbox 和 Client Access server](mailbox-and-client-access-servers-exchange-2013-help.md)  
@@ -244,18 +230,11 @@ Exchange 2013 安裝程式包含數個安裝模式：
 
   - **RecoverServer** 如果伺服器出現災難性的失敗，且您需要復原資料，請使用此模式。您必須使用與失敗伺服器相同的完整網域名稱 (FQDN) 來安裝伺服器，然後使用 **/m:RecoverServer** 參數執行安裝程式。不必指定要還原的角色。安裝程式會偵測 Active Directory 中的 Exchange 伺服器物件，並自動安裝對應的檔案和組態。復原伺服器之後，便可以還原資料庫並重新設定其他任何設定。若要以 **RecoverServer** 模式執行，則不能在伺服器上安裝 Exchange。Active Directory 中必須有 Exchange Server 物件。您只能在自動安裝期間使用此模式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您可以使用其他模式之前，必須先完成某一種安裝模式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在您可以使用其他模式之前，必須先完成某一種安裝模式。
+
+
 
 
 ## 相關資訊

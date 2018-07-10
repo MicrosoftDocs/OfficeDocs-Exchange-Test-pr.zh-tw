@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-12-16_
+_**上次修改主題的時間：** 2014-12-16_
 
 在 Microsoft Exchange Server 2013 中，您可以在 Mailbox Server 上的傳輸服務和 Edge Transport Server 中設定郵件重試、重新提交及到期間隔。 如需這些設定的說明，請參閱[郵件重試、 重新提交、 及到期時間間隔](message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md)。
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2014-12-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -107,18 +100,11 @@ _**上次修改主題的時間：**2014-12-16_
 
     Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在用於 Client Access Server 上之前端傳輸服務的 <strong>Set-FrontEndTransportService</strong>指令程式上，您也可以使用 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在用於 Client Access Server 上之前端傳輸服務的 <strong>Set-FrontEndTransportService</strong>指令程式上，您也可以使用 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 參數。
+
+
 
 
 ## 設定暫時性失敗重試嘗試、暫時性失敗重試間隔及輸出連線失敗重試間隔
@@ -149,18 +135,11 @@ _**上次修改主題的時間：**2014-12-16_
 
     Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在用於 Client Access Server 上之前端傳輸服務的 <strong>Set-FrontEndTransportService</strong>指令程式上，您也可以使用 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在用於 Client Access Server 上之前端傳輸服務的 <strong>Set-FrontEndTransportService</strong>指令程式上，您也可以使用 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 參數。
+
+
 
 
 ## 使用命令介面來設定郵件重試間隔
@@ -179,18 +158,11 @@ _**上次修改主題的時間：**2014-12-16_
 
 您可以使用 EAC 或命令介面來設定延遲 DSN 通知逾時間隔。 此設定僅適用於本機傳輸伺服器。 您只能使用命令介面來啟用或停用將延遲 DSN 郵件傳送給內部和外部寄件者的傳送功能。 這些設定適用於組織中的所有傳輸伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2007 Hub Transport Server 上，所有 <em>ExternalDSN*</em> 及 <em>InternalDSN*</em> 參數都可在 <strong>Set-TransportServer</strong>指令程式上使用，但不能在 <strong>Set-TransportConfig</strong>指令程式上使用。 如果您的組織有任何 Exchange 2007 Hub Transport Server，則您需要在每一部 Exchange 2007 Hub Transport Server 上使用 <strong>Set-TransportServer</strong> 指令程式，來對這些值進行變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2007 Hub Transport Server 上，所有 <em>ExternalDSN*</em> 及 <em>InternalDSN*</em> 參數都可在 <strong>Set-TransportServer</strong>指令程式上使用，但不能在 <strong>Set-TransportConfig</strong>指令程式上使用。 如果您的組織有任何 Exchange 2007 Hub Transport Server，則您需要在每一部 Exchange 2007 Hub Transport Server 上使用 <strong>Set-TransportServer</strong> 指令程式，來對這些值進行變更。
+
+
 
 
 ## 使用 EAC 來設定延遲 DSN 郵件通知逾時間隔

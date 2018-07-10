@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 自動信箱發佈是 Microsoft Exchange Server 2013 中的功能，可在您未明確指定資料庫時，隨機選取信箱資料庫來儲存新信箱或移動的信箱。當您想要讓新手系統管理員或服務台員工建立信箱，且不需要他們知道應在哪些信箱資料庫上建立信箱時，此功能會很有用。
 
@@ -41,18 +41,11 @@ _**上次修改主題的時間：**2015-04-07_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -61,18 +54,11 @@ _**上次修改主題的時間：**2015-04-07_
 
 在此步驟中，決定要將哪些資料庫包含在資料庫範圍中。此外，決定是否要指定資料庫的靜態清單，或者是否要建立只包含符合所指定準則之資料庫的資料庫篩選器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>資料庫範圍與相關聯的角色指派只適用於連線到執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 的伺服器的使用者或更新版本或Exchange 2013。如果指派資料庫範圍與相關聯的角色指派的使用者連線至預先Exchange 2010 SP1 的伺服器、 角色指派不會套用至該使用者，並不會授與使用者角色指派所提供的任何權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 資料庫範圍與相關聯的角色指派只適用於連線到執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 的伺服器的使用者或更新版本或Exchange 2013。如果指派資料庫範圍與相關聯的角色指派的使用者連線至預先Exchange 2010 SP1 的伺服器、 角色指派不會套用至該使用者，並不會授與使用者角色指派所提供的任何權限。
+
+
 
 
 ## 使用資料庫清單範圍
@@ -147,18 +133,11 @@ _**上次修改主題的時間：**2015-04-07_
 
 如果您要新增成員至角色群組，請參閱[管理角色群組成員](manage-role-group-members-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您新增成員至此角色群組，以限制可在其上建立使用者或將信箱移至其中的資料庫，請確認它們不是可授與額外權限之其他角色群組的成員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您新增成員至此角色群組，以限制可在其上建立使用者或將信箱移至其中的資料庫，請確認它們不是可授與額外權限之其他角色群組的成員。
+
+
 
 
 ## 步驟 4：將成員從角色群組中移除 (如果適用)

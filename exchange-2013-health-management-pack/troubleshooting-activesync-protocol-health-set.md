@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-06_
+_**上次修改主題的時間：** 2013-02-06_
 
 ActiveSync.Protocol 健全設定監視信箱伺服器上Exchange ActiveSync通訊協定的整體狀況。如果您收到警示，指定該 ActiveSync.Protocol 健全設定為狀況不良，這表示可能會影響ActiveSync元件警示中所述的信箱伺服器上發生問題。
 

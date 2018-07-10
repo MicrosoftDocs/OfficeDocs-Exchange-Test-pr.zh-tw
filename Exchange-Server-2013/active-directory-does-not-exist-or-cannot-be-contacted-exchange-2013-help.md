@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013安裝程式無法繼續因為它不能連絡有效的 Active Directory 目錄服務網站。安裝程式會要求您要安裝Exchange的伺服器能夠在 Active Directory 中找到組態命名內容。
 

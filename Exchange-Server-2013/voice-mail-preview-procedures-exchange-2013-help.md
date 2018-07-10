@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-01-30_
+_**上次修改主題的時間：** 2013-01-30_
 
 [設定使用者的語音郵件預覽合作夥伴服務](configure-voice-mail-preview-partner-services-for-users-exchange-2013-help.md)
 

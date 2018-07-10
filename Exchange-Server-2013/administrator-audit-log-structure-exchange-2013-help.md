@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 系統管理員稽核記錄檔包含的所有 cmdlet 和參數中Exchange管理命令介面和Exchange系統管理中心 (EAC) 所執行的記錄。若要建立隨選，時正在執行時系統管理員稽核記錄報告在 EAC 中，或您在命令介面中執行**New-AdminAuditLogSearch**指令程式。如需稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄](administrator-audit-logging-exchange-2013-help.md)。
 
@@ -119,18 +119,11 @@ _**上次修改主題的時間：**2015-03-09_
 <td><p><code>N/A</code></p></td>
 <td><p>此標籤含有所有已執行此指令程式所修改的屬性。<code>Property</code>標記為此標籤的子項。</p>
 <p>沒有<code>Event</code>標記每一個<code>ModifiedProperties</code>標籤。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果<strong>Set-AdminAuditLogConfig</strong>指令程式上的<em>LogLevel</em>參數設為<code>Verbose</code>僅填入此標籤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果<strong>Set-AdminAuditLogConfig</strong>指令程式上的<em>LogLevel</em>參數設為<code>Verbose</code>僅填入此標籤。
+
+
 
 </td>
 </tr>

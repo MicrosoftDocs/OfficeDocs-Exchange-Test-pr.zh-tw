@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-05-17_
+_**上次修改主題的時間：** 2013-05-17_
 
 系統管理員稽核記錄中 Microsoft Exchange Server 2013可讓您建立每次執行指定的指令程式會在記錄項目。記錄項目提供給您何種 cmdlet 所執行、 已使用哪些參數、 誰執行此指令程式，及受哪些物件相關資訊。如需關於系統管理員稽核記錄，請參閱[系統管理員稽核記錄](administrator-audit-logging-exchange-2013-help.md)。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2013-05-17_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -89,18 +82,11 @@ _**上次修改主題的時間：**2013-05-17_
 
   - `*Region`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對命令執行時要建立的稽核記錄項目，命令必須包含存在於以 <em>AdminAuditLogCmdlets</em> 參數指定的至少一個或多個指令程式上的至少一個或多個參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 針對命令執行時要建立的稽核記錄項目，命令必須包含存在於以 <em>AdminAuditLogCmdlets</em> 參數指定的至少一個或多個指令程式上的至少一個或多個參數。
+
+
 
 
 本範例將稽核上述清單中所指定的參數。

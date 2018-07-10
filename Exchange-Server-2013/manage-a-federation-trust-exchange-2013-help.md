@@ -13,40 +13,26 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-01_
+_**上次修改主題的時間：** 2015-01-01_
 
 同盟信任會建立 Microsoft Exchange 2013組織和Azure Active Directory驗證系統之間的信任關係，並且支援與其他同盟 Exchange 組織的同盟共用。一般而言，您不應該有可管理或會在建立之後修改的同盟信任。不過，可能需要新增或移除同盟的網域或重設用來設定同盟信任的組織識別碼 (OrgID) 的網域的情況。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>修改現有同盟信任，尤其是用於定義 OrgID 的共用網域，可能會干擾同盟 Exchange 組織間的同盟共享，或 Office 365 組織部署的混合式部署。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 修改現有同盟信任，尤其是用於定義 OrgID 的共用網域，可能會干擾同盟 Exchange 組織間的同盟共享，或 Office 365 組織部署的混合式部署。
+
+
 
 
 如需與同盟相關的其他管理工作，請參閱[同盟程序](federation-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -191,16 +177,9 @@ _**上次修改主題的時間：**2015-01-01_
     
         Get-FederationInformation -DomainName <your primary sharing domain>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

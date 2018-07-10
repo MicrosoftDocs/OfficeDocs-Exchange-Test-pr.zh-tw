@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 背壓是一種系統資源，可監控存在於 Microsoft Exchange 2013 Mailbox Server 及 Edge Transport Server 的 Microsoft Exchange 傳輸服務。
 
@@ -75,18 +75,11 @@ Mailbox Server 或 Edge Transport Server 上每個受監視的系統資源都會
 
 根據預設，郵件佇列資料庫交易記錄儲存在 %ExchangeInstallPath%TransportRoles\\data\\Queue。Exchange 會監視此位置的硬碟空間使用量。%ExchangeInstallPath%Bin\\EdgeTransport.exe.config 應用程式組態檔包含預設值為 384 MB 的 *DatabaseCheckPointDepthMax* 機碼。此機碼會控制硬碟上之所有未認可交易記錄的總允許大小。此機碼會用在計算硬碟使用量的公式中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>DatabaseCheckPointDepthMax</em> 機碼值會套用至存在於 Mailbox Server 或 Edge Transport Server 上所有與傳輸相關的可延伸儲存引擎 (ESE) 資料庫。這包括訊息佇列資料庫及 IP 篩選資料庫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <em>DatabaseCheckPointDepthMax</em> 機碼值會套用至存在於 Mailbox Server 或 Edge Transport Server 上所有與傳輸相關的可延伸儲存引擎 (ESE) 資料庫。這包括訊息佇列資料庫及 IP 篩選資料庫。
+
+
 
 
 根據預設，會使用下列公式計算高硬碟使用量層級：
@@ -310,18 +303,11 @@ Exchange 會保留提交佇列使用情況的歷程記錄。如果提交佇列�
 
 背壓的所有組態選項都可在 %ExchangeInstallPath%Bin\\EdgeTransport.exe.config XML 應用程式組態檔中使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些列出的設定僅供參考。強烈建議不要在 EdgeTransport.exe.config 檔案中對背壓設定做任何修改。修改背壓設定可能會導致效能不佳或資料遺失。建議您調查並修正所有可能發生的背壓事件之主要原因。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 這些列出的設定僅供參考。強烈建議不要在 EdgeTransport.exe.config 檔案中對背壓設定做任何修改。修改背壓設定可能會導致效能不佳或資料遺失。建議您調查並修正所有可能發生的背壓事件之主要原因。
+
+
 
 
 ### 背壓組態選項

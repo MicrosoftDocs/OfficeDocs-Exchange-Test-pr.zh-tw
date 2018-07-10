@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-25_
+_**上次修改主題的時間：** 2013-04-25_
 
 如果您正在規劃及部署MicrosoftExchange 2013整合通訊 (UM) 網路上，您必須先了解整合通訊和電話語音的網路。本主題概述電話語音基礎結構概念及元件可協助您規劃及部署執行Exchange 2013伺服器整合通訊。
 
@@ -63,18 +63,11 @@ IP 閘道器
 
 電路切換型網路位於網路中有存在的專用的連線。專用的連線為基礎的電路或設定兩個節點之間，讓他們可以彼此通訊通道。兩個節點之間建立撥號之後，可以使用連線只能由下列兩個節點。當通話會使用下列其中一個節點的結束時，會取消連線。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PSTN 是一群的 world 公用電路切換型電話網路。此群組的格式類似於網際網路是一群的 world 公用 IP 架構封包切換網路的方式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> PSTN 是一群的 world 公用電路切換型電話網路。此群組的格式類似於網際網路是一群的 world 公用 IP 架構封包切換網路的方式。
+
+
 
 
 有兩種基本電路切換型網路 ︰ 類比和數位。針對語音傳輸設計旨在類比。許多年 PSTN 已僅類比，但今天，例如 PSTN 電路型網路而且轉換從類比成數位。若要支援類比語音傳輸信號透過數位網路、 類比傳輸訊號必須編碼或其進入電話語音 WAN 之前轉換成以數位格式。在接收結束連線時，必須解碼或回類比訊號格式轉換的數位訊號。
@@ -83,18 +76,11 @@ IP 閘道器
 
 電路切換具有透過封包切換網路的一個大優點。電路切換型網路中使用電路時您有完整的電路您使用沒有其他使用者從競爭電路的時間。這不是封包切換網路的大小寫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>同步數位階層 (SDH) 已經成為大部分 PSTN 網路的主要的傳輸通訊協定。SDH 被遷光纖助讀網路。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 同步數位階層 (SDH) 已經成為大部分 PSTN 網路的主要的傳輸通訊協定。SDH 被遷光纖助讀網路。
+
+
 
 
 回到頁首
@@ -105,18 +91,11 @@ IP 閘道器
 
 在封包切換網路例如網際網路封包路由傳送給其目的地最有利的路由，但不是所有出差兩個主機之間的封包傳輸相同路由，甚至是那些從單一的郵件。這幾乎保證封包會送達在不同時間和照順序。封包切換網路中封包 （訊息或片段 （英文） 的訊息） 個別會透過資料連結可能會共用其他節點的節點之間路由傳送。使用不同於電路切換的封包切換多個連線至網路上的節點共用的可用頻寬。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>與基礎的電路切換，所有封包會移至受話方順序與單一路徑。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 與基礎的電路切換，所有封包會移至受話方順序與單一路徑。
+
+
 
 
 若要啟用整個全球網際網路上的資料通訊存在於封包切換網路。公用資料網路或封包切換網路是資料對應至 PSTN。
@@ -131,18 +110,11 @@ IP 閘道器
 
 舊版的 PBX 是做為切換通話的電話語音或電路切換型網路的交換器的電話語音裝置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>舊版的 PBX 是無法傳遞 IP 封包 PBX。在許多企業中舊版的 Pbx 已取代為 IP Pbx。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 舊版的 PBX 是無法傳遞 IP 封包 PBX。在許多企業中舊版的 Pbx 已取代為 IP Pbx。
+
+
 
 
 PBX 是最 \[中等大小\] 與 \[較大的公司所使用的電話語音裝置。PBX 可讓使用者或訂閱者的 PBX 共用加速被視為外部的 PBX 電話通話的外部的行數。PBX 是比給予每位使用者在公司外部的專用的電話線的更加較不昂貴的解決方案。電話組另外至傳真機器、 數據機及許多其他通訊裝置可以被連接至 PBX。
@@ -159,18 +131,11 @@ PBX 設備通常公司的內部部署安裝並連接散位於與安裝在商務�
 
   - 一群的兩個或多個 Pbx 連接在一起或網路。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 UM 撥號對應表可以跨多個 PBX 或 IP PBX。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange 2013 UM 撥號對應表可以跨多個 PBX 或 IP PBX。
+
+
 
 
 回到頁首
@@ -197,34 +162,20 @@ Voice over Internet Protocol (VoIP) 是一種可以包含硬體和軟體可讓�
 
 VoIP 閘道是協力廠商硬體裝置或舊版的 PBX 連線至您的區域網路的產品。VoIP 閘道可讓與Exchange 2013信箱和用戶端存取伺服器執行 Microsoft Exchange Unified Messaging 和整合通訊呼叫路由器服務通訊的 PBX 系統。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VoIP 閘道也可以連線到使用 VoIP 取代 PSTN 電路切換型通訊協定的 PBX 系統。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> VoIP 閘道也可以連線到使用 VoIP 取代 PSTN 電路切換型通訊協定的 PBX 系統。
+
+
 
 
 Exchange 2013整合的通訊依賴 VoIP 閘道的權限翻譯或轉換 TDM 或電路切換型電話語音基礎通訊協定 ISDN 和 PBX 從 QSIG 類似工作階段初始通訊協定 (SIP)、 即時傳輸通訊協定 (RTP) 或 T.38 IP 型或 VoIP 基礎通訊協定來進行即時傳真傳輸。VoIP 閘道是組成的功能和整合通訊的運作方式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您安裝 VoIP 閘道、 IP PBX 或已啟用 SIP 的 PBX、 之後必須建立 UM IP 閘道來代表實際的裝置。建立 UM IP 閘道器後，UM IP 閘道器與連結的用戶端存取和信箱伺服器會將 SIP OPTIONS 要求傳送給 VoIP 閘道、 IP PBX 或已啟用 SIP 的 PBX 以確保裝置有回應中。如果 VoIP 閘道不會從信箱伺服器回應 SIP OPTIONS 要求，Mailbox server 會記錄與識別碼 1088年說明事件的要求失敗。若要解決此問題，請確定 VoIP 閘道、 IP PBX 或可用且線上和整合通訊用戶端存取和信箱伺服器上的設定是否正確。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 在您安裝 VoIP 閘道、 IP PBX 或已啟用 SIP 的 PBX、 之後必須建立 UM IP 閘道來代表實際的裝置。建立 UM IP 閘道器後，UM IP 閘道器與連結的用戶端存取和信箱伺服器會將 SIP OPTIONS 要求傳送給 VoIP 閘道、 IP PBX 或已啟用 SIP 的 PBX 以確保裝置有回應中。如果 VoIP 閘道不會從信箱伺服器回應 SIP OPTIONS 要求，Mailbox server 會記錄與識別碼 1088年說明事件的要求失敗。若要解決此問題，請確定 VoIP 閘道、 IP PBX 或可用且線上和整合通訊用戶端存取和信箱伺服器上的設定是否正確。
+
+
 
 
 如需 IP PBX 和 PBX 組態的詳細資訊，請參閱[PBX 與 IP PBX 組態](pbx-and-ip-pbx-configurations-exchange-2013-help.md)。

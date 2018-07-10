@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-04_
+_**上次修改主題的時間：** 2015-01-04_
 
 同盟信任會建立 Microsoft Exchange 2013組織和Azure Active Directory驗證系統之間的信任關係，並且支援與其他同盟 Exchange 組織共用。移除同盟信任從內部部署 Exchange 組織會停用同盟共用與其他同盟 Exchange 組織與 Office 365 組織連線到組織的混合部署的一部分。您應該謹慎考量組織之前先移除同盟信任的整體的影響。
 
 若欲瞭解更多與同盟信任相關的管理工作，請參閱[同盟程序](federation-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
+
+
 
 
 ## 開始之前有哪些須知？

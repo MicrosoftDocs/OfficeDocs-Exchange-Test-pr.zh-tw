@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-29_
+_**上次修改主題的時間：** 2013-04-29_
 
 您可以使用 EAC 或命令介面中的 \[新增 Exchange 憑證\] 精靈來建立自我簽署的憑證或內部公開金鑰基礎結構 (PKI) 憑證的憑證要求。整合通訊 (UM)，您可以使用這些憑證的其中一個 Microsoft Exchange 整合通訊服務和 Microsoft Exchange Unified Messaging Call Router 服務。您可以使用這兩個服務的相同的憑證或不同的每個服務。您也可以購買及匯入 UM 服務的協力廠商商業憑證。如果您使用自我簽署的憑證 um，您可能需要在主體替代名稱 (SAN) 中包含用戶端存取和信箱伺服器的名稱。
 
 根據預設，當您安裝Exchange Server 2013、 兩個自我簽署的憑證建立 ︰ **Microsoft Exchange 伺服器驗證憑證**和**Microsoft Exchange**。**Microsoft Exchange**自我簽署的憑證可供使用 UM 以加密資料，但您必須將憑證指派給 UM 及 UM 呼叫路由器服務。您將憑證指派給整合通訊服務之後，它可以複製到並匯入至 VoIP 閘道、 IP Pbx 及已啟用 SIP 的 Pbx。不過，而不是使用預設的自我簽署的憑證，您可能需要建立專屬的整合通訊的另一個。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>整合 UM 與 Microsoft Lync Server 時，無法使用自我簽署憑證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 整合 UM 與 Microsoft Lync Server 時，無法使用自我簽署憑證。
+
+
 
 
 如需與管理整合通訊憑證相關的其他管理工作，請參閱[部署 UM 程序的憑證](deploying-certificates-for-um-procedures-exchange-2013-help.md)。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：**2013-04-29_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -113,18 +99,11 @@ _**上次修改主題的時間：**2013-04-29_
 
 6.  確認您包含的網域正確，然後選取 **\[完成\]**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您使用 EAC 來建立自我簽署的憑證時，系統會提示您將不會啟用憑證的服務。建立憑證之後，您可以使用 EAC 或<strong>Enable-ExchangeCertificate</strong>指令程式在命令介面來啟用 Exchange 服務。如需如何將憑證指派給 UM 服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您使用 EAC 來建立自我簽署的憑證時，系統會提示您將不會啟用憑證的服務。建立憑證之後，您可以使用 EAC 或<strong>Enable-ExchangeCertificate</strong>指令程式在命令介面來啟用 Exchange 服務。如需如何將憑證指派給 UM 服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
+
+
 
 
 ## 使用命令介面建立 UM 的自我簽署憑證
@@ -133,16 +112,9 @@ _**上次修改主題的時間：**2013-04-29_
 
     New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您指定服務時您想要使用<em>Services</em>參數啟用、 提示您要指派這些服務。在這個範例中，將會提示您若要啟用 UM 及 UM 呼叫路由器服務的憑證。如需如何啟用服務的憑證的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 當您指定服務時您想要使用<em>Services</em>參數啟用、 提示您要指派這些服務。在這個範例中，將會提示您若要啟用 UM 及 UM 呼叫路由器服務的憑證。如需如何啟用服務的憑證的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
+
+
 

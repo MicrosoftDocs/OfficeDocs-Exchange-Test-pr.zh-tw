@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013、 無法成功傳遞的郵件只限根據郵件的來源和目的地的各種重試、 重新提交、 和到期期限。*重試*是已更新的連線嘗試與目的地。*重新提交*是法案回到來處理分類程式提交佇列傳送郵件。郵件*到期*後所有傳遞工作已都失敗一段指定時間。郵件到期後，傳遞失敗的通知寄件者。然後將郵件刪除佇列。
 
@@ -168,18 +168,11 @@ _**上次修改主題的時間：**2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2007 Hub Transport Server 上，所有 <em>ExternalDSN*</em> 及 <em>InternalDSN*</em> 參數都可在 <strong>Set-TransportServer</strong>指令程式上使用，但不能在 <strong>Set-TransportConfig</strong>指令程式上使用。 如果您的組織有任何 Exchange 2007 Hub Transport Server，則您需要在每一部 Exchange 2007 Hub Transport Server 上使用 <strong>Set-TransportServer</strong> 指令程式，來對這些值進行變更。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2007 Hub Transport Server 上，所有 <em>ExternalDSN*</em> 及 <em>InternalDSN*</em> 參數都可在 <strong>Set-TransportServer</strong>指令程式上使用，但不能在 <strong>Set-TransportConfig</strong>指令程式上使用。 如果您的組織有任何 Exchange 2007 Hub Transport Server，則您需要在每一部 Exchange 2007 Hub Transport Server 上使用 <strong>Set-TransportServer</strong> 指令程式，來對這些值進行變更。
+
+
 
 
 回到頁首
@@ -212,18 +205,11 @@ _**上次修改主題的時間：**2015-03-09_
 
 手動重新提交郵件的另一種作法是擱置郵件、將郵件匯出成 .eml 副檔名的文字檔，然後將 .eml 檔案複製到任何 Mailbox Server 或 Edge Transport Server 上的重新顯示目錄。 此重新提交方法適用於位於傳遞佇列或無法達到的佇列中的郵件。毒藥郵件佇列中的郵件已處於 \[已擱置\] 狀態。「提交」佇列中的郵件則無法擱置或匯出。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>從佇列中匯出郵件時，不會從佇列中移除郵件。在匯出郵件並順利使用重新顯示目錄來重新提交郵件之後，應該移除擱置的郵件，以避免重複傳遞郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 從佇列中匯出郵件時，不會從佇列中移除郵件。在匯出郵件並順利使用重新顯示目錄來重新提交郵件之後，應該移除擱置的郵件，以避免重複傳遞郵件。
+
+
 
 
 如需詳細資訊，請參閱[從佇列匯出訊息](export-messages-from-queues-exchange-2013-help.md)。

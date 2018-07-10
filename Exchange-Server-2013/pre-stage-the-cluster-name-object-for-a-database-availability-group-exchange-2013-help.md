@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-08-14_
+_**上次修改主題的時間：** 2014-08-14_
 
 在環境中所在的電腦帳戶建立僅限於或非預設的電腦容器、 容器中建立電腦帳戶的其中您可以預先接叢集名稱物件 (CNO)，然後佈建 CNO 的權限指派給它。預先接移 CNO 也是必要的 Windows Server 2012 及 Windows Server 2012 R2 DAG 成員因為 Windows 的電腦物件的權限變更。部署時使用執行 Windows Server 2012 的信箱伺服器或 Windows Server 2012 R2 資料庫可用性群組 (DAG)，您必須預先設置及佈建 CNO，除非您要部署沒有叢集管理存取點之 DAG。沒有叢集管理存取點的 Dag 不使用 CNOs;因此預先接移不需要的那些 Dag。
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2014-08-14_
 
   - 完成下列步驟之後，允許進行 Active Directory 複寫。複寫物件之後，可以將第一個成員新增至 DAG。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

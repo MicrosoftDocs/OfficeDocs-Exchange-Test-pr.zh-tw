@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2013-02-11_
+_**上次修改主題的時間：** 2013-02-11_
 
 POP。通訊協定健全設定監視Microsoft Exchange Mailbox server 上的 POP3 通訊協定。如果您收到警示指定的 POP。通訊協定健全設定為不健康，這表示會影響警示中所述的信箱伺服器上將 POP3 通訊協定的問題。
 

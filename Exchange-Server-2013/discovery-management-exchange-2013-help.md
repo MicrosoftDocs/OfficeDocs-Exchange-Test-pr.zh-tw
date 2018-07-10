@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 探索管理 管理角色群組是組成 Microsoft Exchange Server 2013 中角色型存取控制 (RBAC) 權限模型的其中一個內建角色群組。角色群組會有一或多個管理角色指派，其中包含執行指定工作集所需的權限。角色群組的成員擁有指派給該角色群組的管理角色存取權。如需角色群組的詳細資訊，請參閱[了解管理角色群組](understanding-management-role-groups-exchange-2013-help.md)。
 
 系統管理員或探索管理角色群組之成員的使用者可以在符合特定準則的資料Exchange組織中執行搜尋的信箱和也可以在信箱上設定訴訟保留。如需詳細資訊，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>組織管理角色群組根據預設，不，啟用探索搜尋功能的使用者或萬用安全性群組 (Usg) 屬於該角色群組的成員。組織管理角色群組的成員必須也要進行此角色群組的成員或本主題稍後所列的信箱搜尋角色必須手動指派給組織管理角色群組。如需如何將角色指派給角色群組，請參閱<a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a>資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 組織管理角色群組根據預設，不，啟用探索搜尋功能的使用者或萬用安全性群組 (Usg) 屬於該角色群組的成員。組織管理角色群組的成員必須也要進行此角色群組的成員或本主題稍後所列的信箱搜尋角色必須手動指派給組織管理角色群組。如需如何將角色指派給角色群組，請參閱<a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a>資訊。
+
+
 
 
 如需有關 RBAC 的相關資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。

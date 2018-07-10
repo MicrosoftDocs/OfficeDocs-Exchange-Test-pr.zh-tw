@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-17_
+_**上次修改主題的時間：** 2015-04-17_
 
 Exchange 搜尋可將許多項目內容編制為索引，包括電子郵件的寄件者、收件者、郵件內文和附件。
 
@@ -501,7 +501,7 @@ Exchange 搜尋可將許多項目內容編制為索引，包括電子郵件的�
 </table>
 
 
-**索引化內容的備註：**
+**索引化內容的備註：** 
 
   - **設為可查詢的屬性**可用於搜尋用戶端等Outlook Web App`property:value`成對，例如`from:bsuneja@cotoso.com`AQS 查詢。就地 ediscovery （英文） 也在搜尋查詢中使用上表所列的設為可查詢屬性的子集。如需這些屬性的清單，請參閱[郵件內容和搜尋運算子就地 ediscovery （英文）](message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md)。
 

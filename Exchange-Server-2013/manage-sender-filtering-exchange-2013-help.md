@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
-寄件者篩選是由寄件者篩選器代理程式所提供。寄件者篩選器代理程式依賴來決定何種巨集指令，才會內送的電子郵件上的任何**MAIL FROM:** SMTP 標頭。
+寄件者篩選是由寄件者篩選器代理程式所提供。寄件者篩選器代理程式依賴來決定何種巨集指令，才會內送的電子郵件上的任何**MAIL FROM:**  SMTP 標頭。
 
 當 Exchange 伺服器上啟用寄件者篩選功能時，寄件者篩選功能會篩選經由該電腦上的所有接收連接器傳入的所有郵件。
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2015-04-08_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -59,18 +52,11 @@ _**上次修改主題的時間：**2015-04-08_
 
     Set-SenderFilterConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您停用寄件者篩選時，仍會啟用基礎的寄件者篩選器代理程式。若要停用寄件者篩選器代理程式，請執行命令： <code>Disable-TransportAgent &quot;Sender Filter Agent&quot;</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您停用寄件者篩選時，仍會啟用基礎的寄件者篩選器代理程式。若要停用寄件者篩選器代理程式，請執行命令： <code>Disable-TransportAgent &quot;Sender Filter Agent&quot;</code>。
+
+
 
 
 ## 如何才能了解這是否正常運作？

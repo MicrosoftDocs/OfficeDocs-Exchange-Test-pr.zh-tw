@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2012-12-16_
+_**上次修改主題的時間：** 2012-12-16_
 
 您可以在已啟用整合通訊 (UM) 的語音信箱之使用者所接收到語音郵件訊息時傳送電子郵件訊息中包含其他文字。根據預設，已包含的語音訊息的文字會指出僅使用者已收到語音訊息。不過，您可以將文字新增 UM 信箱原則上的 \[**當使用者接收語音訊息**\] 方塊中建立的自訂訊息。例如，文字可以包含系統安全性原則的相關資訊及說明的正確的方式來處理您組織中的語音訊息。新增文字後，它將會包含每個關聯的 UM 信箱原則的已啟用 UM 的使用者接收語音訊息時傳送的電子郵件中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>語音訊息隨附的自訂文字長度限制為 512 個字元，可包含簡單的 HTML 文字。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 語音訊息隨附的自訂文字長度限制為 512 個字元，可包含簡單的 HTML 文字。
+
+
 
 
 如需其他與 UM 信箱原則相關的管理工作，請參閱 [UM 信箱原則程序](um-mailbox-policy-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2012-12-16_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

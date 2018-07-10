@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 內容篩選由內容篩選器代理程式提供。內容篩選代理程式會篩選 Exchange 伺服器上來自所有接收連接器的所有郵件。這樣只會篩選出來自未經驗證的來源的郵件。
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2015-04-08_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -57,18 +50,11 @@ _**上次修改主題的時間：**2015-04-08_
 
     Set-ContentFilterConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您停用內容篩選時，基礎內容篩選代理程式仍啟用。若要停用內容篩選器代理程式，請執行命令：<code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您停用內容篩選時，基礎內容篩選代理程式仍啟用。若要停用內容篩選器代理程式，請執行命令：<code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>。
+
+
 
 
 ## 如何知道這是否正常運作？
@@ -209,18 +195,11 @@ _**上次修改主題的時間：**2015-04-08_
 
     Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>[刪除] 動作的優先順序高於 [拒絕] 動作，而 [拒絕] 動作的優先順序高於 [隔離] 動作。因此，[刪除] 動作的 SCL 閾值應大於 [拒絕] 動作的 SCL 閾值，而此閾值應大於 [隔離] 動作的 SCL 閾值。只有 [拒絕] 動作根據預設啟動，且擁有 SCL 閾值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> [刪除] 動作的優先順序高於 [拒絕] 動作，而 [拒絕] 動作的優先順序高於 [隔離] 動作。因此，[刪除] 動作的 SCL 閾值應大於 [拒絕] 動作的 SCL 閾值，而此閾值應大於 [隔離] 動作的 SCL 閾值。只有 [拒絕] 動作根據預設啟動，且擁有 SCL 閾值。
+
+
 
 
 本範例設定下列的 SCL 閾值：

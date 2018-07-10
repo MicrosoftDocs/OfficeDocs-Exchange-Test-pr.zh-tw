@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-16_
+_**上次修改主題的時間：** 2013-04-16_
 
 [設定 Outlook 語音存取 PIN 原則](set-outlook-voice-access-pin-policies-exchange-2013-help.md)
 

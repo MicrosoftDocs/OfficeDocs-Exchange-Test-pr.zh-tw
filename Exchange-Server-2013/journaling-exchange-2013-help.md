@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 日誌記錄可藉由錄製輸入和輸出電子郵件通訊，協助您的組織回應法律、法規和組織符合性需求。規劃郵件保留和符合性時，務必了解日誌記錄的內容、其如何適用於組織符合性原則，以及 Microsoft Exchange Server 2013 如何協助您保護日誌記錄的郵件。
 
@@ -73,18 +73,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 在 Exchange 2013 組織中，所有電子郵件流量都是由 Mailbox Server 路由傳送。所有郵件在其存留時間內至少都會通過一個執行傳輸服務的伺服器。*日誌代理程式 (Journaling Agent)* 是著重於符合性的傳輸代理程式，負責處理 Mailbox Server 上的郵件。它觸發於 **OnSubmittedMessage** 和 **OnRoutedMessage** 傳輸事件上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，日誌代理程式是內建代理程式。內建代理程式不包含在 <strong>Get-TransportAgent</strong> 指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2013 中，日誌代理程式是內建代理程式。內建代理程式不包含在 <strong>Get-TransportAgent</strong> 指令程式傳回的代理程式清單中。如需詳細資訊，請參閱<a href="transport-agents-exchange-2013-help.md">傳輸代理程式</a>。
+
+
 
 
 Exchange 2013 提供下列日誌記錄選項：
@@ -127,18 +120,11 @@ Exchange 2013 提供下列日誌記錄選項：
 
 許多實施日誌記錄的組織也可以利用整合通訊 (UM) 來合併其電子郵件、語音信箱及傳真基礎結構。不過，您可能不想要日誌記錄程序針對整合通訊所產生的郵件，產生日誌報告。在這些情況下，您可以決定是否要記錄運行整合通訊服務的 Exchange 伺服器所處理的語音信箱郵件和未接來電通知郵件，或略過這類郵件。如果您的組織不需要記錄這類訊息，則您可略過這類訊息，以減少儲存日誌報告所需的硬碟空間量。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使您停用整合通訊語音信箱和未接來電通知訊息的日誌記錄功能，含有整合通訊服務產生之傳真的訊息還是會一律受到記錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 即使您停用整合通訊語音信箱和未接來電通知訊息的日誌記錄功能，含有整合通訊服務產生之傳真的訊息還是會一律受到記錄。
+
+
 
 
 如需如何啟用或停用語音信箱和未接來電通知訊息的詳細資訊，請參閱[停用或啟用語音信箱和未接的來電通知的日誌記錄](disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md)。
@@ -147,46 +133,25 @@ Exchange 2013 提供下列日誌記錄選項：
 
 日誌信箱可用來收集日誌報告。設定日誌記錄信箱的方式取決於組織的原則、法規要求及法律要求。您可指定一個日誌記錄信箱收集組織內設定之所有日誌規則適用的郵件，也可以針對不同日誌規則或日誌規則集，使用不同的日誌記錄信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能指定 Office 365 信箱作為日誌記錄信箱。您可以將日誌報告傳遞至內部部署封存系統或協力廠商封存服務。如果您執行的是混合部署且信箱分散於內部部署伺服器與 Office 365 之間，則您可以指定內部部署信箱作為 Office 365 與內部部署信箱的日誌記錄信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您不能指定 Office 365 信箱作為日誌記錄信箱。您可以將日誌報告傳遞至內部部署封存系統或協力廠商封存服務。如果您執行的是混合部署且信箱分散於內部部署伺服器與 Office 365 之間，則您可以指定內部部署信箱作為 Office 365 與內部部署信箱的日誌記錄信箱。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>日誌信箱包含非常敏感的資訊。您必須保護日誌信箱的安全，因為日誌信箱會收集組織中收件者寄出或收到的郵件。這些郵件可能會是法律訴訟的一部分，或受到法規要求所管制。多種法律都要求這些郵件在送到調查單位前，需未經過竄改。建議您建立原則來管理可存取組織內日誌信箱的人員，限制僅有直接存取需求的個人才能存取日誌信箱。與您的法律代表諮詢，確定您的日誌解決方案遵守所有您組織應當遵守的法律及法規。</td>
-</tr>
-</tbody>
-</table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>日誌記錄信箱應接受訊息的大小等於或大於您在組織中設定的郵件大小上限。如果您已設定個別使用者信箱中 MaxSendSize 和 MaxReceiveSize 的例外狀況大於 TransportConfig 中的一般設定，您應依此設定日誌記錄信箱的 MaxSendSize 和 MaxReceiveSize，以確保傳送到日誌記錄的郵件已接受而未排入佇列或拒絕。日誌記錄信箱拒絕的郵件將會定期重試，因而造成不必要的資料庫增長與資源浪費。此外，我們建議您設定替代日誌記錄信箱，以防止發生其他無法傳遞的情況。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 日誌信箱包含非常敏感的資訊。您必須保護日誌信箱的安全，因為日誌信箱會收集組織中收件者寄出或收到的郵件。這些郵件可能會是法律訴訟的一部分，或受到法規要求所管制。多種法律都要求這些郵件在送到調查單位前，需未經過竄改。建議您建立原則來管理可存取組織內日誌信箱的人員，限制僅有直接存取需求的個人才能存取日誌信箱。與您的法律代表諮詢，確定您的日誌解決方案遵守所有您組織應當遵守的法律及法規。
+
+
+
+
+
+> [!IMPORTANT]  
+> 日誌記錄信箱應接受訊息的大小等於或大於您在組織中設定的郵件大小上限。如果您已設定個別使用者信箱中 MaxSendSize 和 MaxReceiveSize 的例外狀況大於 TransportConfig 中的一般設定，您應依此設定日誌記錄信箱的 MaxSendSize 和 MaxReceiveSize，以確保傳送到日誌記錄的郵件已接受而未排入佇列或拒絕。日誌記錄信箱拒絕的郵件將會定期重試，因而造成不必要的資料庫增長與資源浪費。此外，我們建議您設定替代日誌記錄信箱，以防止發生其他無法傳遞的情況。
+
+
 
 
 ## 替代日誌記錄信箱
@@ -197,36 +162,22 @@ Exchange 2013 提供下列日誌記錄選項：
 
 當設定替代日誌記錄信箱時，所有被拒絕的日誌報告，或是無法在整個 Exchange 組織中傳遞的日誌報告，都會傳遞至替代日誌記錄信箱。因此，您應確定替代日誌記錄信箱與其所在的信箱伺服器可支援大量的日誌報告。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要設定替代日誌記錄信箱，則必須監視信箱，確保在日誌信箱無法使用時，該信箱一直可用。若替代日誌記錄信箱也同時無法使用或拒絕日誌報告，拒絕的日誌報告便會遺失而無法擷取。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 如果要設定替代日誌記錄信箱，則必須監視信箱，確保在日誌信箱無法使用時，該信箱一直可用。若替代日誌記錄信箱也同時無法使用或拒絕日誌報告，拒絕的日誌報告便會遺失而無法擷取。
+
+
 
 
 因為替代日誌記錄信箱會收集整個 Exchange 組織拒絕的所有日誌報告，所以必須確定這麼做不會違反任何適用於組織的法律規範。若法規禁止組織將傳送到不同日誌記錄信箱的日誌報告儲存於同一替代日誌記錄信箱中，可能就無法設定替代日誌記錄信箱。請與您的法務代表討論，判斷是否可使用替代日誌記錄信箱。
 
 設定替代日誌記錄信箱時，使用的準則應與設定日誌記錄信箱時所用準則相同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>替代的日誌記錄信箱應被視為一個特殊的專用信箱。直接寄送至替代日誌記錄信箱的任何訊息都不會受到記錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 替代的日誌記錄信箱應被視為一個特殊的專用信箱。直接寄送至替代日誌記錄信箱的任何訊息都不會受到記錄。
+
+
 
 
 為什麼日誌記錄很重要？
@@ -237,32 +188,18 @@ Exchange 2013 提供下列日誌記錄選項：
 
 透過將所有日誌規則複寫至整個組織，Exchange 2013 可讓您提供全組織都一致的日誌規則集。所有通過 Exchange 2013 組織的郵件都受同樣的日誌規則管理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>組織內日誌規則的複寫，需依賴 Active Directory 複寫。根據組織內站台的數目及連結速度，加上 Microsoft Exchange 控制外的其他因素，Active Directory 網域控制站之間的複寫時間也會不同。當您在組織中執行日誌規則時，請將複寫延遲納入考量。如需 Active Directory 複寫的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=274904">使用 Windows PowerShell 進行 Active Directory 複寫和拓撲管理</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 組織內日誌規則的複寫，需依賴 Active Directory 複寫。根據組織內站台的數目及連結速度，加上 Microsoft Exchange 控制外的其他因素，Active Directory 網域控制站之間的複寫時間也會不同。當您在組織中執行日誌規則時，請將複寫延遲納入考量。如需 Active Directory 複寫的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=274904">使用 Windows PowerShell 進行 Active Directory 複寫和拓撲管理</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每一個信箱伺服器都會快取通訊群組成員資格，以避免重複往返於 Active Directory。展開的群組快取可減少各個信箱伺服器必須對 Active Directory 網域控制站發出的要求數量。根據預設，展開的群組快取中的項目會在四小時後到期。因此，如果將通訊群組指定為日誌收件者，可能不會將通訊群組成員資格的變更套用到日誌規則，直到展開的群組快取更新為止。若要強制立即更新收件者快取，則必須停止及啟動 Microsoft Exchange 傳輸服務。每部想要強制更新收件者快取的信箱伺服器都需要做這樣的處理。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!IMPORTANT]  
+> 每一個信箱伺服器都會快取通訊群組成員資格，以避免重複往返於 Active Directory。展開的群組快取可減少各個信箱伺服器必須對 Active Directory 網域控制站發出的要求數量。根據預設，展開的群組快取中的項目會在四小時後到期。因此，如果將通訊群組指定為日誌收件者，可能不會將通訊群組成員資格的變更套用到日誌規則，直到展開的群組快取更新為止。若要強制立即更新收件者快取，則必須停止及啟動 Microsoft Exchange 傳輸服務。每部想要強制更新收件者快取的信箱伺服器都需要做這樣的處理。
+
+
 
 
 為什麼日誌記錄很重要？

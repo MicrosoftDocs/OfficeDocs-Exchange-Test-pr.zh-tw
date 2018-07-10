@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 就地 ediscovery Exchange Server 2013和Exchange Online、 會信箱項目，不能索引 Exchange 搜尋所或，僅部分編無法搜尋的項目。無法搜尋的項目通常包含無法編製索引，附加至電子郵件訊息檔案。以下是幾個原因檔案無法編製索引的搜尋和無法搜尋的項目附加至電子郵件訊息時所傳回的原因：
 

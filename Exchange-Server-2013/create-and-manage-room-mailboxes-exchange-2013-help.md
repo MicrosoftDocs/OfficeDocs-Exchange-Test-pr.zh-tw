@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-02-02_
+_**上次修改主題的時間：** 2017-02-02_
 
 預估完成時間：5 分鐘。
 
@@ -27,18 +27,11 @@ _**上次修改主題的時間：**2017-02-02_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱[收件者權限](recipients-permissions-exchange-2013-help.md)主題中的「收件者佈建權限」一節。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在混合案例中執行 Exchange 2013，請確定您有在適當的地方建立會議室信箱。針對內部部署組織建立會議室信箱，而且 Exchange Online 端的會議室信箱應建立在雲端。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您在混合案例中執行 Exchange 2013，請確定您有在適當的地方建立會議室信箱。針對內部部署組織建立會議室信箱，而且 Exchange Online 端的會議室信箱應建立在雲端。
+
+
 
 
 
@@ -219,18 +212,11 @@ _**上次修改主題的時間：**2017-02-02_
 
 使用 \[連絡人資訊\] 區段可以檢視或變更會議室的連絡人資訊。此頁的資訊顯示於通訊錄中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用 [州/省]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以使用 [州/省]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。
+
+
 
 
 ## 電子郵件地址
@@ -278,23 +264,16 @@ _**上次修改主題的時間：**2017-02-02_
 
 使用 \[郵件提示\] 區段可加入「郵件提示」，以便在使用者送出預約要求給會議室信箱前，警示使用者潛在的問題。「郵件提示」是在此收件者加入至新電子郵件的 \[收件者\]、\[副本\] 或 \[密件副本\] 行時，顯示在資訊列中的文字。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。
+
+
 
 
 ## 使用 Exchange PowerShell 來變更會議室信箱內容
 
-使用下列 Cmdlet 集，可以檢視和變更會議室信箱內容：**Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視與變更會議室信箱的一般內容及電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** 指令程式來檢視與變更代理人及預約選項。
+使用下列 Cmdlet 集，可以檢視和變更會議室信箱內容：** Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視與變更會議室信箱的一般內容及電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** 指令程式來檢視與變更代理人及預約選項。
 
   - **Get-User** 與 **Set-User**   使用這些 Cmdlet 來檢視與設定位置、部門和公司名稱等一般內容。
 
@@ -342,16 +321,9 @@ _**上次修改主題的時間：**2017-02-02_
 
 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-10-20_
+_**上次修改主題的時間：** 2017-10-20_
 
 在安裝時的Exchange Server 2013，安裝程式會執行一組新的服務安裝 Microsoft Windows中的工作。服務是伺服器的可透過Windows服務控制管理員啟動期間啟動背景處理程序。服務是設計用來操作各自與系統管理介入的可執行檔。服務可以使用圖形化使用者介面 (GUI) 模式或主控台模式來執行。
 
@@ -63,18 +63,11 @@ _**上次修改主題的時間：**2017-10-20_
 <td><p>Microsoft Exchange 反垃圾郵件更新</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>提供Exchange SmartScreen 垃圾郵件定義更新。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。
+
+
 
 </td>
 <td><p>自動</p></td>
@@ -443,18 +436,11 @@ _**上次修改主題的時間：**2017-10-20_
 <td><p>Microsoft Exchange 反垃圾郵件更新</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>提供Exchange SmartScreen 垃圾郵件定義更新。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 2016 年 11 月 1，Microsoft 停止產生 Exchange 和 Outlook 中 SmartScreen 篩選器的垃圾郵件定義更新。現有的 SmartScreen 垃圾郵件定義將會保留，但其效果可能會隨著時間降低。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">Outlook 和 Exchange 中 SmartScreen 的取代支援</a>。
+
+
 
 </td>
 <td><p>自動</p></td>

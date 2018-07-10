@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 您可以封存Lync Online內容，例如 IM 交談， Exchange Online中使用者的信箱。您可以在內部部署封存Lync 2013Exchange 2013信箱內容。 在兩者線上及內部部署環境中，您必須進行此使用者的信箱上放置訴訟暫止狀態或就地保留。當 Lync 內容會永久刪除的使用者信箱位於所保留、 封存的 Lync 內容保留在使用者的信箱中 \[可復原的項目\] 資料夾。不是可讓使用者看到，但它隨附於 eDiscovery 搜尋。
 
@@ -23,18 +23,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 ![保留的位置 Lync 項目](images/Dn508399.691d2324-9fac-4689-8527-c78d387e0e3e(EXCHG.150).jpg "保留的位置 Lync 項目")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以設定為 「 就地保留來排除 Lync 項目。例如，組織可能會希望比其他類型的內容更短的期間內保留立即訊息和語音信箱項目。若要實作此類型的保留原則，您可以建立的一段時間 （例如 7 年） 保留內容並排除此保留在 Lync 項目為 「 就地保留。然後您可以建立另一個 In-place Hold 保留只有 Lync 項目更短保留持續時間。您還可以指定應保留內容的時間。如需建立保留特定持續時間的詳細資訊，請參閱<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留與訴訟暫止</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以設定為 「 就地保留來排除 Lync 項目。例如，組織可能會希望比其他類型的內容更短的期間內保留立即訊息和語音信箱項目。若要實作此類型的保留原則，您可以建立的一段時間 （例如 7 年） 保留內容並排除此保留在 Lync 項目為 「 就地保留。然後您可以建立另一個 In-place Hold 保留只有 Lync 項目更短保留持續時間。您還可以指定應保留內容的時間。如需建立保留特定持續時間的詳細資訊，請參閱<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留與訴訟暫止</a>。
+
+
 
 
 請參閱下列主題的逐步指示將使用者放置在保留：

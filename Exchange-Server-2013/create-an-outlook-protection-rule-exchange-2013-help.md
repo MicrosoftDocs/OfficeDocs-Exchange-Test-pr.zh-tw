@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 使用 Microsoft Outlook保護規則，您可以藉由套用在Outlook 2010Active Directory Rights Management Services (AD RMS) 範本之前傳送的郵件保護使用資訊版權管理 (IRM) 的郵件。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面來建立 Outlook 保護規則
@@ -55,18 +48,11 @@ _**上次修改主題的時間：**2016-12-09_
 
     New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您使用Outlook保護規則<code>SentTo</code>述詞與指定通訊群組、 僅限的郵件寄至通訊群組中 [收件者]、 [副本] 或 [密件副本] 欄位會受 IRM 保護。預設傳送給通訊群組的個別成員的郵件無法套用 IRM 保護。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您使用Outlook保護規則<code>SentTo</code>述詞與指定通訊群組、 僅限的郵件寄至通訊群組中 [收件者]、 [副本] 或 [密件副本] 欄位會受 IRM 保護。預設傳送給通訊群組的個別成員的郵件無法套用 IRM 保護。
+
+
 
 
 您也可以使用`FromDepartment`和`SentToScope`述詞將 IRM 保護套用至指定的部門或傳送至指定的範圍 （內部郵件的`InOrganization` 、 `All`所有收件者） 的訊息中的使用者傳送的郵件。

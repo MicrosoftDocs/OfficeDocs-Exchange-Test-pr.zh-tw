@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 傳遞代理程式可從您的 SMTP Exchange 伺服器環境傳送郵件至不使用 SMTP 通訊協定的系統。每個傳遞代理程式皆與傳遞代理程式連接器相關聯，該連接器會佇列路由傳送至非 SMTP 裝置或系統進行處理程序的郵件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然 Microsoft Exchange 2013 保留了外部連接器架構，但建議儘可能使用傳遞代理程式將郵件路由至非 SMTP 系統。主要原因為您可以佇列郵件管理，無須管理檔案傳輸至放置目錄，且您可驗證郵件傳遞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 雖然 Microsoft Exchange 2013 保留了外部連接器架構，但建議儘可能使用傳遞代理程式將郵件路由至非 SMTP 系統。主要原因為您可以佇列郵件管理，無須管理檔案傳輸至放置目錄，且您可驗證郵件傳遞。
+
+
 
 
 **目錄**

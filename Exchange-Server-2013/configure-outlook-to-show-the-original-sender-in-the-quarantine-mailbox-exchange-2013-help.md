@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 垃圾郵件隔離是內容篩選器代理程式的功能，可以降低遺失合法郵件的風險。垃圾郵件隔離提供暫時儲存位置，用來存放識別為垃圾郵件以及不應該傳遞至組織內使用者信箱的郵件。
 
@@ -35,18 +35,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -134,7 +127,7 @@ _**上次修改主題的時間：**2016-12-09_
         
           - *\<OfficeVersion\>*   對於 Outlook 2007，此值為 `Office12`。若是 Outlook 2010，值為 `Office14`。若是 Outlook 2013，值為 `Office15`。
         
-          - *\<LCID\>*   這是您的地區識別碼 (LCID) 值。例如，美式英文的 LCID 為 1033。如需更多資訊，請參閱 [KB221435：在 Word 中支援的地區識別碼清單](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=221435)。
+          - *\<LCID\>*   這是您的地區識別碼 (LCID) 值。例如，美式英文的 LCID 為 1033。如需更多資訊，請參閱 [KB221435：在 Word 中支援的地區識別碼清單](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435)。
     
       - **名稱**   對於此程序其餘部分，請假定檔案名為 `QTNE.cfg`。檔案的名稱並不重要，但務必在該值加上括弧，以便可以 QTNE.cfg 而不是 QTNE.cfg.txt 儲存檔案。
     

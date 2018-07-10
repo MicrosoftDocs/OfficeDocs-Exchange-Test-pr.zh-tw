@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 資訊工作者通常會使用電子郵件交換敏感資訊。為了安全這項資訊、 組織可以使用資訊版權管理 (IRM) 套用至訊息內容的持續性的保護。行動裝置會逐漸要用來存取電子郵件，因為很重要的行動裝置使用者可以建立和取用受 IRM 保護的內容。
 
@@ -94,18 +94,11 @@ IRM 在Exchange ActiveSync不解密受 IRM 保護之用戶端存取伺服器上�
 <td><p>啟用行動裝置的加密。</p></td>
 <td><p>選取 [需要密碼] 核取方塊，然後選取 [需要加密裝置] 核取方塊。</p></td>
 <td><p>將 <em>RequireDeviceEncryption</em> 參數設為 <code>$true</code>。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您將 <em>RequireDeviceEncryption</em> 參數設為 <code>$true</code> 時，不支援裝置加密的行動裝置將無法連線。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您將 <em>RequireDeviceEncryption</em> 參數設為 <code>$true</code> 時，不支援裝置加密的行動裝置將無法連線。
+
+
 
 </td>
 </tr>

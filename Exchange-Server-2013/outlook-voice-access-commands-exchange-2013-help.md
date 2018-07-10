@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Outlook語音存取可讓已啟用整合通訊 UM 的使用者存取他們的信箱使用類比、 數位或行動電話。使用Outlook語音存取中找到的功能表系統、 已啟用 UM 的使用者可以讀取電子郵件、 聆聽語音訊息、 互動其Outlook行事曆、 存取其個人連絡人及管理個人選項，例如設定其Outlook語音存取 PIN 或錄製其語音郵件訊息。本主題包含 Outlook 語音存取命令和使用者可以如何使用它們呼叫 Outlook 語音存取號碼來存取其信箱時的清單。
 
@@ -187,18 +187,11 @@ Outlook語音存取使用者、 時撥入 Outlook 語音存取號碼，您正在
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要之後您刪除其使用Outlook語音存取存取電子郵件訊息，您可以使用Outlook Web App或Outlook將從 [刪除的郵件] 資料夾移回至適當的資料夾之電子郵件。您無法使用Outlook語音存取來存取已刪除的項目] 資料夾。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您需要之後您刪除其使用Outlook語音存取存取電子郵件訊息，您可以使用Outlook Web App或Outlook將從 [刪除的郵件] 資料夾移回至適當的資料夾之電子郵件。您無法使用Outlook語音存取來存取已刪除的項目] 資料夾。
+
+
 
 
 ## 行事曆選項命令參考

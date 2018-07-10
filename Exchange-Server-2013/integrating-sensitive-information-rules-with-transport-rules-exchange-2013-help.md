@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-14_
+_**上次修改主題的時間：** 2015-01-14_
 
 在 Microsoft Exchange，您可以建立的包含規則不只使用傳統郵件分類的和現有傳輸規則，但也結合這些訊息內找到的敏感資訊的規則與 DLP 原則。現有的傳輸規則架構提供豐富的功能定義訊息原則、 涵蓋整個兩端的柔硬碟的控制項。範例包括：
 

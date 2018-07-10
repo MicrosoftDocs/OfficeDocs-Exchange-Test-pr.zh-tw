@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 安裝及部署整合通訊 (UM) 及Microsoft Lync Server 2013 中使用此檢查清單。本主題中 「 Lync Server 」 也參照至 Lync Server 2010。不過，Microsoft Office Communications Server 2007 R2 也可以部署與整合通訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td> </td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+>  
+
+
 
 
 您開始使用這份檢查清單之前，請確定您已熟悉下列概念：
@@ -72,18 +65,11 @@ _**上次修改主題的時間：**2016-12-09_
 <td><p></p></td>
 <td><p>檢閱整合 Microsoft Lync Server 2013 和 Microsoft Exchange Server 2013 的必要條件。</p></td>
 <td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=282082">Exchange Server 2013 整合 Microsoft Lync Server 2013 與 Microsoft 的先決條件</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Unified Communications Managed API (UCMA) 4.0 執行階段是 Exchange 2013 和 Lync Server 2010 和 2013年所需與安裝在安裝期間。若要下載並檢閱 UCMA 4.0 的相關資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</a></td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> Unified Communications Managed API (UCMA) 4.0 執行階段是 Exchange 2013 和 Lync Server 2010 和 2013年所需與安裝在安裝期間。若要下載並檢閱 UCMA 4.0 的相關資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</a>
+
+
 
 </td>
 </tr>

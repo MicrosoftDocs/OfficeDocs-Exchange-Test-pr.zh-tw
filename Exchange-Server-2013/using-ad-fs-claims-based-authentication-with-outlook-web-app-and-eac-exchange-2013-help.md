@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013 SP1_
+_**適用版本：** Exchange Server 2013 SP1_
 
-_**上次修改主題的時間：**2017-04-14_
+_**上次修改主題的時間：** 2017-04-14_
 
-**摘要：**
+**摘要：** 
 
 在內部Exchange 2013 Service Pack 1 (SP1) 部署、 安裝及設定Active Directory Federation Services (AD FS) 表示您現在可以使用 AD FS 宣告式驗證連線至Outlook Web App和 EAC。您可以使用Exchange 2013 SP1 整合 AD FS 和宣告式驗證。使用宣告式驗證會取代為傳統驗證方法，包括下列：
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2017-04-14_
 
 驗證程序可確認使用者的身分。進行驗證可確認使用者是否為其聲稱的身分。宣告式身分識別是另一種驗證方式。宣告式驗證會從應用程式 (在此範例中是 Outlook Web App 和 EAC) 移除驗證管理，以透過集中進行驗證來簡化帳戶管理。Outlook Web App 和 EAC 不負責驗證使用者、儲存使用者帳戶和密碼、查閱使用者身分識別詳細資料，或與其他身分識別系統整合。集中進行驗證可讓日後要升級為其他驗證方法時更為方便。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>裝置的 OWA 不支援 AD FS 宣告式驗證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 裝置的 OWA 不支援 AD FS 宣告式驗證。
+
+
 
 
 依下表摘要說明種可以使用的 AD FS 的多個版本。
@@ -131,18 +124,11 @@ Additional information you might want to know
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 步驟 1 – 檢閱 AD FS 的憑證需求
@@ -153,18 +139,11 @@ Additional information you might want to know
 
 雖然 AD FS 不需要 CA 所發行的憑證，但是 AD FS 用戶端必須信任 SSL 憑證 (預設也用作服務通訊憑證的 SSL 憑證)。建議您不要使用自我簽署憑證。同盟伺服器會使用 SSL 憑證來保護與網頁用戶端和同盟伺服器 Proxy 之 SSL 通訊的 Web 服務流量。因為用戶端電腦必須信任 SSL 憑證，所以建議您使用信任 CA 所簽署的憑證。您選取的所有憑證都必須有對應的私密金鑰。在您接收到來自 CA (企業或公用) 的憑證之後，請確定所有憑證都是匯入至所有伺服器上的信任根憑證授權單位存放區。您可以使用 **\[憑證\]** MMC 嵌入式管理單元將憑證匯入至存放區，或使用 Active Directory 憑證服務來發佈憑證。重要的是，如果您匯入的憑證過期，則請手動匯入另一個有效的憑證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用來自 AD FS 的自我簽署權杖簽署憑證，必須在所有 Exchange 2013 伺服器上將此憑證匯入至信任根憑證授權單位存放區。如果未使用自我簽署權杖簽署憑證，並部署 Web 應用程式 Proxy，則您必須更新 Web 應用程式 Proxy 組態和所有 AD FS 信賴憑證者信任中的公開金鑰。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您使用來自 AD FS 的自我簽署權杖簽署憑證，必須在所有 Exchange 2013 伺服器上將此憑證匯入至信任根憑證授權單位存放區。如果未使用自我簽署權杖簽署憑證，並部署 Web 應用程式 Proxy，則您必須更新 Web 應用程式 Proxy 組態和所有 AD FS 信賴憑證者信任中的公開金鑰。
+
+
 
 
 設定 Exchange 2013 SP1、AD FS 和 Web 應用程式 Proxy 時，請遵循下列憑證建議：
@@ -177,13 +156,13 @@ Additional information you might want to know
     
       - 用於服務通訊的 SSL 憑證
         
-          - 主體名稱：**adfs.contoso.com** (AD FS 部署名稱)
+          - 主體名稱：** adfs.contoso.com** (AD FS 部署名稱)
         
           - 主體替代名稱 (SAN)：無
     
       - 權杖簽署憑證
         
-          - 主體名稱：**tokensigning.contoso.com**
+          - 主體名稱：** tokensigning.contoso.com**
         
           - 主體替代名稱 (SAN)：無
         
@@ -205,7 +184,7 @@ Additional information you might want to know
     
       - 用於服務通訊的 SSL 憑證
         
-          - 主體名稱：**owa.contoso.com**
+          - 主體名稱：** owa.contoso.com**
         
           - 主體替代名稱 (SAN)：無
         
@@ -224,7 +203,7 @@ Additional information you might want to know
     
       - AD FS Proxy SSL 憑證
         
-          - 主體名稱：**adfs.contoso.com** (AD FS 部署名稱)
+          - 主體名稱：** adfs.contoso.com** (AD FS 部署名稱)
         
           - 主體替代名稱 (SAN)：無
     
@@ -232,18 +211,11 @@ Additional information you might want to know
 
 請參閱憑證需求小節中[檢閱部署 AD FS 的需求](https://go.microsoft.com/fwlink/?linkid=392699)憑證的詳細資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使您有 AD FS 的 SSL 憑證，Outlook Web App 和 EAC 還是需要 SSL 加密憑證。SSL 憑證會用於 OWA 和 ECP 虛擬目錄上。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 即使您有 AD FS 的 SSL 憑證，Outlook Web App 和 EAC 還是需要 SSL 加密憑證。SSL 憑證會用於 OWA 和 ECP 虛擬目錄上。
+
+
 
 
 ## 步驟 2 – 安裝並設定 Active Directory Federation Services (AD FS)
@@ -350,18 +322,11 @@ Windows Server 2012 R2 中的 AD FS 提供簡化、安全的身分識別同盟�
 
 EAC 會使用 ECP 虛擬目錄。您可以使用 [Get-EcpVirtualDirectory](https://technet.microsoft.com/zh-tw/library/dd351058\(v=exchg.150\)) 和 [Set-EcpVirtualDirectory](https://technet.microsoft.com/zh-tw/library/dd297991\(v=exchg.150\)) Cmdlet，來檢視或設定 EAC 的設定。若要存取 EAC，您必須使用網頁瀏覽器，並移至 **http://server1.contoso.com/ecp**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下面所顯示的 URL 範例在行尾斜線<strong>/</strong>的相對路徑是刻意。請務必確認 AD FS 信賴憑證者信任和 Exchange 對象 URI 的<strong>皆相同</strong>。 這表示信賴憑證者信任 AD FS 與 Exchange 對象 URI 的應該<strong>同時具備</strong>或<strong>兩者發出</strong>尾隨斜線及其 url。本節中的範例包含結尾<strong>/</strong>的之後任何以&quot;owa&quot;(/owa/) 或&quot;ecp&quot;(/ecp/) 的 url。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 下面所顯示的 URL 範例在行尾斜線<strong>/</strong>的相對路徑是刻意。請務必確認 AD FS 信賴憑證者信任和 Exchange 對象 URI 的<strong>皆相同</strong>。 這表示信賴憑證者信任 AD FS 與 Exchange 對象 URI 的應該<strong>同時具備</strong>或<strong>兩者發出</strong>尾隨斜線及其 url。本節中的範例包含結尾<strong>/</strong>的之後任何以&quot;owa&quot;(/owa/) 或&quot;ecp&quot;(/ecp/) 的 url。
+
+
 
 
 針對 Outlook Web App，若要使用 Windows Server 2012 R2 中的 \[AD FS 管理\] 嵌入式管理單元來建立信賴憑證者信任：
@@ -444,17 +409,17 @@ EAC 會使用 ECP 虛擬目錄。您可以使用 [Get-EcpVirtualDirectory](https
 
 3.  執行下列兩個 Cmdlet，以建立信賴憑證者信任。在此範例中，這也會設定宣告規則。
 
-**IssuanceAuthorizationRules.txt 包含：**
+**IssuanceAuthorizationRules.txt 包含：** 
 
     @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
 
-**IssuanceTransformRules.txt 包含：**
+**IssuanceTransformRules.txt 包含：** 
 
     @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
     
     @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
 
-**執行下列命令：**
+**執行下列命令：** 
 
     [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
     
@@ -466,34 +431,20 @@ EAC 會使用 ECP 虛擬目錄。您可以使用 [Get-EcpVirtualDirectory](https
 
 ## 步驟 4 – 安裝 Web 應用程式 Proxy 角色服務 （選擇性）
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>步驟 4、 步驟 5 和步驟 6 是如使用者想要發佈 Exchange OWA 和 ECP 使用 Web 應用程式 Proxy，並誰要有執行 AD FS 驗證的 Web 應用程式 Proxy。不過，與 Web 應用程式 Proxy 發佈 Exchange 則不需要，因此您可以略過步驟 7 如果您未使用 Web 應用程式 Proxy 與您想執行本身的 AD FS 驗證 Exchange。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 步驟 4、 步驟 5 和步驟 6 是如使用者想要發佈 Exchange OWA 和 ECP 使用 Web 應用程式 Proxy，並誰要有執行 AD FS 驗證的 Web 應用程式 Proxy。不過，與 Web 應用程式 Proxy 發佈 Exchange 則不需要，因此您可以略過步驟 7 如果您未使用 Web 應用程式 Proxy 與您想執行本身的 AD FS 驗證 Exchange。
+
+
 
 
 Web 應用程式 Proxy 為Windows Server 2012 R2 中的新遠端存取角色服務。Web 應用程式 Proxy 提供貴公司網路內可允許使用者在公司網路之外存取其從許多裝置上的 web 應用程式的反向 proxy 功能。Web 應用程式 Proxy 會使用Active Directory Federation Services (AD FS) 來預先驗證存取 web 應用程式和也功能為 AD FS proxy。Web 應用程式 Proxy 不一定、 建議的外部用戶端存取 AD FS 時。不過，在Outlook Web App離線存取不支援時使用 AD FS 驗證透過 Web 應用程式 Proxy。您可以找到的[安裝及設定 Web 應用程式 Proxy 發佈的內部應用程式](https://go.microsoft.com/fwlink/?linkid=392705)看不到整合與 Web 應用程式 Proxy 的詳細資訊
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法在已安裝 AD FS 的相同伺服器上安裝 Web 應用程式 Proxy。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 您無法在已安裝 AD FS 的相同伺服器上安裝 Web 應用程式 Proxy。
+
+
 
 
 若要部署 Web 應用程式 Proxy，您必須在將用作 Web 應用程式 Proxy 伺服器的伺服器上，安裝具有 Web 應用程式 Proxy 角色服務的遠端存取伺服器角色。若要安裝 Web 應用程式 Proxy 角色服務：
@@ -617,18 +568,11 @@ Web 應用程式 Proxy 為Windows Server 2012 R2 中的新遠端存取角色服�
     $uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
     Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些案例不支援<em>-AdfsEncryptCertificateThumbprint</em>參數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 這些案例不支援<em>-AdfsEncryptCertificateThumbprint</em>參數。
+
+
 
 
 如需詳細資訊和語法，請參閱[Set-OrganizationConfig](https://technet.microsoft.com/zh-tw/library/aa997443\(v=exchg.150\))和[取得 ADFSCertificate](https://go.microsoft.com/fwlink/?linkid=392706)。
@@ -637,18 +581,11 @@ Web 應用程式 Proxy 為Windows Server 2012 R2 中的新遠端存取角色服�
 
 針對 OWA 和 ECP 虛擬目錄，啟用 AD FS 驗證作為唯一的驗證方法，並停用其他所有形式的驗證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須先設定 ECP 虛擬目錄，再設定 OWA 虛擬目錄。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 您必須先設定 ECP 虛擬目錄，再設定 OWA 虛擬目錄。
+
+
 
 
 使用 Exchange 管理命令介面設定 ECP 虛擬目錄。在命令介面\] 視窗中，執行下列命令。
@@ -659,18 +596,11 @@ Web 應用程式 Proxy 為Windows Server 2012 R2 中的新遠端存取角色服�
 
     Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上述的 Exchange 管理命令介面命令在組織中每個用戶端存取伺服器上設定 OWA 和 ECP 虛擬目錄。如果您不想將這些設定套用至所有的用戶端存取伺服器，使用<em>-Identity</em>參數和指定的用戶端存取伺服器。很有可能會想要這些設定僅適用於您組織中用戶端存取伺服器的網際網路對向。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 上述的 Exchange 管理命令介面命令在組織中每個用戶端存取伺服器上設定 OWA 和 ECP 虛擬目錄。如果您不想將這些設定套用至所有的用戶端存取伺服器，使用<em>-Identity</em>參數和指定的用戶端存取伺服器。很有可能會想要這些設定僅適用於您組織中用戶端存取伺服器的網際網路對向。
+
+
 
 
 如需詳細資料和語法，請參閱 [Get-OwaVirtualDirectory](https://technet.microsoft.com/zh-tw/library/aa998588\(v=exchg.150\)) 和 [Set-OwaVirtualDirectory](https://technet.microsoft.com/zh-tw/library/bb123515\(v=exchg.150\)) 或 [Get-EcpVirtualDirectory](https://technet.microsoft.com/zh-tw/library/dd351058\(v=exchg.150\)) 和 [Set-EcpVirtualDirectory](https://technet.microsoft.com/zh-tw/library/dd297991\(v=exchg.150\))。

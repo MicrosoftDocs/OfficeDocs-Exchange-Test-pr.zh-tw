@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange Server 2013 uses Windows PowerShell command-line interface remoting to establish a connection between the server or workstation from which you're administering Exchange and the server running Exchange 2013 that you're administering. In Exchange 2013, this is called remote Exchange Management Shell, or remote Shell. Even if you're administering the local Exchange 2013 server, remote Shell is used to make the connection. For more information about local and remote Shell, see [使用 PowerShell 與 Exchange 2013 (Exchange 管理命令介面)](https://technet.microsoft.com/zh-tw/library/bb123778\(v=exchg.150\)).
 
@@ -31,18 +31,11 @@ The remote session is the Windows PowerShell session that's running on the remot
 
 When you connect to a remote Exchange server, a connection is made between your local session on your computer and the remote session on the Exchange server. This connection enables you to run Exchange cmdlets on the remote Exchange server in your local session even though your local computer doesn't have any Exchange cmdlets installed. Even though the Exchange cmdlets appear to be running on your local computer, they’re actually running on the Exchange server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Even if you open the Shell on an Exchange 2013 server, the same connection process takes place and two sessions are created. This means that you must use the same new syntax to import and export files whether you're opening the Shell on an Exchange 2013 server or from a remote client workstation.</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Even if you open the Shell on an Exchange 2013 server, the same connection process takes place and two sessions are created. This means that you must use the same new syntax to import and export files whether you're opening the Shell on an Exchange 2013 server or from a remote client workstation.
+
+
 
 
 The Exchange cmdlets that run in the remote session on the remote Exchange server don't have access to your local file system. This means that you can't use Exchange cmdlets, on their own, to import or export files from or to your local file system. Additional syntax needs to be used to transfer the files to and from your local file system so that the Exchange cmdlets running on the remote Exchange server can use the data. For more information about the required syntax, see "Importing and exporting files in remote Shell" later in this topic.
@@ -154,18 +147,11 @@ The Shell must know that you want to save the data stored in the **FileData** pr
 
 For example, the following command exports the data stored in the **FileData** property on the object created by the **Export-SomeData** fictional cmdlet. The exported data is stored in a file you specify on the local computer, in this case MyData.dat.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>This procedure uses the <strong>ForEach</strong> cmdlet, objects, and pipelining. For more information about each, see <a href="https://technet.microsoft.com/zh-tw/library/aa998260(v=exchg.150)">管線</a> and <a href="https://technet.microsoft.com/zh-tw/library/aa996386(v=exchg.150)">結構化的資料</a>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> This procedure uses the <strong>ForEach</strong> cmdlet, objects, and pipelining. For more information about each, see <a href="https://technet.microsoft.com/zh-tw/library/aa998260(v=exchg.150)">管線</a> and <a href="https://technet.microsoft.com/zh-tw/library/aa996386(v=exchg.150)">結構化的資料</a>.
+
+
 
 
     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }

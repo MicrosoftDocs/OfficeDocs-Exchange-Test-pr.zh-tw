@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-09-24_
+_**上次修改主題的時間：** 2012-09-24_
 
 Microsoft Exchange ActiveSync可讓使用者為已啟用行動裝置存取大部分Microsoft Exchange信箱資料的任何時候，任何地方。有許多不同的行動電話與裝置啟用Exchange ActiveSync。這些包括Windows電話、 Nokia 行動電話、 Android 電話與平板電腦與 Apple iPhone、 iPod 與 iPad。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013包含整合Microsoft SharePoint 2013及Microsoft Lync 2013的許多功能。這些產品提供功能可讓企業 eDiscovery 等使用站台信箱的共同作業案例可能的套件。
 
@@ -114,18 +114,11 @@ OAuth 是許多網站和 web 服務所使用的標準授權通訊協定。它可
 
 Exchange 2013安裝程式會建立自我簽署的憑證與 Microsoft Exchange Server 驗證憑證的易記名稱。憑證已複寫至Exchange 2013組織中的所有前端伺服器。在Exchange 2013的授權組態中，以及其服務名稱，代表在內部Exchange 2013已知 GUID 指定憑證的指紋。Exchange 會使用發行其驗證中繼資料文件的授權組態。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>預設Exchange 2013所建立的伺服器驗證憑證時才有效的五年。您必須確定授權組態包含目前的憑證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 預設Exchange 2013所建立的伺服器驗證憑證時才有效的五年。您必須確定授權組態包含目前的憑證。
+
+
 
 
 當Exchange 2013收到存取要求從協力廠商應用程式透過 Exchange Web 服務 (EWS) 時，它會剖析 https 要求，其中包含使用其私密金鑰的呼叫伺服器所簽署的存取 token `www-authenticate`標頭。驗證模組會驗證使用協力廠商應用程式設定的存取 token。然後授與存取權授與應用程式的 RBAC 權限為基礎的資源。代表使用者存取權杖時，檢查是否有授與使用者的 RBAC 權限。例如，如果使用者執行的 eDiscovery 搜尋使用SharePoint 2013、 Exchange 檢查中的 eDiscovery 中心是否在使用者為 「 探索管理角色群組的成員或擁有信箱搜尋指派角色和所搜尋的信箱會 RBAC 角色指派的範圍內。如需詳細資訊，請參閱[權限](permissions-exchange-2013-help.md)。

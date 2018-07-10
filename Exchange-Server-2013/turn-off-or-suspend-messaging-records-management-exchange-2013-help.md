@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-14_
+_**上次修改主題的時間：** 2013-02-14_
 
 若要符合個別、 IT、 或業務需求，您可能需要關閉或暫時擱置郵件記錄管理 (MRM) 或個別使用者的信箱伺服器。您可能需要關閉或暫停 MRM 的原因包括：
 
@@ -105,18 +105,11 @@ _**上次修改主題的時間：**2013-02-14_
 
 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [郵件原則及符合性權限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主題中的「郵件記錄管理」項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在下列命令中加入 <em>WhatIf</em> 參數，以模擬命令所採取的動作。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在下列命令中加入 <em>WhatIf</em> 參數，以模擬命令所採取的動作。
+
+
 
 
 此範例會從 Exchange 組織中移除所有刪除標記，但 \[永不刪除\] 標記除外，它用於 Exchange 安裝程式所建立的 ArbitrationMailbox 原則中。

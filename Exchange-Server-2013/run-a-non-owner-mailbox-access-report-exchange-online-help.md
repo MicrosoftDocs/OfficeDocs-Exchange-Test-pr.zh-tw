@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online_
+_**適用版本：** Exchange Online_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 非擁有者信箱存取 Exchange 系統管理中心 (EAC) 中報告列出已經由信箱擁有者以外的某人來存取信箱。非擁有者存取信箱時 Microsoft Exchange 記錄會儲存為隱藏資料夾要稽核的信箱的電子郵件信箱稽核記錄檔此動作的相關資訊。此記錄檔中的項目顯示為搜尋結果並包括非擁有者、 誰存取信箱及動作時，執行非擁有者，來存取信箱的清單和動作是否執行成功。根據預設，在信箱稽核記錄中的項目會保留期為 90 天。
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 啟用信箱稽核記錄
@@ -81,18 +74,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 3.  若要檢視特定信箱的非擁有者存取，請從信箱清單中選取的信箱。在詳細資料窗格中檢視搜尋結果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要縮小搜尋結果吗？選取的開始日期、 結束日期] 或兩者，然後選取特定信箱搜尋。按一下 [<strong>搜尋</strong>] 重新執行 [報表]。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 要縮小搜尋結果吗？選取的開始日期、 結束日期] 或兩者，然後選取特定信箱搜尋。按一下 [<strong>搜尋</strong>] 重新執行 [報表]。
+
+
 
 
 ## 非擁有者存取的特定類型的搜尋
@@ -129,18 +115,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 下表列出所執行的動作非擁有者可以登入信箱的稽核記錄。在表格中，**是**表示以登入類型，可記錄動作並**無**指出無法記錄的動作。星號 （**\***） 會指出動作會記錄的信箱啟用信箱稽核記錄時的預設值。如果您想要追蹤預設未記錄的動作，您必須使用 PowerShell 來啟用這些動作的記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>已指派完整存取權給使用者的信箱的系統管理員會被視為委派的使用者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 已指派完整存取權給使用者的信箱的系統管理員會被視為委派的使用者。
+
+
 
 
 
@@ -230,18 +209,11 @@ _**上次修改主題的時間：**2016-12-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>*  在啟用信箱的稽核時依預設稽核。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> *  在啟用信箱的稽核時依預設稽核。
+
+
 
 
 返回頁首

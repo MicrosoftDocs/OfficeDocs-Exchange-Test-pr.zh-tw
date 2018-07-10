@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-05-21_
+_**上次修改主題的時間：** 2013-05-21_
 
 Microsoft Exchange Server 2013會將 Active Directory 站台及資料庫可用性群組 (DAGs) 辨識為路由界限。不過， Exchange 2013仍會使用 Active Directory 站台拓撲來決定如何將郵件傳輸不同 Dag 或組織內的網站中的 Exchange 伺服器之間。如需詳細資訊，請參閱[郵件路由](mail-routing-exchange-2013-help.md)。
 

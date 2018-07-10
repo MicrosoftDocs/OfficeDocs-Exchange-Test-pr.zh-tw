@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 整合通訊 (UM) 中 Microsoft Exchange Server 2013包括設為Exchange 2010和Exchange 2007、 一些增強及架構變更的同一個功能。不過，整合通訊不再個別的伺服器角色。現在是在Exchange 2013中所提供的語音相關功能的元件。
 
@@ -49,18 +49,11 @@ UCMA 4.0 支援新功能整合通訊，例如使用文字轉語音 (TTS) 和自�
 
   - UCMA 4.0 跨多種產品提供準確度更高的語音引擎轉譯及延展性更好的語音平台支援。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您要安裝Exchange 2013安裝 UCMA 4.0。如需 UCMA 4.0 和安裝需求的詳細資訊，請參閱<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。若要升級至 UCMA 最新版本，您必須先解除安裝任何舊版 UCMA 安裝使用 [新增/移除程式]。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您要安裝Exchange 2013安裝 UCMA 4.0。如需 UCMA 4.0 和安裝需求的詳細資訊，請參閱<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。若要升級至 UCMA 最新版本，您必須先解除安裝任何舊版 UCMA 安裝使用 [新增/移除程式]。
+
+
 
 
 ## 語音郵件預覽改良功能

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 網際網路通訊協定第 6 版 (IPv6) 是最新版本的網際網路通訊協定 (IP)。IPv6 被為了更正許多 IPv4，已 IP 舊版的缺點。
 
@@ -91,18 +91,11 @@ IPv6 address basics
 <li><p>智慧主機 IP 位址</p></li>
 <li><p>在邊際傳輸伺服器上設定傳送連接器的 <em>SourceIPAddress</em> 參數</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要指定<em>SourceIPAddress</em>參數 IPv6 位址，請確定已正確設定適當的 DNS AAAA 與郵件交換 (MX) 記錄。這有助於確保傳遞郵件如果遠端郵件伺服器在嘗試任何種類的反向查閱測試指定之 IPv6 位址。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您想要指定<em>SourceIPAddress</em>參數 IPv6 位址，請確定已正確設定適當的 DNS AAAA 與郵件交換 (MX) 記錄。這有助於確保傳遞郵件如果遠端郵件伺服器在嘗試任何種類的反向查閱測試指定之 IPv6 位址。
+
+
 
 <p>如需相關資訊，請參閱<a href="send-connectors-exchange-2013-help.md">傳送連接器</a>。</p></td>
 </tr>

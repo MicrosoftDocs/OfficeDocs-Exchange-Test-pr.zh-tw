@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 反垃圾郵件戳記可協助您診斷套用診斷的中繼資料、 或戳記，例如寄件者相關的資訊、 拼圖驗證結果，以及內容篩選結果，郵件通過時篩選來自網際網路的內送的郵件的反垃圾郵件功能的垃圾郵件相關的問題。以下是三個反垃圾郵件戳記： 網路釣魚信賴等級戳記、 垃圾郵件信賴等級戳記，以及寄件者識別碼戳記。
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 下表說明可以出現在反垃圾郵件報告中的篩選器資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>反垃圾郵件報告只會顯示已套用至特定郵件的篩選器資訊。反垃圾郵件報告通常不會包含下表所列的所有資訊。例如，可能會收到下列反垃圾郵件報告： <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 反垃圾郵件報告只會顯示已套用至特定郵件的篩選器資訊。反垃圾郵件報告通常不會包含下表所列的所有資訊。例如，可能會收到下列反垃圾郵件報告： <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。
+
+
 
 
 ### 反垃圾郵件報告中的篩選器資訊

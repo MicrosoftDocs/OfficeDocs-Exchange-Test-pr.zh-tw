@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Exchange 整合通訊 (UM) 可讓您提供語音信箱服務給組織內的使用者。當您部署整合通訊時，必須將 Exchange 伺服器部署與您組織現有的電話語音系統或 Microsoft Lync Server 整合。成功的部署需要仔細分析您現有的電話基礎結構，並執行正確的規劃步驟以部署和管理整合通訊中的語音信箱。若您將 Exchange 與 Lync Server 整合，也需熟悉該產品：
 
@@ -29,18 +29,11 @@ Exchange 整合通訊 (UM) 可讓您提供語音信箱服務給組織內的使�
 
   - Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 2010 或 2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您在託管或混合環境中部署 Exchange UM 時，必須部署工作階段邊界控制器 (SBC)。SBC 不會啟用 UM 連接到電話語音網路，或為組織提供撥號音。不過，它們確實會使用公用或私有 WAN 上的 IP 通訊協定，將您的內部部署 UM 部署連接到資料中心。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 當您在託管或混合環境中部署 Exchange UM 時，必須部署工作階段邊界控制器 (SBC)。SBC 不會啟用 UM 連接到電話語音網路，或為組織提供撥號音。不過，它們確實會使用公用或私有 WAN 上的 IP 通訊協定，將您的內部部署 UM 部署連接到資料中心。
+
+
 
 
 **電話語音硬體**   選擇正確的 VoIP 閘道、IP PBX 或 SBC 是整合電話語音網路與 UM 的第一步。需設定那些裝置與 UM 配合、部署需要的用戶端存取與信箱伺服器、以及建立並設定所有必要的 UM 元件。這些元件可讓您將電路通訊協定網路與 IP 資料網路連接，並為組織中的使用者啟用語音信箱。如需詳細資訊，請參閱 [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。

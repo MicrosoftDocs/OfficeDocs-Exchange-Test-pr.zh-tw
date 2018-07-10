@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-03_
+_**上次修改主題的時間：** 2012-10-03_
 
 當您使用佇列檢視器位於內部部署 Exchange 組織的 Microsoft Exchange Server 2013伺服器上的 \[Exchange 工具箱\] 中時，您可以連線至其他 Mailbox server。根據預設，當您開啟 Mailbox server 上的佇列檢視佇列檢視器連接至本機伺服器上的佇列資料庫。 不過，您可以啟動一個以上的執行個體的佇列檢視器，讓每個執行個體著重在不同的伺服器。讓您輕鬆可以監視多個信箱伺服器每次您也可以並排顯示佇列檢視器視窗。
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2012-10-03_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作

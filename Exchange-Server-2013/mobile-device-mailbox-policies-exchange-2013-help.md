@@ -13,38 +13,24 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-06-16_
+_**上次修改主題的時間：** 2016-06-16_
 
 在 MicrosoftExchange Server 2013 中，您可以建立行動裝置信箱原則，對一群使用者套用一組共通的原則或安全性設定。在 Exchange ActiveSync 組織中部署 Exchange 2013 之後，您可以建立新的行動裝置信箱原則，或修改現有的原則。當您安裝 Exchange 2013 時，會建立一個預設的行動裝置信箱原則。系統將自動分配此預設的行動裝置信箱原則給所有使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Phone 7 行動電話只支援所有 Exchange ActiveSync 信箱原則設定的子集。如需完整清單，請參閱Windows Phone 7 Synchronization。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Windows Phone 7 行動電話只支援所有 Exchange ActiveSync 信箱原則設定的子集。如需完整清單，請參閱Windows Phone 7 Synchronization。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>iOS7 指紋辨識器不支援作為裝置密碼。如果您讓指紋辨識器保護 iOS7 裝置，而且行動裝置信箱原則需要密碼，則還是需要建立和輸入密碼。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!WARNING]  
+> iOS7 指紋辨識器不支援作為裝置密碼。如果您讓指紋辨識器保護 iOS7 裝置，而且行動裝置信箱原則需要密碼，則還是需要建立和輸入密碼。
+
+
 
 
 ## 行動裝置信箱原則概述

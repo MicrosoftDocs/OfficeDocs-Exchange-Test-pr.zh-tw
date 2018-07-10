@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Edge Transport Server 會將其組態資訊儲存在 Active Directory 輕量型目錄服務 (AD LDS) 中。您可以在周邊網路中安裝多部 Edge Transport Server，並使用 DNS 循環配置，協助平衡 Edge Transport Server 中的網路流量。循環配置是 DNS 伺服器所使用的一項簡單機制，可共用以及分配網路資源的負載。
 
@@ -125,18 +125,11 @@ ImportEdgeConfig.ps1 指令碼 (位於 %ExchangeInsallPath%Scripts) 會執行下
 
 您可以在任何目標伺服器上執行此步驟，以複製現有 Edge Transport Server 的組態，或將伺服器還原至特定組態。執行 ImportEdgeConfig.ps1 指令碼 (位於 %ExchangeInsallPath%Scripts)，以驗證並匯入新的組態。執行此指令碼之後，目標伺服器的組態會符合中繼 XML 檔案及回應檔案中的設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您在執行匯入組態程序之前備份現有的伺服器組態，這樣一來，如果複製作業失敗，則可以將伺服器還原至其先前的穩定狀態。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 建議您在執行匯入組態程序之前備份現有的伺服器組態，這樣一來，如果複製作業失敗，則可以將伺服器還原至其先前的穩定狀態。
+
+
 
 
 此步驟使用回應檔案中所提供的伺服器特有資訊。如果未在回應檔案中指定設定，則會使用中繼 XML 檔案中的資料。在指令碼修改組態之前，指令碼會驗證中繼 XML 檔案及回應檔案中的資料。
@@ -270,18 +263,11 @@ ImportEdgeConfig.ps1 指令碼 (位於 %ExchangeInsallPath%Scripts) 會執行下
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>稍後若向 Exchange 組織訂閱 Edge Transport Server，則會在 EdgeSync 程序期間覆寫 <strong>InternalSMTPServers</strong> 屬性的值。如需詳細資訊，請參閱<a href="edge-subscriptions-exchange-2013-help.md">Edge 訂閱</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 稍後若向 Exchange 組織訂閱 Edge Transport Server，則會在 EdgeSync 程序期間覆寫 <strong>InternalSMTPServers</strong> 屬性的值。如需詳細資訊，請參閱<a href="edge-subscriptions-exchange-2013-help.md">Edge 訂閱</a>。
+
+
 
 
 回到頁首

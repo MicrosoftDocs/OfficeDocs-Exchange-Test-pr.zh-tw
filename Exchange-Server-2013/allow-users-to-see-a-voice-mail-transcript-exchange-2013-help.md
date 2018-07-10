@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 語音郵件預覽是一種功能，可接收其語音郵件訊息從整合通訊 (UM) 的使用者。語音郵件預覽增強現有的 UM 語音信箱功能提供音訊錄製的文字版本。語音郵件文字會顯示在MicrosoftOutlook Web App、 Outlook 2010及更新版本、 內的電子郵件及其他支援的電子郵件程式\]。如需詳細資訊，查看[Microsoft 語音技術](http://go.microsoft.com/fwlink/p/?linkid=187348)。
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-05-27_
+_**上次修改主題的時間：** 2014-05-27_
 
 建立使用者信箱後，您可以使用 EAC 或命令介面變更並設定額外屬性。
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2014-05-27_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -165,34 +158,20 @@ _**上次修改主題的時間：**2014-05-27_
 
   - \[信箱使用量\]   這個區域顯示信箱的總大小，以及已使用的信箱總配額百分比。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為了取得前面兩個方塊中顯示的資訊，EAC 會查詢主控信箱的信箱資料庫。如果 EAC 無法與包含信箱資料庫的 Exchange 儲存區進行通訊，則這些方塊將會空白。如果使用者尚未登入信箱，將顯示警告訊息。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 為了取得前面兩個方塊中顯示的資訊，EAC 會查詢主控信箱的信箱資料庫。如果 EAC 無法與包含信箱資料庫的 Exchange 儲存區進行通訊，則這些方塊將會空白。如果使用者尚未登入信箱，將顯示警告訊息。
+
+
 
 
 按一下 \[更多選項\]，檢視或變更信箱儲存配額，以及針對信箱已刪除的項目的保留設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online 中，EAC 沒有這些設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange Online 中，EAC 沒有這些設定。
+
+
 
 
   - **儲存配額設定**   若要自訂信箱的這些設定，而不使用信箱資料庫的預設值，按一下 \[自訂此信箱的設定\]，輸入新的值，然後按一下 \[儲存\]。
@@ -215,18 +194,11 @@ _**上次修改主題的時間：**2014-05-27_
 
 使用\[連絡人資訊\]：這個區段可用來檢視或變更使用者的連絡人資訊。此頁的資訊顯示於通訊錄中。按一下\[更多選項\]以顯示其他方塊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用 [縣/市]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以使用 [縣/市]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。
+
+
 
 
 信箱使用者可以使用 Outlook 或 Outlook Web App 來檢視和變更他們的連絡人資訊。不過，他們無法變更 \[附註\] 和 \[網頁\] 方塊中的資訊。
@@ -443,18 +415,11 @@ _**上次修改主題的時間：**2014-05-27_
 
 使用 \[郵件提示\] 區段來加入「郵件提示」，以便在將郵件傳送給此收件者時，警示使用者潛在的問題。「郵件提示」是在此收件者加入至新電子郵件的 \[收件者\]、\[副本\] 或 \[密件副本\] 方塊時，顯示在資訊列中的文字。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。
+
+
 
 
 ## \[信箱委派\]
@@ -537,18 +502,11 @@ _**上次修改主題的時間：**2014-05-27_
 
   - **委派權限**   將權限指派給使用者或群組，以允許他們從其他信箱開啟或傳送郵件。您可以將「完整」、「以下列傳送」和「代理傳送者」權限指派給使用者或群組。如需詳細資料，請參閱[管理收件者的權限](manage-permissions-for-recipients-exchange-online-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此工作的完成時間預計要 2 分鐘，不過，如果您要變更多個屬性或功能，可能會更久。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此工作的完成時間預計要 2 分鐘，不過，如果您要變更多個屬性或功能，可能會更久。
+
+
 
 
 ## 使用 EAC 大量編輯使用者信箱

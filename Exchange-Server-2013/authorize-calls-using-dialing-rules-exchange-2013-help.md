@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 根據預設，使用者都可以撥撥出電話。若要指定類型的電話使用者可以進行，您先建立撥號規則，然後授權的 UM 撥號對應表、 UM 信箱原則或 UM 自動語音應答上這些撥號規則群組。您可以授權撥號規則群組之前，您必須定義撥號規則上的 UM 撥號對應表。如需詳細資訊，請參閱[建立使用者的撥號規則](create-dialing-rules-for-users-exchange-2013-help.md)。
 

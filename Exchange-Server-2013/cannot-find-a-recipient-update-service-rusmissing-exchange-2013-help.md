@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-15_
+_**上次修改主題的時間：** 2016-12-15_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -54,11 +54,11 @@ Microsoft Exchange 安裝程式會要求在現有的 Exchange 組織中每個網
 
 如需收件者更新服務的詳細資訊，請參閱下列 Microsoft 知識庫文章：
 
-  - "How 收件者更新服務會套用收件者原則 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=328738))。
+  - "How 收件者更新服務會套用收件者原則 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738))。
 
-  - "How 收件者更新服務會填入通訊清單 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253828))。
+  - "How 收件者更新服務會填入通訊清單 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253828))。
 
-  - 」 如何檢查進度的 Exchange 收件者更新服務 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=246127))。
+  - 」 如何檢查進度的 Exchange 收件者更新服務 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127))。
 
-  - "Exchange 收件者更新服務所執行的工作 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253770))。
+  - "Exchange 收件者更新服務所執行的工作 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770))。
 

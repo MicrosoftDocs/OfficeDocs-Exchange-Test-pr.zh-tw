@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-04-29_
+_**上次修改主題的時間：** 2013-04-29_
 
 [允許或防止使用者建立通話自動答錄服務規則](allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md)
 

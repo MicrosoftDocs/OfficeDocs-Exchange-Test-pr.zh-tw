@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 訊息等待指示器 (MWI) 是在大部分的舊版的語音信箱系統中找到的功能。它可讓使用者知道有新的或技術面貌語音郵件訊息。在其最常見的表單中，這項功能 lights 燈表示新的或技術面貌語音訊息平台服務使用者的電話上。
 
@@ -91,18 +91,11 @@ MWI 通知可以包含任何其他機制，表示新的或技術面貌語音訊�
 
 在信箱伺服器會使用 history-info 資訊來電頁首上判斷已啟用 UM 之使用者的電話號碼或分機號碼。當副檔名或電話號碼決定時，Mailbox server 會將要求傳送至 SIP 對等。SIP 對等再變更 MWI 狀態並開啟使用者的電話上的通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然 PBX 中斷應極少、 UM 自動重新整理每個信箱的 MWI 狀態至少一次每隔 12 小時。沒有強制 refresh 方法，但如果 PBX 或 IP PBX 電源關閉所有 MWI 燈都移，所有燈應為正確的狀態內都還原六個小時。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 雖然 PBX 中斷應極少、 UM 自動重新整理每個信箱的 MWI 狀態至少一次每隔 12 小時。沒有強制 refresh 方法，但如果 PBX 或 IP PBX 電源關閉所有 MWI 燈都移，所有燈應為正確的狀態內都還原六個小時。
+
+
 
 
 回到頁首
@@ -284,18 +277,11 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 當來電者會保留新的語音訊息的文字訊息會傳送到使用者的行動電話。使用者也可以接收簡訊通知他們他們錯過撥打的電話及語音訊息不留時。未接的來電通知的文字訊息可以傳送給以及新的語音信箱通知使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>傳送給使用者的簡訊包括語音信箱預覽。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 傳送給使用者的簡訊包括語音信箱預覽。
+
+
 
 
 文字訊息通知的 UM IP 閘道或 UM 信箱原則上使用比 MWI 設定不同的設定。UM 信箱原則與 UM 信箱上所設定的新語音信箱和未接的來電的文字訊息通知。您可以啟用或停用的命令介面中使用**Set-UMMailboxPolicy** cmdlet 和**Set-UMMailbox** cmdlet 文字訊息通知。您可以使用**Get-UMMailboxPolicy**指令程式和**Get-UMMailbox**指令程式來檢視的文字訊息通知的狀態。您不可以在 EAC 中設定文字訊息通知。

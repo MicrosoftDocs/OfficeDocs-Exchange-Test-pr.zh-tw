@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 因為不再需要個人儲存區 (.pst) 檔案，*「就地封存」*(In-Place Archiving) 可協助您重新取得組織郵件資料的控制權，並且讓使用者將郵件儲存到能夠在 MicrosoftOutlook 2010 和更新版本以及 Microsoft OfficeOutlook Web App 中存取的*「封存信箱」*(Archive Mailbox)。
 
@@ -79,18 +79,11 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 <tr class="odd">
 <td><p>Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App</p></td>
 <td><p>是。Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App 使用者可以將項目從主要信箱複製或移動至封存信箱，也可以使用保留原則將項目移至封存。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 2010 與更新版本和 Outlook 2007 使用者可以也複製或將項目從.pst 檔案移到封存信箱。Outlook 2007 使用者需要 2011 年 2 月 Office 2007 累計更新。Outlook 2010 及更新版本及 Outlook 2007 之間存在封存支援的一些差異。如需詳細資訊，請參閱 Exchange 團隊部落格文章，請參閱<a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">是維吉尼亞州、 有 Outlook 2007 中的 Exchange 2010 封存支援</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook 2010 與更新版本和 Outlook 2007 使用者可以也複製或將項目從.pst 檔案移到封存信箱。Outlook 2007 使用者需要 2011 年 2 月 Office 2007 累計更新。Outlook 2010 及更新版本及 Outlook 2007 之間存在封存支援的一些差異。如需詳細資訊，請參閱 Exchange 團隊部落格文章，請參閱<a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">是維吉尼亞州、 有 Outlook 2007 中的 Exchange 2010 封存支援</a>。
+
+
 
 </td>
 </tr>
@@ -102,18 +95,11 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>就地封存 premium 功能，且需要 Exchange 企業用戶端存取授權 (CAL)。如需如何授權 Exchange 的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server 授權</a>。如需詳細資訊 Outlook 存取封存信箱所需的版本，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237276">個人封存和保留原則的授權需求</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 就地封存 premium 功能，且需要 Exchange 企業用戶端存取授權 (CAL)。如需如何授權 Exchange 的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server 授權</a>。如需詳細資訊 Outlook 存取封存信箱所需的版本，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=237276">個人封存和保留原則的授權需求</a>。
+
+
 
 
 即使已設定為使用 Exchange 快取模式 (離線)，Outlook 也不會在使用者的電腦上建立封存信箱的本機副本。使用者只能在線上模式下存取封存信箱。
@@ -168,18 +154,11 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 
 Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和保留原則。此原則內含具有 \[移至封存\] 動作的保留標記，如下表中所示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2010 中，Exchange 安裝程式所建立的預設封存和保留原則名為 <strong>[預設封存和保留原則]</strong>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在 Exchange 2010 中，Exchange 安裝程式所建立的預設封存和保留原則名為 <strong>[預設封存和保留原則]</strong>。
+
+
 
 
 
@@ -238,18 +217,11 @@ Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和�
 
   - 如何套用個人標記 (顯示於 Outlook 和 Outlook Web App 的 \[封存原則\] 功能表中)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您將保留原則套用至擁有封存信箱的使用者，保留原則會取代預設 MRM 原則。您可以建立一或多個擁有 [移至封存] 動作的保留標記，然後將標記連結至保留原則。您也可以將預設的 [移至封存] 標記 (安裝程式所建立，並連結至預設 MRM 原則) 新增至您所建立的任何保留原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您將保留原則套用至擁有封存信箱的使用者，保留原則會取代預設 MRM 原則。您可以建立一或多個擁有 [移至封存] 動作的保留標記，然後將標記連結至保留原則。您也可以將預設的 [移至封存] 標記 (安裝程式所建立，並連結至預設 MRM 原則) 新增至您所建立的任何保留原則。
+
+
 
 
 規範與封存在 Outlook 2010 和更新版本的相關資訊，請參閱[規劃規範與封存在 Outlook 2010](https://go.microsoft.com/fwlink/?linkid=210902)。
@@ -327,11 +299,11 @@ Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和�
     </table>
 
 
-  - **就地保留和訴訟資料暫留：**當您對信箱進行就地保留或訴訟資料暫留時，會同時保留主要和封存信箱。若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+  - **就地保留和訴訟資料暫留：** 當您對信箱進行就地保留或訴訟資料暫留時，會同時保留主要和封存信箱。若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
 
   - **可復原的項目資料夾**封存信箱內含其所擁有的 \[可復原的項目\] 資料夾，受限於主要信箱中相同 \[可復原的項目\] 資料夾的配額。若要深入了解可復原的項目，請參閱[可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)。
 
-  - **封存 Exchange 中的 Lync 內容：**   您可以將立即訊息對話和共用的線上會議文件封存到使用者的主要信箱。信箱必須位於 Exchange 2013 信箱伺服器上，而且您的組織中必須已部署 Microsoft Lync 2013。如需詳細資訊，請參閱[與 SharePoint 和 Lync 整合](integration-with-sharepoint-and-lync-exchange-2013-help.md)。
+  - **封存 Exchange 中的 Lync 內容：**    您可以將立即訊息對話和共用的線上會議文件封存到使用者的主要信箱。信箱必須位於 Exchange 2013 信箱伺服器上，而且您的組織中必須已部署 Microsoft Lync 2013。如需詳細資訊，請參閱[與 SharePoint 和 Lync 整合](integration-with-sharepoint-and-lync-exchange-2013-help.md)。
 
 ## 管理封存信箱
 
@@ -355,7 +327,7 @@ Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和�
     </table>
 
 
-  - **停用封存信箱：**您可能想要停用使用者的封存信箱以進行疑難排解，或者要將主要信箱移至不支援就地封存的 Exchange 版本。停用封存和停用主要信箱的步驟類似。如需詳細資訊，請參閱[管理 Exchange 2013 中的就地封存](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)。在內部部署的部署中，停用的封存信箱會保留於信箱資料庫中，直到達到該資料庫的刪除信箱保留期間為止。在此期間，您可以將封存重新與信箱使用者連線。達到刪除信箱保留期間時，就會將中斷連線的封存信箱從信箱資料庫中清除。
+  - **停用封存信箱：** 您可能想要停用使用者的封存信箱以進行疑難排解，或者要將主要信箱移至不支援就地封存的 Exchange 版本。停用封存和停用主要信箱的步驟類似。如需詳細資訊，請參閱[管理 Exchange 2013 中的就地封存](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)。在內部部署的部署中，停用的封存信箱會保留於信箱資料庫中，直到達到該資料庫的刪除信箱保留期間為止。在此期間，您可以將封存重新與信箱使用者連線。達到刪除信箱保留期間時，就會將中斷連線的封存信箱從信箱資料庫中清除。
 
   - **擷取信箱統計資料和資料夾統計資料** 您可以使用 *Archive* 參數搭配 [Get-MailboxStatistics](https://technet.microsoft.com/zh-tw/library/bb124612\(v=exchg.150\)) 和 [Get-MailboxFolderStatistics](https://technet.microsoft.com/zh-tw/library/aa996762\(v=exchg.150\)) 指令程式，擷取使用者封存信箱的信箱統計資料和信箱資料夾統計資料。
 

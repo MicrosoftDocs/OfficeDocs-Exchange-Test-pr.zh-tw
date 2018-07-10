@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 有了同盟共用，內部部署 Exchange 組織中的使用者可與其他也已針對同盟共用進行設定的 Exchange 組織中的收件者共用空閒/忙碌行事曆資訊。可在兩個執行 Exchange 2013 的組織之間啟用空閒/忙碌資訊的共用功能，也可在採用混合型 Exchange 部署的組織之間啟用。若要深入了解同盟共用，請參閱[共用](sharing-exchange-2013-help.md)。
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 若欲瞭解更多與同盟共用相關的管理工作，請參閱 [同盟程序](federation-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -125,7 +118,7 @@ _**上次修改主題的時間：**2016-12-09_
         </thead>
         <tbody>
         <tr class="odd">
-        <td>如需如何讓 Exchange 2013 和 Exchange 2003 組織之間的空閒/忙碌共用運作正常的相關資訊，公用資料夾階層中必須存在 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾。在 Exchange 2010 設定過程中，只有在您配置 Outlook 2003 支援用戶端設定的同時選取建立公用資料夾的選項，才會自動在 Exchange 2003 組織內的 Exchange 2010 Mailbox 伺服器上建立此資料夾。此外，Exchange 2010 信箱伺服器必須是組織中第一個安裝的信箱伺服器，此選項才會在安裝過程中出現。若未在安裝過程中建立 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾，您將必須手動建立此資料夾。如需有關如何建立此公用資料夾的詳細資料，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2555008">在 Microsoft Office 365 企業環境中，使用 Exchange 聯盟時，如何疑難排解閒置/忙碌的問題</a>。</td>
+        <td>如需如何讓 Exchange 2013 和 Exchange 2003 組織之間的空閒/忙碌共用運作正常的相關資訊，公用資料夾階層中必須存在 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾。在 Exchange 2010 設定過程中，只有在您配置 Outlook 2003 支援用戶端設定的同時選取建立公用資料夾的選項，才會自動在 Exchange 2003 組織內的 Exchange 2010 Mailbox 伺服器上建立此資料夾。此外，Exchange 2010 信箱伺服器必須是組織中第一個安裝的信箱伺服器，此選項才會在安裝過程中出現。若未在安裝過程中建立 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾，您將必須手動建立此資料夾。如需有關如何建立此公用資料夾的詳細資料，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">在 Microsoft Office 365 企業環境中，使用 Exchange 聯盟時，如何疑難排解閒置/忙碌的問題</a>。</td>
         </tr>
         </tbody>
         </table>

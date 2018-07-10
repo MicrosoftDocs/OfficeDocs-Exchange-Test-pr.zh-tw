@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-17_
+_**上次修改主題的時間：** 2012-10-17_
 
 您可能會有您要傳送郵件給及從傳真閘道伺服器做為其主要傳輸機制不使用 SMTP 接收訊息的案例。遵循此程序可建立外部連接器傳送郵件給並接收來自外部系統的訊息中所述的步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須將外寄郵件傳遞給非 SMTP 系統大多數的情況下，我們建議傳遞代理程式連接器，因為他們允許之訊息的佇列管理、 訊息沒有寫入檔案系統與其他優點。<a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">傳遞代理程式及傳遞代理程式連接器</a>主題提供更多詳細資料。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您必須將外寄郵件傳遞給非 SMTP 系統大多數的情況下，我們建議傳遞代理程式連接器，因為他們允許之訊息的佇列管理、 訊息沒有寫入檔案系統與其他優點。<a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">傳遞代理程式及傳遞代理程式連接器</a>主題提供更多詳細資料。
+
+
 
 
 對於案例感興趣一角與使用此程序？請參閱下列主題：
@@ -45,18 +38,11 @@ _**上次修改主題的時間：**2012-10-17_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？

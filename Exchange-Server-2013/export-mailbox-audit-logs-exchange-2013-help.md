@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 如果信箱已啟用信箱稽核，每當擁有者以外的使用者存取信箱時，Microsoft Exchange 就會在*「信箱稽核記錄」*中記錄相關資訊。每個記錄項目都包括下列相關資訊：存取信箱的人員和時間、非擁有者所執行的動作，以及動作是否成功完成。信箱稽核記錄預設會保留在信箱中 90 天。您可以使用信箱稽核記錄來判斷是否擁有者以外的使用者存取了信箱。
 
@@ -43,18 +43,11 @@ _**上次修改主題的時間：**2015-04-07_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 設定信箱稽核記錄
@@ -127,11 +120,11 @@ _**上次修改主題的時間：**2015-04-07_
 
 3.  設定下列搜尋準則，匯出信箱稽核記錄中的項目：
     
-      - **開始和結束日期：**選取要併入匯出檔案中之項目的日期範圍。
+      - **開始和結束日期：** 選取要併入匯出檔案中之項目的日期範圍。
     
-      - **要搜尋稽核記錄的信箱：**選取要擷取稽核記錄項目的信箱。
+      - **要搜尋稽核記錄的信箱：** 選取要擷取稽核記錄項目的信箱。
     
-      - **非擁有者存取的類型：**選取下列其中一個選項來定義要擷取項目的非擁有者存取類型：
+      - **非擁有者存取的類型：** 選取下列其中一個選項來定義要擷取項目的非擁有者存取類型：
         
           - **所有非擁有者**   搜尋組織內的系統管理員和委派的使用者以及 Exchange Online 中 Microsoft 資料中心系統管理員的存取。
         
@@ -141,7 +134,7 @@ _**上次修改主題的時間：**2015-04-07_
         
           - **系統管理員**：搜尋組織內系統管理員的存取。
     
-      - **收件者：**選取要將信箱稽核記錄傳送給哪些使用者。
+      - **收件者：** 選取要將信箱稽核記錄傳送給哪些使用者。
 
 4.  按一下 \[匯出\]。
     

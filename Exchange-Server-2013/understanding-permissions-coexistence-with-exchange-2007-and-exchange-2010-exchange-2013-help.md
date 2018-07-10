@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 當您安裝 Microsoft Exchange Server 2013到現有的 Microsoft Exchange Server 2010或 Microsoft Exchange Server 2007組織時，您需要了解權限的新組織中的運作方式。閱讀下節的適用於您的組織。
 
@@ -251,18 +251,11 @@ Exchange 2007 提供下列預先定義的系統管理員角色：
 
 如果您想Exchange 2007系統管理員能夠管理Exchange 2013伺服器， Exchange 2007系統管理員必須新增一或多個Exchange 2013角色群組的成員。您可以將使用者或 Usg 新增至角色群組。授與給角色群組的權限則會套用至使用者或 Usg 的成員身分加入。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用網域本機或全域 Active Directory 安全性群組，若是想要將其新增為 Exchange 2013 角色群組的成員，必須將其變更為 USG。Exchange 2013 只支援 USG。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您使用網域本機或全域 Active Directory 安全性群組，若是想要將其新增為 Exchange 2013 角色群組的成員，必須將其變更為 USG。Exchange 2013 只支援 USG。
+
+
 
 
 下表說明 Exchange 2007 系統管理員角色與 Exchange 2013 角色群組之間的對應。
@@ -326,18 +319,11 @@ Exchange 2007 提供下列預先定義的系統管理員角色：
 
 完成這些步驟之後， Exchange 2007系統管理員會對應至適當的Exchange 2013物件的特定角色群組的成員。Exchange 2007系統管理員可以使用Exchange 2013管理工具來管理Exchange 2013伺服器和收件者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一般而言，Exchange 2007 伺服器和收件者必須使用 Exchange 2007 管理工具來管理，而 Exchange 2013 伺服器和收件者必須使用 Exchange 2013 管理工具來管理。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 一般而言，Exchange 2007 伺服器和收件者必須使用 Exchange 2007 管理工具來管理，而 Exchange 2013 伺服器和收件者必須使用 Exchange 2013 管理工具來管理。
+
+
 
 
 如果內建角色群組不提供的特定您想要授與某些系統管理員的權限集，您可以建立自訂角色群組。當您建立自訂角色群組時，您可以選取哪些角色新增至其中。您可以定義您想要管理角色群組的成員的特定功能。例如，如果您要系統管理員管理僅通訊群組，您可以建立自訂角色群組、，然後選取 \[僅的通訊群組的角色。執行這項作業之後，該自訂角色群組的成員可以管理僅通訊群組。如需如何建立自訂角色群組的詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)。

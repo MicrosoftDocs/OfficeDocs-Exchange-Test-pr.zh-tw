@@ -13,22 +13,15 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要在Office 365或Exchange Online協助 Ndr，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=524931">Office 365 中的電子郵件未傳遞回報</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您需要在Office 365或Exchange Online協助 Ndr，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=524931">Office 365 中的電子郵件未傳遞回報</a>。
+
+
 
 
 傳遞郵件問題時， Exchange Server 2013將傳送的傳遞狀態通知 (DSN) 郵件寄件者。這些系統產生的郵件也稱為為彈跳訊息，而且其中包含錯誤代碼、 相關問題，有時的和疑難排解步驟郵件寄件者的技術詳細資料。未傳遞回報 (NDR) 訊息都是一種常見的狀態通知。本主題的電子郵件系統管理員說明可能的原因和解決方案的許多 NDR 狀態碼。它也告訴您如何讀取與解譯 NDR 郵件。

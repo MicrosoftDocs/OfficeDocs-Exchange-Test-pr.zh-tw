@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-08-08_
+_**上次修改主題的時間：** 2017-08-08_
 
 您可以在虛擬環境中部署 Microsoft Exchange Server 2013。本主題可概覽各種支援在硬體虛擬軟體中部署 Exchange 2013 的案例。
 

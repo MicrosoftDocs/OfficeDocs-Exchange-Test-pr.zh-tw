@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 郵件流程規則，也稱為傳輸規則可用來尋找特定條件郵件通過組織並採取動作。本主題說明如何建立、複製、調整順序、啟用或停用、刪除或匯入或匯出規則以及如何監視規則使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要確定您規則運作您預期的方式，請務必徹底測試每個規則和規則之間的互動。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 若要確定您規則運作您預期的方式，請務必徹底測試每個規則和規則之間的互動。
+
+
 
 
 對於使用這些程序的案例感興趣嗎？請參閱下列主題：
@@ -67,18 +60,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -87,18 +73,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 您可以建立的郵件流程規則設定資料遺失防護 (DLP) 原則\]，建立新規則，或複製的規則。您可以使用Exchange 系統管理中心 (EAC) 或Exchange 管理命令介面。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立或修改的郵件流程規則之後，則可能需要 30 分鐘的時間全新或更新規則套用至電子郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 建立或修改的郵件流程規則之後，則可能需要 30 分鐘的時間全新或更新規則套用至電子郵件。
+
+
 
 
 ## 使用 DLP 原則來建立郵件流程規則
@@ -216,18 +195,11 @@ EAC 可讓您使用範本、 複製現有的規則或從頭建立郵件流程規
 
 ## 檢視或修改的郵件流程規則
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立或修改的郵件流程規則後，它可能需要 30 分鐘的時間全新或更新規則套用至電子郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 建立或修改的郵件流程規則後，它可能需要 30 分鐘的時間全新或更新規則套用至電子郵件。
+
+
 
 
 ## 使用 EAC 來檢視或修改的郵件流程規則
@@ -396,18 +368,11 @@ EAC 可讓您使用範本、 複製現有的規則或從頭建立郵件流程規
 
 如果是使用 Exchange Online 或 Exchange Online Protection，您可以使用規則報告來檢查每一個規則的符合次數。必須選取規則的 **\[此規則使用的稽核嚴重性層級\]** 核取方塊，此規則才會納入報告中。您可以在線上查看報告，或下載所有郵件保護報告的 Excel 版本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>報告中的大部分資料都在 24 小時內，但有些資料可能需要 5 天才會出現。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 報告中的大部分資料都在 24 小時內，但有些資料可能需要 5 天才會出現。
+
+
 
 
 ## 使用 Office 365 系統管理中心來產生規則報告

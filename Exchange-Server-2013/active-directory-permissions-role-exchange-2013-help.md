@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 `Active Directory Permissions`管理角色可讓系統管理員在組織中設定Active Directory權限。使用Active Directory權限或存取控制清單 (ACL) 的一些功能包括傳輸接收及傳送連接器，以下列傳送與代表信箱的權限傳送。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>直接針對 Active Directory 物件設定的權限可能無法透過應用角色的存取控制 (RBAC) 強制執行。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 直接針對 Active Directory 物件設定的權限可能無法透過應用角色的存取控制 (RBAC) 強制執行。
+
+
 
 
 此管理角色是 Microsoft Exchange Server 2013 中，角色型存取控制 (RBAC) 權限模型的其中一個內建角色。指派給一或多個管理角色群組、管理角色指派原則、使用者或萬用資訊安全群組 (USG) 的管理角色，會作為 Cmdlet 或指令碼的邏輯群組，合併後可提供檢視或修改 Exchange 2013 元件 (例如信箱資料庫、傳輸規則和收件者) 組態的存取權。如果 Cmdlet 或指令碼及其參數 (合稱管理角色項目) 包含在角色中，則該 Cmdlet 或指令碼及其參數可以由指派的角色執行。如需管理角色和管理角色項目的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
@@ -65,18 +58,11 @@ _**上次修改主題的時間：**2015-03-09_
 
 您還可以從內建角色群組、您建立的角色群組、使用者和 USG 移除此角色。不過，此角色與角色群組或 USG 之間，至少一定要有一個委派角色指派。您無法刪除最後一個委派角色指派。這項限制有助於防止您將自己鎖在系統外。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此角色與角色群組或 USG 之間，至少一定要有一個委派角色指派。如果最後一個委派角色指派是給予使用者，則無法移除與此角色相關聯的最後一個指派。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此角色與角色群組或 USG 之間，至少一定要有一個委派角色指派。如果最後一個委派角色指派是給予使用者，則無法移除與此角色相關聯的最後一個指派。
+
+
 
 
 如需如何在此角色與角色群組、使用者和 USG 之間新增或移除指派的詳細資訊，請參閱下列主題：
@@ -166,18 +152,11 @@ _**上次修改主題的時間：**2015-03-09_
 
 如果您決定要建立此角色的自訂版本，則必須建立此角色的子角色，然後自訂這個新角色。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下資訊可讓您執行進階的權限管理。自訂管理角色可能會大幅增加權限模型的複雜度。如果您以設定不正確的自訂角色取代內建管理角色，可能導致某些功能停止運作。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 以下資訊可讓您執行進階的權限管理。自訂管理角色可能會大幅增加權限模型的複雜度。如果您以設定不正確的自訂角色取代內建管理角色，可能導致某些功能停止運作。
+
+
 
 
 以下是建立自訂角色並將其指派給角色受託人時最常用的步驟：

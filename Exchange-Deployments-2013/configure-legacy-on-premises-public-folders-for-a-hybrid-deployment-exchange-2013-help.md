@@ -14,12 +14,12 @@ ms.translationtype: HT
  
 
 
-_**適用版本：** Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：**  Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：** 2018-05-22_
+_**上次修改主題的時間：**  2018-05-22_
 
 
-**摘要：** 使用本文中的步驟，同步處理 Office 365 和 Exchange 2007 或 Exchange 2010 內部部署之間的公用資料夾。
+**摘要：**  使用本文中的步驟，同步處理 Office 365 和 Exchange 2007 或 Exchange 2010 內部部署之間的公用資料夾。
 
 在混合式部署中，您的使用者可能存在於 Exchange Online、內部部署或同時存在於兩者，而您的公用資料夾可能存在於 Exchange Online 或內部部署中。公用資料夾只能存在於單一位置，因此您必須決定要將公用資料夾放在 Exchange Online 還是內部部署中。公用資料夾無法同時存在於這兩個位置。「目錄同步處理」服務會將公用資料夾信箱同步處理至 Exchange Online。但具有郵件功能的公用資料夾無法跨部署進行同步處理。
 

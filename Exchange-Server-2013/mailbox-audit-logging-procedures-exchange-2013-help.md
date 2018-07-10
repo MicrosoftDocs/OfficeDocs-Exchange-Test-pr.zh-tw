@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2010-07-16_
+_**上次修改主題的時間：** 2010-07-16_
 
 [啟用或停用信箱稽核記錄功能信箱](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md)
 

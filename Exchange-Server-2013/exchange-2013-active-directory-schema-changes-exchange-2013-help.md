@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-05-18_
+_**上次修改主題的時間：** 2016-05-18_
 
 Microsoft Exchange Server 2013新新增及修改現有的Active Directory架構類別和屬性。這個參考主題提供Active Directory摘要量產發行 (RTM) 版本的Exchange 2013或它的任何累計更新或 service pack 安裝版本時所做的結構描述變更。如需關於變更Active Directory結構描述的.ldf 檔案，請參閱。.Ldf 檔案位於 \\amd64\\Setup\\Data\\ 目錄中的 Exchange 安裝檔案。
 

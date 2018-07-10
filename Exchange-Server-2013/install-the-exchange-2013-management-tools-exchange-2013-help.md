@@ -13,24 +13,17 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-01-28_
+_**上次修改主題的時間：** 2013-01-28_
 
 使用 Microsoft Exchange Server 2013 管理工具，您可以遠端配置並管理您的 Exchange 組織。Exchange 2013 管理工具包括 Exchange 管理命令介面與 Exchange 工具箱。本主題將說明如何使用 Setup.exe 或自動安裝模式來安裝 Exchange 2013 管理工具。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不需要執行此程序以遠端使用 Exchange 管理中心 (EAC)。EAC 為網路主控台，主機位於執行 Exchange 2013 Client Access 伺服器角色的電腦上。如需有關遠端存取 EAC 的詳細資訊，請參閱 <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange 2013 中的 Exchange 系統管理中心</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您不需要執行此程序以遠端使用 Exchange 管理中心 (EAC)。EAC 為網路主控台，主機位於執行 Exchange 2013 Client Access 伺服器角色的電腦上。如需有關遠端存取 EAC 的詳細資訊，請參閱 <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange 2013 中的 Exchange 系統管理中心</a>。
+
+
 
 
 如需管理 Exchange 2013 的詳細資訊，請參閱 [Exchange 2013 中的 Exchange 系統管理中心](exchange-admin-center-in-exchange-2013-exchange-2013-help.md)和 [使用 PowerShell 與 Exchange 2013 (Exchange 管理命令介面)](https://technet.microsoft.com/zh-tw/library/bb123778\(v=exchg.150\))。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2013-01-28_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用安裝程式來安裝 Exchange 2013 管理工具

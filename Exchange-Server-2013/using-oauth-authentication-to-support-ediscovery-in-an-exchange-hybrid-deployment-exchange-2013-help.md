@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 若要在 Exchange 2013 混合組織中順利執行跨單位 eDiscovery 搜尋，您必須在您的 Exchange 內部部署組織與 Exchange Online 組織之間設定 OAuth (Open Authorization)，以便能使用就地 eDiscovery 搜尋內部部署與雲端信箱。OAuth 驗證在 Exchange 混合部署支援下列的 eDiscovery 案例：
 
@@ -63,18 +63,11 @@ OAuth 驗證通常涉及三方：一個授權伺服器以及兩個需要彼此�
 <tr class="even">
 <td><p>使用由管理員或法務人員從 Exchange 內部部署組織所起始的 eDiscovery 搜尋中，搜尋內部部署信箱。</p></td>
 <td><p>否</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>之前討論過，如果內部部署信箱是以雲端式封存信箱來設定，則需要 OAuth 驗證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 之前討論過，如果內部部署信箱是以雲端式封存信箱來設定，則需要 OAuth 驗證。
+
+
 
 </td>
 </tr>

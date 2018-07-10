@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-09-30_
+_**上次修改主題的時間：** 2015-09-30_
 
 與信箱稽核記錄，您可以追蹤登入至信箱，以及為使用者時採取哪些動作登入。當您啟用信箱稽核記錄的信箱由管理員執行某些動作及代理人會記錄預設。None 信箱擁有者所執行的動作會記錄。若要了解更多有關信箱稽核記錄，請參閱[信箱稽核記錄](mailbox-audit-logging-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>稽核的信箱擁有者動作可以產生的信箱稽核記錄項目數目與因此預設會停用。建議您僅啟用特定的擁有者動作以符合商務或安全性需求所需的稽核。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 稽核的信箱擁有者動作可以產生的信箱稽核記錄項目數目與因此預設會停用。建議您僅啟用特定的擁有者動作以符合商務或安全性需求所需的稽核。
+
+
 
 
 如需與信箱稽核記錄相關的其他工作，請參閱[信箱稽核記錄程序](mailbox-audit-logging-procedures-exchange-2013-help.md)。
@@ -55,18 +48,11 @@ _**上次修改主題的時間：**2015-09-30_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作

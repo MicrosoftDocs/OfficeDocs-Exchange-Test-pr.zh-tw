@@ -13,28 +13,21 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-03-26_
+_**上次修改主題的時間：** 2018-03-26_
 
-**摘要：** 本文會告訴您如何將公用資料夾從 Exchange 2007 或 Exchange 2010 移至 Exchange 2013。
+**摘要：**  本文會告訴您如何將公用資料夾從 Exchange 2007 或 Exchange 2010 移至 Exchange 2013。
 
 本文說明如何將公用資料夾移轉從 Exchange Server 2010 SP3 RU8 或 Exchange 2007 SP3 RU15 Microsoft Exchange Server 2013 CU7 或稍後將在同一個樹系。
 
 我們將 Exchange 2010 SP3 RU8 和 Exchange 2007 SP3 RU15 伺服器參照為*舊版 Exchange 伺服器*。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文所述的批次移轉方法是將舊版公用資料夾遷移至 Exchange 2013 僅支援的方法。舊序列移轉方法將公用資料夾已正在過時且不再支援 microsoft。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本文所述的批次移轉方法是將舊版公用資料夾遷移至 Exchange 2013 僅支援的方法。舊序列移轉方法將公用資料夾已正在過時且不再支援 microsoft。
+
+
 
 
 您將使用**\*MigrationBatch**指令程式和**\*PublicFolderMigrationRequest** cmdlet 疑難排解執行移轉。此外，您將會使用下列 PowerShell 指令碼：
@@ -83,7 +76,7 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
   - 在 Exchange 2007 中，您需要 Exchange 組織系統管理員角色或 Exchange Server 系統管理員角色指派。此外，您需要指派公用資料夾系統管理員角色和目標伺服器的本機管理員群組。如需詳細資訊，請參閱 ＜[如何新增使用者或系統管理員角色群組](https://go.microsoft.com/fwlink/p/?linkid=81779)。
 
-  - 在 Exchange 2007 伺服器上，升級為 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 在 Exchange 2007 伺服器上，升級為 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 在遷移之前，您應考量[公用資料夾的限制](limits-for-public-folders-exchange-2013-help.md)。
 
@@ -95,18 +88,11 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -324,18 +310,11 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
 將 Exchange 2007 公用資料夾的步驟是將 Exchange 2010 公用資料夾的步驟與不同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>是否從 Exchange 2007 或 Exchange 2010 移轉批次移轉要求使用適當的指令程式建立之後，您可以再檢視要求和管理它們在 EAC 中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 是否從 Exchange 2007 或 Exchange 2010 移轉批次移轉要求使用適當的指令程式建立之後，您可以再檢視要求和管理它們在 EAC 中。
+
+
 
 
 **移轉 Exchange 2007 公用資料夾**
@@ -406,18 +385,11 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
     Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果有任何原因的遷移批次檔案不會未完成 （<strong>PublicFolderMigrationComplete</strong>顯示<strong>為 False</strong>），舊版伺服器上，請重新啟動資訊存放區 (IS)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果有任何原因的遷移批次檔案不會未完成 （<strong>PublicFolderMigrationComplete</strong>顯示<strong>為 False</strong>），舊版伺服器上，請重新啟動資訊存放區 (IS)。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Set-OrganizationConfig](https://technet.microsoft.com/zh-tw/library/aa997443\(v=exchg.150\))。
@@ -514,18 +486,11 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
 如果遷移發生問題，且需要重新啟動舊版 Exchange 公用資料夾，請執行下列步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您回復移轉到舊版的 Exchange 伺服器，您會失去所有電子郵件傳送至擁有郵件功能的公用資料夾或張貼至 Exchange 2013 公用資料夾的移轉後的內容。若要儲存此內容，您需要將公用資料夾內容匯出至.pst 檔案並再匯入舊版公用資料夾回復完成時。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 如果您回復移轉到舊版的 Exchange 伺服器，您會失去所有電子郵件傳送至擁有郵件功能的公用資料夾或張貼至 Exchange 2013 公用資料夾的移轉後的內容。若要儲存此內容，您需要將公用資料夾內容匯出至.pst 檔案並再匯入舊版公用資料夾回復完成時。
+
+
 
 
 1.  在舊版 Exchange 伺服器上，執行下列命令解除鎖定舊版 Exchange 公用資料夾。此程序可能會花幾小時的時間。

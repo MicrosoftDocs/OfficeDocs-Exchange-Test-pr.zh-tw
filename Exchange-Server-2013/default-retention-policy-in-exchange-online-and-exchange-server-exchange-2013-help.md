@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Exchange Exchange Online您在建立保留原則預設 MRM 原則和內部Exchange組織。原則會自動套用至Exchange Online中的新使用者。在內部部署組織中，當您建立封存信箱會套用原則。您可以變更套用至使用者隨時保留原則。
 

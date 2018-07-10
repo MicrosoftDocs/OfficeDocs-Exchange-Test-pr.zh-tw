@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 使用這份檢查清單協助您將 Exchange 2010 整合通訊 (UM) 升級為 Exchange 2013 UM。當您將 Exchange 2010 組織和 UM 部署升級至 Exchange 2013 時，請務必參閱此資訊。如需升級至 Exchange 2013 UM 的逐步指示，請參閱[將 Exchange 2010 UM 升級至 Exchange 2013 UM](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md)。
 
@@ -64,18 +64,11 @@ _**上次修改主題的時間：**2016-12-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>安裝必要的 Client Access Server 和 Mailbox Server。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。
+
+
 
 </td>
 <td><p><a href="install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md">使用安裝精靈安裝 Exchange 2013</a></p></td>
@@ -94,18 +87,11 @@ _**上次修改主題的時間：**2016-12-09_
 <td><p></p></td>
 <td><p>將用於 UM 自訂提示的 Exchange 2010 系統信箱移到 Exchange 2013。</p></td>
 <td><p><a href="mailbox-moves-in-exchange-2013-exchange-2013-help.md">在 Exchange 2013 移動信箱</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使已移動系統信箱，透過<a href="import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md">匯入及匯出的自訂問候語、 宣告、 功能表及提示</a>，您仍然可以從 Exchange 2010 手動匯入/匯出自訂提示。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 即使已移動系統信箱，透過<a href="import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md">匯入及匯出的自訂問候語、 宣告、 功能表及提示</a>，您仍然可以從 Exchange 2010 手動匯入/匯出自訂提示。
+
+
 
 </td>
 </tr>

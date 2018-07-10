@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-11-22_
+_**上次修改主題的時間：** 2017-11-22_
 
-**摘要：** 了解的跨樹系移動Exchange 2013中準備信箱。
+**摘要：**  了解的跨樹系移動Exchange 2013中準備信箱。
 
 Microsoft Exchange 2013支援信箱移動和移轉使用 Exchange 管理命令介面中，特別是**New-MoveRequest**和**New-MigrationBatch**指令程式。您也可以移動信箱透過 Exchange 系統管理中心 (EAC)。請注意您可以將 Exchange 2010 和 Exchange 2013 信箱移至 Exchange 2013 樹系。
 
@@ -122,18 +122,11 @@ Microsoft Exchange 2013支援信箱移動和移轉使用 Exchange 管理命令�
 <tr class="odd">
 <td><p><strong>proxyAddresses</strong></p></td>
 <td><p>複製來源信箱<strong>proxyAddresses</strong>屬性。此外，複製來源信箱的<strong>LegacyExchangeDN</strong>以 X500 的目標信箱使用者<strong>proxyAddresses</strong>屬性中的地址。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>proxyAddresses</strong>來源信箱使用者必須包含符合目標樹系的授權網域的 SMTP 地址。這可讓<strong>New-MoveRequest</strong>指令程式以正確選取<strong>targetAddress</strong>來源啟用郵件功能之使用者 （從轉換的來源信箱使用者的信箱移動要求完成後） 以確保該郵件路由是仍正常運作。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <strong>proxyAddresses</strong>來源信箱使用者必須包含符合目標樹系的授權網域的 SMTP 地址。這可讓<strong>New-MoveRequest</strong>指令程式以正確選取<strong>targetAddress</strong>來源啟用郵件功能之使用者 （從轉換的來源信箱使用者的信箱移動要求完成後） 以確保該郵件路由是仍正常運作。
+
+
 
 </td>
 </tr>
@@ -357,18 +350,11 @@ Microsoft Exchange 2013支援信箱移動和移轉使用 Exchange 管理命令�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有當來源樹系和目標樹系之間存在樹系信任時，才能建立連結的信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 只有當來源樹系和目標樹系之間存在樹系信任時，才能建立連結的信箱。
+
+
 
 
 如果已停用來源物件，而且 **msExchMasterAccountSid** 屬性設定為本身 (資源信箱、共用信箱)，請不要在目標使用者上加註任何戳記。

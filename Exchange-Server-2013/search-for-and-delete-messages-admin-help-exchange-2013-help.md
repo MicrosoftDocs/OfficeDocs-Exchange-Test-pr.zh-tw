@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-12-20_
+_**上次修改主題的時間：** 2017-12-20_
 
 系統管理員可以使用 **Search-Mailbox** Cmdlet 來搜尋使用者信箱，然後刪除信箱中的郵件。
 
@@ -31,9 +31,9 @@ _**上次修改主題的時間：**2017-12-20_
 
   - 您必須同時被指派下列管理角色，才能在使用者的信箱中搜尋並刪除郵件：
     
-      - **信箱搜尋：**這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+      - **信箱搜尋：** 這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
     
-      - **信箱匯入匯出：**這個角色可讓您從使用者的信箱中刪除郵件。依預設，此角色不會指派給任何角色群組。若要從使用者的信箱中刪除郵件，您可以將信箱匯入匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)中的＜Add a role to a role group＞。
+      - **信箱匯入匯出：** 這個角色可讓您從使用者的信箱中刪除郵件。依預設，此角色不會指派給任何角色群組。若要從使用者的信箱中刪除郵件，您可以將信箱匯入匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)中的＜Add a role to a role group＞。
 
   - 如果您要從中刪除郵件的信箱已啟用單一項目復原，則必須先停用該功能。如需詳細資訊，請參閱[啟用或停用單一項目復原的信箱](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md)。
 
@@ -63,18 +63,11 @@ _**上次修改主題的時間：**2017-12-20_
 
 此範例會搜尋 April Stewart 的信箱中 \[主旨\] 欄位中包含 "Your bank statement" 字詞的郵件，並從來源信箱刪除這些郵件，而不將搜尋結果複製到其他資料夾。如先前所述，您必須取得「信箱匯入匯出」管理角色，才能刪除使用者信箱中的郵件。 。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您使用包含 <em>DeleteContent</em> 參數的 <strong>Search-Mailbox</strong> 指令程式時，郵件會從來源信箱永久刪除。在您永久刪除郵件之前，建議您使用 <em>LogOnly</em> 參數產生在搜尋中找到之郵件的記錄，然後再進行刪除，或者在從來源信箱刪除郵件時，先將這些郵件複製到其他信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您使用包含 <em>DeleteContent</em> 參數的 <strong>Search-Mailbox</strong> 指令程式時，郵件會從來源信箱永久刪除。在您永久刪除郵件之前，建議您使用 <em>LogOnly</em> 參數產生在搜尋中找到之郵件的記錄，然後再進行刪除，或者在從來源信箱刪除郵件時，先將這些郵件複製到其他信箱。
+
+
 
 
     Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent

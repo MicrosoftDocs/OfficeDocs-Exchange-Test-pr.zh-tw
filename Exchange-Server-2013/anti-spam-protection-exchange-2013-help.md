@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-06_
+_**上次修改主題的時間：** 2015-03-06_
 
 *垃圾郵件*或惡意的寄件者使用各種技術 （英文） 的垃圾電子郵件傳送至您的組織。任何單一工具或程序，即可以去除所有的垃圾郵件。不過，Microsoft Exchange Server 2013提供分層、 multipronged、 及面向方法來減少這些不想要的訊息。Exchange 使用傳輸代理程式提供反垃圾郵件保護及Exchange 2013中可用的內建代理程式會從 Microsoft Exchange Server 2010較不變。
 

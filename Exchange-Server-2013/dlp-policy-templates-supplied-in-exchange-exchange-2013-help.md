@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013和Exchange Online，您可以使用資料遺失防護 (DLP) 原則範本為起點建置 DLP 原則可協助您滿足您特定的法規和商務原則的需求。您可以修改的範本以符合組織的特定需求。
 

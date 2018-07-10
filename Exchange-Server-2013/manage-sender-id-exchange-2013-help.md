@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-08_
+_**上次修改主題的時間：** 2015-04-08_
 
 寄件者識別碼功能是由寄件者識別碼代理程式所提供。寄件者識別碼來確認對寄件者網域一頭擁有者的寄件者的 IP 位址的驗證電子郵件訊息的原點而言。寄件者識別碼篩選在來自網際網路但未經過驗證的內送郵件上執行。為外部郵件處理這些訊息。
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2015-04-08_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -57,18 +50,11 @@ _**上次修改主題的時間：**2015-04-08_
 
     Set-SenderIDConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您停用寄件者識別碼時，仍然會啟用基礎的寄件者識別碼代理程式。若要停用寄件者識別碼代理程式，請執行命令： <code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當您停用寄件者識別碼時，仍然會啟用基礎的寄件者識別碼代理程式。若要停用寄件者識別碼代理程式，請執行命令： <code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>。
+
+
 
 
 ## 如何才能了解這是否正常運作？

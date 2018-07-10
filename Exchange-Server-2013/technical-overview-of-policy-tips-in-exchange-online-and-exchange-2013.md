@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-07-22_
+_**上次修改主題的時間：** 2015-07-22_
 
 您可以協助防止貴組織的 Microsoft Outlook、 Outlook Web App (OWA) 和 OWA for Devices 電子郵件使用者不當傳送機密資訊藉由建立包含*原則提示*通知郵件的資料外洩防護 (DLP) 原則。類似於 Microsoft Exchange Server 2010中所引進的寄件提醒、 原則提示通知郵件會顯示Outlook中的使用者他們所撰寫的電子郵件時。原則提示通知郵件只顯示如果寄件者的電子郵件訊息的相關的某個項目似乎違反您已經備妥的 DLP 原則及原則包含以符合您所建立的條件時通知寄件者的規則。觀賞此影片以深入了解。
 

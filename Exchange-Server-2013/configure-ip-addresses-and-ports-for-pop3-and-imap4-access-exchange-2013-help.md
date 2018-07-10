@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-11-28_
+_**上次修改主題的時間：** 2012-11-28_
 
 您可以使用 EAC 與命令介面來設定Microsoft Exchange POP3 和 IMAP4 服務使用的 IP 位址和與預設設定不同的連接埠。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>輸入 IP 位址和 IP 位址範圍中的網際網路通訊協定第 4 版 (IPv4) 格式、 網際網路通訊協定第 6 版 (IPv6) 格式或這兩種格式。Windows Server 2008的預設安裝可讓支援 IPv4 和 IPv6。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 輸入 IP 位址和 IP 位址範圍中的網際網路通訊協定第 4 版 (IPv4) 格式、 網際網路通訊協定第 6 版 (IPv6) 格式或這兩種格式。Windows Server 2008的預設安裝可讓支援 IPv4 和 IPv6。
+
+
 
 
 如需 POP3 與 IMAP4 的詳細資訊，請參閱 [Exchange Server 2013 中的 POP3 和 IMAP4](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)。
@@ -43,18 +36,11 @@ _**上次修改主題的時間：**2012-11-28_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-11_
+_**上次修改主題的時間：** 2013-02-11_
 
 POP。Proxy 健全設定監視用戶端存取伺服器 (CAS) 上的Microsoft Exchange POP3 proxy 基礎結構的可用性。如果您收到警示指定的 POP。Proxy 健全設定為不健康，這表示會影響所述警示之 CAS POP 元件的問題。
 

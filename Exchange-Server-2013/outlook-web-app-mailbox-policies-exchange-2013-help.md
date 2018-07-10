@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-05_
+_**上次修改主題的時間：** 2012-10-05_
 
 使用 MicrosoftOutlook Web App信箱原則可建立組織層級原則，以管理對 Outlook Web App 中功能的存取。
 
@@ -39,18 +39,11 @@ Applying Outlook Web App mailbox policies
 
 預設Outlook Web App信箱原則會在安裝Exchange時自動建立。根據預設，所有啟用兩個選項的預設Outlook Web App信箱原則上。您可以視以符合組織的需求建立相同數目的Outlook Web App信箱原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>預設的 Outlook Web App 信箱原則不會自動套用到任何信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 預設的 Outlook Web App 信箱原則不會自動套用到任何信箱。
+
+
 
 
 如需建立或移除信箱原則的相關資訊，請參閱 [建立 Outlook Web App 信箱原則](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md) 與 [從 Exchange 中移除 Outlook Web App 信箱原則](remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md)。

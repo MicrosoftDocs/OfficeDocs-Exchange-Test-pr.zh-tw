@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-07-28_
+_**上次修改主題的時間：** 2016-07-28_
 
 本主題說明如何符合模式和證據資料外洩防護 (DLP) XML 檔案包含您自己的自訂的敏感資訊類型規則套件的設計元素。建立正確的 XML 檔案之後，您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange 管理命令介面以協助建立 Microsoft Exchange Server 2013 DLP 解決方案匯入檔案。您可以設定之前，請使用此處所述的對應方法，您應該已啟動 DLP XML 檔案。如需定義您自己的 DLP 範本和 XML 檔案的詳細資訊，請參閱[定義自己的 DLP 範本和資訊類型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 
@@ -47,18 +47,11 @@ _**上次修改主題的時間：**2016-07-28_
 
 比對可以使用執行完全相符還是 word 相符基礎演算法。完全相符會使用搜尋區分大小寫演算法中指定之語言的文字。Word 相符項目適用於 word 的限制為基礎的比對演算法。要比對的條款可以包含的內嵌關鍵字定義中使用的字詞子元素。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用常數型相符項目樣式透過獲得更佳的效率和效能的 regex。比對只在其中常數基礎符合的情況下使用 regex 不足夠且需要的規則運算式的彈性。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 使用常數型相符項目樣式透過獲得更佳的效率和效能的 regex。比對只在其中常數基礎符合的情況下使用 regex 不足夠且需要的規則運算式的彈性。
+
+
 
 
     <Keyword id="Word_Example">
@@ -85,18 +78,11 @@ _**上次修改主題的時間：**2016-07-28_
 
 根據規則運算式的比對的另一種常見方法。規則運算式相符的彈性讓這一般選擇實作相符項目資料，如駕授權號碼、 地址。一般規則運算式語法用來定義的 regex 模式。此處的表格提供最常見的規則運算式權杖的一些的範例。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用常數透過獲得更佳的效率和效能的 regex 型相符項目樣式。使用 regex 相符僅限在其中常數架構符合的情況下不足夠且需要的規則運算式的彈性。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 使用常數透過獲得更佳的效率和效能的 regex 型相符項目樣式。使用 regex 相符僅限在其中常數架構符合的情況下不足夠且需要的規則運算式的彈性。
+
+
 
 
 
@@ -219,8 +205,7 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
     </Regex>
     ...
     <Regex id="ItinFormatted">
-        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-  
-         ]\d{4})(?:$|[\s\,]|\.\s)
+        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
     </Regex>
     ...
     <Regex id="NorthCarolinaDriversLicenseNumber">

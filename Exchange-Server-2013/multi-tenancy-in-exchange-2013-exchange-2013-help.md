@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在多承租人 （主控） Exchange 2013部署定義一個位置為 Exchange 組織已設定為裝載多個及不連續的組織或業務單位 （承租人） 通常不共用的電子郵件、 資料、 使用者、 全域通訊清單 (Gal) 或其他常用於 Exchange 物件。共用的硬體、 軟體和資源 （全部同時又不承租人之間的邏輯區隔），允許組織利用標準的 Exchange 部署同時提供多承租人功能和服務指派符合其主控需求簡化了程序。
 

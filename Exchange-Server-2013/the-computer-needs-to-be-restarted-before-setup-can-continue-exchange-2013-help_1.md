@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013安裝程式無法繼續因為它偵測到本機電腦必須重新啟動以完成其他程式安裝或 Windows 更新。
 
@@ -33,16 +33,9 @@ Microsoft Exchange Server 2013安裝程式無法繼續因為它偵測到本機�
 
 如果之後重新啟動電腦及重新安裝任何最近程式或Windows更新，您*仍*收到此錯誤，建議您連絡 Microsoft 支援人員。它們可協助您尋找的原因為何Windows和其他程式認為電腦必須重新啟動。若要連絡 Microsoft 支援，請移至[Microsoft Exchange server 支援](https://go.microsoft.com/fwlink/p/?linkid=525940)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您很可能會想要手動刪除或變更 Windows 登錄中的機碼或值，但我們強烈建議您不要嘗試透過這種方式來解決這個問題。這種方式可能可以在當下修正這個問題，但卻可能在日後導致其他問題。如果失敗的安裝是 Windows 更新，這一點格外重要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 您很可能會想要手動刪除或變更 Windows 登錄中的機碼或值，但我們強烈建議您不要嘗試透過這種方式來解決這個問題。這種方式可能可以在當下修正這個問題，但卻可能在日後導致其他問題。如果失敗的安裝是 Windows 更新，這一點格外重要。
+
+
 

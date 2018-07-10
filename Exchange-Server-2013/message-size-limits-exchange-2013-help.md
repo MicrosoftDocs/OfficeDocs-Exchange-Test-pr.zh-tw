@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-08-20_
+_**上次修改主題的時間：** 2015-08-20_
 
 您可以將限制套用至在 Microsoft Exchange Server 2013 組織之間移動的個別郵件。您可以限制郵件的總大小或郵件個別元件的大小，例如郵件標頭、郵件附件和收件者數目。您可以對整個 Exchange 組織全面套用限制，或特別針對連接器或使用者物件套用限制。
 
@@ -125,18 +125,11 @@ _**上次修改主題的時間：**2015-08-20_
 </tr>
 <tr class="odd">
 <td><p>每封郵件的收件者數目上限</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 
+
+
 
 </td>
 <td><p>5000</p></td>
@@ -195,18 +188,11 @@ _**上次修改主題的時間：**2015-08-20_
 </tr>
 <tr class="even">
 <td><p>透過接收連接器的郵件大小上限</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>實際的郵件大小可能因為郵件編碼和內容轉換的關係而更小。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 實際的郵件大小可能因為郵件編碼和內容轉換的關係而更小。
+
+
 
 </td>
 <td><p><strong>在 Mailbox Server 上的運輸服務</strong></p>
@@ -225,18 +211,11 @@ _**上次修改主題的時間：**2015-08-20_
 <p>用戶端 Proxy 接收連接器為 200</p>
 <p><strong>用戶端存取伺服器上的前端傳輸服務，即套用此規則</strong></p>
 <p>預設前端、用戶端前端和用戶端 Proxy 前端接收連接器為 200。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果匿名寄件者所指定的收件者數目超過此值，則會讓前 200 位收件者收到郵件。大部分 SMTP 郵件伺服器會偵測到收件者限制。在將郵件傳遞給所有收件者之前，SMTP 郵件伺服器會繼續以 200 位收件者為單位來重送郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果匿名寄件者所指定的收件者數目超過此值，則會讓前 200 位收件者收到郵件。大部分 SMTP 郵件伺服器會偵測到收件者限制。在將郵件傳遞給所有收件者之前，SMTP 郵件伺服器會繼續以 200 位收件者為單位來重送郵件。
+
+
 
 </td>
 <td><p>Cmdlet：<strong>New-ReceiveConnector</strong>、<strong>Set-ReceiveConnector</strong></p>
@@ -314,18 +293,11 @@ _**上次修改主題的時間：**2015-08-20_
 <td><p>Outlook Web App   35 MB</p>
 <p>Exchange ActiveSync   10 MB</p>
 <p>Exchange Web 服務   64 MB</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於 Base64 編碼所產生的相關負荷，這些值會比實際可用的郵件大小上限多出約 33%。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 由於 Base64 編碼所產生的相關負荷，這些值會比實際可用的郵件大小上限多出約 33%。
+
+
 
 </td>
 <td><p>您可在 Client Access Server 上的適當 web.config XML 應用程式組態檔中設定這些值。如需詳細資訊，請參閱<a href="configure-client-specific-message-size-limits-exchange-2013-help.md">設定用戶端特定的郵件大小限制</a>。</p></td>
@@ -369,18 +341,11 @@ _**上次修改主題的時間：**2015-08-20_
 <p>參數：<em>MaxSendSize</em></p></td>
 <td><p>對於信箱：</p>
 <p><strong>收件者</strong> &gt; <strong>信箱</strong> &gt; <strong>編輯</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" /> &gt; <strong>信箱功能</strong> &gt; <strong>郵件流程</strong> &gt; <strong>郵件大小限制</strong> &gt; <strong>檢視詳細資料</strong> &gt; <strong>已傳送的郵件</strong></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用其他收件者類型的 EMC 進行此設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用其他收件者類型的 EMC 進行此設定。
+
+
 
 </td>
 </tr>
@@ -400,18 +365,11 @@ _**上次修改主題的時間：**2015-08-20_
 <p>參數：<em>MaxReceiveSize</em></p></td>
 <td><p>對於信箱：</p>
 <p><strong>收件者</strong> &gt; <strong>信箱</strong> &gt; <strong>編輯</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" /> &gt; <strong>信箱功能</strong> &gt; <strong>郵件流程</strong> &gt; <strong>郵件大小限制</strong> &gt; <strong>檢視詳細資料</strong> &gt; <strong>已接收的郵件</strong></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用其他收件者類型的 EMC 進行此設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用其他收件者類型的 EMC 進行此設定。
+
+
 
 </td>
 </tr>

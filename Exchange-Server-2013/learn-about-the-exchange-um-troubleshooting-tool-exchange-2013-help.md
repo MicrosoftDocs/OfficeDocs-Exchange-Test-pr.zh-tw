@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange 2010整合通訊疑難排解工具是名為**Test-ExchangeUMCallFlow**Exchange管理命令介面 cmdlet。您可以使用這項工具在組織中進行一系列的診斷測試的整合通訊 (UM)。如果測試的任何失敗，此工具會報告失敗和可能的解決方案來修正此問題的原因。您只可以在Exchange 2010或更新版本的伺服器上使用 UM 疑難排解工具。
 
 UM 疑難排解工具可測試在內部及跨部門部署時，語音信箱是否正確運作。您可以在包含 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 2010 或更新版本的 UM 部署中，或在包含 VoIP 閘道、IP 專用交換機 (IP PBX) 或工作階段邊界控制器 (SBC) 的 UM 部署中使用此工具。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UM 疑難排解工具是用於測試及疑難排解。反之，<strong>Test-UMConnectivity</strong> 指令程式則是用於監視。<strong>Test-UMConnectivity</strong> Cmdlet 可與用來監控 Exchange 2010 UM 伺服器或 Exchange 2013 Client Access Server 和 Mailbox Server 及電話語音元件的 System Center Operations Manager (SCOM) 管理組件搭配使用。<strong>Test-UMConnectivity</strong> 指令程式會執行本機 SCOM 測試及信箱的本機登入測試，也可當做 SCOM 工作來執行。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> UM 疑難排解工具是用於測試及疑難排解。反之，<strong>Test-UMConnectivity</strong> 指令程式則是用於監視。<strong>Test-UMConnectivity</strong> Cmdlet 可與用來監控 Exchange 2010 UM 伺服器或 Exchange 2013 Client Access Server 和 Mailbox Server 及電話語音元件的 System Center Operations Manager (SCOM) 管理組件搭配使用。<strong>Test-UMConnectivity</strong> 指令程式會執行本機 SCOM 測試及信箱的本機登入測試，也可當做 SCOM 工作來執行。
+
+
 
 
 若要下載 UM 疑難排解工具，請參閱 ＜[整合通訊疑難排解工具](https://go.microsoft.com/fwlink/p/?linkid=182625)。
@@ -237,7 +230,7 @@ UM 疑難排解工具可安裝在執行下列作業系統的本機整合通訊�
     </table>
 
 
-  - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   請參閱 Microsoft 知識庫文章 968930 [Windows 管理架構核心封裝 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   請參閱 Microsoft 知識庫文章 968930 [Windows 管理架構核心封裝 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi) 請參閱[Unified 的 Communications Managed API 2.0 Core Runtime （64 位元）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 

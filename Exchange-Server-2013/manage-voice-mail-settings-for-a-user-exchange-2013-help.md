@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 您可以檢視或設定整合通訊 (UM) 和語音信箱功能及使用者已啟用 UM 和語音信箱的組態設定。例如，您可以執行下列動作：
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2013-02-22_
 
   - 啟用或停用他們的電子郵件或行事曆存取功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>部分設定與功能只能透過命令介面進行設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 部分設定與功能只能透過命令介面進行設定。
+
+
 
 
 如需與啟用語音信箱之使用者相關的其他管理工作，請參閱[擁有郵件功能的語音使用者程序](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
@@ -61,18 +54,11 @@ _**上次修改主題的時間：**2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -107,18 +93,11 @@ _**上次修改主題的時間：**2013-02-22_
 
 此範例會停用「在電話上播放」和未接來電通知，但是會啟用簡訊 (SMS) 通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內部部署和混合式部署中，當您正在整合 Unified Messaging 和 Lync Server 服務未接來電通知都無法提供具有信箱位於 Exchange 2007 或 Exchange 2010 信箱伺服器上的使用者。當使用者中斷通話傳送至信箱伺服器之前，會產生未接的來電通知。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 內部部署和混合式部署中，當您正在整合 Unified Messaging 和 Lync Server 服務未接來電通知都無法提供具有信箱位於 Exchange 2007 或 Exchange 2010 信箱伺服器上的使用者。當使用者中斷通話傳送至信箱伺服器之前，會產生未接的來電通知。
+
+
 
 
     Set-UMMailbox -Identity tony@contoso.com -UMEnabled $true -UMMailboxPolicy AdminPolicy -MissedCallNotificationEnabled $false -PlayonPhoneEnabled $false -SMSMessageWaitingNotificationEnabled $true
@@ -145,16 +124,9 @@ _**上次修改主題的時間：**2013-02-22_
 
     Get-UMMailbox -Identity tonysmith@contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您正在執行 Exchange 2007 和 Exchange 2013 和使用者的信箱位於 Exchange 2007 信箱執行<strong>Get-UMMailbox</strong>指令程式的伺服器將無法正常運作。若要解決此問題，請從 Exchange 2007 伺服器或執行 Exchange 2007 系統管理工具的電腦執行<strong>Get-UMMailbox</strong>指令程式。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您正在執行 Exchange 2007 和 Exchange 2013 和使用者的信箱位於 Exchange 2007 信箱執行<strong>Get-UMMailbox</strong>指令程式的伺服器將無法正常運作。若要解決此問題，請從 Exchange 2007 伺服器或執行 Exchange 2007 系統管理工具的電腦執行<strong>Get-UMMailbox</strong>指令程式。
+
+
 

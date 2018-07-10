@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 當Outlook語音存取使用者撥入 Outlook 語音存取號碼時，系統會提示他們輸入其 PIN 以便語音郵件系統可以進行驗證。他們通過驗證之後，他們可以從任何電話存取語音信箱、 電子郵件、 行事曆，並在他們的信箱中的個人連絡人資訊。
 
 可以整合通訊 (UM) 信箱原則上設定 pin 碼相關的數個設定。**PIN 回收計數**\] 設定會指定唯一的 Pin 使用者數目必須使用之前他們可以重複使用舊的 PIN。您可以設定此設定介於 1 到 20 之間的值。對於大多數的組織而言，此值應設到 5 的 Pin，這是預設值。將此值過高可以讓使用者不耐煩因為可能很難建立並記許多 Pin 的使用者。設定得太低可能會造成您網路的安全性威脅。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無法停用 PIN 碼回收計數。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 無法停用 PIN 碼回收計數。
+
+
 
 
 如需與 Outlook 語音存取 PIN 碼相關的其他工作，請參閱 [PIN 安全性程序](pin-security-procedures-exchange-2013-help.md)。
@@ -49,18 +42,11 @@ _**上次修改主題的時間：**2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

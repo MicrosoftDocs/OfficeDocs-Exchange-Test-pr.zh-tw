@@ -13,42 +13,28 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-07-02_
+_**上次修改主題的時間：** 2014-07-02_
 
 針對 Microsoft Exchange 2013，Exchange 伺服器角色的架構有一些重大改變。有別於 Exchange 2010 和 Exchange 2007 中出現的五個伺服器角色，在 Exchange 2013 中，伺服器的角色已減至三個：Client Access Server 和 Mailbox Server，以及裝上 Service Pack 1 之後的 Edge Transport server role。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 也可以與 Exchange 2010 Edge Transport server role 一起使用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange 2013 也可以與 Exchange 2010 Edge Transport server role 一起使用。
+
+
 
 
 Exchange 2013 Mailbox Server 包含 Exchange 2010 中的許多伺服器元件：用戶端存取通訊協定、傳輸服務、信箱資料庫及整合通訊服務 (Client Access Server 會將傳入呼叫所產生的 SIP 流量重新導向至 Mailbox Server)。如需 Exchange 2013 信箱伺服器的相關資訊，請參閱 [信箱伺服器](mailbox-server-exchange-2013-help.md)。
 
 Client Access Server 提供驗證、Proxy 和有限重新導服務，也提供所有常用的用戶端存取通訊協定：HTTP、POP、IMAP 及 SMTP。Client Access Server 是精簡且不留狀態的伺服器，完全不留任何資料記錄。戶端存取伺服器上永遠不會佇列或儲存任何東西。如需 Exchange 2013 架構的相關資訊，請參閱 [Exchange 2013 的新功能](what-s-new-in-exchange-2013-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>周邊網路中不支援 Client Access Server，必須部署在內部 Active Directory 環境內。每一個含有信箱伺服器的 Active Directory 站台也必須含有用戶端伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 周邊網路中不支援 Client Access Server，必須部署在內部 Active Directory 環境內。每一個含有信箱伺服器的 Active Directory 站台也必須含有用戶端伺服器。
+
+
 
 
 架構性變更會導致用戶端連接性也有部分變更。首先，RPC/TCP 不再是支援的直接存取通訊協定。這表示所有 Outlook 連線必須利用 RPC over HTTPS (也稱為 Outlook 無所不在) 進行，或者，搭配 Exchange 2013 SP1 和 Outlook 2013 SP1 時，必須利用 MAPI over HTTP 進行。由於有這些變更，Client Access Server 上不需要有 RPC Client Access 服務。此外，站台恢復解決方案所需的命名空間比 Exchange 2010 中所需的數目更少，而且再也不必為 RPC Client Access 服務提供親和性。此外，Outlook 用戶端不必再像所有舊版 Exchange 一樣，得連線到伺服器完整格式的網域名稱 (FQDN)。使用自動探索，Outlook 找到一個新的連線點，此連線點是由 GUID + @ + 使用者主要 SMTP 位址的網域部分組成。這項變更讓使用者比較不會收到「管理員已變更您的信箱」這麼嚴重的訊息。只有 Outlook 2007 和更高版本支援 Exchange 2013。

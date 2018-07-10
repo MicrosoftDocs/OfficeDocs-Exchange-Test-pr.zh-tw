@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 瞭解 Exchange Server 2013 的 Exchange ActiveSync 用戶端通訊協定。您將瞭解 Exchange ActiveSync 的功能 (包括安全性功能)、您可以管理的事物、如何使其安全，以及如何避免在同步至 Windows Phone 7 時發生問題。
 
@@ -57,32 +57,18 @@ Windows Phone 7 同步處理
 
 Exchange ActiveSync 是針對配合高延遲與低頻寬網路使用而最佳化的 Microsoft Exchange 同步處理通訊協定。以 HTTP 及 XML 為基礎的通訊協定，可讓行動電話存取在執行 Microsoft Exchange 之伺服器上的組織資訊。Exchange ActiveSync 可讓行動電話使用者存取他們的電子郵件、行事曆、連絡人及工作，並讓他們在離線工作時可繼續存取這項資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange ActiveSync 不支援共用的信箱或代理人存取。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange ActiveSync 不支援共用的信箱或代理人存取。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Phone 7 行動電話只支援所有 Exchange ActiveSync 信箱原則設定的子集。如需完整清單，請參閱 Windows Phone 7 同步處理。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!IMPORTANT]  
+> Windows Phone 7 行動電話只支援所有 Exchange ActiveSync 信箱原則設定的子集。如需完整清單，請參閱 Windows Phone 7 同步處理。
+
+
 
 
 ## Exchange ActiveSync 中的功能

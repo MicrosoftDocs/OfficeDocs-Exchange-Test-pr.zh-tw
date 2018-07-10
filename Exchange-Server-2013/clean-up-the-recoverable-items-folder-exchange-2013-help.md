@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 清除 資料夾
+# 清除 [可復原的項目] 資料夾
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-09-30_
+_**上次修改主題的時間：** 2015-09-30_
 
 （此主題適用於Exchange系統管理員的）。
 
@@ -37,7 +37,7 @@ _**上次修改主題的時間：**2015-09-30_
 
   - 您必須被指派下列管理角色，才能使用**Search-Mailbox**指令程式來搜尋並刪除使用者信箱中的郵件。
     
-      - **信箱搜尋：**這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+      - **信箱搜尋：** 這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
     
       - **信箱匯入 / 匯出**  此角色可讓您刪除使用者信箱的郵件。根據預設，此角色不被指派給任何角色群組。若要刪除的郵件從使用者的信箱，您可以將信箱匯入 / 匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱 「 將角色新增至角色群組 」 一節中[管理角色群組](manage-role-groups-exchange-2013-help.md) 。
 
@@ -55,18 +55,11 @@ _**上次修改主題的時間：**2015-09-30_
 
     Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要刪除信箱中的項目而不將其複製到另一個信箱，使用不含<em>TargetMailbox</em>和<em>TargetFolder</em>參數以上的命令。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要刪除信箱中的項目而不將其複製到另一個信箱，使用不含<em>TargetMailbox</em>和<em>TargetFolder</em>參數以上的命令。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Search-Mailbox](https://technet.microsoft.com/zh-tw/library/dd298173\(v=exchg.150\))。

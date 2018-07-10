@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Exchange Server 2013包含大型，預先定義的權限，您可以輕鬆地授與權限給系統管理員和使用者立即使用角色型存取控制 (RBAC) 權限模型為基礎。您可以Exchange 2013中使用的權限功能，讓您可以取得新的組織設定且快速地執行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有幾項 RBAC 功能和概念屬於進階功能，因此不在本主題討論之列。如果本主題所討論的功能不符合您的需求，而且您想進一步自訂權限模型，請參閱<a href="understanding-role-based-access-control-exchange-2013-help.md">了解角色型存取控制</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 有幾項 RBAC 功能和概念屬於進階功能，因此不在本主題討論之列。如果本主題所討論的功能不符合您的需求，而且您想進一步自訂權限模型，請參閱<a href="understanding-role-based-access-control-exchange-2013-help.md">了解角色型存取控制</a>。
+
+
 
 
 要尋找之所有的權限主題清單嗎？請參閱Permissions documentation。
@@ -77,18 +70,11 @@ Exchange 2013包含可用來授與權限大約 86 的角色。如需隨附Exchan
 
 若要讓您輕鬆將多個角色指派給系統管理員， Exchange 2013包含角色群組。角色群組是特殊萬用安全性群組 (Usg) 使用Exchange 2013內含Active Directory使用者、 Usg 及其他角色群組。當角色指派給角色群組時、 角色授與的權限會授與的角色群組所有成員。這可讓您一次將許多角色指派給許多角色群組成員。角色群組通常包含更廣泛的管理方面，例如收件者管理。它們只適用於系統管理角色、 使用者角色無法用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>很可能角色直接指派給使用者或 USG 而不需使用角色群組。但角色指派該方法是進階的程序並不本主題所述。我們建議您使用角色群組管理的權限。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 很可能角色直接指派給使用者或 USG 而不需使用角色群組。但角色指派該方法是進階的程序並不本主題所述。我們建議您使用角色群組管理的權限。
+
+
 
 
 下圖顯示使用者、角色群組和角色之間的關係。
@@ -116,18 +102,11 @@ Exchange 2013包含數個內建角色群組，每一個提供管理Exchange 2013
 <tr class="odd">
 <td><p><a href="organization-management-exchange-2013-help.md">組織管理</a></p></td>
 <td><p>屬於 組織管理 角色群組之成員的系統管理員擁有整個 Exchange 2013 組織的管理存取權，並幾乎可對任何 Exchange 2013 物件執行任何工作，只有少部分例外，例如 <code>Discovery Management</code> 角色。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於 組織管理 角色群組是功能強大的角色，因此只有執行可能影響整個 Exchange 組織之組織層級管理工作的使用者或 USG 才能成為這個角色群組的成員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 由於 組織管理 角色群組是功能強大的角色，因此只有執行可能影響整個 Exchange 組織之組織層級管理工作的使用者或 USG 才能成為這個角色群組的成員。
+
+
 
 </td>
 </tr>
@@ -219,18 +198,11 @@ Exchange 2013組織可以有多個提供不同的權限層級的不同類型的�
 
 Exchange 2013包含數個不同權限集中到特定的系統管理方面的角色群組。如果這些現有的角色群組提供系統管理員管理Exchange 2013組織所需的權限，您只需要將系統管理員新增為適當的角色群組的成員。將管理員新增至角色群組之後，他們可以管理該角色群組與相關的功能。新增或移除角色群組的成員，開啟角色群組在 EAC 中，然後新增或移除成員資格清單中的成員。如需內建角色群組的清單，請參閱[內建角色群組](built-in-role-groups-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果系統管理員是多個角色群組的成員，Exchange 2013 會將系統管理員所屬角色群組提供的所有權限，授與給系統管理員。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果系統管理員是多個角色群組的成員，Exchange 2013 會將系統管理員所屬角色群組提供的所有權限，授與給系統管理員。
+
+
 
 
 如果沒有任何一個Exchange 2013所含的角色群組具有您所需要的權限，您可以使用 EAC 來建立角色群組並新增您需要的權限的角色。新角色群組，您將會：
@@ -249,18 +221,11 @@ Exchange 2013包含數個不同權限集中到特定的系統管理方面的角�
 
 您也可以修改現有的角色群組。您可以新增和移除現有的角色群組、 角色和新增和移除成員它同時，使用類似圖中 EAC\] 對話方塊。藉由新增和移除角色若要從角色群組、 您開啟和關閉系統管理功能該角色群組的成員。如需您可以新增至角色群組的角色的清單，請參閱[內建管理角色](built-in-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然您可以變更指派至內建角色群組的角色，我們還是建議您複製內建角色群組、修改角色群組複本，然後再新增成員到角色群組複本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 雖然您可以變更指派至內建角色群組的角色，我們還是建議您複製內建角色群組、修改角色群組複本，然後再新增成員到角色群組複本。
+
+
 
 
 回到頁首

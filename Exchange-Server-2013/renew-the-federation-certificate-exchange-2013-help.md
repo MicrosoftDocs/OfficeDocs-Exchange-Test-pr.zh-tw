@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**上次修改主題的時間：**2017-02-28_
+_**上次修改主題的時間：** 2017-02-28_
 
 本主題說明如何更新同盟信任中所使用的自我簽署的同盟憑證：
 
@@ -37,18 +37,11 @@ _**上次修改主題的時間：**2017-02-28_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 更新工作的同盟憑證
@@ -83,7 +76,7 @@ _**上次修改主題的時間：**2017-02-28_
 
 如需詳細的語法及參數資訊，請參閱[Set-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd298034\(v=exchg.150\))。
 
-**請注意：** 命令輸出中包含您需要更新證明網域擁有權的 DNS 的 TXT 記錄一則警告訊息。會進行的下一個步驟。
+**請注意：**  命令輸出中包含您需要更新證明網域擁有權的 DNS 的 TXT 記錄一則警告訊息。會進行的下一個步驟。
 
 ## 步驟 3： 更新同盟證明網域擁有權的外部 DNS 的 TXT 記錄
 
@@ -119,7 +112,7 @@ Exchange自動分散每個新的同盟憑證到所有伺服器，但是我們需
 
     $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
 
-**請注意：** 在Exchange 2010、 **Test-FederationCertificate**指令程式的輸出包含伺服器名稱。此指令程式以Exchange 2013或更新版本的輸出不包括伺服器名稱。
+**請注意：**  在Exchange 2010、 **Test-FederationCertificate**指令程式的輸出包含伺服器名稱。此指令程式以Exchange 2013或更新版本的輸出不包括伺服器名稱。
 
 ## 步驟 5： 啟動新的同盟憑證
 
@@ -129,7 +122,7 @@ Exchange自動分散每個新的同盟憑證到所有伺服器，但是我們需
 
 如需詳細的語法及參數資訊，請參閱[Set-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd298034\(v=exchg.150\))。
 
-**請注意：** 命令輸出中包含您需要更新證明網域擁有權 （其已執行步驟 3 中） 部署 DNS 中的 TXT 記錄一則警告訊息。
+**請注意：**  命令輸出中包含您需要更新證明網域擁有權 （其已執行步驟 3 中） 部署 DNS 中的 TXT 記錄一則警告訊息。
 
 ## 如何才能了解這是否正常運作？
 

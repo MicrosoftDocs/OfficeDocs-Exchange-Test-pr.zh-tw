@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 使用此檢查清單可部署 Microsoft Exchange Server 2013。開始使用此檢查清單之前，請確定您熟悉以下討論的概念：
 
@@ -25,18 +25,11 @@ _**上次修改主題的時間：**2015-03-09_
 
 這是一般性的檢查清單，針對一般案例提供指引。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 部署助理提供您如何部署 Exchange Server 的自訂逐步指導。部署助理可協助您部署 Exchange Server 2013 的全新安裝、將舊版產品升級至 Exchange 2013，或是設定 Exchange 2013 與 Exchange Online 的混合式部署。若要深入了解，請參閱<a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange Server 部署助理提供您如何部署 Exchange Server 的自訂逐步指導。部署助理可協助您部署 Exchange Server 2013 的全新安裝、將舊版產品升級至 Exchange 2013，或是設定 Exchange 2013 與 Exchange Online 的混合式部署。若要深入了解，請參閱<a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
+
+
 
 
 ## Exchange 2013 全新安裝的檢查清單
@@ -72,18 +65,11 @@ _**上次修改主題的時間：**2015-03-09_
 <tr class="odd">
 <td> </td>
 <td><p>4. 設定脫離的命名空間。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在組織執行脫離的命名空間才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在組織執行脫離的命名空間才需要。
+
+
 
 </td>
 <td><p><a href="disjoint-namespace-scenarios-exchange-2013-help.md">斷續的命名空間案例</a></p></td>
@@ -101,18 +87,11 @@ _**上次修改主題的時間：**2015-03-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>7. 安裝 Edge Transport server role。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在想要安裝 Edge Transport Server 時才需要此步驟。如需詳細資訊，請參閱<a href="edge-transport-servers-exchange-2013-help.md">Edge Transport Server</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在想要安裝 Edge Transport Server 時才需要此步驟。如需詳細資訊，請參閱<a href="edge-transport-servers-exchange-2013-help.md">Edge Transport Server</a>。
+
+
 
 </td>
 <td><p><a href="install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md">使用設定精靈安裝 Exchange 2013 Edge Transport role</a></p></td>
@@ -141,18 +120,11 @@ _**上次修改主題的時間：**2015-03-09_
 <tr class="odd">
 <td> </td>
 <td><p>12. 設定虛擬目錄的設定值，包括離線通訊錄、Exchange Web 服務、Exchange 系統管理中心 (EAC)、Outlook Web App 和 Exchange ActiveSync 虛擬目錄。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要使用 Exchange Web 服務、Outlook 無所不在或離線通訊錄，就需要執行此步驟。如果您需要變更 EAC、Outlook Web App 或 Exchange ActiveSync 的任何預設設定，則可能也需要此步驟。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您要使用 Exchange Web 服務、Outlook 無所不在或離線通訊錄，就需要執行此步驟。如果您需要變更 EAC、Outlook Web App 或 Exchange ActiveSync 的任何預設設定，則可能也需要此步驟。
+
+
 
 </td>
 <td><p><a href="configure-mail-flow-and-client-access-exchange-2013-help.md">Step 4: Configure external URLs</a></p>
@@ -166,18 +138,11 @@ _**上次修改主題的時間：**2015-03-09_
 <tr class="odd">
 <td> </td>
 <td><p>14. 設定整合通訊。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在您想在組織中使用整合通訊時才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在您想在組織中使用整合通訊時才需要。
+
+
 
 </td>
 <td><p><a href="deploying-voice-mail-and-um-exchange-2013-help.md">部署語音信箱和 UM</a></p></td>
@@ -185,18 +150,11 @@ _**上次修改主題的時間：**2015-03-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>15. 設定額外的「整合通訊」與 Lync Server 設定。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步驟是選用的。只有在您於組織中設定「整合通訊」並希望與 Lync Server 整合時才需要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此步驟是選用的。只有在您於組織中設定「整合通訊」並希望與 Lync Server 整合時才需要。
+
+
 
 </td>
 <td><p><a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">部署 Exchange 2013 UM 和 Lync Server 概觀 （英文）</a></p></td>

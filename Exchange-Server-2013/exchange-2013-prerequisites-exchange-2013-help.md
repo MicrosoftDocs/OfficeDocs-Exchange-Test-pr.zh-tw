@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-03-20_
+_**上次修改主題的時間：** 2017-03-20_
 
 本主題針對 Microsoft Exchange 2013 Mailbox、Client Access 和 Edge Transport server role，提供安裝必要的 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 Service Pack 1 (SP1) 作業系統先決條件的步驟。另外也提供在 Windows 8、Windows 8 1 和 Windows 7 用戶端電腦上安裝 Exchange 2013 管理工具所需的先決條件。
 
@@ -71,18 +71,11 @@ _**上次修改主題的時間：**2017-03-20_
     </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## Active Directory 準備
@@ -233,11 +226,11 @@ _**上次修改主題的時間：**2017-03-20_
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Microsoft 知識庫文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+4.  [Microsoft 知識庫文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
-5.  [知識庫文章 KB2619234（啟用用於 RPC over HTTP 的 Association Cookie/GUID 以於 Windows 7 及 Windows Server 2008 R2 中的 RPC 層使用)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)
+5.  [知識庫文章 KB2619234（啟用用於 RPC over HTTP 的 Association Cookie/GUID 以於 Windows 7 及 Windows Server 2008 R2 中的 RPC 層使用)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
-6.  [知識庫文章 KB2533623（不安全的 程式庫載入可能允許程式碼執行）](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2533623)
+6.  [知識庫文章 KB2533623（不安全的 程式庫載入可能允許程式碼執行）](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
     
     <table>
     <thead>
@@ -309,7 +302,7 @@ _**上次修改主題的時間：**2017-03-20_
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
-3.  [知識庫文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+3.  [知識庫文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
 ## Windows 8 和 Windows 8.1 必要條件 (僅系統管理工具)
 

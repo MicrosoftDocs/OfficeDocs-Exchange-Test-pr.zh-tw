@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 您可以在 Microsoft Exchange Server 2013 的自訂傳遞狀態通知 (DSN) 郵件中加入文字，並將該段文字格式化為 HTML。
 
@@ -140,16 +140,9 @@ HTML 中可以顯示 DSN 郵件，因為您可以內嵌 HTML 格式中的 DSN �
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在包含引號 （&quot;），例如<code>&lt;A HREF=&quot;url&quot;&gt;</code>您 DSN 訊息文字中包含 HTML 標籤，您必須使用單引號 （'） 整個 DSN 訊息文字周圍。如果您使用雙引號整個 DSN 訊息文字周圍與周圍的 HTML 標籤，將會收到錯誤訊息。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您在包含引號 （&quot;），例如<code>&lt;A HREF=&quot;url&quot;&gt;</code>您 DSN 訊息文字中包含 HTML 標籤，您必須使用單引號 （'） 整個 DSN 訊息文字周圍。如果您使用雙引號整個 DSN 訊息文字周圍與周圍的 HTML 標籤，將會收到錯誤訊息。
+
+
 

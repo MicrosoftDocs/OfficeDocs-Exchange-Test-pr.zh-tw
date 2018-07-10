@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-04-30_
+_**上次修改主題的時間：** 2018-04-30_
 
-**摘要：** 如何在 Exchange 2013 組織中的使用者可以快速地設定其 Outlook iOS 及 Android 使用基本驗證的帳戶。
+**摘要：**  如何在 Exchange 2013 組織中的使用者可以快速地設定其 Outlook iOS 及 Android 使用基本驗證的帳戶。
 
 Outlook iOS 及 Android 提供 Exchange 系統管理員帳戶設定 「 推送"到其使用基本驗證透過 ActiveSync 通訊協定的內部部署使用者的能力。此功能適用於任何行動裝置管理 (MDM) 提供者提供者 for Android 使用[受管理的應用程式設定](https://developer.apple.com/library/content/samplecode/sc2279/introduction/intro.html)通道 iOS 或[Android 在企業中](https://developer.android.com/samples/apprestrictions/index.html)的通道。
 
@@ -33,18 +33,11 @@ Outlook iOS 及 Android 提供 Exchange 系統管理員帳戶設定 「 推送"�
 
 如果您使用 Microsoft Intune 做為您的行動裝置管理提供者，下列步驟可讓您將部署您運用 ActiveSync 通訊協定的基本驗證的內部部署信箱的帳戶組態設定。設定建立之後，您可以依照下一步\] 區段中指定組態設定的使用者群組指派設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您組織中的使用者會使用 iOS 及 Android 工時裝置，您需要建立不同的應用程式設定原則的每個平台。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您組織中的使用者會使用 iOS 及 Android 工時裝置，您需要建立不同的應用程式設定原則的每個平台。
+
+
 
 
 1.  登入 Azure 入口網站。

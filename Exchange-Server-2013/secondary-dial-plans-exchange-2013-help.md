@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 當您啟用使用者的整合通訊 (UM) 時，您正在所需的指派一個分機號碼及 UM 信箱原則，將使用者連結至 UM 撥號對應表。使用者已啟用 UM 之後，您可以指派該使用者在同一個撥號對應表內的其他分機號碼，但必須是唯一的分機號碼的撥號對應表內。在某些部署中，使用者可能需要在兩個不同的撥號計劃中指派相同的分機號碼。如果是這樣，您可以連結至次要的 UM 撥號對應的使用者。例如，如果使用者具有兩個實體電話或位置之間一起出差這可以是有用。
 
@@ -33,18 +33,11 @@ UM features that operate differently for secondary dial plans
 
 如果您使用電話分機撥號對應表與需要使用者提供相同的分機號碼，您需要建立次要撥號對應表、 啟用 UM 的使用者和使用者提供相同的分機號碼。這是因為必須是唯一撥號計劃中的分機號碼
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以為已啟用 UM 的使用者新增次要的分機號碼數不受限制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您可以為已啟用 UM 的使用者新增次要的分機號碼數不受限制。
+
+
 
 
 可能的使用者時一起出差位置之間、 有兩個或多個電話，或想要接收上一個直接向內撥號 (DID) 分機號碼的語音信箱及接收傳真\] 在不同的 DID 分機號碼的次數。若要達到此目的，您必須將其他 DID 副檔名新增至使用者的信箱並，在某些情況下，新增次要撥號對應表。

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-12-20_
+_**上次修改主題的時間：** 2017-12-20_
 
 條件和例外狀況的郵件流程規則 （也稱為傳輸規則） 來識別此規則會套用到或不會套用至郵件。例如，如果規則新增至郵件免責聲明，您可以設定僅套用至包含特定字詞、 特定使用者所傳送的郵件訊息或除外特定群組的成員所傳送的所有郵件的規則。統稱條件和例外狀況的郵件流程規則也稱為*述詞*，因為是針對每個條件，沒有使用完全相同的設定和語法的對應例外。唯一的不同是條件指定要包含例外規則指定要排除的郵件時的郵件。
 
@@ -47,7 +47,7 @@ _**上次修改主題的時間：**2017-12-20_
 
 郵件標頭
 
-**附註：**
+**附註：** 
 
   - 您在Exchange 系統管理中心 (EAC) 中選取的條件或例外狀況之後，最終示**套用此規則情況**或**如果除了**欄位的值通常是不同 （小於） 您所選取的 click 路徑值。此外，當您建立新的範本 （已篩選清單的案例） 為基礎的規則，您通常可以選取而不是遵循完成 click 路徑的簡短的條件名稱。簡短的名稱與完整按一下值顯示在表格中的 \[EAC\] 欄中的路徑。
 
@@ -304,18 +304,11 @@ _**上次修改主題的時間：**2017-12-20_
 
 ## 郵件主旨或內文
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。
+
+
 
 
 
@@ -499,7 +492,7 @@ _**上次修改主題的時間：**2017-12-20_
 
 相反地，收件者例外狀況從此區段*可防止*從不只是為了偵測到的收件者套用到*所有*收件者的郵件之規則動作。
 
-**注意事項：**這種情況並未考慮傳送至收件者 Proxy 位址的郵件。而只比對傳送至收件者主要電子郵件地址的郵件。
+**注意事項：** 這種情況並未考慮傳送至收件者 Proxy 位址的郵件。而只比對傳送至收件者主要電子郵件地址的郵件。
 
 
 <table>
@@ -548,7 +541,7 @@ _**上次修改主題的時間：**2017-12-20_
 
 在這個條件\] 區段的外觀 for **To**和**Cc**欄位中的值的行為像任何收件者\] 區段中的條件 （*所有*收件者的郵件會受影響的規則，而不只是偵測到收件者）。
 
-**注意事項：**這種情況並未考慮傳送至收件者 Proxy 位址的郵件。而只比對傳送至收件者主要電子郵件地址的郵件。
+**注意事項：** 這種情況並未考慮傳送至收件者 Proxy 位址的郵件。而只比對傳送至收件者主要電子郵件地址的郵件。
 
 
 <table>
@@ -752,18 +745,11 @@ _**上次修改主題的時間：**2017-12-20_
 <p><em>ExceptIfMessageTypeMatches</em></p></td>
 <td><p><code>MessageType</code></p></td>
 <td><p>將指定之類型的郵件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。
+
+
 
 </td>
 <td><p>Exchange 2010或更新版本</p></td>
@@ -812,18 +798,11 @@ _**上次修改主題的時間：**2017-12-20_
 
 ## 郵件標頭
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼<em>之後</em>，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。
+
+
 
 
 
@@ -1008,18 +987,11 @@ _**上次修改主題的時間：**2017-12-20_
 
 下表說明可用的條件和例外狀況的屬性類型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果此內容是字串，則尾端不能有空格。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果此內容是字串，則尾端不能有空格。
+
+
 
 
 
@@ -1146,18 +1118,11 @@ _**上次修改主題的時間：**2017-12-20_
 <li><p><strong>核准要求</strong>(<code>ApprovalRequest</code>)</p></li>
 <li><p><strong>讀取回條</strong>(<code>ReadReceipt</code>)</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當Outlook或Outlook Web App設定為郵件轉寄時， <strong>ForwardingSmtpAddress</strong>屬性已新增至郵件。郵件類型不被變更為<code>AutoForward</code>。
+
+
 
 </td>
 </tr>
@@ -1210,18 +1175,11 @@ _**上次修改主題的時間：**2017-12-20_
 <li><p>寄件者的電子郵件地址不在公認的網域。</p></li>
 <li><p>寄件者的電子郵件地址是設定為外部轉送網域的公認網域中。</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要判斷郵件連絡人會被視為內部或外部組織，寄件者地址會比較與組織的公認網域。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要判斷郵件連絡人會被視為內部或外部組織，寄件者地址會比較與組織的公認網域。
+
+
 
 </td>
 </tr>

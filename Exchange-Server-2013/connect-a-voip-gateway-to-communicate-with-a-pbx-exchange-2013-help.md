@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-15_
+_**上次修改主題的時間：** 2016-12-15_
 
 當您設定電話語音和資料網路的整合通訊 (UM) Microsoft Exchange Server 2013中時，您必須設定 VoIP 閘道讓他們與執行 Microsoft Exchange Unified Messaging Call Router 服務的用戶端存取伺服器與執行 Microsoft Exchange 整合通訊服務的 Mailbox server 通訊。您也必須設定與專用交換機 (Pbx) 您組織中進行通訊的 VoIP 閘道器。您可以使用 \[本主題中的資訊和連結，設定 VoIP 閘道與 PBX 通訊。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 整合通訊 (UM) 可讓使用者使用的語音信箱和其他功能，包括 Outlook Voice Access 和通話自動答錄服務規則。UM 結合語音訊息和電子郵件訊息到一個可從許多不同的裝置存取的信箱。使用者可以從其電子郵件收件匣或從任何電話使用 Outlook 語音存取聆聽自己的郵件。可控制使用者如何將撥出電話從 UM，與經驗時在他們撥入貴組織有人員。
 

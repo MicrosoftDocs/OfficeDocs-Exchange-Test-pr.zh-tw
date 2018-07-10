@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-15_
+_**上次修改主題的時間：** 2012-10-15_
 
 在 Microsoft Exchange Server 2013 中，傳輸高可用性負責在成功傳遞郵件之前和之後，保留郵件的備援副本。Exchange 2013 改進了 Exchange Server 2010 推出的傳輸高可用性功能 (例如陰影備援和傳輸暫放)，協助確保郵件在傳輸途中不會遺失。
 

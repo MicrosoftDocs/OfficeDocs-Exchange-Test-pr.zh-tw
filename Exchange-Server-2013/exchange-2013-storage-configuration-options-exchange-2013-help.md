@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 了解 Microsoft Exchange Server 2013 中信箱伺服器角色的儲存選項和需求，是信箱伺服器儲存設計解決方案的重要部分。
 
@@ -109,7 +109,7 @@ Exchange 用於儲存 Exchange 資料的所有儲存裝置必須是區塊層級�
 </ul></td>
 <td><p>支援：在 Windows Server 2008 與 Windows Server 2008 R2 中的 512 位元組磁區磁碟。此外，在下列條件下的 Windows Server 2008 R2 中支援 512e 磁碟：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更新版本支援原生 4 KB 磁區磁碟和 512e 磁碟。資料庫的所有複本都必須位於相同的實體磁碟類型上，才受到支援。例如，某個資料庫在 512 位元組磁區磁碟機上有一個複本，在 512e 磁碟或 4K 磁碟上有另一個複本，這就是不支援的組態。</p>
@@ -126,7 +126,7 @@ Exchange 用於儲存 Exchange 資料的所有儲存裝置必須是區塊層級�
 </ul></td>
 <td><p>支援：在 Windows Server 2008 與 Windows Server 2008 R2 中的 512 位元組磁區磁碟。此外，在下列條件下的 Windows Server 2008 R2 中支援 512e 磁碟：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更新版本支援原生 4 KB 磁區磁碟和 512e 磁碟。資料庫的所有複本都必須位於相同的實體磁碟類型上，才受到支援。例如，某個資料庫在 512 位元組磁區磁碟機上有一個複本，在 512e 磁碟或 4K 磁碟上有另一個複本，這就是不支援的組態。</p>
@@ -143,7 +143,7 @@ Exchange 用於儲存 Exchange 資料的所有儲存裝置必須是區塊層級�
 </ul></td>
 <td><p>支援：在 Windows Server 2008 與 Windows Server 2008 R2 中的 512 位元組磁區磁碟。此外，在下列條件下的 Windows Server 2008 R2 中支援 512e 磁碟：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更新版本支援原生 4 KB 磁區磁碟和 512e 磁碟。資料庫的所有複本都必須位於相同的實體磁碟類型上，才受到支援。例如，某個資料庫在 512 位元組磁區磁碟機上有一個複本，在 512e 磁碟或 4K 磁碟上有另一個複本，這就是不支援的組態。</p>
@@ -159,7 +159,7 @@ Exchange 用於儲存 Exchange 資料的所有儲存裝置必須是區塊層級�
 </ul></td>
 <td><p>支援：在 Windows Server 2008 與 Windows Server 2008 R2 中的 512 位元組磁區磁碟。此外，在下列條件下的 Windows Server 2008 R2 中支援 512e 磁碟：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知識庫文章 982018</a> 中所述的 Hotfix，此更新可改善 Windows 7 和 Windows Server 2008 R2 與進階格式磁碟的相容性。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更新版本支援原生 4 KB 磁區磁碟和 512e 磁碟。資料庫的所有複本都必須位於相同的實體磁碟類型上，才受到支援。例如，某個資料庫在 512 位元組磁區磁碟機上有一個複本，在 512e 磁碟或 4K 磁碟上有另一個複本，這就是不支援的組態。</p>
@@ -695,7 +695,7 @@ Exchange 用於儲存 Exchange 資料的所有儲存裝置必須是區塊層級�
 <td><p>Windows BitLocker (磁碟區加密)</p></td>
 <td><p>Windows BitLocker 是 Windows Server 2008 中的資料保護功能。電腦遺失或遭竊時，BitLocker 可防止資料遭竊或暴露，而且當電腦除役時，它提供更安全的資料刪除。</p></td>
 <td><p>支援：所有 Exchange 資料庫和記錄檔。</p></td>
-<td><p>支援：所有 Exchange 資料庫和記錄檔。Windows 容錯移轉叢集需要 Windows Server 2008 R2 或 Windows Server 2008 R2 SP1，以及下列 Hotfix：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2446607">如果電腦為容錯移轉叢集節點，則不能在 Windows Server 2008 R2 的磁碟區上啟用 BitLocker</a>。執行舊版 Exchange 的 Windows 容錯移轉叢集不支援啟用 Bitlocker 的 Windows 磁碟區。</p>
+<td><p>支援：所有 Exchange 資料庫和記錄檔。Windows 容錯移轉叢集需要 Windows Server 2008 R2 或 Windows Server 2008 R2 SP1，以及下列 Hotfix：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">如果電腦為容錯移轉叢集節點，則不能在 Windows Server 2008 R2 的磁碟區上啟用 BitLocker</a>。執行舊版 Exchange 的 Windows 容錯移轉叢集不支援啟用 Bitlocker 的 Windows 磁碟區。</p>
 <p>如需Windows 7 BitLocker 加密的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=220898">Windows 7 中的 BitLocker 磁碟加密： 常見問題集</a>。</p></td>
 </tr>
 <tr class="odd">

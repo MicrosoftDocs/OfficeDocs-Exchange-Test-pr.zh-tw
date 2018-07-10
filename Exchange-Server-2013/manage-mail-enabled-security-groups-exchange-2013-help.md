@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-10-04_
+_**上次修改主題的時間：** 2017-10-04_
 
 擁有郵件功能的安全性群組可用來發佈，以及郵件來授與存取權限給Active Directory中的資源。如需詳細資訊，請參閱[收件者](recipients-exchange-2013-help.md)。
 
@@ -27,18 +27,11 @@ _**上次修改主題的時間：**2017-10-04_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -88,18 +81,11 @@ _**上次修改主題的時間：**2017-10-04_
 
 4.  完成作業後，按一下 \[儲存\] 建立安全性群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，所有新郵件功能的安全性群組需要驗證所有寄件者。這可防止外部寄件者傳送郵件給擁有郵件功能的安全性群組。若要設定為接受來自所有寄件者的郵件擁有郵件功能的安全群組，您必須修改該群組的郵件傳遞限制設定。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 根據預設，所有新郵件功能的安全性群組需要驗證所有寄件者。這可防止外部寄件者傳送郵件給擁有郵件功能的安全性群組。若要設定為接受來自所有寄件者的郵件擁有郵件功能的安全群組，您必須修改該群組的郵件傳遞限制設定。
+
+
 
 
 ## 使用命令介面建立安全性群組
@@ -190,18 +176,11 @@ _**上次修改主題的時間：**2017-10-04_
 
 使用此區段來指定擁有者核准是否需要使用者在加入群組。如果您選取**擁有者核准 」 是必要**的核取方塊，群組擁有者或擁有者會收到要求核准才能加入群組的電子郵件。如先前所述，只有擁有者可以移除群組的成員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此選項會無法使用擁有郵件功能的安全性群組因安全性相關的限制。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此選項會無法使用擁有郵件功能的安全性群組因安全性相關的限制。
+
+
 
 
 ## 傳遞管理
@@ -309,18 +288,11 @@ _**上次修改主題的時間：**2017-10-04_
 
 這個區段可用來新增郵件提示的潛在問題的使用者發出警示之前傳送的郵件時加入此群組。郵件提示是此群組 」 新增至 \[收件者\]、 \[副本\] 或 \[密件副本\] 行中的新的電子郵件時顯示在資訊列中的文字。例如，您可以加入大型群組警告他們的訊息就會傳送給人員大量的潛在寄件者 」 郵件提示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。
+
+
 
 
 ## 群組代理人

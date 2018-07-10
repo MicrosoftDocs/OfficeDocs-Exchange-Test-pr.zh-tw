@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-06-15_
+_**上次修改主題的時間：** 2016-06-15_
 
 在 Microsoft Exchange Server 2013 中，可以輕易地將多個授權網域新增至您的組織。不過，在新增授權網域之後，您需要決定如何在組織中使用授權網域。例如：
 
@@ -47,18 +47,11 @@ _**上次修改主題的時間：**2016-06-15_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -133,18 +126,11 @@ _**上次修改主題的時間：**2016-06-15_
 
     Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>大寫字母的 <code>SMTP</code> 限定詞會指定主要 (回覆) 地址。小寫字母的 <code>smtp</code> 限定詞則會指定 Proxy (次要) 地址。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 大寫字母的 <code>SMTP</code> 限定詞會指定主要 (回覆) 地址。小寫字母的 <code>smtp</code> 限定詞則會指定 Proxy (次要) 地址。
+
+
 
 
 若要將更新的電子郵件地址原則套用至收件者，請使用下列語法。

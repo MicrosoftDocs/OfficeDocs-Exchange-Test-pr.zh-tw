@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013 包含可搭配 Microsoft SharePoint Server 2013 和 Microsoft Lync Server 2013 使用的功能，也稱為*協力應用程式*。若要確保這些協力應用程式可以存取其他資源，您必須設定伺服器對伺服器驗證。
 
@@ -35,18 +35,11 @@ Microsoft Exchange Server 2013 包含可搭配 Microsoft SharePoint Server 2013 
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -70,16 +63,9 @@ Microsoft Exchange Server 2013 包含可搭配 Microsoft SharePoint Server 2013 
 
 將必須使用 SharePoint 2013 執行 eDiscovery 搜尋的使用者新增至 Exchange 2013 中的探索管理角色群組。如需詳細資訊，請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>將使用者新增至「探索管理」角色群組，讓他們能使用就地 eDiscovery 來搜尋所有 Exchange 2013 信箱及存取使用者信箱中的潛在敏感電子郵件內容。根據預設，此權限並未指派給任何使用者，包括組織管理角色群組的成員。在指派此權限給任何使用者前，請洽詢您組織的法務與人力資源部門。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 將使用者新增至「探索管理」角色群組，讓他們能使用就地 eDiscovery 來搜尋所有 Exchange 2013 信箱及存取使用者信箱中的潛在敏感電子郵件內容。根據預設，此權限並未指派給任何使用者，包括組織管理角色群組的成員。在指派此權限給任何使用者前，請洽詢您組織的法務與人力資源部門。
+
+
 

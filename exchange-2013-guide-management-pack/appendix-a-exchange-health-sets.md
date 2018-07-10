@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上次修改主題的時間：** 2013-04-24_
+_**上次修改主題的時間：**  2013-04-24_
 
 The Exchange Server 2013 Management Pack relies on the Managed Availability feature in Exchange 2013. In Managed Availability, each component in Exchange 2013 monitors itself using *probes*, *monitors* and *responders*. Each Exchange 2013 component that implements Managed Availability is referred to as a *health set*. The following tables list all the health sets available in Exchange 2013.
 

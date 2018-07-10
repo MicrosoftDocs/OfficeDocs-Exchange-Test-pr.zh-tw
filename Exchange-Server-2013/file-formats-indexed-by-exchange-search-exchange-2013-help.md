@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-07-21_
+_**上次修改主題的時間：** 2015-07-21_
 
 在 MicrosoftExchange Server 2013 和 Exchange Online 中，「Exchange 搜尋」包含篩選器來為常見被加成郵件附件的檔案格式類型製作索引。您也可以安裝篩選器，以製作其他檔案類型的索引。
 
@@ -43,18 +43,11 @@ _**上次修改主題的時間：**2015-07-21_
 
   - **停用的檔案格式** 在內部部署組織中，系統管理員可以對指定的檔案格式停用索引的製作。郵件如果包含屬於停用格式的附件，就會當成無法搜尋的項目傳回。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>儘管郵件附件可能無法搜尋，或是屬於無法建立索引的檔案格式，但郵件主旨、郵件內文和其他中繼資料則可以建立索引，以在搜尋中傳回郵件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 儘管郵件附件可能無法搜尋，或是屬於無法建立索引的檔案格式，但郵件主旨、郵件內文和其他中繼資料則可以建立索引，以在搜尋中傳回郵件。
+
+
 
 
 如需內部部署組織中與「Exchange 搜尋」相關的其他管理工作，請參閱[Exchange 搜尋程序](exchange-search-procedures-exchange-2013-help.md)。

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 您可以使用通訊協定記錄檢閱Exchange環境中的 POP3 和 IMAP4 連線。這可以是如果您正在進行疑難排解相關 POP3 或 IMAP4 的效能問題。
 

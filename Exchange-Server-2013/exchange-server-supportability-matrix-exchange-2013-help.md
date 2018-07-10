@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2018-03-20_
+_**上次修改主題的時間：** 2018-03-20_
 
 Exchange Server 支援性一覽表提供集中來源，可讓 Microsoft Exchange 系統管理員輕鬆找到所有 Microsoft Exchange 版本的任何組態或必要元件可用支援等級的相關資訊。
 
@@ -78,18 +78,11 @@ Exchange 2007 的支援已於 2017 年 4 月 11 日結束 (根據 [Microsoft 週
 
 下表識別每個 Exchange 版本可在哪些作業系統平台上執行。支援的平台以 X 字元識別。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表中未列出的 Windows Server 和 Windows 用戶端版本不支援使用任何版本或發行的 Exchange。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 下表中未列出的 Windows Server 和 Windows 用戶端版本不支援使用任何版本或發行的 Exchange。
+
+
 
 
 
@@ -446,18 +439,11 @@ Exchange 2007 的支援已於 2017 年 4 月 11 日結束 (根據 [Microsoft 週
 
 下表識別支援哪些網頁瀏覽器在 Web 上與 Outlook Web App 或 Outlook 輕量 (基本) 版本搭配使用。支援的瀏覽器以 X 字元識別。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援在行動瀏覽器中使用 Outlook Web App Basic (Outlook Web App Light)。然而，如果行動瀏覽器中發生轉譯或驗證問題，請判斷問題能否透過在支援瀏覽器的完整用戶端中使用 Outlook Web App Light 加以重現。例如，在 Safari、Chrome 或 Internet Explorer 中測試 Outlook Web App Light 的使用。如果問題無法在完整用戶端中重現，我們建議您連絡行動裝置廠商以取得協助。在這類情況中，我們會視需要與廠商共同作業。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 支援在行動瀏覽器中使用 Outlook Web App Basic (Outlook Web App Light)。然而，如果行動瀏覽器中發生轉譯或驗證問題，請判斷問題能否透過在支援瀏覽器的完整用戶端中使用 Outlook Web App Light 加以重現。例如，在 Safari、Chrome 或 Internet Explorer 中測試 Outlook Web App Light 的使用。如果問題無法在完整用戶端中重現，我們建議您連絡行動裝置廠商以取得協助。在這類情況中，我們會視需要與廠商共同作業。
+
+
 
 
 
@@ -748,18 +734,11 @@ Exchange 2007 的支援已於 2017 年 4 月 11 日結束 (根據 [Microsoft 週
 
 下表識別可與每個 Exchange 版本一起使用的 Microsoft.NET Framework 版本。支援的版本以 X 字元識別。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>下表中未列出的 .NET Framework 版本，在任何版本或發行的 Exchange 上皆不受支援。</strong>這包括 .NET Framework 次要和修補程式等級的版本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> <strong>下表中未列出的 .NET Framework 版本，在任何版本或發行的 Exchange 上皆不受支援。</strong>這包括 .NET Framework 次要和修補程式等級的版本。
+
+
 
 
 <table>

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-13_
+_**上次修改主題的時間：** 2012-10-13_
 
 如果您的組織與法律有關，您必須採取步驟來保留相關的資料，例如可能可當作的電子郵件訊息。在類似的情況下，您可以使用訴訟資料暫留保留所有電子郵件傳送和接收由特定人員或保留所有電子郵件傳送和接收在您的組織在特定時間期間。如需關於信箱時會發生什麼情況處於訴訟暫止狀態以及如何啟用和停用它，請參閱[管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)中的 「 信箱功能 」 章節。
 
@@ -33,18 +33,11 @@ _**上次修改主題的時間：**2012-10-13_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用 EAC 執行訴訟暫止報告
@@ -57,34 +50,20 @@ _**上次修改主題的時間：**2012-10-13_
 
 3.  若要檢視特定信箱、 變更在搜尋結果\] 窗格中，選取的信箱。在詳細資料窗格中檢視搜尋結果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要縮小搜尋結果吗？選取的開始日期、 結束日期] 或兩者，然後選取特定信箱搜尋。按一下 [<strong>搜尋</strong>重新執行 [報告]。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 要縮小搜尋結果吗？選取的開始日期、 結束日期] 或兩者，然後選取特定信箱搜尋。按一下 [<strong>搜尋</strong>重新執行 [報告]。
+
+
 
 
 ## 如何才能了解這是否正常運作？
 
 若要確認您是否已成功執行訴訟暫止狀態報表有訴訟保留搜尋結果\] 窗格中顯示變更的日期範圍內的信箱。如果不有任何結果，然後訴訟資料暫留未變更發生的日期範圍內或最新變更尚未尚未採取效果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當信箱放置了訴訟暫止時，可能需要 60 分鐘才會使訴訟暫止生效。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 當信箱放置了訴訟暫止時，可能需要 60 分鐘才會使訴訟暫止生效。
+
+
 

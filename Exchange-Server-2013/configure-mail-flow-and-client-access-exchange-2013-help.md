@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包括如何設定 SSL 憑證。
 
@@ -23,18 +23,11 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 本主題中的步驟會設定一個基本部署，包含單一的 Active Directory 站台以及簡易郵件傳輸通訊協定 (SMTP) 命名空間。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題使用如 Ex2013CAS、contoso.com、mail.contoso.com 及 172.16.10.11 等範例值。請將範例值取代為組織中的伺服器名稱、FQDN 及 IP 位址。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 本主題使用如 Ex2013CAS、contoso.com、mail.contoso.com 及 172.16.10.11 等範例值。請將範例值取代為組織中的伺服器名稱、FQDN 及 IP 位址。
+
+
 
 
 如需郵件流程及用戶端和裝置等相關管理工作的資訊，請參閱＜[郵件流程](mail-flow-exchange-2013-help.md)＞和＜[用戶端和行動裝置](clients-and-mobile-exchange-2013-help.md)＞。
@@ -49,32 +42,18 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每個組織的 Active Directory 樹系中至少都要有一部 Client Access Server 與一部 Mailbox Server。此外，每個含有 Mailbox Server 的 Active Directory 網站也至少要包含一部 Client Access Server。如果您要分離您的伺服器角色，建議您先安裝 Mailbox server role。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 每個組織的 Active Directory 樹系中至少都要有一部 Client Access Server 與一部 Mailbox Server。此外，每個含有 Mailbox Server 的 Active Directory 網站也至少要包含一部 Client Access Server。如果您要分離您的伺服器角色，建議您先安裝 Mailbox server role。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -103,18 +82,11 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 9.  按一下 **\[完成\]**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 安裝完畢時，將會建立一個預設的內部接收連接器。此接收連接器接受來自外部伺服器的匿名 SMTP 連接。假如這是您想要的功能，您便無需進行任何額外的設定。假如您想限制外部伺服器進行內部連結，請至用戶端存取伺服器上的 [預設前端 &lt;用戶端存取伺服器&gt;] 接收連接器進行調整。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Exchange 2013 安裝完畢時，將會建立一個預設的內部接收連接器。此接收連接器接受來自外部伺服器的匿名 SMTP 連接。假如這是您想要的功能，您便無需進行任何額外的設定。假如您想限制外部伺服器進行內部連結，請至用戶端存取伺服器上的 [預設前端 &lt;用戶端存取伺服器&gt;] 接收連接器進行調整。
+
+
 
 
 ## 如何才能了解此步驟是否正常運作？
@@ -131,18 +103,11 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 經由預設，當您在 Active Directory 樹系部署新的 Exchange 2013 組織，Exchange 會使用執行設定/預備 AD之Active Directory 網域的網域名稱。假如您想要透過另一個網域來傳送或接收訊息，您必須將該網域新增為公認的網域。在下一個步驟中，依照預設電子郵件位址原則，此網域也將新增為主要的 SMTP 地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您要從網際網路接受電子郵件的每一個 SMTP 網域，都需要有公用網域名稱系統 (DNS) MX 資源記錄。每一個 MX 記錄應解析收取您組織之電子郵件的網際網路對向伺服器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您要從網際網路接受電子郵件的每一個 SMTP 網域，都需要有公用網域名稱系統 (DNS) MX 資源記錄。每一個 MX 記錄應解析收取您組織之電子郵件的網際網路對向伺服器。
+
+
 
 
 1.  瀏覽至用戶端存取伺服器的 URL 以開啟 EAC。例如，https://Ex2013CAS/ECP。
@@ -185,18 +150,11 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 8.  在 \[預設原則\] 資料窗格中，按一下 \[套用\]。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們建議您設定一個使用者主要名稱 (UPN)，符合每一位使用者的主要電子郵件地址。如果您未提供符合一位使用者的電子郵件地址之 UPN，使用者除了電子郵件地址之外，將被要求以手動方式，提供他們的網域/使用者名稱或者 UPN。如果他們的 UPN 與他們的電子郵件地址相符，Outlook Web App，ActiveSync，以及 Outlook 將會自動搭配他們的電子郵件地址和他們的 UPN。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們建議您設定一個使用者主要名稱 (UPN)，符合每一位使用者的主要電子郵件地址。如果您未提供符合一位使用者的電子郵件地址之 UPN，使用者除了電子郵件地址之外，將被要求以手動方式，提供他們的網域/使用者名稱或者 UPN。如果他們的 UPN 與他們的電子郵件地址相符，Outlook Web App，ActiveSync，以及 Outlook 將會自動搭配他們的電子郵件地址和他們的 UPN。
+
+
 
 
 ## 如何才能了解此步驟是否正常運作？

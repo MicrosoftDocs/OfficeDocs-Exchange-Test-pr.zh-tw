@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2016-06-24_
+_**上次修改主題的時間：** 2016-06-24_
 
 在 Outlook 用戶端在組織中的使用者可以新增其**我的最愛**資料夾公用資料夾。然後，根據組織的原則他們可以使用網頁型 Outlook將這些相同的公用資料夾新增至其我的最愛並網頁型 Outlook ，因此在 Outlook 用戶端中執行某些功能。
 
@@ -23,18 +23,11 @@ _**上次修改主題的時間：**2016-06-24_
 
 為了讓使用者在其**\[我的最愛**\] 資料夾中的公用資料夾上執行特定工作，他們必須先將公用資料夾新增至 \[**我的最愛**\] 資料夾中使用 Outlook 用戶端。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需建立及設定公用資料夾的詳細資訊，您組織中的使用者即可看到<a href="https://support.office.com/en-us/article/create-a-public-folder-in-outlook-d5981360-28d3-4c8f-a373-c98ae570420a?ui=en-us%26rs=en-us%26ad=us">Outlook 中的公用資料夾建立</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如需建立及設定公用資料夾的詳細資訊，您組織中的使用者即可看到<a href="https://support.office.com/en-us/article/create-a-public-folder-in-outlook-d5981360-28d3-4c8f-a373-c98ae570420a?ui=en-us%26rs=en-us%26ad=us">Outlook 中的公用資料夾建立</a>。
+
+
 
 
 1.  在 Outlook 中，移至 \[**資料夾**\] 檢視。按一下導覽列中，與按一下**資料夾**三點。
@@ -64,18 +57,11 @@ _**上次修改主題的時間：**2016-06-24_
 
 4.  **新增至我的最愛**對話方塊中，會重新命名資料夾**我的最愛**僅的選項。按一下 \[**新增**將資料夾新增至**我的最愛**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有數種類型的公用資料夾。為了讓使用者無法使用網頁型 Outlook中我的最愛公用資料夾、 公用資料夾的類型必須是郵件並張貼項目、 行事曆項目或連絡人項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 有數種類型的公用資料夾。為了讓使用者無法使用網頁型 Outlook中我的最愛公用資料夾、 公用資料夾的類型必須是郵件並張貼項目、 行事曆項目或連絡人項目。
+
+
 
 
 ## 在網頁型 Outlook中新增我的最愛公用資料夾

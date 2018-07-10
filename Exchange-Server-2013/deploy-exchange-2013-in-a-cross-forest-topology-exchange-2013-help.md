@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 本主題說明如何部署Exchange 2013在跨樹系拓撲中使用 Microsoft Forefront Identity Manager 2010 R2 SP1。若要部署Exchange 2013跨樹系拓撲中，必須先安裝Exchange 2013每個樹系中，並再連線樹系\]，讓使用者可以看見跨樹系的地址及可用性的資料。
 
@@ -37,24 +37,17 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 請確保 Windows Update 並未安裝 Windows 遠端管理。
 
-  - 安裝Windows PowerShell 和Windows遠端管理。如需詳細資訊，請參閱 Microsoft 知識庫文章 968930、 [Windows 管理架構核心套件 （Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 安裝Windows PowerShell 和Windows遠端管理。如需詳細資訊，請參閱 Microsoft 知識庫文章 968930、 [Windows 管理架構核心套件 （Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 下載 Forefront Identity Manager 2010 R2 SP1。請參閱[Microsoft Forefront Identity Manager 2010 R2 SP1 的下載](https://go.microsoft.com/fwlink/p/?linkid=279868)。
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 在跨樹系拓撲中使用 Forefront Identity Manager 2010 R2 SP1 來部署 Exchange 2013

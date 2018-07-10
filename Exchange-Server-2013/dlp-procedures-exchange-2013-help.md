@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-01-07_
+_**上次修改主題的時間：** 2015-01-07_
 
 您可以開始您的郵件環境中使用的資料遺失防護 (DLP) 解決方案使用下列程序。若要了解概念與目標的 DLP，請參閱[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2015-01-07_
 
 [檢視 DLP 原則偵測報告](view-dlp-policy-detection-reports-exchange-2013-help.md)   追蹤原則違規的侵害。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>資料外洩防護是付費功能，需要企業版用戶端存取授權 (CAL)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 資料外洩防護是付費功能，需要企業版用戶端存取授權 (CAL)。
+
+
 
 
 ## 相關資訊

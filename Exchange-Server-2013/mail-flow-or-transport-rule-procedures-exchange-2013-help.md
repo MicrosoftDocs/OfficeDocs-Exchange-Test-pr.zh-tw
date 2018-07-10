@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-13_
+_**上次修改主題的時間：** 2015-04-13_
 
 您可以使用下列程序以開始使用傳輸規則。若要了解傳輸規則的概念和目標，請參閱 [郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)。
 

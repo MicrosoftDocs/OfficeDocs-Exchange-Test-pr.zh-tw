@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-25_
+_**上次修改主題的時間：** 2013-02-25_
 
 在 Microsoft Exchange Server 2013 中，在信箱伺服器、信箱伺服器上的信箱以及邊際傳輸伺服器上，將郵件傳輸至傳輸服務或是從傳輸服務來傳輸，郵件追蹤記錄檔都會詳細記錄所有的郵件活動。
 
@@ -47,18 +47,11 @@ _**上次修改主題的時間：**2013-02-25_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -99,7 +92,7 @@ _**上次修改主題的時間：**2013-02-25_
 
 ## 使用命令介面在多部伺服器上搜尋郵件追蹤記錄中的郵件項目
 
-一般來說，**MessageID:** 標頭欄位中的值，在郵件於整個 Exchange 組織中傳輸時會維持不變。在佇列檢視公用程式中，此內容名為 **InternetMessageId**，在郵件追蹤記錄檢視公用程式中，此內容名為 **MessageId**。在您判斷特定郵件的 `MessageID:` 值之後，即可在 Exchange 組織中每部 Mailbox Server 上的郵件追蹤記錄檔中，搜尋該郵件的相關資訊。
+一般來說，**MessageID:**  標頭欄位中的值，在郵件於整個 Exchange 組織中傳輸時會維持不變。在佇列檢視公用程式中，此內容名為 **InternetMessageId**，在郵件追蹤記錄檢視公用程式中，此內容名為 **MessageId**。在您判斷特定郵件的 `MessageID:` 值之後，即可在 Exchange 組織中每部 Mailbox Server 上的郵件追蹤記錄檔中，搜尋該郵件的相關資訊。
 
 若要在所有 Mailbox Server 中搜尋特定郵件的所有郵件追蹤記錄項目，請使用下列語法。
 
@@ -107,7 +100,7 @@ _**上次修改主題的時間：**2013-02-25_
 
 本範例會使用下列搜尋準則，搜尋所有 Exchange 2013 Mailbox Server 上的郵件追蹤記錄：
 
-  - 針對 **MessageID:** 值為 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>` 的郵件，尋找任何相關項目。請注意，您可以省略角括弧字元 (`<``>`)。如果您不這樣做，則需要將整個 **MessageID:** 值用引號括住。
+  - 針對 **MessageID:**  值為 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>` 的郵件，尋找任何相關項目。請注意，您可以省略角括弧字元 (`<``>`)。如果您不這樣做，則需要將整個 **MessageID:**  值用引號括住。
 
   - 對於每個項目，顯示 **date-time**、**server-hostname**、**client-hostname**、**source**、**event-id** 和 **recipient-address** 欄位。
 

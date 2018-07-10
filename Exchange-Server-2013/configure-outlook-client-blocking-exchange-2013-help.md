@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 在 Exchange Server 2013 中，您可以使用保留原則或受管理的資料夾，以進行通訊記錄管理 (MRM)。 只有執行 Microsoft Outlook 2010 和更新版本的使用者才能存取保留原則的所有用戶端功能。 但不管使用者的 Outlook 用戶端版本為何，「受管理的資料夾助理員」一律會將保留原則套用在 Mailbox Server 上。 較舊版的 Outlook 用戶端並不會顯示這些功能的 MRM 功能。 例如，因為 Outlook 2007 不支援保留原則，使用者無法將個人標籤套用到項目或資料夾上。
 
@@ -113,18 +113,11 @@ _**上次修改主題的時間：**2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>進行任何變更之前，請注意 Hotfix 及 Service Pack 版本可能會影響用戶端版本字串。 因為伺服器端 Exchange 元件也必須使用 MAPI 登入，所以限制用戶端存取權時請小心。 部分元件會將它們的用戶端版本報告為元件名稱 (例如 SMTP 或 OLE DB)，而其他元件則會報告 Exchange 組建號碼 (例如 6.0.4712.0)。 因此，請避免限制其版本號碼為 6.&lt;<em>x</em>.<em>x</em>.&gt; 開頭的用戶端。 例如，若要完全防止 MAPI 存取，請指定兩個範圍，讓伺服器元件可以登入，而不要指定 <strong>0.0.0-6.5535.65535.65535</strong>。 例如，指定下列項目： <strong>0.0.0-5.9.9; 7.0.0-</strong>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 進行任何變更之前，請注意 Hotfix 及 Service Pack 版本可能會影響用戶端版本字串。 因為伺服器端 Exchange 元件也必須使用 MAPI 登入，所以限制用戶端存取權時請小心。 部分元件會將它們的用戶端版本報告為元件名稱 (例如 SMTP 或 OLE DB)，而其他元件則會報告 Exchange 組建號碼 (例如 6.0.4712.0)。 因此，請避免限制其版本號碼為 6.&lt;<em>x</em>.<em>x</em>.&gt; 開頭的用戶端。 例如，若要完全防止 MAPI 存取，請指定兩個範圍，讓伺服器元件可以登入，而不要指定 <strong>0.0.0-6.5535.65535.65535</strong>。 例如，指定下列項目： <strong>0.0.0-5.9.9; 7.0.0-</strong>.
+
+
 
 
 執行這些程序之後，請注意如果封鎖使用者使其無法存取他們的信箱，則他們會接收到下列警告訊息。
@@ -178,18 +171,11 @@ _**上次修改主題的時間：**2015-03-09_
 
 這個例子封鎖了 12.0.0 版本之前的 Outlook 用戶端，使其無法存取 Exchange 2010 或更新版本之 Client Access Server 上的信箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>範例為與 <em>BlockedClientVersions</em> 參數搭配使用的值。您可以剖析 <code>%ExchangeInstallPath%Logging\RPC Client Access</code> 中的 RPC Client Access 記錄檔，以判斷正確的用戶端軟體版本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 範例為與 <em>BlockedClientVersions</em> 參數搭配使用的值。您可以剖析 <code>%ExchangeInstallPath%Logging\RPC Client Access</code> 中的 RPC Client Access 記錄檔，以判斷正確的用戶端軟體版本。
+
+
 
 
     Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"

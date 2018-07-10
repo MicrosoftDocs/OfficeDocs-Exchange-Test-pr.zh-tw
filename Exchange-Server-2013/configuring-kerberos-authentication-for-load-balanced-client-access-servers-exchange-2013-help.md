@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
-**摘要：**說明如何使用 Kerberos 驗證與負載平衡的 Client Access server 在 Exchange 2013。
+**摘要：** 說明如何使用 Kerberos 驗證與負載平衡的 Client Access server 在 Exchange 2013。
 
 為了讓您使用負載平衡用戶端存取伺服器使用 Kerberos 驗證，您需要完成本文中所述的設定步驟。
 
@@ -25,32 +25,18 @@ _**上次修改主題的時間：**2016-12-09_
 
 共用相同的命名空間和 Url 的所有用戶端存取伺服器需使用相同的備用服務帳戶認證。一般而言，它是足夠讓每個版本的 Exchange 樹系的單一帳戶。*備用服務帳戶認證*或*ASA 認證*。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2010 與 Exchange 2013 無法共用相同的 ASA 認證。您需要建立新的 ASA 認證 for Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Exchange 2010 與 Exchange 2013 無法共用相同的 ASA 認證。您需要建立新的 ASA 認證 for Exchange 2013。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然共用命名空間支援 CNAME 記錄，Microsoft 建議使用 A 記錄。這可確保用戶端正確發出的共用的名稱，並不是伺服器的 FQDN 為基礎的 Kerberos 票證要求。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!IMPORTANT]  
+> 雖然共用命名空間支援 CNAME 記錄，Microsoft 建議使用 A 記錄。這可確保用戶端正確發出的共用的名稱，並不是伺服器的 FQDN 為基礎的 Kerberos 票證要求。
+
+
 
 
 當您設定好 ASA 認證時，記住以下指導方針：
@@ -75,7 +61,7 @@ _**上次修改主題的時間：**2016-12-09_
     
         New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    **範例：**
+    **範例：** 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -85,7 +71,7 @@ _**上次修改主題的時間：**2016-12-09_
     
         Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    **範例：**
+    **範例：** 
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     
@@ -298,18 +284,11 @@ SPN 的值必須符合在網路負載平衡器，而不是個別伺服器上的�
 
 ## 關聯 ASA 認證的服務主要名稱 (Spn)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未關聯的 Spn ASA 認證直到您已部署該認證至少一部 Exchange 伺服器，以部署至第一部 Exchange 2013 Client Access server ASA 認證稍早所述。否則，您會遇到 Kerberos 驗證錯誤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 未關聯的 Spn ASA 認證直到您已部署該認證至少一部 Exchange 伺服器，以部署至第一部 Exchange 2013 Client Access server ASA 認證稍早所述。否則，您會遇到 Kerberos 驗證錯誤。
+
+
 
 
 Spn 關聯 ASA 認證之前，您必須確認目標 Spn 已經不在樹系中的不同帳戶相關聯。ASA 認證必須是唯一的帳戶與這些 Spn 相關聯的樹系中。您可以確認樹系中的沒有其他帳戶相關聯的 Spn 執行**setspn**命令，從命令列。

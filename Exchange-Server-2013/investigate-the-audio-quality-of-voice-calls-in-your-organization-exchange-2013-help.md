@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-21_
+_**上次修改主題的時間：** 2013-02-21_
 
 如果您的組織發生 Unified Messaging (UM) 呼叫與語音郵件訊息的音訊品質問題，請使用呼叫統計資料報告以協助您瞭解問題的肇因。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不涵蓋報告中的因素會受通話的音訊品質。例如，如果您的 Exchange 伺服器負載大量記憶體或 CPU 負載量，使用者可能會報告收訊不良通話品質即使報告顯示實用的音訊品質。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 不涵蓋報告中的因素會受通話的音訊品質。例如，如果您的 Exchange 伺服器負載大量記憶體或 CPU 負載量，使用者可能會報告收訊不良通話品質即使報告顯示實用的音訊品質。
+
+
 
 
 有關與呼叫統計資料相關的額外工作，請參閱 [UM 報告程序](um-reports-procedures-exchange-2013-help.md)。
@@ -43,18 +36,11 @@ _**上次修改主題的時間：**2013-02-21_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用 EAC 以取得您組織的音訊品質統計資料
@@ -63,15 +49,15 @@ _**上次修改主題的時間：**2013-02-21_
 
 2.  選擇要包含在報表中的呼叫統計資料。報表會自動更新當您選取任何下列的選項。
     
-      - **顯示：**選擇要檢視的呼叫統計資料類型：
+      - **顯示：** 選擇要檢視的呼叫統計資料類型：
         
-          - **每日 (90 天)：**選取 \[每日\] 可查看過去 90 天所有通話的詳細資料。
+          - **每日 (90 天)：** 選取 \[每日\] 可查看過去 90 天所有通話的詳細資料。
         
-          - **每月 (12 個月)：**選取 \[每月\] 可查看過去 12 個月的每月通話摘要。
+          - **每月 (12 個月)：** 選取 \[每月\] 可查看過去 12 個月的每月通話摘要。
         
-          - **全部：**選取 \[全部\] 可查看自從 UM 開始處理通話以來所收到之所有通話的結合統計資料。
+          - **全部：** 選取 \[全部\] 可查看自從 UM 開始處理通話以來所收到之所有通話的結合統計資料。
     
-      - **UM 撥號對應表：**如果您想要將報告中的資料限制為僅限特定 UM 撥號對應表中的通話，請選取該撥號對應表。
+      - **UM 撥號對應表：** 如果您想要將報告中的資料限制為僅限特定 UM 撥號對應表中的通話，請選取該撥號對應表。
     
       - **UM IP 閘道器**  如果您想要限制只在特定的 UM IP 閘道呼叫報表中的資料，請選取該 UM IP 閘道器。如果您先選取 UM 撥號對應表，只選取 UM 撥號對應表相關聯的 UM IP 閘道都可在清單中。
 

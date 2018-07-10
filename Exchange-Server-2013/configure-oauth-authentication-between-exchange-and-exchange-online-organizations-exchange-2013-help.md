@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 只具有 Exchange 2013 的混合式部署是使用混合組態精靈來設定 OAuth 驗證。對於混合的 Exchange 2013/2010 和 Exchange 2013/2007 混合式部署，Office 365 與內部部署 Exchange 組織之間的新的混合式部署 OAuth 型驗證連線，並不是由混合組態精靈來設定。依預設，這些部署會繼續使用同盟信任程序。不過，整個組織必須使用新的 Exchange OAuth 驗證通訊協定，才能完整取得某些 Exchange 2013 功能。
 
@@ -54,18 +54,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要如何設定內部部署 Exchange 與 Exchange Online 組織之間的 OAuth 驗證？
@@ -142,24 +135,17 @@ _**上次修改主題的時間：**2016-12-09_
 
 ## 步驟 5： 利用 Azure Active Directory 註冊外部內部部署 Exchange HTTP 端點的所有主機名稱授權單位
 
-在此步驟中，您必須對內部部署 Exchange 組織中每個可公開存取的端點執行指令碼。我們建議您盡可能使用萬用字元。例如，假設 **https://mail.contoso.com/ews/exchange.asmx** 可對外提供 Exchange。在此情況下，可使用單一萬用字元：**\*.contoso.com**。這會涵蓋 autodiscover.contoso.com 與 mail.contoso.com 端點。但是不涵蓋最上層網域 **contoso.com**。在最上層主機名稱授權單位可外部存取 Exchange 2013 Client Access Server 的情況下，此主機名稱授權單位也必須註冊為 **contoso.com**。註冊其他外部主機名稱授權單位並無限制。
+在此步驟中，您必須對內部部署 Exchange 組織中每個可公開存取的端點執行指令碼。我們建議您盡可能使用萬用字元。例如，假設 **https://mail.contoso.com/ews/exchange.asmx** 可對外提供 Exchange。在此情況下，可使用單一萬用字元：** \*.contoso.com**。這會涵蓋 autodiscover.contoso.com 與 mail.contoso.com 端點。但是不涵蓋最上層網域 **contoso.com**。在最上層主機名稱授權單位可外部存取 Exchange 2013 Client Access Server 的情況下，此主機名稱授權單位也必須註冊為 **contoso.com**。註冊其他外部主機名稱授權單位並無限制。
 
 若不確定內部部署 Exchange 組織中的外部 Exchange 端點，可以在內部部署 Exchange 組織的 Exchange PowerShell 中執行下列命令，即可取得外部設定的 Web 服務端點清單。
 
     Get-WebServicesVirtualDirectory | FL ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>成功執行下列指令碼需要Azure Active Directory Windows PowerShell 連線至 Microsoft Online Azure AD租用戶，步驟 4 上一節所述。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 成功執行下列指令碼需要Azure Active Directory Windows PowerShell 連線至 Microsoft Online Azure AD租用戶，步驟 4 上一節所述。
+
+
 
 
 1.  將下列文字儲存到 PowerShell 指令碼檔案 (例如 **RegisterEndpoints.ps1**)。這個範例使用萬用字元來註冊 contoso.com 的所有端點。以您的內部部署 Exchange 組織的主機名稱授權單位取代 **contoso.com**。
@@ -197,18 +183,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - https://\<主要 SMTP 網域\>/autodiscover/autodiscover.svc
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可同時在內部部署和 Office 365 租用戶中使用 <a href="https://technet.microsoft.com/zh-tw/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> Cmdlet，以判斷 <a href="https://technet.microsoft.com/zh-tw/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a> Cmdlet 所需的端點值。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您可同時在內部部署和 Office 365 租用戶中使用 <a href="https://technet.microsoft.com/zh-tw/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> Cmdlet，以判斷 <a href="https://technet.microsoft.com/zh-tw/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a> Cmdlet 所需的端點值。
+
+
 
 
 使用 Windows PowerShell 執行下列 Cmdlet：
@@ -255,18 +234,11 @@ _**上次修改主題的時間：**2016-12-09_
 
     Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果從多部伺服器傳回虛擬目錄資訊，請確定您使用針對 Exchange 2013 SP1 Client Access Server 傳回的端點。它將會針對 <em>AdminDisplayVersion</em> 參數顯示 15.0 (組建 847.32) 或以上版本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果從多部伺服器傳回虛擬目錄資訊，請確定您使用針對 Exchange 2013 SP1 Client Access Server 傳回的端點。它將會針對 <em>AdminDisplayVersion</em> 參數顯示 15.0 (組建 847.32) 或以上版本。
+
+
 
 
 若要設定 *AvailabilityAddressSpace*，請使用 Exchange PowerShell 並在內部部署組織中執行下列指令程式：
@@ -277,18 +249,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 您可以使用 [Test-OAuthConnectivity](https://technet.microsoft.com/zh-tw/library/jj218623\(v=exchg.150\)) Cmdlet 驗證 OAuth 組態是否正確。此指令程式會驗證內部部署 Exchange 和 Exchange Online 端點是否可成功驗證彼此的要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用遠端 PowerShell 連線至 Exchange Online 組織時，您必須使用 <strong>Import-PSSession</strong> 指令程式並搭配 <em>AllowClobber</em> 參數，將最新的命令匯入至本機 PowerShell 工作階段。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 使用遠端 PowerShell 連線至 Exchange Online 組織時，您必須使用 <strong>Import-PSSession</strong> 指令程式並搭配 <em>AllowClobber</em> 參數，將最新的命令匯入至本機 PowerShell 工作階段。
+
+
 
 
 若要驗證內部部署 Exchange 組織是否可成功連線至 Exchange Online，請在內部部署組織的 Exchange PowerShell 中執行下列命令：
@@ -319,16 +284,9 @@ _**上次修改主題的時間：**2016-12-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

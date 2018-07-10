@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010, Exchange Server 2013_
+_**適用版本：** Exchange Server 2010, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-04-30_
+_**上次修改主題的時間：** 2018-04-30_
 
-**摘要：** 如何將 Exchange 2010 公用資料夾移至 Office 365 群組。
+**摘要：**  如何將 Exchange 2010 公用資料夾移至 Office 365 群組。
 
 透過稱為*批次移轉*程序，則可以移到 Office 365 群組的部分或所有的 Exchange 2010 公用資料夾。群組是具有某些優點透過公用資料夾的 microsoft 提供新的共同作業。請參閱[將公用資料夾移轉至 Office 365 群組](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)如需公用資料夾及群組，並原因為何您的組織可能有或可能不會受益於切換到群組之間的差異的概觀。
 
@@ -57,18 +57,11 @@ _**上次修改主題的時間：**2018-04-30_
 
 再繼續執行，確認您已下載並儲存的所有下列指令碼及檔案：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請確定所有指令碼檔案儲存到相同位置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 請確定所有指令碼檔案儲存到相同位置。
+
+
 
 
   - **AddMembersToGroups.ps1**。 此指令碼會新增成員與 Office 365 群組擁有者根據來源公用資料夾中的權限項目。
@@ -77,7 +70,7 @@ _**上次修改主題的時間：**2018-04-30_
 
   - **LockAndSavePublicFolderProperties.ps1**。 此指令碼建立公用資料夾，以避免任何修改、 唯讀並且轉接郵件相關的公用資料夾內容 （提供公用資料夾所擁有郵件功能） 到目標群組，其重新將路由的公用資料夾的電子郵件傳送至目標群組。此指令碼也會備份權限項目和 mail 屬性然後再修改它們。
 
-  - **LockAndSavePublicFolderProperties.strings.psd1：** 此支援檔案由指令碼`LockAndSavePublicFolderProperties.ps1`。
+  - **LockAndSavePublicFolderProperties.strings.psd1：**  此支援檔案由指令碼`LockAndSavePublicFolderProperties.ps1`。
 
   - **UnlockAndRestorePublicFolderProperties.ps1**。 此指令碼還原存取權限及使用`LockandSavePublicFolderProperties.ps1`所建立的備份檔案的公用資料夾的郵件內容。
 
@@ -224,18 +217,11 @@ _**上次修改主題的時間：**2018-04-30_
 
 當您的公用資料夾中的資料多數 」 已移轉至 Office 365 群組時，您可以執行指令碼`LockAndSavePublicFolderProperties.ps1`在 Exchange 2010 伺服器上以唯讀方式將公用資料夾。此步驟可確保沒有新的資料會新增至 \[公用資料夾移轉完成之前。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有擁有郵件功能的公用資料夾 (MEPFs) 之間的公用資料夾遷移，此步驟會將 MEPFs，例如 SMTP 位址的某些屬性複製到 Office 365 中的對應群組，然後停用郵件功能的公用資料夾。因為移轉 MEPFs 將會停用之後執行此指令碼的您會啟動看不到傳送至 MEPFs 改用相對應的群組中接收電子郵件。如需詳細資訊，請參閱本文稍後的移轉指令碼。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 有擁有郵件功能的公用資料夾 (MEPFs) 之間的公用資料夾遷移，此步驟會將 MEPFs，例如 SMTP 位址的某些屬性複製到 Office 365 中的對應群組，然後停用郵件功能的公用資料夾。因為移轉 MEPFs 將會停用之後執行此指令碼的您會啟動看不到傳送至 MEPFs 改用相對應的群組中接收電子郵件。如需詳細資訊，請參閱本文稍後的移轉指令碼。
+
+
 
 
 在下列命令：
@@ -276,18 +262,11 @@ _**上次修改主題的時間：**2018-04-30_
 
 完成此步驟 （批次狀態為**\[已完成**） 之後，確認所有的資料有已複製到 Office 365 群組。屆時，您必須是滿意群組經驗，即可開始刪除已移轉的公用資料夾從 Exchange 2010 環境。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然有支援回復移轉及傳回公用資料夾的程序，這不是可能之後已刪除的來源公用資料夾。 請參閱How do I 回復到公用資料夾從 Office 365 群組？如需詳細資訊。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 雖然有支援回復移轉及傳回公用資料夾的程序，這不是可能之後已刪除的來源公用資料夾。 請參閱How do I 回復到公用資料夾從 Office 365 群組？如需詳細資訊。
+
+
 
 
 ## 已知問題
@@ -306,9 +285,9 @@ _**上次修改主題的時間：**2018-04-30_
 
 此指令碼會讀取遷移公用資料夾的權限並再新增成員及擁有者至 Office 365 群組，如下所示：
 
-  - 具有下列權限角色的使用者將成員新增至 Office 365 中的群組。 **權限的角色：** 擁有者、 PublishingEditor、 編輯器、 PublishingAuthor、 作者
+  - 具有下列權限角色的使用者將成員新增至 Office 365 中的群組。 **權限的角色：**  擁有者、 PublishingEditor、 編輯器、 PublishingAuthor、 作者
 
-  - 在 \[除了下列最小的存取權，與上述的使用者權限也會新增成員至 Office 365 中的群組。 **存取權限：** ReadItems、 CreateItems、 FolderVisible、 EditOwnedItems、 DeleteOwnedItems
+  - 在 \[除了下列最小的存取權，與上述的使用者權限也會新增成員至 Office 365 中的群組。 **存取權限：**  ReadItems、 CreateItems、 FolderVisible、 EditOwnedItems、 DeleteOwnedItems
 
   - 右作為擁有者群組新增 「 擁有者 」 與其他的合格的存取權限的使用者將會加入為成員的存取權的使用者。
 

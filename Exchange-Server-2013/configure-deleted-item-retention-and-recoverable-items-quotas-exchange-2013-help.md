@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 當使用者會從 \[刪除的郵件\] 預設資料夾刪除項目使用 Delete、 Shift + Delete 或**空刪除項目資料夾**動作時，項目會移至 \[**可復原的 Items\\Deletions** \] 資料夾。期間已刪除的項目保留在此資料夾中為基礎的信箱資料庫或信箱設定已刪除的項目保留設定。根據預設，信箱資料庫設定為 14 天內，保留已刪除的項目並可復原的項目警告配額和配額可復原的項目會設為 20 gb 和 30 GB 分別。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>刪除的項目經過、 Microsoft Outlook和 Microsoft OfficeOutlook Web App的保留時間之前的使用者可以使用復原刪除的郵件功能復原刪除的項目。若要深入了解這些功能，請參閱&quot;復原已刪除的項目 」 主題<a href="https://go.microsoft.com/fwlink/p/?linkid=198206">Outlook</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=198207">Outlook Web App</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 刪除的項目經過、 Microsoft Outlook和 Microsoft OfficeOutlook Web App的保留時間之前的使用者可以使用復原刪除的郵件功能復原刪除的項目。若要深入了解這些功能，請參閱&quot;復原已刪除的項目 」 主題<a href="https://go.microsoft.com/fwlink/p/?linkid=198206">Outlook</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=198207">Outlook Web App</a>。
+
+
 
 
 您可以使用命令介面來設定已刪除的項目保留設定和信箱或信箱資料庫的可復原的項目配額。刪除項目設定會略過信箱處於就地保留或訴訟資料暫留時保留。
@@ -45,18 +38,11 @@ _**上次修改主題的時間：**2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 您要執行的工作
@@ -89,54 +75,33 @@ _**上次修改主題的時間：**2016-12-09_
 
 ## 使用命令介面來設定信箱的可復原的項目配額
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來設定信箱配額可復原的項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來設定信箱配額可復原的項目。
+
+
 
 
 此範例會設定警告配額的 12 GB 和 April Stewart 信箱的可復原的項目配額 15 GB 的可復原的項目。
 
     Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要設定要使用不同的可復原項目比其所在之信箱資料庫的配額的信箱，您必須<em>UseDatabaseQuotaDefaults</em>參數設定為<code>$false</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要設定要使用不同的可復原項目比其所在之信箱資料庫的配額的信箱，您必須<em>UseDatabaseQuotaDefaults</em>參數設定為<code>$false</code>。
+
+
 
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 
 ## 使用命令介面來設定信箱資料庫刪除項目保留
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來設定信箱資料庫刪除項目保留。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來設定信箱資料庫刪除項目保留。
+
+
 
 
 此範例會設定為 10 天的信箱資料庫 MDB2 已刪除的項目保留期間。
@@ -147,18 +112,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 ## 使用命令介面來設定信箱資料庫的可復原的項目配額
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法使用 EAC 來設定信箱資料庫的可復原的項目配額</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您無法使用 EAC 來設定信箱資料庫的可復原的項目配額
+
+
 
 
 此範例會設定警告配額的 15 GB 與信箱資料庫 MDB2 上 20 GB 的可復原的項目配額可復原的項目。

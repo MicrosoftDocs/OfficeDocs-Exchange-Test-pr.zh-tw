@@ -13,24 +13,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-04-07_
+_**上次修改主題的時間：** 2015-04-07_
 
 管理角色是用於 Microsoft Exchange Server 2013 的角色存取控制 (Role Based Access Control，RBAC) 權限模式的一部分。角色可當作指令程式邏輯群組的一部分整合，提供您存取權限來檢視或修改 Exchange 2013 元件 (如信箱、傳輸規則和收件者) 的組態。管理角色可進一步整合到稱為管理角色群組和管理角色指派原則的較大群組中，以便管理功能範圍和接收者組態。角色群組和角色指派原則會分別將權限指派給系統管理員和一般使用者。如需管理角色群組和管理角色指派原則的詳細資訊，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題著重於進階 RBAC 功能。如果您要管理基本 Exchange 2013 權限，例如使用 Exchange 系統管理中心 (EAC) 新增和移除角色群組的成員、建立和修改角色群組，或建立和修改角色指派原則，請參閱<a href="permissions-exchange-2013-help.md">權限</a>。
+
+
 
 
 **目錄**
@@ -75,18 +68,11 @@ Exchange 2013 提供許多可用於管理組織的內建管理角色。每個角
 
 您可以取得 Exchange 2013 所提供的內建角色，並以任何方式將其合併以建立適用於您企業的權限模式。例如，如果您要角色群組的成員管理收件者和公用資料夾，可將「郵件收件者」和「公用資料夾」角色都指派給角色群組。通常是將角色指派給角色群組或角色指派原則。如果您要控制細微層次的權限，還可以直接將管理角色指派給使用者。我們建議您使用角色群組和角色指派原則 (而非直接使用者角色指派) 以簡化您的權限模式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您僅可將一般使用者管理角色指派給角色指派原則。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您僅可將一般使用者管理角色指派給角色指派原則。
+
+
 
 
 無法變更內建的管理角色。但您可根據內建管理角色來建立管理角色，然後將這些新角色指派給角色群組或角色指派原則。然後您可變更新的管理角色以符合您的需求。這應為只有在必要時才進行的少數進階工作。
@@ -279,18 +265,11 @@ Exchange 2013 可讓您管理根據內建 Exchange 管理頂層角色以及未�
 <td><p><code>ActiveDirectoryPermissions</code></p></td>
 <td><p><a href="active-directory-permissions-role-exchange-2013-help.md">Active Directory 權限角色</a></p></td>
 <td><p>此角色類型與讓系統管理員設定組織中 Active Directory 權限的角色相關。使用 Active Directory 權限或存取控制清單 (ACL) 的部分功能，包括傳輸的 [傳送] 和 [接收] 連接器，以及信箱的 [以下列傳送] 和 [傳送代理者] 權限。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>直接在 Active Directory 物件上設定的權限無法透過 RBAC 強制執行。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 直接在 Active Directory 物件上設定的權限無法透過 RBAC 強制執行。
+
+
 
 </td>
 <td><p>組織</p></td>
@@ -614,18 +593,11 @@ Exchange 2013 可讓您管理根據內建 Exchange 管理頂層角色以及未�
 <td><p><code>SupportDiagnostics</code></p></td>
 <td><p><a href="support-diagnostics-role-exchange-2013-help.md">支援診斷角色</a></p></td>
 <td><p>此角色類型與讓系統管理員依據 Microsoft 支援服務的指示在組織中執行進階診斷的角色相關聯。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>與此角色類型相關聯的角色授與指令程式和指令碼權限應僅可依據 Microsoft 客戶服務及支援的指示來使用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 與此角色類型相關聯的角色授與指令程式和指令碼權限應僅可依據 Microsoft 客戶服務及支援的指示來使用。
+
+
 
 </td>
 <td><p>組織</p></td>

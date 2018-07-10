@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft 會經過認可傳送至其產品和服務進行更容易使用的任何人。下列各節提供讓殘障人士更容易存取 Microsoft Exchange 與其他 Microsoft 產品和服務的快速鍵的相關資訊。
 
@@ -44,36 +44,22 @@ Microsoft 會經過認可傳送至其產品和服務進行更容易使用的任�
 <tr class="even">
 <td><p>移動 EAC 下拉式功能表中的項目</p></td>
 <td><p>向上與向下鍵。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此情況中，Tab 與 SHIFT-Tab 無法用來移動功能表項目。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在此情況中，Tab 與 SHIFT-Tab 無法用來移動功能表項目。
+
+
 
 </td>
 </tr>
 <tr class="odd">
 <td><p>在清單間移動項目</p></td>
 <td><p>上、下、Home、End、Page Up、Page Down 鍵。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用向上、向下、向左與向右鍵來移動選項按鈕或在一組關聯的勾選方塊中移動。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您也可以使用向上、向下、向左與向右鍵來移動選項按鈕或在一組關聯的勾選方塊中移動。
+
+
 
 </td>
 </tr>

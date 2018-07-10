@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 了解 Outlook Web App，這呼叫 Outlook Web Access 2010 以前版本的 Microsoft Exchange。本文提供與解的實用的資訊連結的簡要概觀。
 
@@ -23,18 +23,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 用戶端存取伺服器角色提供 Proxy 伺服器及 Outlook Web App 的重新導向服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App 在早於 Exchange 2010 的舊版 Outlook Web Access 中稱為 Microsoft Exchange。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Outlook Web App 在早於 Exchange 2010 的舊版 Outlook Web Access 中稱為 Microsoft Exchange。
+
+
 
 
 新功能的相關資訊，請參閱[Exchange 2013 的新功能](what-s-new-in-exchange-2013-exchange-2013-help.md)。Exchange 2013中的用戶端存取伺服器角色的相關資訊，請參閱[Client Access server](client-access-server-exchange-2013-help.md)。

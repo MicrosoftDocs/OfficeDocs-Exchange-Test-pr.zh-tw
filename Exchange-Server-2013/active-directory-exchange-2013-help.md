@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 Microsoft Exchange Server 2013 使用 Active Directory 來儲存並與 Windows 分享目錄資訊。Exchange 2013 的 Active Directory 樹系設計與 Exchange Server 2010 類似 (除了幾項不同外)，說明如下：
 

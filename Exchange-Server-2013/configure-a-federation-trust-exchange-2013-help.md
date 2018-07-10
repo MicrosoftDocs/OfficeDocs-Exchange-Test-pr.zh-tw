@@ -13,40 +13,26 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-07-26_
+_**上次修改主題的時間：** 2017-07-26_
 
 同盟信任會建立 Microsoft Exchange 2013組織和Azure Active Directory驗證系統之間的信任關係。透過設定同盟信任，您可以設定與共用行事曆空閒/忙碌資訊的收件者之間其他同盟 Exchange 組織的同盟共用。兩個同盟的Exchange 2013組織之間或同盟的Exchange 2013組織和同盟的Exchange 2010組織之間可以設定同盟共用。您也可以設定與 Office 365 組織共用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立同盟信任是在您 Exchange 組織中設定同盟共用的數個步驟之一。若要檢閱所有步驟，請參閱<a href="configure-federated-sharing-exchange-2013-help.md">設定同盟共用</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 建立同盟信任是在您 Exchange 組織中設定同盟共用的數個步驟之一。若要檢閱所有步驟，請參閱<a href="configure-federated-sharing-exchange-2013-help.md">設定同盟共用</a>。
+
+
 
 
 如需與同盟相關的其他管理工作，請參閱[同盟程序](federation-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -183,7 +169,7 @@ _**上次修改主題的時間：**2017-07-26_
     
         Get-FederatedDomainProof -DomainName contoso.com
     
-    **附註：**
+    **附註：** 
     
       - 每個網域或子網域的同盟信任需要證明網域擁有權 TXT 記錄，所以您可能需要執行此程序設定命令時間使用不同*DomainName*值的倍數。
     
@@ -231,16 +217,9 @@ _**上次修改主題的時間：**2017-07-26_
 
 如需詳細的語法及參數資訊，請參閱 [Get-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd351262\(v=exchg.150\)) 與 [Get-FederationInformation](https://technet.microsoft.com/zh-tw/library/dd351221\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 

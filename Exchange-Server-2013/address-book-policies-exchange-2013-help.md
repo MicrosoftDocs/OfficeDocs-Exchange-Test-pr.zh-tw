@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 了解如何到特定群組 Outlook 和Outlook Web App中建立自訂的 Gal 區隔全域通訊清單。
 
 全域通訊清單 (GAL) 區隔 (也稱為*GAL 區隔*) 是讓系統管理員可以區隔使用者到特定的母體提供其組織的 GAL 的自訂的檢視的程序。通訊錄原則 (Abp) 允許您線段使用者到特定群組提供貴組織的全域通訊清單 (GAL) 的自訂的檢視。建立 ABP，您可以對原則指派的 GAL、 離線通訊錄 (OAB)、 \[聊天室\] 清單中和一個以上的通訊清單。然後您可指派 ABP 提供其到 Outlook 與Outlook Web App中自訂 GAL 存取的信箱使用者。目標是提供簡易的機制來完成需要多個的 Gal 的內部部署組織的 GAL 區隔。.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Abp 都是要最佳化每個使用者群組的 GAL 和通訊清單、 不能不易為查看彼此或與其他組織中的使用者進行通訊。Abp 目錄觀點來看，不法律分離從建立虛擬區隔的使用者。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Abp 都是要最佳化每個使用者群組的 GAL 和通訊清單、 不能不易為查看彼此或與其他組織中的使用者進行通訊。Abp 目錄觀點來看，不法律分離從建立虛擬區隔的使用者。
+
+
 
 
 **目錄**

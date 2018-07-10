@@ -17,7 +17,7 @@ _<strong>適用版本：</strong>Exchange Server 2016_
 
 _<strong>上次修改主題的時間：</strong>2016-12-09_
 
-**摘要：**如何允許您的內部部署 Exchange Server 2016 使用者在混合式組態中利用與商務用 OneDrive 與 SharePoint Online 的文件共同作業。
+**摘要：** 如何允許您的內部部署 Exchange Server 2016 使用者在混合式組態中利用與商務用 OneDrive 與 SharePoint Online 的文件共同作業。
 
 最近新的附件選項已可在 Office 365 中使用。在 Exchange 2016 中，此選項稱為*「文件共同作業」*，可讓內部部署使用者直接在 Web 用戶端上的 Outlook 中整合儲存在商務用 OneDrive 上的附件。
 

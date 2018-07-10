@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-09-10_
+_**上次修改主題的時間：** 2012-09-10_
 
 本節中的主題提供詳細的整備檢查的 Microsoft Exchange Server 2013安裝 Exchange 時執行。整備檢查請確定您的 Active Directory 樹系與 Exchange 伺服器可供Exchange 2013。每個整備\] 核取主題說明以解決問題的發現整備檢查執行的時間所能採取的動作。您應該只執行如果在安裝期間所顯示的整備\] 核取整備\] 核取主題中所述的步驟。
 

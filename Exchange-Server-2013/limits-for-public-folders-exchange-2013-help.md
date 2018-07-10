@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 在 Exchange Server 2013 中，我們已將公用資料夾從傳統資料庫架構移至信箱架構。這項轉換可讓公用資料夾利用資料庫可用性群組 (DAG) 的彈性以及多年來的其他信箱加強功能來獲得好處。不過，有新的限制及效能問題應該納入考量。本文件提供組態選項的一些高階指導，而組態選項可能會影響公用資料夾效能和連線能力。
 
@@ -23,18 +23,11 @@ _**上次修改主題的時間：**2016-12-09_
 
 下表列出在內部部署 Exchange Server 2013 中的公用資料夾的限制。除非限制特別另有說明，所建議，此表格中所列的值所支援的限制的公用資料夾。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尋找 Office 365 的 Exchange Online 限制吗？請參閱<a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 尋找 Office 365 的 Exchange Online 限制吗？請參閱<a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。
+
+
 
 
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-01-23_
+_**上次修改主題的時間：** 2017-01-23_
 
 建議您使用 Edge 訂閱程序，在 Exchange 組織與 Edge Transport Server 之間建立郵件流程。不過，特定情況可能會讓您無法使用 Edge 訂閱程序。將 Edge Transport Server 訂閱至 Exchange 組織。若要手動建立 Exchange 組織與 Edge Transport Server 間的郵件流程，您必須在 Edge Transport Server 上和 Exchange 組織的 Mailbox Server 上，建立並設定傳送連接器及接收連接器。
 
@@ -63,18 +63,11 @@ Edge Transport Server 上必須要有下列連接器：
 
 以下章節將逐步說明準備讓 Edge Transport Server 與 Exchange 組織進行通訊時所需的所有組態步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只能使用命令介面，在 Edge Transport Server 上執行這些程序。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您只能使用命令介面，在 Edge Transport Server 上執行這些程序。
+
+
 
 
 ## 步驟 1：建立設定為將郵件傳送至網際網路的傳送連接器
@@ -99,18 +92,11 @@ Edge Transport Server 上必須要有下列連接器：
 
 使用 **New-SendConnector** 指令程式可以建立傳送連接器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立傳送連接器之前，必須先執行 <strong>Get-Credential</strong> 命令，將要使用的使用者名稱和密碼儲存在暫存變數中。需要這麼做的原因是，<strong>New-SendConnector</strong> 指令程式將不會接受使用純文字的使用者認證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 建立傳送連接器之前，必須先執行 <strong>Get-Credential</strong> 命令，將要使用的使用者名稱和密碼儲存在暫存變數中。需要這麼做的原因是，<strong>New-SendConnector</strong> 指令程式將不會接受使用純文字的使用者認證。
+
+
 
 
 這個傳送連接器需要下列設定：

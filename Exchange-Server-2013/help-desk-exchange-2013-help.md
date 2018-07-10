@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 服務台 管理角色群組是組成 Microsoft Exchange Server 2013 中角色型存取控制 (RBAC) 權限模型的其中一個內建角色群組。角色群組會有一或多個管理角色指派，其中包含執行指定工作集所需的權限。角色群組的成員擁有指派給該角色群組的管理角色存取權。如需角色群組的詳細資訊，請參閱[了解管理角色群組](understanding-management-role-groups-exchange-2013-help.md)。
 
@@ -25,18 +25,11 @@ Help Desk 角色群組中，根據預設，可讓成員能檢視並修改組織�
 
 此角色群組的成員只能修改使用者可以修改Outlook Web App選項。這表示如果使用者可以修改其顯示名稱、 Help Desk 角色群組的成員也可以修改該使用者的顯示名稱。不過，如果另一位使用者不允許修改其顯示名稱、 Help Desk 角色群組的成員無法修改該使用者的顯示名稱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在哪些Outlook Web App選項 Help Desk 角色群組的成員才可以修改要強制Exchange系統管理中心 (EAC) 來限制。如果 Help Desk 角色群組的成員可以存取Exchange管理命令介面，他就可以修改任何Outlook Web App ] 選項的任何使用者。您也應該謹慎考量給進行 Help Desk 角色群組的成員與是否他們應該也會授與存取權以命令介面。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 在哪些Outlook Web App選項 Help Desk 角色群組的成員才可以修改要強制Exchange系統管理中心 (EAC) 來限制。如果 Help Desk 角色群組的成員可以存取Exchange管理命令介面，他就可以修改任何Outlook Web App ] 選項的任何使用者。您也應該謹慎考量給進行 Help Desk 角色群組的成員與是否他們應該也會授與存取權以命令介面。
+
+
 
 
 因為如此許多不同類型的組織 Help Desk 角色群組不會啟用任何其他工作。而您可以新增此角色群組建立 Help Desk 角色群組符合組織的需求管理角色。例如，如果您想要能夠管理信箱、 郵件連絡人及擁有郵件功能的使用者之 Help Desk 角色群組的成員，請將 「 郵件收件者管理 」 角色指派給此角色群組。如需如何新增到此角色群組的管理角色的詳細資訊，請參閱本主題稍後的 「 角色群組自訂 」 一節。

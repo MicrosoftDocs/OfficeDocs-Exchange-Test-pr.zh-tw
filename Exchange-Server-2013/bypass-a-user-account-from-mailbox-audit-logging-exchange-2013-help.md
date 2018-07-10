@@ -13,26 +13,19 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-05-21_
+_**上次修改主題的時間：** 2013-05-21_
 
 當您啟用信箱稽核記錄功能信箱時，會記錄指定的信箱的存取事件 （例如存取資料夾或訊息，或永久刪除郵件）。不過，某些存取授權帳戶、 例如協力廠商工具或 lawful 監控、 所使用的帳戶所使用的帳戶可以建立大量的信箱稽核記錄項目與可能不是您組織的感興趣。
 
 您可以設定的使用者或電腦帳戶若要略過信箱稽核記錄，因此不記錄或帳戶的所有信箱的使用者所採取的動作。藉由略過受信任的使用者或電腦帳戶需要經常存取信箱，您可以減少雜訊信箱稽核記錄檔中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用信箱稽核記錄稽核信箱存取和動作，您必須在固定間隔監視信箱稽核略過關聯。如果信箱稽核略過關聯性會新增帳戶、 帳戶可以存取之已被指派權限，而這類存取或 （例如郵件刪除） 採取任何動作所產生任何信箱稽核記錄項目不在組織中的所有信箱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 如果您使用信箱稽核記錄稽核信箱存取和動作，您必須在固定間隔監視信箱稽核略過關聯。如果信箱稽核略過關聯性會新增帳戶、 帳戶可以存取之已被指派權限，而這類存取或 （例如郵件刪除） 採取任何動作所產生任何信箱稽核記錄項目不在組織中的所有信箱。
+
+
 
 
 如需與信箱稽核記錄相關的其他管理工作，請參閱[信箱稽核記錄程序](mailbox-audit-logging-procedures-exchange-2013-help.md)。
@@ -49,18 +42,11 @@ _**上次修改主題的時間：**2013-05-21_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用命令介面啟用或停用帳戶的信箱稽核記錄略過

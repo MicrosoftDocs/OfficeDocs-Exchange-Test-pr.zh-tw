@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-01-28_
+_**上次修改主題的時間：** 2013-01-28_
 
 傳輸記錄檔提供關於有什麼新鮮事傳輸管線中的資訊。下列傳輸記錄檔位於 Microsoft Exchange Server 2013：
 

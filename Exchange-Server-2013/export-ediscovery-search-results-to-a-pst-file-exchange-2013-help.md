@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-09-07_
+_**上次修改主題的時間：** 2017-09-07_
 
 您可以使用Exchange 系統管理中心 (EAC) 中的 eDiscovery 匯出工具為 「 就地 eDiscovery 搜尋結果匯出至 Outlook 資料檔案，也稱為 PST 檔案。系統管理員可以分散給您的組織，像是人力資源管理員或記錄管理員內其他人或敵對顧問法律案例中的搜尋結果。搜尋結果匯出至 PST 檔案之後，您或其他使用者可以開啟其檢閱或列印郵件搜尋結果中傳回在 Outlook 中。也可以與協力廠商 eDiscovery 及報告應用程式中開啟 PST 檔案。本主題顯示如何達成此目的，以及疑難排解您可能會有任何問題。
 
@@ -53,18 +53,11 @@ _**上次修改主題的時間：**2017-09-07_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 使用Exchange 系統管理中心就地 eDiscovery 搜尋結果匯出至 PST

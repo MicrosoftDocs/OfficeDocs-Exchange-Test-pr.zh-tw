@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2015-03-09_
+_**上次修改主題的時間：** 2015-03-09_
 
 當您安裝整合通訊 (UM) 時，會安裝一組通用預設的音訊檔用於語音郵件系統和功能表提示問候語，且資訊的宣告。雖然您可以建立完全運作 UM 自動語音應答或撥號對應表計劃使用預設音訊提示，這些提示是太泛用來做為可接受的公用介面的許多公司。本主題討論系統和功能表提示、 問候語，並參考 UM 撥號對應表和自動語音應答及如何它們用來電者存取語音信箱系統時所使用的宣告。
 
@@ -113,18 +113,11 @@ Customizing greetings, announcements, and menu prompts
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援修改已安裝的系統提示。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 不支援修改已安裝的系統提示。
+
+
 
 
 回到頁首
@@ -143,32 +136,18 @@ Customizing greetings, announcements, and menu prompts
 
   - 「如要連絡特定人員，請告訴我他們的名字。」
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援修改已安裝的系統提示。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]  
+> 不支援修改已安裝的系統提示。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>整合通訊服務開始時的 Mailbox server 上，它會確認系統會提示所有可用。如果找不到系統提示字元處，整合通訊會傳回錯誤。若要修正會傳回錯誤，找出事件使用事件檢視器並複製從 DVD 安裝到適當的資料夾信箱伺服器上的 [<strong>事件內容</strong>] 視窗中所列的檔案。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 整合通訊服務開始時的 Mailbox server 上，它會確認系統會提示所有可用。如果找不到系統提示字元處，整合通訊會傳回錯誤。若要修正會傳回錯誤，找出事件使用事件檢視器並複製從 DVD 安裝到適當的資料夾信箱伺服器上的 [<strong>事件內容</strong>] 視窗中所列的檔案。
+
+
 
 
 ## UM 撥號對應表問候語和宣告

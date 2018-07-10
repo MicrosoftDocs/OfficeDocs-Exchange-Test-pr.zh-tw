@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2017-05-10_
+_**上次修改主題的時間：** 2017-05-10_
 
 Messaging Application Programming Interface (MAPI) over HTTP 是 MicrosoftExchange Server 2013 Service Pack 1 (SP1) 所實作的新式傳輸通訊協定。MAPI over HTTP 將傳輸層提升為符合業界標準的 HTTP 模型，因而改善了 Outlook 和 Exchange 連線的可靠性與穩定性。這可更清楚地檢視傳輸錯誤，並可增強復原能力。此外，也具有支援明確暫停和繼續功能的能力。這讓受支援的用戶端能夠變更網路或從休眠狀態恢復，同時保有相同的伺服器內容。
 

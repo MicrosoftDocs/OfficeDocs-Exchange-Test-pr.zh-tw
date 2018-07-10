@@ -14,12 +14,12 @@ ms.translationtype: HT
  
 
 
-_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：**  Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：** 2017-07-25_
+_**上次修改主題的時間：**  2017-07-25_
 
 
-**摘要：** 您的 Exchange 環境在您可以設定混合式部署之前需要的項目。
+**摘要：**  您的 Exchange 環境在您可以設定混合式部署之前需要的項目。
 
 在您使用混合組態精靈建立與設定混合式部署之前，您現有的內部部署 Exchange 組織需要符合特定需求。如果您未符合這些需求，將無法完成混合組態精靈內的步驟，而且也無法在內部部署 Exchange 組織與 Exchange Online 之間設定混合式部署。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-22_
+_**上次修改主題的時間：** 2013-02-22_
 
 整合的通訊可以使用其中一個四種轉碼器建立語音郵件訊息的 ︰ MP3、 Windows Media Audio (WMA)、 群組系統電話 (GSM) 06.10 及 G.711 脈衝代碼調變 (PCM) 線性。根據預設，當您建立整合通訊 (UM) 撥號 UM 撥號對應表會使用到記錄的語音訊息 MP3 音訊轉碼器。MP3 音訊格式是跨多個作業系統、 電子郵件用戶端和 MP3 播放器所使用的熱門音訊格式。建立 UM 撥號對應表之後，您可以設定 UM 撥號對應表使用其中一種其他包括 WMA、 GSM 06.10 或 G.711 PCM 線性音訊轉碼器的音訊格式。若要接聽語音訊息、 行動電話或電腦必須安裝相容的音訊軟體應用程式。
 
@@ -31,18 +31,11 @@ _**上次修改主題的時間：**2013-02-22_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2014-10-09_
+_**上次修改主題的時間：** 2014-10-09_
 
 *設備信箱*是指派給沒有具體位置之資源的資源信箱，如可攜式電腦、投影機、麥克風或公務車。在系統管理員建立設備信箱之後，使用者可以透過在會議邀請中包含對應設備信箱，輕鬆預約設備。您可以使用 EAC 和命令介面，建立設備信箱或變更設備信箱內容。如需詳細資訊，請參閱[收件者](recipients-exchange-2013-help.md)。
 
@@ -29,18 +29,11 @@ _**上次修改主題的時間：**2014-10-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -198,18 +191,11 @@ _**上次修改主題的時間：**2014-10-09_
 
 使用 \[連絡人資訊\] 區段可檢視或變更資源的連絡人資訊。此頁的資訊顯示於通訊錄中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用 [州/省]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 您可以使用 [州/省]方塊來建立動態通訊群組、電子郵件地址原則或通訊清單的收件者條件。
+
+
 
 
 ## 電子郵件地址
@@ -257,23 +243,16 @@ _**上次修改主題的時間：**2014-10-09_
 
 使用 \[郵件提示\] 區段可新增「郵件提示」，以便在傳送預約要求給設備信箱前，警示使用者潛在的問題。「郵件提示」是在此收件者加入至新電子郵件的 \[收件者\]、\[副本\] 或 \[密件副本\] 行時，顯示在資訊列中的文字。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 「寄件提醒」可以包含 HTML 標記，但是不允許指令碼。自訂郵件提示的長度不能超過 175 個顯示的字元。HTML 標記則不包括在此限制內。
+
+
 
 
 ## 使用命令介面變更設備信箱內容
 
-使用下列 Cmdlet 集可以檢視和變更設備信箱內容：**Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視和變更設備信箱的一般內容和電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** Cmdlet 來檢視與變更代理人及預約選項。
+使用下列 Cmdlet 集可以檢視和變更設備信箱內容：** Get-Mailbox** 與 **Set-Mailbox** Cmdlet 可檢視和變更設備信箱的一般內容和電子郵件地址。使用 **Get-CalendarProcessing** 與 **Set-CalendarProcessing** Cmdlet 來檢視與變更代理人及預約選項。
 
   - **Get-User** 與 **Set-User**   使用這兩個 Cmdlet 可檢視和設定一般內容，例如，部門和公司名稱。
 

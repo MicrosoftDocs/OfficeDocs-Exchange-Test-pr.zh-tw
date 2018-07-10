@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2012-10-12_
+_**上次修改主題的時間：** 2012-10-12_
 
 您可以使用 EAC 或命令介面，套用 Outlook Web App 信箱原則到一個或多個信箱，或移除信箱原則。
 
@@ -27,18 +27,11 @@ _**上次修改主題的時間：**2012-10-12_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作
@@ -51,7 +44,7 @@ _**上次修改主題的時間：**2012-10-12_
 
 2.  在 \[工作\] 窗格中，按一下以選取您想要套用至Outlook Web App信箱原則的信箱。您也可以選取多個信箱。
 
-3.  **如果您選擇了一個信箱：**
+3.  **如果您選擇了一個信箱：** 
     
     1.  在 \[詳細資料\] 窗格中向下拉動捲軸至 \[電子郵件連線\] 然後按一下 \[檢視詳細資料\]。
     
@@ -59,7 +52,7 @@ _**上次修改主題的時間：**2012-10-12_
     
     3.  按一下 \[儲存\] 以指派選擇的原則至選定的信箱。
     
-    **如果您選擇了一個以上信箱：**
+    **如果您選擇了一個以上信箱：** 
     
     1.  在 \[詳細資料\] 窗格中向下拉動捲軸至 \[Outlook Web App\] 然後按一下 \[指派原則\]。
     

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server_
+_**適用版本：** Exchange Server_
 
-_**上次修改主題的時間：**2016-12-15_
+_**上次修改主題的時間：** 2016-12-15_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -46,18 +46,11 @@ Exchange 2007 或 Exchange 2010 安裝程式需要會移除所有 ADC 元件。
 <li><p>將<strong>啟動類型</strong>變更為 [<strong>已停用</strong>。下次啟動電腦時，ADC 服務不會啟動。</p></li>
 <li><p>按一下 [<strong>套用</strong>]，然後按一下 [<strong>確定</strong>]。</p></li>
 <li><p>若要解除安裝 ADC 服務，使用 Active Directory 安裝精靈在 Microsoft Exchange 2000 Server 或 Microsoft Exchange Server 2003 CD 上。開啟 [\ADC\I386 資料夾並連按兩下 Setup.exe 程式。遵循提示來<strong>移除所有</strong>ADC 服務元件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須完成步驟 6 和<strong>移除所有</strong>ADC 元件來解決這個問題。停用 ADC 服務不足。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 您必須完成步驟 6 和<strong>移除所有</strong>ADC 元件來解決這個問題。停用 ADC 服務不足。
+
+
 
 </li>
 </ol></td>
@@ -68,9 +61,9 @@ Exchange 2007 或 Exchange 2010 安裝程式需要會移除所有 ADC 元件。
 
 如需 ADC 的詳細資訊，請參閱下列 Microsoft 知識庫文章：
 
-  - 325300，"支援網路廣播： 簡介 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300))。
+  - 325300，"支援網路廣播： 簡介 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300))。
 
-  - 325221，"支援網路廣播： Microsoft 進階 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221))。
+  - 325221，"支援網路廣播： Microsoft 進階 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221))。
 
-  - 312632，"如何安裝及 Exchange 2000 Server 中設定 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632))。
+  - 312632，"如何安裝及 Exchange 2000 Server 中設定 Active Directory 連接器 」 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632))。
 

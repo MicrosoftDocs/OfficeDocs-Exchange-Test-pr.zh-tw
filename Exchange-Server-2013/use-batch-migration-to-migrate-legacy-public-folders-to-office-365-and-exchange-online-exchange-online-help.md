@@ -13,28 +13,21 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上次修改主題的時間：**2018-03-26_
+_**上次修改主題的時間：** 2018-03-26_
 
-**摘要：** 將 Exchange 2007 和 Exchange 2010 公用資料夾移至 Office 365 使用這些程序。
+**摘要：**  將 Exchange 2007 和 Exchange 2010 公用資料夾移至 Office 365 使用這些程序。
 
 本主題說明如何將您在轉換或分段遷移的公用資料夾從更新彙總套件 8 以Exchange Server 2010 Service Pack 3 (SP3) 或 Exchange 2007 SP3 的更新彙總套件 15 移轉至 Office 365 或 Exchange Online。
 
 本主題 Exchange 2010 SP3 RU8 和 Exchange 2007 SP3 RU15 伺服器統稱為*舊版 Exchange 伺服器*。此外，本主題中的步驟適用於 Exchange Online 與 Office 365。條款可能會使用本主題中的交替。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文所述的批次移轉方法是將舊版公用資料夾遷移至 Office 365 和 Exchange Online 僅支援的方法。舊序列移轉方法將公用資料夾已正在過時且不再支援 microsoft。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本文所述的批次移轉方法是將舊版公用資料夾遷移至 Office 365 和 Exchange Online 僅支援的方法。舊序列移轉方法將公用資料夾已正在過時且不再支援 microsoft。
+
+
 
 
 我們建議您不要使用 Outlook 的 PST 匯出功能將公用資料夾遷移至 Office 365 或 Exchange Online。Office 365 和 Exchange online 的公用資料夾信箱成長管理使用分割公用資料夾信箱超過時自動分割功能大小配額。當您使用 PST 匯出遷移公用資料夾與您可能必須等待最多兩週從主要信箱移動資料的自動分割為自動分割無法處理突發公用資料夾信箱的成長。建議您在本文件中使用的指令程式為基礎的指示，將公用資料夾移轉至 Office 365 和 Exchange Online。不過，如果您選取要將公用資料夾使用 PST 匯出遷移，請參閱\] 區段中遷移公用資料夾遷移至 Office 365 使用 Outlook PST 匯出本主題稍後的。
@@ -85,7 +78,7 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
 
   - 在 Exchange 2007 中，您需要 Exchange 組織系統管理員角色或 Exchange Server 系統管理員角色指派。此外，您需要指派公用資料夾系統管理員角色和目標伺服器的本機管理員群組。如需詳細資訊，請參閱 ＜[如何新增使用者或系統管理員角色群組](https://go.microsoft.com/fwlink/p/?linkid=81779)。
 
-  - 在 Exchange 2007 伺服器上，升級為 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 在 Exchange 2007 伺服器上，升級為 [Windows PowerShell 2.0 和 WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 在遷移之前，如果組織中有任何公用資料夾大於 2 GB，建議您刪除該資料夾的一些內容，或將其分割為多個公用資料夾。如果這些方式都不可行，建議您不要將公用資料夾移至 Office 365 和 Exchange Online。
 
@@ -101,18 +94,11 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
+
+
 
 
 ## 該怎麼做？
@@ -399,18 +385,11 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
     
       - *Folder to mailbox map path*等於您在此步驟中建立資料夾至信箱.csv 檔案的路徑與檔案名稱。如果您指定的檔案名稱，該檔案所產生之本機電腦上目前的 PowerShell 目錄中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>執行指令碼並產生.csv 檔案之後，不會收集任何新的公用資料夾或更新現有的公用資料夾。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 執行指令碼並產生.csv 檔案之後，不會收集任何新的公用資料夾或更新現有的公用資料夾。
+
+
 
 
 ## 步驟 4：在 Exchange Online 中建立公用資料夾信箱
@@ -608,18 +587,11 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
 
 完成遷移，且已驗證 Exchange Online 公用資料夾運作如預期之後，您應移除舊版 Exchange 伺服器上的公用資料夾資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於您的信箱的所有已移轉至 Office 365 公用資料夾移轉之前，強烈建議您透過 Office 365 （分散式的郵件流程） 流量路由，而不是透過內部部署環境的集中式的郵件流程。如果您選擇要保留集中式郵件流程，它可能會導致您公用資料夾的傳遞問題之後您移除了從內部部署組織的公用資料夾信箱資料庫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 由於您的信箱的所有已移轉至 Office 365 公用資料夾移轉之前，強烈建議您透過 Office 365 （分散式的郵件流程） 流量路由，而不是透過內部部署環境的集中式的郵件流程。如果您選擇要保留集中式郵件流程，它可能會導致您公用資料夾的傳遞問題之後您移除了從內部部署組織的公用資料夾信箱資料庫。
+
+
 
 
   - 如需如何移除 Exchange 2007 伺服器上的公用資料夾資料庫的詳細資訊，請參閱[移除公用資料夾資料庫](https://go.microsoft.com/fwlink/?linkid=123678)。
@@ -630,18 +602,11 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
 
 如果遷移發生問題，且需要重新啟動舊版 Exchange 公用資料夾，請執行下列步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您回復移轉到舊版的 Exchange 伺服器，您會失去所有電子郵件傳送至擁有郵件功能的公用資料夾或張貼至公用資料夾移轉後的內容。若要儲存此內容，您需要將公用資料夾內容匯出至.pst 檔案並再匯入舊版公用資料夾回復完成時。</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]  
+> 如果您回復移轉到舊版的 Exchange 伺服器，您會失去所有電子郵件傳送至擁有郵件功能的公用資料夾或張貼至公用資料夾移轉後的內容。若要儲存此內容，您需要將公用資料夾內容匯出至.pst 檔案並再匯入舊版公用資料夾回復完成時。
+
+
 
 
 1.  在舊版 Exchange 伺服器上，執行下列命令解除鎖定舊版 Exchange 公用資料夾。此程序可能會花幾小時的時間。

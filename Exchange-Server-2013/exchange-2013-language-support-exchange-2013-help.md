@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：**2013-02-08_
+_**上次修改主題的時間：** 2013-02-08_
 
 Microsoft Exchange Server 2013已增強伺服器和用戶端的語言的支援。本主題將列出的伺服器和用戶端Exchange 2013中的可用的語言。
 

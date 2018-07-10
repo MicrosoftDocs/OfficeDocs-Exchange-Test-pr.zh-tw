@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Project Server 2013_
+_**適用版本：** Exchange Server 2013, Project Server 2013_
 
-_**上次修改主題的時間：**2016-12-09_
+_**上次修改主題的時間：** 2016-12-09_
 
 **FIPS**健全設定監視Exchange的伺服器上的美國聯邦資訊處理標準 (FIPS) 設定的整體狀況。如需 FIPS 140 的詳細資訊，請參閱 ＜ [FIPS 140 驗證](https://go.microsoft.com/fwlink/p/?linkid=521913)。
 

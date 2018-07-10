@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-15_
+_**上次修改主題的時間：** 2013-02-15_
 
 [管理信箱伺服器上的 UM 設定](manage-um-settings-on-a-mailbox-server-exchange-2013-help.md)
 

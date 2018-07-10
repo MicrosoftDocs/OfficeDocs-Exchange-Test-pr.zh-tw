@@ -15,24 +15,17 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-02-11_
+_**上次修改主題的時間：** 2013-02-11_
 
 安裝執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 之後，就可以設定數個選項，包括同時呼叫數、TCP 和傳輸層安全性 (TLS) 接聽通訊埠、狀態，以及 UM 啟動模式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>則不需要的信箱伺服器新增至 UM 撥號對應表之前它可處理呼叫的整合通訊 (UM)，除了時您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server。根據預設，在組織中的所有 Mailbox server 都可用來接聽來電。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 則不需要的信箱伺服器新增至 UM 撥號對應表之前它可處理呼叫的整合通訊 (UM)，除了時您正在整合 UM 與 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server。根據預設，在組織中的所有 Mailbox server 都可用來接聽來電。
+
+
 
 
 關於與整合通訊和信箱伺服器相關的其他管理工作，請參閱 [UM 服務程序](um-services-procedures-exchange-2013-help.md)。
@@ -47,18 +40,11 @@ _**上次修改主題的時間：**2013-02-11_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 您要執行的工作

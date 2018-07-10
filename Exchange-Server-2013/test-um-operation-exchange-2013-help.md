@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：**2013-06-25_
+_**上次修改主題的時間：** 2013-06-25_
 
 本主題說明如何使用命令介面來測試語音信箱系統的作業。當您執行下列程序時，執行 Microsoft Exchange 整合通訊服務的 Mailbox Server 會起始診斷工作階段初始通訊協定 (SIP) 呼叫，然後傳回 UM 服務的健全狀況狀態變數。
 
@@ -37,18 +37,11 @@ _**上次修改主題的時間：**2013-06-25_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]  
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
+
+
 
 
 ## 使用命令介面來測試整合通訊服務的作業
@@ -65,30 +58,16 @@ _**上次修改主題的時間：**2013-06-25_
 
     Test-UMConnectivity -ListenPort 5061
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>-UMIPGateway</code> 參數未指定時，請使用模式 1。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> <code>-UMIPGateway</code> 參數未指定時，請使用模式 1。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用小於 5 秒的值來設定 <code>-Timeout</code> 參數。不過，建議您一律將此參數值設為大於或等於 5 秒。</td>
-</tr>
-</tbody>
-</table>
+
+
+
+> [!NOTE]  
+> 您可以使用小於 5 秒的值來設定 <code>-Timeout</code> 參數。不過，建議您一律將此參數值設為大於或等於 5 秒。
+
+
 

@@ -13,28 +13,21 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_**上次修改主題的時間：**2016-12-15_
+_**上次修改主題的時間：** 2016-12-15_
 
-**摘要：** 說明啟用內部部署 Exchange 2013 使用者可以存取 Exchange Online 中的公用資料夾。
+**摘要：**  說明啟用內部部署 Exchange 2013 使用者可以存取 Exchange Online 中的公用資料夾。
 
 在混合式部署中，您的使用者可以在 Exchange Online、 內部，或兩者，且您的公用資料夾其在 Exchange 線上\] 或 \[內部部署。有時 online 使用者可能會需要用來存取 Exchange Server 2013 內部部署環境中的公用資料夾。同樣地，Exchange 2013 使用者可能需要存取 Office 365 或 Exchange Online 中的公用資料夾。
 
 本文說明如何讓 Exchange 2013 內部部署環境中的使用者可以存取 Exchange Online/Office 365 的公用資料夾。若要啟用 Exchange Online/Office 365 使用者存取內部部署 Exchange 2013 公用資料夾，請參閱 ＜ [設定混合式部署的 Exchange 2013 公用資料夾](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您有 Exchange 2010 或 Exchange 2007 公用資料夾，請參閱<a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">為混合部署設定舊版的內部部署公用資料夾</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您有 Exchange 2010 或 Exchange 2007 公用資料夾，請參閱<a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">為混合部署設定舊版的內部部署公用資料夾</a>。
+
+
 
 
 ## 開始之前有哪些須知？
@@ -85,18 +78,11 @@ _**上次修改主題的時間：**2016-12-15_
 
 執行指令碼`Sync-MailPublicFoldersCloudToOnprem.ps1`會同步處理具有郵件功能的公用資料夾之間 Exchange Online 和 Exchange 2013 內部部署環境。由於跨內部部署權限不支援在混合部署案例中重新建立雲端中需要特殊權限指派給擁有郵件功能的公用資料夾。如需詳細資訊，請參閱[Exchange Server 2013 混合式部署](https://technet.microsoft.com/zh-tw/59e32000-4fcf-417f-a491-f1d8f9aeef9b\(exchg.150\)#doc)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>同步處理具有郵件功能的公用資料夾會出現郵件連絡人物件的郵件流程用途並將無法檢視在 Exchange 系統管理中心。 請參閱 ＜ Get MailPublicFolder 命令。 若要重新建立雲端中的 SendAs 權限、 使用 Add Add-recipientpermission 指令。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 同步處理具有郵件功能的公用資料夾會出現郵件連絡人物件的郵件流程用途並將無法檢視在 Exchange 系統管理中心。 請參閱 ＜ Get MailPublicFolder 命令。 若要重新建立雲端中的 SendAs 權限、 使用 Add Add-recipientpermission 指令。
+
+
 
 
 1.  在 Exchange 2013 伺服器上，執行下列命令來同步處理具有郵件功能的公用資料夾從 Exchange Online/Office 365 到本機內部部署 Active Directory。
@@ -105,18 +91,11 @@ _**上次修改主題的時間：**2016-12-15_
     
     其中`Credential`是您的 Office 365 使用者名稱和密碼。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們建議您執行此指令碼每天同步處理具有郵件功能的公用資料夾。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 我們建議您執行此指令碼每天同步處理具有郵件功能的公用資料夾。
+
+
 
 
 ## 步驟 3： 設定內部部署使用者可以存取 Exchange Online 公用資料夾
@@ -149,18 +128,11 @@ _**上次修改主題的時間：**2016-12-15_
     
         Set-OrganizationConfig -PublicFoldersEnabled Remote
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須等到 ActiveDirectory 同步處理已完成查看所做的變更。此程序可能需要最多 3 小時才能完成。如果您不想等待發生每三個小時週期性同步處理，您可以強制任何時候的目錄同步處理。不要強制進行目錄同步處理的詳細步驟，請參閱<a href="http://technet.microsoft.com/en-us/library/jj151771.aspx">強制進行目錄同步處理</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須等到 ActiveDirectory 同步處理已完成查看所做的變更。此程序可能需要最多 3 小時才能完成。如果您不想等待發生每三個小時週期性同步處理，您可以強制任何時候的目錄同步處理。不要強制進行目錄同步處理的詳細步驟，請參閱<a href="http://technet.microsoft.com/en-us/library/jj151771.aspx">強制進行目錄同步處理</a>。
+
+
 
 
 ## 如何知道這是否正常運作？
