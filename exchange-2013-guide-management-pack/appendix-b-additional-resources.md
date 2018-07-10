@@ -57,16 +57,6 @@ _**上次修改主題的時間：**  2012-11-14_
 
   - [Operations Manager 2007 管理組件和報表編寫資源](http://go.microsoft.com/fwlink/?linkid=246388)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn195905.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有非 Microsoft 網站上的資訊和內容均由擁有者或網站使用者提供。Microsoft 對這些網站刊載的資訊不作任何明示、默示或法定擔保。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 所有非 Microsoft 網站上的資訊和內容均由擁有者或網站使用者提供。Microsoft 對這些網站刊載的資訊不作任何明示、默示或法定擔保。
 
