@@ -131,18 +131,8 @@ _**上次修改主題的時間：**  2017-07-27_
 
 2.  假設您已經將所有信箱移至 Exchange Online，您可以將 MX 和自動探索 DNS 記錄指向 Exchange Online，而不是指向內部部署。如需詳細資訊，請參閱 [參照：Office 365 的外部網域名稱系統記錄](http://technet.microsoft.com/zh-tw/library/hh852557.aspx)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請務必更新內部和外部 DNS，否則您可能會有不一致的用戶端連線行為。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 請務必更新內部和外部 DNS，否則您可能會有不一致的用戶端連線行為。
 
 
 3.  接下來，您應該移除 Exchange 伺服器上的服務連線點 (SCP) 值。這可確保不會傳回 SCP，且用戶端會改為使用自動探索的 DNS 方法。範例如下所示：
@@ -227,34 +217,14 @@ _**上次修改主題的時間：**  2017-07-27_
 
 1.  執行 `Get-OrganizationConfig |fl PublicFoldersEnabled` 並確保未將其設為遠端。如果將其設為遠端，而您想要繼續存取公用資料夾，您就必須將公用資料夾移轉到 Exchange Online。有關如何執行這項操作，請參閱 [使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾](https://technet.microsoft.com/zh-tw/library/dn874017\(v=exchg.150\))。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果將公用資料夾移轉至 Exchange Online 不是選項之一，而且您的使用者仍然需要它們，您不應該繼續進行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果將公用資料夾移轉至 Exchange Online 不是選項之一，而且您的使用者仍然需要它們，您不應該繼續進行。
 
 
 2.  在您將所有信箱移至 Exchange Online 後，您為了解除委任大部分的 Exchange 伺服器而想要做的第一件事是將 MX 和自動探索 DNS 記錄指向 Exchange Online 而不是指向內部部署。如需詳細資訊，請參閱 [參照：Office 365 的外部網域名稱系統記錄](http://technet.microsoft.com/zh-tw/library/hh852557.aspx)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請務必更新內部和外部 DNS，否則您可能會有不一致的用戶端連線和郵件流程行為。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 請務必更新內部和外部 DNS，否則您可能會有不一致的用戶端連線和郵件流程行為。
 
 
 3.  接下來，您應該移除 Exchange 伺服器上的服務連線點 (SCP) 值。這可確保不會傳回 SCP，且用戶端會改為使用自動探索的 DNS 方法。範例如下所示：

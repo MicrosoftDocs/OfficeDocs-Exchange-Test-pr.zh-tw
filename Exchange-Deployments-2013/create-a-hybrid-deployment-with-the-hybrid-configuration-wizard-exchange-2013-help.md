@@ -27,19 +27,9 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
   - 內部部署組織未部署 Edge Transport Server。混合組態精靈支援在混合部署過程中設定 Edge Transport Server，但是在精靈中設定 Edge Transport Server 並未涵蓋在本主題中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用混合組態精靈設定混合部署需要先有幾項重要的必要條件，精靈才能順利完成且混合部署功能才能正確運作。您必須先完成<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署必要條件</a>中所述的所有必要條件，再使用混合組態精靈建立及設定混合部署。<br />
-此外，<a href="http://technet.microsoft.com/exdeploy2013">Exchange Server 部署助理</a> 是免費的 Web 化工具，可協助您在內部部署組織與 Office 365 之間設定混合式部署，或完整地移轉到 Office 365。此工具會提出一些簡單的問題，然後根據您的回答來建立自訂的檢查清單，並指示如何設定混合式佈署。強烈建議您使用部署助理，根據您特定的組織需求來產生自訂的混合式部署檢查清單。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 使用混合組態精靈設定混合部署需要先有幾項重要的必要條件，精靈才能順利完成且混合部署功能才能正確運作。您必須先完成<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署必要條件</a>中所述的所有必要條件，再使用混合組態精靈建立及設定混合部署。
+> 此外，<a href="http://technet.microsoft.com/exdeploy2013">Exchange Server 部署助理</a> 是免費的 Web 化工具，可協助您在內部部署組織與 Office 365 之間設定混合式部署，或完整地移轉到 Office 365。此工具會提出一些簡單的問題，然後根據您的回答來建立自訂的檢查清單，並指示如何設定混合式佈署。強烈建議您使用部署助理，根據您特定的組織需求來產生自訂的混合式部署檢查清單。
 
 
 如需其他混合式部署相關的管理工作資訊，請參閱 [混合式部署程序](hybrid-deployment-procedures-exchange-2013-help.md)。
@@ -50,18 +40,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
   - 預估完成時間：30 分鐘
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>設定混合部署的需求所需的時間會比預估完成本主題中所述的混合組態精靈程序所需的時間更長。例如，註冊 Office 365 (企業用戶適用)、設定 Active Directory 同步處理，以及指派 Exchange Online 授權，都需要投入相當長的時間，而且可能包含網路拓撲變更。您規劃完成端對端混合部署組態的整體時間，應比所列完成此程序的時間更長。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 設定混合部署的需求所需的時間會比預估完成本主題中所述的混合組態精靈程序所需的時間更長。例如，註冊 Office 365 (企業用戶適用)、設定 Active Directory 同步處理，以及指派 Exchange Online 授權，都需要投入相當長的時間，而且可能包含網路拓撲變更。您規劃完成端對端混合部署組態的整體時間，應比所列完成此程序的時間更長。
 
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱[Exchange 及命令介面基礎結構權限](https://technet.microsoft.com/zh-tw/library/dd638114\(v=exchg.150\))主題中的「混合式部署」項目。
@@ -78,18 +58,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](https://technet.microsoft.com/zh-tw/library/jj150484\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 Exchange 系統管理中心和混合組態精靈建立混合部署
@@ -100,18 +70,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 2.  在 **\[混合\]** 節點，按一下 **\[設定\]** 輸入您的 Office 365 認證。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的內部部署組織位於中國，且 Office 365 承租人由 21Vianet 所主控，則必須選取 <strong>[我的 Office 365 組織由 21Vianet 主控]</strong> 核取方塊。如果您的 Office 365 承租人由 21Vianet 所主控，但未選取此核取方塊，則混合組態精靈不會連接到 21Vianet 服務，將無法辨識您的 Office 365 帳戶認證，精靈也無法正確完成。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果您的內部部署組織位於中國，且 Office 365 承租人由 21Vianet 所主控，則必須選取 <strong>[我的 Office 365 組織由 21Vianet 主控]</strong> 核取方塊。如果您的 Office 365 承租人由 21Vianet 所主控，但未選取此核取方塊，則混合組態精靈不會連接到 21Vianet 服務，將無法辨識您的 Office 365 帳戶認證，精靈也無法正確完成。
 
 
 3.  在提示您登入 Office 365 時，請選取 **\[登入 Office 365\]**，並輸入帳戶認證。您登入的帳戶必須是 Office 365 的全域管理員。
@@ -132,28 +92,14 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 11. 在 **\[混合網域\]** 上，選取您想要包含在混合式部署中的網域。在大部分的部署中，您可以將每個網域的 **\[自動探索\]** 欄位設定為 **\[否\]**。唯有需要強制精靈使用特定網域的自動探索資訊時，才在網域旁選取 **\[是\]**。按 **\[下一步\]**。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您執行混合組態精靈時，精靈中的這個網域選取步驟不一定會出現。<br />
+    > [!IMPORTANT]
+	> 當您執行混合組態精靈時，精靈中的這個網域選取步驟不一定會出現。<br />
     下列情況不會出現這個步驟：
-    <ul>
-    <li><p>您只新增一個內部部署公認的網域至 Office 365 租用戶。由於這是唯一可供混合部署組態使用的網域，因此會自動選取此網域，並且略過精靈中的這個步驟。</p></li>
-    <li><p>未將任何內部部署公認的網域新增至 Office 365 租用戶。在此情況下，您會收到錯誤，並且至少需要新增一個網域至 Office 365 租用戶才能繼續。您可以使用 Office 365 管理入口網站或選擇性地在內部部署組織中設定 Active Directory Federation Services (AD FS)，藉此執行上述操作。</p></li>
-    </ul>
-    如果您已新增多個內部部署公認的網域至 Office 365 租用戶，這個步驟就會出現。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > <ul>
+    > <li><p>您只新增一個內部部署公認的網域至 Office 365 租用戶。由於這是唯一可供混合部署組態使用的網域，因此會自動選取此網域，並且略過精靈中的這個步驟。</p></li>
+    > <li><p>未將任何內部部署公認的網域新增至 Office 365 租用戶。在此情況下，您會收到錯誤，並且至少需要新增一個網域至 Office 365 租用戶才能繼續。您可以使用 Office 365 管理入口網站或選擇性地在內部部署組織中設定 Active Directory Federation Services (AD FS)，藉此執行上述操作。</p></li></ul>
+    > 如果您已新增多個內部部署公認的網域至 Office 365 租用戶，這個步驟就會出現。
+    
 
 12. 在 \[**同盟信任**\] 頁面上，按一下 **\[啟用\]**，然後按一下 **\[下一步\]**。
 

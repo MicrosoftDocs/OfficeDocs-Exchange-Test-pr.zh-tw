@@ -21,18 +21,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 為了讓混合傳輸組態與 \[混合組態精靈\] 搭配使用，接受 Microsoft Exchange Online Protection (EOP) 連線並處理 Exchange Online 組織之傳輸作業的內部部署 SMTP 端點，必須為 Exchange 2013 Client Access Server、Exchange 2013 Edge Transport Server 或 Exchange Server 2010 Service Pack 3 (SP3) Edge Transport Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內部部署 Exchange 2013 Client Access Server 或 Exchange 2013/Exchange 2010 SP3 Edge Transport Server 與 EOP 之間不能有其他 SMTP 主機或服務。新增至可啟用混合傳輸功能的郵件資訊，會在通過非 Exchange 2013 伺服器、Exchange 2010 SP3 預備伺服器或 SMTP 主機時移除。如果您的組織已部署任何 Exchange 2010 SP2 Edge Transport Server，而且您想將其用於混合傳輸，則這些伺服器必須升級至 Exchange 2010 SP3。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 內部部署 Exchange 2013 Client Access Server 或 Exchange 2013/Exchange 2010 SP3 Edge Transport Server 與 EOP 之間不能有其他 SMTP 主機或服務。新增至可啟用混合傳輸功能的郵件資訊，會在通過非 Exchange 2013 伺服器、Exchange 2010 SP3 預備伺服器或 SMTP 主機時移除。如果您的組織已部署任何 Exchange 2010 SP2 Edge Transport Server，而且您想將其用於混合傳輸，則這些伺服器必須升級至 Exchange 2010 SP3。
 
 
 從外部網際網路寄件者傳送到兩個組織收件者的內送郵件，會遵循通用內送路由。從組織傳送給外部網際網路收件者的外寄郵件，可遵循通用外寄路由，或可經由獨立路由傳送。

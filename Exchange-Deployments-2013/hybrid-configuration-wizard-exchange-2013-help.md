@@ -35,18 +35,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 以下是混合組態精靈程序的簡要概觀。首先，此精靈會在您的內部部署 Active Directory 中建立 **HybridConfiguration** 物件。這個 Active Directory 物件會儲存混合式部署的混合組態資訊，並透過混合組態精靈進行更新。接著，此精靈會收集現有的內部部署 Exchange 和 Active Directory 拓撲組態資料、Office 365 租用戶和 Exchange Online 組態資料，定義數個組織參數，然後同時在內部部署和 Exchange Online 組織中執行一系列組態工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用混合組態精靈之前，有幾個重要的考量事項和先決條件需要先完成。您需要符合 <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署必要條件</a> 中所述的混合式部署需求。然後，您就可以使用混合組態精靈針對混合式部署設定 Exchange 組織。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 使用混合組態精靈之前，有幾個重要的考量事項和先決條件需要先完成。您需要符合 <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署必要條件</a> 中所述的混合式部署需求。然後，您就可以使用混合組態精靈針對混合式部署設定 Exchange 組織。
 
 
 混合式部署組態程序的一般階段包括：
@@ -71,18 +61,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 3.  **進行混合式部署組態變更**   測試混合管理帳戶、進行驗證和拓撲檢查，以及收集您在精靈程序中定義的組態資訊之後，混合組態精靈會進行組態變更以建立和啟用混合式部署。混合組態的所有變更都會自動記錄在混合組態記錄檔中。依預設，混合組態記錄檔位於內部部署信箱伺服器上的 `%UserProfile%\AppData\Roaming\Microsoft\Exchange Hybrid Configuration`。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>輸入郵件流程是由組織的 MX 記錄所控制。混合式部署的內送網際網路電子郵件不是由混合組態精靈所設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 輸入郵件流程是由組織的 MX 記錄所控制。混合式部署的內送網際網路電子郵件不是由混合組態精靈所設定。
 
 
 ## 混合組態功能
@@ -139,18 +119,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 <td><p>郵件流程</p></td>
 <td><p>此精靈可讓您選取及設定欲使用哪些 Exchange 伺服器來處理內部部署和 Exchange Online 組織之間的安全郵件傳輸。在 Exchange 2010 中，此為 Hub Transport server。在 Exchange 2013 中，此為 Client Access server。在 Exchange 2016 及更新版本中，此為信箱伺服器。</p>
 <p>此精靈可設定您的內部部署 Exchange 及 Exchange Online 組織以進行混合郵件路由。透過在內部部署組織中設定新的和現有的傳送和接收連接器，以及在 Exchange Online 中設定輸入和輸出連接器後，此精靈便可讓您選擇要將從 Exchange Online 組織傳遞到網際網路的輸出郵件直接傳送給外部郵件收件者，或是要透過包含在混合式部署中的內部部署 Exchange 伺服器進行路由。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>輸入郵件流程是由組織的 MX 記錄所控制。混合式部署的內送網際網路電子郵件不是由混合組態精靈所設定。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 輸入郵件流程是由組織的 MX 記錄所控制。混合式部署的內送網際網路電子郵件不是由混合組態精靈所設定。
 
 </td>
 </tr>

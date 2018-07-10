@@ -83,18 +83,8 @@ _<strong>上次修改主題的時間：</strong>2018-01-30_
 
 執行這項作業之後，請移至 Office 365 任何信箱會適當地設定為支援委派的信箱權限。如果信箱已移至 Office 365 在您完成這些步驟之前，必須以手動啟用 \[使用遠端信箱上的 \[啟用 Acl中的步驟這些信箱上的 Acl。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Acl 不在 Office 365 中建立的遠端信箱上啟用。如果您在 Office 365 中建立的遠端信箱，您需要在遠端信箱] 區段中啟用該遠端信箱上的 Acl 遵循啟用 Acl 中的步驟。若要避免此額外的步驟，我們建議您在內部部署 Exchange 伺服器上建立信箱並再將信箱移至 Office 365。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Acl 不在 Office 365 中建立的遠端信箱上啟用。如果您在 Office 365 中建立的遠端信箱，您需要在遠端信箱] 區段中啟用該遠端信箱上的 Acl 遵循啟用 Acl 中的步驟。若要避免此額外的步驟，我們建議您在內部部署 Exchange 伺服器上建立信箱並再將信箱移至 Office 365。
 
 
 ## 啟用遠端信箱上的 Acl
