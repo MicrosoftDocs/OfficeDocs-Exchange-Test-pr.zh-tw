@@ -58,18 +58,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - [使用安裝精靈安裝 Exchange 2013](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>本主題假設您不需要現有Exchange 2007或Exchange 2010拓撲。如果您需要現有Exchange拓撲且想要升級，請參閱<a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">從 Exchange 2010 升級至 Exchange 2013</a>或<a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">從 Exchange 2007 升級至 Exchange 2013</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 本主題假設您不需要現有Exchange 2007或Exchange 2010拓撲。如果您需要現有Exchange拓撲且想要升級，請參閱<a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">從 Exchange 2010 升級至 Exchange 2013</a>或<a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">從 Exchange 2007 升級至 Exchange 2013</a>。
 
 
 2.  每個樹系中，使用Active Directory使用者及電腦建立其中 FIM 2010 R2 SP1 會建立每個信箱的連絡人來自其他樹系的容器。我們建議您命名為此容器**FromFIM**。若要建立容器，選取您要建立容器、 網域上按一下滑鼠右鍵、 選取 \[**新增**的網域 \>**組織單位**。**新物件-的組織單位**中輸入**FromFIM**，，然後按一下 \[**確定\]**。
@@ -82,34 +72,14 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - [Forefront Identity Manager 2010 R2 說明文件導讀](https://go.microsoft.com/fwlink/p/?linkid=279871)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然資源討論Exchange 2010、 Exchange 2013支援 FIM 2010 R2 SP1。請確定您設定<strong>延伸模組</strong>FIM 2010 R2 SP1 中的Exchange 2013。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 雖然資源討論Exchange 2010、 Exchange 2013支援 FIM 2010 R2 SP1。請確定您設定<strong>延伸模組</strong>FIM 2010 R2 SP1 中的Exchange 2013。
     
     1.  在 \[**設定延伸模組**\] 頁面上的 \[**設定分割區的顯示名稱**、 旁邊**的佈建**、 選取**Exchange 2013**。您會看到 \[ **Exchange 2013 RPS URI** \] 欄位。輸入Exchange 2013用戶端存取伺服器的 URI 以確定可運作的遠端 PowerShell 連線。**Exchange 2013 RPS URI**應該是下列格式： http://CAS\_Server\_FQDN/Powershell。按一下 \[**確定\]**。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>請確保用於連線至 Exchange 2013 樹系的系統管理員認證也可以建立至該樹系的遠端 PowerShell 連線。<br />
-        下圖顯示了如何為 Exchange 2013 選取提供。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 請確保用於連線至 Exchange 2013 樹系的系統管理員認證也可以建立至該樹系的遠端 PowerShell 連線。<br />
+        > 下圖顯示了如何為 Exchange 2013 選取提供。
         
         **為 Exchange 2013 提供 GalSync 管理代理程式**
         

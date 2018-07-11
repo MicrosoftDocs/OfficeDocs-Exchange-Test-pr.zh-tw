@@ -251,18 +251,8 @@ Exchange 支援下列類型的通訊群組：
 
   - **擁有郵件功能的非萬用群組**   這些是擁有郵件功能的 Active Directory 全域或本機群組物件。可以只建立萬用通訊群組或啟用萬用通訊群組的郵件功能。您可能會有從舊版 Exchange 遷移之擁有郵件功能的群組，但這些群組不是萬用群組。使用 EAC 或命令介面仍然可以管理這些群組。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要將網域本機或全域群組轉換至萬用群組，您可以使用命令介面中的 <a href="https://technet.microsoft.com/zh-tw/library/bb123770(v=exchg.150)">Set-Group</a> 指令程式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要將網域本機或全域群組轉換至萬用群組，您可以使用命令介面中的 <a href="https://technet.microsoft.com/zh-tw/library/bb123770(v=exchg.150)">Set-Group</a> 指令程式。
 
 
 ## 動態通訊群組

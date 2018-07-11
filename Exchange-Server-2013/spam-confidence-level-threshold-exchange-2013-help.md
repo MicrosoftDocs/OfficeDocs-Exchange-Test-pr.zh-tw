@@ -135,18 +135,8 @@ _**上次修改主題的時間：** 2016-11-17_
 
   - **在使用者信箱上 (每位收件者 SCL 組態)**   您使用 **Set-Mailbox** 指令程式，對個別信箱設定每位收件者啟用或停用 SCL 刪除、拒絕和垃圾郵件閾值。您僅可使用 **Set-Mailbox** 指令程式來啟用或停用個別信箱的 SCL 垃圾郵件資料夾閾值。每位收件者 SCL 刪除、拒絕和隔離閾值是儲存於 Active Directory 中，並由 Microsoft Exchange EdgeSync 服務複寫到訂閱的 Edge Transport Server。即使您已設定每部傳輸伺服器 SCL 組態，內容篩選器代理程式仍會使用每位收件者 SCL 閾值組態。因此，如果您已設定每位收件者 SCL 閾值，內容篩選器代理程式將對特定使用者使用每位收件者 SCL 閾值，而不是內容篩選器代理程式上的 SCL 組態。例如，請參閱[在信箱上設定反垃圾郵件設定](configure-anti-spam-settings-on-mailboxes-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對於透過通訊群組收到的郵件，並不會強制執行每個收件者 SCL 閾值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 對於透過通訊群組收到的郵件，並不會強制執行每個收件者 SCL 閾值。
     
     **Set-Mailbox** 指令程式可用的的參數與 **Set-ContentFilterConfig** 及 **Set-OrganizationConfig** 指令程式上可用的參數相同：
     

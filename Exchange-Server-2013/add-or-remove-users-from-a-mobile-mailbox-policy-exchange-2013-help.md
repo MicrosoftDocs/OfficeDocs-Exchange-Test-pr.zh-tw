@@ -108,18 +108,8 @@ _**上次修改主題的時間：** 2015-07-16_
         Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
          } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以改用<code>CustomAttribute1</code>任何<strong>Get-Mailbox</strong>物件上的內容。若要檢視的完整清單，請輸入： <code>Get-Mailbox username |fl</code>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以改用<code>CustomAttribute1</code>任何<strong>Get-Mailbox</strong>物件上的內容。若要檢視的完整清單，請輸入： <code>Get-Mailbox username |fl</code>。
 
 
 ## 如何才能了解這是否正常運作？

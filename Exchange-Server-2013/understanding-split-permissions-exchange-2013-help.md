@@ -137,18 +137,8 @@ Exchange 2013支援兩種下列類型的分割權限：
 
   - **Active Directory 分割權限**  從任何Exchange使用者、 服務或伺服器完全移除Active Directory網域分割區中建立安全性主體的權限。建立安全性主體的 RBAC 不提供的任何選項。使用Active Directory管理工具必須執行Active Directory中的安全性主體的建立。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然Active Directory分割權限可啟用或停用電腦已安裝的Exchange 2013Active Directory分割權限組態會套用至Exchange 2013和Exchange 2010伺服器上執行安裝程式。它，但沒有任何影響 Microsoft Exchange Server 2007伺服器上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 雖然Active Directory分割權限可啟用或停用電腦已安裝的Exchange 2013Active Directory分割權限組態會套用至Exchange 2013和Exchange 2010伺服器上執行安裝程式。它，但沒有任何影響 Microsoft Exchange Server 2007伺服器上。
 
 
 如果您的組織選擇使用分割權限模式，而不是共用的權限，我們建議您使用的 RBAC 分割權限模型。RBAC 分割權限模型會提供大幅更大的彈性同時提供幾乎相同管理分離為Active Directory分割權限、 例外狀況的Exchange伺服器和服務可以 RBAC 分割權限模式中建立安全性主體。
@@ -276,34 +266,14 @@ Active Directory分割權限，則您的組織很好的選擇下屬實：
 
   - 您不想Exchange伺服器或使用Exchange其代理，建立安全性主體的協力廠商程式\]。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>切換到Active Directory分割權限是當您安裝Exchange 2013使用安裝程式精靈] 或從命令列執行<code>setup.exe</code>時發生使用<em>ActiveDirectorySplitPermissions</em>參數來進行選擇。您也可以啟用或停用Active Directory後重新執行<code>setup.exe</code>從命令列安裝Exchange 2013分割權限。若要啟用Active Directory分割權限，請將<em>ActiveDirectorySplitPermissions</em>參數設<code>true</code>。若要停用它，請將它設為<code>false</code>。您必須一律指定<em>PrepareAD</em>參數搭配<em>ActiveDirectorySplitPermissions</em>參數。<br />
-如果您在同一個樹系內有多個網域，您必須也其中一個指定<em>PrepareAllDomains</em>切換時套用Active Directory分割權限或搭配<em>PrepareDomain</em>參數在每個網域中執行安裝程式。如果您選擇使用<em>PrepareDomain</em>交換器每個網域中執行安裝程式而不是使用<em>PrepareAllDomains</em>參數，您必須先準備包含Exchange伺服器、 啟用郵件功能的物件或無法存取Exchange伺服器的通用類別目錄伺服器的每個網域。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 切換到Active Directory分割權限是當您安裝Exchange 2013使用安裝程式精靈] 或從命令列執行<code>setup.exe</code>時發生使用<em>ActiveDirectorySplitPermissions</em>參數來進行選擇。您也可以啟用或停用Active Directory後重新執行<code>setup.exe</code>從命令列安裝Exchange 2013分割權限。若要啟用Active Directory分割權限，請將<em>ActiveDirectorySplitPermissions</em>參數設<code>true</code>。若要停用它，請將它設為<code>false</code>。您必須一律指定<em>PrepareAD</em>參數搭配<em>ActiveDirectorySplitPermissions</em>參數。<br />
+> 如果您在同一個樹系內有多個網域，您必須也其中一個指定<em>PrepareAllDomains</em>切換時套用Active Directory分割權限或搭配<em>PrepareDomain</em>參數在每個網域中執行安裝程式。如果您選擇使用<em>PrepareDomain</em>交換器每個網域中執行安裝程式而不是使用<em>PrepareAllDomains</em>參數，您必須先準備包含Exchange伺服器、 啟用郵件功能的物件或無法存取Exchange伺服器的通用類別目錄伺服器的每個網域。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法啟用Active Directory如果您已在網域控制站上安裝Exchange 2010或Exchange 2013分割權限。<br />
-啟用或停用Active Directory分割權限後，我們建議您在組織來強制其挑選與更新的權限的新Active Directory存取權杖中重新啟動Exchange 2010和Exchange 2013伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您無法啟用Active Directory如果您已在網域控制站上安裝Exchange 2010或Exchange 2013分割權限。<br />
+> 啟用或停用Active Directory分割權限後，我們建議您在組織來強制其挑選與更新的權限的新Active Directory存取權杖中重新啟動Exchange 2010和Exchange 2013伺服器。
 
 
 Exchange 2013透過ExchangeWindows權限安全性\] 群組中移除的權限和成員資格達到達成Active Directory分割權限。此安全性\] 群組中共用的權限與 RBAC 分割權限\] 權限授許多非Exchange物件和整個Active Directory中的屬性。移除的權限及此安全性群組的成員資格、 Exchange管理員及服務會禁止建立或修改這些非ExchangeActive Directory物件。

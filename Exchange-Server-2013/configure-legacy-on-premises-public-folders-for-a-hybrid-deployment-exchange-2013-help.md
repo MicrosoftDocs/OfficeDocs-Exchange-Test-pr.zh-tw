@@ -122,18 +122,8 @@ _**上次修改主題的時間：** 2018-05-22_
 
 1.  如果您的公用資料夾位於 Exchange 2010 或更新版本的伺服器上，您就必須在所有具有公用資料夾資料庫的 Mailbox Server 上安裝 Client Access server role。如此，Microsoft Exchange RpcClientAccess 服務即得以執行，進而讓所有用戶端都能存取公用資料夾。Exchange 2007 公用資料夾伺服器不需要用戶端存取角色，無須執行此步驟。如需詳細資訊，請參閱[安裝 Exchange Server 2010](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)。對於 Exchange 2007 公用資料夾，無須執行此步驟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此伺服器無須成為用戶端存取負載平衡的一部分。如需詳細資訊，請參閱＜<a href="https://technet.microsoft.com/zh-tw/library/ff625247(v=exchg.141).aspx">了解 Exchange 2010 中的負載平衡</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此伺服器無須成為用戶端存取負載平衡的一部分。如需詳細資訊，請參閱＜<a href="https://technet.microsoft.com/zh-tw/library/ff625247(v=exchg.141).aspx">了解 Exchange 2010 中的負載平衡</a>＞。
 
 
 2.  在每個公用資料夾伺服器上建立空的信箱資料庫。
@@ -146,25 +136,17 @@ _**上次修改主題的時間：** 2018-05-22_
     
         New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我們建議您增加到此資料庫的唯一信箱就是您將在步驟 3 中建立的 Proxy 信箱。不得在此信箱資料庫上建立其他信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 我們建議您增加到此資料庫的唯一信箱就是您將在步驟 3 中建立的 Proxy 信箱。不得在此信箱資料庫上建立其他信箱。
 
 
 3.  在新的信箱資料庫中建立 Proxy 信箱，然後在通訊錄中隱藏該信箱。「自動探索」會傳回此信箱的 SMTP 作為 *DefaultPublicFolderMailbox* SMTP，因此只要解析此 SMTP，用戶端即可連到舊版 Exchange 伺服器來存取公用資料夾。
-    
-        New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
-    
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
+    ```
+    ```
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
 
 4.  在 Exchange 2010 中，讓「自動探索」傳回 Proxy 公用資料夾信箱。對於 Exchange 2007，無須執行此步驟。
     
@@ -199,19 +181,9 @@ _**上次修改主題的時間：** 2018-05-22_
     
     `Credential` 是您的 Office 365 使用者名稱和密碼，而 `CsvSummaryFile` 是您想要記錄同步處理作業和錯誤的路徑，檔案為 CSV 格式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>執行指令碼之前，我們建議您先模擬指令碼在您的環境中會執行的動作，方法是使用 <code>-WhatIf</code> 參數依照上述來執行此指令碼。<br />
-我們也建議您每天執行此指令碼，以同步處理具有郵件功能的公用資料夾。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 執行指令碼之前，我們建議您先模擬指令碼在您的環境中會執行的動作，方法是使用 <code>-WhatIf</code> 參數依照上述來執行此指令碼。<br />
+> 我們也建議您每天執行此指令碼，以同步處理具有郵件功能的公用資料夾。
 
 
 ## 步驟 5：設定讓 Exchange Online 使用者存取內部部署公用資料夾

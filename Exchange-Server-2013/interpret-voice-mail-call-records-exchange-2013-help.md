@@ -33,18 +33,8 @@ _**上次修改主題的時間：** 2013-02-22_
     
     匯出的檔案會命名為 um\_cdr\_*YYYY-MM-DD*.csv，其中 *YYYY-MM-DD* 是執行報告的年份、月份和日期。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在報告頁面上，您可以下載 Microsoft Excel 範本，用於匯入特定日期的 .csv 檔案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在報告頁面上，您可以下載 Microsoft Excel 範本，用於匯入特定日期的 .csv 檔案。
 
 
 5.  使用例如 Excel 的應用程式來處理 .csv 檔案並建立自己的自訂報告。
@@ -140,18 +130,8 @@ _**上次修改主題的時間：** 2013-02-22_
 
   - **NMOS 分數** 網路平均意見分數 (NMOS) 的通話。NMOS 指出如何良好的音訊品質有關該通話為介於 1 到 5，具有正在實用的 5 規模上的號碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>附註</strong>  可能的通話的最大 NMOS 取決於所使用的音訊轉碼器。NMOS 可能無法極短通話所少於 10 秒的 long。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <strong>附註</strong>  可能的通話的最大 NMOS 取決於所使用的音訊轉碼器。NMOS 可能無法極短通話所少於 10 秒的 long。
 
 
   - **NMOSDegradation** 從上方的值可能正在使用的音訊轉碼器的 NMOS 的音訊降低量。例如，如果來電的 NMOS 效能下降值是 1.2 NMOS 報告通話所 3.3，該特定的通話的最大的 NMOS 就是 4.5 (1.2 + 3.3)。

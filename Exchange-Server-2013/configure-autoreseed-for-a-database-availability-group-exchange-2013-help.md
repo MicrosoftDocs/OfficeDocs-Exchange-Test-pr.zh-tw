@@ -123,14 +123,18 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 ## 步驟 5： 建立的資料庫資料夾
 
 接下來，建立根路徑 C:\\ExchangeDatabases 下的 \[資料庫\] 目錄。本範例會說明如何使用 4 個資料庫在每個磁碟區上建立目錄的儲存設定。
-
-    md c:\ExchangeDatabases\db001
-
-    md c:\ExchangeDatabases\db002
-
-    md c:\ExchangeDatabases\db003
-
-    md c:\ExchangeDatabases\db004
+```
+md c:\ExchangeDatabases\db001
+```
+```
+md c:\ExchangeDatabases\db002
+```
+```
+md c:\ExchangeDatabases\db003
+```
+```
+md c:\ExchangeDatabases\db004
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -163,22 +167,30 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 此範例說明如何為儲存在磁碟區 1 的 4 個資料庫建立目錄：
-
-    md c:\ExchangeDatabases\db001\db001.db
-
-    md c:\ExchangeDatabases\db001\db001.log
-
-    md c:\ExchangeDatabases\db002\db002.db
-
-    md c:\ExchangeDatabases\db002\db002.log
-
-    md c:\ExchangeDatabases\db003\db003.db
-
-    md c:\ExchangeDatabases\db003\db003.log
-
-    md c:\ExchangeDatabases\db004\db004.db
-
-    md c:\ExchangeDatabases\db004\db004.log
+```
+md c:\ExchangeDatabases\db001\db001.db
+```
+```
+md c:\ExchangeDatabases\db001\db001.log
+```
+```
+md c:\ExchangeDatabases\db002\db002.db
+```
+```
+md c:\ExchangeDatabases\db002\db002.log
+```
+```
+md c:\ExchangeDatabases\db003\db003.db
+```
+```
+md c:\ExchangeDatabases\db003\db003.log
+```
+```
+md c:\ExchangeDatabases\db004\db004.db
+```
+```
+md c:\ExchangeDatabases\db004\db004.log
+```
 
 對每一個磁碟區上的資料庫重複以上命令。
 
@@ -213,8 +225,9 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
         Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 
 2.  執行下列命令，確認已正確設定目錄架構 (以下為預設路徑；請視需要將路徑替換成您正在使用的路徑)。
-    
-        Dir c:\ExchangeDatabases /s
-    
-        Dir c:\ExchangeVolumes /s
-
+    ```
+    Dir c:\ExchangeDatabases /s
+    ```
+    ```
+    Dir c:\ExchangeVolumes /s
+    ```

@@ -27,19 +27,9 @@ _**上次修改主題的時間：** 2017-11-15_
 
 在這些案例中，受管理的資料夾助理員可在某個項目或信箱移到另一個組織時，正確地處理套用保留標記的項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要讓兩個組織之間的保留標記和保留原則維持同步，在每次變更來源組織中的保留標記或原則時，您必須執行這個程序，從來源組織匯出保留標記和原則，以及將它們匯入到目的組織。<br />
-您不能選取特定的保留標記] 或 [要匯出的原則。匯出 RetentionTags.ps1 指令碼會從組織匯出所有的保留標記和原則。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]  
+> 若要讓兩個組織之間的保留標記和保留原則維持同步，在每次變更來源組織中的保留標記或原則時，您必須執行這個程序，從來源組織匯出保留標記和原則，以及將它們匯入到目的組織。<br />
+> 您不能選取特定的保留標記] 或 [要匯出的原則。匯出 RetentionTags.ps1 指令碼會從組織匯出所有的保留標記和原則。
 
 
 如需與通訊記錄管理相關的其他管理工作，請參閱[通訊記錄管理程序](messaging-records-management-procedures-exchange-2013-help.md)。
@@ -77,18 +67,8 @@ _**上次修改主題的時間：** 2017-11-15_
 
 2.  執行 Export-RetentionTags.ps1 指令碼，將保留標記匯出至 XML 檔案。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您正在匯入或匯出至Exchange Online的保留標記和保留原則，您必須連線 Windows PowerShell 工作階段到Exchange Online。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj984289(v=exchg.150)">使用遠端 PowerShell 連線到 Exchange Online</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您正在匯入或匯出至Exchange Online的保留標記和保留原則，您必須連線 Windows PowerShell 工作階段到Exchange Online。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj984289(v=exchg.150)">使用遠端 PowerShell 連線到 Exchange Online</a>。
     
         .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
 
@@ -108,31 +88,11 @@ _**上次修改主題的時間：** 2017-11-15_
 
 2.  執行 Import-RetentionTags.ps1 指令碼，從先前匯出的 XML 檔案中匯入保留標記。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您正在匯入或匯出至Exchange Online的保留標記和保留原則，您必須連線 Windows PowerShell 工作階段到Exchange Online。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj984289(v=exchg.150)">使用遠端 PowerShell 連線到 Exchange Online</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您正在匯入或匯出至Exchange Online的保留標記和保留原則，您必須連線 Windows PowerShell 工作階段到Exchange Online。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj984289(v=exchg.150)">使用遠端 PowerShell 連線到 Exchange Online</a>。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>執行此指令碼針對Exchange Online、 時可能會提示您確認您想要執行軟體來自不受信任的發行者。確認發行者的名稱顯示為 [ <code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>、] 和 [ <strong>R</strong>允許一次執行指令碼或<strong>A</strong>到一定會執行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 執行此指令碼針對Exchange Online、 時可能會提示您確認您想要執行軟體來自不受信任的發行者。確認發行者的名稱顯示為 [ <code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>、] 和 [ <strong>R</strong>允許一次執行指令碼或<strong>A</strong>到一定會執行。
     
         .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
 

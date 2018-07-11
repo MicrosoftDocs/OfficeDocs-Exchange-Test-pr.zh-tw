@@ -43,19 +43,9 @@ _**上次修改主題的時間：** 2015-04-07_
     
       - 您可以指定 DAG 的名稱、將 \[見證伺服器\] 欄位保留空白，並指定您要在見證伺服器上建立及共用的目錄。在此情況下，此精靈將會搜尋未安裝信箱伺服器角色的用戶端存取伺服器，並且將自動在該伺服器上建立指定的見證目錄並加以共用，並設定 DAG 使用該用戶端存取伺服器作為見證伺服器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您指定見證伺服器不是Exchange 2013或Exchange 2010伺服器，您必須以本機管理員群組的見證伺服器上新增Exchange受信任子系統萬用安全性群組。下列安全性權限所需確保該Exchange可以建立目錄並視需要見證伺服器上共用。如果未設定適當的權限，則會傳回下列錯誤：<br />
-    <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 如果您指定見證伺服器不是Exchange 2013或Exchange 2010伺服器，您必須以本機管理員群組的見證伺服器上新增Exchange受信任子系統萬用安全性群組。下列安全性權限所需確保該Exchange可以建立目錄並視需要見證伺服器上共用。如果未設定適當的權限，則會傳回下列錯誤：<br />
+    > <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code>
 
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
@@ -81,18 +71,8 @@ _**上次修改主題的時間：** 2015-04-07_
     
       - \[驗證伺服器\]   使用此欄位可指定 DAG 的見證伺服器。如果您將此欄位保留空白，系統將嘗試自動選取本機 Active Directory 站台中的用戶端存取伺服器，這個本機 Active Directory 站台並非安裝在信箱伺服器作為見證伺服器的電腦上。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若是您指定了見證伺服器，必須使用主機名稱或網域全名 (FQDN)。不支援使用 IP 位址或萬用字元名稱。此外，見證伺服器不得為 DAG 的成員。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 若是您指定了見證伺服器，必須使用主機名稱或網域全名 (FQDN)。不支援使用 IP 位址或萬用字元名稱。此外，見證伺服器不得為 DAG 的成員。
     
       - \[見證目錄\]   使用此欄位可輸入見證伺服器將用來儲存見證資料的目錄路徑。如果目錄不存在，系統會在見證伺服器上為您建立該目錄。如果將此欄位保留空白，將在見證伺服器建立預設目錄 (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>)。
     

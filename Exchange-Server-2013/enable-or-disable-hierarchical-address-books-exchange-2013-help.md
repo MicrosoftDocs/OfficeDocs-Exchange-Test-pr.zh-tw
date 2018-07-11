@@ -96,49 +96,19 @@ _**上次修改主題的時間：** 2016-12-09_
 
 1.  在 Contoso 組織中建立 OU 命名的 HAB。您可以使用 Active Directory Users and Computers，或在命令提示字元中輸入下列內容。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>或者，您可以使用 Exchange 樹系中現有的 OU。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 或者，您可以使用 Exchange 樹系中現有的 OU。
     
         dsadd ou "OU=HAB,DC=Contoso-dom,DC=Contoso,DC=com"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需詳細資訊，請參閱 ＜<a href="https://go.microsoft.com/fwlink/p/?linkid=198986">建立新的組織單位</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需詳細資訊，請參閱 ＜<a href="https://go.microsoft.com/fwlink/p/?linkid=198986">建立新的組織單位</a>。
 
 
 2.  對 HAB 建立根通訊群組 Contoso,Ltd。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="create-and-manage-distribution-groups-exchange-2013-help.md">建立並管理通訊群組</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="create-and-manage-distribution-groups-exchange-2013-help.md">建立並管理通訊群組</a>。
     
         New-DistributionGroup -Name "Contoso,Ltd" -DisplayName "Contoso,Ltd" -Alias "ContosoRoot" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "ContosoRoot" -Type "Distribution"
 
@@ -148,18 +118,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 4.  對 HAB 中的其他層級建立通訊群組。對於這個範例，您會建立下列群組：Corporate Office、Product Support Organization、Sales & Marketing Organization、Human Resources、Accounting Group 和 Administration Group。這個範例會建立通訊群組 Corporate Office。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="create-and-manage-distribution-groups-exchange-2013-help.md">建立並管理通訊群組</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="create-and-manage-distribution-groups-exchange-2013-help.md">建立並管理通訊群組</a>。
     
         New-DistributionGroup -Name "Corporate Office" -DisplayName "Corporate Office" -Alias "CorporateOffice" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "CorporateOffice" -Type "Distribution"
 
@@ -169,35 +129,15 @@ _**上次修改主題的時間：** 2016-12-09_
 
 6.  將每個次級群組新增為根組織的成員。對於這個範例，通訊群組 Corporate Office、Product Support Organization 和 Sales & Marketing Organization 會新增為 HAB 中根組織 Contoso,Ltd 的成員。這個範例會將 Corporate Office 通訊群組新增為 Contoso,Ltd 根通訊群組的成員。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>這個範例會使用通訊群組的別名。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 這個範例會使用通訊群組的別名。
     
         Add-DistributionGroupMember -Identity "ContosoRoot" -Member "CorporateOffice"
 
 7.  將從屬於通訊群組 Corporate Office 的每一個群組新增為群組的成員。對於這個範例，通訊群組 Human Resources、Accounting Group 和 Administration Group 會新增為通訊群組 Corporate Office 的成員。這個範例會將 Human Resources 通訊群組新增為 Corporate Office 通訊群組的成員。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>這個範例會使用通訊群組的別名，並假設 Human Resources 通訊群組的別名為 HumanResources。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 這個範例會使用通訊群組的別名，並假設 Human Resources 通訊群組的別名為 HumanResources。
     
         Add-DistributionGroupMember -Identity "CorporateOffice" -Member "HumanResources"
 
@@ -209,18 +149,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
         Set-Group -Identity "Human Resources" -SeniorityIndex 100
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><em>SeniorityIndex</em> 參數是數值，能以遞減數字順序排序 HAB 中的群組或使用者。如果 <em>SeniorityIndex</em> 參數未設定，或對於兩個或多個使用者來說是相等，則 HAB 排序順序會使用 <em>PhoneticDisplayName</em> 參數值以遞增英文字母順序來列出使用者。如果 <em>PhoneticDisplayName</em> 值未設定，則 HAB 排序順序預設為 <em>DisplayName</em> 參數值，並以遞增英文字母順序列出使用者。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <em>SeniorityIndex</em> 參數是數值，能以遞減數字順序排序 HAB 中的群組或使用者。如果 <em>SeniorityIndex</em> 參數未設定，或對於兩個或多個使用者來說是相等，則 HAB 排序順序會使用 <em>PhoneticDisplayName</em> 參數值以遞增英文字母順序來列出使用者。如果 <em>PhoneticDisplayName</em> 值未設定，則 HAB 排序順序預設為 <em>DisplayName</em> 參數值，並以遞增英文字母順序列出使用者。
 
 
 10. 針對 HAB 群組中的使用者設定 *SeniorityIndex* 參數。對於這個範例，Corporate Office 群組包含三個使用者：Amy Alberts、David Hamilton 和 Rajesh M. Patel。不以遞增的英文字母順序 (這是預設值) 列出使用者，偏好的排序會是 David Hamilton (*SeniorityIndex* = 100)、Rajesh M. Patel (*SeniorityIndex* = 50)，然後是 Amy Alberts (*SeniorityIndex* = 25)。這個範例會將使用者 David Hamilton 的 *SeniorityIndex* 參數設為 100。

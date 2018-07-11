@@ -85,18 +85,8 @@ _**上次修改主題的時間：** 2015-04-07_
         New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
         New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>具有委派角色指派的 「 建立郵件收件者角色及安全性群組建立與成員資格角色的角色群組 （在此程序， Active Directory系統管理員角色群組） 必須被指派角色管理角色可執行<strong>New-ManagementRoleAssignment</strong>指令程式。可委派角色管理角色的角色受託人必須將該角色指派給Active Directory系統管理員角色群組中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 具有委派角色指派的 「 建立郵件收件者角色及安全性群組建立與成員資格角色的角色群組 （在此程序， Active Directory系統管理員角色群組） 必須被指派角色管理角色可執行<strong>New-ManagementRoleAssignment</strong>指令程式。可委派角色管理角色的角色受託人必須將該角色指派給Active Directory系統管理員角色群組中。
 
 
 2.  新增 「 建立郵件收件者 」 角色的一般角色指派給使用下列命令組織管理和收件者管理角色群組。
@@ -162,18 +152,8 @@ _**上次修改主題的時間：** 2015-04-07_
 
 3.  重新啟動Exchange 2013伺服器在組織中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在組織中有Exchange 2010伺服器，您也需要重新啟動這些伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您在組織中有Exchange 2010伺服器，您也需要重新啟動這些伺服器。
 
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。

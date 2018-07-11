@@ -47,18 +47,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - [檢視和匯出外部管理員稽核記錄](https://technet.microsoft.com/zh-tw/library/dn505728\(v=exchg.150\))
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根據預設，管理員稽核記錄項目會保留期為 90 天。超過 90 天的項目時，會將它刪除。雲端架構組織中無法變更此設定。不過，就可以變更在內部部署 Exchange 組織中使用<strong>Set-AdminAuditLog</strong>指令程式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 根據預設，管理員稽核記錄項目會保留期為 90 天。超過 90 天的項目時，會將它刪除。雲端架構組織中無法變更此設定。不過，就可以變更在內部部署 Exchange 組織中使用<strong>Set-AdminAuditLog</strong>指令程式。
 
 
   - **匯出信箱稽核記錄**  信箱稽核時為信箱啟用記錄、 Microsoft Exchange 儲存動作所非擁有者信箱正在稽核中隱藏資料夾中儲存信箱稽核記錄檔中執行信箱資料的記錄。信箱稽核記錄也可以設定記錄擁有者動作。此記錄檔中的項目指出誰存取信箱以及何時、 執行動作，以及動作是否成功。中搜尋項目中的信箱稽核記錄和匯出其搜尋結果中的 XML 檔案及將它附加至電子郵件訊息的 Microsoft Exchange 儲存。如需詳細資訊，請參閱[匯出信箱稽核記錄](export-mailbox-audit-logs-exchange-2013-help.md)。

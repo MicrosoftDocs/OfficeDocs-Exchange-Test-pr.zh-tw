@@ -151,18 +151,9 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>重設這些屬性之後, 必須等待 Exchange 偵測新的設定。這可能需要兩個小時才能完成。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 重設這些屬性之後, 必須等待 Exchange 偵測新的設定。這可能需要兩個小時才能完成。
+
 
 
 如需詳細的語法及參數資訊，請參閱下列主題：
@@ -187,18 +178,8 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
     
     現有的移轉要求可以是下列其中一種： 批次移轉或序列移轉。若非要求每個類型並移除要求每種類型的命令如下所示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>然後再移除移轉要求，請務必了解原因有現有的欄位。執行下列命令將會決定何時進行上一個要求並協助您診斷任何可能發生的問題。您可能需要通訊與您組織中其他管理員來判斷為何進行變更。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 然後再移除移轉要求，請務必了解原因有現有的欄位。執行下列命令將會決定何時進行上一個要求並協助您診斷任何可能發生的問題。您可能需要通訊與您組織中其他管理員來判斷為何進行變更。
     
     下列範例會將發現任何現有的序列的移轉要求。
     
@@ -228,22 +209,15 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
     
     3.  如果您有任何公用資料夾，請執行下列 PowerShell 命令加以移除。請確定您已儲存在公用資料夾中的任何資訊。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>當您移除它們會永久刪除公用資料夾中所包含的所有資訊。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 當您移除它們會永久刪除公用資料夾中所包含的所有資訊。
         
-            Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-        
-            Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
+        Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
+        ```
+        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
 
 如需詳細的語法及參數資訊，請參閱下列主題：
 
@@ -277,18 +251,8 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
 2.  執行`PublicFolderToMailboxMapGenerator.ps1`指令碼建立公用資料夾至信箱的對應檔案。此檔案用來計算的 Exchange 2013 Mailbox server 上的公用資料夾信箱的正確的號碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果公用資料夾的名稱包含反斜線<strong>\</strong>，將公用資料夾會建立上層公用資料夾中。我們建議您檢閱.csv 檔案並編輯任何名稱包含反斜線。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果公用資料夾的名稱包含反斜線<strong>\</strong>，將公用資料夾會建立上層公用資料夾中。我們建議您檢閱.csv 檔案並編輯任何名稱包含反斜線。
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     
@@ -320,10 +284,13 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 **移轉 Exchange 2007 公用資料夾**
 
 1.  例如 OWAScratchPad 與結構描述根資料夾樹狀子目錄的舊版系統公用資料夾在 Exchange 2007 Exchange 2013 將不會辨識與因此會被視為 「 故障 」 項目。這會導致移轉失敗。移轉要求的一部分，您必須指定`BadItemLimit`參數的值。這個值將會取決於您所具有的公用資料夾資料庫數目而有所不同。下列命令將會決定多少公用資料夾資料庫有和計算`BadItemLimit`遷移要求。
-    
+
+       ```    
         $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
-    
+       ```
+       ```
         $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
+       ```
 
 2.  在 Exchange 2013 伺服器上，執行下列命令：
     
@@ -432,18 +399,8 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
     
         Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在完成初始遷移驗證後，請不要使用 <em>IsExcludedFromServingHierarchy</em> 參數，因為此參數是由 Exchange Online 的自動儲存管理服務所使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在完成初始遷移驗證後，請不要使用 <em>IsExcludedFromServingHierarchy</em> 參數，因為此參數是由 Exchange Online 的自動儲存管理服務所使用。
 
 
 4.  在舊版 Exchange 伺服器上，執行下列命令列以指出公用資料夾移轉完成：

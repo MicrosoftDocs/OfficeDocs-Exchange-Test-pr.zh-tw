@@ -71,18 +71,8 @@ _**上次修改主題的時間：** 2013-02-21_
     
       - **NMOS**  網路平均意見分數 (NMOS) 的通話。NMOS 指出如何良好的音訊品質有關該通話為介於 1 到 5，具有正在實用的 5 規模上的號碼。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>可能的通話的最大 NMOS 是取決於所使用的音訊轉碼器。NMOS 可能無法極短通話所少於 10 秒的 long。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 可能的通話的最大 NMOS 是取決於所使用的音訊轉碼器。NMOS 可能無法極短通話所少於 10 秒的 long。
     
       - **NMOS 效能下降**  從上方的值可能正在使用的音訊轉碼器的 NMOS 的音訊降低量。例如，如果來電的 NMOS 效能下降值是 1.2 NMOS 報告通話所 3.3，該特定的通話的最大的 NMOS 就是 4.5 (1.2 + 3.3)。
     

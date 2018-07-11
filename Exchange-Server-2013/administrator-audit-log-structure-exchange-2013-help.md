@@ -166,18 +166,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 已修改兩個物件`david`上的下列屬性：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>因為<code>Set-AdminAuditLogConfig</code>指令程式上的<em>LogLevel</em>參數設為 [ <code>Verbose</code>在本例中修改的屬性會儲存稽核記錄檔。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 因為<code>Set-AdminAuditLogConfig</code>指令程式上的<em>LogLevel</em>參數設為 [ <code>Verbose</code>在本例中修改的屬性會儲存稽核記錄檔。
     
       - *ProhibitSendReceiveQuota* `10GB`，以取代`35GB`舊值的新值
 

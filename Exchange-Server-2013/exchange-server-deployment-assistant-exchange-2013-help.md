@@ -59,18 +59,8 @@ Exchange Server Deployment Assistant 是可協助您在 Microsoft Exchange Serve
     
     如需此案例的相關資訊，請參閱[Exchange Server 混合部署](https://technet.microsoft.com/zh-tw/library/jj200581\(v=exchg.150\))。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有 Exchange 2003 內部部署組織並想要設定新的混合部署與 Office 365，您必須新增一或多個執行 Exchange 2010 伺服器 Service Pack 3，沒有 Exchange 2013 伺服器，您的內部部署組織的伺服器。若要這樣做，我們強烈建議您在<a href="https://technet.microsoft.com/en-us/exdeploy2010">Exchange Server 部署助理</a>使用 Exchange 2010 混合式部署選項。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您有 Exchange 2003 內部部署組織並想要設定新的混合部署與 Office 365，您必須新增一或多個執行 Exchange 2010 伺服器 Service Pack 3，沒有 Exchange 2013 伺服器，您的內部部署組織的伺服器。若要這樣做，我們強烈建議您在<a href="https://technet.microsoft.com/en-us/exdeploy2010">Exchange Server 部署助理</a>使用 Exchange 2010 混合式部署選項。
 
 
   - **僅雲端**

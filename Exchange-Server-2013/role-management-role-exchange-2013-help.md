@@ -176,16 +176,6 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - [將角色新增至使用者或 USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果除了建立角色的使用者以外，您要讓其他使用者也能指派新的自訂角色，務必將「委派角色指派」的權限新增到至少一位角色受託人。如需詳細資訊，請參閱<a href="delegate-role-assignments-exchange-2013-help.md">委派角色指派</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 如果除了建立角色的使用者以外，您要讓其他使用者也能指派新的自訂角色，務必將「委派角色指派」的權限新增到至少一位角色受託人。如需詳細資訊，請參閱<a href="delegate-role-assignments-exchange-2013-help.md">委派角色指派</a>。
 

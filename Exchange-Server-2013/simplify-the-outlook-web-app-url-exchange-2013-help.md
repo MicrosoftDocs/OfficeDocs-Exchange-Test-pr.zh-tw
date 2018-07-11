@@ -66,18 +66,8 @@ _**上次修改主題的時間：** 2015-07-16_
 
 12. 在 \[ **SSL 設定**\] 中，清除**需要 SSL**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您未清除 [<strong>需要 SSL</strong>，將不會將使用者重新導向輸入時，就不安全的 URL。而是他們將取得拒絕存取錯誤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您未清除 [<strong>需要 SSL</strong>，將不會將使用者重新導向輸入時，就不安全的 URL。而是他們將取得拒絕存取錯誤。
 
 
 ## 步驟 2： 將重新導向移除虛擬目錄

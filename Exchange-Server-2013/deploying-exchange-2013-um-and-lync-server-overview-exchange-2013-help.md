@@ -58,18 +58,8 @@ For more information
 
 7.  從信箱伺服器上的 \<Exchange 安裝資料夾\>\\Exchange Server\\Script 資料夾執行 ExchUcUtil.ps1 指令碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>ExchUcUtil.ps1 指令碼可為 Lync 整合建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">停用 UM IP 閘道器上的撥出電話</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > ExchUcUtil.ps1 指令碼可為 Lync 整合建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">停用 UM IP 閘道器上的撥出電話</a>。
 
 
 8.  從 Lync 伺服器上的 %CommonProgramFiles%\\Microsoft Lync Server 2013\\Support 資料夾執行 **OcsUmUtil.exe**。
@@ -145,36 +135,17 @@ For more information
 
 1.  建立一或多個整合通訊 SIP URI 撥號對應表，各對應至相對應的 Lync 伺服器位置設定檔。您必須為每個 Exchange UM 撥號對應表各建立一個 Enterprise Voice 位置設定檔。您可以使用 **Get-UMDialPlan** Cmdlet 來取得 SIP URI 撥號對應表的 FQDN。如需如何建立 SIP URI 撥號對應表的詳細資訊，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已經整合了 Exchange UM 與 Lync 伺服器，可能會發現不必在 Exchange UM 中設定撥號規則或撥號規則群組。Lync 伺服器的設計是要為您組織中的使用者執行電話轉接和號碼轉譯，若是由整合通訊代替使用者打電話，也會執行此動作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您已經整合了 Exchange UM 與 Lync 伺服器，可能會發現不必在 Exchange UM 中設定撥號規則或撥號規則群組。Lync 伺服器的設計是要為您組織中的使用者執行電話轉接和號碼轉譯，若是由整合通訊代替使用者打電話，也會執行此動作。
 
 
 2.  在用戶端存取和信箱伺服器上安裝私人或公開 CA 所簽署的有效憑證。這個憑證與 Lync 伺服器所使用的 CA 相同。
 
 3.  藉由將 SIP URI 撥號對應表設定為 \[SIP 安全\] 或 \[安全\]，對 Voice over IP (VoIP) 流量進行加密。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您將安全性設定設定為 [SIP 安全]，以要求僅 SIP 流量加密，當前端集區設定為需要加密 (表示 SIP 和 RTP 流量的集區都需要加密) 時，此撥號對應表上的設定將不足。當撥號對應表和集區安全性設定不相容時，所有從前端集區撥號給 Exchange UM 的來電都將失敗，導致出現一個您有「不相容安全性設定」的錯誤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 如果您將安全性設定設定為 [SIP 安全]，以要求僅 SIP 流量加密，當前端集區設定為需要加密 (表示 SIP 和 RTP 流量的集區都需要加密) 時，此撥號對應表上的設定將不足。當撥號對應表和集區安全性設定不相容時，所有從前端集區撥號給 Exchange UM 的來電都將失敗，導致出現一個您有「不相容安全性設定」的錯誤。
+
     
     雖然 UM 撥號對應表可設定為 \[SIP 安全\] 或 \[安全\]，但建議您將撥號對應表設定為 \[安全\]，讓 Lync Phone Edition 裝置可以正確運作。由於 Lync 伺服器中設定了預設的加密等級設定，所以建議您這麼做。只有在依照下表所示內容設定加密設定後，Lync Phone Edition 裝置才能運作。此表格會顯示 Lync 伺服器與 UM 撥號對應表之間加密設定的關係。
     
@@ -217,18 +188,8 @@ For more information
 
 7.  當您啟用使用者的語音郵件時，請為使用 Enterprise Voice 的使用者建立一個 SIP 位址。大部分情況下，此 SIP 位址與使用者啟用 Enterprise Voice 時所用的 SIP 位址一樣。如需詳細資訊，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>與 SIP URI 撥號對應表相關聯的使用者無法接收傳入的傳真。這是因為內送的語音和傳真呼叫會透過中繼伺服器來路由傳送，而在使用中繼伺服器時，不支援傳真功能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 與 SIP URI 撥號對應表相關聯的使用者無法接收傳入的傳真。這是因為內送的語音和傳真呼叫會透過中繼伺服器來路由傳送，而在使用中繼伺服器時，不支援傳真功能。
 
 
 8.  開啟 Exchange 管理命令介面，並執行位在 %Program Files%\\Microsoft\\Exchange Server\\V15\\Scripts 資料夾中的 exchucutil.ps1 指令碼。exchucutil.ps1 指令碼可執行下列作業：
@@ -255,18 +216,8 @@ For more information
 
   - 執行 **ocsumutil.exe**，以建立 Outlook Voice Access 和自動語音應答的連絡人物件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>安裝 Lync 伺服器時，<strong>msRTC-SIPLine</strong> 屬性會新增至 Active Directory。如果您尚未在環境中安裝 Lync 伺服器，則不會將此屬性新增至 Active Directory，同時，除非針對未啟用 UM 的使用者設定整合通訊 Proxy 位址，否則單一樹系和跨樹系情況中，跨撥號對應表的來電者識別碼名稱解析將無法正確運作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 安裝 Lync 伺服器時，<strong>msRTC-SIPLine</strong> 屬性會新增至 Active Directory。如果您尚未在環境中安裝 Lync 伺服器，則不會將此屬性新增至 Active Directory，同時，除非針對未啟用 UM 的使用者設定整合通訊 Proxy 位址，否則單一樹系和跨樹系情況中，跨撥號對應表的來電者識別碼名稱解析將無法正確運作。
 
 
 設定好 Lync 伺服器和整合通訊伺服器之後，您必須讓使用者能夠使用 Lync 伺服器，以及將 Lync 伺服器安裝在使用者的用戶端電腦上。

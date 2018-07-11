@@ -19,25 +19,12 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本主題討論 Microsoft Exchange Server 2013 中已移除、終止或取代的元件或功能。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可能對下列主題感興趣：
-<ul>
-<li><p><a href="what-s-new-in-exchange-2013-exchange-2013-help.md">Exchange 2013 的新功能</a>  Exchange Server 2013 中的全新特點與功能資訊。</p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=267479">Exchange 2013 的開發人員藍圖</a>   請參閱 「 開發技術自 Exchange 中移除？Exchange 2013中已終止的 API 與開發功能的相關資訊 」 一節。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您也可能對下列主題感興趣：
+> <ul>
+> <li><p><a href="what-s-new-in-exchange-2013-exchange-2013-help.md">Exchange 2013 的新功能</a>  Exchange Server 2013 中的全新特點與功能資訊。</p></li>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=267479">Exchange 2013 的開發人員藍圖</a>   請參閱 「 開發技術自 Exchange 中移除？Exchange 2013中已終止的 API 與開發功能的相關資訊 」 一節。</p></li>
+> </ul>
 
 
 ## Exchange 2010 到 Exchange 2013 已終止的功能

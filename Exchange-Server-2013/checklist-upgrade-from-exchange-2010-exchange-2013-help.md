@@ -95,19 +95,9 @@ _**上次修改主題的時間：** 2015-04-07_
 <tr class="odd">
 <td><p></p></td>
 <td><p>8. 設定 Exchange 相關虛擬目錄</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要使用 Exchange Web 服務、Outlook 無所不在或離線通訊錄，就需要執行此步驟。如果您需要變更 Exchange 控制台、Microsoft Office Outlook Web App 或 Exchange ActiveSync 的任何預設設定，也可能需要此步驟。<br />
-</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您要使用 Exchange Web 服務、Outlook 無所不在或離線通訊錄，就需要執行此步驟。如果您需要變更 Exchange 控制台、Microsoft Office Outlook Web App 或 Exchange ActiveSync 的任何預設設定，也可能需要此步驟。<br />
+> 
 
 </td>
 <td><p><a href="exchange-2013-client-access-server-configuration-exchange-2013-help.md">Exchange 2013 用戶端存取伺服器組態</a></p></td>

@@ -60,18 +60,8 @@ _**上次修改主題的時間：** 2016-03-18_
 
 2.  按一下 \[會出現在 \[**新增**\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")圖示旁邊的箭號並選取**新的自訂原則**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您按一下 [<strong>新增</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" />圖示，而不是箭號，您會建立以範本為基礎的新原則。如需使用範本的詳細資訊，請參閱<a href="how-to-new-dlp-data-loss-prevention-policy-template.md">從範本建立 DLP 原則</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您按一下 [<strong>新增</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" />圖示，而不是箭號，您會建立以範本為基礎的新原則。如需使用範本的詳細資訊，請參閱<a href="how-to-new-dlp-data-loss-prevention-policy-template.md">從範本建立 DLP 原則</a>。
 
 
 3.  在 \[**新的自訂原則**\] 頁面上完成下列欄位：

@@ -151,19 +151,9 @@ MAPI over HTTP 可為支援它的用戶端提供下列優點：
 
 2.  將 Client Access Server 和信箱伺服器升級至 Exchange 2013 SP1。如需如何升級的相關資訊，請參閱[將 Exchange 2013 升級至最新的累計或服務套件](upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所有 Client Access Server 都必須升級至 Exchange 2013 SP1，才能啟用 MAPI over HTTP。否則，Outlook 將無法連接到信箱。<br />
-    若未能升級資料庫可用性群組 (DAG) 中的所有信箱伺服器，可能會導致電子郵件延遲，並致使用戶端在資料庫進行容錯移轉時必須重新啟動 Outlook。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 所有 Client Access Server 都必須升級至 Exchange 2013 SP1，才能啟用 MAPI over HTTP。否則，Outlook 將無法連接到信箱。<br />
+    > 若未能升級資料庫可用性群組 (DAG) 中的所有信箱伺服器，可能會導致電子郵件延遲，並致使用戶端在資料庫進行容錯移轉時必須重新啟動 Outlook。
 
 
 3.  在所有 Exchange 2013 伺服器上，您必須安裝 Microsoft.NET Framework 4.5.2。如需詳細資訊，請參閱 [安裝 .NET Framework 4.5](https://go.microsoft.com/fwlink/p/?linkid=518380)。

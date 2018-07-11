@@ -741,19 +741,9 @@ Exchange 2007 的支援已於 2017 年 4 月 11 日結束 (根據 [Microsoft 週
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您將 Exchange 從不受支援的 CU 升級至目前的 CU，且沒有中繼 CU 可供使用，則您應先升級至受 Exchange 支援的最新版 .NET，然後立即升級至目前的 CU。這個方法仍需將 Exchange 伺服器維持在最新版本以及最新支援的 CU。<br />
-Microsoft 未主張使用此方法升級即不會失敗，您仍可能需要連絡 Microsoft 支援服務。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 當您將 Exchange 從不受支援的 CU 升級至目前的 CU，且沒有中繼 CU 可供使用，則您應先升級至受 Exchange 支援的最新版 .NET，然後立即升級至目前的 CU。這個方法仍需將 Exchange 伺服器維持在最新版本以及最新支援的 CU。<br />
+> Microsoft 未主張使用此方法升級即不會失敗，您仍可能需要連絡 Microsoft 支援服務。
 
 
 

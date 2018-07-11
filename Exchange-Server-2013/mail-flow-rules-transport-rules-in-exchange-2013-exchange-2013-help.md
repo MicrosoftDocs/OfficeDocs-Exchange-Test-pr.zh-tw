@@ -271,20 +271,10 @@ _**上次修改主題的時間：** 2017-04-28_
     
     在混合環境中有無複寫的內部Exchange組織與UNRESOLVED\_TOKEN\_VAL(Office365)之間的規則。因此，當您在Exchange建立規則，您需要在UNRESOLVED\_TOKEN\_VAL(Office365)中建立對應的規則。UNRESOLVED\_TOKEN\_VAL(Office365)中建立的規則會儲存在雲端，而您在內部部署組織中建立規則會儲存在本機上在Active Directory。當您管理在混合環境中的規則時，您需要進行同步處理的這兩個上的芳鄰\] 中所做的變更或一個環境中所做的變更與然後匯出規則及匯入他們在其他環境中的規則兩組。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>即使沒有明顯的重疊的條件和UNRESOLVED_TOKEN_VAL(Office365)和Exchange Server中可用的動作，有差異。如果您打算在兩個位置中建立的相同規則，請確定所有條件和動作您打算使用都所提供。若可用條件和動作UNRESOLVED_TOKEN_VAL(Office365)中可用的清單，請參閱下列主題：<br />
-    <a href="https://technet.microsoft.com/zh-tw/library/jj919235(v=exchg.150)">Exchange Online 中的郵件流程規則條件和例外狀況 (predicates)</a><br />
-    <a href="https://technet.microsoft.com/zh-tw/library/jj919237(v=exchg.150)">郵件流程規則動作在 Exchange Online</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 即使沒有明顯的重疊的條件和UNRESOLVED_TOKEN_VAL(Office365)和Exchange Server中可用的動作，有差異。如果您打算在兩個位置中建立的相同規則，請確定所有條件和動作您打算使用都所提供。若可用條件和動作UNRESOLVED_TOKEN_VAL(Office365)中可用的清單，請參閱下列主題：<br />
+    > <a href="https://technet.microsoft.com/zh-tw/library/jj919235(v=exchg.150)">Exchange Online 中的郵件流程規則條件和例外狀況 (predicates)</a><br />
+    > <a href="https://technet.microsoft.com/zh-tw/library/jj919237(v=exchg.150)">郵件流程規則動作在 Exchange Online</a>
 
 
   - **Exchange 2010或Exchange 2007與共存**

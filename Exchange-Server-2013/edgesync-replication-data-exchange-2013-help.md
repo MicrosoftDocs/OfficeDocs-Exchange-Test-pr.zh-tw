@@ -111,18 +111,8 @@ Exchange 2013 會延伸 Active Directory 和 AD LDS 兩種架構，以提供 **
 
   - **安全寄件者清單、封鎖的寄件者清單及安全收件者清單**   在每個收件者的 Outlook 執行個體中定義的安全寄件者清單、封鎖的寄件者清單及安全收件者清單，都會彙總並複寫到 AD LDS。這些設定儲存在收件者信箱所在的信箱資料庫中。Outlook 使用者安全清單集合結合了使用者的安全寄件者清單、安全收件者清單、封鎖的寄件者清單及外部連絡人的資料。讓 AD LDS 中有可用的安全清單集合資料，Edge Transport Server 就能適當挑選寄件者，減少篩選郵件時產生的額外負荷。此資訊會以雜湊資料的方式傳送。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然安全收件者資料儲存在 Outlook 中，而且可在 Edge Transport Server 上彙總成 AD LDS 執行個體的安全清單集合，但是內容篩選功能不會處理安全收件者資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 雖然安全收件者資料儲存在 Outlook 中，而且可在 Edge Transport Server 上彙總成 AD LDS 執行個體的安全清單集合，但是內容篩選功能不會處理安全收件者資料。
 
 
   - **每位收件者反垃圾郵件設定**   您可以使用 **Set-Mailbox** Cmdlet，指派每位收件者的反垃圾郵件閾值設定，它們不同於全組織適用的反垃圾郵件設定。如果您設定每位收件者的反垃圾郵件設定，這些設定會覆寫全組織適用的設定。將這些設定複寫到 AD LDS，就可以在將郵件轉送到 Exchange 組織之前，先考慮每位收件者的設定。此資訊會以雜湊資料的方式傳送。

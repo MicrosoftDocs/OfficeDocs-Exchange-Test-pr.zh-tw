@@ -52,18 +52,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  在 \[ **UM 信箱原則**\] 頁面上 \>**一般**、 的**協力廠商傳真伺服器 URI** \] 方塊中，輸入 TCP 或 TLS URI。例如： *sip:faxserver1.contoso.com:5060;transport=tcp*或*sip:faxserver2.contoso.com:5061;transport=tls*
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然方塊可以包含多個傳真伺服器 URI，會使用僅需一個。如果您輸入兩個 Uri，將會使用的第一個。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 雖然方塊可以包含多個傳真伺服器 URI，會使用僅需一個。如果您輸入兩個 Uri，將會使用的第一個。
 
 
 4.  按一下 **\[儲存\]** 以儲存變更。

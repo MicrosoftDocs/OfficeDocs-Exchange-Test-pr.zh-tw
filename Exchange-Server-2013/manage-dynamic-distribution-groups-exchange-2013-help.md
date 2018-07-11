@@ -57,18 +57,8 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - \* **顯示名稱**  使用此方塊可輸入顯示名稱。此名稱會出現在共用的通訊錄，在 \[收件者： 電子郵件傳送到此群組中，並在 EAC 中的 \[群組\] 清單時的直線。顯示名稱為必要與讓人員辨識功能應易記。它也必須是唯一的樹系中。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>群組命名原則不應套用於動態通訊群組。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 群組命名原則不應套用於動態通訊群組。
     
       - \* **別名**  使用此方塊可輸入群組名稱的別名。別名不可超過 64 個字元和必須是唯一的樹系中。當使用者輸入中 \[收件者的別名： 行的電子郵件訊息，則解析為群組的顯示名稱。
     
@@ -136,36 +126,16 @@ _**上次修改主題的時間：** 2015-03-09_
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您輸入所選屬性的值必須完全符合這些會出現在 [收件者的屬性。例如，如果您輸入<strong>華盛頓州或省</strong>，但收件者屬性的值是<strong>WA</strong>，則不符合條件。此外，您指定的文字型值不區分大小寫。例如，如果您指定<strong>Contoso公司</strong>屬性，將傳送訊息到收件者如果這個值是<strong>contoso</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您輸入所選屬性的值必須完全符合這些會出現在 [收件者的屬性。例如，如果您輸入<strong>華盛頓州或省</strong>，但收件者屬性的值是<strong>WA</strong>，則不符合條件。此外，您指定的文字型值不區分大小寫。例如，如果您指定<strong>Contoso公司</strong>屬性，將傳送訊息到收件者如果這個值是<strong>contoso</strong>。
 
 
 6.  在 \[**指定單字或片語**\] 視窗中，輸入 \[文字\] 方塊中的值。按一下 \[**新增**\] 及 \[**確定\]**。
 
 7.  若要新增另一個定義成員資格的規則，在您之前建立的規則下方按一下 \[新增規則\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您要新增多個規則可以定義成員資格，收件者必須符合以接收郵件傳送至群組的每個規則的條件。換句話說，每個規則已連接到布林運算子<strong>與</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 若您要新增多個規則可以定義成員資格，收件者必須符合以接收郵件傳送至群組的每個規則的條件。換句話說，每個規則已連接到布林運算子<strong>與</strong>。
 
 
 8.  當您完成後，按一下 \[儲存\] 以建立動態通訊群組。
@@ -265,18 +235,8 @@ _**上次修改主題的時間：** 2015-03-09_
     
     若要移除清單中的人員或群組，請從清單中選取他們，然後按一下 \[移除\]![\[移除\] 圖示](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "[移除] 圖示")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已設定群組只允許您組織中的寄件者傳送郵件給群組，即使外部連絡人列於此清單中，他們所傳送的電子郵件也會遭到拒絕。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您已設定群組只允許您組織中的寄件者傳送郵件給群組，即使外部連絡人列於此清單中，他們所傳送的電子郵件也會遭到拒絕。
 
 
 ## \[訊息核准\]
@@ -305,49 +265,19 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - \[SMTP\]  這是預設的位址類型。按一下此按鈕，然後在 \[\* 電子郵件地址\] 方塊中輸入新的 SMTP 位址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要讓新的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 若要讓新的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。
     
       - \[自訂位址類型\]   按一下此按鈕，並在 \[\* 電子郵件地址\] 方塊中，輸入其中一種支援的非 SMTP 電子郵件地址類型。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。您必須確保指定的自訂位址符合該位址類型的格式需求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。您必須確保指定的自訂位址符合該位址類型的格式需求。
 
 
   - \[編輯\]   若要變更與群組相關的電子郵件地址，先從清單中選擇然後按一下 \[編輯\]![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要讓現有的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要讓現有的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。
 
 
   - \[移除\]   若要刪除與群組相關的電子郵件地址，先從清單中選擇然後按一下 \[移除\]![\[移除\] 圖示](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "[移除] 圖示")。

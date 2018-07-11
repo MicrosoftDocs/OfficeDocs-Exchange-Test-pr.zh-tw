@@ -21,24 +21,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 共用的信箱方便來監視及傳送電子郵件的常見的帳戶，例如 info@contoso.com 或 support@contoso.com 公司群組。當群組中的人員回覆郵件傳送至共用信箱時、 電子郵件看起來所共用信箱傳送不是從個別使用者。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用 Office 365 企業版，您應該在 Office 365 系統管理中心建立共用的信箱。
-<ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=834766">建立 Office 365 中的共用的信箱</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您使用 Office 365 企業版，您應該在 Office 365 系統管理中心建立共用的信箱。
+> <ul>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=834766">建立 Office 365 中的共用的信箱</a></p></li>
+> </ul>
 
 
 如果貴組織使用 Exchange 混合式環境，您應該使用內部部署 Exchange 系統管理中心 (EAC) 來建立及管理共用的信箱。若要深入了解共用信箱，請參閱[共用信箱](shared-mailboxes-exchange-2013-help.md)。
@@ -57,18 +44,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  若要授與 \[完整存取\] 或 \[以下列傳送\] 權限，請按一下 \[新增\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")，然後選取要對其授與權限的使用者。您可以使用 **CTRL** 鍵選取多位使用者。搞不清楚要使用何種權限嗎？請參閱本主題稍後的Which permission should you use?。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>[完整存取] 權限可讓使用者開啟信箱，以及在信箱中建立與修改項目。[以下列傳送 ] 權限可讓任何人 (信箱擁有者除外) 從該共用信箱傳送電子郵件。這兩者是成功共用信箱作業的必要權限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > [完整存取] 權限可讓使用者開啟信箱，以及在信箱中建立與修改項目。[以下列傳送 ] 權限可讓任何人 (信箱擁有者除外) 從該共用信箱傳送電子郵件。這兩者是成功共用信箱作業的必要權限。
 
 
 4.  按一下 \[儲存\] 儲存您的變更，並建立共用信箱。
@@ -81,18 +58,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  若要授與或移除 \[完整存取\] 或 \[以下列傳送\] 權限，請按一下 \[新增\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示") 或 \[移除\]![\[移除\] 圖示](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "[移除] 圖示")，然後選取要對其授與權限的使用者。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>[完整存取] 權限可讓使用者開啟信箱，以及在信箱中建立與修改項目。[以下列傳送 ] 權限可讓任何人 (信箱擁有者除外) 從該共用信箱傳送電子郵件。這兩者是成功共用信箱作業的必要權限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > [完整存取] 權限可讓使用者開啟信箱，以及在信箱中建立與修改項目。[以下列傳送 ] 權限可讓任何人 (信箱擁有者除外) 從該共用信箱傳送電子郵件。這兩者是成功共用信箱作業的必要權限。
 
 
 4.  按一下 **\[儲存\]** 以儲存變更。

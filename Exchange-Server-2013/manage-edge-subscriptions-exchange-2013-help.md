@@ -124,18 +124,8 @@ Verify EdgeSync results
 
   - ESRA 認證遭到洩漏。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要重新訂閱 Edge Transport Server，請在 Edge Transport Server 上匯出新的 Edge 訂閱檔案，然後在信箱伺服器上匯入 XML 檔案。您必須將 Edge Transport Server 重新訂閱至原本訂閱的同一個 Active Directory 站台。您不需要先移除原始 Edge 訂閱；重新訂閱程序會覆寫現有的 Edge 訂閱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 若要重新訂閱 Edge Transport Server，請在 Edge Transport Server 上匯出新的 Edge 訂閱檔案，然後在信箱伺服器上匯入 XML 檔案。您必須將 Edge Transport Server 重新訂閱至原本訂閱的同一個 Active Directory 站台。您不需要先移除原始 Edge 訂閱；重新訂閱程序會覆寫現有的 Edge 訂閱。
 
 
 ## 新增或移除信箱伺服器

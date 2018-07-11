@@ -38,35 +38,15 @@ _**上次修改主題的時間：** 2014-06-16_
 
 1.  確認要移動的資料庫是處於正常關閉狀態。如果資料庫未處於正常關機狀態，請執行軟復原。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>執行軟復原時，資料庫會認可任何未認可的記錄檔。如果沒有所有必要的記錄檔，您無法完成軟復原程序。繼續進行步驟 2。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 執行軟復原時，資料庫會認可任何未認可的記錄檔。如果沒有所有必要的記錄檔，您無法完成軟復原程序。繼續進行步驟 2。
     
     若要資料庫認可所有未認可的記錄檔，請從命令提示字元執行下列命令。
     
         ESEUTIL /R <Enn>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>&lt;E<em>nn</em>&gt; 指定想要在其中重新顯示記錄檔之資料庫的記錄檔前置詞。&lt;E<em>nn</em>&gt; 指定的記錄檔前置詞是 Eseutil /r 的必要參數。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > &lt;E<em>nn</em>&gt; 指定想要在其中重新顯示記錄檔之資料庫的記錄檔前置詞。&lt;E<em>nn</em>&gt; 指定的記錄檔前置詞是 Eseutil /r 的必要參數。
 
 
 2.  使用下列語法在伺服器上建立資料庫：

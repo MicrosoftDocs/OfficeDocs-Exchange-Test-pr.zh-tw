@@ -104,18 +104,8 @@ Exchange Server 2013可讓您設定自動資料中心容錯移轉資料庫可用
 
 4.  針對想要新增任何其他 DNS 伺服器重複步驟 1 到 3。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>循環配置資源易中不使用您註冊的 DNS 伺服器。Azure 的 Vm 將會使用所列的第一個 DNS 伺服器並無法使用第一個時只會使用任何其他伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 循環配置資源易中不使用您註冊的 DNS 伺服器。Azure 的 Vm 將會使用所列的第一個 DNS 伺服器並無法使用第一個時只會使用任何其他伺服器。
 
 
 5.  重複步驟 1 至 3 新增您要用於您將 Microsoft Azure 部署網域控制站的 IP 位址。
@@ -148,18 +138,8 @@ Exchange Server 2013可讓您設定自動資料中心容錯移轉資料庫可用
 
 5.  選取 \[**以網站連線設定網站 VPN**核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請勿選取<strong>使用 ExpressRoute</strong>因為如此可防止多個網站 VPN 設定所需的必要設定變更。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請勿選取<strong>使用 ExpressRoute</strong>因為如此可防止多個網站 VPN 設定所需的必要設定變更。
 
 
 6.  底下的 \[**區域網路**中，選取一個或兩個您所設定的內部網路。
@@ -318,18 +298,8 @@ Microsoft Azure 提供支援的 VPN 裝置 VPN 裝置組態指令碼。按一下
         
         Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>慣用的 IP 位址的 VM 會嘗試使用該位址。不過，如果該位址已指派給不同的虛擬機器，也不會啟動喜好的 IP 位址設定虛擬機器。若要避免此情況下，請確定您使用 IP 位址不指派給其他虛擬機器。請參閱<a href="http://msdn.microsoft.com/library/azure/dn630228.aspx">Configure VM 靜態內部 IP 位址</a>的詳細資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 慣用的 IP 位址的 VM 會嘗試使用該位址。不過，如果該位址已指派給不同的虛擬機器，也不會啟動喜好的 IP 位址設定虛擬機器。若要避免此情況下，請確定您使用 IP 位址不指派給其他虛擬機器。請參閱<a href="http://msdn.microsoft.com/library/azure/dn630228.aspx">Configure VM 靜態內部 IP 位址</a>的詳細資訊。
 
 
 3.  佈建網域控制站上使用標準貴組織所使用的 Azure 虛擬機器。

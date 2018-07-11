@@ -77,19 +77,9 @@ HTML 中可以顯示 DSN 郵件，因為您可以內嵌 HTML 格式中的 DSN �
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，Exchange 會傳送 HTML DSN 郵件，但您可以設定是否 Exchange 會將 HTML DSN 郵件傳送給內部寄件者、 外部寄件者，或兩者。若要設定此表現方式，修改<em>InternalDsnSendHtml</em>參數和<em>ExternalDsnSendHtml</em>參數搭配<strong>Set-TransportService</strong>命令。<br />
-如果<em>InternalDsnSendHtml</em>參數設為<code>$false</code>，Exchange 會隱藏內部的寄件者的 DSN 訊息中的 HTML 標籤。如果<em>ExternalDsnSendHtml</em>參數設為<code>$false</code>，Exchange 會隱藏在傳送給外部寄件者的 DSN 郵件的 HTML 標籤。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 根據預設，Exchange 會傳送 HTML DSN 郵件，但您可以設定是否 Exchange 會將 HTML DSN 郵件傳送給內部寄件者、 外部寄件者，或兩者。若要設定此表現方式，修改<em>InternalDsnSendHtml</em>參數和<em>ExternalDsnSendHtml</em>參數搭配<strong>Set-TransportService</strong>命令。<br />
+> 如果<em>InternalDsnSendHtml</em>參數設為<code>$false</code>，Exchange 會隱藏內部的寄件者的 DSN 訊息中的 HTML 標籤。如果<em>ExternalDsnSendHtml</em>參數設為<code>$false</code>，Exchange 會隱藏在傳送給外部寄件者的 DSN 郵件的 HTML 標籤。
 
 
 下列 Exchange 在 DSN 郵件文字中使用的字元，具有特別意義︰

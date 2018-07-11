@@ -57,18 +57,8 @@ _**上次修改主題的時間：** 2013-02-22_
     
     匯出的檔案會命名為 um\_cdr\_*YYYY-MM-DD*.csv、 *YYYY-MM-DD*所在年、 月和日上次執行報表。如需詳細資訊，請參閱[解譯語音信箱通話記錄](interpret-voice-mail-call-records-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在報告頁面上，您可以下載 Microsoft Excel 範本，用於匯入特定日期的 .csv 檔案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在報告頁面上，您可以下載 Microsoft Excel 範本，用於匯入特定日期的 .csv 檔案。
 
 
 回到頁首

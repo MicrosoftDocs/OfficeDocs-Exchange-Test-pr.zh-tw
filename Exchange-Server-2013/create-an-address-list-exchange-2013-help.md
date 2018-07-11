@@ -48,18 +48,8 @@ _**上次修改主題的時間：** 2012-10-12_
 
 3.  根據預設，Exchange 會建立包含您組織中的所有成員的通訊清單。若要建立唯一的自訂地址清單中，按一下 \[**新增規則**\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您不新增規則，則會建立某一個預設通訊清單的副本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您不新增規則，則會建立某一個預設通訊清單的副本。
 
 
 4.  在清單中選取篩選選項 (例如 \[自訂屬性 1\])。

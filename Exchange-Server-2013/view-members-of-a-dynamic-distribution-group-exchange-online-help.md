@@ -39,10 +39,12 @@ _**上次修改主題的時間：** 2018-03-02_
 ## 使用命令介面預覽動態通訊群組的成員清單
 
 此範例會傳回名為全職員工的動態通訊群組的成員的清單。第一個命令會動態通訊群組物件儲存在變數`$FTE`。第二個命令會使用**Get-Recipient**指令程式列出符合準則動態通訊群組所定義的收件者。
-
-    $FTE = Get-DynamicDistributionGroup "Full Time Employees"
-
-    Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
+  $FTE = Get-DynamicDistributionGroup "Full Time Employees"
+  ```
+  ```
+  Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
 
 如需詳細的語法及參數資訊，請參閱 [Get-DynamicDistributionGroup](https://technet.microsoft.com/zh-tw/library/bb124762\(v=exchg.150\)) 與 [Get-Recipient](https://technet.microsoft.com/zh-tw/library/aa996921\(v=exchg.150\))。
 

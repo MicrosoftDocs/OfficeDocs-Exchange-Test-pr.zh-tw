@@ -89,50 +89,20 @@ _**上次修改主題的時間：** 2017-07-26_
 
 6.  在 \[選取公認的網域\] 中，從清單中選取主要的共用網域，接著按一下 \[確定\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您所選取的網域將會用來設定同盟信任的 OrgID。如需 OrgID 的詳細資訊，請參閱<a href="federation-exchange-2013-help.md">同盟</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您所選取的網域將會用來設定同盟信任的 OrgID。如需 OrgID 的詳細資訊，請參閱<a href="federation-exchange-2013-help.md">同盟</a>。
 
 
 7.  記下 \[產生主要的共用網域同盟的網域證明。您將使用此字串公用 DNS 伺服器上建立 TXT 記錄。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>同盟的網域證明為英數字元的字串。若要避免輸入的錯誤，建議您將字串複製從 EAC 中，並將它貼到 [記事本] 之類的文字編輯器。您可以再文字編輯器中將它複製到剪貼簿，然後貼到<strong>文字</strong>欄位建立 TXT 記錄時。如果使用建立 TXT 記錄不正確的同盟網域證明字串、 Azure AD驗證系統將不能夠確認證明網域擁有權和您不可以將它新增至同盟的組織識別碼。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 同盟的網域證明為英數字元的字串。若要避免輸入的錯誤，建議您將字串複製從 EAC 中，並將它貼到 [記事本] 之類的文字編輯器。您可以再文字編輯器中將它複製到剪貼簿，然後貼到<strong>文字</strong>欄位建立 TXT 記錄時。如果使用建立 TXT 記錄不正確的同盟網域證明字串、 Azure AD驗證系統將不能夠確認證明網域擁有權和您不可以將它新增至同盟的組織識別碼。
 
 
 8.  在 \[**步驟 2**中，按一下 \[**新增**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")將其他的網域新增至將會需要同盟共用功能的使用者在組織中所使用的電子郵件地址的同盟信任\]。例如，如果您有使用例如 sales.contoso.com 其電子郵件地址中的子網域的使用者，您將 sales.contoso.com 將網域新增至同盟信任。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>其他每個選取的網域都會建立同盟網域證明字串。您必須在其他每個網域的公用 DNS 上建立不同的 TXT 記錄。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 其他每個選取的網域都會建立同盟網域證明字串。您必須在其他每個網域的公用 DNS 上建立不同的 TXT 記錄。
 
 
 9.  使用為每個網域建立的同盟網域證明字串，為您公用 DNS 伺服器上這些網域中每一個建立 TXT 記錄。視您的公用 DNS 主機的更新排程而定，DNS 變更的複寫可能需要 15 分鐘或更長的時間。

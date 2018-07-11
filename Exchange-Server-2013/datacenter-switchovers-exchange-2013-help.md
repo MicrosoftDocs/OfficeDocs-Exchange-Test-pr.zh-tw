@@ -25,18 +25,8 @@ _**上次修改主題的時間：** 2016-03-17_
 
 1.  **終止部份執行的資料中心**   此步驟包括終止主要資料中心的 Exchange 服務 (如果有任何服務仍在執行)。這對於 Mailbox server role 來說特別重要，因爲它會使用主動/被動高可用性模型。如果不停止部份失敗的資料中心中的服務，則轉換回主要資料中心時，部份失敗的資料中心的問題可能會對這些服務產生不良影響。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果網路或 Active Directory 基礎結構的可靠性已因主要資料中心失敗而遭到破壞，則建議關閉所有通訊服務，直到這些相依性都還原為狀況良好的服務為止。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果網路或 Active Directory 基礎結構的可靠性已因主要資料中心失敗而遭到破壞，則建議關閉所有通訊服務，直到這些相依性都還原為狀況良好的服務為止。
 
 
 2.  **驗證並確認次要資料中心的必要條件**   此步驟可與步驟 1 同時執行，因爲驗證次要資料中心的基礎結構相依性健康狀況，與第一個資料中心服務並無直接關係。每個組織通常都需要以自己的方法執行這個步驟。例如，您可以決定透過檢視監控應用程式之基礎結構所收集和篩選的健康狀況資訊來完成此步驟，或是使用組織基礎結構的獨有工具來完成此步驟。這是重要步驟，因為在次要資料中心的基礎結構狀況不良且不穩定時加以啟用，可能會產生不良結果。
@@ -213,18 +203,8 @@ DNS 更新會啟用內送流量，而啟動站台 (含有操作中的 Edge Trans
 
 2.  當主要資料中心的 Mailbox Server 合併到 DAG 之後，這些 Mailbox Server 需要一些時間才能同步處理其資料庫副本。視失敗的性質、中斷的長度及管理員在中斷期間採取的動作而定，可能需要重新植入資料庫副本。例如，如果您在中斷期間，從失敗的主要資料中心移除資料庫副本，讓次要資料中心的剩餘主動副本發生記錄檔截斷，則需要重新植入。每個資料庫都能夠個別從這個點繼續下去。如果主要資料中心的複寫資料庫副本狀況良好，就可以繼續進行下一個步驟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此處理程序不需要同時移動所有資料庫。雖然您應該同時移動組織的大多數資料庫，但是如果主要資料中心的資料庫副本產生問題，有些資料庫就可能存留在次要資料中心。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此處理程序不需要同時移動所有資料庫。雖然您應該同時移動組織的大多數資料庫，但是如果主要資料中心的資料庫副本產生問題，有些資料庫就可能存留在次要資料中心。
 
 
 3.  如果主要資料中心的大多數資料庫狀況良好，就可以排定容錯回復中斷。達到排定的時間時，必須採取下列步驟：
@@ -235,18 +215,8 @@ DNS 更新會啟用內送流量，而啟動站台 (含有操作中的 Edge Trans
     
     3.  卸載資料庫之後，Client Access Server URL 就應該從次要資料中心移到主要資料中心。變更 DNS 記錄，讓 URL 指向主要資料中心的 Client Access Server 或陣列，即可完成此動作。這樣會導致系統行為就像每個移動的資料庫都發生資料庫容錯移轉一樣。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除非 Client Access Server URL 已移動，且 DNS TTL 及快取項目都已過期，否則請勿繼續進行下一個步驟。如果在 Client Access Server URL 移到主要資料中心之前，就啟動主要資料中心的資料庫，則會導致組態無效 (例如，裝載伺服器在自己的 Active Directory 站台中沒有 Client Access Server)。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 除非 Client Access Server URL 已移動，且 DNS TTL 及快取項目都已過期，否則請勿繼續進行下一個步驟。如果在 Client Access Server URL 移到主要資料中心之前，就啟動主要資料中心的資料庫，則會導致組態無效 (例如，裝載伺服器在自己的 Active Directory 站台中沒有 Client Access Server)。
     
     4.  因爲主要資料中心的每個資料庫都狀況良好，所以只要執行資料庫轉換，就可以在主要資料中心啟動這些資料庫。針對每個要啟動的資料庫使用 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/zh-tw/library/dd298068\(v=exchg.150\)) 指令程式，即可完成此動作。
     

@@ -62,18 +62,8 @@ _**上次修改主題的時間：** 2013-02-19_
     
     您可能會套用收件者原則，例如通訊記錄管理、 信箱配額及委派權限，根據您的組織規範遵守原則和需求。如需詳細資訊，請參閱[通訊記錄管理](messaging-records-management-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果隔離之郵件被拒絕因儲存配額，郵件將會遺失。Exchange 不產生 Ndr 的隔離郵件因為隔離的郵件會被包裝為 Ndr。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果隔離之郵件被拒絕因儲存配額，郵件將會遺失。Exchange 不產生 Ndr 的隔離郵件因為隔離的郵件會被包裝為 Ndr。
 
 
   - **設定 Outlook**  您需要設定以符合組織需求的 Outlook 委派存取權限。此外，我們建議您設定**訊息**檢視中顯示原始`Sender[#0x0069001E]`、 `Recipient[#0x0E04001E]`，以及`Bcc[#0x0E02001E]`欄位的 Outlook 設定檔。如需詳細資訊，請參閱[版本隔離的垃圾郵件隔離信箱的郵件](release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md)。

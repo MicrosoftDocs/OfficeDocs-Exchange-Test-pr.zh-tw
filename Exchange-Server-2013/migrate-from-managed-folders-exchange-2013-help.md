@@ -156,18 +156,8 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 4.  移除受管理的資料夾信箱原則，然後將保留原則套用至使用者信箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在您套用保留原則至使用者且受管理的資料夾助理員執行之後，使用者信箱中的受管理的資料夾會成為不受管理的資料夾。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在您套用保留原則至使用者且受管理的資料夾助理員執行之後，使用者信箱中的受管理的資料夾會成為不受管理的資料夾。
 
 
 對於以下程序，Contoso 信箱所套用的受管理資料夾信箱原則包含下列受管理的資料夾。
@@ -255,19 +245,9 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
   - **根據受管理的資料夾及其對應的受管理內容設定來建立保留標記：** 使用此方法時，您在 **New-RetentionPolicyTag** 指令程式中需要指定 *ManagedFolderToUpgrade* 參數。當您指定此參數時，對應的保留標記就會自動套用到受管理的資料夾。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您要移植的受管理資料夾具有多個受管理內容設定可用於不同的郵件類別，則只會建立一個保留標記；而無論受管理內容設定的郵件類別為何，都會將所有受管理內容設定的最長保留時間用作所移植標記的保留時間。<br />
-    例如，檢閱受管理資料夾 Corp-DeletedItems 的下列受管理內容設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 如果您要移植的受管理資料夾具有多個受管理內容設定可用於不同的郵件類別，則只會建立一個保留標記；而無論受管理內容設定的郵件類別為何，都會將所有受管理內容設定的最長保留時間用作所移植標記的保留時間。<br />
+    > 例如，檢閱受管理資料夾 Corp-DeletedItems 的下列受管理內容設定。
 
 
   - **手動指定保留設定來建立保留標記：** 使用此方法時，您在 **New-RetentionPolicyTag** 指令程式中不需要指定 *ManagedFolderToUpgrade* 參數。當您未指定此參數時，就會對預設資料夾套用新增到原則的任何保留原則標記，並對整個信箱套用預設原則標記。不過，新增到原則的任何個人標記不會自動套用到受管理的資料夾。

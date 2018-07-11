@@ -50,18 +50,8 @@ _**上次修改主題的時間：** 2014-08-27_
     
       - 在 \[**信箱**\] 頁面中修改的信箱搜尋。您可以搜尋所有信箱或選取要都搜尋的特定錯誤。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您無法使用<strong>搜尋所有信箱</strong>] 選項將所有信箱設為保留Exchange 2013 Mailbox server 上。若要建立就地保留，您必須選取<strong>指定信箱搜尋</strong>。如需詳細資訊，請參閱<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">建立或移除就地保留</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 您無法使用<strong>搜尋所有信箱</strong>] 選項將所有信箱設為保留Exchange 2013 Mailbox server 上。若要建立就地保留，您必須選取<strong>指定信箱搜尋</strong>。如需詳細資訊，請參閱<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">建立或移除就地保留</a>。
     
       - 在 \[**搜尋查詢**\] 頁面中修改下列欄位：
         
@@ -75,18 +65,8 @@ _**上次修改主題的時間：** 2014-08-27_
         
           - \[指定與項目收到日期相關的保留天數\] 使用這個選項將項目保留一段特定期間。例如，若您的組織要求所有郵件都必須至少保存七年時，即可使用此選項。您可使用「以時間為基礎」的就地保留和保留原則，以確保項目會在七年後受到刪除。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>當為法律目的進行信箱或項目的 In-Place Hold 保留時，一般建議無限期保留項目並於案件或調查完成時移除保留。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!IMPORTANT]  
+            > 當為法律目的進行信箱或項目的 In-Place Hold 保留時，一般建議無限期保留項目並於案件或調查完成時移除保留。
 
 
 4.  按一下 **\[儲存\]**。
@@ -105,28 +85,15 @@ _**上次修改主題的時間：** 2014-08-27_
 
   - 使用命令介面從**Get-MailboxSearch**指令程式檢查搜尋的屬性。如需如何檢查信箱搜尋的屬性的範例，請參閱[Get-MailboxSearch](https://technet.microsoft.com/zh-tw/library/dd351021\(v=exchg.150\))的 「 範例 」 一節。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用<strong>Get-MailboxSearch</strong>Exchange Online中擷取的 eDiscovery 搜尋的相關資訊，您必須指定搜尋以返回搜尋屬性 ； 的完整清單的名稱例如， <code>Get-MailboxSearch &quot;Contoso Legal Case&quot;</code>。如果您執行<strong>Get-MailboxSearch</strong>指令程式不使用任何參數時，不傳回下列屬性：
-<ul>
-<li><p>SourceMailboxes</p></li>
-<li><p>Sources</p></li>
-<li><p>SearchQuery</p></li>
-<li><p>ResultsLink</p></li>
-<li><p>PreviewResultsLink</p></li>
-<li><p>Errors</p></li>
-</ul>
-原因是它需要大量的資源以傳回組織中所有的 eDiscovery 搜尋這些屬性。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您使用<strong>Get-MailboxSearch</strong>Exchange Online中擷取的 eDiscovery 搜尋的相關資訊，您必須指定搜尋以返回搜尋屬性 ； 的完整清單的名稱例如， <code>Get-MailboxSearch &quot;Contoso Legal Case&quot;</code>。如果您執行<strong>Get-MailboxSearch</strong>指令程式不使用任何參數時，不傳回下列屬性：
+> <ul>
+> <li><p>SourceMailboxes</p></li>
+> <li><p>Sources</p></li>
+> <li><p>SearchQuery</p></li>
+> <li><p>ResultsLink</p></li>
+> <li><p>PreviewResultsLink</p></li>
+> <li><p>Errors</p></li>
+> </ul>
+> 原因是它需要大量的資源以傳回組織中所有的 eDiscovery 搜尋這些屬性。
 

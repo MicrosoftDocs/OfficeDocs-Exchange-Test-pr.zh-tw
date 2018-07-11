@@ -50,34 +50,14 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  在信箱內容頁面上，按一下 \[**電子郵件地址**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 [<strong>電子郵件地址</strong>] 頁面上的主要 SMTP 位址會顯示在粗體文字的地址清單中，在 [<strong>類型</strong>] 欄中的大寫<strong>SMTP</strong>值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 [<strong>電子郵件地址</strong>] 頁面上的主要 SMTP 位址會顯示在粗體文字的地址清單中，在 [<strong>類型</strong>] 欄中的大寫<strong>SMTP</strong>值。
 
 
 4.  按一下 \[**新增**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")，並再按一下 \[ **SMTP**新增至此信箱的 SMTP 電子郵件地址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>SMTP 是預設的電子郵件地址類型。您也可以新增到信箱 Exchange 整合通訊 (EUM) 地址或自訂的地址。如需詳細資訊，請參閱 「 變更使用者信箱內容 」 <a href="manage-user-mailboxes-exchange-2013-help.md">管理使用者信箱</a>主題中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > SMTP 是預設的電子郵件地址類型。您也可以新增到信箱 Exchange 整合通訊 (EUM) 地址或自訂的地址。如需詳細資訊，請參閱 「 變更使用者信箱內容 」 <a href="manage-user-mailboxes-exchange-2013-help.md">管理使用者信箱</a>主題中。
 
 
 5.  在 \[**電子郵件地址**\] 方塊中輸入新的 SMTP 位址並再按一下 \[**確定\]**。

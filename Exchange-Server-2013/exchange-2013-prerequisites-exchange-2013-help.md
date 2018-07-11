@@ -55,21 +55,10 @@ _**上次修改主題的時間：** 2017-03-20_
 
   - 在您的電腦上安裝最新的 Windows 更新。如需詳細資訊，請參閱 [部署安全性檢查清單](deployment-security-checklist-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果是安裝 Mailbox server role，且想要將此伺服器作為資料庫可用性群組 (DAG) 的成員，則必須執行 Windows Server 2012 R2 Standard 或 Datacenter Edition、Windows Server 2012 Standard 或 Datacenter Edition，或是 Windows Server 2008 R2 SP1 Enterprise Edition。Windows Server 2008 R2 SP 1 Standard Edition 不支援 DAG 所需的功能。<br />
-    如果伺服器上已安裝 Exchange，則無法升級 Windows。<br />
-    若要升級 Microsoft Unified Communications Managed API (UCMA) 4.0，您必須首先解除安裝所有使用 [新增/移除] 程式安裝的 UCMA 早期版本。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!NOTE]  
+	> 如果是安裝 Mailbox server role，且想要將此伺服器作為資料庫可用性群組 (DAG) 的成員，則必須執行 Windows Server 2012 R2 Standard 或 Datacenter Edition、Windows Server 2012 Standard 或 Datacenter Edition，或是 Windows Server 2008 R2 SP1 Enterprise Edition。Windows Server 2008 R2 SP 1 Standard Edition 不支援 DAG 所需的功能。<br />
+    > 如果伺服器上已安裝 Exchange，則無法升級 Windows。<br />
+    > 若要升級 Microsoft Unified Communications Managed API (UCMA) 4.0，您必須首先解除安裝所有使用 [新增/移除] 程式安裝的 UCMA 早期版本。
 
 
 > [!TIP]  
@@ -128,18 +117,8 @@ _**上次修改主題的時間：** 2017-03-20_
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (隨付於 Windows Server 2012 R2)
@@ -162,18 +141,8 @@ _**上次修改主題的時間：** 2017-03-20_
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (隨付於 Windows Server 2012 R2)
@@ -208,18 +177,8 @@ _**上次修改主題的時間：** 2017-03-20_
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
@@ -232,18 +191,8 @@ _**上次修改主題的時間：** 2017-03-20_
 
 6.  [知識庫文章 KB2533623（不安全的 程式庫載入可能允許程式碼執行）](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您已在電腦上將 Windows Update 設定安裝安全更新，則此 hotfix 可能已安裝。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若您已在電腦上將 Windows Update 設定安裝安全更新，則此 hotfix 可能已安裝。
 
 
 ## Edge Transport server role
@@ -266,18 +215,8 @@ _**上次修改主題的時間：** 2017-03-20_
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Exchange 2013 CU16 和更新版本<strong>需要</strong> .NET Framework 4.6.2。安裝 Exchange 2013 CU16 之前請將伺服器升級至 .NET Framework 4.6.2，否則會收到錯誤訊息。如果您的 Exchange 伺服器上安裝了 .NET Framework 4.5.2，在安裝 .NET Framework 4.6.2 之前請將伺服器升級至 Exchange 2013 CU15。
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)

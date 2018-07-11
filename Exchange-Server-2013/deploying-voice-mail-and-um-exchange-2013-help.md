@@ -60,18 +60,9 @@ Exchange 整合通訊 (UM) 可讓您提供語音信箱服務給組織內的使�
 
 2.  確認您已正確安裝整合通訊所需的用戶端存取和信箱伺服器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。
+
 
 
 3.  建立並設定所需的整合通訊 元件，包括 UM 撥號對應表、UM IP 閘道器、UM 群組搜尋和 UM 信箱原則。

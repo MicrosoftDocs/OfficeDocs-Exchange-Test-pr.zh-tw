@@ -31,18 +31,8 @@ _**上次修改主題的時間：** 2017-11-16_
     
       - **下架遠端移動遷移：** 您也可以執行「下架」遠端移動遷移，也就是將 Exchange Online 信箱遷移至您的內部部署 Exchange 組織。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>上架和下架遠端移動遷移都是從您的 Exchange Online 組織內啟動。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 上架和下架遠端移動遷移都是從您的 Exchange Online 組織內啟動。
     
       - **分段 Exchange 遷移：** 您也可以從內部部署Exchange組織的信箱的子集將移轉至Exchange Online。這是另一種類型的 onboarding 移轉。您可以僅Exchange 2003和Exchange 2007使用遷移遷移信箱分段的Exchange 。Exchange 2010和Exchange 2013移轉信箱不支援使用分段的遷移。在執行分段式的移轉，您必須Exchange Online組織中使用目錄同步處理或其他方法來佈建的郵件使用者。
     

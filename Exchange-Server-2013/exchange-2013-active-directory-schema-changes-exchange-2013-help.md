@@ -55,19 +55,9 @@ Exchange 2013 結構描述更新會累計。每個版本包含的所有先前版
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此主題中提及的 Active Directory 架構變更可能不適用於所有 Exchange Server 版本。<br />
-若要驗證已成功準備 Active Directory，請參閱＜<a href="prepare-active-directory-and-domains-exchange-2013-help.md">準備 Active Directory 及網域</a>＞中的＜如何知道這是否正常運作？＞一節。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此主題中提及的 Active Directory 架構變更可能不適用於所有 Exchange Server 版本。<br />
+> 若要驗證已成功準備 Active Directory，請參閱＜<a href="prepare-active-directory-and-domains-exchange-2013-help.md">準備 Active Directory 及網域</a>＞中的＜如何知道這是否正常運作？＞一節。
 
 
 本文件包含下列各節：

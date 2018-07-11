@@ -49,18 +49,23 @@ _**上次修改主題的時間：** 2013-12-02_
 ## 使用命令介面檢視伺服器健全狀況
 
 執行下列任一個命令，檢視執行 Exchange 2013 的伺服器的健全設定和健全狀況資訊。
-
-    Get-HealthReport -Identity <ServerName>
-
-    Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
+Get-HealthReport -Identity <ServerName>
+```
+```
+Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
 
 執行下列任何一個命令，檢視執行 Exchange 2013 的伺服器或資料庫可用性群組的健全設定。
-
-    Get-ExchangeServer | Get-HealthReport -RollupGroup
-
-    Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
-
-    (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
+Get-ExchangeServer | Get-HealthReport -RollupGroup
+```
+```
+Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
+```
+(Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
 
 ## 檢視健全設定清單
 

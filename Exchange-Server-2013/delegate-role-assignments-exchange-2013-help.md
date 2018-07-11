@@ -21,21 +21,11 @@ _**上次修改主題的時間：** 2012-10-02_
 
 如果您指派委派的角色給某個角色群組，則該角色群組的任何成員都可以將關聯的管理角色委派給其他角色受託人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>委派角色指派不會授與角色受託人的權限授與角色、 角色指派給其他人的能力。如果您想要還可讓角色受託人角色來授與的權限，您也必須建立一般角色指派。若要建立一般角色指派，請參閱下列主題：<br />
-<a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a><br />
-<a href="manage-role-assignment-policies-exchange-2013-help.md">管理角色指派原則</a><br />
-<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">將角色新增至使用者或 USG</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 委派角色指派不會授與角色受託人的權限授與角色、 角色指派給其他人的能力。如果您想要還可讓角色受託人角色來授與的權限，您也必須建立一般角色指派。若要建立一般角色指派，請參閱下列主題：<br />
+> <a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a><br />
+> <a href="manage-role-assignment-policies-exchange-2013-help.md">管理角色指派原則</a><br />
+> <a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">將角色新增至使用者或 USG</a>
 
 
 

@@ -112,10 +112,12 @@ _**上次修改主題的時間：** 2018-04-17_
 ## 使用 Exchange Online PowerShell 來限制只有特定使用者能使用
 
 若要只能夠使用 LinkedIn 增益集讓行銷團隊通訊群組的成員，請執行下列命令。
-
-    $a = Get-DistributionGroupMember Marketing
-
-    Set-app <add-in ID for the LinkedIn add-in> -Organizationadd-in -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled}
+```
+$a = Get-DistributionGroupMember Marketing
+```
+```
+Set-app <add-in ID for the LinkedIn add-in> -Organizationadd-in -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled}
+```
 
 如需詳細的語法和參數資訊，請參閱[Set-App](https://technet.microsoft.com/zh-tw/library/jj218630\(v=exchg.150\))。
 

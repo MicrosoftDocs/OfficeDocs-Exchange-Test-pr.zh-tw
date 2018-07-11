@@ -63,19 +63,9 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 ## 步驟 1：使用命令介面設定 Web Proxy URL
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這是僅限必要步驟如果您組織中已經存在的 Web proxy URL。如果不是，請跳至步驟 2。<br />
-您無法使用 Exchange 系統管理中心 (EMC) 來設定 Web Proxy URL。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這是僅限必要步驟如果您組織中已經存在的 Web proxy URL。如果不是，請跳至步驟 2。<br />
+> 您無法使用 Exchange 系統管理中心 (EMC) 來設定 Web Proxy URL。
 
 
 此範例在 Mailbox Server MAIL01 上設定 Web Proxy URL。

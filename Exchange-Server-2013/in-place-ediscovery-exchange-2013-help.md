@@ -168,19 +168,9 @@ Exchange 2013 安裝程式會建立一個探索信箱，其顯示名稱為 **\[
 
 已新增至探索管理角色群組的使用者可執行就地 eDiscovery 搜尋。您能使用 EAC 中的 Web 介面來執行搜尋。這會讓如記錄管理員、法務人員，或法律與人力資源專家等非技術使用者更容易使用就地 eDiscovery。您也可以使用命令介面來執行搜尋。如需詳細資訊，請參閱[建立就地 eDiscovery 搜尋](create-an-in-place-ediscovery-search-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在內部部署組織中，您可以使用就地 eDiscovery 來搜尋位於 Exchange 2013 Mailbox Server 上的信箱。若要搜尋位於 Exchange 2010 Mailbox Server 的信箱，請使用 Exchange 2010 伺服器上的多信箱搜尋。<br />
-對於部分信箱存在於您內部部署信箱伺服器，而部分信箱則是存在於雲端式組織中的混合部署而言，您能使用您內部部署組織裡的 EAC 去執行雲端式信箱的就地 eDiscovery 搜尋。若您想將郵件複製到一個探索信箱，您必須選取一個內部部署探索信箱。在雲端式信箱中，自搜尋結果傳回的郵件會被複製到指定的內部部署探索信箱。若要深入了解混合部署，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj200581(v=exchg.150)">Exchange Server 混合部署</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在內部部署組織中，您可以使用就地 eDiscovery 來搜尋位於 Exchange 2013 Mailbox Server 上的信箱。若要搜尋位於 Exchange 2010 Mailbox Server 的信箱，請使用 Exchange 2010 伺服器上的多信箱搜尋。<br />
+> 對於部分信箱存在於您內部部署信箱伺服器，而部分信箱則是存在於雲端式組織中的混合部署而言，您能使用您內部部署組織裡的 EAC 去執行雲端式信箱的就地 eDiscovery 搜尋。若您想將郵件複製到一個探索信箱，您必須選取一個內部部署探索信箱。在雲端式信箱中，自搜尋結果傳回的郵件會被複製到指定的內部部署探索信箱。若要深入了解混合部署，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj200581(v=exchg.150)">Exchange Server 混合部署</a>。
 
 
 EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDiscovery 搜尋，也能使用就地保留功能將搜尋結果設為保留狀態。當您建立就地 eDiscovery 搜尋時，就地 eDiscovery 系統信箱中會建立搜尋物件。使用者可操控此物件來開始、停止、修改與移除搜尋，建立搜尋後，您可以選擇預估搜尋結果，包括可判斷查詢效率的關鍵字統計資料。您也能即時預覽搜尋傳回的項目，讓您能檢視郵件內容、從每個來源信箱傳回的郵件數和郵件總數。如有需要，您能使用此資訊進一步微調查詢。
@@ -203,18 +193,8 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
         
         Exchange 2013 也支援就地 eDiscovery 搜尋的關鍵字查詢語言 (KQL) 語法。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>就地 eDiscovery 不支援規則運算式。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 就地 eDiscovery 不支援規則運算式。
         
         邏輯運算子必須使用大寫字母，例如 **AND** 和 **OR**，系統才會將它們視為運算子，而非關鍵字。建議您在任何混合邏輯運算子的查詢中明確使用括號，以避免錯誤或誤解。例如，如果要搜尋包含 WordA 或 WordB 以及 WordC 或 WordD 的訊息，您必須使用 **(WordA OR WordB) AND (WordC OR WordD)**。
     
@@ -238,20 +218,10 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
   - **受 IRM 保護的項目：** 使用資訊版權管理 (IRM) 保護的郵件會由 Exchange 搜尋建立索引，因此如果符合查詢參數，便會將它們納入搜尋結果。必須使用與 Mailbox Server 位於相同 Active Directory 樹系中的 Active Directory Rights Management Services (AD RMS) 叢集來保護郵件。如需詳細資訊，請參閱 [資訊版權管理](information-rights-management-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 搜尋無法將受 IRM 保護的郵件建立索引時，則會因為解密失敗，或因為 IRM 停用，而使受保護的郵件不會新增至失敗項目清單中。如果您選取選項在搜尋結果中包含無法搜尋的項目，則結果中可能不會包含無法解密的受 IRM 保護郵件。<br />
-    若要在搜尋中包含受 IRM 保護的郵件，您可以建立另一個搜尋，以納入含 .rpmsg 附件的郵件。不論是否成功建立索引，您都可以使用查詢字串 <code>attachment:rpmsg</code> 來搜尋指定信箱中所有受 IRM 保護的郵件。在某個搜尋傳回符合搜尋條件的郵件時，包括已成功建立索引的受 IRM 保護郵件時，這可能會造成某些重複的搜尋結果。搜尋不會傳回無法建立索引的受 IRM 保護郵件。<br />
-    為所有受 IRM 保護的郵件執行第二次搜尋時，也會包含已成功建立索引並於第一次搜尋傳回的受 IRM 保護郵件。此外，第二次搜尋傳回的受 IRM 保護郵件，可能不符合如第一次搜尋時所使用關鍵字等搜尋條件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> > Exchange 搜尋無法將受 IRM 保護的郵件建立索引時，則會因為解密失敗，或因為 IRM 停用，而使受保護的郵件不會新增至失敗項目清單中。如果您選取選項在搜尋結果中包含無法搜尋的項目，則結果中可能不會包含無法解密的受 IRM 保護郵件。<br />
+    > 若要在搜尋中包含受 IRM 保護的郵件，您可以建立另一個搜尋，以納入含 .rpmsg 附件的郵件。不論是否成功建立索引，您都可以使用查詢字串 <code>attachment:rpmsg</code> 來搜尋指定信箱中所有受 IRM 保護的郵件。在某個搜尋傳回符合搜尋條件的郵件時，包括已成功建立索引的受 IRM 保護郵件時，這可能會造成某些重複的搜尋結果。搜尋不會傳回無法建立索引的受 IRM 保護郵件。<br />
+    > 為所有受 IRM 保護的郵件執行第二次搜尋時，也會包含已成功建立索引並於第一次搜尋傳回的受 IRM 保護郵件。此外，第二次搜尋傳回的受 IRM 保護郵件，可能不符合如第一次搜尋時所使用關鍵字等搜尋條件。
 
 
   - **刪除重複項目** 複製搜尋結果至探索信箱時，您可以啟用探索搜尋結果的*刪除重複項目*功能僅將唯一郵件的一項執行個體複製到探索信箱。刪除重複項目功能具有下列好處：
@@ -355,18 +325,8 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
 1.  使用 **\[Active Directory 使用者和電腦\]** 或其他的 Active Directory 或帳戶佈建工具或指令碼停用 Active Directory 使用者帳戶。這可防止使用關聯的使用者帳戶登入信箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>擁有完整存取信箱權限的使用者仍然能夠存取該信箱。若要避免他人存取，您必須從該信箱移除他們的完整存取權限。如需如何移除信箱的完整存取信箱權限的詳細資訊，請參閱<a href="manage-permissions-for-recipients-exchange-online-help.md">管理收件者的權限</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 擁有完整存取信箱權限的使用者仍然能夠存取該信箱。若要避免他人存取，您必須從該信箱移除他們的完整存取權限。如需如何移除信箱的完整存取信箱權限的詳細資訊，請參閱<a href="manage-permissions-for-recipients-exchange-online-help.md">管理收件者的權限</a>。
 
 
 2.  將會由該信箱使用者寄送或接收的郵件之郵件大小限制設定在非常低的值，例如 1 KB。這能防止該信箱接收或傳送新郵件。如需詳細資訊，請參閱[設定信箱的郵件大小上限](configure-message-size-limits-for-a-mailbox-exchange-2013-help.md)。

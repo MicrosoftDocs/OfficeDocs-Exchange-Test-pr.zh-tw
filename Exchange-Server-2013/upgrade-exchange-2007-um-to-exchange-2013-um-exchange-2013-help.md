@@ -122,35 +122,15 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
     
     6.  確認您包含的網域正確，然後選取 **\[完成\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 EAC 建立憑證時，不會收到要您啟用憑證服務的提示。憑證建立好後，即可使用 EAC 來啟用服務。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 使用 EAC 建立憑證時，不會收到要您啟用憑證服務的提示。憑證建立好後，即可使用 EAC 來啟用服務。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
     
     在命令介面中執行下列命令，來建立 Exchange 自我簽署憑證。
     
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用 <em>Services</em> 參數指定要啟用的服務，將會收到要您啟用所建立憑證之服務的提示。在此範例中，您會收到要您啟用憑證的整合通訊及整合通訊呼叫路由器服務的提示。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+	> 如果您使用 <em>Services</em> 參數指定要啟用的服務，將會收到要您啟用所建立憑證之服務的提示。在此範例中，您會收到要您啟用憑證的整合通訊及整合通訊呼叫路由器服務的提示。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
 
 
   - 匯入將用於您組織中的所有 Exchange 2013 用戶端存取和信箱伺服器的憑證。如果您使用 Exchange 2013 的自我簽署的憑證，您需要將複製的憑證\]，然後 VoIP 閘道、 IP Pbx 或已啟用 SIP 的 Pbx 上匯入。如果您使用自我簽署的憑證從 Exchange 2007、 主體替代名稱 (SAN) 必須包含所有 Exchange 2013 伺服器的電腦名稱。如果您在組織中有 Exchange 2007 Unified Messaging 伺服器，您可以使用 Exchange 2013 自我簽署的憑證，但您必須將 Exchange 2007 UM 伺服器的電腦名稱新增至 Exchange 2013 憑證的 SAN。
@@ -358,8 +338,7 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 如有需要，您可以使用 EAC 來建立 UM 自動語音應答，如下所示：
 
-1.  
-    
+1.      
     在 EAC 中，瀏覽至 \[整合通訊\] \> \[UM 撥號對應表\]。選取您要新增自動語音應答的 UM 撥號對應表，然後按一下 **\[編輯\]**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
 
 2.  在 **\[UM 撥號對應表\]** 頁面的 **\[UM 自動語音應答\]** 下，按一下 **\[新增\]**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
@@ -406,34 +385,14 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 3.  在 **\[新增 UM 信箱原則\]** 頁面的 **\[名稱\]** 方塊中，輸入新 UM 信箱原則的名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用這個方塊來指定 UM 信箱原則的唯一名稱。這是出現在 EAC 中的顯示名稱。如果您在建立 UM 信箱原則後必須變更其顯示名稱，必須先刪除現有的 UM 信箱原則，然後建立另一個具有適合名稱的 UM 信箱原則。如果有任何啟用 UM 的使用者與 UM 信箱原則相關聯，則您無法刪除該原則。UM 信箱原則名稱是必要的，但僅供顯示之用。由於您的組織可能使用多個 UM 信箱原則，我們建議您針對 UM 信箱原則使用有意義的名稱。UM 信箱原則名稱的長度上限是 64 個字元，且可以包含空格。不過不可包含下列任一字元：&quot; / \ [ ] : ; | = , + * ? &lt; &gt;.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用這個方塊來指定 UM 信箱原則的唯一名稱。這是出現在 EAC 中的顯示名稱。如果您在建立 UM 信箱原則後必須變更其顯示名稱，必須先刪除現有的 UM 信箱原則，然後建立另一個具有適合名稱的 UM 信箱原則。如果有任何啟用 UM 的使用者與 UM 信箱原則相關聯，則您無法刪除該原則。UM 信箱原則名稱是必要的，但僅供顯示之用。由於您的組織可能使用多個 UM 信箱原則，我們建議您針對 UM 信箱原則使用有意義的名稱。UM 信箱原則名稱的長度上限是 64 個字元，且可以包含空格。不過不可包含下列任一字元：&quot; / \ [ ] : ; | = , + * ? &lt; &gt;.
 
 
 4.  按一下 **\[儲存\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>將儲存的 UM 信箱原則，則會啟用所有預設設定，包括 PIN 原則、 語音信箱功能，以及受保護的語音信箱設定。如果您要自訂或變更任何預設設定您剛才建立之 UM 信箱原則，請使用<strong>Set-UMMailbox</strong> cmdlet 或 EAC。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 將儲存的 UM 信箱原則，則會啟用所有預設設定，包括 PIN 原則、 語音信箱功能，以及受保護的語音信箱設定。如果您要自訂或變更任何預設設定您剛才建立之 UM 信箱原則，請使用<strong>Set-UMMailbox</strong> cmdlet 或 EAC。
 
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 信箱原則。

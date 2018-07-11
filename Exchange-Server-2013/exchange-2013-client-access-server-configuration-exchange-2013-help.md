@@ -39,18 +39,8 @@ _**上次修改主題的時間：** 2017-07-25_
     
         Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然 Exchange 2013 支援 Outlook Anywhere HTTP 交涉驗證，但此方法僅應用在環境中的所有伺服器都執行 Exchange 2013 時。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+	> 雖然 Exchange 2013 支援 Outlook Anywhere HTTP 交涉驗證，但此方法僅應用在環境中的所有伺服器都執行 Exchange 2013 時。
 
 
   - 若要設定 Exchange ActiveSync，請執行下列命令：
@@ -80,10 +70,12 @@ _**上次修改主題的時間：** 2017-07-25_
         Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
     
     設定好 Outlook Web App 虛擬目錄後，在命令提示字元中執行下列命令。
-    
-        Net stop IISAdmin /y
-    
-        Net start W3SVC
+      ```
+      Net stop IISAdmin /y
+      ```
+      ```
+      Net start W3SVC
+      ```
 
 2.  若要設定外部 EAC 存取，請在 Exchange 管理命令介面中執行下列命令。
     

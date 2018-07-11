@@ -56,18 +56,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 4.  在**Outlook 語音存取**\] 底下**資訊的宣告**\] 中，按一下 \[**變更**\] 和 \[**瀏覽\]**找出的宣告檔案。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您使用資訊性宣告檔案必須使用的.wav 或.wma 檔案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您使用資訊性宣告檔案必須使用的.wav 或.wma 檔案。
 
 
 5.  找到檔案之後，請按一下 \[開啟\]，然後按一下 \[儲存\]。

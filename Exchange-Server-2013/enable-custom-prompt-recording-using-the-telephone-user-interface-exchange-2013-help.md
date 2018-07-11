@@ -56,34 +56,14 @@ _**上次修改主題的時間：** 2014-09-17_
 
 4.  為網域使用者信箱啟用整合通訊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請只讓管理提示與問候語的系統管理員存取使用者帳戶的分機號碼與 PIN。 此使用者帳戶僅適用於透過電話來管理提示。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請只讓管理提示與問候語的系統管理員存取使用者帳戶的分機號碼與 PIN。 此使用者帳戶僅適用於透過電話來管理提示。
 
 
 5.  建立並儲存 .wav 或 .wma 檔案，以供 UM 撥號對應表或自動語音應答的自訂問候語使用。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>MP3 檔案無法作為自訂提示使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > MP3 檔案無法作為自訂提示使用。
 
 
 6.  透過 EAC 或命令介面，以設定要使用自訂歡迎使用問候語的撥號對應表，或是設定要使用上班時間或非上班時間問候語的自動語音應答。 如需設定撥號對應表的詳細資訊，請參閱[啟用 Outlook 語音存取使用者的自訂的問候語](enable-a-customized-greeting-for-outlook-voice-access-users-exchange-2013-help.md)。 如需設定自動語音應答的詳細資訊，請參閱[啟用自訂的上班時間問候語](enable-a-customized-business-hours-greeting-exchange-2013-help.md)或[啟用自訂非上班時間問候語](enable-a-customized-non-business-hours-greeting-exchange-2013-help.md)。

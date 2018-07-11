@@ -68,18 +68,8 @@ _**上次修改主題的時間：** 2012-11-13_
     
     隨即顯示您 Exchange 組織中選定 Exchange 伺服器上已中斷連線的信箱清單。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此中斷連線信箱清單中包括停用的信箱、刪除的信箱，以及虛刪除的信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此中斷連線信箱清單中包括停用的信箱、刪除的信箱，以及虛刪除的信箱。
 
 
 3.  按一下您要重新連接的已停用信箱，然後按一下 \[連線\]。

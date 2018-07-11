@@ -39,18 +39,7 @@ Exchange 2007 的安裝程式會在 Windows 2000 Server 原生模式中，或更
     
       - 若要引發 Windows Server® 2003 網域功能等級，按一下 \[ **Windows Server 2003**，\] 和 \[**引發。**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><br />
-如果有或會有任何執行 Windows NT® 4.0 的網域控制站與舊版不會引發至 Windows 2000 Server 原生網域功能等級。網域功能等級設為 Windows 2000 Server 原生之後，則無法變更回至 Windows 2000 Server 混合。<br />
-如果您有或會有任何執行 Windows NT 4.0 和舊版或 Windows 2000 Server 的網域控制站，不會引發 Windows Server 2003 網域功能等級。網域功能等級設為 Windows Server 2003 之後，它無法回到混合的 Windows 2000 Server 或 Windows 2000 Server 原生變更。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]  
+> 如果有或會有任何執行 Windows NT® 4.0 的網域控制站與舊版不會引發至 Windows 2000 Server 原生網域功能等級。網域功能等級設為 Windows 2000 Server 原生之後，則無法變更回至 Windows 2000 Server 混合。<br />
+> 如果您有或會有任何執行 Windows NT 4.0 和舊版或 Windows 2000 Server 的網域控制站，不會引發 Windows Server 2003 網域功能等級。網域功能等級設為 Windows Server 2003 之後，它無法回到混合的 Windows 2000 Server 或 Windows 2000 Server 原生變更。
 

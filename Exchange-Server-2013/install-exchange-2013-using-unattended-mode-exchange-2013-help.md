@@ -28,19 +28,9 @@ _**上次修改主題的時間：** 2014-06-19_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在執行 Exchange 2013 的電腦上安裝任何伺服器角色之後，就無法使用 Exchange 2013 安裝精靈，將任何的其他伺服器角色新增至此電腦。如果想要將多個伺服器角色新增至電腦，則必須使用 [控制台] 的 [新增或移除程式]，或從 [命令提示字元] 視窗使用 Setup.exe。<br />
-Edge Transport role 不能與 Mailbox 或 Client Access server role 安裝在相同的電腦上。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在執行 Exchange 2013 的電腦上安裝任何伺服器角色之後，就無法使用 Exchange 2013 安裝精靈，將任何的其他伺服器角色新增至此電腦。如果想要將多個伺服器角色新增至電腦，則必須使用 [控制台] 的 [新增或移除程式]，或從 [命令提示字元] 視窗使用 Setup.exe。<br />
+> Edge Transport role 不能與 Mailbox 或 Client Access server role 安裝在相同的電腦上。
 
 
 如需要在安裝後完成之工作的相關資訊，請參閱 [Exchange 2013 後續安裝工作](exchange-2013-post-installation-tasks-exchange-2013-help.md)。
@@ -103,18 +93,8 @@ Edge Transport role 不能與 Mailbox 或 Client Access server role 安裝在相
 
 3.  在命令提示中，執行適合您組織的命令。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您已啟用使用者存取控制 (UAC)，必須從更高的命令提示字元安裝 <code>Setup.exe</code>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 若您已啟用使用者存取控制 (UAC)，必須從更高的命令提示字元安裝 <code>Setup.exe</code>。
     
         Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
         [/Roles:<server roles to install>] [/InstallWindowsComponents] 

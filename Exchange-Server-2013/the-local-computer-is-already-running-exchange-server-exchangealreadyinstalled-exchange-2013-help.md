@@ -39,18 +39,8 @@ Exchange 2007 的安裝程式會要求之本機電腦未安裝的現有 Microsof
 
 5.  在 \[元件選擇\] 頁面上的 \[動作\] 清單中，按一下已安裝，每個元件旁的向下箭頭和 \[**移除**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>已安裝的元件有核取記號表示在 [動作] 清單中。當您按一下 [<strong>移除</strong>時] 核取記號表示會<strong>移除</strong>word 所取代。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 已安裝的元件有核取記號表示在 [動作] 清單中。當您按一下 [<strong>移除</strong>時] 核取記號表示會<strong>移除</strong>word 所取代。
 
 
 6.  按一下 \[**下一步**\] 兩次。

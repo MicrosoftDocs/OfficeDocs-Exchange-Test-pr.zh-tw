@@ -139,30 +139,39 @@ _**上次修改主題的時間：** 2015-01-21_
       - 從組織的共用通訊錄中隱藏通訊群組。在建立群組之後，使用 EAC 或 **Set-DistributionGroup** 指令程式。如果您使用命令介面，請使用語法 `HiddenFromAddressListsEnabled $true`。
     
     在下列範例中，第一個命令會建立具有封閉式成員資格並啟用仲裁的通訊群組。第二個命令會從共用通訊錄中隱藏群組。
-    
-        New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
-    
-        Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
-    
+    ```
+    New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
+    ```
+    ```
+    Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
+    ```
+
     如需有關建立和管理通訊群組的詳細資訊，請參閱＜[建立並管理通訊群組](create-and-manage-distribution-groups-exchange-2013-help.md)＞。
 
   - 雖然您只能使用通訊群組成員資格作為 eDiscovery 所使用的自訂管理範圍的收件者篩選器，但您可以使用其他收件者屬性將使用者加入至該通訊群組。以下一些範例說明使用 **Get-Mailbox** 和 **Get-Recipient** 指令程式，以根據一般使用者或信箱屬性來傳回一組特定的使用者。
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```
+    ```
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+    ```
+    ```
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
+    ```
 
   - 然後，您可以利用先前項目符號中的範例來建立變數，此變數可用於 **Add-DistributionGroupMember** 指令程式中將一組使用者加入至通訊群組。在下列範例中，第一個命令會建立一個變數，此變數包含使用者帳戶中 *Department* 屬性值為 **Vancouver** 的所有使用者信箱。第二個命令會將這些使用者加入 Vancouver Users 通訊群組。
-    
-        $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
-    
-        $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
+    ```
+    $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
+    ```
+    ```
+    $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
+    ```
 
   - 您可以使用 **Add-RoleGroupMember** 指令程式將成員加入至用來設定 eDiscovery 搜尋範圍的現有角色群組。例如，下列命令會將使用者 admin@ottawa.contoso.com 加入至 Ottawa Discovery Management 角色群組。
     

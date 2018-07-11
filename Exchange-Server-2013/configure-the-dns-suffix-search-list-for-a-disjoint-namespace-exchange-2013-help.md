@@ -27,18 +27,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 確認您已經在將安裝 GPMC 的電腦上安裝 .NET Framework 3.0。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以從 Microsoft 下載中心下載 GPMC 的目前版本都會Windows Server 2003和Windows XP作業系統的 32 位元版本並可以從遠端管理 32 位元和 64 位元的網域控制站上的群組原則物件。GPMC 此版不包含在 64 位元版本，與 32 位元版本不能在 64 位元平台上執行。Windows Server 2008的 32 位元版本與 32 位元版本的Windows Vista這兩個包含 「 GPMC 的 32 位元版本。Windows Server 2008 64 位元版本與 64 位元版本的Windows Vista這兩個包含 「 GPMC 64 位元版本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以從 Microsoft 下載中心下載 GPMC 的目前版本都會Windows Server 2003和Windows XP作業系統的 32 位元版本並可以從遠端管理 32 位元和 64 位元的網域控制站上的群組原則物件。GPMC 此版不包含在 64 位元版本，與 32 位元版本不能在 64 位元平台上執行。Windows Server 2008的 32 位元版本與 32 位元版本的Windows Vista這兩個包含 「 GPMC 的 32 位元版本。Windows Server 2008 64 位元版本與 64 位元版本的Windows Vista這兩個包含 「 GPMC 64 位元版本。
 
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
@@ -54,18 +44,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 1.  您網域中 32 位元電腦上安裝 GPMC 含 Service Pack 1 (SP1)。如下載資訊，請參閱 ＜[群組原則管理主控台 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=100126)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的網域中有電腦執行 Windows Server 2008 或 Windows Vista，則可以略過此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的網域中有電腦執行 Windows Server 2008 或 Windows Vista，則可以略過此步驟。
 
 
 2.  按一下 \[開始\] \> \[程式集\] \> \[系統管理工具\] \> \[群組原則管理\]。

@@ -33,18 +33,8 @@ _**上次修改主題的時間：** 2017-01-23_
 
   - 您需要在 Active Directory 中建立使用者帳戶，並將帳戶新增到 Exchange Server 電腦上的萬用安全性群組。Edge Transport Server 上的傳送連接器會使用這個帳戶，來驗證 Exchange 組織中的目的地 Mailbox Server。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>這個帳戶會獲授與與執行 Exchange Server 的電腦相關的權限。請務必保護帳戶認證，以預防不當使用此帳戶。您可以設定帳戶為僅允許登入特定的電腦。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 這個帳戶會獲授與與執行 Exchange Server 的電腦相關的權限。請務必保護帳戶認證，以預防不當使用此帳戶。您可以設定帳戶為僅允許登入特定的電腦。
 
 
 ## Edge Transport Server 程序

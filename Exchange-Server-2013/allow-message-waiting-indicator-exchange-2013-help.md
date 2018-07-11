@@ -357,18 +357,8 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 4.  預設值是`None`，因為您必須從命令介面中執行下列命令並將文字訊息通知選項設定為`VoiceMailAndMissedCalls`或`VoiceMail`。例如： `Set-UMMailbox- -id MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls`。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須將 UM 信箱原則上的 <em>AllowSMSNotification</em> 參數和使用者信箱上的 <em>UMSMSNotificationOption</em> 參數設為 <code>$true</code>，SMS 通知才能運作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須將 UM 信箱原則上的 <em>AllowSMSNotification</em> 參數和使用者信箱上的 <em>UMSMSNotificationOption</em> 參數設為 <code>$true</code>，SMS 通知才能運作。
 
 
 除了您設定 UM 信箱原則與使用者的信箱啟用新的語音信箱和未接的來電的文字訊息通知使用者必須啟用並設定文字訊息通知時登入 Outlook Web App。若要安裝及設定文字訊息通知，使用者必須：
@@ -379,18 +369,8 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 3.  在 **\[簡訊\]** 頁面中按一下 **\[開啟通知\]** 按鈕。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請勿按下 <strong>[語音信箱通知]</strong>，否則您將會返回 <strong>[語音信箱]</strong> 頁面。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+	> 請勿按下 <strong>[語音信箱通知]</strong>，否則您將會返回 <strong>[語音信箱]</strong> 頁面。
 
 
 4.  在 **\[簡訊\]** 頁面的 **\[地區設定\]** 下，使用下拉式清單來選取簡訊行動電信業者的地區設定或位置。

@@ -63,10 +63,12 @@ _**上次修改主題的時間：** 2013-02-21_
 ## 使用命令介面建立新的憑證要求
 
 執行下列命令。
-
-    $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
-
-    $reqfile | out-file c:\certreq.txt
+  ```
+  $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
+  ```
+  ```
+  $reqfile | out-file c:\certreq.txt
+  ```
 
 ## 如何才能了解這是否正常運作？
 

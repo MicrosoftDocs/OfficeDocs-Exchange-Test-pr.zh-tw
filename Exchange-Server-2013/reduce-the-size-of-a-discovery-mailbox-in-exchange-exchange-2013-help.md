@@ -87,18 +87,8 @@ _**上次修改主題的時間：** 2015-04-07_
     
       - *StartDate* 和 *EndDate*   這些參數指定預設探索信箱中的搜尋結果日期範圍，以併入搜尋結果中。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>請使用簡短日期格式 (mm/dd/yyyy) 來指定日期，即使本機電腦的 [地區選項] 設定是設為不同的格式也一樣，例如 dd/mm/yyyy。例如，使用 <strong>03/01/2014</strong> 來指定 2014 年 3 月 1 日。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 請使用簡短日期格式 (mm/dd/yyyy) 來指定日期，即使本機電腦的 [地區選項] 設定是設為不同的格式也一樣，例如 dd/mm/yyyy。例如，使用 <strong>03/01/2014</strong> 來指定 2014 年 3 月 1 日。
     
       - *TargetMailbox*   此參數指定應該將搜尋結果複製到名為 "Discovery Mailbox Backup 01" 的探索信箱。
     
@@ -119,11 +109,13 @@ _**上次修改主題的時間：** 2015-04-07_
 4.  測試搜尋完成時，請使用命令介面或 EAC，將搜尋結果複製到目標探索信箱。
     
       - **使用命令介面：** 執行下列命令來複製搜尋結果。您必須先移除 *EstimateOnly* 參數，才能複製搜尋結果。
-        
-            Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
-        
-            Start-MailboxSearch "Search results from 2010"
-    
+      ```
+      Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
+      ```
+      ```
+      Start-MailboxSearch "Search results from 2010"
+      ```
+
       - **使用 EAC：** 移至 **\[規範管理\]** \> **\[就地 eDiscovery & 保留\]**。選取搜尋，按一下 \[**搜尋**![搜尋圖示](images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "搜尋圖示")\]，然後按 **\[複製搜尋結果\]**。
     
     如需詳細資訊，請參閱 [將 eDiscovery 搜尋結果複製到探索信箱](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md)。

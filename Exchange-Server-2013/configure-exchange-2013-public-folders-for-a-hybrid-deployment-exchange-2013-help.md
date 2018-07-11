@@ -48,18 +48,8 @@ Exchange Online/Office 365 使用者必須是物件所代表 MailUser Exchange �
 
 5.  Outlook 2011 for Mac 與 Outlook for Mac 中的 Office 365 不支援跨部署的公用資料夾。使用者必須位於相同的位置存取其有 Outlook 2011 for Mac 或 Outlook for Mac for Office 365 的公用資料夾。此外，信箱已在 Exchange Online 使用者將無法存取使用Outlook Web App的內部部署公用資料夾。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Outlook 2016 for Mac 支援跨部署公用資料夾。如果您組織中的用戶端使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取之混合式拓撲的公用資料夾。如需詳細資訊，請參閱<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">存取公用資料夾與 Outlook 2016 for Mac</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Outlook 2016 for Mac 支援跨部署公用資料夾。如果您組織中的用戶端使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取之混合式拓撲的公用資料夾。如需詳細資訊，請參閱<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">存取公用資料夾與 Outlook 2016 for Mac</a>。
 
 
 ## 步驟 1： 下載指令碼
@@ -89,19 +79,9 @@ Exchange Online/Office 365 使用者必須是物件所代表 MailUser Exchange �
     
     其中`Credential`是 Office 365 使用者名稱及 \[密碼\] 和 \[ `CsvSummaryFile`是您想要記錄同步作業與.csv 格式中的錯誤的路徑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在執行指令碼、 之前建議您首先模擬指令碼會採取的動作環境中如前文所述<code>-WhatIf</code>參數執行它。<br />
-也建議您執行此指令碼每天同步處理具有郵件功能的公用資料夾。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在執行指令碼、 之前建議您首先模擬指令碼會採取的動作環境中如前文所述<code>-WhatIf</code>參數執行它。<br />
+> 也建議您執行此指令碼每天同步處理具有郵件功能的公用資料夾。
 
 
 ## 步驟 3： 設定 Exchange Online 使用者存取 Exchange 2013 內部部署公用資料夾

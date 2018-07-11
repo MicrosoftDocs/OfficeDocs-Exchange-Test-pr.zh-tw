@@ -46,18 +46,8 @@ _**上次修改主題的時間：** 2016-12-15_
 
 5.  Outlook 2011 for Mac 和 Outlook for Mac 中的 Office 365 不支援跨部署公用資料夾。使用者必須在相同位置存取其與 Outlook 2011 for Mac 或 Outlook for Mac 的 Office 365 的公用資料夾。此外，信箱已在 Exchange Online 使用者將無法存取內部部署公用資料夾使用 Outlook Web App。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Outlook 2016 for Mac 支援跨部署公用資料夾。如果用戶端在組織中的使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取公用共存或混合式拓撲中的資料夾。如需詳細資訊，請參閱<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">存取公用資料夾與 Outlook 2016 for Mac</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Outlook 2016 for Mac 支援跨部署公用資料夾。如果用戶端在組織中的使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取公用共存或混合式拓撲中的資料夾。如需詳細資訊，請參閱<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">存取公用資料夾與 Outlook 2016 for Mac</a>。
 
 
 ## 步驟 1： 下載指令碼
@@ -110,18 +100,8 @@ _**上次修改主題的時間：** 2016-12-15_
     
     其中`Credential`是您的 Office 365 使用者名稱和密碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建議您每天此指令碼執行因為它們每當公用資料夾信箱到達其臨界值容量，自動分割成多個新信箱匯入在公用資料夾信箱物件。因此，您一律要確定您已從雲端匯入最新公用資料夾信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 建議您每天此指令碼執行因為它們每當公用資料夾信箱到達其臨界值容量，自動分割成多個新信箱匯入在公用資料夾信箱物件。因此，您一律要確定您已從雲端匯入最新公用資料夾信箱。
 
 
 2.  啟用 Exchange 2013 內部部署組織來存取 Exchange Online 公用資料夾。

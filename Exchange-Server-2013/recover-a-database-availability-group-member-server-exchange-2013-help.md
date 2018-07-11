@@ -62,18 +62,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
         Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要移除的 DAG 成員離線，且無法上線，您必須新增<em>ConfigurationOnly</em>參數至以上的命令。如果您使用<em>ConfigurationOnly</em>參數，您必須也手動收回從叢集節點。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要移除的 DAG 成員離線，且無法上線，您必須新增<em>ConfigurationOnly</em>參數至以上的命令。如果您使用<em>ConfigurationOnly</em>參數，您必須也手動收回從叢集節點。
 
 
 4.  重設Active Directory中該伺服器的電腦帳戶。詳細步驟，請參閱[重設為電腦帳戶](http://go.microsoft.com/fwlink/p/?linkid=167188)。

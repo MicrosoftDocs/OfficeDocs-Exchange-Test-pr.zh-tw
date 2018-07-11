@@ -23,28 +23,15 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本主題將示範如何復原不是資料庫可用性群組 (DAG) 成員的遺失 Exchange 2013 伺服器。如需復原 DAG 成員伺服器的詳細步驟，請參閱[復原資料庫可用性群組成員伺服器](recover-a-database-availability-group-member-server-exchange-2013-help.md)。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是 Exchange 並非安裝在預設位置，您必須使用 <em>/TargetDir</em> 參數來指定 Exchange 二進位檔案的位置。若是您不使用 <em>/TargetDir</em> 參數，Exchange 檔案將會安裝至預設的位置 (%programfiles%\Microsoft\Exchange Server\V15)。<br />
-若要決定安裝位置，請遵循下列步驟：
-<ol>
-<li><p>開啟 ADSIEDIT.MSC 或 LDP.EXE。</p></li>
-<li><p>瀏覽至下列位置： <strong>CN=ExServerName、CN=Servers、CN=First Administrative Group、CN=Administrative Groups、CN=ExOrg Name、CN=Microsoft Exchange、CN=Services、CN=Configuration、DC=DomainName、CN=Com</strong></p></li>
-<li><p>在 Exchange 伺服器物件上按一下滑鼠右鍵，然後按一下 [內容]。</p></li>
-<li><p>尋找 <strong>msExchInstallPath</strong> 屬性。此屬性儲存了當前的安裝路徑。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是 Exchange 並非安裝在預設位置，您必須使用 <em>/TargetDir</em> 參數來指定 Exchange 二進位檔案的位置。若是您不使用 <em>/TargetDir</em> 參數，Exchange 檔案將會安裝至預設的位置 (%programfiles%\Microsoft\Exchange Server\V15)。<br />
+> 若要決定安裝位置，請遵循下列步驟：
+> <ol>
+> <li><p>開啟 ADSIEDIT.MSC 或 LDP.EXE。</p></li>
+> <li><p>瀏覽至下列位置： <strong>CN=ExServerName、CN=Servers、CN=First Administrative Group、CN=Administrative Groups、CN=ExOrg Name、CN=Microsoft Exchange、CN=Services、CN=Configuration、DC=DomainName、CN=Com</strong></p></li>
+> <li><p>在 Exchange 伺服器物件上按一下滑鼠右鍵，然後按一下 [內容]。</p></li>
+> <li><p>尋找 <strong>msExchInstallPath</strong> 屬性。此屬性儲存了當前的安裝路徑。</p></li>
+> </ol>
 
 
 要尋找與備份和還原資料相關的其他管理工作嗎？請參閱[備份、還原和嚴重損壞修復](backup-restore-and-disaster-recovery-exchange-2013-help.md)。

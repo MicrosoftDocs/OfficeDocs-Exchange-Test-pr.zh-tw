@@ -31,19 +31,9 @@ Exchange 2007 的安裝程式需要目標安裝路徑是空的 Microsoft Exchang
 
 1.  在 「 我的電腦或 Windows 檔案總管中，找出目標的安裝路徑。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根據預設，資料庫檔案位於：<br />
-    &lt; 系統磁碟 &gt;: \Program Files\Microsoft\Exchange Server\Mailbox\First 儲存群組。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 根據預設，資料庫檔案位於：<br />
+    > &lt; 系統磁碟 &gt;: \Program Files\Microsoft\Exchange Server\Mailbox\First 儲存群組。
 
 
 2.  以滑鼠右鍵按一下要移除的檔案，然後選取 \[**刪除**。

@@ -47,33 +47,13 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - **自動適整個信箱 （預設值）**  選取此選項可建立預設原則標記 (DPT)。您可以使用 dpt 套用建立預設刪除與預設封存原則，它會套用至信箱中的所有項目。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您無法使用 EAC 建立 DPT 刪除語音信箱項目。如需如何建立 DPT 刪除語音信箱項目相關的詳細資訊，請參閱下面的命令介面範例。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 您無法使用 EAC 建立 DPT 刪除語音信箱項目。如需如何建立 DPT 刪除語音信箱項目相關的詳細資訊，請參閱下面的命令介面範例。
     
       - **Applied 自動至特定資料夾**  選取此選項可建立保留原則標記 （印） 如**收件匣**或**刪除的郵件**的預設資料夾。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您僅可建立 Rpt 搭配 [<strong>刪除並允許復原</strong>或 [<strong>永久刪除</strong>] 動作。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 您僅可建立 Rpt 搭配 [<strong>刪除並允許復原</strong>或 [<strong>永久刪除</strong>] 動作。
     
       - **Applied 由使用者的項目和資料夾 （個人）**  選取此選項可建立個人標記。這些標記允許Outlook和Outlook Web App使用者封存或刪除設定套用到一則訊息或不同設定套用到上層資料夾或整個信箱的資料夾。
 
@@ -89,18 +69,8 @@ _**上次修改主題的時間：** 2016-12-09_
         
           - **永久刪除**  選取此選項可永久刪除信箱資料庫中的項目。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>會保留與就地 eDiscovery 搜尋中傳回信箱或受限於就地保留或訴訟保留項目。深入了解，請參閱 ＜ <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留與訴訟暫止</a>。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!IMPORTANT]  
+            > 會保留與就地 eDiscovery 搜尋中傳回信箱或受限於就地保留或訴訟保留項目。深入了解，請參閱 ＜ <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留與訴訟暫止</a>。
         
           - **移至封存**  只有當您建立 DPT 或個人標記為此巨集指令。選取 \[將項目移至使用者的就地封存此巨集指令。
     
@@ -162,18 +132,8 @@ _**上次修改主題的時間：** 2016-12-09_
         
           - 任意數目的個人標記
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>雖然您可以將任何數目的個人標記新增至保留原則，有許多的個人標記使用不同的保留設定可能會混淆使用者。建議您將不超過十個個人標記連結到的保留原則。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+            > 雖然您可以將任何數目的個人標記新增至保留原則，有許多的個人標記使用不同的保留設定可能會混淆使用者。建議您將不超過十個個人標記連結到的保留原則。
         
         您可以建立保留原則不透過新增任何保留標記，但將不會移動或刪除的信箱要套用該原則中的項目。您也可以新增和保留原則中移除保留標記會在建立之後。
 

@@ -146,10 +146,12 @@ Microsoft 設定的這個規則規定，電子郵件內容必須出現佐證性�
 ```
 
 本文對於信用卡的說明同樣也可以延伸至其他敏感資訊規則。若要查看 Microsoft 在 Exchange 中提供之規則的完整清單，請在 Exchange 管理命令介面中以下列方式使用 [Get-ClassificationRuleCollection](https://technet.microsoft.com/zh-tw/library/jj218696\(v=exchg.150\)) 指令程式：
-
-    $rule_collection = Get-ClassificationRuleCollection
-
-    $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
+$rule_collection = Get-ClassificationRuleCollection
+```
+```
+$rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
 
 ## 相關資訊
 

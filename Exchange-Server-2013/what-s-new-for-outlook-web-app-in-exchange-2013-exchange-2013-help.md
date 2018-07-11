@@ -19,19 +19,9 @@ _**上次修改主題的時間：** 2017-12-20_
 
 在 Microsoft Exchange Server 2013 中，我們已在 Microsoft Outlook Web App 中加入了幾項新功能並更新其設計。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需在 Exchange Server 2013 組織中使用 Outlook Web App 的詳細資訊，請參閱 <a href="outlook-web-app-exchange-2013-help.md">Outlook Web App</a>。<br />
-組織中的 Outlook Web App 使用者現在有能力新增公用資料夾至 [我的最愛]，或將它們從 [我的最愛] 移除。在過去，此作業只能在 Outlook 中進行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需在 Exchange Server 2013 組織中使用 Outlook Web App 的詳細資訊，請參閱 <a href="outlook-web-app-exchange-2013-help.md">Outlook Web App</a>。<br />
+> 組織中的 Outlook Web App 使用者現在有能力新增公用資料夾至 [我的最愛]，或將它們從 [我的最愛] 移除。在過去，此作業只能在 Outlook 中進行。
 
 
 ## Outlook Web App 的 App

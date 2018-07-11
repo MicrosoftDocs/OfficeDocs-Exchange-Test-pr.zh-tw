@@ -25,26 +25,13 @@ _**上次修改主題的時間：** 2016-11-30_
 
   - RIM-MailboxAdmins\<xxxxxxxxxx\>
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>屬於 <code>ApplicationImpersonation</code> 角色成員的處理序或應用程式可以存取使用者的信箱內容，並且代表該使用者執行作業 (即使使用者的帳戶已停用)。如果您有使用 <code>ApplicationImpersonation</code> 角色的應用程式 (如 Blackberry Enterprise Server)，即可讓使用者存取其信箱。不使用 <code>ApplicationImpersonation</code> 角色，而使用 Exchange ActiveSync 的協力廠商產品無法存取使用者帳戶已停用的信箱。<br />
-若要防止使用 <code>ApplicationImpersonation</code> 角色的應用程式在使用者帳戶停用之後，存取其信箱或代表其執行工作，請執行下列一項或多項操作：
-<ul>
-<li><p>在協力廠商應用程式中停用或移除使用者。</p></li>
-<li><p>刪除信箱。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 屬於 <code>ApplicationImpersonation</code> 角色成員的處理序或應用程式可以存取使用者的信箱內容，並且代表該使用者執行作業 (即使使用者的帳戶已停用)。如果您有使用 <code>ApplicationImpersonation</code> 角色的應用程式 (如 Blackberry Enterprise Server)，即可讓使用者存取其信箱。不使用 <code>ApplicationImpersonation</code> 角色，而使用 Exchange ActiveSync 的協力廠商產品無法存取使用者帳戶已停用的信箱。<br />
+> 若要防止使用 <code>ApplicationImpersonation</code> 角色的應用程式在使用者帳戶停用之後，存取其信箱或代表其執行工作，請執行下列一項或多項操作：
+> <ul>
+> <li><p>在協力廠商應用程式中停用或移除使用者。</p></li>
+> <li><p>刪除信箱。</p></li>
+> </ul>
 
 
 此管理角色是 Microsoft Exchange Server 2013 中，角色型存取控制 (RBAC) 權限模型的其中一個內建角色。指派給一或多個管理角色群組、管理角色指派原則、使用者或萬用資訊安全群組 (USG) 的管理角色，會作為 Cmdlet 或指令碼的邏輯群組，合併後可提供檢視或修改 Exchange 2013 元件 (例如信箱資料庫、傳輸規則和收件者) 組態的存取權。如果 Cmdlet 或指令碼及其參數 (合稱管理角色項目) 包含在角色中，則該 Cmdlet 或指令碼及其參數可以由指派的角色執行。如需管理角色和管理角色項目的詳細資訊，請參閱[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
@@ -211,16 +198,6 @@ _**上次修改主題的時間：** 2016-11-30_
     
       - [將角色新增至使用者或 USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果除了建立角色的使用者以外，您要讓其他使用者也能指派新的自訂角色，務必將「委派角色指派」的權限新增到至少一位角色受託人。如需詳細資訊，請參閱<a href="delegate-role-assignments-exchange-2013-help.md">委派角色指派</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 如果除了建立角色的使用者以外，您要讓其他使用者也能指派新的自訂角色，務必將「委派角色指派」的權限新增到至少一位角色受託人。如需詳細資訊，請參閱<a href="delegate-role-assignments-exchange-2013-help.md">委派角色指派</a>。
 

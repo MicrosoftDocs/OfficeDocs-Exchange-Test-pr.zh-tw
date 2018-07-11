@@ -135,18 +135,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
         "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 Windows 使用者存取控制 (UAC) 會防止您儲存檔案中的正確位置，先儲存至暫時的位置，並加以複製。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 Windows 使用者存取控制 (UAC) 會防止您儲存檔案中的正確位置，先儲存至暫時的位置，並加以複製。
 
 
 ## 步驟 2：設定 Outlook 以使用自訂的 Outlook 表單

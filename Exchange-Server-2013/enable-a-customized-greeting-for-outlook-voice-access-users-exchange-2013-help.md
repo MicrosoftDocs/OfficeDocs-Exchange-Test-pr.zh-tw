@@ -54,18 +54,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 4.  在 \[Outlook 語音存取\] 的 \[歡迎使用問候語\] 下，按一下 \[變更\]，然後按一下 \[瀏覽\] 以尋找問候語檔案。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用於歡迎使用問候語的檔案必須是 .wav 或 .wma 檔案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 用於歡迎使用問候語的檔案必須是 .wav 或 .wma 檔案。
 
 
 5.  找到檔案之後，請按一下 \[開啟\]，然後按一下 \[儲存\]。

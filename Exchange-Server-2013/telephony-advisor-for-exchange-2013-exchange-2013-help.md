@@ -51,18 +51,8 @@ _**上次修改主題的時間：** 2017-07-25_
 
   - **為支援工作階段邊界控制器組態注意事項**  這些組態注意事項包含設定及時很有幫助您正在設定工作階段邊界控制器 (Sbc) 與整合通訊伺服器通訊的混合式部署和Exchange Online UM 部署的其他資訊。如需詳細資訊，請參閱[支援工作階段邊界控制器的組態注意事項](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange Online UM 支援透過直接從客戶 21vianet Sbc 連線協力廠商 PBX 系統將會結束年 7 月 2018年中。 請參閱 Exchange 團隊部落格<a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">主題的 Exchange Online 中的工作階段邊界控制器支援的整合通訊</a>如需詳細資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Exchange Online UM 支援透過直接從客戶 21vianet Sbc 連線協力廠商 PBX 系統將會結束年 7 月 2018年中。 請參閱 Exchange 團隊部落格<a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">主題的 Exchange Online 中的工作階段邊界控制器支援的整合通訊</a>如需詳細資訊。
 
 
 連絡整合通訊專家之前，您應該能夠回答他們將要求的重要問題。有下列問題的答案有助於讓您與 UM 專家之間的對話提高工作效率：

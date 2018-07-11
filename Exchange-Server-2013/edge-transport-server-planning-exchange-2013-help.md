@@ -89,18 +89,8 @@ Exchange Service Pack 1 中重新引進了 Edge Transport server role。Edge Tra
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Edge Transport server role 使用非標準的 LDAP 通訊埠。本主題中指定的通訊埠為安裝 Edge Transport server role 時設定的 LDAP 通訊埠。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Edge Transport server role 使用非標準的 LDAP 通訊埠。本主題中指定的通訊埠為安裝 Edge Transport server role 時設定的 LDAP 通訊埠。
 
 
   - **EdgeSync**  建議的部署程序是建立 Edge 訂閱讓 Exchange 組織來訂閱 Edge Transport Server。建立 Edge 訂閱之後，收件者和組態資料會從 Active Directory 複寫到 AD LDS。您可以讓 Active Directory 站台訂閱 Edge Transport Server。之後，該站台上在 Mailbox Server 上執行的 MicrosoftExchange EdgeSync 服務會定期從 Active Directory 同步處理資料來更新 AD LDS。Edge 訂閱程序會自動提供讓郵件透過 Edge Transport Server 從 Exchange 組織傳送到網際網路所需的傳送連接器。如果您在 Edge Transport Server 上使用收件者查閱或安全清單彙總功能，則必須讓組織訂閱 Edge Transport Server。

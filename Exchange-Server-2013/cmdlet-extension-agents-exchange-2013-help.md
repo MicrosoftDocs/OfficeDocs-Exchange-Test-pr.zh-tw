@@ -248,18 +248,8 @@ Exchange 2013 包括可在 Cmdlet 執行時叫用的數個代理程式。下表�
 
 1.  在組織中的每個 Exchange 2013 Server 上，將 **\<安裝路徑\>\\V15\\Bin\\CmdletExtensionAgents** 中的ScriptingAgentConfig.xml.sample 檔案重新命名為 ScriptingAgentConfig.xml。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以將組態檔從一個 Exchange 2013 Server 複製到其他 Exchange 2013Server。複製之前，請確定更新要複製的組態檔。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以將組態檔從一個 Exchange 2013 Server 複製到其他 Exchange 2013Server。複製之前，請確定更新要複製的組態檔。
 
 
 2.  將您的指令碼新增至組織中每個 Exchange 2013 Server 上已重新命名的組態檔。

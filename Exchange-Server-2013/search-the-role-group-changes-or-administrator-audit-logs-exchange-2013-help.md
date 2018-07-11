@@ -42,18 +42,8 @@ _**上次修改主題的時間：** 2013-12-02_
     
         Set-AdminAuditLogConfig -AdminAuditLogEnabled $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>Set-AdminAuditLogConfig</strong> Cmdlet 不適用於 Exchange Online。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <strong>Set-AdminAuditLogConfig</strong> Cmdlet 不適用於 Exchange Online。
     
     如需詳細資訊，請參閱 [管理系統管理員稽核記錄](manage-administrator-audit-logging-exchange-2013-help.md)。
 

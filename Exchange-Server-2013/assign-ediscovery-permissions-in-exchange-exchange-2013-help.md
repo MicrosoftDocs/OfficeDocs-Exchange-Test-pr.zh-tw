@@ -19,19 +19,9 @@ _**上次修改主題的時間：** 2014-10-02_
 
 如果您想讓使用者能夠使用 Microsoft Exchange Server 2013就地 eDiscovery，必須先將其授權透過將它們新增至探索管理角色群組。探索管理角色群組的成員有Exchange安裝程式會建立探索信箱的完整存取信箱權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>探索管理角色群組的成員可存取機密訊息內容。主要是針對這些成員可以使用<a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a>搜尋所有信箱在 Exchange 組織、 預覽郵件 （和其他信箱項目）、 將其複製到探索信箱並複製的郵件匯出至.pst 檔案。在大多數的組織，此權限會授與法律、 規範、 或人力資源人員。<br />
-</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]  
+> 探索管理角色群組的成員可存取機密訊息內容。主要是針對這些成員可以使用<a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a>搜尋所有信箱在 Exchange 組織、 預覽郵件 （和其他信箱項目）、 將其複製到探索信箱並複製的郵件匯出至.pst 檔案。在大多數的組織，此權限會授與法律、 規範、 或人力資源人員。<br />
+
 
 
 若要深入了解 「 探索管理角色群組，請參閱[探索管理](discovery-management-exchange-2013-help.md)。若要深入了解角色存取控制 (RBAC)，請參閱[了解角色型存取控制](understanding-role-based-access-control-exchange-2013-help.md)。

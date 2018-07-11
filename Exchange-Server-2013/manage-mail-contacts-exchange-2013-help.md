@@ -66,18 +66,8 @@ _**上次修改主題的時間：** 2017-10-04_
         
         若要選取不同的 OU，請按一下 \[瀏覽\]。 此對話方塊會顯示樹系中在指定範圍內的所有 OU。 選取想要的 OU，然後按一下 \[確定\]。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有在 Exchange Server 2013 中才有 <strong>[組織單位]</strong> 方塊。 在 Exchange Online 中沒有。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 只有在 Exchange Server 2013 中才有 <strong>[組織單位]</strong> 方塊。 在 Exchange Online 中沒有。
 
 
 4.  完成作業後，請按一下 **\[儲存\]**。
@@ -240,19 +230,8 @@ _**上次修改主題的時間：** 2017-10-04_
 
 2.  在連絡人清單中，選取兩個或多個郵件連絡人。您不想大量編輯郵件連絡人和郵件使用者的組合。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以選取多個相鄰的郵件連絡人按住 Shift 鍵及與 [第一個郵件連絡人，然後按一下 [您想要編輯的最後一個郵件連絡人。您也可以按住 Ctrl 鍵並按一下您想要編輯的每個選取多個郵件連絡人。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!TIP]  
+	> 您可以選取多個相鄰的郵件連絡人按住 Shift 鍵及與 [第一個郵件連絡人，然後按一下 [您想要編輯的最後一個郵件連絡人。您也可以按住 Ctrl 鍵並按一下您想要編輯的每個選取多個郵件連絡人。
 
 3.  在 \[詳細資料\] 窗格的 \[大量編輯\] 下，按一下 \[連絡人資訊\] 或 \[組織\] 下的 \[更新\]。
 

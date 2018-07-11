@@ -74,25 +74,12 @@ _**上次修改主題的時間：** 2013-02-18_
 
     Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>若要設定連線記錄檔設定信箱伺服器上的信箱傳輸服務中，使用<strong>Set-MailboxTransportService</strong>指令程式。若要設定連線記錄檔設定 Client Access server 上 Front End Transport 服務中，使用<strong>Set-FrontEndTransportService</strong>指令程式。</p></li>
-<li><p><em>ConnectivityLogPath</em>參數設定為值<code>$null</code>，有效停用連線記錄。不過，如果<code>$true</code><em>ConnectivityLogEnabled</em>參數的值，會產生事件記錄檔錯誤。</p></li>
-<li><p>將 <em>ConnectivityLogMaxAge</em> 參數的值設為<code>00:00:00</code>，可以防止因為連線記錄檔的保留天數而自動移除連線記錄檔。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>若要設定連線記錄檔設定信箱伺服器上的信箱傳輸服務中，使用<strong>Set-MailboxTransportService</strong>指令程式。若要設定連線記錄檔設定 Client Access server 上 Front End Transport 服務中，使用<strong>Set-FrontEndTransportService</strong>指令程式。</p></li>
+> <li><p><em>ConnectivityLogPath</em>參數設定為值<code>$null</code>，有效停用連線記錄。不過，如果<code>$true</code><em>ConnectivityLogEnabled</em>參數的值，會產生事件記錄檔錯誤。</p></li>
+> <li><p>將 <em>ConnectivityLogMaxAge</em> 參數的值設為<code>00:00:00</code>，可以防止因為連線記錄檔的保留天數而自動移除連線記錄檔。</p></li>
+> </ul>
 
 
 ## 如何才能了解這是否正常運作？

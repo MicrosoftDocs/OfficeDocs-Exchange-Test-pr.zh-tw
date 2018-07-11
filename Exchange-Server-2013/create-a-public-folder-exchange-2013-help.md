@@ -23,25 +23,12 @@ _**上次修改主題的時間：** 2014-02-24_
 
 依預設，公用資料夾會沿用其父項資料夾的設定，包括權限設定在內。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需有關公用資料夾之儲存配額和限制的相關資訊，請參閱下列主題：
-<ul>
-<li><p>若為 Office 365 中的公用資料夾，請參閱 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
-<li><p>若為內部部署 Exchange Server 2013 中的公用資料夾，請參閱<a href="limits-for-public-folders-exchange-2013-help.md">公用資料夾的限制</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需有關公用資料夾之儲存配額和限制的相關資訊，請參閱下列主題：
+> <ul>
+> <li><p>若為 Office 365 中的公用資料夾，請參閱 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
+> <li><p>若為內部部署 Exchange Server 2013 中的公用資料夾，請參閱<a href="limits-for-public-folders-exchange-2013-help.md">公用資料夾的限制</a>。</p></li>
+> </ul>
 
 
 如需與管理公用資料夾相關的其他管理工作，請參閱[公用資料夾程序](public-folder-procedures-exchange-2013-help.md)。
@@ -72,18 +59,8 @@ _**上次修改主題的時間：** 2014-02-24_
 
 4.  在 \[公用資料夾\] 中，輸入公用資料夾的名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建立公用資料夾時，請勿在名稱中使用反斜線 (\)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 建立公用資料夾時，請勿在名稱中使用反斜線 (\)。
 
 
 5.  在 \[路徑\] 方塊中，驗證公用資料夾的路徑。如果不是想要的路徑，則按一下 \[取消\]，然後依照此程序的步驟 2 進行。
@@ -112,13 +89,15 @@ _**上次修改主題的時間：** 2014-02-24_
   - 在 EAC 中，按一下 \[重新整理\] 來重新整理公用資料夾清單。新的公用資料夾應該會顯示在清單中。
 
   - 在命令介面中，執行下列任一命令：
-    
-        Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
-    
-        Get-PublicFolder -Identity \Marketing\2013 -GetChildren
-    
-        Get-PublicFolder -Recurse
-
+    ```
+    Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
+    ```
+    ```
+    Get-PublicFolder -Identity \Marketing\2013 -GetChildren
+    ```
+    ```
+    Get-PublicFolder -Recurse
+    ```
 
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
