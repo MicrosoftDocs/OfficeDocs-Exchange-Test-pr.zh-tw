@@ -37,18 +37,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 設定混合式部署時，您必須針對您向信任的協力廠商 CA 所購買的憑證進行使用和設定。用於混合安全郵件傳輸的憑證必須安裝在所有內部部署信箱 (Exchange 2016 和更新版本) 以及信箱和用戶端存取 (Exchange 2013 和更舊版本) 伺服器上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於將 Exchange 伺服器部署在多個 Active Directory 樹系中的組織，當您在該組織中設定混合式部署時，必須在<em>每個</em> Active Directory 樹系中使用不同的協力廠商 CA 憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 對於將 Exchange 伺服器部署在多個 Active Directory 樹系中的組織，當您在該組織中設定混合式部署時，必須在<em>每個</em> Active Directory 樹系中使用不同的協力廠商 CA 憑證。
 
 
 <table>

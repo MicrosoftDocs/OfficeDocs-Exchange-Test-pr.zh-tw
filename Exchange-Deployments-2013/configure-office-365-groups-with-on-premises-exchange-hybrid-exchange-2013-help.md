@@ -19,18 +19,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-06_
 
 群組是 Office 365 服務，讓小組可以輕易地通訊、排程會議，以及對文件進行共用作業。與群組共用的所有資訊，從傳送給群組的電子郵件訊息，到儲存在群組的商務用 OneDrive 或 SharePoint 文件庫中的檔案，都可供群組的任何成員取用。如果您在內部部署 Exchange 組織與 Office 365 之間設定混合式部署，您可以讓在 Office 365 中建立的群組可供您的內部部署使用者使用，方法是遵循本主題中的步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Office 365 群組與 Exchange 混合式部署中的內部部署使用者，是一項新功能。因為它是新功能，您可能會在設定時遇到一些問題。請務必參閱本主題結尾的已知問題章節，以修正您可能會遇到的問題。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 使用 Office 365 群組與 Exchange 混合式部署中的內部部署使用者，是一項新功能。因為它是新功能，您可能會在設定時遇到一些問題。請務必參閱本主題結尾的已知問題章節，以修正您可能會遇到的問題。
 
 
 ## 必要條件
@@ -133,20 +123,9 @@ _<strong>上次修改主題的時間：</strong>2016-12-06_
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Mt668829.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果群組網域的 MX DNS 記錄設定為內部部署 Exchange 伺服器，內部部署 Exchange 組織與 Office 365 群組中使用者之間的郵件流程不會正常運作。</td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!CAUTION]
+	> 如果群組網域的 MX DNS 記錄設定為內部部署 Exchange 伺服器，內部部署 Exchange 組織與 Office 365 群組中使用者之間的郵件流程不會正常運作。
+    
 4.  使用下列命令，將群組網域新增至混合式傳送連接器，該連接器是由內部部署 Exchange 組織中的混合式組態精靈所建立。
     
         Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"

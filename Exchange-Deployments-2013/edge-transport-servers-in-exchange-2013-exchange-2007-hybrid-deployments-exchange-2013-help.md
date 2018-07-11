@@ -29,18 +29,8 @@ Exchange 2013 想要使用 Edge Transport server 的組織可以選擇部署 Exc
 
 在混合式部署中的內部部署和 Exchange Online 組織之間路由傳送的郵件，需要使用 Microsoft Exchange Online Protection (EOP) 服務代表 Exchange Online，直接連接至執行 Exchange 2013 或 Exchange 2010 SP3 的 Edge Transport Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在其他的位置擁有其他 Exchange 2010 Edge Transport server，但不會用於處理混合傳輸，則不需要將它們升級到 Exchange 2010 SP3。不過，如果您希望在未來將 EOP 連接到其他的 Edge Transport server 以進行混合傳輸，則必須將它們升級到 Exchange 2010 SP3 或升級到 Exchange 2013 Edge Transport server。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您在其他的位置擁有其他 Exchange 2010 Edge Transport server，但不會用於處理混合傳輸，則不需要將它們升級到 Exchange 2010 SP3。不過，如果您希望在未來將 EOP 連接到其他的 Edge Transport server 以進行混合傳輸，則必須將它們升級到 Exchange 2010 SP3 或升級到 Exchange 2013 Edge Transport server。
 
 
 ## 將 Edge Transport Server 新增至混合式部署

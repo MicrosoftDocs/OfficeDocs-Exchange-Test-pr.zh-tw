@@ -21,18 +21,8 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 
 為使混合傳輸組態能搭配混合組態精靈使用，接受 Exchange Online 的內部部署 SMTP 端點，必須為 Mailbox server (Exchange 2016 和更新版本)、Client Access server (Exchange 2013)、Hub Transport server (Exchange 2010 和更舊版本)，或 Edge Transport server (Exchange 2010 和更新版本)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請不要將任何伺服器、服務或裝置放在處理或修改 SMTP 流量的內部部署 Exchange 伺服器與 Office 365 之間。保護內部部署 Exchange 組織和 Office 365 之間郵件流程的安全，取決於組織之間傳送的郵件中所包含的資訊。支援允許 TCP 通訊埠 25 上通過未經修改之 SMTP 流量的防火牆。如果伺服器、服務或裝置會處理內部部署 Exchange 組織和 Office 365 之間傳送的郵件，就會移除這項資訊。如果發生這種情況，郵件將不會視為組織內部郵件，而會受制於反垃圾郵件篩選、傳輸和日誌規則及其他可能不適用的原則。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 請不要將任何伺服器、服務或裝置放在處理或修改 SMTP 流量的內部部署 Exchange 伺服器與 Office 365 之間。保護內部部署 Exchange 組織和 Office 365 之間郵件流程的安全，取決於組織之間傳送的郵件中所包含的資訊。支援允許 TCP 通訊埠 25 上通過未經修改之 SMTP 流量的防火牆。如果伺服器、服務或裝置會處理內部部署 Exchange 組織和 Office 365 之間傳送的郵件，就會移除這項資訊。如果發生這種情況，郵件將不會視為組織內部郵件，而會受制於反垃圾郵件篩選、傳輸和日誌規則及其他可能不適用的原則。
 
 
 從外部網際網路寄件者傳送到兩個組織收件者的內送郵件，會遵循通用內送路由。從組織傳送給外部網際網路收件者的外寄郵件，可遵循通用外寄路由，或可經由獨立路由傳送。

@@ -110,16 +110,6 @@ Exchange 2013 CU1 或更新版本會使用 \[混合組態精靈\] 來啟用混�
 
 如需有關如何下載最新版 Exchange 2013 的相關資訊，請參閱＜[更新 Exchange 2013](http://technet.microsoft.com/library/jj907309)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ906432.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>設定具有 Exchange 2013 或 2010 和 Office 365 的混合部署時，需要授權混合伺服器。您可以利用 <a href="https://aka.ms/hybridkey">Hybrid Edition 產品金鑰工具</a>，取得用於設定混合部署的免費 Exchange Server 產品金鑰。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 設定具有 Exchange 2013 或 2010 和 Office 365 的混合部署時，需要授權混合伺服器。您可以利用 <a href="https://aka.ms/hybridkey">Hybrid Edition 產品金鑰工具</a>，取得用於設定混合部署的免費 Exchange Server 產品金鑰。
 
