@@ -99,18 +99,8 @@ AD RMS 叢集上執行下列程序。用來執行此程序的帳戶必須是 AD 
 
   - 在 AD RMS 伺服器上執行下列 PowerShell 命令來擷取超級使用者群組。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Windows Server 2008 R2 和更新版本上可取得 ADRMSAdmin PowerShell 模組。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Windows Server 2008 R2 和更新版本上可取得 ADRMSAdmin PowerShell 模組。
     
         Import-Module ADRMSAdmin
         New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 

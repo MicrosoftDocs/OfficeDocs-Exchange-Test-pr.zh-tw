@@ -110,18 +110,9 @@ _**上次修改主題的時間：** 2016-12-09_
         
         用戶端存取伺服器角色的 Exchange 2010 SP2 伺服器必須安裝在 Exchange 2003 組織中。如果您有現有的 Exchange 2010 伺服器時，他們應該也更新至 Exchange 2010 SP2。如需 Exchange 2003 組織中安裝 Exchange 2010 的詳細資訊，請參閱[Exchange 2003-規劃升級及共存的藍圖](https://go.microsoft.com/fwlink/?linkid=268414)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如需如何讓 Exchange 2013 和 Exchange 2003 組織之間的空閒/忙碌共用運作正常的相關資訊，公用資料夾階層中必須存在 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾。在 Exchange 2010 設定過程中，只有在您配置 Outlook 2003 支援用戶端設定的同時選取建立公用資料夾的選項，才會自動在 Exchange 2003 組織內的 Exchange 2010 Mailbox 伺服器上建立此資料夾。此外，Exchange 2010 信箱伺服器必須是組織中第一個安裝的信箱伺服器，此選項才會在安裝過程中出現。若未在安裝過程中建立 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾，您將必須手動建立此資料夾。如需有關如何建立此公用資料夾的詳細資料，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">在 Microsoft Office 365 企業環境中，使用 Exchange 聯盟時，如何疑難排解閒置/忙碌的問題</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 如需如何讓 Exchange 2013 和 Exchange 2003 組織之間的空閒/忙碌共用運作正常的相關資訊，公用資料夾階層中必須存在 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾。在 Exchange 2010 設定過程中，只有在您配置 Outlook 2003 支援用戶端設定的同時選取建立公用資料夾的選項，才會自動在 Exchange 2003 組織內的 Exchange 2010 Mailbox 伺服器上建立此資料夾。此外，Exchange 2010 信箱伺服器必須是組織中第一個安裝的信箱伺服器，此選項才會在安裝過程中出現。若未在安裝過程中建立 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用資料夾，您將必須手動建立此資料夾。如需有關如何建立此公用資料夾的詳細資料，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">在 Microsoft Office 365 企業環境中，使用 Exchange 聯盟時，如何疑難排解閒置/忙碌的問題</a>。
+
     
     2.  **設定同盟委派**。
         
@@ -161,35 +152,16 @@ _**上次修改主題的時間：** 2016-12-09_
         
           - 在 \[選取公用資料夾儲存區\] 中，選取 Exchange 2010 用戶端存取/信箱伺服器的 \[公用資料夾資料庫\]，然後按一下 \[確定\]。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>依預設，Exchange 會使用公用資料夾資料庫上設定的複寫排程。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+            > 依預設，Exchange 會使用公用資料夾資料庫上設定的複寫排程。
         
           - 按一下 \[確定\] 以關閉 \[OU=EXTERNAL (FYDIBOHF25SPDLT) 內容\] 並儲存變更。
         
           - 針對 **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** 資料夾，完成上述相同步驟。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>視公用資料夾的大小而定，此複寫動作可能需要數小時才能完成。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!WARNING]  
+            > 視公用資料夾的大小而定，此複寫動作可能需要數小時才能完成。
+
         
           - 將 **OU=EXTERNAL (FYDIBOHF25SPDLT)** 與 **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** 公用資料夾複寫至 Exchange 2010 用戶端存取/信箱伺服器後，您必須將 Exchange 2003 伺服器上這些公用資料夾的複本移除。
     

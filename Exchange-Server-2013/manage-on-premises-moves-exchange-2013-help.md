@@ -108,10 +108,12 @@ _**上次修改主題的時間：** 2013-02-25_
 ## 使用命令介面建立批次移動要求
 
 此範例會建立指定之的.csv 檔案的信箱移動至不同的信箱資料庫的本機移動遷移批次。此.csv 檔案包含單一欄包含每個要移動的信箱的電子郵件地址。**EmailAddress**檔案名稱為此資料行的標題。必須手動啟動遷移批次在此範例使用**Start-MigrationBatch**指令程式或 Exchange 系統管理中心 (EAC)。或者，您可以使用*AutoStart*參數為自動啟動遷移批次。
-
-    New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
-
-    Start-MigrationBatch -Identity LocalMove1
+```
+New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
+```
+```
+Start-MigrationBatch -Identity LocalMove1
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219166\(v=exchg.150\)) 與 [Start-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219165\(v=exchg.150\))。
 

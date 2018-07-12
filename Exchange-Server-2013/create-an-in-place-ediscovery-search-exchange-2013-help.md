@@ -63,18 +63,8 @@ _**上次修改主題的時間：** 2017-01-17_
 
 4.  在 \[**信箱**\] 頁面上選取的信箱搜尋。您可以搜尋所有信箱或選取要都搜尋的特定錯誤。在Exchange Online，您也可以選取Office 365群組以進行搜尋的內容來源。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不可使用 [搜尋所有信箱] 選項將所有信箱設為保留。若要建立 In-Place Hold，需選擇 [指定信箱進行搜尋]。如需詳細資訊，請參閱<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">建立或移除就地保留</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 不可使用 [搜尋所有信箱] 選項將所有信箱設為保留。若要建立 In-Place Hold，需選擇 [指定信箱進行搜尋]。如需詳細資訊，請參閱<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">建立或移除就地保留</a>。
 
 
 5.  在 \[搜尋查詢\] 頁面上，填入下列欄位：
@@ -85,19 +75,9 @@ _**上次修改主題的時間：** 2017-01-17_
         
         ![設定 eDiscovery 搜尋查詢](images/Dd298021.a3626569-8700-421e-8b4e-7ec520b28272(EXCHG.150).png "設定 eDiscovery 搜尋查詢")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>從︰</strong>和<strong>至 / [副本] / [密件副本︰</strong>欄位連線來執行搜尋時建立搜尋查詢中<strong>或</strong>運算子。這表示在搜尋結果中包含任何訊息傳送或接收的任何指定的使用者 （與符合項目的其他搜尋條件）。<br />
-    由<strong>AND</strong>運算子連線的日期。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <strong>從︰</strong>和<strong>至 / [副本] / [密件副本︰</strong>欄位連線來執行搜尋時建立搜尋查詢中<strong>或</strong>運算子。這表示在搜尋結果中包含任何訊息傳送或接收的任何指定的使用者 （與符合項目的其他搜尋條件）。<br />
+    > 由<strong>AND</strong>運算子連線的日期。
 
 
 6.  在 \[就地保留設定\] 頁面上，您可以選取 \[將符合搜尋查詢的內容放入保留的所選信箱\] 核取方塊，然後選取下列其中一個選項，用以將項目放入 \[就地保留\]：
@@ -106,18 +86,8 @@ _**上次修改主題的時間：** 2017-01-17_
     
       - \[指定與項目收到日期相關的保留天數\] 使用這個選項將項目保留一段特定期間。例如，若您的組織要求所有郵件都必須至少保存七年時，即可使用此選項。您可使用「以時間為基礎」的就地保留和保留原則，以確保項目會在七年後受到刪除。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>當為法律目的進行信箱或項目的 In-Place Hold 保留時，一般建議無限期保留項目並於案件或調查完成時移除保留。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 當為法律目的進行信箱或項目的 In-Place Hold 保留時，一般建議無限期保留項目並於案件或調查完成時移除保留。
 
 
 7.  按一下 \[完成\]，可儲存搜尋並傳回根據您指定之準則而進行的搜尋將傳回的預估總大小和項目數。估計結果會顯示在詳細資料窗格中。按一下 \[重新整理\]![重新整理圖示](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "重新整理圖示") 以更新在詳細資料窗格中顯示的資訊。
@@ -182,18 +152,8 @@ _**上次修改主題的時間：** 2017-01-17_
     
       - 按一下 \[**預覽搜尋結果**的詳細資訊窗格中預覽搜尋評估完成後的結果。選取此選項會開啟 \[ **eDiscovery 搜尋預覽**\] 視窗。會顯示所搜尋的信箱所傳回的所有郵件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>所搜尋的信箱會列在 [eDiscovery 搜尋預覽] 視窗的右窗格中。針對每個信箱，也會顯示傳回的項目數目以及這些項目的總大小。搜尋傳回的所有項目都會列在右窗格中，並可依照最新或最舊的日期排序。按一下左窗格中的信箱，並無法讓各信箱中的項目顯示在右窗格中。若要檢視從特定信箱傳回的項目，您可以複製搜尋結果及檢視探索信箱中的項目。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 所搜尋的信箱會列在 [eDiscovery 搜尋預覽] 視窗的右窗格中。針對每個信箱，也會顯示傳回的項目數目以及這些項目的總大小。搜尋傳回的所有項目都會列在右窗格中，並可依照最新或最舊的日期排序。按一下左窗格中的信箱，並無法讓各信箱中的項目顯示在右窗格中。若要檢視從特定信箱傳回的項目，您可以複製搜尋結果及檢視探索信箱中的項目。
     
     ![預估或預覽搜尋結果](images/Dd353189.57e0fc2d-71bf-42aa-aa4b-4a77148f2b43(EXCHG.150).gif "預估或預覽搜尋結果")  
 
@@ -204,12 +164,15 @@ _**上次修改主題的時間：** 2017-01-17_
 您可以使用 *EstimateOnly* 參數，僅傳回預估搜尋結果，但不將結果複製到探索信箱。您必須利用 **Start-MailboxSearch** Cmdlet 來啟動僅限預估的搜尋。接著可使用 **Get-MailboxSearch** Cmdlet，擷取預估搜尋結果。
 
 例如，您可執行下列命令來建立新的 eDiscovery 搜尋，然後顯示預估搜尋結果。
-
-    New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
-
-    Start-MailboxSearch "FY13 Q2 Financial Results"
-
-    Get-MailboxSearch "FY13 Q2 Financial Results"
+```
+New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
+```
+```
+Start-MailboxSearch "FY13 Q2 Financial Results"
+```
+```
+Get-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 若要顯示先前範例中有關預估搜尋結果的特定資訊，您可以執行下列命令：
 

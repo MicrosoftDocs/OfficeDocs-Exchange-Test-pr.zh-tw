@@ -43,18 +43,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 建立日誌記錄信箱之後，或現有信箱可做為日誌記錄信箱。您無法指定Exchange Online信箱作為日誌記錄信箱。您可以傳送日誌報告至內部部署封存系統或協力廠商封存服務。如果您正在執行的混合式部署與您的內部伺服器與Exchange Online之間分割的信箱，您可以指定為日誌記錄信箱的內部部署信箱Exchange Online和內部部署信箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在Exchange Online傳送日誌報告至日誌記錄信箱不存在或無效的目的地設定的日誌規則、 日誌報告仍會保留 Microsoft 資料中心伺服器上傳輸佇列中。 如果發生這種情況將會嘗試 Microsoft 資料中心人員連絡您的組織並要求您修正此問題，讓日誌報告可以成功傳遞至日誌記錄信箱。如果您尚未解決問題的被連絡兩天後，Microsoft 將停用之問題的日誌規則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您在Exchange Online傳送日誌報告至日誌記錄信箱不存在或無效的目的地設定的日誌規則、 日誌報告仍會保留 Microsoft 資料中心伺服器上傳輸佇列中。 如果發生這種情況將會嘗試 Microsoft 資料中心人員連絡您的組織並要求您修正此問題，讓日誌報告可以成功傳遞至日誌記錄信箱。如果您尚未解決問題的被連絡兩天後，Microsoft 將停用之問題的日誌規則。
 
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
@@ -80,18 +70,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - \[傳送日誌報告至\]   輸入將接收所有日誌報告的日誌信箱地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您也可以輸入顯示名稱或郵件使用者或郵件連絡人的別名為日誌信箱。在此例中日誌報告將傳送給郵件使用者或郵件連絡人的外部電子郵件地址。但是如先前所述的郵件使用者或郵件連絡人的外部電子郵件地址不能Exchange Online信箱的地址。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 您也可以輸入顯示名稱或郵件使用者或郵件連絡人的別名為日誌信箱。在此例中日誌報告將傳送給郵件使用者或郵件連絡人的外部電子郵件地址。但是如先前所述的郵件使用者或郵件連絡人的外部電子郵件地址不能Exchange Online信箱的地址。
 
 
 3.  按一下 \[儲存\] 建立新的日誌規則。

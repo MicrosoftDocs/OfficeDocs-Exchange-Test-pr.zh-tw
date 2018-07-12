@@ -19,20 +19,10 @@ _**上次修改主題的時間：** 2015-07-21_
 
 在 MicrosoftExchange Server 2013 和 Exchange Online 中，「Exchange 搜尋」包含篩選器來為常見被加成郵件附件的檔案格式類型製作索引。您也可以安裝篩選器，以製作其他檔案類型的索引。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，不需要安裝和註冊 Microsoft Office Filter Pack 。<br />
-根據預設，可依Exchange Server 2013內部編製索引的大小上限檔案為 32 MB。若要增加此大小限制，您必須在組織中所有的 CAS 和多重角色伺服器上新增下列登錄機碼：<br />
-<code>@&quot;SOFTWARE\Microsoft\ExchangeServer\V15\Search\SystemParameters&quot;  DWORD: &quot;MaxAttachmentSize&quot;</code></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Exchange 2013 中，不需要安裝和註冊 Microsoft Office Filter Pack 。<br />
+> 根據預設，可依Exchange Server 2013內部編製索引的大小上限檔案為 32 MB。若要增加此大小限制，您必須在組織中所有的 CAS 和多重角色伺服器上新增下列登錄機碼：<br />
+> <code>@&quot;SOFTWARE\Microsoft\ExchangeServer\V15\Search\SystemParameters&quot;  DWORD: &quot;MaxAttachmentSize&quot;</code>
 
 
 在管理或使用「Exchange 搜尋」和相依的功能 (如[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)) 時請注意，無法搜尋的項目、已停用索引的檔案格式，以及其內容無法供製作索引的檔案格式，這彼此之間是有差異的：

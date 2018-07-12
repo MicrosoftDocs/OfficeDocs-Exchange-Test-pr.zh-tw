@@ -63,18 +63,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - **如果，套用此規則**  選取條件和條件輸入任何必要的值。若要新增多個條件、 按一下 \[**新增條件**\]。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您沒有選取任何條件建立傳輸保護規則時，Exchange 2013 伺服器與您組織中的傳輸服務所處理的所有訊息都是受 IRM 保護。IRM-保護所有郵件都需要更多資源。因此，我們建議您在規劃您的 Mailbox server 和 AD RMS 部署據此。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 如果您沒有選取任何條件建立傳輸保護規則時，Exchange 2013 伺服器與您組織中的傳輸服務所處理的所有訊息都是受 IRM 保護。IRM-保護所有郵件都需要更多資源。因此，我們建議您在規劃您的 Mailbox server 和 AD RMS 部署據此。
     
       - \[執行下列動作\]   選擇 \[套用權限保護到具有下列條件的郵件\] 然後使用 \[選擇 RMS 範本\] 對話方塊來選擇範本。
     
@@ -92,18 +82,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 此範例會建立傳輸保護規則 Protect BusinessCriticalProject。規則會 IRM 保護郵件包含詞語 「 Business Critical"中**不要轉寄**範本 \[主旨\] 欄位。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此範例由<code>SubjectContainsWords</code>述詞。您可以使用傳輸規則述詞的任意組合表單條件和例外狀況規則。如需可用述詞的資訊，請參閱 ＜ <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">傳輸規則條件 （述詞）</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此範例由<code>SubjectContainsWords</code>述詞。您可以使用傳輸規則述詞的任意組合表單條件和例外狀況規則。如需可用述詞的資訊，請參閱 ＜ <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">傳輸規則條件 （述詞）</a>。
     
         New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
     

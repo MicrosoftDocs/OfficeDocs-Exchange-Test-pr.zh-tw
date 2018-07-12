@@ -36,18 +36,8 @@ _**上次修改主題的時間：** 2018-03-26_
 
   - 公用資料夾移轉，如果您組織中的任何單一公用資料夾大於 25 GB 之前，建議您刪除該資料夾以進行較小、 內容或劃分為公用資料夾的多個、 較小的公用資料夾內容。請注意以下引用 25 GB 限制只適用於公用資料夾而不適用於有問題的資料夾可能會有任何子系或子資料夾。如果這兩個選項是可行的我們建議的您並未移動公用資料夾至 Exchange Online。如需詳細資訊，請參閱[Exchange Online 限制](https://go.microsoft.com/fwlink/p/?linkid=391188)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在 Exchange Online 中的目前公用資料夾配額少於 25 GB，您可以使用<a href="https://go.microsoft.com/fwlink/p/?linkid=844062">Set-organizationconfig 指令程式</a>來增加這些 DefaultPublicFolderIssueWarningQuota 和 DefaultPublicFolderProhibitPostQuota 參數。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您在 Exchange Online 中的目前公用資料夾配額少於 25 GB，您可以使用<a href="https://go.microsoft.com/fwlink/p/?linkid=844062">Set-organizationconfig 指令程式</a>來增加這些 DefaultPublicFolderIssueWarningQuota 和 DefaultPublicFolderProhibitPostQuota 參數。
 
 
   - 在 Office 365 和 Exchange Online，您可以建立最大值為 1000年公用資料夾信箱。
@@ -137,18 +127,8 @@ _**上次修改主題的時間：** 2018-03-26_
     
         Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" } | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的預期在 Exchange Online 中接收來自網際網路的外部電子郵件，您擁有郵件功能的公用資料夾，您必須停用目錄架構邊緣封鎖 (DBEB) Exchange Online 和 Exchange Online Protection (EOP) 中。請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn600322(v=exchg.150)">使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件</a>如需詳細資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的預期在 Exchange Online 中接收來自網際網路的外部電子郵件，您擁有郵件功能的公用資料夾，您必須停用目錄架構邊緣封鎖 (DBEB) Exchange Online 和 Exchange Online Protection (EOP) 中。請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn600322(v=exchg.150)">使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件</a>如需詳細資訊。
 
 
 2.  如果公用資料夾的名稱包含反斜線**\\**或正斜線**/**，它可能不取得移轉至其指定的信箱移轉程序期間。在遷移之前，重新命名這類資料夾中移除這些字元
@@ -169,18 +149,8 @@ _**上次修改主題的時間：** 2018-03-26_
         
             Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete, PublicFolderMailboxesLockedForNewConnections, PublicFolderMailboxesMigrationComplete
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果<code>PublicFoldersLockedforMigration</code>或<code>PublicFolderMigrationComplete</code>參數<code>$true</code>，就表示您已在某些舊版公用資料夾遷移。請確定任何舊版公用資料夾資料庫已解除委任才可以繼續步驟 3b。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果<code>PublicFoldersLockedforMigration</code>或<code>PublicFolderMigrationComplete</code>參數<code>$true</code>，就表示您已在某些舊版公用資料夾遷移。請確定任何舊版公用資料夾資料庫已解除委任才可以繼續步驟 3b。
     
     2.  如果上述任一會傳回值設為`$true`，使其`$false`執行：
         
@@ -188,18 +158,8 @@ _**上次修改主題的時間：** 2018-03-26_
 
 4.  基於確認其完成移轉成功，我們建議您在適當的所有 Exchange 2013 伺服器上執行下列命令。這將會採取的目前的公用資料夾部署，您可以稍後使用進行比較新遷移的公用資料夾的快照。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根據您的 Exchange 組織的大小，則可能需要一些時間讓執行這些命令。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 根據您的 Exchange 組織的大小，則可能需要一些時間讓執行這些命令。
     
       - 執行下列命令以擷取原始來源資料夾結構的快照。
         
@@ -229,18 +189,8 @@ _**上次修改主題的時間：** 2018-03-26_
     
     4.  請確定未選取 \[ **Exchange 郵件公用資料夾**。如果未選取，您可以繼續下一步\] 區段*的先決條件步驟在 Exchange Online*。如果選取，按一下來清除\] 核取方塊，並再按 \[**下一步**。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您未看見<strong>Exchange 郵件公用資料夾</strong>是<strong>選用的功能</strong>] 畫面上的選項，您可以結束 Microsoft Azure Active Directory 連線並繼續進行下一步] 區段<em>的先決條件步驟在 Exchange Online</em>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您未看見<strong>Exchange 郵件公用資料夾</strong>是<strong>選用的功能</strong>] 畫面上的選項，您可以結束 Microsoft Azure Active Directory 連線並繼續進行下一步] 區段<em>的先決條件步驟在 Exchange Online</em>。
     
     5.  已清除**Exchange 郵件公用資料夾**選取項目之後，請按一下 \[**下一步**，直到您已**準備好設定**在畫面上，然後按一下 \[**設定**。
 
@@ -312,18 +262,8 @@ _**上次修改主題的時間：** 2018-03-26_
 
 2.  執行`ModernPublicFolderToMailboxMapGenerator.ps1`指令碼來建立.csv 檔案對應於 Exchange Online 的目的地的公用資料夾信箱的來源的公用資料夾。此檔案用來計算 Exchange Online 中公用資料夾信箱的正確的號碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><code>ModernPublicFolderToMailboxMapGenerator.ps1</code>所產生的檔案不會包含在組織中每個公用資料夾的名稱。它會包含參照到父項資料夾的較大的資料夾樹狀目錄或資料夾的名稱哪些本身會大幅大型。您可考量此檔案的 「 例外狀況 」 檔案用來確定特定資料夾樹狀結構和較大的資料夾取得放入特定的公用資料夾信箱方塊。請正常沒有看到 [公用資料夾此檔案中的每一部。（除非明確地將其導向到不同的公用資料夾信箱的對應檔案內的另一個線條上另提及），此對應檔案中所列的任何資料夾的子資料夾也移轉至相同的公用資料夾信箱作為其上層資料夾。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <code>ModernPublicFolderToMailboxMapGenerator.ps1</code>所產生的檔案不會包含在組織中每個公用資料夾的名稱。它會包含參照到父項資料夾的較大的資料夾樹狀目錄或資料夾的名稱哪些本身會大幅大型。您可考量此檔案的 「 例外狀況 」 檔案用來確定特定資料夾樹狀結構和較大的資料夾取得放入特定的公用資料夾信箱方塊。請正常沒有看到 [公用資料夾此檔案中的每一部。（除非明確地將其導向到不同的公用資料夾信箱的對應檔案內的另一個線條上另提及），此對應檔案中所列的任何資料夾的子資料夾也移轉至相同的公用資料夾信箱作為其上層資料夾。
     
         .\ModernPublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes><Maximum mailbox recoverable item size in bytes><Folder-to-size map path><Folder-to-mailbox map path>
     
@@ -391,18 +331,8 @@ _**上次修改主題的時間：** 2018-03-26_
         
         New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -NotificationEmails <email addresses for migration notifications>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請使用逗號分隔多個電子郵件地址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 請使用逗號分隔多個電子郵件地址。
     
     其中`folder_mapping.csv`是在產生的對應檔案*步驟 3： 建立.csv 檔案*。請務必提供的完整檔案路徑。如果對應檔案已移動有任何原因，請務必使用新的位置。
 
@@ -432,19 +362,9 @@ _**上次修改主題的時間：** 2018-03-26_
 
     Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您不可以存取<code>-PublicFolderMailboxesLockedForNewConnections</code>參數，可能是因為在目前的升級期間未準備 Active Directory 為我們建議您在上述<em>您需要知道之前吗？</em>請參閱<a href="prepare-active-directory-and-domains-exchange-2013-help.md">準備 Active Directory 及網域</a>如需詳細資訊。<br />
-也請注意，任何需要存取公用資料夾的使用者應首先，移轉<strong>之前</strong>您移轉公用資料夾本身。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您不可以存取<code>-PublicFolderMailboxesLockedForNewConnections</code>參數，可能是因為在目前的升級期間未準備 Active Directory 為我們建議您在上述<em>您需要知道之前吗？</em>請參閱<a href="prepare-active-directory-and-domains-exchange-2013-help.md">準備 Active Directory 及網域</a>如需詳細資訊。<br />
+> 也請注意，任何需要存取公用資料夾的使用者應首先，移轉<strong>之前</strong>您移轉公用資料夾本身。
 
 
 如果您的組織有多個 Exchange 2013 伺服器上的公用資料夾信箱，必須等到 AD 複寫已完成。一旦完成，您可以確認所有的公用資料夾信箱有挑選`PublicFolderMailboxesLockedForNewConnections`旗標及該任何擱置中最近對其公用資料夾的使用者具有收斂整個組織的變更。所有可能需要數小時。

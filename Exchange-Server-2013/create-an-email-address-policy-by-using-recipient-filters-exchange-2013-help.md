@@ -27,18 +27,8 @@ _**上次修改主題的時間：** 2012-10-16_
 
   - 若要使用*RecipientFilter*參數來建立自訂篩選，您必須指定篩選條件的字串。命令介面中使用 OPath 篩選語法。OPath 是設計用來查詢物件的資料來源的查詢語言。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用的收件者篩選器來建立或編輯的電子郵件地址原則，您無法使用 Exchange 系統管理中心 (EAC) 來編輯電子郵件地址原則。您必須使用命令介面。如需詳細的語法及參數資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您使用的收件者篩選器來建立或編輯的電子郵件地址原則，您無法使用 Exchange 系統管理中心 (EAC) 來編輯電子郵件地址原則。您必須使用命令介面。如需詳細的語法及參數資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</a>。
 
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [電子郵件地址和通訊錄](email-addresses-and-address-books-exchange-2013-help.md) 項目中的「電子郵件地址原則」項目。

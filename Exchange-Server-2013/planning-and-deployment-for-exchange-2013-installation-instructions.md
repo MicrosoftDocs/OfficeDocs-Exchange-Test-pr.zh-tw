@@ -214,18 +214,8 @@ Exchange 2013 安裝程式包含數個安裝模式：
 
   - **升級**   如果您已安裝 Exchange，而且正在安裝累計更新或服務套件，請選取此模式。您可以從 Exchange 安裝精靈和自動安裝使用此模式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 不支援從舊版 Exchange 就地升級。此模式僅可用於安裝累計更新或服務套件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Exchange 2013 不支援從舊版 Exchange 就地升級。此模式僅可用於安裝累計更新或服務套件。
 
 
   - **RecoverServer** 如果伺服器出現災難性的失敗，且您需要復原資料，請使用此模式。您必須使用與失敗伺服器相同的完整網域名稱 (FQDN) 來安裝伺服器，然後使用 **/m:RecoverServer** 參數執行安裝程式。不必指定要還原的角色。安裝程式會偵測 Active Directory 中的 Exchange 伺服器物件，並自動安裝對應的檔案和組態。復原伺服器之後，便可以還原資料庫並重新設定其他任何設定。若要以 **RecoverServer** 模式執行，則不能在伺服器上安裝 Exchange。Active Directory 中必須有 Exchange Server 物件。您只能在自動安裝期間使用此模式。

@@ -201,29 +201,16 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 11. 在 \[輸入您想和外部用戶端存取伺服器一起使用之網域名稱\] 中，輸入您想套用之外部網域名稱。例如：mail.contoso.com。按一下 \[儲存\]。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>部分組織會將 Outlook Web App FQDN 設為唯一，以保護使用者不受基礎伺服器 FQDN 變更的影響。許多組織會使用 owa.contoso.com (而非 mail.contoso.com) 來作為其 Outlook Web App FQDN。若您要設定唯一的 Outlook Web App FQDN，請在完成先前步驟後執行下列動作。此檢查清單是假設您已經設定一個唯一的 Outlook Web App FQDN。
-    <ol>
-    <li><p>選取 <strong>[owa (預設的網站)]</strong>，然後按一下 <strong>[編輯]</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" />。</p></li>
-    <li><p>在 <strong>[外部 URL]</strong> 中照順序輸入 <strong>https://</strong> 和您要使用的唯一 Outlook Web App FQDN，最後加上 <strong>/owa</strong>。例如，https://owa.contoso.com/owa。</p></li>
-    <li><p>按一下 [儲存]。</p></li>
-    <li><p>選取 <strong>[ecp (預設的網站)]</strong>，然後按一下 <strong>[編輯]</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" />。</p></li>
-    <li><p>在 <strong>[外部 URL]</strong> 中照順序輸入 <strong>https://</strong> 和您在上一個步驟中指定的同一個 Outlook Web App FQDN，最後加上 <strong>/ecp</strong>。例如，https://owa.contoso.com/ecp。</p></li>
-    <li><p>按一下 [儲存]。</p></li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 部分組織會將 Outlook Web App FQDN 設為唯一，以保護使用者不受基礎伺服器 FQDN 變更的影響。許多組織會使用 owa.contoso.com (而非 mail.contoso.com) 來作為其 Outlook Web App FQDN。若您要設定唯一的 Outlook Web App FQDN，請在完成先前步驟後執行下列動作。此檢查清單是假設您已經設定一個唯一的 Outlook Web App FQDN。
+    > <ol>
+    > <li><p>選取 <strong>[owa (預設的網站)]</strong>，然後按一下 <strong>[編輯]</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" />。</p></li>
+    > <li><p>在 <strong>[外部 URL]</strong> 中照順序輸入 <strong>https://</strong> 和您要使用的唯一 Outlook Web App FQDN，最後加上 <strong>/owa</strong>。例如，https://owa.contoso.com/owa。</p></li>
+    > <li><p>按一下 [儲存]。</p></li>
+    > <li><p>選取 <strong>[ecp (預設的網站)]</strong>，然後按一下 <strong>[編輯]</strong><img src="images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="編輯圖示" alt="編輯圖示" />。</p></li>
+    > <li><p>在 <strong>[外部 URL]</strong> 中照順序輸入 <strong>https://</strong> 和您在上一個步驟中指定的同一個 Outlook Web App FQDN，最後加上 <strong>/ecp</strong>。例如，https://owa.contoso.com/ecp。</p></li>
+    > <li><p>按一下 [儲存]。</p></li>
+    > </ol>
 
 
 將用戶端存取伺服器虛擬目錄的外部 URL 設定完成之後，您必須為自動探索、Outlook Web App 及郵件流程設定公用 DNS 記錄。公用 DNS 記錄應指向您的網際網路對向用戶端存取伺服器的外部 IP 位址或 FQDN，並使用您在用戶端存取伺服器上設定之可從外部存取的 FQDN。 以下是建議之 DNS 記錄舉例，說明您應建立此記錄，以便啟用郵件流程及外部用戶連線。
@@ -480,19 +467,9 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 7.  針對您要變更的每個虛擬目錄重複步驟 5 與 6。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>ECP 和 OWA 虛擬目錄的內部 URL 必須相同。<br />
-    您不能對自動探索虛擬目錄設定內部 URL。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > ECP 和 OWA 虛擬目錄的內部 URL 必須相同。<br />
+    > 您不能對自動探索虛擬目錄設定內部 URL。
 
 
 8.  最後，我們必須開啟命令介面並設定離線通訊錄 (OAB)，以便自動探索選取正確的虛擬目錄來發佈 OAB。若要這樣做，請執行下列命令。

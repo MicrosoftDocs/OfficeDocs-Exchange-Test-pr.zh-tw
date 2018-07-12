@@ -169,18 +169,8 @@ Exchange 中的 SMTP 電子郵件地址的最大長度是 571 個字元。此限
 
   - **通訊群組和動態通訊群組**  通訊群組是根據**memberOf** Active Directory 屬性擴充。動態通訊群組會展開使用 Active Directory 查詢定義。如果*ExpansionServer*參數設定群組上，不是目前的伺服器來擴充群組。通訊群組會路由傳送到指定之伺服器的擴充。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您選取的特定傳輸伺服器以擴充伺服器在組織中，通訊群組使用方式會變成取決於擴充伺服器的可用性。如果擴充伺服器無法使用，無法傳遞任何傳送至通訊群組的郵件。如果您打算使用特定的擴充伺服器進行通訊群組，以減少服務中斷的風險您應該考慮實作這些伺服器的高可用性解決方案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您選取的特定傳輸伺服器以擴充伺服器在組織中，通訊群組使用方式會變成取決於擴充伺服器的可用性。如果擴充伺服器無法使用，無法傳遞任何傳送至通訊群組的郵件。如果您打算使用特定的擴充伺服器進行通訊群組，以減少服務中斷的風險您應該考慮實作這些伺服器的高可用性解決方案。
 
 
   - **替代收件者**  *ForwardingAddress*參數可以設定信箱及擁有郵件功能的公用資料夾。*ForwardingAddress*參數會將所有郵件重新都導向至指定的替代收件者。這就是所謂*轉寄的收件者*。當*ForwardingAddress*參數中指定的替代傳遞地址和*DeliverToMailboxAndForward*參數設為`$true`時、 郵件傳遞至原始收件者和替代收件者。這就是所謂*傳遞和轉寄的收件者*。
@@ -217,18 +207,8 @@ Exchange 中的 SMTP 電子郵件地址的最大長度是 571 個字元。此限
 
   - **ReportToOriginatorEnabled**  此參數可讓傳遞回報傳送給寄件者的電子郵件傳送至此通訊群組。有效值為`$true`或`$false`。預設值為`$true`。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><em>ReportToManagerEnabled</em>參數和<em>ReportToOriginatorEnabled</em>參數的值不可同時<code>$true</code>。如果一個參數設為<code>$true</code>、 其他必須設為<code>$false</code>。這兩個參數的值可以是<code>$false</code>。這會隱藏所有傳遞報告郵件的所有重新導向。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <em>ReportToManagerEnabled</em>參數和<em>ReportToOriginatorEnabled</em>參數的值不可同時<code>$true</code>。如果一個參數設為<code>$true</code>、 其他必須設為<code>$false</code>。這兩個參數的值可以是<code>$false</code>。這會隱藏所有傳遞報告郵件的所有重新導向。
 
 
 下列清單說明可用的傳遞回報郵件：

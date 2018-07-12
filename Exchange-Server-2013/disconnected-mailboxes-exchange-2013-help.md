@@ -29,18 +29,8 @@ _**上次修改主題的時間：** 2015-03-09_
     
     已停用和已刪除的信箱會保留在信箱資料庫中，直到已刪除的信箱保留期間到期，預設為 30 天。保留期間到期之後，信箱就會永久刪除 (也稱為「清除」)。如果使用 **Remove-Mailbox** Cmdlet 刪除信箱，系統也會保留該信箱直到保留期間到期。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果使用 <strong>Remove-Mailbox</strong> Cmdlet 以及 <em>Permanent</em> 或 <em>StoreMailboxIdentity</em> 參數刪除信箱，則會立即從信箱資料庫刪除該信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果使用 <strong>Remove-Mailbox</strong> Cmdlet 以及 <em>Permanent</em> 或 <em>StoreMailboxIdentity</em> 參數刪除信箱，則會立即從信箱資料庫刪除該信箱。
     
     若要識別組織中已停用的信箱，請在命令介面中執行下列命令。
     
@@ -110,18 +100,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - **將它連線到現有的主要信箱**   如同中斷連線的主要信箱，中斷連線的封存信箱會保留在信箱資料庫中，直到已刪除的信箱保留期間到期，預設為 30 天。在這段期間，您可以將封存信箱重新連線到停用之前所連線的同一個使用者帳戶，以復原該信箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您停用使用者信箱的封存信箱，然後為相同使用者啟用封存信箱，該使用者信箱將取得新的封存信箱。當您使用 <strong>Connect-Mailbox</strong> Cmdlet將主要信箱連線到使用者，您必須使用 <strong>Enable-Mailbox</strong> Cmdlet 將停用的封存信箱連線到現有的信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若您停用使用者信箱的封存信箱，然後為相同使用者啟用封存信箱，該使用者信箱將取得新的封存信箱。當您使用 <strong>Connect-Mailbox</strong> Cmdlet將主要信箱連線到使用者，您必須使用 <strong>Enable-Mailbox</strong> Cmdlet 將停用的封存信箱連線到現有的信箱。
     
     如需詳細資訊，請參閱＜[管理 Exchange 2013 中的就地封存](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)＞。
 

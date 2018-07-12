@@ -71,18 +71,8 @@ _**上次修改主題的時間：** 2015-01-01_
 
 6.  在\[選取公認的網域\]中，從公認的網域清單中選取 \[marketing.contoso.com\]後，再按一下 \[確定\] 來新增網域到同盟信任。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>將為 [marketing.contoso.com] 網域建立同盟信任網域證明字串。您必須在此網域的公用 DNS 建立不同的 TXT 記錄。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 將為 [marketing.contoso.com] 網域建立同盟信任網域證明字串。您必須在此網域的公用 DNS 建立不同的 TXT 記錄。
 
 
 7.  使用為 \[marketing.contoso.com\] 網域建立的同盟信任網域證明字串，在此公用 DNS 伺服器上建立 TXT 記錄。視您的公用 DNS 主機的更新排程而定，DNS 變更的複寫可能需要 15 分鐘或更長的時間。
@@ -133,18 +123,9 @@ _**上次修改主題的時間：** 2015-01-01_
     
         Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在設定同盟信任使用下一個憑證做為目前同盟憑證之前，請確定您組織中所有的 Exchange 伺服器上已部署了憑證。使用 <a href="https://technet.microsoft.com/zh-tw/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> 指令程式檢查憑證的部署狀態。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 在設定同盟信任使用下一個憑證做為目前同盟憑證之前，請確定您組織中所有的 Exchange 伺服器上已部署了憑證。使用 <a href="https://technet.microsoft.com/zh-tw/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> 指令程式檢查憑證的部署狀態。
+
 
 
 6.  **重新整理同盟中繼資料和Azure AD驗證系統中的憑證**

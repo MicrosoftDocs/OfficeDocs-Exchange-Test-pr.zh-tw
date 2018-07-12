@@ -62,24 +62,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
     Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>將 <em>PickupDirectoryPath</em> 參數的值設為 <code>$null</code>，則會停用 [收取] 目錄。</p></li>
-<li><p><em>PickupDirectoryPath</em> 參數和 <em>ReplayDirectoryPath</em> 參數所指定的目錄不可相同。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>將 <em>PickupDirectoryPath</em> 參數的值設為 <code>$null</code>，則會停用 [收取] 目錄。</p></li>
+> <li><p><em>PickupDirectoryPath</em> 參數和 <em>ReplayDirectoryPath</em> 參數所指定的目錄不可相同。</p></li>
+> </ul>
 
 
 ## 使用命令介面來設定 \[重新顯示\] 目錄
@@ -98,24 +85,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
     Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>將 <em>ReplayDirectoryPath</em> 參數的值設為 <code>$null</code>，會停用 [重新顯示] 目錄。</p></li>
-<li><p><em>PickupDirectoryPath</em> 參數和 <em>ReplayDirectoryPath</em> 參數所指定的目錄不可相同。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>將 <em>ReplayDirectoryPath</em> 參數的值設為 <code>$null</code>，會停用 [重新顯示] 目錄。</p></li>
+> <li><p><em>PickupDirectoryPath</em> 參數和 <em>ReplayDirectoryPath</em> 參數所指定的目錄不可相同。</p></li>
+> </ul>
 
 
 ## 如何知道這是否正常運作？

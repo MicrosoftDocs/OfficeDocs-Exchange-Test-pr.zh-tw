@@ -47,18 +47,8 @@ _**上次修改主題的時間：** 2016-05-26_
 
 3.  輸入來進行格式化的 XML 檔案與所有這些資料**Set-content-路徑 」 C:\\custompath\\exportedRules.xml"-Encoding Byte-值 $ruleCollections.SerializedClassificationRuleCollection**。（**Set-content**是檔中寫入之 XML 指令程式的一部分）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請確定您使用實際儲存規則套件的檔案位置。<strong>C:\custompath\</strong>是預留位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請確定您使用實際儲存規則套件的檔案位置。<strong>C:\custompath\</strong>是預留位置。
 
 
 ## 尋找您要修改在 XML 規則
@@ -204,18 +194,8 @@ _**上次修改主題的時間：** 2016-05-26_
 
 3.  在Exchange 管理命令介面或Exchange Online PowerShell 中，輸入**New-classificationrulecollection FileData (Get-content-路徑"C:\\custompath\\MyNewRulePack.xml"-Encoding Byte)**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請確定您使用實際儲存規則套件的檔案位置。<strong>C:\custompath\</strong>是預留位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請確定您使用實際儲存規則套件的檔案位置。<strong>C:\custompath\</strong>是預留位置。
 
 
 4.  若要確認，請輸入**Y**，並按下**Enter**。

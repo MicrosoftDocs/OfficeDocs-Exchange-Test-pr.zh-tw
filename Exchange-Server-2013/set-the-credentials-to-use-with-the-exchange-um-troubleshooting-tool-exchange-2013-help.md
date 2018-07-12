@@ -39,18 +39,8 @@ Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow
 
   - 安裝 UM 疑難排解工具。如需詳細步驟，請參閱[安裝 Exchange UM 疑難排解工具](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您將會使用 UM 疑難排解工具<code>SIPClient</code>模式中，有數個其他 Office Communications Server 2007 R2 或 Microsoft Lync Server 需求和先決條件。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=311961">檢查清單： 部署 Office Communications Server 2007 R2 和 Exchange 2010 Unified Messaging</a>或<a href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">檢查清單： Lync Server 整合 Exchange 2013 UM</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您將會使用 UM 疑難排解工具<code>SIPClient</code>模式中，有數個其他 Office Communications Server 2007 R2 或 Microsoft Lync Server 需求和先決條件。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=311961">檢查清單： 部署 Office Communications Server 2007 R2 和 Exchange 2010 Unified Messaging</a>或<a href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">檢查清單： Lync Server 整合 Exchange 2013 UM</a>。
 
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。

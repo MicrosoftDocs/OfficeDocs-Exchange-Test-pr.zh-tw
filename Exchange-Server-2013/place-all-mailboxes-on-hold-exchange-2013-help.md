@@ -130,16 +130,21 @@ _**上次修改主題的時間：** 2017-01-18_
   - 本主題中用來將所有信箱的訴訟暫止狀態的 PowerShell 命令使用會傳回所有使用者信箱的收件者篩選器。您可以使用其他收件者的屬性來傳回您可以再透過管線傳到**Set-Mailbox**指令程式置於訴訟保留這些信箱的特定信箱的清單。
     
     以下是一些範例使用**Get-Mailbox**與**Get-Recipient** cmdlet 可傳回根據常見的使用者或信箱內容的信箱的子集。下列範例會假設相關信箱內容 （例如*CustomAttributeN*或*Department*） 已填入。
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
-        Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-    
+    ```
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+    ```
+    ```
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```
+
     您可以使用篩選器中的其他使用者信箱屬性以包含或排除信箱。如需詳細資訊，請參閱[可篩選的內容-Filter 參數](https://technet.microsoft.com/zh-tw/library/bb738155\(v=exchg.150\))。
 

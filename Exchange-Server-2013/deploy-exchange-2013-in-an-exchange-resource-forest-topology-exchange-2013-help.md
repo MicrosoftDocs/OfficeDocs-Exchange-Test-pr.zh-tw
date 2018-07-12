@@ -41,18 +41,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 1.  從Exchange樹系的網域控制站，建立傳出的單向信任，讓Exchange樹系信任帳戶樹系。詳細步驟請參閱[建立信任的兩側單向、 傳出，樹系信任](https://go.microsoft.com/fwlink/p/?linkid=69130)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然建議您建立的樹系信任，您可以建立的樹系信任或外部信任。如果您建立的外部信任，當您在步驟 3 中建立連結的信箱新信箱精靈] 的 [<strong>主圖形帳戶</strong>] 頁面上，您必須指定可存取信任樹系中的網域控制站的使用者帳戶。您無法使用與您目前登入認證。如果您使用<strong>New-Mailbox</strong>指令程式建立連結的信箱，您必須指定使用<em>LinkedCredential</em>參數可存取信任樹系中的網域控制站的使用者帳戶。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 雖然建議您建立的樹系信任，您可以建立的樹系信任或外部信任。如果您建立的外部信任，當您在步驟 3 中建立連結的信箱新信箱精靈] 的 [<strong>主圖形帳戶</strong>] 頁面上，您必須指定可存取信任樹系中的網域控制站的使用者帳戶。您無法使用與您目前登入認證。如果您使用<strong>New-Mailbox</strong>指令程式建立連結的信箱，您必須指定使用<em>LinkedCredential</em>參數可存取信任樹系中的網域控制站的使用者帳戶。
 
 
 2.  Exchange樹系中安裝Exchange 2013。安裝Exchange一般的相同方式在單一樹系案例。如需如何安裝Exchange 2013的詳細步驟，請參閱下列主題：

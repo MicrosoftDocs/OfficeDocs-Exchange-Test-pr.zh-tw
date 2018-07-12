@@ -51,21 +51,11 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  按一下 \[新增\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示") \> \[通訊群組\]。
 
-3.  <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><img src="images/Bb124513.3ea82c95-9dda-450f-823b-cd0772249d81(EXCHG.150).png" title="新增功能 試用 Office 365 群組" alt="新增功能 試用 Office 365 群組" /><br />
-    如果您有商務用 Office 365 方案或 Exchange Online 方案，現在就可以建立 Office 365 群組來取代通訊群組。Office 365 群組擁有通訊群組的功能以及其他功能。您可以利用 Office 365 群組傳送電子郵件至群組、共用一般行事曆，以及擁有可儲存並支援群組檔案和資料夾的程式庫。按一下 [新增]<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" /> &gt; [Office 365 群組] 開始使用，並參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=800653">Office 365 群組 - 管理員說明</a>。<br />
-    如果您有想要遷移到 Office 365 群組的現有通訊群組，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=824756">將通訊群組清單移轉到 Office 365 群組 - 管理員說明</a>。<br />
-    如果您仍然想要建立通訊群組，請按一下或點選 [新增通訊群組] 精靈。</td>
-    </tr>
-    </tbody>
-    </table>
+3.  > [!TIP]  
+	> <img src="images/Bb124513.3ea82c95-9dda-450f-823b-cd0772249d81(EXCHG.150).png" title="新增功能 試用 Office 365 群組" alt="新增功能 試用 Office 365 群組" /><br />
+    > 如果您有商務用 Office 365 方案或 Exchange Online 方案，現在就可以建立 Office 365 群組來取代通訊群組。Office 365 群組擁有通訊群組的功能以及其他功能。您可以利用 Office 365 群組傳送電子郵件至群組、共用一般行事曆，以及擁有可儲存並支援群組檔案和資料夾的程式庫。按一下 [新增]<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" /> &gt; [Office 365 群組] 開始使用，並參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=800653">Office 365 群組 - 管理員說明</a>。<br />
+    > 如果您有想要遷移到 Office 365 群組的現有通訊群組，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=824756">將通訊群組清單移轉到 Office 365 群組 - 管理員說明</a>。<br />
+    > 如果您仍然想要建立通訊群組，請按一下或點選 [新增通訊群組] 精靈。
 
 
 4.  在 \[新增通訊群組\] 頁面上填妥以下方塊：
@@ -176,18 +166,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - \[從通訊清單中隱藏這個群組\]  如果您不想要讓使用者在通訊錄中看見這個群組，請選取此核取方塊。若要傳送電子郵件至此群組，寄件者必須在 \[收件者:\]或 \[副本:\]行中輸入群組的別名或電子郵件地址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以考慮隱藏安全性群組，因為它們通常是用來指派權限給群組成員，而非傳送電子郵件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+	> 您可以考慮隱藏安全性群組，因為它們通常是用來指派權限給群組成員，而非傳送電子郵件。
 
 
   - \[組織單位\]  這個唯讀方塊會顯示包含通訊群組的組織單位 (OU)。您必須使用 Active Directory 使用者和電腦，才能將群組移動至不同的 OU。
@@ -232,18 +212,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
     若要移除清單中的人員或群組，請從清單中選取他們，然後按一下 \[移除\]![\[移除\] 圖示](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "[移除] 圖示")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已將群組設定為只允許您組織中的寄件者傳送郵件給群組，則即使將郵件連絡人新增至此清單中，他們所傳送的電子郵件也會遭到拒絕。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您已將群組設定為只允許您組織中的寄件者傳送郵件給群組，則即使將郵件連絡人新增至此清單中，他們所傳送的電子郵件也會遭到拒絕。
 
 
 ## 訊息核准
@@ -272,49 +242,19 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - \[SMTP\]  這是預設的位址類型。按一下此按鈕，然後在 \[\* 電子郵件地址\] 方塊中輸入新的 SMTP 位址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要讓新的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 若要讓新的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。
     
       - \[自訂位址類型\]  按一下此按鈕，並在 \[\* 電子郵件地址\] 方塊中，輸入其中一種支援的非 SMTP 電子郵件地址類型。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。您必須確保指定的自訂位址符合該位址類型的格式需求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。您必須確保指定的自訂位址符合該位址類型的格式需求。
 
 
   - \[編輯\]  若要變更與群組相關的電子郵件地址，先於清單中選擇然後按一下 \[編輯\]![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要讓現有的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要讓現有的位址成為群組的主要 SMTP 位址，請選取 [將此位址設為回覆地址] 核取方塊。
 
 
   - \[移除\]  若要刪除與群組相關的電子郵件地址，先於清單中選擇然後按一下 \[移除\]![\[移除\] 圖示](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "[移除] 圖示")。

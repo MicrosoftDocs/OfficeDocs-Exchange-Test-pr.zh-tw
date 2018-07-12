@@ -35,19 +35,9 @@ _**上次修改主題的時間：** 2018-01-17_
 
 2.  使用命令介面啟用探索系統信箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您無法使用 EAC 啟用探索系統信箱。<br />
-    必須是執行了以下命令從相同的目錄解壓縮 Exchange 安裝媒體中的位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您無法使用 EAC 啟用探索系統信箱。<br />
+    > 必須是執行了以下命令從相同的目錄解壓縮 Exchange 安裝媒體中的位置。
     
     若要重新建立探索系統信箱，請執行下列命令：
     

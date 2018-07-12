@@ -117,32 +117,12 @@ _**上次修改主題的時間：** 2018-04-16_
     
     若要在 Client Access Server 上安裝、解除安裝，以及管理傳輸代理程式，請在您想要管理的 Client Access Server 上執行下列動作：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支援載入 <code>Microsoft.Exchange.Management.PowerShell.SnapIn</code>Windows PowerShell 嵌入式管理單元並執行 <strong>*-TransportAgent</strong> 指令程式以外的指令程式，可能會對您的 Exchange 部署造成無法挽回的損害。<br />
-    在您想要安裝、解除安裝或管理傳輸代理程式的 Client Access Server 上，您必須是本機管理員。不支援在 Exchange 檔案、目錄或 Active Directory 物件上修改存取控制清單 (ACL)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]  
+	> 不支援載入 <code>Microsoft.Exchange.Management.PowerShell.SnapIn</code>Windows PowerShell 嵌入式管理單元並執行 <strong>*-TransportAgent</strong> 指令程式以外的指令程式，可能會對您的 Exchange 部署造成無法挽回的損害。<br />
+    > 在您想要安裝、解除安裝或管理傳輸代理程式的 Client Access Server 上，您必須是本機管理員。不支援在 Exchange 檔案、目錄或 Active Directory 物件上修改存取控制清單 (ACL)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>僅限在 Client Access Server 上執行以下程序。如果您想要在信箱伺服器上管理傳輸代理程式，不需要載入 ExchangeWindows PowerShell 嵌入式管理單元。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 僅限在 Client Access Server 上執行以下程序。如果您想要在信箱伺服器上管理傳輸代理程式，不需要載入 ExchangeWindows PowerShell 嵌入式管理單元。
     
     1.  開啟新的 Windows PowerShell 視窗。
     
@@ -182,18 +162,8 @@ _**上次修改主題的時間：** 2018-04-16_
 
   - **升級至 Exchange 2013 SP1 時，MAPI over HTTP 的效能可能會變差**   如果您從 Exchange 2013 累計更新升級至 Exchange 2013 SP1，並啟用 MAPI over HTTP，則使用此通訊協定連接到 Exchange 2013 SP1 伺服器的用戶端可能會出現效能變差的狀況。這是由於從累計更新升級至 Exchange 2013 SP1 期間未配置必要設定所致。如果您從 Exchange 2013 RTM 升級至 Exchange 2013 SP1，或是安裝新的 Exchange 2013 SP1 或更新版本的伺服器，就不會發生此問題。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在 Client Access Server 上啟用了 MAPI over HTTP 通訊協定時，才會構成問題。依預設會加以停用。在停用 MAPI over HTTP 時，用戶端會改用 RPC over HTTP 通訊協定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只有在 Client Access Server 上啟用了 MAPI over HTTP 通訊協定時，才會構成問題。依預設會加以停用。在停用 MAPI over HTTP 時，用戶端會改用 RPC over HTTP 通訊協定。
     
     若要解決此問題，請執行下列動作：
     

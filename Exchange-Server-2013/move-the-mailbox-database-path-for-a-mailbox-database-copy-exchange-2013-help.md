@@ -63,18 +63,8 @@ _**上次修改主題的時間：** 2014-05-07_
 
 4.  將信箱資料庫路徑移至新位置。如需詳細步驟，請參閱[Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>移動作業期間，必須卸載要移動的資料庫。移動完成之前，此處理程序將造成服務中斷，並造成所有使用者與要移除之資料庫上的信箱中斷。移動作業完成後，會自動裝載資料庫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 移動作業期間，必須卸載要移動的資料庫。移動完成之前，此處理程序將造成服務中斷，並造成所有使用者與要移除之資料庫上的信箱中斷。移動作業完成後，會自動裝載資料庫。
 
 
 5.  在先前包含已移除之信箱資料庫被動副本的每個信箱伺服器上，建立所需的資料夾結構。例如，如果您將資料庫移至 C:\\mountpoints\\DB1，則必須在每個信箱伺服器上建立將主控信箱資料庫副本的這個相同路徑。

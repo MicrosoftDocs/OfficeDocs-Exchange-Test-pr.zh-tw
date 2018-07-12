@@ -19,19 +19,9 @@ _**上次修改主題的時間：** 2013-05-20_
 
 基於安全性考量，某些組織可能會想要限制存取 Exchange 系統管理中心 (EAC) 來自網際網路的使用者。此程序將示範如何關閉 eac 的存取。此程序不會防止使用者存取 Outlook Web App 中的選項。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此程序會停用完全步驟所套用之 CAS 伺服器上的 EAC 中系統管理員存取權。如果您啟用 EAC 管理員供內部使用者，您應該安裝個別的 CAS 伺服器並將其設定為僅處理內部要求使用下列命令：<br />
-<code>Set-ECPVirtualDirectory -Identity &quot;InternalCAS\ecp (default web site)&quot; -AdminEnabled $True</code></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此程序會停用完全步驟所套用之 CAS 伺服器上的 EAC 中系統管理員存取權。如果您啟用 EAC 管理員供內部使用者，您應該安裝個別的 CAS 伺服器並將其設定為僅處理內部要求使用下列命令：<br />
+> <code>Set-ECPVirtualDirectory -Identity &quot;InternalCAS\ecp (default web site)&quot; -AdminEnabled $True</code>
 
 
 

@@ -85,10 +85,12 @@ _**上次修改主題的時間：** 2014-02-24_
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
 
 若要將此搜尋結果複製到探索信箱，您會執行下列命令：
-
-    Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-
-    Start-MailboxSearch "FY13 Q2 Financial Results"
+  ```
+  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+  ```
+  ```
+  Start-MailboxSearch "FY13 Q2 Financial Results"
+  ```
 
 ## 複製搜尋結果的詳細資訊
 

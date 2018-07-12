@@ -70,34 +70,14 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
 3.  編輯檔案複製至步驟 1 到您要建立郵件使用者的目標Exchange樹系中指定 TargetOU 容器 distinguishedName (DN) 中的 \[ILM 延伸\] 資料夾的 OneWaySync.xml。您可以使用 LDP.exe 或 ADSIEdit.exe 瀏覽 TargetOU 容器如果您不知道其名稱的功能。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果是和 ILM GalSync 2007 一起使用這個範例，請從 GalSync2007 管理的容器清單中排除這個容器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果是和 ILM GalSync 2007 一起使用這個範例，請從 GalSync2007 管理的容器清單中排除這個容器。
 
 
 4.  在 ILM Identity Manager 主控台中，移至 \[**檔案**\> 從資料夾 ILMServerConfig 匯入 ILM 伺服器組態的**匯入伺服器設定**。此巨集指令會匯入 Metaverse 結構描述及佈建的規則以及兩個Active Directory管理代理程式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在匯入過程中，您必須提供樹系名稱和認證，並比對來源和目標 ADMA 中匯入的 Active Directory 管理代理程式 (ADMA) 的磁碟分割和您的組態中的磁碟分割名稱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在匯入過程中，您必須提供樹系名稱和認證，並比對來源和目標 ADMA 中匯入的 Active Directory 管理代理程式 (ADMA) 的磁碟分割和您的組態中的磁碟分割名稱。
 
 
 5.  為支援Exchange 2013目標樹系中，在**建立管理代理程式**\] 頁面上**設定延伸模組**\] 窗格中，ADMA 在**佈建的**下拉式清單中選取**Exchange 2013**然後Exchange 2010用戶端存取伺服器遠端 Windows PowerShell URI 中輸入**Exchange 2013 RPS URI**。
@@ -108,18 +88,8 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
 6.  在 ILM Identity Manager 主控台上**建立管理代理程式**\] 窗格中，開啟來源樹系的管理代理程式**屬性**。選取 \[**設定目錄磁碟分割**精靈\]，然後按一下 \[選取的容器，將會包含您要移至目標樹系的信箱的**容器**。清除所有的其他容器，亦即範圍只管理此一個容器管理代理程式的選擇。同樣地，目標樹系 MA，選取的容器之擁有郵件功能的使用者在佈建，亦即 TargetOU 步驟 2 中所指定。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果是和 ILM GalSync 2007 一起使用這個範例，請從 GalSync 2007 管理的容器清單中排除這些容器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果是和 ILM GalSync 2007 一起使用這個範例，請從 GalSync 2007 管理的容器清單中排除這些容器。
 
 
 7.  在目標 MA 上執行初始完整匯入 (僅限接移)，讓 ILM 找得到在步驟 2 中指定的 TargetOU。

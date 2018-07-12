@@ -69,18 +69,8 @@ Exchange 組織中可能包含數千個收件者。如果您將所有收件者�
 
   - 為通訊清單命名時，要讓使用者一眼就看出該清單包含哪些收件者類型。如果為您的通訊清單命名有困難，請不要建立太多清單，並提醒使用者他們可以使用 GAL 來尋找組織中的任何人。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根據 Exchange Online 的預設，「通訊清單」角色並未指派給任何角色群組。若要使用任何需要「通訊清單」角色的指令程式，您需將此角色新增至角色群組。如需詳細資訊，請參閱＜<a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a>＞主題的＜將角色新增至角色群組＞一節。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 根據 Exchange Online 的預設，「通訊清單」角色並未指派給任何角色群組。若要使用任何需要「通訊清單」角色的指令程式，您需將此角色新增至角色群組。如需詳細資訊，請參閱＜<a href="manage-role-groups-exchange-2013-help.md">管理角色群組</a>＞主題的＜將角色新增至角色群組＞一節。
 
 
 如需在 Exchange 2013 中建立通訊清單的詳細指示，請參閱[建立通訊清單](create-an-address-list-exchange-2013-help.md)。如需在 Exchange Online 中建立通訊清單的詳細指示，請參閱[管理 Exchange Online 中的地址清單](https://technet.microsoft.com/zh-tw/library/jj983798\(v=exchg.150\))。

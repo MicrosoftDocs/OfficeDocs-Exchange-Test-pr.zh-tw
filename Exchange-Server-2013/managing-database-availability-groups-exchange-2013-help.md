@@ -74,19 +74,9 @@ DAG使用 Windows 容錯移轉叢集技術子集，例如叢集律動、叢集�
 
 不論使用什麼伺服器作為見證伺服器，如果預訂的見證伺服器上已啟用 Windows 防火牆，則必須啟用檔案及印表機共用的 Windows 防火牆例外。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您指定見證伺服器不是Exchange 2013或Exchange 2010伺服器，您必須以之前建立 DAG 的見證伺服器上的本機管理員群組新增Exchange受信任子系統萬用安全性群組 (USG)。下列安全性權限所需確保該Exchange可以建立目錄並視需要見證伺服器上共用。<br />
-見證伺服器使用 SMB 連接埠 445。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您指定見證伺服器不是Exchange 2013或Exchange 2010伺服器，您必須以之前建立 DAG 的見證伺服器上的本機管理員群組新增Exchange受信任子系統萬用安全性群組 (USG)。下列安全性權限所需確保該Exchange可以建立目錄並視需要見證伺服器上共用。<br />
+> 見證伺服器使用 SMB 連接埠 445。
 
 
 見證伺服器和見證目錄都不需要具備容錯能力，或使用任何形式的備援或具備高可用性。不需要為見證伺服器使用叢集檔案伺服器，或為見證伺服器使用任何其他形式的恢復功能。這樣做有幾個原因。在需要見證伺服器之前，必須使用幾個較大的 DAG (例如，六個或更多成員) 來處理失敗。因爲六個成員的 DAG 最多可以容忍兩個 Voter 失敗而不遺失仲裁，因此在需要使用見證伺服器來維護仲裁之前，它最多可處理三個 Voter 的失敗。而且，如果發生影響到目前見證伺服器的失敗 (例如，由於硬體失敗而遺失見證伺服器)，則可以使用 [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/zh-tw/library/dd297934\(v=exchg.150\)) Cmdlet 來設定新的見證伺服器和見證目錄 (只要您有仲裁)。

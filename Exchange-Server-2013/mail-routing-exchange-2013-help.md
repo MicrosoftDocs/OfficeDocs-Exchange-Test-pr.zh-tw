@@ -93,18 +93,8 @@ Exchange 2013 中的每一個路由目的地均有一個包含一台或多台傳
     
       - 將 Edge Transport Server 訂閱至 Active Directory 站台時。這些已訂閱的邊際傳輸伺服器不能直接由其他的 Active Directory 站台存取。請注意，Edge Transport Server 可以是 Exchange 2013、Exchange 2010 或 Exchange 2007。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當傳遞群組為 Active Directory 站台時，僅會使用延遲展開傳送。當多個收件者共用最低成本路由路徑的任何部分時，延遲展開傳送會嘗試減少郵件傳輸數量。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當傳遞群組為 Active Directory 站台時，僅會使用延遲展開傳送。當多個收件者共用最低成本路由路徑的任何部分時，延遲展開傳送會嘗試減少郵件傳輸數量。
 
 
   - **伺服器清單**   此為一或多個已設定為通訊群組擴充伺服器的 Exchange 2010 或 Exchange 2007 Hub Transport Server 或 Exchange 2013 Mailbox Server 的集合。此通訊群組擴充伺服器為此傳遞群組提供服務的路由目的地。

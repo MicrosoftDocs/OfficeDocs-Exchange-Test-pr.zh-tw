@@ -66,18 +66,9 @@ OAuth 驗證通常與三個元件有關：一個授權伺服器以及兩個需�
 
   - **步驟 1 – 將憑證指派給內部部署 Exchange Server 的內建權杖發行者。** 首先，內部部署 Exchange 系統管理員必須使用下列 Exchange 管理命令介面指令碼來建立憑證 (如果先前尚未建立憑證)，並將該憑證指派給內部部署 Exchange Server 的內建權杖發行者。這項程序只需進行一次；憑證建立好之後，便可重複用於其他驗證情況且不會被取代。務必要將 *$tenantDomain* 的值更新為您的網域名稱。若要這麼做，請複製並貼上下列程式碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>複製程式碼並貼到文字編輯器 (如「記事本」) 中並以 .ps1 副檔名加以儲存，以便能夠輕易執行命令介面指令碼。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 複製程式碼並貼到文字編輯器 (如「記事本」) 中並以 .ps1 副檔名加以儲存，以便能夠輕易執行命令介面指令碼。
+
     
         # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
         
@@ -145,18 +136,9 @@ OAuth 驗證通常與三個元件有關：一個授權伺服器以及兩個需�
         Exporting certificate...
         Complete.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在繼續之前， Windows PowerShell 的 Azure Active Directory 模組指令程式，則需要。如果尚未安裝 （先前稱為 PowerShell 的 Microsoft Online Services 模組 for Windows） Windows PowerShell 的 Azure Active Directory 模組指令程式，您可以從<a href="http://aka.ms/aadposh">管理 Azure AD 使用 Windows PowerShell</a>來進行安裝。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 在繼續之前， Windows PowerShell 的 Azure Active Directory 模組指令程式，則需要。如果尚未安裝 （先前稱為 PowerShell 的 Microsoft Online Services 模組 for Windows） Windows PowerShell 的 Azure Active Directory 模組指令程式，您可以從<a href="http://aka.ms/aadposh">管理 Azure AD 使用 Windows PowerShell</a>來進行安裝。
+
 
 
   - **步驟 2 – 設定 Office 365 以便與內部部署 Exchange 2013 通訊。** 將要作為 Exchange Server 2013 通訊對象的 Office 365 伺服器設定為合作夥伴應用程式。例如，若內部部署 Exchange Server 2013 需要與 Office 365 通訊，您就必須將內部部署 Exchange 設定為合作夥伴應用程式。合作夥伴應用程式就是 Exchange 2013 可以與其直接交換安全性權杖，而不必經過協力廠商安全性權杖伺服器的應用程式。內部部署 Exchange 2013 系統管理員必須使用下列 Exchange 管理命令介面指令碼，將要作為 Exchange 2013 通訊對象的 Office 365 租用戶設定為夥伴應用程式。在執行期間，系統將會提示輸入 Office 365 租用戶網域的系統管理員使用者名稱和密碼 (例如，administrator@fabrikam.com)。如果先前的指令碼並未建立憑證，請務必將 *$CertFile* 的值更新為憑證的位置。若要這麼做，請複製並貼上下列程式碼。

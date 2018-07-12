@@ -231,18 +231,8 @@ If you have already enabled hybrid Modern Authentication to support other versio
     
         New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.
 
 
 3.  Ensure your EAS maxRequestLength is configured to match your transport configuration’s MaxSendSize/MaxReceiveSize:

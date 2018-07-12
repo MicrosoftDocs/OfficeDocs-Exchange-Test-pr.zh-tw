@@ -79,10 +79,12 @@ _**上次修改主題的時間：** 2013-12-18_
 3.  輸入使用者名稱和密碼後，將憑證匯出至檔案。
 
 <!-- end list -->
-
-    $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
-
-    Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```
+  $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
+  ```
+  ```
+  Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```
 
 ## 使用 EAC 匯入憑證
 

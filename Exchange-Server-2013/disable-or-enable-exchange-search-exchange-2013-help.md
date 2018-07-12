@@ -19,19 +19,9 @@ _**上次修改主題的時間：** 2014-05-07_
 
 依預設，所有新的信箱資料庫都會啟用 Exchange 搜尋，不需要額外的設定。不過，如果想要讓 Exchange 搜尋停止建立信箱內容的索引，您可以停用個別信箱資料庫或整個信箱伺服器的這項功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>停用 Exchange 搜尋會影響全文搜尋的功能和效能，這些搜尋是使用者在線上模式或在 Windows 行動裝置上使用 Outlook 執行的。<br />
-<a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a> 也依賴 Exchange 搜尋。如果您針對信箱資料庫或 Mailbox Server 停用 Exchange 搜尋，則就地 eDiscovery 搜尋就不會從資料庫或伺服器傳回任何郵件。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]  
+> 停用 Exchange 搜尋會影響全文搜尋的功能和效能，這些搜尋是使用者在線上模式或在 Windows 行動裝置上使用 Outlook 執行的。<br />
+> <a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a> 也依賴 Exchange 搜尋。如果您針對信箱資料庫或 Mailbox Server 停用 Exchange 搜尋，則就地 eDiscovery 搜尋就不會從資料庫或伺服器傳回任何郵件。
 
 
 如需其他與 Exchange 搜尋相關的管理工作，請參閱 [Exchange 搜尋程序](exchange-search-procedures-exchange-2013-help.md)。
@@ -85,18 +75,8 @@ _**上次修改主題的時間：** 2014-05-07_
 
 3.  在 **\[一般\]** 索引標籤的 **\[啟動類型\]** 清單中，選取 **\[已停用\]** 以停用服務，或選取 **\[自動\]** 以自動啟動服務。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>啟動類型會在下次嘗試啟動此服務時 (伺服器重新啟動後自動啟動服務或手動啟動服務時) 影響服務。在下一個步驟中，會手動停止或啟動服務。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 啟動類型會在下次嘗試啟動此服務時 (伺服器重新啟動後自動啟動服務或手動啟動服務時) 影響服務。在下一個步驟中，會手動停止或啟動服務。
 
 
 4.  按一下 **\[停止\]** 以停止服務；或按一下 **\[啟動\]** 以啟動服務。
@@ -106,14 +86,17 @@ _**上次修改主題的時間：** 2014-05-07_
 **使用命令介面**
 
 執行下列命令來停止並停用 Microsoft Exchange 搜尋服務。
-
-    Stop-Service MSExchangeFastSearch
-
-    Set-Service MSExchangeFastSearch -StartupType Disabled
+```
+Stop-Service MSExchangeFastSearch
+```
+```
+Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 
 執行下列命令將 Exchange 搜尋服務設定為自動啟動，然後啟動此服務。
-
-    Set-Service MSExchangeFastSearch -StartupType Automatic
-
-    Start-Service MSExchangeFastSearch
-
+```
+Set-Service MSExchangeFastSearch -StartupType Automatic
+```
+```
+Start-Service MSExchangeFastSearch
+```

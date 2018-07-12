@@ -34,18 +34,8 @@ _**上次修改主題的時間：** 2017-03-27_
 
 1.  如果您的公用資料夾在 Exchange 2010 或更新版本的伺服器上，您必須具備公用資料夾資料庫的所有信箱伺服器上安裝 Client Access Server role。這可讓 Microsoft Exchange RpcClientAccess 服務來執行，允許所有用戶端存取公用資料夾。用戶端存取角色不需要 Exchange 2007 公用資料夾伺服器，並不需要此步驟。如需詳細資訊，請參閱[安裝 Exchange Server 2010](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此伺服器沒有為一部分的用戶端存取負載平衡。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/en-us/library/ff625247(v=exchg.141).aspx">在 Exchange 2010 了解負載平衡</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此伺服器沒有為一部分的用戶端存取負載平衡。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/en-us/library/ff625247(v=exchg.141).aspx">在 Exchange 2010 了解負載平衡</a>。
 
 
 2.  在每個公用資料夾伺服器上建立空的信箱資料庫。
@@ -58,25 +48,17 @@ _**上次修改主題的時間：** 2017-03-27_
     
         New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我們建議您增加到此資料庫的唯一信箱就是您將在步驟 3 中建立的 Proxy 信箱。不得在此信箱資料庫上建立其他信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 我們建議您增加到此資料庫的唯一信箱就是您將在步驟 3 中建立的 Proxy 信箱。不得在此信箱資料庫上建立其他信箱。
 
 
 3.  在新的信箱資料庫中建立 Proxy 信箱，然後在通訊錄中隱藏該信箱。「自動探索」會傳回此信箱的 SMTP 作為 *DefaultPublicFolderMailbox* SMTP，因此只要解析此 SMTP，用戶端即可連到舊版 Exchange 伺服器來存取公用資料夾。
-    
-        New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
-    
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
+    ```
+    ```
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
 
 4.  在 Exchange 2010 中，讓「自動探索」傳回 Proxy 公用資料夾信箱。對於 Exchange 2007，無須執行此步驟。
     

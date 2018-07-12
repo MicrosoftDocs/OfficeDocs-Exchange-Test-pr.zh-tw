@@ -92,18 +92,8 @@ _**上次修改主題的時間：** 2012-12-10_
     
       - Exchange 整合通訊 Proxy 位址 (EUM Proxy 位址)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange 中，所有非 SMTP 電子郵件地址都會被視為自訂地址。Exchange 不會針對 X.400、GroupWise 或 Lotus Notes 電子郵件地址類型提供唯一的對話方塊或內容頁面。若您新增非 SMTP 自訂電子郵件地址，則必須安裝適當的動態連結程式庫 (DLL) 檔案。若不提供適當的 DLL 檔案，將無法建立自訂的電子郵件地址原則。將會在事件檢視器中記錄下列錯誤：「'i386' 電腦上遺失 Microsoft Exchange 目錄中 'SADF' 地址類型的電子郵件地址描述物件。」</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在 Exchange 中，所有非 SMTP 電子郵件地址都會被視為自訂地址。Exchange 不會針對 X.400、GroupWise 或 Lotus Notes 電子郵件地址類型提供唯一的對話方塊或內容頁面。若您新增非 SMTP 自訂電子郵件地址，則必須安裝適當的動態連結程式庫 (DLL) 檔案。若不提供適當的 DLL 檔案，將無法建立自訂的電子郵件地址原則。將會在事件檢視器中記錄下列錯誤：「'i386' 電腦上遺失 Microsoft Exchange 目錄中 'SADF' 地址類型的電子郵件地址描述物件。」
 
 
 如需如何建立電子郵件地址原則的詳細說明，請參閱下列主題：
@@ -147,18 +137,9 @@ _**上次修改主題的時間：** 2012-12-10_
     
     按一下 \[以進一步限制此原則將會套用至收件者的 \[**新增規則**\]。這會建立布林值**和**陳述式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您套用過多原則，可能會過度限縮電子郵件地址原則，以至於不含任何使用者。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 如果您套用過多原則，可能會過度限縮電子郵件地址原則，以至於不含任何使用者。
+
 
 
 4.  按一下 \[預覽原則適用於下列內容的收件者\]，查看此通訊清單將套用的收件者。

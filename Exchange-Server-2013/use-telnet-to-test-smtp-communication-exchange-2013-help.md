@@ -64,18 +64,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 4.  輸入要尋找其 MX 記錄的網域名稱。例如，若要尋找 fabrikam.com 網域的 MX 記錄，請輸入 **fabrikam.com.**，然後按 ENTER 鍵。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>尾端的句點 ( <strong>.</strong> ) 表示是 FQDN。使用尾端的句點可防止不小心在網域名稱後面加上任何為網路設定的預設 DNS 字尾。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 尾端的句點 ( <strong>.</strong> ) 表示是 FQDN。使用尾端的句點可防止不小心在網域名稱後面加上任何為網路設定的預設 DNS 字尾。
     
     該命令的輸出如下：
     
@@ -111,25 +101,12 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - **郵件內文**   這是一封測試郵件
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Telnet 用戶端中的命令不區分大小寫。SMTP 命令動詞會大寫，以方便識別。</p></li>
-<li><p>在 Telnet 工作階段中，連接至目的 SMTP 伺服器之後，不能使用退格鍵。如果您在輸入 SMTP 命令時打錯字，則必須按 ENTER，然後重新輸入命令。無法辨識的 SMTP 命令或語法錯誤會產生錯誤訊息，如下所示：</p>
-<pre><code>500 5.3.3 Unrecognized command</code></pre></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>Telnet 用戶端中的命令不區分大小寫。SMTP 命令動詞會大寫，以方便識別。</p></li>
+> <li><p>在 Telnet 工作階段中，連接至目的 SMTP 伺服器之後，不能使用退格鍵。如果您在輸入 SMTP 命令時打錯字，則必須按 ENTER，然後重新輸入命令。無法辨識的 SMTP 命令或語法錯誤會產生錯誤訊息，如下所示：</p>
+> <pre><code>500 5.3.3 Unrecognized command</code></pre></li>
+> </ul>
 
 
 1.  在命令提示字元中，輸入 **telnet**，然後按 ENTER 鍵。此命令會開啟 Telnet 工作階段。
@@ -178,18 +155,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>RFC 2821 中定義的 3 位數 SMTP 回應碼適用於所有的 SMTP 郵件伺服器。但在某些 SMTP 郵件伺服器中，文字說明部分會稍微不同。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > RFC 2821 中定義的 3 位數 SMTP 回應碼適用於所有的 SMTP 郵件伺服器。但在某些 SMTP 郵件伺服器中，文字說明部分會稍微不同。
 
 
 ## 開啟 mail1.fabrikam.com 25

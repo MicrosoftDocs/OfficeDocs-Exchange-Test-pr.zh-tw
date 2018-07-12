@@ -34,18 +34,9 @@ _**上次修改主題的時間：** 2015-09-04_
 
   - 確定您打算安裝累計更新或 Service Pack 的伺服器都符合系統需求與必要條件。如需詳細資訊，請參閱[Exchange 2013 系統需求](exchange-2013-system-requirements-exchange-2013-help.md)及[Exchange 2013 必要條件](exchange-2013-prerequisites-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在您安裝 Exchange 累計更新 (CU) 後，將會覆寫您在 Exchange XML 應用程式組態檔 (例如 Client Access Server 上的 web.config 檔案，或 Mailbox Server 上的 EdgeTransport.exe.config 檔案) 中任何自訂的個別伺服器設定。請務必儲存此資訊，以便安裝後能輕易地重新設定伺服器。在安裝 Exchange CU 後，您必須重新配置這些設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 在您安裝 Exchange 累計更新 (CU) 後，將會覆寫您在 Exchange XML 應用程式組態檔 (例如 Client Access Server 上的 web.config 檔案，或 Mailbox Server 上的 EdgeTransport.exe.config 檔案) 中任何自訂的個別伺服器設定。請務必儲存此資訊，以便安裝後能輕易地重新設定伺服器。在安裝 Exchange CU 後，您必須重新配置這些設定。
+
 
 
   - 安裝累計更新或 Service Pack 之後，您必須重新啟動電腦，才能對登錄和作業系統進行變更。

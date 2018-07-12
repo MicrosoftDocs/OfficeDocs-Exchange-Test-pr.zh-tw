@@ -60,18 +60,8 @@ Outlook iOS 及 Android 提供 Exchange 系統管理員帳戶設定 「 推送"�
 
 10. 選擇 \[**設定**\]。在**設定**blade，以定義將提供的 iOS Outlook 與 Android 設定關鍵值組。您輸入的關鍵值組所定義稍後在本文中的機碼值組\] 區段中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要輸入關鍵值組，您可以使用設定設計或輸入 XML 屬性清單之間選擇。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要輸入關鍵值組，您可以使用設定設計或輸入 XML 屬性清單之間選擇。
 
 
 11. 當您已完成時，選擇**\[確定\]**。

@@ -159,18 +159,9 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>重設這些屬性之後, 必須等待 Exchange 偵測新的設定。這可能需要兩個小時才能完成。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 重設這些屬性之後, 必須等待 Exchange 偵測新的設定。這可能需要兩個小時才能完成。
+
 
 
 4.  為了驗證移轉的結尾，我們建議您先執行下列Exchange 管理命令介面命令在舊版 Exchange 伺服器所採取的目前的公用資料夾部署的快照。
@@ -199,18 +190,8 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
     
     4.  請確定未選取 \[ **Exchange 郵件公用資料夾**。如果未選取，您可以繼續下一步\] 區段中， *Office 365 或 Exchange Online 中的先決條件步驟*。如果選取，按一下來清除\] 核取方塊，並再按 \[**下一步**。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您未看見<strong>Exchange 郵件公用資料夾</strong>是<strong>選用的功能</strong>] 畫面上的選項，您可以結束 Microsoft Azure Active Directory 連線並繼續進行下一步] 區段中， <em>Office 365 或 Exchange Online 中的先決條件步驟</em>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您未看見<strong>Exchange 郵件公用資料夾</strong>是<strong>選用的功能</strong>] 畫面上的選項，您可以結束 Microsoft Azure Active Directory 連線並繼續進行下一步] 區段中， <em>Office 365 或 Exchange Online 中的先決條件步驟</em>。
     
     5.  已清除**Exchange 郵件公用資料夾**選取項目之後，請按一下 \[**下一步**，直到您已**準備好設定**在畫面上，然後按一下 \[**設定**。
 
@@ -238,18 +219,8 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
     
     現有的移轉要求可以是下列其中一種： 批次移轉或序列移轉。若非要求每個類型並移除要求每種類型的命令如下所示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>然後再移除移轉要求，請務必了解原因有現有的欄位。執行下列命令將會決定何時進行上一個要求並協助您診斷任何可能發生的問題。您可能需要通訊與您組織中其他管理員來判斷為何進行變更。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 然後再移除移轉要求，請務必了解原因有現有的欄位。執行下列命令將會決定何時進行上一個要求並協助您診斷任何可能發生的問題。您可能需要通訊與您組織中其他管理員來判斷為何進行變更。
     
     下列範例會將發現任何現有的序列的移轉要求。
     
@@ -269,18 +240,8 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
 
 2.  確定 Office 365 中沒有公用資料夾或公用資料夾信箱存在。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您看到 Office 365 或 Exchange Online 中的公用資料夾，務必決定為何他們有與組織中誰啟動之前先移除公用資料夾和公用資料夾信箱的公用資料夾階層。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您看到 Office 365 或 Exchange Online 中的公用資料夾，務必決定為何他們有與組織中誰啟動之前先移除公用資料夾和公用資料夾信箱的公用資料夾階層。
     
     1.  在 Office 365 或 Exchange Online PowerShell 中執行下列命令，查看是否有任何公用資料夾信箱存在。
         
@@ -341,18 +302,8 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>公用資料夾至信箱的對應檔案不應該超過 1000 列。如果此檔案超過 1000 列，在您的公用資料夾結構必須簡體中文。繼續進行大於 1000 列的檔案不建議使用，並造成遷移錯誤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 公用資料夾至信箱的對應檔案不應該超過 1000 列。如果此檔案超過 1000 列，在您的公用資料夾結構必須簡體中文。繼續進行大於 1000 列的檔案不建議使用，並造成遷移錯誤。
     
       - 才可執行指令碼，使用下列 cmdlet 來檢查您的 Exchange Online 租用戶中目前的公用資料夾限制。然後，請注意目前的配額值的公用資料夾。 `Get-OrganizationConfig | fl *quota*`
         
@@ -368,18 +319,8 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
         
           - 啟動遷移批次之前，請公用資料夾分割成多個公用資料夾之每個 2 gb 或更低。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若在公用資料夾超過 30 GB，且如果它不是合適刪除內容或分割成多個公用資料夾，我們建議您不要移動公用資料夾至 Exchange Online。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 若在公用資料夾超過 30 GB，且如果它不是合適刪除內容或分割成多個公用資料夾，我們建議您不要移動公用資料夾至 Exchange Online。
     
       - *Folder to size map path*等於執行`Export-PublicFolderStatistics.ps1`指令碼時所建立之.csv 檔案的檔案路徑。
     
@@ -408,18 +349,8 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
     
     `Credential`為您的 Office 365 使用者名稱和密碼。`CsvSummaryFile`是您想要在記錄檔路徑。CSV 格式\]，再同步處理作業錯誤。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我們建議您先模擬指令碼來採用之前實際執行它，您可以使用<code>-WhatIf</code>參數執行指令碼中執行的動作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 我們建議您先模擬指令碼來採用之前實際執行它，您可以使用<code>-WhatIf</code>參數執行指令碼中執行的動作。
 
 
 2.  在舊版 Exchange 伺服器上，取得下列在執行遷移要求時會需要的資訊：
@@ -456,18 +387,8 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
 
 4.  最後，在 Exchange Online PowerShell 中執行下列命令來建立遷移要求。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在下列Exchange 管理命令介面範例必須符合您的 Outlook 無所不在設定中的驗證方法，否則命令將會失敗。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在下列Exchange 管理命令介面範例必須符合您的 Outlook 無所不在設定中的驗證方法，否則命令將會失敗。
     
         $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
         
@@ -649,26 +570,13 @@ Exchange 支援從下列舊版 Exchange Server 將您的公用資料夾移至 Of
 
 6.  使用 EAC 設定公用資料夾的權限。如需相關資訊，請遵循[設定新的組織中的公用資料夾](set-up-public-folders-in-a-new-organization-exchange-2013-help.md)主題中的[Step 3: Assign permissions to the public folder](set-up-public-folders-in-a-new-organization-exchange-2013-help.md)。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已開始 PST 遷移，並遭遇主要信箱已滿的問題，則有兩個選擇可用來復原 PST 遷移：
-<ol>
-<li><p>等待自動分割將資料從主要信箱移出。這最多可能要花兩個星期的時間。但完全已滿的公用資料夾信箱中，所有公用資料夾在自動分割完成之前將無法收到新的內容。</p></li>
-<li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">建立公用資料夾信箱</a>，然後使用 <strong>New-PublicFolder</strong> Cmdlet 搭配 <em>Mailbox</em> 參數，在次要公用資料夾信箱中建立剩餘的公用資料夾。本範例會在次要公用資料夾信箱中，建立一個名為 PF201 的新公用資料夾。</p>
-<pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]  
+> 如果您已開始 PST 遷移，並遭遇主要信箱已滿的問題，則有兩個選擇可用來復原 PST 遷移：
+> <ol>
+> <li><p>等待自動分割將資料從主要信箱移出。這最多可能要花兩個星期的時間。但完全已滿的公用資料夾信箱中，所有公用資料夾在自動分割完成之前將無法收到新的內容。</p></li>
+> <li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">建立公用資料夾信箱</a>，然後使用 <strong>New-PublicFolder</strong> Cmdlet 搭配 <em>Mailbox</em> 參數，在次要公用資料夾信箱中建立剩餘的公用資料夾。本範例會在次要公用資料夾信箱中，建立一個名為 PF201 的新公用資料夾。</p>
+> <pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
+> </ol>
 
 
 ## 初次使用 Office 365 嗎？

@@ -162,25 +162,12 @@ _**上次修改主題的時間：** 2013-03-15_
 
     Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>若要在信箱伺服器上的信箱傳輸服務中設定通訊協定記錄檔設定，請使用<strong>Set-MailboxTransportService</strong>指令程式。若要設定的通訊協定記錄檔設定 Client Access server 上 Front End Transport 服務中，使用<strong>Set-FrontEndTransportService</strong>指令程式。</p></li>
-<li><p>有效地將<em>SendProtocolLogPath</em>或<em>ReceiveProtocolLogPath</em>參數設定為值<code>$null</code>停用所有的傳送連接器或伺服器上的所有接收連接器的通訊協定記錄。不過，將兩個這些參數都設<code>$null</code>的任何其他連接器的伺服器上啟用通訊協定記錄時，包括組織內傳送連接器或信箱傳遞傳送連接器，就會產生錯誤的事件記錄檔。</p></li>
-<li><p>將 <em>ReceiveProtocolLogMaxAge</em> 或 <em>SendProtocolLogMaxAge</em> 參數的值設為 <code>00:00:00</code>，可以防止因為通訊協定記錄檔的保留天數而自動移除通訊協定記錄檔。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>若要在信箱伺服器上的信箱傳輸服務中設定通訊協定記錄檔設定，請使用<strong>Set-MailboxTransportService</strong>指令程式。若要設定的通訊協定記錄檔設定 Client Access server 上 Front End Transport 服務中，使用<strong>Set-FrontEndTransportService</strong>指令程式。</p></li>
+> <li><p>有效地將<em>SendProtocolLogPath</em>或<em>ReceiveProtocolLogPath</em>參數設定為值<code>$null</code>停用所有的傳送連接器或伺服器上的所有接收連接器的通訊協定記錄。不過，將兩個這些參數都設<code>$null</code>的任何其他連接器的伺服器上啟用通訊協定記錄時，包括組織內傳送連接器或信箱傳遞傳送連接器，就會產生錯誤的事件記錄檔。</p></li>
+> <li><p>將 <em>ReceiveProtocolLogMaxAge</em> 或 <em>SendProtocolLogMaxAge</em> 參數的值設為 <code>00:00:00</code>，可以防止因為通訊協定記錄檔的保留天數而自動移除通訊協定記錄檔。</p></li>
+> </ul>
 
 
 ## 如何才能了解這是否正常運作？

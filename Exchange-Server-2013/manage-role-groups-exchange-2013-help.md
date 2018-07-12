@@ -323,19 +323,9 @@ _**上次修改主題的時間：** 2012-10-08_
 
 移除管理角色群組的角色是最佳最簡單方式撤銷權限授與給系統管理員或專家使用者的群組。如果您不想系統管理員或專家使用者有權限管理功能，您移除管理角色管理的權限的管理角色群組。移除角色之後，角色群組的成員將不再有管理該功能的權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>部分的角色群組，例如組織管理角色群組中，限制哪些角色可以從角色群組中移除。如需詳細資訊，請參閱<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色群組</a>。<br />
-如果系統管理員是另一個角色群組的成員，此群組包含授與權限來管理此功能的管理角色，則您需要從其他角色群組中移除系統管理員，或從其他角色群組中移除負責授與權限來管理此功能的角色。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 部分的角色群組，例如組織管理角色群組中，限制哪些角色可以從角色群組中移除。如需詳細資訊，請參閱<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色群組</a>。<br />
+> 如果系統管理員是另一個角色群組的成員，此群組包含授與權限來管理此功能的管理角色，則您需要從其他角色群組中移除系統管理員，或從其他角色群組中移除負責授與權限來管理此功能的角色。
 
 
 ## 使用 EAC 從角色群組中移除管理角色
@@ -503,19 +493,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 角色群組代理人的使用者或萬用安全性群組 (Usg)，可以新增或移除角色群組的成員或變更角色群組的屬性。新增或移除角色群組代理人，您可以控制人來管理角色群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您新增代理人到角色群組之後，僅能由角色群組上的代理人或指派的使用者直接或間接、以角色對角色來管理角色群組。<br />
-如果已直接或間接指派使用者，即不會新增「角色管理」角色做為角色群組的代理人，使用者必須使用 <strong>Add-RoleGroupMember</strong>、<strong>Remove-RoleGroupMember</strong>、<strong>Update-RoleGroupMember</strong> 及 <strong>Set-RoleGroup</strong> Cmdlet 上的 <em>BypassSecurityGroupManagerCheck</em> 參數來管理角色群組。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在您新增代理人到角色群組之後，僅能由角色群組上的代理人或指派的使用者直接或間接、以角色對角色來管理角色群組。<br />
+> 如果已直接或間接指派使用者，即不會新增「角色管理」角色做為角色群組的代理人，使用者必須使用 <strong>Add-RoleGroupMember</strong>、<strong>Remove-RoleGroupMember</strong>、<strong>Update-RoleGroupMember</strong> 及 <strong>Set-RoleGroup</strong> Cmdlet 上的 <em>BypassSecurityGroupManagerCheck</em> 參數來管理角色群組。
 
 
 
@@ -537,18 +517,8 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
     
         $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您想新增 USG，請使用 <strong>Get-Group</strong> Cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您想新增 USG，請使用 <strong>Get-Group</strong> Cmdlet。
 
 
 3.  重複步驟 2 來新增其他代理人。
@@ -577,18 +547,8 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
     
         $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您想移除 USG，請使用 <strong>Get-Group</strong> Cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您想移除 USG，請使用 <strong>Get-Group</strong> Cmdlet。
 
 
 3.  重複步驟 2 來移除其他代理人。

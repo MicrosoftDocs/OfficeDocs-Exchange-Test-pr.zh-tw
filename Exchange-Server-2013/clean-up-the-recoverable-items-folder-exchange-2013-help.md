@@ -88,18 +88,8 @@ _**上次修改主題的時間：** 2015-09-30_
     
       - *UseDatabaseRetentionDefaults*
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果<em>UseDatabaseQuotaDefaults</em>參數設為<code>$true</code>，不會套用先前的配額設定。在信箱資料庫上設定相對應的配額設定會套用，即使個別信箱設定會填入。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果<em>UseDatabaseQuotaDefaults</em>參數設為<code>$true</code>，不會套用先前的配額設定。在信箱資料庫上設定相對應的配額設定會套用，即使個別信箱設定會填入。
     
         Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
 
@@ -127,36 +117,16 @@ _**上次修改主題的時間：** 2015-09-30_
     
         Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果信箱位於信箱資料庫上的資料庫可用性群組 (DAG) 中，您必須停用受管理的資料夾助理員裝載資料庫副本的每個 DAG 成員上。如果資料庫容錯移轉至另一部伺服器，這可防止受管理的資料夾助理員該伺服器上刪除信箱資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果信箱位於信箱資料庫上的資料庫可用性群組 (DAG) 中，您必須停用受管理的資料夾助理員裝載資料庫副本的每個 DAG 成員上。如果資料庫容錯移轉至另一部伺服器，這可防止受管理的資料夾助理員該伺服器上刪除信箱資料。
 
 
 8.  停用單一項目復原並移除信箱訴訟暫止狀態。
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>執行此命令之後，可能需要一小時停用單一項目復原或訴訟暫止狀態。我們建議您在此期間經過之後才執行下一個步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 執行此命令之後，可能需要一小時停用單一項目復原或訴訟暫止狀態。我們建議您在此期間經過之後才執行下一個步驟。
 
 
 9.  將項目從 \[可復原的項目\] 資料夾複製到 \[探索搜尋信箱中的資料夾及刪除來源信箱中的內容。
@@ -167,36 +137,16 @@ _**上次修改主題的時間：** 2015-09-30_
     
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>它不被必要項目複製到 [探索搜尋信箱。您可以將郵件複製到任何信箱。不過，若要防止敏感性信箱資料存取，建議將郵件複製到已授權的記錄管理員限制存取的信箱。根據預設，預設探索搜尋信箱存取僅限於至探索管理角色群組的成員。如需詳細資訊，請參閱<a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 它不被必要項目複製到 [探索搜尋信箱。您可以將郵件複製到任何信箱。不過，若要防止敏感性信箱資料存取，建議將郵件複製到已授權的記錄管理員限制存取的信箱。根據預設，預設探索搜尋信箱存取僅限於至探索管理角色群組的成員。如需詳細資訊，請參閱<a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a>。
 
 
 10. 如果信箱處於訴訟暫止狀態或鎖稍早啟用單一項目復原，重新啟用這些功能。
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>執行此命令之後，可能需要一小時啟用單一項目復原] 或 [訴訟暫止狀態。建議您啟用受管理的資料夾助理員並允許用戶端存取 （步驟 11 和 12） 只是在這之後經過期間。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 執行此命令之後，可能需要一小時啟用單一項目復原] 或 [訴訟暫止狀態。建議您啟用受管理的資料夾助理員並允許用戶端存取 （步驟 11 和 12） 只是在這之後經過期間。
 
 
 11. 將回復為步驟 1 中記下值的下列配額：

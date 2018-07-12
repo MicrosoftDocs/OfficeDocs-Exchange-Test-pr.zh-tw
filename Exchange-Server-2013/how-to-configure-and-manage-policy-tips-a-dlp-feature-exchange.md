@@ -72,34 +72,21 @@ _**上次修改主題的時間：** 2016-12-09_
 
 8.  如果您想要新增其他條件或動作，請在視窗底端選取 **\[其他選項\]**。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只能使用下列條件：
-    <ul>
-    <li><p><strong>SentTo （收件者是）</strong></p></li>
-    <li><p><strong>SentToScope （收件者位於）</strong></p></li>
-    <li><p><strong>從 （寄件者是）</strong></p></li>
-    <li><p><strong>Frommemberof （寄件者是成員） 以下</strong></p></li>
-    <li><p><strong>FromScope （寄件者位於）</strong></p></li>
-    </ul>
-    下列是不能使用的動作：
-    <ul>
-    <li><p><strong>RejectMessageReasonText （拒絕此郵件並包含說明）</strong></p></li>
-    <li><p><strong>RejectMessageEnhancedStatusCode （拒絕接收郵件以增強型的狀態碼）</strong></p></li>
-    <li><p><strong>DeletedMessage （刪除郵件而不通知任何人）</strong></p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 只能使用下列條件：
+    > <ul>
+    > <li><p><strong>SentTo （收件者是）</strong></p></li>
+    > <li><p><strong>SentToScope （收件者位於）</strong></p></li>
+    > <li><p><strong>從 （寄件者是）</strong></p></li>
+    > <li><p><strong>Frommemberof （寄件者是成員） 以下</strong></p></li>
+    > <li><p><strong>FromScope （寄件者位於）</strong></p></li>
+    > </ul>
+    > 下列是不能使用的動作：
+    > <ul>
+    > <li><p><strong>RejectMessageReasonText （拒絕此郵件並包含說明）</strong></p></li>
+    > <li><p><strong>RejectMessageEnhancedStatusCode （拒絕接收郵件以增強型的狀態碼）</strong></p></li>
+    > <li><p><strong>DeletedMessage （刪除郵件而不通知任何人）</strong></p></li>
+    > </ul>
 
 
 9.  在 **\[選擇此規則的模式\]** 清單中，選取是否要強制執行規則。建議您先測試規則。

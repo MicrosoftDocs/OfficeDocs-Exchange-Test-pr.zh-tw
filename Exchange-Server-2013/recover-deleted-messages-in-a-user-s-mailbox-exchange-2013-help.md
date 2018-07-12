@@ -42,18 +42,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - **目標信箱**  這是在其中將復原的郵件的探索信箱。Exchange安裝程式會建立預設探索信箱。在Exchange Online，預設也會建立探索信箱。如有需要，您可以建立其他探索信箱。如需詳細資訊，請參閱[建立探索信箱](create-a-discovery-mailbox-exchange-2013-help.md)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>當使用<strong>Search-Mailbox</strong>指令程式，您也可以指定不是探索信箱的目標信箱。不過，您無法指定相同的信箱為來源和目標信箱。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 當使用<strong>Search-Mailbox</strong>指令程式，您也可以指定不是探索信箱的目標信箱。不過，您無法指定相同的信箱為來源和目標信箱。
     
       - **搜尋準則**   準則包括寄件者或收件者，或郵件中的關鍵字 (字詞或片語)。
 
@@ -87,19 +77,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [郵件原則及符合性權限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主題中的「就地 eDiscovery」項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用 Exchange 系統管理中心 (EAC) 中的就地 eDiscovery 搜尋遺失的項目。不過，當使用 EAC 中，您不能限制搜尋可復原的項目] 資料夾。即使他們不會刪除將會傳回郵件符合您的搜尋參數。他們復原到指定的探索信箱後，您可能需要檢閱搜尋結果，並移除不必要的訊息之前剩餘的郵件至使用者信箱的復原或匯出至.pst 檔案。<br />
-如需有關如何使用 EAC 以執行就地復原搜尋的詳細資料，請參閱 <a href="create-an-in-place-ediscovery-search-exchange-2013-help.md">建立就地 eDiscovery 搜尋</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以使用 Exchange 系統管理中心 (EAC) 中的就地 eDiscovery 搜尋遺失的項目。不過，當使用 EAC 中，您不能限制搜尋可復原的項目] 資料夾。即使他們不會刪除將會傳回郵件符合您的搜尋參數。他們復原到指定的探索信箱後，您可能需要檢閱搜尋結果，並移除不必要的訊息之前剩餘的郵件至使用者信箱的復原或匯出至.pst 檔案。<br />
+> 如需有關如何使用 EAC 以執行就地復原搜尋的詳細資料，請參閱 <a href="create-an-in-place-ediscovery-search-exchange-2013-help.md">建立就地 eDiscovery 搜尋</a>。
 
 
 在復原過程中的第一個步驟是搜尋中來源信箱的郵件。使用下列方法之一來搜尋使用者信箱，並將郵件複製到探索信箱。

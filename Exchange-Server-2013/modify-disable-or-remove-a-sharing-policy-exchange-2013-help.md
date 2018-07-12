@@ -104,10 +104,12 @@ _**上次修改主題的時間：** 2014-02-15_
         Set-SharingPolicy -Identity "Contoso" -Enabled $False
 
   - 第一個範例會移除共用原則 Contoso。第二個範例會移除共用原則 Contoso，並抑制您想移除原則的確認。
-    
-        Remove-SharingPolicy -Identity Contoso
-    
-        Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
+      Remove-SharingPolicy -Identity Contoso
+      ```
+      ```
+      Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
 
 如需詳細的語法及參數資訊，請參閱 [Set-SharingPolicy](https://technet.microsoft.com/zh-tw/library/dd297931\(v=exchg.150\)) 與 [Remove-SharingPolicy](https://technet.microsoft.com/zh-tw/library/dd351071\(v=exchg.150\))。
 

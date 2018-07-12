@@ -86,18 +86,8 @@ _**上次修改主題的時間：** 2017-11-15_
 
   - **查詢式保留**   如果您的組織根據指定的查詢參數來保留項目，您便可以使用查詢式就地保留。您可以指定關鍵字、開始與結束日期、寄件者與收件者地址及郵件類型等查詢參數。在建立查詢式就地保留之後，即可保留所有符合查詢參數的現有及未來信箱項目 (包括日後收到的郵件)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>標示為無法搜尋的項目 (通常是由於無法編製附件索引) 也會被保留，因為無法判斷其是否符合查詢參數。如需無法搜尋的項目相關詳細資訊，請參閱 <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Exchange eDiscovery 中項目] 無法搜尋</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 標示為無法搜尋的項目 (通常是由於無法編製附件索引) 也會被保留，因為無法判斷其是否符合查詢參數。如需無法搜尋的項目相關詳細資訊，請參閱 <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Exchange eDiscovery 中項目] 無法搜尋</a>。
 
 
   - **時間型保留**   就地保留和訴訟暫止功能允許您指定項目的持續保留時間。持續時間自接收或建立信箱項目的日期開始計算。

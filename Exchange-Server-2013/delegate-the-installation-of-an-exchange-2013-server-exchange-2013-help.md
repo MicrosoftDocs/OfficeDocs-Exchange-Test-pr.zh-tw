@@ -33,18 +33,8 @@ Exchange Server 2013可讓您不Exchange 2013組織管理角色群組之成員�
     
       - 拒絕 CreateChild 與 DeleteChild 權限的Exchange公用資料夾儲存區物件
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>公用資料夾管理在組織層級;因此，建立與刪除公用資料夾儲存區的僅限於Exchange系統管理員。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 公用資料夾管理在組織層級;因此，建立與刪除公用資料夾儲存區的僅限於Exchange系統管理員。
 
 
   - 伺服器Active Directory電腦帳戶新增至Exchange伺服器群組。

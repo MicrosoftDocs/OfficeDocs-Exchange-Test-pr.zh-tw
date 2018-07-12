@@ -39,31 +39,11 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - [Exchange 2013 後續安裝工作](exchange-2013-post-installation-tasks-exchange-2013-help.md)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您是否曾聽過 Exchange Server 部署助理？這是一項免費的線上工具，該工具會詢問您一些問題並特別為您建立一份自訂的部署檢查清單，以協助您在組織中快速部署 Exchange 2013。若想要深入了解，請移至 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-    </tr>
-    </tbody>
-    </table>
-    
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請務必先閱讀<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a>，然後再開始部署。版本資訊包含部署期間和之後可能遇到的問題相關重要資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+	> 您是否曾聽過 Exchange Server 部署助理？這是一項免費的線上工具，該工具會詢問您一些問題並特別為您建立一份自訂的部署檢查清單，以協助您在組織中快速部署 Exchange 2013。若想要深入了解，請移至 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
+	
+    > [!IMPORTANT]  
+    > 請務必先閱讀<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a>，然後再開始部署。版本資訊包含部署期間和之後可能遇到的問題相關重要資訊。
 
 
   - 如需如何下載 Exchange 2013 的相關資訊，請參閱 [更新 Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md)。
@@ -110,21 +90,11 @@ Exchange 2013 的說明內容由下列頂層類別組成：
 
   - [關於 Exchange 文件](about-exchange-documentation-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>了解其他 Exchange 內容：<br />
-<a href="https://technet.microsoft.com/zh-tw/library/jj200580(v=exchg.150)">Exchange Online</a><br />
-<a href="https://technet.microsoft.com/zh-tw/library/jj200581(v=exchg.150)">Exchange Server 混合部署</a><br />
-<a href="https://technet.microsoft.com/zh-tw/library/jj723137(v=exchg.150)">Exchange Online Protection (EOP)</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 了解其他 Exchange 內容：<br />
+> <a href="https://technet.microsoft.com/zh-tw/library/jj200580(v=exchg.150)">Exchange Online</a><br />
+> <a href="https://technet.microsoft.com/zh-tw/library/jj200581(v=exchg.150)">Exchange Server 混合部署</a><br />
+> <a href="https://technet.microsoft.com/zh-tw/library/jj723137(v=exchg.150)">Exchange Online Protection (EOP)</a>
 
 
 ## 告訴我們您的想法

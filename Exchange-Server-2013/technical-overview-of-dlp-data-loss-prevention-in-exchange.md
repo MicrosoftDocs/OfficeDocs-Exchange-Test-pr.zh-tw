@@ -27,20 +27,10 @@ DLP 原則是一組簡單的套件，其中包含許多組條件，結合了您�
 
 除了可自訂的 DLP 原則外，您還可以在電子郵件寄件者寄送違規郵件之前，通知他們可能會違反您的其中一項原則。您可以設定原則提示完成這項作業。原則提示與郵件提示相似，可經由設定在 Microsoft Outlook 2013 用戶端中呈現簡短附註，而該用戶端會向正在建立郵件的人提供可能的原則違規資訊。在最新 Exchange Online 版本和 Exchange 2013 SP1 中，原則提示也會顯示在 Outlook Web App 和 裝置的 OWA 中。如需詳細資訊，請參閱 [原則提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Online：DLP 是付費功能，需要 Exchange Online 計劃 2 授權。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online 授權</a>。<br />
-Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。<br />
-<strong>Exchange Enterprise CAL with Services：</strong>如果是具有混合部署的 Exchange Enterprise CAL with Services 客戶，您會有部分信箱為內部部署，並有部分信箱在 Exchange Online 中，請注意行為差異。DLP 原則會套用於 Exchange Online 中。因此，由一位內部部署使用者傳送給另一位內部部署使用者的郵件不會套用 DLP 原則，因為郵件並未離開內部部署的基礎架構。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Exchange Online：DLP 是付費功能，需要 Exchange Online 計劃 2 授權。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online 授權</a>。<br />
+> Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。<br />
+> <strong>Exchange Enterprise CAL with Services：</strong>如果是具有混合部署的 Exchange Enterprise CAL with Services 客戶，您會有部分信箱為內部部署，並有部分信箱在 Exchange Online 中，請注意行為差異。DLP 原則會套用於 Exchange Online 中。因此，由一位內部部署使用者傳送給另一位內部部署使用者的郵件不會套用 DLP 原則，因為郵件並未離開內部部署的基礎架構。
 
 
 要尋找與資料外洩防護相關的管理工作嗎？請參閱 [DLP 程序](dlp-procedures-exchange-2013-help.md) (Exchange 2013) 或 [\[Exchange Online\] 的 DLP 程序](https://technet.microsoft.com/zh-tw/library/jj938003\(v=exchg.150\)) (Exchange Online)。

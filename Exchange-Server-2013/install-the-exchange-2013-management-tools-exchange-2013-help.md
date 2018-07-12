@@ -55,18 +55,8 @@ _**上次修改主題的時間：** 2013-01-28_
 
 3.  通過連按兩下 `Setup.exe`，啟動Exchange 2013
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您啟用使用者存取控制 (UAC)，必須以滑鼠右鍵按一下 <code>Setup.exe</code>，並選取 [以管理員的身分執行]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您啟用使用者存取控制 (UAC)，必須以滑鼠右鍵按一下 <code>Setup.exe</code>，並選取 [以管理員的身分執行]。
 
 
 4.  在 **\[檢查更新\]** 頁面上，選擇您是否想要安裝程式連接至網際網路，並且下載 Exchange 2013 的產品與安全更新。如果您選取 \[連線到網際網路並檢查更新\]，安裝程式將下載並套用更新，然後才會繼續進行。若您選擇 \[現在不要檢查更新\]，可於之後手動下載並安裝更新。我們建議您下載並立即安裝更新。按 **\[下一步\]** 繼續。
@@ -89,18 +79,8 @@ _**上次修改主題的時間：** 2013-01-28_
     
     選取 \[自動安裝 Exchange Server 安裝所需的 Windows Server 角色及功能\] 讓安裝程式精靈安裝所需的 Windows 必要條件。可能需要重新開機以完成部分 Windows 功能的安裝。若您未選擇此選項，則必須手動安裝 Windows 功能。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此選項指會安裝 Exchange 需要的 Windows 功能。您必須手動安裝其他必要條件。如需詳細資訊，請參閱 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此選項指會安裝 Exchange 需要的 Windows 功能。您必須手動安裝其他必要條件。如需詳細資訊，請參閱 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 必要條件</a>。
     
     按 **\[下一步\]** 繼續。
 
@@ -120,33 +100,14 @@ _**上次修改主題的時間：** 2013-01-28_
     
       - 連字號或橫線
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>組織名稱不能包含 64 個以上的字元。組織名稱不能是空白。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 組織名稱不能包含 64 個以上的字元。組織名稱不能是空白。
     
     如果要使用 Active Directory 分割權限模式，請選取 \[將 Active Directory 分割權限安全性模型套用至 Exchange 組織\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>大部份組織不需要套用 Active Directory 分割權限模式。如果您需要分別管理 Active Directory 安全性主體和 Exchange 組態，角色型存取控制 (RBAC) 分割權限可能對您適用。如需詳細資訊，請按一下[?]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 大部份組織不需要套用 Active Directory 分割權限模式。如果您需要分別管理 Active Directory 安全性主體和 Exchange 組態，角色型存取控制 (RBAC) 分割權限可能對您適用。如需詳細資訊，請按一下[?]。
+
     
     按 \[下一步\] 繼續。
 
@@ -168,18 +129,8 @@ _**上次修改主題的時間：** 2013-01-28_
 
 3.  在命令提示字元中，執行下列命令。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您已啟用使用者存取控制 (UAC)，必須從更高的命令提示字元安裝 <code>Setup.exe</code>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 若您已啟用使用者存取控制 (UAC)，必須從更高的命令提示字元安裝 <code>Setup.exe</code>。
     
         Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
 

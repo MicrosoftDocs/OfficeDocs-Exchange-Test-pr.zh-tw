@@ -122,18 +122,8 @@ Permissions for the Pickup and Replay directories
 
   - `Bcc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>任何電子郵件地址正確處理中的郵件標頭欄位的選用<code>Bcc</code>郵件標頭中找到。<code>Bcc</code>收件者升級為不可見的郵件信封收件者之後，他們會移除郵件標頭來保護其身分識別。如果郵件含有僅<code>Bcc</code>收件者、 <strong>Undisclosed Recipients</strong>的值新增至郵件標頭的<code>To</code>欄位。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 任何電子郵件地址正確處理中的郵件標頭欄位的選用<code>Bcc</code>郵件標頭中找到。<code>Bcc</code>收件者升級為不可見的郵件信封收件者之後，他們會移除郵件標頭來保護其身分識別。如果郵件含有僅<code>Bcc</code>收件者、 <strong>Undisclosed Recipients</strong>的值新增至郵件標頭的<code>To</code>欄位。
 
 
 \[收取\] 目錄將自己`Received`標頭\] 欄位新增至郵件為郵件送出程序的一部分。以下列格式套用`Received`標頭\] 欄位。
@@ -170,38 +160,18 @@ Permissions for the Pickup and Replay directories
     
         X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>這些參數彼此通常由傳送伺服器產生的郵件信封值。您可能會看到類似匯出的訊息檔案中的參數。<br />
-    <code>RET</code> 會指定若郵件未能傳遞時，應將整封郵件或只將標頭傳回給寄件者。<code>RET</code> 可以有 <code>HDRS</code> 或 <code>FULL</code> 的值。<code> ENVID</code> 是郵件信封識別碼。<code>BODY</code> 會指定郵件的文字編碼。<code>auth</code> 會指定通訊伺服器的驗證機制，如 RFC 2554 中所述。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 這些參數彼此通常由傳送伺服器產生的郵件信封值。您可能會看到類似匯出的訊息檔案中的參數。<br />
+    > <code>RET</code> 會指定若郵件未能傳遞時，應將整封郵件或只將標頭傳回給寄件者。<code>RET</code> 可以有 <code>HDRS</code> 或 <code>FULL</code> 的值。<code> ENVID</code> 是郵件信封識別碼。<code>BODY</code> 會指定郵件的文字編碼。<code>auth</code> 會指定通訊伺服器的驗證機制，如 RFC 2554 中所述。
 
 
   - **X 接收器**  此 X-header 會取代為一般的 SMTP 郵件的`To`郵件標頭欄位需求。至少一個包含一個電子郵件地址的`X-Receiver`欄位必須存在。多個`X-Receiver`欄位允許的多個收件者。如果雖然收件者的電子郵件用戶端的郵件收件者顯示`To`郵件標頭欄位的值是存在，重新顯示目錄會略過`To`郵件標頭欄位。下列範例所示其他選用的參數可能存在`X-Receiver` \] 欄位。
     
         X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>這些參數彼此通常由傳送伺服器產生的郵件信封值。您可能會看到類似匯出的訊息檔案中的參數。這些參數相關傳遞狀態通知 (DSN) 郵件 RFC 1891 所述。<br />
-    <code>NOTIFY</code> 可以有 <code>NEVER</code>、<code>DELAY</code> 或 <code>FAILURE</code> 的值。<code>ORcpt</code> 會保留原始郵件收件者。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 這些參數彼此通常由傳送伺服器產生的郵件信封值。您可能會看到類似匯出的訊息檔案中的參數。這些參數相關傳遞狀態通知 (DSN) 郵件 RFC 1891 所述。<br />
+    > <code>NOTIFY</code> 可以有 <code>NEVER</code>、<code>DELAY</code> 或 <code>FAILURE</code> 的值。<code>ORcpt</code> 會保留原始郵件收件者。
 
 
 重新顯示目錄中的郵件檔可以選用下列清單描述的 X-Header。
@@ -269,36 +239,16 @@ Permissions for the Pickup and Replay directories
 
   - **傳遞失敗**  正確地格式化將郵件檔案與有效的寄件者無法成功送出一起傳遞的產生未傳遞回報 (NDR)。格式不正確的內容或收取目錄郵件限制違規也可能造成 NDR。郵件處理期間產生的 NDR，原始郵件檔案附加至 NDR 郵件，並將郵件檔案刪除 \[收取\] 目錄或重新顯示目錄。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>送出到傳輸管線正確地格式化的郵件稍後可能會遇到傳遞失敗並傳回給寄件者與 NDR。這種失敗可能會對收取] 目錄或重新顯示目錄，例如通訊伺服器故障或路由傳送之郵件的傳遞路徑失敗不相關的傳輸問題所造成。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 送出到傳輸管線正確地格式化的郵件稍後可能會遇到傳遞失敗並傳回給寄件者與 NDR。這種失敗可能會對收取] 目錄或重新顯示目錄，例如通訊伺服器故障或路由傳送之郵件的傳遞路徑失敗不相關的傳輸問題所造成。
 
 
   - **Badmail**  郵件分類為*badmail*具有嚴重問題，防止送出的郵件傳遞 \[收取\] 目錄或重新顯示\] 目錄。郵件格式正確，但收件者無效，且無法 NDR 郵件傳送給寄件者因為寄件者不是有效時，才會使 badmail 的條件。
     
     決定要 badmail 郵件檔案收取或重新顯示目錄中左和從*\<filename\>*.eml *\<filename\>*.bad 要重新命名。如果*\<filename\>*.bad 檔案已存在，該檔案已重新命名為*\<filename\>\<datetime\>*.bad。如果 badmail 存在於 \[收取\] 目錄或重新顯示\] 目錄中，會產生事件記錄檔錯誤，但是相同的 badmail 訊息不會產生重複的事件記錄檔錯誤。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>永遠撰寫並將郵件檔案儲存在不同的位置之前將其複製到 [收取] 目錄進行傳遞。[收取] 目錄輪詢新郵件的每隔五秒鐘。因此，如果您嘗試撰寫，並將郵件檔案儲存本身收取目錄中，[收取] 目錄可能會嘗試重新處理郵件檔案之前完成撰寫它們。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 永遠撰寫並將郵件檔案儲存在不同的位置之前將其複製到 [收取] 目錄進行傳遞。[收取] 目錄輪詢新郵件的每隔五秒鐘。因此，如果您嘗試撰寫，並將郵件檔案儲存本身收取目錄中，[收取] 目錄可能會嘗試重新處理郵件檔案之前完成撰寫它們。
 
 
 回到頁首

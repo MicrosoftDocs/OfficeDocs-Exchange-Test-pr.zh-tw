@@ -52,18 +52,8 @@ _**上次修改主題的時間：** 2016-04-13_
     
     在 \[**功能**\] 索引標籤上使用\] 核取方塊以啟用或停用功能。根據預設，會顯示最常見的功能。如需可啟用或停用的所有功能，請按一下 \[**更多選項**\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>功能設定為Outlook Web App信箱原則會覆寫Outlook Web App虛擬目錄設定。您可以在命令介面中使用<strong>Set-CASMailbox</strong>指令程式變更個別使用者區隔的設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 功能設定為Outlook Web App信箱原則會覆寫Outlook Web App虛擬目錄設定。您可以在命令介面中使用<strong>Set-CASMailbox</strong>指令程式變更個別使用者區隔的設定。
 
 
 6.  

@@ -126,18 +126,8 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 
   - **使用保留原則移動郵件** 您可以使用保留原則將郵件自動移至封存。使用者也可以對移至封存的郵件套用個人標記。如需封存和保留原則的詳細資訊，請參閱本主題稍後的Archive and retention policies。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>個人標記只有在 Outlook Web App 以及 Outlook 2010 和更新版本中提供。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 個人標記只有在 Outlook Web App 以及 Outlook 2010 和更新版本中提供。
 
 
   - **匯入訊息從.pst 檔案**  在Exchange 2013，您可以使用信箱匯入要求至使用者的封存或主要信箱匯入訊息從.pst 檔案。如需詳細資訊，請參閱[信箱匯入及匯出要求](mailbox-import-and-export-requests-exchange-2013-help.md)。您也可以使用 PST 擷取工具在組織中搜尋的電腦上的.pst 檔案和.pst 檔案將資料匯入使用者的封存。
@@ -285,18 +275,8 @@ Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和�
 
   - **就地 eDiscovery**   探索管理員執行就地 eDiscovery 搜尋時，也會搜尋使用者的封存信箱。從 Exchange 系統管理中心 (EAC) 建立探索搜尋時，並沒有提供排除封存信箱的選項。使用 Exchange 管理命令介面建立探索搜尋時，可以使用 *DoNotIncludeArchive* 參數將封存排除。如需詳細資訊，請參閱 [New-MailboxSearch](https://technet.microsoft.com/zh-tw/library/dd298064\(v=exchg.150\))。若要深入了解，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您無法使用就地 eDiscovery 搜尋中斷連線的信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您無法使用就地 eDiscovery 搜尋中斷連線的信箱。
 
 
   - **就地保留和訴訟資料暫留：** 當您對信箱進行就地保留或訴訟資料暫留時，會同時保留主要和封存信箱。若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
@@ -313,18 +293,8 @@ Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和�
 
   - **移動封存信箱**   您可以獨立於主要信箱之外，將使用者的封存信箱移至相同信箱伺服器上的另一個信箱資料庫，或移至另一部伺服器。若要移動使用者的封存信箱，您必須建立信箱移動要求。如需詳細資訊，請參閱[管理內部移動](manage-on-premises-moves-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支援在不同的 Exchange Server 版本上尋找使用者的信箱和封存。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 不支援在不同的 Exchange Server 版本上尋找使用者的信箱和封存。
 
 
   - **停用封存信箱：** 您可能想要停用使用者的封存信箱以進行疑難排解，或者要將主要信箱移至不支援就地封存的 Exchange 版本。停用封存和停用主要信箱的步驟類似。如需詳細資訊，請參閱[管理 Exchange 2013 中的就地封存](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)。在內部部署的部署中，停用的封存信箱會保留於信箱資料庫中，直到達到該資料庫的刪除信箱保留期間為止。在此期間，您可以將封存重新與信箱使用者連線。達到刪除信箱保留期間時，就會將中斷連線的封存信箱從信箱資料庫中清除。

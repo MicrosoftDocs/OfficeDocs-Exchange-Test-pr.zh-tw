@@ -48,18 +48,8 @@ _**上次修改主題的時間：** 2016-02-01_
 
 3.  在 **\[新增使用者信箱\]** 頁面的 **\[別名\]** 方塊中，輸入使用者的別名。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果方塊為空白，系統會將您輸入 <strong>[使用者登入名稱]</strong> 方塊中的值當作別名。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果方塊為空白，系統會將您輸入 <strong>[使用者登入名稱]</strong> 方塊中的值當作別名。
 
 
 4.  選取下列其中一個選項：
@@ -68,18 +58,8 @@ _**上次修改主題的時間：** 2016-02-01_
     
       - **新增使用者**   按一下此按鈕可在 Active Directory 中建立新的使用者帳戶，並且為這位使用者建立信箱。如果選取此選項，必須提供所需的使用者帳戶資訊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>與使用者信箱關聯的 Active Directory 帳戶必須與 Exchange 伺服器位於同一樹系。若要為信任樹系中的使用者帳戶建立信箱，必須建立連結的信箱。如需詳細資訊，請參閱<a href="manage-linked-mailboxes-exchange-2013-help.md">管理連結的信箱</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 與使用者信箱關聯的 Active Directory 帳戶必須與 Exchange 伺服器位於同一樹系。若要為信任樹系中的使用者帳戶建立信箱，必須建立連結的信箱。如需詳細資訊，請參閱<a href="manage-linked-mailboxes-exchange-2013-help.md">管理連結的信箱</a>。
 
 
 5.  按一下 **\[更多選項\]** 以配置下列設定。
@@ -129,18 +109,8 @@ _**上次修改主題的時間：** 2016-02-01_
 
 3.  在詳細資料窗格的 **\[就地封存\]** 下，按一下 **\[啟用\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您也可以選取多個信箱 (使用 Shift 或 Ctrl 鍵) 來大量啟用封存。選取多個信箱後，請在詳細資料窗格中按一下 <strong>[其他選項]</strong>。接著按一下 <strong>[封存]</strong> 下方的 <strong>[啟用]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+	> 您也可以選取多個信箱 (使用 Shift 或 Ctrl 鍵) 來大量啟用封存。選取多個信箱後，請在詳細資料窗格中按一下 <strong>[其他選項]</strong>。接著按一下 <strong>[封存]</strong> 下方的 <strong>[啟用]</strong>。
 
 
 4.  在 **\[建立就地儲存\]** 頁面上，按一下 **\[確定\]** 以讓 Exchange 自動選取封存的信箱資料庫，或按一下 **\[瀏覽\]** 來指定封存的信箱資料庫。
@@ -190,18 +160,8 @@ _**上次修改主題的時間：** 2016-02-01_
 
 3.  在詳細資料窗格的 **\[就地封存\]** 下，按一下 **\[停用\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您也可以選取多個信箱 (使用 Shift 或 Ctrl 鍵) 來大量停用封存。選取多個信箱後，請在詳細資料窗格中按一下 <strong>[其他選項]</strong>。接著按一下 <strong>[封存]</strong> 下方的 <strong>[停用]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+	> 您也可以選取多個信箱 (使用 Shift 或 Ctrl 鍵) 來大量停用封存。選取多個信箱後，請在詳細資料窗格中按一下 <strong>[其他選項]</strong>。接著按一下 <strong>[封存]</strong> 下方的 <strong>[停用]</strong>。
 
 
 ## 使用命令介面

@@ -27,18 +27,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  現在，執行 **Get-ManagementRoleAssignment** Cmdlet，查看指派給您的角色群組或管理角色，以瞭解您是否有管理該功能所需的權限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須獲指派「角色管理」管理角色，才能執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet。如果您沒有執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet 的權限，請詢問您的 Exchange 系統管理員，以取得角色群組或是獲指派管理角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您必須獲指派「角色管理」管理角色，才能執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet。如果您沒有執行 <strong>Get-ManagementRoleAssignment</strong> Cmdlet 的權限，請詢問您的 Exchange 系統管理員，以取得角色群組或是獲指派管理角色。
 
 
 如果您要將管理功能的能力委派給另一個使用者，請參閱[委派角色指派](delegate-role-assignments-exchange-2013-help.md)。
@@ -134,19 +124,10 @@ _**上次修改主題的時間：** 2016-12-09_
 <td><p>原有範圍暫止</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">探索管理</a></p>
 <p><a href="organization-management-exchange-2013-help.md">組織管理</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要建立查詢式「就地保留」，使用者需要獲得直接指派「信箱搜尋」和「訴訟資料暫留」角色，或是透過獲指派這兩個角色之角色群組的成員資格取得。若不要使用查詢而建立「就地保留」(如此會將所有信箱項目都保留)，您必須獲指派「訴訟資料暫留」角色。「探索管理」角色群組即獲指派這兩個角色。<br />
-「組織管理」角色群組則獲指派「訴訟資料暫留」角色。「組織管理」角色群組的成員可對信箱中的所有項目進行「就地保留」，但不能建立查詢式「就地保留」。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 若要建立查詢式「就地保留」，使用者需要獲得直接指派「信箱搜尋」和「訴訟資料暫留」角色，或是透過獲指派這兩個角色之角色群組的成員資格取得。若不要使用查詢而建立「就地保留」(如此會將所有信箱項目都保留)，您必須獲指派「訴訟資料暫留」角色。「探索管理」角色群組即獲指派這兩個角色。<br />
+> 「組織管理」角色群組則獲指派「訴訟資料暫留」角色。「組織管理」角色群組的成員可對信箱中的所有項目進行「就地保留」，但不能建立查詢式「就地保留」。
 
 </td>
 </tr>

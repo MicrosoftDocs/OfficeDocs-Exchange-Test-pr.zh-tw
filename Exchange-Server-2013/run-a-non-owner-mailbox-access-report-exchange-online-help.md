@@ -49,10 +49,12 @@ _**上次修改主題的時間：** 2016-12-09_
     Set-Mailbox "Florence Flipo" -AuditEnabled $true
 
 若要針對組織內的所有使用者信箱啟用信箱稽核，請執行下列命令。
-
-    $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
-
-    $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
+$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
+```
+$UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## 如何知道這是否正常運作？
 

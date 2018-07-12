@@ -63,18 +63,8 @@ Exchange Online: [檢視 \[Exchange Online\] 的 DLP 原則偵測報告](https:/
 
 1.  在 EAC 中，瀏覽至 \[規範管理\] \> \[資料遺失防護\]，然後按一下 \[新增\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若按一下 [新增]<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" /> 圖示旁的箭頭，並從下拉式功能表選取 [自範本新增 DLP 原則]，也可選取此動作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若按一下 [新增]<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" /> 圖示旁的箭頭，並從下拉式功能表選取 [自範本新增 DLP 原則]，也可選取此動作。
 
 
 2.  在 \[自範本建立新的 DLP 原則\] 頁面完成下列欄位：

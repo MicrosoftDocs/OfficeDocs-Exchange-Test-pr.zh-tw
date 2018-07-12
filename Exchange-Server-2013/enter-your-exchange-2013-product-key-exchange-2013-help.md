@@ -23,27 +23,14 @@ _**上次修改主題的時間：** 2016-12-09_
 
 如果您沒有輸入產品金鑰，您的伺服器的自動授權為試用版。試用版的功能只 like Exchange Standard Edition server，如果您要購買之前, 試用Exchange還是執行測試實驗室中有所幫助。唯一的不同是您可以僅使用 180 天的授權為試用版Exchange伺服器。如果您想要繼續使用超過 180 天的伺服器，您需要輸入產品金鑰或 Exchange 系統管理中心 (EAC) 會在啟動顯示您需要輸入產品金鑰來授權伺服器的提醒。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們發現此頁面的一些訪客都在尋找如何安裝或啟動 Office 的相關資訊。如果您也是，請查看這些頁面：
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403360">安裝 Office</a></p></li>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403361">需要 Office 產品金鑰方面的協助嗎？</a></p></li>
-</ul>
-如果您要在 Exchange 2010 伺服器上輸入產品金鑰，請移至＜<a href="http://go.microsoft.com/fwlink/p/?linkid=403370">輸入 Exchange 2010 產品金鑰</a>＞。<br />
-如果您要在 Exchange 2013 伺服器上輸入產品金鑰，這裡就是正確的地方！請繼續閱讀。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> 我們發現此頁面的一些訪客都在尋找如何安裝或啟動 Office 的相關資訊。如果您也是，請查看這些頁面：
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403360">安裝 Office</a></p></li>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403361">需要 Office 產品金鑰方面的協助嗎？</a></p></li>
+> </ul>
+> 如果您要在 Exchange 2010 伺服器上輸入產品金鑰，請移至＜<a href="http://go.microsoft.com/fwlink/p/?linkid=403370">輸入 Exchange 2010 產品金鑰</a>＞。<br />
+> 如果您要在 Exchange 2013 伺服器上輸入產品金鑰，這裡就是正確的地方！請繼續閱讀。
 
 
 ## 開始之前有哪些須知？

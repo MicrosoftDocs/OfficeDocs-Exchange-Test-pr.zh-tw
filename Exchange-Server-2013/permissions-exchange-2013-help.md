@@ -260,26 +260,13 @@ Exchange 2013包含名為預設角色指派原則角色指派原則。此角色�
 
 如果想要變更預設的角色指派原則，您必須使用命令介面。在您變更預設的角色指派原則之後，如果沒有為建立的任何信箱明確指定角色指派原則，這些信箱都會與新的預設角色指派原則產生關聯。當您選取新的預設角色指派原則時，與現有信箱關聯的角色指派原則將維持不變。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果選取含有子角色之角色的核取方塊，也會選取子角色的核取方塊。如果取消選取含有子角色之角色的核取方塊，也會取消選取子角色的核取方塊。<br />
-如需如何建立角色指派原則或變更現有角色指派原則的詳細步驟，請參閱下列主題：
-<ul>
-<li><p><a href="manage-role-assignment-policies-exchange-2013-help.md">管理角色指派原則</a></p></li>
-<li><p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">變更在信箱上的指派原則</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果選取含有子角色之角色的核取方塊，也會選取子角色的核取方塊。如果取消選取含有子角色之角色的核取方塊，也會取消選取子角色的核取方塊。<br />
+> 如需如何建立角色指派原則或變更現有角色指派原則的詳細步驟，請參閱下列主題：
+> <ul>
+> <li><p><a href="manage-role-assignment-policies-exchange-2013-help.md">管理角色指派原則</a></p></li>
+> <li><p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">變更在信箱上的指派原則</a></p></li>
+> </ul>
 
 
 回到頁首

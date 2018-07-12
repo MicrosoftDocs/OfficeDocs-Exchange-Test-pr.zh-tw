@@ -166,18 +166,8 @@ Additional information you might want to know
         
           - 主體替代名稱 (SAN)：無
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>當您取代 AD FS 上的權杖簽署憑證時，必須更新任何現有信賴憑證者信任，以使用新的權杖簽署憑證。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 當您取代 AD FS 上的權杖簽署憑證時，必須更新任何現有信賴憑證者信任，以使用新的權杖簽署憑證。
 
 
   - **Web 應用程式 Proxy**
@@ -188,18 +178,8 @@ Additional information you might want to know
         
           - 主體替代名稱 (SAN)：無
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您的 Web 應用程式 Proxy 外部 URL 與內部 URL 相同，則可以在此重複使用 Exchange 的 SSL 憑證。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您的 Web 應用程式 Proxy 外部 URL 與內部 URL 相同，則可以在此重複使用 Exchange 的 SSL 憑證。
     
       - AD FS Proxy SSL 憑證
         
@@ -240,18 +220,8 @@ Windows Server 2012 R2 中的 AD FS 提供簡化、安全的身分識別同盟�
 
 7.  在 **\[確認安裝選項\]** 頁面上，核取 **\[必要時自動重新啟動目的地伺服器\]**，然後按一下 **\[安裝\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請不要在安裝程序期間關閉精靈。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 請不要在安裝程序期間關閉精靈。
 
 
 安裝必要的 AD FS 伺服器並產生必要的憑證之後，您必須設定 AD FS，然後先測試 AD FS 運作正常。您也可以使用此為檢查清單此處可協助您在安裝和設定 AD FS：[檢查清單： Setting Up a Federation Server](https://go.microsoft.com/fwlink/?linkid=392700)。
@@ -274,18 +244,8 @@ Windows Server 2012 R2 中的 AD FS 提供簡化、安全的身分識別同盟�
 
 5.  在 **\[指定服務帳戶\]** 頁面上，選取 **\[使用現有網域使用者帳戶或群組受管理服務帳戶\]**，然後指定在建立網域控制站時所建立的 GMSA 帳戶 (FsGmsa)。請包括帳戶密碼，然後按 **\[下一步\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>全域受管理服務帳戶 (GMSA) 是設定網域控制站時必須建立的帳戶。在 AD FS 安裝和組態期間需要 GMSA 帳戶。如果您尚未建立此帳戶，請執行下列 Windows PowerShell 命令。它會建立 contoso.com 網域和 AD FS 伺服器的帳戶：</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 全域受管理服務帳戶 (GMSA) 是設定網域控制站時必須建立的帳戶。在 AD FS 安裝和組態期間需要 GMSA 帳戶。如果您尚未建立此帳戶，請執行下列 Windows PowerShell 命令。它會建立 contoso.com 網域和 AD FS 伺服器的帳戶：
 
 
 6.  執行下列命令。
@@ -307,10 +267,12 @@ Windows Server 2012 R2 中的 AD FS 提供簡化、安全的身分識別同盟�
 12. 在 **\[結果\]** 頁面上檢閱結果，並檢查是否順利完成組態，然後按一下 **\[完成同盟服務部署所需的後續步驟\]**。
 
 下列Windows PowerShell 命令執行先前的步驟同樣的事情。
-
+   ```
     Import-Module ADFS
-
+   ```
+   ```
     Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+   ```
 
 如需詳細資訊和語法，請參閱 ＜ [Install AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704)。
 
@@ -525,18 +487,8 @@ Web 應用程式 Proxy 為Windows Server 2012 R2 中的新遠端存取角色服�
     
     4.  在**後端伺服器 URL** \] 方塊中輸入後端伺服器的 URL。請注意此值會自動輸入當您輸入的外部 URL，且應只有後端伺服器 URL 不同變更 — 例如**https://mail.contoso.com/owa/**Outlook Web App和**https://mail.contoso.com/ecp/**的 EAC。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Web 應用程式 Proxy 可以轉譯 URL 中的主機名稱，但不能轉譯路徑。因此，您可以輸入不同的主機名稱，但是必須輸入相同的路徑。例如，您可以輸入外部 URL <em>https://external.contoso.com/app1/</em> 和後端伺服器 URL <em>https://mail.contoso.com/app1/</em>。不過，您無法輸入外部 URL <em>https://external.contoso.com/app1/</em> 和後端伺服器 URL <em>https://mail.contoso.com/internal-app1/</em>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Web 應用程式 Proxy 可以轉譯 URL 中的主機名稱，但不能轉譯路徑。因此，您可以輸入不同的主機名稱，但是必須輸入相同的路徑。例如，您可以輸入外部 URL <em>https://external.contoso.com/app1/</em> 和後端伺服器 URL <em>https://mail.contoso.com/app1/</em>。不過，您無法輸入外部 URL <em>https://external.contoso.com/app1/</em> 和後端伺服器 URL <em>https://mail.contoso.com/internal-app1/</em>。
 
 
 6.  在 **\[確認\]** 頁面上檢閱設定，然後按一下 **\[發佈\]**。您可以複製 Windows PowerShell 命令來設定其他已發佈的應用程式。

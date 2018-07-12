@@ -21,19 +21,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 在您註冊特定檔案類型的 IFilter 之後，含有附件處理條件的傳輸規則將可以掃描這些附件。因此，這些檔案類型將不再觸發 *AttachmentIsUnsupported* 條件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題所列出的程序涵蓋在 Exchange Server 上修改登錄。不正確編輯登錄會造成嚴重問題，可能需要重新安裝作業系統。如因不正確編輯登錄造成任何問題，這些問題可能無法解決。編輯登錄前請先備份所有珍貴資料。<br />
-這些程序還需要您在您的信箱伺服器上停止並重新啟動 Microsoft Exchange Transport 服務。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]  
+> 本主題所列出的程序涵蓋在 Exchange Server 上修改登錄。不正確編輯登錄會造成嚴重問題，可能需要重新安裝作業系統。如因不正確編輯登錄造成任何問題，這些問題可能無法解決。編輯登錄前請先備份所有珍貴資料。<br />
+這些程序還需要您在您的信箱伺服器上停止並重新啟動 Microsoft Exchange Transport 服務。
 
 
 如需與傳輸規則相關的其他管理工作，請參閱[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)。
@@ -198,18 +188,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
     2.  將新機碼的名稱變更為 `{E8978DA6-047F-4E3D-9C78-CDBE46041603}`。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>每一個 IFilter 都具有唯一的類別識別碼 (CLSID)。您可以在安裝文件中找到您註冊的 IFilter 的 CLSID，或在登錄的 <code>HKEY_CLASSES_ROOT\CLSID</code> 機碼底下搜尋副檔名。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 每一個 IFilter 都具有唯一的類別識別碼 (CLSID)。您可以在安裝文件中找到您註冊的 IFilter 的 CLSID，或在登錄的 <code>HKEY_CLASSES_ROOT\CLSID</code> 機碼底下搜尋副檔名。
     
     3.  按一下剛才建立的機碼並設定安裝 PDF IFilter 的 \[(預設)\] 值。依預設，PDF IFilter 會安裝在 `C:\Program Files\Adobe\Adobe PDF IFilter 9 for 64-bit platforms\bin\PDFFilter.dll`。
 

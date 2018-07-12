@@ -74,25 +74,12 @@ _**上次修改主題的時間：** 2013-02-18_
 
     Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>將 <em>MessageTrackingLogPath</em> 參數的值設為 <code>$null</code> 可立即停用郵件追蹤。但是，若 <em>MessageTrackingLogEnabled</em> 參數的值為 <code>$true</code>，將產生事件記錄錯誤。</p></li>
-<li><p>將 <em>MessageTrackingLogMaxAge</em> 參數設定為 <code>00:00:00</code> 值，可防止因保留天數之故而自動移除郵件追蹤記錄檔。</p></li>
-<li><p>就 Exchange 2013 信箱伺服器而言，郵件追蹤記錄檔目錄的大小上限為 <em>MessageTrackingLogMaxDirectorySize</em> 參數值的三倍。儘管由四種相異服務產生的郵件追蹤記錄檔有四個不同的名稱前置詞，不過寫入 <strong>MSGTRKMA</strong> 記錄檔之資料的數量和頻率是可忽略的 (與其他三個記錄檔前置詞相較之下)。如需詳細資訊，請參閱<a href="message-tracking-exchange-2013-help.md">郵件追蹤</a>主題的＜郵件追蹤記錄檔的結構＞一節。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>將 <em>MessageTrackingLogPath</em> 參數的值設為 <code>$null</code> 可立即停用郵件追蹤。但是，若 <em>MessageTrackingLogEnabled</em> 參數的值為 <code>$true</code>，將產生事件記錄錯誤。</p></li>
+> <li><p>將 <em>MessageTrackingLogMaxAge</em> 參數設定為 <code>00:00:00</code> 值，可防止因保留天數之故而自動移除郵件追蹤記錄檔。</p></li>
+> <li><p>就 Exchange 2013 信箱伺服器而言，郵件追蹤記錄檔目錄的大小上限為 <em>MessageTrackingLogMaxDirectorySize</em> 參數值的三倍。儘管由四種相異服務產生的郵件追蹤記錄檔有四個不同的名稱前置詞，不過寫入 <strong>MSGTRKMA</strong> 記錄檔之資料的數量和頻率是可忽略的 (與其他三個記錄檔前置詞相較之下)。如需詳細資訊，請參閱<a href="message-tracking-exchange-2013-help.md">郵件追蹤</a>主題的＜郵件追蹤記錄檔的結構＞一節。</p></li>
+> </ul>
 
 
 此範例會停用名為 Mailbox01 之 Mailbox Server 上郵件追蹤記錄檔中的郵件主旨記錄：

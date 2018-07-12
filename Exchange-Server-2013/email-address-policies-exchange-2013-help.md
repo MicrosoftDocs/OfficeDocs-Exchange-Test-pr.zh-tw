@@ -112,18 +112,8 @@ Exchange 會將原則套用至符合收件者篩選準則的所有收件者：
     
       - Exchange 整合通訊 Proxy 位址 (EUM Proxy 位址)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange 中，所有非 SMTP 電子郵件地址都會被視為自訂地址。Exchange 不會針對 X.400、GroupWise 或 Lotus Notes 電子郵件地址類型提供唯一的對話方塊或內容頁面。若您新增非 SMTP 自訂電子郵件地址，則必須安裝適當的動態連結程式庫 (DLL) 檔案。若不提供適當的 DLL 檔案，將無法建立自訂的電子郵件地址原則。將會在事件檢視器中記錄下列錯誤：「'i386' 電腦上遺失 Microsoft Exchange 目錄中 'SADF' 地址類型的電子郵件地址描述物件。」</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在 Exchange 中，所有非 SMTP 電子郵件地址都會被視為自訂地址。Exchange 不會針對 X.400、GroupWise 或 Lotus Notes 電子郵件地址類型提供唯一的對話方塊或內容頁面。若您新增非 SMTP 自訂電子郵件地址，則必須安裝適當的動態連結程式庫 (DLL) 檔案。若不提供適當的 DLL 檔案，將無法建立自訂的電子郵件地址原則。將會在事件檢視器中記錄下列錯誤：「'i386' 電腦上遺失 Microsoft Exchange 目錄中 'SADF' 地址類型的電子郵件地址描述物件。」
 
 
 如需如何建立電子郵件地址原則的詳細說明，請參閱下列主題：

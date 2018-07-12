@@ -216,18 +216,8 @@ UM 疑難排解工具可安裝在執行下列作業系統的本機整合通訊�
 
   - Microsoft .NET Framework 3.5 Service Pack 1 (SP1) 請參閱[Microsoft.NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果Windows Vista或Windows Server 2008電腦上執行此工具，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=178998">Windows Vista x64、 和 Windows Server 2008 x64 的 Microsoft.NET Framework 3.5 Family 更新</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果Windows Vista或Windows Server 2008電腦上執行此工具，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=178998">Windows Vista x64、 和 Windows Server 2008 x64 的 Microsoft.NET Framework 3.5 Family 更新</a>。
 
 
   - Windows 遠端管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   請參閱 Microsoft 知識庫文章 968930 [Windows 管理架構核心封裝 (Windows PowerShell 2.0 和 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。

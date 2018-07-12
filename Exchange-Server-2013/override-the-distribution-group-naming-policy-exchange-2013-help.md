@@ -70,10 +70,12 @@ _**上次修改主題的時間：** 2012-10-13_
 ## 如何才能了解這是否正常運作？
 
 若要驗證您是否已成功建立或重新命令忽略了群組命名原則之通訊群組，請執行下列命令。
-
-    Get-DistributionGroup <Name> | FL DisplayName
-
-    Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+```
+Get-DistributionGroup <Name> | FL DisplayName
+```
+```
+Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+```
 
 如果群組的顯示名稱格式與組織的群組命名原則強制提供的顯示名稱格式不同，表示設定成功。
 

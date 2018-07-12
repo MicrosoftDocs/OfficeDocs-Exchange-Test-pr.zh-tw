@@ -21,25 +21,12 @@ _**上次修改主題的時間：** 2015-11-09_
 
 本主題說明如何設定公用資料夾，以及在新組織或在先前沒有公用資料夾的組織中執行公用資料夾。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需有關公用資料夾之儲存配額和限制的相關資訊，請參閱下列主題：
-<ul>
-<li><p>若為 Office 365 中的公用資料夾，請參閱 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
-<li><p>若為內部部署 Exchange Server 2013 中的公用資料夾，請參閱<a href="limits-for-public-folders-exchange-2013-help.md">公用資料夾的限制</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需有關公用資料夾之儲存配額和限制的相關資訊，請參閱下列主題：
+> <ul>
+> <li><p>若為 Office 365 中的公用資料夾，請參閱 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
+> <li><p>若為內部部署 Exchange Server 2013 中的公用資料夾，請參閱<a href="limits-for-public-folders-exchange-2013-help.md">公用資料夾的限制</a>。</p></li>
+> </ul>
 
 
 如需 Exchange Server 2013 中與公用資料夾相關的其他管理工作，請參閱[公用資料夾程序](public-folder-procedures-exchange-2013-help.md)。

@@ -49,18 +49,8 @@ Exchange 的主機型容錯移轉叢集和遷移
     
       - 任何經 [Windows Server Virtualization 驗證方案](https://go.microsoft.com/fwlink/p/?linkid=125375) 驗證過的協力廠商 Hypervisor。 
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果所有支援需求皆符合，將會支援在基礎設施即服務 (IaaS) 提供者上部署 Exchange 2013 。對於佈建虛擬機器提供者，這些需求包括確保 Exchange 虛擬機器所用的 hypervisor 受到完全支援，且 Exchange 所利用的基礎結構符合調整程序期間所決定的效能需求。若已為 Azure Premium Storage 設定 Exchange 資料庫所用的所有儲存區與資料庫交易記錄檔 (包括傳輸資料庫)，則將支援在 Microsoft Azure 虛擬機器上的部署。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果所有支援需求皆符合，將會支援在基礎設施即服務 (IaaS) 提供者上部署 Exchange 2013 。對於佈建虛擬機器提供者，這些需求包括確保 Exchange 虛擬機器所用的 hypervisor 受到完全支援，且 Exchange 所利用的基礎結構符合調整程序期間所決定的效能需求。若已為 Azure Premium Storage 設定 Exchange 資料庫所用的所有儲存區與資料庫交易記錄檔 (包括傳輸資料庫)，則將支援在 Microsoft Azure 虛擬機器上的部署。
 
 
   - Exchange 來賓虛擬機器具備以下條件：

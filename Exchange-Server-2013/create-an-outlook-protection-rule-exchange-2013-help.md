@@ -67,16 +67,6 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 使用Outlook 2010建立測試郵件符合的規則條件，並且確定用戶端上觸發規則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可能需要一些時間讓可供在 Outlook 中使用 Outlook 保護規則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可能需要一些時間讓可供在 Outlook 中使用 Outlook 保護規則。
 

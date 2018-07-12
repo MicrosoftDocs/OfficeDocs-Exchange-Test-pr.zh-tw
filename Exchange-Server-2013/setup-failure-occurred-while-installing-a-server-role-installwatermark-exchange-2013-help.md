@@ -41,31 +41,11 @@ Exchange 2007 的安裝程式要求失敗的伺服器角色安裝都必須有成
     
     EdgeTransport （或 ET 或 E）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Edge Transport server role 不能共存與任何其他伺服器角色相同的電腦上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Edge Transport server role 不能共存與任何其他伺服器角色相同的電腦上。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須部署在周邊網路及外部Active Directory樹系的邊際傳輸伺服器角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您必須部署在周邊網路及外部Active Directory樹系的邊際傳輸伺服器角色。
     
     HubTransport （HT 或 H）
     
@@ -75,18 +55,8 @@ Exchange 2007 的安裝程式要求失敗的伺服器角色安裝都必須有成
     
     ManagementTools （細明體或 T）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您指定 ManagementTools，您將會安裝Exchange管理主控台、 Exchange管理命令介面、 Exchange說明檔、 Exchange Best Practices Analyzer 工具、 Exchange cmdlet 和Exchange疑難排解助理員。如果您在安裝任何其他伺服器角色、 將會自動安裝管理工具。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您指定 ManagementTools，您將會安裝Exchange管理主控台、 Exchange管理命令介面、 Exchange說明檔、 Exchange Best Practices Analyzer 工具、 Exchange cmdlet 和Exchange疑難排解助理員。如果您在安裝任何其他伺服器角色、 將會自動安裝管理工具。
     
     例如，若要將 Hub Transport server role 新增至現有的信箱伺服器，輸入下列︰ **%LocalExchangeInstallationDir%\\bin\\Setup.com /role:HubTransport /Mode:Install**
 
@@ -109,44 +79,14 @@ Exchange 2007 的安裝程式要求失敗的伺服器角色安裝都必須有成
 
 5.  在 \[**伺服器角色選取**\] 頁面上選取您想要安裝的伺服器角色的核取方塊\] 和 \[**下一步**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Edge Transport server role 不能共存與任何其他伺服器角色相同的電腦上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Edge Transport server role 不能共存與任何其他伺服器角色相同的電腦上。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須部署在周邊網路及外部Active Directory樹系的邊際傳輸伺服器角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您必須部署在周邊網路及外部Active Directory樹系的邊際傳輸伺服器角色。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您選取 [管理工具]，您將會安裝Exchange管理主控台、 Exchange管理命令介面Exchange cmdlet 和Exchange說明檔。如果您在安裝任何其他伺服器角色的管理工具將會自動安裝。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您選取 [管理工具]，您將會安裝Exchange管理主控台、 Exchange管理命令介面Exchange cmdlet 和Exchange說明檔。如果您在安裝任何其他伺服器角色的管理工具將會自動安裝。
 
 
 6.  若您選取 \[**集線傳輸角色**，且如果您要安裝Exchange 2007樹系中的現有Exchange Server 2003或Exchange 2000 Server組織**郵件流程設定**\] 頁面上選取 bridgehead 伺服器Exchange 2003成員的現有組織或您要建立路由群組連接器的Exchange 2000路由群組中。

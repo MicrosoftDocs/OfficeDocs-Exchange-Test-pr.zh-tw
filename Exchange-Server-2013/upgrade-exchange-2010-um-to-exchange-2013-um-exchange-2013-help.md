@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 確認您已正確地安裝並設定執行 Microsoft Exchange 整合通訊呼叫路由器 (UM 呼叫路由器) 服務的 Client Access Server，以及執行 Microsoft Exchange 整合通訊 (UM) 服務的 Mailbox Server。若要深入了解 UM 服務，請參閱 [UM 服務](um-services-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。
+
 
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
@@ -161,35 +152,15 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
     
     6.  確認您包含的網域正確，然後選取 **\[完成\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 EAC 建立憑證時，不會收到要您啟用憑證服務的提示。憑證建立好後，即可使用 EAC 來啟用服務。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 使用 EAC 建立憑證時，不會收到要您啟用憑證服務的提示。憑證建立好後，即可使用 EAC 來啟用服務。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
     
     在命令介面中執行下列命令，來建立 Exchange 自我簽署憑證。
     
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用 <em>Services</em> 參數指定要啟用的服務，將會收到要您啟用所建立憑證之服務的提示。在此範例中，您會收到要您啟用憑證的整合通訊及整合通訊呼叫路由器服務的提示。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您使用 <em>Services</em> 參數指定要啟用的服務，將會收到要您啟用所建立憑證之服務的提示。在此範例中，您會收到要您啟用憑證的整合通訊及整合通訊呼叫路由器服務的提示。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
 
 
   - 匯入要用於組織中所有 Exchange 2013 Client Access Server 及 Mailbox Server 上的憑證。如果使用 Exchange 2013 自我簽署憑證，您將需要複製該憑證，然後在 VoIP 閘道、IP PBX 或已啟用 SIP 的 PBX 上匯入。如果您使用來自 Exchange 2010 的自我簽署憑證，則主體別名 (SAN) 必須包含所有 Exchange 2013 伺服器的機器名稱。如果您的組織具有 Exchange 2010 Unified Messaging Server，則您可以使用 Exchange 2013 自我簽署憑證，但是必須將 Exchange 2010 UM Server 的機器名稱新增至 Exchange 2013 憑證中的 SAN。
@@ -443,34 +414,14 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 3.  在 **\[新增 UM 信箱原則\]** 頁面的 **\[名稱\]** 方塊中，輸入新 UM 信箱原則的名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用這個方塊來指定 UM 信箱原則的唯一名稱。這是出現在 EAC 中的顯示名稱。如果您在建立 UM 信箱原則後必須變更其顯示名稱，必須先刪除現有的 UM 信箱原則，然後建立另一個具有適合名稱的 UM 信箱原則。如果有任何啟用 UM 的使用者與 UM 信箱原則相關聯，則您無法刪除該原則。UM 信箱原則名稱是必要的，但僅供顯示之用。由於您的組織可能使用多個 UM 信箱原則，我們建議您針對 UM 信箱原則使用有意義的名稱。UM 信箱原則名稱的長度上限是 64 個字元，且可以包含空格。不過不可包含下列任一字元：&quot; / \ [ ] : ; | = , + * ? &lt; &gt;.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用這個方塊來指定 UM 信箱原則的唯一名稱。這是出現在 EAC 中的顯示名稱。如果您在建立 UM 信箱原則後必須變更其顯示名稱，必須先刪除現有的 UM 信箱原則，然後建立另一個具有適合名稱的 UM 信箱原則。如果有任何啟用 UM 的使用者與 UM 信箱原則相關聯，則您無法刪除該原則。UM 信箱原則名稱是必要的，但僅供顯示之用。由於您的組織可能使用多個 UM 信箱原則，我們建議您針對 UM 信箱原則使用有意義的名稱。UM 信箱原則名稱的長度上限是 64 個字元，且可以包含空格。不過不可包含下列任一字元：&quot; / \ [ ] : ; | = , + * ? &lt; &gt;.
 
 
 4.  按一下 **\[儲存\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您儲存 UM 信箱原則時，將啟用所有預設設定，包括 PIN 原則、語音信箱功能，以及受保護的語音信箱設定。如果想要自訂或變更您剛建立之 UM 信箱原則的任何預設設定，請使用 <strong>Set-UMMailbox</strong> 指令程式或 EAC。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您儲存 UM 信箱原則時，將啟用所有預設設定，包括 PIN 原則、語音信箱功能，以及受保護的語音信箱設定。如果想要自訂或變更您剛建立之 UM 信箱原則的任何預設設定，請使用 <strong>Set-UMMailbox</strong> 指令程式或 EAC。
 
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 信箱原則。

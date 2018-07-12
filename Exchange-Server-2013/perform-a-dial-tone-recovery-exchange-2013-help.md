@@ -87,11 +87,12 @@ _**上次修改主題的時間：** 2014-06-27_
         Mount-Database -Identity RDB1
 
 13. 使用 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 和 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829875\(v=exchg.150\)) 指令程式，從 RDB 匯出資料，然後將該資料匯入復原的資料庫，如本範例中所示。這會將所有使用撥號音資料庫傳送及接收的郵件匯入實際生產資料庫中。
-    
+       ``` 
         $mailboxes = Get-Mailbox -Database DTDB1
-    
+       ```
+       ```
         $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
-
+       ```
 14. 完成還原作業後，可以卸載並移除 RDB，如本範例中所示。
     
         Dismount-Database -Identity RDB1

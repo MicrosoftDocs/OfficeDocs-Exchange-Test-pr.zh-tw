@@ -95,18 +95,8 @@ _**上次修改主題的時間：** 2013-08-12_
     
       - **使用表單型驗證** 表單型驗證提供 Outlook Web App 虛擬目錄的增強的安全。表單型驗證建立 Outlook Web App 的簽入頁。您可以設定表單型驗證所使用的簽入提示類型。例如，您可以設定表單型驗證來要求使用者在 Outlook Web App 簽入頁面上，以網域\\使用者名稱的格式來提供其網域及使用者名稱資訊。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>表單型驗證不提供安全通道，除非啟用 SSL。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 表單型驗證不提供安全通道，除非啟用 SSL。
         
         選取下列其中一項：
         
@@ -120,33 +110,13 @@ _**上次修改主題的時間：** 2013-08-12_
     
     使用 **\[功能\]** 索引標籤，為虛擬目錄上的 Outlook Web App 使用者指定您想要啟用或停用的功能。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>個別使用者的功能設定會覆寫虛擬目錄設定。使用 <strong>Set-CASMailbox</strong> 指令程式，或使用 Outlook Web App 信箱原則，可以變更個別使用者的分割設定。如需詳細資訊，請參閱 <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 信箱原則</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 個別使用者的功能設定會覆寫虛擬目錄設定。使用 <strong>Set-CASMailbox</strong> 指令程式，或使用 Outlook Web App 信箱原則，可以變更個別使用者的分割設定。如需詳細資訊，請參閱 <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 信箱原則</a>。
     
     使用核取方塊來啟用或停用功能。最常用的功能預設為顯示。若要查看所有可啟用或停用的功能，請按一下 \[其他選項\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 <strong>[高階用戶端]</strong> 核取方塊來啟用或停用標準版 Outlook Web App 的方式已過時，將會從設定中移除。標準版 Outlook Web App 一律會啟用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用 <strong>[高階用戶端]</strong> 核取方塊來啟用或停用標準版 Outlook Web App 的方式已過時，將會從設定中移除。標準版 Outlook Web App 一律會啟用。
 
 
 6.  

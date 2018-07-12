@@ -121,8 +121,6 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
         
             appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
         
-        ``` 
-        ```
 
   - **步驟 2**   您需要使用下列其中一個命令，收回正確的應用程式集區或重新啟動 Internet Information Services：
     

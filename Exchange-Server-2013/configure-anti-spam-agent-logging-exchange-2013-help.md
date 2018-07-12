@@ -58,24 +58,11 @@ _**上次修改主題的時間：** 2015-04-08_
 
     Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>如果您<em>AgentLogPath</em>參數設定為值<code>$null</code>，則有效停用代理程式記錄。不過，如果您設<em>AgentLogPath</em><code>$null</code><code>$true</code><em>AgentLogEnabled</em>參數的值時，會產生事件記錄檔錯誤。若要停用代理程式記錄的慣用的方法是設為<code>$false</code><em>AgentLogEnabled</em> 。</p></li>
-<li><p>將 <em>AgentLogMaxAge</em> 參數設定為 <code>00:00:00</code> 值，可防止因保留天數之故而自動移除代理程式記錄檔。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>如果您<em>AgentLogPath</em>參數設定為值<code>$null</code>，則有效停用代理程式記錄。不過，如果您設<em>AgentLogPath</em><code>$null</code><code>$true</code><em>AgentLogEnabled</em>參數的值時，會產生事件記錄檔錯誤。若要停用代理程式記錄的慣用的方法是設為<code>$false</code><em>AgentLogEnabled</em> 。</p></li>
+> <li><p>將 <em>AgentLogMaxAge</em> 參數設定為 <code>00:00:00</code> 值，可防止因保留天數之故而自動移除代理程式記錄檔。</p></li>
+> </ul>
 
 
 如需詳細的語法及參數資訊，請參閱[Set-TransportService](https://technet.microsoft.com/zh-tw/library/jj215682\(v=exchg.150\))中的 *AgentLog* 參數。

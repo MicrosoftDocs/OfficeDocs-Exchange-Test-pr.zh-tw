@@ -176,35 +176,16 @@ Sharing Documentation
     
     1.  在您所有的 Exchange 2007 CAS 伺服器上，使用文字編輯器 (例如記事本) 開啟下列檔案。\<Exchange 安裝路徑\>\\V14\\ClientAccess\\ExchWeb\\EWS\\web.config
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在變更 web.config 檔案之前，請先將檔案複製到安全的位置。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+        > 在變更 web.config 檔案之前，請先將檔案複製到安全的位置。
+
     
     2.  在 web.config 檔案中找出 **appSettings** 區段。
     
     3.  新增「\<add key="maximumQueryIntervalDays" value="62" /\>」機碼，並儲存 web.config 檔案。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>依預設，maximumQueryIntervalDays 值並不會存在。若此值不存在， Exchange 2007 會使用預設的 42 天時間間隔。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 依預設，maximumQueryIntervalDays 值並不會存在。若此值不存在， Exchange 2007 會使用預設的 42 天時間間隔。
     
     4.  在所有 Exchange 2007 CAS 伺服器上，停止並重新啟動 Microsoft 網際網路資訊服務 (IIS)。
 

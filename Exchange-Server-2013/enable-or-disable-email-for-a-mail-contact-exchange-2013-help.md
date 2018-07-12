@@ -134,18 +134,8 @@ _**上次修改主題的時間：** 2012-12-05_
 
   - 在 EAC 中，瀏覽至 \[**收件者**\>**連絡人**。新的郵件連絡人會顯示在連絡人清單中。\[**連絡人類型**\] 下方類型是**郵件連絡人**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須按一下 [<strong>重新整理</strong><img src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="重新整理圖示" alt="重新整理圖示" />以顯示新郵件連絡人。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您必須按一下 [<strong>重新整理</strong><img src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="重新整理圖示" alt="重新整理圖示" />以顯示新郵件連絡人。
 
 
   - 在命令介面中執行下列命令以顯示新郵件連絡人的相關資訊。

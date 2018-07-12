@@ -25,18 +25,8 @@ Microsoft Exchange Server 2013 提供了下列類型的分割權限模型：
 
   - **Active Directory 分割權限**  從任何Exchange使用者、 服務或伺服器完全移除Active Directory網域分割區中建立安全性主體的權限。建立安全性主體的 RBAC 不提供的任何選項。使用Active Directory管理工具必須執行Active Directory中的安全性主體的建立。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Active Directory 可在執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更新版、Exchange 2013 或兩個版本的 Exchange 之組織中使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Active Directory 可在執行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更新版、Exchange 2013 或兩個版本的 Exchange 之組織中使用。
 
 
 您選擇的模型結構和組織的需求而定。選擇的程序可適用於您想要設定的模型。我們建議您使用的 RBAC 分割權限模型。RBAC 分割權限模型可大幅更彈性地同時為Active Directory分割權限提供相同的管理分離。
@@ -110,18 +100,8 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
     
     2.  重新啟動組織中的 Exchange 2013 伺服器，或等候 Active Directory 存取 Token 複寫您的所有 Exchange 2013 伺服器。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您在組織中有Exchange 2010伺服器，您也需要重新啟動這些伺服器。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您在組織中有Exchange 2010伺服器，您也需要重新啟動這些伺服器。
 
 
 2.  從 Exchange 管理命令介面執行下列動作：
@@ -130,18 +110,8 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
         
             New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您想要能夠建立角色指派此角色群組的成員，包括角色管理角色。您不需要立即將此角色。不過，如果您想要將 [建立郵件收件者角色 」 或 「 安全性群組建立與成員資格的角色指派給其他角色 assignees，角色管理角色必須指派給此新的角色群組。遵循的步驟Active Directory系統管理員角色群組設定為可委派這些角色的唯一角色群組。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您想要能夠建立角色指派此角色群組的成員，包括角色管理角色。您不需要立即將此角色。不過，如果您想要將 [建立郵件收件者角色 」 或 「 安全性群組建立與成員資格的角色指派給其他角色 assignees，角色管理角色必須指派給此新的角色群組。遵循的步驟Active Directory系統管理員角色群組設定為可委派這些角色的唯一角色群組。
     
     2.  使用以下命令在新角色群組和「建立郵件收件者」角色及「安全性群組建立及成員資格」角色之間建立委派角色指派。
         
@@ -156,18 +126,8 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
         
             Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>組織管理角色群組或使用者可以使用已指派角色管理角色的成員是直接或透過其他角色群組或 USG，可以略過此委派安全性檢查。若要防止任何Exchange管理員新增至新的角色群組的値，您必須移除角色指派的角色管理角色與任何Exchange管理員之間並將其指派給其他角色群組。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 組織管理角色群組或使用者可以使用已指派角色管理角色的成員是直接或透過其他角色群組或 USG，可以略過此委派安全性檢查。若要防止任何Exchange管理員新增至新的角色群組的値，您必須移除角色指派的角色管理角色與任何Exchange管理員之間並將其指派給其他角色群組。
     
     5.  尋找所有一般和委派角色指派給使用下列命令建立郵件收件者角色。此命令只會顯示**Name**、 **Role**，以及**RoleAssigneeName**屬性。
         
@@ -177,18 +137,8 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
         
             Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您想要移除的所有規則和委派角色指派給Active Directory系統管理員角色群組以外的任何角色受託人上建立郵件收件者角色，請使用下列命令。<em>WhatIf</em>參數可讓您查看將移除何種角色指派。移除<em>WhatIf</em>交換器並再次執行命令移除角色指派。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您想要移除的所有規則和委派角色指派給Active Directory系統管理員角色群組以外的任何角色受託人上建立郵件收件者角色，請使用下列命令。<em>WhatIf</em>參數可讓您查看將移除何種角色指派。移除<em>WhatIf</em>交換器並再次執行命令移除角色指派。
         
             Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
     
@@ -200,18 +150,8 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
         
             Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您可以使用前面附註中的同一命令，針對任何角色受託人 (非 Active Directory Administrators 角色群組) 移除「安全性群組建立及成員資格」角色的所有一般和委派角色指派，如以下範例所示。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 您可以使用前面附註中的同一命令，針對任何角色受託人 (非 Active Directory Administrators 角色群組) 移除「安全性群組建立及成員資格」角色的所有一般和委派角色指派，如以下範例所示。
         
             Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
 
@@ -261,19 +201,9 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
 
 Exchange系統管理員和伺服器將只能夠管理現有的Active Directory安全性主體的Exchange屬性。不過，他們將能夠建立及管理Exchange-特定物件，例如傳輸規則和整合通訊撥號對應表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876857.Caution(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>啟用Active Directory之後分割權限、 Exchange管理員及伺服器將不再能夠在Active Directory、 中建立安全性主體與他們不能管理通訊群組成員資格。必須使用Active Directory管理工具具有必要的Active Directory權限執行這些工作。進行這項變更之前，您應該了解它對您的管理程序和整合Exchange 2013及的 RBAC 權限模型的協力廠商應用程式的影響。<br />
-如需詳細資訊，請參閱<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>中的＜Active Directory 分割權限＞一節。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]  
+> 啟用Active Directory之後分割權限、 Exchange管理員及伺服器將不再能夠在Active Directory、 中建立安全性主體與他們不能管理通訊群組成員資格。必須使用Active Directory管理工具具有必要的Active Directory權限執行這些工作。進行這項變更之前，您應該了解它對您的管理程序和整合Exchange 2013及的 RBAC 權限模型的協力廠商應用程式的影響。<br />
+> 如需詳細資訊，請參閱<a href="understanding-split-permissions-exchange-2013-help.md">了解分割權限</a>中的＜Active Directory 分割權限＞一節。
 
 
 若要從共用權限或 RBAC 分割權限切換至 Active Directory 分割權限，請執行以下動作：
@@ -286,16 +216,6 @@ Exchange系統管理員和伺服器將只能夠管理現有的Active Directory�
 
 3.  重新啟動組織中的 Exchange 2013 伺服器，或等候 Active Directory 存取 Token 複寫您的所有 Exchange 2013 伺服器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在組織中有Exchange 2010伺服器，您也需要重新啟動這些伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您在組織中有Exchange 2010伺服器，您也需要重新啟動這些伺服器。
 

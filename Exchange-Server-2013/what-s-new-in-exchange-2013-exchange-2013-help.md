@@ -208,18 +208,8 @@ Exchange 2013 包含以下就地封存、 保留和 eDiscovery 的改善，有�
     
       - **就地 eDiscovery 和保留精靈**  探索管理程式可以使用新的就地 eDiscovery 和保留精靈來執行 eDiscovery 和保留操作。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果 SharePoint 2013 無法使用，Exchange 系統管理中心可提供 eDiscovery 功能的子集。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果 SharePoint 2013 無法使用，Exchange 系統管理中心可提供 eDiscovery 功能的子集。
 
 
   - **在 Outlook Web App 中跨主要和封存信箱搜尋**  使用者可以在 Outlook Web App 中跨主要和封存信箱進行搜尋。另外兩個搜尋則不再必要。

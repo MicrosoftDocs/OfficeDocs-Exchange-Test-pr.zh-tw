@@ -53,42 +53,42 @@ _**上次修改主題的時間：** 2015-03-09_
 </tr>
 <tr class="odd">
 <td><p><code>Event</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>此標籤包含個別的指令程式的稽核記錄項目。此標籤包含<code>Caller</code>、 <code>Cmdlet</code>、 <code>ObjectModified</code>、 <code>RunDate</code>、 <code>Succeeded</code>、 <code>Error</code>及<code>OriginatingServer</code>屬性。<code>CmdletParameters</code>和<code>ModifiedProperties</code>標記為此標籤的子系。</p>
 <p>有一個<code>Event</code>標記每稽核記錄項目。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Caller</code></p></td>
 <td><p>此屬性包含在<code>Cmdlet</code>屬性中執行指令程式之使用者的使用者帳戶。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Cmdlet</code></p></td>
 <td><p>此屬性包含在<code>Caller</code>屬性中之使用者所執行的指令程式的名稱。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>ObjectModified</code></p></td>
 <td><p>此屬性包含<code>Cmdlet</code>屬性中指定 cmdlet 所修改的物件。<code>ModifiedProperties</code>標籤會顯示哪些屬性已修改此物件上。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>RunDate</code></p></td>
 <td><p>此屬性包含的日期和時間<code>Cmdlet</code>屬性在 cmdlet 執行的時間。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Succeeded</code></p></td>
 <td><p>此屬性會指定是否在<code>Cmdlet</code>屬性指令程式執行成功。此值為<code>True</code>或<code>False</code>。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Error</code></p></td>
 <td><p>此屬性包含如果無法成功完成<code>Cmdlet</code>屬性中的指令程式產生的錯誤訊息。如果已不發生任何錯誤，此值是設定為<code>None</code>。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>OriginatingServer</code></p></td>
 <td><p>此屬性包含在其<code>Cmdlet</code>屬性中指定此 cmdlet 所執行的伺服器。</p></td>
 </tr>
@@ -100,17 +100,17 @@ _**上次修改主題的時間：** 2015-03-09_
 </tr>
 <tr class="even">
 <td><p><code>Parameter</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>此標籤包含個別的參數來指定當此 cmdlet 所執行。此標籤含有<code>Name</code>及<code>Value</code>屬性。</p>
 <p>可以個別<code>CmdletParameters</code>標記的多個<code>Parameter</code>標籤。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Name</code></p></td>
 <td><p>此屬性包含參數來指定在執行此指令程式的名稱。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Value</code></p></td>
 <td><p>此屬性包含在<code>Name</code>屬性中指定此參數提供值。</p></td>
 </tr>
@@ -129,22 +129,22 @@ _**上次修改主題的時間：** 2015-03-09_
 </tr>
 <tr class="even">
 <td><p><code>Property</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>此標籤包含此 cmdlet 所執行時所指定的個別屬性。此標籤包含<code>Name</code>、 <code>OldValue</code>，以及<code>NewValue</code>屬性。</p>
 <p>可以個別<code>ModifiedProperties</code>標記的多個<code>Property</code>標籤。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Name</code></p></td>
 <td><p>此屬性包含當此 cmdlet 所執行已修改的屬性名稱。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>OldValue</code></p></td>
 <td><p>此屬性包含已變更前<code>Name</code>屬性中指定的屬性中所包含的值。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>NewValue</code></p></td>
 <td><p>此屬性包含在<code>Name</code>屬性的屬性已變更為的值。</p></td>
 </tr>
@@ -166,18 +166,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 已修改兩個物件`david`上的下列屬性：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>因為<code>Set-AdminAuditLogConfig</code>指令程式上的<em>LogLevel</em>參數設為 [ <code>Verbose</code>在本例中修改的屬性會儲存稽核記錄檔。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 因為<code>Set-AdminAuditLogConfig</code>指令程式上的<em>LogLevel</em>參數設為 [ <code>Verbose</code>在本例中修改的屬性會儲存稽核記錄檔。
     
       - *ProhibitSendReceiveQuota* `10GB`，以取代`35GB`舊值的新值
 

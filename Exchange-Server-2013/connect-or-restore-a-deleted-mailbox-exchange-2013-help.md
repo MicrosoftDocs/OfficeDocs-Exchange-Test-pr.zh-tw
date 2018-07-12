@@ -41,18 +41,8 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
     
     若是內部部署 Exchange 的組織，您也可以在 \[Active Directory 使用者及電腦\] 中確認此資訊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您連接被刪除的連結信箱、資源信箱或共用信箱時，您必須停用欲連接信箱的 Active Directory 使用者帳戶。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 當您連接被刪除的連結信箱、資源信箱或共用信箱時，您必須停用欲連接信箱的 Active Directory 使用者帳戶。
 
 
   - 若要確認您想連接使用者帳戶的被刪除信箱是否仍存在於信箱資料庫中，而且不是虛刪除的信箱，請執行下列命令。
@@ -81,18 +71,8 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
     
     隨即顯示您 Exchange 組織中選定 Exchange 伺服器上已中斷連線的信箱清單。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此中斷連線信箱清單中包括停用的信箱、刪除的信箱，以及虛刪除的信箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此中斷連線信箱清單中包括停用的信箱、刪除的信箱，以及虛刪除的信箱。
 
 
 3.  按一下您要連接使用者的被刪除信箱，然後按一下 \[連線\]。
@@ -207,19 +187,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 2.  步驟 1 所傳回的資訊、 搜尋 Deleted Objects 容器 Active Directory 中的公用資料夾信箱 GUID 以及 GUID 或刪除公用資料夾信箱已包含在信箱資料庫的名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以搜尋使用自訂指令碼的已刪除物件或藉由使用 Ldp 公用程式，其可以開啟 Powershell 提示字元中輸入<strong>ldp.exe</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!TIP]  
+	> 您可以搜尋使用自訂指令碼的已刪除物件或藉由使用 Ldp 公用程式，其可以開啟 Powershell 提示字元中輸入<strong>ldp.exe</strong> 。
+	
 
 當您知道刪除公用資料夾信箱 GUID 和名稱或 GUID 之信箱資料庫的包含公用資料夾信箱，執行下列命令，以還原公用資料夾信箱。
 
@@ -235,18 +205,8 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
     
         Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><code>Identity</code>參數指定要連線至 Active Directory 使用者物件的 Exchange 資料庫將信箱物件。上述範例會指定公用資料夾信箱的 GUID，但您也可以使用顯示名稱或 LegacyExchangeDN 值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <code>Identity</code>參數指定要連線至 Active Directory 使用者物件的 Exchange 資料庫將信箱物件。上述範例會指定公用資料夾信箱的 GUID，但您也可以使用顯示名稱或 LegacyExchangeDN 值。
 
 
 3.  對公用資料夾信箱，根據下面範例執行`Update-StoreMailboxState` ：

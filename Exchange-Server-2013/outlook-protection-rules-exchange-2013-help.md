@@ -29,19 +29,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 當您建立Outlook保護規則Exchange 2013 server 上時，規則會自動分散至Outlook 2010使用Exchange Web 服務。若要將規則套用Outlook 2010您指定 AD RMS 權限原則範本必須提供使用者電腦上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果從 AD RMS 伺服器移除權限原則範本，您必須修改使用已移除的範本任何Outlook保護規則。如果將Outlook保護規則會繼續使用已移除、 權限原則範本和停用傳輸解密已在組織中啟用，解密代理程式將無法解密不再可用的範本受到保護的郵件。若為必要項目已停用傳輸解密的傳輸服務會拒絕此郵件並將未傳遞回報 (NDR) 傳送給寄件者。如需停用傳輸解密的詳細資訊，請參閱<a href="transport-decryption-exchange-2013-help.md">傳輸解密</a>。如需 AD RMS 權限原則範本的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=179455">AD RMS 原則範本考量</a>。<br />
-Windows Server 2008和較新版本，而不是可以封存原則範本的權限中刪除。封存的範本仍可授權內容，但已封存的範本建立或修改Outlook保護規則、 時未含的範本清單中。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果從 AD RMS 伺服器移除權限原則範本，您必須修改使用已移除的範本任何Outlook保護規則。如果將Outlook保護規則會繼續使用已移除、 權限原則範本和停用傳輸解密已在組織中啟用，解密代理程式將無法解密不再可用的範本受到保護的郵件。若為必要項目已停用傳輸解密的傳輸服務會拒絕此郵件並將未傳遞回報 (NDR) 傳送給寄件者。如需停用傳輸解密的詳細資訊，請參閱<a href="transport-decryption-exchange-2013-help.md">傳輸解密</a>。如需 AD RMS 權限原則範本的詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/p/?linkid=179455">AD RMS 原則範本考量</a>。<br />
+> Windows Server 2008和較新版本，而不是可以封存原則範本的權限中刪除。封存的範本仍可授權內容，但已封存的範本建立或修改Outlook保護規則、 時未含的範本清單中。
 
 
 Outlook保護規則就類似於傳輸保護規則。同時套用根據郵件條件，並同時套用 AD RMS 權限保護範本來保護郵件。不過，傳輸保護規則是由傳輸規則代理程式套用的 Mailbox server 上的傳輸服務中。Outlook保護規則套用Outlook 2010，才能將郵件保留在使用者的電腦。受到Outlook保護規則的郵件會進入傳輸管線搭配已套用 IRM 保護。此外， Outlook保護規則以受保護的郵件也會儲存在寄件者的信箱傳送的項目資料夾中加密的格式。

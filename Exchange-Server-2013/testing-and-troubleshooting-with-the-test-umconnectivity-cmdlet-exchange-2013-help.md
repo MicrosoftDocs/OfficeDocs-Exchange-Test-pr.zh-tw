@@ -35,16 +35,6 @@ _**上次修改主題的時間：** 2013-06-25_
 
   - **遠端**   **Test-UMConnectivity** Cmdlet 會嘗試藉由透過 VoIP 閘道撥打電話來連線到遠端 Client Access Server。連線之後，此 Cmdlet 會對遠端 Client Access Server 和媒體路徑執行連線檢查。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>收到下列訊息時應重新啟動 MicrosoftExchange 整合通訊服務，因為這表示服務已停止或未回應。「Test-UMConnectivity 工作在嘗試撥打電話時發生錯誤。詳細資料：無法建立連線。」</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 收到下列訊息時應重新啟動 MicrosoftExchange 整合通訊服務，因為這表示服務已停止或未回應。「Test-UMConnectivity 工作在嘗試撥打電話時發生錯誤。詳細資料：無法建立連線。」
 

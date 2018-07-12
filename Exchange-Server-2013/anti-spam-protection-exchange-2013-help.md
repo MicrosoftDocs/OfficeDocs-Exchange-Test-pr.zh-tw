@@ -63,18 +63,8 @@ Strategy for anti-spam approach
 
   - **收件者篩選器代理程式**  收件者篩選會比較在 RCPT TO 郵件收件者 ︰ SMTP 命令以系統管理員所定義的收件者封鎖清單。如果找到相符項目，就不允許郵件進入組織。收件者篩選器也比較本機收件者的目錄來決定是否傳送郵件給有效收件者的內送郵件上的收件者。有效的收件者無法傳送給一則訊息，當郵件被拒絕。如需詳細資訊，請參閱[Edge Transport Server 上的收件者篩選](recipient-filtering-on-edge-transport-servers-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然收件者篩選器代理程式是可在信箱伺服器上，您不應該進行設定。收件者篩選信箱伺服器上包含其他有效收件者在郵件中偵測一個無效或封鎖收件者，當郵件被拒絕。如果您在信箱伺服器上安裝的反垃圾郵件代理程式，預設會啟用收件者篩選器代理程式。不過，它不被設定為封鎖任何收件者。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 雖然收件者篩選器代理程式是可在信箱伺服器上，您不應該進行設定。收件者篩選信箱伺服器上包含其他有效收件者在郵件中偵測一個無效或封鎖收件者，當郵件被拒絕。如果您在信箱伺服器上安裝的反垃圾郵件代理程式，預設會啟用收件者篩選器代理程式。不過，它不被設定為封鎖任何收件者。
 
 
   - **附件篩選代理程式**  附件篩選封鎖根據附件檔案名稱、 副檔名或檔案 MIME 內容類型的郵件。您可以設定附件篩選來封鎖郵件和其附件，若要刪除附件並允許郵件通過，或以無訊息方式刪除郵件和其附件。如需詳細資訊，請參閱[Edge Transport server 上的附件篩選](attachment-filtering-on-edge-transport-servers-exchange-2013-help.md)。

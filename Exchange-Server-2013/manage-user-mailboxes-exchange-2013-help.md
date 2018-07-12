@@ -82,34 +82,14 @@ _**上次修改主題的時間：** 2014-05-27_
 
   - \* \[使用者登入名稱\]   這是用來登入信箱與登入網域的使用者名稱。通常，使用者登入名稱由 @ 符號左邊的使用者別名組成，@ 符號右邊的使用者帳戶則為網域名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中，此方塊會標示為 <strong>[使用者識別碼]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中，此方塊會標示為 <strong>[使用者識別碼]</strong>。
 
 
   - \[必須在下次登入時變更密碼\]   如果您要使用者在下次登入信箱時重設密碼，請選取這個核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中沒有此核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中沒有此核取方塊。
 
 
   - \[從 Exchange 地址清單隱藏\]   選取此核取方塊，可防止收件者出現在通訊錄以及您的 Exchange 組織中定義的其他通訊錄中。選取此核取方塊後， 使用者仍可以使用電子郵件地址傳送郵件給收件者。
@@ -118,34 +98,14 @@ _**上次修改主題的時間：** 2014-05-27_
 
   - \[組織單位\]   這個唯讀欄位可顯示包含使用者帳戶的組織單位 (OU)。您必須使用 Active Directory 使用者和電腦，才能將使用者帳戶移至不同的 OU。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中沒有此方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中沒有此方塊。
 
 
   - \[信箱資料庫\]   這個唯讀方塊顯示主控信箱的信箱資料庫所用的名稱。若要將信箱移動到另一個資料庫，請在信箱清單中選取該信箱，然後在 \[詳細資料\] 窗格中按一下 \[將信箱移至其他資料庫\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中沒有此選項。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中沒有此選項。
 
 
   - \[自訂屬性\]   此區段會顯示為使用者信箱定義的自訂屬性。若要指定自訂屬性值，請按一下 \[編輯\]。您最多可為收件者指定 15 個自訂屬性。
@@ -229,35 +189,15 @@ _**上次修改主題的時間：** 2014-05-27_
     
       - \[自訂位址類型\]   按一下此按鈕，並在 \[\* 電子郵件地址\] 方塊中，輸入其中一種支援的非 SMTP 電子郵件地址類型。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。您必須確保指定的自訂位址符合該位址類型的格式需求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。您必須確保指定的自訂位址符合該位址類型的格式需求。
     
       - **將此位址設為回覆地址**   在 Exchange Online 中，您可以選取這個核取方塊，使新的電子郵件地址成為信箱的主要 SMTP 位址。在 Exchange 2013 中，EAC 沒有此核取方塊。
 
   - \[依照套用至此收件者的電子郵件地址原則自動更新電子郵件地址\]   選取此核取方塊，可讓收件者的電子郵件地址自動依照組織內電子郵件地址原則的變更而更新。預設會選取此方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中沒有此核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中沒有此核取方塊。
 
 
   - **將此位址設為回覆地址**
@@ -276,18 +216,8 @@ _**上次修改主題的時間：** 2014-05-27_
 
   - **整合通訊**   此功能預設為停用。當您啟用整合通訊 (UM) 時，使用者將可使用您的組織的 UM 功能及使用者套用的一組預設 UM 屬性。按一下 \[啟用\] 為信箱啟用 UM。如需如何啟用 UM 的資訊，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必須有 UM 撥號對應表和 UM 信箱原則，才能啟用 UM。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 必須有 UM 撥號對應表和 UM 信箱原則，才能啟用 UM。
 
 
   - **行動裝置**   使用此區段可檢視和變更 Exchange ActiveSync (預設為啟用) 的設定。Exchange ActiveSync 原則可讓使用者從行動裝置存取 Exchange 信箱。按一下 \[停用 Exchange ActiveSync\] 可停用信箱的這項功能。
@@ -310,18 +240,8 @@ _**上次修改主題的時間：** 2014-05-27_
     
       - \[URL\]   使用這個方塊可提供網站的 URL，以便提供有關信箱訴訟暫止的相關資訊或指引。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有當使用者使用 Outlook 2010 或更新版時，這些方塊中的文字才會顯示在使用者的信箱中。它不會顯示在 Outlook Web App 或其他電子郵件用戶端中。若要在 Outlook 中檢視 [附註] 和 [URL] 方塊中的文字，請按一下 [檔案] 索引標籤，然後您就會在 [資訊] 頁面的 [帳戶設定] 底下看見訴訟暫止註解。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 只有當使用者使用 Outlook 2010 或更新版時，這些方塊中的文字才會顯示在使用者的信箱中。它不會顯示在 Outlook Web App 或其他電子郵件用戶端中。若要在 Outlook 中檢視 [附註] 和 [URL] 方塊中的文字，請按一下 [檔案] 索引標籤，然後您就會在 [資訊] 頁面的 [帳戶設定] 底下看見訴訟暫止註解。
 
 
   - **封存**   如果使用者沒有封存信箱，會停用此功能。若要啟用封存信箱，請按一下 \[啟用\]。如果使用者有封存信箱，則會顯示封存信箱的大小和用量統計資料。按一下 \[編輯詳細資料\] 可檢視和變更下列的封存信箱設定：
@@ -336,18 +256,8 @@ _**上次修改主題的時間：** 2014-05-27_
     
       - \[超過下列大小就發出警告 (GB)\]   在警告發出給使用者前，此方塊將顯示封存信箱的最高儲存限制。如果封存信箱大小到達或超過指定的值， Exchange 就會傳送警告郵件給使用者。若要變更此限制，請在方塊中輸入新值或從下拉式清單選擇一個值。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在 Exchange Online 中，無法變更封存信箱的封存配額和問題警告配額。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 在 Exchange Online 中，無法變更封存信箱的封存配額和問題警告配額。
 
 
   - \[傳遞選項\]   將傳送給使用者的電子郵件轉寄給另一位收件者，以及設定使用者寄送郵件的最大收件者數。請按一下 \[檢視詳細資料\] 來檢視和變更這些設定。
@@ -358,34 +268,14 @@ _**上次修改主題的時間：** 2014-05-27_
     
       - \[收件者限制\]   此設定控制使用者可傳送郵件的最高收件者數量。選取 \[收件者人數上限\] 核取方塊以設定電子郵 \[收件者:\]、\[副本:\] 和 \[密件副本:\]方塊的收件者人數限制，然後指定收件者人數上限。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若是內部部署的 Exchange 組織，收件者限制則無上限。若是 Exchange Online 的組織，上限為 500 位收件者。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 若是內部部署的 Exchange 組織，收件者限制則無上限。若是 Exchange Online 的組織，上限為 500 位收件者。
 
 
   - **郵件大小限制**   這些設定會控制使用者可以傳送和接收的郵件大小。請按一下 \[檢視詳細資料\] 來檢視和變更傳送和接收郵件的大小上限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中，無法變更這些設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中，無法變更這些設定。
     
       - \[已傳送郵件\]   若要指定此使用者傳送的最大郵件容量，請選擇 \[郵件大小上限 (KB)\] 核取方塊並在方塊中輸入值。郵件大小必須介於 0 和 2,097,151 KB 之間。如果使用者傳送的郵件大於指定的大小，該郵件便會傳回給使用者，並說明為錯誤郵件。
     
@@ -515,19 +405,8 @@ _**上次修改主題的時間：** 2014-05-27_
 
 2.  在信箱清單中，選取兩個或多個信箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以按住 Shift 鍵並按一下第一個信箱，然後按一下您想編輯的最後一個信箱，就可選取多個鄰近的信箱。您也可以按住 Ctrl 鍵並按一下您想編輯的每個信箱，就可選取多個不相鄰的信箱。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!TIP]  
+	> 您可以按住 Shift 鍵並按一下第一個信箱，然後按一下您想編輯的最後一個信箱，就可選取多個鄰近的信箱。您也可以按住 Ctrl 鍵並按一下您想編輯的每個信箱，就可選取多個不相鄰的信箱。
 
 3.  在 \[詳細資料\] 窗格中 \[大量編輯\] 下，選取您要編輯的信箱屬性或功能。
 

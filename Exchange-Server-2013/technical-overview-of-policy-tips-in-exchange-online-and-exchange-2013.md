@@ -29,25 +29,12 @@ _**上次修改主題的時間：** 2015-07-22_
 
 如果組織中正在進行撰寫郵件動作的寄件者透過原則提示通知即時注意到組織期望與標準，則較不會違反組織要強制的標準。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Exchange Online：DLP 是付費功能，需要 Exchange Online 計劃 2 授權。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online 授權</a>。</p></li>
-<li><p>Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。</p></li>
-<li><p>如果您的組織使用 Exchange 2013 SP1 或 Exchange Online，則原則提示將適用於從 Outlook 2013、Outlook Web App 或 裝置的 OWA 傳送郵件的人員。但若您的組織目前使用 Exchange 2013，則原則提示僅適用於從 Outlook 2013 傳送郵件的人員。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <ul>
+> <li><p>Exchange Online：DLP 是付費功能，需要 Exchange Online 計劃 2 授權。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online 授權</a>。</p></li>
+> <li><p>Exchange 2013：DLP 是需要 Exchange 企業版用戶端存取授權 (CAL) 的高階功能。如需 CAL 和伺服器授權的詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server 授權</a>。</p></li>
+> <li><p>如果您的組織使用 Exchange 2013 SP1 或 Exchange Online，則原則提示將適用於從 Outlook 2013、Outlook Web App 或 裝置的 OWA 傳送郵件的人員。但若您的組織目前使用 Exchange 2013，則原則提示僅適用於從 Outlook 2013 傳送郵件的人員。</p></li>
+> </ul>
 
 
 ## 原則提示及規則選項預設

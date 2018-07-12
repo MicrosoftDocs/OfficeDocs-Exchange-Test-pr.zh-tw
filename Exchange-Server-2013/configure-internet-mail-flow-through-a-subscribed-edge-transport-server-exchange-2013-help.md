@@ -64,18 +64,8 @@ _**上次修改主題的時間：** 2015-04-08_
     
         New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用 <em>CreateInternetSendConnector</em> 或 <em>CreateInboundSendConnector</em> 參數，防止自動建立一或兩個必要的傳送連接器。如需詳細資訊，請參閱<a href="edge-subscriptions-exchange-2013-help.md">Edge 訂閱</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以使用 <em>CreateInternetSendConnector</em> 或 <em>CreateInboundSendConnector</em> 參數，防止自動建立一或兩個必要的傳送連接器。如需詳細資訊，請參閱<a href="edge-subscriptions-exchange-2013-help.md">Edge 訂閱</a>。
 
 
 4.  在 Mailbox Server 上，執行下列命令以開始第一次 EdgeSync 同步處理。

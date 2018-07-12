@@ -140,12 +140,15 @@ _**上次修改主題的時間：** 2015-03-09_
 執行此命令時，會顯示訊息詢問您是否確認要停用信箱。
 
 下面是停用信箱的一些命令範例。
-
-    Disable-Mailbox danj
-
-    Disable-Mailbox "Conf Room 31/1234 (12)"
-
-    Disable-Mailbox sharedmbx@contoso.com
+```
+Disable-Mailbox danj
+```
+```
+Disable-Mailbox "Conf Room 31/1234 (12)"
+```
+```
+Disable-Mailbox sharedmbx@contoso.com
+```
 
 ## 如何知道這是否正常運作？
 
@@ -161,18 +164,8 @@ _**上次修改主題的時間：** 2015-03-09_
     
     *DisconnectReason* 屬性中的 `Disabled` 值表示信箱已停用。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您刪除信箱時，<em>DisconnectReason</em> 屬性中的值也會是 <code>Disabled</code>。不過，對應的 Active Directory 使用者帳戶會刪除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您刪除信箱時，<em>DisconnectReason</em> 屬性中的值也會是 <code>Disabled</code>。不過，對應的 Active Directory 使用者帳戶會刪除。
 
 
   - 在命令介面中，執行下列命令。
@@ -206,12 +199,15 @@ _**上次修改主題的時間：** 2015-03-09_
 執行此命令時，會顯示訊息詢問您是否確認要移除信箱以及對應的 Active Directory 使用者帳戶。
 
 下面是刪除信箱的一些命令範例。
-
-    Remove-Mailbox pilarp@contoso.com
-
-    Remove-Mailbox "Fleet Van (16)"
-
-    Remove-Mailbox corpprint
+```
+Remove-Mailbox pilarp@contoso.com
+```
+```
+Remove-Mailbox "Fleet Van (16)"
+```
+```
+Remove-Mailbox corpprint
+```
 
 ## 如何知道這是否正常運作？
 
@@ -229,18 +225,8 @@ _**上次修改主題的時間：** 2015-03-09_
     
     *DisconnectReason* 屬性中的 `Disabled` 值表示信箱已刪除。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您停用信箱時，<em>DisconnectReason</em> 屬性中的值也會是 <code>Disabled</code>。不過，對應的 Active Directory 使用者帳戶會保留。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您停用信箱時，<em>DisconnectReason</em> 屬性中的值也會是 <code>Disabled</code>。不過，對應的 Active Directory 使用者帳戶會保留。
 
 
 2.  執行下列命令來確認已刪除 Active Directory 使用者帳戶。

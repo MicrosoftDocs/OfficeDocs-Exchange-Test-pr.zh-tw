@@ -89,18 +89,9 @@ Post-deployment tasks for Unified Messaging
 
 2.  部署新的 Exchange 2013 組織。如需詳細資訊，請參閱[使用安裝精靈安裝 Exchange 2013](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > 您必須先至少在組織中部署一個 Exchange 2013 Mailbox Server，才能將 VoIP 閘道或 IP PBX 設定為將 UM SIP 和 RTP 流量傳送至 Exchange 2013 Client Access Server。
+
 
 
 3.  確認已正確安裝用戶端存取和信箱伺服器。在安裝伺服器之後，建議您驗證安裝並檢閱伺服器安裝記錄檔。如需詳細資訊，請參閱[確認 Exchange 2013 安裝](verify-an-exchange-2013-installation-exchange-2013-help.md)。
@@ -142,18 +133,8 @@ UM 撥號對應表對於整合通訊操作極為重要，有它才能在網路�
     
       - **名稱** 輸入撥號對應表的名稱。UM 撥號對應表名稱是必要項目，而且必須是唯一的名稱。您輸入的名稱只能在 EAC 和命令介面中作為顯示用途。UM 撥號對應表的長度上限為 64 個字元，可包含空格。不過不可包含下列任何一個字元：" / \\ \[ \] : ; | = , + \* ? \< \>.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>雖然撥號對應表名稱方塊可接受 64 個字元，但撥號對應表名稱不可超過 49 個字元。這是因為當您建立撥號對應表時，還會建立名稱為「<em>&lt;DialPlanName&gt;</em> 預設原則」的預設 UM 信箱原則。UM 撥號對應表與 UM 信箱原則的 <em>name</em> 參數長度可為 64 個字元。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 雖然撥號對應表名稱方塊可接受 64 個字元，但撥號對應表名稱不可超過 49 個字元。這是因為當您建立撥號對應表時，還會建立名稱為「<em>&lt;DialPlanName&gt;</em> 預設原則」的預設 UM 信箱原則。UM 撥號對應表與 UM 信箱原則的 <em>name</em> 參數長度可為 64 個字元。
     
       - \[分機號碼長度 (數字位數)\]   輸入 UM 撥號對應表中的分機號碼位數。分機號碼位數是以在 PBX 上建立的電話語音撥號對應表為依據。例如，若與電話語音撥號對應表關聯的使用者，要撥打 4 位數的分機來呼叫同一電話語音撥號對應表中的另一位使用者，則選取 4 來作為分機號碼位數。
         
@@ -169,18 +150,8 @@ UM 撥號對應表對於整合通訊操作極為重要，有它才能在網路�
 
 3.  按一下 \[儲存\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在舊版的 Exchange 中，必須將整合通訊伺服器新增到 UM 撥號對應表中。在 Exchange 2013 中，用戶端存取及信箱伺服器無法與電話分機或 E.164 撥號對應表產生關聯。用戶端存取及信箱伺服器將接聽全部類型的撥號對應表所有的來電。不過，如果將 UM 與 Microsoft Lync Server 相互整合，必須將所有的用戶端存取及信箱伺服器新增到所有的 SIP URI 撥號對應表，才能使 Lync Server 正確處理電話轉接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在舊版的 Exchange 中，必須將整合通訊伺服器新增到 UM 撥號對應表中。在 Exchange 2013 中，用戶端存取及信箱伺服器無法與電話分機或 E.164 撥號對應表產生關聯。用戶端存取及信箱伺服器將接聽全部類型的撥號對應表所有的來電。不過，如果將 UM 與 Microsoft Lync Server 相互整合，必須將所有的用戶端存取及信箱伺服器新增到所有的 SIP URI 撥號對應表，才能使 Lync Server 正確處理電話轉接。
 
 
 回到頁首

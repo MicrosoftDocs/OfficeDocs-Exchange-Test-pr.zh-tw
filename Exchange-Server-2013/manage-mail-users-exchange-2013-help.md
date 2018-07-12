@@ -50,18 +50,8 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - 若要指定郵件使用者外部電子郵件地址的 SMTP 電子郵件地址，請按一下 \[SMTP\]。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Exchange 會驗證 SMTP 位址以確定格式正確。 如果您輸入的資料與 SMTP 格式不相符，在您按一下 [儲存] 建立郵件使用者時便會顯示錯誤訊息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Exchange 會驗證 SMTP 位址以確定格式正確。 如果您輸入的資料與 SMTP 格式不相符，在您按一下 [儲存] 建立郵件使用者時便會顯示錯誤訊息。
     
       - 若要指定自訂地址類型，請按一下選項按鈕，然後輸入自訂地址類型。 例如，您可以指定 X.500、GroupWise 或 Lotus Notes 地址。
 
@@ -87,65 +77,25 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - \[\* 名稱\]   使用此方塊輸入郵件使用者的名稱。 這是列在目錄服務中的名稱。 這個方塊中也會填入您在 \[名字\]、\[縮寫\]和 \[姓氏\] 方塊中輸入的名稱。 如果您未使用這些方塊，仍必須輸入名稱，因為這是必填的方塊。 這個名稱也不可超過 64 個字元。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有在 Exchange Server 2013 中才有 <strong>[名稱]</strong> 方塊。 在 Exchange Online 中沒有。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 只有在 Exchange Server 2013 中才有 <strong>[名稱]</strong> 方塊。 在 Exchange Online 中沒有。
     
       - \[組織單位\]   您可選取預設值以外但在收件者範圍中的組織單位 (OU)。 如果將收件者範圍設定為樹系，則預設值會設定為執行 EAC 的電腦所在之網域中的使用者容器。 若收件者範圍設為特定網域，則依預設會選取該網域的使用者容器。 若收件者範圍設為特定 OU，則依預設會選取該 OU。
         
         若要選取不同的 OU，請按一下 \[瀏覽\]。 此對話方塊會顯示樹系中在指定範圍內的所有 OU。 選取想要的 OU，然後按一下 \[確定\]。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有在 Exchange Server 2013 中才有 <strong>[組織單位]</strong> 方塊。 在 Exchange Online 中沒有。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 只有在 Exchange Server 2013 中才有 <strong>[組織單位]</strong> 方塊。 在 Exchange Online 中沒有。
     
       - \[\* 使用者登入名稱\]   使用此方塊輸入郵件使用者用來登入網域的名稱。 使用者登入名稱包含 (@) 符號左側的使用者名稱以及右側的尾碼。 一般來說，尾碼是使用者帳戶所在的網域名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在 Exchange Online 中，此方塊會標名為 <strong>[使用者識別碼]</strong>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 在 Exchange Online 中，此方塊會標名為 <strong>[使用者識別碼]</strong>。
     
       - \[\* 新密碼\]   使用此方塊輸入郵件使用者必須用來登入網域的密碼。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>請確定您提供的密碼符合您要在其中建立使用者帳戶之網域的密碼長度、複雜性和歷程記錄需求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 請確定您提供的密碼符合您要在其中建立使用者帳戶之網域的密碼長度、複雜性和歷程記錄需求。
     
       - \[\* 確認密碼\]   使用這個方塊確認您在 \[密碼\] 方塊中輸入的密碼。
     
@@ -237,36 +187,16 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - **下次登入時必須變更密碼**   如果您希望使用者在下次登入網域時重設密碼，請選取這個核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中沒有此方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中沒有此方塊。
 
 
 按一下 \[更多選項\]，檢視或變更這些額外的內容：
 
   - **組織單位**   這個唯讀方塊可顯示包含信箱使用者帳戶的組織單位 (OU)。 您必須使用 Active Directory 使用者與電腦以將帳號移到不同的 OU。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中沒有此方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中沒有此方塊。
 
 
   - **自訂屬性**   此區段會顯示為郵件使用者定義的自訂屬性。 若要指定自訂屬性值，請按一下 \[編輯\]![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。 您最多可為收件者指定 15 個自訂屬性。
@@ -306,36 +236,16 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - \[自訂位址類型\]   按一下此按鈕，並在 \[\* 電子郵件地址\] 方塊中，輸入其中一種支援的非 SMTP 電子郵件地址類型。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。 您必須確保指定的自訂位址符合該位址類型的格式需求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 除了 X.400 位址以外，Exchange 不會驗證自訂位址的格式是否正確。 您必須確保指定的自訂位址符合該位址類型的格式需求。
 
 
   - **設定外部電子郵件地址**   使用此方塊變更郵件使用者的外部地址。 傳送給此郵件使用者的電子郵件會轉送到這個電子郵件地址。
 
   - \[依照套用至此收件者的電子郵件地址原則自動更新電子郵件地址\]   選取此核取方塊，可讓收件者的電子郵件地址自動依照組織內電子郵件地址原則的變更而更新。 預設會選取此方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中沒有此核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Exchange Online 中沒有此核取方塊。
 
 
 ## 郵件流程設定
@@ -445,19 +355,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  在連絡人清單中，選取兩位或多位郵件使用者。 您無法大量編輯郵件連絡人和郵件使用者的組合。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以按住 Shift 鍵，並依序按一下您要編輯的第一位和最後一位郵件使用者，以選取多位相鄰的郵件使用者。 您也可以按住 Ctrl 鍵，並按一下您要編輯的每一位郵件使用者，以選取多位郵件使用者。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!TIP]  
+	> 您可以按住 Shift 鍵，並依序按一下您要編輯的第一位和最後一位郵件使用者，以選取多位相鄰的郵件使用者。 您也可以按住 Ctrl 鍵，並按一下您要編輯的每一位郵件使用者，以選取多位郵件使用者。
 
 3.  在 \[詳細資料\] 窗格的 \[大量編輯\] 下，按一下 \[連絡人資訊\] 或 \[組織\] 下的 \[更新\]。
 
@@ -484,27 +383,14 @@ _**上次修改主題的時間：** 2016-12-09_
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議搭配下列功能一起使用目錄同步處理：
-<ul>
-<li><p><strong>Outlook 安全寄件和封鎖寄件者清單</strong> 時同步服務，這些清單會高於垃圾郵件篩選服務中。這可讓使用者管理自己的安全寄件和每個使用者或每個網域為基礎的封鎖寄件清單。</p></li>
-<li><p><strong>目錄架構邊緣封鎖 (DBEB)</strong> 如需 DBEB 的詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn600322(v=exchg.150)">使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件</a>。</p></li>
-<li><p><strong>使用者垃圾郵件隔離</strong> 才可存取使用者垃圾郵件隔離區，使用者必須具備有效的 Office 365 使用者識別碼和密碼。具有內部部署信箱的客戶必須是有效的電子郵件使用者。</p></li>
-<li><p><strong>傳輸規則</strong> 當您使用目錄同步作業時，現有的 Active Directory 使用者和群組會自動上傳至雲端，及您可建立傳輸規則的目標特定使用者和/或群組而不需要以手動方式將其新增透過 EAC 或遠端 Windows PowerShell。請注意，<a href="https://go.microsoft.com/fwlink/?linkid=507569">動態通訊群組</a>無法透過目錄同步作業進行同步處理。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建議搭配下列功能一起使用目錄同步處理：
+> <ul>
+> <li><p><strong>Outlook 安全寄件和封鎖寄件者清單</strong> 時同步服務，這些清單會高於垃圾郵件篩選服務中。這可讓使用者管理自己的安全寄件和每個使用者或每個網域為基礎的封鎖寄件清單。</p></li>
+> <li><p><strong>目錄架構邊緣封鎖 (DBEB)</strong> 如需 DBEB 的詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/dn600322(v=exchg.150)">使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件</a>。</p></li>
+> <li><p><strong>使用者垃圾郵件隔離</strong> 才可存取使用者垃圾郵件隔離區，使用者必須具備有效的 Office 365 使用者識別碼和密碼。具有內部部署信箱的客戶必須是有效的電子郵件使用者。</p></li>
+> <li><p><strong>傳輸規則</strong> 當您使用目錄同步作業時，現有的 Active Directory 使用者和群組會自動上傳至雲端，及您可建立傳輸規則的目標特定使用者和/或群組而不需要以手動方式將其新增透過 EAC 或遠端 Windows PowerShell。請注意，<a href="https://go.microsoft.com/fwlink/?linkid=507569">動態通訊群組</a>無法透過目錄同步作業進行同步處理。</p></li>
+> </ul>
 
 
 **開始之前**
@@ -519,18 +405,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  同步處理您的目錄，如[使用設定精靈同步處理您的目錄](http://go.microsoft.com/fwlink/?linkid=308912)所說明。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>完成 Azure Active Directory 同步處理工具設定精靈 之後，您的 Active Directory 樹系中會建立 <strong>MSOL_AD_SYNC</strong> 帳戶。此帳戶將用來讀取和同步處理您的內部部署 Active Directory 資訊。為了讓目錄同步作業能夠正確運作，請確定有開啟您的本機目錄同步作業伺服器上的 TCP 443。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 完成 Azure Active Directory 同步處理工具設定精靈 之後，您的 Active Directory 樹系中會建立 <strong>MSOL_AD_SYNC</strong> 帳戶。此帳戶將用來讀取和同步處理您的內部部署 Active Directory 資訊。為了讓目錄同步作業能夠正確運作，請確定有開啟您的本機目錄同步作業伺服器上的 TCP 443。
 
 
 4.  啟動已同步處理的使用者，如[啟用同步處理的使用者](http://go.microsoft.com/fwlink/p/?linkid=308913)所說明。

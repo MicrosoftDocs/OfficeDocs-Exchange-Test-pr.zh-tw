@@ -87,33 +87,27 @@ _**上次修改主題的時間：** 2015-03-09_
 如果只有一個信箱資料庫副本，則您必須重新建立內容索引類別目錄，以手動重新植入搜尋類別目錄。
 
 1.  執行下列命令，以停止 Microsoft Exchange 搜尋服務和 Microsoft Exchange 搜尋主控制器服務。
-    
-        Stop-Service MSExchangeFastSearch
-    
-        Stop-Service HostControllerService
+    ```
+    Stop-Service MSExchangeFastSearch
+    ```
+    ```
+    Stop-Service HostControllerService
+    ```
 
 2.  刪除、移動或重新命名包含 Exchange 內容索引目錄的資料夾。此資料夾名為 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`。例如，您可能重新命名資料夾 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>刪除此資料夾可釋出更多磁碟空間。或者，您可能想要重新命名或移動資料夾，以保留做為疑難排解用途。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 刪除此資料夾可釋出更多磁碟空間。或者，您可能想要重新命名或移動資料夾，以保留做為疑難排解用途。
 
 
 3.  執行下列命令，以重新啟動 Microsoft Exchange 搜尋服務和 Microsoft Exchange 搜尋主控制器服務。
-    
-        Start-Service MSExchangeFastSearch
-    
-        Start-Service HostControllerService
-    
+    ```
+    Start-Service MSExchangeFastSearch
+    ```
+    ```
+    Start-Service HostControllerService
+    ```
+
     重新啟動這些服務之後，Exchange 搜尋將會重建內容索引類別目錄。
 
 ## 如何才能了解這是否正常運作？

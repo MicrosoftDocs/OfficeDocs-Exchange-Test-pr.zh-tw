@@ -37,19 +37,9 @@ Exchange 2007 的安裝程式需要做為網域架構主機位於相同的網站
 
 1.  在命令提示字元處輸入**regsvr32 schmmgmt.dll**
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>下列對話方塊顯示時<strong>RegSvr32</strong>具有已成功登錄：<br />
-    在 schmmgmt.dll DllRegisterServer 成功。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 下列對話方塊顯示時<strong>RegSvr32</strong>具有已成功登錄：<br />
+    > 在 schmmgmt.dll DllRegisterServer 成功。
 
 
 2.  若要開啟新的管理主控台，按一下 \[**開始\]**、 按一下 \[**執行**\]，然後輸入**mmc**。

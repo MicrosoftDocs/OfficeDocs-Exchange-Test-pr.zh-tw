@@ -158,18 +158,8 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 
   - **在信箱伺服器上自動進行** 在 Exchange 2013 信箱伺服器上，您可以建立傳輸保護規則，以自動為郵件套用 IRM 保護。如需傳輸保護規則的詳細資訊，請參閱[傳輸保護規則](transport-protection-rules-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>IRM 保護不會再次套用到已受 IRM 保護的郵件。例如，如果使用者在 Outlook 或 Outlook Web App 中以 IRM 保護郵件，就不會使用傳輸保護規則將 IRM 保護套用至郵件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > IRM 保護不會再次套用到已受 IRM 保護的郵件。例如，如果使用者在 Outlook 或 Outlook Web App 中以 IRM 保護郵件，就不會使用傳輸保護規則將 IRM 保護套用至郵件。
 
 
 回到頁首
@@ -234,18 +224,8 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 
   - **Exchange 搜尋的 IRM 解密** 藉由 Exchange 搜尋的 IRM 解密，Exchange 搜尋可以進行受 IRM 保護的郵件內容索引。當探索管理員執行就地 eDiscovery 搜尋時，會在搜尋結果中傳回已建立索引的 IRM 保護郵件。如需更多資訊，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>中Exchange 2010 SP1 和更新版本、 探索管理角色群組的成員可以存取受 IRM 保護所探索搜尋傳回與郵件中的探索信箱。若要啟用此功能，請先<a href="https://technet.microsoft.com/zh-tw/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a>指令程式搭配<em>EDiscoverySuperUserEnabled</em>參數的物件。如需詳細資訊，請參閱<a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">將 IRM 設定 Exchange 搜尋與就地 ediscovery （英文）</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 中Exchange 2010 SP1 和更新版本、 探索管理角色群組的成員可以存取受 IRM 保護所探索搜尋傳回與郵件中的探索信箱。若要啟用此功能，請先<a href="https://technet.microsoft.com/zh-tw/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a>指令程式搭配<em>EDiscoverySuperUserEnabled</em>參數的物件。如需詳細資訊，請參閱<a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">將 IRM 設定 Exchange 搜尋與就地 ediscovery （英文）</a>。
 
 
 若要啟用這些解密功能，Exchange 伺服器必須可以存取郵件。這是透過將同盟信箱 (由 Exchange 安裝程式所建立的系統信箱) 新增至 AD RMS 伺服器上的超級使用者群組來達成。如需詳細資訊，請參閱[至 AD RMS 超級使用者群組新增同盟信箱](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md)。

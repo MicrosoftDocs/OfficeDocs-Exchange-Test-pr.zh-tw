@@ -51,18 +51,8 @@ Enabling safelist aggregation
 
   - **安全的網域**   網域是指 @ 符號後面的 SMTP 位址部分。例如， contoso.com 就是 masato@contoso.com 地址中的網域。Outlook 使用者可以將寄送網域新增至其安全清單中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>預設情況下，Exchange 不包含安全清單彙總期間的網域。但您可以設定反垃圾郵件代理程式的安全清單彙總，以包括安全網域資料。如需詳細資訊，請參閱<a href="configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md">設定內容篩選要使用安全網域資料</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 預設情況下，Exchange 不包含安全清單彙總期間的網域。但您可以設定反垃圾郵件代理程式的安全清單彙總，以包括安全網域資料。如需詳細資訊，請參閱<a href="configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md">設定內容篩選要使用安全網域資料</a>。
 
 
   - **外部連絡人**   安全清單彙總中可以包含兩種類型的外部連絡人。第一種外部連絡人類型包含 Outlook 使用者已有傳送郵件的目標連絡人。只有當 Outlook 使用者在 Outlook 2007 的 \[垃圾郵件\] 設定中選取相對應的選項時，此連絡人類別才會新增至 \[安全的寄件者清單\] 中。

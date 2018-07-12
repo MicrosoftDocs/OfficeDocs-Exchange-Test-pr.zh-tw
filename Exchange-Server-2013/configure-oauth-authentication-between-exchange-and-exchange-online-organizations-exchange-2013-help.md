@@ -29,19 +29,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 對於以 Exchange 2013 和 Exchange Online 來實作混合式部署的所有混合的 Exchange 組織，在設定其混合式部署之後，建議使用混合組態精靈來設定 Exchange OAuth 驗證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的內部部署組織與累計更新 5 執行只有 Exchange 2013 伺服器或稍後安裝，執行混合式部署精靈而不是執行本主題中的步驟。<br />
-此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您的內部部署組織與累計更新 5 執行只有 Exchange 2013 伺服器或稍後安裝，執行混合式部署精靈而不是執行本主題中的步驟。<br />
+> 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
 
 
 ## 開始之前有哪些須知？
@@ -216,18 +206,8 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 任何現有的 Exchange 2010/2007 Mailbox Server 和 Client Access Server 已套用最新的累計更新 (CU) 或 Service Pack (SP)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>現有的 Exchange 2010/2007 Mailbox Server 可繼續使用 Exchange 2010/2007 Client Access Server 作為非混合式功能連線的前端伺服器。只有來自 Office 365 承租人的混合式部署功能才需要連接到 Exchange 2013 伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 現有的 Exchange 2010/2007 Mailbox Server 可繼續使用 Exchange 2010/2007 Client Access Server 作為非混合式功能連線的前端伺服器。只有來自 Office 365 承租人的混合式部署功能才需要連接到 Exchange 2013 伺服器。
 
 
 在 Exchange 2013 以前的 Client Access Server 上，必須設定 *AvailabilityAddressSpace* 來指向內部部署 Exchange 2013 SP1 Client Access Server 的 Exchange Web 服務端點。此端點與前面步驟 5 所述的端點相同，也可以在內部部署 Exchange 2013 SP1 Client Access Server 上執行下列指令程式來決定：
@@ -266,22 +246,12 @@ _**上次修改主題的時間：** 2016-12-09_
 
 如此，例如，Test-oauthconnectivity-服務 EWS TargetUri https://lync.contoso.com/metadata/json/1-Mailbox ExchangeOnlineBox1-Verbose |fl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以忽略「沒有與 SMTP 位址關聯的信箱」錯誤。唯一重要的是 <em>ResultTask</em> 參數傳回 [成功] 值。例如，測試輸出的最後一個區段應該如下：<br />
-<code>ResultType: Success</code><br />
-<code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
-<code>IsValid: True</code><br />
-<code>ObjectState: New</code></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您可以忽略「沒有與 SMTP 位址關聯的信箱」錯誤。唯一重要的是 <em>ResultTask</em> 參數傳回 [成功] 值。例如，測試輸出的最後一個區段應該如下：<br />
+> <code>ResultType: Success</code><br />
+> <code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
+> <code>IsValid: True</code><br />
+> <code>ObjectState: New</code>
 
 
 

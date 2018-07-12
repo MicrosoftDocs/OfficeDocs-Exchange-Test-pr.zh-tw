@@ -59,18 +59,8 @@ _**上次修改主題的時間：** 2017-02-03_
     
       - **新增來自 Office 市集**。在 Office 市集、 選取您想要安裝的應用程式，然後按一下 \[**新增\]**。與Outlook Web App搭配使用的應用程式會列在**Office 與 SharePoint 的增益集**底下 \> **Outlook**。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>存取 Office 存放區不支援信箱或組織中特定區域 （英文）。如果您沒有看到<strong>來自 Office 市集新增</strong>在<strong>Exchange 系統管理中心</strong>[<strong>組織</strong>] 選項 &gt;<strong>增益集</strong>&gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" />，您可以從 URL 或檔案的位置的 outlook 安裝增益集。如需詳細資訊，請連絡您的服務提供者。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 存取 Office 存放區不支援信箱或組織中特定區域 （英文）。如果您沒有看到<strong>來自 Office 市集新增</strong>在<strong>Exchange 系統管理中心</strong>[<strong>組織</strong>] 選項 &gt;<strong>增益集</strong>&gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" />，您可以從 URL 或檔案的位置的 outlook 安裝增益集。如需詳細資訊，請連絡您的服務提供者。
     
       - **新增與 URL**。在**URL**\] 中輸入的增益集資訊清單檔案您想要安裝完整的 URL。
     

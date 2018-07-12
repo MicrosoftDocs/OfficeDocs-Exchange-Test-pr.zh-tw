@@ -19,26 +19,13 @@ _**上次修改主題的時間：** 2016-12-09_
 
 瞭解 Exchange Server 2013 的 Exchange ActiveSync 用戶端通訊協定。您將瞭解 Exchange ActiveSync 的功能 (包括安全性功能)、您可以管理的事物、如何使其安全，以及如何避免在同步至 Windows Phone 7 時發生問題。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個主題適用於系統管理員。想要設定 Windows Phone、iOS 或 Android 裝置來存取 Office 365 或 Exchange Server 信箱嗎？請參閱下列主題：
-<ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615415">在 Windows Phone 上設定電子郵件</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615414">在 iPhone、iPad 或 iPod Touch 上設定電子郵件</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/?linkid=615417">在 Android 電話或平板電腦上設定電子郵件</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> 這個主題適用於系統管理員。想要設定 Windows Phone、iOS 或 Android 裝置來存取 Office 365 或 Exchange Server 信箱嗎？請參閱下列主題：
+> <ul>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615415">在 Windows Phone 上設定電子郵件</a></p></li>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615414">在 iPhone、iPad 或 iPod Touch 上設定電子郵件</a></p></li>
+> <li><p><a href="https://go.microsoft.com/fwlink/?linkid=615417">在 Android 電話或平板電腦上設定電子郵件</a></p></li>
+> </ul>
 
 
 Exchange ActiveSync 為讓您同步行動裝置與 Exchange 信箱的用戶端通訊協定。在您安裝 Microsoft Exchange 2013 時，Exchange ActiveSync 依據設啟動。
@@ -139,18 +126,9 @@ Exchange ActiveSync 提供下列功能：
 
   - **裝置密碼原則**   Exchange ActiveSync 可讓您設定數個裝置密碼選項。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>iOS7 指紋辨識器技術無法做為裝置密碼。如果您選擇使用 iOS7 指紋辨識器，而貴組織的行動裝置信箱原則要求裝置密碼，您仍必須建立和輸入裝置密碼。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+    > iOS7 指紋辨識器技術無法做為裝置密碼。如果您選擇使用 iOS7 指紋辨識器，而貴組織的行動裝置信箱原則要求裝置密碼，您仍必須建立和輸入裝置密碼。
+
     
     裝置密碼選項包含下列：
     

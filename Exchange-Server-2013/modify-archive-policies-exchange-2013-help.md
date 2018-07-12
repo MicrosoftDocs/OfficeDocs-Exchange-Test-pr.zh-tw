@@ -59,18 +59,8 @@ Exchange 安裝程式會建立稱為 「**預設 MRM 原則**的保留原則。�
 
 2.  在清單檢視中，選擇標記 \[預設 2 年移至封存\] 然後按一下 \[編輯\]![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以按一下 [<strong>類型</strong>] 欄排序依類型的保留標記。預設封存原則會顯示為<strong>預設</strong>類型，且<strong>封存</strong>] 保留動作。或者，按一下要依名稱排序保留標記的<strong>名稱</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+	> 您可以按一下 [<strong>類型</strong>] 欄排序依類型的保留標記。預設封存原則會顯示為<strong>預設</strong>類型，且<strong>封存</strong>] 保留動作。或者，按一下要依名稱排序保留標記的<strong>名稱</strong>。
 
 
 3.  在 \[保留標記\]，檢視或修改下列設定，然後按一下 \[儲存\]：
@@ -85,31 +75,11 @@ Exchange 安裝程式會建立稱為 「**預設 MRM 原則**的保留原則。�
         
           - **永不**  按一下此按鈕可停用標記。如果已停用 DPT，標記不再套用至信箱。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要事項" alt="重要事項" />重要事項：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>已套用已停用的保留標記的項目未處理的信箱助理員。若要防止標籤套用到項目，則建議您停用標記而不是刪除它。當您刪除標記時、 標記設定會從 Active Directory、 刪除及信箱助理員處理所有訊息都要移除已刪除的標籤。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!IMPORTANT]  
+            > 已套用已停用的保留標記的項目未處理的信箱助理員。若要防止標籤套用到項目，則建議您停用標記而不是刪除它。當您刪除標記時、 標記設定會從 Active Directory、 刪除及信箱助理員處理所有訊息都要移除已刪除的標籤。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意事項" alt="注意事項" />注意事項：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>如果使用者將標記套用到項目，認為該項目永不會移動，則稍後啟用該標記可能會移動使用者原本想保留在主要信箱的項目。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+            > 如果使用者將標記套用到項目，認為該項目永不會移動，則稍後啟用該標記可能會移動使用者原本想保留在主要信箱的項目。
         
           - **當項目達到下列年齡 （天數）**  按一下此按鈕可指定項目要移至封存一段期間後。根據預設，此設定會設定為將郵件移至封存的兩個年度 （730 天） 後。若要修改此設定，在相對應的文字方塊中，輸入天數中的保留期間。值的範圍是從 1 到 24,855 天。
     
