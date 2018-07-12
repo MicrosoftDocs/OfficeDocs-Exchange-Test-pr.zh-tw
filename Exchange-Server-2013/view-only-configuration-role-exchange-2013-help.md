@@ -140,7 +140,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p><a href="delegated-setup-exchange-2013-help.md">委派安裝</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -149,7 +149,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p><a href="hygiene-management-exchange-2013-help.md">檢疫管理</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -167,7 +167,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p><a href="view-only-organization-management-exchange-2013-help.md">僅限檢視組織管理</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
