@@ -27,39 +27,53 @@ Rob 按兩下該伺服器，而開啟了 **\[健全狀況總管\]** 視窗。在
 
 提供於「外部知識庫資源」下方的連結，將 Rob 導向至 [疑難排解 OWA.Proxy 健全設定](https://technet.microsoft.com/zh-tw/library/jj737712\(v=exchg.150\))主題。在此文章中，Rob 了解到首要工作是要確認問題是否仍存在。他依循指示在命令介面中執行了下列命令，以確認 OWA.Proxy 健全設定目前的狀態：
 
+```Powershell
     Get-ServerHealth Server1.contoso.com | ?{$_.HealthSetName -eq "OWA.Proxy"}
+```
 
 執行此命令後產生了下列輸出：
 
+```Powershell
     Server          State           Name                 TargetResource       HealthSetName   AlertValue ServerComp
                                                                                                          onent
     ------          -----           ----                 --------------       -------------   ---------- ----------
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Proxy       Unhealthy  OwaProxy
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
+```
 
 Rob 發現問題出在 OWA 應用程式集區中。下個步驟是要為狀況不良的監視器重新執行相關聯的探查。他透過「OWA.Proxy 健全設定的疑難排解」主題中的表格，判斷需要重新執行的探查應為 OWAProxyTestProbe。他執行了下列命令：
 
+```Powershell
     Invoke-MonitoringProbe OWA.Proxy\OWAProxyTestProbe -Server Server1.contoso.com | Format-List
+```
 
 他掃描了 ResultType 值的輸出，發現探查失敗：
 
+```Powershell
     ResultType : Failed
+```
 
 他繼續執行該文章中的「OWAProxyTestMonitor 復原動作」一節。他使用 IIS 管理員連線到 Server1，看看 MSExchangeOWAAppPool 是否在該 IIS 伺服器上執行。確認正在執行後，下個步驟指示他將 MSExchangeOWAAppPool 回收：
 
+```Powershell
     C:\Windows\System32\Inetsrv\Appcmd recycle APPPOOL MSExchangeOWAAppPool
+```
 
 確認 MSExchangeOWAAppPool 已成功回收後，他使用 Invoke-MonitoringProbe 指令程式重新執行探查來再次確認問題是否仍存在，而這次他發現結果是成功的。接著，他執行了下列命令，以確認健全設定已重新回報 **\[狀況良好\]** 狀態：
 
+```Powershell
     Get-ServerHealth Server1.contoso.com | ?{$_.HealthSetName -eq "OWA.Proxy"}
+```
 
 這次他發現問題已解決。
 
+```Powershell
     Server          State           Name                 TargetResource       HealthSetName   AlertValue ServerComp
                                                                                                          onent
     ------          -----           ----                 --------------       -------------   ---------- ----------
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Proxy       Healthy    OwaProxy
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
+```
 
 他回到 SCOM 主控台，並確認問題已解決。
 
