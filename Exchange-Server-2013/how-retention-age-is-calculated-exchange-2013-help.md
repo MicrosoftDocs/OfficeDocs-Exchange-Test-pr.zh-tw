@@ -94,7 +94,7 @@ _**上次修改主題的時間：** 2016-07-27_
 <ol>
 <li><p>非週期性工作是否過期取決於 <code>message-received date</code> (若有的話)。</p></li>
 <li><p>如果非週期性工作沒有 <code>message-received date</code>，則是否過期取決於其 <code>message-creation date</code>。</p></li>
-<li><p>如果非週期性工作沒有 <code>message-received date</code>，也沒有 <code></code><code>message-creation date</code>，則不會過期。</p></li>
+<li><p>如果非週期性工作沒有 <code>message-received date</code>，也沒有 <code>message-creation date</code>，則不會過期。</p></li>
 </ol></li>
 <li><p>週期性工作是否過期取決於其前次發生的 <code>end date</code>。如果週期性工作沒有 <code>end date</code>，則不會過期。</p></li>
 <li><p>重新產生的工作 (週期性工作，在工作的前一個執行個體完成之後，經過一段指定的時間就會重新產生) 不會過期。</p></li>
