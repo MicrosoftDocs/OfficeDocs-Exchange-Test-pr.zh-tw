@@ -1,5 +1,5 @@
 ﻿---
-title: 'Windows 處理程序啟用 Service-程序模型元件是 required_LonghornWASProcessModelInstalled: Exchange 2013 Help'
+title: 'Windows 處理序啟用服務 - 需要處理模型元件'
 TOCTitle: Windows 處理程序啟用 Service-程序模型元件是 required_LonghornWASProcessModelInstalled
 ms:assetid: 8cc13dbb-4921-4c07-8602-d26613d7730a
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/ms.exch.setupreadiness.longhornwasprocessmodelinstalled(v=EXCHG.150)

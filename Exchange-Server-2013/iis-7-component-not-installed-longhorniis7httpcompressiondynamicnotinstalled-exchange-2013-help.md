@@ -1,5 +1,5 @@
 ﻿---
-title: 'IIS 7 元件不 installed_LonghornIIS7HttpCompressionDynamicNotInstalled: Exchange 2013 Help'
+title: 'IIS 7 元件未安裝'
 TOCTitle: IIS 7 元件不 installed_LonghornIIS7HttpCompressionDynamicNotInstalled
 ms:assetid: d909e329-2436-43f9-af75-a5ee14e67ebf
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/ms.exch.setupreadiness.longhorniis7httpcompressiondynamicnotinstalled(v=EXCHG.150)
