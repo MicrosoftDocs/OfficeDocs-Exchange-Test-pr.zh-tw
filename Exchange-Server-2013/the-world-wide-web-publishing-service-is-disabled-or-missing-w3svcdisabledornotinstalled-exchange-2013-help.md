@@ -1,5 +1,5 @@
 ﻿---
-title: 'World Wide Web Publishing 服務已停用] 或 [missing_W3SVCDisabledOrNotInstalled: Exchange 2013 Help'
+title: 'World Wide Web Publishing 服務已停用或遺失'
 TOCTitle: World Wide Web Publishing 服務已停用] 或 [missing_W3SVCDisabledOrNotInstalled
 ms:assetid: 2d26d778-ddf1-4225-b5e2-f6b49d819c94
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/ms.exch.setupreadiness.w3svcdisabledornotinstalled(v=EXCHG.150)

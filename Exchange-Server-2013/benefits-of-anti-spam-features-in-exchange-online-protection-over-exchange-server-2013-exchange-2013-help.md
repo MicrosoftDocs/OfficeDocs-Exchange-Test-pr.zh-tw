@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange Server 2013 上 Exchange Online Protection 中反垃圾郵件功能的優點: Exchange 2013 Help'
+title: 'Exchange Server 2013 上 Exchange Online Protection 的反垃圾郵件功能的優點'
 TOCTitle: Exchange Server 2013 上 Exchange Online Protection 中反垃圾郵件功能的優點
 ms:assetid: 00e37a3c-3fbc-488f-bdad-d52a3c80fd72
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/JJ673032(v=EXCHG.150)

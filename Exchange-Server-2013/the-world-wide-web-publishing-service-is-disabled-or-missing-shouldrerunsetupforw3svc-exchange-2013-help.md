@@ -1,5 +1,5 @@
 ﻿---
-title: 'World Wide Web Publishing 服務已停用] 或 [missing_ShouldReRunSetupForW3SVC: Exchange 2013 Help'
+title: 'World Wide Web Publishing 服務已停用或遺失'
 TOCTitle: World Wide Web Publishing 服務已停用] 或 [missing_ShouldReRunSetupForW3SVC
 ms:assetid: f1815a6d-d16b-4271-9fab-84087465529e
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/ms.exch.setupreadiness.shouldrerunsetupforw3svc(v=EXCHG.150)
