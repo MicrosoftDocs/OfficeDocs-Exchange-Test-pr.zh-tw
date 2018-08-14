@@ -116,11 +116,6 @@ _**上次修改主題的時間：** 2015-08-20_
 <tr class="odd">
 <td><p>每封郵件的收件者數目上限</p>
 
-> [!NOTE]  
-> 
-
-
-
 </td>
 <td><p>5000</p></td>
 <td><p>Cmdlet：<strong>Set-TransportConfig</strong></p>
