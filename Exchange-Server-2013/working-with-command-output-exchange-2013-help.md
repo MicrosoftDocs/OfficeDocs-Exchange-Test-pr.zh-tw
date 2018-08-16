@@ -230,14 +230,16 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 下列範例會顯示如何使用簡易指令碼來輸出命令所傳回的資料，並將它顯示在 Internet Explorer 中。這個指令碼會取得透過管線傳遞的物件、開啟 Internet Explorer 視窗，然後在 Internet Explorer 中顯示資料：
 
+```
     $Ie = New-Object -Com InternetExplorer.Application
     $Ie.Navigate("about:blank")
     While ($Ie.Busy) { Sleep 1 }
     $Ie.Visible = $True
     $Ie.Document.Write("$Input")
     # If the previous line doesn't work on your system, uncomment the line below.
-    # $Ie.Document.IHtmlDocument2_Write(\"$Input\")
+    # $Ie.Document.IHtmlDocument2_Write(&quot;$Input&quot;)
     $Ie
+```
 
 若要使用此指令碼，請將它儲存到要執行此指令碼之電腦上的 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 目錄中。將該檔案命名為 `Out-Ie.ps1`。儲存該檔案之後，您就可以使用該指令碼做為一般 Cmdlet。
 
