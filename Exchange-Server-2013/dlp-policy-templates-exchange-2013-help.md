@@ -62,7 +62,7 @@ For more information
 
   -  [管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)
     
-    [原則及符合性命令指令程式](https://technet.microsoft.com/zh-tw/library/dd298082\(v=exchg.150\))
+  -  [原則及符合性命令指令程式](https://technet.microsoft.com/zh-tw/library/dd298082\(v=exchg.150\))
 
 ## 使用 Microsoft 所建立的 DLP 原則
 
