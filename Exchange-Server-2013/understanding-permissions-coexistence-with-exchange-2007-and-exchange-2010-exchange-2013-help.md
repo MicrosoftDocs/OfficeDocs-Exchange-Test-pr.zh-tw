@@ -164,7 +164,7 @@ Exchange 2007 提供下列預先定義的系統管理員角色：
 
   - **Exchange Server 系統管理員角色**  此角色授與權限管理特定伺服器。不過，此角色不會授與權限執行全域影響Exchange 2007組織的動作。
 
-  - **Exchange 公用資料夾系統管理員角色**  此角色已新增在 Exchange 2007 Service Pack 1**.**此角色授與管理Exchange 2007組織中的公用資料夾的權限。
+  - **Exchange 公用資料夾系統管理員角色**  此角色已新增在 Exchange 2007 Service Pack 1.此角色授與管理Exchange 2007組織中的公用資料夾的權限。
 
 此權限模型使用 Usg 但不包括Exchange伺服器系統管理員角色的所有角色。當您執行Exchange 2007**Setup /PrepareAD**命令時，安裝程式的根網域中建立 Usg 和 Usg 提供整個樹系的範圍。Usg 指派給來管理整個Active DirectoryExchange物件的 Acl。
 
