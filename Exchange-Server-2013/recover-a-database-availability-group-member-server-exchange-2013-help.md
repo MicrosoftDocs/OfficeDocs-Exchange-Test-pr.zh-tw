@@ -87,10 +87,11 @@ _**上次修改主題的時間：** 2016-12-09_
 若要確認您已成功復原 DAG 成員，執行下列動作：
 
   - 在命令介面中執行下列命令來確認健康狀況和狀態復原的 DAG 成員。
-    
+    ```
         Test-ReplicationHealth <ServerName>
-    
+    ```
+    ```
         Get-MailboxDatabaseCopyStatus -Server <ServerName>
-    
+    ```
     所有的複寫狀況測試應順利通過，並應狀況良好的資料庫和其內容索引狀態。
 
