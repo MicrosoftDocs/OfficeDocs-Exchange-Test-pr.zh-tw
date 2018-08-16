@@ -51,11 +51,12 @@ _**上次修改主題的時間：** 2014-08-05_
     Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
 
 您不需要使用**Set-ThrottlingPolicyAssociation** cmdlet 可讓使用者與原則產生關聯。下列命令會顯示其他方法可以將於 tonysmith 關聯的節流原則 itstaffpolicy 關聯。
-
+```
     $b = Get-ThrottlingPolicy ITStaffPolicy
-
+```
+```
     Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
-
+```
 如需語法及參數的詳細資訊，請參閱[New-ThrottlingPolicy](https://technet.microsoft.com/zh-tw/library/dd351045\(v=exchg.150\))和[Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/zh-tw/library/ff459231\(v=exchg.150\))。
 
 ## 如何知道這是否正常運作？
