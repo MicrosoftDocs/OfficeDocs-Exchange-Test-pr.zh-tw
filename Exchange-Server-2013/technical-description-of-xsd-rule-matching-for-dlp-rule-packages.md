@@ -225,25 +225,27 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
     比對任一子比對元素的精確子集
 
 <!-- end list -->
-
+```
     <Any minMatches="3" maxMatches="3">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
-
+```
+```
     <Any maxMatches="0">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
-
+```
+```
     <Any minMatches="1" maxMatches="1">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
-
+```
 ## 以更多辨識來增加信賴等級
 
 針對實體基底規則、 的增加信賴的另一個作法是可以定義多個圖樣元素，每個增加佐證性證據數目。作法為使用 minMatches 與 maxMatches 的任何項目建立獨立模式增加信賴等級根據增加佐證性證據數目。例如：
