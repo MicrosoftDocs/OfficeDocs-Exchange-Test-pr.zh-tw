@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Server 2013_
 
-_**上次修改主題的時間：** 2015-03-09_
+_<strong>上次修改主題的時間：</strong> 2015-03-09_
 
 您可以使用本主題中的詳細資料監視的健康狀況和狀態的信箱資料庫副本的資料庫可用性群組 (DAGs) 收集診斷資訊，以及如何設定監控臨界值的低磁碟空間。
 
@@ -105,11 +105,11 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-**Get-MailboxDatabaseCopyStatus** Cmdlet 也會傳回使用中複寫網路的詳細資料，包括 *IncomingLogCopyingNetwork* (會針對被動資料庫副本來傳回) 和 *OutgoingConnections* (會針對有多份副本的主動資料庫來傳回)，以及任何被當成資料庫植入作業來源的資料庫副本。只有對於處於檔案模式複寫的資料庫副本，才會提供外寄連線資訊。 對於處於封鎖模式複寫的資料庫副本，並不會提供外寄連線資訊。
+<strong>Get-MailboxDatabaseCopyStatus</strong> Cmdlet 也會傳回使用中複寫網路的詳細資料，包括 *IncomingLogCopyingNetwork* (會針對被動資料庫副本來傳回) 和 *OutgoingConnections* (會針對有多份副本的主動資料庫來傳回)，以及任何被當成資料庫植入作業來源的資料庫副本。只有對於處於檔案模式複寫的資料庫副本，才會提供外寄連線資訊。 對於處於封鎖模式複寫的資料庫副本，並不會提供外寄連線資訊。
 
 ## Get-MailboxDatabaseCopyStatus 範例
 
-下列範例使用 **Get-MailboxDatabaseCopyStatus** 指令程式。每一個範例都會將結果以管線傳送至 **Format-List** 指令程式，以便以清單格式顯示輸出。
+下列範例使用 <strong>Get-MailboxDatabaseCopyStatus</strong> 指令程式。每一個範例都會將結果以管線傳送至 <strong>Format-List</strong> 指令程式，以便以清單格式顯示輸出。
 
 本範例傳回 DB2 資料庫所有複本的狀態資訊。
 
@@ -123,13 +123,13 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Get-MailboxDatabaseCopyStatus -Local | Format-List
 
-如需使用 **Get-MailboxDatabaseCopyStatus** 指令程式的相關資訊，請參閱 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-tw/library/dd298044\(v=exchg.150\))。
+如需使用 <strong>Get-MailboxDatabaseCopyStatus</strong> 指令程式的相關資訊，請參閱 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-tw/library/dd298044\(v=exchg.150\))。
 
 ## Test-ReplicationHealth Cmdlet
 
 您可以使用 [Test-ReplicationHealth](https://technet.microsoft.com/zh-tw/library/bb691314\(v=exchg.150\)) 指令程式來檢視信箱資料庫副本的連續複寫狀態資訊。此指令程式可用來檢查複寫和重新顯示的各個部分，以提供 DAG 中特定 Mailbox Server 的完整概觀。
 
-**Test-ReplicationHealth** 指令程式旨在用來主動監視連續複寫和連續複寫管線、Active Manager 的可用性，以及基礎叢集服務、仲裁及網路元件的健全狀況和狀態。可在本機或在遠端針對 DAG 中任何的信箱伺服器執行。**Test-ReplicationHealth** 指令程式會執行下表所列出的測試。
+<strong>Test-ReplicationHealth</strong> 指令程式旨在用來主動監視連續複寫和連續複寫管線、Active Manager 的可用性，以及基礎叢集服務、仲裁及網路元件的健全狀況和狀態。可在本機或在遠端針對 DAG 中任何的信箱伺服器執行。<strong>Test-ReplicationHealth</strong> 指令程式會執行下表所列出的測試。
 
 ### Test-ReplicationHealth 指令程式測試
 
@@ -223,7 +223,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## Test-ReplicationHealth 範例
 
-這個範例使用 **Test-ReplicationHealth** 指令程式來測試 Mailbox Server MBX1 的複寫狀況。
+這個範例使用 <strong>Test-ReplicationHealth</strong> 指令程式來測試 Mailbox Server MBX1 的複寫狀況。
 
     Test-ReplicationHealth -Identity MBX1
 
@@ -241,7 +241,7 @@ Exchange 2013 將事件記錄到「應用程式及服務」記錄區的Crimson �
 
 2.  在主控台樹狀目錄中，瀏覽至 \[應用程式及服務記錄\] \> \[Microsoft\] \> \[Exchange\]。
 
-3.  \[ **Exchange**\] 下選取 \[crimson 通道，例如**\[highavailability\]**或**\[MailboxDatabaseFailureItems**查看 DAG 和資料庫副本相關的事件，或**ActiveMontoring**或**ManagedAvailability**查看事件相關的受管理的可用性。
+3.  \[ <strong>Exchange</strong>\] 下選取 \[crimson 通道，例如<strong>\[highavailability\]</strong>或<strong>\[MailboxDatabaseFailureItems</strong>查看 DAG 和資料庫副本相關的事件，或<strong>ActiveMontoring</strong>或<strong>ManagedAvailability</strong>查看事件相關的受管理的可用性。
 
 HighAvailability 通道包含與啟動和關閉 Microsoft Exchange 複寫服務相關的事件，以及 Microsoft Exchange 複寫服務內執行的元件，例如，Active Manager、第三方同步處理複寫 API、工作 RPC 伺服器、TCP 接聽程式和磁碟區陰影複製服務 (VSS) 編寫器。Active Manager 也會使用 HighAvailability 通道來記錄與 Active Manager 角色監視相關的事件和資料庫動作事件，例如，資料庫裝載操作和記錄檔截斷，以及記錄與 DAG 基礎叢集相關的事件。
 
@@ -255,13 +255,13 @@ ManagedAvailability 通道包含復原動作記錄和結果和相關的事件。
 
 Exchange 2013受管理可用性監視器百系統評量和元件的每分鐘，包括在信箱伺服器角色所使用的磁碟區上的可用磁碟空間量。前Exchange 2013 Service Pack 1 (SP1)、 Exchange 監視所有的本機磁碟區，包括不包含任何資料庫或記錄檔磁碟區上的可用空間。Sp1 和更新版本、 受監控的包含 Exchange 資料庫和記錄檔磁碟區。Sp1、 低磁碟區空間監視器的預設臨界值為 200 GB。Exchange 2013 6 和更新版本的累計更新、 中的預設臨界值為 180 GB。Sp1 和更新版本、 您可以設定臨界值新增下列 DWORD 登錄值 （以 mb 為單位） 您要自訂每個信箱伺服器上：
 
-路徑： **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\ExchangeServer\\v15\\Replay\\Parameters**
+路徑： <strong>HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\ExchangeServer\\v15\\Replay\\Parameters</strong>
 
 值： *SpaceMonitorLowSpaceThresholdInMB*
 
 若要設定臨界值設定為 100 GB 的範例，您會設定下列登錄值：
 
-**REG\_DWORD 186a0 (100000)**
+<strong>REG\_DWORD 186a0 (100000)</strong>
 
 設定或之後修改上述登錄值，您必須重新啟動 Microsoft Exchange DAG 管理服務，讓變更生效。
 
@@ -375,7 +375,7 @@ Exchange 2013 包含稱為 CollectOverMetrics.ps1 的指令碼，您可以在 Sc
 
 您可以個別指定伺服器，或是指定整個 DAG。您可執行指令碼讓它先收集資料再產生報告，也可以讓它只收集資料，或是只報告已經收集的資料。您可以指定資料的取樣頻繁，以及收集資料的總時間長度。
 
-從每部伺服器收集的資料都會寫入到名為 **CounterData.\<ServerName\>.\<TimeStamp\>.csv** 的檔案中。摘要報告會寫入名稱為 \[HaReplPerfReport.\<DAGName\>.\<TimeStamp\>.csv\] 的檔案，而如果執行指令碼時沒有指定 *DagName* 參數，則會寫入名稱為 \[HaReplPerfReport.\<TimeStamp\>.csv\] 的檔案。
+從每部伺服器收集的資料都會寫入到名為 <strong>CounterData.\<ServerName\>.\<TimeStamp\>.csv</strong> 的檔案中。摘要報告會寫入名稱為 \[HaReplPerfReport.\<DAGName\>.\<TimeStamp\>.csv\] 的檔案，而如果執行指令碼時沒有指定 *DagName* 參數，則會寫入名稱為 \[HaReplPerfReport.\<TimeStamp\>.csv\] 的檔案。
 
 指令碼會啟動 Windows PowerShell 工作來收集每部伺服器的資料。這些工作會在整段資料收集期間執行。如果您指定的伺服器數目很多，這個程序可能會使用大量的記憶體。在這個程序的最後一個階段，也就是將資料處理成摘要報告時，也可能會因為大量的資料而耗費相當多的時間。您可以在某部電腦上執行收集階段，然後將資料複製到其他電腦來進行處理作業。
 

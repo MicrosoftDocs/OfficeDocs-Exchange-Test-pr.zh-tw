@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server_
+_<strong>適用版本：</strong> Exchange Server_
 
-_**上次修改主題的時間：** 2012-06-05_
+_<strong>上次修改主題的時間：</strong> 2012-06-05_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -29,35 +29,35 @@ Exchange 2007 的安裝程式會要求您安裝 Microsoft Exchange 移轉至已�
 
 若要確認 World Wide Web Publishing 服務已安裝並不會停用
 
-1.  **「 我的電腦**在桌面上按一下滑鼠右鍵並再按一下 \[**管理**。
+1.  <strong>「 我的電腦</strong>在桌面上按一下滑鼠右鍵並再按一下 \[<strong>管理</strong>。
 
-2.  依序展開 \[**服務及應用程式**\] 節點，並再按一下 \[**服務**\] 節點。
+2.  依序展開 \[<strong>服務及應用程式</strong>\] 節點，並再按一下 \[<strong>服務</strong>\] 節點。
 
-3.  在右窗格中，尋找**World Wide Web Publishing 服務\]**。
+3.  在右窗格中，尋找<strong>World Wide Web Publishing 服務\]</strong>。
     
-    如果**World Wide Web Publishing 服務**不會顯示在已安裝的服務清單中，遵循下列程序中的步驟安裝方式。
+    如果<strong>World Wide Web Publishing 服務</strong>不會顯示在已安裝的服務清單中，遵循下列程序中的步驟安裝方式。
 
-4.  如果**World Wide Web Publishing 服務**會顯示但以外的**啟動**狀態，繼續執行下列步驟來啟動它。
+4.  如果<strong>World Wide Web Publishing 服務</strong>會顯示但以外的<strong>啟動</strong>狀態，繼續執行下列步驟來啟動它。
 
-5.  以滑鼠右鍵按一下 \[ **World Wide Web Publishing 服務**，並再按一下 \[**內容**。
+5.  以滑鼠右鍵按一下 \[ <strong>World Wide Web Publishing 服務</strong>，並再按一下 \[<strong>內容</strong>。
 
-6.  確認**啟動類型**是**自動**且**服務狀態**設為 \[**已啟動**。
+6.  確認<strong>啟動類型</strong>是<strong>自動</strong>且<strong>服務狀態</strong>設為 \[<strong>已啟動</strong>。
 
-7.  按一下 \[**套用**\]，然後按一下 \[**確定**\]。
+7.  按一下 \[<strong>套用</strong>\]，然後按一下 \[<strong>確定</strong>\]。
 
 若要安裝 World Wide Web Publishing 服務
 
-1.  \[**開始**\] 功能表上選取 \[**設定**\] 的 \[**控制台**\] 和 \[**新增或移除程式\]**
+1.  \[<strong>開始</strong>\] 功能表上選取 \[<strong>設定</strong>\] 的 \[<strong>控制台</strong>\] 和 \[<strong>新增或移除程式\]</strong>
 
-2.  按一下 \[**新增/移除 Windows 元件**\]。
+2.  按一下 \[<strong>新增/移除 Windows 元件</strong>\]。
 
-3.  \[**元件**\] 清單中選取**應用程式伺服器**\] 核取方塊，和 \[**詳細資料**。
+3.  \[<strong>元件</strong>\] 清單中選取<strong>應用程式伺服器</strong>\] 核取方塊，和 \[<strong>詳細資料</strong>。
 
-4.  選取 \[**網際網路資訊服務管理員**\] 和 \[**詳細資料**。
+4.  選取 \[<strong>網際網路資訊服務管理員</strong>\] 和 \[<strong>詳細資料</strong>。
 
-5.  選取 \[ **World Wide Web 服務**\]，然後選取 \[核取方塊。
+5.  選取 \[ <strong>World Wide Web 服務</strong>\]，然後選取 \[核取方塊。
 
-6.  若要返回 \[**元件**\] 清單中，按一下**\[確定\]**兩次並再按 \[**下一步**。
+6.  若要返回 \[<strong>元件</strong>\] 清單中，按一下<strong>\[確定\]</strong>兩次並再按 \[<strong>下一步</strong>。
 
-7.  安裝 IIS 服務時按一下 \[**完成**\]。
+7.  安裝 IIS 服務時按一下 \[<strong>完成</strong>\]。
 

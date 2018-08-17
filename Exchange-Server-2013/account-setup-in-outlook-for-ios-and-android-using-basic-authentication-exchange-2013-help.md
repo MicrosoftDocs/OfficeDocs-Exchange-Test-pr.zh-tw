@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Server 2013_
 
-_**上次修改主題的時間：** 2018-04-30_
+_<strong>上次修改主題的時間：</strong> 2018-04-30_
 
-**摘要：**  如何在 Exchange 2013 組織中的使用者可以快速地設定其 Outlook iOS 及 Android 使用基本驗證的帳戶。
+<strong>摘要：</strong>  如何在 Exchange 2013 組織中的使用者可以快速地設定其 Outlook iOS 及 Android 使用基本驗證的帳戶。
 
 Outlook iOS 及 Android 提供 Exchange 系統管理員帳戶設定 「 推送"到其使用基本驗證透過 ActiveSync 通訊協定的內部部署使用者的能力。此功能適用於任何行動裝置管理 (MDM) 提供者提供者 for Android 使用[受管理的應用程式設定](https://developer.apple.com/library/content/samplecode/sc2279/introduction/intro.html)通道 iOS 或[Android 在企業中](https://developer.android.com/samples/apprestrictions/index.html)的通道。
 
@@ -42,45 +42,45 @@ Outlook iOS 及 Android 提供 Exchange 系統管理員帳戶設定 「 推送"�
 
 1.  登入 Azure 入口網站。
 
-2.  選取 \[**多個服務 \> 監控 + 管理 \> Intune**。
+2.  選取 \[<strong>多個服務 \> 監控 + 管理 \> Intune</strong>。
 
-3.  在 \[管理\] 清單的**行動應用程式**blade，選取 \[**應用程式設定的原則**。
+3.  在 \[管理\] 清單的<strong>行動應用程式</strong>blade，選取 \[<strong>應用程式設定的原則</strong>。
 
-4.  在**應用程式設定原則**blade 中，選擇 \[**新增\]**。
+4.  在<strong>應用程式設定原則</strong>blade 中，選擇 \[<strong>新增\]</strong>。
 
-5.  在**新增應用程式設定**blade 中，輸入應用程式組態設定的**名稱**、 及選擇性**描述**。
+5.  在<strong>新增應用程式設定</strong>blade 中，輸入應用程式組態設定的<strong>名稱</strong>、 及選擇性<strong>描述</strong>。
 
-6.  **裝置註冊**類型選擇**受管理裝置**。
+6.  <strong>裝置註冊</strong>類型選擇<strong>受管理裝置</strong>。
 
-7.  **平台**，選擇 \[ **iOS**或**Android 工作**。
+7.  <strong>平台</strong>，選擇 \[ <strong>iOS</strong>或<strong>Android 工作</strong>。
 
-8.  選擇 \[**關聯的應用程式**，然後，在**Targeted apps** blade 中，選擇 \[ **IOS 的 Microsoft Outlook** \] 或 \[ **Microsoft Outlook for android （英文)**。
+8.  選擇 \[<strong>關聯的應用程式</strong>，然後，在<strong>Targeted apps</strong> blade 中，選擇 \[ <strong>IOS 的 Microsoft Outlook</strong> \] 或 \[ <strong>Microsoft Outlook for android （英文)</strong>。
 
-9.  按一下**\[確定\]**回到**新增應用程式設定**blade。
+9.  按一下<strong>\[確定\]</strong>回到<strong>新增應用程式設定</strong>blade。
 
-10. 選擇 \[**設定**\]。在**設定**blade，以定義將提供的 iOS Outlook 與 Android 設定關鍵值組。您輸入的關鍵值組所定義稍後在本文中的機碼值組\] 區段中。
+10. 選擇 \[<strong>設定</strong>\]。在<strong>設定</strong>blade，以定義將提供的 iOS Outlook 與 Android 設定關鍵值組。您輸入的關鍵值組所定義稍後在本文中的機碼值組\] 區段中。
     
     > [!NOTE]  
     > 若要輸入關鍵值組，您可以使用設定設計或輸入 XML 屬性清單之間選擇。
 
 
-11. 當您已完成時，選擇**\[確定\]**。
+11. 當您已完成時，選擇<strong>\[確定\]</strong>。
 
-12. 在**新增應用程式設定**blade 中，選擇 \[**建立**\]。
+12. 在<strong>新增應用程式設定</strong>blade 中，選擇 \[<strong>建立</strong>\]。
 
-新建立的設定原則將會顯示在**應用程式設定原則**blade。
+新建立的設定原則將會顯示在<strong>應用程式設定原則</strong>blade。
 
 ## 指派組態設定
 
 您可以指派您在前一節的 Azure Active Directory 中的使用者群組建立的設定。當使用者已安裝的 Microsoft Outlook 應用程式時、 應用程式將變成由您指定的設定。若要執行這項作業：
 
-1.  在 \[Intune 行動應用程式管理儀表板**行動應用程式**blade、 選擇 \[**應用程式設定原則**。
+1.  在 \[Intune 行動應用程式管理儀表板<strong>行動應用程式</strong>blade、 選擇 \[<strong>應用程式設定原則</strong>。
 
-2.  從應用程式設定原則清單中選取的一個您想要指派，然後按**工作分派**。
+2.  從應用程式設定原則清單中選取的一個您想要指派，然後按<strong>工作分派</strong>。
 
-3.  在**指派**blade 中，選擇 \[**選取群組**。
+3.  在<strong>指派</strong>blade 中，選擇 \[<strong>選取群組</strong>。
 
-4.  在**選取群組**blade，選取您想要將指派應用程式設定 」 原則，然後選擇 \[**選取**，然後**儲存**Azure AD 群組。
+4.  在<strong>選取群組</strong>blade，選取您想要將指派應用程式設定 」 原則，然後選擇 \[<strong>選取</strong>，然後<strong>儲存</strong>Azure AD 群組。
 
 ## 關鍵值組
 
@@ -140,5 +140,5 @@ Outlook iOS 及 Android 提供 Exchange 系統管理員帳戶設定 「 推送"�
 </table>
 
 
-**\***Microsoft Intune 使用者可以使用會展開並根據 MDM 註冊使用者正確的值的 token。如需詳細資訊，請參閱[新增應用程式設定原則的受管理的 iOS 裝置](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios)。
+<strong>\</strong>*Microsoft Intune 使用者可以使用會展開並根據 MDM 註冊使用者正確的值的 token。如需詳細資訊，請參閱[新增應用程式設定原則的受管理的 iOS 裝置](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios)。
 

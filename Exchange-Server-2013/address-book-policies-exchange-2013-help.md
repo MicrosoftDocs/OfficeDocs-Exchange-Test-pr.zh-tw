@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Online, Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：** 2016-12-09_
+_<strong>上次修改主題的時間：</strong> 2016-12-09_
 
 了解如何到特定群組 Outlook 和Outlook Web App中建立自訂的 Gal 區隔全域通訊清單。
 
@@ -28,7 +28,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 
 
-**目錄**
+<strong>目錄</strong>
 
 How ABPs work
 
@@ -86,7 +86,7 @@ ABP 包含下列清單：
 
 在不使用 Abp Exchange 組織中發生下列事項 Outlook 或Outlook Web App中建立及傳送至 Exchange 組織中的另一個收件者電子郵件：
 
-1.  電子郵件地址會解析。例如，如果您在**欄位中**輸入**kweku@contoso.com** ，SMTP 電子郵件地址會解析至使用者的顯示名稱**Kweku Ako Adjei**中。
+1.  電子郵件地址會解析。例如，如果您在<strong>欄位中</strong>輸入<strong>kweku@contoso.com</strong> ，SMTP 電子郵件地址會解析至使用者的顯示名稱<strong>Kweku Ako Adjei</strong>中。
 
 2.  您可以檢視其他人的連絡人卡片。解析名稱之後，您可以連按兩下 \[使用者的名稱並檢視其連絡人資訊，例如 office 和電話號碼。
 

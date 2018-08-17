@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Server 2013_
 
-_**上次修改主題的時間：** 2015-07-16_
+_<strong>上次修改主題的時間：</strong> 2015-07-16_
 
-**摘要：**  使用本文中的程序簡化 URL，以存取 Exchange 2013 中的 OWA 您組織的使用者。
+<strong>摘要：</strong>  使用本文中的程序簡化 URL，以存取 Exchange 2013 中的 OWA 您組織的使用者。
 
 您可以簡化使用者用來存取其Exchange Server 2013信箱MicrosoftOutlook Web App URL。
 
@@ -44,27 +44,27 @@ _**上次修改主題的時間：** 2015-07-16_
 
 1.  啟動 \[IIS 管理員\]。
 
-2.  依序展開 \[本機電腦、 依序展開 \[**網站**\] 和 \[ **Default Web Site**。
+2.  依序展開 \[本機電腦、 依序展開 \[<strong>網站</strong>\] 和 \[ <strong>Default Web Site</strong>。
 
-3.  在 \[預設網站首頁\] 窗格底端，按一下 \[**功能檢視**\] 如果不已選取此選項。
+3.  在 \[預設網站首頁\] 窗格底端，按一下 \[<strong>功能檢視</strong>\] 如果不已選取此選項。
 
-4.  在 \[ **IIS** \] 區段中，按兩下 \[ **HTTP 重新導向**。
+4.  在 \[ <strong>IIS</strong> \] 區段中，按兩下 \[ <strong>HTTP 重新導向</strong>。
 
-5.  選取 \[**將此目的地的要求重新導向**\] 核取方塊。
+5.  選取 \[<strong>將此目的地的要求重新導向</strong>\] 核取方塊。
 
-6.  輸入 /owa 虛擬目錄的絕對路徑。例如，輸入**https://mail.contoso.com/owa**。
+6.  輸入 /owa 虛擬目錄的絕對路徑。例如，輸入<strong>https://mail.contoso.com/owa</strong>。
 
-7.  在**重新導向行為**\] 下選取 \[**僅將此目錄 （不子目錄） 中的內容要求重新導向**\] 核取方塊。
+7.  在<strong>重新導向行為</strong>\] 下選取 \[<strong>僅將此目錄 （不子目錄） 中的內容要求重新導向</strong>\] 核取方塊。
 
-8.  **狀態碼**清單中，按一下 \[**已找到 (302)**。
+8.  <strong>狀態碼</strong>清單中，按一下 \[<strong>已找到 (302)</strong>。
 
-9.  在 \[動作\] 窗格中，按一下 \[**套用\]**。
+9.  在 \[動作\] 窗格中，按一下 \[<strong>套用\]</strong>。
 
-10. 按一下 \[**預設的網站**。
+10. 按一下 \[<strong>預設的網站</strong>。
 
-11. 在 \[預設網站首頁\] 窗格中按兩下 \[ **SSL 設定**\]。
+11. 在 \[預設網站首頁\] 窗格中按兩下 \[ <strong>SSL 設定</strong>\]。
 
-12. 在 \[ **SSL 設定**\] 中，清除**需要 SSL**。
+12. 在 \[ <strong>SSL 設定</strong>\] 中，清除<strong>需要 SSL</strong>。
     
     > [!NOTE]  
     > 如果您未清除 [<strong>需要 SSL</strong>，將不會將使用者重新導向輸入時，就不安全的 URL。而是他們將取得拒絕存取錯誤。
@@ -100,7 +100,7 @@ _**上次修改主題的時間：** 2015-07-16_
 
 4.  執行命令`iisreset/noforce`來完成。
 
-當您設定從一個最上層的目錄重新導向時，可能是 \<*drive*\> \\Program Files\\Microsoft\\Exchange Server\\ \<*version*\> \\ClientAccess\\oab 下建立 web.config 檔案。如果已發生此事件，您稍後移除重新導向Outlook可能會凍結當使用者按一下 \[**傳送及接收**。若要避免發生這種情形之後移除重新導向，請從 \<*drive*\> \\Program Files\\Microsoft\\Exchange Server\\ \<*version*\> \\ClientAccess\\oab 刪除 web.config 檔案。
+當您設定從一個最上層的目錄重新導向時，可能是 \<*drive*\> \\Program Files\\Microsoft\\Exchange Server\\ \<*version*\> \\ClientAccess\\oab 下建立 web.config 檔案。如果已發生此事件，您稍後移除重新導向Outlook可能會凍結當使用者按一下 \[<strong>傳送及接收</strong>。若要避免發生這種情形之後移除重新導向，請從 \<*drive*\> \\Program Files\\Microsoft\\Exchange Server\\ \<*version*\> \\ClientAccess\\oab 刪除 web.config 檔案。
 
 ## 如何知道這是否正常運作？
 
