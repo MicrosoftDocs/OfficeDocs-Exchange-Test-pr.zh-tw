@@ -237,7 +237,7 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
     $Ie.Visible = $True
     $Ie.Document.Write("$Input")
     # If the previous line doesn't work on your system, uncomment the line below.
-    # $Ie.Document.IHtmlDocument2_Write(&quot;$Input&quot;)
+    # $Ie.Document.IHtmlDocument2_Write("$Input")
     $Ie
 ```
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Server 2013_
 
-_**上次修改主題的時間：** 2015-05-04_
+_<strong>上次修改主題的時間：</strong> 2015-05-04_
 
 您可以使用 EAC 或命令介面來連線至 Active Directory 使用者帳戶的刪除的信箱。當您刪除信箱時，Exchange 會保留在信箱資料庫中的信箱並切換至已停用狀態的信箱。也會刪除相關聯的 Active Directory 使用者帳戶。信箱會從信箱資料庫保留之前刪除的信箱保留期間到期，其中會根據預設，然後它的 30 天永久刪除 （或*清除*）。
 
@@ -37,7 +37,7 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [收件者權限](recipients-permissions-exchange-2013-help.md)主題中的「收件者佈建權限」一節。
 
-  - 若要連線至已刪除的信箱的 Active Directory 中建立新的使用者帳戶。或使用**Get-User**指令程式在命令介面中確認您想要連線至存在於已刪除的信箱且不是與另一個信箱相關聯的 Active Directory 使用者帳戶。若要連線至使用者帳戶的已刪除的信箱，帳戶必須存在且*RecipientType*屬性的值設為`User`，指出該帳戶不是尚未擁有信箱功能。
+  - 若要連線至已刪除的信箱的 Active Directory 中建立新的使用者帳戶。或使用<strong>Get-User</strong>指令程式在命令介面中確認您想要連線至存在於已刪除的信箱且不是與另一個信箱相關聯的 Active Directory 使用者帳戶。若要連線至使用者帳戶的已刪除的信箱，帳戶必須存在且*RecipientType*屬性的值設為`User`，指出該帳戶不是尚未擁有信箱功能。
     
     若是內部部署 Exchange 的組織，您也可以在 \[Active Directory 使用者及電腦\] 中確認此資訊。
     
@@ -87,7 +87,7 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 ## 使用命令介面連接被刪除的信箱
 
-使用命令介面中的**Connect-Mailbox**指令程式來連線至未啟用郵件功能的使用者帳戶的刪除的信箱。您必須指定您要連接的信箱的類型。下列範例顯示重新連線使用者、 連結、 會議室、 設備及共用的信箱的語法。在所有的範例中，選擇性*Alias*參數用來指定電子郵件別名，這是在左邊的電子郵件地址的部分在 (@) 符號。如果您未包含*Alias*參數， *User*或*LinkedMasterAccount*參數中指定的值用來建立 reconnected 信箱的電子郵件地址的別名。
+使用命令介面中的<strong>Connect-Mailbox</strong>指令程式來連線至未啟用郵件功能的使用者帳戶的刪除的信箱。您必須指定您要連接的信箱的類型。下列範例顯示重新連線使用者、 連結、 會議室、 設備及共用的信箱的語法。在所有的範例中，選擇性*Alias*參數用來指定電子郵件別名，這是在左邊的電子郵件地址的部分在 (@) 符號。如果您未包含*Alias*參數， *User*或*LinkedMasterAccount*參數中指定的值用來建立 reconnected 信箱的電子郵件地址的別名。
 
 
 > [!NOTE]  
@@ -138,19 +138,19 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
   - 在 EAC 中，按一下 \[收件者\]，瀏覽至您要連接之信箱類型的適當頁面，按一下 \[重新整理\]![重新整理圖示](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "重新整理圖示")，然後確認信箱已列在其中。
 
-  - Active Directory 使用者及電腦\] 中以滑鼠右鍵按一下 \[連接到信箱的使用者帳戶和 \[**屬性**。在 \[**一般**\] 索引標籤，請注意 \[**電子郵件**\] 方塊中填入連線的信箱的電子郵件地址。
+  - Active Directory 使用者及電腦\] 中以滑鼠右鍵按一下 \[連接到信箱的使用者帳戶和 \[<strong>屬性</strong>。在 \[<strong>一般</strong>\] 索引標籤，請注意 \[<strong>電子郵件</strong>\] 方塊中填入連線的信箱的電子郵件地址。
 
   - 在命令介面中，執行下列命令。
     
         Get-User <identity>
     
-    *RecipientType*屬性的**UserMailbox**值會指出已連線的使用者帳戶和信箱。您也可以執行**Get-Mailbox \<identity\>**命令，以確認已連線的信箱。
+    *RecipientType*屬性的<strong>UserMailbox</strong>值會指出已連線的使用者帳戶和信箱。您也可以執行<strong>Get-Mailbox \<identity\></strong>命令，以確認已連線的信箱。
 
 ## 還原被刪除的信箱
 
-您可以使用命令介面來還原已刪除的信箱至現有的信箱使用**New-MailboxRestoreRequest**指令程式。當您還原已刪除的信箱時、 其內容都會複製到現有的信箱，稱為 「*目標信箱*。還原刪除的信箱後，它具有仍保留在信箱資料庫之前會永久刪除由系統管理員或已刪除的信箱保留期間到期之後清除。
+您可以使用命令介面來還原已刪除的信箱至現有的信箱使用<strong>New-MailboxRestoreRequest</strong>指令程式。當您還原已刪除的信箱時、 其內容都會複製到現有的信箱，稱為 「*目標信箱*。還原刪除的信箱後，它具有仍保留在信箱資料庫之前會永久刪除由系統管理員或已刪除的信箱保留期間到期之後清除。
 
-信箱還原要求成功完成後，它會保留 30 天內，根據預設之前就會被刪除。您可以移除它更早使用**Remove-StoreMailbox**指令程式。
+信箱還原要求成功完成後，它會保留 30 天內，根據預設之前就會被刪除。您可以移除它更早使用<strong>Remove-StoreMailbox</strong>指令程式。
 
 
 > [!NOTE]  
@@ -161,7 +161,7 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 ## 使用命令介面還原被刪除的信箱
 
-若要建立信箱還原要求，您必須使用顯示名稱、 舊版的辨別的名稱 (DN) 或信箱已刪除信箱的 GUID。使用**Get-MailboxStatistics**指令程式來顯示您想要還原已刪除信箱`DisplayName`、 `MailboxGuid`，以及`LegacyDN`屬性的值。例如，執行下列命令以傳回所有此資訊已停用和刪除您組織中的信箱。
+若要建立信箱還原要求，您必須使用顯示名稱、 舊版的辨別的名稱 (DN) 或信箱已刪除信箱的 GUID。使用<strong>Get-MailboxStatistics</strong>指令程式來顯示您想要還原已刪除信箱`DisplayName`、 `MailboxGuid`，以及`LegacyDN`屬性的值。例如，執行下列命令以傳回所有此資訊已停用和刪除您組織中的信箱。
 
     Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
 
@@ -217,7 +217,7 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 ## 如何知道這是否正常運作？
 
-若要確認您是否已成功還原已刪除公用資料夾信箱，請執行**Get-PublicFolder -GetChildren -\<public folder mailbox GUID\>**指令程式。如果還原是否成功，此指令程式可運作。
+若要確認您是否已成功還原已刪除公用資料夾信箱，請執行<strong>Get-PublicFolder -GetChildren -\<public folder mailbox GUID\></strong>指令程式。如果還原是否成功，此指令程式可運作。
 
 如需詳細資訊，請參閱：
 

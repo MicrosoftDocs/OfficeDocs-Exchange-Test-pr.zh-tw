@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Online, Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：** 2016-05-26_
+_<strong>上次修改主題的時間：</strong> 2016-05-26_
 
 尋找電子郵件中的機密資訊，必須以描述該資訊的項目已呼叫*規則*。資料外洩防護 (DLP) 包含最常見敏感資料類型您可以立即使用 51 規則的套件。若要使用這些規則，您必須併入一個原則。您可能會發現您想要調整以符合貴組織的特定需求，這些內建規則與您可以執行的動作來建立自訂的敏感資訊類型。本主題顯示如何將自訂 XML 檔案包含現有規則集合來偵測廣泛的潛在信用卡資訊。
 
@@ -41,11 +41,11 @@ _**上次修改主題的時間：** 2016-05-26_
 
 若要匯出的 XML，您需要使用Exchange 管理命令介面或。Exchange Server 2013，請參閱[使用 PowerShell 與 Exchange 2013 (Exchange 管理命令介面)](https://technet.microsoft.com/zh-tw/library/bb123778\(v=exchg.150\))。Exchange Online，請參閱[使用遠端 PowerShell 連線到 Exchange Online](https://technet.microsoft.com/zh-tw/library/jj984289\(v=exchg.150\))。
 
-1.  在Exchange 管理命令介面或Exchange Online PowerShell 中，輸入**Get-classificationrulecollection**在螢幕上顯示組織的規則。如果您尚未建立您自己，您僅會看見預設、 內建規則、 標示為 「 Microsoft 規則套件 」。
+1.  在Exchange 管理命令介面或Exchange Online PowerShell 中，輸入<strong>Get-classificationrulecollection</strong>在螢幕上顯示組織的規則。如果您尚未建立您自己，您僅會看見預設、 內建規則、 標示為 「 Microsoft 規則套件 」。
 
-2.  儲存您的組織中的規則的輸入以變數**$ruleCollections = Get-classificationrulecollection**。將某個項目儲存於變數供輕鬆稍後的適用於遠端 PowerShell 命令格式。
+2.  儲存您的組織中的規則的輸入以變數<strong>$ruleCollections = Get-classificationrulecollection</strong>。將某個項目儲存於變數供輕鬆稍後的適用於遠端 PowerShell 命令格式。
 
-3.  輸入來進行格式化的 XML 檔案與所有這些資料**Set-content-路徑 」 C:\\custompath\\exportedRules.xml"-Encoding Byte-值 $ruleCollections.SerializedClassificationRuleCollection**。（**Set-content**是檔中寫入之 XML 指令程式的一部分）。
+3.  輸入來進行格式化的 XML 檔案與所有這些資料<strong>Set-content-路徑 」 C:\\custompath\\exportedRules.xml"-Encoding Byte-值 $ruleCollections.SerializedClassificationRuleCollection</strong>。（<strong>Set-content</strong>是檔中寫入之 XML 指令程式的一部分）。
     
     > [!IMPORTANT]  
     > 請確定您使用實際儲存規則套件的檔案位置。<strong>C:\custompath\</strong>是預留位置。
@@ -57,9 +57,9 @@ _**上次修改主題的時間：** 2016-05-26_
 
 1.  使用文字編輯器來開啟您在前一節中匯出的 XML 檔案。
 
-2.  捲動到**\<Rules\>**標記，這是包含 DLP 規則章節的開頭。（因為此 XML 檔案包含整個規則集合的資訊，其中包含您要取得規則捲動過去的頂端的其他資訊。）
+2.  捲動到<strong>\<Rules\></strong>標記，這是包含 DLP 規則章節的開頭。（因為此 XML 檔案包含整個規則集合的資訊，其中包含您要取得規則捲動過去的頂端的其他資訊。）
 
-3.  尋找**Func\_credit\_card**尋找信用卡號規則定義。（xml 規則名稱不得包含空格，因此通常具有底線取代空格和規則名稱有時候會縮寫。此範例是美國社會安全號碼規則，這是縮寫"SSN"。信用卡號規則 XML 應看來如下列程式碼範例。
+3.  尋找<strong>Func\_credit\_card</strong>尋找信用卡號規則定義。（xml 規則名稱不得包含空格，因此通常具有底線取代空格和規則名稱有時候會縮寫。此範例是美國社會安全號碼規則，這是縮寫"SSN"。信用卡號規則 XML 應看來如下列程式碼範例。
     
         <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
                patternsProximity="300" recommendedConfidence="85">
@@ -108,7 +108,7 @@ _**上次修改主題的時間：** 2016-05-26_
        </Rules>
     </RulePackage>
 
-現在，您必須看起來類似下列 XML 程式碼所示的內容。因為其唯一 Guid 識別規則套件與規則，您需要產生兩個 Guid： 一個規則套件和應用程式，來取代信用卡號規則的 GUID。（如下列程式碼範例中的實體識別碼的 GUID 是您需要取代為一份新我們內建的規則定義，一種）。有數種方式來產生的 Guid，但是您可以進行輕鬆 PowerShell 輸入**\[guid\]::NewGuid()**。
+現在，您必須看起來類似下列 XML 程式碼所示的內容。因為其唯一 Guid 識別規則套件與規則，您需要產生兩個 Guid： 一個規則套件和應用程式，來取代信用卡號規則的 GUID。（如下列程式碼範例中的實體識別碼的 GUID 是您需要取代為一份新我們內建的規則定義，一種）。有數種方式來產生的 Guid，但是您可以進行輕鬆 PowerShell 輸入<strong>\[guid\]::NewGuid()</strong>。
 
     <?xml version="1.0" encoding="utf-16"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
@@ -150,7 +150,7 @@ _**上次修改主題的時間：** 2016-05-26_
 
 ## 佐證性證據需求移除機密資訊類型
 
-現在您有新的敏感資訊類型，您就可以將上傳至Exchange環境下, 一步就是讓更具體的規則。修改規則，讓它只會尋找 16 位數數字會傳遞總和檢查碼但不需要其他 （佐證性） 證據 （例如關鍵字）。為達成此目的，您需要移除尋找佐證性證據的 xml 組件。佐證性證據是非常實用中降低誤判因為通常有特定關鍵字\] 或 \[到期日附近信用卡號。如果您移除該證據，應調整方式有信心您是您透過降低**confidenceLevel**，這在範例 85 找到信用卡號。
+現在您有新的敏感資訊類型，您就可以將上傳至Exchange環境下, 一步就是讓更具體的規則。修改規則，讓它只會尋找 16 位數數字會傳遞總和檢查碼但不需要其他 （佐證性） 證據 （例如關鍵字）。為達成此目的，您需要移除尋找佐證性證據的 xml 組件。佐證性證據是非常實用中降低誤判因為通常有特定關鍵字\] 或 \[到期日附近信用卡號。如果您移除該證據，應調整方式有信心您是您透過降低<strong>confidenceLevel</strong>，這在範例 85 找到信用卡號。
 
     <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
           <Pattern confidenceLevel="85">
@@ -160,7 +160,7 @@ _**上次修改主題的時間：** 2016-05-26_
 
 ## 貴組織專屬的關鍵字的外觀
 
-可能會想要需要佐證性證據但想要不同或其他關鍵字及也許您想要變更要尋找該證據。您可以調整**patternsProximity**即可展開或壓縮佐證性證據周圍 16 位數的視窗。若要新增您自己的關鍵字，您需要定義關鍵字清單並參照在您的規則。下列 XML 程式碼新增的關鍵字 「 公司卡 」 與 「 Contoso 卡片"使任何包含這些片語內之信用卡號 150 個字元的郵件會被識別為信用卡號。
+可能會想要需要佐證性證據但想要不同或其他關鍵字及也許您想要變更要尋找該證據。您可以調整<strong>patternsProximity</strong>即可展開或壓縮佐證性證據周圍 16 位數的視窗。若要新增您自己的關鍵字，您需要定義關鍵字清單並參照在您的規則。下列 XML 程式碼新增的關鍵字 「 公司卡 」 與 「 Contoso 卡片"使任何包含這些片語內之信用卡號 150 個字元的郵件會被識別為信用卡號。
 
     <Rules>
     <! -- Modify the patternsProximity to be "150" rather than "300." -->
@@ -192,15 +192,15 @@ _**上次修改主題的時間：** 2016-05-26_
 
 2.  連線至Exchange 管理命令介面或Exchange Online PowerShell。Exchange Server 2013，請參閱[使用 PowerShell 與 Exchange 2013 (Exchange 管理命令介面)](https://technet.microsoft.com/zh-tw/library/bb123778\(v=exchg.150\))。Exchange Online，請參閱[使用遠端 PowerShell 連線到 Exchange Online](https://technet.microsoft.com/zh-tw/library/jj984289\(v=exchg.150\))。
 
-3.  在Exchange 管理命令介面或Exchange Online PowerShell 中，輸入**New-classificationrulecollection FileData (Get-content-路徑"C:\\custompath\\MyNewRulePack.xml"-Encoding Byte)**。
+3.  在Exchange 管理命令介面或Exchange Online PowerShell 中，輸入<strong>New-classificationrulecollection FileData (Get-content-路徑"C:\\custompath\\MyNewRulePack.xml"-Encoding Byte)</strong>。
     
     > [!IMPORTANT]  
     > 請確定您使用實際儲存規則套件的檔案位置。<strong>C:\custompath\</strong>是預留位置。
 
 
-4.  若要確認，請輸入**Y**，並按下**Enter**。
+4.  若要確認，請輸入<strong>Y</strong>，並按下<strong>Enter</strong>。
 
-5.  確認您的新規則已上傳輸入**Get-dataclassification**、 現在會顯示您規則的名稱。
+5.  確認您的新規則已上傳輸入<strong>Get-dataclassification</strong>、 現在會顯示您規則的名稱。
 
 若要開始使用新的規則來偵測敏感資訊，您需要新增至 DLP 原則的規則。若要了解如何將規則新增至原則，請參閱[管理 DLP 原則](manage-dlp-policies-exchange-2013-help.md)。
 

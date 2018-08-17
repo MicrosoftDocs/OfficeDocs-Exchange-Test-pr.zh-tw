@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Server 2013_
 
-_**上次修改主題的時間：** 2013-05-20_
+_<strong>上次修改主題的時間：</strong> 2013-05-20_
 
 基於安全性考量，某些組織可能會想要限制存取 Exchange 系統管理中心 (EAC) 來自網際網路的使用者。此程序將示範如何關閉 eac 的存取。此程序不會防止使用者存取 Outlook Web App 中的選項。
 
@@ -60,7 +60,7 @@ _**上次修改主題的時間：** 2013-05-20_
 
 若要確認您是否已成功關閉 EAC 的存取，請執行下列步驟：
 
-1.  使用網際網路瀏覽器，輸入您的組織內部或外部 URL 存取 Outlook Web App 但取代**/ecp/owa**識別碼。例如，如果您存取 Outlook Web App 的外部 URL 為 https://primary.tailspintoys.com/owa，使用 https://primary.tailspintoys.com/ecp。
+1.  使用網際網路瀏覽器，輸入您的組織內部或外部 URL 存取 Outlook Web App 但取代<strong>/ecp/owa</strong>識別碼。例如，如果您存取 Outlook Web App 的外部 URL 為 https://primary.tailspintoys.com/owa，使用 https://primary.tailspintoys.com/ecp。
 
-2.  若存取已關閉，您將會收到 **\[404 – website not found\]** 錯誤。
+2.  若存取已關閉，您將會收到 <strong>\[404 – website not found\]</strong> 錯誤。
 

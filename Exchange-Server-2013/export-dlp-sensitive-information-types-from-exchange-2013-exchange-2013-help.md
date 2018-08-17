@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Online, Exchange Server 2013_
+_<strong>適用版本：</strong> Exchange Online, Exchange Server 2013_
 
-_**上次修改主題的時間：** 2016-05-04_
+_<strong>上次修改主題的時間：</strong> 2016-05-04_
 
 您可以檢視或變更內 DLP 原則的詳細資料而不需使用Exchange 系統管理中心 (EAC) 或Exchange 管理命令介面指令程式來匯出原則、 儲存為 XML 檔案，並修改該 XML 檔案。通常您再將 XML 檔案匯回Exchange。如此一來，原則可以編輯缺少Exchange。不過，他們必須符合特定格式需求，也稱為 \[XML 結構描述才能正常運作。
 
@@ -46,11 +46,11 @@ EAC 中不提供 DLP 原則或範本匯出至外部檔案的方式。使用Excha
 
 1.  開啟Exchange 管理命令介面。
 
-2.  類型**Get-classificationrulecollection**，與您組織的敏感資訊類型應顯示在螢幕上。如果尚未建立您自己的任何敏感資訊類型，您僅會看見預設、 內建的敏感資訊類型集合，標示為 「"Microsoft 規則套件。
+2.  類型<strong>Get-classificationrulecollection</strong>，與您組織的敏感資訊類型應顯示在螢幕上。如果尚未建立您自己的任何敏感資訊類型，您僅會看見預設、 內建的敏感資訊類型集合，標示為 「"Microsoft 規則套件。
 
-3.  儲存在變數中的敏感資訊類型輸入**$ruleCollections = Get-classificationrulecollection**。
+3.  儲存在變數中的敏感資訊類型輸入<strong>$ruleCollections = Get-classificationrulecollection</strong>。
 
-4.  現在請格式化的 XML 檔案與所有的該資料輸入**Set-content-路徑"C:\\My Documents\\exportedRules.xml"-Encoding Byte-值 $ruleCollections.SerializedClassificationRuleCollection**.
+4.  現在請格式化的 XML 檔案與所有的該資料輸入<strong>Set-content-路徑"C:\\My Documents\\exportedRules.xml"-Encoding Byte-值 $ruleCollections.SerializedClassificationRuleCollection</strong>.
 
 您現在可以編輯要視需要調整原則之 XML 檔案。若要了解如何自訂內建的敏感資訊類型，請參閱[自訂內建的 DLP 敏感資訊類型](customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md)。如需回復將 Exchange 匯入原則的詳細資訊，請參閱[從檔案匯入自訂的 DLP 原則範本](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)。
 

@@ -166,7 +166,7 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 ## 其他資訊
 
-  - **稽核記錄的信箱中的項目**  下列範例會顯示從信箱稽核記錄 SearchResult.xml 檔案中所包含的項目。每個項目加上**\< 事件 \>** XML 標記並結束於**\< / 事件 \>** XML 標記。此項目顯示的系統管理員將清除郵件主旨，「**通知的訴訟保留**」 從 David 的信箱中的 \[可復原的項目\] 資料夾上 2010 年 4 月 30 日。
+  - **稽核記錄的信箱中的項目**  下列範例會顯示從信箱稽核記錄 SearchResult.xml 檔案中所包含的項目。每個項目加上<strong>\< 事件 \></strong> XML 標記並結束於<strong>\< / 事件 \> ** XML 標記。此項目顯示的系統管理員將清除郵件主旨，「通知的訴訟保留」 從 David 的信箱中的 \[可復原的項目\] 資料夾上 2010 年 4 月 30 日。</strong>
     
         <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939" 
           Owner="PPLNSL-dom\david50001-1363917750" 

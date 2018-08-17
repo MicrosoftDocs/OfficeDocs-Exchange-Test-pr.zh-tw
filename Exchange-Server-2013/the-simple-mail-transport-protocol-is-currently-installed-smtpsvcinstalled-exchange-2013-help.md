@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server_
+_<strong>適用版本：</strong> Exchange Server_
 
-_**上次修改主題的時間：** 2012-06-05_
+_<strong>上次修改主題的時間：</strong> 2012-06-05_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -33,15 +33,15 @@ Microsoft Exchange 安裝程式需要用於 Exchange 2007 伺服器上未安裝 
 
 2.  按兩下 \[新增或移除程式\]。
 
-3.  按一下 \[**新增/移除 Windows 元件**\]。
+3.  按一下 \[<strong>新增/移除 Windows 元件</strong>\]。
 
-4.  \[**元件**\] 清單中選取**應用程式伺服器**\] 核取方塊和 \[**詳細資料**。
+4.  \[<strong>元件</strong>\] 清單中選取<strong>應用程式伺服器</strong>\] 核取方塊和 \[<strong>詳細資料</strong>。
 
-5.  選取 \[**網際網路資訊服務管理員**和 \[**詳細資料**。
+5.  選取 \[<strong>網際網路資訊服務管理員</strong>和 \[<strong>詳細資料</strong>。
 
-6.  選取 \[ **SMTP Service** \] 和 \[清除\] 核取方塊。
+6.  選取 \[ <strong>SMTP Service</strong> \] 和 \[清除\] 核取方塊。
 
-7.  按兩次**\[確定\]**返回 \[**元件**\] 清單，然後按 \[**下一步**。
+7.  按兩次<strong>\[確定\]</strong>返回 \[<strong>元件</strong>\] 清單，然後按 \[<strong>下一步</strong>。
 
-8.  解除安裝 SMTP 服務時按一下 \[**完成**\]。
+8.  解除安裝 SMTP 服務時按一下 \[<strong>完成</strong>\]。
 

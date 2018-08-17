@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server_
+_<strong>適用版本：</strong> Exchange Server_
 
-_**上次修改主題的時間：** 2016-12-09_
+_<strong>上次修改主題的時間：</strong> 2016-12-09_
 
 此主題中的內容尚未針對 Microsoft Exchange Server 2013 進行更新。在更新之前，可能還是適用於 Exchange 2013。如果您仍然需要幫助，請查看下方的社群資源。
 
@@ -31,13 +31,13 @@ Microsoft Exchange 安裝程式需要 Exchange 組織中的伺服器的 FQDN 不
 
 要重新命名之本機電腦
 
-1.  開啟 \[**控制台**\] 中的 \[**系統**\]。
+1.  開啟 \[<strong>控制台</strong>\] 中的 \[<strong>系統</strong>\]。
 
 2.  在 \[電腦名稱\] 索引標籤上，按一下 \[變更\]。
 
-3.  **電腦名稱**\] 底下輸入電腦的新名稱，然後按一下 \[**確定\]**。系統會提示您提供使用者名稱和重新命名網域中的電腦的使用者密碼。
+3.  <strong>電腦名稱</strong>\] 底下輸入電腦的新名稱，然後按一下 \[<strong>確定\]</strong>。系統會提示您提供使用者名稱和重新命名網域中的電腦的使用者密碼。
 
-4.  按一下**\[確定\]**以關閉 \[**系統內容**\] 對話方塊。系統會提示您重新啟動電腦以套用變更。
+4.  按一下<strong>\[確定\]</strong>以關閉 \[<strong>系統內容</strong>\] 對話方塊。系統會提示您重新啟動電腦以套用變更。
 
 
 > [!IMPORTANT]  
@@ -50,11 +50,11 @@ Microsoft Exchange 安裝程式需要 Exchange 組織中的伺服器的 FQDN 不
 
 1.  啟動 Exchange 系統管理員。
 
-2.  按一下 \[**組織**\]、 \[**收件者**，和 \[**收件者原則**。
+2.  按一下 \[<strong>組織</strong>\]、 \[<strong>收件者</strong>，和 \[<strong>收件者原則</strong>。
 
 3.  按兩下您想變更的原則。
 
-4.  按一下 \[**電子郵件地址**\] 索引標籤，並變更適當的 SMTP 位址
+4.  按一下 \[<strong>電子郵件地址</strong>\] 索引標籤，並變更適當的 SMTP 位址
 
 如需詳細 Recipient 原則命名問題，查看 Microsoft 知識庫文章 288175，"XCON： Recipient 原則不符合組織、 5.4.8 中任何伺服器的 FQDN Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175))。
 

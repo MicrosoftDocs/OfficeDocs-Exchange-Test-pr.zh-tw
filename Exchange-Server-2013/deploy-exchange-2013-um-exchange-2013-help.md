@@ -13,13 +13,13 @@ ms.translationtype: MT
 
  
 
-_**適用版本：** Exchange Server 2013, Exchange Server 2016_
+_<strong>適用版本：</strong> Exchange Server 2013, Exchange Server 2016_
 
-_**上次修改主題的時間：** 2016-12-09_
+_<strong>上次修改主題的時間：</strong> 2016-12-09_
 
 整合通訊 (UM) 要求您整合 Exchange Server 部署與您組織的現有電話語音系統。成功的部署需要仔細分析您現有的電話基礎結構，並執行正確的規劃步驟以部署和管理整合通訊中的語音信箱。
 
-**目錄**
+<strong>目錄</strong>
 
 Before you deploy
 
@@ -63,21 +63,21 @@ Post-deployment tasks for Unified Messaging
 
 一般而言，您必須完成三項工作才能成功設定 UM 所需的電話語音元件：
 
-1.  **提供 PBX 線路**   若要部署可延展的 UM 解決方案，首先必須提供 PBX 線路。
+1.  <strong>提供 PBX 線路</strong>   若要部署可延展的 UM 解決方案，首先必須提供 PBX 線路。
 
-2.  **組織頻道**   在提供 PBX 型語音頻道後，即可將頻道組織成群組搜尋。
+2.  <strong>組織頻道</strong>   在提供 PBX 型語音頻道後，即可將頻道組織成群組搜尋。
 
-3.  **部署 VoIP 閘道**   將語音頻道組織成群組搜尋後，必須讓這些頻道在 IP 閘道器處結束。VoIP 閘道器可與傳統 PBX 搭配使用，將在電話語音網路上的電路交換通訊協定轉換為 IP 封包交換通訊協定。
+3.  <strong>部署 VoIP 閘道</strong>   將語音頻道組織成群組搜尋後，必須讓這些頻道在 IP 閘道器處結束。VoIP 閘道器可與傳統 PBX 搭配使用，將在電話語音網路上的電路交換通訊協定轉換為 IP 封包交換通訊協定。
 
 在部署整合通訊期間，當您在整合組織的電話語音及資料網路時，必須正確設定電話語音及資料網路功能元件。您還必須設定下列元件或介面，才能成功部署整合通訊：
 
-  - **設定組織中與 VoIP 閘道進行通訊的 PBX 連線。**如需詳細資訊，請參閱[Connect a VoIP 閘道與 PBX 通訊](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
+  - <strong>設定組織中與 VoIP 閘道進行通訊的 PBX 連線。</strong>如需詳細資訊，請參閱[Connect a VoIP 閘道與 PBX 通訊](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
 
-  - **設定 VoIP 閘道介面到 PBX 的連線。**如需如何設定 PBX 介面以便與支援的 VoIP 閘道進行通訊的詳細資訊，請參閱您 PBX 專屬的產品文件，或參閱[Connect a VoIP 閘道與 PBX 通訊](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
+  - <strong>設定 VoIP 閘道介面到 PBX 的連線。</strong>如需如何設定 PBX 介面以便與支援的 VoIP 閘道進行通訊的詳細資訊，請參閱您 PBX 專屬的產品文件，或參閱[Connect a VoIP 閘道與 PBX 通訊](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
 
-  - **設定 VoIP 閘道介面到 Client Access Server 及 Mailbox Server 的連線。**如需詳細資訊，請參閱[連線至 UM VoIP 閘道、 IP PBX 或工作階段邊界控制器](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)。
+  - <strong>設定 VoIP 閘道介面到 Client Access Server 及 Mailbox Server 的連線。</strong>如需詳細資訊，請參閱[連線至 UM VoIP 閘道、 IP PBX 或工作階段邊界控制器](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)。
 
-  - **設定 Client Access Server 及 Mailbox Server 到 VoIP 閘道介面的連線。**如需詳細資訊，請參閱[連線至受支援的 VoIP 閘道的 UM](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)。
+  - <strong>設定 Client Access Server 及 Mailbox Server 到 VoIP 閘道介面的連線。</strong>如需詳細資訊，請參閱[連線至受支援的 VoIP 閘道的 UM](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)。
 
 回到頁首
 
@@ -127,11 +127,11 @@ UM 撥號對應表對於整合通訊操作極為重要，有它才能在網路�
 
 ## 建立 UM 撥號對應表
 
-1.  在 Exchange 系統管理中心 (EAC) 中，瀏覽至 **\[整合通訊\]** \> **\[UM 撥號對應表\]**，然後按一下 **\[新增\]**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
+1.  在 Exchange 系統管理中心 (EAC) 中，瀏覽至 <strong>\[整合通訊\]</strong> \> <strong>\[UM 撥號對應表\]</strong>，然後按一下 <strong>\[新增\]</strong>![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
 
-2.  在 **\[新增 UM 撥號對應表\]** 頁面上，填妥下列方塊：
+2.  在 <strong>\[新增 UM 撥號對應表\]</strong> 頁面上，填妥下列方塊：
     
-      - **名稱** 輸入撥號對應表的名稱。UM 撥號對應表名稱是必要項目，而且必須是唯一的名稱。您輸入的名稱只能在 EAC 和命令介面中作為顯示用途。UM 撥號對應表的長度上限為 64 個字元，可包含空格。不過不可包含下列任何一個字元：" / \\ \[ \] : ; | = , + \* ? \< \>.
+      - <strong>名稱</strong> 輸入撥號對應表的名稱。UM 撥號對應表名稱是必要項目，而且必須是唯一的名稱。您輸入的名稱只能在 EAC 和命令介面中作為顯示用途。UM 撥號對應表的長度上限為 64 個字元，可包含空格。不過不可包含下列任何一個字元：" / \\ \[ \] : ; | = , + \* ? \< \>.
         
         > [!IMPORTANT]  
         > 雖然撥號對應表名稱方塊可接受 64 個字元，但撥號對應表名稱不可超過 49 個字元。這是因為當您建立撥號對應表時，還會建立名稱為「<em>&lt;DialPlanName&gt;</em> 預設原則」的預設 UM 信箱原則。UM 撥號對應表與 UM 信箱原則的 <em>name</em> 參數長度可為 64 個字元。
@@ -184,7 +184,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
 3.  
     
-    按一下 **\[儲存\]**。
+    按一下 <strong>\[儲存\]</strong>。
 
 ## 步驟 3：建立並設定 UM 群組搜尋 (選用)
 
@@ -198,7 +198,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
 1.  在 EAC 中，瀏覽至 \[整合通訊\] \> \[UM 撥號對應表\]。在清單檢視中，選取您要變更的 UM 撥號對應表，然後按一下 \[編輯\]![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
 
-2.  在 **\[UM 撥號對應表\]** 頁面的 **\[UM 群組搜尋\]** 下方，按一下 **\[新增\]**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
+2.  在 <strong>\[UM 撥號對應表\]</strong> 頁面的 <strong>\[UM 群組搜尋\]</strong> 下方，按一下 <strong>\[新增\]</strong>![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
 
 3.  在 \[新增 UM 群組搜尋\] 頁面上，填妥下列方塊：
     
@@ -230,7 +230,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
     
     在 EAC 中，瀏覽至 \[整合通訊\] \> \[UM 撥號對應表\]。在清單檢視中，選取您要修改的 UM 撥號對應表，然後按一下 \[編輯\]![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
 
-2.  在 **\[UM 撥號對應表\]** 頁面的 **\[UM 信箱原則\]** 底下，按一下 **\[新增\]**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
+2.  在 <strong>\[UM 撥號對應表\]</strong> 頁面的 <strong>\[UM 信箱原則\]</strong> 底下，按一下 <strong>\[新增\]</strong>![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
 
 3.  在 \[新增 UM 信箱原則\] 頁面的 \[名稱\] 文字方塊中，輸入新 UM 信箱原則的名稱。
     
@@ -238,7 +238,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
     
     UM 信箱原則名稱是必要的，但只用於顯示。由於您的組織可能使用多個 UM 信箱原則，我們建議您針對 UM 信箱原則使用有意義的名稱。UM 信箱原則名稱的長度上限是 64 個字元，且可以包含空格。不過不可包含下列任一字元：" / \\ \[ \] : ; | = , + \* ? \< \>.
 
-4.  按一下 \[儲存\] 儲存新的 UM 信箱原則。儲存 UM 信箱原則時，將啟用所有預設設定，包括 PIN 原則、語音信箱功能，以及受保護的語音信箱設定。如果要自訂或變更任何預設設定，請使用 **Set-UMMailbox** 指令程式，針對您剛才建立的 UM 信箱原則變更設定。
+4.  按一下 \[儲存\] 儲存新的 UM 信箱原則。儲存 UM 信箱原則時，將啟用所有預設設定，包括 PIN 原則、語音信箱功能，以及受保護的語音信箱設定。如果要自訂或變更任何預設設定，請使用 <strong>Set-UMMailbox</strong> 指令程式，針對您剛才建立的 UM 信箱原則變更設定。
 
 ## 步驟 5：建立和設定 UM 自動語音應答 (選用)
 
@@ -256,9 +256,9 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
 2.  在 \[UM 撥號對應表\] 頁面的 \[UM 自動應答\]下方，按一下 \[新增\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
 
-3.  在 **\[新增 UM 自動語音應答\]** 頁面上，填妥下列方塊：
+3.  在 <strong>\[新增 UM 自動語音應答\]</strong> 頁面上，填妥下列方塊：
     
-      - **名稱**   使用此方塊可建立 UM 自動語音應答的顯示名稱。UM 自動語音應答名稱是必要項目，而且必須是唯一的。但是，它只能在 EAC 和命令介面中作為顯示用途。
+      - <strong>名稱</strong>   使用此方塊可建立 UM 自動語音應答的顯示名稱。UM 自動語音應答名稱是必要項目，而且必須是唯一的。但是，它只能在 EAC 和命令介面中作為顯示用途。
         
         如果您在建立自動語音應答後必須變更其顯示名稱，必須先刪除現有的 UM 自動語音應答，然後建立另一個具有適當名稱的自動語音應答。如果您的組織使用多個自動語音應答，則建議為 UM 自動語音應答使用有意義的名稱。UM 自動語音應答名稱的最大長度為 64 個字元，可以包含空格。
         
@@ -276,7 +276,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
         
         可輸入的分機號碼或引導識別碼的數目沒有限制。然而，您可以建立新的自動語音應答，而不必列出分機號碼或電話號碼。分機號碼或電話號碼不是必要的。
         
-        您可以編輯或移除現有的分機號碼或引導識別碼。若要編輯現有的分機號碼或電話號碼，請按一下 **\[編輯\]**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。若要從清單中移除現有的分機號碼或電話號碼，請按一下 \[移除\]![\[移除\] 圖示](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "[移除] 圖示")。
+        您可以編輯或移除現有的分機號碼或引導識別碼。若要編輯現有的分機號碼或電話號碼，請按一下 <strong>\[編輯\]</strong>![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。若要從清單中移除現有的分機號碼或電話號碼，請按一下 \[移除\]![\[移除\] 圖示](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "[移除] 圖示")。
 
 4.  按一下 \[儲存\]。
 
