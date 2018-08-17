@@ -1059,13 +1059,11 @@ _**上次修改主題的時間：** 2018-05-03_
 <td><p>格式</p></td>
 <td><p>Registro Geral (舊格式)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九位數</p>
 </dd>
 </dl>
 <p>Registro de Identidade (RIC) (新格式)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>11 位數</p>
 </dd>
 </dl></td>
@@ -3654,13 +3652,11 @@ _**上次修改主題的時間：** 2018-05-03_
 <td><p>格式</p></td>
 <td><p>自從 2010 年 11 月 1 日</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九個字母和數字</p>
 </dd>
 </dl>
 <p>從 1987 年 4 月 1 日 到 2010 年 10 月 31 日</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>10 位數</p>
 </dd>
 </dl></td>
@@ -4252,7 +4248,6 @@ _**上次修改主題的時間：** 2018-05-03_
 </ul>
 <p>每個國家/地區的格式是稍有不同。IBAN 敏感資訊類型涵蓋下列 60 國家/地區：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>ad、 ae、 al，在亞利桑那州、 ba、 是、 bg、 bh、 頻道、 cr、 cy、 cz、 de、 粗、 執行、 ee、 es、 wi-fi、 於、 fr、 gb、 ge、 gi、 gl、 /gr、 hr、 hu、 ie、 芝加哥，它、 kw、 kz、 lb、 li、 lt、 lu、 lv mc md、 我、 mk、 mr、 明、 mu、 nl、 [否] pl、 pt、 ro、 rs、 sa、 se、 si、 sk、 sm、 tn、 tr、 vg</p>
 </dd>
 </dl></td>
@@ -4392,13 +4387,11 @@ _**上次修改主題的時間：** 2018-05-03_
 <td><p>格式</p></td>
 <td><p>舊格式 (直到 2012 年 12 月 31 日)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>七位數後尾隨 1-2 個字母</p>
 </dd>
 </dl>
 <p>新格式 (自從 2013 年 1 月 1 日)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>七位數後尾隨二個字母</p>
 </dd>
 </dl></td>
@@ -6494,13 +6487,11 @@ _**上次修改主題的時間：** 2018-05-03_
 <td><p>格式</p></td>
 <td><p>生物識別護照號碼</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九位數</p>
 </dd>
 </dl>
 <p>非生物識別護照號碼</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九位數</p>
 </dd>
 </dl></td>
