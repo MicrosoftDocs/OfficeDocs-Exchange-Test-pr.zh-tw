@@ -53,9 +53,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
   - 在超過 50 GB 限制的探索信箱中，決定是否需要保留部分或全部的搜尋結果。請依照本主題的步驟，將搜尋結果複製到不同的探索信箱，以保留搜尋結果。如果您不需要保留特定 eDiscovery 搜尋的結果，您可以依步驟 3 的說明來刪除搜尋。刪除搜尋會從探索信箱中刪除搜尋結果。
 
-  - 在超過 50 GB 限制的探索信箱中，如果您不需要其中任何搜尋結果，您可以刪除此信箱。如果這是佈建 Exchange 組織時所建立的預設探索信箱，您可以重新建立它。如需詳細資訊，請參閱 [刪除並重新建立 Exchange 中預設的探索信箱](delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md)。
+  - 在超過 50 GB 限制的探索信箱中，如果您不需要其中任何搜尋結果，您可以刪除此信箱。如果這是佈建 Exchange 組織時所建立的預設探索信箱，您可以重新建立它。如需詳細資訊，請參閱 [刪除並重新建立 Exchange 中預設的探索信箱](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox)。
 
-  - 對於目前的法律案件，您可能想要將選取的 eDiscovery 搜尋的結果匯出至 .pst 檔案。這樣做可讓特定搜尋的結果保持不變。除了匯出包含搜尋結果的 .pst 檔案，也會匯出搜尋結果記錄檔 (.csv 檔案格式)，其中，搜尋結果中傳回的每個郵件都有一個項目。此檔案中的每個項目可識別郵件所在的來源信箱。如需詳細資訊，請參閱 [將 eDiscovery 搜尋結果匯出至 PST 檔](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)。
+  - 對於目前的法律案件，您可能想要將選取的 eDiscovery 搜尋的結果匯出至 .pst 檔案。這樣做可讓特定搜尋的結果保持不變。除了匯出包含搜尋結果的 .pst 檔案，也會匯出搜尋結果記錄檔 (.csv 檔案格式)，其中，搜尋結果中傳回的每個郵件都有一個項目。此檔案中的每個項目可識別郵件所在的來源信箱。如需詳細資訊，請參閱 [將 eDiscovery 搜尋結果匯出至 PST 檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/export-search-results)。
     
     將搜尋結果匯出至 .pst 檔案之後，如果想要將搜尋結果匯入到新的探索信箱，則需要使用 Outlook。
 

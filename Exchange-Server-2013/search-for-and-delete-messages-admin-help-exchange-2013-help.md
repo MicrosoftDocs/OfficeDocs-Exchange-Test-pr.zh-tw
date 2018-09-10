@@ -31,7 +31,7 @@ _**上次修改主題的時間：** 2017-12-20_
 
   - 您必須同時被指派下列管理角色，才能在使用者的信箱中搜尋並刪除郵件：
     
-      - **信箱搜尋：** 這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+      - **信箱搜尋：** 這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)。
     
       - **信箱匯入匯出：** 這個角色可讓您從使用者的信箱中刪除郵件。依預設，此角色不會指派給任何角色群組。若要從使用者的信箱中刪除郵件，您可以將信箱匯入匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)中的＜Add a role to a role group＞。
 

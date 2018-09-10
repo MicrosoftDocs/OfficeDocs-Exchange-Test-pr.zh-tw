@@ -138,7 +138,7 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 
 郵件會移至封存信箱中的資料夾，而該資料夾名稱與主要信箱中的來源資料夾名稱相同。如果封存信箱中不存在具有相同名稱的資料夾，則會在 \[受管理的資料夾助理員\] 移動郵件時建立該資料夾。在封存信箱中重新建立相同的資料夾階層可讓使用者輕鬆地尋找郵件。
 
-若要深入了解保留原則、保留標記和 \[移至封存\] 保留動作，請參閱[保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)。
+若要深入了解保留原則、保留標記和 \[移至封存\] 保留動作，請參閱[保留標記和保留原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。
 
 ## 預設 MRM 原則
 

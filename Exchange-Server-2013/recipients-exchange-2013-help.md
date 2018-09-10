@@ -354,7 +354,7 @@ Microsoft Exchange 收件者不是一般的收件者物件 (例如信箱、郵�
 <td><p>了解連結信箱的要求、如何建立並將它們連結到主要帳戶，及變更連結信箱的內容。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-and-manage-distribution-groups-exchange-2013-help.md">建立並管理通訊群組</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">建立並管理通訊群組</a></p></td>
 <td><p>了解如何建立並管理通訊群組，以及建利組織的群組命名原則。</p></td>
 </tr>
 <tr class="odd">
@@ -366,19 +366,19 @@ Microsoft Exchange 收件者不是一般的收件者物件 (例如信箱、郵�
 <td><p>了解如何建立動態通訊群組並管理動態通訊群組內容，例如使用自訂屬性及其他判定成員資格的內容。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-contacts-exchange-2013-help.md">管理郵件連絡人</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-contacts">管理郵件連絡人</a></p></td>
 <td><p>了解如何建立並管理郵件連絡人。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-mail-users-exchange-2013-help.md">管理郵件使用者</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-users">管理郵件使用者</a></p></td>
 <td><p>了解如何建立並管理郵件使用者。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-and-manage-room-mailboxes-exchange-2013-help.md">建立及管理會議室信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-room-mailboxes">建立及管理會議室信箱</a></p></td>
 <td><p>了解如何建立會議室信箱並管理會議室信箱內容，例如啟用週期性會議以及設定預約與排程選項。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-equipment-mailboxes-exchange-2013-help.md">管理設備信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-equipment-mailboxes">管理設備信箱</a></p></td>
 <td><p>了解如何建立設備信箱、設定預約與排程選項，以及管理其他信箱內容。</p></td>
 </tr>
 <tr class="odd">

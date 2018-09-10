@@ -73,7 +73,7 @@ _**上次修改主題的時間：** 2015-03-13_
 
 ## 其他資訊
 
-  - 若要深入了解單一項目復原，請參閱[可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)。若要復原之使用者所清除之前已刪除的項目保留期間的郵件到期，請參閱[復原刪除的郵件使用者的信箱](recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md)。
+  - 若要深入了解單一項目復原，請參閱[可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)。若要復原之使用者所清除之前已刪除的項目保留期間的郵件到期，請參閱[復原刪除的郵件使用者的信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)。
 
   - 如果信箱處於就地保留或訴訟資料暫留功能，可復原的項目\] 資料夾中的郵件會保留直到保留期間到期。若無限制保留持續時間，則會保留項目，直到移除保留或變更的保留期間。
 

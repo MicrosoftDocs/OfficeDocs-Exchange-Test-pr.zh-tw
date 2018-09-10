@@ -114,7 +114,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <td><p><a href="discovery-management-exchange-2013-help.md">探索管理</a></p>
 
 > [!NOTE]  
-> 根據預設，探索管理角色群組沒有任何成員。沒有使用者 (包括系統管理員) 擁有搜尋信箱的必要權限。如需詳細資訊，請參閱<a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange 中指派 eDiscovery 權限</a>。
+> 根據預設，探索管理角色群組沒有任何成員。沒有使用者 (包括系統管理員) 擁有搜尋信箱的必要權限。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Exchange 中指派 eDiscovery 權限</a>。
 
 
 

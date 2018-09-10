@@ -28,7 +28,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 
 
 
-關於與郵件使用者相關的其他管理工作，請參閱[管理郵件使用者](manage-mail-users-exchange-2013-help.md)。
+關於與郵件使用者相關的其他管理工作，請參閱[管理郵件使用者](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-users)。
 
 ## 開始之前有哪些須知？
 

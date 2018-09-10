@@ -51,7 +51,7 @@ _**上次修改主題的時間：** 2014-08-27_
       - 在 \[**信箱**\] 頁面中修改的信箱搜尋。您可以搜尋所有信箱或選取要都搜尋的特定錯誤。
         
         > [!IMPORTANT]  
-        > 您無法使用<strong>搜尋所有信箱</strong>] 選項將所有信箱設為保留Exchange 2013 Mailbox server 上。若要建立就地保留，您必須選取<strong>指定信箱搜尋</strong>。如需詳細資訊，請參閱<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">建立或移除就地保留</a>。
+        > 您無法使用<strong>搜尋所有信箱</strong>] 選項將所有信箱設為保留Exchange 2013 Mailbox server 上。若要建立就地保留，您必須選取<strong>指定信箱搜尋</strong>。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/create-or-remove-in-place-holds">建立或移除就地保留</a>。
     
       - 在 \[**搜尋查詢**\] 頁面中修改下列欄位：
         

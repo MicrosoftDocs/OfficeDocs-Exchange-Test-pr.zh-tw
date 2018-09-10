@@ -23,7 +23,7 @@ _**上次修改主題的時間：** 2016-03-18_
 
 
 > [!CAUTION]  
-> 您應該啟用 DLP 原則以測試模式執行它們在實際執行環境之前。期間這類測試，建議您設定範例使用者信箱並傳送測試郵件之測試原則以確認結果。如需測試的詳細資訊，請參閱<a href="test-a-mail-flow-rule-exchange-2013-help.md">測試郵件流程規則</a>。
+> 您應該啟用 DLP 原則以測試模式執行它們在實際執行環境之前。期間這類測試，建議您設定範例使用者信箱並傳送測試郵件之測試原則以確認結果。如需測試的詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">測試郵件流程規則</a>。
 
 
 
@@ -61,7 +61,7 @@ _**上次修改主題的時間：** 2016-03-18_
 2.  按一下 \[會出現在 \[**新增**\]![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")圖示旁邊的箭號並選取**新的自訂原則**。
     
     > [!IMPORTANT]  
-    > 如果您按一下 [<strong>新增</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" />圖示，而不是箭號，您會建立以範本為基礎的新原則。如需使用範本的詳細資訊，請參閱<a href="how-to-new-dlp-data-loss-prevention-policy-template.md">從範本建立 DLP 原則</a>。
+    > 如果您按一下 [<strong>新增</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="加入圖示" alt="加入圖示" />圖示，而不是箭號，您會建立以範本為基礎的新原則。如需使用範本的詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template">從範本建立 DLP 原則</a>。
 
 
 3.  在 \[**新的自訂原則**\] 頁面上完成下列欄位：
@@ -100,5 +100,5 @@ DLP 原則範本是一種功能可協助您的 Microsoft Exchange 設計並套�
 
 [Exchange Online 中的郵件流程規則 (傳輸規則)](https://technet.microsoft.com/zh-tw/library/jj919238\(v=exchg.150\)) Exchange Online
 
-[與傳輸規則整合敏感資訊規則](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[與傳輸規則整合敏感資訊規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 

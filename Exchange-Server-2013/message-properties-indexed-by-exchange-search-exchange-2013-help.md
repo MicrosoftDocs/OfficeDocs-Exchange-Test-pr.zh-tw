@@ -503,7 +503,7 @@ Exchange 搜尋可將許多項目內容編制為索引，包括電子郵件的�
 
 **索引化內容的備註：** 
 
-  - **設為可查詢的屬性**可用於搜尋用戶端等Outlook Web App`property:value`成對，例如`from:bsuneja@cotoso.com`AQS 查詢。就地 ediscovery （英文） 也在搜尋查詢中使用上表所列的設為可查詢屬性的子集。如需這些屬性的清單，請參閱[郵件內容和搜尋運算子就地 ediscovery （英文）](message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md)。
+  - **設為可查詢的屬性**可用於搜尋用戶端等Outlook Web App`property:value`成對，例如`from:bsuneja@cotoso.com`AQS 查詢。就地 ediscovery （英文） 也在搜尋查詢中使用上表所列的設為可查詢屬性的子集。如需這些屬性的清單，請參閱[郵件內容和搜尋運算子就地 ediscovery （英文）](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators)。
 
   - **可搜尋的內容**是不能在`property:value`配對中指定的屬性，但如果關鍵字搜尋會傳回值中任何可搜尋的屬性。例如，您無法使用`body:Contoso`搜尋字串`contoso`郵件本文中。不過，該字串的搜尋將傳回的所有項目任何可搜尋的屬性中找到的屬性。
 

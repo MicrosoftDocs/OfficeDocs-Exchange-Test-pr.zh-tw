@@ -35,11 +35,11 @@ _**上次修改主題的時間：** 2012-11-14_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [整合的通訊權限](unified-messaging-permissions-exchange-2013-help.md)主題中的「UM 信箱」項目。
 
-  - 執行這些程序之前，請確認已建立 UM SIP URI 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 執行這些程序之前，請確認已建立 UM SIP URI 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
-  - 執行這些程序之前，請確認已建立 UM 信箱原則。如需詳細步驟，請參閱[建立 UM 信箱原則](create-a-um-mailbox-policy-exchange-2013-help.md)。
+  - 執行這些程序之前，請確認已建立 UM 信箱原則。如需詳細步驟，請參閱[建立 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)。
 
-  - 執行這些程序之前，請確認現有的使用者已啟用 UM 和連結至 SIP URI 撥號對應表。如需詳細步驟，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+  - 執行這些程序之前，請確認現有的使用者已啟用 UM 和連結至 SIP URI 撥號對應表。如需詳細步驟，請參閱[啟用使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)。
 
   - 執行這些程序之前，請先確認將指派給使用者的 SIP 位址有效且已正確格式化。
 

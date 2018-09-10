@@ -97,7 +97,7 @@ In-Place eDiscovery documentation
 
 為了讓經過授權的使用者執行就地 eDiscovery，您必須將他們新增至[探索管理](discovery-management-exchange-2013-help.md)角色群組。此角色群組包含兩個管理角色，一個是[信箱搜尋角色](mailbox-search-role-exchange-2013-help.md)，它允許使用者執行就地 eDiscovery，另一個是[法律保留角色](legal-hold-role-exchange-2013-help.md)，它允許使用者將信箱設為就地保留或訴訟暫止狀態。
 
-依預設，執行就地 eDiscovery 相關工作的權限未指派給任何使用者或 Exchange 系統管理員。Exchange 系統管理員為組織管理群組的成員，能將使用者新增至探索管理角色群組，並建立自訂角色群組，將探索管理員的範圍縮小到一部分使用者。若要深入了解將使用者新增至探索管理角色群組，請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+依預設，執行就地 eDiscovery 相關工作的權限未指派給任何使用者或 Exchange 系統管理員。Exchange 系統管理員為組織管理群組的成員，能將使用者新增至探索管理角色群組，並建立自訂角色群組，將探索管理員的範圍縮小到一部分使用者。若要深入了解將使用者新增至探索管理角色群組，請參閱[Exchange 中指派 eDiscovery 權限](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)。
 
 
 > [!IMPORTANT]  
@@ -158,7 +158,7 @@ OAuth 驗證在 Exchange 混合部署支援下列的 eDiscovery 案例：
 
   - **停用電子郵件傳遞：** 雖然使用者會出現在 Exchange 通訊清單中，但無法將電子郵件傳送至探索信箱。使用傳遞限制可禁止將電子郵件傳遞至探索信箱，這可保留複製到探索信箱的搜尋結果的完整性。
 
-Exchange 2013 安裝程式會建立一個探索信箱，其顯示名稱為 **\[探索搜尋信箱\]**。您可以使用命令介面建立其他的探索信箱。依預設，您建立的探索信箱不會指派任何信箱存取權限。您可以指派完整存取權限給探索管理員，以存取複製到探索信箱的郵件。如需詳細資訊，請參閱[建立探索信箱](create-a-discovery-mailbox-exchange-2013-help.md)。
+Exchange 2013 安裝程式會建立一個探索信箱，其顯示名稱為 **\[探索搜尋信箱\]**。您可以使用命令介面建立其他的探索信箱。依預設，您建立的探索信箱不會指派任何信箱存取權限。您可以指派完整存取權限給探索管理員，以存取複製到探索信箱的郵件。如需詳細資訊，請參閱[建立探索信箱](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox)。
 
 就地 eDiscovery 也會使用顯示名稱為 **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}** 的系統信箱，以保存就地 eDiscovery 中繼資料。系統信箱在 EMC 或 Exchange 通訊清單中不會顯示。在內部部署組織中，在移除就地 eDiscovery 系統信箱所在的信箱資料庫之前，您必須先將信箱移至其他信箱資料庫。如果信箱已移除或已損壞，則在重新建立信箱之前，探索管理員將無法執行 eDiscovery 搜尋。如需詳細資訊，請參閱[重新建立探索系統信箱](re-create-the-discovery-system-mailbox-exchange-2013-help.md)。
 
@@ -166,7 +166,7 @@ Exchange 2013 安裝程式會建立一個探索信箱，其顯示名稱為 **\[
 
 ## 使用就地 eDiscovery
 
-已新增至探索管理角色群組的使用者可執行就地 eDiscovery 搜尋。您能使用 EAC 中的 Web 介面來執行搜尋。這會讓如記錄管理員、法務人員，或法律與人力資源專家等非技術使用者更容易使用就地 eDiscovery。您也可以使用命令介面來執行搜尋。如需詳細資訊，請參閱[建立就地 eDiscovery 搜尋](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+已新增至探索管理角色群組的使用者可執行就地 eDiscovery 搜尋。您能使用 EAC 中的 Web 介面來執行搜尋。這會讓如記錄管理員、法務人員，或法律與人力資源專家等非技術使用者更容易使用就地 eDiscovery。您也可以使用命令介面來執行搜尋。如需詳細資訊，請參閱[建立就地 eDiscovery 搜尋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
 > [!NOTE]  
 > 在內部部署組織中，您可以使用就地 eDiscovery 來搜尋位於 Exchange 2013 Mailbox Server 上的信箱。若要搜尋位於 Exchange 2010 Mailbox Server 的信箱，請使用 Exchange 2010 伺服器上的多信箱搜尋。<br />
@@ -267,7 +267,7 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
 ![將 eDiscovery 搜尋結果匯出至 PST 檔案](images/Dd298021.4ddca8af-1af5-4cb2-852c-e3a292099a58(EXCHG.150).gif "將 eDiscovery 搜尋結果匯出至 PST 檔案")
 
-將搜尋結果匯出成 PST 檔案之後，您或其他使用者可以在 Outlook 中開啟這些結果，以檢閱或列印搜尋結果中傳回的訊息。如需詳細資訊，請參閱[將 eDiscovery 搜尋結果匯出至 PST 檔](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)。
+將搜尋結果匯出成 PST 檔案之後，您或其他使用者可以在 Outlook 中開啟這些結果，以檢閱或列印搜尋結果中傳回的訊息。如需詳細資訊，請參閱[將 eDiscovery 搜尋結果匯出至 PST 檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/export-search-results)。
 
 ## 不同的搜尋結果
 
@@ -331,7 +331,7 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 
 2.  將會由該信箱使用者寄送或接收的郵件之郵件大小限制設定在非常低的值，例如 1 KB。這能防止該信箱接收或傳送新郵件。如需詳細資訊，請參閱[設定信箱的郵件大小上限](configure-message-size-limits-for-a-mailbox-exchange-2013-help.md)。
 
-3.  設定信箱的傳遞限制，如此無人能寄送郵件至該信箱。如需詳細資訊，請參閱[設定信箱的郵件傳遞限制](configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md)。
+3.  設定信箱的傳遞限制，如此無人能寄送郵件至該信箱。如需詳細資訊，請參閱[設定信箱的郵件傳遞限制](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions)。
 
 
 > [!IMPORTANT]  
@@ -441,15 +441,15 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange 中指派 eDiscovery 權限</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Exchange 中指派 eDiscovery 權限</a></p></td>
 <td><p>了解如何授權讓使用者在 EAC 中使用就地 eDiscovery 來搜尋 Exchange 信箱。若將使用者加入探索管理角色群組，則此人也可以使用 SharePoint 2013 和 SharePoint Online 的 eDiscovery 中心來搜尋 Exchange 信箱。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-a-discovery-mailbox-exchange-2013-help.md">建立探索信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox">建立探索信箱</a></p></td>
 <td><p>了解如何使用命令介面來建立探索信箱和指派存取權限。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-an-in-place-ediscovery-search-exchange-2013-help.md">建立就地 eDiscovery 搜尋</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search">建立就地 eDiscovery 搜尋</a></p></td>
 <td><p>了解如何建立就地 eDiscovery 搜尋，以及如何估計和預覽 eDiscovery 搜尋結果。</p></td>
 </tr>
 <tr class="even">
@@ -473,7 +473,7 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 <td><p>了解如何將 eDiscovery 搜尋結果複製到探索信箱。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md">將 eDiscovery 搜尋結果匯出至 PST 檔</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/export-search-results">將 eDiscovery 搜尋結果匯出至 PST 檔</a></p></td>
 <td><p>了解如何將 eDiscovery 搜尋結果匯出至 PST 檔案。</p></td>
 </tr>
 <tr class="even">
@@ -493,7 +493,7 @@ EAC 中的 **\[就地 eDiscovery & 保留\]** 精靈讓您能建立就地 eDisco
 <td><p>如果探索信箱大於 50 GB，使用此程序縮減它的大小。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md">刪除並重新建立 Exchange 中預設的探索信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox">刪除並重新建立 Exchange 中預設的探索信箱</a></p></td>
 <td><p>了解如何刪除預設的探索信箱、重新建立以及對其重新指派權限。如果信箱超過 50 GB 的限制，而且您並不需要這些搜尋結果，可以使用此程序。</p></td>
 </tr>
 <tr class="odd">

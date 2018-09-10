@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2013-03-08_
 
 建立整合通訊 (UM) 自動語音應答後，由總機接聽人工運算子的外部電話號碼的來電會由自動語音應答接聽電話。不同於其他的整合通訊元件，例如 UM 撥號對應表計劃及 UM IP 閘道器\] 中，您不需要建立 UM 自動語音應答。但是，自動語音應答協助內部及外部來電者尋找使用者或部門的組織中存在，將來電轉接至它們。
 
-如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](um-auto-attendant-procedures-exchange-2013-help.md)。
+如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)。
 
 ## 開始之前有哪些須知？
 
@@ -29,7 +29,7 @@ _**上次修改主題的時間：** 2013-03-08_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [整合的通訊權限](unified-messaging-permissions-exchange-2013-help.md)主題中的「UM 自動語音應答」項目。
 
-  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。 如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。 如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 

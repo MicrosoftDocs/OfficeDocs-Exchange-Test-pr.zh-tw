@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2013-04-19_
 
 您也可以建立假日排程中現有的假日排程。當您建立多個假日排程時，整合通訊可讓您重疊排定的假日時間。例如，您可以定義從年 12 月 15 日至年 12 月 31 當您的組織將會關閉的情況下，但您可以定義其他的假日排程和年 12 月第 24 透過年 12 月 26 假日排程。來電者撥入時的自動語音應答從年 12 月 15 日至 23rd 年 12 月和年 12 月 27 透過年 12 月 31 日，他們將出現您指定此排程的假日問候語。例如，"我們是目前已關閉的情況。"來電者撥入時的自動語音應答從年 12 月第 24 透過年 12 月 26 日，他們將出現與另一個假日問候語，例如"我們目前關閉 for business，讓我們員工可以使用其系列享受假日。 」
 
-如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](um-auto-attendant-procedures-exchange-2013-help.md)。
+如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)。
 
 ## 開始之前有哪些須知？
 
@@ -29,7 +29,7 @@ _**上次修改主題的時間：** 2013-04-19_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [整合的通訊權限](unified-messaging-permissions-exchange-2013-help.md)主題中的「UM 自動語音應答」項目。
 
-  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
   - 執行這些程序之前，請確認已建立 UM 自動語音應答。如需詳細步驟，請參閱[建立 UM 自動語音應答](create-a-um-auto-attendant-exchange-2013-help.md)。
 

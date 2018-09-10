@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 您正在閱讀召集主旨或 Microsoft Exchange 所使用的技術的概念與程序性主題的集合。您可以直接從目錄左窗格中，從另一個說明主題、 從搜尋結果或自己自訂我的最愛主題的清單中的連結存取每個主題。
 
-其他關於 Exchange 文件的資訊位於[第三方著作權](third-party-copyright-notices-exchange-2013-help.md)。
+其他關於 Exchange 文件的資訊位於[第三方著作權](https://docs.microsoft.com/zh-tw/exchange/about-exchange-documentation/third-party-copyright-notices)。
 
 ## 可找到 Exchange 文件的位置
 
@@ -43,5 +43,5 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - [Microsoft Exchange Server 支援](https://go.microsoft.com/fwlink/p/?linkid=283967)  查看多個版本的 Exchange 支援資源此頁面。
 
-  - [殘障人士的協助工具](accessibility-for-people-with-disabilities-exchange-2013-help.md)   這個主題提供使 Microsoft Exchange 更容易讓行動不便人士使用的功能、產品及服務等重要資訊。
+  - [殘障人士的協助工具](https://docs.microsoft.com/zh-tw/exchange/about-exchange-documentation/accessibility)   這個主題提供使 Microsoft Exchange 更容易讓行動不便人士使用的功能、產品及服務等重要資訊。
 

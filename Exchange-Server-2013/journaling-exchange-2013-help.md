@@ -86,7 +86,7 @@ Exchange 2013 提供下列日誌記錄選項：
 
   - **高階日誌記錄**   高階日誌記錄讓日誌代理程式利用日誌規則執行更細微的日誌記錄。有別於記錄信箱資料庫上所有的信箱，您可以藉由記錄個別收件者或通訊群組成員，設定符合組織需求的日誌規則。您必須具備 Exchange 企業用戶端存取使用權 (CAL)，才能使用高階日誌記錄。
 
-當您在信箱資料庫上啟用標準日誌記錄時，此資訊會儲存在 Active Directory 中，供日誌代理程式讀取。相同地，以高階日誌記錄設定的日誌規則，也同樣儲存在 Active Directory，並由日誌代理程式加以應用。如需如何設定標準和高階日誌記錄的相關資訊，請參閱[管理日誌](manage-journaling-exchange-2013-help.md)。
+當您在信箱資料庫上啟用標準日誌記錄時，此資訊會儲存在 Active Directory 中，供日誌代理程式讀取。相同地，以高階日誌記錄設定的日誌規則，也同樣儲存在 Active Directory，並由日誌代理程式加以應用。如需如何設定標準和高階日誌記錄的相關資訊，請參閱[管理日誌](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/journaling/manage-journaling)。
 
 為什麼日誌記錄很重要？
 

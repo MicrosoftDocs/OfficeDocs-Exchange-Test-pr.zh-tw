@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2018-04-30_
 
 **摘要：**  如何將 Exchange 2010 公用資料夾移至 Office 365 群組。
 
-透過稱為*批次移轉*程序，則可以移到 Office 365 群組的部分或所有的 Exchange 2010 公用資料夾。群組是具有某些優點透過公用資料夾的 microsoft 提供新的共同作業。請參閱[將公用資料夾移轉至 Office 365 群組](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)如需公用資料夾及群組，並原因為何您的組織可能有或可能不會受益於切換到群組之間的差異的概觀。
+透過稱為*批次移轉*程序，則可以移到 Office 365 群組的部分或所有的 Exchange 2010 公用資料夾。群組是具有某些優點透過公用資料夾的 microsoft 提供新的共同作業。請參閱[將公用資料夾移轉至 Office 365 群組](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups)如需公用資料夾及群組，並原因為何您的組織可能有或可能不會受益於切換到群組之間的差異的概觀。
 
 本文包含執行實際的批次移轉 Exchange 2010 公用資料夾的逐步程序。
 

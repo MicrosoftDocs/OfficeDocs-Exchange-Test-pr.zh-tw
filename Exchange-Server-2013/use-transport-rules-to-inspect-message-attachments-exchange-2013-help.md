@@ -29,17 +29,17 @@ _**上次修改主題的時間：** 2015-03-27_
 
   - 建立通知，當使用者傳送的郵件符合傳輸規則時，就向使用者發出警示。
 
-  - 封鎖所有包含附件的郵件。如需範例，請參閱[常見的附件封鎖案例](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)。
+  - 封鎖所有包含附件的郵件。如需範例，請參閱[常見的附件封鎖案例](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)。
 
 Exchange 管理員可以移至 **\[Exchange 系統管理中心\]** \> **\[郵件流程\]** \> **\[規則\]** 來建立傳輸規則。您必須已獲指派權限，才能執行此程序。開始建立新規則之後，您可以在 **\[套用此規則...\]** 下按一下 **\[更多選項\]** \> **\[任何附件\]**，以查看附件相關條件的完整清單。下圖顯示附件相關選項。
 
 ![選取附件相關規則的對話方塊](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "選取附件相關規則的對話方塊")
 
-如需傳輸規則的詳細資訊 (包括您可以選擇的所有條件和動作)，請參閱[郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)。＜[設定 EOP 的最佳作法](https://technet.microsoft.com/zh-tw/library/jj723164\(v=exchg.150\))＞中提供的傳輸規則最佳作法對 Exchange Online Protection (EOP) 和混合式客戶有益。如果您已準備好開始建立規則，請參閱＜[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)＞。
+如需傳輸規則的詳細資訊 (包括您可以選擇的所有條件和動作)，請參閱[郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)。＜[設定 EOP 的最佳作法](https://technet.microsoft.com/zh-tw/library/jj723164\(v=exchg.150\))＞中提供的傳輸規則最佳作法對 Exchange Online Protection (EOP) 和混合式客戶有益。如果您已準備好開始建立規則，請參閱＜[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)＞。
 
 ## 檢查附件內的內容
 
-您可以利用下表的傳輸規則條件來檢查郵件的附件內容。這些條件只檢查附件的前 150 KB。若要在檢查郵件時開始使用這些條件，您必須將這些條件新增至傳輸規則。若要了解建立或變更規則，請參閱＜[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)＞。
+您可以利用下表的傳輸規則條件來檢查郵件的附件內容。這些條件只檢查附件的前 150 KB。若要在檢查郵件時開始使用這些條件，您必須將這些條件新增至傳輸規則。若要了解建立或變更規則，請參閱＜[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)＞。
 
 
 <table>
@@ -158,7 +158,7 @@ Exchange 管理員可以移至 **\[Exchange 系統管理中心\]** \> **\[郵件
 
 ## 檢查附件的檔案屬性
 
-下列傳輸規則條件可檢查郵件所附加檔案的屬性。若要在檢查郵件時開始使用這些條件，您必須將這些條件新增至傳輸規則。此處列出可於傳輸規則範圍內檢查可執行程式碼的受支援檔案類型清單。如需建立或變更規則的詳細資訊，請參閱[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)。
+下列傳輸規則條件可檢查郵件所附加檔案的屬性。若要在檢查郵件時開始使用這些條件，您必須將這些條件新增至傳輸規則。此處列出可於傳輸規則範圍內檢查可執行程式碼的受支援檔案類型清單。如需建立或變更規則的詳細資訊，請參閱[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
 
 <table>

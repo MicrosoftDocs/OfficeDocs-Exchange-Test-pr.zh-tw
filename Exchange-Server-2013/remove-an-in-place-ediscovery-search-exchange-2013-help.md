@@ -30,7 +30,7 @@ _**上次修改主題的時間：** 2014-07-14_
 
   - 預估完成時間： 2-5 分鐘。
 
-  - 若要移除已啟用的就地保留就地 eDiscovery 搜尋，您必須先移除就地保留搜尋。如需詳細資訊，請參閱[建立或移除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
+  - 若要移除已啟用的就地保留就地 eDiscovery 搜尋，您必須先移除就地保留搜尋。如需詳細資訊，請參閱[建立或移除就地保留](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [郵件原則及符合性權限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主題中的「就地 eDiscovery」項目。
 

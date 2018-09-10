@@ -57,7 +57,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 當您在 EAC 中的 \[**稽核**\] 頁面上執行任何下列報告時，結果會顯示在報告的詳細資料窗格中。
 
-  - **執行非擁有者信箱存取報告**  使用這份報告找出已經由擁有信箱的人以外的某人來存取信箱。如需詳細資訊，請參閱[執行非擁有者信箱存取報告](run-a-non-owner-mailbox-access-report-exchange-online-help.md)。
+  - **執行非擁有者信箱存取報告**  使用這份報告找出已經由擁有信箱的人以外的某人來存取信箱。如需詳細資訊，請參閱[執行非擁有者信箱存取報告](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)。
 
   - **執行系統管理員角色群組報告**   使用這個報告將搜尋對於系統管理員角色群組所做的變更。如需詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
 

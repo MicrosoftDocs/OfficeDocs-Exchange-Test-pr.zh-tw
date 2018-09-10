@@ -41,13 +41,13 @@ UM 撥號對應表會將電話撥號對應表。電話語音撥號對應表被�
 
   - 只使用分機號碼，便能夠呼叫或傳送語音信箱給撥號對應表中其他成員的能力。
 
-如需如何為使用者啟用整合通訊的相關資訊，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+如需如何為使用者啟用整合通訊的相關資訊，請參閱[啟用使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)。
 
 UM 撥號對應表會用於整合通訊以確保是唯一的使用者電話分機。在某些電話語音的網路，多個 Pbx 或 IP Pbx 存在。在這些電話語音的網路，可能是兩個使用者具有相同的電話分機號碼。UM 撥號對應表解決所發生此情況。放入兩個不同 UM 撥號對應表的兩個使用者進行其副檔名唯一。
 
 ## 撥號對應表如何運作
 
-當您使用整合通訊整合的電話語音網路時，必須有一個或多個呼叫 Voice over IP (VoIP) 閘道或 IP Pbx 連線至您 IP 封包的電話語音網路的硬體裝置交換網路。VoIP 閘道器的資料交換通訊協定如 IP 電話語音網路中找到之 PBX 從轉換電路切換型通訊協定。IP Pbx 也會轉換成資料交換的通訊協定的電路切換型通訊協定。工作階段邊界控制器 (Sbc) 可讓您透過公用或私人 WAN 一起連接兩種 IP 型網路和 UM 混合或線上部署中找到。UM IP 閘道器代表每個 VoIP 閘道、 IP PBX 或工作階段邊界控制器 (SBC) 在組織中。如需 UM IP 閘道器的詳細資訊，請參閱[UM IP 閘道](um-ip-gateways-exchange-2013-help.md)。
+當您使用整合通訊整合的電話語音網路時，必須有一個或多個呼叫 Voice over IP (VoIP) 閘道或 IP Pbx 連線至您 IP 封包的電話語音網路的硬體裝置交換網路。VoIP 閘道器的資料交換通訊協定如 IP 電話語音網路中找到之 PBX 從轉換電路切換型通訊協定。IP Pbx 也會轉換成資料交換的通訊協定的電路切換型通訊協定。工作階段邊界控制器 (Sbc) 可讓您透過公用或私人 WAN 一起連接兩種 IP 型網路和 UM 混合或線上部署中找到。UM IP 閘道器代表每個 VoIP 閘道、 IP PBX 或工作階段邊界控制器 (SBC) 在組織中。如需 UM IP 閘道器的詳細資訊，請參閱[UM IP 閘道](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)。
 
 整合的通訊會要求您建立至少一個 UM 撥號對應表。是否在組織中建立一個或多個撥號對應表、 所有 Exchange 伺服器會接聽來電。也必須與撥號對應表相關聯的單一或多個 UM IP 閘道。在內部部署和混合部署安裝您的 Exchange 伺服器並建立 UM IP 閘道的關聯之後，所有 Exchange 伺服器會都接聽來電的所有撥號對應表。不過，內部部署或混合式部署中，當您正在將整合 Exchange 及 Lync Server\]，您必須建立 SIP URI 撥號對應表。
 

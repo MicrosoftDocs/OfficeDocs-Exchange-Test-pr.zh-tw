@@ -60,7 +60,7 @@ For more information
 
   -  [Exchange Online 中的郵件流程規則 (傳輸規則)](https://technet.microsoft.com/zh-tw/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  [管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
     
   -  [原則及符合性命令指令程式](https://technet.microsoft.com/zh-tw/library/dd298082\(v=exchg.150\))
 
@@ -70,7 +70,7 @@ Microsoft 提供了許多 DLP 原則。此為使用 DLP 解決方案的最簡易
 
   - [Exchange 中提供的 DLP 原則範本](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)
 
-  - [從範本建立 DLP 原則](how-to-new-dlp-data-loss-prevention-policy-template.md)
+  - [從範本建立 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)
 
 ## 相關資訊
 

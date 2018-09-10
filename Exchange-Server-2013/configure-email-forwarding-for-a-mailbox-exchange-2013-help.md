@@ -50,9 +50,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 如果要將郵件轉寄給組織外部的地址呢？或是將郵件轉寄給多位收件者呢？當然沒問題！
 
-  - **外部地址**建立郵件連絡人，然後在上述步驟中的 \[選取收件者\] 頁面上選取郵件連絡人。需要了解如何建立郵件連絡人嗎？請參閱＜[管理郵件連絡人](manage-mail-contacts-exchange-2013-help.md)＞。
+  - **外部地址**建立郵件連絡人，然後在上述步驟中的 \[選取收件者\] 頁面上選取郵件連絡人。需要了解如何建立郵件連絡人嗎？請參閱＜[管理郵件連絡人](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-contacts)＞。
 
-  - **多位收件者**建立通訊群組，並將收件者加入其中，然後在上述步驟中的 \[選取收件者\] 頁面上選取該郵件連絡人。需要了解如何建立郵件連絡人嗎？請參閱＜[建立並管理通訊群組](create-and-manage-distribution-groups-exchange-2013-help.md)＞。
+  - **多位收件者**建立通訊群組，並將收件者加入其中，然後在上述步驟中的 \[選取收件者\] 頁面上選取該郵件連絡人。需要了解如何建立郵件連絡人嗎？請參閱＜[建立並管理通訊群組](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)＞。
 
 ## 如何才能了解這是否正常運作？
 

@@ -17,7 +17,7 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2016-12-09_
 
-您可以設定階層式通訊錄 (HAB)，這是 Microsoft Outlook 2010 或更新版本中使用者可用的功能。透過 HAB，使用者可以使用以階層或管理結構為基礎的組織階層，尋找其 Exchange 組織中的收件者。若要深入瞭解 HAB，請參閱[階層式通訊錄](hierarchical-address-books-exchange-2013-help.md)。
+您可以設定階層式通訊錄 (HAB)，這是 Microsoft Outlook 2010 或更新版本中使用者可用的功能。透過 HAB，使用者可以使用以階層或管理結構為基礎的組織階層，尋找其 Exchange 組織中的收件者。若要深入瞭解 HAB，請參閱[階層式通訊錄](https://docs.microsoft.com/zh-tw/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
 ## 開始之前有哪些須知？
 
@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 您無法使用 Exchange 系統管理中心 (EAC) 執行此程序。您必須使用命令介面。
 
-  - 在開始之前，請閱讀主題[階層式通訊錄](hierarchical-address-books-exchange-2013-help.md)。您應該瞭解 HAB 是否適用於您的 Exchange 組織。
+  - 在開始之前，請閱讀主題[階層式通訊錄](https://docs.microsoft.com/zh-tw/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。您應該瞭解 HAB 是否適用於您的 Exchange 組織。
 
   - 瞭解目前如何在 Exchange 組織中設定組織單位 (OU)、群組、使用者和連絡人。
 
@@ -92,7 +92,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 對於這個範例，將會對 HAB 建立 OU 呼叫的 HAB。組織的網域名稱為 Contoso-dom，而 Contoso,Ltd 是階層中最上層組織的名稱 (「根組織」)。名稱為 Corporate Office、Product Support Organization 和 Sales & Marketing Organization 的次級群組會在 Contoso,Ltd 下作為子組織而建立。此外，群組 Human Resources、Accounting Group 和 Administration Group 則會在 Corporate Office 下作為子組織而建立。
 
-如需建立通訊群組的詳細資訊，請參閱[建立並管理通訊群組](create-and-manage-distribution-groups-exchange-2013-help.md)。
+如需建立通訊群組的詳細資訊，請參閱[建立並管理通訊群組](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)。
 
 1.  在 Contoso 組織中建立 OU 命名的 HAB。您可以使用 Active Directory Users and Computers，或在命令提示字元中輸入下列內容。
     
@@ -108,7 +108,7 @@ _**上次修改主題的時間：** 2016-12-09_
 2.  對 HAB 建立根通訊群組 Contoso,Ltd。
     
     > [!NOTE]  
-    > 針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="create-and-manage-distribution-groups-exchange-2013-help.md">建立並管理通訊群組</a>。
+    > 針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">建立並管理通訊群組</a>。
     
         New-DistributionGroup -Name "Contoso,Ltd" -DisplayName "Contoso,Ltd" -Alias "ContosoRoot" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "ContosoRoot" -Type "Distribution"
 
@@ -119,7 +119,7 @@ _**上次修改主題的時間：** 2016-12-09_
 4.  對 HAB 中的其他層級建立通訊群組。對於這個範例，您會建立下列群組：Corporate Office、Product Support Organization、Sales & Marketing Organization、Human Resources、Accounting Group 和 Administration Group。這個範例會建立通訊群組 Corporate Office。
     
     > [!NOTE]  
-    > 針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="create-and-manage-distribution-groups-exchange-2013-help.md">建立並管理通訊群組</a>。
+    > 針對本主題的目的，會提供命令介面範例。不過，您也可以使用 EAC 建立通訊群組。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">建立並管理通訊群組</a>。
     
         New-DistributionGroup -Name "Corporate Office" -DisplayName "Corporate Office" -Alias "CorporateOffice" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "CorporateOffice" -Type "Distribution"
 

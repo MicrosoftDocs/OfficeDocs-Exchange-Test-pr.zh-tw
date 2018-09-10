@@ -60,17 +60,17 @@ Calling or Called Party Identification
 
 主要電話系統變得更複雜一段時間及可使用整合通訊如果新增 VoIP 閘道。不過，即使使用支援的 VoIP 閘道一些較不複雜的系統可能無法運作。
 
-  - <strong>PBX:</strong> 舊版的 PBX 會切換通話的電話語音裝置的電話語音或電路切換型網路。舊版的 PBX 是 PBX 都不會有的網路介面卡且無法傳遞 IP 封包。因為他們無法傳遞 IP 封包，某些企業版及組織已取代舊版的 Pbx 與 IP Pbx。如需支援的整合通訊的 Pbx 的清單，請參閱[Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+  - <strong>PBX:</strong> 舊版的 PBX 會切換通話的電話語音裝置的電話語音或電路切換型網路。舊版的 PBX 是 PBX 都不會有的網路介面卡且無法傳遞 IP 封包。因為他們無法傳遞 IP 封包，某些企業版及組織已取代舊版的 Pbx 與 IP Pbx。如需支援的整合通訊的 Pbx 的清單，請參閱[Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
     
     大部分及較大-中型公司使用 Pbx。PBX 可讓使用者或共用加速被視為外部的 PBX 電話通話的外部的行數 PBX 的訂閱者。PBX 是比給予每位使用者在公司外部的專用的電話線的更加較不昂貴的解決方案。電話、 傳真機、 數據機及許多其他通訊裝置，以及可以連接至 PBX。
     
     PBX 設備通常是安裝在組織的內部部署，並連接散位於站上與電話公司間的通話。限制外部行數，又稱為主幹行、 一般會針對撥出及接聽通話的外部商務，來自 PSTN 等外部來源。
     
-    若要讓舊版的 PBX 以便用於整合通訊，您必須部署支援的 VoIP 閘道。如需支援的 VoIP 閘道的清單，請參閱[Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+    若要讓舊版的 PBX 以便用於整合通訊，您必須部署支援的 VoIP 閘道。如需支援的 VoIP 閘道的清單，請參閱[Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
 
   - <strong>IP PBX:</strong> IP PBX 是有支援 IP 通訊協定的網路介面卡 PBX。它是電話的一段切換通常位於組織或商務而不是電話的電話的公司辦公室正在位於設備。有兩種 IP Pbx： 繁體中文 IP Pbx 和混合式 IP Pbx。繁體中文 IP Pbx 及混合式 IP Pbx 支援 IP 通訊協定將語音交談中封包傳送至 VoIP 型電話。不過，混合式 IP Pbx 也會連線傳統類比和數位散。
     
-    IP Pbx 較為經常管理比舊版的 pbx 設定因為系統管理員可以更輕鬆地設定 IP PBX 服務使用網際網路瀏覽器或另一種 IP 型的工具。此外，沒有其他電線、 纜線或修補程式面板有安裝。與 IP PBX，您可以移動 IP 型電話純粹拔除電話並再次將它插入新的位置。這可讓您避免將電話移從舊版的 PBX 廠商所需的高成本的服務通話。此外，擁有 IP PBX 的組織不需要維護與管理不同的電路切換型及封包切換網路所需的其他基礎結構成本可能會形成。如 IP Pbx 整合通訊所支援的清單，查看[Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+    IP Pbx 較為經常管理比舊版的 pbx 設定因為系統管理員可以更輕鬆地設定 IP PBX 服務使用網際網路瀏覽器或另一種 IP 型的工具。此外，沒有其他電線、 纜線或修補程式面板有安裝。與 IP PBX，您可以移動 IP 型電話純粹拔除電話並再次將它插入新的位置。這可讓您避免將電話移從舊版的 PBX 廠商所需的高成本的服務通話。此外，擁有 IP PBX 的組織不需要維護與管理不同的電路切換型及封包切換網路所需的其他基礎結構成本可能會形成。如 IP Pbx 整合通訊所支援的清單，查看[Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
     
     回到頁首
 
@@ -108,7 +108,7 @@ Calling or Called Party Identification
 
 您可以正確地設定 PBX、 控制多少通道或您想要設定接收來自外部來電者和多少通道的通話的行至來自來電者在貴組織內的通話投入的行。設定通道或行的數目有助於防止忙線訊號，並可讓您設定的通道或通話中心之類的應用程式專設的行數。正確地設定 PBX 是因為它減少所需的租用行數管理的通道或組織中的行符合成本效益的方法。
 
-PBX 可路由的特定撥打的電話號碼的特定的電話，讓使用者可以有其專屬的個別的電話號碼或分機號碼。這就是所謂的直接向內撥號號碼。當使用者撥打的電話號碼時，電話公司會傳送到 PBX DID 號碼使用之撥號號碼識別服務 (DNIS)。由於電話公司使用 DNIS 傳送數字，所以沒有路由傳送通話的運算子介入需要。PBX 有正確路由至發話者所撥打的號碼的電話的相關資訊。如需支援的整合通訊的 Pbx 的清單，請參閱[Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+PBX 可路由的特定撥打的電話號碼的特定的電話，讓使用者可以有其專屬的個別的電話號碼或分機號碼。這就是所謂的直接向內撥號號碼。當使用者撥打的電話號碼時，電話公司會傳送到 PBX DID 號碼使用之撥號號碼識別服務 (DNIS)。由於電話公司使用 DNIS 傳送數字，所以沒有路由傳送通話的運算子介入需要。PBX 有正確路由至發話者所撥打的號碼的電話的相關資訊。如需支援的整合通訊的 Pbx 的清單，請參閱[Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
 
 回到頁首
 
@@ -138,11 +138,11 @@ PBX 可路由的特定撥打的電話號碼的特定的電話，讓使用者可�
 
 在包含一個或多個類比或數位 Pbx 電話語音環境中，VoIP 閘道，則需要在 PBX 與Exchange 2013用戶端存取和信箱伺服器之間轉換成資料網路上找到的 IP 型通訊協定的電話語音網路上找到的電路型通訊協定。如需 VoIP 閘道器的詳細資訊，請參閱下列主題：
 
-  - [UM IP 閘道](um-ip-gateways-exchange-2013-help.md)
+  - [UM IP 閘道](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
   - [Connect a VoIP 閘道與 PBX 通訊](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)
 
-如需整合通訊支援的 VoIP 閘道清單，請參閱 [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+如需整合通訊支援的 VoIP 閘道清單，請參閱 [Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
 
 回到頁首
 
@@ -150,7 +150,7 @@ PBX 可路由的特定撥打的電話號碼的特定的電話，讓使用者可�
 
 將 IP PBX 是支援 IP 通訊協定使用乙太網路或封包切換 LAN 連線散 PBX。它會語音交談傳送 IP 或資料封包。將 IP PBX 可能會有多個介面。這些包括資料的網路介面與其他允許的電話語音或電路切換型網路連線的介面。
 
-即時的網際網路通訊協定的開發具有進行可能已順利傳送語音和傳真訊息透過資料網路。這類即時的網際網路通訊協定包含與整合通訊的 VoIP 通訊協定： 工作階段初始通訊協定 (SIP) 透過傳輸控制通訊協定 (TCP) 為語音訊息。這些通訊協定已進行可能已順利傳送語音和傳真訊息透過資料網路。即時 VoIP 通訊協定所將語音郵件傳送封包切換或資料的網路上以便傳遞順序與 timing 資料封包可以維護和控制。如果未使用下列通訊協定來維護和控制傳遞和資料封包的時機、 人員語音會細分及聲音不一致或圖像可能會出現亂碼。如需支援的整合通訊 IP Pbx 的清單，請參閱[Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+即時的網際網路通訊協定的開發具有進行可能已順利傳送語音和傳真訊息透過資料網路。這類即時的網際網路通訊協定包含與整合通訊的 VoIP 通訊協定： 工作階段初始通訊協定 (SIP) 透過傳輸控制通訊協定 (TCP) 為語音訊息。這些通訊協定已進行可能已順利傳送語音和傳真訊息透過資料網路。即時 VoIP 通訊協定所將語音郵件傳送封包切換或資料的網路上以便傳遞順序與 timing 資料封包可以維護和控制。如果未使用下列通訊協定來維護和控制傳遞和資料封包的時機、 人員語音會細分及聲音不一致或圖像可能會出現亂碼。如需支援的整合通訊 IP Pbx 的清單，請參閱[Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
 
 
 > [!NOTE]  
@@ -189,7 +189,7 @@ PBX 可路由的特定撥打的電話號碼的特定的電話，讓使用者可�
 
   - 通話使用的線路或通訊埠號碼
 
-  - 在 \[電話語音、 訊號資訊用來交換來設定、 控制、 網路上的端點之間的資訊，並結束呼叫。由整合通訊支援數種 VoIP 閘道和 IP Pbx 所使用的訊號方法使用的訊號方法而定的正在使用的裝置類型與電話公司所使用的訊號方法的類型。最重要因素是已連接到電話公司和 VoIP 閘道或 IP PBX 的裝置必須支援至少其中一個訊號方法可讓呼叫或被呼叫一起傳送和接收到來電者的廠商資訊。如需訊號支援 VoIP 閘道的組態資訊的詳細資訊，請參閱[Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+  - 在 \[電話語音、 訊號資訊用來交換來設定、 控制、 網路上的端點之間的資訊，並結束呼叫。由整合通訊支援數種 VoIP 閘道和 IP Pbx 所使用的訊號方法使用的訊號方法而定的正在使用的裝置類型與電話公司所使用的訊號方法的類型。最重要因素是已連接到電話公司和 VoIP 閘道或 IP PBX 的裝置必須支援至少其中一個訊號方法可讓呼叫或被呼叫一起傳送和接收到來電者的廠商資訊。如需訊號支援 VoIP 閘道的組態資訊的詳細資訊，請參閱[Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
 
 雖然有其他信號方法可以使用，但兩個最普遍的信號方法為：
 

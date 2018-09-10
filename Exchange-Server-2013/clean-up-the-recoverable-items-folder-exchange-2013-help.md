@@ -37,7 +37,7 @@ _**上次修改主題的時間：** 2015-09-30_
 
   - 您必須被指派下列管理角色，才能使用**Search-Mailbox**指令程式來搜尋並刪除使用者信箱中的郵件。
     
-      - **信箱搜尋：** 這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+      - **信箱搜尋：** 這個角色可讓您在組織中的多個信箱之間搜尋郵件。根據預設，系統管理員不會被指派這個角色。若要指派此角色給自己以便搜尋信箱，請將您自己增加為「探索管理」角色群組的成員。請參閱[Exchange 中指派 eDiscovery 權限](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)。
     
       - **信箱匯入 / 匯出**  此角色可讓您刪除使用者信箱的郵件。根據預設，此角色不被指派給任何角色群組。若要刪除的郵件從使用者的信箱，您可以將信箱匯入 / 匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱 「 將角色新增至角色群組 」 一節中[管理角色群組](manage-role-groups-exchange-2013-help.md) 。
 

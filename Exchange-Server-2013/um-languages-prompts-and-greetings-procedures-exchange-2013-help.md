@@ -19,9 +19,9 @@ _**上次修改主題的時間：** 2013-04-17_
 
 [安裝 UM 語言套件](install-a-um-language-pack-exchange-2013-help.md)
 
-[在 \[撥號對應表上設定的預設語言](set-the-default-language-on-a-dial-plan-exchange-2013-help.md)
+[在 \[撥號對應表上設定的預設語言](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)
 
-[自動語音應答選取的語言](select-the-language-for-an-auto-attendant-exchange-2013-help.md)
+[自動語音應答選取的語言](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language)
 
 [移除 UM 語言套件](remove-a-um-language-pack-exchange-2013-help.md)
 
@@ -29,5 +29,5 @@ _**上次修改主題的時間：** 2013-04-17_
 
 [匯入自訂提示從 Exchange 2007 到 Exchange 2013](import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)
 
-[啟用電話使用者介面使用的自訂提示錄製](enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md)
+[啟用電話使用者介面使用的自訂提示錄製](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording)
 

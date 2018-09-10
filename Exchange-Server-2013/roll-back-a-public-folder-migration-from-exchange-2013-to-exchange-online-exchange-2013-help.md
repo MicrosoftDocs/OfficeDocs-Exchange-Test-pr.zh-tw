@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2017-03-20_
     
         Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections:$false -PublicFolderMailboxesMigrationComplete:$false -PublicFoldersEnabled Local 
 
-2.  Exchange 內部部署環境中，將回復任何郵件功能的公用資料夾已由 SetMailPublicFolderExternalAddress.ps1 更新`ExternalEmailAddress` (使用中的指令碼*步驟 8： 測試並解除鎖定 Exchange Online 中的公用資料夾*[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)的)。您可以參照要識別已修改過的指令碼所建立的摘要檔案或使用產生稍早在相同的批次 migriont 程序中的檔案 OnPrem\_MEPF.xml 檔案來取得所有擁有郵件功能的公用資料夾的原始內容。
+2.  Exchange 內部部署環境中，將回復任何郵件功能的公用資料夾已由 SetMailPublicFolderExternalAddress.ps1 更新`ExternalEmailAddress` (使用中的指令碼*步驟 8： 測試並解除鎖定 Exchange Online 中的公用資料夾*[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)的)。您可以參照要識別已修改過的指令碼所建立的摘要檔案或使用產生稍早在相同的批次 migriont 程序中的檔案 OnPrem\_MEPF.xml 檔案來取得所有擁有郵件功能的公用資料夾的原始內容。
 
 3.  在 Exchange Online PowerShell 中執行下列命令來移除所有的 Exchange Online 的公用資料夾和信箱：
     
@@ -42,5 +42,5 @@ _**上次修改主題的時間：** 2017-03-20_
     
         Set-OrganizationConfig -PublicFoldersEnabled Remote
 
-5.  讓您的 Exchange Online 使用者可以存取其重新設定存取內部部署公用資料夾，請參閱[設定混合式部署的 Exchange 2013 公用資料夾](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)的指示。
+5.  讓您的 Exchange Online 使用者可以存取其重新設定存取內部部署公用資料夾，請參閱[設定混合式部署的 Exchange 2013 公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)的指示。
 

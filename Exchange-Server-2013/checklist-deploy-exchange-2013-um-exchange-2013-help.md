@@ -86,7 +86,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>建立組織所需之數量的撥號對應表。</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">建立 UM 撥號對應表</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">建立 UM 撥號對應表</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -112,9 +112,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>設定整合通訊的輸出撥接。</p></td>
-<td><p><a href="authorize-calls-using-dialing-rules-exchange-2013-help.md">授權使用撥號規則的通話</a></p>
-<p><a href="authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md">在 [撥號對應表授權之使用者的通話</a></p>
-<p><a href="authorize-calls-for-a-group-of-users-exchange-2013-help.md">授權的使用者群組的電話</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules">授權使用撥號規則的通話</a></p>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">在 [撥號對應表授權之使用者的通話</a></p>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">授權的使用者群組的電話</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -124,7 +124,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>設定及配置各個 UM 自動語音應答。</p></td>
-<td><p><a href="set-up-a-um-auto-attendant-exchange-2013-help.md">設定 UM 自動語音應答</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">設定 UM 自動語音應答</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong> </strong></p></td>
@@ -142,13 +142,13 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>建立 UM 信箱原則，或設定預設的 UM 信箱原則。</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">建立 UM 信箱原則</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">管理 UM 信箱原則</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">建立 UM 信箱原則</a></p>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">管理 UM 信箱原則</a></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
 <td><p>視需要啟用使用者的整合通訊功能並指派分機號碼和 E.164 號碼。</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">啟用使用者的語音信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">啟用使用者的語音信箱</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

@@ -124,7 +124,7 @@ Outlook 語音存取使用者可以在之前進行他們正在鎖定不在其信
 
 
 
-設定 Outlook 語音存取 PIN 需求之後，您必須建立並設定 UM 信箱原則來強制執行組織的 pin 碼需求。如需如何建立 UM 信箱原則的詳細資訊，請參閱[建立 UM 信箱原則](create-a-um-mailbox-policy-exchange-2013-help.md)。如需有關如何管理 UM 信箱原則的詳細資訊，請參閱[管理 UM 信箱原則](manage-a-um-mailbox-policy-exchange-2013-help.md)。
+設定 Outlook 語音存取 PIN 需求之後，您必須建立並設定 UM 信箱原則來強制執行組織的 pin 碼需求。如需如何建立 UM 信箱原則的詳細資訊，請參閱[建立 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)。如需有關如何管理 UM 信箱原則的詳細資訊，請參閱[管理 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)。
 
 
 > [!NOTE]  
@@ -135,5 +135,5 @@ Outlook 語音存取使用者可以在之前進行他們正在鎖定不在其信
 
 偶爾 Outlook 語音存取使用者忘記其 PIN 或移出信箱的語音信箱存取鎖定。不論執行哪項中可能需要重設已啟用 UM 之使用者的 PIN。如需詳細資訊，請參閱[重設語音信箱 pin 碼](reset-a-voice-mail-pin-exchange-2013-help.md)。
 
-您可以擷取啟用整合通訊之使用者的 PIN 資訊。傳回給您的資訊是使用加密儲存在使用者信箱的 PIN 資料來計算。這可讓您檢視使用者的 PIN 資訊，而且還會指出使用者是否已鎖定不在他們的信箱。如需詳細資訊，請參閱[擷取語音信箱的 PIN 資訊](retrieve-voice-mail-pin-information-exchange-2013-help.md)。
+您可以擷取啟用整合通訊之使用者的 PIN 資訊。傳回給您的資訊是使用加密儲存在使用者信箱的 PIN 資料來計算。這可讓您檢視使用者的 PIN 資訊，而且還會指出使用者是否已鎖定不在他們的信箱。如需詳細資訊，請參閱[擷取語音信箱的 PIN 資訊](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/retrieve-voice-mail-pin-information)。
 

@@ -22,7 +22,7 @@ _**上次修改主題的時間：** 2013-06-11_
   - 建立每個 Lync Server 集區的 UM IP 閘道。
     
     > [!IMPORTANT]  
-    > ExchUcUtil.ps1 指令碼可建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">停用 UM IP 閘道器上的撥出電話</a>。
+    > ExchUcUtil.ps1 指令碼可建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">停用 UM IP 閘道器上的撥出電話</a>。
 
 
   - 為每個 UM IP 閘道建立一個 UM 群組搜尋。每個群組搜尋的引導識別碼可指定與 UM IP 閘道相關聯的 Lync Server 前端集區或 Standard Edition 伺服器所使用的 UM SIP URI 撥號對應表。
@@ -59,7 +59,7 @@ _**上次修改主題的時間：** 2013-06-11_
 
 
 > [!IMPORTANT]  
-> ExchUcUtil.ps1 指令碼可建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">停用 UM IP 閘道器上的撥出電話</a>。
+> ExchUcUtil.ps1 指令碼可建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">停用 UM IP 閘道器上的撥出電話</a>。
 
 
 

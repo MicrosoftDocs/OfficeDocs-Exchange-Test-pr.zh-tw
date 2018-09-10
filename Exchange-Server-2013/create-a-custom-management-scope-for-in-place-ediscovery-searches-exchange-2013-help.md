@@ -101,7 +101,7 @@ _**上次修改主題的時間：** 2015-01-21_
 
     Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Users eDiscovery Managers"
 
-您也可以使用 EAC 將成員加入至通訊群組。如需詳細資訊，請參閱 [建立並管理通訊群組](create-and-manage-distribution-groups-exchange-2013-help.md)。
+您也可以使用 EAC 將成員加入至通訊群組。如需詳細資訊，請參閱 [建立並管理通訊群組](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)。
 
 ## (選用) 步驟 5：加入探索信箱作為用來建立自訂管理範圍的通訊群組成員
 
@@ -113,7 +113,7 @@ _**上次修改主題的時間：** 2015-01-21_
 
 
 > [!NOTE]  
-> 若要開啟探索信箱和檢視搜尋結果，探索管理員必須獲指派探索信箱的「完整存取」權限。如需詳細資訊，請參閱 <a href="create-a-discovery-mailbox-exchange-2013-help.md">建立探索信箱</a>。
+> 若要開啟探索信箱和檢視搜尋結果，探索管理員必須獲指派探索信箱的「完整存取」權限。如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox">建立探索信箱</a>。
 
 
 
@@ -146,7 +146,7 @@ _**上次修改主題的時間：** 2015-01-21_
     Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
     ```
 
-    如需有關建立和管理通訊群組的詳細資訊，請參閱＜[建立並管理通訊群組](create-and-manage-distribution-groups-exchange-2013-help.md)＞。
+    如需有關建立和管理通訊群組的詳細資訊，請參閱＜[建立並管理通訊群組](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)＞。
 
   - 雖然您只能使用通訊群組成員資格作為 eDiscovery 所使用的自訂管理範圍的收件者篩選器，但您可以使用其他收件者屬性將使用者加入至該通訊群組。以下一些範例說明使用 **Get-Mailbox** 和 **Get-Recipient** 指令程式，以根據一般使用者或信箱屬性來傳回一組特定的使用者。
     ```

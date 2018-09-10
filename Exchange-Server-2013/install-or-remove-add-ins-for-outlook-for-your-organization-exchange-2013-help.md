@@ -26,7 +26,7 @@ _**上次修改主題的時間：** 2017-02-03_
 
 
 
-其他管理工作，請參閱[適用於 Outlook 的應用程式](add-ins-for-outlook-exchange-2013-help.md)。
+其他管理工作，請參閱[適用於 Outlook 的應用程式](https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook)。
 
 ## 開始之前有哪些須知？
 
@@ -34,7 +34,7 @@ _**上次修改主題的時間：** 2017-02-03_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [收件者權限](recipients-permissions-exchange-2013-help.md)主題中的 「 Outlook 應用程式 」 項目。
 
-  - 您可以安裝及管理組織的增益集的權限指派給系統管理員。您也可以指派使用者權限安裝及管理自己使用的增益集。如需詳細資訊，請參閱[指定系統管理員和使用者可安裝和管理適用於 Outlook 增益集](specify-the-administrators-and-users-who-can-install-and-manage-add-ins-for-outlook-exchange-2013-help.md)。
+  - 您可以安裝及管理組織的增益集的權限指派給系統管理員。您也可以指派使用者權限安裝及管理自己使用的增益集。如需詳細資訊，請參閱[指定系統管理員和使用者可安裝和管理適用於 Outlook 增益集](https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)。
 
   - 存取 Office 存放區不支援信箱或組織中特定區域 （英文）。如果您沒有看到**新增來自 Office 市集**在**Exchange 系統管理中心**\[**組織**\] 選項 \>**增益集**\> ![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")，您可以從 URL 或檔案的位置的 outlook 安裝增益集。如需詳細資訊，請連絡您的服務提供者。
 

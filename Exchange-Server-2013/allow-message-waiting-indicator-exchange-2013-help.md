@@ -186,7 +186,7 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 ## UM 信箱原則和 MWI
 
-您可以建立 UM 信箱原則套用至一組已啟用 UM 之信箱的一組通用的 UM 原則設定。例如，您可以使用 UM 信箱原則套用 PIN 原則設定、 撥號限制和 MWI 通知設定。如果您啟用或停用 UM 信箱原則上的 MWI，它會啟用或停用的所有已啟用 UM 之使用者的 UM 信箱原則與連結。MWI 設定也可以套用至連結與 UM 撥號對應表之使用者的子集。若要深入了解 UM 信箱原則，包括如何啟用或停用已啟用 UM 的使用者群組的 MWI 請參閱[UM 信箱原則程序](um-mailbox-policy-procedures-exchange-2013-help.md)。
+您可以建立 UM 信箱原則套用至一組已啟用 UM 之信箱的一組通用的 UM 原則設定。例如，您可以使用 UM 信箱原則套用 PIN 原則設定、 撥號限制和 MWI 通知設定。如果您啟用或停用 UM 信箱原則上的 MWI，它會啟用或停用的所有已啟用 UM 之使用者的 UM 信箱原則與連結。MWI 設定也可以套用至連結與 UM 撥號對應表之使用者的子集。若要深入了解 UM 信箱原則，包括如何啟用或停用已啟用 UM 的使用者群組的 MWI 請參閱[UM 信箱原則程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)。
 
 您可以在命令介面中使用 EAC 或 **Set-UMMailboxPolicy** 指令程式來配置 MWI 設定，如下表所示。
 
@@ -219,17 +219,17 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 如需如何管理 UM 信箱原則的 MWI 設定的詳細資訊，請參閱下列主題：
 
-  - [管理 UM 信箱原則](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [管理 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
-  - [為使用者啟用訊息等待指示器 (MWI)](enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [為使用者啟用訊息等待指示器 (MWI)](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
 
-  - [停用使用者訊息等待指示器 (MWI)](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [停用使用者訊息等待指示器 (MWI)](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-tw/library/bb124903\(v=exchg.150\))
 
 ## UM IP 閘道和 MWI
 
-如果您停用 UM IP 閘道器上的 MWI，將會停用所有使用者連線到 VoIP 閘道或 IP PBX 的 UM IP 閘道所表示的 MWI 的通知。停用單一的 UM IP 閘道的已連結至 UM 撥號對應表上的 MWI 可以停用所有已啟用 UM 的使用者與單一或多個 UM 撥號對應表或單一或多個 UM 信箱原則關聯的 MWI 通知。若要深入了解 UM 信箱原則，包括如何啟用或停用已啟用 UM 的使用者群組的 MWI 請參閱[管理 UM 信箱原則](manage-a-um-mailbox-policy-exchange-2013-help.md)。
+如果您停用 UM IP 閘道器上的 MWI，將會停用所有使用者連線到 VoIP 閘道或 IP PBX 的 UM IP 閘道所表示的 MWI 的通知。停用單一的 UM IP 閘道的已連結至 UM 撥號對應表上的 MWI 可以停用所有已啟用 UM 的使用者與單一或多個 UM 撥號對應表或單一或多個 UM 信箱原則關聯的 MWI 通知。若要深入了解 UM 信箱原則，包括如何啟用或停用已啟用 UM 的使用者群組的 MWI 請參閱[管理 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)。
 
 您可以在命令介面中使用 EAC 或 **Set-UMMailboxPolicy** 指令程式來配置 MWI 設定，如下表所示。
 
@@ -261,7 +261,7 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 如需如何管理 MWI 設定的詳細資訊，請參閱下列主題：
 
-  - [管理 UM IP 閘道器](manage-a-um-ip-gateway-exchange-2013-help.md)
+  - [管理 UM IP 閘道器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
 
   - [允許郵件等待指示器 (MWI) 上的 UM IP 閘道](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
 
@@ -309,7 +309,7 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 如需如何管理使用者信箱上之簡訊通知設定的詳細資訊，請參閱下列主題：
 
-  - [管理使用者的語音郵件設定](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)
+  - [管理使用者的語音郵件設定](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
 
   - [Set-UMMailbox](https://technet.microsoft.com/zh-tw/library/bb124893\(v=exchg.150\))
 
@@ -343,7 +343,7 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
 如需如何管理簡訊通知設定的詳細資訊，請參閱下列主題：
 
-  - [管理 UM 信箱原則](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [管理 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-tw/library/bb124903\(v=exchg.150\))
 

@@ -23,7 +23,7 @@ _**上次修改主題的時間：** 2017-03-27_
 
 ## 有關公用資料夾移轉的常見問題
 
-本節包含有關公用資料夾移轉的常見問題。如需詳細資訊，請參閱[使用批次移轉公用資料夾從舊版移轉至 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)、 [使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)或[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)。
+本節包含有關公用資料夾移轉的常見問題。如需詳細資訊，請參閱[使用批次移轉公用資料夾從舊版移轉至 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)、 [使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)或[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)。
 
 ## 有哪些支援公用資料夾遷移情況？
 
@@ -114,7 +114,7 @@ Outlook Web App 支援，但有一些限制。 您可以新增和移除我的最
 
     New-Mailbox -PublicFolder -Name <name of public folder>
 
-如需詳細資料，請參閱[建立公用資料夾](create-a-public-folder-exchange-2013-help.md)。
+如需詳細資料，請參閱[建立公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/create-public-folder)。
 
 ## 在舊版 Exchange 中，每一個信箱資料庫都有一個選項，可指定其公用資料夾資料庫。如何在 Exchange 2013 中運作？
 

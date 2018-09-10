@@ -19,9 +19,9 @@ _**上次修改主題的時間：** 2013-01-30_
 
 [從已驗證的來電者設定受保護的語音信箱](configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md)
 
-[從未經過驗證的來電者設定受保護的語音信箱](configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help.md)
+[從未經過驗證的來電者設定受保護的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-unauthenticated-callers)
 
-[啟用或停用受保護的語音訊息的多媒體播放](enable-or-disable-multimedia-playback-of-protected-voice-messages-exchange-2013-help.md)
+[啟用或停用受保護的語音訊息的多媒體播放](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-multimedia-playback)
 
-[指定要顯示的電子郵件用戶端不支援 Windows Rights Management 的文字](specify-the-text-to-display-for-email-clients-that-don-t-support-windows-rights-management-exchange-2013-help.md)
+[指定要顯示的電子郵件用戶端不支援 Windows Rights Management 的文字](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/specify-text-to-display-for-clients-that-don-t-support-windows-rights-management)
 

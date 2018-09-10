@@ -28,7 +28,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 
 
-如需與 Outlook 語音存取 PIN 碼相關的其他工作，請參閱 [PIN 安全性程序](pin-security-procedures-exchange-2013-help.md)。
+如需與 Outlook 語音存取 PIN 碼相關的其他工作，請參閱 [PIN 安全性程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/pin-security-procedures)。
 
 ## 開始之前有哪些須知？
 

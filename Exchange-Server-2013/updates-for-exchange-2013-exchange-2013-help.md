@@ -154,13 +154,13 @@ Exchange 2013 SP1 現在支援 Outlook Web App 使用 S/MIME 型郵件安全性�
 
 ## Outlook Web App 桌面和行動版本現在有提供 DLP 原則提示
 
-資料遺失防護 (DLP) [原則提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)是寄件者在 Outlook 中嘗試傳送敏感資訊時會看到的資訊通知。在 Exchange 2013 SP1 中，此功能已擴充至 Outlook Web App 的桌面版本和行動版本 (名稱為 裝置的 OWA)。如果您現有的 DLP 原則已針對 Outlook 開啟原則提示，則會看到它起作用。如果您的原則已包括 Outlook 的原則提示，則不需要設定其他任何項目。請繼續並試用！
+資料遺失防護 (DLP) [原則提示](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/policy-tips)是寄件者在 Outlook 中嘗試傳送敏感資訊時會看到的資訊通知。在 Exchange 2013 SP1 中，此功能已擴充至 Outlook Web App 的桌面版本和行動版本 (名稱為 裝置的 OWA)。如果您現有的 DLP 原則已針對 Outlook 開啟原則提示，則會看到它起作用。如果您的原則已包括 Outlook 的原則提示，則不需要設定其他任何項目。請繼續並試用！
 
-目前尚未使用原則提示？若要開始使用，請[從範本建立 DLP 原則](how-to-new-dlp-data-loss-prevention-policy-template.md)，然後編輯原則並新增 **\[以原則提示通知寄件者\]** 動作來新增原則提示。
+目前尚未使用原則提示？若要開始使用，請[從範本建立 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)，然後編輯原則並新增 **\[以原則提示通知寄件者\]** 動作來新增原則提示。
 
 ## 根據文件指紋的 DLP 分類
 
-深入內容分析是 Exchange 中 DLP 的基石。[文件指紋](overview-of-document-fingerprinting-in-exchange.md)擴充此功能，讓您可以識別組織中所用的可能包含敏感資訊的標準表單。例如，您可以建立空白員工資訊表的指紋，然後偵測所有已填入敏感內容的員工資訊表。
+深入內容分析是 Exchange 中 DLP 的基石。[文件指紋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)擴充此功能，讓您可以識別組織中所用的可能包含敏感資訊的標準表單。例如，您可以建立空白員工資訊表的指紋，然後偵測所有已填入敏感內容的員工資訊表。
 
 ## 新區域的 DLP 敏感資訊類型
 

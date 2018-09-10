@@ -40,7 +40,7 @@ _**上次修改主題的時間：** 2016-10-18_
 
   - 在 Exchange Online 中，當您對信箱進行訴訟暫止，\[可復原的項目\] 資料夾的配額會自動增加到 100 GB。此資料夾的預設大小為 30 GB。
 
-  - 訴訟暫止狀態會保留刪除的項目，也會保留已修改項目的原始版本，直到移除暫止狀態為止。您可以選擇指定保留期間，這會使信箱項目保留一段指定的時間週期。若您指定暫止持續時間，則將自接收訊息或建立信箱項目的日期開始計算。若要保留符合指定準則的項目，請使用就地保留來建立*查詢式*保留。如需詳細資訊，請參閱[建立或移除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
+  - 訴訟暫止狀態會保留刪除的項目，也會保留已修改項目的原始版本，直到移除暫止狀態為止。您可以選擇指定保留期間，這會使信箱項目保留一段指定的時間週期。若您指定暫止持續時間，則將自接收訊息或建立信箱項目的日期開始計算。若要保留符合指定準則的項目，請使用就地保留來建立*查詢式*保留。如需詳細資訊，請參閱[建立或移除就地保留](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
   - 若要使用命令介面將 Exchange Online 信箱設為保留狀態，您必須使用 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[使用遠端 PowerShell 連線到 Exchange Online](https://technet.microsoft.com/zh-tw/library/jj984289\(v=exchg.150\))＞。
 

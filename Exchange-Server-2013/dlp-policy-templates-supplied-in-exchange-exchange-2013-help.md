@@ -209,7 +209,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 [資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
 
-[從範本建立 DLP 原則](how-to-new-dlp-data-loss-prevention-policy-template.md)
+[從範本建立 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)
 
 [在 Exchange 中的敏感資訊類型外觀](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

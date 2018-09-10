@@ -25,9 +25,9 @@ _<strong>上次修改主題的時間：</strong>2017-06-14_
 
 [在混合式部署中內部部署與 Exchange Online 組織之間移動信箱](move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md)
 
-[為混合部署設定舊版的內部部署公用資料夾](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[為混合部署設定舊版的內部部署公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders)
 
-[設定混合式部署的 Exchange 2013 公用資料夾](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[設定混合式部署的 Exchange 2013 公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
 
 [設定 Exchange Online 公用資料夾以進行混合部署](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
 

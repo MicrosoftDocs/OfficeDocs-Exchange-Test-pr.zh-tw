@@ -23,9 +23,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 > [!VIDEO https://www.microsoft.com/zh-tw/videoplayer/embed/31f2b48e-93ed-4be3-b46d-e7230c0fed8f]
 
-DLP 原則是一組簡單的套件，其中包含許多組條件，結合了您在 Exchange 系統管理中心 (EAC) 中所建立的傳輸規則、動作與例外條件，並加以啟用以篩選電子郵件訊息和附件。您可以建立一個 DLP 原則，但選擇不要啟用它。這讓您能在不影響郵件傳輸的情況下測試您的原則。DLP 原則可完全發揮現有傳輸規則的效用。事實上，在 Microsoft Exchange Server 2013 與 Exchange Online 中已建立許多新類型的傳輸規則，以達成新的 DLP 能力。傳輸規則的重要新功能之一是利用新方法分類機密資訊，此機制可整合到郵件流程處理中。這個新的 DLP 功能會透過關鍵字比對、字典比對、規則運算式評估以及其他內容檢查來執行深入的內容分析，以偵測違反組織 DLP 原則的內容。最新版的 Exchange Online 和 Exchange 2013 SP1 新增了 [文件指紋](overview-of-document-fingerprinting-in-exchange.md)，這可協助您偵測標準表單中的敏感資訊。如需傳輸規則的相關資訊，請參閱 [郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange 2013) 或 [Exchange Online 中的郵件流程規則 (傳輸規則)](https://technet.microsoft.com/zh-tw/library/jj919238\(v=exchg.150\)) (Exchange Online) 和 [與傳輸規則整合敏感資訊規則](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)。您也可以使用 Exchange 管理命令介面 Cmdlet 來管理 DLP 原則。如需原則及符合性 Cmdlet 的相關資訊，請參閱[原則及符合性命令指令程式](https://technet.microsoft.com/zh-tw/library/dd298082\(v=exchg.150\))。
+DLP 原則是一組簡單的套件，其中包含許多組條件，結合了您在 Exchange 系統管理中心 (EAC) 中所建立的傳輸規則、動作與例外條件，並加以啟用以篩選電子郵件訊息和附件。您可以建立一個 DLP 原則，但選擇不要啟用它。這讓您能在不影響郵件傳輸的情況下測試您的原則。DLP 原則可完全發揮現有傳輸規則的效用。事實上，在 Microsoft Exchange Server 2013 與 Exchange Online 中已建立許多新類型的傳輸規則，以達成新的 DLP 能力。傳輸規則的重要新功能之一是利用新方法分類機密資訊，此機制可整合到郵件流程處理中。這個新的 DLP 功能會透過關鍵字比對、字典比對、規則運算式評估以及其他內容檢查來執行深入的內容分析，以偵測違反組織 DLP 原則的內容。最新版的 Exchange Online 和 Exchange 2013 SP1 新增了 [文件指紋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)，這可協助您偵測標準表單中的敏感資訊。如需傳輸規則的相關資訊，請參閱 [郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange 2013) 或 [Exchange Online 中的郵件流程規則 (傳輸規則)](https://technet.microsoft.com/zh-tw/library/jj919238\(v=exchg.150\)) (Exchange Online) 和 [與傳輸規則整合敏感資訊規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)。您也可以使用 Exchange 管理命令介面 Cmdlet 來管理 DLP 原則。如需原則及符合性 Cmdlet 的相關資訊，請參閱[原則及符合性命令指令程式](https://technet.microsoft.com/zh-tw/library/dd298082\(v=exchg.150\))。
 
-除了可自訂的 DLP 原則外，您還可以在電子郵件寄件者寄送違規郵件之前，通知他們可能會違反您的其中一項原則。您可以設定原則提示完成這項作業。原則提示與郵件提示相似，可經由設定在 Microsoft Outlook 2013 用戶端中呈現簡短附註，而該用戶端會向正在建立郵件的人提供可能的原則違規資訊。在最新 Exchange Online 版本和 Exchange 2013 SP1 中，原則提示也會顯示在 Outlook Web App 和 裝置的 OWA 中。如需詳細資訊，請參閱 [原則提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)。
+除了可自訂的 DLP 原則外，您還可以在電子郵件寄件者寄送違規郵件之前，通知他們可能會違反您的其中一項原則。您可以設定原則提示完成這項作業。原則提示與郵件提示相似，可經由設定在 Microsoft Outlook 2013 用戶端中呈現簡短附註，而該用戶端會向正在建立郵件的人提供可能的原則違規資訊。在最新 Exchange Online 版本和 Exchange 2013 SP1 中，原則提示也會顯示在 Outlook Web App 和 裝置的 OWA 中。如需詳細資訊，請參閱 [原則提示](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/policy-tips)。
 
 > [!NOTE]  
 > Exchange Online：DLP 是付費功能，需要 Exchange Online 計劃 2 授權。如需詳細資訊，請參閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online 授權</a>。<br />
@@ -59,7 +59,7 @@ DLP 原則中的敏感資訊類型
 
 現有供您開始使用 DLP 的三種不同方法：
 
-1.  **套用 Microsoft 提供的開箱即用範本。**   開始使用 DLP 原則的最快方式就是使用範本來建立與執行新的原則。能省去您從無到有地建立一組新規則的許多努力。您將需要知道您要檢查哪些類型的資料，或嘗試處理哪些合規法規。您也將需要知道組織對於處理此類資料的期望。於 [Exchange 中提供的 DLP 原則範本](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md) 與 [從範本建立 DLP 原則](how-to-new-dlp-data-loss-prevention-policy-template.md) 取得更多資訊。
+1.  **套用 Microsoft 提供的開箱即用範本。**   開始使用 DLP 原則的最快方式就是使用範本來建立與執行新的原則。能省去您從無到有地建立一組新規則的許多努力。您將需要知道您要檢查哪些類型的資料，或嘗試處理哪些合規法規。您也將需要知道組織對於處理此類資料的期望。於 [Exchange 中提供的 DLP 原則範本](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md) 與 [從範本建立 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template) 取得更多資訊。
 
 2.  **從您的組織外部匯入預先建立的原則檔案。**   您可以匯入已由通訊環境外部的獨立軟體廠商所建立的原則。如此，您便可以延展 DLP 解決方案來滿足業務需求。於 [來自 Microsoft 協力廠商的原則範本](policy-templates-from-microsoft-partners-exchange-2013-help.md)、[定義自己的 DLP 範本和資訊類型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md) 與 [從檔案匯入自訂的 DLP 原則範本](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md) 取得更多資訊。
 
@@ -75,17 +75,17 @@ DLP 原則中的敏感資訊類型
 
 ## 使用文件指紋偵測敏感表單資料
 
-使用 Exchange 2013 SP1 和最新的 Exchange Online 版本，您可以使用[文件指紋](overview-of-document-fingerprinting-in-exchange.md)，根據標準表單輕鬆地建立敏感資訊類型。若要了解如何保護表單資料，請參閱[保護含有文件指紋的表單資料](protect-form-data-with-document-fingerprinting-exchange-2013-help.md)。
+使用 Exchange 2013 SP1 和最新的 Exchange Online 版本，您可以使用[文件指紋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)，根據標準表單輕鬆地建立敏感資訊類型。若要了解如何保護表單資料，請參閱[保護含有文件指紋的表單資料](protect-form-data-with-document-fingerprinting-exchange-2013-help.md)。
 
 ## 原則提示通知使用者有關敏感內容期望
 
-您可以使用原則提示通知訊息，通知電子郵件寄件者在撰寫電子郵件訊息時可能會遭遇的規範符合性問題。在 DLP 原則中設定原則提示時，只有當寄件者的電子郵件訊息內容符合您原則中所描述條件時，才會顯示通知訊息。原則提示與在 Microsoft Exchange 2010 中引進的郵件提示相似。如需詳細資訊，請參閱[原則提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)。
+您可以使用原則提示通知訊息，通知電子郵件寄件者在撰寫電子郵件訊息時可能會遭遇的規範符合性問題。在 DLP 原則中設定原則提示時，只有當寄件者的電子郵件訊息內容符合您原則中所描述條件時，才會顯示通知訊息。原則提示與在 Microsoft Exchange 2010 中引進的郵件提示相似。如需詳細資訊，請參閱[原則提示](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/policy-tips)。
 
 ## 使用傳統郵件分類以外方式來偵測敏感資訊
 
 與其他傳統郵件分類相比，Exchange 2013 與 Exchange Online 呈現了更能協助您管理郵件和附件資料的方法。DLP 解決方案效力的關鍵因素便是能正確辨識對組織、法規需求、地理位置或其他業務需求而言特有的機密或敏感內容的能力。Exchange 2013 能透過使用新的深入內容分析結構，加上您透過您在 DLP 原則中的規則所建立的偵測標準來達成此目的。在 Exchange 2013 中協助防止資料遺失是仰賴一組正確的敏感資訊規則，如此這些規則才能提供高度的保護，同時將因誤判與誤報所產生的不適當郵件流程中斷減到最小。這些類型的規則被視為整個 DLP 資訊的敏感資訊偵測，在傳輸規則所提供的架構中運作，以啟用 DLP 能力。
 
-若要深入了解這些新功能，請參閱[與傳輸規則整合敏感資訊規則](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)。傳統的郵件分類欄位仍可套用於 Exchange 中的郵件，而這些能與新的敏感資訊偵測在單一的 DLP 原則中結合，或是同時運作，如此它們便能在 Exchange 中獨立進行評估。若要瞭解更多有關傳統 Exchange 2010 郵件分類的資訊，請參閱 TechNet 文件庫中的[瞭解訊息分類](https://go.microsoft.com/fwlink/?linkid=266612)。
+若要深入了解這些新功能，請參閱[與傳輸規則整合敏感資訊規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)。傳統的郵件分類欄位仍可套用於 Exchange 中的郵件，而這些能與新的敏感資訊偵測在單一的 DLP 原則中結合，或是同時運作，如此它們便能在 Exchange 中獨立進行評估。若要瞭解更多有關傳統 Exchange 2010 郵件分類的資訊，請參閱 TechNet 文件庫中的[瞭解訊息分類](https://go.microsoft.com/fwlink/?linkid=266612)。
 
 ## 關於經 DLP 處理之郵件的資訊
 
@@ -107,7 +107,7 @@ Exchange 2013
 
   - [檢視 DLP 原則偵測報告](view-dlp-policy-detection-reports-exchange-2013-help.md)
 
-  - [文件指紋](overview-of-document-fingerprinting-in-exchange.md)
+  - [文件指紋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)
 
   - [原則及符合性命令指令程式](https://technet.microsoft.com/zh-tw/library/dd298082\(v=exchg.150\))
 
@@ -119,5 +119,5 @@ Exchange Online
 
   - [檢視 \[Exchange Online\] 的 DLP 原則偵測報告](https://technet.microsoft.com/zh-tw/library/dn904484\(v=exchg.150\))
 
-  - [文件指紋](overview-of-document-fingerprinting-in-exchange.md)
+  - [文件指紋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)
 

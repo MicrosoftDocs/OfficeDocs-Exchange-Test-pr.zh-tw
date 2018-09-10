@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2012-11-30_
 
   - [連線至 UM VoIP 閘道、 IP PBX 或工作階段邊界控制器](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)  了解如何連接 VoIP 閘道或 IP Pbx to UM。
 
-  - [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)  了解支援 VoIP 閘道、 IP Pbx 和 Pbx。
+  - [Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)  了解支援 VoIP 閘道、 IP Pbx 和 Pbx。
 
-  - [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md) 了解如何設定 VoIP 閘道、 IP Pbx 和 Pbx。
+  - [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) 了解如何設定 VoIP 閘道、 IP Pbx 和 Pbx。
 

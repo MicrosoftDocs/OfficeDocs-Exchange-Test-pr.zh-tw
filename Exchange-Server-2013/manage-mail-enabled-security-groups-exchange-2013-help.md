@@ -49,7 +49,7 @@ _**上次修改主題的時間：** 2017-10-04_
       - **\* 顯示名稱**  使用此方塊可輸入顯示名稱。此名稱會出現在共用的通訊錄，在 \[收件者： 電子郵件傳送到此群組中，並在 EAC 中的 \[群組\] 清單時的直線。顯示名稱為必要與讓人員辨識功能應易記。它也必須是唯一的樹系中。
         
         > [!NOTE]  
-        > 如果已套用群組命名原則，您必須依照您的組織強制執行的命名限制。如需詳細資訊，請參閱<a href="create-a-distribution-group-naming-policy-exchange-2013-help.md">建立通訊群組命名原則</a>。如果您想要覆寫您的組織群組命名原則，請參閱<a href="override-the-distribution-group-naming-policy-exchange-2013-help.md">通訊群組命名原則會覆寫</a>。
+        > 如果已套用群組命名原則，您必須依照您的組織強制執行的命名限制。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy">建立通訊群組命名原則</a>。如果您想要覆寫您的組織群組命名原則，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy">通訊群組命名原則會覆寫</a>。
     
       - **\* 別名**  使用此方塊可輸入 \[安全性\] 群組的別名。別名不可超過 64 個字元和必須是唯一的樹系中。當使用者輸入上 \[收件者的別名： 行的電子郵件訊息，則解析為群組的顯示名稱。
     

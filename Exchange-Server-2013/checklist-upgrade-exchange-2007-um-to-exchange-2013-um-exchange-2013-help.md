@@ -23,9 +23,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - [整合通訊的規劃](planning-for-unified-messaging-exchange-2013-help.md)
 
-  - [UM 電話系統整合](telephone-system-integration-with-um-exchange-2013-help.md)
+  - [UM 電話系統整合](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um)
 
-  - [連線至您的電話網路的語音郵件系統](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)
+  - [連線至您的電話網路的語音郵件系統](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
 
 如需如何從 Exchange 2010 UM 升級至 Exchange 2013 UM 的逐步指引，請參閱[檢查清單：將 Exchange 2010 UM 升級至 Exchange 2013 UM](checklist-upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md)。
 
@@ -99,14 +99,14 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>建立或設定現有的 UM 撥號對應表</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">建立 UM 撥號對應表</a></p>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">建立 UM 撥號對應表</a></p>
 <p><a href="manage-a-um-dial-plan-exchange-2013-help.md">管理 UM 撥號對應表</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>建立或設定現有的 UM IP 閘道</p></td>
-<td><p><a href="create-a-um-ip-gateway-exchange-2013-help.md">建立 UM IP 閘道器</a></p>
-<p><a href="manage-a-um-ip-gateway-exchange-2013-help.md">管理 UM IP 閘道器</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway">建立 UM IP 閘道器</a></p>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">管理 UM IP 閘道器</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -117,13 +117,13 @@ _**上次修改主題的時間：** 2016-12-09_
 <td><p></p></td>
 <td><p>建立或設定 UM 自動語音應答</p></td>
 <td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">建立 UM 自動語音應答</a></p>
-<p><a href="manage-a-um-auto-attendant-exchange-2013-help.md">管理 UM 自動語音應答</a></p></td>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">管理 UM 自動語音應答</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>建立或設定 UM 信箱原則</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">建立 UM 信箱原則</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">管理 UM 信箱原則</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">建立 UM 信箱原則</a></p>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">管理 UM 信箱原則</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -133,13 +133,13 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>為新的使用者啟用 UM，或設定現有的啟用 UM 的使用者的設定</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">啟用使用者的語音信箱</a></p>
-<p><a href="manage-voice-mail-settings-for-a-user-exchange-2013-help.md">管理使用者的語音郵件設定</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">啟用使用者的語音信箱</a></p>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings">管理使用者的語音郵件設定</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>將 VoIP 閘道、IP PBX 及已啟用 SIP 的 PBX 設定為傳送所有來電至 Exchange 2013 Client Access Server</p></td>
-<td><p><a href="configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md">支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項</a></p>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways">支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項</a></p>
 <p><a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">連線至 UM VoIP 閘道、 IP PBX 或工作階段邊界控制器</a></p></td>
 </tr>
 <tr class="odd">
