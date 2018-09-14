@@ -28,7 +28,7 @@ _**上次修改主題的時間：** 2012-11-14_
 
 其他管理電子郵件用戶端存取信箱的相關管理工作，請參閱下列主題：
 
-  - [啟用或停用信箱的 MAPI](enable-or-disable-mapi-for-a-mailbox-exchange-online-help.md)
+  - [啟用或停用信箱的 MAPI](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)
 
   - [啟用或停用使用者的 IMAP4 存取](enable-or-disable-imap4-access-for-a-user-exchange-2013-help.md)
 

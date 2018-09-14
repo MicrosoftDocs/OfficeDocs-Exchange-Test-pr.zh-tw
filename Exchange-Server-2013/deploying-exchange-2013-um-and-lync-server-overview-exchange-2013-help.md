@@ -59,7 +59,7 @@ For more information
 7.  從信箱伺服器上的 \<Exchange 安裝資料夾\>\\Exchange Server\\Script 資料夾執行 ExchUcUtil.ps1 指令碼。
     
     > [!IMPORTANT]  
-    > ExchUcUtil.ps1 指令碼可為 Lync 整合建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">停用 UM IP 閘道器上的撥出電話</a>。
+    > ExchUcUtil.ps1 指令碼可為 Lync 整合建立一或多個 UM IP 閘道。您必須在除了指令碼所建立的一個閘道以外的所有 UM IP 閘道上，停用撥出電話。這包括在已於執行指令碼之前就建立的 UM IP 閘道上，停用撥出電話。若要在 UM IP 閘道上停用撥出電話，請參閱<a href="disable-outgoing-calls-on-https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">停用 UM IP 閘道器上的撥出電話</a>。
 
 
 8.  從 Lync 伺服器上的 %CommonProgramFiles%\\Microsoft Lync Server 2013\\Support 資料夾執行 **OcsUmUtil.exe**。
@@ -133,7 +133,7 @@ For more information
 
 您必須完成以下步驟，才能在 Lync 伺服器中設定整合通訊與 Enterprise Voice 功能一同使用：
 
-1.  建立一或多個整合通訊 SIP URI 撥號對應表，各對應至相對應的 Lync 伺服器位置設定檔。您必須為每個 Exchange UM 撥號對應表各建立一個 Enterprise Voice 位置設定檔。您可以使用 **Get-UMDialPlan** Cmdlet 來取得 SIP URI 撥號對應表的 FQDN。如需如何建立 SIP URI 撥號對應表的詳細資訊，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+1.  建立一或多個整合通訊 SIP URI 撥號對應表，各對應至相對應的 Lync 伺服器位置設定檔。您必須為每個 Exchange UM 撥號對應表各建立一個 Enterprise Voice 位置設定檔。您可以使用 **Get-UMDialPlan** Cmdlet 來取得 SIP URI 撥號對應表的 FQDN。如需如何建立 SIP URI 撥號對應表的詳細資訊，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
     
     > [!IMPORTANT]  
     > 如果您已經整合了 Exchange UM 與 Lync 伺服器，可能會發現不必在 Exchange UM 中設定撥號規則或撥號規則群組。Lync 伺服器的設計是要為您組織中的使用者執行電話轉接和號碼轉譯，若是由整合通訊代替使用者打電話，也會執行此動作。
@@ -184,9 +184,9 @@ For more information
 
 5.  在 SIP URI 撥號對應表所新增的用戶端存取和信箱伺服器上將 TLS 接聽連接埠的啟動模式設定為 \[雙重\]，然後重新啟動每一個信箱伺服器上的 MicrosoftExchange 整合通訊以及每一個用戶端存取伺服器上的 MicrosoftExchange 整合通訊呼叫路由器服務。
 
-6.  建立並設定 UM 自動語音應答。如需詳細資訊，請參閱[設定 UM 自動語音應答](set-up-a-um-auto-attendant-exchange-2013-help.md)。
+6.  建立並設定 UM 自動語音應答。如需詳細資訊，請參閱[設定 UM 自動語音應答](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant)。
 
-7.  當您啟用使用者的語音郵件時，請為使用 Enterprise Voice 的使用者建立一個 SIP 位址。大部分情況下，此 SIP 位址與使用者啟用 Enterprise Voice 時所用的 SIP 位址一樣。如需詳細資訊，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+7.  當您啟用使用者的語音郵件時，請為使用 Enterprise Voice 的使用者建立一個 SIP 位址。大部分情況下，此 SIP 位址與使用者啟用 Enterprise Voice 時所用的 SIP 位址一樣。如需詳細資訊，請參閱[啟用使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)。
     
     > [!IMPORTANT]  
     > 與 SIP URI 撥號對應表相關聯的使用者無法接收傳入的傳真。這是因為內送的語音和傳真呼叫會透過中繼伺服器來路由傳送，而在使用中繼伺服器時，不支援傳真功能。
@@ -196,11 +196,11 @@ For more information
     
       - 授與 Lync Server 權限以讀取Exchange UM Active Directory元件，尤其是在之前的工作中所建立的 SIP URI 撥號。如需詳細資訊如何在Active Directory中設定權限，查看[如何將使用 ADSI Edit 來套用權限](https://go.microsoft.com/fwlink/p/?linkid=82751)。
     
-      - 針對每個 Lync 伺服器集區，或是每部執行 Lync Server Standard Edition 的伺服器 (主控已啟用 Enterprise Voice 功能的使用者) 建立一個 UM IP 閘道器。如需詳細資訊，請參閱[建立 UM IP 閘道器](create-a-um-ip-gateway-exchange-2013-help.md)。
+      - 針對每個 Lync 伺服器集區，或是每部執行 Lync Server Standard Edition 的伺服器 (主控已啟用 Enterprise Voice 功能的使用者) 建立一個 UM IP 閘道器。如需詳細資訊，請參閱[建立 UM IP 閘道器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)。
     
       - 為每個 UM IP 閘道器建立一個 Exchange UM 群組搜尋。此群組搜尋引導識別碼就是播號對應表中與對應的 UM IP 閘道器相關聯的名稱。群組搜尋必須指定與 UM IP 閘道器一起使用的 UM SIP 撥號對應表。
 
-9.  啟用使用者的語音信箱。當您啟用語音信箱時，請確認您已在 SIP 撥號對應表中輸入使用者有效的 SIP 位址和連結。如需詳細資訊，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+9.  啟用使用者的語音信箱。當您啟用語音信箱時，請確認您已在 SIP 撥號對應表中輸入使用者有效的 SIP 位址和連結。如需詳細資訊，請參閱[啟用使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)。
 
 您同時必須完成下列工作來設定 Lync 伺服器，以使用 Exchange UM：
 

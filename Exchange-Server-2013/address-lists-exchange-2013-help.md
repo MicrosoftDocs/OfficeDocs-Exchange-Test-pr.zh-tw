@@ -47,7 +47,7 @@ _**上次修改主題的時間：** 2014-12-02_
 
   - **所有使用者**   此通訊清單包含組織中所有擁有郵件功能的使用者。擁有郵件功能的使用者，代表 Exchange 組織之外的使用者。每個擁有郵件功能的使用者都有外部電子郵件地址。傳送給擁有郵件功能之使用者的所有郵件，都會路由傳送至這個外部電子郵件地址。擁有郵件功能的使用者與郵件連絡人相似，不同之處在於，擁有郵件功能的使用者具有 Active Directory 登入認證，並可存取資源。若要進一步了解擁有郵件功能的使用者，請參閱[收件者](recipients-exchange-2013-help.md)。
 
-  - **預設全域通訊清單**   此通訊清單包含組織中擁有郵件功能的所有使用者、連絡人、群組或會議室。在設定期間，Exchange 會建立各種預設通訊清單。最熟悉的通訊清單是 GAL。依預設，GAL 包含 Exchange 組織中的所有收件者。換句話說，在已安裝 Active Directory 的 Exchange 樹系中，任何擁有信箱功能或郵件功能的物件都會列在 GAL 中。為方便使用，會依名稱而不是依電子郵件地址來組織 GAL。如需詳細資訊，請參閱 [建立全域通訊清單](create-a-global-address-list-exchange-2013-help.md)。
+  - **預設全域通訊清單**   此通訊清單包含組織中擁有郵件功能的所有使用者、連絡人、群組或會議室。在設定期間，Exchange 會建立各種預設通訊清單。最熟悉的通訊清單是 GAL。依預設，GAL 包含 Exchange 組織中的所有收件者。換句話說，在已安裝 Active Directory 的 Exchange 樹系中，任何擁有信箱功能或郵件功能的物件都會列在 GAL 中。為方便使用，會依名稱而不是依電子郵件地址來組織 GAL。如需詳細資訊，請參閱 [建立全域通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/create-global-address-list)。
 
   - **公用資料夾**   此通訊清單包含組織中的所有公用資料夾。存取權限能判定誰可以檢視及使用這些資料夾。公用資料夾儲存於執行 Exchange 的電腦上。如需 Exchange 2013 中公用資料夾的相關資訊，請參閱[公用資料夾](public-folders-exchange-2013-help.md)。如需 Exchange Online 中公用資料夾的詳細資訊，請參閱 [Office 365 與 Exchange Online 的公用資料夾](https://technet.microsoft.com/zh-tw/library/jj200758\(v=exchg.150\))。
 

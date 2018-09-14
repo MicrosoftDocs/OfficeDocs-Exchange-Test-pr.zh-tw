@@ -26,7 +26,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 
 
-如需其他與 UM 信箱原則相關的管理工作，請參閱 [UM 信箱原則程序](um-mailbox-policy-procedures-exchange-2013-help.md)。
+如需其他與 UM 信箱原則相關的管理工作，請參閱 [UM 信箱原則程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)。
 
 ## 開始之前有哪些須知？
 
@@ -34,9 +34,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [整合的通訊權限](unified-messaging-permissions-exchange-2013-help.md)主題中的「UM 信箱原則」項目。
 
-  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
-  - 執行這些程序之前，請確認已建立 UM 信箱原則。如需詳細步驟，請參閱[建立 UM 信箱原則](create-a-um-mailbox-policy-exchange-2013-help.md)。
+  - 執行這些程序之前，請確認已建立 UM 信箱原則。如需詳細步驟，請參閱[建立 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)。
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -51,7 +51,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 ## 步驟 1： 註冊與合作夥伴服務
 
-若要尋找認證的合作夥伴和詳細的說明如何註冊的清單，請參閱[語音郵件預覽顧問](voice-mail-preview-advisor-exchange-2013-help.md)或請參閱[Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?linkid=281966)網站。您已註冊之後，您的協力廠商識別碼及 SMTP 地址使用轉寄的語音訊息提供語音郵件預覽協力廠商。
+若要尋找認證的合作夥伴和詳細的說明如何註冊的清單，請參閱[語音郵件預覽顧問](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor)或請參閱[Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?linkid=281966)網站。您已註冊之後，您的協力廠商識別碼及 SMTP 地址使用轉寄的語音訊息提供語音郵件預覽協力廠商。
 
 在步驟 2 中，您會將從步驟 1 中取得的協力程式識別碼和 SMTP 位址套用至所需的 UM 信箱原則。
 
@@ -78,9 +78,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 如果您想要設定一些，但不是所有的語音郵件預覽合作夥伴服務、 已啟用 UM 之使用者的 UM 撥號對應，您必須建立新的 UM 信箱原則及協力廠商進行設定。後完成，您可以套用新的原則選取 um 的使用者。如需如何將已啟用 UM 的使用者指派給 UM 信箱原則的詳細資訊，請參閱下列主題：
 
-  - [UM 信箱原則指派](assign-a-um-mailbox-policy-exchange-2013-help.md)
+  - [UM 信箱原則指派](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy)
 
   - [Set-UMMailbox](https://technet.microsoft.com/zh-tw/library/bb124893\(v=exchg.150\))
 
-如需「語音信箱預覽」合作夥伴程式的相關資訊，請參閱 [語音郵件預覽顧問](voice-mail-preview-advisor-exchange-2013-help.md)。
+如需「語音信箱預覽」合作夥伴程式的相關資訊，請參閱 [語音郵件預覽顧問](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor)。
 

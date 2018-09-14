@@ -17,23 +17,23 @@ _**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016
 
 _**上次修改主題的時間：** 2013-05-03_
 
-[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)
+[啟用使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)
 
-[當使用者已啟用語音信箱時傳送電子郵件訊息中包含的文字](include-text-with-the-email-message-sent-when-a-user-is-enabled-for-voice-mail-exchange-2013-help.md)
+[當使用者已啟用語音信箱時傳送電子郵件訊息中包含的文字](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voicemail-is-enabled)
 
-[管理使用者的語音郵件設定](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)
+[管理使用者的語音郵件設定](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
 
-[UM 信箱原則指派](assign-a-um-mailbox-policy-exchange-2013-help.md)
+[UM 信箱原則指派](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy)
 
-[變更 UM 撥號對應表](change-the-um-dial-plan-exchange-2013-help.md)
+[變更 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-um-dial-plan)
 
-[啟用未啟用 UM 之使用者的通話](enable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md)
+[啟用未啟用 UM 之使用者的通話](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-calls-from-users-who-aren-t-um-enabled)
 
-[停用未啟用 UM 之使用者的電話](disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md)
+[停用未啟用 UM 之使用者的電話](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-calls-from-users-who-aren-t-um-enabled)
 
 [讓來電者沒有留下語音訊息的來電者識別碼](allow-callers-without-a-caller-id-to-leave-a-voice-message-exchange-2013-help.md)
 
-[時接收語音訊息傳送的電子郵件訊息中包含的文字](include-text-with-the-email-message-sent-when-a-voice-message-is-received-exchange-2013-help.md)
+[時接收語音訊息傳送的電子郵件訊息中包含的文字](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voice-message-is-received)
 
 [防止來電者沒有來電者識別碼留下語音訊息](prevent-callers-without-a-caller-id-from-leaving-a-voice-message-exchange-2013-help.md)
 
@@ -45,15 +45,15 @@ _**上次修改主題的時間：** 2013-05-03_
 
 [新增 SIP 位址](add-a-sip-address-exchange-2013-help.md)
 
-[移除 SIP 位址](remove-a-sip-address-exchange-2013-help.md)
+[移除 SIP 位址](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 
 [新增分機號碼](add-an-extension-number-exchange-2013-help.md)
 
 [移除分機號碼](remove-an-extension-number-exchange-2013-help.md)
 
-[變更為 E.164 號碼](change-an-e-164-number-exchange-2013-help.md)
+[變更為 E.164 號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number)
 
-[新增為 E.164 號碼](add-an-e-164-number-exchange-2013-help.md)
+[新增為 E.164 號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number)
 
 [移除 E.164 號碼](remove-an-e-164-number-exchange-2013-help.md)
 

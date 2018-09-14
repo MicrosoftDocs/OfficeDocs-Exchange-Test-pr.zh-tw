@@ -21,7 +21,7 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
 
 停用郵件連絡人的電子郵件之後，您可以啟用郵件功能連絡人再次使用<strong>Enable-MailContact</strong>指令程式在命令介面中。您也可以使用此指令程式來啟用任何 Active Directory 連絡人的郵件功能。
 
-郵件連絡人相關的其他管理工作，請參閱[管理郵件連絡人](manage-mail-contacts-exchange-2013-help.md)。
+郵件連絡人相關的其他管理工作，請參閱[管理郵件連絡人](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-contacts)。
 
 ## 開始之前有哪些須知？
 

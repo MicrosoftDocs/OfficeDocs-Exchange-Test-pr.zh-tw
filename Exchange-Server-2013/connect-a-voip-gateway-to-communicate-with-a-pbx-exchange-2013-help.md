@@ -25,9 +25,9 @@ _**上次修改主題的時間：** 2016-12-15_
 
 下的建議的資源 Exchange TechCenter 中提供可協助您正確設定 VoIP 閘道及 Pbx 的資訊：
 
-  - **支援 VoIP 閘道、 IP PBX 和 PBX 文件**   [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)包括組態檔以及您可以使用當您設定 VoIP 閘道及 Pbx 的安裝程式資訊。
+  - **支援 VoIP 閘道、 IP PBX 和 PBX 文件**   [Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)包括組態檔以及您可以使用當您設定 VoIP 閘道及 Pbx 的安裝程式資訊。
 
-  - **設定與技術的附註**   [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)包含設定檔及設定 VoIP 閘道和 Pbx 時您可以使用的設定資訊。
+  - **設定與技術的附註**   [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)包含設定檔及設定 VoIP 閘道和 Pbx 時您可以使用的設定資訊。
 
   - **設定 AudioCodes 式 VoIP 閘道** [Microsoft Exchange Server 資源頁面](https://www.audiocodes.com/solutions/microsoft/exchange-server)提供可協助您設定為使用 AudioCodes 式 VoIP 閘道與整合通訊的最新支援和組態資訊。
 
@@ -37,7 +37,7 @@ _**上次修改主題的時間：** 2016-12-15_
 
 ## 相關資訊
 
-[支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+[支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
 [連線至受支援的 VoIP 閘道的 UM](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)
 

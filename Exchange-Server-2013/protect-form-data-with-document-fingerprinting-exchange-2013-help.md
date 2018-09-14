@@ -17,7 +17,7 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2014-09-11_
 
-如果您的組織使用表單收集敏感資訊，使用者可能會嘗試透過電子郵件將這些表單傳送給外部連絡人，而產生安全性風險。Exchange 中的資料外洩防護 (DLP) 可使用[文件指紋](overview-of-document-fingerprinting-in-exchange.md)來偵測此類資訊，協助您保護資訊的安全。若要使用文件指紋，請直接上載空白表單，例如智慧財產文件、政府表單，或是您的組織中使用的其他標準表單。接著，請將產生的文件指紋新增至 DLP 原則或傳輸規則。方法如下。
+如果您的組織使用表單收集敏感資訊，使用者可能會嘗試透過電子郵件將這些表單傳送給外部連絡人，而產生安全性風險。Exchange 中的資料外洩防護 (DLP) 可使用[文件指紋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)來偵測此類資訊，協助您保護資訊的安全。若要使用文件指紋，請直接上載空白表單，例如智慧財產文件、政府表單，或是您的組織中使用的其他標準表單。接著，請將產生的文件指紋新增至 DLP 原則或傳輸規則。方法如下。
 
 > [!VIDEO https://www.microsoft.com/zh-tw/videoplayer/embed/0f803e16-397a-4b83-8a85-06cd4264aaca]
 
@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2014-09-11_
 
 ![反白顯示「如果出現下列情況，則套用這個規則」條件](images/Dn635175.9355a513-a790-48eb-a61b-575ba2ecdfa6(EXCHG.150).png "反白顯示「如果出現下列情況，則套用這個規則」條件")
 
-如需將規則新增至 DLP 原則的相關資訊，請參閱[管理 DLP 原則](manage-dlp-policies-exchange-2013-help.md)的「變更 DLP 原則」一節；如需修改傳輸規則的相關資訊，請參閱[與傳輸規則整合敏感資訊規則](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)。若要建立新原則，請參閱[從範本建立 DLP 原則](how-to-new-dlp-data-loss-prevention-policy-template.md)。
+如需將規則新增至 DLP 原則的相關資訊，請參閱[管理 DLP 原則](manage-dlp-policies-exchange-2013-help.md)的「變更 DLP 原則」一節；如需修改傳輸規則的相關資訊，請參閱[與傳輸規則整合敏感資訊規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)。若要建立新原則，請參閱[從範本建立 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)。
 
 ## 根據文件指紋使用命令介面建立分類規則套件
 
@@ -77,9 +77,9 @@ DLP 代理程式現已可偵測符合 Contoso Customer Form.docx 文件指紋的
 
 ## 相關資訊
 
-[文件指紋](overview-of-document-fingerprinting-in-exchange.md)
+[文件指紋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)
 
 [管理 DLP 原則](manage-dlp-policies-exchange-2013-help.md)
 
-[與傳輸規則整合敏感資訊規則](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[與傳輸規則整合敏感資訊規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 

@@ -33,17 +33,17 @@ Post-deployment tasks for Unified Messaging
 
   - [UM 撥號對應表](um-dial-plans-exchange-2013-help.md)
 
-  - [UM IP 閘道](um-ip-gateways-exchange-2013-help.md)
+  - [UM IP 閘道](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
   - [UM 服務](um-services-exchange-2013-help.md)
 
-  - [UM 群組搜尋](um-hunt-groups-exchange-2013-help.md)
+  - [UM 群組搜尋](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)
 
-  - [自動接聽和路由傳送來電](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)
+  - [自動接聽和路由傳送來電](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)
 
-  - [UM 信箱原則](um-mailbox-policies-exchange-2013-help.md)
+  - [UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)
 
-  - [使用者的語音信箱](voice-mail-for-users-exchange-2013-help.md)
+  - [使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)
 
 ## 部署整合通訊
 
@@ -192,7 +192,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
 如果您已經建立 UM IP 閘道器，並使 UM IP 閘道器與 UM 撥號對應表產生關聯，則已經建立預設 UM 群組搜尋。視您已建立的 UM IP 閘道器數目而定，您可讓其他 UM 群組搜尋與相同或不同的 UM IP 閘道器產生關聯。
 
-在您建立 UM 群組搜尋時，會讓 UM 撥號對應表內指定的所有信箱伺服器能夠與 VoIP 閘道器進行通訊。如需詳細資訊，請參閱[UM 群組搜尋](um-hunt-groups-exchange-2013-help.md)。
+在您建立 UM 群組搜尋時，會讓 UM 撥號對應表內指定的所有信箱伺服器能夠與 VoIP 閘道器進行通訊。如需詳細資訊，請參閱[UM 群組搜尋](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)。
 
 ## 建立 UM 群組搜尋
 
@@ -288,7 +288,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
 ## 啟用使用者的語音信箱
 
-在您已部署 VoIP 閘道或 IP PBX、安裝 Client Access Server 及 Mailbox Server，並建立整合通訊所需的元件後，必須為使用者啟用整合通訊。如需詳細資訊，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+在您已部署 VoIP 閘道或 IP PBX、安裝 Client Access Server 及 Mailbox Server，並建立整合通訊所需的元件後，必須為使用者啟用整合通訊。如需詳細資訊，請參閱[啟用使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)。
 
 ## 保護語音信箱
 
@@ -308,7 +308,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
   - 設定用戶端存取及信箱伺服器的啟動模式。如需詳細資訊，請參閱 [設定信箱伺服器上的啟動模式](configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md)與 [設定用戶端存取伺服器上的啟動模式](configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md)。
 
-  - 將 UM IP 閘道器設定為在通訊埠 5061 上接聽。如需詳細資訊，請參閱[設定 \[聆聽連接埠](configure-the-listening-port-exchange-2013-help.md)。
+  - 將 UM IP 閘道器設定為在通訊埠 5061 上接聽。如需詳細資訊，請參閱[設定 \[聆聽連接埠](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port)。
 
 ## 已啟用 UM 的使用者相關的 PIN 碼原則
 
@@ -318,11 +318,11 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
 在部署伺服器與必要的 UM 元件後，您可以設定幾項選用的語音信箱相關功能。如需相關資訊，請參閱下列各主題：
 
-  - [設定 Outlook 語音存取](setting-up-outlook-voice-access-exchange-2013-help.md)
+  - [設定 Outlook 語音存取](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
   - [允許語音郵件使用者可將來電轉接](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)
 
-  - [允許使用者查看將語音郵件文字記錄](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)
+  - [允許使用者查看將語音郵件文字記錄](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)
 
   - [啟用語音信箱使用者接收傳真](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 

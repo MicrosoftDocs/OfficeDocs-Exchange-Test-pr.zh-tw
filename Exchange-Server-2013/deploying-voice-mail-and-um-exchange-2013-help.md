@@ -36,7 +36,7 @@ Exchange 整合通訊 (UM) 可讓您提供語音信箱服務給組織內的使�
 
 
 
-**電話語音硬體**   選擇正確的 VoIP 閘道、IP PBX 或 SBC 是整合電話語音網路與 UM 的第一步。需設定那些裝置與 UM 配合、部署需要的用戶端存取與信箱伺服器、以及建立並設定所有必要的 UM 元件。這些元件可讓您將電路通訊協定網路與 IP 資料網路連接，並為組織中的使用者啟用語音信箱。如需詳細資訊，請參閱 [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
+**電話語音硬體**   選擇正確的 VoIP 閘道、IP PBX 或 SBC 是整合電話語音網路與 UM 的第一步。需設定那些裝置與 UM 配合、部署需要的用戶端存取與信箱伺服器、以及建立並設定所有必要的 UM 元件。這些元件可讓您將電路通訊協定網路與 IP 資料網路連接，並為組織中的使用者啟用語音信箱。如需詳細資訊，請參閱 [Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)。
 
 **Microsoft Lync Server**   整合通訊可以使用 Microsoft Lync Server，將語音訊息、立即訊息、增強型平台服務、影音會議和電子郵件合併成令人熟悉的整合式通訊體驗。整合 UM 與 Lync Server 具有下列優點：
 

@@ -32,7 +32,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 請參閱下列主題的逐步指示將使用者放置在保留：
 
-  - [建立或移除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)
+  - [建立或移除就地保留](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/create-or-remove-in-place-holds)
 
   - [將信箱設為訴訟暫止](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)
 

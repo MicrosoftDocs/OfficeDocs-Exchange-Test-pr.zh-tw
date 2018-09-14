@@ -21,7 +21,7 @@ _<strong>上次修改主題的時間：</strong>2016-12-15_
 
 在混合式部署中，您的使用者可以在 Exchange Online、 內部，或兩者，且您的公用資料夾其在 Exchange 線上\] 或 \[內部部署。有時 online 使用者可能會需要用來存取 Exchange Server 2013 內部部署環境中的公用資料夾。同樣地，Exchange 2013 使用者可能需要存取 Office 365 或 Exchange Online 中的公用資料夾。
 
-本文說明如何讓 Exchange 2013 內部部署環境中的使用者可以存取 Exchange Online/Office 365 的公用資料夾。若要啟用 Exchange Online/Office 365 使用者存取內部部署 Exchange 2013 公用資料夾，請參閱 ＜ [設定混合式部署的 Exchange 2013 公用資料夾](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)。
+本文說明如何讓 Exchange 2013 內部部署環境中的使用者可以存取 Exchange Online/Office 365 的公用資料夾。若要啟用 Exchange Online/Office 365 使用者存取內部部署 Exchange 2013 公用資料夾，請參閱 ＜ [設定混合式部署的 Exchange 2013 公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)。
 
 <table>
 <thead>
@@ -31,7 +31,7 @@ _<strong>上次修改主題的時間：</strong>2016-12-15_
 </thead>
 <tbody>
 <tr class="odd">
-<td>如果您有 Exchange 2010 或 Exchange 2007 公用資料夾，請參閱<a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">為混合部署設定舊版的內部部署公用資料夾</a>。</td>
+<td>如果您有 Exchange 2010 或 Exchange 2007 公用資料夾，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders">為混合部署設定舊版的內部部署公用資料夾</a>。</td>
 </tr>
 </tbody>
 </table>

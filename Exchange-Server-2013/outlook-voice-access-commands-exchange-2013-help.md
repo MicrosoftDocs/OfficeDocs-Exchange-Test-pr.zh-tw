@@ -488,7 +488,7 @@ Outlook語音存取使用者、 時撥入 Outlook 語音存取號碼，您正在
 
 ## 相關資訊
 
-[設定 Outlook 語音存取](setting-up-outlook-voice-access-exchange-2013-help.md)
+[設定 Outlook 語音存取](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
 [設定用戶端語音信箱功能](set-up-client-voice-mail-features-exchange-2013-help.md)
 

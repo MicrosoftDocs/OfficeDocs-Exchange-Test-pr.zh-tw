@@ -159,7 +159,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - **使用 Exchange 系統管理中心 (EAC) 中的稽核報告**   您可以使用 EAC 中的 \[稽核\] 索引標籤來執行非擁有者信箱存取報告，或從信箱稽核記錄中匯出項目。如需詳細資訊，請參閱：
     
-      - [執行非擁有者信箱存取報告](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
+      - [執行非擁有者信箱存取報告](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
       - [匯出信箱稽核記錄](export-mailbox-audit-logs-exchange-2013-help.md)
 

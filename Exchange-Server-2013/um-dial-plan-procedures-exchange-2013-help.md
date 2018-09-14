@@ -17,7 +17,7 @@ _**適用版本：** Exchange Online, Exchange Server 2013, Exchange Server 2016
 
 _**上次修改主題的時間：** 2013-04-16_
 
-[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)
+[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)
 
 [管理 UM 撥號對應表](manage-a-um-dial-plan-exchange-2013-help.md)
 
@@ -25,17 +25,17 @@ _**上次修改主題的時間：** 2013-04-16_
 
 [從 SIP URI 撥號對應表中移除 Mailbox 和 Client Access server](remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md)
 
-[變更的音訊轉碼器](change-the-audio-codec-exchange-2013-help.md)
+[變更的音訊轉碼器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec)
 
-[設定最大的通話時間](configure-the-maximum-call-duration-exchange-2013-help.md)
+[設定最大的通話時間](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration)
 
-[設定最大錄製持續時間](configure-the-maximum-recording-duration-exchange-2013-help.md)
+[設定最大錄製持續時間](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration)
 
-[設定錄製閒置逾時值](configure-the-recording-idle-time-out-value-exchange-2013-help.md)
+[設定錄製閒置逾時值](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out)
 
 [設定 VoIP 安全性設定](configure-the-voip-security-setting-exchange-2013-help.md)
 
-[設定撥號對應表具有相似名稱的使用者](configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md)
+[設定撥號對應表具有相似名稱的使用者](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names)
 
-[刪除 UM 撥號對應表](delete-a-um-dial-plan-exchange-2013-help.md)
+[刪除 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan)
 

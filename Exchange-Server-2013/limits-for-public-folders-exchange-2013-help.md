@@ -48,7 +48,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p>公用資料夾信箱總數</p></td>
 <td><p>100</p></td>
-<td><p>雖然您可以建立 100 個以上的公用資料夾信箱，但並不予以支援。<a href="create-a-public-folder-mailbox-exchange-2013-help.md">建立公用資料夾信箱</a></p></td>
+<td><p>雖然您可以建立 100 個以上的公用資料夾信箱，但並不予以支援。<a href="https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/create-public-folder-mailbox">建立公用資料夾信箱</a></p></td>
 </tr>
 <tr class="even">
 <td><p>階層中的公用資料夾總數</p></td>

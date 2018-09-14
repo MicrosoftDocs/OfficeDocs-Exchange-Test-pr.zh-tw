@@ -41,7 +41,7 @@ Receiving faxes
 
 ## Outlook 語音存取
 
-在 \[Exchange UM，已啟用 UM 之使用者可撥打 UM 撥號對應表來存取其信箱並使用Outlook語音存取功能表系統上所設定的內部或外部的電話號碼。使用此功能表、 已啟用 UM 的使用者可以讀取電子郵件、 聆聽語音訊息、 互動其Outlook行事曆、 存取其個人連絡人及執行如設定其Outlook語音存取 PIN 或錄製其語音信箱問候語的工作。如需詳細資訊，請參閱[設定 Outlook 語音存取](setting-up-outlook-voice-access-exchange-2013-help.md)。
+在 \[Exchange UM，已啟用 UM 之使用者可撥打 UM 撥號對應表來存取其信箱並使用Outlook語音存取功能表系統上所設定的內部或外部的電話號碼。使用此功能表、 已啟用 UM 的使用者可以讀取電子郵件、 聆聽語音訊息、 互動其Outlook行事曆、 存取其個人連絡人及執行如設定其Outlook語音存取 PIN 或錄製其語音信箱問候語的工作。如需詳細資訊，請參閱[設定 Outlook 語音存取](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)。
 
 ## 轉接來電
 
@@ -49,7 +49,7 @@ Receiving faxes
 
 ## 語音信箱預覽
 
-語音郵件預覽是一種功能，可接收其語音郵件訊息從 UM 語音信箱系統的使用者。語音郵件預覽增強的語音郵件經驗提供音訊錄製的文字版本。如需詳細資訊，請參閱[允許使用者查看將語音郵件文字記錄](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)。
+語音郵件預覽是一種功能，可接收其語音郵件訊息從 UM 語音信箱系統的使用者。語音郵件預覽增強的語音郵件經驗提供音訊錄製的文字版本。如需詳細資訊，請參閱[允許使用者查看將語音郵件文字記錄](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)。
 
 ## 接收傳真
 

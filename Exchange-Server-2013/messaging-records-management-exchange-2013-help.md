@@ -35,7 +35,7 @@ MRM 提供的彈性來實作最符合您的組織需求的記錄管理原則。�
 
 ## MRM 在 Exchange Server 2013 和 Exchange Online
 
-在Exchange Server 2013和Exchange Online，MRM 是透過保留標記和保留原則。保留標記用以保留設定套用至整個信箱和預設信箱資料夾例如收件匣\] 與 \[刪除的項目。您也可以建立和部署 Outlook 2010 與更新版本及 Outlook Web App 使用者可以使用套用至資料夾或個別郵件的保留標記。他們建立之後，將保留標籤加入至保留原則並再將原則套用至使用者。受管理的資料夾助理員處理信箱並適用於使用者的保留原則中的保留設定。若要深入了解保留原則，請參閱[保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)。
+在Exchange Server 2013和Exchange Online，MRM 是透過保留標記和保留原則。保留標記用以保留設定套用至整個信箱和預設信箱資料夾例如收件匣\] 與 \[刪除的項目。您也可以建立和部署 Outlook 2010 與更新版本及 Outlook Web App 使用者可以使用套用至資料夾或個別郵件的保留標記。他們建立之後，將保留標籤加入至保留原則並再將原則套用至使用者。受管理的資料夾助理員處理信箱並適用於使用者的保留原則中的保留設定。若要深入了解保留原則，請參閱[保留標記和保留原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。
 
 當訊息到達其適用於保留標記中指定的保留期間時，受管理的資料夾助理員會採取保留動作標籤來指定。郵件可以然後永久刪除或刪除具有可復原的能力。如果使用者已佈建封存，您也可以將項目移至使用者的就地封存使用保留標記。
 
@@ -96,5 +96,5 @@ MRM 提供的彈性來實作最符合您的組織需求的記錄管理原則。�
 
 [通訊記錄管理術語在 Exchange 2013](messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md)
 
-[保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)
+[保留標記和保留原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 

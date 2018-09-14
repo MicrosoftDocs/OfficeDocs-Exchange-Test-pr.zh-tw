@@ -21,9 +21,9 @@ _**上次修改主題的時間：** 2012-11-30_
 
 整合的通訊包含使用預設系統提示時非上班時間。雖然我取代或變更預設的系統提示，您可能會想要提供自訂的問候語。您可以在來電者撥入 UM 自動語音應答期間非上班時間時所使用的.wav 或.wma 檔案格式中建立的自訂的問候語。例如，"您已達到 Woodgrove Bank 下班後。 」
 
-如果您想要包含組織或商務預設問候語的一部分的名稱，您可以在**企業名稱**\] 方塊中輸入名稱上的 UM 自動語音應答。如需詳細資訊，請參閱[輸入企業名稱](enter-a-business-name-exchange-2013-help.md)。
+如果您想要包含組織或商務預設問候語的一部分的名稱，您可以在**企業名稱**\] 方塊中輸入名稱上的 UM 自動語音應答。如需詳細資訊，請參閱[輸入企業名稱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enter-a-business-name)。
 
-如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](um-auto-attendant-procedures-exchange-2013-help.md)。
+如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)。
 
 ## 開始之前有哪些須知？
 
@@ -31,7 +31,7 @@ _**上次修改主題的時間：** 2012-11-30_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [整合的通訊權限](unified-messaging-permissions-exchange-2013-help.md)主題中的「UM 自動語音應答」項目。
 
-  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
   - 執行這些程序之前，請確認已建立 UM 自動語音應答。如需詳細步驟，請參閱[建立 UM 自動語音應答](create-a-um-auto-attendant-exchange-2013-help.md)。
 

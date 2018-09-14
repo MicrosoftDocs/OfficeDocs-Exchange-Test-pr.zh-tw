@@ -42,15 +42,15 @@ _**上次修改主題的時間：** 2016-12-09_
 
 以下是 Exchange TechCenter 上找到的資源提供可協助您正確設定 VoIP 閘道、 IP Pbx 和 Sbc 的資訊清單：
 
-  - **支援 IP 閘道、 IP PBX 和 PBX 文件**   [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)包含設定檔及設定 VoIP 閘道、 IP Pbx、 Pbx 和 Sbc 時，您可以使用的設定資訊。
+  - **支援 IP 閘道、 IP PBX 和 PBX 文件**   [Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)包含設定檔及設定 VoIP 閘道、 IP Pbx、 Pbx 和 Sbc 時，您可以使用的設定資訊。
 
-  - **設定與技術的附註**   [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)包含設定檔及設定 VoIP 閘道、 IP Pbx 和 Pbx 時您可以使用的設定資訊。
+  - **設定與技術的附註**   [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)包含設定檔及設定 VoIP 閘道、 IP Pbx 和 Pbx 時您可以使用的設定資訊。
 
-  - **針對 Exchange UM online 組態注意事項**   [支援工作階段邊界控制器的組態注意事項](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)包含設定檔及設定 Sbc 時，您可以使用的設定資訊。
+  - **針對 Exchange UM online 組態注意事項**   [支援工作階段邊界控制器的組態注意事項](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)包含設定檔及設定 Sbc 時，您可以使用的設定資訊。
 
 整合的通訊專家可用來協助您在設定電話語音與 IP 型網路裝置。整合通訊專家可協助確保有順利地轉換到整合通訊從舊版或協力廠商語音信箱系統或協助您規劃及部署新的語音信箱系統與 Exchange 整合通訊。部署新的語音郵件系統或升級舊版的其中一個需要 VoIP 閘道、 IP Pbx、 Pbx 和整合通訊相關的重要知識。更多如何連絡 Unified Messaging 專員的相關資訊，如[Microsoft Exchange Server 2013 整合通訊 (UM) 專家](http://go.microsoft.com/fwlink/p/?linkid=262708)或在[Microsoft Pinpoint](https://go.microsoft.com/fwlink/p/?linkid=261951)的認證的 UM 協力廠商。
 
-設定 VoIP 閘道、 IP PBX 或 SBC IP 介面之後，您必須建立並設定 UM IP 閘道來代表您已部署了每個裝置。如需如何建立 UM IP 閘道器，請參閱[建立 UM IP 閘道器](create-a-um-ip-gateway-exchange-2013-help.md)的詳細資訊。
+設定 VoIP 閘道、 IP PBX 或 SBC IP 介面之後，您必須建立並設定 UM IP 閘道來代表您已部署了每個裝置。如需如何建立 UM IP 閘道器，請參閱[建立 UM IP 閘道器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)的詳細資訊。
 
 建立 UM IP 閘道器後，UM IP 閘道相關聯的用戶端存取和信箱伺服器會將 SIP OPTIONS 要求傳送給 VoIP 閘道、 IP PBX 或 SBC 可確保有回應。如果不會回應 VoIP 閘道、 IP PBX 或 SBC，Mailbox server 將記錄與 ID 1088 表示事件要求失敗。若要解決此問題，請確定 VoIP 閘道、 IP PBX 或 SBC 會提供與線上和整合通訊設定正確。
 

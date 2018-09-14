@@ -46,7 +46,7 @@ _**上次修改主題的時間：** 2013-04-19_
 
 ## 步驟 2： 建立並設定 UM 撥號對應表
 
-您已安裝所需的伺服器之後，您必須先建立 UM 撥號對應表。UM 撥號對應表包含可讓您連線至您的電話語音網路連結至單一或多個 UM IP 閘道器的組態設定。UM IP 閘道和 UM 群組搜尋直接連結至 UM 撥號對應表和也會需要。如需詳細資訊，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+您已安裝所需的伺服器之後，您必須先建立 UM 撥號對應表。UM 撥號對應表包含可讓您連線至您的電話語音網路連結至單一或多個 UM IP 閘道器的組態設定。UM IP 閘道和 UM 群組搜尋直接連結至 UM 撥號對應表和也會需要。如需詳細資訊，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
 UM 撥號對應表建立已啟用 UM 的信箱中之使用者的電話分機號碼的連結。當您建立 UM 撥號對應表時，您可以設定的位數的分機號碼、 統一資源識別元 (URI) 類型和 VoIP 安全性設定的撥號對應表。
 
@@ -66,13 +66,13 @@ Exchange Unified Messaging 支援各種 VoIP 閘道廠商與 IP Pbx、 已啟用
 
 如需 VoIP 閘道的詳細資訊，請參閱下列主題：
 
-  - [建立 UM IP 閘道器](create-a-um-ip-gateway-exchange-2013-help.md)
+  - [建立 UM IP 閘道器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)
 
-  - [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   - [連線至 UM VoIP 閘道、 IP PBX 或工作階段邊界控制器](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)
 
-如需詳細資訊，請參閱[連線至您的電話網路的語音郵件系統](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)。
+如需詳細資訊，請參閱[連線至您的電話網路的語音郵件系統](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)。
 
 ## 步驟 4： 建立新的 UM 群組搜尋 （如果需要）
 

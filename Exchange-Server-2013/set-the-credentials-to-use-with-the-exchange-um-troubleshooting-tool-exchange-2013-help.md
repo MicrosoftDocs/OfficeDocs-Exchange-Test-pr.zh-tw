@@ -29,11 +29,11 @@ Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow
 
   - 請確定您的Exchange 2010或 Exchange 2013 組織符合下列需求：
     
-      - 已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+      - 已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
     
-      - 已建立 UM 信箱原則。如需詳細步驟，請參閱[建立 UM 信箱原則](create-a-um-mailbox-policy-exchange-2013-help.md)。
+      - 已建立 UM 信箱原則。如需詳細步驟，請參閱[建立 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)。
     
-      - 已建立 UM IP 閘道。如需詳細步驟，請參閱[建立 UM IP 閘道器](create-a-um-ip-gateway-exchange-2013-help.md)。
+      - 已建立 UM IP 閘道。如需詳細步驟，請參閱[建立 UM IP 閘道器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)。
     
       - 已新增 Exchange 2010 UM server 至 UM 撥號對應表。如果您使用 Exchange 2013 與 Lync Server，新增至 SIP URI 撥號對應所有用戶端存取和信箱伺服器。如需詳細步驟，請參閱[新增 UM 伺服器至撥號對應表](https://go.microsoft.com/fwlink/p/?linkid=313051)或[將信箱和用戶端存取伺服器新增至 SIP URI 撥號對應表](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)。
 

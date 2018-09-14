@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2015-04-08_
 
 在 Microsoft Exchange Server 2013 中，當您建立日誌規則來記錄 Exchange 組織中傳送給收件者或寄件者或由他們送出的電子郵件時，會包含整合通訊 (UM) 服務所產生的語音信箱及未接來電通知。使用本主題的程式為整個組織開啟或關閉此功能。
 
-要尋找與日誌記錄相關的其他管理工作嗎？請參閱[管理日誌](manage-journaling-exchange-2013-help.md)。
+要尋找與日誌記錄相關的其他管理工作嗎？請參閱[管理日誌](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/journaling/manage-journaling)。
 
 ## 開始之前有哪些須知？
 
@@ -54,5 +54,5 @@ _**上次修改主題的時間：** 2015-04-08_
 
 [日誌](journaling-exchange-2013-help.md)
 
-[管理日誌](manage-journaling-exchange-2013-help.md)
+[管理日誌](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/journaling/manage-journaling)
 

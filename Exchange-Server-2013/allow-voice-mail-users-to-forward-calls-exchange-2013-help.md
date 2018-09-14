@@ -107,13 +107,13 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 撥號規則
 
-根據設定的自動答錄規則的方式，來電可能會導致呼叫傳輸。在這種情況下，傳輸目標電話號碼會受限於撥號規則和限制稱為的廠商相關聯的 UM 信箱原則。如需撥出及撥號規則和限制的詳細資訊，請參閱[允許使用者撥](allow-users-to-make-calls-exchange-2013-help.md)。
+根據設定的自動答錄規則的方式，來電可能會導致呼叫傳輸。在這種情況下，傳輸目標電話號碼會受限於撥號規則和限制稱為的廠商相關聯的 UM 信箱原則。如需撥出及撥號規則和限制的詳細資訊，請參閱[允許使用者撥](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls)。
 
 ## 啟用/停用自動答錄規則
 
 根據預設，呼叫自動答錄服務規則會自動啟用已啟用 UM 的使用者。不過，您可以停用 UM 信箱原則或使用者的信箱上的功能來停用呼叫接聽規則的使用者。如需如何啟用或停用呼叫接聽規則的詳細資訊，請參閱下列主題：
 
-  - [允許或防止使用者在相同的 UM 信箱原則建立通話自動答錄服務規則](allow-or-prevent-users-in-the-same-um-mailbox-policy-from-creating-call-answering-rules-exchange-2013-help.md)
+  - [允許或防止使用者在相同的 UM 信箱原則建立通話自動答錄服務規則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules-in-the-same-mailbox-policy)
 
-  - [允許或防止使用者建立通話自動答錄服務規則](allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md)
+  - [允許或防止使用者建立通話自動答錄服務規則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules)
 

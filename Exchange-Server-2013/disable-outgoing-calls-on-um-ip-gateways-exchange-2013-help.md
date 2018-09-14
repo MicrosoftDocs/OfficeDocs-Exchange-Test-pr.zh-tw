@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2012-11-13_
 
 您可以啟用或停用整合通訊 (UM) IP 閘道的撥出電話。清除內容的 UM IP 閘道上的 \[**允許通過這個 UM IP 閘道的撥出電話**\] 選項，當您設定 UM IP 閘道不接受並將撥出電話語音傳送 over IP (VoIP) 閘道、 IP PBX 或工作階段邊界控制器 (SBC)。雖然**允許通過這個 UM IP 閘道的撥出電話**設定控制是否能夠啟動使用者的撥出電話的 UM IP 閘道，它不會影響來電轉接或 VoIP 閘道、 IP PBX 或 SBC 的來電。
 
-如需與 UM IP 閘道相關的其他管理工作，請參閱[UM IP 閘道程序](um-ip-gateway-procedures-exchange-2013-help.md)。
+如需與 UM IP 閘道相關的其他管理工作，請參閱[UM IP 閘道程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateway-procedures)。
 
 ## 開始之前有哪些須知？
 
@@ -27,9 +27,9 @@ _**上次修改主題的時間：** 2012-11-13_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [整合的通訊權限](unified-messaging-permissions-exchange-2013-help.md)主題中的「UM IP 閘道」項目。
 
-  - 執行這些程序之前，請確認已建立 UM 撥號對應表。 如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 執行這些程序之前，請確認已建立 UM 撥號對應表。 如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
-  - 執行這些程序之前，請確認已建立 UM IP 閘道器。如需詳細步驟，請參閱[建立 UM IP 閘道器](create-a-um-ip-gateway-exchange-2013-help.md)。
+  - 執行這些程序之前，請確認已建立 UM IP 閘道器。如需詳細步驟，請參閱[建立 UM IP 閘道器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)。
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 

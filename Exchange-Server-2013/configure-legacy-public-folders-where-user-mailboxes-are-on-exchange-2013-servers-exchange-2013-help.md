@@ -25,7 +25,7 @@ _**上次修改主題的時間：** 2017-03-27_
 
 
 > [!NOTE]  
-> Outlook 2016 for Mac 使用者可以存取舊版公用資料夾後您依照本文中的步驟。如果您組織中的用戶端使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取並行或混合式拓撲中的公用資料夾。如需詳細資訊，請參閱<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">存取公用資料夾與 Outlook 2016 for Mac</a>。
+> Outlook 2016 for Mac 使用者可以存取舊版公用資料夾後您依照本文中的步驟。如果您組織中的用戶端使用 Outlook 2016 for Mac，請務必先安裝年 4 月 2016年更新。否則，這些使用者將無法存取並行或混合式拓撲中的公用資料夾。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac">存取公用資料夾與 Outlook 2016 for Mac</a>。
 
 
 
@@ -70,7 +70,7 @@ _**上次修改主題的時間：** 2017-03-27_
 
 此程序的最後一個步驟是設定使用者信箱來允許存取舊版內部部署公用資料夾。
 
-讓 Exchange Server 2013 內部部署使用者能夠存取舊版公用資料夾。您將會指向先前在[Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)中建立的所有 Proxy 公用資料夾信箱。從套用 CU5 或更新版本更新的 Exchange 2013 伺服器執行下列命令。
+讓 Exchange Server 2013 內部部署使用者能夠存取舊版公用資料夾。您將會指向先前在[Step 2: Make remote public folders discoverable](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders)中建立的所有 Proxy 公用資料夾信箱。從套用 CU5 或更新版本更新的 Exchange 2013 伺服器執行下列命令。
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
 

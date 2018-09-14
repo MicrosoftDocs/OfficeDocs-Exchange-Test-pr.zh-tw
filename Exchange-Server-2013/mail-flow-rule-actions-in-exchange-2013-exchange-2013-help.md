@@ -61,7 +61,7 @@ _**上次修改主題的時間：** 2017-05-03_
 <p><strong>轉寄郵件核准</strong>&gt;<strong>給這些人員</strong></p></td>
 <td><p><em>ModerateMessageByUser</em></p></td>
 <td><p><code>Addresses</code></p></td>
-<td><p>轉寄至指定之仲裁者的郵件以附件形式包裝在核准要求中。如需詳細資訊，請參閱<a href="common-message-approval-scenarios-exchange-2013-help.md">常見的郵件核准案例</a>。您不能作為仲裁通訊群組。</p></td>
+<td><p>轉寄至指定之仲裁者的郵件以附件形式包裝在核准要求中。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">常見的郵件核准案例</a>。您不能作為仲裁通訊群組。</p></td>
 <td><p>Exchange 2010或更新版本</p></td>
 </tr>
 <tr class="even">
@@ -632,7 +632,7 @@ _**上次修改主題的時間：** 2017-05-03_
 
 ## 相關資訊
 
-[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)
+[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

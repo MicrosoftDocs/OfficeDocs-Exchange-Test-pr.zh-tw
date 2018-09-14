@@ -23,5 +23,5 @@ _**上次修改主題的時間：** 2012-10-13_
 
 ## 設定使用者的語音信箱
 
-啟用 UM 的使用者之前，您必須考慮的撥號對應表使用類型、 分機號碼且會使用，並決定何種 PIN 原則、 Outlook 語音存取及其他功能 （英文） 您要允許使用者擁有存取權。如需詳細資訊，請參閱[使用者的語音信箱](voice-mail-for-users-exchange-2013-help.md)。
+啟用 UM 的使用者之前，您必須考慮的撥號對應表使用類型、 分機號碼且會使用，並決定何種 PIN 原則、 Outlook 語音存取及其他功能 （英文） 您要允許使用者擁有存取權。如需詳細資訊，請參閱[使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)。
 

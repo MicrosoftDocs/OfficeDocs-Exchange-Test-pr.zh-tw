@@ -63,7 +63,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>瞭解 Outlook Web App，這能夠讓使用者透過網頁瀏覽器存取自己的 Exchange 2013 信箱。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="mailtips-exchange-2013-help.md">MailTips</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips">MailTips</a></p></td>
 <td><p>瞭解郵件提示，這是在使用者撰寫郵件時讓使用者看到的資訊訊息。</p></td>
 </tr>
 </tbody>

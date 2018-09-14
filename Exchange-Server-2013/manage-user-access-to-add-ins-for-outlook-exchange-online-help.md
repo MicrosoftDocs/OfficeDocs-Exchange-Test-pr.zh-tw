@@ -23,7 +23,7 @@ _**上次修改主題的時間：** 2018-04-17_
 
   - 您可以使用 Exchange Online PowerShell 中管理您可以使用 EAC 中的所有設定，以及其他設定。例如，您可以限制只有特定使用者能在組織中。
 
-其他管理工作，請參閱[適用於 Outlook 的應用程式](add-ins-for-outlook-exchange-2013-help.md)。
+其他管理工作，請參閱[適用於 Outlook 的應用程式](https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook)。
 
 ## 開始之前有哪些須知？
 

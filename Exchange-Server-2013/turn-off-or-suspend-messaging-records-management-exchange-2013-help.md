@@ -45,7 +45,7 @@ _**上次修改主題的時間：** 2013-02-14_
 
 您可以將信箱就地保留保留關閉 MRM 暫時 （例如當使用者在休假時）。這會擱置信箱的保留原則處理直到保留功能已停用。這是與就地保留或訴訟保留上放置信箱不同。
 
-如需如何為信箱設定保留功能的詳細資訊，請參閱[就地保留信箱保留 」 狀態](place-a-mailbox-on-retention-hold-exchange-2013-help.md)。
+如需如何為信箱設定保留功能的詳細資訊，請參閱[就地保留信箱保留 」 狀態](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 
 若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
 

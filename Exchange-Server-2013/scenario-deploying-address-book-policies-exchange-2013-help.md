@@ -205,7 +205,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 不要在通用類別目錄伺服器上執行 Exchange 2010 用戶端存取伺服器角色。正在使用名稱服務提供者介面 (NSPI)，而不是 Microsoft Exchange 通訊錄服務的 Active Directory 中會產生能力。您可以在通用類別目錄伺服器上執行 Exchange 2013 伺服器角色且正常運作，但不建議在網域控制站上安裝 Exchange 的 Abp。
 
-  - 您無法使用階層式通訊錄 (HABs) 和 Abp 同時。深入了解，請參閱 ＜ [階層式通訊錄](hierarchical-address-books-exchange-2013-help.md)。
+  - 您無法使用階層式通訊錄 (HABs) 和 Abp 同時。深入了解，請參閱 ＜ [階層式通訊錄](https://docs.microsoft.com/zh-tw/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
   - 任何已指定 ABP 的使用者應存在於自己的 GAL 中。
 
@@ -267,7 +267,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - CustomAttributeX 屬性會為組織自訂作業而明確予以保留，並完全由組織系統管理員所控制。
 
-另請考慮實作時加以分離貴組織的最佳作法是使用中的通訊群組和動態通訊群組名稱的公司識別碼。Exchange 具有會根據許多屬性建立包括建立者的通訊群組的公司、 StateorProvince、 Title、 及 CustomAttribute15 以 CustomAttribute1 為通訊群組的使用者通訊群組的名稱自動新增尾碼或首碼群組命名原則功能。群組命名原則，請務必特別是如果您要讓使用者能夠建立自己的通訊群組。如需詳細資訊，請參閱[建立通訊群組命名原則](create-a-distribution-group-naming-policy-exchange-2013-help.md)。
+另請考慮實作時加以分離貴組織的最佳作法是使用中的通訊群組和動態通訊群組名稱的公司識別碼。Exchange 具有會根據許多屬性建立包括建立者的通訊群組的公司、 StateorProvince、 Title、 及 CustomAttribute15 以 CustomAttribute1 為通訊群組的使用者通訊群組的名稱自動新增尾碼或首碼群組命名原則功能。群組命名原則，請務必特別是如果您要讓使用者能夠建立自己的通訊群組。如需詳細資訊，請參閱[建立通訊群組命名原則](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
 
 群組命名原則並不適用於動態通訊群組，因此必須以手動方式分割並手動套用命名原則。
 
@@ -289,7 +289,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
     New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
 
-如需更多有關使用收件者篩選器建立通訊清單的資訊，請參閱[使用收件者篩選器來建立通訊清單](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)。
+如需更多有關使用收件者篩選器建立通訊清單的資訊，請參閱[使用收件者篩選器來建立通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)。
 
 可建立將 ABP，您必須提供會議室通訊清單。如果您的組織如會議室或設備信箱沒有資源信箱，我們建議您建立的空白會議室通訊清單。下列範例會在因為在組織中有無會議室信箱建立空白會議室通訊清單。
 
@@ -303,7 +303,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
     New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
 
-如需詳細資訊，請參閱 [建立全域通訊清單](create-a-global-address-list-exchange-2013-help.md)。
+如需詳細資訊，請參閱 [建立全域通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/create-global-address-list)。
 
 當您建立時意外遺失時提供*AddressLists*參數的 New-或 Set-offlineaddressbook 以確保任何項目應包含適當的 GAL 的 OAB。基本上，您可以自訂的使用者會看到或藉由指定的 AddressLists 清單中 AddressLists 的 New/Set-offlineaddressbook 減少 OAB 下載大小的項目。不過，如果您想讓使用者看到完整的 GAL OAB 中的項目，請確定 AddressLists 納入 GAL。
 
@@ -311,7 +311,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
     New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
-如需詳細資訊，請參閱 [建立離線通訊錄](create-an-offline-address-book-exchange-2013-help.md)。
+如需詳細資訊，請參閱 [建立離線通訊錄](https://docs.microsoft.com/zh-tw/exchange/address-books/offline-address-books/create-offline-address-book)。
 
 ## 步驟 4： 建立 Abp
 
@@ -319,7 +319,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
     New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
 
-如需詳細資訊，請參閱 [建立通訊錄原則](create-an-address-book-policy-exchange-2013-help.md)。
+如需詳細資訊，請參閱 [建立通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/create-an-address-book-policy)。
 
 ## 步驟 5： 將 Abp 指派給信箱
 
@@ -329,5 +329,5 @@ _**上次修改主題的時間：** 2016-12-09_
 
     Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
 
-如需詳細資訊，請參閱 [通訊錄原則指派給郵件使用者](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)。
+如需詳細資訊，請參閱 [通訊錄原則指派給郵件使用者](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)。
 

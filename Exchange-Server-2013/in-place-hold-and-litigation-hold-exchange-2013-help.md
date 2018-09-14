@@ -119,7 +119,7 @@ Exchange 2013 仍提供於 Exchange 2010 中所引進用以保留 eDiscovery 資
 
 ## 將信箱設定為就地保留狀態
 
-已經新增至 [探索管理](discovery-management-exchange-2013-help.md) 角色型存取控制 (RBAC) 角色群組，或是已經指派合法保留及信箱搜尋管理角色的授權使用者，可以將信箱使用者設定為就地保留狀態。您可以將工作委派給組織法務部門裡的記錄管理員、法務人員或是律師，但指派最少的權限。若要了解關於指派 探索管理 角色群組的相關資訊，請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+已經新增至 [探索管理](discovery-management-exchange-2013-help.md) 角色型存取控制 (RBAC) 角色群組，或是已經指派合法保留及信箱搜尋管理角色的授權使用者，可以將信箱使用者設定為就地保留狀態。您可以將工作委派給組織法務部門裡的記錄管理員、法務人員或是律師，但指派最少的權限。若要了解關於指派 探索管理 角色群組的相關資訊，請參閱[Exchange 中指派 eDiscovery 權限](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)。
 
 
 > [!IMPORTANT]  
@@ -128,7 +128,7 @@ Exchange 2013 仍提供於 Exchange 2010 中所引進用以保留 eDiscovery 資
 
 
 
-在 Exchange 2013 中，就地保留功能已和就地 eDiscovery 搜尋整合在一起。您可以使用 Exchange 系統管理中心 (EAC) 中的**就地 eDiscovery &保留**精靈或 Exchange 管理命令中的 **New-MailboxSearch** 的相關指令程式將信箱設定為就地保留狀態。若要深入了解將信箱設定為就地保留的相關資訊，請參閱[建立或移除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
+在 Exchange 2013 中，就地保留功能已和就地 eDiscovery 搜尋整合在一起。您可以使用 Exchange 系統管理中心 (EAC) 中的**就地 eDiscovery &保留**精靈或 Exchange 管理命令中的 **New-MailboxSearch** 的相關指令程式將信箱設定為就地保留狀態。若要深入了解將信箱設定為就地保留的相關資訊，請參閱[建立或移除就地保留](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
 
 > [!NOTE]  

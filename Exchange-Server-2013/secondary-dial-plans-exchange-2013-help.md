@@ -123,11 +123,11 @@ UM features that operate differently for secondary dial plans
 
   - [變更的 SIP 位址](change-a-sip-address-exchange-2013-help.md)
 
-  - [移除 SIP 位址](remove-a-sip-address-exchange-2013-help.md)
+  - [移除 SIP 位址](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 
-  - [新增為 E.164 號碼](add-an-e-164-number-exchange-2013-help.md)
+  - [新增為 E.164 號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number)
 
-  - [變更為 E.164 號碼](change-an-e-164-number-exchange-2013-help.md)
+  - [變更為 E.164 號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number)
 
   - [移除 E.164 號碼](remove-an-e-164-number-exchange-2013-help.md)
 

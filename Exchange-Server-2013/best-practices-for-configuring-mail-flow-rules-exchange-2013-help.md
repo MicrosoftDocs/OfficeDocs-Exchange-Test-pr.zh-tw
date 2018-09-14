@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 ## 測試您的規則
 
-若要確定人的電子郵件不會發生未預期的事情及以確定您真正會議商務、 法律或規範意願的您的規則，請務必徹底測試。有許多種和規則可以彼此互動，因此請務必測試您預期同時會符合規則和以防您不經意做過一般的規則不會符合規則的訊息。若要深入了解測試規則的所有選項，請參閱[測試郵件流程規則](test-a-mail-flow-rule-exchange-2013-help.md)。
+若要確定人的電子郵件不會發生未預期的事情及以確定您真正會議商務、 法律或規範意願的您的規則，請務必徹底測試。有許多種和規則可以彼此互動，因此請務必測試您預期同時會符合規則和以防您不經意做過一般的規則不會符合規則的訊息。若要深入了解測試規則的所有選項，請參閱[測試郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)。
 
 ## 您的規則的範圍
 
@@ -29,7 +29,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - **規則限制 \[進入\] 或 \[進階不在組織的郵件**
     
-    根據預設，新的規則套用至郵件傳送或接收到您組織中的人員。因此如果您想要套用只有一個方法的規則，請務必所指定的規則條件。如需範例，請參閱[常見的附件封鎖案例](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)。
+    根據預設，新的規則套用至郵件傳送或接收到您組織中的人員。因此如果您想要套用只有一個方法的規則，請務必所指定的規則條件。如需範例，請參閱[常見的附件封鎖案例](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)。
 
   - **限制的寄件者或受話者的網域為基礎的規則**
     
@@ -47,7 +47,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 有時延長執行您想要的這兩個規則。傳輸規則處理順序，讓多個規則可以套用至相同的訊息。例如，如果其中一個動作是要封鎖郵件，而且您也可以另一個您想要套用，例如將郵件複製到寄件者的管理員或變更的通知郵件主旨的動作就需要這兩個規則。第一個規則無法將郵件複製到寄件者的管理員及變更主旨及第二個規則可能封鎖郵件。
 
-如果您是使用類似的這兩個規則，請務必條件皆相同。若要查看範例，請查看[常見的郵件核准案例](common-message-approval-scenarios-exchange-2013-help.md)、 [常見的附件封鎖案例](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)，與[整個組織的免責聲明、簽章、頁尾或標頭](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)範例 3 中的範例 3。
+如果您是使用類似的這兩個規則，請務必條件皆相同。若要查看範例，請查看[常見的郵件核准案例](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)、 [常見的附件封鎖案例](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)，與[整個組織的免責聲明、簽章、頁尾或標頭](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)範例 3 中的範例 3。
 
 ## 不要重複上每個電子郵件交談中的動作
 
@@ -96,7 +96,7 @@ _**上次修改主題的時間：** 2016-12-09_
 </table>
 
 
-如需範例顯示使用規則運算式和使用，請參閱[使用清單中的文字、 片語或模式為基礎的路由電子郵件的郵件流程規則](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)Exchange模組Windows PowerShell命令的文字檔案。
+如需範例顯示使用規則運算式和使用，請參閱[使用清單中的文字、 片語或模式為基礎的路由電子郵件的郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)Exchange模組Windows PowerShell命令的文字檔案。
 
 若要了解如何指定使用規則運算式模式，請參閱[規則運算式參考](https://go.microsoft.com/fwlink/p/?linkid=532394)。
 
