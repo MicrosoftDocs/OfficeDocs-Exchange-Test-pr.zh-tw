@@ -107,7 +107,7 @@ _**上次修改主題的時間：** 2018-04-16_
     
     從 Exchange 2013 CU6 開始，如果想讓外部寄件者傳送郵件至擁有郵件功能的公用資料夾，**匿名**使用者至少必須取得**建立項目**權限。如果您已設定擁有郵件功能的公用資料夾但還未這麼做，外部寄件者將會收到傳遞失敗通知，且郵件不會傳送至擁有郵件功能的公用資料夾。
     
-    您可以使用命令介面或 Outlook 設定匿名使用者的權限。若要深入了解如何設定匿名使用者的權限，請參閱＜[郵件啟用或停用郵件功能的公用資料夾](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)＞。
+    您可以使用命令介面或 Outlook 設定匿名使用者的權限。若要深入了解如何設定匿名使用者的權限，請參閱＜[郵件啟用或停用郵件功能的公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder)＞。
 
   - 可以從舊版 Exchange 伺服器移轉到 Exchange 2013 的公用資料夾數目上限為 500,000。如需公用資料夾移轉的相關資訊，請參閱＜[使用批次移轉公用資料夾從舊版移轉至 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)＞。
 

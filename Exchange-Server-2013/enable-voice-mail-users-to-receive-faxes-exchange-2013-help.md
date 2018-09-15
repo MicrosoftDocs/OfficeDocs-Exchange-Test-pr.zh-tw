@@ -283,7 +283,7 @@ UM 整合通訊總機號碼傳入呼叫都會以具有語音 (RTP/audio) SDP 設
 
 ## 多個 DID 電話號碼
 
-當您啟用使用者的整合通訊時，您必須輸入該使用者至少要有單一的分機號碼。您可以使用 Exchange 系統管理中心 (EAC) 來新增多個已啟用 UM 之使用者的分機號碼。如需詳細資訊，請參閱[新增分機號碼](add-an-extension-number-exchange-2013-help.md)。
+當您啟用使用者的整合通訊時，您必須輸入該使用者至少要有單一的分機號碼。您可以使用 Exchange 系統管理中心 (EAC) 來新增多個已啟用 UM 之使用者的分機號碼。如需詳細資訊，請參閱[新增分機號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)。
 
 當已啟用 UM 的使用者有下列情況時，新增多個分機號碼會很有用：
 

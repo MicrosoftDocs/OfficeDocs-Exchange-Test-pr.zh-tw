@@ -37,9 +37,9 @@ Exchange 2013允許SharePoint 2013搜尋使用同盟搜尋 API 的 Exchange 信�
 
 如需詳細資料，請參閱下列主題：
 
-  - [就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)
+  - [就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)
 
   - [在 SharePoint 2013 中設定 eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=257727)
 

@@ -275,7 +275,7 @@ Exchange管理命令介面內建Windows PowerShell 技術上是功能強大的�
 <td><p>了解如何設定用戶端功能，以讓使用者可以存取及管理其語音信箱訊息。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-outlook-voice-access-pin-security-exchange-2013-help.md">設定 Outlook 語音存取 PIN 安全性</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security">設定 Outlook 語音存取 PIN 安全性</a></p></td>
 <td><p>了解如何設定 Outlook 語音存取使用者的 PIN 碼需求。</p></td>
 </tr>
 <tr class="odd">

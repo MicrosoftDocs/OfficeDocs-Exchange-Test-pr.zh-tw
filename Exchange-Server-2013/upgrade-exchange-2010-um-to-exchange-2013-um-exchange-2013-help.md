@@ -243,7 +243,7 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 撥號對應表，或設定現有的撥號對應表。UM 撥號對應表代表一組共用一般使用者分機號碼的傳統式或已啟用 SIP 的專用交換機 (PBX) 或 IP PBX。撥號對應表內由傳統式或已啟用 SIP 的 PBX 或 IP PBX 所主控的所有使用者分機號碼，都包含相同的位數。使用者可撥打其他人的電話分機，而不需要附加分機的特別號碼或撥打完整的電話號碼。
 
-在整合通訊中使用 UM 撥號對應表，可確保使用者電話分機號碼是唯一的。在某些電話語音網路中，可能會存在多個 PBX 或 IP PBX。在這些電話語音網路中，可能會有兩個使用者擁有相同的電話分機號碼。UM 撥號對應表可解決這個狀況。將兩個使用者放入兩個不同的 UM 撥號對應表，就能讓他們的分機變成唯一的。如需詳細資訊，請參閱 [UM 撥號對應表](um-dial-plans-exchange-2013-help.md)。
+在整合通訊中使用 UM 撥號對應表，可確保使用者電話分機號碼是唯一的。在某些電話語音網路中，可能會存在多個 PBX 或 IP PBX。在這些電話語音網路中，可能會有兩個使用者擁有相同的電話分機號碼。UM 撥號對應表可解決這個狀況。將兩個使用者放入兩個不同的 UM 撥號對應表，就能讓他們的分機變成唯一的。如需詳細資訊，請參閱 [UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)。
 
 如有需要，您可以使用 EAC 來建立 UM 撥號對應表：
 
@@ -470,7 +470,7 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 使用者在啟用信箱的整合通訊前須先擁有信箱。但是根據預設，不會為擁有信箱的使用者啟用 UM。在使用者擁有 UM 功能之後，您才能管理、修改及設定使用者的 UM 屬性與語音信箱功能。您可以使用 EAC 或命令介面，讓使用者啟用 UM。若要深入了解，請參閱 [使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)。
 
-讓使用者啟用 UM 時，您至少必須定義一個分機號碼，讓 UM 在提交語音郵件給使用者的信箱時使用，以及允許使用者使用 Outlook 語音存取。讓使用者啟用 UM 後，可以在使用者的信箱上設定 Exchange 整合通訊 (EUM) Proxy 位址以在使用者的信箱新增次要分機號碼，或是在 EAC 中新增或移除使用者的額外或次要分機。若要新增、修改或移除分機號碼、E.164 號碼或 SIP 位址，請參閱[擁有郵件功能的語音使用者程序](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
+讓使用者啟用 UM 時，您至少必須定義一個分機號碼，讓 UM 在提交語音郵件給使用者的信箱時使用，以及允許使用者使用 Outlook 語音存取。讓使用者啟用 UM 後，可以在使用者的信箱上設定 Exchange 整合通訊 (EUM) Proxy 位址以在使用者的信箱新增次要分機號碼，或是在 EAC 中新增或移除使用者的額外或次要分機。若要新增、修改或移除分機號碼、E.164 號碼或 SIP 位址，請參閱[擁有郵件功能的語音使用者程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures)。
 
 若要使用 EAC 讓使用者啟用整合通訊，請執行下列動作：
 

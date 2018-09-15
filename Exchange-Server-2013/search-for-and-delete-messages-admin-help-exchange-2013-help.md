@@ -35,7 +35,7 @@ _**上次修改主題的時間：** 2017-12-20_
     
       - **信箱匯入匯出：** 這個角色可讓您從使用者的信箱中刪除郵件。依預設，此角色不會指派給任何角色群組。若要從使用者的信箱中刪除郵件，您可以將信箱匯入匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)中的＜Add a role to a role group＞。
 
-  - 如果您要從中刪除郵件的信箱已啟用單一項目復原，則必須先停用該功能。如需詳細資訊，請參閱[啟用或停用單一項目復原的信箱](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md)。
+  - 如果您要從中刪除郵件的信箱已啟用單一項目復原，則必須先停用該功能。如需詳細資訊，請參閱[啟用或停用單一項目復原的信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery)。
 
   - 如果您要從中刪除郵件的信箱處於保留狀態，建議您先與記錄管理或法務部門確認，然後再移除保留並刪除信箱內容。獲得核准之後，請依照[清除 \[可復原的項目\] 資料夾](clean-up-the-recoverable-items-folder-exchange-2013-help.md)主題中所列的步驟進行。
 

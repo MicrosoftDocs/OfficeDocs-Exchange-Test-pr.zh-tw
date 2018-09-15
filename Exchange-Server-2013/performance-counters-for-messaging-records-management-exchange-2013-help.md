@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 本主題中的效能計數器監視受管理的資料夾助理員它實作的 Microsoft Exchange Server 2010通訊的記錄管理 (MRM)。因為執行受管理的資料夾助理員會大量消耗資源的程序，您應只有在您的伺服器可以容忍的額外負載時加以執行。您也應該監視伺服器效能受管理的資料夾助理員執行時。除了本主題中所列的效能計數器，您可能也要監視監視項目如磁碟效能及 CPU 使用率的其他效能計數器。
 
-如需監視已執行 MRM 之電腦的詳細資訊，請參閱[監視通訊記錄管理](monitoring-messaging-records-management-exchange-2013-help.md)。
+如需監視已執行 MRM 之電腦的詳細資訊，請參閱[監視通訊記錄管理](monitoring-https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)。
 
 ## MRM 的效能計數器
 

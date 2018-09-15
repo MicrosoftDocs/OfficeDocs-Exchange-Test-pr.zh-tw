@@ -29,5 +29,5 @@ _**上次修改主題的時間：** 2015-04-13_
 
 [管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)  資訊可協助您建立、 檢視、 修改、 啟用、 停用或移除傳輸規則，並匯入及匯出傳輸規則集合的相關資訊。
 
-[設定郵件流程規則的最佳作法](best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md)   協助您避免常見組態錯誤的資訊。
+[設定郵件流程規則的最佳作法](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)   協助您避免常見組態錯誤的資訊。
 

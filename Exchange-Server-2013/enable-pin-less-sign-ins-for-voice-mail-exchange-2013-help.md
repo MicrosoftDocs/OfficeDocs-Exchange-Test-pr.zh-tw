@@ -44,7 +44,7 @@ _**上次修改主題的時間：** 2015-04-08_
 
 如需其他與 UM 信箱原則相關的管理工作，請參閱[UM 信箱原則程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)。
 
-如需與 UM 信箱相關的其他工作，請參閱[擁有郵件功能的語音使用者程序](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
+如需與 UM 信箱相關的其他工作，請參閱[擁有郵件功能的語音使用者程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures)。
 
 ## 開始之前有哪些須知？
 

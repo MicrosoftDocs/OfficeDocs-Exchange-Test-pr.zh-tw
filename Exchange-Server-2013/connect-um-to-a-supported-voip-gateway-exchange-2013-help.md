@@ -82,5 +82,5 @@ UM 群組搜尋鏡像 Pbx 與 IP Pbx 上所使用的群組搜尋。當您設定 
 
 根據如何建立 UM IP 閘道器，您可能必須建立一或多個新的 UM 群組搜尋。如果您不連結撥號對應表與 UM IP 閘道器建立 UM IP 閘道時，預設會建立單一的 UM 群組搜尋。連結時 UM IP 閘道 um 撥號對應表建立 UM IP 閘道器、 所有來電將會都傳送到 UM IP 閘道器與這些通話將會接受用戶端存取和信箱伺服器所時。如果您不連結至 UM 撥號對應表 UM IP 閘道器當您建立 UM IP 閘道器，必須使用正確的引導識別碼的來電轉接至撥號對應表的 UM IP 閘道建立 UM 群組搜尋。
 
-如果您有多個 Outlook Voice Access 和自動語音應答號碼並已連結至撥號對應表 UM IP 閘道器，您需要刪除 UM 群組搜尋之預設已建立並建立多個 UM 群組搜尋。如需詳細資訊如何建立 UM 群組搜尋，請參閱[建立 UM 群組搜尋](create-a-um-hunt-group-exchange-2013-help.md)。
+如果您有多個 Outlook Voice Access 和自動語音應答號碼並已連結至撥號對應表 UM IP 閘道器，您需要刪除 UM 群組搜尋之預設已建立並建立多個 UM 群組搜尋。如需詳細資訊如何建立 UM 群組搜尋，請參閱[建立 UM 群組搜尋](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group)。
 

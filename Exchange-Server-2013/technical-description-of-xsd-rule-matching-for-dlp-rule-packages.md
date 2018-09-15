@@ -318,7 +318,7 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
 
 ## 相關資訊
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [定義自己的 DLP 範本和資訊類型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

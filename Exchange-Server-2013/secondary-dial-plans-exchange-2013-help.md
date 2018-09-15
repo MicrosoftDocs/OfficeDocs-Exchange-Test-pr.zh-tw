@@ -111,17 +111,17 @@ UM features that operate differently for secondary dial plans
 
 如需關於新增、移除或變更分機的詳細資訊，請參閱下列其中一項：
 
-  - [變更分機號碼](change-an-extension-number-exchange-2013-help.md)
+  - [變更分機號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number)
 
-  - [新增分機號碼](add-an-extension-number-exchange-2013-help.md)
+  - [新增分機號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)
 
-  - [移除分機號碼](remove-an-extension-number-exchange-2013-help.md)
+  - [移除分機號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-extension-number)
 
 若您必須為啟用 UM 功能的使用者變更 SIP 位址或 E.164 號碼，請參閱：
 
-  - [新增 SIP 位址](add-a-sip-address-exchange-2013-help.md)
+  - [新增 SIP 位址](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-sip-address)
 
-  - [變更的 SIP 位址](change-a-sip-address-exchange-2013-help.md)
+  - [變更的 SIP 位址](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address)
 
   - [移除 SIP 位址](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 

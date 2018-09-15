@@ -105,7 +105,7 @@ Exchange 中的 SMTP 電子郵件地址的最大長度是 571 個字元。此限
 </tr>
 <tr class="even">
 <td><p>DynamicDistributionGroup</p></td>
-<td><p>具有 Active Directory 類別<strong>msExchDynamicDistributionList</strong>的物件。如需詳細資訊，請參閱<a href="manage-dynamic-distribution-groups-exchange-2013-help.md">管理動態通訊群組</a>。</p></td>
+<td><p>具有 Active Directory 類別<strong>msExchDynamicDistributionList</strong>的物件。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">管理動態通訊群組</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mailbox</p></td>

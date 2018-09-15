@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 探索管理 管理角色群組是組成 Microsoft Exchange Server 2013 中角色型存取控制 (RBAC) 權限模型的其中一個內建角色群組。角色群組會有一或多個管理角色指派，其中包含執行指定工作集所需的權限。角色群組的成員擁有指派給該角色群組的管理角色存取權。如需角色群組的詳細資訊，請參閱[了解管理角色群組](understanding-management-role-groups-exchange-2013-help.md)。
 
-系統管理員或探索管理角色群組之成員的使用者可以在符合特定準則的資料Exchange組織中執行搜尋的信箱和也可以在信箱上設定訴訟保留。如需詳細資訊，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
+系統管理員或探索管理角色群組之成員的使用者可以在符合特定準則的資料Exchange組織中執行搜尋的信箱和也可以在信箱上設定訴訟保留。如需詳細資訊，請參閱[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
 
 
 > [!IMPORTANT]  

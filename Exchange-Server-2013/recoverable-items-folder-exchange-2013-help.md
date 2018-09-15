@@ -220,9 +220,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 了解更多有關就地 eDiscovery、 就地保留，與訴訟暫止狀態，請參閱下列主題：
 
-  - [就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)
+  - [就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 回到頁首
 

@@ -17,7 +17,7 @@ _**適用版本：** Exchange Server 2013_
 
 _**上次修改主題的時間：** 2015-09-17_
 
-隨著信箱大小和以郵件與附件形式儲存在信箱中的資料量逐漸增加，能夠迅速搜尋和找到需要的郵件，對於使用者而言相當重要。[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) 可將舊的和不常存取的項目移至封存，讓您不必再使用 .pst 檔案。如此可讓使用者儲存更多信箱資料，而在使用者的主要和封存信箱中搜尋也能成為重要的產能工具。[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 能讓授權使用者同時搜尋內部部署和雲端式 Exchange 組織中的信箱內容，符合電子化探索 (eDiscovery) 要求、法規稽核或內部調查。就地 eDiscovery 也使用 Exchange 搜尋所建立的內容索引。
+隨著信箱大小和以郵件與附件形式儲存在信箱中的資料量逐漸增加，能夠迅速搜尋和找到需要的郵件，對於使用者而言相當重要。[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) 可將舊的和不常存取的項目移至封存，讓您不必再使用 .pst 檔案。如此可讓使用者儲存更多信箱資料，而在使用者的主要和封存信箱中搜尋也能成為重要的產能工具。[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 能讓授權使用者同時搜尋內部部署和雲端式 Exchange 組織中的信箱內容，符合電子化探索 (eDiscovery) 要求、法規稽核或內部調查。就地 eDiscovery 也使用 Exchange 搜尋所建立的內容索引。
 
 Exchange 搜尋與 Exchange Server 2003 提供的全文檢索不同。它在效能、內容索引和搜尋方面都有所改善。新項目會在傳輸管線中建立索引或幾乎在建立或傳遞至信箱之後立即建立索引，以便提供使用者迅速、穩定且更可靠的方式來搜尋信箱資料。內容索引預設為啟用，不需要進行任何初次設定或組態。
 

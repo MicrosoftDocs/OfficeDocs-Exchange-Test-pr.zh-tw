@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2017-08-02_
 
 [設定混合式部署的 Exchange 2013 公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
 
-[設定 Exchange Online 公用資料夾以進行混合部署](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[設定 Exchange Online 公用資料夾以進行混合部署](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders)
 
 [使用者信箱位於 Exchange 2013 伺服器上時設定舊版公用資料夾](configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md)
 
@@ -41,7 +41,7 @@ _**上次修改主題的時間：** 2017-08-02_
 
 [建立公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/create-public-folder)
 
-[郵件啟用或停用郵件功能的公用資料夾](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)
+[郵件啟用或停用郵件功能的公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder)
 
 [更新公用資料夾階層](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/update-public-folder-hierarchy)
 

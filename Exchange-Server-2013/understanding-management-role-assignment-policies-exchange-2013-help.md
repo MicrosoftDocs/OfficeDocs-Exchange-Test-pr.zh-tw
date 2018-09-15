@@ -108,7 +108,7 @@ Exchange 2013包括提供最常用的權限的使用者預設角色指派原則�
 <tbody>
 <tr class="odd">
 <td><p>信箱</p></td>
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">管理使用者信箱</a></p>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">管理使用者信箱</a></p>
 <p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">變更在信箱上的指派原則</a></p></td>
 </tr>
 <tr class="even">

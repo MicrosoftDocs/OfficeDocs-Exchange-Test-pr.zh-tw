@@ -91,7 +91,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>設定撥號對應表安全性設定。</p></td>
-<td><p><a href="configure-the-voip-security-setting-exchange-2013-help.md">設定 VoIP 安全性設定</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting">設定 VoIP 安全性設定</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -107,7 +107,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>設定 Outlook 語音存取號碼和其他設定。</p></td>
-<td><p><a href="manage-a-um-dial-plan-exchange-2013-help.md">管理 UM 撥號對應表</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">管理 UM 撥號對應表</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -119,7 +119,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>建立所需數量的自動語音應答。</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">建立 UM 自動語音應答</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">建立 UM 自動語音應答</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>

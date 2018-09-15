@@ -68,11 +68,11 @@ For more information
 
 Microsoft 提供了許多 DLP 原則。此為使用 DLP 解決方案的最簡易方法，既靈活又易於實作。您總是可以使用所提供的原則做為起點，然後再進一步自訂，使其符合您的需求。若要開始進行，請參閱下列資訊：
 
-  - [Exchange 中提供的 DLP 原則範本](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)
+  - [Exchange 中提供的 DLP 原則範本](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/dlp-policy-templates)
 
   - [從範本建立 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)
 
 ## 相關資訊
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2015-09-30_
 
   - 如果信箱處於就地保留或訴訟暫止狀態或擁有單一項目復原已啟用，務必要等到移除保留或單一項目復原已停用保留信箱資料。在此例中，您需要執行清理 \[可復原的項目\] 資料夾的詳細的步驟。
 
-若要深入了解就地保留和訴訟暫止狀態，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。若要深入了解單一項目復原，請參閱[可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)中的 「 單一項目復原 」。
+若要深入了解就地保留和訴訟暫止狀態，請參閱[就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)。若要深入了解單一項目復原，請參閱[可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)中的 「 單一項目復原 」。
 
 若要深入了解可復原的項目\] 資料夾，請參閱[可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)。
 
@@ -138,7 +138,7 @@ _**上次修改主題的時間：** 2015-09-30_
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
     > [!NOTE]  
-    > 它不被必要項目複製到 [探索搜尋信箱。您可以將郵件複製到任何信箱。不過，若要防止敏感性信箱資料存取，建議將郵件複製到已授權的記錄管理員限制存取的信箱。根據預設，預設探索搜尋信箱存取僅限於至探索管理角色群組的成員。如需詳細資訊，請參閱<a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a>。
+    > 它不被必要項目複製到 [探索搜尋信箱。您可以將郵件複製到任何信箱。不過，若要防止敏感性信箱資料存取，建議將郵件複製到已授權的記錄管理員限制存取的信箱。根據預設，預設探索搜尋信箱存取僅限於至探索管理角色群組的成員。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地 eDiscovery</a>。
 
 
 10. 如果信箱處於訴訟暫止狀態或鎖稍早啟用單一項目復原，重新啟用這些功能。

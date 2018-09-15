@@ -263,9 +263,9 @@ MWI 可以管理來設定兩個 UM 元件 ︰ UM 信箱原則與 UM IP 閘道。
 
   - [管理 UM IP 閘道器](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
 
-  - [允許郵件等待指示器 (MWI) 上的 UM IP 閘道](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [允許郵件等待指示器 (MWI) 上的 UM IP 閘道](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway)
 
-  - [防止訊息等待指示器 (MWI) 上的 UM IP 閘道](prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [防止訊息等待指示器 (MWI) 上的 UM IP 閘道](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway)
 
   - [Set-UMIPGateway](https://technet.microsoft.com/zh-tw/library/aa996577\(v=exchg.150\))
 

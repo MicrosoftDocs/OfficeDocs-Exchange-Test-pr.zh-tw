@@ -84,7 +84,7 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
   - 在多個網域環境中，擁有郵件功能的公用資料夾會停止如果子網域中執行 Exchange 移轉至 Exchange 2013 之後使用。這是因為在 Exchange 2013、 擁有郵件功能的公用資料夾物件所需的根網域之下。若要解決這個問題，您需要停用郵件功能啟用郵件功能的公用資料夾，然後啟用郵件功能它們同樣地，可讓您將其移至正確的網域位置。
 
-  - 移轉後已完成，如果您想要將郵件傳送給移轉擁有郵件功能的公用資料夾的外部寄件者，**匿名**使用者必須要授與至少**建立項目**權限。如果您不這麼做，外部寄件者會收到傳遞失敗通知及訊息將不會傳遞至已移轉擁有郵件功能的公用資料夾。閱讀更多有關如何設定權限匿名使用者，請參閱[郵件啟用或停用郵件功能的公用資料夾](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)。
+  - 移轉後已完成，如果您想要將郵件傳送給移轉擁有郵件功能的公用資料夾的外部寄件者，**匿名**使用者必須要授與至少**建立項目**權限。如果您不這麼做，外部寄件者會收到傳遞失敗通知及訊息將不會傳遞至已移轉擁有郵件功能的公用資料夾。閱讀更多有關如何設定權限匿名使用者，請參閱[郵件啟用或停用郵件功能的公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder)。
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -413,7 +413,7 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
 
 6.  最後，如果您想要將郵件傳送給移轉擁有郵件功能的公用資料夾的外部寄件者，**匿名**使用者必須取得至少**建立項目**權限。如果您不這麼做，外部寄件者會收到傳遞失敗通知及訊息將不會傳遞至已移轉擁有郵件功能的公用資料夾。
     
-    您可以使用命令介面或 Outlook 在匿名使用者設定權限。閱讀更多有關如何設定權限匿名使用者，請參閱[郵件啟用或停用郵件功能的公用資料夾](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)。
+    您可以使用命令介面或 Outlook 在匿名使用者設定權限。閱讀更多有關如何設定權限匿名使用者，請參閱[郵件啟用或停用郵件功能的公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder)。
 
 ## 如何知道這是否正常運作？
 

@@ -130,7 +130,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-27_
 
 在您建立連結信箱後，您可以透過使用 Exchange 系統管理中心 (EAC) 或 Exchange 管理命令介面來進行變更或設定額外內容。
 
-您也可以同時變更多個連結信箱內容。如需詳細資訊，請參閱區段、 [管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)主題中的 「 大量編輯使用者信箱 」 小節。
+您也可以同時變更多個連結信箱內容。如需詳細資訊，請參閱區段、 [管理使用者信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)主題中的 「 大量編輯使用者信箱 」 小節。
 
 
 > [!IMPORTANT]  

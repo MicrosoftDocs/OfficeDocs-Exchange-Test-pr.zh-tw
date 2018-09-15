@@ -51,7 +51,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>所有郵件是否應該保留相同期限？</p></li>
 </ul>
 <p>Exchange 2013 包含可讓您實作組織電子郵件週期原則的 MRM 功能。您可以使用 MRM 將統一的保留設定套用到所有郵件、使用自訂保留原則套用信箱的基本保留設定，以及選擇性地允許使用者分類郵件，以保留指定的一段時間。</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">通訊記錄管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management">通訊記錄管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p>原有範圍封存</p></td>
@@ -61,12 +61,12 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p>原有範圍暫止</p></td>
 <td><p>如果合理預期到訴訟的可能性，組織就需要保留與案件相關的電子儲存資訊 (ESI)，包括電子郵件。就地保留功能可讓您搜尋並保存符合查詢參數的郵件。保護郵件不被刪除、修改和竄改，並能無限期地或在一段指定期間內被保留。</p></td>
-<td><p><a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留與訴訟暫止</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds">就地保留與訴訟暫止</a></p></td>
 </tr>
 <tr class="even">
 <td><p>原有範圍 eDiscovery</p></td>
 <td><p>就地 eDiscovery 讓您能透過您的 Exchange 組織搜尋信箱資料、預覽搜尋結果，並將其複製到探索信箱。</p></td>
-<td><p><a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地 eDiscovery</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>日誌</p></td>
@@ -81,7 +81,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p>資料外洩防護 (DLP)</p></td>
 <td><p>DLP 功能可幫助您保護機密資料並將您的原則和規定告知使用者。DLP 也可協助您防止使用者不小心將敏感資訊傳送給未經授權者。當您設定 DLP 原則時，可以藉由分析郵件系統的內容識別和保護敏感資料，這包括許多相關聯的檔案類型。Exchange 2013 中所提供的 DLP 原則範本以法規標準為基礎，例如 PII 和支付卡產業資料安全性標準 (PCI-DSS)。DLP 可以擴充，讓您加入對組織重要的其他原則。此外，新的原則提示功能可讓您在敏感資料傳送出去之前，通知使用者相關違規原則。</p></td>
-<td><p><a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">資料遺失防護</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">資料遺失防護</a></p></td>
 </tr>
 <tr class="even">
 <td><p>資訊版權管理 (IRM)</p></td>
@@ -97,7 +97,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>信箱稽核記錄</p></td>
 <td><p>由於信箱可能會包含敏感、高度業務影響 (HBI) 資訊和 PII，因此追蹤哪些人登入組織中的信箱以及執行哪些動作是相當重要的。追蹤信箱擁有者以外的使用者 (稱為委派的使用者) 存取信箱則更為重要。使用信箱稽核記錄，您就可以依信箱擁有者、代理人 (包括具有完整信箱存取權限的系統管理員) 和系統管理員記錄信箱存取。</p></td>
 <td><p><a href="mailbox-audit-logging-exchange-2013-help.md">信箱稽核記錄</a></p>
-<p><a href="exchange-auditing-reports-exchange-2013-help.md">Exchange 稽核報告</a></p></td>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports">Exchange 稽核報告</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>系統管理員稽核記錄</p></td>

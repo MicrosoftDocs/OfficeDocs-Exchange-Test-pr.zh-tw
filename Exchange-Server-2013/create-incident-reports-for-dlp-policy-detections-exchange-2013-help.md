@@ -139,5 +139,5 @@ _**上次修改主題的時間：** 2015-04-07_
 
 [檢視 DLP 原則偵測報告](view-dlp-policy-detection-reports-exchange-2013-help.md)
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

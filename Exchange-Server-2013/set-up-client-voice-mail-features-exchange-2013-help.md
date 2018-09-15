@@ -45,7 +45,7 @@ Receiving faxes
 
 ## 轉接來電
 
-已啟用 UM 的使用者可以建立並設定自動答錄規則使用Outlook或Outlook Web App。呼叫接聽規則可讓使用者控制處理其來電轉接的方式。規則會套用至收件匣規則會套用至內送電子郵件，並與其他使用者的信箱中的語音設定一起儲存的方式類似的來電。最多個九個呼叫接聽規則可以設定每個已啟用 UM 的信箱。這些規則是獨立的收件匣規則並不需要使用者的收件匣規則儲存配額的一部分。如需詳細資訊，請參閱[允許語音郵件使用者可將來電轉接](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)。
+已啟用 UM 的使用者可以建立並設定自動答錄規則使用Outlook或Outlook Web App。呼叫接聽規則可讓使用者控制處理其來電轉接的方式。規則會套用至收件匣規則會套用至內送電子郵件，並與其他使用者的信箱中的語音設定一起儲存的方式類似的來電。最多個九個呼叫接聽規則可以設定每個已啟用 UM 的信箱。這些規則是獨立的收件匣規則並不需要使用者的收件匣規則儲存配額的一部分。如需詳細資訊，請參閱[允許語音郵件使用者可將來電轉接](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)。
 
 ## 語音信箱預覽
 
