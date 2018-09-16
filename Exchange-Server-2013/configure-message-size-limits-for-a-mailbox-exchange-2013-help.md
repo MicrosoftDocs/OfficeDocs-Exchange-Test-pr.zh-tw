@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2012-11-12_
 
 請記住，Exchange 組織中還有其他設定可決定信箱能夠收發的郵件大小上限 (例如，信箱伺服器上設定的郵件大小上限)。若要深入了解 Exchange 中的郵件大小限制，包括郵件大小限制的類型、其範圍及優先順序，請參閱[郵件大小限制](message-size-limits-exchange-2013-help.md)。
 
-如需與使用者信箱相關的其他管理工作，請參閱[管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)。
+如需與使用者信箱相關的其他管理工作，請參閱[管理使用者信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。
 
 
 > [!NOTE]  

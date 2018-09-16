@@ -60,7 +60,7 @@ _**上次修改主題的時間：** 2013-02-19_
 
   - **建立專用的信箱與使用者帳戶**  我們建議您建立專用的信箱和垃圾郵件隔離信箱的 Active Directory 使用者帳戶。如需詳細資訊，請參閱[建立使用者信箱](create-user-mailboxes-exchange-2013-help.md)。
     
-    您可能會套用收件者原則，例如通訊記錄管理、 信箱配額及委派權限，根據您的組織規範遵守原則和需求。如需詳細資訊，請參閱[通訊記錄管理](messaging-records-management-exchange-2013-help.md)。
+    您可能會套用收件者原則，例如通訊記錄管理、 信箱配額及委派權限，根據您的組織規範遵守原則和需求。如需詳細資訊，請參閱[通訊記錄管理](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)。
     
     > [!NOTE]  
     > 如果隔離之郵件被拒絕因儲存配額，郵件將會遺失。Exchange 不產生 Ndr 的隔離郵件因為隔離的郵件會被包裝為 Ndr。

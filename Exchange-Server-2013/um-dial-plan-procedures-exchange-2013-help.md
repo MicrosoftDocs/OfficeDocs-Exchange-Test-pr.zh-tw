@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2013-04-16_
 
 [建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)
 
-[管理 UM 撥號對應表](manage-a-um-dial-plan-exchange-2013-help.md)
+[管理 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan)
 
 [將信箱和用戶端存取伺服器新增至 SIP URI 撥號對應表](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)
 
@@ -33,7 +33,7 @@ _**上次修改主題的時間：** 2013-04-16_
 
 [設定錄製閒置逾時值](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out)
 
-[設定 VoIP 安全性設定](configure-the-voip-security-setting-exchange-2013-help.md)
+[設定 VoIP 安全性設定](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting)
 
 [設定撥號對應表具有相似名稱的使用者](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names)
 

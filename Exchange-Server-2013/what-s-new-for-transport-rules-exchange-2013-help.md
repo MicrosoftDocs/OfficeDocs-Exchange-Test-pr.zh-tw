@@ -25,7 +25,7 @@ Exchange 2013 中的資料外洩防護 (DLP) 功能可協助組織減少敏感�
 
 [與傳輸規則整合敏感資訊規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 ## 新的述詞和動作
 

@@ -88,7 +88,7 @@ Exchange 2013 的說明內容由下列頂層類別組成：
 
   - [伺服器健康狀況與效能](server-health-and-performance-exchange-2013-help.md)
 
-  - [關於 Exchange 文件](about-exchange-documentation-exchange-2013-help.md)
+  - [關於 Exchange 文件](https://docs.microsoft.com/zh-tw/exchange/about-exchange-documentation)
 
 > [!NOTE]  
 > 了解其他 Exchange 內容：<br />

@@ -29,7 +29,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 依預設，信箱稽核記錄項目會先保留在信箱中 90 天再刪除。您可以使用 *AuditLogAgeLimit* 參數與 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) 指令程式來修改保留期間。如果信箱處於就地保留或訴訟暫止狀態，則稽核記錄項目只會保存到信箱的稽核記錄保留期間期滿為止。若要將稽核記錄項目保留更久的時間，您必須變更 *AuditLogAgeLimit* 參數值來加長保留期間。您也可以在保留期間期滿前匯出稽核記錄項目。如需相關資訊，請參閱：
 
-  - [匯出信箱稽核記錄](export-mailbox-audit-logs-exchange-2013-help.md)
+  - [匯出信箱稽核記錄](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
   - [建立信箱稽核記錄搜尋](create-a-mailbox-audit-log-search-exchange-2013-help.md)
 
@@ -161,7 +161,7 @@ _**上次修改主題的時間：** 2016-12-09_
     
       - [執行非擁有者信箱存取報告](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
-      - [匯出信箱稽核記錄](export-mailbox-audit-logs-exchange-2013-help.md)
+      - [匯出信箱稽核記錄](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
 ## 信箱稽核記錄項目
 
@@ -336,7 +336,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - **信箱的系統管理員存取權**   在下列案例中，信箱會被視為只能由系統管理員存取：
     
-      - 使用 [就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 來搜尋信箱。
+      - 使用 [就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 來搜尋信箱。
     
       - 使用 [New-MailboxExportRequest](https://technet.microsoft.com/zh-tw/library/ff607299\(v=exchg.150\)) 指令程式來匯出信箱。
     

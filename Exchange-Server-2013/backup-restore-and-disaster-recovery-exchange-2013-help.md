@@ -23,9 +23,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - **嚴重損壞修復**   當硬體或軟體故障時，DAG 中有多個資料庫副本能夠提供高可用性，可快速容錯轉移，而且只遺失少量資料，甚至完全不會遺失任何資料。如此就不會因為運作停擺而導致失去產能，這是從過去時間點備份復原到磁碟或磁帶時付出的重大代價。DAG 可以延伸到數個站台，能夠從磁碟、伺服器、網路和資料中心故障情況中恢復。
 
-  - **復原意外刪除的項目**   一直以來，當使用者刪除了項目，之後又必須復原時，常常需要尋找儲存需還原資料的備份媒體，然後再設法取得所需的項目並提供給使用者。有了 Exchange 2013 嶄新的 \[可復原的項目\] 資料夾，以及套用資料夾上的「保留原則」，便可以將所有遭刪除與修改的資料保留一段指定的時間，讓復原這些項目變得更簡單、更快速。這可讓一般使用者自行復原不小心刪除的項目，而減少 Exchange 系統管理員與 IT 服務台人員的負擔，也因此減少復原單一項目的複雜度與管理成本。如需詳細資訊，請參閱[郵件原則及符合性](messaging-policy-and-compliance-exchange-2013-help.md)及[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
+  - **復原意外刪除的項目**   一直以來，當使用者刪除了項目，之後又必須復原時，常常需要尋找儲存需還原資料的備份媒體，然後再設法取得所需的項目並提供給使用者。有了 Exchange 2013 嶄新的 \[可復原的項目\] 資料夾，以及套用資料夾上的「保留原則」，便可以將所有遭刪除與修改的資料保留一段指定的時間，讓復原這些項目變得更簡單、更快速。這可讓一般使用者自行復原不小心刪除的項目，而減少 Exchange 系統管理員與 IT 服務台人員的負擔，也因此減少復原單一項目的複雜度與管理成本。如需詳細資訊，請參閱[郵件原則及符合性](messaging-policy-and-compliance-exchange-2013-help.md)及[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)。
 
-  - **長期資料儲存**   備份也做為封存用途，且依照法規需求，通常會使用磁帶長期保存資料的時間點快照。Exchange 2013 中新的封存、多信箱搜尋與訊息保留功能，提供了一種機制可有效率地以一般使用者可存取的方式來長期保存資料。這樣可避免從磁帶還原時付出的重大代價，因而提升產能。如需相關資訊，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)、[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)與[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+  - **長期資料儲存**   備份也做為封存用途，且依照法規需求，通常會使用磁帶長期保存資料的時間點快照。Exchange 2013 中新的封存、多信箱搜尋與訊息保留功能，提供了一種機制可有效率地以一般使用者可存取的方式來長期保存資料。這樣可避免從磁帶還原時付出的重大代價，因而提升產能。如需相關資訊，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)、[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)與[就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
   - **時間點資料庫快照**   如果您的組織需要有信箱資料的過去時間點副本，則 Exchange 能夠在 DAG 環境中建立遲延資料庫副本。在非常少見的情況下，儲存邏輯損毀會複寫到 DAG 中的多個資料庫副本，導致需要回到過去的時間點，此時這項功能就很有用。如果系統管理員不小心刪除信箱或使用者資料，這也會很有幫助。從遲延副本復原會比從備份復原更加快速，因為遲延副本不需要從備份伺服器複製到 Exchange 伺服器上，這是相當耗時的程序。這可以藉由縮短停機時間來大幅降低擁有權總成本。
 

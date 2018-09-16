@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 使用此檢查清單來部署MicrosoftExchange Server 2013組織中的保留原則。您開始使用此檢查清單之前，請確定您已熟悉下列主題中的概念：
 
-  - [通訊記錄管理](messaging-records-management-exchange-2013-help.md)
+  - [通訊記錄管理](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
   - [保留標記和保留原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>評估不同使用者集合的通訊記錄管理 (MRM) 需求。</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">通訊記錄管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management">通訊記錄管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>

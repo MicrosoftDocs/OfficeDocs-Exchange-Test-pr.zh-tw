@@ -19,9 +19,9 @@ _**上次修改主題的時間：** 2009-12-09_
 
 您可以使用Windows可靠性和效能監視器 (Perfmon.exe) 選取 \[及檢視通訊記錄管理 (MRM) 的效能計數器。藉由使用效能計數器，您可以監視受管理的資料夾助理員時執行大量消耗資源的 MRM 處理程序。
 
-如需 MRM 的效能計數器清單，請參閱[通訊記錄管理的效能計數器](performance-counters-for-messaging-records-management-exchange-2013-help.md)。
+如需 MRM 的效能計數器清單，請參閱[通訊記錄管理的效能計數器](performance-counters-for-https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)。
 
-要尋找其他工作相關監控 MRM 嗎？取出[監視通訊記錄管理](monitoring-messaging-records-management-exchange-2013-help.md)。
+要尋找其他工作相關監控 MRM 嗎？取出[監視通訊記錄管理](monitoring-https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)。
 
 ## 使用 Windows 可靠性和效能監視器檢視 MRM 效能計數器
 

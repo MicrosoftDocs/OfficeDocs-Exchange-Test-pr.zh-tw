@@ -168,7 +168,7 @@ _<strong>上次修改主題的時間：</strong> 2017-12-20_
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>不適用</p></td>
-<td><p>其中寄件者選擇覆寫資料外洩防護 (DLP) 原則的郵件。如需 DLP 原則的詳細資訊，請參閱<a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">資料遺失防護</a>。</p></td>
+<td><p>其中寄件者選擇覆寫資料外洩防護 (DLP) 原則的郵件。如需 DLP 原則的詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">資料遺失防護</a>。</p></td>
 <td><p>Exchange 2013或更新版本</p></td>
 </tr>
 <tr class="odd">

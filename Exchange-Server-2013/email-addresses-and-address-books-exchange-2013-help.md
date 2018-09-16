@@ -64,7 +64,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="address-lists-exchange-2013-help.md">通訊清單</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/address-lists">通訊清單</a></p></td>
 <td><p>深入了解通訊清單和 GAL，做為組織收件者讓使用者輕易存取的方法。</p></td>
 </tr>
 <tr class="even">

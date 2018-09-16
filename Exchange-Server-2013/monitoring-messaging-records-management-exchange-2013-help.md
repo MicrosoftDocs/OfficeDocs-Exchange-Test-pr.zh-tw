@@ -17,9 +17,9 @@ _**適用版本：** Exchange Server 2013_
 
 _**上次修改主題的時間：** 2009-11-03_
 
-[檢視效能計數器的通訊記錄管理](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[檢視效能計數器的通訊記錄管理](view-performance-counters-for-https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-[通訊記錄管理的效能計數器](performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[通訊記錄管理的效能計數器](performance-counters-for-https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
 [通訊記錄管理錯誤和事件](messaging-records-management-errors-and-events-exchange-2013-help.md)
 

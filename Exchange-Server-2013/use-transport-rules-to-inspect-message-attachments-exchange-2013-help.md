@@ -312,11 +312,11 @@ Exchange 管理員可以移至 **\[Exchange 系統管理中心\]** \> **\[郵件
 
   - 定義要對護照號碼不在受保護檔案中的郵件採取的動作。
 
-DLP 原則和附件相關條件可將業務需求定義為傳輸規則條件、例外狀況和動作，協助您強制執行這些需求。在 DLP 原則中加入機密資訊檢查時，只會對郵件的任何附件掃描該資訊。但是，除非加入本主題列出的條件，否則不含大小或檔案類型等附件相關條件。所有 Exchange 都未提供 DLP。若要深入了解，請參閱＜[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)＞。
+DLP 原則和附件相關條件可將業務需求定義為傳輸規則條件、例外狀況和動作，協助您強制執行這些需求。在 DLP 原則中加入機密資訊檢查時，只會對郵件的任何附件掃描該資訊。但是，除非加入本主題列出的條件，否則不含大小或檔案類型等附件相關條件。所有 Exchange 都未提供 DLP。若要深入了解，請參閱＜[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)＞。
 
 ## 相關資訊
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [郵件流程或傳輸規則](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

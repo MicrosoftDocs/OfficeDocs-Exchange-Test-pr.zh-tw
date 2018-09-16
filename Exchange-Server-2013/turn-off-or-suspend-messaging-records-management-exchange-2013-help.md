@@ -47,7 +47,7 @@ _**上次修改主題的時間：** 2013-02-14_
 
 如需如何為信箱設定保留功能的詳細資訊，請參閱[就地保留信箱保留 」 狀態](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 
-若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
 ## 從信箱移除保留標記
 

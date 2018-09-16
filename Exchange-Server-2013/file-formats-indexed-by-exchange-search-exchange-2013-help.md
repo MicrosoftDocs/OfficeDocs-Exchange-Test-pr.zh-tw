@@ -25,7 +25,7 @@ _**上次修改主題的時間：** 2015-07-21_
 > <code>@&quot;SOFTWARE\Microsoft\ExchangeServer\V15\Search\SystemParameters&quot;  DWORD: &quot;MaxAttachmentSize&quot;</code>
 
 
-在管理或使用「Exchange 搜尋」和相依的功能 (如[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)) 時請注意，無法搜尋的項目、已停用索引的檔案格式，以及其內容無法供製作索引的檔案格式，這彼此之間是有差異的：
+在管理或使用「Exchange 搜尋」和相依的功能 (如[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)) 時請注意，無法搜尋的項目、已停用索引的檔案格式，以及其內容無法供製作索引的檔案格式，這彼此之間是有差異的：
 
   - **無法搜尋的項目** 當 Exchange 搜尋無法針對任何人員製作特定檔案類型的索引時 (例如若是未安裝篩選器)，則搜尋該檔案類型將會失敗。包含此類附件的郵件會標記為「已部分編制索引」。若要擷取無法搜尋的項目，可使用 [Get-FailedContentIndexDocuments](https://technet.microsoft.com/zh-tw/library/dd351154\(v=exchg.150\)) 指令程式。將就地 eDiscovery 搜尋結果複製到探索信箱時，或是將搜尋結果匯出到 PST 檔案時，您可以包含無法搜尋的項目。如需詳細資訊，請參閱 [Exchange eDiscovery 中項目\] 無法搜尋](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)。
 

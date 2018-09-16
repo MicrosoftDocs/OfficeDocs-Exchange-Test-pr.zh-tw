@@ -100,7 +100,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <td><p></p></td>
 <td><p>建立或設定現有的 UM 撥號對應表</p></td>
 <td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">建立 UM 撥號對應表</a></p>
-<p><a href="manage-a-um-dial-plan-exchange-2013-help.md">管理 UM 撥號對應表</a></p></td>
+<p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">管理 UM 撥號對應表</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -111,12 +111,12 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>建立 UM 群組搜尋</p></td>
-<td><p><a href="create-a-um-hunt-group-exchange-2013-help.md">建立 UM 群組搜尋</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group">建立 UM 群組搜尋</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>建立或設定 UM 自動語音應答</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">建立 UM 自動語音應答</a></p>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">建立 UM 自動語音應答</a></p>
 <p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">管理 UM 自動語音應答</a></p></td>
 </tr>
 <tr class="odd">

@@ -17,7 +17,7 @@ _**適用版本：** Exchange Online, Exchange Server 2013_
 
 _**上次修改主題的時間：** 2016-10-18_
 
-將信箱設為訴訟暫止狀態以保留所有信箱內容，包括已刪除的項目和已修改項目的原始版本。當您將使用者的信箱設為訴訟暫止，使用者封存信箱 (若已啟用) 中的內容也會處於暫止狀態。已刪除和修改過的項目會保留一段指定的期間，或直到信箱退出「訴訟暫止」狀態為止。[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 搜尋時會傳回這類信箱項目。
+將信箱設為訴訟暫止狀態以保留所有信箱內容，包括已刪除的項目和已修改項目的原始版本。當您將使用者的信箱設為訴訟暫止，使用者封存信箱 (若已啟用) 中的內容也會處於暫止狀態。已刪除和修改過的項目會保留一段指定的期間，或直到信箱退出「訴訟暫止」狀態為止。[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 搜尋時會傳回這類信箱項目。
 
 
 > [!IMPORTANT]  

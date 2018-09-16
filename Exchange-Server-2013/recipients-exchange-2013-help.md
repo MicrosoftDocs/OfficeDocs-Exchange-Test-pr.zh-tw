@@ -280,7 +280,7 @@ Exchange 支援下列類型的通訊群組：
 
   - 收件者容器
 
-您也可以根據收件者內容而非先前所列的內容來指定條件。若要這樣做，您必須使用命令介面建立動態通訊群組的自訂查詢。請記得，具有自訂收件者篩選之動態通訊群組的篩選和條件設定，只能使用命令介面來管理。如需如何使用自訂查詢建立動態通訊群組的範例，請參閱[管理動態通訊群組](manage-dynamic-distribution-groups-exchange-2013-help.md)。
+您也可以根據收件者內容而非先前所列的內容來指定條件。若要這樣做，您必須使用命令介面建立動態通訊群組的自訂查詢。請記得，具有自訂收件者篩選之動態通訊群組的篩選和條件設定，只能使用命令介面來管理。如需如何使用自訂查詢建立動態通訊群組的範例，請參閱[管理動態通訊群組](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)。
 
 ## 郵件連絡人
 
@@ -346,7 +346,7 @@ Microsoft Exchange 收件者不是一般的收件者物件 (例如信箱、郵�
 <td><p>了解如何使用 Exchange 系統管理中心或 Exchange 管理命令介面建立使用者信箱。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">管理使用者信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">管理使用者信箱</a></p></td>
 <td><p>了解如何建立使用者信箱、變更信箱內容以及大量編輯多個信箱選取的內容。</p></td>
 </tr>
 <tr class="odd">
@@ -358,11 +358,11 @@ Microsoft Exchange 收件者不是一般的收件者物件 (例如信箱、郵�
 <td><p>了解如何建立並管理通訊群組，以及建利組織的群組命名原則。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理擁有郵件功能的安全性群組</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">管理擁有郵件功能的安全性群組</a></p></td>
 <td><p>了解如何建立並管理擁有郵件功能的安全性群組。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-dynamic-distribution-groups-exchange-2013-help.md">管理動態通訊群組</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">管理動態通訊群組</a></p></td>
 <td><p>了解如何建立動態通訊群組並管理動態通訊群組內容，例如使用自訂屬性及其他判定成員資格的內容。</p></td>
 </tr>
 <tr class="odd">
@@ -394,7 +394,7 @@ Microsoft Exchange 收件者不是一般的收件者物件 (例如信箱、郵�
 <td><p>了解如何搭配使用預先定義或自訂的篩選和命令來篩選一組收件者。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-permissions-for-recipients-exchange-online-help.md">管理收件者的權限</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">管理收件者的權限</a></p></td>
 <td><p>了解如何使用 EAC 或命令介面將權限指派給使用者和群組。</p></td>
 </tr>
 <tr class="odd">

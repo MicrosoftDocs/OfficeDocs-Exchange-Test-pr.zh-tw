@@ -31,7 +31,7 @@ Post-deployment tasks for Unified Messaging
 
 在您部署整合通訊之前，建議您先熟悉下列主題中的概念：
 
-  - [UM 撥號對應表](um-dial-plans-exchange-2013-help.md)
+  - [UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)
 
   - [UM IP 閘道](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
@@ -304,7 +304,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
   - 在組織中的 VoIP 閘道器、IP PBX 以及用戶端存取和信箱伺服器上匯入必要的憑證。
 
-  - 在 UM 撥號對應表上設定 VoIP 安全性。如需詳細資訊，請參閱[設定 VoIP 安全性設定](configure-the-voip-security-setting-exchange-2013-help.md)。
+  - 在 UM 撥號對應表上設定 VoIP 安全性。如需詳細資訊，請參閱[設定 VoIP 安全性設定](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting)。
 
   - 設定用戶端存取及信箱伺服器的啟動模式。如需詳細資訊，請參閱 [設定信箱伺服器上的啟動模式](configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md)與 [設定用戶端存取伺服器上的啟動模式](configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md)。
 
@@ -312,7 +312,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
 ## 已啟用 UM 的使用者相關的 PIN 碼原則
 
-在整合通訊中，PIN 碼原則是定義及設定於 UM 信箱原則中。當您為使用者啟用整合通訊時，可以使該使用者與現有的 UM 信箱原則關聯。在 UM 信箱原則中設定的 UM PIN 碼原則應該以組織的安全需求為基礎。如需如何為已啟用 UM 的使用者設定 PIN 碼設定的詳細資訊，請參閱[設定 Outlook 語音存取 PIN 安全性](set-outlook-voice-access-pin-security-exchange-2013-help.md)。
+在整合通訊中，PIN 碼原則是定義及設定於 UM 信箱原則中。當您為使用者啟用整合通訊時，可以使該使用者與現有的 UM 信箱原則關聯。在 UM 信箱原則中設定的 UM PIN 碼原則應該以組織的安全需求為基礎。如需如何為已啟用 UM 的使用者設定 PIN 碼設定的詳細資訊，請參閱[設定 Outlook 語音存取 PIN 安全性](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security)。
 
 ## 設定用戶端語音信箱功能
 
@@ -320,7 +320,7 @@ UM IP 閘道器代表 VoIP 閘道器硬體裝置或 IP PBX。結合 UM IP 閘道
 
   - [設定 Outlook 語音存取](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
-  - [允許語音郵件使用者可將來電轉接](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)
+  - [允許語音郵件使用者可將來電轉接](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)
 
   - [允許使用者查看將語音郵件文字記錄](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)
 
