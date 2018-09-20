@@ -2036,7 +2036,7 @@
           - name: 新增為 E.164 號碼
             href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number
           - name: 移除 E.164 號碼
-            href: remove-an-e-164-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number
     - name: 設定用戶端語音信箱功能
       href: set-up-client-voice-mail-features-exchange-2013-help.md
       items:
@@ -2226,7 +2226,7 @@
         - name: 當 PIN 會重設時傳送電子郵件訊息中包含的文字
           href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/include-text-in-email-sent-when-pin-is-reset
         - name: 設定語音信箱的最小 PIN 長度
-          href: set-the-minimum-pin-length-for-voice-mail-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-minimum-pin-length
         - name: 設定語音信箱的 PIN 存留期
           href: set-the-pin-lifetime-for-voice-mail-exchange-2013-help.md
         - name: 設定舊版的語音信箱 Pin 回收的數目

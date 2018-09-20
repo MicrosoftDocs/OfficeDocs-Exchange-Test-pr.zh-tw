@@ -129,7 +129,7 @@ UM features that operate differently for secondary dial plans
 
   - [變更為 E.164 號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number)
 
-  - [移除 E.164 號碼](remove-an-e-164-number-exchange-2013-help.md)
+  - [移除 E.164 號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number)
 
 ## 自動答錄服務
 
