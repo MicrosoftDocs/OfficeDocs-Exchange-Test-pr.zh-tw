@@ -68,11 +68,15 @@ _<strong>上次修改主題的時間：</strong> 2012-11-28_
 
 此範例會設定伺服器的連線限制。
 
-    Set-PopSettings -Identity CAS01 -MaxConnections Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnections Value
+```
 
 此範例會設定 IP 位址的連線限制。
 
-    Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```
 
 此範例會設定使用者的連線限制。
 
@@ -80,7 +84,9 @@ _<strong>上次修改主題的時間：</strong> 2012-11-28_
 
 此範例會設定命令大小上限。
 
-    Set-PopSettings -MaxCommandSize Value
+```powershell
+Set-PopSettings -MaxCommandSize Value
+```
 
 設定連線限制之後，您必須重新啟動 \[POP3 服務。如需如何重新啟動 \[POP3 服務的資訊，請參閱[啟動及停止 \[POP3 服務](start-and-stop-the-pop3-services-exchange-2013-help.md)。
 
@@ -104,7 +110,9 @@ _<strong>上次修改主題的時間：</strong> 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  驗證連線設定是否正確。
 

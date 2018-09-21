@@ -158,7 +158,9 @@ Permissions for the Pickup and Replay directories
 
   - **X-寄件者**  此 X-header 會取代為一般的 SMTP 郵件的`From`郵件標頭欄位需求。必須存在一個`X-Sender`欄位包含一個電子郵件地址。如果它是存在，雖然收件者的電子郵件用戶端顯示`From`郵件標頭欄位的值為郵件的寄件者重新顯示目錄會略過`From`郵件標頭\] 欄位。其他參數通常是存在於`X-Sender` \] 欄位中，如下列範例所示。
     
-        X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```powershell
+X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+```
     
     > [!NOTE]  
     > 這些參數彼此通常由傳送伺服器產生的郵件信封值。您可能會看到類似匯出的訊息檔案中的參數。<br />
@@ -167,7 +169,9 @@ Permissions for the Pickup and Replay directories
 
   - **X 接收器**  此 X-header 會取代為一般的 SMTP 郵件的`To`郵件標頭欄位需求。至少一個包含一個電子郵件地址的`X-Receiver`欄位必須存在。多個`X-Receiver`欄位允許的多個收件者。如果雖然收件者的電子郵件用戶端的郵件收件者顯示`To`郵件標頭欄位的值是存在，重新顯示目錄會略過`To`郵件標頭欄位。下列範例所示其他選用的參數可能存在`X-Receiver` \] 欄位。
     
-        X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+    ```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     
     > [!NOTE]  
     > 這些參數彼此通常由傳送伺服器產生的郵件信封值。您可能會看到類似匯出的訊息檔案中的參數。這些參數相關傳遞狀態通知 (DSN) 郵件 RFC 1891 所述。<br />
@@ -190,7 +194,9 @@ Permissions for the Pickup and Replay directories
 
 以下是純文字郵件的範例，該郵件使用重新顯示目錄可接受的格式。
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
     Subject: Optional message subject
     
@@ -198,7 +204,9 @@ Permissions for the Pickup and Replay directories
 
 重新顯示目錄訊息檔案也支援 MIME 內容。MIME 定義多種 7 位元 ASCII 文字、 HTML 和其他多媒體內容中包含無法表示語言的郵件內容。MIME 和其需求的完整說明已超出本主題的範圍。此範例會顯示簡易的 MIME 郵件使用可接受的重新顯示\] 目錄的格式設定。
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
     To: mary@contoso.com
     From: bob@fabrikam.com

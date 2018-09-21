@@ -61,15 +61,21 @@ _**上次修改主題的時間：** 2013-04-16_
 
 在這個範例中，有三個 SIP URI 撥號對應表： SipDP1、 SipDP2 及 SipDP3。此範例會移除名為`MyMailboxServer` SipDP3 撥號對應表從信箱伺服器。
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```
 
 在這個範例中，有兩個 SIP URI 撥號對應表： SipDP1 和 SipDP2。此範例會移除名為`MyMailboxServer` SipDP2 撥號對應表從信箱伺服器。
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```
 
 此範例會從所有 SIP 撥號對應表移除名為 `MyMailboxServer` 的信箱伺服器。
 
-    Set-UMService -id MyUMServer -DialPlans $null
+```powershell
+Set-UMService -id MyUMServer -DialPlans $null
+```
 
 ## 使用 EAC 從 SIP URI 撥號對應表移除 Client Access Server
 
@@ -92,13 +98,19 @@ _**上次修改主題的時間：** 2013-04-16_
 
 在這個範例中，有三個 SIP URI 撥號對應表： SipDP1、 SipDP2 及 SipDP3。此範例會移除名為`MyClientAccessServer` SipDP3 撥號對應表從用戶端存取伺服器。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```
 
 在這個範例中，有兩個 SIP URI 撥號對應表： SipDP1 和 SipDP2。此範例會移除名為`MyClientAccessServer` SipDP2 撥號對應表從用戶端存取伺服器。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```
 
 此範例會從所有 SIP 撥號對應表移除名為 `MyClientAccessServer` 的 Client Access Server。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```
 

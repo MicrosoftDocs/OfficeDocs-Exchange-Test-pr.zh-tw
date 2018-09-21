@@ -74,7 +74,9 @@ Custom attribute example with ExtensionCustomAttributes parameter
 
 如果該 OU 中的收件者未共用任何進行篩選時可依據的共同內容，例如部門或位置，則您可使用共同的值填入其中一個自訂屬性，如此範例所示。
 
-    Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```powershell
+Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```
 
 現在您可以為 *CustomAttribute1* 內容等於 SalesOU 的所有收件者建立電子郵件地址原則，如此範例所示。
 
@@ -99,7 +101,9 @@ Custom attribute example with ExtensionCustomAttributes parameter
 
 在這個範例中，Kweku 的信箱會有已更新並反映他註冊下列教育類別*ExtensionCustomAttribute1* : MATH307、 ECON202，以及 ENGL300。
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```
 
 下一步\] 動態通訊群組的所有學生都註冊 MATH307 會建立使用*ExtensionCustomAttribute1*等於 MATH307 *RecipientFilter*參數。使用*ExtentionCustomAttributes*參數時，您可以使用`-eq`運算子，而不是`-like`運算子。
 
@@ -107,5 +111,7 @@ Custom attribute example with ExtensionCustomAttributes parameter
 
 在此範例中，Kweku 的 *ExtensionCustomAttribute1* 值將更新以反映他已加入 ENGL210 課程並移除 ECON202 課程。
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```
 

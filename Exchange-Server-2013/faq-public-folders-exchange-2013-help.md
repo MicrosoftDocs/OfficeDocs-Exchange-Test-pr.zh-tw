@@ -53,7 +53,9 @@ _**上次修改主題的時間：** 2017-03-27_
 
 您可以藉由執行以下 Shell 命令，在完成之前 (鎖定來源之前) 強制進行差異同步：
 
-    Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```powershell
+Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```
 
 如需詳細的語法及參數資訊，請參閱 [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/zh-tw/library/jj218689\(v=exchg.150\))。
 
@@ -104,7 +106,9 @@ Outlook Web App 支援，但有一些限制。 您可以新增和移除我的最
 
 執行下列命令：
 
-    Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```powershell
+Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-OrganizationConfig](https://technet.microsoft.com/zh-tw/library/aa997571\(v=exchg.150\))。
 
@@ -112,7 +116,9 @@ Outlook Web App 支援，但有一些限制。 您可以新增和移除我的最
 
 請執行以下命令建立第一個主要階層共用資料夾與次要階層信箱。
 
-    New-Mailbox -PublicFolder -Name <name of public folder>
+```powershell
+New-Mailbox -PublicFolder -Name <name of public folder>
+```
 
 如需詳細資料，請參閱[建立公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/create-public-folder)。
 
@@ -148,7 +154,9 @@ Exchange 2013 中沒有資料庫層級設定。Exchange 2013 具有信箱層級�
 
 在 Exchange 2007 與 Exchange 2010 中，您可以指定哪些使用者可以存取特定公用資料夾。在 Exchange 2013 中，您可以依使用者設定預設公用資料夾信箱。方法是執行 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) Cmdlet 搭配 *DefaultPublicFolderMailbox* 參數。
 
-    Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```powershell
+Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```
 
 ## 如果主要階層下降，對使用者有何影響？
 

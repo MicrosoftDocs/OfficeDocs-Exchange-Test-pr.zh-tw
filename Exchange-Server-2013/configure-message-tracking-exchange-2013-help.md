@@ -84,11 +84,15 @@ _**上次修改主題的時間：** 2013-02-18_
 
 此範例會停用名為 Mailbox01 之 Mailbox Server 上郵件追蹤記錄檔中的郵件主旨記錄：
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 此範例會停用名為 Mailbox01 之 Mailbox Server 上的郵件追蹤：
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## 如何才能了解這是否正常運作？
 

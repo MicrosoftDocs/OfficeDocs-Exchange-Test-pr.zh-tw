@@ -62,7 +62,9 @@ _<strong>上次修改主題的時間：</strong> 2012-12-04_
 
 本範例會設定 Chris Ashton 信箱封存配額至 10 gb (GB) 的使用者會收到警告訊息為 「 就地封存已滿的時間與他將不再能夠將項目移至封存。這個範例也會將封存警告配額至 9.5 GB，使用者會收到此時就地封存是幾乎滿溢的警告訊息。
 
-    Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```powershell
+Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 

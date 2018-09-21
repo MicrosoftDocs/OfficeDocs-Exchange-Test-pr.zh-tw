@@ -47,7 +47,9 @@ _**上次修改主題的時間：** 2015-01-22_
 
 本範例會取得 Soumya Singhi \[可復原的項目\] 資料夾的資料夾統計資料，並以清單格式顯示輸出。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 本範例會取得 Soumya Singhi \[可復原的項目\] 資料夾的資料夾統計資料和資料夾與資料夾大小以表格格式顯示資料夾名稱、 資料夾路徑、 的項目數。
 

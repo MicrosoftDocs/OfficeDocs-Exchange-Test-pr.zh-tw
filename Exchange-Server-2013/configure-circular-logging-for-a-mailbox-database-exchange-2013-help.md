@@ -49,11 +49,15 @@ _**上次修改主題的時間：** 2014-06-24_
 
 本範例啟用資料庫 DB1 的循環記錄。
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```
 
 本範例停用資料庫 DB1 的循環記錄。
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```
 
 關於您可以設定的其他信箱資料庫參數，請參閱 [Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\))。
 

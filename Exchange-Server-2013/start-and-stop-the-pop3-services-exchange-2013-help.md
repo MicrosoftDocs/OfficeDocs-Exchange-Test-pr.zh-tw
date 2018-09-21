@@ -60,21 +60,29 @@ _**上次修改主題的時間：** 2013-03-13_
 
 1.  在執行用戶端存取伺服器角色的電腦上，從命令介面中執行下列命令來啟動 Microsoft Exchange POP3 服務。
     
-        Start-service MSExchangePOP3
+    ```powershell
+Start-service MSExchangePOP3
+```
 
 2.  在執行信箱伺服器角色的電腦上，從命令介面中執行下列命令來啟動 Microsoft Exchange POP3 後端服務。
     
-        Start-service MSExchangePOP3BE
+    ```powershell
+Start-service MSExchangePOP3BE
+```
 
 若要停止 POP3 服務：
 
 1.  在執行用戶端存取伺服器角色的電腦上，從命令介面中執行下列命令來停止 Microsoft Exchange POP3 服務。
     
-        Stop-service MSExchangePOP3
+    ```powershell
+Stop-service MSExchangePOP3
+```
 
 2.  在執行信箱伺服器角色的電腦上，從命令介面中執行下列命令來停止 Microsoft Exchange POP3 後端服務。
     
-        Stop-service MSExchangePOP3BE
+    ```powershell
+Stop-service MSExchangePOP3BE
+```
 
 ## 使用 net start 來啟動或停止 POP3 服務
 
@@ -82,21 +90,29 @@ _**上次修改主題的時間：** 2013-03-13_
 
 1.  在執行用戶端存取伺服器角色的電腦上，以命令提示執行下列命令來啟動 Microsoft Exchange POP3 服務。
     
-        Net Start msExchangePOP3
+    ```powershell
+Net Start msExchangePOP3
+```
 
 2.  在執行信箱伺服器角色的電腦上，以命令提示執行下列命令來啟動 Microsoft Exchange POP3 後端服務。
     
-        Net Start msExchangePOP3BE
+    ```powershell
+Net Start msExchangePOP3BE
+```
 
 若要停止 POP3 服務：
 
 1.  在執行用戶端存取伺服器角色的電腦上，以命令提示執行下列命令來停止 Microsoft Exchange POP3 服務。
     
-        Net Stop MSExchangePOP3
+    ```powershell
+Net Stop MSExchangePOP3
+```
 
 2.  在執行信箱伺服器角色的電腦上，以命令提示執行下列命令來停止 Microsoft Exchange POP3 後端服務。
     
-        Net Stop MSExchangePOP3BE
+    ```powershell
+Net Stop MSExchangePOP3BE
+```
 
 ## 如何才能了解這是否正常運作？
 

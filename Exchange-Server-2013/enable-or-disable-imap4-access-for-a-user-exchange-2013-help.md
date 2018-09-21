@@ -67,11 +67,15 @@ _**上次修改主題的時間：** 2013-01-18_
 
 本範例會對使用者 John Smith 啟用 IMAP4。
 
-    Set-CASMailbox -Identity "John Smith" -IMAPEnabled $true
+```powershell
+Set-CASMailbox -Identity "John Smith" -IMAPEnabled $true
+```
 
 此範例會對使用者 John Smith 停用 IMAP4。
 
-    Set-CASMailbox -Identity "John Smith" -IMAPEnabled $false
+```powershell
+Set-CASMailbox -Identity "John Smith" -IMAPEnabled $false
+```
 
 ## 如何才能了解這是否正常運作？
 

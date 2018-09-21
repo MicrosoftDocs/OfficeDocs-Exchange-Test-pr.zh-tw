@@ -74,7 +74,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-TransportAgent
+    ```powershell
+Get-TransportAgent
+```
 
 2.  確認地址修正輸入代理程式和地址修正輸出代理程式的 **\[已啟用\]** 內容值，是您所設定的值。
 
@@ -82,15 +84,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要檢視所有地址修正項目的摘要清單，請執行下列命令：
 
-    Get-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry
+```
 
 若要檢視地址修正項目的詳細資料，請使用下列語法。
 
-    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```powershell
+Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```
 
 下列範例會顯示名為「將 Contoso.com 修正為 Northwindtraders.com」的地址修正項目的詳細資料：
 
-    Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```powershell
+Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```
 
 ## 使用命令介面建立地址修正項目
 
@@ -172,7 +180,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 下列範例會變更單一網域的地址修正項目「Northwind Traders 修正為 Contoso」的內部地址值。
 
-    Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```powershell
+Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```
 
 ## 為多個子網域中的收件者修改地址修正項目
 
@@ -210,11 +220,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要移除單一地址修正項目，請使用下列語法：
 
-    Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```powershell
+Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```
 
 下列範例會移除名為「Contoso.com 修正為 Northwindtraders.com」的地址修正項目：
 
-    Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```powershell
+Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```
 
 若要移除多個地址修正項目，請使用下列語法：
 
@@ -222,7 +236,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 下列範例會移除所有的地址修正項目：
 
-    Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```
 
 下列範例會模擬如何移除在名稱中含有「修正為 contoso.com」等字詞的地址修正項目。*WhatIf* 參數可讓您直接預覽結果而不需認可任何變更。
 

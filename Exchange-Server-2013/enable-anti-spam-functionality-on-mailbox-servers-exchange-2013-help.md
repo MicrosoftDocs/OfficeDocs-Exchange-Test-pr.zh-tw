@@ -71,7 +71,9 @@ _**上次修改主題的時間：** 2014-01-23_
 
 執行下列命令：
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -83,11 +85,15 @@ _**上次修改主題的時間：** 2014-01-23_
 
 若要在不影響任何現有值的情況下新增內部 SMTP 伺服器的位址，請執行下列命令：
 
-    Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```
 
 此範例會將內部 SMTP 伺服器位址 10.0.1.10 和 10.0.1.11 新增至組織的傳輸組態。
 
-    Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -95,7 +101,9 @@ _**上次修改主題的時間：** 2014-01-23_
 
 1.  執行下列命令：
     
-        Get-TransportConfig | Format-List InternalSMTPServers
+    ```powershell
+Get-TransportConfig | Format-List InternalSMTPServers
+```
 
 2.  確認至少一個有效內部 SMTP 伺服器的 IP 位址隨即顯示。
 

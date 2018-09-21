@@ -54,7 +54,9 @@ _**上次修改主題的時間：** 2015-01-04_
 
 本範例會移除同盟信任。
 
-    Remove-FederationTrust
+```powershell
+Remove-FederationTrust
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd351153\(v=exchg.150\))。
 
@@ -66,7 +68,9 @@ _**上次修改主題的時間：** 2015-01-04_
 
   - 在命令介面中執行下列命令，確認未傳回您 Exchange 組織的同盟信任資訊。
     
-        Get-FederationTrust
+    ```powershell
+Get-FederationTrust
+```
     
     如需詳細的語法及參數資訊，請參閱 [Get-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd351262\(v=exchg.150\))。
 

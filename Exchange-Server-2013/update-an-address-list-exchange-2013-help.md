@@ -54,11 +54,15 @@ _**上次修改主題的時間：** 2012-10-14_
 
 此範例會更新名為 Washington State 的通訊清單。
 
-    Update-AddressList "Washington State"
+```powershell
+Update-AddressList "Washington State"
+```
 
 如果您有多個具有相同名稱的通訊清單，您必須指定您想要更新的地址清單的完整路徑。例如，如果您要更新的地址清單銷售 「 北美地區 」 底下，但也有 \[Europe Sales 通訊清單，請使用下列命令：
 
-    Update-AddressList "North America\Sales"
+```powershell
+Update-AddressList "North America\Sales"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Update-AddressList](https://technet.microsoft.com/zh-tw/library/aa997982\(v=exchg.150\))。
 

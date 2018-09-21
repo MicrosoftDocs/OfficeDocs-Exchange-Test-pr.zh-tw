@@ -96,7 +96,9 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
     
     1.  從 Exchange 2013 安裝媒體執行以下命令，以停用 Active Directory 分割權限。
         
-            setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
     
     2.  重新啟動組織中的 Exchange 2013 伺服器，或等候 Active Directory 存取 Token 複寫您的所有 Exchange 2013 伺服器。
         
@@ -120,11 +122,15 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
     
     3.  使用下列命令將成員加入至新的角色群組。
         
-            Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```powershell
+Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+```
     
     4.  取代新角色群組上的委派清單，如此就只有角色群組的成員可以新增或移除成員。
         
-            Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```powershell
+Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+```
         
         > [!IMPORTANT]  
         > 組織管理角色群組或使用者可以使用已指派角色管理角色的成員是直接或透過其他角色群組或 USG，可以略過此委派安全性檢查。若要防止任何Exchange管理員新增至新的角色群組的値，您必須移除角色指派的角色管理角色與任何Exchange管理員之間並將其指派給其他角色群組。
@@ -135,7 +141,9 @@ Exchange系統管理員將只能夠管理現有的Active Directory安全性主�
     
     6.  使用以下命令移除與新角色群組或任何其他角色群組不關聯之郵件收件者建立角色的所有規則和委派角色指派、USG 或是您要保留的直接指派。
         
-            Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```powershell
+Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+```
         
         > [!NOTE]  
         > 如果您想要移除的所有規則和委派角色指派給Active Directory系統管理員角色群組以外的任何角色受託人上建立郵件收件者角色，請使用下列命令。<em>WhatIf</em>參數可讓您查看將移除何種角色指派。移除<em>WhatIf</em>交換器並再次執行命令移除角色指派。
@@ -210,7 +218,9 @@ Exchange系統管理員和伺服器將只能夠管理現有的Active Directory�
 
 1.  在 Windows 命令介面中，從 Exchange 2013 安裝媒體執行以下命令，以啟用 Active Directory 分割權限。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+```
 
 2.  如果您的組織中有多個 Active Directory 網域，您必須在每一個含有 Exchange 伺服器或物件的子網域執行 `setup.exe /PrepareDomain`，或從每一個網域所擁有的 Active Directory 伺服器的站台執行 `setup.exe /PrepareAllDomains`。
 

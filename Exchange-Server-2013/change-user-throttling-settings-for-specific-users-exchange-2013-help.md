@@ -44,18 +44,26 @@ _**上次修改主題的時間：** 2014-08-05_
 
 此範例會建立非預設的使用者節流原則名為可與特定使用者相關聯的 itstaffpolicy 關聯。您省略任何參數會繼承預設的節流原則 GlobalThrottlingPolicy 中的值。建立此原則之後，您必須將其關聯特定使用者。
 
-    New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```powershell
+New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```
 
 本範例會將具有節流原則 itstaffpolicy 關聯 （其中具有較高限制） 使用者名稱 tonysmith 的使用者。
 
-    Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```powershell
+Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```
 
 您不需要使用**Set-ThrottlingPolicyAssociation** cmdlet 可讓使用者與原則產生關聯。下列命令會顯示其他方法可以將於 tonysmith 關聯的節流原則 itstaffpolicy 關聯。
 ```
-    $b = Get-ThrottlingPolicy ITStaffPolicy
+```powershell
+$b = Get-ThrottlingPolicy ITStaffPolicy
 ```
 ```
-    Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
+```powershell
+Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
 ```
 如需語法及參數的詳細資訊，請參閱[New-ThrottlingPolicy](https://technet.microsoft.com/zh-tw/library/dd351045\(v=exchg.150\))和[Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/zh-tw/library/ff459231\(v=exchg.150\))。
 
@@ -65,19 +73,25 @@ _**上次修改主題的時間：** 2014-08-05_
 
 1.  執行下列命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+Get-ThrottlingPolicy | Format-List
+```
 
 2.  確認節流您剛才建立的原則規則會列在欄中顯示 GlobalThrottlingPolicy 物件。
 
 3.  執行下列命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+Get-ThrottlingPolicy | Format-List
+```
 
 4.  確認新的一般原則的摘要資訊符合您所設定的值。
 
 5.  執行下列命令。
     
-        Get-ThrottlingPolicyAssociation
+    ```powershell
+Get-ThrottlingPolicyAssociation
+```
 
 6.  確認新的一般原則相關聯之使用者或您它具有關聯的使用者。
 

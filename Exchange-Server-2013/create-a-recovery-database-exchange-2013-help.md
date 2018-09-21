@@ -40,7 +40,9 @@ _**上次修改主題的時間：** 2013-01-21_
 
 此範例會在信箱伺服器 MBX2 上建立復原資料庫 RDB1。
 
-    New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```powershell
+New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```
 
 此範例會使用資料庫檔案和記錄檔資料夾的自訂路徑，在信箱伺服器 MBX1 上建立復原資料庫 RDB2。
 
@@ -54,7 +56,9 @@ _**上次修改主題的時間：** 2013-01-21_
 
   - 在命令介面中，執行下列命令以顯示復原資料庫的設定資訊。
     
-        Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```powershell
+Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+```
 
 ## 其他工作
 

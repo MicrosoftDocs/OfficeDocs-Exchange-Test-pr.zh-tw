@@ -41,7 +41,9 @@ _**上次修改主題的時間：** 2018-01-17_
     
     若要重新建立探索系統信箱，請執行下列命令：
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 ## 如何知道這是否正常運作？
 

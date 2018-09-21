@@ -98,7 +98,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 此範例會連線使用者信箱。*Identity*參數會指定已刪除的信箱保留在名為 MBXDB01 信箱資料庫中的顯示名稱。*User*參數會指定要連線至信箱的 Active Directory 使用者帳戶。
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 
 > [!NOTE]  
@@ -142,7 +144,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
   - 在命令介面中，執行下列命令。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType*屬性的<strong>UserMailbox</strong>值會指出已連線的使用者帳戶和信箱。您也可以執行<strong>Get-Mailbox \<identity\></strong>命令，以確認已連線的信箱。
 
@@ -183,7 +187,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 1.  取得完整網域名稱 (FQDN) 的 Active Directory 樹系與網域控制站執行下列 cmdlet：
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+Get-OrganizationConfig | fl OriginatingServer
+```
 
 2.  步驟 1 所傳回的資訊、 搜尋 Deleted Objects 容器 Active Directory 中的公用資料夾信箱 GUID 以及 GUID 或刪除公用資料夾信箱已包含在信箱資料庫的名稱。
     

@@ -62,11 +62,15 @@ _**上次修改主題的時間：** 2012-11-28_
 
 此範例會為閒置中的已驗證連線設定連線逾時限制。
 
-    Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```
 
 此範例會為閒置中的未驗證連線設定連線逾時限制。
 
-    Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```
 
 您已設定連線逾時限制 IMAP4 之後，您必須重新啟動 IMAP4 服務的設定才會生效。如需如何重新啟動 IMAP4 服務的資訊，請參閱[啟動及停止 IMAP4 服務](start-and-stop-the-imap4-services-exchange-2013-help.md)。
 
@@ -90,7 +94,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  驗證連線設定是否正確。
 

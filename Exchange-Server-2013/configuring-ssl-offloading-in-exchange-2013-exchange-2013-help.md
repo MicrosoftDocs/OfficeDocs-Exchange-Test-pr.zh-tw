@@ -89,21 +89,29 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令提示字元，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步驟 2**   您需要使用下列其中一個命令，收回正確的應用程式集區或重新啟動 Internet Information Services：
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeOWAAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeOWAAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -119,22 +127,30 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令提示字元，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+```
         
 
   - **步驟 2**   您需要使用下列其中一個命令，收回正確的應用程式集區或重新啟動 Internet Information Services：
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeECPAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeECPAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -168,15 +184,21 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -199,21 +221,29 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令提示字元，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步驟 2**   您需要使用下列其中一個命令，收回正確的應用程式集區或重新啟動 Internet Information Services：
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeOABAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeOABAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -235,15 +265,21 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeSyncAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeSyncAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -259,21 +295,29 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令提示字元，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步驟 2**   您需要使用下列其中一個命令，收回正確的應用程式集區或重新啟動 Internet Information Services：
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeServicesAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeServicesAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -289,21 +333,29 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令提示字元，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步驟 2**   您需要使用下列其中一個命令，收回正確的應用程式集區或重新啟動 Internet Information Services：
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -329,21 +381,29 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     
       - 使用命令提示字元，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步驟 2**   您需要使用下列其中一個命令，收回正確的應用程式集區或重新啟動 Internet Information Services：
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+```
     
       - 使用 Windows PowerShell 指令程式，輸入下列命令，然後按 Enter 鍵。
         
-            IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+```
     
       - 使用命令列：移至 **\[開始\]** \> **\[執行\]**，輸入 **cmd**，然後按 Enter 鍵。在命令提示字元視窗中，輸入下列命令，然後按 Enter 鍵。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet Information Services (IIS) 管理員：在 Internet Information Services (IIS) 管理員的 **\[動作\]** 窗格中，按一下 **\[重新啟動\]**。
 
@@ -371,7 +431,9 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
-    iisreset /noforce
+```powershell
+iisreset /noforce
+```
 
 **使用 appcmd**
 
@@ -391,7 +453,9 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
-    iisreset /noforce
+```powershell
+iisreset /noforce
+```
 
 回到頁首
 

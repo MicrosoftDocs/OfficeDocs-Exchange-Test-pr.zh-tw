@@ -135,7 +135,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 請使用下列命令停用使用者信箱、連結的信箱、資源信箱以及共用信箱。
 
-    Disable-Mailbox <identity>
+```powershell
+Disable-Mailbox <identity>
+```
 
 執行此命令時，會顯示訊息詢問您是否確認要停用信箱。
 
@@ -170,7 +172,9 @@ Disable-Mailbox sharedmbx@contoso.com
 
   - 在命令介面中，執行下列命令。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     請注意，*RecipientType* 內容的值為 `User`，而不是 `UserMailbox` (具有已啟用信箱之使用者的值)。這也可確認信箱已停用，但使用者帳戶保留下來。
 
@@ -194,7 +198,9 @@ Disable-Mailbox sharedmbx@contoso.com
 
 請使用下列命令刪除使用者信箱、連結的信箱、資源信箱以及共用信箱。
 
-    Remove-Mailbox <identity>
+```powershell
+Remove-Mailbox <identity>
+```
 
 執行此命令時，會顯示訊息詢問您是否確認要移除信箱以及對應的 Active Directory 使用者帳戶。
 
@@ -231,7 +237,9 @@ Remove-Mailbox corpprint
 
 2.  執行下列命令來確認已刪除 Active Directory 使用者帳戶。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     此命令將傳回錯誤，表示找不到使用者，確認已刪除帳戶。
 

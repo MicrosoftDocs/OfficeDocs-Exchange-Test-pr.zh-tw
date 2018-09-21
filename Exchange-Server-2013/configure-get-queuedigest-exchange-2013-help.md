@@ -62,7 +62,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 1.  在 \[命令提示字元\] 視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 檔案：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  在 `<appSettings>` 區段中新增下列一或二個機碼。
     
@@ -82,11 +84,15 @@ _**上次修改主題的時間：** 2014-12-16_
 
 5.  若要在 Exchange 管理命令介面中變更 *QueueDiagnosticsAggregationInterval* 參數值，請使用下列語法：
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+    ```powershell
+Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+```
     
     例如，若要將值變更為 30 秒，請執行下列命令：
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+    ```powershell
+Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+```
 
 ## 如何知道這是否正常運作？
 

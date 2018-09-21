@@ -123,7 +123,9 @@ _**上次修改主題的時間：** 2015-11-30_
 
 若要確認您已成功建立全域覆寫，請使用 **Get-GlobalMonitoringOverride** Cmdlet 檢視全域覆寫清單：
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 覆寫應該會出現在清單中。
 
@@ -141,7 +143,9 @@ _**上次修改主題的時間：** 2015-11-30_
 
 若要確認您已成功移除全域覆寫，請使用 **Get-GlobalMonitoringOverride** Cmdlet 檢視全域覆寫清單：
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 已移除的覆寫應該不會出現在清單中。
 

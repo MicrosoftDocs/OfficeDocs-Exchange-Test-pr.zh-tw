@@ -88,7 +88,9 @@ Microsoft Exchange Server 2013系統管理員可以手動下載反惡意程式�
 
 1.  執行下列命令：
     
-        Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
+    ```powershell
+Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
+```
 
 2.  使用**Get-ProxySettings**和**Set-ProxySettings** cmdlet 來檢視和設定可用來下載反惡意程式碼更新之 proxy 伺服器設定。**Set-ProxySettings**指令程式會使用下列語法：
     
@@ -96,7 +98,9 @@ Microsoft Exchange Server 2013系統管理員可以手動下載反惡意程式�
     
     例如，若要設定要使用的 proxy 伺服器位址 172.17.17.10 TCP 連接埠 80 的反惡意程式碼更新，請執行下列命令。
     
-        Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
+    ```powershell
+Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
+```
     
     若要確認 proxy 伺服器設定，請執行**Get-ProxySettings**指令程式。
 

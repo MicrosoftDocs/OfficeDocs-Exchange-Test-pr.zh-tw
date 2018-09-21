@@ -188,7 +188,9 @@ MAPI over HTTP 可為支援它的用戶端提供下列優點：
     
     執行下列命令：
     
-        Set-OrganizationConfig -MapiHttpEnabled $true
+    ```powershell
+Set-OrganizationConfig -MapiHttpEnabled $true
+```
 
 ## 測試 MAPI over HTTP 連線
 
@@ -196,7 +198,9 @@ MAPI over HTTP 可為支援它的用戶端提供下列優點：
 
 下列範例將測試從 Exchange 伺服器 ContosoMail 連出的 MAPI over HTTP 連線。
 
-    Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```powershell
+Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```
 
 成功的測試會傳回類似下列範例的輸出：
 

@@ -69,7 +69,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會設定 April Stewart 信箱 30 天保留已刪除的項目。
 
-    Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```powershell
+Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 
@@ -106,7 +108,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會設定為 10 天的信箱資料庫 MDB2 已刪除的項目保留期間。
 
-    Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```powershell
+Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\))。
 
@@ -121,7 +125,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會設定警告配額的 15 GB 與信箱資料庫 MDB2 上 20 GB 的可復原的項目配額可復原的項目。
 
-    Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```powershell
+Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\))。
 

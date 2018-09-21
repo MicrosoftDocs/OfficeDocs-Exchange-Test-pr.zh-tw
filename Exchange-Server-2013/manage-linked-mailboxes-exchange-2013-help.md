@@ -124,7 +124,9 @@ _<strong>上次修改主題的時間：</strong> 2012-11-27_
 
   - 在命令介面中，執行以下命令以顯示新連結信箱的資訊：
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+```
 
 ## 變更連結信箱內容
 
@@ -389,5 +391,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-27_
     
     在上方範例中變更連結主帳戶的位置執行下列命令，以驗證新值。
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+```
 

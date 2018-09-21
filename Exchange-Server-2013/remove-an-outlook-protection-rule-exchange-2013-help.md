@@ -44,7 +44,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本範例移除 Outlook 保護規則 OPR-DG-Finance。
 
-    Remove-OutlookProtectionRule -Identity "OPR-DG-Finance"
+```powershell
+Remove-OutlookProtectionRule -Identity "OPR-DG-Finance"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-OutlookProtectionRule](https://technet.microsoft.com/zh-tw/library/dd297961\(v=exchg.150\))。
 
@@ -52,7 +54,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本範例移除 Exchange 組織中的所有 Outlook 保護規則。
 
-    Get-OutlookProtectionRule | Remove-OutlookProtectionRule
+```powershell
+Get-OutlookProtectionRule | Remove-OutlookProtectionRule
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-OutlookProtectionRule](https://technet.microsoft.com/zh-tw/library/dd298004\(v=exchg.150\)) 與 [Remove-OutlookProtectionRule](https://technet.microsoft.com/zh-tw/library/dd297961\(v=exchg.150\))。
 

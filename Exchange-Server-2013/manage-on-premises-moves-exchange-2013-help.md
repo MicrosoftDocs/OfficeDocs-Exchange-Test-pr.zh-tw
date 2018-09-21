@@ -52,7 +52,9 @@ _**上次修改主題的時間：** 2013-02-25_
 
 此範例會使用*WhatIf*參數測試 Tony Smith 之信箱是否已準備好要移至新的資料庫 DB01 和是否有任何命令中的錯誤。當您使用*WhatIf*參數時，系統會執行信箱上的檢查。如果信箱不是準備好要移動，您會收到錯誤。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219166\(v=exchg.150\)) 與 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
@@ -82,7 +84,9 @@ _**上次修改主題的時間：** 2013-02-25_
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -125,7 +129,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -147,7 +153,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 本範例會將 Tony Smith 之主要信箱移至 DB01。封存並未移動。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
@@ -159,7 +167,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -188,7 +198,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -206,7 +218,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 本範例會將 Tony Smith 的封存信箱移至 DB03。不移動主要信箱。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219166\(v=exchg.150\)) 與 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
@@ -216,7 +230,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -234,7 +250,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -264,7 +282,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 

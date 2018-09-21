@@ -50,11 +50,15 @@ Microsoft Exchange Server 2013 支援在某些拓撲的 Mailbox Server 之間停
 
 若要將 Mailbox Server 上的傳輸服務設定為使用降級的 Exchange 伺服器驗證，請執行下列命令：
 
-    Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```
 
 本範例會對名稱為 Mailbox01 的伺服器進行此組態變更。
 
-    Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```
 
 ## 步驟 2： 目標 Active Directory 站台信箱伺服器上建立專用的接收連接器
 
@@ -86,39 +90,53 @@ Microsoft Exchange Server 2013 支援在某些拓撲的 Mailbox Server 之間停
 
 <!-- end list -->
 
-    New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```powershell
+New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```
 
 ## 步驟 3： 使用命令介面來停用的專用的接收連接器上的 TLS
 
 若要停用接收連接器上的 TLS，請執行下列命令：
 
-    Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```
 
 本範例會在名稱為 Mailbox01 的 Mailbox Server 上，停用名稱為 WAN 的接收連接器上的 TLS。
 
-    Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```
 
 ## 步驟 4： 使用命令介面來指定為中樞站台的 Active Directory 站台
 
 若要將 Active Directory 站台指定為中樞站台，請執行下列命令：
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 在每一個有 Mailbox Server 參與未加密流量的 Active Directory 站台中，您需要各執行此程序一次。
 
 本範例會將名稱為 Central Office Site 1 的 Active Directory 站台設定為中樞站台。
 
-    Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```
 
 ## 步驟 5： 使用命令介面來設定透過 WAN 連線的最低成本路由路徑
 
 根據如何設定 IP 站台連結成本的 Active Directory 中，此步驟可能不需要。您必須確認與部署 WOC 裝置的網路連結 leastcost 路由路徑中。若要檢視 Active Directory 站台連結成本，以及 Exchange 特定站台連結成本，執行下列命令：
 
-    Get-AdSiteLink
+```powershell
+Get-AdSiteLink
+```
 
 如果最低成本路由路徑不是與部署 WOC 裝置的網路連結，您需要將 Exchange 特定成本指派給特定 IP 站台連結以確保正確路由傳送的郵件。若要深入了解此特定問題，請參閱 ＜ 中[案例： 將 Exchange 設定為支援 WAN 的最佳化控制站](scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md)的 「 設定 Exchange 特定 Active Directory 站台連結成本 」 一節。
 
 本範例會在名稱為 Branch Office 2-Branch Office 1 的 IP 站台連結上，設定 Exchange 特有成本 15。
 
-    Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```powershell
+Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```
 

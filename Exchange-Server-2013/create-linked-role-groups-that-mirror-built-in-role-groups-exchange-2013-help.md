@@ -68,7 +68,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 2.  以變數儲存外部 Active Directory 樹系認證。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 3.  透過變數儲存指派至 組織管理 角色群組的所有角色。
     
@@ -94,7 +96,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例使用前值來將 組織管理 角色群組重新建立為連結角色群組。
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     $OrgMgmt  = Get-RoleGroup "Organization Management"
     New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
     Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
@@ -108,11 +112,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 2.  儲存在變數中的外部Active Directory樹系認證。您只需要一次執行這項作業。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 3.  擷取使用下列 Cmdlet 的角色群組清單。
     
-        Get-RoleGroup
+    ```powershell
+Get-RoleGroup
+```
 
 4.  針對 組織管理 角色群組以外的每個角色群組，請執行下列作業。
     
@@ -133,8 +141,12 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例使用前值來將 收件者管理 及「伺服器管理」角色群組重新建立為連結角色群組。
 
-    $ForeignCredential = Get-Credential
-    Get-RoleGroup
+```powershell
+$ForeignCredential = Get-Credential
+```
+```powershell
+Get-RoleGroup
+```
     $RoleGroup = Get-RoleGroup "Recipient Management"
     New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
     $RoleGroup = Get-RoleGroup "Server Management"

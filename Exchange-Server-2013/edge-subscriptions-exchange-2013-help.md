@@ -128,7 +128,9 @@ Edge Transport Server 沒有 Active Directory 的直接存取權。Edge Transpor
 
 此範例會匯出 Edge 訂閱檔案。
 
-    New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```powershell
+New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```
 
 
 > [!NOTE]  

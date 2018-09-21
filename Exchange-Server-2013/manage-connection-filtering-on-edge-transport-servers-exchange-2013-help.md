@@ -54,21 +54,29 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用連線篩選，請執行下列命令：
 
-    Disable-TransportAgent "Connection Filtering Agent"
+```powershell
+Disable-TransportAgent "Connection Filtering Agent"
+```
 
 若要啟用連線篩選，請執行下列命令：
 
-    Enable-TransportAgent "Connection Filtering Agent"
+```powershell
+Enable-TransportAgent "Connection Filtering Agent"
+```
 
 若要讓變更生效，請執行下列命令來重新啟動 Microsoft Exchange Transport 服務：
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利啟用或停用連線篩選，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```powershell
+Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```
 
 ## IP 封鎖清單程序
 
@@ -86,17 +94,23 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用 IP 封鎖清單，請執行下列命令：
 
-    Set-IPBlockListConfig -Enabled $false
+```powershell
+Set-IPBlockListConfig -Enabled $false
+```
 
 若要啟用 IP 封鎖清單，請執行下列命令：
 
-    Set-IPBlockListConfig -Enabled $true
+```powershell
+Set-IPBlockListConfig -Enabled $true
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利啟用或停用 IP 封鎖清單，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPBlockListConfig | Format-List Enabled
+```powershell
+Get-IPBlockListConfig | Format-List Enabled
+```
 
 ## 使用命令介面設定 IP 封鎖清單
 
@@ -126,17 +140,23 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要檢視所有 IP 封鎖清單項目，請執行下列命令：
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 請注意，每個 IP 封鎖清單項目都是以整數值識別。當您新增項目至 IP 封鎖清單和 IP 允許清單時，系統會依遞增順序來指派身分識別整數。
 
 若要檢視特定 IP 封鎖清單項目，請使用下列語法：
 
-    Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 例如，若要檢視含有 IP 位址 192.168.1.13 的 IP 封鎖清單項目，請執行下列命令：
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.13
+```
 
 
 > [!NOTE]  
@@ -153,33 +173,45 @@ _**上次修改主題的時間：** 2015-04-08_
 
 下列範例會為 192.168.1.10 到 192.168.1.15 這個 IP 位址範圍新增一個 IP 封鎖清單項目，並設定此 IP 封鎖清單項目在 2014 年 7 月 4 日 15:00 到期。
 
-    Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利新增 IP 封鎖清單項目，請執行下列命令，並確認新的 IP 封鎖清單項目已顯示。
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## 使用命令介面移除 IP 封鎖清單項目
 
 若要移除 IP 封鎖清單項目，請使用下列語法：
 
-    Remove-IPBlockListEntry <IdentityInteger>
+```powershell
+Remove-IPBlockListEntry <IdentityInteger>
+```
 
 下列範例會移除 *Identity* 值為 3 的 IP 封鎖清單項目。
 
-    Remove-IPBlockListEntry 3
+```powershell
+Remove-IPBlockListEntry 3
+```
 
 下列範例會移除含有 IP 位址 192.168.1.12 的 IP 封鎖清單項目，而不使用 *Identity* 整數值。請注意，IP 封鎖清單項目可以是個別 IP 位址或 IP 位址範圍。
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利移除 IP 封鎖清單項目，請執行下列命令，並確認移除的 IP 封鎖清單項目已消失。
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## IP 封鎖清單提供者程序
 
@@ -197,17 +229,23 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用所有 IP 封鎖清單提供者，請執行下列命令：
 
-    Set-IPBlockListProvidersConfig -Enabled $false
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $false
+```
 
 若要啟用所有 IP 封鎖清單提供者，請執行下列命令：
 
-    Set-IPBlockListProvidersConfig -Enabled $true
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $true
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已啟用或停用所有 IP 封鎖清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPBlockListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPBlockListProvidersConfig | Format-List Enabled
+```
 
 ## 使用命令介面設定所有 IP 封鎖清單提供者
 
@@ -237,11 +275,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要檢視所有 IP 封鎖清單提供者的摘要清單，請執行下列命令：
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 若要檢視特定提供者的詳細資料，請使用下列語法：
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 下列範例顯示名稱為「Contoso IP Block List Provider」之提供者的詳細資料。
 
@@ -276,27 +318,37 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要確認您已順利新增 IP 封鎖清單提供者，請執行下列命令，並確認新的 IP 封鎖清單提供者已顯示。
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## 使用命令介面啟用或停用 IP 封鎖清單提供者
 
 若要啟用或停用特定 IP 封鎖清單提供者，請使用下列語法：
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```
 
 下列範例會停用名稱為 Contoso IP Block List Provider 的提供者。
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```
 
 下列範例會啟用名稱為 Contoso IP Block List Provider 的提供者。
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利啟用或停用 IP 封鎖清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```
 
 ## 使用命令介面設定 IP 封鎖清單提供者
 
@@ -308,7 +360,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 例如，若要將 IP 位址狀態碼 127.0.0.1 新增至名稱為 Contoso IP Block List Provider 之提供者的現有狀態碼清單，請執行下列命令：
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 如需詳細資訊，請參閱 [Set-IPBlockListProvider](https://technet.microsoft.com/zh-tw/library/bb124979\(v=exchg.150\))。
 
@@ -316,33 +370,45 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要確認您已順利設定 IP 封鎖清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```
 
 ## 使用命令介面測試 IP 封鎖清單提供者
 
 若要測試 IP 封鎖清單提供者，請使用下列語法。
 
-    Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 下列範例會查閱 IP 位址 192.168.1.1 來測試名稱為 Contoso IP Block List Provider 的提供者。
 
-    Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```
 
 ## 使用命令介面移除 IP 封鎖清單提供者
 
 若要移除 IP 封鎖清單提供者，請使用下列語法：
 
-    Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 下列範例會移除名稱為 Contoso IP Block List Provider 的 IP 封鎖清單提供者。
 
-    Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```powershell
+Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利移除 IP 封鎖清單提供者，請執行下列命令，並確認移除的 IP 封鎖清單提供者已消失。
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## IP 允許清單程序
 
@@ -360,17 +426,23 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用 IP 允許清單，請執行下列命令：
 
-    Set-IPAllowListConfig -Enabled $false
+```powershell
+Set-IPAllowListConfig -Enabled $false
+```
 
 若要啟用 IP 允許清單，請執行下列命令：
 
-    Set-IPAllowListConfig -Enabled $true
+```powershell
+Set-IPAllowListConfig -Enabled $true
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利啟用或停用 IP 允許清單，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPAllowListConfig | Format-List Enabled
+```powershell
+Get-IPAllowListConfig | Format-List Enabled
+```
 
 ## 使用命令介面設定 IP 允許清單
 
@@ -380,7 +452,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會設定 IP 允許清單來篩選來自內部和外部郵件伺服器的傳入連線。預設只會篩選來自外部郵件伺服器的連線 (*ExternalMailEnabled* 設定為 `$true`，而 *InternalMailEnabled* 設定為 `$false`)。來自外部合作夥伴的未驗證連線和已驗證連線皆視為外部連線。
 
-    Set-IPAllowListConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListConfig -InternalMailEnabled $true
+```
 
 ## 如何知道這是否正常運作？
 
@@ -392,17 +466,23 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要檢視所有 IP 允許清單項目，請執行下列命令：
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 請注意，每個 IP 允許清單項目都是以整數值來識別。當您新增項目至 IP 封鎖清單和 IP 允許清單時，系統會依遞增順序來指派身分識別整數。
 
 若要檢視特定 IP 允許清單項目，請使用下列語法：
 
-    Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 例如，若要檢視含有 IP 位址 192.168.1.13 的 IP 允許清單項目，請執行下列命令：
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.13
+```
 
 
 > [!NOTE]  
@@ -419,33 +499,45 @@ _**上次修改主題的時間：** 2015-04-08_
 
 下列範例會為 192.168.1.10 到 192.168.1.15 這個 IP 位址範圍新增一個 IP 允許清單項目，並設定此 IP 允許清單項目在 2014 年 7 月 4 日 15:00 到期。
 
-    Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利新增 IP 允許清單項目，請執行下列命令，並確認新的 IP 允許清單項目已顯示。
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## 使用命令介面移除 IP 允許清單項目
 
 若要移除 IP 允許清單項目，請使用下列語法：
 
-    Remove-IPAllowListEntry <IdentityInteger>
+```powershell
+Remove-IPAllowListEntry <IdentityInteger>
+```
 
 下列範例會移除 *Identity* 值為 3 的 IP 允許清單項目。
 
-    Remove-IPAllowListEntry 3
+```powershell
+Remove-IPAllowListEntry 3
+```
 
 此範例會移除含有 IP 位址 192.168.1.12 的 IP 允許清單項目，而不使用 *Identity* 整數值。請注意，IP 允許清單項目可以是個別 IP 位址或 IP 位址範圍。
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利移除 IP 允許清單項目，請執行下列命令，並確認移除的 IP 允許清單項目已消失。
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## IP 允許清單提供者程序
 
@@ -463,17 +555,23 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用所有 IP 允許清單提供者，請執行下列命令：
 
-    Set-IPAllowListProvidersConfig -Enabled $false
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $false
+```
 
 若要啟用所有 IP 允許清單提供者，請執行下列命令：
 
-    Set-IPAllowListProvidersConfig -Enabled $true
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $true
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已啟用或停用所有 IP 允許清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPAllowListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *Enabled
+```
 
 ## 使用命令介面設定所有 IP 允許清單提供者
 
@@ -483,7 +581,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會設定所有 IP 允許清單提供者來篩選來自內部和外部郵件伺服器的傳入連線。預設只會篩選來自外部郵件伺服器的連線 (*ExternalMailEnabled* 設定為 `$true`，而 *InternalMailEnabled* 設定為 `$false`)。來自外部合作夥伴的未驗證連線和已驗證連線皆視為外部連線。
 
-    Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```
 
 如需詳細資訊，請參閱 [Set-IPBlockListProvidersConfig](https://technet.microsoft.com/zh-tw/library/aa998543\(v=exchg.150\))。
 
@@ -497,11 +597,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要檢視所有 IP 允許清單提供者的摘要清單，請執行下列命令。
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 若要檢視特定提供者的詳細資料，請使用下列語法。
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 此範例顯示名稱為 Contoso IP Allow List Provider 之提供者的詳細資料。
 
@@ -536,27 +640,37 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要確認您已順利新增 IP 允許清單提供者，請執行下列命令，並確認新的 IP 允許清單提供者已顯示。
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 ## 使用命令介面啟用或停用 IP 允許清單提供者
 
 若要啟用或停用特定 IP 允許清單提供者，請使用下列語法。
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```
 
 此範例會停用名稱為 Contoso IP Allow List Provider 的提供者。
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```
 
 此範例會啟用名稱為 Contoso IP Allow List Provider 的提供者。
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利啟用或停用 IP 允許清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```
 
 ## 使用命令介面設定 IP 允許清單提供者
 
@@ -568,7 +682,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 例如，若要將 IP 位址狀態碼 127.0.0.1 新增至名稱為 Contoso IP Allow List Provider 之提供者的現有狀態碼清單，請執行下列命令：
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 如需詳細資訊，請參閱 [Set-IPBlockListProvider](https://technet.microsoft.com/zh-tw/library/bb124979\(v=exchg.150\))。
 
@@ -576,31 +692,43 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要確認您已順利設定 IP 允許清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```
 
 ## 使用命令介面測試 IP 允許清單提供者
 
 若要測試 IP 允許清單提供者，請使用下列語法：
 
-    Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 下列範例會查閱 IP 位址 192.168.1.1 來測試名稱為 Contoso IP Allow List Provider 的提供者。
 
-    Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```
 
 ## 使用命令介面移除 IP 允許清單提供者
 
 若要移除 IP 允許清單提供者，請使用下列語法：
 
-    Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 此範例會移除名稱為 Contoso IP Allow List Provider 的 IP 允許清單提供者。
 
-    Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```powershell
+Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利移除 IP 允許清單提供者，請執行下列命令，並確認移除的 IP 允許清單提供者已消失。
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 

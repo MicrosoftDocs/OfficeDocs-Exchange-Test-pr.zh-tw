@@ -58,5 +58,7 @@ _**上次修改主題的時間：** 2013-04-09_
 
 此範例會將名為 `MyClientAccessServer` 的 Client Access Server 上的 TCP 接聽通訊埠設為 5566。
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```
 

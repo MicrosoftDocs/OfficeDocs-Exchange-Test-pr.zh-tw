@@ -309,7 +309,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會為 Fabrikam 建立名為 OAB\_FAB 的離線通訊錄 (OAB)。
 
-    New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```powershell
+New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```
 
 如需詳細資訊，請參閱 [建立離線通訊錄](https://docs.microsoft.com/zh-tw/exchange/address-books/offline-address-books/create-offline-address-book)。
 

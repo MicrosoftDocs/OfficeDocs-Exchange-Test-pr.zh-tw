@@ -91,7 +91,9 @@ _**上次修改主題的時間：** 2015-01-01_
 
   - 本範例停用組織關係 Contoso。
     
-        Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```powershell
+Set-OrganizationRelationship -Identity Contoso -Enabled $false
+```
 
   - 這個範例會啟用組織關聯性 WoodgroveBank 的行事曆可用性資訊存取，並將存取層級設定為 `AvailabilityOnly` (只含時間的行事曆空閒/忙碌資訊)。
     
@@ -103,7 +105,9 @@ _**上次修改主題的時間：** 2015-01-01_
 
 若要確認您已成功更新組織關聯性，請執行下列命令介面命令並確認組織關聯性資訊。
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]  

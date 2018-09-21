@@ -212,11 +212,15 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 **Out-Host** Cmdlet 是位於管線尾端、不會顯示的預設 Cmdlet。在套用所有格式化之後，**Out-Host** Cmdlet 會將最後輸出傳送至主控台視窗，以進行顯示。您不必明確地呼叫 **Out-Host** Cmdlet，因為它是預設輸出。您可以呼叫 **Out-File** Cmdlet 做為命令的最後一個 Cmdlet，來置換將輸出傳送至主控台視窗的行為。**Out-File** Cmdlet 則會接著將輸出寫至您在命令中指定的檔案，如下列範例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 在這個範例中，**Out-File** Cmdlet 會將 **Get-ChildItem | Format-Wide -Column 4** 命令所顯示的資訊寫至名為 `OutputFile.txt` 的檔案中。您也可以使用重新導向運算子，即右角括弧 (`>`)，將管線輸出重新導向至檔案。若要將命令的管線輸出附加至現有檔案而不取代原始檔案，請使用雙右角括弧 (`>>`)，如下列範例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 在這個範例中，**Get-Childitem** Cmdlet 的輸出會以管線傳輸至 **Format-Wide** Cmdlet 進行格式化，然後寫至 `OutputFile.txt` 檔案的結尾。請注意，如果 `OutputFile.txt` 檔案不存在，則使用雙右角括弧 (`>>`) 將會建立該檔案。
 
@@ -252,7 +256,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 `Out-Ie` 指令碼會假設它接收的資料是有效的 HTML。若要將您想檢視的資料轉換成 HTML，必須以管線將命令的結果傳輸至 **ConvertTo-Html** Cmdlet。然後，以管線將該命令的結果傳輸至 `Out-Ie` 指令碼。下列範例會顯示如何在 Internet Explorer 視窗中檢視目錄清單：
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## 如何篩選資料
 

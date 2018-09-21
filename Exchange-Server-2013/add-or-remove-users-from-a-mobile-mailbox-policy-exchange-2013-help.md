@@ -120,5 +120,7 @@ _**上次修改主題的時間：** 2015-07-16_
 
 2.  在命令介面中，執行下列命令。
     
-        Get-CASMailbox -Identity tony@contoso.com
+    ```powershell
+Get-CASMailbox -Identity tony@contoso.com
+```
 

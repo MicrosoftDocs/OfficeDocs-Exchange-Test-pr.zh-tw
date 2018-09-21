@@ -58,7 +58,9 @@ Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow
 
 2.  在 **\[Microsoft Exchange 2010 UM 疑難排解工具\]** 視窗中，於提示字元處輸入以下命令，然後按 Enter。
     
-        $cred=Get-Credential
+    ```powershell
+$cred=Get-Credential
+```
 
 3.  在 **\[Windows PowerShell 認證要求\]** 視窗中，輸入網域\\使用者名稱和密碼，然後按一下 **\[確定\]**。
 

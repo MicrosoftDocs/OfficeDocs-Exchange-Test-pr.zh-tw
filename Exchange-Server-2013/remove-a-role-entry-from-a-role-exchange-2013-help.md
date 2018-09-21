@@ -46,11 +46,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 使用下面的語法移除角色的完整管理角色項目。
 
-    Remove-ManagementRoleEntry <management role>\<management role entry>
+```powershell
+Remove-ManagementRoleEntry <management role>\<management role entry>
+```
 
 這個範例會從「西雅圖伺服器系統管理員」角色中移除 **Enable-MailUser** 指令程式。
 
-    Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```powershell
+Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd351187\(v=exchg.150\))。
 

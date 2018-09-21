@@ -52,7 +52,9 @@ _**上次修改主題的時間：** 2012-10-14_
 
 此範例會移除通訊清單 Sales Department，其中不包含子通訊清單。
 
-    Remove-AddressList -Identity "Sales Department"
+```powershell
+Remove-AddressList -Identity "Sales Department"
+```
 
 輸入 **Y** 以確認您要移除此通訊清單，然後按 ENTER。
 
@@ -62,7 +64,9 @@ _**上次修改主題的時間：** 2012-10-14_
 
 此範例會移除父系通訊清單 Departments 與其所有子通訊清單。
 
-    Remove-AddressList -Identity Departments -Recursive
+```powershell
+Remove-AddressList -Identity Departments -Recursive
+```
 
 輸入 **Y** 以確認您要移除父通訊清單以及其子通訊清單，然後按 ENTER。
 

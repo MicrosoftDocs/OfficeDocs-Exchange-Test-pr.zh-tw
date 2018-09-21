@@ -137,7 +137,9 @@ _**上次修改主題的時間：** 2013-08-12_
 
 此範例讓您檢視所有網際網路資訊服務 (IIS) 網站上之所有 Outlook Web App 虛擬目錄的屬性，而這類網站位在 Exchange 組織中所有已安裝用戶端存取伺服器角色的電腦上。
 
-    Get-OWAVirtualDirectory
+```powershell
+Get-OWAVirtualDirectory
+```
 
 此範例讓您在本機Outlook Web App 伺服器的預設 IIS 網站上檢視 Exchange 虛擬目錄的屬性。
 
@@ -145,11 +147,15 @@ _**上次修改主題的時間：** 2013-08-12_
 
 此範例讓您在特定 Outlook Web App 伺服器的 IIS 網站上檢視所有 Exchange 虛擬目錄的屬性。
 
-    Get-OWAVirtualDirectory -server <Exchange Server Name>
+```powershell
+Get-OWAVirtualDirectory -server <Exchange Server Name>
+```
 
 此範例讓您檢視所有 IIS 網站上每個 Outlook Web App 虛擬目錄的屬性值，而這類網站位在 Exchange 組織中的所有用戶端存取伺服器上。
 
-    Get-OWAVirtualDirectory | format-list
+```powershell
+Get-OWAVirtualDirectory | format-list
+```
 
 如需語法及參數的相關資訊，請參閱 [Get-OwaVirtualDirectory](https://technet.microsoft.com/zh-tw/library/aa998588\(v=exchg.150\))。
 

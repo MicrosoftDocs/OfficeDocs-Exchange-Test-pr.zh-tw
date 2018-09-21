@@ -50,19 +50,25 @@ _**上次修改主題的時間：** 2012-11-28_
 
 此範例可允許使用者檢視外部 POP3 伺服器設定。
 
-    Set-PopSettings -ExternalConnectionSettings {Dublin01.Contoso.com:995:SSL}
+```powershell
+Set-PopSettings -ExternalConnectionSettings {Dublin01.Contoso.com:995:SSL}
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-PopSettings](https://technet.microsoft.com/zh-tw/library/aa997154\(v=exchg.150\))。
 
 此範例可允許使用者檢視外部 IMAP4 伺服器設定。
 
-    Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
+```powershell
+Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ImapSettings](https://technet.microsoft.com/zh-tw/library/aa998252\(v=exchg.150\))。
 
 若要套用這些變更，您必須重新啟動 IIS。您不需要重新啟動 POP3 服務。若要重新啟動 IIS，請在命令提示字元中輸入下列命令：
 
-    iisreset
+```powershell
+iisreset
+```
 
 ## 如何知道這是否正常運作？
 
@@ -70,7 +76,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  確認已設定了 *ExternalConnectionSettings* 內容。
 
@@ -78,7 +86,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  確認已設定了 *ExternalConnectionSettings* 內容。
 
@@ -98,7 +108,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-ReceiveConnector | format-list
+    ```powershell
+Get-ReceiveConnector | format-list
+```
 
 2.  如果 *AdvertiseClientSettings* 內容設為 `true`，使用者就能檢視在 Outlook Web App 中檢視其 SMTP 伺服器設定。如果 *AdvertiseClientSettings* 設為 `false`，則使用者無法檢視在 Outlook Web App 中檢視其 SMTP 伺服器設定。
 

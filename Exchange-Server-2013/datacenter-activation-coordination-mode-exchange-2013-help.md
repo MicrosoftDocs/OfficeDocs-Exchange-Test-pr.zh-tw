@@ -64,7 +64,9 @@ DAC 模式用來控制啟動行為的 DAG 裝載資料庫。此控制項的設�
 
 只能透過使用Exchange管理命令介面可啟用 DAC 模式。特別是，您可以使用[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/zh-tw/library/dd297934\(v=exchg.150\))指令程式來啟用 DAC 模式下面範例所示。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```
 
 在上述範例中，DAG2 為啟用 DAC 模式。
 

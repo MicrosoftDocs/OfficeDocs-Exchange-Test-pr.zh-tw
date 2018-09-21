@@ -52,11 +52,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 本範例會設定管線追蹤，以在名稱為 Mailbox01 的 Mailbox Server 上的傳輸服務中擷取寄件者 chris@contoso.com 所傳送的所有郵件的快照。
 
-    Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```
 
 本範例會設定管線追蹤，以在名稱為 Mailbox02 的 Mailbox Server 上擷取傳輸服務所收到的所有系統產生的郵件的快照。
 
-    Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```powershell
+Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```
 
 
 > [!CAUTION]  
@@ -75,7 +79,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 本範例會將 Mailbox Server (名稱為 Mailbox01) 上傳輸服務的管線追蹤資料夾設為 D:\\Hub\\Pipeline Tracing。
 
-    Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```
 
 ## 步驟 3：使用命令介面來啟用管線追蹤
 
@@ -87,7 +93,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 本範例會在 Mailbox Server (名稱為 Mailbox01) 的傳輸服務中啟用管線追蹤。
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```
 
 ## 如何知道這是否正常運作？
 
@@ -111,7 +119,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 本範例會在 Mailbox Server (名稱為 Mailbox01) 的傳輸服務中停用管線追蹤。
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```
 
 ## 如何知道這是否正常運作？
 

@@ -78,7 +78,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  啟動登錄編輯程式，並尋找下列登錄子機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+```
 
 4.  在 \[CLSID\] 底下新增 OneNote 檔案的子機碼，如下所示：
     
@@ -106,7 +108,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 6.  找到下列登錄機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+```
 
 7.  在 \[篩選器\] 底下新增 .one 副檔名的子機碼，如下所示。
     
@@ -180,7 +184,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  啟動登錄編輯程式，並尋找下列子機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+```
 
 3.  在 \[CLSID\] 底下新增 PDF 檔案的子機碼，如下所示：
     
@@ -195,7 +201,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 4.  找到下列登錄機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+```
 
 5.  在 \[篩選器\] 底下新增 .pdf 副檔名的子機碼，如下所示：
     

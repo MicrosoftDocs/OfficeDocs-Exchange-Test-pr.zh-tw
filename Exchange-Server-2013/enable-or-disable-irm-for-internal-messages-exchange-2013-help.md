@@ -49,7 +49,9 @@ _**上次修改主題的時間：** 2012-10-12_
 
 本範例在 Exchange 組織中對內部訊息啟用 IRM。
 
-    Set-IRMConfiguration -InternalLicensingEnabled $true
+```powershell
+Set-IRMConfiguration -InternalLicensingEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 
@@ -57,7 +59,9 @@ _**上次修改主題的時間：** 2012-10-12_
 
 本範例在 Exchange 組織中對內部訊息停用 IRM。
 
-    Set-IRMConfiguration -InternalLicensingEnabled $false
+```powershell
+Set-IRMConfiguration -InternalLicensingEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 

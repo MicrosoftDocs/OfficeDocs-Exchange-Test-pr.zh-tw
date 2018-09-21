@@ -87,7 +87,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 
 
-    Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```powershell
+Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ExchangeServer](https://technet.microsoft.com/zh-tw/library/bb123716\(v=exchg.150\))。
 

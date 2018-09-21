@@ -48,15 +48,21 @@ _**上次修改主題的時間：** 2013-06-25_
 
 本範例在本機 Mailbox Server 上執行連線和操作測試，然後顯示 Voice over IP (VoIP) 連線資訊。
 
-    Test-UMConnectivity
+```powershell
+Test-UMConnectivity
+```
 
 此範例可測試本機 Client Access Server 在 TCP 通訊埠 5060 上接聽傳入之未加密 SIP 要求的能力。
 
-    Test-UMConnectivity -ListenPort 5060
+```powershell
+Test-UMConnectivity -ListenPort 5060
+```
 
 此範例可測試本機 Client Access Server 在 TCP 通訊埠 5061 上接聽傳入之已加密 SIP 要求的能力。
 
-    Test-UMConnectivity -ListenPort 5061
+```powershell
+Test-UMConnectivity -ListenPort 5061
+```
 
 
 > [!NOTE]  

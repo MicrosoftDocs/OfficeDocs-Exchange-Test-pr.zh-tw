@@ -61,7 +61,9 @@ _**上次修改主題的時間：** 2013-08-13_
 
 若要將信箱資料庫排除在自動發佈之外，請使用下列命令：
 
-    Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```powershell
+Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```
 
 從自動發佈中排除信箱資料庫時，在資料庫中建立信箱或將信箱移到資料庫的唯一方法，便是在 **New-Mailbox** 和 **Enable-Mailbox** 指令程式上使用 *Database* 參數，或在 **New-MoveRequest** 指令程式上使用 *TargetDatabase* 參數。
 

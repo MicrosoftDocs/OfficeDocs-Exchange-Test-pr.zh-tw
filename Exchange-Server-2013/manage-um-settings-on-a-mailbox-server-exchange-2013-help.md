@@ -53,7 +53,9 @@ _**上次修改主題的時間：** 2013-02-11_
 
 此範例會從所有工作階段初始通訊協定 (SIP) 撥號對應表中移除名為 `MyMailboxServer` 的信箱伺服器r。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans $null
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans $null
+```
 
 此範例會將名為 `MyMailboxServer` 的信箱伺服器r，新增到名稱為 `MySIPDialPlanName` 的 UM SIP 撥號對應表中，同時設定傳入語音呼叫數目的上限。
 
@@ -67,9 +69,13 @@ _**上次修改主題的時間：** 2013-02-11_
 
 此範例會顯示所有信箱伺服器的清單。
 
-    Get-UMService
+```powershell
+Get-UMService
+```
 
 此範例則會顯示名為 `MyMailboxServer` 的信箱伺服器的格式化內容清單。
 
-    Get-UMService -Identity MyMailboxServer | Format-List
+```powershell
+Get-UMService -Identity MyMailboxServer | Format-List
+```
 

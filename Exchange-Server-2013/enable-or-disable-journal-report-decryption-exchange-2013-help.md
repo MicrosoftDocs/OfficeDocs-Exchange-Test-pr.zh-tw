@@ -50,7 +50,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會啟用 Exchange 組織的日誌報告解密。
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 
@@ -58,7 +60,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會停用 Exchange 組織的日誌報告解密。
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 

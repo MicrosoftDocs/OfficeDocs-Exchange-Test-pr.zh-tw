@@ -76,7 +76,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 此範例在命令介面中使用 Enable-CrossForestConnector.ps1 指令檔，設定傳送連接器的權限，以供在跨樹系拓撲中使用。
 
-    .\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```powershell
+.\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```
 
 ## 如何才能了解這是否正常運作？
 

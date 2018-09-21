@@ -62,7 +62,9 @@ _**上次修改主題的時間：** 2012-11-06_
 
 此範例會移除信箱伺服器 MBX1 上信箱資料庫 DB1 的副本。
 
-    Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```powershell
+Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```
 
 ## 如何知道這是否正常運作？
 
@@ -72,7 +74,9 @@ _**上次修改主題的時間：** 2012-11-06_
 
   - 在命令介面中，執行下列指令以確認移除複本。
     
-        Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+    ```powershell
+Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+```
     
     移除的被動副本將不會再列出。
 

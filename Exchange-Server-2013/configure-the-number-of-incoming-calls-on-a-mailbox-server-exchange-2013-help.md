@@ -54,5 +54,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 此範例會將名爲 `MyMailboxServer1` 的信箱伺服器可接受的傳入語音、Outlook 語音存取和傳真呼叫數目設為 50。
 
-    Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```powershell
+Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```
 

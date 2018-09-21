@@ -61,7 +61,9 @@ _**上次修改主題的時間：** 2012-11-16_
 
 執行下列命令以永久刪除作用中信箱和相關聯的 Active Directory 使用者帳戶。
 
-    Remove-Mailbox -Identity <identity> -Permanent $true
+```powershell
+Remove-Mailbox -Identity <identity> -Permanent $true
+```
 
 
 > [!NOTE]  
@@ -82,7 +84,9 @@ _**上次修改主題的時間：** 2012-11-16_
 
 3.  執行下列命令來確認信箱已成功清除從 Exchange 信箱資料庫。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+    ```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
     
     如果您已順利將清除信箱，此命令將不會傳回任何結果。如果未清除信箱，此命令會傳回信箱的相關資訊。
 
@@ -115,7 +119,9 @@ _**上次修改主題的時間：** 2012-11-16_
 
 此範例會永久刪除的虛刪除信箱 Dan 跳轉的信箱資料庫 mbd01。
 
-    Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```
 
 這個範例會從信箱資料庫 MBD01 中，永久刪除所有虛刪除信箱。
 
@@ -127,7 +133,9 @@ _**上次修改主題的時間：** 2012-11-16_
 
 若要確認您是否已永久刪除已中斷連線的信箱和成功已清除從 Exchange 信箱資料庫，請執行下列命令。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
 
 如果您已順利將清除信箱，此命令將不會傳回任何結果。如果未清除信箱，此命令會傳回信箱的相關資訊。
 

@@ -73,7 +73,9 @@ _<strong>上次修改主題的時間：</strong> 2013-07-02_
 
 下列命令可啟用您 Exchange 組織中所有 Client Access Server 上的 MRS Proxy 端點。
 
-    Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```powershell
+Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```
 
 
 > [!IMPORTANT]  
@@ -96,7 +98,9 @@ _<strong>上次修改主題的時間：</strong> 2013-07-02_
 
 在命令介面中執行下列命令：
 
-    Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```powershell
+Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```
 
 確認 *MRSProxyEnabled* 參數已設為 `True`。
 

@@ -60,17 +60,23 @@ _**上次修改主題的時間：** 2013-02-21_
 
 此範例會傳回組織中所有關於站台信箱佈建原則的詳細資訊。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List
+```
 
 此範例會傳回組織中所有原則，但僅會顯示 `IsDefault` 資訊，以識別何者為預設原則。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```
 
 ## 對現有的網站信箱佈建原則進行變更
 
 此範例會變更站台信箱佈建原則名為允許的站台信箱到 25 MB 可以接收的電子郵件大小上限的預設值。（當您安裝 Exchange 時，具有**預設**名稱即會建立佈建原則）。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```
 
 本範例會變更警告配額至 9.5 GB，限制傳送與接收配額至 10 GB。
 
@@ -106,7 +112,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 此範例刪除在 Exchange 安裝期間建立的網站信箱佈建原則。
 
-    Remove-SiteMailboxProvisioningPolicy -Identity Default
+```powershell
+Remove-SiteMailboxProvisioningPolicy -Identity Default
+```
 
 
 > [!IMPORTANT]  

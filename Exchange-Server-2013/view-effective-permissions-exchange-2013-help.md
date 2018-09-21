@@ -55,11 +55,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要列出被授與管理角色所提供之權限的所有使用者，請使用下列語法。
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```
 
 此範例會列出被授與郵件收件者角色所提供之權限的所有使用者。
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```
 
 如果您要變更清單中傳回的屬性，或是將清單匯出至逗號分隔值 (.csv) 檔案，請參閱本主題稍後的Use the Shell to customize output and display it。
 
@@ -87,7 +91,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 此範例會尋找所有授與權限給使用者 Kim Akers 的角色指派。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
+```
 
 如果您要變更清單中傳回的內容，或是將清單匯出到 CSV 檔，請參閱本主題稍後的Use the Shell to customize output and display it。
 

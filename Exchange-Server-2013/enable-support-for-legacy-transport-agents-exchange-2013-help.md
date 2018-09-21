@@ -113,11 +113,15 @@ _**上次修改主題的時間：** 2015-03-09_
 
 1.  在命令提示字元視窗中，在要設定舊版傳輸代理程式支援的 Exchange 2013 伺服器上，執行下列命令來開啟記事本中的適當應用程式：
     
-        Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+```
     
     例如，若要開啟信箱伺服器的 EdgeTransport.exe.config，請執行下列命令：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  在檔案末端找到 *\</configuration\>* 金鑰，並將下列金鑰貼在 *\</configuration\>* 金鑰之前：
     

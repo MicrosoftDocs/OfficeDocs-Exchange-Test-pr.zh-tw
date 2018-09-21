@@ -25,7 +25,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 當您在接收連接器上指定自訂值作為 SMTP 橫幅時，連線至該 SMTP 接收連接器的遠端 SMTP 郵件伺服器會收到下列回應。
 
-    220 <Banner Text>
+```powershell
+220 <Banner Text>
+```
 
 您可能想要修改網際網路對向的 SMTP 接收連接器所用的 SMTP 橫幅，以免 SMTP 橫幅透露伺服器名稱及郵件伺服器軟體。
 
@@ -52,15 +54,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 執行下列命令：
 
-    Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```powershell
+Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```
 
 此範例會在名為 From the Internet 的現有接收連接器上修改 SMTP 橫幅，讓 SMTP 橫幅顯示 `220 Contoso Corporation`。
 
-    Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```
 
 此範例會在名為 From the Internet 的現有接收連接器上移除自訂 SMTP 橫幅，讓 SMTP 橫幅回復成預設值。
 
-    Set-ReceiveConnector "From the Internet" -Banner $null
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner $null
+```
 
 ## 如何知道這是否正常運作？
 
@@ -68,7 +76,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  在可以存取該接收連接器的電腦上開啟 telnet 用戶端，並執行下列命令：
     
-        open <Connector FQDN or IP address> <Port>
+    ```powershell
+open <Connector FQDN or IP address> <Port>
+```
 
 2.  確認接收連接器傳來的回應中包含您所設定的 SMTP 橫幅。
 

@@ -97,7 +97,9 @@ _**上次修改主題的時間：** 2014-10-22_
 
 此範例會針對全組織帳戶的可用性設定物件進行設定，以設定目標樹系中空閒/忙碌資訊的存取層級。
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 此範例會為來源樹系新增可用性位址空間設定物件。
 

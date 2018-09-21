@@ -113,15 +113,21 @@ _<strong>上次修改主題的時間：</strong> 2015-03-09_
 
 本範例傳回 DB2 資料庫所有複本的狀態資訊。
 
-    Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```
 
 本範例傳回信箱伺服器 MBX2 上所有資料庫複本的狀態。
 
-    Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```
 
 此範例傳回本機 Mailbox Server 上所有資料庫副本的狀態。
 
-    Get-MailboxDatabaseCopyStatus -Local | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Local | Format-List
+```
 
 如需使用 <strong>Get-MailboxDatabaseCopyStatus</strong> 指令程式的相關資訊，請參閱 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-tw/library/dd298044\(v=exchg.150\))。
 
@@ -225,7 +231,9 @@ _<strong>上次修改主題的時間：</strong> 2015-03-09_
 
 這個範例使用 <strong>Test-ReplicationHealth</strong> 指令程式來測試 Mailbox Server MBX1 的複寫狀況。
 
-    Test-ReplicationHealth -Identity MBX1
+```powershell
+Test-ReplicationHealth -Identity MBX1
+```
 
 ## Crimson 通道事件記錄
 
@@ -448,7 +456,9 @@ CollectReplicationMetrics.ps1 指令碼支援可讓您自訂指令碼行為和�
 
 下列範例會從 DAG DAG1 中的所有伺服器收集一個小時的資料量，每隔一分鐘取樣一次，然後再產生摘要報告。此外還會使用 *ReportPath* 參數，讓指令碼將所有的檔案放在目前的目錄中。
 
-    CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```powershell
+CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```
 
 下列範例會從符合 CounterData\* 的所有檔案讀取資料，然後再產生摘要報告。
 

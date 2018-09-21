@@ -84,7 +84,9 @@ _**上次修改主題的時間：** 2012-11-13_
 
 這個範例會連接使用者信箱。*Identity* 參數指定 Exchange 資料庫中的中斷連線信箱。*User* 參數指定要重新連接信箱的 Active Directory 使用者帳戶。
 
-    Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```powershell
+Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```
 
 這個範例會連接到連結的信箱。*Identity* 參數指定 Exchange 資料庫中的中斷連線信箱。*LinkedMasterAccount* 參數指定您要重新連接信箱到樹系中哪一個 Active Directory 使用者帳戶。*Alias* 參數指定欲重新連接之信箱的別名，也就是電子郵件地址中 at (@) 符號左側的部分。
 
@@ -113,7 +115,9 @@ _**上次修改主題的時間：** 2012-11-13_
 
   - 在命令介面中，執行下列命令。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* 屬性的 **UserMailbox** 值指出使用者帳戶和信箱已連接。您也可以執行 **Get-Mailbox** Cmdlet 來確認信箱是否存在。
 

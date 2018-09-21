@@ -70,7 +70,9 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 此範例在 Mailbox Server MAIL01 上設定 Web Proxy URL。
 
-    Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```powershell
+Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ExchangeServer](https://technet.microsoft.com/zh-tw/library/bb123716\(v=exchg.150\))。
 
@@ -78,7 +80,9 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 若要驗證您是否已成功設定 Web Proxy URL，請執行下列命令介面命令，然後確認 *InternetWebProxy* 參數資訊。
 
-    Get-ExchangeServer | format-list
+```powershell
+Get-ExchangeServer | format-list
+```
 
 ## 步驟 2：使用命令介面啟用發佈虛擬目錄
 
@@ -101,7 +105,9 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 若要驗證您是否已成功啟用發佈虛擬目錄，請執行下列命令介面命令，然後確認 *ExternalURL* 參數資訊。
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 ## 步驟 3： 建立或設定專用於網際網路行事曆發佈共用原則
 
@@ -150,11 +156,15 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 此範例將共用原則網際網路新增至使用者信箱。
 
-    Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```
 
 此範例將共用原則網際網路新增至組織單位 (OU)。
 
-    Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-SharingPolicy](https://technet.microsoft.com/zh-tw/library/dd298186\(v=exchg.150\)) 與 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 
@@ -162,7 +172,9 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 若要驗證您是否已成功建立共用原則，請執行下列命令介面命令來確認共用原則資訊。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 ## 選項 2： 設定的預設共用原則網際網路行事曆發佈
 
@@ -202,5 +214,7 @@ Microsoft Exchange Server 2013 組織中的使用者可以與非 Exchange 組織
 
 若要驗證您是否已成功更新預設共用原則，請執行下列命令介面命令來確認共用原則資訊。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 

@@ -70,7 +70,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 此範例會從 DAG 中擁有資料庫副本的任何來源伺服器，在 Mailbox Server MBX1 上重新植入資料庫副本 DB1 的內容索引類別目錄。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 如需詳細的語法及參數資訊，請參閱 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335201\(v=exchg.150\))。
 
@@ -78,7 +80,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 此範例會從也擁有資料庫副本的 Mailbox Server MBX2，在 Mailbox Server MBX1 上重新植入資料庫副本 DB1 的內容索引類別目錄。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```
 
 如需詳細的語法及參數資訊，請參閱 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335201\(v=exchg.150\))。
 
@@ -88,10 +92,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
 1.  執行下列命令，以停止 Microsoft Exchange 搜尋服務和 Microsoft Exchange 搜尋主控制器服務。
     ```
-    Stop-Service MSExchangeFastSearch
+```powershell
+Stop-Service MSExchangeFastSearch
+```
     ```
     ```
-    Stop-Service HostControllerService
+```powershell
+Stop-Service HostControllerService
+```
     ```
 
 2.  刪除、移動或重新命名包含 Exchange 內容索引目錄的資料夾。此資料夾名為 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`。例如，您可能重新命名資料夾 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`。
@@ -102,10 +110,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
 3.  執行下列命令，以重新啟動 Microsoft Exchange 搜尋服務和 Microsoft Exchange 搜尋主控制器服務。
     ```
-    Start-Service MSExchangeFastSearch
+```powershell
+Start-Service MSExchangeFastSearch
+```
     ```
     ```
-    Start-Service HostControllerService
+```powershell
+Start-Service HostControllerService
+```
     ```
 
     重新啟動這些服務之後，Exchange 搜尋將會重建內容索引類別目錄。

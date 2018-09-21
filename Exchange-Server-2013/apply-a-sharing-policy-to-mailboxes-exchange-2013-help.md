@@ -63,11 +63,15 @@ _**上次修改主題的時間：** 2014-02-15_
 
 此範例將共用原則 Contoso 套用到使用者 Barbara 的單一信箱。
 
-    Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```powershell
+Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```
 
 此範例會指定「行銷」部門的所有使用者信箱都使用共用原則 Contoso Marketing。
 
-    Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```powershell
+Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```
 
 此範例會傳回已套用共用原則 Contoso 的所有信箱，並將使用者排序到只顯示使用者別名及電子郵件地址的表格中。
 
@@ -83,7 +87,9 @@ _**上次修改主題的時間：** 2014-02-15_
 
   - 執行下列命令介面指令，確認已將共用原則指派到使用者信箱。確認正確的共用原則列在 *SharingPolicy* 參數中。
     
-        Get-Mailbox <user name> | format-list
+    ```powershell
+Get-Mailbox <user name> | format-list
+```
 
 
 > [!TIP]  

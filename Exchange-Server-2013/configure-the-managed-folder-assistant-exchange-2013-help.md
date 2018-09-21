@@ -46,7 +46,9 @@ _**上次修改主題的時間：** 2014-10-01_
 
 此範例會在受管理的資料夾助理員處理在一天內的所有信箱。
 
-    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-MailboxServer](https://technet.microsoft.com/zh-tw/library/aa998651\(v=exchg.150\))。
 
@@ -62,7 +64,9 @@ _**上次修改主題的時間：** 2014-10-01_
 
 此範例會觸發受管理的資料夾助理員立即處理 Morris Cornejo 信箱。
 
-    Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```powershell
+Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```
 
 如需詳細的語法及參數資訊，請參閱[Start-ManagedFolderAssistant](https://technet.microsoft.com/zh-tw/library/aa998864\(v=exchg.150\))。
 

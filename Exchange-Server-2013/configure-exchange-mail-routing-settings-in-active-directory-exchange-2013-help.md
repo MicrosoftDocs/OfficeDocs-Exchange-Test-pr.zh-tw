@@ -50,11 +50,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會對於名稱為 IPSiteLinkAB 的 IP 站台連結設定 Exchange 特定成本 10。
 
-    Set-AdSiteLink IPSiteLinkAB -ExchangeCost 10
+```powershell
+Set-AdSiteLink IPSiteLinkAB -ExchangeCost 10
+```
 
 此範例會從名稱為 IPSiteLinkAB 的 IP 站台連結清除 Exchange 成本。
 
-    Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
+```powershell
+Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -62,7 +66,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```powershell
+Get-AdSiteLink | Format-List Name,ExchangeCost
+```
 
 2.  確認已針對 Active Directory 站台連結設定 Exchange 成本。
 
@@ -72,15 +78,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定 Active Directory 作為中樞站台，請執行下列命令：
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 此範例將名稱為站台 A 的 Active Directory 站台設定為中樞站台。
 
-    Set-AdSite "Site A" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Site A" -HubSiteEnabled $true
+```
 
 此範例從名稱為站台 B 的 Active Directory 站台移除中樞站台內容。
 
-    Set-AdSite "Site B" -HubSiteEnabled $false
+```powershell
+Set-AdSite "Site B" -HubSiteEnabled $false
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -88,7 +100,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-AdSite | Format-List Name,HubSiteEnabled
+    ```powershell
+Get-AdSite | Format-List Name,HubSiteEnabled
+```
 
 2.  確認 Active Directory 站台的 *HubSiteEnabled* 值是 `True`。
 

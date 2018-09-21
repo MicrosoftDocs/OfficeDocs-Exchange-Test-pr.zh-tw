@@ -38,7 +38,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 您可以使用下列命令來檢視屬於此角色群組成員之使用者或 USG 的清單。
 
-    Get-RoleGroupMember "Discovery Management"
+```powershell
+Get-RoleGroupMember "Discovery Management"
+```
 
 如需角色群組之成員的詳細資訊，請參閱[管理角色群組成員](manage-role-group-members-exchange-2013-help.md)中的[View the members of a role group](manage-role-group-members-exchange-2013-help.md)。
 

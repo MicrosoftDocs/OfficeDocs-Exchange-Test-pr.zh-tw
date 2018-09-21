@@ -192,7 +192,9 @@ UM 疑難排解工具不僅可協助您疑難排解、診斷以及修復跨部�
 
 在下列範例中，「閘道」模式可用來在不含 Office Communications Server 2007 R2 或 Lync Server 的環境中測試呼叫流程。此範例會測試電話語音設備，包括 VoIP 閘道、PBX、IP PBX 及整合通訊元件。此範例會將 VoIP 設定為「非安全」，並將 IP 位址 10.1.1.1 用做下一個躍點，且在轉接資訊中包含分機號碼。
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 回到頁首
 

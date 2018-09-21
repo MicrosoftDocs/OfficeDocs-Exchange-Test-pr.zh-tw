@@ -268,7 +268,9 @@ Windows Server 2012 R2 中的 AD FS 提供簡化、安全的身分識別同盟�
 
 下列Windows PowerShell 命令執行先前的步驟同樣的事情。
    ```
-    Import-Module ADFS
+```powershell
+Import-Module ADFS
+```
    ```
    ```
     Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
@@ -429,7 +431,9 @@ Web 應用程式 Proxy 為Windows Server 2012 R2 中的新遠端存取角色服�
 
 下列 Windows PowerShell Cmdlet 的作用與先前的步驟相同。
 
-    Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```powershell
+Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```
 
 ## 步驟 5 – 設定 Web 應用程式 Proxy 角色服務 （選擇性）
 
@@ -563,7 +567,9 @@ Web 應用程式 Proxy 為Windows Server 2012 R2 中的新遠端存取角色服�
 
   - 使用 Windows PowerShell：
     
-        Restart-Service W3SVC,WAS -noforce
+    ```powershell
+Restart-Service W3SVC,WAS -noforce
+```
 
   - 使用命令列：依序按一下 <strong>\[開始\]</strong>、<strong>\[執行\]</strong>，鍵入 `IISReset /noforce`，然後按一下 <strong>\[確定\]</strong>。
 

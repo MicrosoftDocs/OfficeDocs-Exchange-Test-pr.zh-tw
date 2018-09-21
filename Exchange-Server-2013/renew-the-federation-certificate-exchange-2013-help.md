@@ -84,11 +84,15 @@ _**上次修改主題的時間：** 2017-02-28_
 
 1.  尋找的所需的 TXT 記錄所需的值Exchange 管理命令介面中執行下列命令：
     
-        Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```powershell
+Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+```
     
     例如，如果您的同盟的網域是 contoso.com，執行下列命令：
     
-        Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```powershell
+Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+```
     
     命令輸出看起來如下：
     
@@ -118,7 +122,9 @@ Exchange自動分散每個新的同盟憑證到所有伺服器，但是我們需
 
 若要使用Exchange 管理命令介面啟動新的同盟憑證，請執行下列命令：
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```
 
 如需詳細的語法及參數資訊，請參閱[Set-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd298034\(v=exchg.150\))。
 
@@ -138,7 +144,9 @@ Exchange自動分散每個新的同盟憑證到所有伺服器，但是我們需
 
   - 在Exchange 管理命令介面、 *\<user's email address\>*取代為您組織中使用者的電子郵件地址並執行下列命令來確認同盟信任正常運作：
     
-        Test-FederationTrust -UserIdentity <user's email address>
+    ```powershell
+Test-FederationTrust -UserIdentity <user's email address>
+```
 
 ## 取代過期的同盟憑證
 
@@ -146,21 +154,29 @@ Exchange自動分散每個新的同盟憑證到所有伺服器，但是我們需
 
 1.  如果您有多個同盟的網域時，您需要讓您可以在上一次移除識別主要網域共用的網域。若要使用Exchange 管理命令介面識別主要的共用的網域和所有的同盟的網域，執行下列命令：
     
-        Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```powershell
+Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+```
     
     **AccountNamespace**屬性的值包含主要的共用的網域中格式`FYDIBOHF25SPDLT<primary shared domain>`。例如，在值`FYDIBOHF25SPDLT.contoso.com`contoso.com 是主要的共用的網域。
 
 2.  移除每個同盟的網域的主要的共用的網域不在Exchange 管理命令介面中執行下列命令：
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+Remove-FederatedDomain -DomainName <domain> -Force
+```
 
 3.  您已移除的所有其他同盟的網域之後，移除主要的共用的網域Exchange 管理命令介面中執行下列命令：
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+Remove-FederatedDomain -DomainName <domain> -Force
+```
 
 4.  移除同盟信任Exchange 管理命令介面中執行下列命令：
     
-        Remove-FederationTrust "Microsoft Federation Gateway"
+    ```powershell
+Remove-FederationTrust "Microsoft Federation Gateway"
+```
 
 5.  重新建立同盟信任。指示，請參閱[建立同盟信任](https://technet.microsoft.com/zh-tw/library/dd335198\(v=exchg.150\))。
 

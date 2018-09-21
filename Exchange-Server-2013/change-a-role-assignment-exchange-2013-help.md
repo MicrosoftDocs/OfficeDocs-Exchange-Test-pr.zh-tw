@@ -52,15 +52,21 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要啟用角色指派，請使用下列語法。
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```
 
 若要停用角色指派，請使用下列語法。
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```
 
 此範例會停用「服務台指派」角色指派。
 
-    Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```powershell
+Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335173\(v=exchg.150\))。
 
@@ -84,7 +90,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會將 John's Assignment 角色指派上的預先定義範圍變更為 MyDistributionGroups。
 
-    Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```powershell
+Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335173\(v=exchg.150\))。
 
@@ -110,7 +118,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要指定新的組態範圍，或取代現有的組態範圍，請使用下列語法。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 此範例會新增組態範圍或將組態範圍變更為 Redmond Servers。
 
@@ -126,11 +136,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要指定新的組態範圍，或取代現有的組態範圍，請使用下列語法。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 此範例會新增組態範圍或將組態範圍變更為 Redmond Databases。
 
-    Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```powershell
+Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```
 
 如果您想將同一個組態範圍套用至角色指派但變更資料庫篩選器或範圍中的 \[資料庫\] 清單，您需要變更組態範圍本身擷取。如需如何變更範圍的詳細資訊，請參閱[角色範圍變更](change-a-role-scope-exchange-2013-help.md)。
 
@@ -142,7 +156,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要在角色指派上變更或新增新的 OU，請使用下列語法。
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```
 
 此範例會將 contoso.com 網域中的 Engineering\\Users OU 新增到 Engineering Help Desk 角色指派。
 

@@ -41,11 +41,15 @@ _**上次修改主題的時間：** 2014-10-01_
 
 2.  使用 Eseutil 讓該資料庫進入正常關閉狀態。在下列範例中，EXX 是資料庫的記錄檔產生前置詞 (例如，E00，E01，E02，以此類推)。
     
-        Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+    ```powershell
+Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+```
     
     下列範例說明記錄檔產生前置詞 E01 及復原資料庫和記錄檔路徑 E:\\Databases\\RDB1：
     
-        Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+    ```powershell
+Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+```
 
 3.  建立復原資料庫。指定唯一名稱給復原資料庫，但在 EdbFilePath 參數中使用資料庫檔案的名稱和路徑，在 LogFolderPath 參數中使用復原的記錄檔的位置。
     
@@ -57,15 +61,21 @@ _**上次修改主題的時間：** 2014-10-01_
 
 4.  重新啟動 Microsoft Exchange Information Store 服務：
     
-        Restart-Service MSExchangeIS
+    ```powershell
+Restart-Service MSExchangeIS
+```
 
 5.  裝載復原資料庫：
     
-        Mount-database <RDBName>
+    ```powershell
+Mount-database <RDBName>
+```
 
 6.  請確認已裝載的資料庫中包含您想要還原的信箱：
     
-        Get-MailboxStatistics -Database <RDBName> | ft -auto
+    ```powershell
+Get-MailboxStatistics -Database <RDBName> | ft -auto
+```
 
 7.  使用 New-MailboxRestoreRequest 指令程式將信箱或項目從復原資料庫還原至實際執行信箱。
     
@@ -81,7 +91,9 @@ _**上次修改主題的時間：** 2014-10-01_
     
     當還原的狀態為「已完成」時，使用 [Remove-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829910\(v=exchg.150\)) 來移除還原要求。例如：
     
-        Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+    ```powershell
+Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```
 
 ## 如何才能了解這是否正常運作？
 

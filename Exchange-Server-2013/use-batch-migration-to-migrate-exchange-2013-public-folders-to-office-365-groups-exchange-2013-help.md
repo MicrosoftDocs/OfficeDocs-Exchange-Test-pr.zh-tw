@@ -94,7 +94,9 @@ _**上次修改主題的時間：** 2018-03-26_
 
 4.  您需要有**PAW**啟用您的 Office 365 租用戶移轉功能。若要確認此，請在 Exchange Online PowerShell 中執行下列命令：
     
-        Get-MigrationConfig
+    ```powershell
+Get-MigrationConfig
+```
     
     如果**功能**下的輸出會列出**PAW**，則會啟用的功能和您可以繼續*步驟 3： 花費.csv 檔案*。
     
@@ -110,7 +112,9 @@ _**上次修改主題的時間：** 2018-03-26_
 
   - **TargetGroupMailbox**。Office 365 中的目標群組的 SMTP 地址。您可以執行下列命令，請參閱的主要 SMTP 位址。
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+```
 
 範例.csv：
 
@@ -137,7 +141,9 @@ _**上次修改主題的時間：** 2018-03-26_
     
     2.  使用您在上述步驟 1 中記下您 Exchange 2013 環境的 MRS proxy 伺服器資訊並將該值傳至變數`$Source_RemoteServer`。
         
-            $Source_RemoteServer = "<MRS proxy endpoint>"
+        ```powershell
+$Source_RemoteServer = "<MRS proxy endpoint>"
+```
 
 3.  在Exchange Online PowerShell，執行下列命令來建立遷移端點：
     
@@ -159,7 +165,9 @@ _**上次修改主題的時間：** 2018-03-26_
 
 5.  Exchange Online PowerShell中執行下列命令來啟動移轉。請注意這是必要步驟只有在`-AutoStart`參數已無法使用時在步驟 4 中建立的批次以上。
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 雖然批次移轉需要建立Exchange Online PowerShell中使用`New-MigrationBatch`指令程式，可以檢視及Exchange 系統管理中心中受管理移轉的進度。您也可以藉由執行[Get-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219164\(v=exchg.150\))和[Get-MigrationUser](https://technet.microsoft.com/zh-tw/library/jj218702\(v=exchg.150\))指令程式檢視移轉的進度。`New-MigrationBatch`指令程式會移轉使用者的每個 Office 365 群組信箱，且您可以檢視信箱移轉\] 頁面上使用這些要求的狀態。
 
@@ -222,7 +230,9 @@ _**上次修改主題的時間：** 2018-03-26_
 
 您的公用資料夾進行唯讀之後，您需要重新執行移轉。這是必要資料的最終累加複本。您可以執行一次移轉之前，您必須移除現有的批次，您可以執行下列命令：
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 下一步\] 建立新的批次以相同的.csv 檔案執行下列命令。在此命令：
 
@@ -238,7 +248,9 @@ _**上次修改主題的時間：** 2018-03-26_
 
 建立新的批次之後，請Exchange Online PowerShell中執行下列命令來啟動移轉。請注意此步驟只需要是否`-AutoStart`參數是不在以上的命令。
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 完成此步驟 （批次狀態為**\[已完成**） 之後，確認所有的資料有已複製到 Office 365 群組。屆時，您必須是滿意群組經驗，即可開始刪除已移轉的公用資料夾從 Exchange 2013 環境。
 

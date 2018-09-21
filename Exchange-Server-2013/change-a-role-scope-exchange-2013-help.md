@@ -52,11 +52,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要變更範圍的名稱，請使用下列語法。
 
-    Set-ManagementScope <current scope name> -Name <new scope name>
+```powershell
+Set-ManagementScope <current scope name> -Name <new scope name>
+```
 
 此範例會將 Seattle Servers 範圍變更為 Seattle Exchange Servers。
 
-    Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```powershell
+Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd297996\(v=exchg.150\))。
 
@@ -64,11 +68,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要變更某個範圍的收件者篩選，請使用下列語法。
 
-    Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```powershell
+Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```
 
 此範例會變更收件者篩選，以符合 **Company** 內容設爲 contoso 的所有收件者物件。
 
-    Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```powershell
+Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd297996\(v=exchg.150\))。
 
@@ -78,11 +86,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要變更範圍上的 OU 根，請使用下列語法。
 
-    Set-ManagementScope <scope name> -RecipientRoot <OU>
+```powershell
+Set-ManagementScope <scope name> -RecipientRoot <OU>
+```
 
 此範例會將 contoso.com 網域下的 OU 根變更為 North America/Sales Sales Users OU。
 
-    Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```powershell
+Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd297996\(v=exchg.150\))。
 
@@ -90,7 +102,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要變更某個範圍的伺服器篩選，請使用下列語法。
 
-    Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```powershell
+Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```
 
 此範例會變更伺服器篩選器以比對所有 **ServerSite** 屬性設定為 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' 的伺服器物件。
 
@@ -116,7 +130,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要變更某個範圍的資料庫篩選，請使用下列語法。
 
-    Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```powershell
+Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```
 
 此範例會變更資料庫篩選，以符合 **Name** 內容包含字串「Executive」的所有資料庫物件。
 

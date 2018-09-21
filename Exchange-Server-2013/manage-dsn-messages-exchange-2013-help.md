@@ -42,15 +42,21 @@ Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件�
 
 若要檢視包含於 Exchange 2013 之所有內建的 DSN 訊息摘要，請執行下列命令：
 
-    Get-SystemMessage -Original
+```powershell
+Get-SystemMessage -Original
+```
 
 若要檢視組織中所有自訂的 DSN 訊息摘要，請執行下列命令：
 
-    Get-SystemMessage
+```powershell
+Get-SystemMessage
+```
 
 若要檢視 DSN 碼 5.1.2 以英文傳送至內部寄件者的自訂 DSN 訊息，請執行下列命令：
 
-    Get-SystemMessage En\Internal\5.1.2 | Format-List
+```powershell
+Get-SystemMessage En\Internal\5.1.2 | Format-List
+```
 
 ## 使用命令介面來建立自訂 DSN 訊息
 
@@ -76,7 +82,9 @@ Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件�
 
 1.  執行下列命令：
     
-        Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```powershell
+Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+```
 
 2.  請確認您所看到的值是您所設定的值。
 
@@ -98,7 +106,9 @@ Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件�
 
 1.  執行下列命令： `Get-SystemMessage`。
     
-        Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```powershell
+Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -106,11 +116,15 @@ Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件�
 
 執行下列命令：
 
-    Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```powershell
+Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```
 
 本範例移除 DSN 碼 5.1.2 以英文傳送至內部寄件者的自訂 DSN 訊息。
 
-    Remove-SystemMessage En\Internal\5.1.2
+```powershell
+Remove-SystemMessage En\Internal\5.1.2
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -132,11 +146,15 @@ Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件�
 
 2.  執行下列命令：
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```powershell
+Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+```
     
     例如，若要將名為「Contoso 系統信箱」的現有信箱指派給 Exchange 收件者，請執行下列命令：
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```powershell
+Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+```
 
 ## 步驟 2： 指定您想要監視的 DSN 代碼
 
@@ -150,11 +168,15 @@ Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件�
 
 若要取代現有的值，請執行下列命令：
 
-    Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
+```
 
 此範例會設定 Exchange 組織將所有具有 DSN 代碼 5.7.1、5.7.2 及 5.7.3 的 DSN 郵件轉寄至 Exchange 收件者。
 
-    Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
+```
 
 若要新增或移除項目而不修改任何現有的值，請執行下列命令：
 
@@ -162,7 +184,9 @@ Microsoft Exchange Server 2013使用傳遞狀態通知 (DSN) 來提供給郵件�
 
 此範例將新增 DSN 碼 5.7.5 並自轉寄給 Exchange 受件者的現有 DSN 訊息清單移除 DSN 碼 5.7.1。
 
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```
 
 ## 如何才能了解這是否正常運作？
 

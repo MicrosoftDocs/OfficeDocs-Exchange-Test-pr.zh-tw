@@ -85,11 +85,15 @@ _**上次修改主題的時間：** 2017-03-20_
     
       - 在 Windows Server 2012 R2 或 Windows Server 2012 電腦上，執行下列命令。
         
-            Install-WindowsFeature RSAT-ADDS
+        ```powershell
+Install-WindowsFeature RSAT-ADDS
+```
     
       - 在 Windows Server 2008 R2 SP1 電腦上，執行下列命令。
         
-            Add-WindowsFeature RSAT-ADDS
+        ```powershell
+Add-WindowsFeature RSAT-ADDS
+```
 
 ## Windows Server 2012 R2 和 Windows Server 2012 先決條件
 
@@ -135,7 +139,9 @@ _**上次修改主題的時間：** 2017-03-20_
 
 2.  執行下列命令來安裝所需的 Windows 元件。
     
-        Install-WindowsFeature ADLDS
+    ```powershell
+Install-WindowsFeature ADLDS
+```
 
 安裝對應於您要安裝之 Exchange 2013 版本的 Windows Management Framework 版本。
 
@@ -167,7 +173,9 @@ _**上次修改主題的時間：** 2017-03-20_
 
 2.  執行下列命令以載入伺服器管理員模組。
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  執行下列命令來安裝所需的 Windows 元件。
     
@@ -205,11 +213,15 @@ _**上次修改主題的時間：** 2017-03-20_
 
 2.  執行下列命令以載入伺服器管理員模組。
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  執行下列命令來安裝所需的 Windows 元件。
     
-        Add-WindowsFeature NET-Framework, ADLDS
+    ```powershell
+Add-WindowsFeature NET-Framework, ADLDS
+```
 
 安裝作業系統角色與功能後，請依照以下顯示順序安裝軟體：
 

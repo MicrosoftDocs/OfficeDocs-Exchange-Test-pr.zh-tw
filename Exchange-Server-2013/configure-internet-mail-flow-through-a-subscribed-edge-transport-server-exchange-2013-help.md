@@ -52,7 +52,9 @@ _**上次修改主題的時間：** 2015-04-08_
     
     下列範例在 C:\\My Documents 資料夾中建立名為 EdgeSubscriptionInfo.xml 的 Edge 訂閱檔案。*Force* 參數會抑制用以確認將停用命令的提示，以及抑制 Edge Transport Server 的組態資料將被覆寫的警告。
     
-        New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```powershell
+New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+```
 
 2.  將產生的 Edge 訂閱檔案複製到您訂閱 Edge Transport Server 的 Active Directory 站台中的 Mailbox Server。
 
@@ -70,7 +72,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 4.  在 Mailbox Server 上，執行下列命令以開始第一次 EdgeSync 同步處理。
     
-        Start-EdgeSynchronization
+    ```powershell
+Start-EdgeSynchronization
+```
 
 5.  完成時，強烈建議您同時從 Edge Transport Server 和 Mailbox Server 中刪除 Edge 訂閱檔案。Edge 訂閱檔案包含在 LDAP 通訊處理期間使用的認證相關資訊。
 

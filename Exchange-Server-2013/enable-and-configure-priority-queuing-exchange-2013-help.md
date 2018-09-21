@@ -44,7 +44,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 1.  在命令提示字元視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 應用程式組態檔：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  在 `<appSettings>` 區段中尋找下列機碼。
     
@@ -62,7 +64,9 @@ _**上次修改主題的時間：** 2014-12-16_
     
     若要在 Mailbox Server 的傳輸服務中啟用優先佇列，請使用下列值：
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```command line
+<add key="PriorityQueuingEnabled" value="true" />
+```
     
     設定剩餘的優先佇列值，或讓它們沿用預設值。
 

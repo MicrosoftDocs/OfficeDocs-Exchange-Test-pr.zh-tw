@@ -70,11 +70,15 @@ _**上次修改主題的時間：** 2014-06-09_
 
 未限定範圍的頂層角色沒有上層角色。您需要指定 *UnscopedTopLevel* 參數來建立沒有上層的角色。使用下列語法建立新角色。
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 此範例會建立 IT 指令碼未限定範圍的頂層角色。
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 建立角色之後，在新增指令碼或非 Exchange Cmdlet 給角色之前，角色都是空的。
 
@@ -166,7 +170,9 @@ _**上次修改主題的時間：** 2014-06-09_
 
 此範例會將 IT 全域指令碼角色及其管理角色項目複製到診斷 IT 指令碼角色。
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd298073\(v=exchg.150\))。
 

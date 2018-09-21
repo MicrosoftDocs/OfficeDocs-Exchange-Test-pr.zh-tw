@@ -103,7 +103,9 @@ _**上次修改主題的時間：** 2015-09-30_
 
 4.  擷取目前的受管理的資料夾助理員工作週期設定。請務必注意供日後的設定。
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+```
 
 5.  停用用戶端的信箱存取權以確保可以此程序期間信箱資料進行任何變更。
     
@@ -115,7 +117,9 @@ _**上次修改主題的時間：** 2015-09-30_
 
 7.  停用受管理的資料夾助理員 Mailbox server 上。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+```
     
     > [!IMPORTANT]  
     > 如果信箱位於信箱資料庫上的資料庫可用性群組 (DAG) 中，您必須停用受管理的資料夾助理員裝載資料庫副本的每個 DAG 成員上。如果資料庫容錯移轉至另一部伺服器，這可防止受管理的資料夾助理員該伺服器上刪除信箱資料。
@@ -123,7 +127,9 @@ _**上次修改主題的時間：** 2015-09-30_
 
 8.  停用單一項目復原並移除信箱訴訟暫止狀態。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+```
     
     > [!IMPORTANT]  
     > 執行此命令之後，可能需要一小時停用單一項目復原或訴訟暫止狀態。我們建議您在此期間經過之後才執行下一個步驟。
@@ -143,7 +149,9 @@ _**上次修改主題的時間：** 2015-09-30_
 
 10. 如果信箱處於訴訟暫止狀態或鎖稍早啟用單一項目復原，重新啟用這些功能。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+```
     
     > [!IMPORTANT]  
     > 執行此命令之後，可能需要一小時啟用單一項目復原] 或 [訴訟暫止狀態。建議您啟用受管理的資料夾助理員並允許用戶端存取 （步驟 11 和 12） 只是在這之後經過期間。
@@ -171,7 +179,9 @@ _**上次修改主題的時間：** 2015-09-30_
 
 12. 啟用受管理的資料夾助理員將工作週期後述步驟 4 的值。本範例會將一天的工作週期。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 13. 啟用用戶端存取。
     

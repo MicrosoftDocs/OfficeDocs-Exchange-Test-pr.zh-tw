@@ -45,7 +45,9 @@ When you run a command together with the *WhatIf* switch, you put the *WhatIf* s
 
 When you run this example command, the following text is returned by the Shell:
 
-    What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```powershell
+What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```
 
 ## Confirm switch
 
@@ -73,7 +75,9 @@ When a cmdlet runs that has any of these verbs, the Shell automatically stops th
 
 If you want to manually apply the *Confirm* switch to a command, include the *Confirm* switch at the end of the command, as in the following example:
 
-    Get-JournalRule | Enable-JournalRule -Confirm
+```powershell
+Get-JournalRule | Enable-JournalRule -Confirm
+```
 
 When you run this example command, the following confirmation prompt is returned by the Shell:
 
@@ -99,7 +103,9 @@ The confirmation prompt gives you the following choices:
 
 If you want to override the default behavior of the Shell and suppress the confirmation prompt for cmdlets on which it is automatically applied, you can include the *Confirm* switch with a value of `$False`, as in the following example:
 
-    Get-JournalRule | Disable-JournalRule -Confirm:$False
+```powershell
+Get-JournalRule | Disable-JournalRule -Confirm:$False
+```
 
 In this case, no confirmation prompt is displayed.
 

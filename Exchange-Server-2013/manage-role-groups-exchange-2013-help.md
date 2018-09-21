@@ -99,7 +99,9 @@ _**上次修改主題的時間：** 2012-10-08_
 
 1.  使用下列語法將您要複製的角色群組儲存到變數中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  使用以下語法建立新角色群組，新增成員至該角色群組，並指定誰可以將新角色群組委派給其他使用者。
     
@@ -118,7 +120,9 @@ _**上次修改主題的時間：** 2012-10-08_
 
 1.  使用下列語法將您要複製的角色群組儲存到變數中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  使用下列語法建立具有自訂範圍的新角色群組。
     
@@ -139,7 +143,9 @@ _**上次修改主題的時間：** 2012-10-08_
 
 1.  使用下列語法將您要複製的角色群組儲存到變數中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  使用下列語法建立具有自訂範圍的新角色群組。
     
@@ -223,11 +229,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 使用下列語法來將沒有任何範圍的角色指派給角色群組。如果您沒有指定一個，會自動建立角色指派名稱。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 本範例將「傳輸規則」管理角色指派給「西雅圖規範」角色群組。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -455,7 +465,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  若要尋找名稱的所有角色指派的角色群組，請使用下列命令。透過管線傳送 format-list 管理角色指派給**Format-List**指令程式，您可以檢視工作分派的完整名稱。
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+```
 
 2.  尋找您想要變更角色指派的名稱。下一個步驟中使用的角色指派的名稱。
 
@@ -511,7 +523,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  使用下列命令，透過變數儲存角色群組。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  使用以下命令新增代理人到儲存於變數中的角色群組。
     
@@ -525,7 +539,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 4.  使用下列命令，將新的委派清單套用至實際的角色群組。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 此範例會在 組織管理 角色群組上新增使用者 David Strome 以做為代理人。
 
@@ -541,7 +557,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  使用下列命令，透過變數儲存角色群組。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  使用以下命令移除儲存於變數中之角色群組的代理人。
     
@@ -555,7 +573,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 4.  使用下列命令，將新的委派清單套用至實際的角色群組。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 此範例會移除在 組織管理 角色群組做為代理人的使用者 David Strome。
 
@@ -571,7 +591,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  在命令介面中，執行下列命令。
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+Get-RoleGroup <role group name> | Format-List ManagedBy
+```
 
 2.  確認 *ManagedBy* 內容上列出的委派僅包含能夠管理角色群組的委派。
 

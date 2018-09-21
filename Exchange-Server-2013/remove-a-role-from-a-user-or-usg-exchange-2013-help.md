@@ -42,11 +42,15 @@ _**上次修改主題的時間：** 2012-10-02_
 
 如果您知道要移除的角色指派所用的名稱，請使用下列語法。
 
-    Remove-ManagementRoleAssignment <assignment name>
+```powershell
+Remove-ManagementRoleAssignment <assignment name>
+```
 
 例如，若要移除 "Tier 2 Help Desk Assignment" 角色指派，請使用下列命令。
 
-    Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```powershell
+Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```
 
 如果不知道角色指派的名稱，可以使用下列語法。
 

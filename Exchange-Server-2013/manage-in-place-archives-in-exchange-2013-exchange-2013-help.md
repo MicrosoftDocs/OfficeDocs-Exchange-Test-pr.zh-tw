@@ -119,7 +119,9 @@ _**上次修改主題的時間：** 2016-02-01_
 
 此範例會啟用 Tony Smith 之信箱的封存。
 
-    Enable-Mailbox "Tony Smith" -Archive
+```powershell
+Enable-Mailbox "Tony Smith" -Archive
+```
 
 此範例會擷取資料庫 DB01 中的信箱，該資料庫未啟用內部部署或雲端架構封存，也沒有以 DiscoverySearchMailbox 為開頭的名稱。其將結果以管線輸出至 **Enable-Mailbox** 指令程式來啟用所有在信箱資料庫 DB01 上的封存。
 
@@ -168,7 +170,9 @@ _**上次修改主題的時間：** 2016-02-01_
 
 此範例會停用 Chris Ashton 信箱的封存。它不會停用信箱。
 
-    Disable-Mailbox -Identity "Chris Ashton" -Archive
+```powershell
+Disable-Mailbox -Identity "Chris Ashton" -Archive
+```
 
 如需詳細的語法及參數資訊，請參閱 [Disable-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997210\(v=exchg.150\))。
 

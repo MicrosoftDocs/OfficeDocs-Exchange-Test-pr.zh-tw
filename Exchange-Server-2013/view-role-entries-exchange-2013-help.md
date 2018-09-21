@@ -96,11 +96,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視單一角色項目的詳細資料，請使用下列語法。
 
-    Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```powershell
+Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```
 
 此範例會擷取 `Recipient Administrators` 角色上 **Set-Mailbox** 角色項目的詳細資料。
 
-    Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```powershell
+Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```
 
 如果您使用 **Format-List** 指令程式時，檢視的角色項目有太多參數要列出，請參閱本主題稍後的＜檢視單一角色項目上的參數＞。
 

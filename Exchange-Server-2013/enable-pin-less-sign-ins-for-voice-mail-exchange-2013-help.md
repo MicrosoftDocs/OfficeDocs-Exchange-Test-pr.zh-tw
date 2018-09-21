@@ -66,11 +66,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 這個範例會針對與信箱原則相關聯且撥入 Outlook 語音存取的使用者，在名為 `MyUMMailboxPolicy` 的 UM 信箱原則上啟用不需 PIN 碼的語音信箱存取。
 
-    Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```powershell
+Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```
 
 ## 使用命令介面在已啟用 UM 功能的使用者信箱上啟用不需 PIN 碼的語音信箱存取
 
 這個範例會針對撥入 Outlook Voice Access 以存取 `tonys@contoso.com` 信箱的使用者，啟用不需 PIN 碼的語音信箱存取。
 
-    Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```powershell
+Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```
 

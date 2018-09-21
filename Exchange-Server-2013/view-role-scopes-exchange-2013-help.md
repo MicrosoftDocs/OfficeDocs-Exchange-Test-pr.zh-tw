@@ -54,11 +54,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視特定範圍的詳細資料，請使用下列語法。
 
-    Get-ManagementScope <scope name> | Format-List
+```powershell
+Get-ManagementScope <scope name> | Format-List
+```
 
 此範例會擷取「西雅圖伺服器」範圍的詳細資料。
 
-    Get-ManagementScope "Seattle Servers" | Format-List
+```powershell
+Get-ManagementScope "Seattle Servers" | Format-List
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd298180\(v=exchg.150\))。
 
@@ -66,7 +70,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會擷取您組織中範圍的清單。
 
-    Get-ManagementScope
+```powershell
+Get-ManagementScope
+```
 
 此指令程式會擷取獨佔和定期範圍。如果您只想要傳回獨佔範圍或一般範圍，請參閱"List 所有獨佔或一般範圍只"在本主題後面。
 
@@ -78,7 +84,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會擷取孤立範圍的清單。
 
-    Get-ManagementScope -Orphan
+```powershell
+Get-ManagementScope -Orphan
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd298180\(v=exchg.150\))。
 
@@ -86,15 +94,21 @@ _**上次修改主題的時間：** 2012-10-03_
 
 根據預設， **Get-ManagementScope**指令程式會傳回包含獨佔和定期範圍範圍的清單。如果您想要只傳回獨佔範圍或規則的範圍會使用下列語法。
 
-    Get-ManagementScope -Exclusive < $true | $false >
+```powershell
+Get-ManagementScope -Exclusive < $true | $false >
+```
 
 此範例只會傳回獨佔範圍。
 
-    Get-ManagementScope -Exclusive $true
+```powershell
+Get-ManagementScope -Exclusive $true
+```
 
 此範例只會傳回一般範圍的清單。
 
-    Get-ManagementScope -Exclusive $false
+```powershell
+Get-ManagementScope -Exclusive $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd298180\(v=exchg.150\))。
 

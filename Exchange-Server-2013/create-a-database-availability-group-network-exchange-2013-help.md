@@ -73,7 +73,9 @@ _**上次修改主題的時間：** 2012-11-02_
 
   - 在命令介面中，執行下列命令來驗證是否已建立 DAG 網路並顯示 DAG 網路的組態資訊。
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+```
 
 ## 相關資訊
 

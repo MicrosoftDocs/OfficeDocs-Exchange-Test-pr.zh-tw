@@ -75,7 +75,9 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 
 執行下列命令，檢視執行 Exchange 2013 的伺服器的健全設定。
 
-    Get-HealthReport -Server <ServerName>
+```powershell
+Get-HealthReport -Server <ServerName>
+```
 
 ## 檢視健全設定的探查、監視器和回應程式
 

@@ -138,11 +138,15 @@ _**上次修改主題的時間：** 2015-03-09_
 
 為了設定 MBX1 和 MBX2 上之複寫網路介面卡的路由，每個伺服器上都執行了以下命令。
 
-    netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```powershell
+netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```
 
 為了設定 MBX3 和 MBX4 上之複寫網路介面卡的路由，每個伺服器上都執行了以下命令。
 
-    netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```powershell
+netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```
 
 下列額外的網路設定也已經設定：
 
@@ -190,7 +194,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 上述命令將每個信箱伺服器新增到 DAG 中，一次一個。該命令也會在每個信箱伺服器上安裝 Windows 容錯移轉叢集 (如果尚未安裝)、建立容錯移轉叢集，並將每個信箱伺服器加入新建立的叢集。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 上述命令啟用了 DAG 的 DAC 模式。
 

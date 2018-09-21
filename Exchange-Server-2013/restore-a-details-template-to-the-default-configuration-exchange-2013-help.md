@@ -52,7 +52,9 @@ _<strong>上次修改主題的時間：</strong> 2012-10-12_
 
 此範例會還原美式英文的連絡人詳細資料範本。
 
-    Restore-DetailsTemplate -Identity "en-US\Contact"
+```powershell
+Restore-DetailsTemplate -Identity "en-US\Contact"
+```
 
 如需語法與參數的詳細資訊，請參閱 [Restore-DetailsTemplate](https://technet.microsoft.com/zh-tw/library/bb125188\(v=exchg.150\))。
 

@@ -65,7 +65,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
 如果要定義應包含在此範圍中的信箱資料庫靜態清單，請使用資料庫清單。使用下列語法，可建立資料庫清單範圍。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 這個範例會建立只套用至資料庫 Database 1、Database 2 和 Database 3 的範圍。
 
@@ -81,7 +83,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
 使用下列語法，可建立資料庫篩選器範圍。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 這個範例會建立一個範圍，此範圍包括資料庫 **Name** 屬性中包含 "ACCT" 字串的所有資料庫。
 

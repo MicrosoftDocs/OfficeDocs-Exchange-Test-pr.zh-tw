@@ -90,7 +90,9 @@ _**上次修改主題的時間：** 2013-03-15_
 
 此範例會啟用接收連接器 Connection from Contoso.com 的通訊協定記錄。
 
-    Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```powershell
+Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -98,7 +100,9 @@ _**上次修改主題的時間：** 2013-03-15_
 
 1.  在命令介面中，執行下列命令：
     
-        <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+    ```command line
+<Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -110,7 +114,9 @@ _**上次修改主題的時間：** 2013-03-15_
 
 此範例會啟用信箱伺服器 Mailbox01 上傳輸服務中組織內部傳送連接器的通訊協定記錄。
 
-    Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -126,11 +132,15 @@ _**上次修改主題的時間：** 2013-03-15_
 
 若要啟用或停用位於信箱伺服器上信箱傳輸服務中，隱含與隱藏的信箱傳遞傳送連接器的通訊協定記錄，請執行下列動作：
 
-    Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```
 
 此範例會啟用信箱伺服器 Mailbox01 上信箱傳輸服務中信箱傳遞接收連接器的通訊協定記錄。
 
-    Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```
 
 ## 如何才能了解這是否正常運作？
 

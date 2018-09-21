@@ -44,7 +44,9 @@ Help Desk 角色群組中，根據預設，可讓成員能檢視並修改組織�
 
 您可以使用下列命令來檢視屬於此角色群組成員之使用者或萬用安全性群組 (USG) 的清單。
 
-    Get-RoleGroupMember "Help Desk"
+```powershell
+Get-RoleGroupMember "Help Desk"
+```
 
 如需角色群組之成員的詳細資訊，請參閱[管理角色群組成員](manage-role-group-members-exchange-2013-help.md)中的[View the members of a role group](manage-role-group-members-exchange-2013-help.md)。
 

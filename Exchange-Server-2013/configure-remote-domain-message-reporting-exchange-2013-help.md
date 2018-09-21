@@ -42,9 +42,13 @@ _**上次修改主題的時間：** 2015-04-08_
 
 本範例會停用名為 Contoso 的遠端網域的傳遞回報。預設會啟用此設定。
 
-    Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```powershell
+Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```
 
 本範例會停用未傳遞回報至遠端網域。預設會啟用此設定。
 
-    Set-RemoteDomain Contoso -NDREnabled $false
+```powershell
+Set-RemoteDomain Contoso -NDREnabled $false
+```
 

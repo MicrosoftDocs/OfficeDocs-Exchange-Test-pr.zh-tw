@@ -55,7 +55,9 @@ _<strong>上次修改主題的時間：</strong> 2016-12-09_
     
     若要匯入 Active Directory 模組中使用<strong>Import-Module</strong>指令程式。
     
-        Import-Module ActiveDirectory
+    ```powershell
+Import-Module ActiveDirectory
+```
 
 2.  使用<strong>New-ADComputer</strong>指令程式來建立新的 Active Directory 電腦帳戶使用此 cmdlet 的語法：
     
@@ -73,7 +75,9 @@ _<strong>上次修改主題的時間：</strong> 2016-12-09_
     
     <strong>範例：</strong> 
     
-        Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```powershell
+Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+```
     
     其中*EXCH2013ASA*是帳戶的名稱和要修改的屬性是*msDS-SupportedEncryptionTypes*十進位值為 28、 可讓下列 cipher: RC4 HMAC、 AES128-CTS-HMAC-SHA1-96、 AES256-CTS-HMAC-SHA1-96。
 
@@ -299,11 +303,15 @@ Spn 關聯 ASA 認證之前，您必須確認目標 Spn 已經不在樹系中的
 
 2.  在命令提示字元處輸入下列命令：
     
-        setspn -F -Q <SPN>
+    ```powershell
+setspn -F -Q <SPN>
+```
     
     您想要關聯 ASA 認證 \< SPN \> 所在的 SPN。例如：
     
-        setspn -F -Q http/mail.corp.tailspintoys.com
+    ```powershell
+setspn -F -Q http/mail.corp.tailspintoys.com
+```
     
     此命令應傳回 nothing。如果它傳回的某個項目，另一個帳戶相關聯已經 SPN。一旦想要 ASA 認證與相關聯的每個 SPN 重複此步驟。
 
@@ -313,11 +321,15 @@ Spn 關聯 ASA 認證之前，您必須確認目標 Spn 已經不在樹系中的
 
 2.  在命令提示字元處輸入下列命令：
     
-        setspn -S <SPN> <Account>$
+    ```powershell
+setspn -S <SPN> <Account>$
+```
     
     其中 \< SPN \> 是想要 ASA 認證與相關聯的 SPN，\< 帳戶 \> 是 ASA 認證與相關聯的帳戶。例如：
     
-        setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```powershell
+setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+```
     
     想要 ASA 認證與相關聯的每個 SPN 之後執行此命令。
 
@@ -327,11 +339,15 @@ Spn 關聯 ASA 認證之前，您必須確認目標 Spn 已經不在樹系中的
 
 2.  在命令提示字元處輸入下列命令：
     
-        setspn -L <Account>$
+    ```powershell
+setspn -L <Account>$
+```
     
     其中 \< 帳戶 \> 是 ASA 認證與相關聯的帳戶。例如：
     
-        setspn -L tailspin\EXCH2013ASA$
+    ```powershell
+setspn -L tailspin\EXCH2013ASA$
+```
     
     您只需要執行此命令一次。
 
@@ -393,7 +409,9 @@ Microsoft Exchange 服務主機上的服務 (MSExchangeServiceHost) 用戶端存
 
 1.  開啟 Exchange 管理命令介面在 Exchange 2013 伺服器並執行下列命令：
     
-        Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```powershell
+Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+```
 
 2.  雖然您沒有立即執行這項作業，請最後應重新啟動以清除 \[從電腦的 Kerberos 票證快取的所有用戶端電腦。
 

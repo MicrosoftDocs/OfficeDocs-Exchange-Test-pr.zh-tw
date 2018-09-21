@@ -76,7 +76,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 若要建立傳輸保護規則，您必須具有現有的 RMS 範本 AD RMS 部署中。此範例會從 AD RMS 叢集擷取可用的範本。
     
-        Get-RMSTemplate | format-list
+    ```powershell
+Get-RMSTemplate | format-list
+```
     
     如需詳細的語法及參數資訊，請參閱 [Get-RMSTemplate](https://technet.microsoft.com/zh-tw/library/dd297960\(v=exchg.150\))。
 

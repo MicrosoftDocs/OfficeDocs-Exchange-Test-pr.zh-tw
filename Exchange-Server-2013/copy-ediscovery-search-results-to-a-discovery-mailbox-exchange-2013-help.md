@@ -78,7 +78,9 @@ _**上次修改主題的時間：** 2014-02-24_
 
 例如，您會執行下列命令以啟動 eDiscovery 搜尋名為*Fabrikam 調查*，將搜尋結果複製到指定的探索信箱。
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 如果您要取得的搜尋結果的估計*EstimateOnly*參數，您必須之前可以複製搜尋結果中移除交換器。您也必須指定將搜尋結果複製到探索信箱。例如，之後使用下列命令建立僅預估搜尋：
 

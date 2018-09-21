@@ -117,7 +117,9 @@ _**上次修改主題的時間：** 2013-05-17_
 
 此範例指定保留限制為兩年六個月。
 
-    Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-tw/library/dd298169\(v=exchg.150\))。
 
@@ -127,11 +129,15 @@ _**上次修改主題的時間：** 2013-05-17_
 
 此命令可啟用 **Test**指令程式的記錄。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```
 
 此命令可停用 **Test**指令程式的記錄。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-tw/library/dd298169\(v=exchg.150\))。
 
@@ -139,17 +145,23 @@ _**上次修改主題的時間：** 2013-05-17_
 
 若要停用系統管理員稽核記錄，請使用下列命令。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```
 
 ## 啟用系統管理員稽核記錄
 
 若要啟用系統管理員稽核記錄，請使用下列命令。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```
 
 ## 檢視系統管理員稽核記錄設定
 
 如果要檢視您為組織設定的系統管理員稽核記錄設定，請使用下列命令。
 
-    Get-AdminAuditLogConfig
+```powershell
+Get-AdminAuditLogConfig
+```
 

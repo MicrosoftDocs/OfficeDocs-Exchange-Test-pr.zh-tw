@@ -93,7 +93,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 2.  在 \[命令提示字元\] 視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 檔案：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 3.  修改下列位於 `<appSettings>` 區段的機碼。
     
@@ -137,7 +139,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 2.  在 \[命令提示字元\] 視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 檔案：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 3.  修改下列位於 `<appSettings>` 區段的機碼：
     
@@ -153,7 +157,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 5.  執行下列命令，以停止 Microsoft Exchange Transport 服務：
     
-        net stop MSExchangeTransport
+    ```powershell
+net stop MSExchangeTransport
+```
 
 6.  將現有的 Mail.que 與 Trn.chk 資料庫檔案從原始位置移至新位置上。
 
@@ -161,7 +167,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 8.  執行下列命令，以啟動 Microsoft Exchange Transport 服務：
     
-        net start MSExchangeTransport
+    ```powershell
+net start MSExchangeTransport
+```
 
 ## 如何才能了解這是否正常運作？
 

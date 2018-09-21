@@ -44,11 +44,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用內容篩選，請執行下列命令：
 
-    Set-ContentFilterConfig -Enabled $false
+```powershell
+Set-ContentFilterConfig -Enabled $false
+```
 
 若要啟用內容篩選，請執行下列命令：
 
-    Set-ContentFilterConfig -Enabled $true
+```powershell
+Set-ContentFilterConfig -Enabled $true
+```
 
 
 > [!NOTE]  
@@ -63,7 +67,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+Get-ContentFilterConfig | Format-List Enabled
+```
 
 2.  確認顯示的 *Enabled* 內容值。
 
@@ -73,11 +79,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用外部郵件的內容篩選，請執行下列命令：
 
-    Set-ContentFilterConfig -ExternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $false
+```
 
 若要啟用外部郵件的內容篩選，請執行下列命令：
 
-    Set-ContentFilterConfig -ExternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $true
+```
 
 ## 如何知道這是否正常運作？
 
@@ -85,7 +95,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-ContentFilterConfig | Format-List ExternalMailEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List ExternalMailEnabled
+```
 
 2.  確認顯示的 *ExternalMailEnabled* 內容值。
 
@@ -95,11 +107,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要啟用內部郵件的內容篩選，請執行下列命令：
 
-    Set-ContentFilterConfig -InternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $true
+```
 
 若要停用內部郵件的內容篩選，請執行下列命令：
 
-    Set-ContentFilterConfig -InternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $false
+```
 
 ## 如何知道這是否正常運作？
 
@@ -107,7 +123,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-ContentFilterConfig | Format-List InternalMailEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List InternalMailEnabled
+```
 
 2.  確認顯示的 *InternalMailEnabled* 內容值。
 
@@ -165,19 +183,27 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例允許所有包含詞語「客戶意見」的郵件。
 
-    Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```powershell
+Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```
 
 此範例封鎖所有包含詞語「股票訣竅」的郵件。
 
-    Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```powershell
+Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```
 
 若要移除允許或封鎖的詞語，請執行下列命令：
 
-    Remove-ContentFilterPhrase -Phrase <Phrase>
+```powershell
+Remove-ContentFilterPhrase -Phrase <Phrase>
+```
 
 本範例移除詞語「股票訣竅」：
 
-    Remove-ContentFilterPhrase -Phrase "stock tip"
+```powershell
+Remove-ContentFilterPhrase -Phrase "stock tip"
+```
 
 ## 如何知道這是否正常運作？
 
@@ -185,7 +211,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-ContentFilterPhrase | Format-List Influence,Phrase
+    ```powershell
+Get-ContentFilterPhrase | Format-List Influence,Phrase
+```
 
 2.  請確認顯示的值符合您所指定的設定。
 
@@ -230,7 +258,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定自訂拒絕回應，請執行以下命令：
 
-    Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```powershell
+Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```
 
 本範例會將內容篩選器代理程式設為傳送自訂的拒絕回應。
 
@@ -252,11 +282,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用 Outlook 電子郵件郵戳，請執行下列命令：
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```
 
 若要啟用 Outlook 電子郵件郵戳，請執行下列命令：
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```
 
 ## 如何知道這是否正常運作？
 
@@ -264,7 +298,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+```
 
 2.  請確認顯示的值符合您所指定的設定。
 

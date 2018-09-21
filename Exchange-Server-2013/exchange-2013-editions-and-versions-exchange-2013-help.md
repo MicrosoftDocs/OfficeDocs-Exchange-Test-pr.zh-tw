@@ -37,7 +37,9 @@ Microsoft Exchange Server 2013 有兩種伺服器版本：Standard Edition 及 
 
 若要檢視您所執行之 Exchange 2013 版本的組建編號，請在 Exchange 管理命令介面中執行下列命令。
 
-    Get-ExchangeServer | fl name,edition,admindisplayversion
+```powershell
+Get-ExchangeServer | fl name,edition,admindisplayversion
+```
 
 ## Exchange 2013 授權類型
 

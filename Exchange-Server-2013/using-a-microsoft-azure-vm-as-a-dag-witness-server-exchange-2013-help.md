@@ -328,7 +328,9 @@ Microsoft Azure 提供支援的 VPN 裝置 VPN 裝置組態指令碼。按一下
 
 2.  執行下列命令以設定您的 Dag 的見證伺服器。
     
-        Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+```
 
 請參閱下列主題的詳細資訊：
 
@@ -348,11 +350,15 @@ Microsoft Azure 提供支援的 VPN 裝置 VPN 裝置組態指令碼。按一下
 
 2.  如果 DAG 有偶數的節點，即會設定檔案共用見證。 驗證檔案共用見證叢集屬性設定來執行下列命令。*SharePath*參數值應指向 \[檔案伺服器並顯示正確路徑。
     
-        Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```powershell
+Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+```
 
 3.  下一步\] 執行下列命令來確認 「 檔案共用見證 」 叢集資源的狀態。叢集資源*State*應該顯示**Online**。
     
-        Get-ClusterResource -Cluster MBX1
+    ```powershell
+Get-ClusterResource -Cluster MBX1
+```
 
 4.  最後，驗證共用已成功建立檔案伺服器上透過檢閱在檔案總管\] 中的資料夾及共用在 \[伺服器管理員。
 

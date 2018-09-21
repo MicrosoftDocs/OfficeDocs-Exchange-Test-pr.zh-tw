@@ -42,9 +42,13 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會允許名為 Contoso 的遠端網域的自動回覆。預設會停用此設定。
 
-    Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```
 
 本範例會允許自動轉寄至遠端網域。預設會停用此設定。
 
-    Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```
 

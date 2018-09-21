@@ -58,11 +58,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 您可以透過管線傳送 format-list **Get-ManagementRoleAssignment**指令程式在**Format-List** cmdlet 的結果檢視角色指派的詳細資料。使用下列語法。
 
-    Get-ManagementRoleAssignment <assignment name> | Format-List
+```powershell
+Get-ManagementRoleAssignment <assignment name> | Format-List
+```
 
 此範例會擷取「服務台指派」角色指派的詳細資料。
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -70,11 +74,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視與管理角色群組、角色或角色指派原則關聯之角色指派的清單，或與使用者或萬用安全性群組 (USG) 關聯之角色指派的清單，請使用下列語法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```
 
 此範例會擷取與「伺服器管理」角色群組關聯的所有角色指派。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -84,11 +92,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視與指定角色相關聯之角色指派的清單，請使用下列語法。
 
-    Get-ManagementRoleAssignment -Role <role name>
+```powershell
+Get-ManagementRoleAssignment -Role <role name>
+```
 
 此範例會擷取與「郵件收件者」角色關聯的所有角色指派。
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients"
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -100,7 +112,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會擷取使用「組織」預先定義範圍的所有角色指派。
 
-    Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -108,7 +122,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視範圍已被限定為特定組織單位 (OU) 之角色指派的清單，請使用下列語法。
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```
 
 此範例會擷取在 contoso.com 網域中範圍已被限定為 North America\\Engineering\\Users OU 的所有角色指派。
 
@@ -132,11 +148,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會擷取使用「溫哥華收件者」收件者範圍的所有角色指派。
 
-    Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```powershell
+Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```
 
 此範例會擷取使用「西雅圖 AD 站台」獨佔組態範圍的所有角色指派。
 
-    Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```powershell
+Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -144,15 +164,21 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視獨佔或一般角色指派的清單，請使用下列語法。
 
-    Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```
 
 例如，若要檢視獨佔範圍的清單，請執行下列命令：
 
-    Get-ManagementRoleAssignment -Exclusive $True
+```powershell
+Get-ManagementRoleAssignment -Exclusive $True
+```
 
 此範例會擷取一般範圍的清單，而不含任何獨佔範圍。
 
-    Get-ManagementRoleAssignment -Exclusive $False
+```powershell
+Get-ManagementRoleAssignment -Exclusive $False
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -162,7 +188,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會擷取可以修改收件者 Brian 之角色指派的清單。
 
-    Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```powershell
+Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```
 
 您可以合併*WritableRecipient*和*WritableServer*參數的其他參數，例如*RoleAssignee*參數和*GetEffectiveUsers*切換精簡查詢並依序展開 \[任何角色群組或 Usg。本範例會擷取所有使用者誰可以修改 server EX02 與人員指派給伺服器管理角色群組。
 
@@ -174,11 +202,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視從角色指派接收權限之使用者的清單，請使用下列語法。
 
-    Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```
 
 此範例會擷取「服務台指派」角色指派中使用者的清單。
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```
 
 您也可以結合*GetEffectiveUsers*交換器與**Get-ManagementRoleAssignment**指令程式來展開角色群組和 Usg 已指派的角色指派上的數個其他參數。*GetEffectiveUsers*交換器與其他參數的使用方式的範例，請參閱本主題中前面的 「 可以修改特定收件者或伺服器檢視"。
 
@@ -188,11 +220,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視已啟用或已停用之角色指派的清單，請使用下列語法。
 
-    Get-ManagementRoleAssignment -Enabled < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Enabled < $True | $False >
+```
 
 此範例會擷取已停用之角色指派的清單。
 
-    Get-ManagementRoleAssignment -Enabled $False
+```powershell
+Get-ManagementRoleAssignment -Enabled $False
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 

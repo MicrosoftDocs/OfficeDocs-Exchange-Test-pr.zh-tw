@@ -58,11 +58,15 @@ _**上次修改主題的時間：** 2012-11-02_
 
 此範例會在伺服器 MBX2 上封鎖啟動資料庫 DB1 的副本。
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX2 -ActivationOnly
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX2 -ActivationOnly
+```
 
 此範例會在伺服器 MBX2 上繼續啟動資料庫 DB1 的副本。
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX2
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX2
+```
 
 如需詳細的語法及參數資訊，請參閱 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd351074\(v=exchg.150\)) 或 [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335220\(v=exchg.150\))。
 
@@ -70,15 +74,21 @@ _**上次修改主題的時間：** 2012-11-02_
 
 此範例會將伺服器 MBX2 上的資料庫副本設定為封鎖啟動。
 
-    Set-MailboxServer -Identity MBX2 -DatabaseCopyAutoActivationPolicy Blocked
+```powershell
+Set-MailboxServer -Identity MBX2 -DatabaseCopyAutoActivationPolicy Blocked
+```
 
 此範例會將伺服器 MBX3 上的資料庫副本設定為封鎖站台外部啟動。
 
-    Set-MailboxServer -Identity MBX3 -DatabaseCopyAutoActivationPolicy IntrasiteOnly
+```powershell
+Set-MailboxServer -Identity MBX3 -DatabaseCopyAutoActivationPolicy IntrasiteOnly
+```
 
 此範例會將伺服器 MBX4 上的資料庫副本設定為解除封鎖啟動。
 
-    Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
+```powershell
+Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
+```
 
 如需詳細的語法及參數資訊，請參閱 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd351074\(v=exchg.150\))、[Resume-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335220\(v=exchg.150\)) 或 [Set-MailboxServer](https://technet.microsoft.com/zh-tw/library/aa998651\(v=exchg.150\))。
 
@@ -88,9 +98,13 @@ _**上次修改主題的時間：** 2012-11-02_
 
   - 在命令介面中，執行以下命令來驗證資料庫副本的啟動設定。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+```
 
   - 在命令介面中，執行以下命令來驗證 DAG 成員的啟動設定。
     
-        Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```powershell
+Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+```
 

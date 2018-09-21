@@ -58,11 +58,15 @@ Edge Transport Server 組態資訊會儲存在 Active Directory 輕量型目錄�
 
 2.  若要將來源伺服器組態資料匯出至來源伺服器上的檔案，請使用下列語法。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+```
     
     例如，若要將來源伺服器組態資料匯出至檔案 C:\\CloneConfigData.xml，請執行下列命令。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+```
 
 ## 如何才能了解此步驟是否正常運作？
 

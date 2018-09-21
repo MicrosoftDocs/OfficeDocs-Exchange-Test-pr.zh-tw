@@ -34,7 +34,9 @@ Exchange 2013安裝程式需要**容錯移轉叢集命令介面**Windows 功能�
 
 2.  執行下列命令以安裝必要的 Windows 功能。
     
-        Install-WindowsFeature RSAT-Clustering-CmdInterface
+    ```powershell
+Install-WindowsFeature RSAT-Clustering-CmdInterface
+```
 
 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
 

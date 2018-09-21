@@ -92,7 +92,9 @@ _**上次修改主題的時間：** 2016-11-16_
 
 若要確認公用資料夾移動要求成功，請執行下列命令：
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 當狀態為 `Completed` 時，表示移動要求成功。
 

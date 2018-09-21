@@ -64,7 +64,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 1.  以變數儲存外部 Active Directory 樹系認證。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用下列語法建立連結的角色群組。
     
@@ -84,7 +86,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     New-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles "Transport Rules", "Journaling"
 
 ## 使用命令介面建立具有自訂管理範圍的連結角色群組
@@ -93,7 +97,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 1.  以變數儲存外部 Active Directory 樹系認證。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用下列語法建立連結的角色群組。
     
@@ -113,7 +119,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
 
 如需管理範圍的詳細資訊，請參閱[了解管理角色範圍](understanding-management-role-scopes-exchange-2013-help.md)。
@@ -124,7 +132,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 1.  以變數儲存外部 Active Directory 樹系認證。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用下列語法建立連結的角色群組。
     
@@ -144,7 +154,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
 
 如需管理範圍的詳細資訊，請參閱[了解管理角色範圍](understanding-management-role-scopes-exchange-2013-help.md)。
@@ -157,7 +169,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 1.  以變數儲存外部 Active Directory 樹系認證。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用下列語法在現有連結的角色群組上變更外部 USG。
     
@@ -171,6 +185,8 @@ _**上次修改主題的時間：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
 

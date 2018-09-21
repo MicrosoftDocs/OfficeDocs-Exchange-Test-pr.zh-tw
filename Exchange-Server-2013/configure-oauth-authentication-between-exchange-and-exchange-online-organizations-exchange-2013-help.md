@@ -89,7 +89,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  在內部部署 Exchange 組織的 Exchange PowerShell 中，執行您在前一個步驟中建立的 PowerShell 指令碼。例如：
     
-        .\ExportAuthCert.ps1
+    ```powershell
+.\ExportAuthCert.ps1
+```
 
 ## 步驟 4： 將內部部署授權憑證上傳至 Azure Active Directory ACS
 
@@ -119,7 +121,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  執行您在前一個步驟中建立的 PowerShell 指令碼。例如：
     
-        .\UploadAuthCert.ps1
+    ```powershell
+.\UploadAuthCert.ps1
+```
 
 4.  啟動指令碼之後，會顯示 \[認證\] 對話方塊。輸入 Microsoft Online Azure AD組織中的租用戶系統管理員帳戶的認證。之後執行指令碼、 Windows PowerShell Azure AD工作階段保持在開啟狀態。您將使用此下一個步驟中執行 PowerShell 指令碼。
 
@@ -129,7 +133,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 若不確定內部部署 Exchange 組織中的外部 Exchange 端點，可以在內部部署 Exchange 組織的 Exchange PowerShell 中執行下列命令，即可取得外部設定的 Web 服務端點清單。
 
-    Get-WebServicesVirtualDirectory | FL ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL ExternalUrl
+```
 
 
 > [!NOTE]  
@@ -153,7 +159,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  在Azure Active Directory的 Windows PowerShell 中執行您在上一個步驟中建立 Windows PowerShell 指令碼。例如：
     
-        .\RegisterEndpoints.ps1
+    ```powershell
+.\RegisterEndpoints.ps1
+```
 
 ## 步驟 6：建立從內部部署組織至 Office 365 的 IntraOrganizationConnector
 
@@ -212,7 +220,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 在 Exchange 2013 以前的 Client Access Server 上，必須設定 *AvailabilityAddressSpace* 來指向內部部署 Exchange 2013 SP1 Client Access Server 的 Exchange Web 服務端點。此端點與前面步驟 5 所述的端點相同，也可以在內部部署 Exchange 2013 SP1 Client Access Server 上執行下列指令程式來決定：
 
-    Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```
 
 
 > [!NOTE]  

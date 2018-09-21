@@ -56,7 +56,9 @@ _**上次修改主題的時間：** 2012-10-13_
 
 本範例將會移除電子郵件地址原則 South East Offices。
 
-    Remove-EmailAddressPolicy -Identity "South East Offices"
+```powershell
+Remove-EmailAddressPolicy -Identity "South East Offices"
+```
 
 輸入 **Y** 確認您要移除原則，然後按 ENTER。
 

@@ -71,7 +71,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 6.  瀏覽至 Exchange 2013 安裝檔案，並執行下列命令。
     
-        Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
+```
 
 7.  在安裝程式完成之後，以及將復原伺服器放入實際執行環境之前，重新設定先前儲存在伺服器上的任何自訂設定，然後重新啟動伺服器。
 

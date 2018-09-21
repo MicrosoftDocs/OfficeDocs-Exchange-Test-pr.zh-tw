@@ -114,7 +114,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
 若要進一步驗證是否已成功建立組織關係，請執行下列命令介面命令來驗證組織關係資訊：
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]  

@@ -190,7 +190,9 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
 1.  執行下列命令。
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  執行下列命令，將認證資訊傳送到 Prepare-MoveRequest.ps1 指令碼中的 *RemoteForestCredential* 參數。
     
@@ -214,7 +216,9 @@ Cindy@contoso.com
 
 1.  執行下列命令以取得遠端樹系認證。
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  執行下列命令，將認證資訊傳送到 Prepare-MoveRequest.ps1 指令碼中的 *RemoteForestCredential* 參數。
     

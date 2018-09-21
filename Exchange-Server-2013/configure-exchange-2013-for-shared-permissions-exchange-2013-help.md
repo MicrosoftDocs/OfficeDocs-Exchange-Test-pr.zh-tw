@@ -142,7 +142,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
 1.  從Windows命令介面中，執行下列命令在Exchange 2013安裝媒體中停用Active Directory分割權限。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
 
 2.  從Exchange管理命令介面，執行下列命令以新增 「 建立郵件收件者 」 角色與安全性群組建立和管理角色和組織管理和收件者管理角色群組之間的一般角色指派。
     

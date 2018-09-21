@@ -317,7 +317,9 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會從 Ken Kwok 的信箱中移除受管理的資料夾信箱原則和任何受管理的資料夾。含有任何郵件的受管理資料夾不會移除。
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## 步驟 4：將保留原則套用至使用者信箱
 
@@ -332,7 +334,9 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會將最近建立的保留原則 RP-Corp 套用到信箱使用者 Ken Kwok。
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 
@@ -350,5 +354,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
     
     此命令會擷取實際套用至 April Stewart 信箱的保留標記。
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+Get-RetentionPolicyTag -Mailbox astewart
+```
 

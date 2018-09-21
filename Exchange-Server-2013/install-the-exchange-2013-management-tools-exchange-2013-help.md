@@ -132,7 +132,9 @@ _**上次修改主題的時間：** 2013-01-28_
     > [!IMPORTANT]  
     > 若您已啟用使用者存取控制 (UAC)，必須從更高的命令提示字元安裝 <code>Setup.exe</code>。
     
-        Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+```
 
 如需詳細資訊，請參閱[使用自動模式安裝 Exchange 2013](install-exchange-2013-using-unattended-mode-exchange-2013-help.md)。
 

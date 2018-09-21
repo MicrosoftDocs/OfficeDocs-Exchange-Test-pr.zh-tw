@@ -108,21 +108,29 @@ _**上次修改主題的時間：** 2015-03-09_
 
 若要為組織設定內容傳輸編碼方法，請執行下列命令：
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```
 
 例如，若要將內容傳輸編碼方式設為 Base64，請執行下列命令：
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```
 
 ## 使用命令介面為遠端網域設定內容傳輸編碼方法
 
 若要為遠端網域中的所有收件者設定內容傳輸編碼方法，請執行下列命令：
 
-    Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```powershell
+Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```
 
 例如，若要將內容傳輸編碼方式設為 Base64，請執行下列命令：
 
-    Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```powershell
+Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```
 
 ## 如何才能了解這是否正常運作？
 

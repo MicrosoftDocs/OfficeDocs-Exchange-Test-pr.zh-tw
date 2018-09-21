@@ -71,7 +71,9 @@ _**上次修改主題的時間：** 2013-02-14_
 
 此命令介面範例會從信箱 jpeoples 移除保留原則。
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 此命令介面範例會從 Exchange 組織中的所有信箱移除保留原則。
 
@@ -112,7 +114,9 @@ _**上次修改主題的時間：** 2013-02-14_
 
 此命令會從 Exchange 組織中移除 Corp-Users 保留原則。
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 如需詳細的語法及參數資訊，請參閱下列主題：
 

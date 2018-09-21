@@ -46,11 +46,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用寄件者篩選，請執行下列命令：
 
-    Set-SenderFilterConfig -Enabled $false
+```powershell
+Set-SenderFilterConfig -Enabled $false
+```
 
 若要啟用寄件者篩選，請執行下列命令：
 
-    Set-SenderFilterConfig -Enabled $true
+```powershell
+Set-SenderFilterConfig -Enabled $true
+```
 
 
 > [!NOTE]  
@@ -65,7 +69,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderFilterConfig | Format-List Enabled
+    ```powershell
+Get-SenderFilterConfig | Format-List Enabled
+```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -101,7 +107,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```powershell
+Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -109,11 +117,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要啟用或停用封鎖空白寄件者的郵件，請執行下列命令：
 
-    Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```
 
 此範例會設定封鎖未指定寄件者從郵件中的郵件寄件者篩選器代理程式： SMTP 命令：
 
-    Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -121,7 +133,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```powershell
+Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+```
 
 2.  請確認顯示的值是您所設定的值。
 

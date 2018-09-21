@@ -42,9 +42,13 @@ _**上次修改主題的時間：** 2012-10-02_
 
 若要移除範圍，請使用下列語法。
 
-    Remove-ManagementScope <scope name>
+```powershell
+Remove-ManagementScope <scope name>
+```
 
 例如，若要移除「Dublin Servers」範圍，請使用下列命令。
 
-    Remove-ManagementScope "Dublin Servers"
+```powershell
+Remove-ManagementScope "Dublin Servers"
+```
 

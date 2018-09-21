@@ -271,5 +271,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 您需要更新 ASA 認證之前的用戶端存取伺服器會接收的流量。從任何已正確設定的用戶端存取伺服器複製共用的 ASA 認證。例如，如果伺服器的目前已使用 ASA 認證與您剛新增伺服器 B 陣列，您可用於指令碼複製 （包括密碼） 認證來自伺服器的伺服器 b。這是有用如果 Server B 是向下或尚未陣列當密碼彙上次的成員。
 
-    .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```
 

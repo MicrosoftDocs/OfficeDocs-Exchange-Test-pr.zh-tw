@@ -335,7 +335,9 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 2.  在命令介面中執行下列每個命令，以將每個內部 URL 設定為與虛擬目錄的外部 URL 相符。例如，Ex2013CAS。
     
-        $HostName = "Ex2013CAS"
+    ```powershell
+$HostName = "Ex2013CAS"
+```
 
 3.  在命令介面中執行下列每個命令，以將每個內部 URL 設定為與虛擬目錄的外部 URL 相符。
     

@@ -144,7 +144,9 @@ _<strong>上次修改主題的時間：</strong> 2013-04-12_
 
   - 在命令介面中，執行以下命令以顯示新使用者信箱的資訊。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+```
 
 ## 建立現有使用者的信箱
 
@@ -192,13 +194,17 @@ _<strong>上次修改主題的時間：</strong> 2013-04-12_
 
 此範例會為名為 UsersMailboxDatabase 的 Exchange 資料庫上的現有使用者 estherv@contoso.com 建立一個信箱。
 
-    Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```powershell
+Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```
 
 您也可以使用<strong>Enable-Mailbox</strong>指令程式來啟用多個使用者的郵件功能。您可以將傳送<strong>Get-User</strong>指令程式在<strong>Enable-Mailbox</strong> cmdlet 的結果。當您執行<strong>Get-User</strong>指令程式時，您必須傳回都已啟用郵件功能的使用者。若要這樣做，您需要使用*RecipientTypeDetails*參數指定使用者的值。您也可以限制所要求符合您指定的準則的使用者使用*Filter*參數傳回的結果。接著，您將傳送到<strong>Enable-Mailbox</strong> cmdlet 的結果。
 
 例如，以下命令會啟用原本未啟用信箱且 <strong>UserPrincipalName</strong> 屬性中有值之使用者的信箱，確保您不會不小心將系統帳戶轉換為信箱。
 
-    Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```powershell
+Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```
 
 如需語法及參數的相關資訊，請參閱 [Enable-Mailbox](https://technet.microsoft.com/zh-tw/library/aa998251\(v=exchg.150\)) 和 [Get-User](https://technet.microsoft.com/zh-tw/library/aa996896\(v=exchg.150\)).
 
@@ -212,7 +218,9 @@ _<strong>上次修改主題的時間：</strong> 2013-04-12_
 
   - 在命令介面中，執行以下命令以顯示新啟用信箱之使用者的資訊。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+```
     
     請注意，*RecipientTypeDetails* 的屬性值是 `UserMailbox`。
 

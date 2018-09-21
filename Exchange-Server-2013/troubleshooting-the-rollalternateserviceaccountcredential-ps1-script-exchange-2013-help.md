@@ -29,7 +29,9 @@ _**上次修改主題的時間：** 2015-01-14_
 
 確認伺服器指令碼將所有需要的伺服器藉由使用目標**Get-ClientAccessArray**指令程式，如下列範例所示。
 
-    Get-ClientAccessArray | fl members
+```powershell
+Get-ClientAccessArray | fl members
+```
 
 如果更新失敗的伺服器的用戶端存取陣列成員與仍不會正確更新，請重新執行Exchange安裝程式並再次增加伺服器的用戶端存取伺服器角色。您也可以指定將目標放在使用參數*ToSpecificServers*的個別伺服器。
 
@@ -55,7 +57,9 @@ _**上次修改主題的時間：** 2015-01-14_
 
 如果伺服器只會向下短時間，而且不想要永久移除Exchange，您可以調整對使用參數*ToSpecificServers*如此針對使用中的伺服器的特定伺服器執行的指令碼。或者，您可以移除 RPC Client Access 服務的非回應伺服器Active Directory物件使用**Remove-ClientAccessArray**指令程式，如下列範例所示。
 
-    Remove-RPCClientAccess -Server Server.Contoso.com
+```powershell
+Remove-RPCClientAccess -Server Server.Contoso.com
+```
 
 已移除 RPC Client Access 服務之後，伺服器不會傳回陣列成員身分的[Get-ClientAccessArray](https://technet.microsoft.com/zh-tw/library/dd297976\(v=exchg.150\))並將指令碼將不會目標它。一旦伺服器是一次正常運作，您可以重新使用**New-RpcClientAccess**指令程式來新增 RPC Client Access 服務。當重新加入 RPC Client Access 服務時，請務必重新啟動受影響的伺服器上的 Microsoft Exchange 通訊錄服務。
 

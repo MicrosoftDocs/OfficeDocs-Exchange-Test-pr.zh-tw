@@ -76,7 +76,9 @@ _**上次修改主題的時間：** 2012-11-27_
 
   - *LogFileLocation*  此參數會指定 POP3 或 IMAP4 通訊協定記錄檔的位置。根據預設，POP3 通訊協定記錄檔位於 C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Logging\\Pop3 目錄中。本範例會啟用 POP3 通訊協定記錄在 Client Access server CAS01 上。它也會變更記錄 C:\\Pop3Logging 目錄將 POP3 通訊協定。
     
-        Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
+    ```powershell
+Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
+```
 
   - *LogFileRollOverSettings*  此參數會定義 POP3 或 IMAP4 通訊協定記錄建立新的記錄檔的頻率。根據預設，新的記錄檔會建立每一天。可能的值為：
     
@@ -90,17 +92,23 @@ _**上次修改主題的時間：** 2012-11-27_
     
     此設定會套用只時*LogPerFileSizeQuota*參數的值設為零。此範例會變更登入的用戶端存取伺服器 CAS01 為每小時建立新的記錄檔將 POP3 通訊協定。
     
-        Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
+    ```powershell
+Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
+```
 
   - *LogPerFileSizeQuota*  此參數會定義 POP3 或 IMAP4 通訊協定記錄檔的大小上限 （位元組）。根據預設，這個值設為零。當此值設為零時，會將新的通訊協定記錄檔建立好*LogFileRollOverSettings*參數所指定的頻率。
     
     此範例會將 Client Access Server CAS01 上的 POP3 通訊協定記錄變更為在記錄檔達到 2 MB 時建立新的記錄檔。
     
-        Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
+    ```powershell
+Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
+```
     
     此範例會將 Client Access Server CAS01 上的 POP3 通訊協定記錄變更為使用相同記錄檔，不論其建立日期與大小為何。
     
-        Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
+    ```powershell
+Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
+```
 
 
 > [!NOTE]  
@@ -115,11 +123,15 @@ _**上次修改主題的時間：** 2012-11-27_
 
 若要確認 POP3 通訊協定記錄設定的命令介面中執行下列命令。如果已啟用 POP3 通訊協定記錄、 *ProtocolLogEnabled*參數的值為`True`。若停用 POP3 通訊協定記錄時，此值為`False`。您可確定*LogFileLocation*、 *LogPerFileSizeQuota*、 值和*LogFileRollOverSettings*參數正確無誤。
 
-    Get-PopSettings | format-list
+```powershell
+Get-PopSettings | format-list
+```
 
 若要確認 IMAP4 通訊協定記錄設定的命令介面中執行下列命令。如果已啟用 IMAP4 通訊協定記錄、 *ProtocolLogEnabled*參數的值為`True`。若停用 IMAP4 通訊協定記錄時，此值為`False`。您可確定*LogFileLocation*、 *LogPerFileSizeQuota*、 值和*LogFileRollOverSettings*參數正確無誤。
 
-    Get-ImapSettings | format-list
+```powershell
+Get-ImapSettings | format-list
+```
 
 ## 相關資訊
 

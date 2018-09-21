@@ -75,7 +75,9 @@ _**上次修改主題的時間：** 2014-08-27_
 
 此範例會修改就地 eDiscovery 搜尋來搜尋信箱 DG ProjectManagers 通訊群組的成員屬於搜尋 Project Contoso。
 
-    Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```powershell
+Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```
 
 ## 如何知道這是否正常運作？
 

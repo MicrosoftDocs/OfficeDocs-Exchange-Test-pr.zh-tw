@@ -88,7 +88,9 @@ _**上次修改主題的時間：** 2013-04-16_
 
 此範例會將名為`MyClientAccessServer`至名為`MySIPDialPlan`SIP URI 撥號對應表的用戶端存取伺服器。它也會設定為雙模式，讓用戶端存取伺服器接受 TCP 與 TLS 要求的啟動模式。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```
 
 本範例會將名稱為 `MyClientAccessServer` 的 Client Access Server 新增至兩個名稱分別為 `MySIPDialPlan` 及 `MySIPDialPlan2` 的 SIP 撥號對應表，並允許伺服器同時使用 IPv4 及 IPv6 位址。
 

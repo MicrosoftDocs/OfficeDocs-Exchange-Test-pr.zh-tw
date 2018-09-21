@@ -69,7 +69,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本範例安裝日文 (JA-JP) UM 語言套件的尚未下載到信箱伺服器上的 \[D:\\Exchange\\UMLanguagePacks\] 資料夾。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 此範例會安裝墨西哥西班牙文 (ES-MX) 和德文 (DE-DE) UM 語言套件已下載至信箱伺服器上的 \[D:\\Exchange\\UMLanguagePacks\] 資料夾。
 

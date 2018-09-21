@@ -69,9 +69,13 @@ _**上次修改主題的時間：** 2013-02-15_
 
 此範例會設定 Client Access 伺服器 `UMCallRouter1` 的啟動模式為雙重模式。
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```
 
 此範例會設定 Client Access 伺服器 `UMCallRouter1` 的啟動模式為 TLS 模式。
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```
 

@@ -81,15 +81,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  在命令提示字元視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 應用程式組態檔：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  修改下列位於 `<appSettings>` 區段的機碼。
     
-        <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```command line
+<add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+```
     
     例如，若要將路由表的自動重新計算間隔變更為 10 小時，請使用以下的值：
     
-        <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```command line
+<add key="RoutingConfigReloadInterval" value="10:00:00" />
+```
 
 3.  完成後，儲存並關閉 EdgeTransport.exe.config 檔案。
 

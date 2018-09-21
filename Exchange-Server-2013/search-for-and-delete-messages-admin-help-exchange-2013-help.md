@@ -70,7 +70,9 @@ _**上次修改主題的時間：** 2017-12-20_
 
 
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```
 
 此範例會搜尋 April Stewart 的信箱中 \[主旨\] 欄位中包含 "Your bank statement" 字詞的郵件、將搜尋結果複製到 BackupMailbox 信箱的 AprilStewart-DeletedMessages 資料夾中，然後再從 April 的信箱刪除郵件。
 

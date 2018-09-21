@@ -71,10 +71,14 @@ _**上次修改主題的時間：** 2017-07-25_
     
     設定好 Outlook Web App 虛擬目錄後，在命令提示字元中執行下列命令。
       ```
-      Net stop IISAdmin /y
+  ```powershell
+Net stop IISAdmin /y
+```
       ```
       ```
-      Net start W3SVC
+  ```powershell
+Net start W3SVC
+```
       ```
 
 2.  若要設定外部 EAC 存取，請在 Exchange 管理命令介面中執行下列命令。

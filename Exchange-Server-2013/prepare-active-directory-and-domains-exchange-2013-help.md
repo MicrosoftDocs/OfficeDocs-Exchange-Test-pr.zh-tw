@@ -90,7 +90,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  執行下列命令來擴充架構。
     
-        Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+```
 
 當安裝程式擴充架構完成之後，您需要稍候讓 Active Directory 將變更複寫到所有網域控制站。如果想要查看複寫進度，您可以使用 `repadmin` 工具。Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 的 `Repadmin` 網域服務工具中包含 Active Directory。如需此工具用法的詳細資訊，請參閱 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)。
 
@@ -152,7 +154,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  執行下列命令：
     
-        Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+```
 
 ## 讓我選擇想要準備的 Active Directory 網域
 

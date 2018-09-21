@@ -43,7 +43,9 @@ _**上次修改主題的時間：** 2015-01-04_
 
 此範例會從 Exchange 組織移除組織關係 Contoso
 
-    Remove-OrganizationRelationship -Identity "Contoso"
+```powershell
+Remove-OrganizationRelationship -Identity "Contoso"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-OrganizationRelationship](https://technet.microsoft.com/zh-tw/library/ee332362\(v=exchg.150\))。
 
@@ -55,7 +57,9 @@ _**上次修改主題的時間：** 2015-01-04_
 
   - 執行下列命令介面命令，確認組織關係資訊已移除。
     
-        Get-OrganizationRelationship | Format-List
+    ```powershell
+Get-OrganizationRelationship | Format-List
+```
 
 
 > [!TIP]  

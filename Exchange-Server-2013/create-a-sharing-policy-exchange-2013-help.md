@@ -110,7 +110,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
   - 這個範例會為外部同盟網域 contoso.com 建立共用原則 Contoso。這個原則可讓 contoso.com 網域中的使用者查看您的使用者的詳細行事曆可用性 (空閒/忙碌) 資訊。預設會啟用這個原則。
     
-        New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```powershell
+New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+```
 
   - 此範例會針對兩個不同的同盟網域 (contoso.com 和 woodgrovebank.com) 建立共用原則 ContosoWoodgrove，並為每個網域設定不同的共用動作。這個原則已停用。
     
@@ -120,7 +122,9 @@ _**上次修改主題的時間：** 2015-04-07_
     
     1.  設定 MAIL01 的 Web Proxy URL。
         
-            Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```powershell
+Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+```
     
     2.  在 CAS01 上啟用發行虛擬目錄。
         
@@ -142,7 +146,9 @@ _**上次修改主題的時間：** 2015-04-07_
 
 若要驗證您是否已成功建立共用原則，請執行下列命令介面命令來確認共用原則資訊。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 
 > [!TIP]  

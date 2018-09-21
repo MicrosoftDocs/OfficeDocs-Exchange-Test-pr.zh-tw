@@ -55,11 +55,15 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 此範例說明如何設定資料庫的根路徑。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```
 
 此範例說明如何設定儲存磁碟區的根路徑。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -75,7 +79,9 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 此範例說明如何為已設為每一個磁碟區有 4 個資料庫的 DAG 設定此 AutoReseed 設定。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -96,7 +102,9 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 若要確認您是否已成功設定資料庫與磁碟區的根目錄，請執行以下命令。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 建立的目錄應出現在輸出清單中。
 
@@ -116,7 +124,9 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 若要確認您是否已成功裝載磁碟區資料夾，請執行以下命令。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 裝載的磁碟區應該出現在輸出清單中。
 
@@ -140,7 +150,9 @@ md c:\ExchangeDatabases\db004
 
 若要確認您是否已成功裝載資料庫資料夾，請執行以下命令。
 
-    Dir C:\ExchangeDatabases
+```powershell
+Dir C:\ExchangeDatabases
+```
 
 建立的目錄應出現在輸出清單中。
 
@@ -154,7 +166,9 @@ md c:\ExchangeDatabases\db004
 
 若要確認您是否已成功建立資料庫的掛接點，請執行以下命令。
 
-    Mountvol.exe C:\ExchangeDatabases\db001 /L
+```powershell
+Mountvol.exe C:\ExchangeDatabases\db001 /L
+```
 
 裝載的磁碟區應該出現在掛接點清單中。
 
@@ -198,7 +212,9 @@ md c:\ExchangeDatabases\db004\db004.log
 
 若要確認您是否已成功建立資料庫目錄架構，請執行以下命令。
 
-    Dir C:\ExchangeDatabases /s
+```powershell
+Dir C:\ExchangeDatabases /s
+```
 
 建立的目錄應出現在輸出清單中。
 
@@ -226,8 +242,12 @@ md c:\ExchangeDatabases\db004\db004.log
 
 2.  執行下列命令，確認已正確設定目錄架構 (以下為預設路徑；請視需要將路徑替換成您正在使用的路徑)。
     ```
-    Dir c:\ExchangeDatabases /s
+```powershell
+Dir C:\ExchangeDatabases /s
+```
     ```
     ```
-    Dir c:\ExchangeVolumes /s
+```powershell
+Dir c:\ExchangeVolumes /s
+```
     ```

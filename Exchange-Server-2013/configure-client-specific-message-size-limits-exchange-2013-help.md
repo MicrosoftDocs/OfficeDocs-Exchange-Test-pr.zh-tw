@@ -253,7 +253,9 @@ Microsoft Exchange Server 2013 對於通過您 Exchange 組織的郵件設有數
 
 4.  執行下列命令以重新啟動 IIS：
     
-        IISReset /noforce
+    ```powershell
+IISReset /noforce
+```
 
 ## 設定從命令列的特定用戶端的郵件大小限制
 

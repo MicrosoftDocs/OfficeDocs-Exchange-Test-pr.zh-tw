@@ -315,7 +315,9 @@ Exchange 2013 新增了名為 **Get-QueueDigest** 的佇列指令程式。此指
 
 此範例會傳回名為 Mailbox01、Mailbox02 及 Mailbox03 等 Exchange 2013 Mailbox Server 上所有非空白的外部佇列。
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 回到頁首
 

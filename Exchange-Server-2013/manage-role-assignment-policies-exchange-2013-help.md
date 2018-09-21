@@ -63,7 +63,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要建立可手動指派至信箱的明確指派原則，請使用下列語法。
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```
 
 這個範例會建立明確指派原則「限制的信箱組態」，並對它指派 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色。
 
@@ -75,7 +77,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要建立可指派至新信箱的預設指派原則，請使用下列語法。
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```
 
 這個範例會建立預設指派原則「限制的信箱組態」，並對它指派 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色。
 
@@ -105,11 +109,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要移除指派原則，請使用下列語法。
 
-    Remove-RoleAssignmentPolicy <role assignment policy>
+```powershell
+Remove-RoleAssignmentPolicy <role assignment policy>
+```
 
 此範例會移除 New York Temporary Users 指派原則。
 
-    Remove-RoleAssignmentPolicy "New York Temporary Users"
+```powershell
+Remove-RoleAssignmentPolicy "New York Temporary Users"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638190\(v=exchg.150\))。
 
@@ -137,15 +145,21 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要傳回組織中所有指派原則的清單，請使用以下命令。
 
-    Get-RoleAssignmentPolicy
+```powershell
+Get-RoleAssignmentPolicy
+```
 
 若要傳回組織中的所有工作分派原則的特定屬性的清單，您可以將傳送到**Format-Table** cmdlet 的結果與結果的清單中指定想要的內容。使用下列語法。
 
-    Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```powershell
+Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```
 
 此範例會傳回組織中所有指派原則的清單，並包含 **Name** 及 **IsDefault** 內容。
 
-    Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```powershell
+Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 或 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638195\(v=exchg.150\))。
 
@@ -161,11 +175,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要檢視特定指派原則的詳細資料，請使用下列語法。
 
-    Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```powershell
+Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```
 
 此範例會檢視 Redmond 使用者（沒有「簡訊」指派原則）的詳細資料。
 
-    Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```powershell
+Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 或 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638195\(v=exchg.150\))。
 
@@ -181,7 +199,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 這個範例會傳回預設的指派原則。
 
-    Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }
+```powershell
+Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 或 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638195\(v=exchg.150\))。
 
@@ -197,11 +217,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 使用下列語法。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```
 
 此範例會找出所有均指派溫哥華一般使用者原則的信箱。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 或 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638195\(v=exchg.150\))。
 
@@ -220,11 +244,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要變更預設的指派原則，請使用下列語法。
 
-    Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```powershell
+Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```
 
 此範例會設定 Vancouver End Users 指派原則作為預設的指派原則。
 
-    Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```powershell
+Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```
 
 
 > [!IMPORTANT]  

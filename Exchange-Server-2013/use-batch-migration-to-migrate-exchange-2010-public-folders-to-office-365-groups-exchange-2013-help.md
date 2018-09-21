@@ -94,7 +94,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
 4.  您需要有**PAW**啟用您的 Office 365 租用戶移轉功能。若要確認此，請在 Exchange Online PowerShell 中執行下列命令：
     
-        Get-MigrationConfig
+    ```powershell
+Get-MigrationConfig
+```
     
     如果**功能**下的輸出會列出**PAW**，則會啟用的功能和您可以繼續*步驟 3： 建立.csv 檔案*。
     
@@ -110,7 +112,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
   - **TargetGroupMailbox**。Office 365 中的目標群組的 SMTP 地址。您可以執行下列命令，請參閱的主要 SMTP 位址。
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+```
 
 範例.csv：
 
@@ -130,15 +134,21 @@ _**上次修改主題的時間：** 2018-04-30_
     
     1.  尋找**LegacyExchangeDN**輸入下列命令來為公用資料夾系統管理員角色成員的使用者帳戶。請注意這個相同的使用者需要更新版本中，在此程序的步驟 3 中的認證。
         
-            Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```powershell
+Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+```
     
     2.  輸入下列命令，以尋找任何具有公用資料夾資料庫的 mailbox server 的 LegacyExchangeDN：
         
-            Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```powershell
+Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+```
     
     3.  找出 「 Outlook 無所不在 」 主機 Fully-Qualified 網域名稱 (FQDN)。這是外部主機名稱。如果您有多個執行個體的 「 Outlook 無所不在 」，我們建議您選取為最接近之遷移端點至其中一個或一個組織的 Exchange Server 2010 中的公用資料夾複本到最接近的執行個體。下列命令將會尋找 「 Outlook 無所不在 」 的所有執行個體：
         
-            Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```powershell
+Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+```
 
 2.  在Exchange Online PowerShell，使用步驟 1 到執行下列命令中上面所傳回的資訊。這些命令中的變數會是步驟 1 中的值。
     
@@ -149,15 +159,21 @@ _**上次修改主題的時間：** 2018-04-30_
     
     2.  您在步驟 1a 中找到上方並將該值傳至變數`$Source_RemoteMailboxLegacyDN`舊版 Exchange 伺服器上使用之遷移使用者的 ExchangeLegacyDN。
         
-            $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```powershell
+$Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+```
     
     3.  使用您在上述步驟 1b 中找到上方並將該值傳至變數`$Source_RemotePublicFolderServerLegacyDN`之公用資料夾伺服器的 ExchangeLegacyDN。
         
-            $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+        ```powershell
+$Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+```
     
     4.  使用外部主機名稱的 Outlook 無所不在 」 在步驟 1 c 上述傳回並將該值傳至變數`$Source_OutlookAnywhereExternalHostName`。
         
-            $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```powershell
+$Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+```
 
 3.  在Exchange Online PowerShell，執行下列命令來建立遷移端點：
     
@@ -179,7 +195,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
 5.  Exchange Online PowerShell中執行下列命令來啟動移轉。請注意這是必要步驟只有在`-AutoStart`參數已無法使用時在步驟 4 中建立的批次以上。
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 雖然批次移轉需要建立Exchange Online PowerShell中使用`New-MigrationBatch`指令程式，可以檢視及Exchange 系統管理中心中受管理移轉的進度。您也可以藉由執行[Get-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219164\(v=exchg.150\))和[Get-MigrationUser](https://technet.microsoft.com/zh-tw/library/jj218702\(v=exchg.150\))指令程式檢視移轉的進度。`New-MigrationBatch`指令程式會移轉使用者的每個 Office 365 群組信箱，且您可以檢視信箱移轉\] 頁面上使用這些要求的狀態。
 
@@ -242,7 +260,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
 您的公用資料夾進行唯讀之後，您需要重新執行移轉。這是必要資料的最終累加複本。您可以執行一次移轉之前，您必須移除現有的批次，您可以執行下列命令：
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 下一步\] 建立新的批次以相同的.csv 檔案執行下列命令。在此命令：
 
@@ -258,7 +278,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
 建立新的批次之後，請Exchange Online PowerShell中執行下列命令來啟動移轉。請注意此步驟只需要是否`-AutoStart`參數是不在以上的命令。
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 完成此步驟 （批次狀態為**\[已完成**） 之後，確認所有的資料有已複製到 Office 365 群組。屆時，您必須是滿意群組經驗，即可開始刪除已移轉的公用資料夾從 Exchange 2010 環境。
 

@@ -46,15 +46,21 @@ _**上次修改主題的時間：** 2014-09-17_
 
 此範例會測試 UM IP 閘道在 TCP 通訊埠 5060 上接聽傳入 SIP 要求的能力。
 
-    Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```powershell
+Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```
 
 本範例會使用電話號碼 56780，測試本機 Mailbox Server 使用不安全的 TCP 連線 (而非安全的相互 TLS 連線)，透過名為 `MyUMIPGateway` 的 UM IP 閘道撥打電話的能力。
 
-    Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```powershell
+Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```
 
 此範例會使用 SIP URI，測試撥號對應表上的 Outlook 語音存取號碼。本範例可以用於包含 Lync Server 的環境中。
 
-    Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```powershell
+Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```
 
 
 > [!NOTE]  

@@ -50,11 +50,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 若要變更指派給信箱的指派原則，請使用下列語法。
 
-    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```powershell
+Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```
 
 此範例會設定信箱 Brian 上「整合通訊使用者」的指派原則。
 
-    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```powershell
+Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```
 
 ## 使用命令介面變更已指派特定指派原則之一組信箱的指派原則
 

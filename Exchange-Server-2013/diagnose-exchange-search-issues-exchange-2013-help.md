@@ -58,7 +58,9 @@ Exchange搜尋索引的信箱與支援Exchange信箱中的附件。增加磁碟�
 
 2.  **檢查信箱資料庫的組態**   是否已將使用者信箱資料庫的 *IndexEnabled* 參數設定為 True？如果是，請跳至步驟 3。否則，請在命令介面中執行下列命令來確認 *IndexEnabled* 旗標是否設為 True。
     
-        Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```powershell
+Get-MailboxDatabase | Format-Table Name,IndexEnabled
+```
     
     如需詳細語法及參數的資訊，請參閱 [Get-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb124924\(v=exchg.150\))。
 
@@ -92,7 +94,9 @@ Exchange搜尋索引的信箱與支援Exchange信箱中的附件。增加磁碟�
 
 5.  **執行 Test-ExchangeSearch 指令程式**   如果已對信箱資料庫進行編目，則可以針對信箱資料庫或特定信箱執行 **Test-ExchangeSearch** 指令程式。
     
-        Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```powershell
+Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+```
     
     如需詳細的語法及參數資訊，請參閱 [Test-ExchangeSearch](https://technet.microsoft.com/zh-tw/library/bb124733\(v=exchg.150\))。
 

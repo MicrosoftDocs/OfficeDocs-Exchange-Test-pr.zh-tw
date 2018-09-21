@@ -46,7 +46,9 @@ _**上次修改主題的時間：** 2017-03-27_
     
     在 Exchange 2007 中執行下列命令：
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+```
     
     > [!NOTE]  
     > 我們建議您增加到此資料庫的唯一信箱就是您將在步驟 3 中建立的 Proxy 信箱。不得在此信箱資料庫上建立其他信箱。
@@ -57,12 +59,16 @@ _**上次修改主題的時間：** 2017-03-27_
     New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
     ```
-    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```powershell
+Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```
     ```
 
 4.  在 Exchange 2010 中，讓「自動探索」傳回 Proxy 公用資料夾信箱。對於 Exchange 2007，無須執行此步驟。
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+```
 
 5.  對組織中的每部公用資料夾伺服器重複前述步驟。
 

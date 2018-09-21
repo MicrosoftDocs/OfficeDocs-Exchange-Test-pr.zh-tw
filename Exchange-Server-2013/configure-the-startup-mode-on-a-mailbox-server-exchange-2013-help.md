@@ -69,9 +69,13 @@ _**上次修改主題的時間：** 2013-02-15_
 
 此範例會將名爲 `MyUMServer1` 的 Mailbox Server 啟動模式設為雙重模式。
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```
 
 此範例會將名爲 `MyUMServer1` 的 Mailbox Server 啟動模式設為 TLS 模式。
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```
 

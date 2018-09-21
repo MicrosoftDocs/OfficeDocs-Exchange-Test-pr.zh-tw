@@ -56,11 +56,15 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  請使用 [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335119\(v=exchg.150\)) 指令程式，移除正在復原之伺服器上的所有信箱資料庫副本：
     
-        Remove-MailboxDatabaseCopy DB1\MBX1
+    ```powershell
+Remove-MailboxDatabaseCopy DB1\MBX1
+```
 
 3.  請使用 [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/zh-tw/library/dd297956\(v=exchg.150\)) 指令程式，從 DAG 移除失敗的伺服器組態：
     
-        Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
     
     > [!NOTE]  
     > 若要移除的 DAG 成員離線，且無法上線，您必須新增<em>ConfigurationOnly</em>參數至以上的命令。如果您使用<em>ConfigurationOnly</em>參數，您必須也手動收回從叢集節點。
@@ -70,11 +74,15 @@ _**上次修改主題的時間：** 2016-12-09_
 
 5.  開啟 \[命令提示字元\] 視窗。 使用原始安裝程式媒體，並執行下列命令：
     
-        Setup /m:RecoverServer
+    ```powershell
+Setup /m:RecoverServer
+```
 
 6.  一旦安裝程式復原程序完成，使用 [Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/zh-tw/library/dd298049\(v=exchg.150\)) 指令程式將復原的伺服器新增至 DAG：
     
-        Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 7.  當伺服器新增至原本的 DAG 之後，您可以使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd298105\(v=exchg.150\)) 指令程式重新設定信箱資料庫副本。 如果正在新增的任何一個資料庫副本先前出現大於 0 的重新顯示延遲或截斷延遲時間，則您可以使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd298105\(v=exchg.150\)) 指令程式的 *ReplayLagTime* 和 *TruncationLagTime* 參數來重新進行這些設定：
     
@@ -88,10 +96,14 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 在命令介面中執行下列命令來確認健康狀況和狀態復原的 DAG 成員。
     ```
-        Test-ReplicationHealth <ServerName>
+    ```powershell
+Test-ReplicationHealth <ServerName>
+```
     ```
     ```
-        Get-MailboxDatabaseCopyStatus -Server <ServerName>
+    ```powershell
+Get-MailboxDatabaseCopyStatus -Server <ServerName>
+```
     ```
     所有的複寫狀況測試應順利通過，並應狀況良好的資料庫和其內容索引狀態。
 

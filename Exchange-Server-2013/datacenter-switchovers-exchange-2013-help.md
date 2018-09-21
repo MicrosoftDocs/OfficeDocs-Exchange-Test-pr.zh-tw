@@ -65,16 +65,22 @@ Reestablishing Site Resilience
 
 1.  您必須針對主要資料中心裡的每一台 DAG 成員執行下列命令，強制將它們從 DAG 的基礎叢集收回：
     
-        net stop clussvc
+    ```powershell
+net stop clussvc
+```
         cluster <DAGName> node <DAGMemberName> /forcecleanup
 
 2.  次要資料中心的 DAG 成員現在必須重新啟動，然後再用來完成來自次要資料中心的收回處理程序。在每一台成員上執行下列命令，以便停止次要資料中心每一台 DAG 成員上的叢集服務：
     
-        net stop clussvc
+    ```powershell
+net stop clussvc
+```
 
 3.  在次要資料中心裡的某台 DAG 成員上，執行下列命令以強制進行叢集服務的仲裁啟動：
     
-        net start clussvc /forcequorum
+    ```powershell
+net start clussvc /forcequorum
+```
 
 4.  開啟容錯移轉叢集管理工具，並連線至 DAG 的基礎叢集。展開叢集，然後展開 \[節點\]。在主要資料中心的每個節點上按一下滑鼠右鍵，並依序選取 \[其他動作\] 及 \[收回\]。收回主要資料中心的 DAG 成員之後，請關閉容錯移轉叢集管理工具。
 
@@ -104,15 +110,21 @@ Reestablishing Site Resilience
     
     1.  如果 DAG 成員數量為奇數，請執行下列命令將 DAG 仲裁模型從節點及檔案共用多數仲裁，變更為多數節點仲裁：
         
-            cluster <DAGName> /quorum /nodemajority
+        ```powershell
+cluster <DAGName> /quorum /nodemajority
+```
     
     2.  如果 DAG 成員數量為偶數，則在 Exchange 管理命令介面中執行下列命令，重新設定見證伺服器與目錄：
         
-            Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+```
 
 2.  執行下列命令，在次要資料中心任何剩下的 DAG 成員上啟動叢集服務：
     
-        net start clussvc
+    ```powershell
+net start clussvc
+```
 
 3.  針對每一台 DAG 成員執行下列命令，執行伺服器轉換作業以啟動 DAG 中的信箱資料庫：
     
@@ -120,7 +132,9 @@ Reestablishing Site Resilience
 
 4.  執行下列命令，將每一台 DAG 成員上的信箱資料庫裝載到次要站台：
     
-        Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```powershell
+Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+```
 
 回到頁首
 

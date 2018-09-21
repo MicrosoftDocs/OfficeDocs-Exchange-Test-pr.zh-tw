@@ -51,11 +51,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要啟用或停用信箱伺服器上的群組計量產生作業，請執行以下命令：
 
-    Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```powershell
+Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```
 
 此範例會啟用名為 MBX1 的信箱伺服器上的群組計量產生作業。
 
-    Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```powershell
+Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -63,7 +67,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```powershell
+Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+```
 
 2.  驗證顯示的設定是您配置的設定。
 

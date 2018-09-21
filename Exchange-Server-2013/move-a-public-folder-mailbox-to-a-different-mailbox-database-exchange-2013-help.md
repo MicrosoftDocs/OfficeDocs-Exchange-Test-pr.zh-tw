@@ -48,7 +48,9 @@ _**上次修改主題的時間：** 2015-07-21_
 
 此範例會執行公用資料夾信箱 PF\_SanFrancisco 到信箱資料夾 MBX\_DB01 的移動要求。
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
@@ -58,19 +60,25 @@ _**上次修改主題的時間：** 2015-07-21_
 
 此範例會執行公用資料夾信箱 PF\_SanFrancisco 到信箱資料庫 MBX\_DB01 的移動要求，並在移動要求準備完成時暫停。
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
 此範例會擷取公用資料夾信箱 PF\_SanFrancisco 的進行中信箱移動狀態。
 
-    Get-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Get-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd335227\(v=exchg.150\))。
 
 當的移動要求達到暫停的狀態時，您可以繼續執行要求。此範例會繼續公用資料夾信箱 PF\_SanFrancisco 的移動要求。
 
-    Resume-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Resume-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Resume-MoveRequest](https://technet.microsoft.com/zh-tw/library/ee332320\(v=exchg.150\))。
 
@@ -78,7 +86,9 @@ _**上次修改主題的時間：** 2015-07-21_
 
 若要確認成功建立移動要求，請執行下列命令：
 
-    Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```powershell
+Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```
 
 狀態 `Completed` 表示移動要求順利完成。
 
