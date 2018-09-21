@@ -97,7 +97,7 @@ Site mailbox provisioning policies
 
 ## 法規符合性
 
-在 SharePoint 中使用 eDiscovery 主控台，站台信箱可以屬於就地 eDiscovery 範圍和您可以針對使用者信箱或站台信箱的關鍵字搜尋。此外，您可以將站台信箱置於法務保存措施。如需詳細資訊，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
+在 SharePoint 中使用 eDiscovery 主控台，站台信箱可以屬於就地 eDiscovery 範圍和您可以針對使用者信箱或站台信箱的關鍵字搜尋。此外，您可以將站台信箱置於法務保存措施。如需詳細資訊，請參閱[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
 
 
 > [!NOTE]  

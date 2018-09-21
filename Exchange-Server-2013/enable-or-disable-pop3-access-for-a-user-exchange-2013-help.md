@@ -26,7 +26,7 @@ _**上次修改主題的時間：** 2014-01-06_
 
 
 
-如需管理使用者信箱的相關資訊，請參閱[管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)。
+如需管理使用者信箱的相關資訊，請參閱[管理使用者信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。
 
 如需 POP3 與 IMAP4 的詳細資訊，請參閱 [Exchange Server 2013 中的 POP3 和 IMAP4](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)。
 

@@ -239,7 +239,7 @@ AD RMS 系統具有伺服器和用戶端元件，包括：
 
 ## UM 信箱原則
 
-您可以建立整合通訊信箱原則套用至一組已啟用 UM 之信箱的一組通用 PIN 原則設定、 撥號限制及受保護的語音信箱設定等的 UM 原則設定。若要深入了解 UM 信箱原則，請參閱[管理 UM 信箱原則](manage-a-um-mailbox-policy-exchange-2013-help.md)。
+您可以建立整合通訊信箱原則套用至一組已啟用 UM 之信箱的一組通用 PIN 原則設定、 撥號限制及受保護的語音信箱設定等的 UM 原則設定。若要深入了解 UM 信箱原則，請參閱[管理 UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)。
 
 您可以使用 EAC 或命令介面中的 **Set-UMMailboxPolicy** 指令程式來設定「受保護的語音信箱」選項。 下表列出「受保護的語音信箱」可設定的設定。
 
@@ -289,7 +289,7 @@ AD RMS 系統具有伺服器和用戶端元件，包括：
 </table>
 
 
-如需有關如何管理「受保護的語音信箱」設定的相關資訊，請參閱[受保護的語音信箱程序](protected-voice-mail-procedures-exchange-2013-help.md)或 [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-tw/library/bb124903\(v=exchg.150\))。
+如需有關如何管理「受保護的語音信箱」設定的相關資訊，請參閱[受保護的語音信箱程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures)或 [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-tw/library/bb124903\(v=exchg.150\))。
 
 回到頁首
 

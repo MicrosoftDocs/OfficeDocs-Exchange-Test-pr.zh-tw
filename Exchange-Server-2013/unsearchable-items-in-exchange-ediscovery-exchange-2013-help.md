@@ -63,9 +63,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 若想進一步了解如何在搜尋結果中包含無法搜尋的項目，請參閱：
 
-  - [建立就地 eDiscovery 搜尋](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [建立就地 eDiscovery 搜尋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-  - [將 eDiscovery 搜尋結果匯出至 PST 檔](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)
+  - [將 eDiscovery 搜尋結果匯出至 PST 檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
   - [SharePoint： 匯出 eDiscovery 內容並建立報告](https://go.microsoft.com/fwlink/p/?linkid=324757)
 

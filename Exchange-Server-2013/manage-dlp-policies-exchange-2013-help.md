@@ -129,7 +129,7 @@ DLP 相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-
 
 ## 相關資訊
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[原則提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[原則提示](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 

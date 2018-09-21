@@ -21,17 +21,17 @@ _**上次修改主題的時間：** 2012-10-12_
 
 [更新通訊清單](update-an-address-list-exchange-2013-help.md)
 
-[使用收件者篩選器來建立通訊清單](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)
+[使用收件者篩選器來建立通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)
 
 [移動通訊清單](move-an-address-list-exchange-2013-help.md)
 
 [移除通訊清單](remove-an-address-list-exchange-2013-help.md)
 
-[建立全域通訊清單](create-a-global-address-list-exchange-2013-help.md)
+[建立全域通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/create-global-address-list)
 
-[設定全域通訊清單屬性](configure-global-address-list-properties-exchange-2013-help.md)
+[設定全域通訊清單屬性](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/configure-global-address-list-properties)
 
-[移除全域通訊清單](remove-a-global-address-list-exchange-2013-help.md)
+[移除全域通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/remove-a-global-address-list)
 
 [更新全域通訊清單](update-a-global-address-list-exchange-2013-help.md)
 

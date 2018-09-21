@@ -19,16 +19,16 @@ _**上次修改主題的時間：** 2014-11-16_
 
 離線通訊錄 (OAB) 是已下載的通訊清單集合副本，可讓 Microsoft Outlook 使用者在與伺服器中斷連線時存取通訊錄資訊。Microsoft Exchange 會產生新的 OAB 檔案，壓縮檔案，然後將檔案放在本機共用上。您可以選擇離線工作的使用者可以用哪些通訊清單，也可以設定散佈通訊錄的方法。
 
-若要深入了解通訊清單，請參閱[通訊清單](address-lists-exchange-2013-help.md)。
+若要深入了解通訊清單，請參閱[通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/address-lists)。
 
 
 > [!IMPORTANT]  
-> OAB 資料是由 Microsoft Exchange OABGen 服務產生，該服務是一個信箱助理員。如果您使用安全性描述元來避免使用者檢視 Active Directory 中的特定收件者，則下載 OAB 的使用者將能夠檢視那些隱藏的收件者。因此，若要隱藏通訊清單中的收件者，請設定 <a href="https://technet.microsoft.com/zh-tw/library/aa998596(v=exchg.150)">Set-PublicFolder</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995950(v=exchg.150)">Set-MailContact</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995971(v=exchg.150)">Set-MailUser</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123981(v=exchg.150)">Set-Mailbox</a> 和 <a href="https://technet.microsoft.com/zh-tw/library/bb124955(v=exchg.150)">Set-DistributionGroup</a> Cmdlet 上的參數 <em>HiddenFromAddressListsEnabled</em>。或者也可以建立一個新的預設 OAB，其中不含隱藏的收件者。如需如何在 OAB 中新增或移除通訊清單的詳細資訊，請參閱<a href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">地址清單中新增或移除的通訊清單的離線通訊錄</a>。
+> OAB 資料是由 Microsoft Exchange OABGen 服務產生，該服務是一個信箱助理員。如果您使用安全性描述元來避免使用者檢視 Active Directory 中的特定收件者，則下載 OAB 的使用者將能夠檢視那些隱藏的收件者。因此，若要隱藏通訊清單中的收件者，請設定 <a href="https://technet.microsoft.com/zh-tw/library/aa998596(v=exchg.150)">Set-PublicFolder</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995950(v=exchg.150)">Set-MailContact</a>、<a href="https://technet.microsoft.com/zh-tw/library/aa995971(v=exchg.150)">Set-MailUser</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>、<a href="https://technet.microsoft.com/zh-tw/library/bb123981(v=exchg.150)">Set-Mailbox</a> 和 <a href="https://technet.microsoft.com/zh-tw/library/bb124955(v=exchg.150)">Set-DistributionGroup</a> Cmdlet 上的參數 <em>HiddenFromAddressListsEnabled</em>。或者也可以建立一個新的預設 OAB，其中不含隱藏的收件者。如需如何在 OAB 中新增或移除通訊清單的詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/address-books/offline-address-books/add-or-remove-an-address-list">地址清單中新增或移除的通訊清單的離線通訊錄</a>。
 
 
 
 
-要尋找與 OAB 相關的管理工作嗎？請參閱[離線通訊錄程序](offline-address-book-procedures-exchange-2013-help.md)。
+要尋找與 OAB 相關的管理工作嗎？請參閱[離線通訊錄程序](https://docs.microsoft.com/zh-tw/exchange/address-books/offline-address-books/offline-address-book-procedures)。
 
 **目錄**
 
@@ -76,7 +76,7 @@ Exchange 2013 僅支援 OAB版本 4，OAB 版本 4 已在 Exchange 2003 Service 
 
   - **離線通訊錄 (OAB) 發佈**   如果用戶端初始化 OAB 發佈要求，該要求將被傳遞給用戶端存取伺服器。之後，用戶端存取伺服器可以將要求路由至裝載 OAB 檔案的信箱伺服器。OAB 檔隨即被直接從信箱伺服器發佈到用戶端。
 
-  - **OAB 虛擬目錄**   OAB 虛擬目錄是 Web 式發佈方法所使用的發佈點。安裝 Exchange 時，預設會在網際網路資訊服務 (IIS) 的預設內部網站中建立名為 **OAB** 的新虛擬目錄。如果您有一些用戶端使用者是從組織的防火牆之外連接到 Outlook，則可以新增一個外部網站。或者，當您在命令介面中執行 **New-OABVirtualDirectory** Cmdlet 時，本機 Exchange 用戶端存取伺服器上的預設 IIS 網站中也會建立一個名為 OAB 的新虛擬目錄。如需詳細資訊，請參閱[建立離線通訊錄虛擬目錄](create-an-offline-address-book-virtual-directory-exchange-2013-help.md)。
+  - **OAB 虛擬目錄**   OAB 虛擬目錄是 Web 式發佈方法所使用的發佈點。安裝 Exchange 時，預設會在網際網路資訊服務 (IIS) 的預設內部網站中建立名為 **OAB** 的新虛擬目錄。如果您有一些用戶端使用者是從組織的防火牆之外連接到 Outlook，則可以新增一個外部網站。或者，當您在命令介面中執行 **New-OABVirtualDirectory** Cmdlet 時，本機 Exchange 用戶端存取伺服器上的預設 IIS 網站中也會建立一個名為 OAB 的新虛擬目錄。如需詳細資訊，請參閱[建立離線通訊錄虛擬目錄](https://docs.microsoft.com/zh-tw/exchange/address-books/offline-address-books/create-virtual-directory)。
 
   - **自動探索服務**   這是 Outlook 2013、Outlook 2010、Outlook 2007 以及部分可自動設定用戶端來存取 Exchange 之行動裝置中的功能。服務會在 Client Access Server 上執行，並傳回特定用戶端連線的正確 OAB URL。
 

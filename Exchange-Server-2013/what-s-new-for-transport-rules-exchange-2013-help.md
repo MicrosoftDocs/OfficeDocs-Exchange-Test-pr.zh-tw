@@ -23,9 +23,9 @@ _**上次修改主題的時間：** 2014-10-03_
 
 Exchange 2013 中的資料外洩防護 (DLP) 功能可協助組織減少敏感資料的意外洩漏情況。傳輸規則已更新，用以協助建立可伴隨並加強 DLP 原則的規則。若要了解更多關於傳輸規則中支援的 DLP，請參閱下列主題：
 
-[與傳輸規則整合敏感資訊規則](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[與傳輸規則整合敏感資訊規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 ## 新的述詞和動作
 

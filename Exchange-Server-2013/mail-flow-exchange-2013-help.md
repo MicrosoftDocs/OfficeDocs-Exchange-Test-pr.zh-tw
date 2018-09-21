@@ -174,7 +174,7 @@ Edge Transport Server 上的傳輸服務元件等同於信箱伺服器上的傳�
 <td><p>傳輸記錄會記錄郵件通過傳輸管線時的狀況。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-message-approval-exchange-2013-help.md">管理郵件核准</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">管理郵件核准</a></p></td>
 <td><p>仲裁的傳輸需要傳送給特定收件者的核准。</p></td>
 </tr>
 <tr class="even">

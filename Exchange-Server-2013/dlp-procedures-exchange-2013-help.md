@@ -17,11 +17,11 @@ _**適用版本：** Exchange Server 2013_
 
 _**上次修改主題的時間：** 2015-01-07_
 
-您可以開始您的郵件環境中使用的資料遺失防護 (DLP) 解決方案使用下列程序。若要了解概念與目標的 DLP，請參閱[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
+您可以開始您的郵件環境中使用的資料遺失防護 (DLP) 解決方案使用下列程序。若要了解概念與目標的 DLP，請參閱[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)。
 
-[從範本建立 DLP 原則](how-to-new-dlp-data-loss-prevention-policy-template.md)  資訊可協助您設定 Microsoft 提供的一個、 預先建立原則規則的集。原則範本是簡單的方法來開始與管理訊息與數個常見的法律和法規需求相關聯的資料。
+[從範本建立 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)  資訊可協助您設定 Microsoft 提供的一個、 預先建立原則規則的集。原則範本是簡單的方法來開始與管理訊息與數個常見的法律和法規需求相關聯的資料。
 
-[建立自訂的 DLP 原則](create-a-custom-dlp-policy-exchange-2013-help.md)  若要協助您設定以符合您組織可能未涵蓋之其中一個現有的 DLP 範本的特定需求的原則規則的資訊。您可以在單一原則中使用的規則條件包括除了新的敏感資訊類型的所有傳統傳輸規則。
+[建立自訂的 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)  若要協助您設定以符合您組織可能未涵蓋之其中一個現有的 DLP 範本的特定需求的原則規則的資訊。您可以在單一原則中使用的規則條件包括除了新的敏感資訊類型的所有傳統傳輸規則。
 
 [從檔案匯入自訂的 DLP 原則範本](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)  可協助您匯入包含原則的資訊設定檔資訊。建立獨立的 Exchange 化為 XML 檔案的原則必須符合特定格式需求才能正常運作。
 
@@ -38,7 +38,7 @@ _**上次修改主題的時間：** 2015-01-07_
 
 ## 相關資訊
 
-[管理原則提示](how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md)
+[管理原則提示](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips)
 
 [建立 DLP 原則偵測附隨報告](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

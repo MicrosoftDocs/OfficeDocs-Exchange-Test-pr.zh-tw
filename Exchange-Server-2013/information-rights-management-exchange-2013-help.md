@@ -222,10 +222,10 @@ IRM 保護是透過套用 AD RMS 權限原則範本來套用。您可以使用�
 
   - **日誌報告解密**   為了達到符合性或企業需求，組織可使用日誌記錄來保留郵件內容。日誌代理程式會針對要進行日誌記錄的郵件建立日誌報告，並在報告中包含郵件的中繼資料。原始郵件會附加至日誌報告。如果日誌報告中的郵件受 IRM 保護，則日誌報告解密會將郵件的純文字副本附加至日誌報告。如需詳細資訊，請參閱[日誌報告解密](journal-report-decryption-exchange-2013-help.md)。
 
-  - **Exchange 搜尋的 IRM 解密** 藉由 Exchange 搜尋的 IRM 解密，Exchange 搜尋可以進行受 IRM 保護的郵件內容索引。當探索管理員執行就地 eDiscovery 搜尋時，會在搜尋結果中傳回已建立索引的 IRM 保護郵件。如需更多資訊，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
+  - **Exchange 搜尋的 IRM 解密** 藉由 Exchange 搜尋的 IRM 解密，Exchange 搜尋可以進行受 IRM 保護的郵件內容索引。當探索管理員執行就地 eDiscovery 搜尋時，會在搜尋結果中傳回已建立索引的 IRM 保護郵件。如需更多資訊，請參閱[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
     
     > [!NOTE]  
-    > 中Exchange 2010 SP1 和更新版本、 探索管理角色群組的成員可以存取受 IRM 保護所探索搜尋傳回與郵件中的探索信箱。若要啟用此功能，請先<a href="https://technet.microsoft.com/zh-tw/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a>指令程式搭配<em>EDiscoverySuperUserEnabled</em>參數的物件。如需詳細資訊，請參閱<a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">將 IRM 設定 Exchange 搜尋與就地 ediscovery （英文）</a>。
+    > 中Exchange 2010 SP1 和更新版本、 探索管理角色群組的成員可以存取受 IRM 保護所探索搜尋傳回與郵件中的探索信箱。若要啟用此功能，請先<a href="https://technet.microsoft.com/zh-tw/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a>指令程式搭配<em>EDiscoverySuperUserEnabled</em>參數的物件。如需詳細資訊，請參閱<a href="configure-irm-for-exchange-search-and-https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">將 IRM 設定 Exchange 搜尋與就地 ediscovery （英文）</a>。
 
 
 若要啟用這些解密功能，Exchange 伺服器必須可以存取郵件。這是透過將同盟信箱 (由 Exchange 安裝程式所建立的系統信箱) 新增至 AD RMS 伺服器上的超級使用者群組來達成。如需詳細資訊，請參閱[至 AD RMS 超級使用者群組新增同盟信箱](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md)。

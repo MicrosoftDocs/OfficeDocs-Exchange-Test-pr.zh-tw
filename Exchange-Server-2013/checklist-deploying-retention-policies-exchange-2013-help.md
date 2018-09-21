@@ -19,9 +19,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 使用此檢查清單來部署MicrosoftExchange Server 2013組織中的保留原則。您開始使用此檢查清單之前，請確定您已熟悉下列主題中的概念：
 
-  - [通訊記錄管理](messaging-records-management-exchange-2013-help.md)
+  - [通訊記錄管理](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-  - [保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)
+  - [保留標記和保留原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
 ## 部署保留原則的檢查清單
 
@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>評估不同使用者集合的通訊記錄管理 (MRM) 需求。</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">通訊記錄管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/messaging-records-management">通訊記錄管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -53,27 +53,27 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>建立保留標記。</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">建立保留原則</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>建立保留原則。</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">建立保留原則</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>將保留標記新增至保留原則。</p></td>
-<td><p><a href="add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md">若要保留標記中新增或移除保留標記的保留原則</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags">若要保留標記中新增或移除保留標記的保留原則</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>為信箱啟用保留功能。</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">就地保留信箱保留 」 狀態</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">就地保留信箱保留 」 狀態</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>將保留原則套用至用於測試的單一信箱。</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">將保留原則套用至信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">將保留原則套用至信箱</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -88,7 +88,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>將保留原則套用至其他信箱。</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">將保留原則套用至信箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">將保留原則套用至信箱</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -98,7 +98,7 @@ _**上次修改主題的時間：** 2016-12-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>在截止期限從信箱移除保留功能。</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">就地保留信箱保留 」 狀態</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">就地保留信箱保留 」 狀態</a></p></td>
 </tr>
 </tbody>
 </table>

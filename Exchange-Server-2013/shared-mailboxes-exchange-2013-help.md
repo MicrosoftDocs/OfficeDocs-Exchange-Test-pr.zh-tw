@@ -51,5 +51,5 @@ _**上次修改主題的時間：** 2015-06-04_
 
 ## 轉換共用信箱
 
-在舊版的 Exchange 中，您可以使用一般的信箱為委派信箱。如果您有委派信箱，您可以使用命令介面將轉換那些委派信箱移轉至共用信箱。如需詳細資訊，請參閱[轉換信箱](convert-a-mailbox-exchange-2013-help.md)。
+在舊版的 Exchange 中，您可以使用一般的信箱為委派信箱。如果您有委派信箱，您可以使用命令介面將轉換那些委派信箱移轉至共用信箱。如需詳細資訊，請參閱[轉換信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox)。
 

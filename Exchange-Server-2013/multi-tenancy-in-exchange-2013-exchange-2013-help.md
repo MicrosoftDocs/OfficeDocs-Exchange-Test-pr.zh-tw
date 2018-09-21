@@ -31,7 +31,7 @@ Exchange 2013支援多重租用運用下列主要元件與功能：
 
   - **通訊錄原則 (Abp)**  最早出現在Exchange 2010 SP2、 Abp Exchange 2013中用來控制使用者存取權的通訊清單、 全域通訊清單 (GAL) 及離線通訊錄 (Oab) 的 Exchange 組織中。Abp 會將這些不同的 Active Directory 物件組成單一、 虛擬的物件可以指派給個別使用者，以及建立多重租用戶組織結構沿著這些資源邏輯群組。類似於與其Exchange 2010 SP2 中的Exchange 2013 ABP 功能。
     
-    深入了解 Abp Exchange 2013中，請參閱 ＜ [通訊錄原則](address-book-policies-exchange-2013-help.md)。
+    深入了解 Abp Exchange 2013中，請參閱 ＜ [通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies)。
 
   - **主控管理解決方案**  使用Exchange 2013提供託管式的 Exchange 解決方案某些管理員有益於使用自訂的主控管理方法。限制的 Exchange 系統管理中心 (EAC)，因為 Microsoft 適用於第三方協助他們在符合指導方針和核准的 framework 託管的Exchange 2013組織控制面板和自動化解決方案的開發。我們建議設定裝載的 Exchange 解決方案的組織運用這些工具來管理主控的組織其中的情況下需要它。
     

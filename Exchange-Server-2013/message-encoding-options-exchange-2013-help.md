@@ -399,9 +399,9 @@ Exchange 會使用下列清單所述的優先順序，決定傳送至 Exchange �
 
 [Exchange Online 中的遠端網域](https://technet.microsoft.com/zh-tw/library/jj966211\(v=exchg.150\))
 
-[管理郵件使用者](manage-mail-users-exchange-2013-help.md)
+[管理郵件使用者](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-users)
 
-[管理郵件連絡人](manage-mail-contacts-exchange-2013-help.md)
+[管理郵件連絡人](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-contacts)
 
 [在 Outlook 中的郵件格式變更](https://go.microsoft.com/fwlink/p/?linkid=397890)
 

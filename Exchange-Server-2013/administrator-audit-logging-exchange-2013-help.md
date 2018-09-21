@@ -143,11 +143,11 @@ Admin Audit Log agent
 </tr>
 <tr class="even">
 <td><p><code>CmdletParameters</code></p></td>
-<td><p>此欄位會包含<code>CmdletName</code>欄位中的 cmdlet 所執行時所指定的參數。也儲存在此欄位中，但在預設的輸出中不可見，為指定的值與參數，如果有任何。如需如何存取此欄位中的其他資訊，請參閱<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">搜尋角色群組變更或管理員稽核記錄檔</a>的詳細資訊。</p></td>
+<td><p>此欄位會包含<code>CmdletName</code>欄位中的 cmdlet 所執行時所指定的參數。也儲存在此欄位中，但在預設的輸出中不可見，為指定的值與參數，如果有任何。如需如何存取此欄位中的其他資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">搜尋角色群組變更或管理員稽核記錄檔</a>的詳細資訊。</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
-<td><p>此欄位會包含在<code>ObjectModified</code> ] 欄位中的物件所修改的屬性。也儲存在此欄位中，但不是可見的預設輸出中，且舊屬性的值已儲存的新值。如需如何存取此欄位中的其他資訊，請參閱<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">搜尋角色群組變更或管理員稽核記錄檔</a>的詳細資訊。</p>
+<td><p>此欄位會包含在<code>ObjectModified</code> ] 欄位中的物件所修改的屬性。也儲存在此欄位中，但不是可見的預設輸出中，且舊屬性的值已儲存的新值。如需如何存取此欄位中的其他資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">搜尋角色群組變更或管理員稽核記錄檔</a>的詳細資訊。</p>
 
 > [!IMPORTANT]  
 > 只有在 <strong>Set-AdminAuditLogConfig</strong>指令程式上的 <em>LogLevel</em> 參數設定為 <code>Verbose</code> 時，才會填入此欄位。
@@ -202,9 +202,9 @@ Admin Audit Log agent
 
   - **系統管理員稽核記錄**  您指定此報告可讓您匯出稽核記錄所記錄至 XML 檔案的指定時間範圍內的項目並再將透過電子郵件檔案傳送給收件者。XML 檔案的內容的相關資訊，請參閱[系統管理員稽核記錄檔結構](administrator-audit-log-structure-exchange-2013-help.md)。
 
-如需如何使用報告的詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+如需如何使用報告的詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)。
 
-如需 **\[稽核\]** 頁面上所包含其他報告的詳細資訊，請參閱[Exchange 稽核報告](exchange-auditing-reports-exchange-2013-help.md)。
+如需 **\[稽核\]** 頁面上所包含其他報告的詳細資訊，請參閱[Exchange 稽核報告](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)。
 
 ## Search-AdminAuditLog 指令程式
 
@@ -226,7 +226,7 @@ Admin Audit Log agent
 
 傳回每個稽核記錄項目包含在稽核記錄檔目錄中的表格中所述的資訊。根據預設，會傳回只的前 1000 日誌項目符合您指定的準則。不過，您可以覆寫此預設值並傳回*ResultSize*參數的更多或更少項目。您可以指定的值為`Unlimited`*ResultSize*參數來傳回所有符合指定的準則的記錄項目。
 
-如需如何使用 **Search-AdminAuditLog**指令程式的詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+如需如何使用 **Search-AdminAuditLog**指令程式的詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)。
 
 ## New-AdminAuditLogSearch 指令程式
 
@@ -243,7 +243,7 @@ Admin Audit Log agent
 
 
 
-如需如何使用 **New-AdminAuditLogSearch**指令程式的詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+如需如何使用 **New-AdminAuditLogSearch**指令程式的詳細資訊，請參閱[搜尋角色群組變更或管理員稽核記錄檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)。
 
 回到頁首
 
@@ -261,7 +261,7 @@ Admin Audit Log agent
 
 您可以使用與其他記錄項目相同的方法擷取手動稽核記錄項目，方法是使用 EAC \[稽核\] 頁面或使用 **Search-AdminAuditLog** 或 **New-AdminAuditLogSearch** 指令程式。
 
-若要檢視手動稽核記錄項目中 **Write-AdminAuditLog**指令程式上的 *Comment* 參數內容，請參閱[搜尋角色群組變更或管理員稽核記錄檔](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+若要檢視手動稽核記錄項目中 **Write-AdminAuditLog**指令程式上的 *Comment* 參數內容，請參閱[搜尋角色群組變更或管理員稽核記錄檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)。
 
 ## Active Directory 複寫
 

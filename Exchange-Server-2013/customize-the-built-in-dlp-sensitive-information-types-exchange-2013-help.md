@@ -259,9 +259,9 @@ _<strong>上次修改主題的時間：</strong> 2016-05-26_
 
 ## 相關資訊
 
-  - [DLP 規則如何套用至評估郵件](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
+  - [DLP 規則如何套用至評估郵件](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application)
 
-  - [建立自訂的 DLP 原則](create-a-custom-dlp-policy-exchange-2013-help.md)
+  - [建立自訂的 DLP 原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 
   - [在 Exchange 中的敏感資訊類型外觀](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

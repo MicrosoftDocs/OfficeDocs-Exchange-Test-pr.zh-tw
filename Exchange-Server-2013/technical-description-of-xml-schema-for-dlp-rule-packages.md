@@ -624,7 +624,7 @@ CLAffinity= 1 – \[(1 – CLEvidence 1) X (1 – CLEvidence 2) X (1 – CLEvide
 
 ## 相關資訊
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [定義自己的 DLP 範本和資訊類型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

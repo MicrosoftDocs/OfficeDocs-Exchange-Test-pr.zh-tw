@@ -249,7 +249,7 @@ UM 整合通訊總機號碼傳入呼叫都會以具有語音 (RTP/audio) SDP 設
 
 ## 設定傳真
 
-根據預設，當您安裝 Mailbox server，伺服器不被設定為允許處理或傳送給啟用 UM 之使用者的傳入傳真呼叫。若要設定 UM 與傳真協力廠商伺服器，您必須設定 UM 信箱原則並設定信箱伺服器和傳真協力廠商伺服器之間的驗證。如需詳細資訊，請參閱[設定傳入傳真](setting-up-incoming-faxing-exchange-2013-help.md)。
+根據預設，當您安裝 Mailbox server，伺服器不被設定為允許處理或傳送給啟用 UM 之使用者的傳入傳真呼叫。若要設定 UM 與傳真協力廠商伺服器，您必須設定 UM 信箱原則並設定信箱伺服器和傳真協力廠商伺服器之間的驗證。如需詳細資訊，請參閱[設定傳入傳真](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing)。
 
 回到頁首
 
@@ -283,7 +283,7 @@ UM 整合通訊總機號碼傳入呼叫都會以具有語音 (RTP/audio) SDP 設
 
 ## 多個 DID 電話號碼
 
-當您啟用使用者的整合通訊時，您必須輸入該使用者至少要有單一的分機號碼。您可以使用 Exchange 系統管理中心 (EAC) 來新增多個已啟用 UM 之使用者的分機號碼。如需詳細資訊，請參閱[新增分機號碼](add-an-extension-number-exchange-2013-help.md)。
+當您啟用使用者的整合通訊時，您必須輸入該使用者至少要有單一的分機號碼。您可以使用 Exchange 系統管理中心 (EAC) 來新增多個已啟用 UM 之使用者的分機號碼。如需詳細資訊，請參閱[新增分機號碼](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)。
 
 當已啟用 UM 的使用者有下列情況時，新增多個分機號碼會很有用：
 
@@ -297,7 +297,7 @@ UM 整合通訊總機號碼傳入呼叫都會以具有語音 (RTP/audio) SDP 設
 
 使用多個 DID 分機號碼的好處，在於已啟用 UM 的使用者會在一個 DID 分機號碼接收語音呼叫，而在另一個 DID 分機號碼接收傳真呼叫。 對使用者來說，針對語音信箱及傳真呼叫使用不同 DID 號碼會比較容易一點。
 
-如果您設定特定使用者的兩個 DID 分機號碼，DID 分機號碼可以來自不同 UM 撥號對應表。若要使用兩個 DID 號碼，您可以建立撥號對應表和作為專用伺服器會接收傳真呼叫和正向傳真訊息給使用者的信箱伺服器。如需詳細資訊，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
+如果您設定特定使用者的兩個 DID 分機號碼，DID 分機號碼可以來自不同 UM 撥號對應表。若要使用兩個 DID 號碼，您可以建立撥號對應表和作為專用伺服器會接收傳真呼叫和正向傳真訊息給使用者的信箱伺服器。如需詳細資訊，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
 
 在為已啟用 UM 的使用者設定多個 DID 分機號碼時可以使用以下選項：
 

@@ -176,7 +176,7 @@ Microsoft 權限管理連接器 (RMS 連接器) 是選用應用程式，可透�
 
 若要深入了解這些功能，請參閱：
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [版權管理連接器](https://go.microsoft.com/fwlink/p/?linkid=330432)
 
@@ -238,9 +238,9 @@ Exchange 2013 包含以下就地封存、 保留和 eDiscovery 的改善，有�
 
 Exchange 2013 包含下列關於稽核的改進功能：
 
-  - **稽核報告**  EAC 包含稽核報告功能，所以您可以從信箱稽核記錄與系統管理員稽核記錄來執行稽核報告或匯出項目。信箱稽核記錄會記錄信箱擁有者以外人員存取信箱的行為。這種記錄可以協助您判斷存取信箱的人員以及他們進行的動作。系統管理員稽核記錄會記錄系統管理員所執行的任何動作 (以 Exchange 管理命令介面指令程式為基礎)。這種記錄可以協助您疑難排解組態問題，或識別安全性或法務遵循相關問題的原因。如需詳細資訊，請參閱 [Exchange 稽核報告](exchange-auditing-reports-exchange-2013-help.md)。
+  - **稽核報告**  EAC 包含稽核報告功能，所以您可以從信箱稽核記錄與系統管理員稽核記錄來執行稽核報告或匯出項目。信箱稽核記錄會記錄信箱擁有者以外人員存取信箱的行為。這種記錄可以協助您判斷存取信箱的人員以及他們進行的動作。系統管理員稽核記錄會記錄系統管理員所執行的任何動作 (以 Exchange 管理命令介面指令程式為基礎)。這種記錄可以協助您疑難排解組態問題，或識別安全性或法務遵循相關問題的原因。如需詳細資訊，請參閱 [Exchange 稽核報告](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)。
 
-  - **檢視系統管理員稽核記錄**  您不需要匯出系統管理員稽核記錄，並等待長達 24 小時才收到以電子郵件寄送的系統管理員稽核記錄，您可以在 EAC 中檢視系統管理員稽核記錄項目。若要這麼做，請移至 \[規範管理\] \> \[稽核\]，並按一下 \[檢視系統管理員稽核記錄\]。可在多個頁面上顯示最多 1000 個項目。若要縮小搜尋範圍，您可以指定日期範圍。如需詳細資訊，請參閱[檢視系統管理員稽核記錄](view-the-administrator-audit-log-exchange-2013-help.md)。
+  - **檢視系統管理員稽核記錄**  您不需要匯出系統管理員稽核記錄，並等待長達 24 小時才收到以電子郵件寄送的系統管理員稽核記錄，您可以在 EAC 中檢視系統管理員稽核記錄項目。若要這麼做，請移至 \[規範管理\] \> \[稽核\]，並按一下 \[檢視系統管理員稽核記錄\]。可在多個頁面上顯示最多 1000 個項目。若要縮小搜尋範圍，您可以指定日期範圍。如需詳細資訊，請參閱[檢視系統管理員稽核記錄](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)。
 
 ## 反惡意程式碼保護
 
@@ -268,7 +268,7 @@ Exchange 2013 內建惡意程式碼篩選功能，可幫助您保護網路，免
 
   - **群組命名原則**  系統管理員現在可以使用 EAC 來建立*群組命名原則*，該原則可讓您標準化和管理組織中使用者所建立的通訊群組名稱。您可以要求使用者在建立通訊群組時，將特定首碼和尾碼新增至通訊群組的名稱，而且您可以封鎖特定字詞，防止使用這些字詞。此功能有助於減少群組名稱中不當字詞的使用。
     
-    如需詳細資訊，請參閱 [建立通訊群組命名原則](create-a-distribution-group-naming-policy-exchange-2013-help.md)。
+    如需詳細資訊，請參閱 [建立通訊群組命名原則](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
 
   - **郵件追蹤**  系統管理員也可以使用 EAC 來追蹤組織中使用者所接收或傳送之電子郵件的傳遞資訊。您只要選取信箱，然後搜尋不同使用者所傳送或接收的郵件即可。您可以搜尋主旨行中的特定文字，藉以縮小搜尋的範圍。產生的傳遞回報會透過傳遞程序追蹤郵件，並且指定郵件已成功傳遞、擱置傳遞或尚未傳遞。
     

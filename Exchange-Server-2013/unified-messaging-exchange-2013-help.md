@@ -255,19 +255,19 @@ Exchange管理命令介面內建Windows PowerShell 技術上是功能強大的�
 <td><p>了解 UM 語言套件及語言設定。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="telephone-system-integration-with-um-exchange-2013-help.md">UM 電話系統整合</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">UM 電話系統整合</a></p></td>
 <td><p>了解如何整合您的電話語音網路與 UM。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md">連線至您的電話網路的語音郵件系統</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system">連線至您的電話網路的語音郵件系統</a></p></td>
 <td><p>了解如何使用與設定 UM 元件以將電話語音網路連線至 Exchange UM。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="automatically-answer-and-route-incoming-calls-exchange-2013-help.md">自動接聽和路由傳送來電</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls">自動接聽和路由傳送來電</a></p></td>
 <td><p>了解如何建立 UM 自動語音應答，以及如何管理導覽功能表、問候語，以及上班與非上班時間的設定。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-up-voice-mail-for-users-exchange-2013-help.md">設定使用者的語音信箱</a></p></td>
+<td><p><a href="set-up-https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users">設定使用者的語音信箱</a></p></td>
 <td><p>了解如何建立及管理 UM 信箱原則，以及如何為使用者啟用 UM。</p></td>
 </tr>
 <tr class="odd">
@@ -275,7 +275,7 @@ Exchange管理命令介面內建Windows PowerShell 技術上是功能強大的�
 <td><p>了解如何設定用戶端功能，以讓使用者可以存取及管理其語音信箱訊息。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-outlook-voice-access-pin-security-exchange-2013-help.md">設定 Outlook 語音存取 PIN 安全性</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security">設定 Outlook 語音存取 PIN 安全性</a></p></td>
 <td><p>了解如何設定 Outlook 語音存取使用者的 PIN 碼需求。</p></td>
 </tr>
 <tr class="odd">
@@ -283,7 +283,7 @@ Exchange管理命令介面內建Windows PowerShell 技術上是功能強大的�
 <td><p>了解如何使用 UM 來保護語音訊息。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="run-reports-for-voice-mail-calls-exchange-2013-help.md">針對語音信箱通話執行的報告</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports">針對語音信箱通話執行的報告</a></p></td>
 <td><p>了解 UM 通話報告。</p></td>
 </tr>
 </tbody>

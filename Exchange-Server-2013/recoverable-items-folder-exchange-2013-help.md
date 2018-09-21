@@ -168,7 +168,7 @@ _**上次修改主題的時間：** 2016-12-09_
 </table>
 
 
-中Exchange 2013、 單一項目復原未啟用根據預設會針對新信箱或從舊版Exchange移動的信箱。您必須使用Exchange管理命令介面來啟用單一項目復原的信箱，然後設定或修改已刪除的項目保留期間。如需如何執行單一項目復原的詳細資訊，請參閱[復原刪除的郵件使用者的信箱](recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md)。
+中Exchange 2013、 單一項目復原未啟用根據預設會針對新信箱或從舊版Exchange移動的信箱。您必須使用Exchange管理命令介面來啟用單一項目復原的信箱，然後設定或修改已刪除的項目保留期間。如需如何執行單一項目復原的詳細資訊，請參閱[復原刪除的郵件使用者的信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)。
 
 回到頁首
 
@@ -220,9 +220,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 了解更多有關就地 eDiscovery、 就地保留，與訴訟暫止狀態，請參閱下列主題：
 
-  - [就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)
+  - [就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 回到頁首
 

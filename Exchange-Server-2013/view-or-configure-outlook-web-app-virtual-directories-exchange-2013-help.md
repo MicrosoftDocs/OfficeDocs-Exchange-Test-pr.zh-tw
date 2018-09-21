@@ -1,4 +1,4 @@
----
+﻿---
 title: '檢視或設定 Outlook Web App 虛擬目錄: Exchange 2013 Help'
 TOCTitle: 檢視或設定 Outlook Web App 虛擬目錄
 ms:assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
@@ -105,7 +105,7 @@ _**上次修改主題的時間：** 2013-08-12_
 5.  使用 **\[功能\]** 索引標籤，為虛擬目錄上的 Outlook Web App 使用者指定您想要啟用或停用的功能。
     
     > [!NOTE]  
-    > 個別使用者的功能設定會覆寫虛擬目錄設定。使用 <strong>Set-CASMailbox</strong> 指令程式，或使用 Outlook Web App 信箱原則，可以變更個別使用者的分割設定。如需詳細資訊，請參閱 <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 信箱原則</a>。
+    > 個別使用者的功能設定會覆寫虛擬目錄設定。使用 <strong>Set-CASMailbox</strong> 指令程式，或使用 Outlook Web App 信箱原則，可以變更個別使用者的分割設定。如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies">Outlook Web App 信箱原則</a>。
     
     使用核取方塊來啟用或停用功能。最常用的功能預設為顯示。若要查看所有可啟用或停用的功能，請按一下 \[其他選項\]。
     

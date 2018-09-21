@@ -90,7 +90,7 @@ Exchange 2013 中的公用資料夾已使用信箱基礎結構重新設計，可
 
   - 在 Exchange 管理命令介面中，使用 **\*-Mailbox** 這組指令程式。已新增下列參數至 [New-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997663\(v=exchg.150\)) 指令程式以支援公用資料夾信箱：
     
-      - *PublicFolder*   此參數與 **New-Mailbox** 指令程式搭配使用可建立公用資料夾信箱。建立公用資料夾信箱時，會以 `PublicFolder` 信箱類型建立新信箱。如需詳細資訊，請參閱[建立公用資料夾信箱](create-a-public-folder-mailbox-exchange-2013-help.md)。
+      - *PublicFolder*   此參數與 **New-Mailbox** 指令程式搭配使用可建立公用資料夾信箱。建立公用資料夾信箱時，會以 `PublicFolder` 信箱類型建立新信箱。如需詳細資訊，請參閱[建立公用資料夾信箱](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/create-public-folder-mailbox)。
     
       - *HoldForMigration*   此參數僅適用於將公用資料夾從舊版遷移至 Exchange 2013。如需詳細資訊，請參閱本主題稍後的Migrate Public folders from previous versions。
     
@@ -132,7 +132,7 @@ Exchange 2013 中的公用資料夾已使用信箱基礎結構重新設計，可
 
 在大型組織中，當您建立新的公用資料夾信箱時，階層必須先同步至該公用資料夾，之後使用者才能與其連線。否則，使用者在連線到 Outlook 時可能會看到不完整的公用資料夾結構。若要在同步進行期間不讓使用者嘗試連線到新的公用資料夾信箱，在建立公用資料夾信箱時請對 **New-Mailbox** 指令程式設定 *IsExcludedFromServingHierarchy* 參數。此參數可防止使用者連線到新建立的公用資料夾信箱。同步完成後，執行 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) 指令程式並將 *IsExcludedFromServingHierarchy* 參數設為 `false`，表示該公用資料夾信箱已準備好可供連線。您也可以使用 [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/zh-tw/library/jj218720\(v=exchg.150\)) 指令程式，根據 *SyncInfo* 和 *AssistantInfo* 內容來檢視同步狀態。
 
-如需詳細資訊，請參閱[建立公用資料夾](create-a-public-folder-exchange-2013-help.md)。
+如需詳細資訊，請參閱[建立公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/create-public-folder)。
 
 ## 公用資料夾內容
 
@@ -149,7 +149,7 @@ Exchange 2013 中的公用資料夾已使用信箱基礎結構重新設計，可
 
 您可以將公用資料夾移轉從放至 Exchange 2013 的 Exchange Server 版本或先前版本的 Exchange Server 至 Exchange Online。您也可以將 Exchange 2013 公用資料夾移轉至 Exchange Online。
 
-如果您已安裝 Exchange 2013 之前在組織中 Exchange 2010 SP3 或 Exchange 2007 SP3 RU10 公用資料夾，您必須將這些公用資料夾移轉至 Exchange 2013。為達成此目的，使用**PublicFolderMigrationRequst**指令程式。如需詳細資訊，請參閱[使用批次移轉公用資料夾從舊版移轉至 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)。如果您的組織移至 Exchange Online 時，您可以將公用資料夾移轉至雲端並加以升級，同時。如需詳細資訊，請參閱[使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)和[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)。
+如果您已安裝 Exchange 2013 之前在組織中 Exchange 2010 SP3 或 Exchange 2007 SP3 RU10 公用資料夾，您必須將這些公用資料夾移轉至 Exchange 2013。為達成此目的，使用**PublicFolderMigrationRequst**指令程式。如需詳細資訊，請參閱[使用批次移轉公用資料夾從舊版移轉至 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)。如果您的組織移至 Exchange Online 時，您可以將公用資料夾移轉至雲端並加以升級，同時。如需詳細資訊，請參閱[使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)和[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)。
 
 由於公用資料夾的儲存方式產生變更，舊版 Exchange 信箱無法存取 Exchange 2013 伺服器或 Exchange Online 上的公用資料夾階層。不過，Exchange 2013 伺服器或 Exchange Online 上的使用者信箱可以連接至舊版公用資料夾。Exchange 2013 公用資料夾和舊版公用資料夾無法同時存在於您的 Exchange 組織中。這實際上表示不同版本無法共存。將公用資料夾遷移至 Exchange Server 2013 或 Exchange Online 目前是一次性轉換過程。
 

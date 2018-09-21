@@ -26,7 +26,7 @@ _**上次修改主題的時間：** 2016-12-09_
 這些程序還需要您在您的信箱伺服器上停止並重新啟動 Microsoft Exchange Transport 服務。
 
 
-如需與傳輸規則相關的其他管理工作，請參閱[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)。
+如需與傳輸規則相關的其他管理工作，請參閱[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
 ## 開始之前有哪些須知？
 
@@ -140,7 +140,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 若要確認是否已成功註冊 Microsoft Office 2010 Filter Pack IFilter，請執行下列動作：
 
-1.  建立具有下列內容的傳輸規則。如需如何建立傳輸規則的詳細指示，請參閱[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)。
+1.  建立具有下列內容的傳輸規則。如需如何建立傳輸規則的詳細指示，請參閱[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
     
       - 寄件者是您的信箱。
     

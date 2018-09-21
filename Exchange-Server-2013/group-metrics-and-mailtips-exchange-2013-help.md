@@ -23,7 +23,7 @@ _**上次修改主題的時間：** 2012-10-16_
 
   - 您組織外部的成員的數目
 
-群組計量資料用來在 Microsoft Exchange Server 2013支援郵件提示。寄件提醒 」 是指他們正在撰寫郵件時顯示寄件者。如需郵件提示，包括寄件提醒Exchange 2013，提供的完整清單的詳細資訊請參閱[MailTips](mailtips-exchange-2013-help.md)。
+群組計量資料用來在 Microsoft Exchange Server 2013支援郵件提示。寄件提醒 」 是指他們正在撰寫郵件時顯示寄件者。如需郵件提示，包括寄件提醒Exchange 2013，提供的完整清單的詳細資訊請參閱[MailTips](https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips)。
 
 群組計量資料會使用下列的郵件提示：
 

@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2014-05-07_
 
 > [!CAUTION]  
 > 停用 Exchange 搜尋會影響全文搜尋的功能和效能，這些搜尋是使用者在線上模式或在 Windows 行動裝置上使用 Outlook 執行的。<br />
-> <a href="in-place-ediscovery-exchange-2013-help.md">就地 eDiscovery</a> 也依賴 Exchange 搜尋。如果您針對信箱資料庫或 Mailbox Server 停用 Exchange 搜尋，則就地 eDiscovery 搜尋就不會從資料庫或伺服器傳回任何郵件。
+> <a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地 eDiscovery</a> 也依賴 Exchange 搜尋。如果您針對信箱資料庫或 Mailbox Server 停用 Exchange 搜尋，則就地 eDiscovery 搜尋就不會從資料庫或伺服器傳回任何郵件。
 
 
 如需其他與 Exchange 搜尋相關的管理工作，請參閱 [Exchange 搜尋程序](exchange-search-procedures-exchange-2013-help.md)。

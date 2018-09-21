@@ -17,11 +17,11 @@ _**適用版本：** Exchange Server 2013_
 
 _**上次修改主題的時間：** 2012-10-11_
 
-[建立通訊錄原則](create-an-address-book-policy-exchange-2013-help.md)
+[建立通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/create-an-address-book-policy)
 
-[通訊錄原則指派給郵件使用者](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)
+[通訊錄原則指派給郵件使用者](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)
 
-[變更通訊錄原則的設定](change-the-settings-of-an-address-book-policy-exchange-2013-help.md)
+[變更通訊錄原則的設定](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
-[移除通訊錄原則](remove-an-address-book-policy-exchange-2013-help.md)
+[移除通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/remove-an-address-book-policy)
 

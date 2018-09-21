@@ -29,7 +29,7 @@ _<strong>上次修改主題的時間：</strong>2016-12-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td>如果您有 Exchange 2010 或 Exchange 2007 公用資料夾，請參閱<a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">為混合部署設定舊版的內部部署公用資料夾</a>。</td>
+<td>如果您有 Exchange 2010 或 Exchange 2007 公用資料夾，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders">為混合部署設定舊版的內部部署公用資料夾</a>。</td>
 </tr>
 </tbody>
 </table>

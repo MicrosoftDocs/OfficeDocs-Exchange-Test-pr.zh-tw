@@ -102,7 +102,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-27_
     
       - <strong>信箱資料庫</strong>  使用此選項可以指定而不是讓您選擇將資料庫的 Exchange 信箱資料庫。按一下 \[<strong>瀏覽\]</strong>以開啟 \[<strong>選取信箱資料庫</strong>\] 對話方塊。此對話方塊列出 Exchange 組織中的所有信箱資料庫。根據預設，會依照名稱排序的信箱資料庫。您也可以按一下 \[排序的資料庫伺服器名稱或版本所對應的資料行的標題。選取您要使用的信箱資料庫然後再按一下 \[<strong>確定\]</strong>。
     
-      - <strong>通訊錄原則</strong>  使用此選項指定通訊錄原則 (ABP) 的連結的信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者，將 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](address-book-policies-exchange-2013-help.md)。
+      - <strong>通訊錄原則</strong>  使用此選項指定通訊錄原則 (ABP) 的連結的信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者，將 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies)。
         
         在下拉式清單中，選取要與這個信箱產生關聯的原則。
 
@@ -130,7 +130,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-27_
 
 在您建立連結信箱後，您可以透過使用 Exchange 系統管理中心 (EAC) 或 Exchange 管理命令介面來進行變更或設定額外內容。
 
-您也可以同時變更多個連結信箱內容。如需詳細資訊，請參閱區段、 [管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)主題中的 「 大量編輯使用者信箱 」 小節。
+您也可以同時變更多個連結信箱內容。如需詳細資訊，請參閱區段、 [管理使用者信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)主題中的 「 大量編輯使用者信箱 」 小節。
 
 
 > [!IMPORTANT]  
@@ -252,7 +252,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-27_
 
   - <strong>通訊錄原則</strong>  此方塊顯示通訊錄原則套用至信箱。通訊錄原則可讓您線段的使用者將提供的通訊錄的自訂的檢視的特定群組中。若要套用或變更通訊錄原則套用至信箱，請選取從下拉式清單。
 
-  - <strong>整合通訊</strong>  預設為停用此功能。當您啟用整合通訊 (UM) 使用者可以使用您的組織 UM 功能與一組預設 UM 屬性會套用至使用者。按一下 \[<strong>啟用</strong>\] 以啟用 UM 的信箱。如需如何啟用 UM 的資訊，請參閱[啟用使用者的語音信箱](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+  - <strong>整合通訊</strong>  預設為停用此功能。當您啟用整合通訊 (UM) 使用者可以使用您的組織 UM 功能與一組預設 UM 屬性會套用至使用者。按一下 \[<strong>啟用</strong>\] 以啟用 UM 的信箱。如需如何啟用 UM 的資訊，請參閱[啟用使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)。
     
     > [!NOTE]  
     > 必須有 UM 撥號對應表和 UM 信箱原則，才能啟用 UM。

@@ -243,7 +243,7 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 撥號對應表，或設定現有的撥號對應表。UM 撥號對應表代表一組共用一般使用者分機號碼的傳統式或已啟用 SIP 的專用交換機 (PBX) 或 IP PBX。撥號對應表內由傳統式或已啟用 SIP 的 PBX 或 IP PBX 所主控的所有使用者分機號碼，都包含相同的位數。使用者可撥打其他人的電話分機，而不需要附加分機的特別號碼或撥打完整的電話號碼。
 
-在整合通訊中使用 UM 撥號對應表，可確保使用者電話分機號碼是唯一的。在某些電話語音網路中，可能會存在多個 PBX 或 IP PBX。在這些電話語音網路中，可能會有兩個使用者擁有相同的電話分機號碼。UM 撥號對應表可解決這個狀況。將兩個使用者放入兩個不同的 UM 撥號對應表，就能讓他們的分機變成唯一的。如需詳細資訊，請參閱 [UM 撥號對應表](um-dial-plans-exchange-2013-help.md)。
+在整合通訊中使用 UM 撥號對應表，可確保使用者電話分機號碼是唯一的。在某些電話語音網路中，可能會存在多個 PBX 或 IP PBX。在這些電話語音網路中，可能會有兩個使用者擁有相同的電話分機號碼。UM 撥號對應表可解決這個狀況。將兩個使用者放入兩個不同的 UM 撥號對應表，就能讓他們的分機變成唯一的。如需詳細資訊，請參閱 [UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)。
 
 如有需要，您可以使用 EAC 來建立 UM 撥號對應表：
 
@@ -293,7 +293,7 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SIP 的 PBX。在 VoIP 閘道、IP PBX 或已啟用 SIP 的 PBX 可以用來接聽來電，並為語音信箱使用者傳送撥出電話前，必須在目錄服務中建立 UM IP 閘道器。
 
-結合 UM IP 閘道器與 UM 群組搜尋，可在 VoIP 閘道、IP PBX 或已啟用 SIP 的 PBX 與 UM 撥號對應表之間建立連結。透過建立多個 UM 群組搜尋，您可以將單一 UM IP 閘道器與多個 UM 撥號對應表產生關聯。如需詳細資訊，請參閱 [UM IP 閘道](um-ip-gateways-exchange-2013-help.md)。
+結合 UM IP 閘道器與 UM 群組搜尋，可在 VoIP 閘道、IP PBX 或已啟用 SIP 的 PBX 與 UM 撥號對應表之間建立連結。透過建立多個 UM 群組搜尋，您可以將單一 UM IP 閘道器與多個 UM 撥號對應表產生關聯。如需詳細資訊，請參閱 [UM IP 閘道](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)。
 
 如有需要，您可以使用 EAC 來建立 UM IP 閘道器，如下所示：
 
@@ -331,7 +331,7 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 群組搜尋。電話語音群組搜尋能從單一號碼分配來電給多個分機或電話號碼。在整合通訊中，UM 群組搜尋是電話語音群組搜尋的一種邏輯表示法，可將 UM IP 閘道器連結至 UM 撥號對應表。
 
-您至少要有一個適用於所有 IP PBX 或 PBX 群組搜尋的 UM 群組搜尋。在您完成下列程序之後，依預設會建立一個 UM 群組搜尋。若您有多個 IP PBX 或 PBX 群組搜尋，則您必須建立其他 UM 群組搜尋。若要深入了解 UM 群組搜尋，請參閱[UM 群組搜尋](um-hunt-groups-exchange-2013-help.md)。
+您至少要有一個適用於所有 IP PBX 或 PBX 群組搜尋的 UM 群組搜尋。在您完成下列程序之後，依預設會建立一個 UM 群組搜尋。若您有多個 IP PBX 或 PBX 群組搜尋，則您必須建立其他 UM 群組搜尋。若要深入了解 UM 群組搜尋，請參閱[UM 群組搜尋](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)。
 
 如有需要，您可以使用 EAC 來建立 UM 群組搜尋，如下所示：
 
@@ -362,7 +362,7 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 ## 步驟 10：建立或設定 UM 自動語音應答
 
-根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 自動語音應答。您可以使用 UM 自動語音應答來建立語音功能表系統，讓外部與內部來電者得以使用 UM 自動語音應答功能表系統，以便尋找人員及撥打 (或轉接) 電話給組織內的公司使用者或部門。如需詳細資訊，請參閱[自動接聽和路由傳送來電](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)。
+根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 自動語音應答。您可以使用 UM 自動語音應答來建立語音功能表系統，讓外部與內部來電者得以使用 UM 自動語音應答功能表系統，以便尋找人員及撥打 (或轉接) 電話給組織內的公司使用者或部門。如需詳細資訊，請參閱[自動接聽和路由傳送來電](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)。
 
 在規模較小的部署中，您可能只想部署 UM，以便來電者能給使用者留下語音郵件。在這些部署中，並不一定要建立自動語音應答。不過，在大部分情況下，使用自動語音應答對於撥打電話到組織內部的外部來電者來說相當實用。
 
@@ -404,7 +404,7 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 ## 步驟 11：建立或設定 UM 信箱原則
 
-根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 信箱原則，或設定現有的 UM 信箱原則。當您開啟使用者使用整合通訊時，必須使用 UM 信箱原則。每個已啟用 UM 之使用者的信箱都必須連結到單一 UM 信箱原則。建立 UM 信箱原則後，就可以將一或多個啟用 UM 的信箱連結到 UM 信箱原則。這樣可讓您控制 PIN 碼安全性設定，如 PIN 碼最小位數或連結至 UM 信箱原則的已啟用 UM 之使用者的登入嘗試次數上限。如需詳細資訊，請參閱 [UM 信箱原則](um-mailbox-policies-exchange-2013-help.md)。
+根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 信箱原則，或設定現有的 UM 信箱原則。當您開啟使用者使用整合通訊時，必須使用 UM 信箱原則。每個已啟用 UM 之使用者的信箱都必須連結到單一 UM 信箱原則。建立 UM 信箱原則後，就可以將一或多個啟用 UM 的信箱連結到 UM 信箱原則。這樣可讓您控制 PIN 碼安全性設定，如 PIN 碼最小位數或連結至 UM 信箱原則的已啟用 UM 之使用者的登入嘗試次數上限。如需詳細資訊，請參閱 [UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)。
 
 如有需要，您可以使用 EAC 來建立 UM 信箱原則：
 
@@ -440,7 +440,7 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 ## 步驟 12：將現有的啟用 UM 的信箱移至 Exchange 2013
 
-在 Exchange 2010 整合通訊中，會在組織內的使用者可以使用語音信箱後對其套用一組預設的 UM 內容，以便他們可以使用 UM 功能。若要深入了解，請參閱 [使用者的語音信箱](voice-mail-for-users-exchange-2013-help.md)。
+在 Exchange 2010 整合通訊中，會在組織內的使用者可以使用語音信箱後對其套用一組預設的 UM 內容，以便他們可以使用 UM 功能。若要深入了解，請參閱 [使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)。
 
 升級過程中會有一段時間，您在 Exchange 2010 Mailbox Server 上以及在 Exchange 2013 Mailbox Server 上同時具有啟用 UM 的信箱。不過，如果您要將所有啟用 UM 的使用者移至 Exchange 2013 Mailbox Server，則必須從 Exchange 2013 伺服器使用 EAC 或命令介面中的 <strong>New-MoveRequest</strong> 指令程式，才能保留所有內容及設定，包括使用者的 PIN。
 
@@ -468,9 +468,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 ## 步驟 13：為新的使用者啟用 UM，或設定現有的啟用 UM 的使用者的設定
 
-使用者在啟用信箱的整合通訊前須先擁有信箱。但是根據預設，不會為擁有信箱的使用者啟用 UM。在使用者擁有 UM 功能之後，您才能管理、修改及設定使用者的 UM 屬性與語音信箱功能。您可以使用 EAC 或命令介面，讓使用者啟用 UM。若要深入了解，請參閱 [使用者的語音信箱](voice-mail-for-users-exchange-2013-help.md)。
+使用者在啟用信箱的整合通訊前須先擁有信箱。但是根據預設，不會為擁有信箱的使用者啟用 UM。在使用者擁有 UM 功能之後，您才能管理、修改及設定使用者的 UM 屬性與語音信箱功能。您可以使用 EAC 或命令介面，讓使用者啟用 UM。若要深入了解，請參閱 [使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)。
 
-讓使用者啟用 UM 時，您至少必須定義一個分機號碼，讓 UM 在提交語音郵件給使用者的信箱時使用，以及允許使用者使用 Outlook 語音存取。讓使用者啟用 UM 後，可以在使用者的信箱上設定 Exchange 整合通訊 (EUM) Proxy 位址以在使用者的信箱新增次要分機號碼，或是在 EAC 中新增或移除使用者的額外或次要分機。若要新增、修改或移除分機號碼、E.164 號碼或 SIP 位址，請參閱[擁有郵件功能的語音使用者程序](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
+讓使用者啟用 UM 時，您至少必須定義一個分機號碼，讓 UM 在提交語音郵件給使用者的信箱時使用，以及允許使用者使用 Outlook 語音存取。讓使用者啟用 UM 後，可以在使用者的信箱上設定 Exchange 整合通訊 (EUM) Proxy 位址以在使用者的信箱新增次要分機號碼，或是在 EAC 中新增或移除使用者的額外或次要分機。若要新增、修改或移除分機號碼、E.164 號碼或 SIP 位址，請參閱[擁有郵件功能的語音使用者程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures)。
 
 若要使用 EAC 讓使用者啟用整合通訊，請執行下列動作：
 
@@ -546,9 +546,9 @@ Exchange 2013 Client Access Server 是任何來電或整合通訊之工作階段
 
   -  [UM 服務](um-services-exchange-2013-help.md)
 
-  -  [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [支援 VoIP 閘道、 IP Pbx 和 Pbx 組態注意事項](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  -  [Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 
 ## 步驟 15：停用 Exchange 2010 Unified Messaging Server 上的自動答錄服務
 

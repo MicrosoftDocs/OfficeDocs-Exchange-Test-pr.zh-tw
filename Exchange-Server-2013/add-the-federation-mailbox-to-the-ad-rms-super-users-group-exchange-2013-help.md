@@ -63,7 +63,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 如果建立並設定為在 AD RMS 叢集超級使用者群組的通訊群組，您可以新增Exchange 2013同盟信箱為該群組的成員。如果未設定超級使用者群組，您必須建立通訊群組並新增同盟信箱的成員身分。
 
-1.  建立通訊群組專用做為 AD RMS 超級使用者群組。如需詳細資訊，請參閱[建立並管理通訊群組](create-and-manage-distribution-groups-exchange-2013-help.md)。
+1.  建立通訊群組專用做為 AD RMS 超級使用者群組。如需詳細資訊，請參閱[建立並管理通訊群組](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)。
 
 2.  將使用者**FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042**新增至新的通訊群組。同盟信箱位於系統信箱與因此在 EAC 中不可見。若要將其新增至通訊群組，您必須使用命令介面從[Add-DistributionGroupMember](https://technet.microsoft.com/zh-tw/library/bb124340\(v=exchg.150\))指令程式。
     

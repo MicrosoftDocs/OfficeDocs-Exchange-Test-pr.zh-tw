@@ -64,11 +64,11 @@ _**上次修改主題的時間：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="address-lists-exchange-2013-help.md">通訊清單</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/address-lists">通訊清單</a></p></td>
 <td><p>深入了解通訊清單和 GAL，做為組織收件者讓使用者輕易存取的方法。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="address-book-policies-exchange-2013-help.md">通訊錄原則</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies">通訊錄原則</a></p></td>
 <td><p>深入了解如何將通訊清單和 GAL 分成不同的虛擬組織。</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>深入了解 Proxy 電子郵件地址，讓收件者更容易探索。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="hierarchical-address-books-exchange-2013-help.md">階層式通訊錄</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-tw/exchange/address-books/hierarchical-address-books/hierarchical-address-books">階層式通訊錄</a></p></td>
 <td><p>深入了解如何自訂 GAL 和通訊清單，以符合組織的唯一商業結構。</p></td>
 </tr>
 <tr class="even">

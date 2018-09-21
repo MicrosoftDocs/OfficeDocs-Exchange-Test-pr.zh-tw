@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2012-11-16_
 
 在 Microsoft Exchange Server 2013，您可以設定資訊版權管理 (IRM) 方便Exchange搜尋可編製索引受 IRM 保護的郵件。
 
-當探索管理角色群組的成員執行[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)搜尋時，受 IRM 保護的郵件搜尋結果中傳回且複製到探索信箱搜尋中指定。此外，探索管理角色群組的成員可以使用Outlook Web App來存取已複製到探索信箱因為探索搜尋的受 IRM 保護之訊息。
+當探索管理角色群組的成員執行[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)搜尋時，受 IRM 保護的郵件搜尋結果中傳回且複製到探索信箱搜尋中指定。此外，探索管理角色群組的成員可以使用Outlook Web App來存取已複製到探索信箱因為探索搜尋的受 IRM 保護之訊息。
 
 
 > [!NOTE]  

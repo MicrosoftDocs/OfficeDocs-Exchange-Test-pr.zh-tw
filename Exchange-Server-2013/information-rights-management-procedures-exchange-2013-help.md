@@ -29,7 +29,7 @@ _**上次修改主題的時間：** 2013-11-01_
 
 [啟用或停用傳輸解密](enable-or-disable-transport-decryption-exchange-2013-help.md)
 
-[將 IRM 設定 Exchange 搜尋與就地 ediscovery （英文）](configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md)
+[將 IRM 設定 Exchange 搜尋與就地 ediscovery （英文）](configure-irm-for-exchange-search-and-https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
 [啟用或停用日誌報告解密](enable-or-disable-journal-report-decryption-exchange-2013-help.md)
 

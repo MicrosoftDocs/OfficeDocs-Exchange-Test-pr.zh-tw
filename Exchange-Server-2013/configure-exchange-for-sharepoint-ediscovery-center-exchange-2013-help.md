@@ -61,7 +61,7 @@ Microsoft Exchange Server 2013 包含可搭配 Microsoft SharePoint Server 2013 
 
 ## 步驟 3：將經過授權的使用者新增至探索管理角色群組
 
-將必須使用 SharePoint 2013 執行 eDiscovery 搜尋的使用者新增至 Exchange 2013 中的探索管理角色群組。如需詳細資訊，請參閱[Exchange 中指派 eDiscovery 權限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+將必須使用 SharePoint 2013 執行 eDiscovery 搜尋的使用者新增至 Exchange 2013 中的探索管理角色群組。如需詳細資訊，請參閱[Exchange 中指派 eDiscovery 權限](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)。
 
 
 > [!CAUTION]  

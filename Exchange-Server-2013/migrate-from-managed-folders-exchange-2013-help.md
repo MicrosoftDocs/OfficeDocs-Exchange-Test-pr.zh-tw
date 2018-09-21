@@ -17,7 +17,7 @@ _**適用版本：** Exchange Server 2013_
 
 _**上次修改主題的時間：** 2015-04-07_
 
-Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行通訊記錄管理 (MRM)。保留原則是可以套用至信箱的一組保留標記。如需詳細資訊，請參閱[保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)。不支援受管理的資料夾 (Exchange Server 2007 中引進的 MRM 技術)。
+Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行通訊記錄管理 (MRM)。保留原則是可以套用至信箱的一組保留標記。如需詳細資訊，請參閱[保留標記和保留原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。不支援受管理的資料夾 (Exchange Server 2007 中引進的 MRM 技術)。
 
 您可以遷移已套用受管理的資料夾信箱原則的信箱，以使用保留原則。若要這樣做，您建立的保留標記必須等同於連結至使用者之受管理資料夾信箱原則的受管理資料夾。
 
@@ -30,7 +30,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 
 > [!TIP]  
-> 您可以為信箱設定保留功能，以暫停處理保留原則或受管理資料夾信箱原則。在遷移案例中設定信箱的保留功能很實用，在測試信箱或少量工作信箱上測試新的原則設定之前，可避免刪除郵件或移至封存。如需詳細資訊，請參閱<a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">就地保留信箱保留 」 狀態</a>。
+> 您可以為信箱設定保留功能，以暫停處理保留原則或受管理資料夾信箱原則。在遷移案例中設定信箱的保留功能很實用，在測試信箱或少量工作信箱上測試新的原則設定之前，可避免刪除郵件或移至封存。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">就地保留信箱保留 」 狀態</a>。
 
 
 
@@ -277,7 +277,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 
 > [!NOTE]  
-> 您也可以使用 EAC 手動建立保留標記 (而不是根據受管理資料夾中的設定)。如需詳細資訊，請參閱<a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a>。
+> 您也可以使用 EAC 手動建立保留標記 (而不是根據受管理資料夾中的設定)。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">建立保留原則</a>。
 
 
 
@@ -300,7 +300,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 
 > [!NOTE]  
-> 您也可以使用 EAC 建立保留原則，並將保留標記新增至原則。如需詳細資訊，請參閱<a href="create-a-retention-policy-exchange-2013-help.md">建立保留原則</a>。
+> 您也可以使用 EAC 建立保留原則，並將保留標記新增至原則。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">建立保留原則</a>。
 
 
 
@@ -325,7 +325,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 
 > [!NOTE]  
-> 您也可以使用 EAC 將保留原則套用至使用者。如需詳細資訊，請參閱<a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">將保留原則套用至信箱</a>。
+> 您也可以使用 EAC 將保留原則套用至使用者。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">將保留原則套用至信箱</a>。
 
 
 

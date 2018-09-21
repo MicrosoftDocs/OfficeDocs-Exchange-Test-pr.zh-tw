@@ -78,7 +78,7 @@ Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄�
 
   - **MSGTRK**   這些記錄檔與傳輸服務相關聯。
 
-  - **MSGTRKMA**   這些記錄檔與仲裁的傳輸所使用的核准與拒絕相關聯。如需詳細資訊，請參閱＜[管理郵件核准](manage-message-approval-exchange-2013-help.md)＞。
+  - **MSGTRKMA**   這些記錄檔與仲裁的傳輸所使用的核准與拒絕相關聯。如需詳細資訊，請參閱＜[管理郵件核准](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-message-approval)＞。
 
   - **MSGTRKMD**   這些記錄檔與「信箱傳輸傳遞」服務傳遞至信箱的郵件相關聯。
 
@@ -343,7 +343,7 @@ Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄�
 </tr>
 <tr class="even">
 <td><p><strong>INITMESSAGECREATED</strong></p></td>
-<td><p>郵件已傳送給仲裁收件者，因此郵件已傳送至仲裁信箱進行核准。如需詳細資訊，請參閱＜<a href="manage-message-approval-exchange-2013-help.md">管理郵件核准</a>＞。</p></td>
+<td><p>郵件已傳送給仲裁收件者，因此郵件已傳送至仲裁信箱進行核准。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">管理郵件核准</a>＞。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LOAD</strong></p></td>
@@ -351,7 +351,7 @@ Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄�
 </tr>
 <tr class="even">
 <td><p><strong>MODERATIONEXPIRE</strong></p></td>
-<td><p>仲裁收件者的仲裁者始終未核准或拒絕郵件，因此郵件已過期。如需仲裁收件者的詳細資訊，請參閱<a href="manage-message-approval-exchange-2013-help.md">管理郵件核准</a>。</p></td>
+<td><p>仲裁收件者的仲裁者始終未核准或拒絕郵件，因此郵件已過期。如需仲裁收件者的詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">管理郵件核准</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MODERATORAPPROVE</strong></p></td>
@@ -478,7 +478,7 @@ Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄�
 </tr>
 <tr class="odd">
 <td><p><strong>APPROVAL</strong></p></td>
-<td><p>事件來源為搭配仲裁收件者使用的核准架構。如需詳細資訊，請參閱＜<a href="manage-message-approval-exchange-2013-help.md">管理郵件核准</a>＞。</p></td>
+<td><p>事件來源為搭配仲裁收件者使用的核准架構。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">管理郵件核准</a>＞。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BOOTLOADER</strong></p></td>

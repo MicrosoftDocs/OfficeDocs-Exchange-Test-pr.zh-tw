@@ -138,7 +138,7 @@ Outlook 使用 .pst 檔儲存位於使用者本機電腦或網路共用上的資
 
 郵件會移至封存信箱中的資料夾，而該資料夾名稱與主要信箱中的來源資料夾名稱相同。如果封存信箱中不存在具有相同名稱的資料夾，則會在 \[受管理的資料夾助理員\] 移動郵件時建立該資料夾。在封存信箱中重新建立相同的資料夾階層可讓使用者輕鬆地尋找郵件。
 
-若要深入了解保留原則、保留標記和 \[移至封存\] 保留動作，請參閱[保留標記和保留原則](retention-tags-and-retention-policies-exchange-2013-help.md)。
+若要深入了解保留原則、保留標記和 \[移至封存\] 保留動作，請參閱[保留標記和保留原則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。
 
 ## 預設 MRM 原則
 
@@ -273,13 +273,13 @@ Exchange 2013 安裝程式會建立 \[預設 MRM 原則\] 這項預設封存和�
 
   - **Exchange 搜尋**快速搜尋郵件的能力與封存信箱變得更加重要。在主要和封存信箱之間執行 Exchange 搜尋沒有什麼差別。兩種信箱中的內容都會進行索引。由於未在使用者的電腦上對封存信箱進行快取 (即使是在 Exchange 快取模式下使用 Outlook)，封存的搜尋結果一定是由 Exchange 搜尋所提供。在 Outlook 2010 和更新版本以及 Outlook Web App 中搜尋整個信箱時，搜尋結果會包含使用者的主要和封存信箱。
 
-  - **就地 eDiscovery**   探索管理員執行就地 eDiscovery 搜尋時，也會搜尋使用者的封存信箱。從 Exchange 系統管理中心 (EAC) 建立探索搜尋時，並沒有提供排除封存信箱的選項。使用 Exchange 管理命令介面建立探索搜尋時，可以使用 *DoNotIncludeArchive* 參數將封存排除。如需詳細資訊，請參閱 [New-MailboxSearch](https://technet.microsoft.com/zh-tw/library/dd298064\(v=exchg.150\))。若要深入了解，請參閱[就地 eDiscovery](in-place-ediscovery-exchange-2013-help.md)。
+  - **就地 eDiscovery**   探索管理員執行就地 eDiscovery 搜尋時，也會搜尋使用者的封存信箱。從 Exchange 系統管理中心 (EAC) 建立探索搜尋時，並沒有提供排除封存信箱的選項。使用 Exchange 管理命令介面建立探索搜尋時，可以使用 *DoNotIncludeArchive* 參數將封存排除。如需詳細資訊，請參閱 [New-MailboxSearch](https://technet.microsoft.com/zh-tw/library/dd298064\(v=exchg.150\))。若要深入了解，請參閱[就地 eDiscovery](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
     
     > [!IMPORTANT]  
     > 您無法使用就地 eDiscovery 搜尋中斷連線的信箱。
 
 
-  - **就地保留和訴訟資料暫留：** 當您對信箱進行就地保留或訴訟資料暫留時，會同時保留主要和封存信箱。若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+  - **就地保留和訴訟資料暫留：** 當您對信箱進行就地保留或訴訟資料暫留時，會同時保留主要和封存信箱。若要深入了解就地保留和訴訟資料暫留，請參閱[就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
   - **可復原的項目資料夾**封存信箱內含其所擁有的 \[可復原的項目\] 資料夾，受限於主要信箱中相同 \[可復原的項目\] 資料夾的配額。若要深入了解可復原的項目，請參閱[可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)。
 

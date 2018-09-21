@@ -186,5 +186,5 @@ Exchange 2013整合的通訊依賴 VoIP 閘道的權限翻譯或轉換 TDM 或�
 
 [UM 通訊協定、 連接埠和服務](um-protocols-ports-and-services-exchange-2013-help.md)
 
-[Exchange 2013 的電話語音 advisor](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+[Exchange 2013 的電話語音 advisor](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 

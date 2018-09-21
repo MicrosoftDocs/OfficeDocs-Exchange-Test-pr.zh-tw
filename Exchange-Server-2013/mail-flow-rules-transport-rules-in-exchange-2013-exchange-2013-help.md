@@ -23,23 +23,23 @@ _**上次修改主題的時間：** 2017-04-28_
 
 如需Exchange Online中的郵件流程規則，請參閱[Exchange Online 中的郵件流程規則 (傳輸規則)](https://technet.microsoft.com/zh-tw/library/jj919238\(v=exchg.150\))。Exchange Online Protection中的郵件流程規則的相關資訊，請參閱[Exchange Online Protection 中的郵件流程規則 (傳輸規則)](https://technet.microsoft.com/zh-tw/library/dn271424\(v=exchg.150\))
 
-您可以使用Exchange 系統管理中心 (EAC) 或Exchange 管理命令介面來管理郵件流程規則。如需如何管理傳輸規則，請參閱[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)指示。
+您可以使用Exchange 系統管理中心 (EAC) 或Exchange 管理命令介面來管理郵件流程規則。如需如何管理傳輸規則，請參閱[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)指示。
 
-針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。若要深入了解測試選項，請參閱＜[測試郵件流程規則](test-a-mail-flow-rule-exchange-2013-help.md)＞和＜[原則提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)＞。
+針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。若要深入了解測試選項，請參閱＜[測試郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)＞和＜[原則提示](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/policy-tips)＞。
 
 若要使用郵件流程規則實作特定的訊息原則，請參閱下列主題︰
 
   - [使用傳輸規則檢查郵件附件](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [常見的附件封鎖案例](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [常見的附件封鎖案例](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
   - [整個組織的免責聲明、簽章、頁尾或標頭](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-  - [使用郵件流程規則讓郵件可以略過雜亂](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [使用郵件流程規則讓郵件可以略過雜亂](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-  - [使用清單中的文字、 片語或模式為基礎的路由電子郵件的郵件流程規則](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [使用清單中的文字、 片語或模式為基礎的路由電子郵件的郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-  - [常見的郵件核准案例](common-message-approval-scenarios-exchange-2013-help.md)
+  - [常見的郵件核准案例](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
 ## 郵件流程規則元件
 
@@ -131,14 +131,14 @@ _**上次修改主題的時間：** 2017-04-28_
 <td><p>表示規則套用到郵件的順序。預設優先順序是以規則的建立時間為基礎 (較舊規則的優先順序高於較新的規則，而較高優先順序的規則會在較低優先順序的規則之前處理)。</p>
 <p>您可以在規則清單中向上或向下移動規則，以變更 EAC 中的規則優先順序。在 PowerShell 中，您可設定優先順序號碼 (0 為最高優先順序)。</p>
 <p>例如，如果有一個規則是拒絕含有信用卡號碼的郵件，而另一個規則是需要核准，則您一定希望先執行拒絕規則，並停止套用其他規則。</p>
-<p>如需詳細資訊，請參閱<a href="manage-mail-flow-rules-exchange-2013-help.md">設定郵件流程規則的優先順序</a>。</p></td>
+<p>如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules">設定郵件流程規則的優先順序</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>模式</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>您可以指定是否要讓規則立即開始處理郵件，或您是否想要測試規則，而不影響郵件傳遞 (不論是否有資料遺失防護或 DLP 原則提示)。</p>
-<p>原則提示可在 Outlook 或 網頁型 Outlook 中呈現簡短附註，以提供可能原則違規的相關資訊給正在建立郵件的人員。如需詳細資訊，請參閱<a href="technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md">原則提示</a>。</p>
-<p>如需模式的詳細資訊，請參閱＜<a href="test-a-mail-flow-rule-exchange-2013-help.md">測試郵件流程規則</a>＞。</p></td>
+<p>原則提示可在 Outlook 或 網頁型 Outlook 中呈現簡短附註，以提供可能原則違規的相關資訊給正在建立郵件的人員。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/policy-tips">原則提示</a>。</p>
+<p>如需模式的詳細資訊，請參閱＜<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">測試郵件流程規則</a>＞。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>於下列日期啟用此規則</strong></p>
@@ -259,7 +259,7 @@ _**上次修改主題的時間：** 2017-04-28_
 
   - 每部信箱伺服器快取以避免重複的Active Directory查詢，以決定群組的成員資格的擴充的通訊群組。根據預設，在擴充的群組快取的項目過期取決每隔四個小時。因此，群組的成員資格變更未偵測到的郵件流程規則更新擴充的群組快取之前。若要在信箱伺服器上強制快取立即更新，請重新啟動Microsoft Exchange Transport 服務。您需要重新啟動每個您要強制更新快取的信箱伺服器上的服務。
 
-建立及設定 Edge Transport server 上的郵件流程規則會儲存在伺服器上本機 AD LDS 的執行個體。郵件流程規則沒有自動的複寫發生 Edge Transport server 上。Edge Transport server 上的規則只適用於透過本機伺服器的流程的郵件。如果您需要將多個 Edge Transport server 上套用相同的郵件流程規則集，您可以複製 Edge Transport server 的組態，或匯出及匯入的郵件流程規則。如需詳細資訊，請參閱[Edge Transport server 複製的組態](edge-transport-server-cloned-configuration-exchange-2013-help.md)和[匯入或匯出郵件流程規則集合](manage-mail-flow-rules-exchange-2013-help.md)。
+建立及設定 Edge Transport server 上的郵件流程規則會儲存在伺服器上本機 AD LDS 的執行個體。郵件流程規則沒有自動的複寫發生 Edge Transport server 上。Edge Transport server 上的規則只適用於透過本機伺服器的流程的郵件。如果您需要將多個 Edge Transport server 上套用相同的郵件流程規則集，您可以複製 Edge Transport server 的組態，或匯出及匯入的郵件流程規則。如需詳細資訊，請參閱[Edge Transport server 複製的組態](edge-transport-server-cloned-configuration-exchange-2013-help.md)和[匯入或匯出郵件流程規則集合](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
 每當 Mailbox server 或 Edge Transport server 上的傳輸服務會偵測已修改的郵件流程規則、 事件會記錄在事件檢視器 （事件識別碼 4002 在 Mailbox server 及 Edge Transport server 上的事件識別碼 16028） 的應用程式記錄檔。
 
@@ -285,7 +285,7 @@ _**上次修改主題的時間：** 2017-04-28_
 
 ## 相關資訊
 
-[管理郵件流程規則](manage-mail-flow-rules-exchange-2013-help.md)
+[管理郵件流程規則](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [傳輸規則條件 （述詞）](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
