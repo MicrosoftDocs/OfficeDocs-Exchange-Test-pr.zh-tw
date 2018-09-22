@@ -1415,7 +1415,7 @@
       href: https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies
       items:
       - name: 案例： 部署通訊錄原則
-        href: scenario-deploying-https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies
+        href: scenario-deploying-address-book-policies-exchange-2013-help.md
       - name: Address book 原則程序
         href: address-book-policy-procedures-exchange-2013-help.md
         items:
@@ -1502,7 +1502,7 @@
       href: https://docs.microsoft.com/zh-tw/exchange/address-books/hierarchical-address-books/hierarchical-address-books
       items:
       - name: 啟用或停用階層式通訊錄
-        href: enable-or-disable-https://docs.microsoft.com/zh-tw/exchange/address-books/hierarchical-address-books/hierarchical-address-books
+        href: https://docs.microsoft.com/zh-tw/exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books
   - name: 共用
     href: sharing-exchange-2013-help.md
     items:
@@ -1688,7 +1688,7 @@
       href: https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
       items:
       - name: 啟用或停用郵件提示
-        href: enable-or-disable-https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: enable-or-disable-mailtips-exchange-2013-help.md
       - name: 設定您的組織的大型對象大小
         href: https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size
       - name: 設定收件者的自訂郵件提示
@@ -1699,7 +1699,7 @@
         - name: 管理郵件提示的組織關係
           href: https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
       - name: 群組計量 」 和 「 郵件提示
-        href: group-metrics-and-https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: group-metrics-and-mailtips-exchange-2013-help.md
         items:
         - name: 設定群組計量
           href: configure-group-metrics-exchange-2013-help.md
@@ -1977,7 +1977,7 @@
         - name: 設定具有相似名稱的使用者自動語音應答
           href: configure-an-auto-attendant-for-users-who-have-similar-names-exchange-2013-help.md
     - name: 設定使用者的語音信箱
-      href: set-up-https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users
+      href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/set-up-voice-mail
       items:
       - name: UM 信箱原則
         href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies
@@ -2115,7 +2115,7 @@
           - name: 啟用 UM IP 閘道器上的撥出電話
             href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-outgoing-calls-on-um-ip-gateways
           - name: 停用 UM IP 閘道器上的撥出電話
-            href: disable-outgoing-calls-on-https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways
+            href: https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways
           - name: 設定撥號代碼
             href: configure-dial-codes-exchange-2013-help.md
           - name: 建立使用者的撥號規則
