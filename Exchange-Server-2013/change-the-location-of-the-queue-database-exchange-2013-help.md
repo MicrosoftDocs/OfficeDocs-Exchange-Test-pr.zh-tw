@@ -94,24 +94,30 @@ _**上次修改主題的時間：** 2015-03-09_
 2.  在 \[命令提示字元\] 視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 檔案：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  修改下列位於 `<appSettings>` 區段的機碼。
     
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```powershell
+    <add key="QueueDatabasePath" value="<LocalPath>" />
+    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```
     
     例如，若要在 D:\\Queue\\QueueDB 中建立新佇列資料庫，並在 D:\\Queue\\QueueLogs 中建立新交易記錄，請使用下列值：
     
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```powershell
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  完成後，儲存並關閉 EdgeTransport.exe.config 檔案。
 
 5.  執行下列命令，以重新啟動 Microsoft Exchange 傳輸服務：
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 如何才能了解這是否正常運作？
 
@@ -140,26 +146,30 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 2.  在 \[命令提示字元\] 視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 檔案：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  修改下列位於 `<appSettings>` 區段的機碼：
     
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```powershell
+    <add key="QueueDatabasePath" value="<LocalPath>" />
+    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```
     
     例如，若要將佇列資料庫的位置變更為 D:\\Queue\\QueueDB，並將交易記錄的位置變更為 D:\\Queue\\QueueLogs，請使用下列值：
     
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```powershell
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  完成後，儲存並關閉 EdgeTransport.exe.config 檔案。
 
 5.  執行下列命令，以停止 Microsoft Exchange Transport 服務：
     
     ```powershell
-net stop MSExchangeTransport
-```
+    net stop MSExchangeTransport
+    ```
 
 6.  將現有的 Mail.que 與 Trn.chk 資料庫檔案從原始位置移至新位置上。
 
@@ -168,8 +178,8 @@ net stop MSExchangeTransport
 8.  執行下列命令，以啟動 Microsoft Exchange Transport 服務：
     
     ```powershell
-net start MSExchangeTransport
-```
+    net start MSExchangeTransport
+    ```
 
 ## 如何才能了解這是否正常運作？
 

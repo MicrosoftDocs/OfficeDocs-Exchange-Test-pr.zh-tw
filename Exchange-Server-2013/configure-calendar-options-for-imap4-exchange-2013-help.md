@@ -46,7 +46,9 @@ Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
 
 此範例可讓 IMAP4 使用者從內部伺服器存取行事曆資訊。
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 
 此範例會讓 IMAP4 使用者能够在外部伺服器上從網際網路存取行事曆資訊。
 

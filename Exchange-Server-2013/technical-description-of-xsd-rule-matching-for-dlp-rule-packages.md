@@ -23,7 +23,8 @@ _**上次修改主題的時間：** 2016-07-28_
 
 `Match`元素用在`Pattern`與`Evidence`元素代表基礎關鍵字、 regex 或即將比對的函數。比對本身的定義儲存外部`Rule`元素，並參照到`idRef`必要的屬性。多個`Match`元素可以包含圖樣定義其可以直接在`Pattern`元素中包含或結合使用`Any`元素來定義比對語意中。
 
-    <?xml version="1.0" encoding="utf-8"?>
+```powershell
+<?xml version="1.0" encoding="utf-8"?>
     <Rules packageId="...">
             ...
     <Entity id="...">
@@ -40,6 +41,8 @@ _**上次修改主題的時間：** 2016-07-28_
             ...
     
     </Rules>
+```
+
 
 ## 定義關鍵字比對
 
@@ -54,7 +57,8 @@ _**上次修改主題的時間：** 2016-07-28_
 
 
 
-    <Keyword id="Word_Example">
+```powershell
+<Keyword id="Word_Example">
         <Group matchStyle="word">
            <Term>card verification</Term>
            <Term>cvn</Term>
@@ -73,6 +77,8 @@ _**上次修改主題的時間：** 2016-07-28_
            <Term>security</Term>
         </Group>
     </Keyword>
+```
+
 
 ## 定義規則運算式的比對
 
@@ -200,7 +206,8 @@ _**上次修改主題的時間：** 2016-07-28_
 
 Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識別碼\] 屬性。可在多個實體與親和性規則參照的單一 Regex 元素。Regex 運算式會定義為 Regex 元素的值。
 
-    <Regex id="CCRegex">
+```powershell
+<Regex id="CCRegex">
          \bcc\#\s|\bcc\#\:\s
     </Regex>
     ...
@@ -211,6 +218,7 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
     <Regex id="NorthCarolinaDriversLicenseNumber">
         (^|\s|\:)(\d{1,8})($|\s|\.\s)
     </Regex>
+```    
 
 ## 結合多個比對元素
 
@@ -225,21 +233,21 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
     比對任一子比對元素的精確子集
 
 <!-- end list -->
-```
+```powershell
     <Any minMatches="3" maxMatches="3">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
 ```
-```
+```powershell
     <Any maxMatches="0">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
 ```
-```
+```powershell
     <Any minMatches="1" maxMatches="1">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
@@ -258,7 +266,8 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
 
 <!-- end list -->
 
-    <Entity id="..." patternsProximity="300" >
+```powershell
+<Entity id="..." patternsProximity="300" >
         <Pattern confidenceLevel="65">
             <IdMatch idRef="UnformattedSSN" />
             <Any maxMatches="1">
@@ -284,6 +293,8 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
             </Any>
         </Pattern>
     </Entity>
+```
+
 
 ## 範例： 美國證規則
 
@@ -303,7 +314,8 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
 
 接下來，請將說明轉譯為規則架構呈現：
 
-    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
+```powershell
+<Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
              patternsProximity="300" RecommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="FormattedSSN" />
@@ -315,6 +327,7 @@ Regex 元素具有會做為相對應的實體或相似性規則中參照 \[識�
           </Any>
         </Pattern>
     </Entity>
+```    
 
 ## 相關資訊
 

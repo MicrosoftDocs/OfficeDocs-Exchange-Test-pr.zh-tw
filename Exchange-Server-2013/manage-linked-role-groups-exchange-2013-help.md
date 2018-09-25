@@ -65,12 +65,14 @@ _**上次修改主題的時間：** 2012-10-09_
 1.  以變數儲存外部 Active Directory 樹系認證。
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  使用下列語法建立連結的角色群組。
     
-        New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```powershell
+    New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```
 
 3.  使用外部 Active Directory 樹系中電腦上的 \[Active Directory 使用者和電腦\]，新增或移除外部 USG 的成員。
 
@@ -88,8 +90,8 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+New-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles "Transport Rules", "Journaling"
 ```
-    New-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles "Transport Rules", "Journaling"
 
 ## 使用命令介面建立具有自訂管理範圍的連結角色群組
 
@@ -98,12 +100,14 @@ $ForeignCredential = Get-Credential
 1.  以變數儲存外部 Active Directory 樹系認證。
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  使用下列語法建立連結的角色群組。
     
-        New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -CustomConfigWriteScope <name of configuration scope> -CustomRecipientWriteScope <name of recipient scope> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```powershell
+    New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -CustomConfigWriteScope <name of configuration scope> -CustomRecipientWriteScope <name of recipient scope> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```
 
 3.  使用外部 Active Directory 樹系中電腦上的 \[Active Directory 使用者和電腦\]，新增或移除外部 USG 的成員。
 
@@ -121,8 +125,8 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
 ```
-    New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
 
 如需管理範圍的詳細資訊，請參閱[了解管理角色範圍](understanding-management-role-scopes-exchange-2013-help.md)。
 
@@ -133,12 +137,14 @@ $ForeignCredential = Get-Credential
 1.  以變數儲存外部 Active Directory 樹系認證。
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  使用下列語法建立連結的角色群組。
     
-        New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope <OU name> -Roles <role1, role2, role3...>
+    ```powershell
+    New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope <OU name> -Roles <role1, role2, role3...>
+    ```
 
 3.  使用外部 Active Directory 樹系中電腦上的 \[Active Directory 使用者和電腦\]，新增或移除外部 USG 的成員。
 
@@ -156,8 +162,8 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
 ```
-    New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
 
 如需管理範圍的詳細資訊，請參閱[了解管理角色範圍](understanding-management-role-scopes-exchange-2013-help.md)。
 
@@ -170,12 +176,14 @@ $ForeignCredential = Get-Credential
 1.  以變數儲存外部 Active Directory 樹系認證。
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  使用下列語法在現有連結的角色群組上變更外部 USG。
     
-        Set-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential 
+    ```powershell
+    Set-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential 
+    ```
 
 此範例會執行下列動作：
 
@@ -187,6 +195,6 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
 ```
-    Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
 

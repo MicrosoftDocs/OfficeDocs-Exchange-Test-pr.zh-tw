@@ -44,8 +44,8 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定 Active Directory 站台連結的 Exchange 特定成本，請執行下列命令：
 
-``` 
- Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
+```powershell
+Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
 ```
 
 此範例會對於名稱為 IPSiteLinkAB 的 IP 站台連結設定 Exchange 特定成本 10。
@@ -67,8 +67,8 @@ Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
 1.  執行下列命令：
     
     ```powershell
-Get-AdSiteLink | Format-List Name,ExchangeCost
-```
+    Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```
 
 2.  確認已針對 Active Directory 站台連結設定 Exchange 成本。
 
@@ -101,8 +101,8 @@ Set-AdSite "Site B" -HubSiteEnabled $false
 1.  執行下列命令：
     
     ```powershell
-Get-AdSite | Format-List Name,HubSiteEnabled
-```
+    Get-AdSite | Format-List Name,HubSiteEnabled
+    ```
 
 2.  確認 Active Directory 站台的 *HubSiteEnabled* 值是 `True`。
 

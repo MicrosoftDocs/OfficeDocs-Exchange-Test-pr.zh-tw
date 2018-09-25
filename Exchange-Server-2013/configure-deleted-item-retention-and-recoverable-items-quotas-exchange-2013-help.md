@@ -86,7 +86,9 @@ Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
 
 此範例會設定警告配額的 12 GB 和 April Stewart 信箱的可復原的項目配額 15 GB 的可復原的項目。
 
-    Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+```
 
 
 > [!NOTE]  

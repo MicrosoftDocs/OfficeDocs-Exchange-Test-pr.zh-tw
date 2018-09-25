@@ -72,11 +72,15 @@ _**上次修改主題的時間：** 2012-10-12_
 
 此範例會使用 *RecipientFilter* 參數來建立通訊清單 MyAddressList，並納入屬於信箱使用者且將 `StateOrProvince` 設定為 `Washington` 或 `Oregon` 的收件者。
 
-    New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```powershell
+New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```
 
 此範例會使用內建條件在 All Rooms 父系容器中建立子系通訊清單 Building 34 Meeting Rooms。
 
-    New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```powershell
+New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-AddressList](https://technet.microsoft.com/zh-tw/library/aa996912\(v=exchg.150\))。
 

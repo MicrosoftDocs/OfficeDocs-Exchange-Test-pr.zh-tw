@@ -77,11 +77,21 @@ Modifying multivalued properties is similar to modifying single-valued propertie
 <tbody>
 <tr class="odd">
 <td><p>Add one or more values to a multivalued property</p></td>
-<td><pre><code>@{Add=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+@{Add="<value1>", "<value2>", "<value3>"}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>Remove one or more values from a multivalued property</p></td>
-<td><pre><code>@{Remove=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+@{Remove="<value1>", "<value2>", "<value3>"}
+```
+</td>
 </tr>
 </tbody>
 </table>
@@ -107,9 +117,13 @@ Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
 
 More complex combinations can be used, such as adding or removing values to and from a property at the same time. To do so, insert a semicolon (`;` ) between `Add` and `Remove` actions. For example:
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```
 
 If we use the `Get-RecipientFilterConfig | Format-List BlockedRecipients` command again, we can see that the email addresses for Carter, Sam, and Brian have been added while the address for John has been removed.
 
-    BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+```powershell
+BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+```
 

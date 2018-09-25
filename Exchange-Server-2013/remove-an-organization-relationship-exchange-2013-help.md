@@ -57,13 +57,8 @@ Remove-OrganizationRelationship -Identity "Contoso"
 
   - 執行下列命令介面命令，確認組織關係資訊已移除。
     
-    ```powershell
-Get-OrganizationRelationship | Format-List
-```
-
-
+  ```powershell
+  Get-OrganizationRelationship | Format-List
+  ```
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
-
-
-

@@ -59,13 +59,17 @@ _**上次修改主題的時間：** 2016-12-09_
 
 在內部部署 Exchange 組織的 Exchange 管理命令介面 (Exchange PowerShell) 中執行下列命令。
 
-    New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+```powershell
+New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+```
 
 ## 步驟 2：啟用 Exchange Online 組織的夥伴應用程式
 
 在內部部署 Exchange 組織的 Exchange PowerShell 中執行下列命令。
 
-    Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce00-000000000000" -and $_.Realm -eq ""} | Set-PartnerApplication -Enabled $true
+```powershell
+Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce00-000000000000" -and $_.Realm -eq ""} | Set-PartnerApplication -Enabled $true
+```
 
 ## 步驟 3：匯出內部部署授權憑證
 
@@ -73,25 +77,27 @@ _**上次修改主題的時間：** 2016-12-09_
 
 1.  將下列文字儲存到 PowerShell 指令碼檔案 (例如 **ExportAuthCert.ps1**)。
     
-        $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
-         
-        if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
-        {
-            md $env:SYSTEMDRIVE\OAuthConfig
-        }
-        cd $env:SYSTEMDRIVE\OAuthConfig
-         
-        $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
-        $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
-        $certBytes = $oAuthCert.Export($certType)
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    ```powershell
+    $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
+             
+    if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
+    {
+        md $env:SYSTEMDRIVE\OAuthConfig
+    }
+    cd $env:SYSTEMDRIVE\OAuthConfig
+             
+    $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
+    $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+    $certBytes = $oAuthCert.Export($certType)
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    ```
 
 2.  在內部部署 Exchange 組織的 Exchange PowerShell 中，執行您在前一個步驟中建立的 PowerShell 指令碼。例如：
     
     ```powershell
-.\ExportAuthCert.ps1
-```
+    .\ExportAuthCert.ps1
+    ```
 
 ## 步驟 4： 將內部部署授權憑證上傳至 Azure Active Directory ACS
 
@@ -101,29 +107,31 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  將下列文字儲存到 PowerShell 指令碼檔案 (例如 **UploadAuthCert.ps1**)。
     
-        Connect-MsolService;
-        Import-Module msonlineextended;
-        
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        
-        $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-        $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-        
-        $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-        $cer.Import($CertFile);
-        $binCert = $cer.GetRawCertData();
-        $credValue = [System.Convert]::ToBase64String($binCert);
-        
-        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-        
-        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-        New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+    ```powershell
+    Connect-MsolService;
+    Import-Module msonlineextended;
+    
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    
+    $objFSO = New-Object -ComObject Scripting.FileSystemObject;
+    $CertFile = $objFSO.GetAbsolutePathName($CertFile);
+    
+    $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
+    $cer.Import($CertFile);
+    $binCert = $cer.GetRawCertData();
+    $credValue = [System.Convert]::ToBase64String($binCert);
+    
+    $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+    
+    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+    New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+    ```
 
 3.  執行您在前一個步驟中建立的 PowerShell 指令碼。例如：
     
     ```powershell
-.\UploadAuthCert.ps1
-```
+    .\UploadAuthCert.ps1
+    ```
 
 4.  啟動指令碼之後，會顯示 \[認證\] 對話方塊。輸入 Microsoft Online Azure AD組織中的租用戶系統管理員帳戶的認證。之後執行指令碼、 Windows PowerShell Azure AD工作階段保持在開啟狀態。您將使用此下一個步驟中執行 PowerShell 指令碼。
 
@@ -146,22 +154,24 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
 
 1.  將下列文字儲存到 PowerShell 指令碼檔案 (例如 **RegisterEndpoints.ps1**)。這個範例使用萬用字元來註冊 contoso.com 的所有端點。以您的內部部署 Exchange 組織的主機名稱授權單位取代 **contoso.com**。
     
-        $externalAuthority="*.contoso.com"
-         
-        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-         
-        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
-         
-        $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
-        $p.ServicePrincipalNames.Add($spn);
-         
-        Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+    ```powershell
+    $externalAuthority="*.contoso.com"
+    
+    $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+    
+    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
+    
+    $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
+    $p.ServicePrincipalNames.Add($spn);
+    
+    Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+    ```
 
 2.  在Azure Active Directory的 Windows PowerShell 中執行您在上一個步驟中建立 Windows PowerShell 指令碼。例如：
     
     ```powershell
-.\RegisterEndpoints.ps1
-```
+    .\RegisterEndpoints.ps1
+    ```
 
 ## 步驟 6：建立從內部部署組織至 Office 365 的 IntraOrganizationConnector
 
@@ -169,7 +179,9 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
 
 使用 Exchange PowerShell，在內部部署組織中執行下列 Cmdlet：
 
-    New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
+```powershell
+New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
+```
 
 ## 步驟 7：建立從 Office 365 租用戶至內部部署 Exchange 組織的 IntraOrganizationConnector
 
@@ -190,13 +202,15 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
 
 使用 Windows PowerShell 執行下列 Cmdlet：
 
-    $UserCredential = Get-Credential
+```powershell
+$UserCredential = Get-Credential
+
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+
+Import-PSSession $Session
     
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    
-    Import-PSSession $Session
-    
-    New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
+New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
+```
 
 ## 步驟 8：針對 Exchange 2013 SP1 以前的伺服器設定 AvailabilityAddressSpace
 
@@ -224,16 +238,16 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
 Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 ```
 
-
 > [!NOTE]  
 > 如果從多部伺服器傳回虛擬目錄資訊，請確定您使用針對 Exchange 2013 SP1 Client Access Server 傳回的端點。它將會針對 <em>AdminDisplayVersion</em> 參數顯示 15.0 (組建 847.32) 或以上版本。
 
 
 
-
 若要設定 *AvailabilityAddressSpace*，請使用 Exchange PowerShell 並在內部部署組織中執行下列指令程式：
 
-    Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+```powershell
+Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+```
 
 ## 如何知道這是否正常運作？
 
@@ -244,15 +258,17 @@ Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 > 使用遠端 PowerShell 連線至 Exchange Online 組織時，您必須使用 <strong>Import-PSSession</strong> 指令程式並搭配 <em>AllowClobber</em> 參數，將最新的命令匯入至本機 PowerShell 工作階段。
 
 
-
-
 若要驗證內部部署 Exchange 組織是否可成功連線至 Exchange Online，請在內部部署組織的 Exchange PowerShell 中執行下列命令：
 
-    Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+```powershell
+Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+```
 
 若要驗證 Exchange Online 組織是否可成功連線至內部部署 Exchange 組織，請使用[遠端 PowerShell](https://technet.microsoft.com/zh-tw/library/jj984289\(v=exchg.150\)) 連線至 Exchange Online 組織並執行下列命令：
 
-    Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+```powershell
+Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+```
 
 如此，例如，Test-oauthconnectivity-服務 EWS TargetUri https://lync.contoso.com/metadata/json/1-Mailbox ExchangeOnlineBox1-Verbose |fl
 
@@ -262,7 +278,6 @@ Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 > <code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
 > <code>IsValid: True</code><br />
 > <code>ObjectState: New</code>
-
 
 
 > [!TIP]  

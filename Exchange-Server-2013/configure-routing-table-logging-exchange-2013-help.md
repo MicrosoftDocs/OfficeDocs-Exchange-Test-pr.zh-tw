@@ -46,7 +46,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 執行下列命令：
 
-    Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```powershell
+Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```
 
 此範例會在名稱為 Mailbox01 的信箱伺服器上設定以下的路由表記錄：
 
@@ -58,7 +60,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```
 
 
 > [!NOTE]  
@@ -73,7 +77,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  在命令介面中，執行下列命令：
     
-        Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -82,26 +88,28 @@ _**上次修改主題的時間：** 2015-04-08_
 1.  在命令提示字元視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 應用程式組態檔：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  修改下列位於 `<appSettings>` 區段的機碼。
     
-    ```command line
-<add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
-```
+    ```powershell
+    <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```
     
     例如，若要將路由表的自動重新計算間隔變更為 10 小時，請使用以下的值：
     
-    ```command line
-<add key="RoutingConfigReloadInterval" value="10:00:00" />
-```
+    ```powershell
+    <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```
 
 3.  完成後，儲存並關閉 EdgeTransport.exe.config 檔案。
 
 4.  執行下列命令，以重新啟動 Microsoft Exchange 傳輸服務：
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 如何才能了解這是否正常運作？
 

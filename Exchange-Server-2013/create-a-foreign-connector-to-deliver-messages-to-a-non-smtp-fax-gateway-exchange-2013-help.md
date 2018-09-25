@@ -51,7 +51,9 @@ _**上次修改主題的時間：** 2012-10-17_
 
 1.  執行下列命令來建立外部連接器：
     
-        New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```powershell
+    New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```
     
     在本例中為 Hub01 和 Hub02 是您要指定將郵件傳送至外部系統貴組織中的來源伺服器。使用多個來源伺服器提供容錯。
 
@@ -76,8 +78,8 @@ Get-ForeignConnector | Format-List Name
 1.  執行下列指令碼來指定外部連接器的放置目錄（將 *DropDirectory* 參數值變更為適合您環境的路徑）：
     
     ```powershell
-Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
-```
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## 如何才能了解此步驟是否正常運作？
 

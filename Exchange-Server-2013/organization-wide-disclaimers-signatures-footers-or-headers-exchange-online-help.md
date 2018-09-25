@@ -114,24 +114,44 @@ kathleen@contoso.com<br />
 <td><p>在組織外，如果原始訊息並不包含免責聲明的文字，例如「CONTOSO 法律注意事項」</p></td>
 <td><p>條件：<strong>收件者位於</strong> &gt; <strong>在組織外</strong></p>
 <p>例外狀況：<strong>主旨或內文</strong> &gt; <strong>主旨或內文符合這些文字模式</strong> &gt; <strong>CONTOSO 法律注意事項</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches &quot;CONTOSO LEGAL NOTICE&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches "CONTOSO LEGAL NOTICE"
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>內送郵件具有可執行檔附件</p></td>
 <td><p>條件 1：<strong>寄件者位於</strong> &gt; <strong>組織外部</strong></p>
 <p>條件 2：<strong>任何附件</strong> &gt; <strong>具有可執行的內容</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -AttachmentHasExecutableContent</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -AttachmentHasExecutableContent
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>寄件者在行銷部門中</p></td>
 <td><p>條件：<strong>寄件者</strong> &gt; <strong>是此群組的成員</strong> &gt; <strong>群組名稱</strong></p></td>
-<td><pre><code>-FromMemberOf &quot;Marketing Team&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromMemberOf "Marketing Team"
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>來自外部寄件者給銷售討論群組的每個訊息</p></td>
 <td><p>條件 1：<strong>寄件者位於</strong> &gt; <strong>組織外部</strong></p>
 <p>條件 2：<strong>訊息</strong> &gt; <strong>收件者或副本方塊包含此人員</strong> &gt; <strong>群組名稱</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -SentTo &quot;Sales Discussion Group&quot; -PrependSubject &quot;Sent to Sales Discussion Group: &quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -SentTo "Sales Discussion Group" -PrependSubject "Sent to Sales Discussion Group: "
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>在外寄郵件前面加上廣告一個月</p></td>
@@ -179,7 +199,7 @@ kathleen@contoso.com<br />
 </tr>
 <tr class="odd">
 <td><p>新增影像</p></td>
-<td><p>使用 <code>&lt;IMG&gt;</code> 標記指向在網際網路上可用的影像。例如，<code>&lt;IMG src=&quot;http://contoso.com/images/companylogo.gif&quot; alt=&quot;Contoso logo&quot;&gt;</code></p>
+<td><p>使用 <code>&lt;IMG&gt;</code> 標記指向在網際網路上可用的影像。例如，<code>&lt;IMG src="http://contoso.com/images/companylogo.gif" alt="Contoso logo"&gt;</code></p>
 <p>請記住，根據預設 Outlook Web App 和 Outlook 會封鎖外部 Web 內容，包括影像。如果使用者想要檢視封鎖的外部內容，可能需要執行特定動作。這表示使用 <code>IMG</code> 標記新增的影像預設可能無法顯示。建議您使用您的收件者可能會在電子郵件用戶端中使用的 <code>IMG</code> 標記，來測試免責聲明，以確定影像顯示良好。</p></td>
 </tr>
 <tr class="even">
@@ -194,6 +214,7 @@ kathleen@contoso.com<br />
 
 例如，以下是包含簽章、`IMG` 標記和內嵌 CSS 的 HTML 免責聲明的範例。
 
+  ```xml
     <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
     %%displayname%%</br>
     %%title%%</br>
@@ -207,6 +228,7 @@ kathleen@contoso.com<br />
     <p style="font-size:8pt; line-height:10pt; font-family: 'Cambria','times roman',serif;">This message contains confidential information and is intended only for the individual(s) addressed in the message. If you are not the named addressee, you should not disseminate, distribute, or copy this e-mail. If you are not the intended recipient, you are notified that disclosing, distributing, or copying this e-mail is strictly prohibited.  </p>
     <span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span></br></br>
     </div>
+  ```
 
 ## 無法加入免責聲明時的後援選項
 

@@ -26,13 +26,8 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 > 建議您先在測試環境中測試處理程序，再於生產環境中從受管理的資料夾遷移至保留原則。
 
 
-
-
-
 > [!TIP]  
 > 您可以為信箱設定保留功能，以暫停處理保留原則或受管理資料夾信箱原則。在遷移案例中設定信箱的保留功能很實用，在測試信箱或少量工作信箱上測試新的原則設定之前，可避免刪除郵件或移至封存。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">就地保留信箱保留 」 狀態</a>。
-
-
 
 
 如需有關 MRM 的其他管理工作相關資訊，請參閱[通訊記錄管理程序](messaging-records-management-procedures-exchange-2013-help.md)。
@@ -263,6 +258,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會根據 Contoso 受管理的資料夾信箱原則中顯示的對應受管理內容設定，來建立保留標記。
 
+```powershell
     New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
     New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
     New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
@@ -270,6 +266,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
     New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
     New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
     New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RetentionPolicyTag](https://technet.microsoft.com/zh-tw/library/dd335226\(v=exchg.150\))。
 
@@ -280,10 +277,9 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 > 您也可以使用 EAC 手動建立保留標記 (而不是根據受管理資料夾中的設定)。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">建立保留原則</a>。
 
 
-
-
 此範例會根據 Contoso 受管理的資料夾信箱原則中顯示的受管理資料夾和對應的受管理內容設定，來建立保留標記。保留設定是以手動方式指定，而未使用 *ManagedFolderToUpgrade* 參數。
 
+```powershell
     New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
     New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
     New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
@@ -291,6 +287,7 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
     New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
     New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
     New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RetentionPolicyTag](https://technet.microsoft.com/zh-tw/library/dd335226\(v=exchg.150\))。
 
@@ -303,11 +300,11 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 > 您也可以使用 EAC 建立保留原則，並將保留標記新增至原則。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">建立保留原則</a>。
 
 
-
-
 此範例會建立保留原則 RP-Corp，並將最近建立的保留標記連結到該原則。
 
+```powershell
     New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RetentionPolicy](https://technet.microsoft.com/zh-tw/library/dd297970\(v=exchg.150\))。
 
@@ -330,8 +327,6 @@ Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
 > 您也可以使用 EAC 將保留原則套用至使用者。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">將保留原則套用至信箱</a>。
 
 
-
-
 此範例會將最近建立的保留原則 RP-Corp 套用到信箱使用者 Ken Kwok。
 
 ```powershell
@@ -348,13 +343,15 @@ Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
     
     此命令會擷取已套用至組織中所有信箱的保留原則，以及信箱的保留狀態。
     
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```
 
   - 在受管理的資料夾助理員以保留原則處理信箱後，使用 [Get-RetentionPolicyTag](https://technet.microsoft.com/zh-tw/library/dd298009\(v=exchg.150\)) 指令程式來擷取使用者信箱中佈建的保留標記。
     
     此命令會擷取實際套用至 April Stewart 信箱的保留標記。
     
     ```powershell
-Get-RetentionPolicyTag -Mailbox astewart
-```
+    Get-RetentionPolicyTag -Mailbox astewart
+    ```
 

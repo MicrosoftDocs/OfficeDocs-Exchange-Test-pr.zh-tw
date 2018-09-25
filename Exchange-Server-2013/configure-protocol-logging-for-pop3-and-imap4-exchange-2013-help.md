@@ -42,8 +42,10 @@ _**上次修改主題的時間：** 2012-11-27_
 
 此範例會啟用 Client Access Server CAS01 上的 IMAP4 或 POP3 的通訊協定記錄。
 
-    Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
-    Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
+```powershell
+Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
+Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
+```
 
 
 > [!NOTE]  
@@ -58,8 +60,10 @@ _**上次修改主題的時間：** 2012-11-27_
 
 此範例會停用 Client Access Server CAS01 上的 IMAP4 或 POP3 的通訊協定記錄。
 
-    Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
-    Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
+```powershell
+Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
+Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
+```
 
 
 > [!NOTE]  
@@ -77,8 +81,8 @@ _**上次修改主題的時間：** 2012-11-27_
   - *LogFileLocation*  此參數會指定 POP3 或 IMAP4 通訊協定記錄檔的位置。根據預設，POP3 通訊協定記錄檔位於 C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Logging\\Pop3 目錄中。本範例會啟用 POP3 通訊協定記錄在 Client Access server CAS01 上。它也會變更記錄 C:\\Pop3Logging 目錄將 POP3 通訊協定。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
-```
+    Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
+    ```
 
   - *LogFileRollOverSettings*  此參數會定義 POP3 或 IMAP4 通訊協定記錄建立新的記錄檔的頻率。根據預設，新的記錄檔會建立每一天。可能的值為：
     
@@ -93,22 +97,22 @@ Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\P
     此設定會套用只時*LogPerFileSizeQuota*參數的值設為零。此範例會變更登入的用戶端存取伺服器 CAS01 為每小時建立新的記錄檔將 POP3 通訊協定。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
+    ```
 
   - *LogPerFileSizeQuota*  此參數會定義 POP3 或 IMAP4 通訊協定記錄檔的大小上限 （位元組）。根據預設，這個值設為零。當此值設為零時，會將新的通訊協定記錄檔建立好*LogFileRollOverSettings*參數所指定的頻率。
     
     此範例會將 Client Access Server CAS01 上的 POP3 通訊協定記錄變更為在記錄檔達到 2 MB 時建立新的記錄檔。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
+    ```
     
     此範例會將 Client Access Server CAS01 上的 POP3 通訊協定記錄變更為使用相同記錄檔，不論其建立日期與大小為何。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
+    ```
 
 
 > [!NOTE]  

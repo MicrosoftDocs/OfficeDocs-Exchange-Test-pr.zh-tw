@@ -30,8 +30,8 @@ _**上次修改主題的時間：** 2014-02-10_
     若要檢視附件篩選可偵測到之所有副檔名及內容類型的完整清單，請在 Edge Transport Server 上執行下列命令：
     
     ```powershell
-Get-AttachmentFilterEntry | Format-List
-```
+    Get-AttachmentFilterEntry | Format-List
+    ```
 
 在您定義要尋找的檔案之後，可以設定要對含有這些附件的郵件採取的動作。您不可以針對不同類型的附件指定不同的動作。您必須針對所有符合任何附件篩選的郵件，設定下列其中一個動作：
 

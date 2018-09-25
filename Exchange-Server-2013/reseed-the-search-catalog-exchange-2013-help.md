@@ -22,8 +22,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 30%" />
+<col style="width: 20%" />
 <col style="width: 25%" />
 <col style="width: 25%" />
 </colgroup>
@@ -91,17 +91,13 @@ Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
 如果只有一個信箱資料庫副本，則您必須重新建立內容索引類別目錄，以手動重新植入搜尋類別目錄。
 
 1.  執行下列命令，以停止 Microsoft Exchange 搜尋服務和 Microsoft Exchange 搜尋主控制器服務。
+    
+    ```powershell
+    Stop-Service MSExchangeFastSearch
     ```
-```powershell
-Stop-Service MSExchangeFastSearch
-```
+    ```powershell
+    Stop-Service HostControllerService
     ```
-    ```
-```powershell
-Stop-Service HostControllerService
-```
-    ```
-
 2.  刪除、移動或重新命名包含 Exchange 內容索引目錄的資料夾。此資料夾名為 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`。例如，您可能重新命名資料夾 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`。
     
     > [!NOTE]  
@@ -109,24 +105,20 @@ Stop-Service HostControllerService
 
 
 3.  執行下列命令，以重新啟動 Microsoft Exchange 搜尋服務和 Microsoft Exchange 搜尋主控制器服務。
+    
+    ```powershell
+    Start-Service MSExchangeFastSearch
     ```
-```powershell
-Start-Service MSExchangeFastSearch
-```
+    ```powershell
+    Start-Service HostControllerService
     ```
-    ```
-```powershell
-Start-Service HostControllerService
-```
-    ```
-
     重新啟動這些服務之後，Exchange 搜尋將會重建內容索引類別目錄。
 
 ## 如何才能了解這是否正常運作？
 
 Exchange 搜尋重新植入內容索引類別目錄可能需要一些時間。執行下列命令來顯示重新植入程序的狀態。
 
-    Get-MailboxDatabaseCopyStatus | FL Name,*Index*
-
+```powershell
+Get-MailboxDatabaseCopyStatus | FL Name,*Index*
+```
 當重新植入搜尋類別目錄正在進行中，*ContentIndexState* 屬性的值是**正在編目**。當重新植入完成時，這個值會變更為**狀況良好**。
-

@@ -95,7 +95,9 @@ Get-ExchangeServer | format-list
 
 此範例在 Client Access Server CAS01 上啟用發佈虛擬目錄。
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 身分識別`CAS01\owa (Default Web Site)`所在的伺服器名稱和 Outlook Web App 虛擬目錄。
 
@@ -152,7 +154,9 @@ Get-OwaVirtualDirectory | format-list
 
 此範例會建立名為 Internet 的網際網路行事曆發佈共用原則，並將該原則設定為只共用可用性資訊。已啟用原則。
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 此範例將共用原則網際網路新增至使用者信箱。
 
@@ -206,7 +210,9 @@ Get-SharingPolicy <policy name> | format-list
 
 此範例會更新預設共用原則，並設定為只共用可用性資訊。已啟用原則。
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 

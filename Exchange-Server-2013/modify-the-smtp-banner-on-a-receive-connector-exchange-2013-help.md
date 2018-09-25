@@ -21,7 +21,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 這是遠端 SMTP 郵件伺服器在連線至接收連接器之後，所收到的預設回應。
 
-    220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```powershell
+220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```
 
 當您在接收連接器上指定自訂值作為 SMTP 橫幅時，連線至該 SMTP 接收連接器的遠端 SMTP 郵件伺服器會收到下列回應。
 
@@ -77,8 +79,8 @@ Set-ReceiveConnector "From the Internet" -Banner $null
 1.  在可以存取該接收連接器的電腦上開啟 telnet 用戶端，並執行下列命令：
     
     ```powershell
-open <Connector FQDN or IP address> <Port>
-```
+    open <Connector FQDN or IP address> <Port>
+    ```
 
 2.  確認接收連接器傳來的回應中包含您所設定的 SMTP 橫幅。
 

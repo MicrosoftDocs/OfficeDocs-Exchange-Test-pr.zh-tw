@@ -44,8 +44,8 @@ _**上次修改主題的時間：** 2015-03-09_
   - 若要顯示所有信箱還原請求的 *Identity* 屬性值，執行下列指令。
     
     ```powershell
-Get-MailboxRestoreRequest | Format-Table Identity
-```
+    Get-MailboxRestoreRequest | Format-Table Identity
+    ```
     
     執行此主題內的程序時，您可以使用此辨識值以指定特定信箱還原請求。
 
@@ -171,15 +171,21 @@ Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
 
 此範例會傳回 Dan Park 信箱的統計資料並匯出報告到 .csv 檔案。
 
-    Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```
 
 此範例使用 *IncludeReport* 參數傳回有關 Pilar Pinilla 信箱還原請求的額外資訊，並將結果輸入 **Format-List** 指令程式。
 
-    Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```
 
 這個範例會使用 *IncludeReport* 參數，傳回狀態為 `Failed` 之所有還原要求的其他資訊，然後在開始執行命令的位置中，將資訊儲存到 AllRestoreReports.txt 檔案。
 
-    Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/zh-tw/library/ff829912\(v=exchg.150\)) 與 [Get-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829907\(v=exchg.150\))。
 
@@ -424,7 +430,9 @@ Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit
 
 本範例會指定 Florence Flipo 信箱還原要求 MailboxRestore1 會略過 100 個損毀的項目。因為*BadItemLimit*值大於 50，必須指定*AcceptLargeDataLoss*參數。
 
-    Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```powershell
+Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829909\(v=exchg.150\))。
 
@@ -446,7 +454,9 @@ Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
 
 此範例藉由先擷取狀態為 `InProgress` 的所有還原請求，然後輸入結果至 **Suspend-MailboxRestoreRequest** 指令程式並包括暫停指令「Resume after FY13Q2 Maintenance」以暫停進行中的所有還原請求。
 
-    Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```powershell
+Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Suspend-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829906\(v=exchg.150\))。
 

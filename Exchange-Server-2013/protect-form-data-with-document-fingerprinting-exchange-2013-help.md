@@ -52,24 +52,28 @@ _**上次修改主題的時間：** 2014-09-11_
 > 雖然您可以建立及修改命令介面中的分類規則套件，您可能會發現建立文件指紋是在 EAC 中更簡單。我們建議您試試看發生前嘗試這個命令介面中的程序。
 
 
-
-
 DLP 會使用分類規則套件偵測郵件中的敏感內容。若要根據文件指紋建立分類規則套件，請使用 **New-Fingerprint** 和 **New-DataClassification** 指令程式。由於 **New-Fingerprint** 的結果不會儲存在資料分類規則外部，因此您一律會在相同的 PowerShell 工作階段中執行 **New-Fingerprint** 和 **New-DataClassification** 或 **Set-DataClassification**。下列範例會根據 C:\\My Documents\\Contoso Employee Template.docx 檔案建立新的文件指紋。您可以將新的指紋儲存為變數，讓您可以將它與相同 PowerShell 工作階段中的 **New-DataClassification** 指令程式搭配使用。
 
+```powershell
     $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte
     $Employee_Fingerprint = New-Fingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
+```
 
 現在，我們要新建名為 "Contoso Employee Confidential" 的資料分類規則，並使其使用 C:\\My Documents\\Contoso Customer Information Form.docx 檔案的文件指紋。
 
+```powershell
     $Employee_Template = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte
     $Customer_Fingerprint = New-Fingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
     New-DataClassification -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
+```
 
 您現在可以使用 **Get-DataClassification** 指令程式尋找所有的 DLP 資料分類規則套件；在此範例中，"Contoso Customer Confidential" 會成為資料分類規則套件清單的一部分。
 
 最後，請將 "Contoso Customer Confidential" 資料分類規則套件新增至 DLP 原則。
 
+```powershell
     New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
+```
 
 DLP 代理程式現已可偵測符合 Contoso Customer Form.docx 文件指紋的文件。
 

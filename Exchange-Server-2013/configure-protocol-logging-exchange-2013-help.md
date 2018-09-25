@@ -86,7 +86,9 @@ _**上次修改主題的時間：** 2013-03-15_
 
 若要啟用或停用傳送連接器和接收連接器的通訊協定記錄，請執行下列命令：
 
-    <Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```
 
 此範例會啟用接收連接器 Connection from Contoso.com 的通訊協定記錄。
 
@@ -100,9 +102,9 @@ Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 
 1.  在命令介面中，執行下列命令：
     
-    ```command line
-<Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
-```
+    ```powershell
+    <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -110,7 +112,9 @@ Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 
 若要啟用或停用信箱伺服器上傳輸服務中以及用戶端存取伺服器上前端傳輸服務中，隱含與隱藏的組織內部傳送連接器的通訊協定記錄，請執行下列動作：
 
-    <Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```
 
 此範例會啟用信箱伺服器 Mailbox01 上傳輸服務中組織內部傳送連接器的通訊協定記錄。
 
@@ -124,7 +128,9 @@ Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
 
 1.  在命令介面中，執行下列命令：
     
-        <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```powershell
+    <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -148,7 +154,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 1.  在命令介面中，執行下列命令：
     
-        Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```powershell
+    Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -156,7 +164,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 若要設定通訊協定記錄設定，請執行下列命令：
 
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```powershell
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```
 
 此範例會設定信箱伺服器 Mailbox01 上傳輸服務中的下列通訊協定記錄設定：
 
@@ -170,7 +180,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]  
 > <ul>
@@ -186,7 +198,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 1.  在命令介面中，執行下列命令：
     
-        <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

@@ -57,9 +57,13 @@ _**上次修改主題的時間：** 2012-11-18_
 
 此範例啟用用戶端存取伺服器 `UMCallRouter-05x.contoso.com` 回答來自 VoIP 閘道、IP PBX、SIP 啟用 PBX 以及 SBC 的傳入語音、傳真、自動語音回應以及 Outlook 語音存取呼叫，並且會將變更寫入到 UMCallRouter-05x 伺服器上的登錄。
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 此範例防止用戶端存取伺服器 `UMCallRouter-05x.contoso.com` 回答來自 VoIP 閘道、IP PBX、SIP 啟用 PBX 以及 SBC 的傳入語音、傳真、自動語音回應以及 Outlook 語音存取呼叫，並且只會將變更寫入到 Active Directory。
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```
 

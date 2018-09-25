@@ -54,7 +54,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 <!-- end list -->
 
-    New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```powershell
+New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```
 
 ## 檢視網站信箱佈建原則的設定
 
@@ -80,7 +82,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 本範例會變更警告配額至 9.5 GB，限制傳送與接收配額至 10 GB。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```
 
 ## 設定站台信箱名稱前置詞
 
@@ -88,7 +92,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 此範例會將 *DefaultAliasPrefixEnabled* 參數設為 $false，以停用前置詞命名。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```
 
 此範例會變更預設佈建原則，並將 *AliasPrefix* 設為 FOREST01。
 
@@ -99,7 +105,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```
 
 
 > [!NOTE]  

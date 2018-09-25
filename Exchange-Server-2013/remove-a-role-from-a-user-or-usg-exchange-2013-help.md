@@ -36,8 +36,6 @@ _**上次修改主題的時間：** 2012-10-02_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
-
-
 ## 移除管理角色指派
 
 如果您知道要移除的角色指派所用的名稱，請使用下列語法。
@@ -54,9 +52,12 @@ Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
 
 如果不知道角色指派的名稱，可以使用下列語法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```
 
 例如，若是要移除使用者 davids 的「郵件收件者」一般角色指派，請使用下列命令。
 
-    Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
-
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
+```

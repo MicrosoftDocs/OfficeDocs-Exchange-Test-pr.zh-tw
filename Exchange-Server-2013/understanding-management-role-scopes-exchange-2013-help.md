@@ -966,7 +966,9 @@ Exchange功能可能會需要伺服器範圍、 資料庫範圍，或兩者都�
 
 資料庫範圍已首次發表於 Microsoft Exchange 2010 Service Pack 1 (SP1) 和支援的Exchange 2013會繼續。ExchangeExchange 2010 SP1 以前的版本支援只有收件者範圍和伺服器組態的範圍。當您Exchange 2010 SP1 或更新版本的伺服器上建立新的資料庫範圍時，則會收到下列警告：
 
-    WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+```powershell
+WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+```
 
 當您建立資料庫範圍時，僅套用於連線到執行Exchange 2010 SP1 的伺服器的使用者或更新版本。連線至預先Exchange 2010 SP1 伺服器的使用者不會有任何對它們套用資料庫範圍與相關聯的角色指派。這表示這些角色指派所提供的任何權限不會授與使用者連線至時前Exchange 2010 SP1 的伺服器。資料庫範圍不能建立、 移除、 修改或檢視從預先Exchange 2010 SP1 的伺服器。
 

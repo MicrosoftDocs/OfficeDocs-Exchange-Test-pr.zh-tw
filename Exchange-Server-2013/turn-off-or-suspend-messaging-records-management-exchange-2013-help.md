@@ -57,9 +57,11 @@ _**上次修改主題的時間：** 2013-02-14_
 
 此命令介面範例會從保留原則 \[公司使用者\] 取消連結保留標記 \[3 天刪除\]。
 
-    $tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
-    $tags -= "Deleted Items - 3 Days"
-    Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```powershell
+$tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
+$tags -= "Deleted Items - 3 Days"
+Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-RetentionPolicy](https://technet.microsoft.com/zh-tw/library/dd298086\(v=exchg.150\)) 與 [Set-RetentionPolicy](https://technet.microsoft.com/zh-tw/library/dd335196\(v=exchg.150\))。
 
@@ -77,11 +79,15 @@ Set-Mailbox jpeoples -RetentionPolicy $null.
 
 此命令介面範例會從 Exchange 組織中的所有信箱移除保留原則。
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```
 
 此命令介面範例會從已套用原則之所有信箱使用者移除保留原則 \[公司財務\]。
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) 與 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))。
 
@@ -106,11 +112,15 @@ Set-Mailbox jpeoples -RetentionPolicy $null.
 
 此範例會從 Exchange 組織中移除所有刪除標記，但 \[永不刪除\] 標記除外，它用於 Exchange 安裝程式所建立的 ArbitrationMailbox 原則中。
 
-    Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 此範例會移除 \[永不刪除\] 標記除外的其他所有保留標記。
 
-    Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 此命令會從 Exchange 組織中移除 Corp-Users 保留原則。
 

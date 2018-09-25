@@ -48,7 +48,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 請使用下列語法來設定管線追蹤寄件者地址。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```
 
 本範例會設定管線追蹤，以在名稱為 Mailbox01 的 Mailbox Server 上的傳輸服務中擷取寄件者 chris@contoso.com 所傳送的所有郵件的快照。
 
@@ -75,7 +77,9 @@ Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
 
 請使用下列語法來設定管線追蹤資料夾。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```
 
 本範例會將 Mailbox Server (名稱為 Mailbox01) 上傳輸服務的管線追蹤資料夾設為 D:\\Hub\\Pipeline Tracing。
 
@@ -89,7 +93,9 @@ Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
 
 請使用下列語法來啟用管線追蹤。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```
 
 本範例會在 Mailbox Server (名稱為 Mailbox01) 的傳輸服務中啟用管線追蹤。
 
@@ -103,7 +109,9 @@ Set-TransportService Mailbox01 -PipelineTracingEnabled $true
 
 1.  執行下列命令：
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -115,7 +123,9 @@ Set-TransportService Mailbox01 -PipelineTracingEnabled $true
 
 請使用下列語法來停用管線追蹤。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```
 
 本範例會在 Mailbox Server (名稱為 Mailbox01) 的傳輸服務中停用管線追蹤。
 
@@ -129,7 +139,9 @@ Set-TransportService Mailbox01 -PipelineTracingEnabled $false
 
 1.  執行下列命令：
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```
 
 2.  確認 *PipelineTracingEnabled* 參數的值為 $false。
 

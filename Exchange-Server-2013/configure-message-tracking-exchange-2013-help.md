@@ -58,7 +58,9 @@ _**上次修改主題的時間：** 2013-02-18_
 
 若要設定郵件追蹤，請執行下列命令：
 
-    Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+```powershell
+Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+```
 
 此範例會設定名為 Mailbox01 的 Mailbox Server 的下列郵件追蹤記錄檔設定：
 
@@ -72,7 +74,9 @@ _**上次修改主題的時間：** 2013-02-18_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]  
 > <ul>
@@ -100,7 +104,9 @@ Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 
 1.  在命令介面中，執行下列命令：
     
-        Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```
 
 2.  確認顯示的值是您設定的值。
 

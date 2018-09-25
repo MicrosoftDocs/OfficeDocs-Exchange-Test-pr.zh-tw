@@ -78,12 +78,14 @@ _**上次修改主題的時間：** 2016-12-09_
 
 
 > [!NOTE]  
-> 此範例假設您已建立安全性群組 MarketingSG，且該安全性群組擁有郵件功能。請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">管理擁有郵件功能的安全性群組</a>。
+> 此範例假設您已建立安全性群組 MarketingSG，且該安全性群組擁有郵件功能。請參閱<a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理擁有郵件功能的安全性群組</a>。
 
 
 
 
-    New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
+```powershell
+New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997663\(v=exchg.150\))。
 

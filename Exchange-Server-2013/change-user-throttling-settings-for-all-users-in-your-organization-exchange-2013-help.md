@@ -57,16 +57,16 @@ New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPoli
 1.  執行下列命令。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  確認組織節流您剛才建立的原則會列在欄中顯示 GlobalThrottlingPolicy 物件。
 
 3.  執行下列命令。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  確認新的組織原則的內容符合您所設定的值。
 

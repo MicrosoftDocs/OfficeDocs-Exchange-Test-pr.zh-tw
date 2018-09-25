@@ -9,9 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 從角色移除角色項目
-
- 
+# 從角色移除角色項目 
 
 _**適用版本：** Exchange Server 2013_
 
@@ -34,8 +32,6 @@ _**上次修改主題的時間：** 2012-10-03_
 
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
-
-
 
 
 ## 您要執行的工作
@@ -64,16 +60,19 @@ Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
 
 若要從角色移除多個角色項目，您需要擷取移除使用**Get-ManagementRoleEntry**指令程式的角色項目清單。然後您需要將傳送到**Remove-ManagementRoleEntry**指令程式輸出。您可以使用萬用字元**Get-ManagementRoleEntry**指令程式來比對多個角色項目。它是不錯的選項以使用*WhatIf*參數，以確認您要移除的正確的角色項目。使用下列語法。
 
-    Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
-
+```powershell
+Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
+```
 這個範例會從「西雅圖伺服器系統管理員」角色中移除所有含有文字日誌的角色項目。
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
-
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
+```
 當您執行此命令與*WhatIf*參數時，指令程式會傳回所有想要移除的角色項目清單。如果清單看似正確，執行一次沒有*WhatIf*參數的命令移除角色項目。
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
-
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
+```
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd335210\(v=exchg.150\)) 與 [Remove-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd351187\(v=exchg.150\))。
 
 ## 從角色的角色項目移除參數
@@ -82,11 +81,12 @@ Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
 
 使用下列語法移除角色項目的參數。
 
-    Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
-
+```powershell
+Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
+```
 這個範例會從「西雅圖伺服器系統管理員」角色的 **Set-Mailbox** 角色項目中移除 *MaxSafeSenders*、*MaxSendSize*、*SecondaryAddress* 和 *UseDatabaseQuotaDefaults* 參數。
 
-    Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
-
+```powershell
+Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
+```
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd351162\(v=exchg.150\))。
-

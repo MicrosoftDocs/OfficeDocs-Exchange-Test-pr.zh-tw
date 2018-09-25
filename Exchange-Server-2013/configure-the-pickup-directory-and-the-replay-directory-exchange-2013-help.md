@@ -46,7 +46,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定 \[收取\] 目錄，請使用下面的語法。
 
-    Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```powershell
+Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 此範例會針對郵件伺服器 Exchange01 上的 \[收取\] 目錄進行下列變更：
 
@@ -60,7 +62,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```powershell
+Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]  
 > <ul>
@@ -73,7 +77,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定 \[重新顯示\] 目錄，請使用下面的語法。
 
-    Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```powershell
+Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 此範例會針對郵件伺服器 Exchange01 上的 \[重新顯示\] 目錄進行下列變更：
 
@@ -83,7 +89,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```powershell
+Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]  
 > <ul>
@@ -98,7 +106,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

@@ -46,7 +46,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會建立Outlook保護規則 Project Contoso。此規則會保護與 AD RMS 範本 Business Critical ContosoPMs 通訊群組傳送的郵件。
 
-    New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+```powershell
+New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+```
 
 
 > [!NOTE]  

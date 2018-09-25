@@ -75,26 +75,26 @@ Verify EdgeSync results
 1.  若要從 Edge Transport Server 中移除 Edge 訂閱，請使用下列語法。
     
     ```powershell
-Remove-EdgeSubscription <EdgeTransportServerIdentity>
-```
+    Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     例如，若要在名為 Edge01 的 Edge Transport Server 上移除 Edge 訂閱，請執行下列命令。
     
     ```powershell
-Remove-EdgeSubscription Edge01
-```
+    Remove-EdgeSubscription Edge01
+    ```
 
 2.  若要從信箱伺服器中移除 Edge 訂閱，請使用下列語法。
     
     ```powershell
-Remove-EdgeSubscription <MailboxServerIdentity>
-```
+    Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     例如，若要在名為 Mailbox01 的信箱伺服器上移除 Edge 訂閱，執行下列命令。
     
     ```powershell
-Remove-EdgeSubscription Mailbox01
-```
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 在下列情況下，您將必須移除 Edge 訂閱：
 
@@ -150,7 +150,9 @@ Remove-EdgeSubscription Mailbox01
 
 若要以手動方式執行 EdgeSync，請使用下列語法。
 
-    Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+```powershell
+Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+```
 
 下列範例將使用以下選項啟動 EdgeSync：
 

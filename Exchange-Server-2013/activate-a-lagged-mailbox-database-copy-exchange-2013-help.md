@@ -60,7 +60,9 @@ _**上次修改主題的時間：** 2014-01-28_
 
 1.  此範例會使用 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd351074\(v=exchg.150\)) 指令程式暫停正在啟動之延遲副本的複寫。
     
-        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```powershell
+    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```
 
 2.  選擇性地 (為保存延遲副本) 製作資料庫副本和記錄檔的副本。
     
@@ -75,8 +77,8 @@ _**上次修改主題的時間：** 2014-01-28_
 5.  此範例會使用 Eseutil 執行復原作業。
     
     ```powershell
-Eseutil.exe /r eXX /a
-```
+    Eseutil.exe /r eXX /a
+    ```
     
     > [!NOTE]  
     > 在上面的範例中，e<em>XX</em> 是資料庫的記錄檔產生前置詞 (例如，E00，E01，E02，以此類推)。
@@ -90,8 +92,8 @@ Eseutil.exe /r eXX /a
 7.  復原程序完成後，此範例會繼續進行復原程序中使用的資料庫複寫作業。
     
     ```powershell
-Resume-MailboxDatabaseCopy DB1\EX3
-```
+	Resume-MailboxDatabaseCopy DB1\EX3
+	```
 
 如需詳細的語法及參數資訊，請參閱 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd351074\(v=exchg.150\)) 或 [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd335220\(v=exchg.150\))。
 
@@ -101,7 +103,9 @@ Resume-MailboxDatabaseCopy DB1\EX3
     
     1.  此範例會使用 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd351074\(v=exchg.150\)) 指令程式暫停正在啟動之延遲副本的複寫。
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  選擇性地 (為保存延遲副本) 製作資料庫副本和記錄檔的副本。
         
@@ -112,8 +116,8 @@ Resume-MailboxDatabaseCopy DB1\EX3
 2.  此範例會使用 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/zh-tw/library/dd298068\(v=exchg.150\)) 指令程式搭配 *SkipLagChecks* 參數，啟動延遲信箱資料庫副本。
     
     ```powershell
-Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
-```
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+    ```
 
 ## 在命令介面中使用 SafetyNet 復原啟動延遲信箱資料庫副本
 
@@ -121,7 +125,9 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
     
     1.  此範例會使用 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd351074\(v=exchg.150\)) 指令程式暫停正在啟動之延遲副本的複寫。
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  選擇性地 (為保存延遲副本) 製作資料庫副本和記錄檔的副本。
         
@@ -132,8 +138,8 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
 2.  尋找 ESEUTIL 資料庫標頭輸出中的 "Log Required:" 值，藉此判斷延遲資料庫副本所需的記錄數
     
     ```powershell
-Eseutil /mh <DBPath> | findstr /c:"Log Required"
-```
+    Eseutil /mh <DBPath> | findstr /c:"Log Required"
+    ```
     
     記下括號內的十六進位數值。第一個數值是所需的最低層代 (稱為 LowGeneration)，第二個數值是所需的最高層代 (稱為 HighGeneration)。將所有層代序號大於 HighGeneration 的記錄檔層代檔案移動到不同的位置，使其無法在資料庫中重新顯示。
 
@@ -141,7 +147,9 @@ Eseutil /mh <DBPath> | findstr /c:"Log Required"
 
 4.  執行資料庫轉換並啟動延遲副本。此範例會使用 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/zh-tw/library/dd298068\(v=exchg.150\)) 指令程式搭配數個參數來啟動資料庫。
     
-        Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```powershell
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```
 
 5.  這時資料庫將自動裝載並要求 SafetyNet 重新傳遞遺失的郵件。
 
@@ -154,6 +162,6 @@ Eseutil /mh <DBPath> | findstr /c:"Log Required"
   - 在命令介面中，執行下列指令以顯示資料庫副本的狀態資訊。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

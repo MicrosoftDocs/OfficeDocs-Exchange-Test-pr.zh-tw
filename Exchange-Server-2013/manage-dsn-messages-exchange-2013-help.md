@@ -62,19 +62,27 @@ Get-SystemMessage En\Internal\5.1.2 | Format-List
 
 執行下列命令：
 
-    New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+```powershell
+New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+```
 
 本範例建立DSN 碼 5.1.2 以英文傳送至內部寄件者的自訂純文字 DSN 訊息。
 
-    New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```powershell
+New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 本範例建立DSN 碼 5.1.2 以英文傳送至外部寄件者的自訂純文字 DSN 訊息。
 
-    New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+```powershell
+New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+```
 
 本範例建立DSN 碼 5.1.2 以英文傳送至內部寄件者的自訂 HTML DSN 訊息。
 
-    New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+```powershell
+New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -83,8 +91,8 @@ Get-SystemMessage En\Internal\5.1.2 | Format-List
 1.  執行下列命令：
     
     ```powershell
-Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
-```
+    Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```
 
 2.  請確認您所看到的值是您所設定的值。
 
@@ -94,11 +102,15 @@ Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
 
 若要變更自訂 DSN 訊息的文字請執行下列命令：
 
-    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+```powershell
+Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+```
 
 本範例變更指定給文字的 DSN 碼 5.1.2 以英文傳送至內部寄件者 DSN 訊息。
 
-    Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```powershell
+Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -107,8 +119,8 @@ Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
 1.  執行下列命令： `Get-SystemMessage`。
     
     ```powershell
-Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
-```
+    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -147,14 +159,14 @@ Remove-SystemMessage En\Internal\5.1.2
 2.  執行下列命令：
     
     ```powershell
-Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
-```
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```
     
     例如，若要將名為「Contoso 系統信箱」的現有信箱指派給 Exchange 收件者，請執行下列命令：
     
     ```powershell
-Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
-```
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```
 
 ## 步驟 2： 指定您想要監視的 DSN 代碼
 
@@ -180,7 +192,9 @@ Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
 
 若要新增或移除項目而不修改任何現有的值，請執行下列命令：
 
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+```
 
 此範例將新增 DSN 碼 5.7.5 並自轉寄給 Exchange 受件者的現有 DSN 訊息清單移除 DSN 碼 5.7.1。
 

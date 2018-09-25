@@ -96,7 +96,9 @@ New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 1
 
 此範例會建立 DAG DAG3。DAG3 已設定為使用見證伺服器 MBX2，以及本機目錄 C:\\DAG3。DAG3 會被指派多個靜態 IP 位址，因為其 DAG 成員位於 MAPI 網路的不同子網路上。
 
-    New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```
 
 此範例會建立名為 DAG4、依設定會使用 DHCP 的 DAG。此外，系統將會自動選取見證伺服器，並且會建立預設見證目錄。
 
@@ -106,7 +108,9 @@ New-DatabaseAvailabilityGroup -Name DAG4
 
 此範例會建立將不會有管理存取點的 DAG DAG5 (僅適用於 Windows Server 2012 R2 DAG)。此外，MBX4 將用作 DAG 的見證伺服器，並且會建立預設見證目錄。
 
-    New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```
 
 ## 如何知道這是否正常運作？
 
@@ -117,8 +121,8 @@ New-DatabaseAvailabilityGroup -Name DAG4
   - 在命令介面中執行下列命令，確認已建立 DAG，並顯示 DAG 屬性資訊。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 相關資訊
 

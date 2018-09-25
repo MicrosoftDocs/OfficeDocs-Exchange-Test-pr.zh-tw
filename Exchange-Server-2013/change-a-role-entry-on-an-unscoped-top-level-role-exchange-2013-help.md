@@ -65,11 +65,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要將參數新增至角色項目，請使用下列語法。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```
 
 本範例會新增至收件者系統管理員未限定範圍角色上**CreateUsers.ps1**指令碼*EmailAddress*與*City*參數。
 
-    Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd351162\(v=exchg.150\))。
 
@@ -92,11 +96,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要從角色項目移除參數，請使用下列語法。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```
 
 此範例會將*Delay*、 *Force*，以及*Credential*參數移除**Start-Widget**非Exchange指令程式上的層 1 伺服器管理員角色。
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd351162\(v=exchg.150\))。
 
@@ -121,11 +129,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要從角色項目移除所有參數，請使用下列語法。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```
 
 此範例會移除 FindMailboxesOverQuota.ps1 指令碼上的收件者系統管理員角色中的所有參數。
 
-    Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd351162\(v=exchg.150\))。
 
@@ -146,11 +158,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要指定特定的一組參數，請使用下列語法。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```
 
 本範例會包含只*Alias*、 *DisplayName*、 *WidgetConfig*、 及 「 西雅圖信箱收件者系統管理員 」 角色上**Set-Widget**指令程式上的*Enabled*參數。
 
-    Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd351162\(v=exchg.150\))。
 

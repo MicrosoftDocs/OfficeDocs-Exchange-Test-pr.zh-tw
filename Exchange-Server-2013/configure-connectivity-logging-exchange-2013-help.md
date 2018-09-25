@@ -58,7 +58,9 @@ _**上次修改主題的時間：** 2013-02-18_
 
 若要設定連線記錄，請執行下列命令：
 
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+```powershell
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+```
 
 本範例設定下列在名為 Mailbox01 的信箱伺服器上之傳輸服務之連線記錄檔設定：
 
@@ -72,7 +74,9 @@ _**上次修改主題的時間：** 2013-02-18_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]  
 > <ul>
@@ -88,7 +92,9 @@ _**上次修改主題的時間：** 2013-02-18_
 
 1.  在命令介面中，執行下列命令：
     
-        <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+    ```powershell
+    <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

@@ -133,9 +133,7 @@ _**上次修改主題的時間：** 2012-12-10_
     
       - **指定此電子郵件地址將套用的收件者類型**
 
-3.  
-    
-    按一下 \[以進一步限制此原則將會套用至收件者的 \[**新增規則**\]。這會建立布林值**和**陳述式。
+3.  按一下 \[以進一步限制此原則將會套用至收件者的 \[**新增規則**\]。這會建立布林值**和**陳述式。
     
     > [!WARNING]  
     > 如果您套用過多原則，可能會過度限縮電子郵件地址原則，以至於不含任何使用者。
@@ -144,9 +142,7 @@ _**上次修改主題的時間：** 2012-12-10_
 
 4.  按一下 \[預覽原則適用於下列內容的收件者\]，查看此通訊清單將套用的收件者。
 
-5.  
-    
-    按一下 \[儲存\] 以儲存變更並建立原則。
+5.  按一下 \[儲存\] 以儲存變更並建立原則。
 
 6.  您會看到警告，告知您除非加以更新，否則不會套用電子郵件地址原則。建立後，將其選取，接著在詳細資料窗格中按一下 \[套用\]。
 
@@ -154,7 +150,9 @@ _**上次修改主題的時間：** 2012-12-10_
 
 此範例會建立電子郵件地址原則，其中包含美國東南部辦公室 (Southeast offices) 的信箱使用者，並使其電子郵件地址包含其姓氏加上名字前兩個字母的組合。
 
-    New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+```powershell
+New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-EmailAddressPolicy](https://technet.microsoft.com/zh-tw/library/aa996800\(v=exchg.150\))。
 

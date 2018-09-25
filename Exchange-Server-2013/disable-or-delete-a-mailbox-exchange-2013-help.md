@@ -142,13 +142,16 @@ Disable-Mailbox <identity>
 執行此命令時，會顯示訊息詢問您是否確認要停用信箱。
 
 下面是停用信箱的一些命令範例。
-```
+
+```powershell
 Disable-Mailbox danj
 ```
-```
+
+```powershell
 Disable-Mailbox "Conf Room 31/1234 (12)"
 ```
-```
+
+```powershell
 Disable-Mailbox sharedmbx@contoso.com
 ```
 
@@ -162,7 +165,9 @@ Disable-Mailbox sharedmbx@contoso.com
 
   - 在命令介面中，執行下列命令。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
     
     *DisconnectReason* 屬性中的 `Disabled` 值表示信箱已停用。
     
@@ -173,8 +178,8 @@ Disable-Mailbox sharedmbx@contoso.com
   - 在命令介面中，執行下列命令。
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     請注意，*RecipientType* 內容的值為 `User`，而不是 `UserMailbox` (具有已啟用信箱之使用者的值)。這也可確認信箱已停用，但使用者帳戶保留下來。
 
@@ -205,13 +210,16 @@ Remove-Mailbox <identity>
 執行此命令時，會顯示訊息詢問您是否確認要移除信箱以及對應的 Active Directory 使用者帳戶。
 
 下面是刪除信箱的一些命令範例。
-```
+
+```powershell
 Remove-Mailbox pilarp@contoso.com
 ```
-```
+
+```powershell
 Remove-Mailbox "Fleet Van (16)"
 ```
-```
+
+```powershell
 Remove-Mailbox corpprint
 ```
 
@@ -227,7 +235,9 @@ Remove-Mailbox corpprint
 
 1.  執行下列命令來確認已刪除信箱。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
     
     *DisconnectReason* 屬性中的 `Disabled` 值表示信箱已刪除。
     
@@ -238,8 +248,8 @@ Remove-Mailbox corpprint
 2.  執行下列命令來確認已刪除 Active Directory 使用者帳戶。
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     此命令將傳回錯誤，表示找不到使用者，確認已刪除帳戶。
 

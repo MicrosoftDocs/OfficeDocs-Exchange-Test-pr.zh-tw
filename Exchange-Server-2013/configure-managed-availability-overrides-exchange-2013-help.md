@@ -51,11 +51,15 @@ _**上次修改主題的時間：** 2015-11-30_
 
 若要建立本機覆寫特定的持續期間，使用下列語法。
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```
 
 若要建立Exchange的特定版本的本機覆寫，請使用下列語法。
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```
 
 
 > [!NOTE]  
@@ -66,13 +70,17 @@ _**上次修改主題的時間：** 2015-11-30_
 
 此範例會停用回應程式`ActiveDirectoryConnectivityConfigDCServerReboot`名 EXCH03 為 20 天的伺服器上的本機覆寫。
 
-    Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```powershell
+Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已成功建立本機覆寫，請使用**Get-ServerMonitoringOverride**指令程式來檢視本機覆寫清單：
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```
 
 覆寫應該會出現在清單中。
 
@@ -80,17 +88,23 @@ _**上次修改主題的時間：** 2015-11-30_
 
 若要移除本機覆寫，請使用下列語法。
 
-    Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```powershell
+Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```
 
 本範例會移除現有的本機覆寫`ActiveDirectoryConnectivityConfigDCServerReboot`回應程式Exchange健全設定從伺服器 EXCH01 中。
 
-    Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```powershell
+Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已成功移除本機覆寫，請使用**Get-ServerMonitoringOverride**指令程式來檢視本機覆寫清單：
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```
 
 已移除的覆寫應該不會出現在清單中。
 
@@ -98,11 +112,15 @@ _**上次修改主題的時間：** 2015-11-30_
 
 若要建立全域覆寫特定的持續期間，使用下列語法。
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```
 
 若要建立Exchange的特定版本的全域覆寫，請使用下列語法。
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```
 
 
 > [!NOTE]  
@@ -113,11 +131,15 @@ _**上次修改主題的時間：** 2015-11-30_
 
 此範例會停用`OnPremisesInboundProxy`探查 30 天的全域覆寫。
 
-    Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```powershell
+Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```
 
 此範例會停用的所有伺服器執行Exchange版 15.01.0225.042 `StorageLogicalDriveSpaceEscalate`回應的全域覆寫。
 
-    Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```powershell
+Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```
 
 ## 如何知道這是否正常運作？
 
@@ -133,11 +155,15 @@ Get-GlobalMonitoringOverride
 
 若要移除全域覆寫，請使用下列語法。
 
-    Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```powershell
+Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```
 
 本範例會移除現有的全域覆寫`OnPremisesInboundProxy`探查的`ExtensionAttributes`屬性`FrontEndTransport`健全設定中。
 
-    Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```powershell
+Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```
 
 ## 如何知道這是否正常運作？
 

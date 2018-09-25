@@ -75,7 +75,9 @@ Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
 
 如果您要從上層角色新增角色項目，但您只想要在子項角色的角色項目中包含特定參數，請使用下列語法。
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 此範例會將 **Set-Mailbox** Cmdlet 新增至「服務台」角色，但在子項角色的項目中僅包含 *DisplayName* 和 *EmailAddresses* 參數。
 
@@ -93,11 +95,15 @@ Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAd
 
 若要從上層角色將多個項目新增至子項角色，請使用下列語法。
 
-    Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```powershell
+Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```
 
 此範例會將「郵件收件者」上層角色的 Cmdlet 名稱中包含字串 `Mailbox` 的所有角色項目新增至「西雅圖郵件收件者」子項角色。
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```
 
 如果子項角色上已存在角色項目，您可以加入 *Overwrite* 參數以覆寫現有的角色項目。
 

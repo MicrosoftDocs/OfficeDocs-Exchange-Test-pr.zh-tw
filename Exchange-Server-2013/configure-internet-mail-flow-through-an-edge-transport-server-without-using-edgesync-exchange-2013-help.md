@@ -74,7 +74,9 @@ Edge Transport Server 上必須要有下列連接器：
 
 若要建立設定為將郵件傳送至網際網路的傳送連接器，請執行下列命令。
 
-    New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+```powershell
+New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-SendConnector](https://technet.microsoft.com/zh-tw/library/aa998936\(v=exchg.150\))。
 
@@ -107,8 +109,10 @@ Edge Transport Server 上必須要有下列連接器：
 
 若要建立設定為將郵件傳送至 Exchange 組織的傳送連接器，請執行下列命令。
 
-    $MailboxCredentials = Get-Credential
-    New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+```powershell
+$MailboxCredentials = Get-Credential
+New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-SendConnector](https://technet.microsoft.com/zh-tw/library/aa998936\(v=exchg.150\))。
 
@@ -122,7 +126,9 @@ Edge Transport Server 上必須要有下列連接器：
 
 若要修改預設接收連接器，以便只接受來自網際網路的郵件，請執行下列命令。
 
-    Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+```powershell
+Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+```
 
 如需詳細的語法及參數資訊，請參閱[Set-ReceiveConnector](https://technet.microsoft.com/zh-tw/library/bb125140\(v=exchg.150\))。
 
@@ -142,7 +148,9 @@ Edge Transport Server 上必須要有下列連接器：
 
 若要建立設定為只接受來自 Exchange 組織之郵件的接收連接器，請執行下列命令。
 
-    New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+```powershell
+New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+```
 
 如需詳細的語法及參數資訊，請參閱[New-ReceiveConnector](https://technet.microsoft.com/zh-tw/library/bb125139\(v=exchg.150\))。
 
@@ -150,8 +158,10 @@ Edge Transport Server 上必須要有下列連接器：
 
 若要確認您已順利設定必要的傳送連接器和接收連接器，請在 Edge Transport Server 上執行下列命令，並確認顯示的值是設定的值。
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
-    Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+```powershell
+Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
+Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+```
 
 ## Mailbox Server 程序
 
@@ -181,8 +191,10 @@ Edge Transport Server 上必須要有下列連接器：
 
 若要建立設定為將外寄郵件傳送至 Edge Transport Server 的傳送連接器，請執行下列命令。
 
-    $EdgeCredentials = Get-Credential
-    New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+```powershell
+$EdgeCredentials = Get-Credential
+New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-SendConnector](https://technet.microsoft.com/zh-tw/library/aa998936\(v=exchg.150\))。
 
@@ -190,5 +202,7 @@ Edge Transport Server 上必須要有下列連接器：
 
 若要確認您已順利建立設定為將外寄郵件傳送至 Edge Transport Server 的傳送連接器，請在 Mailbox Server 上執行下列命令，並確認顯示的值是設定的值。
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+```powershell
+Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+```
 

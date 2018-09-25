@@ -120,7 +120,9 @@ _<strong>上次修改主題的時間：</strong> 2013-01-17_
 
 您可以使用<strong>Get-Message</strong>指令程式來檢視目前佇列進行傳遞郵件的屬性。下列範例會以表格形式列出寄件者地址、 收件者、 主旨與目前處於 retry 狀態的所有郵件的接收的日期資訊：
 
-    Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```powershell
+Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-Message](https://technet.microsoft.com/zh-tw/library/bb124738\(v=exchg.150\))。
 

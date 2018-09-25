@@ -77,8 +77,8 @@ iisreset
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  確認已設定了 *ExternalConnectionSettings* 內容。
 
@@ -87,8 +87,8 @@ Get-PopSettings | format-list
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  確認已設定了 *ExternalConnectionSettings* 內容。
 
@@ -98,7 +98,9 @@ Get-ImapSettings | format-list
 
 此範例可允許使用者利用 Outlook Web App 檢視內部和外部 SMTP 伺服器設定。
 
-    Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```powershell
+Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ReceiveConnector](https://technet.microsoft.com/zh-tw/library/bb125140\(v=exchg.150\))。
 
@@ -109,8 +111,8 @@ Get-ImapSettings | format-list
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-ReceiveConnector | format-list
-```
+    Get-ReceiveConnector | format-list
+    ```
 
 2.  如果 *AdvertiseClientSettings* 內容設為 `true`，使用者就能檢視在 Outlook Web App 中檢視其 SMTP 伺服器設定。如果 *AdvertiseClientSettings* 設為 `false`，則使用者無法檢視在 Outlook Web App 中檢視其 SMTP 伺服器設定。
 

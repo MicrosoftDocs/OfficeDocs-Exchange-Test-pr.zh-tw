@@ -84,14 +84,14 @@ _**上次修改主題的時間：** 2015-01-01_
 1.  此範例會從同盟信任中移除 service.contoso.com 網域。
     
     ```powershell
-Remove-FederatedDomain -DomainName service.contoso.com
-```
+    Remove-FederatedDomain -DomainName service.contoso.com
+    ```
 
 2.  這個範例會將網域 marketing.contoso.com 新增至同盟信任。
     
     ```powershell
-Add-FederatedDomain -DomainName marketing.contoso.com
-```
+    Add-FederatedDomain -DomainName marketing.contoso.com
+    ```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-FederatedDomain](https://technet.microsoft.com/zh-tw/library/dd298128\(v=exchg.150\)) 與 [Add-FederatedDomain](https://technet.microsoft.com/zh-tw/library/dd351208\(v=exchg.150\))。
 
@@ -102,38 +102,40 @@ Add-FederatedDomain -DomainName marketing.contoso.com
     這個範例會顯示 Exchange 組織的 OrgID 和相關的資訊，包括同盟網域與狀態。
     
     ```powershell
-Get-FederatedOrganizationIdentifier
-```
+    Get-FederatedOrganizationIdentifier
+    ```
 
 2.  **檢視同盟信任憑證**
     
     此範例會顯示同盟信任「Azure AD 驗證」所使用的前一個、現行和下一個憑證。
     
-        Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```powershell
+    Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```
 
 3.  **檢查同盟憑證狀態**
     
     這個範例顯示組織中所有信箱與用戶端存取伺服器上的同盟憑證的狀態。
     
     ```powershell
-Test-FederationTrustCertificate
-```
+    Test-FederationTrustCertificate
+    ```
 
 4.  **設定同盟信任，將憑證作為下一個憑證**
     
     此範例會設定同盟信任「Azure AD 驗證」，以使用含有指紋的憑證作為下一個憑證。將憑證部署到組織中所有的 Exchange 伺服器之後，可以使用 *PublishCertificate* 參數設定信任使用此一同盟憑證做為目前憑證。
     
     ```powershell
-Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
-```
+    Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```
 
 5.  **設定同盟信任使用下一個憑證作為目前的憑證**
     
     本範例設定同盟信任 Azure AD 驗證至下一個憑證作為目前的憑證，並將它發佈至Azure AD驗證系統。
     
     ```powershell
-Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
-```
+    Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```
     
     > [!WARNING]  
     > 在設定同盟信任使用下一個憑證做為目前同盟憑證之前，請確定您組織中所有的 Exchange 伺服器上已部署了憑證。使用 <a href="https://technet.microsoft.com/zh-tw/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> 指令程式檢查憑證的部署狀態。
@@ -145,8 +147,8 @@ Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
     此範例會重新整理同盟中繼資料和Azure AD驗證系統的同盟信任 Azure AD 驗證的憑證。
     
     ```powershell
-Set-FederationTrust "Azure AD authentication" -RefreshMetadata
-```
+    Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```
 
 如需詳細的語法及參數資訊，請參閱下列主題：
 
@@ -167,14 +169,14 @@ Set-FederationTrust "Azure AD authentication" -RefreshMetadata
 1.  執行下列命令介面命令，確認同盟信任資訊。
     
     ```powershell
-Get-FederationTrust | format-list
-```
+    Get-FederationTrust | format-list
+    ```
 
 2.  執行下列命令介面命令，確認可以從您的組織擷取同盟資訊。例如，確認 sales.contoso.com 與 marketing.contoso.com 網域皆以 *DomainNames* 參數被傳回。
     
     ```powershell
-Get-FederationInformation -DomainName <your primary sharing domain>
-```
+    Get-FederationInformation -DomainName <your primary sharing domain>
+    ```
 
 
 > [!TIP]  
