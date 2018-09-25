@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2015-01-22_
 
   - [可復原的項目資料夾](recoverable-items-folder-exchange-2013-help.md)
 
-  - [就地保留與訴訟暫止](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [就地保留與訴訟暫止](https://technet.microsoft.com/zh-tw/library/ff637980(v=exchg.150))
 
 ## 開始之前有哪些須知？
 

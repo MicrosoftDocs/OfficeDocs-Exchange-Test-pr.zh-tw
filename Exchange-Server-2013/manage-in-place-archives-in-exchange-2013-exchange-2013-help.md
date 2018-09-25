@@ -72,7 +72,7 @@ _**上次修改主題的時間：** 2016-02-01_
         
         若要深入了解，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通訊錄原則**   使用這個清單可選取信箱的通訊錄原則 (ABP)。ABP 包含全域通訊清單 (GAL)、離線通訊錄 (OAB)、會議室清單和一組通訊清單。在指派 ABP 給信箱使用者時，他們就可以存取在 Outlook 和 Outlook Web App 中自訂的 GAL。若要深入了解，請參閱[通訊錄原則](address-book-policies-exchange-2013-help.md)。
+      - **通訊錄原則**   使用這個清單可選取信箱的通訊錄原則 (ABP)。ABP 包含全域通訊清單 (GAL)、離線通訊錄 (OAB)、會議室清單和一組通訊清單。在指派 ABP 給信箱使用者時，他們就可以存取在 Outlook 和 Outlook Web App 中自訂的 GAL。若要深入了解，請參閱[通訊錄原則](https://technet.microsoft.com/zh-tw/library/hh529948(v=exchg.150))。
 
 6.  完成作業後，按一下 \[儲存\] 建立信箱。
 

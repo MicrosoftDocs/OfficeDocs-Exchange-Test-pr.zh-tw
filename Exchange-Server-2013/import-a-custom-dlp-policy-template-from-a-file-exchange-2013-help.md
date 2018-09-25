@@ -73,5 +73,5 @@ Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Docume
 
 ## 相關資訊
 
-[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[資料遺失防護](https://technet.microsoft.com/zh-tw/library/jj150527(v=exchg.150))
 

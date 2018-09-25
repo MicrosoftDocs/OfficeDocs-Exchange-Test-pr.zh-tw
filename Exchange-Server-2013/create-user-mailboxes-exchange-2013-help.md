@@ -108,7 +108,7 @@ _**上次修改主題的時間：** 2013-04-12_
         
         若要深入了解，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通訊錄原則**  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](address-book-policies-exchange-2013-help.md)。
+      - **通訊錄原則**  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](https://technet.microsoft.com/zh-tw/library/hh529948(v=exchg.150))。
         
         在下拉式清單中，選取要與這個信箱產生關聯的原則。
 
@@ -186,7 +186,7 @@ New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinil
         
         若要深入了解，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通訊錄原則**  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](address-book-policies-exchange-2013-help.md)。
+      - **通訊錄原則**  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](https://technet.microsoft.com/zh-tw/library/hh529948(v=exchg.150))。
         
         在下拉式清單中，選取要與這個信箱產生關聯的原則。
 

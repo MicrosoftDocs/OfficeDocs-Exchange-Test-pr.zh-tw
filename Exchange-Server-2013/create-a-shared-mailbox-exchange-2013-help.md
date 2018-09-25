@@ -78,7 +78,7 @@ _**上次修改主題的時間：** 2016-12-09_
 
 
 > [!NOTE]  
-> 此範例假設您已建立安全性群組 MarketingSG，且該安全性群組擁有郵件功能。請參閱<a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理擁有郵件功能的安全性群組</a>。
+> 此範例假設您已建立安全性群組 MarketingSG，且該安全性群組擁有郵件功能。請參閱<a href="https://technet.microsoft.com/zh-tw/library/bb123521(v=exchg.150)">管理擁有郵件功能的安全性群組</a>。
 
 
 
