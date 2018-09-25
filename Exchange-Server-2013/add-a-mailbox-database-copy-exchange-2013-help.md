@@ -50,15 +50,11 @@ _**上次修改主題的時間：** 2012-10-30_
 
 ## 使用 EAC 來新增信箱資料庫副本
 
-1.  
-    
-    在 EAC 中，移至 \[伺服器\] \> \[資料庫\]。
+1.  在 EAC 中，移至 \[伺服器\] \> \[資料庫\]。
 
 2.  選取您要複製的資料庫，然後按一下 \[ ![加入資料庫複本](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "加入資料庫複本")。
 
-3.  
-    
-    在 \[**新增信箱資料庫複本**\] 頁面上，按一下 \[**瀏覽...**、 選取信箱伺服器將裝載資料庫副本，並再按一下 \[**確定\]**。
+3.  在 \[**新增信箱資料庫複本**\] 頁面上，按一下 \[**瀏覽...**、 選取信箱伺服器將裝載資料庫副本，並再按一下 \[**確定\]**。
 
 4.  （選用） 設定資料庫副本的**啟動喜好設定數字**。
 
@@ -72,15 +68,21 @@ _**上次修改主題的時間：** 2012-10-30_
 
 本範例會新增到信箱伺服器 mbx3 上信箱資料庫 DB1 的複本。重新顯示延遲時間和截斷延遲時間仍維持預設值為零，並啟動喜好設定設定值為 2。
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```
 
 本範例會新增到信箱伺服器 MBX4 DB2 的信箱資料庫複本。重新顯示延遲時間和截斷延遲時間仍維持預設值為零，並啟動喜好設定已`5`的值。此外，植入已被延遲此複本以便其可以植入而不是從 MBX4 遠距目前作用中資料庫副本使用本機的來源伺服器。
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```
 
 本範例會新增到信箱伺服器 MBX5 信箱資料庫 DB3 的副本。重新顯示延遲時間設為 3 天、 截斷延遲時間維持預設值為零，並啟動喜好設定會設定與`4`的值。
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```
 
 ## 如何知道這是否正常運作？
 
@@ -90,7 +92,9 @@ _**上次修改主題的時間：** 2012-10-30_
 
   - 在命令介面中，執行下列指令以確認已建立信箱資料庫副本與其狀況：
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     狀態與內容索引狀態皆應為 \[正常\]。
 

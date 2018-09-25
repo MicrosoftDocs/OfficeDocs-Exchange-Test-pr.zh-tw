@@ -87,7 +87,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會將 AD LDS 所使用的 LDAP 連接埠變更為 5000。& 符號是命令語法的一部分。
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+```powershell
+& $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+```
 
 此範例會對 AD LDS 組態進行下列變更。& 符號是命令語法的一部分。請注意每個參數及其值之間所使用的冒號 (:)：
 
@@ -101,5 +103,7 @@ _**上次修改主題的時間：** 2015-04-08_
 
 <!-- end list -->
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+```powershell
+& $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+```
 

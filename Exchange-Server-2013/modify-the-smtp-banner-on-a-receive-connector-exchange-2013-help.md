@@ -52,15 +52,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 執行下列命令：
 
-    Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```powershell
+Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```
 
 此範例會在名為 From the Internet 的現有接收連接器上修改 SMTP 橫幅，讓 SMTP 橫幅顯示 `220 Contoso Corporation`。
 
-    Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```
 
 此範例會在名為 From the Internet 的現有接收連接器上移除自訂 SMTP 橫幅，讓 SMTP 橫幅回復成預設值。
 
-    Set-ReceiveConnector "From the Internet" -Banner $null
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner $null
+```
 
 ## 如何知道這是否正常運作？
 

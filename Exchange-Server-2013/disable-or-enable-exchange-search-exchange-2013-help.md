@@ -53,11 +53,15 @@ _**上次修改主題的時間：** 2014-05-07_
 
 此命令會針對名稱為 EXCH01 的信箱資料庫停用 Exchange 搜尋。
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```
 
 此命令會針對名稱為 EXCH01 的信箱資料庫啟用 Exchange 搜尋。
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```
 
 如需詳細語法及參數的資訊，請參閱[Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\))。
 
@@ -86,17 +90,21 @@ _**上次修改主題的時間：** 2014-05-07_
 **使用命令介面**
 
 執行下列命令來停止並停用 Microsoft Exchange 搜尋服務。
-```
+
+```powershell
 Stop-Service MSExchangeFastSearch
 ```
-```
+
+```powershell
 Set-Service MSExchangeFastSearch -StartupType Disabled
 ```
 
 執行下列命令將 Exchange 搜尋服務設定為自動啟動，然後啟動此服務。
-```
+
+```powershell
 Set-Service MSExchangeFastSearch -StartupType Automatic
 ```
-```
+
+```powershell
 Start-Service MSExchangeFastSearch
 ```

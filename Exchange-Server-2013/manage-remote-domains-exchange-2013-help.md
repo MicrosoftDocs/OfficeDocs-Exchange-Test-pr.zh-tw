@@ -48,15 +48,21 @@ _**上次修改主題的時間：** 2015-04-13_
 
 若要建立新的遠端網域項目，請使用下列語法。
 
-    New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```powershell
+New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```
 
 此範例能針對傳送給 contoso.com 網域的郵件建立遠端網域項目。
 
-    New-RemoteDomain -Name Contoso -DomainName contoso.com
+```powershell
+New-RemoteDomain -Name Contoso -DomainName contoso.com
+```
 
 此範例能針對傳送給 fabrikam.com 網域和所有子網域的郵件建立遠端網域項目。
 
-    New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```powershell
+New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -82,11 +88,15 @@ _**上次修改主題的時間：** 2015-04-13_
 
 若要移除遠端網域項目，請使用下列語法。
 
-    Remove-RemoteDomain <RemoteDomainName>
+```powershell
+Remove-RemoteDomain <RemoteDomainName>
+```
 
 此範例會移除名為 Contoso 的遠端網域項目。
 
-    Remove-RemoteDomain Contoso
+```powershell
+Remove-RemoteDomain Contoso
+```
 
 ## 如何才能了解這是否正常運作？
 

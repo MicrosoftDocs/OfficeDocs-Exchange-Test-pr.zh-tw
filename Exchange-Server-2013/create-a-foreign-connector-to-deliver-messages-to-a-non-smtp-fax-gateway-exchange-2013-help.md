@@ -51,7 +51,9 @@ _**上次修改主題的時間：** 2012-10-17_
 
 1.  執行下列命令來建立外部連接器：
     
-        New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```powershell
+    New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```
     
     在本例中為 Hub01 和 Hub02 是您要指定將郵件傳送至外部系統貴組織中的來源伺服器。使用多個來源伺服器提供容錯。
 
@@ -61,7 +63,9 @@ _**上次修改主題的時間：** 2012-10-17_
 
 若要確認成功建立外部連接器，請執行下列命令：
 
-    Get-ForeignConnector | Format-List Name
+```powershell
+Get-ForeignConnector | Format-List Name
+```
 
 確認您建立的外部連接器名稱已顯示。
 
@@ -73,13 +77,17 @@ _**上次修改主題的時間：** 2012-10-17_
 
 1.  執行下列指令碼來指定外部連接器的放置目錄（將 *DropDirectory* 參數值變更為適合您環境的路徑）：
     
-        Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```powershell
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## 如何才能了解此步驟是否正常運作？
 
 若要確認您正確設定放置目錄，可執行下列指令程式指令碼，並確認 *DropDirectory* 參數值：
 
-    Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```powershell
+Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```
 
 一旦您已建立外部連接器且指定您的放置目錄，則可使用建立外部連接器的信箱伺服器來傳送郵件，並確認檔案傳遞至放置目錄。
 
@@ -93,7 +101,9 @@ _**上次修改主題的時間：** 2012-10-17_
 
 若要確認您正確設定收取目錄，可執行下列指令程式，並確認 *PickupDirectoryPath* 參數值：
 
-    Get-TransportService | Format-List PickupDirectoryPath
+```powershell
+Get-TransportService | Format-List PickupDirectoryPath
+```
 
 ## 步驟 4： 使用命令介面來設定信箱伺服器上的傳輸服務的重新顯示\] 目錄
 
@@ -105,7 +115,9 @@ _**上次修改主題的時間：** 2012-10-17_
 
 若要確認您正確設定重新顯示目錄，可執行下列指令程式，並確認 *ReplayDirectoryPath* 參數值：
 
-    Get-TransportService | Format-List ReplayDirectoryPath
+```powershell
+Get-TransportService | Format-List ReplayDirectoryPath
+```
 
 ## 相關資訊
 

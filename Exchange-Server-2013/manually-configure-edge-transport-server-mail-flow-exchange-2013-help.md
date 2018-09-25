@@ -65,11 +65,15 @@ Configure Send connectors for external relay domains
 
   - 對於輸出 Edge Transport Server，在 Mailbox Server 上執行下列命令。
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```
 
   - 對於輸入 Edge Transport Server，在 Mailbox Server 上執行下列命令。
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```
 
 ## 將輸出電子郵件路由傳送到智慧主機
 
@@ -77,13 +81,17 @@ Configure Send connectors for external relay domains
 
 在 Mailbox Server 上執行下列命令，抑制自動建立網際網路的傳送連接器。
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```
 
 完成 Edge 訂閱處理程序之後，請手動建立至網際網路的傳送連接器。請在 Exchange 組織內建立傳送連接器，並將 Edge 訂閱選為連接器的來源伺服器。選取 `Custom` 用法類型，並設定一或多個智慧主機。這樣下次 EdgeSync 同步處理組態資料時，就會將這個新的傳送連接器複寫至 Edge Transport Server 上的 AD LDS 執行個體。您可以在 Mailbox Server 上執行 **Start-EdgeSynchronization** Cmdlet，強制立即進行 EdgeSync 同步處理。
 
 範例：使用命令介面為訂閱的 Edge Transport Server 設定傳送連接器，以透過智慧主機路由傳送所有網際網路位址空間的郵件。請在 Exchange 組織內的 Mailbox Server 上執行這項工作，而非在 Edge Transport Server 上執行。
 
-    New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```powershell
+New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```
 
 
 > [!IMPORTANT]  

@@ -263,13 +263,15 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會根據 Contoso 受管理的資料夾信箱原則中顯示的對應受管理內容設定，來建立保留標記。
 
-    New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
-    New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
-    New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
-    New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
-    New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
-    New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
-    New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
+New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
+New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
+New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
+New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
+New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
+New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RetentionPolicyTag](https://technet.microsoft.com/zh-tw/library/dd335226\(v=exchg.150\))。
 
@@ -284,13 +286,15 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會根據 Contoso 受管理的資料夾信箱原則中顯示的受管理資料夾和對應的受管理內容設定，來建立保留標記。保留設定是以手動方式指定，而未使用 *ManagedFolderToUpgrade* 參數。
 
-    New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
-    New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
-    New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
+New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
+New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RetentionPolicyTag](https://technet.microsoft.com/zh-tw/library/dd335226\(v=exchg.150\))。
 
@@ -307,7 +311,9 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會建立保留原則 RP-Corp，並將最近建立的保留標記連結到該原則。
 
-    New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```powershell
+New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RetentionPolicy](https://technet.microsoft.com/zh-tw/library/dd297970\(v=exchg.150\))。
 
@@ -317,7 +323,9 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會從 Ken Kwok 的信箱中移除受管理的資料夾信箱原則和任何受管理的資料夾。含有任何郵件的受管理資料夾不會移除。
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## 步驟 4：將保留原則套用至使用者信箱
 
@@ -332,7 +340,9 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
 
 此範例會將最近建立的保留原則 RP-Corp 套用到信箱使用者 Ken Kwok。
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 
@@ -344,11 +354,15 @@ Microsoft Exchange Server 2013 中，使用保留標記和保留原則來執行�
     
     此命令會擷取已套用至組織中所有信箱的保留原則，以及信箱的保留狀態。
     
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```
 
   - 在受管理的資料夾助理員以保留原則處理信箱後，使用 [Get-RetentionPolicyTag](https://technet.microsoft.com/zh-tw/library/dd298009\(v=exchg.150\)) 指令程式來擷取使用者信箱中佈建的保留標記。
     
     此命令會擷取實際套用至 April Stewart 信箱的保留標記。
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+    Get-RetentionPolicyTag -Mailbox astewart
+    ```
 

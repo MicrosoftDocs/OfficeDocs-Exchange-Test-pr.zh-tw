@@ -52,15 +52,21 @@ _**上次修改主題的時間：** 2014-01-31_
 
 若要檢視佇列，請使用下列語法。
 
-    Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```powershell
+Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```
 
 此範例會顯示名為 Mailbox01 之 Exchange 2013 Mailbox Server 上所有非空白之佇列的基本資訊。
 
-    Get-Queue -Server Mailbox01 -Exclude Empty
+```powershell
+Get-Queue -Server Mailbox01 -Exclude Empty
+```
 
 此範例會顯示執行命令之 Mailbox Server 上所有含有超過 100 封郵件之佇列的詳細資訊。
 
-    Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```powershell
+Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```
 
 ## 使用命令介面來檢視多部 Exchange 伺服器上的佇列摘要資訊
 
@@ -75,15 +81,21 @@ _**上次修改主題的時間：** 2014-01-31_
 
 若要檢視多部 Exchange 伺服器上的佇列摘要資訊，請執行以下命令：
 
-    Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```powershell
+Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```
 
 此範例會針對名為 FirstSite 之 Active Directory 站台內的所有 Exchange 2013 Mailbox Server，顯示郵件計數大於 100 之佇列的摘要資訊。
 
-    Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```powershell
+Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```
 
 此範例會針對名為 DAG01 之資料庫可用性群組 (DAG) 中的所有 Exchange 2013 Mailbox Server，顯示佇列狀態值為 **Retry** 之佇列的摘要資訊。
 
-    Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```powershell
+Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```
 
 ## 繼續佇列
 
@@ -113,15 +125,21 @@ _**上次修改主題的時間：** 2014-01-31_
 
 若要繼續佇列，請使用下列語法。
 
-    Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 此範例會繼續本機伺服器上具有 \[擱置中\] 狀態的所有佇列。
 
-    Resume-Queue -Filter {Status -eq "Suspended"}
+```powershell
+Resume-Queue -Filter {Status -eq "Suspended"}
+```
 
 此範例會繼續名為 Mailbox01 之伺服器上名為 contoso.com 的擱置中傳遞佇列。
 
-    Resume-Queue -Identity Mailbox01\contoso.com
+```powershell
+Resume-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 如何知道這是否正常運作？
 
@@ -230,15 +248,21 @@ _**上次修改主題的時間：** 2014-01-31_
 
 1.  執行以下命令來找出郵件的識別碼。
     
-        Get-Message -Queue Poison | Format-Table Identity
+    ```powershell
+    Get-Message -Queue Poison | Format-Table Identity
+    ```
 
 2.  將在上個步驟找出來的郵件識別碼用於以下命令中。
     
-        Resume-Message <PoisonMessageIdentity>
+    ```powershell
+    Resume-Message <PoisonMessageIdentity>
+    ```
     
     此範例會繼續傳遞毒藥郵件佇列中郵件識別碼值為 222 的郵件。
     
-        Resume-Message 222
+    ```powershell
+    Resume-Message 222
+    ```
 
 ## 如何知道這是否正常運作？
 
@@ -270,15 +294,21 @@ _**上次修改主題的時間：** 2014-01-31_
 
 若要擱置佇列，請使用下列語法。
 
-    Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 本範例會擱置本機伺服器上郵件計數等於或大於 1,000，而且狀態為「重試」的所有佇列。
 
-    Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```powershell
+Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```
 
 此範例會擱置名為 Mailbox01 之伺服器上名為 contoso.com 的佇列。
 
-    Suspend-Queue -Identity Mailbox01\contoso.com
+```powershell
+Suspend-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 如何知道這是否正常運作？
 

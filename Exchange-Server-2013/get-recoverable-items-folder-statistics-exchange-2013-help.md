@@ -47,11 +47,15 @@ _**上次修改主題的時間：** 2015-01-22_
 
 本範例會取得 Soumya Singhi \[可復原的項目\] 資料夾的資料夾統計資料，並以清單格式顯示輸出。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 本範例會取得 Soumya Singhi \[可復原的項目\] 資料夾的資料夾統計資料和資料夾與資料夾大小以表格格式顯示資料夾名稱、 資料夾路徑、 的項目數。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```
 
 如需詳細的語法及參數資訊，請參閱[Get-MailboxFolderStatistics](https://technet.microsoft.com/zh-tw/library/aa996762\(v=exchg.150\))。
 
@@ -59,7 +63,9 @@ _**上次修改主題的時間：** 2015-01-22_
 
 此範例會擷取所有信箱處於訴訟暫止狀態的清單並擷取可復原的項目\] 資料夾的信箱資料夾統計資料和每個信箱及其子資料夾。**Identity** (信箱資料夾 identity) 和**FolderAndSubfolderSize**屬性會以表格格式顯示。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```
 
 如需詳細的語法及參數資訊，請參閱[Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))和[Get-MailboxFolderStatistics](https://technet.microsoft.com/zh-tw/library/aa996762\(v=exchg.150\))。
 
@@ -67,9 +73,13 @@ _**上次修改主題的時間：** 2015-01-22_
 
 本範例會顯示配額和警告配額以供使用者信箱 \[可復原的項目\] 資料夾。此範例也會擷取是否訴訟暫止狀態或就地保留所在之信箱的相關資訊。
 
-    Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 
 本範例會顯示您組織中的配額和警告配額的所有使用者信箱 \[可復原的項目\] 資料夾。此範例也會擷取保留資訊。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 

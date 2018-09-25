@@ -192,7 +192,9 @@ UM 疑難排解工具不僅可協助您疑難排解、診斷以及修復跨部�
 
 在下列範例中，「閘道」模式可用來在不含 Office Communications Server 2007 R2 或 Lync Server 的環境中測試呼叫流程。此範例會測試電話語音設備，包括 VoIP 閘道、PBX、IP PBX 及整合通訊元件。此範例會將 VoIP 設定為「非安全」，並將 IP 位址 10.1.1.1 用做下一個躍點，且在轉接資訊中包含分機號碼。
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 回到頁首
 
@@ -200,7 +202,9 @@ UM 疑難排解工具不僅可協助您疑難排解、診斷以及修復跨部�
 
 UM 疑難排解工具可在設定 SIPClient 模式時，用於包含 Office Communications Server 2007 R2 或 Microsoft Lync Server 的內部或跨部門部署。下列範例會使用 SIPClient 模式，並在包含 Office Communications Server 2007 R2 或 Lync Server 伺服器的環境中，使用安全的 UM 撥號對應表來測試呼叫流程。依預設，在您執行 UM 疑難排解工具時，該工具會使用目前登入電腦之使用者的認證。當您執行下列範例時，會提示您輸入執行 UM 疑難排解工具時想使用的憑證。如需詳細資訊，請參閱[設定 Exchange UM 疑難排解工具搭配使用的認證](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)。
 
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```powershell
+Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```
 
 ## 安裝 UM 疑難排解工具
 

@@ -67,7 +67,9 @@ _**上次修改主題的時間：** 2012-11-14_
 
 此範例會停用郵件使用者 Yan Li 的電子郵件。
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Disable-MailUser](https://technet.microsoft.com/zh-tw/library/aa998578\(v=exchg.150\))。
 
@@ -81,13 +83,17 @@ _**上次修改主題的時間：** 2012-11-14_
 
 3.  在命令介面中，執行下列命令。
     
-        Get-MailUser
+    ```powershell
+    Get-MailUser
+    ```
     
     您停用其電子郵件的郵件使用者不會回到結果中，因為此 Cmdlet 只會傳回啟用郵件功能的使用者。
 
 4.  在命令介面中，執行下列命令。
     
-        Get-User
+    ```powershell
+    Get-User
+    ```
     
     您停用其電子郵件的郵件使用者會回到結果中，因為此 Cmdlet 會傳回所有 Active Directory 使用者物件。
 
@@ -99,7 +105,9 @@ _**上次修改主題的時間：** 2012-11-14_
 
 本範例會啟用郵件功能的使用者 Sanjay Shah。您必須提供外部電子郵件地址。
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 使用命令介面和 CSV 檔啟用多個使用者的郵件功能
 
@@ -107,7 +115,9 @@ _**上次修改主題的時間：** 2012-11-14_
 
 1.  執行下列命令，將未啟用郵件功能且在您組織中沒有信箱的現有使用者清單匯出到管理員桌面上名為 UsersToMailEnable.csv 的檔案。
     
-        Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```powershell
+    Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```
     
     產生的檔案類似下列檔案。
     
@@ -161,5 +171,7 @@ _**上次修改主題的時間：** 2012-11-14_
 
   - 在命令介面中，執行下列命令以顯示新郵件使用者的相關資訊。
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

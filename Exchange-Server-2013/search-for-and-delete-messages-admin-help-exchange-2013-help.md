@@ -53,7 +53,9 @@ _**上次修改主題的時間：** 2017-12-20_
 
 此範例會在組織的所有信箱中搜尋檔名中含有 "Trojan" 一字之任何附加檔案類型的郵件，並傳送一則記錄檔訊息到系統管理員的信箱。
 
-    Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```powershell
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 如需詳細的語法及參數資訊，請參閱 [Search-Mailbox](https://technet.microsoft.com/zh-tw/library/dd298173\(v=exchg.150\))。
 
@@ -78,7 +80,9 @@ _**上次修改主題的時間：** 2017-12-20_
 
 此範例會在組織的所有信箱中搜尋主旨行是 "Download this file" 的郵件，然後永久刪除這些郵件。
 
-    Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```powershell
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```
 
 如需詳細的語法及參數資訊，請參閱 [Search-Mailbox](https://technet.microsoft.com/zh-tw/library/dd298173\(v=exchg.150\))。
 

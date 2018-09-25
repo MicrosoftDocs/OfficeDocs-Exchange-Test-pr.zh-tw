@@ -53,11 +53,15 @@ _**上次修改主題的時間：** 2014-05-07_
 
 1.  請注意，信箱資料庫所有副本的重新執行延遲或截斷延遲設定都將移動。您可以使用 [Get-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb124924\(v=exchg.150\)) 指令程式取得此資訊，如此範例中所示。
     
-        Get-MailboxDatabase DB1 | Format-List *lag*
+    ```powershell
+    Get-MailboxDatabase DB1 | Format-List *lag*
+    ```
 
 2.  如果爲資料庫啟用循環記錄，則在繼續之前必須將其停用。您可以使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\)) 指令程式來停用信箱資料庫的循環記錄，如此範例中所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 3.  移除要移動之資料庫的所有信箱資料庫副本。如需詳細步驟，請參閱[移除信箱資料庫副本](remove-a-mailbox-database-copy-exchange-2013-help.md)。移除所有副本之後，將要移除資料庫副本之每個伺服器的資料庫及交易記錄檔移至其他位置來保留這些檔案。這些檔案將保留，因此在重新新增資料庫副本後不需重新植入這些檔案。
 
@@ -75,16 +79,24 @@ _**上次修改主題的時間：** 2014-05-07_
 
 8.  在包含要移動之信箱資料庫副本的每部伺服器上執行下列命令，來停止並重新啟動內容索引服務。
     
-        Net stop MSExchangeFastSearch
-        Net start MSExchangeFastSearch
+    ```powershell
+    Net stop MSExchangeFastSearch
+    ```
+    ```powershell
+    Net start MSExchangeFastSearch
+    ```
 
 9.  或者，使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\)) 指令程式來啟用循環記錄，如此範例中所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 10. 使用 [Set-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd298104\(v=exchg.150\)) 指令程式重新設定任何先前為重新執行延遲時間和截斷延遲時間設定的值。
     
-        Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```powershell
+    Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```
 
 11. 新增每個副本時，建議您在新增下一個副本之前，先驗證副本的健康狀況和狀態。您可以使用下列方法驗證健康狀況與狀態：
     
@@ -114,7 +126,9 @@ _**上次修改主題的時間：** 2014-05-07_
 
   - 在命令介面中，執行下列指令以確認已建立信箱資料庫副本與其狀況：
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     狀態與內容索引狀態皆應為 \[正常\]。
 

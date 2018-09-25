@@ -157,11 +157,15 @@ _**上次修改主題的時間：** 2015-03-09_
 
 這個例子封鎖了所有 11.8010.8036 之前的 Outlook 版本。
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```
 
 此範例會還原由 Outlook 的版本封鎖之信箱的存取權。
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-CASMailbox](https://technet.microsoft.com/zh-tw/library/bb125264\(v=exchg.150\))。
 
@@ -178,7 +182,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 
 
-    Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```powershell
+Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```
 
 如需詳細的語法及參數定義，請參閱 [Set-RpcClientAccess](https://technet.microsoft.com/zh-tw/library/dd351072\(v=exchg.150\))。
 

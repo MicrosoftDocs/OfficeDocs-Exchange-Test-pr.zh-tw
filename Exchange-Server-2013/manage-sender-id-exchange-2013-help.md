@@ -44,11 +44,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用寄件者識別碼，請執行下列命令：
 
-    Set-SenderIDConfig -Enabled $false
+```powershell
+Set-SenderIDConfig -Enabled $false
+```
 
 若要啟用寄件者識別碼，請執行下列命令：
 
-    Set-SenderIDConfig -Enabled $true
+```powershell
+Set-SenderIDConfig -Enabled $true
+```
 
 
 > [!NOTE]  
@@ -63,7 +67,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderIDConfig | Format-List Enabled
+    ```powershell
+    Get-SenderIDConfig | Format-List Enabled
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -71,11 +77,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要為冒名郵件設定寄件者識別碼動作，請執行下列命令：
 
-    Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```
 
 此範例將寄件者識別碼代理程式設定為拒絕任何傳送伺服器的 IP 位址在傳送網域的 DNS 寄件人原則架構記錄中未列為授權 SMTP 傳送伺服器的郵件。
 
-    Set-SenderIDConfig -SpoofedDomainAction Reject
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction Reject
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -83,7 +93,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```powershell
+    Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -91,11 +103,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要為暫時性錯誤設定寄件者識別碼動作，請執行下列命令：
 
-    Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```
 
 此範例會設定要暫時的 DNS 伺服器錯誤導致無法判斷寄件者識別碼狀態時的郵件加上戳記的寄件者識別碼代理程式。郵件會由其他反垃圾郵件代理程式處理和決定郵件的 SCL 值時所內容篩選器代理程式會使用標記。
 
-    Set-SenderIDConfig -TempErrorAction StampStatus
+```powershell
+Set-SenderIDConfig -TempErrorAction StampStatus
+```
 
 請注意，`StampStatus` 為 *TempErrorAction* 參數的預設值。
 
@@ -105,7 +121,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderIDConfig | Format-List TempErrorAction
+    ```powershell
+    Get-SenderIDConfig | Format-List TempErrorAction
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -113,15 +131,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要取代現有的值，請執行下列命令：
 
-    Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```powershell
+Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 此範例設定寄件者識別碼代理程式來略過傳送至 kim@contoso.com 及 john@contoso.com 的郵件寄件者識別碼檢查，並忽略來自 fabrikam.com 網域的郵件寄件者識別碼檢查。
 
-    Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```powershell
+Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```
 
 若要新增或移除項目而不修改任何現有的值，請執行下列命令：
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 此範例透過以下資訊設定寄件者識別碼代理程式：
 
@@ -131,7 +155,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -139,7 +165,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```powershell
+    Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

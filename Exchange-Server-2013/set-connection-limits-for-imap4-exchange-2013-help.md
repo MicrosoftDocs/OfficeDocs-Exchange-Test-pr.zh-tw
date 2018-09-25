@@ -68,19 +68,27 @@ _**上次修改主題的時間：** 2012-11-28_
 
 此範例會設定伺服器的連線限制。
 
-    Set-ImapSettings -Identity CAS01 -MaxConnections Value
+```powershell
+Set-ImapSettings -Identity CAS01 -MaxConnections Value
+```
 
 此範例會設定 IP 位址的連線限制。
 
-    Set-ImapSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```powershell
+Set-ImapSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```
 
 此範例會設定使用者的連線限制。
 
-    Set-ImapSettings -MaxConnectionsPerUser Value
+```powershell
+Set-ImapSettings -MaxConnectionsPerUser Value
+```
 
 此範例會設定命令大小上限。
 
-    Set-ImapSettings -MaxCommandSize Value
+```powershell
+Set-ImapSettings -MaxCommandSize Value
+```
 
 設定連線限制之後，您必須重新啟動 IMAP4 服務。如需如何重新啟動 IMAP4 服務的資訊，請參閱[啟動及停止 IMAP4 服務](start-and-stop-the-imap4-services-exchange-2013-help.md)。
 
@@ -104,7 +112,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  驗證連線設定是否正確。
 

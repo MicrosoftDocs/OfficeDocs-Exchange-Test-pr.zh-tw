@@ -335,25 +335,41 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 2.  在命令介面中執行下列每個命令，以將每個內部 URL 設定為與虛擬目錄的外部 URL 相符。例如，Ex2013CAS。
     
-        $HostName = "Ex2013CAS"
+    ```powershell
+    $HostName = "Ex2013CAS"
+    ```
 
 3.  在命令介面中執行下列每個命令，以將每個內部 URL 設定為與虛擬目錄的外部 URL 相符。
     
-        Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
+    ```
         
-        Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
+    ```
         
-        Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
+    ```
         
-        Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
+    ```
         
-        Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
+    ```
         
-        Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+    ```
 
 4.  雖然我們在命令介面中，我們也要設定離線通訊錄 (OAB) 以便自動探索選取正確的虛擬目錄來發佈 OAB。若要這樣做，請執行下列命令。
     
-        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```powershell
+    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```
 
 對用戶端存取伺服器虛擬目錄設定好內部 URL 之後，您必須為 Outlook Web App 及其他連線設定私人 DNS 記錄。依您的設定而定，您將必須設定私人 DNS 記錄，使其指向用戶端存取伺服器的內部或外部 IP 位址或是完整網域名稱 (FQDN)。以下是您應該建立以便啟用內部用戶端連線能力的建議 DNS 記錄範例。
 
@@ -474,7 +490,9 @@ Exchange Server 2013 郵件流程與用戶端存取的安裝後期工作，包�
 
 8.  最後，我們必須開啟命令介面並設定離線通訊錄 (OAB)，以便自動探索選取正確的虛擬目錄來發佈 OAB。若要這樣做，請執行下列命令。
     
-        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```powershell
+    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```
 
 對用戶端存取伺服器虛擬目錄設定好內部 URL 之後，您必須為 Outlook Web App 及其他連線設定私人 DNS 記錄。依您的設定而定，您將必須設定私人 DNS 記錄，使其指向用戶端存取伺服器的內部或外部 IP 位址或是 FQDN。若您已將虛擬目錄的內部 URL 設定為使用 internal.contoso.com，以下是建議您建立的 DNS 記錄範例，以便啟用內部用戶端連線能力。
 

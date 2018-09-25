@@ -128,7 +128,9 @@ _**上次修改主題的時間：** 2018-04-16_
     
     2.  執行下列命令。
         
-            Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```powershell
+        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```
     
     3.  正常執行傳輸代理程式管理工作。
     
@@ -158,7 +160,9 @@ _**上次修改主題的時間：** 2018-04-16_
     
     若要解決此問題，您需要從 Exchange 2013 Client Access Server 的用戶端接收連接器移除 `Integrated` 驗證方法。若要從用戶端接收連接器移除 `Integrated` 驗證方法，請在各個 Exchange 2013 Client Access Server (從執行**Send-MailMessage** 指令程式的電腦接收連線) 上執行下列命令：
     
-        Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+    ```powershell
+    Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+    ```
 
   - **升級至 Exchange 2013 SP1 時，MAPI over HTTP 的效能可能會變差**   如果您從 Exchange 2013 累計更新升級至 Exchange 2013 SP1，並啟用 MAPI over HTTP，則使用此通訊協定連接到 Exchange 2013 SP1 伺服器的用戶端可能會出現效能變差的狀況。這是由於從累計更新升級至 Exchange 2013 SP1 期間未配置必要設定所致。如果您從 Exchange 2013 RTM 升級至 Exchange 2013 SP1，或是安裝新的 Exchange 2013 SP1 或更新版本的伺服器，就不會發生此問題。
     

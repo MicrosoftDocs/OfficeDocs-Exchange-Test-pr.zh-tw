@@ -178,7 +178,9 @@ MAPI over HTTP 可為支援它的用戶端提供下列優點：
     
     例如，若要將內部 URL 值設為 https://contoso.com/mapi，並將驗證方法設為 `Negotiate`，以在本機 Exchange 伺服器上設定預設 MAPI 虛擬目錄，請執行下列命令：
     
-        Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
+    ```powershell
+    Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
+    ```
 
 2.  **憑證組態**   您的 Exchange 環境所使用的數位憑證，必須包含與 MAPI 虛擬目錄上的定義相同的 *InternalURL* 和 *ExternalURL* 值。如需 Exchange 2013 憑證管理的相關資訊，請參閱[數位憑證和 SSL](digital-certificates-and-ssl-exchange-2013-help.md)。請確定 Exchange 憑證在 Outlook 用戶端工作站上受到信任，而且沒有任何憑證錯誤，尤其是在您存取 MAPI 虛擬目錄上設定的 URL 時。
 
@@ -188,7 +190,9 @@ MAPI over HTTP 可為支援它的用戶端提供下列優點：
     
     執行下列命令：
     
-        Set-OrganizationConfig -MapiHttpEnabled $true
+    ```powershell
+    Set-OrganizationConfig -MapiHttpEnabled $true
+    ```
 
 ## 測試 MAPI over HTTP 連線
 
@@ -196,7 +200,9 @@ MAPI over HTTP 可為支援它的用戶端提供下列優點：
 
 下列範例將測試從 Exchange 伺服器 ContosoMail 連出的 MAPI over HTTP 連線。
 
-    Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```powershell
+Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```
 
 成功的測試會傳回類似下列範例的輸出：
 

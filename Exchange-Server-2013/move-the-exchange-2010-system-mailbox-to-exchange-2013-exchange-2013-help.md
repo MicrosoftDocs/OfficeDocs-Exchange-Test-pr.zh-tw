@@ -41,7 +41,9 @@ Exchange 2010、 Microsoft Exchange 系統信箱是用來儲存整個組織資�
 
   - 在 Exchange 2013 中執行下列命令，以取得 Exchange 伺服器和包含組織中系統信箱之信箱資料庫的身分識別和版本。
     
-        Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+    ```powershell
+    Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+    ```
     
     **AdminDisplayVersion** 內容會指出伺服器執行的 Exchange 的版本。`Version 14.x` 值表示 Exchange 2010；`Version 15.x` 值表示 Exchange 2013。
 
@@ -84,17 +86,23 @@ Exchange 2010、 Microsoft Exchange 系統信箱是用來儲存整個組織資�
 
 首先，在 Exchange 2013 中執行下列命令，以取得組織中所有信箱資料庫的名稱和版本。
 
-    Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
+```powershell
+Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
+```
 
 在識別組織中的信箱資料庫名稱之後，請在 Exchange 2013 中執行下列命令，將 Microsoft Exchange 系統信箱移至位於 Exchange 2013 伺服器上的信箱資料庫。
 
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+```powershell
+Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已成功將 Microsoft Exchange 系統信箱移至位於 Exchange 2013 伺服器上的信箱資料庫，請在命令介面中執行下列命令。
 
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+```powershell
+Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+```
 
 如果 **AdminDisplayVersion** 內容的值為 **\[版本 15.x (組建 xxx.x)\]**，就表示系統信箱確實位於 Exchange 2013 伺服器上的信箱資料庫。
 

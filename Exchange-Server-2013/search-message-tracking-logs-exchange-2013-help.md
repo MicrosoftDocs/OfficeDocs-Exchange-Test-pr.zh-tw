@@ -60,21 +60,29 @@ _**上次修改主題的時間：** 2013-02-25_
 
 若要搜尋特定事件的郵件追蹤記錄項目，請使用下列語法。
 
-    Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+```powershell
+Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+```
 
 若要檢視伺服器上最近 1000 個郵件追蹤記錄項目，請執行下列命令：
 
-    Get-MessageTrackingLog
+```powershell
+Get-MessageTrackingLog
+```
 
 此範例會搜尋本機伺服器上的郵件追蹤記錄，以獲得從 2013 年 3 月 28 日上午 8:00 到 2013 年 3 月 28 日下午 5:00，郵件寄件者為 pat@contoso.com 之所有 **FAIL** 事件的所有項目。
 
-    Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
+```powershell
+Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
+```
 
 ## 使用命令介面來控制郵件追蹤記錄搜尋的輸出
 
 使用下列語法。
 
-    Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```powershell
+Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```
 
 本範例會使用下列搜尋準則來搜尋郵件追蹤記錄：
 
@@ -88,7 +96,9 @@ _**上次修改主題的時間：** 2013-02-25_
 
 <!-- end list -->
 
-    Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+```powershell
+Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+```
 
 ## 使用命令介面在多部伺服器上搜尋郵件追蹤記錄中的郵件項目
 
@@ -96,7 +106,9 @@ _**上次修改主題的時間：** 2013-02-25_
 
 若要在所有 Mailbox Server 中搜尋特定郵件的所有郵件追蹤記錄項目，請使用下列語法。
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
+```
 
 本範例會使用下列搜尋準則，搜尋所有 Exchange 2013 Mailbox Server 上的郵件追蹤記錄：
 
@@ -108,7 +120,9 @@ _**上次修改主題的時間：** 2013-02-25_
 
 <!-- end list -->
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```
 
 ## 使用 EAC 搜尋郵件追蹤記錄
 

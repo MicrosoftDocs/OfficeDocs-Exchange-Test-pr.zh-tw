@@ -69,11 +69,15 @@ _**上次修改主題的時間：** 2013-07-02_
 
 下列命令可啟用名為 EXCH-SRV-01 之 Client Access Server 上的 MRS Proxy 端點。
 
-    Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+```powershell
+Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+```
 
 下列命令可啟用您 Exchange 組織中所有 Client Access Server 上的 MRS Proxy 端點。
 
-    Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```powershell
+Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```
 
 
 > [!IMPORTANT]  
@@ -96,17 +100,21 @@ _**上次修改主題的時間：** 2013-07-02_
 
 在命令介面中執行下列命令：
 
-    Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```powershell
+Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```
 
 確認 *MRSProxyEnabled* 參數已設為 `True`。
 
 若要確認已啟用 MRS Proxy 端點的另一種方式是使用**Test-MigrationServerAvailability**指令程式來測試通訊是 offboarding Exchange Online信箱移轉至內部部署組織、 內部部署組織中的伺服器或是與遠端伺服器主控您要移動的信箱的能力。如需詳細資訊，請參閱[Test-MigrationServerAvailability](https://technet.microsoft.com/zh-tw/library/jj219169\(v=exchg.150\))。
 
 下列範例測試能否連線至 corp.contoso.com 樹系中的伺服器。
-```
+
+```powershell
 $Credentials = Get-Credential
 ```
-```
+
+```powershell
 Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
 ```
 

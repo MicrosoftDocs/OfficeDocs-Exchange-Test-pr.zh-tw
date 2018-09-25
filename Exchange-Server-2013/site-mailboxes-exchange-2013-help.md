@@ -91,7 +91,9 @@ Site mailbox provisioning policies
 
 可使用下列命令來搜尋並移除已標記為待刪除的網站信箱。
 
-    Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+```powershell
+Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+```
 
 站台信箱不支援保留項目層級。保留在運作專案層級的網站信箱，所以何時會刪除整個網站信箱、 會刪除保留項目。
 

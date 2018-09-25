@@ -112,7 +112,9 @@ _**上次修改主題的時間：** 2012-11-27_
 
 本範例會建立連結的信箱 Ayla kol CONTOSO Exchange 資源樹系中。FABRIKAM 網域是帳戶樹系中。系統管理員帳戶 FABRIKAM \\administrator 用來存取之連結的網域控制站。
 
-    New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+```powershell
+New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+```
 
 如需語法及參數資訊，請參閱 [New-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997663\(v=exchg.150\))。
 
@@ -124,7 +126,9 @@ _**上次修改主題的時間：** 2012-11-27_
 
   - 在命令介面中，執行以下命令以顯示新連結信箱的資訊：
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```
 
 ## 變更連結信箱內容
 
@@ -367,15 +371,21 @@ _**上次修改主題的時間：** 2012-11-27_
 
 此範例使用 **Get-Mailbox** 命令來尋找組織中的所有連結信箱。
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+```
 
 此範例會使用**Set-Mailbox**命令來限制 \[收件者是否允許的收件者數量:、 \[副本 ︰，和 \[密件副本 ︰ 行中的電子郵件訊息為 500。此限制會套用至組織中所有連結的信箱。
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+```
 
 此範例變更了與在 Exchange 樹系中的連結信箱相關聯的 fabrikam.com 帳戶樹系中的連結主帳戶。
 
-    Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+```powershell
+Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -385,9 +395,13 @@ _**上次修改主題的時間：** 2012-11-27_
 
   - 在命令介面中使用**Get-Mailbox**指令程式來確認所做的變更。使用命令介面的一個優點是您可以檢視多個連結信箱的多個屬性。上述範例中變更收件者限制為何，執行下列命令會驗證新值。
     
-        Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+    ```
     
     在上方範例中變更連結主帳戶的位置執行下列命令，以驗證新值。
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+    Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```
 

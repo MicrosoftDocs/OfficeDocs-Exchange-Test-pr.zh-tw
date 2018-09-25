@@ -166,7 +166,9 @@ DAG 網路的加密和壓縮是在 DAG 層級中設定。預設設定為僅針�
 
 遲延副本減少行為預設為停用，並可透過執行下列命令來予以啟用。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 啟用之後，當副本少於三個時便會發生減少行為。您可以修改下列 DWORD 登錄值來變更預設值 3。
 

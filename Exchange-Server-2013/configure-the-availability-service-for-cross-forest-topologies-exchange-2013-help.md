@@ -61,12 +61,16 @@ _**上次修改主題的時間：** 2014-10-22_
 
 此範例會設定可用性服務，擷取目標樹系中 Mailbox Server 上每位使用者的空閒/忙碌資訊。
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
-    EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
+EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 此範例會定義可用性服務在來源樹系中本機 Mailbox Server 上使用的空閒/忙碌存取方法。會設定本機 Mailbox Server 以每位使用者為基礎，從樹系 ContosoForest.com 存取空閒/忙碌資訊。此範例會使用服務帳戶擷取空閒/忙碌資訊。
 
-    Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```powershell
+Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```
 
 
 > [!NOTE]  
@@ -81,7 +85,9 @@ _**上次修改主題的時間：** 2014-10-22_
 
 本範例會設定服務帳戶之信任的跨樹系可用性。
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 如需詳細的語法及參數資訊，請參閱下列主題：
 
@@ -97,10 +103,14 @@ _**上次修改主題的時間：** 2014-10-22_
 
 此範例會針對全組織帳戶的可用性設定物件進行設定，以設定目標樹系中空閒/忙碌資訊的存取層級。
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 此範例會為來源樹系新增可用性位址空間設定物件。
 
-    $a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
-    Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```powershell
+$a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
+Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```
 

@@ -46,11 +46,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要停用寄件者篩選，請執行下列命令：
 
-    Set-SenderFilterConfig -Enabled $false
+```powershell
+Set-SenderFilterConfig -Enabled $false
+```
 
 若要啟用寄件者篩選，請執行下列命令：
 
-    Set-SenderFilterConfig -Enabled $true
+```powershell
+Set-SenderFilterConfig -Enabled $true
+```
 
 
 > [!NOTE]  
@@ -65,7 +69,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderFilterConfig | Format-List Enabled
+    ```powershell
+    Get-SenderFilterConfig | Format-List Enabled
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -73,15 +79,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要取代現有的值，請執行下列命令：
 
-    Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```powershell
+Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```
 
 此範例會設定寄件者篩選器代理程式封鎖來自 kim@contoso.com 和 john@contoso.com 的郵件、來自 fabrikam.com 網域的郵件，以及來自 northwindtraders.com 和所有其子網域的郵件。
 
-    Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```powershell
+Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```
 
 若要新增或移除項目而不修改任何現有的值，請執行下列命令：
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 此範例會以下列資訊設定寄件者篩選器代理程式：
 
@@ -93,7 +105,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -101,7 +115,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```powershell
+    Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -109,11 +125,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要啟用或停用封鎖空白寄件者的郵件，請執行下列命令：
 
-    Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```
 
 此範例會設定封鎖未指定寄件者從郵件中的郵件寄件者篩選器代理程式： SMTP 命令：
 
-    Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -121,7 +141,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```powershell
+    Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

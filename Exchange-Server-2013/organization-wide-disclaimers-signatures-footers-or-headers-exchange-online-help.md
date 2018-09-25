@@ -114,24 +114,40 @@ kathleen@contoso.com<br />
 <td><p>在組織外，如果原始訊息並不包含免責聲明的文字，例如「CONTOSO 法律注意事項」</p></td>
 <td><p>條件：<strong>收件者位於</strong> &gt; <strong>在組織外</strong></p>
 <p>例外狀況：<strong>主旨或內文</strong> &gt; <strong>主旨或內文符合這些文字模式</strong> &gt; <strong>CONTOSO 法律注意事項</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches &quot;CONTOSO LEGAL NOTICE&quot;</code></pre></td>
+<td>
+```powershell
+-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches &quot;CONTOSO LEGAL NOTICE&quot;
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>內送郵件具有可執行檔附件</p></td>
 <td><p>條件 1：<strong>寄件者位於</strong> &gt; <strong>組織外部</strong></p>
 <p>條件 2：<strong>任何附件</strong> &gt; <strong>具有可執行的內容</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -AttachmentHasExecutableContent</code></pre></td>
+<td>
+```powershell
+-FromScope NotInOrganization -AttachmentHasExecutableContent
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>寄件者在行銷部門中</p></td>
 <td><p>條件：<strong>寄件者</strong> &gt; <strong>是此群組的成員</strong> &gt; <strong>群組名稱</strong></p></td>
-<td><pre><code>-FromMemberOf &quot;Marketing Team&quot;</code></pre></td>
+<td>
+```powershell
+-FromMemberOf &quot;Marketing Team&quot;
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>來自外部寄件者給銷售討論群組的每個訊息</p></td>
 <td><p>條件 1：<strong>寄件者位於</strong> &gt; <strong>組織外部</strong></p>
 <p>條件 2：<strong>訊息</strong> &gt; <strong>收件者或副本方塊包含此人員</strong> &gt; <strong>群組名稱</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -SentTo &quot;Sales Discussion Group&quot; -PrependSubject &quot;Sent to Sales Discussion Group: &quot;</code></pre></td>
+<td>
+```powershell
+-FromScope NotInOrganization -SentTo &quot;Sales Discussion Group&quot; -PrependSubject &quot;Sent to Sales Discussion Group: &quot;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>在外寄郵件前面加上廣告一個月</p></td>

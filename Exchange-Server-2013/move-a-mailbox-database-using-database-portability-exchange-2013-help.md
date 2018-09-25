@@ -51,11 +51,15 @@ _**上次修改主題的時間：** 2014-06-16_
 
 2.  使用下列語法在伺服器上建立資料庫：
     
-        New-MailboxDatabase -Name <DatabaseName> -Server <ServerName> -EdbFilePath <DatabaseFileNameandPath> -LogFolderPath <LogFilesPath>
+    ```powershell
+    New-MailboxDatabase -Name <DatabaseName> -Server <ServerName> -EdbFilePath <DatabaseFileNameandPath> -LogFolderPath <LogFilesPath>
+    ```
 
 3.  使用下列語法設定 *This database can be over written by restore* 屬性：
     
-        Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+    ```powershell
+    Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+    ```
 
 4.  將原始資料庫檔案 (.edb 檔、記錄檔和 Exchange 搜尋類別目錄) 移至您建立上述新資料庫時所指定的資料庫資料夾。
 
@@ -65,11 +69,15 @@ _**上次修改主題的時間：** 2014-06-16_
 
 6.  在裝載資料庫之後，請使用 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) 指令程式修改使用者帳戶設定，以便帳戶能夠指向新信箱伺服器上的信箱。若要將所有使用者從舊資料庫移動到新資料庫，請使用以下語法進行。
     
-        Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>
+    ```powershell
+    Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>
+    ```
 
 7.  使用下列語法，觸發傳遞任何還留在佇列中的郵件。
     
-        Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+    ```powershell
+    Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+    ```
 
 Active Directory 複寫完成後，所有使用者都可以在新 Exchange 伺服器上存取其信箱。許多用戶端會經由自動探索而重新導向。Microsoft Office Outlook Web App 使用者也會自動重新導向。
 

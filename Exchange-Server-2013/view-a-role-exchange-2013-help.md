@@ -54,11 +54,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視特定角色的詳細資料，請使用下列語法。
 
-    Get-ManagementRole <role name> | Format-List
+```powershell
+Get-ManagementRole <role name> | Format-List
+```
 
 此範例會擷取 Mail Recipients 管理角色的詳細資料。
 
-    Get-ManagementRole "Mail Recipients" | Format-List
+```powershell
+Get-ManagementRole "Mail Recipients" | Format-List
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351125\(v=exchg.150\))。
 
@@ -68,15 +72,21 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會傳回您組織中所有角色的清單。
 
-    Get-ManagementRole
+```powershell
+Get-ManagementRole
+```
 
 若要傳回組織中的特定內容的所有角色清單，您可以將傳送**Format-Table** cmdlet 的結果，並指定您想要的屬性清單中的結果。使用下列語法。
 
-    Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```powershell
+Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```
 
 此範例會傳回您組織中所有角色的清單，並包含 **Name** 內容及內容名稱開頭具有 **Implicit** 字眼的任何內容。
 
-    Get-ManagementRole | Format-Table Name, Implicit*
+```powershell
+Get-ManagementRole | Format-Table Name, Implicit*
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351125\(v=exchg.150\))。
 
@@ -86,11 +96,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要傳回包含您指定之 Cmdlet 的角色清單，請使用下列語法。
 
-    Get-ManagementRole -Cmdlet <cmdlet>
+```powershell
+Get-ManagementRole -Cmdlet <cmdlet>
+```
 
 此範例會傳回包含 **New-Mailbox** Cmdlet 的角色清單。
 
-    Get-ManagementRole -Cmdlet New-Mailbox
+```powershell
+Get-ManagementRole -Cmdlet New-Mailbox
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351125\(v=exchg.150\))。
 
@@ -102,15 +116,21 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要傳回包含您指定之參數的角色清單，請使用下列語法。
 
-    Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```powershell
+Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```
 
 此範例會傳回包含 *Database* 和 *Server* 參數的角色清單 (不論它們存在於哪個 Cmdlet 上)。
 
-    Get-ManagementRole -CmdletParameters Database, Server
+```powershell
+Get-ManagementRole -CmdletParameters Database, Server
+```
 
 此範例會傳回 *EmailAddresses* 參數僅存在於 **Set-Mailbox** Cmdlet 上的角色清單。
 
-    Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```powershell
+Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```
 
 您也可以使用萬用字元 (\*) 搭配 *Cmdlet* 或 *CmdletParameters* 參數來比對部分 Cmdlet 或參數名稱。
 
@@ -122,11 +142,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要傳回符合您指定之角色類型的角色清單，請使用下列語法。
 
-    Get-ManagementRole -RoleType <roletype>
+```powershell
+Get-ManagementRole -RoleType <roletype>
+```
 
 此範例會傳回以 `UmMailboxes` 角色類型為基礎的角色清單。
 
-    Get-ManagementRole -RoleType UmMailboxes
+```powershell
+Get-ManagementRole -RoleType UmMailboxes
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351125\(v=exchg.150\))。
 
@@ -136,11 +160,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要傳回上層角色之直接子項角色的清單，請使用以下語法。
 
-    Get-ManagementRole <parent role name> -GetChildren
+```powershell
+Get-ManagementRole <parent role name> -GetChildren
+```
 
 此範例會傳回 Disaster Recovery 角色之直接子項的清單。
 
-    Get-ManagementRole "Disaster Recovery" -GetChildren
+```powershell
+Get-ManagementRole "Disaster Recovery" -GetChildren
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351125\(v=exchg.150\))。
 
@@ -150,11 +178,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 此範例會傳回上層角色的所有子項角色清單。
 
-    Get-ManagementRole <parent role name> -Recurse
+```powershell
+Get-ManagementRole <parent role name> -Recurse
+```
 
 此範例會傳回 Mail Recipients 角色的所有子項角色。
 
-    Get-ManagementRole "Mail Recipients" -Recurse
+```powershell
+Get-ManagementRole "Mail Recipients" -Recurse
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351125\(v=exchg.150\))。
 

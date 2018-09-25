@@ -55,11 +55,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要列出被授與管理角色所提供之權限的所有使用者，請使用下列語法。
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```
 
 此範例會列出被授與郵件收件者角色所提供之權限的所有使用者。
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```
 
 如果您要變更清單中傳回的屬性，或是將清單匯出至逗號分隔值 (.csv) 檔案，請參閱本主題稍後的Use the Shell to customize output and display it。
 
@@ -69,11 +73,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若要尋找已授與權限的管理角色的特定使用者，必須使用**Get-ManagementRoleAssignment**指令程式來擷取所有的有效使用者的清單並接著將傳送到**Where**指令程式指令程式輸出。**Where**指令程式輸出會篩選並傳回您指定的使用者。使用下列語法。
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 此範例會在日誌記錄角色上尋找使用者 David Strome。
 
-    Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```powershell
+Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```
 
 如果您要變更清單中傳回的內容，或是將清單匯出到 .csv 檔，請參閱本主題稍後的Use the Shell to customize output and display it。
 
@@ -83,11 +91,15 @@ _**上次修改主題的時間：** 2012-10-09_
 
 了解每個使用者會收到將權限的角色，您必須使用**Get-ManagementRoleAssignment**指令程式來擷取所有的管理角色的所有有效使用者，然後將傳送到**Where**指令程式指令程式輸出。**Where**指令程式輸出會篩選並傳回僅授與使用者權限的角色指派。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 此範例會尋找所有授與權限給使用者 Kim Akers 的角色指派。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }
+```
 
 如果您要變更清單中傳回的內容，或是將清單匯出到 CSV 檔，請參閱本主題稍後的Use the Shell to customize output and display it。
 
@@ -143,7 +155,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 此範例會在所有角色中尋找使用者 David Strome，並且顯示 `EffectiveUserName`、`Role`、`CustomRecipientWriteScope` 和 `CustomConfigWriteScope` 內容。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -167,7 +181,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 此範例會在所有角色中尋找使用者 David Strome，並且顯示 `EffectiveUserName`、`Role`、`CustomRecipientWriteScope` 和 `CustomConfigWriteScope` 內容。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```
 
 您現在可以在自己選擇的檢視器中檢視 .csv 檔案。
 

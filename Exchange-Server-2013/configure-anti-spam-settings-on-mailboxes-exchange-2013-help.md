@@ -53,11 +53,15 @@ _**上次修改主題的時間：** 2016-11-17_
 
 若要設定單一信箱的反垃圾郵件設定，請使用下列語法。
 
-    Set-Mailbox <MailboxIdentity> -AntispamBypassEnabled <$true | $false> -RequireSenderAuthenticationEnabled <$true | $false> -SCLDeleteEnabled <$true | $false | $null> -SCLDeleteThreshold <0-9 | $null> -SCLJunkEnabled <$true | $false | $null > -SCLJunkThreshold <0-9 | $null> -SCLQuarantineEnabled <$true | $false | $null > -SCLQuarantineThreshold <0-9 | $null> -SCLRejectEnabled <$true | $false | $null > -SCLRejectThreshold <0-9 | $null>
+```powershell
+Set-Mailbox <MailboxIdentity> -AntispamBypassEnabled <$true | $false> -RequireSenderAuthenticationEnabled <$true | $false> -SCLDeleteEnabled <$true | $false | $null> -SCLDeleteThreshold <0-9 | $null> -SCLJunkEnabled <$true | $false | $null > -SCLJunkThreshold <0-9 | $null> -SCLQuarantineEnabled <$true | $false | $null > -SCLQuarantineThreshold <0-9 | $null> -SCLRejectEnabled <$true | $false | $null > -SCLRejectThreshold <0-9 | $null>
+```
 
 此範例提供如何設定一位名叫 Jeff Phillips 的信箱使用者略過所有反垃圾郵件篩選器的說明，以及如何將符合或超出 5 封垃圾郵件資料夾 SLC 閾值的郵件傳遞到他的 Microsoft Outlook 垃圾郵件資料匣中。
 
-    Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```powershell
+Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -65,7 +69,9 @@ _**上次修改主題的時間：** 2016-11-17_
 
 1.  執行下列命令：
     
-        Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
+    ```powershell
+    Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -73,11 +79,15 @@ _**上次修改主題的時間：** 2016-11-17_
 
 若要設定多個信箱的所有反垃圾郵件設定，請使用下列語法。
 
-    Get-Mailbox [<Filter>]| Set-Mailbox <Anti-Spam Settings>
+```powershell
+Get-Mailbox [<Filter>]| Set-Mailbox <Anti-Spam Settings>
+```
 
 此範例會將 Contoso.com 網域中使用者容器內所有信箱的 SCL 隔離閾值啟用為 7。
 
-    Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```powershell
+Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -85,7 +95,9 @@ _**上次修改主題的時間：** 2016-11-17_
 
 1.  執行下列命令：
     
-        Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
+    ```powershell
+    Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -93,11 +105,15 @@ _**上次修改主題的時間：** 2016-11-17_
 
 執行下列命令：
 
-    Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```
 
 此範例會將組織的垃圾郵件閾值設定為 5。
 
-    Set-OrganizationConfig -SCLJunkThreshold 5
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold 5
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -105,7 +121,9 @@ _**上次修改主題的時間：** 2016-11-17_
 
 1.  執行下列命令：
     
-        Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```powershell
+    Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

@@ -83,7 +83,9 @@ _**上次修改主題的時間：** 2013-04-29_
 
 此範例會使用易記名稱 `CertUM` 建立新的 Exchange 憑證要求，以供名為 `MyMailboxServer` 的 Mailbox Server 使用。
 
-    New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```powershell
+New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```
 
 ## 使用 EAC 建立 UM 的自我簽署憑證
 
@@ -110,7 +112,9 @@ _**上次修改主題的時間：** 2013-04-29_
 
 此範例會使用易記名稱 `UMCert` 建立新的 Exchange 自我簽署憑證，以供名為 `MyMailboxServer` 的 Mailbox Server 使用。
 
-    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```powershell
+New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```
 
 
 > [!TIP]  

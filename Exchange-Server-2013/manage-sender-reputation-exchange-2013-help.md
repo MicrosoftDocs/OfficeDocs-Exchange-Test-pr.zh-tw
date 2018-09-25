@@ -46,11 +46,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會停用寄件者信譽。
 
-    Set-SenderReputationConfig -Enabled $false
+```powershell
+Set-SenderReputationConfig -Enabled $false
+```
 
 此範例會啟用寄件者信譽。
 
-    Set-SenderReputationConfig -Enabled $true
+```powershell
+Set-SenderReputationConfig -Enabled $true
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -58,11 +62,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令，確認 \[通訊協定分析\] 代理程式已安裝並啟用：
     
-        Get-TransportAgent
+    ```powershell
+    Get-TransportAgent
+    ```
 
 2.  執行下列命令，驗證您設定的寄件者信譽值：
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 ## 使用命令介面，對內部或外部郵件啟用或停用寄件者信譽
 
@@ -70,19 +78,27 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要對外部郵件停用寄件者信譽，請執行下列命令：
 
-    Set-SenderReputationConfig -ExternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $false
+```
 
 若要對外部郵件啟用寄件者信譽，請執行下列命令：
 
-    Set-SenderReputationConfig -ExternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $true
+```
 
 若要對內部郵件停用寄件者信譽，請執行下列命令：
 
-    Set-SenderReputationConfig -InternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $false
+```
 
 若要對內部郵件啟用寄件者信譽，請執行下列命令：
 
-    Set-SenderReputationConfig -InternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $true
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -90,7 +106,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 2.  請確認顯示的值符合您所設定的值。
 
@@ -98,11 +116,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定寄件者信譽內容，請執行下列命令：
 
-    Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```
 
 本範例會將寄件者信譽等級 (SRL) 封鎖閾值設成 6 並且設定寄件者信譽，以將違規寄件者加入到 36 小時的 IP 封鎖清單中：
 
-    Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -110,7 +132,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderReputationConfig
+    ```powershell
+    Get-SenderReputationConfig
+    ```
 
 2.  請確認顯示的值符合您所設定的值。
 
@@ -149,11 +173,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定輸出存取以偵測開放式 Proxy 伺服器，請執行下列命令：
 
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```powershell
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 本範例會設定寄件者信譽來使用名為 SERVER01 的開放式 Proxy 伺服器，此伺服器將使用連接埠 80 上的 HTTP CONNECT 通訊協定。
 
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```powershell
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -161,7 +189,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    ```powershell
+    Get-SenderReputationConfig | Format-List ProxyServer*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

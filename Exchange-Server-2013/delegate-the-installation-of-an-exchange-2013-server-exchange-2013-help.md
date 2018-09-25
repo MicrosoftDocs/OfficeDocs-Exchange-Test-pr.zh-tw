@@ -65,17 +65,23 @@ Exchange Server 2013可讓您不Exchange 2013組織管理角色群組之成員�
 
 3.  下載並展開Exchange 2013安裝檔案的位置變更到目錄。如果安裝檔案位於`C:\Downloads\Exchange 2013`，使用下列命令。
     
-        CD "C:\Downloads\Exchange 2013"
+    ```powershell
+    CD "C:\Downloads\Exchange 2013"
+    ```
 
 4.  選擇 \[找出您正在執行安裝程式的命令：
     
       - **如果您正在執行佈建的電腦上的安裝程式**，請執行下列命令：
         
-            Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+        ```powershell
+        Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+        ```
     
       - **如果您正在執行安裝程式在另一部電腦上的**，執行下列命令：
         
-            Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+        ```powershell
+        Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+        ```
 
 5.  佈建伺服器之後，您需要確定您已新增應該能夠以委派安裝 」 角色群組的佈建伺服器上安裝Exchange的使用者。若要了解如何將使用者新增至角色群組，請參閱[Add members to a role group](manage-role-group-members-exchange-2013-help.md)。
 

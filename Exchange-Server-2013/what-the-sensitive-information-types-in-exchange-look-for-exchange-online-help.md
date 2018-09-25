@@ -58,13 +58,17 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_aba_routing</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_ABA_Routing</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- ABA Routing Number --&gt;
+
+```powershell
+&lt;!-- ABA Routing Number --&gt;
 &lt;Entity id=&quot;cb353f78-2b72-4c3c-8827-92ebe4f69fdf&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_aba_routing&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_ABA_Routing&quot; /&gt;
       &lt;/Pattern&gt;
- &lt;/Entity&gt;</code></pre></td>
+ &lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -143,13 +147,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_argentina_national_id</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_argentina_national_id</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Argentina National Identity (DNI) Number --&gt;
+
+```powershell
+&lt;!-- Argentina National Identity (DNI) Number --&gt;
 &lt;Entity id=&quot;eefbb00e-8282-433c-8620-8f1da3bffdb2&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
       &lt;IdMatch idRef=&quot;Regex_argentina_national_id&quot;/&gt;
       &lt;Match idRef=&quot;Keyword_argentina_national_id&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -225,7 +234,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_australia_bank_account_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_australia_bank_account_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Australia Bank Account Number --&gt;
+
+```powershell
+&lt;!-- Australia Bank Account Number --&gt;
 &lt;Entity id=&quot;74a54de9-2a30-4aa0-a8aa-3d9327fc07c7&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_australia_bank_account_number&quot; /&gt;
@@ -236,7 +247,10 @@ _**上次修改主題的時間：** 2018-05-03_
         &lt;IdMatch idRef=&quot;Regex_australia_bank_account_number&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_australia_bank_account_number&quot; /&gt;
   &lt;/Pattern&gt;
- &lt;/Entity&gt;</code></pre></td>
+ &lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -315,7 +329,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_australia_drivers_license_number</code> 的關鍵字。</p></li>
 <li><p>找不到來自於 <code>Keyword_australia_drivers_license_number_exclusions</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Australia Drivers License Number --&gt;
+
+```powershell
+&lt;!-- Australia Drivers License Number --&gt;
 &lt;Entity id=&quot;1cbbc8f5-9216-4392-9eb5-5ac2298d1356&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_australia_drivers_license_number&quot; /&gt;
@@ -324,7 +340,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_australia_drivers_license_number_exclusions&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -490,7 +509,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_australian_medical_account_number</code> 找到符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>  &lt;!-- Australia Medical Account Number --&gt;
+
+```powershell
+  &lt;!-- Australia Medical Account Number --&gt;
 &lt;Entity id=&quot;104a99a0-3d3b-4542-a40d-ab0b9e1efe63&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;95&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_australian_medical_account_number&quot;/&gt;
@@ -504,7 +525,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Match idRef=&quot;Keyword_Australia_Medical_Account_Number&quot;/&gt;
      &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -568,7 +592,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_australia_passport_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_passport</code> 或 <code>Keyword_australia_passport_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Australia Passport Number --&gt;
+
+```powershell
+&lt;!-- Australia Passport Number --&gt;
 &lt;Entity id=&quot;29869db6-602d-4853-ab93-3484f905df50&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_australia_passport_number&quot; /&gt;
@@ -577,7 +603,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_australia_passport_number&quot; /&gt;
         &lt;/Any&gt;
    &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -679,7 +708,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找不到來自於 <code>Keyword_Australia_Tax_File_Number</code> 或 <code>Keyword_number_exclusions</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>    &lt;!-- Australia Tax File Number --&gt;
+
+```powershell
+    &lt;!-- Australia Tax File Number --&gt;
 &lt;Entity id=&quot;e29bc95f-ff70-4a37-aa01-04d17360a4c5&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;95&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_australian_tax_file_number&quot; /&gt;
@@ -697,7 +728,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_number_exclusions&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -800,13 +834,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>從<code>Keyword_belgium_national_number</code>關鍵字是找到。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Belgium National Number --&gt;
+
+```powershell
+&lt;!-- Belgium National Number --&gt;
   &lt;Entity id=&quot;fb969c9e-0fd1-4b18-8091-a2123c5e6a54&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_belgium_national_number&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_belgium_national_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -899,7 +938,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_brazil_cnpj</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Brazil Legal Entity Number (CNPJ) --&gt;
+
+```powershell
+&lt;!-- Brazil Legal Entity Number (CNPJ) --&gt;
 &lt;Entity id=&quot;9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
    &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_brazil_cnpj&quot;/&gt;
@@ -908,7 +949,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_brazil_cnpj&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1001,7 +1045,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_brazil_cpf</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Brazil CPF Number --&gt;
+
+```powershell
+&lt;!-- Brazil CPF Number --&gt;
 &lt;Entity id=&quot;78e09124-f2c3-4656-b32a-c1a132cd2711&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_brazil_cpf&quot;/&gt;
@@ -1010,7 +1056,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_brazil_cpf&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1106,7 +1155,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_brazil_rg</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Brazil National ID Card (RG) --&gt;
+
+```powershell
+&lt;!-- Brazil National ID Card (RG) --&gt;
 &lt;Entity id=&quot;486de900-db70-41b3-a886-abdf25af119c&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_brazil_rg&quot;/&gt;
@@ -1115,7 +1166,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_brazil_rg&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1194,7 +1248,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_canada_bank_account_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_canada_bank_account_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Canada Bank Account Number --&gt;
+
+```powershell
+&lt;!-- Canada Bank Account Number --&gt;
 &lt;Entity id=&quot;552e814c-cb50-4d94-bbaa-bb1d1ffb34de&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_canada_bank_account_number&quot; /&gt;
@@ -1205,7 +1261,10 @@ _**上次修改主題的時間：** 2018-05-03_
         &lt;IdMatch idRef=&quot;Regex_canada_bank_account_number&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_canada_bank_account_number&quot; /&gt;
    &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1282,7 +1341,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_[province_name]_drivers_license_name</code> 的關鍵字。</p></li>
 <li><p>找到來自於 <code>Keyword_canada_drivers_license</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Canada Driver&#39;s License Number --&gt;
+
+```powershell
+&lt;!-- Canada Driver&#39;s License Number --&gt;
     &lt;Entity id=&quot;37186abb-8e48-4800-ad3c-e3d1610b3db0&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_alberta_drivers_license_number&quot; /&gt;
@@ -1334,7 +1395,10 @@ _**上次修改主題的時間：** 2018-05-03_
         &lt;Match idRef=&quot;Keyword_saskatchewan_drivers_license_name&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_canada_drivers_license&quot; /&gt;
       &lt;/Pattern&gt;
-    &lt;/Entity&gt;</code></pre></td>
+    &lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1523,7 +1587,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_canada_health_service_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_canada_health_service_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Canada Health Service Number --&gt;
+
+```powershell
+&lt;!-- Canada Health Service Number --&gt;
 &lt;Entity id=&quot;59c0bf39-7fab-482c-af25-00faa4384c94&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_canada_health_service_number&quot; /&gt;
@@ -1531,7 +1597,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_canada_health_service_number&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1595,7 +1664,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_canada_passport_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_canada_passport_number</code> 或 <code>Keyword_passport</code> 的關鍵字。</p></li>
 </ul>
-<pre><code> &lt;!-- Canada Passport Number --&gt;
+
+```powershell
+ &lt;!-- Canada Passport Number --&gt;
 &lt;Entity id=&quot;14d0db8b-498a-43ed-9fca-f6097ae687eb&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_canada_passport_number&quot; /&gt;
@@ -1604,7 +1675,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_passport&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1687,7 +1761,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_canada_phin</code> 找到符合模式的內容。</p></li>
 <li><p>至少找到兩個來自於 <code>Keyword_canada_phin</code> 或 <code>Keyword_canada_provinces</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Canada PHIN --&gt;
+
+```powershell
+&lt;!-- Canada PHIN --&gt;
 &lt;Entity id=&quot;722e12ac-c89a-4ec8-a1b7-fea3469f89db&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_canada_phin&quot; /&gt;
@@ -1696,7 +1772,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_canada_provinces&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1805,7 +1884,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_sin</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Canada Social Insurance Number --&gt;
+
+```powershell
+&lt;!-- Canada Social Insurance Number --&gt;
 &lt;Entity id=&quot;a2f29c85-ecb8-4514-a610-364790c0773e&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_canadian_sin&quot; /&gt;
@@ -1819,7 +1900,10 @@ _**上次修改主題的時間：** 2018-05-03_
         &lt;IdMatch idRef=&quot;Func_unformatted_canadian_sin&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_sin&quot; /&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -1912,7 +1996,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_chile_id_card</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Chile Identity Card Number --&gt;
+
+```powershell
+&lt;!-- Chile Identity Card Number --&gt;
 &lt;Entity id=&quot;4e979794-49a0-407e-a0b9-2c536937b925&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_chile_id_card&quot;/&gt;
@@ -1921,7 +2007,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_chile_id_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2000,7 +2089,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_china_resident_id</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- China Resident Identity Card (PRC) Number --&gt;
+
+```powershell
+&lt;!-- China Resident Identity Card (PRC) Number --&gt;
 &lt;Entity id=&quot;c92daa86-2d16-4871-901f-816b3f554fc1&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_china_resident_id&quot;/&gt;
@@ -2009,7 +2100,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_china_resident_id&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2085,7 +2179,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_credit_card</code> 找到符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Credit Card Number --&gt;
+
+```powershell
+&lt;!-- Credit Card Number --&gt;
 &lt;Entity id=&quot;50842eb7-edc8-4019-85dd-5a5c1f2bb085&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_credit_card&quot; /&gt;
@@ -2098,7 +2194,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_credit_card&quot; /&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2346,13 +2445,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_croatia_id_card</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_croatia_id_card</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!--Croatia Identity Card Number--&gt;
+
+```powershell
+&lt;!--Croatia Identity Card Number--&gt;
 &lt;Entity id=&quot;ff12f884-c20a-4189-b185-34c8e7258d47&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_croatia_id_card&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_croatia_id_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2419,7 +2523,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_croatia_oib_number</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Croatia Personal Identification (OIB) Number --&gt;
+
+```powershell
+&lt;!-- Croatia Personal Identification (OIB) Number --&gt;
 &lt;Entity id=&quot;31983b6d-db95-4eb2-a630-b44bd091968d&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_croatia_oib_number&quot;/&gt;
@@ -2428,7 +2534,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_croatia_oib_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2492,13 +2601,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>從<code>Keyword_czech_id_card</code>關鍵字是找到。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Czech National Identity Card Number --&gt;
+
+```powershell
+&lt;!-- Czech National Identity Card Number --&gt;
 &lt;Entity id=&quot;60c0725a-4eb6-455b-9dda-05d8a7396497&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_czech_id_card&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_czech_id_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2561,13 +2675,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>從<code>Keyword_denmark_id</code>關鍵字是找到。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Denmark Personal Identification Number --&gt;
+
+```powershell
+&lt;!-- Denmark Personal Identification Number --&gt;
 &lt;Entity id=&quot;6c4f2fef-56e1-4c00-8093-88d7a01cf460&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_denmark_id&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_denmark_id&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2631,12 +2750,17 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_dea_number</code> 找到符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- DEA Number --&gt;
+
+```powershell
+&lt;!-- DEA Number --&gt;
 &lt;Entity id=&quot;9a5445ad-406e-43eb-8bd7-cac17ab6d0e4&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_dea_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -2682,7 +2806,9 @@ _**上次修改主題的時間：** 2018-05-03_
 </ul></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>    &lt;!-- EU Debit Card Number --&gt;
+
+```powershell
+    &lt;!-- EU Debit Card Number --&gt;
     &lt;Entity id=&quot;0e9b3178-9678-47dd-a509-37222ca96b42&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_eu_debit_card&quot; /&gt;
@@ -2694,7 +2820,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Func_expiration_date&quot; /&gt;
         &lt;/Any&gt;
       &lt;/Pattern&gt;
-    &lt;/Entity&gt;</code></pre></td>
+    &lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3058,13 +3187,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_finnish_national_id</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Finnish National ID--&gt;
+
+```powershell
+&lt;!-- Finnish National ID--&gt;
 &lt;Entity id=&quot;338FD995-4CB5-4F87-AD35-79BD1DD926C1&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_finnish_national_id&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_finnish_national_id&quot; /&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3127,13 +3261,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_finland_passport_number</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_finland_passport_number</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Finland Passport Number --&gt;
+
+```powershell
+&lt;!-- Finland Passport Number --&gt;
 &lt;Entity id=&quot;d1685ac3-1d3a-40f8-8198-32ef5669c7a5&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_finland_passport_number&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_finland_passport_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3194,7 +3333,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_eu_date</code> 找到正確日期格式的日期。</p></li>
 </ul></li>
 </ul>
-<pre><code>&lt;!-- France Driver&#39;s License Number --&gt;
+
+```powershell
+&lt;!-- France Driver&#39;s License Number --&gt;
 &lt;Entity id=&quot;18e55a36-a01b-4b0f-943d-dc10282a1824&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_french_drivers_license&quot; /&gt;
@@ -3203,7 +3344,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Func_eu_date&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3266,12 +3410,17 @@ _**上次修改主題的時間：** 2018-05-03_
 <ul>
 <li><p>規則運算式 <code>Regex_france_cni</code> 找到符合模式的內容。</p></li>
 </ul>
-<pre><code>&lt;!-- France CNI --&gt;
+
+```powershell
+&lt;!-- France CNI --&gt;
 &lt;Entity id=&quot;f741ac74-1bc0-4665-b69b-f0c7f927c0c4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;65&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_france_cni&quot; /&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3314,13 +3463,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_fr_passport</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_passport</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- France Passport Number --&gt;
+
+```powershell
+&lt;!-- France Passport Number --&gt;
 &lt;Entity id=&quot;3008b884-8c8c-4cd8-a289-99f34fc7ff5d&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_fr_passport&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_passport&quot; /&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3404,7 +3558,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找不到來自於 <code>Keyword_fr_insee</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- France INSEE --&gt;
+
+```powershell
+&lt;!-- France INSEE --&gt;
 &lt;Entity id=&quot;71f62b97-efe0-4aa1-aa49-e14de253619d&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;95&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_french_insee&quot; /&gt;
@@ -3420,7 +3576,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_fr_insee&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3509,7 +3668,9 @@ _**上次修改主題的時間：** 2018-05-03_
 </ul></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- German Driver&#39;s License Number --&gt;
+
+```powershell
+&lt;!-- German Driver&#39;s License Number --&gt;
 &lt;Entity id=&quot;91da9335-1edb-45b7-a95f-5fe41a16c63c&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_german_drivers_license&quot; /&gt;
@@ -3519,7 +3680,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_german_drivers_license&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3688,13 +3852,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_germany_id_card</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_germany_id_card</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Germany Identity Card Number --&gt;
+
+```powershell
+&lt;!-- Germany Identity Card Number --&gt;
 &lt;Entity id=&quot;e577372f-c42e-47a0-9d85-bebed1c237d4&quot; recommendedConfidence=&quot;65&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_germany_id_card&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_germany_id_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3769,7 +3938,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到五個關鍵字清單任一者中的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- German Passport Number --&gt;
+
+```powershell
+&lt;!-- German Passport Number --&gt;
 &lt;Entity id=&quot;2e3da144-d42b-47ed-b123-fbf78604e52c&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_german_passport&quot; /&gt;
@@ -3791,7 +3962,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_german_passport2&quot; /&gt;
         &lt;/Any&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3880,13 +4054,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_greece_id_card</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_greece_id_card</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Greece National ID Card --&gt;
+
+```powershell
+&lt;!-- Greece National ID Card --&gt;
 &lt;Entity id=&quot;82568215-1da1-46d3-874a-d2294d81b5ac&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_greece_id_card&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_greece_id_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -3956,7 +4135,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_hong_kong_id_card</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Hong Kong Identity Card (HKID) number --&gt;
+
+```powershell
+&lt;!-- Hong Kong Identity Card (HKID) number --&gt;
 &lt;Entity id=&quot;e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_hong_kong_id_card&quot;/&gt;
@@ -3965,7 +4146,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_hong_kong_id_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4031,13 +4215,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>從<code>Keyword_india_permanent_account_number</code>關鍵字是找到。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- India Permanent Account Number --&gt;
+
+```powershell
+&lt;!-- India Permanent Account Number --&gt;
 &lt;Entity id=&quot;2602bfee-9bb0-47a5-a7a6-2bf3053e2804&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_india_permanent_account_number&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_india_permanent_account_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4107,7 +4296,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_india_aadhaar</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- India Unique Identification (Aadhaar) number --&gt;
+
+```powershell
+&lt;!-- India Unique Identification (Aadhaar) number --&gt;
 &lt;Entity id=&quot;1ca46b29-76f5-4f46-9383-cfa15e91048f&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_india_aadhaar&quot;/&gt;
@@ -4116,7 +4307,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_india_aadhaar&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4189,7 +4383,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <ul>
 <li><p>規則運算式<code>Regex_indonesia_id_card</code>會找出符合模式的內容。</p></li>
 </ul>
-<pre><code>&lt;!-- Indonesia Identity Card (KTP) Number --&gt;
+
+```powershell
+&lt;!-- Indonesia Identity Card (KTP) Number --&gt;
 &lt;Entity id=&quot;da68fdb0-f383-4981-8c86-82689d3b7d55&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_indonesia_id_card&quot;/&gt;
@@ -4198,7 +4394,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_indonesia_id_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4268,11 +4467,16 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_iban</code> 找到符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;Entity id=&quot;e7dc4711-11b7-4cb0-b88b-2c394a771f0e&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
+
+```powershell
+&lt;Entity id=&quot;e7dc4711-11b7-4cb0-b88b-2c394a771f0e&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_iban&quot; /&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4327,7 +4531,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_ipv6_address</code> 找到符合模式的內容。</p></li>
 <li><p>找不到來自於 <code>Keyword_ipaddress</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>    &lt;!-- IP Address --&gt;
+
+```powershell
+    &lt;!-- IP Address --&gt;
     &lt;Entity id=&quot;1daa4ad5-e2dd-4ca4-a788-54722c09efb2&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_ipv6_address&quot; /&gt;
@@ -4347,7 +4553,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_ipaddress&quot; /&gt;
         &lt;/Any&gt;
       &lt;/Pattern&gt;
-    &lt;/Entity&gt;</code></pre></td>
+    &lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4438,7 +4647,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_ireland_pps</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Ireland Personal Public Service (PPS) Number --&gt;
+
+```powershell
+&lt;!-- Ireland Personal Public Service (PPS) Number --&gt;
 &lt;Entity id=&quot;1cdb674d-c19a-4fcf-9f4b-7f56cc87345a&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_ireland_pps&quot;/&gt;
@@ -4450,7 +4661,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_ireland_pps&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4527,7 +4741,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_israel_bank_account_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_israel_bank_account_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Israel Bank Account Number --&gt;
+
+```powershell
+&lt;!-- Israel Bank Account Number --&gt;
 &lt;Entity id=&quot;7d08b2ff-a0b9-437f-957c-aeddbf9b2b25&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_israel_bank_account_number&quot; /&gt;
@@ -4535,7 +4751,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_israel_bank_account_number&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4595,7 +4814,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_Israel_National_ID</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Israel National ID Number --&gt;
+
+```powershell
+&lt;!-- Israel National ID Number --&gt;
 &lt;Entity id=&quot;e05881f5-1db1-418c-89aa-a3ac5c5277ee&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_israeli_national_id_number&quot; /&gt;
@@ -4603,7 +4824,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_Israel_National_ID&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4666,7 +4890,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_italy_drivers_license_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_italy_drivers_license_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Italy Driver&#39;s license Number --&gt;
+
+```powershell
+&lt;!-- Italy Driver&#39;s license Number --&gt;
 &lt;Entity id=&quot;97d6244f-9157-41bd-8e0c-9d669a5c4d71&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_italy_drivers_license_number&quot; /&gt;
@@ -4674,7 +4900,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_italy_drivers_license_number&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4750,7 +4979,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_jp_bank_account</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_jp_bank_account</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Japan Bank Account Number --&gt;
+
+```powershell
+&lt;!-- Japan Bank Account Number --&gt;
 &lt;Entity id=&quot;d354f95b-96ee-4b80-80bc-4377312b55bc&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
   &lt;Version minEngineVersion=&quot;15.01.0131.000&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
@@ -4766,7 +4997,10 @@ _**上次修改主題的時間：** 2018-05-03_
         &lt;IdMatch idRef=&quot;Func_jp_bank_account&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_jp_bank_account&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4881,13 +5115,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_jp_drivers_license_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_jp_drivers_license_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Japan Driver&#39;s License Number --&gt;
+
+```powershell
+&lt;!-- Japan Driver&#39;s License Number --&gt;
 &lt;Entity id=&quot;c6011143-d087-451c-8313-7f6d4aed2270&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_drivers_license_number&quot; /&gt;
         &lt;Match idRef =&quot;Keyword_jp_drivers_license_number&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -4971,13 +5210,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_jp_passport</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_jp_passport</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Japan Passport Number --&gt;
+
+```powershell
+&lt;!-- Japan Passport Number --&gt;
 &lt;Entity id=&quot;75177310-1a09-4613-bf6d-833aae3743f8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_passport&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_jp_passport&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5036,13 +5280,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_jp_resident_registration_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_jp_resident_registration_number</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Japan Resident Registration Number --&gt;
+
+```powershell
+&lt;!-- Japan Resident Registration Number --&gt;
 &lt;Entity id=&quot;01c1209b-6389-4faf-a5f8-3f7e13899652&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_resident_registration_number&quot; /&gt;
         &lt;Match idRef =&quot;Keyword_jp_resident_registration_number&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5120,7 +5369,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_jp_sin_pre_1997</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_jp_sin</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Japan Social Insurance Number --&gt;
+
+```powershell
+&lt;!-- Japan Social Insurance Number --&gt;
 &lt;Entity id=&quot;c840e719-0896-45bb-84fd-1ed5c95e45ff&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_sin&quot; /&gt;
@@ -5130,7 +5381,10 @@ _**上次修改主題的時間：** 2018-05-03_
         &lt;IdMatch idRef=&quot;Func_jp_sin_pre_1997&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_jp_sin&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5198,14 +5452,19 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_malaysia_id_card_number</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_malaysia_id_card_number</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Malaysia ID Card Number --&gt;
+
+```powershell
+&lt;!-- Malaysia ID Card Number --&gt;
 &lt;/Entity&gt;
       &lt;Entity id=&quot;7f0e921c-9677-435b-aba2-bb8f1013c749&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
         &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
             &lt;IdMatch idRef=&quot;Regex_malaysia_id_card_number&quot; /&gt;
             &lt;Match idRef=&quot;Keyword_malaysia_id_card_number&quot; /&gt;
         &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5276,14 +5535,19 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_eu_date2</code> 找到正確日期格式的日期。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Netherlands Citizen&#39;s Service (BSN) Number --&gt;
+
+```powershell
+&lt;!-- Netherlands Citizen&#39;s Service (BSN) Number --&gt;
 &lt;Entity id=&quot;c5f54253-ef7e-44f6-a578-440ed67e946d&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
        &lt;IdMatch idRef=&quot;Func_netherlands_bsn&quot; /&gt; 
        &lt;Match idRef=&quot;Keyword_netherlands_bsn&quot; /&gt; 
        &lt;Match idRef=&quot;Func_eu_date2&quot; /&gt; 
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5345,7 +5609,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_nz_terms</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- New Zealand Health Number --&gt;
+
+```powershell
+&lt;!-- New Zealand Health Number --&gt;
 &lt;Entity id=&quot;2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_new_zealand_ministry_of_health_number&quot; /&gt;
@@ -5353,7 +5619,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_nz_terms&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5423,7 +5692,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_norway_id_numbe</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Norway Identification Number --&gt;
+
+```powershell
+&lt;!-- Norway Identification Number --&gt;
 &lt;Entity id=&quot;d4c8a798-e9f2-4bd3-9652-500d24080fc3&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_norway_id_number&quot;/&gt;
@@ -5432,7 +5703,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_norway_id_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5500,13 +5774,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_philippines_unified_id</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_philippines_id</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Philippines Unified Multi-Purpose ID number --&gt;
+
+```powershell
+&lt;!-- Philippines Unified Multi-Purpose ID number --&gt;
 &lt;Entity id=&quot;019b39dd-8c25-4765-91a3-d9c6baf3c3b3&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_philippines_unified_id&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_philippines_id&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5566,13 +5845,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_polish_national_id_passport_number</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Poland Identity Card--&gt;
+
+```powershell
+&lt;!-- Poland Identity Card--&gt;
 &lt;Entity id=&quot;25E64989-ED5D-40CA-A939-6C14183BB7BF&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_polish_national_id&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_polish_national_id_passport_number&quot; /&gt;
       &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5631,13 +5915,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_pesel_identification_number</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Poland National ID (PESEL) --&gt;      
+
+```powershell
+&lt;!-- Poland National ID (PESEL) --&gt;      
 &lt;Entity id=&quot;E3AAF206-4297-412F-9E06-BA8487E22456&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_pesel_identification_number&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_pesel_identification_number&quot; /&gt;
       &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5695,14 +5984,19 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_polish_national_id_passport_number</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Poland Passport Number --&gt;
+
+```powershell
+&lt;!-- Poland Passport Number --&gt;
 &lt;Entity id=&quot;03937FB5-D2B6-4487-B61F-0F8BFF7C3517&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_polish_passport_number&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_polish_national_id_passport_number&quot; /&gt;
       &lt;/Pattern&gt;
 &lt;/Entity&gt;
-&lt;/Version&gt;</code></pre></td>
+&lt;/Version&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5760,13 +6054,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_portugal_citizen_card</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_portugal_citizen_card</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Portugal Citizen Card Number --&gt;
+
+```powershell
+&lt;!-- Portugal Citizen Card Number --&gt;
 &lt;Entity id=&quot;91a7ece2-add4-4986-9a15-c84544d81ecd&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_portugal_citizen_card&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_portugal_citizen_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5826,7 +6125,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_saudi_arabia_national_id</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_saudi_arabia_national_id</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- Saudi Arabia National ID --&gt;
+
+```powershell
+&lt;!-- Saudi Arabia National ID --&gt;
 &lt;Entity id=&quot;8c5a0ba8-404a-41a3-8871-746aa21ee6c0&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_saudi_arabia_national_id&quot; /&gt;
@@ -5834,7 +6135,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_saudi_arabia_national_id&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5904,7 +6208,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_singapore_nric</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Singapore National Registration Identity Card (NRIC) Number --&gt;
+
+```powershell
+&lt;!-- Singapore National Registration Identity Card (NRIC) Number --&gt;
 &lt;Entity id=&quot;cead390a-dd83-4856-9751-fb6dc98c34da&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_singapore_nric&quot;/&gt;
@@ -5913,7 +6219,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_singapore_nric&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -5984,13 +6293,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>從<code>Keyword_south_africa_identification_number</code>關鍵字是找到。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- South Africa Identification Number --&gt;
+
+```powershell
+&lt;!-- South Africa Identification Number --&gt;
 &lt;Entity id=&quot;e2adf7cb-8ea6-4048-a2ed-d89eb65f2780&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_south_africa_identification_number&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_south_africa_identification_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6062,7 +6376,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數<code>Func_south_korea_resident_number</code>會找出符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- South Korea Resident Registration Number --&gt;
+
+```powershell
+&lt;!-- South Korea Resident Registration Number --&gt;
 &lt;Entity id=&quot;5b802e18-ba80-44c4-bc83-bf2ad36ae36a&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_south_korea_resident_number&quot;/&gt;
@@ -6071,7 +6387,10 @@ _**上次修改主題的時間：** 2018-05-03_
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_south_korea_resident_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6138,12 +6457,17 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_spanish_social_security_number</code> 找到符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Spain SSN --&gt;
+
+```powershell
+&lt;!-- Spain SSN --&gt;
 &lt;Entity id=&quot;5df987c0-8eae-4bce-ace7-b316347f3070&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_spanish_social_security_number&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6187,12 +6511,17 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_swedish_national_identifier</code> 找到符合模式的內容。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Sweden National ID --&gt;
+
+```powershell
+&lt;!-- Sweden National ID --&gt;
 &lt;Entity id=&quot;f69aaf40-79be-4fac-8f05-fd1910d272c8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_swedish_national_identifier&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6234,7 +6563,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_sweden_passport</code> 的關鍵字。</p></li>
 </ul></li>
 </ul>
-<pre><code>&lt;!-- Sweden Passport Number --&gt;
+
+```powershell
+&lt;!-- Sweden Passport Number --&gt;
 &lt;Entity id=&quot;ba4e7456-55a9-4d89-9140-c33673553526&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_sweden_passport_number&quot; /&gt;
@@ -6243,7 +6574,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_sweden_passport&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6337,12 +6671,17 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_swift</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_swift</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;Entity id=&quot;cb2ab58c-9cb8-4c81-baf8-a4e106791df4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
+
+```powershell
+&lt;Entity id=&quot;cb2ab58c-9cb8-4c81-baf8-a4e106791df4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
 &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_swift&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_swift&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6434,13 +6773,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_taiwanese_national_id</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- Taiwanese National ID --&gt;
+
+```powershell
+&lt;!-- Taiwanese National ID --&gt;
 &lt;Entity id=&quot;4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_taiwanese_national_id&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_taiwanese_national_id&quot; /&gt;
       &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6528,13 +6872,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_taiwan_passport</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_taiwan_passport</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Taiwan Passport Number --&gt;
+
+```powershell
+&lt;!-- Taiwan Passport Number --&gt;
 &lt;Entity id=&quot;e7251cb4-4c2c-41df-963e-924eb3dae04a&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_taiwan_passport&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_taiwan_passport&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6601,13 +6950,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式<code>Regex_taiwan_resident_certificate</code>會找出符合模式的內容。</p></li>
 <li><p>從<code>Keyword_taiwan_resident_certificate</code>關鍵字是找到。</p></li>
 </ul>
-<pre><code>&lt;!-- Taiwan Resident Certificate (ARC/TARC) --&gt;
+
+```powershell
+&lt;!-- Taiwan Resident Certificate (ARC/TARC) --&gt;
 &lt;Entity id=&quot;48269fec-05ea-46ea-b326-f5623a58c6e9&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_taiwan_resident_certificate&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_taiwan_resident_certificate&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6681,13 +7035,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_uk_drivers_license</code> 的關鍵字。</p></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- U.K. Driver&#39;s License Number --&gt;
+
+```powershell
+&lt;!-- U.K. Driver&#39;s License Number --&gt;
 &lt;Entity id=&quot;f93de4be-d94c-40df-a8be-461738047551&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_uk_drivers_license&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_uk_drivers_license&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6757,7 +7116,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_uk_electoral</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_uk_electoral</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- U.K. Electoral Number --&gt;
+
+```powershell
+&lt;!-- U.K. Electoral Number --&gt;
 &lt;Entity id=&quot;a3eea206-dc0c-4f06-9e22-aa1be3059963&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_uk_electoral&quot; /&gt;
@@ -6765,7 +7126,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_uk_electoral&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6837,7 +7201,9 @@ _**上次修改主題的時間：** 2018-05-03_
 </ul></li>
 <li><p>總和檢查碼通過。</p></li>
 </ul>
-<pre><code>&lt;!-- U.K. NHS Number --&gt;
+
+```powershell
+&lt;!-- U.K. NHS Number --&gt;
 &lt;Entity id=&quot;3192014e-2a16-44e9-aa69-4b20375c9a78&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_uk_nhs_number&quot; /&gt;
@@ -6847,7 +7213,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_uk_nhs_number_dob&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -6944,7 +7313,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_uk_nino</code> 找到符合模式的內容。</p></li>
 <li><p>找不到來自於 <code>Keyword_uk_nino</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- U.K. NINO --&gt;
+
+```powershell
+&lt;!-- U.K. NINO --&gt;
 &lt;Entity id=&quot;16c07343-c26f-49d2-a987-3daf717e94cc&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_uk_nino&quot; /&gt;
@@ -6958,7 +7329,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Keyword_uk_nino&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -7025,12 +7399,17 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_usa_uk_passport</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_passport</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;Entity id=&quot;178ec42a-18b4-47cc-85c7-d62c92fd67f8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
+
+```powershell
+&lt;Entity id=&quot;178ec42a-18b4-47cc-85c7-d62c92fd67f8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_usa_uk_passport&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_passport&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -7103,13 +7482,18 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>規則運算式 <code>Regex_usa_bank_account_number</code> 找到符合模式的內容。</p></li>
 <li><p>找到來自於 <code>Keyword_usa_Bank_Account</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>&lt;!-- U.S. Bank Account Number --&gt;
+
+```powershell
+&lt;!-- U.S. Bank Account Number --&gt;
 &lt;Entity id=&quot;a2ce32a8-f935-4bb6-8e96-2a5157672e2c&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_usa_bank_account_number&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_usa_Bank_Account&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -7203,7 +7587,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_us_drivers_license_abbreviations</code> 的關鍵字。</p></li>
 <li><p>找不到來自於 <code>Keyword_us_drivers_license</code> 的關鍵字。</p></li>
 </ul>
-<pre><code>    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
+
+```powershell
+    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_new_york_drivers_license_number&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_new_york_drivers_license_name&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_us_drivers_license&quot; /&gt;
@@ -7215,7 +7601,10 @@ _**上次修改主題的時間：** 2018-05-03_
         &lt;Any minMatches=&quot;0&quot; maxMatches=&quot;0&quot;&gt;
           &lt;Match idRef=&quot;Keyword_us_drivers_license&quot; /&gt;
         &lt;/Any&gt;
-    &lt;/Pattern&gt;</code></pre></td>
+    &lt;/Pattern&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -7402,7 +7791,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>函數 <code>Func_us_date</code> 找到正確日期格式的日期。</p></li>
 </ul></li>
 </ul>
-<pre><code>&lt;!-- U.S. Individual Taxpayer Identification Number (ITIN) --&gt;
+
+```powershell
+&lt;!-- U.S. Individual Taxpayer Identification Number (ITIN) --&gt;
 &lt;Entity id=&quot;e55e2a32-f92d-4985-a35d-a0b269eb687b&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_formatted_itin&quot; /&gt;
@@ -7422,7 +7813,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Func_us_date&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;</code></pre></td>
+&lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>
@@ -7529,7 +7923,9 @@ _**上次修改主題的時間：** 2018-05-03_
 <li><p>找到來自於 <code>Keyword_ssn</code> 的關鍵字。</p></li>
 <li><p>函數 <code>Func_unformatted_ssn</code> 找不到符合模式的內容。</p></li>
 </ul>
-<pre><code> &lt;!-- U.S. Social Security Number (SSN) --&gt;
+
+```powershell
+ &lt;!-- U.S. Social Security Number (SSN) --&gt;
     &lt;Entity id=&quot;a44669fe-0d48-453d-a9b1-2cc83f2cba77&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_ssn&quot; /&gt;
@@ -7553,7 +7949,10 @@ _**上次修改主題的時間：** 2018-05-03_
           &lt;Match idRef=&quot;Func_unformatted_ssn&quot; /&gt;
         &lt;/Any&gt;
       &lt;/Pattern&gt;
-    &lt;/Entity&gt;</code></pre></td>
+    &lt;/Entity&gt;
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>關鍵字</p></td>

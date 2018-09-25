@@ -57,9 +57,13 @@ _**上次修改主題的時間：** 2012-11-18_
 
 此範例會啟用信箱伺服器 `UMMBXr-05x.contoso.com` 接聽來自 VoIP 閘道、IP PBX、啟用 SIP 的 PBX 和 SBC 的傳入語音、傳真、自動語音應答和 Outlook Voice Access 通話的功能，並且將變更寫入 UMMBX-05x 伺服器上的登錄。
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 此範例會阻止信箱伺服器 `UMMBX-05x.contoso.com` 接聽來自 VoIP 閘道、IP PBX、啟用 SIP 的 PBX 和 SBC 的傳入語音、傳真、自動語音應答和 Outlook Voice Access 通話的功能，並且僅將變更寫入 Active Directory。
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```
 

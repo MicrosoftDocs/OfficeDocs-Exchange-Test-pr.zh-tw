@@ -68,7 +68,9 @@ _**上次修改主題的時間：** 2013-12-18_
 
 此範例說明如何在系統提示您輸入使用者名稱和密碼後，將指紋 (Thumbprint) 為 A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC 的憑證匯出至檔案。
 
-    $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+```powershell
+$file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+```
 
 此範例會執行下列動作：
 

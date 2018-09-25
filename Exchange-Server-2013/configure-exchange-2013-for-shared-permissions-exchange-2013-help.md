@@ -82,8 +82,10 @@ _**上次修改主題的時間：** 2015-04-07_
 
 1.  新增建立郵件收件者角色與安全性群組建立與成員資格角色委派角色指派到組織管理角色群組使用下列命令。
     
-        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
+    ```powershell
+    New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
+    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
+    ```
     
     > [!NOTE]  
     > 具有委派角色指派的 「 建立郵件收件者角色及安全性群組建立與成員資格角色的角色群組 （在此程序， Active Directory系統管理員角色群組） 必須被指派角色管理角色可執行<strong>New-ManagementRoleAssignment</strong>指令程式。可委派角色管理角色的角色受託人必須將該角色指派給Active Directory系統管理員角色群組中。
@@ -91,12 +93,16 @@ _**上次修改主題的時間：** 2015-04-07_
 
 2.  新增 「 建立郵件收件者 」 角色的一般角色指派給使用下列命令組織管理和收件者管理角色群組。
     
-        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
+    ```powershell
+    New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
+    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
+    ```
 
 3.  新增安全性群組建立與成員資格角色的一般角色指派至組織管理角色群組使用下列命令。
     
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+    ```powershell
+    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+    ```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -115,11 +121,15 @@ _**上次修改主題的時間：** 2015-04-07_
 
 1.  移除一般和委派角色指派的 「 建立郵件收件者 」 角色指派給角色群組或萬用安全性群組 (USG)，其中包含Active Directory管理員為使用下列命令的成員。此命令會使用Active Directory系統管理員角色群組做為範例。*WhatIf*參數可讓您查看將移除何種角色指派。移除*WhatIf*交換器並再次執行命令移除角色指派。
     
-        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```powershell
+    Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```
 
 2.  移除一般和委派的安全性群組建立與成員資格的角色指派給角色群組或 USG 包含Active Directory管理員使用下列命令的成員身分的角色指派。此命令會使用Active Directory系統管理員角色群組做為範例。*WhatIf*參數可讓您查看將移除何種角色指派。移除*WhatIf*交換器並再次執行命令移除角色指派。
     
-        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```powershell
+    Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```
 
 3.  選用的。如果您要從Active Directory系統管理員移除所有Exchange權限，您可以都移除的角色群組或 USG 它們成員。如需如何移除角色群組的詳細資訊，請參閱[管理角色群組](manage-role-groups-exchange-2013-help.md)。
 
@@ -142,13 +152,17 @@ _**上次修改主題的時間：** 2015-04-07_
 
 1.  從Windows命令介面中，執行下列命令在Exchange 2013安裝媒體中停用Active Directory分割權限。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+    setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```
 
 2.  從Exchange管理命令介面，執行下列命令以新增 「 建立郵件收件者 」 角色與安全性群組建立和管理角色和組織管理和收件者管理角色群組之間的一般角色指派。
     
-        New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
-        New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
-        New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
+    ```powershell
+    New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
+    New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+    New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
+    ```
 
 3.  重新啟動Exchange 2013伺服器在組織中。
     

@@ -106,7 +106,9 @@ _**上次修改主題的時間：** 2017-01-18_
 
 您可以快速和輕鬆地將所有信箱保留無限期或在指定的期間使用命令介面。此命令會將所有信箱都置於保留 2555 天 （大約 7 年）。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 此範例使用[Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))指令程式和收件者篩選器來擷取組織中的所有使用者信箱，然後將 \[ [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))指令程式來啟用訴訟暫止狀態及保留持續時間指定信箱的清單。如需詳細資訊，請參閱[將信箱設為訴訟暫止](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)。
 
@@ -130,20 +132,20 @@ _**上次修改主題的時間：** 2017-01-18_
   - 本主題中用來將所有信箱的訴訟暫止狀態的 PowerShell 命令使用會傳回所有使用者信箱的收件者篩選器。您可以使用其他收件者的屬性來傳回您可以再透過管線傳到**Set-Mailbox**指令程式置於訴訟保留這些信箱的特定信箱的清單。
     
     以下是一些範例使用**Get-Mailbox**與**Get-Recipient** cmdlet 可傳回根據常見的使用者或信箱內容的信箱的子集。下列範例會假設相關信箱內容 （例如*CustomAttributeN*或*Department*） 已填入。
-    ```
     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-    ```
+```
     ```
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    ```
+```
     ```
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    ```
+```
     ```
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    ```
+```
     ```
     Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```
     ```
 
     您可以使用篩選器中的其他使用者信箱屬性以包含或排除信箱。如需詳細資訊，請參閱[可篩選的內容-Filter 參數](https://technet.microsoft.com/zh-tw/library/bb738155\(v=exchg.150\))。

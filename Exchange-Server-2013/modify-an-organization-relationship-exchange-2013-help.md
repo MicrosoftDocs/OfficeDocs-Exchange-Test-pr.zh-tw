@@ -85,17 +85,23 @@ _**上次修改主題的時間：** 2015-01-01_
 
   - 本範例將網域名稱 service.contoso.com 新增至組織關係 Contoso。
     
-        $domains = (Get-OrganizationRelationship Contoso).DomainNames
-        $domains += 'service.contoso.com'
-        Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+    ```powershell
+    $domains = (Get-OrganizationRelationship Contoso).DomainNames
+    $domains += 'service.contoso.com'
+    Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+    ```
 
   - 本範例停用組織關係 Contoso。
     
-        Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```powershell
+    Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```
 
   - 這個範例會啟用組織關聯性 WoodgroveBank 的行事曆可用性資訊存取，並將存取層級設定為 `AvailabilityOnly` (只含時間的行事曆空閒/忙碌資訊)。
     
-        Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+    ```powershell
+    Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+    ```
 
 如需詳細的語法及參數資訊，請參閱 [Get-OrganizationRelationship](https://technet.microsoft.com/zh-tw/library/ee332343\(v=exchg.150\)) 與 [Set-OrganizationRelationship](https://technet.microsoft.com/zh-tw/library/ee332326\(v=exchg.150\))。
 
@@ -103,7 +109,9 @@ _**上次修改主題的時間：** 2015-01-01_
 
 若要確認您已成功更新組織關聯性，請執行下列命令介面命令並確認組織關聯性資訊。
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]  

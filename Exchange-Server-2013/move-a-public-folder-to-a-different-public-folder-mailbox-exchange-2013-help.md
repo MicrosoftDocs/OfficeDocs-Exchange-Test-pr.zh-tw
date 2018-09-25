@@ -54,7 +54,9 @@ _**上次修改主題的時間：** 2016-11-16_
 
 此範例會啟動將公用資料夾 \\CustomerEnagagements 從公用資料夾信箱 DeveloperReports 移至 DeveloperReports01 的要求
 
-    New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```powershell
+New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```
 
 
 > [!NOTE]  
@@ -69,7 +71,9 @@ _**上次修改主題的時間：** 2016-11-16_
 
 此範例一開始 \\Dev 公用資料夾分支下的目標公用資料夾信箱 DeveloperReports01 的公用資料夾移動要求。本範例會不會移動公用資料夾 \\Dev。
 
-    New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```powershell
+New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```
 
 
 > [!NOTE]  
@@ -84,15 +88,21 @@ _**上次修改主題的時間：** 2016-11-16_
 
 此範例會使用`Move-PublicFolderBranch.ps1`指令碼來移動公用資料夾的分支。這會啟動公用資料夾 \\Dev 和所有子資料夾至公用資料夾信箱 DeveloperReports01 的移動要求。指令碼的 scripts 資料夾位於與必須從該位置執行。
 
-    CD $env:ExchangeInstallPath\scripts
+```powershell
+CD $env:ExchangeInstallPath\scripts
+```
     
-    .\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```powershell
+.\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```
 
 ## 如何才能了解這是否正常運作？
 
 若要確認公用資料夾移動要求成功，請執行下列命令：
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 當狀態為 `Completed` 時，表示移動要求成功。
 

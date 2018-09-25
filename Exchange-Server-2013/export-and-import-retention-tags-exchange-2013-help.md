@@ -63,14 +63,18 @@ _**上次修改主題的時間：** 2017-11-15_
 
 1.  執行此Exchange 管理命令介面命令，以將目錄變更為您Exchange安裝路徑中的**指令碼**子目錄。
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  執行 Export-RetentionTags.ps1 指令碼，將保留標記匯出至 XML 檔案。
     
     > [!IMPORTANT]  
     > 如果您正在匯入或匯出至Exchange Online的保留標記和保留原則，您必須連線 Windows PowerShell 工作階段到Exchange Online。如需詳細資訊，請參閱<a href="https://technet.microsoft.com/zh-tw/library/jj984289(v=exchg.150)">使用遠端 PowerShell 連線到 Exchange Online</a>。
     
-        .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 如何才能了解這是否正常運作？
 
@@ -84,7 +88,9 @@ _**上次修改主題的時間：** 2017-11-15_
 
 1.  執行此Exchange 管理命令介面命令，以將目錄變更為您Exchange安裝路徑中的**指令碼**子目錄。
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  執行 Import-RetentionTags.ps1 指令碼，從先前匯出的 XML 檔案中匯入保留標記。
     
@@ -94,7 +100,9 @@ _**上次修改主題的時間：** 2017-11-15_
     > [!NOTE]  
     > 執行此指令碼針對Exchange Online、 時可能會提示您確認您想要執行軟體來自不受信任的發行者。確認發行者的名稱顯示為 [ <code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>、] 和 [ <strong>R</strong>允許一次執行指令碼或<strong>A</strong>到一定會執行。
     
-        .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 如何才能了解這是否正常運作？
 

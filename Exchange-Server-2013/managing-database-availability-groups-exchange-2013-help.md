@@ -429,7 +429,9 @@ DAG 網路是用於複寫流量或 MAPI 流量的一或多個子網路的集合�
 
 在 Exchange 2010 中，有許多情況必須手動配置 DAG 網路。根據在 Exchange 2013 中的預設，系統會自動配置 DAG 網路。建立或修改 DAG 網路之前，您必須先執行下列指令啟用手動 DAG 網路控制：
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```
 
 啟用手動 DAG 網路配置之後，您可以在命令介面中使用 **New-DatabaseAvailabilityGroupNetwork** 命令程式以建立 DAG 網路。如需如何建立 DAG 網路的詳細步驟，請參閱[建立資料庫可用性群組網路](create-a-database-availability-group-network-exchange-2013-help.md)。
 
@@ -538,7 +540,9 @@ DAG 網路是用於複寫流量或 MAPI 流量的一或多個子網路的集合�
 
 若要將 ReplicationDagNetwork01 設定為專用複寫網路，請執行下列命令停用 MapiDagNetwork 的複寫功能。
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```
 
 停用 MapiDagNetwork 的複寫之後，Microsoft Exchange 複寫服務會使用 ReplicationDagNetwork01 進行連續複寫。如果 ReplicationDagNetwork01 發生失敗，Microsoft Exchange 複寫服務會恢復使用 MapiDagNetwork 進行連續複寫。這是系統特別執行的工作，以維持高可用性。
 
@@ -636,7 +640,9 @@ DAG 網路是用於複寫流量或 MAPI 流量的一或多個子網路的集合�
 
 依預設，DAG 會對所有偵測到和已設定為由基礎叢集使用的網路執行探索。這包括由於為一或多個 DAG 成員使用 iSCSI 儲存而在使用中的任何 Internet SCSI (iSCSI) 網路。最佳作法是，iSCSI 儲存應該使用專用的網路和網路介面卡。這些網路不應由 DAG 或其叢集進行管理，或用作 DAG 網路 (MAPI 或複寫)。相反地，這些網路應該手動停用不讓 DAG 使用，這樣它們才能專用於 iSCSI 儲存流量。若要停用 iSCSI 網路以防止受偵測並作為 DAG 網路使用，請使用 [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/zh-tw/library/dd298008\(v=exchg.150\)) 指令程式將 DAG 設定為忽略任何目前偵測到的 iSCSI 網路，如以下範例所示：
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```
 
 此指令同時將停用叢集使用網路。雖然 iSCSI 網路將繼續顯示為 DAG 網路，執行上述指令後，不會為 MAPI 或複寫流量使用網路。
 
@@ -668,7 +674,9 @@ DAG 成員的信箱伺服器擁有某些專用於高可用性的內容，這些�
 
 下列範例會以 `GoodAvailability` 的 *AutoDatabaseMountDial* 設定來設定信箱伺服器。
 
-    Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```powershell
+Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```
 
 ## 資料庫副本自動啟動原則
 
@@ -684,7 +692,9 @@ DAG 成員的信箱伺服器擁有某些專用於高可用性的內容，這些�
 
 下列範例會以 `Blocked` 的 *DatabaseCopyAutoActivationPolicy* 設定來設定信箱伺服器。
 
-    Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```powershell
+Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```
 
 ## 使用中資料庫上限
 
@@ -696,7 +706,9 @@ DAG 成員的信箱伺服器擁有某些專用於高可用性的內容，這些�
 
 下列範例會將信箱伺服器設定為支援上限 20 個使用中資料庫。
 
-    Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```powershell
+Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```
 
 回到頁首
 

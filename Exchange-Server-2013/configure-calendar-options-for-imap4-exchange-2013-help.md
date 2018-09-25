@@ -40,19 +40,27 @@ _**上次修改主題的時間：** 2012-11-27_
 
 此範例可讓 IMAP4 使用者使用交換行事曆資訊的 iCalendar 標準。
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 此範例可讓 IMAP4 使用者從內部伺服器存取行事曆資訊。
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 
 此範例會讓 IMAP4 使用者能够在外部伺服器上從網際網路存取行事曆資訊。
 
-    Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 本範例會啟用使用直接Outlook Web App URL 來存取行事曆資訊的 IMAP4 使用者。如果您使用`Custom`，您必須指定使用*OWAServerUrl*參數 Outlook Web App URL。
 
-    Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 您已指定 IMAP4 的行事曆選項之後，您必須重新啟動 IMAP4 服務。如需如何重新啟動 IMAP4 服務的資訊，請參閱[啟動及停止 IMAP4 服務](start-and-stop-the-imap4-services-exchange-2013-help.md)。
 
@@ -64,7 +72,9 @@ _**上次修改主題的時間：** 2012-11-27_
 
 在命令介面中執行下列命令。
 
-    Get-ImapSettings | format-list
+```powershell
+Get-ImapSettings | format-list
+```
 
 驗證行事曆設定是否正確。
 

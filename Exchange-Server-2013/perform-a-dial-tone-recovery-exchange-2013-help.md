@@ -49,11 +49,15 @@ _**上次修改主題的時間：** 2014-06-27_
 
 2.  使用 [New-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/aa997976\(v=exchg.150\)) 指令程式來建立撥號音資料庫，如本範例中所示。
     
-        New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
+    ```powershell
+    New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
+    ```
 
 3.  使用 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) 指令程式來重新隸屬位於要復原之資料庫上的使用者信箱，如本範例中所示。
     
-        Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
+    ```powershell
+    Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
+    ```
 
 4.  使用 [Mount-Database](https://technet.microsoft.com/zh-tw/library/aa998871\(v=exchg.150\)) 指令程式來裝載資料庫，以便用戶端電腦可以存取資料庫，且可傳送及接收郵件，如本範例中所示。
     
@@ -88,15 +92,19 @@ _**上次修改主題的時間：** 2014-06-27_
 
 13. 使用 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 和 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829875\(v=exchg.150\)) 指令程式，從 RDB 匯出資料，然後將該資料匯入復原的資料庫，如本範例中所示。這會將所有使用撥號音資料庫傳送及接收的郵件匯入實際生產資料庫中。
        ``` 
-        $mailboxes = Get-Mailbox -Database DTDB1
+    ```powershell
+    $mailboxes = Get-Mailbox -Database DTDB1
+    ```
        ```
-       ```
-        $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+       $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+    ```
        ```
 14. 完成還原作業後，可以卸載並移除 RDB，如本範例中所示。
     
         Dismount-Database -Identity RDB1
-        Remove-MailboxDatabase -Identity RDB1
+    ```powershell
+    Remove-MailboxDatabase -Identity RDB1
+    ```
 
 如需詳細的語法及參數資訊，請參閱下列主題：
 

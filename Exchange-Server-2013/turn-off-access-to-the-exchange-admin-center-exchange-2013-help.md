@@ -52,7 +52,9 @@ _**上次修改主題的時間：** 2013-05-20_
 
 此範例會關閉伺服器 CAS01 上的 EAC 存取。
 
-    Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```powershell
+Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-EcpVirtualDirectory](https://technet.microsoft.com/zh-tw/library/dd297991\(v=exchg.150\))。
 

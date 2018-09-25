@@ -55,13 +55,17 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  在用戶端存取伺服器上，開啟 Windows PowerShell 並執行下列命令：
     
-        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```powershell
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 
 2.  執行命令所述，但命令中加入下列值： `-TransportService FrontEnd`。
     
     例如，若要檢視用戶端存取伺服器上前端傳輸服務中的傳輸代理程式，請執行下列命令：
     
-        Get-TransportAgent -TransportService FrontEnd
+    ```powershell
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## 使用命令介面安裝傳輸代理程式
 
@@ -87,11 +91,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 請使用下列語法來啟用傳輸代理程式。
 
-    Enable-TransportAgent <TransportAgentIdentity>
+```powershell
+Enable-TransportAgent <TransportAgentIdentity>
+```
 
 此範例會在信箱伺服器的傳輸服務中，啟用名為 Contoso Transport Agent 的傳輸代理程式。
 
-    Enable-TransportAgent "Contoso Transport Agent"
+```powershell
+Enable-TransportAgent "Contoso Transport Agent"
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -101,11 +109,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 請使用下列語法來停用傳輸代理程式：
 
-    Disable-TransportAgent <TransportAgentIdentity>
+```powershell
+Disable-TransportAgent <TransportAgentIdentity>
+```
 
 此範例會在信箱伺服器的傳輸服務中，停用名為 Fabirkam Transport Agent 的傳輸代理程式。
 
-    Disable-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Disable-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -115,15 +127,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要檢視傳輸代理程式的摘要清單，請執行下列命令：
 
-    Get-TransportAgent
+```powershell
+Get-TransportAgent
+```
 
 若要檢視特定傳輸代理程式的詳細組態，請執行下列命令：
 
-    Get-TransportAgent <TransportAgentIdentity> | Format-List
+```powershell
+Get-TransportAgent <TransportAgentIdentity> | Format-List
+```
 
 此範例會提供名為 Transport Rule Agent 之傳輸代理程式的詳細組態。
 
-    Get-TransportAgent "Transport Rule Agent" | Format-List
+```powershell
+Get-TransportAgent "Transport Rule Agent" | Format-List
+```
 
 ## 使用命令介面設定傳輸代理程式的優先順序
 
@@ -131,11 +149,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要修改現有傳輸代理程式的優先順序，請執行下列命令：
 
-    Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```powershell
+Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```
 
 此範例會在信箱伺服器的傳輸服務中，將名為 Contoso Transport Agent 之現有傳輸代理程式的優先順序代理程式值設為 3。
 
-    Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```powershell
+Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```
 
 ## 如何才能了解這是否正常運作？
 

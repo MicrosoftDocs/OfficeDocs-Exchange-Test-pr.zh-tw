@@ -89,7 +89,9 @@ _**上次修改主題的時間：** 2017-03-20_
     
       - 在 Windows Server 2008 R2 SP1 電腦上，執行下列命令。
         
-            Add-WindowsFeature RSAT-ADDS
+        ```powershell
+        Add-WindowsFeature RSAT-ADDS
+        ```
 
 ## Windows Server 2012 R2 和 Windows Server 2012 先決條件
 
@@ -171,7 +173,9 @@ _**上次修改主題的時間：** 2017-03-20_
 
 3.  執行下列命令來安裝所需的 Windows 元件。
     
-        Add-WindowsFeature Desktop-Experience, NET-Framework, NET-HTTP-Activation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Web-Server, WAS-Process-Model, Web-Asp-Net, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
+    ```powershell
+    Add-WindowsFeature Desktop-Experience, NET-Framework, NET-HTTP-Activation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Web-Server, WAS-Process-Model, Web-Asp-Net, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
+    ```
 
 安裝作業系統角色與功能後，請依照以下顯示順序安裝軟體：
 
@@ -209,7 +213,9 @@ _**上次修改主題的時間：** 2017-03-20_
 
 3.  執行下列命令來安裝所需的 Windows 元件。
     
-        Add-WindowsFeature NET-Framework, ADLDS
+    ```powershell
+    Add-WindowsFeature NET-Framework, ADLDS
+    ```
 
 安裝作業系統角色與功能後，請依照以下顯示順序安裝軟體：
 

@@ -46,7 +46,9 @@ _**上次修改主題的時間：** 2014-10-01_
 
 此範例會在受管理的資料夾助理員處理在一天內的所有信箱。
 
-    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-MailboxServer](https://technet.microsoft.com/zh-tw/library/aa998651\(v=exchg.150\))。
 
@@ -56,13 +58,17 @@ _**上次修改主題的時間：** 2014-10-01_
 
 此命令會擷取組織中的所有 Mailbox server 及輸出的每一部伺服器以表格格式的受管理的資料夾助理員的工作週期屬性。*Auto*參數用來自動調整欄寬。
 
-    Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```powershell
+Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```
 
 ## 使用命令介面來啟動 \[受管理的資料夾助理員
 
 此範例會觸發受管理的資料夾助理員立即處理 Morris Cornejo 信箱。
 
-    Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```powershell
+Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```
 
 如需詳細的語法及參數資訊，請參閱[Start-ManagedFolderAssistant](https://technet.microsoft.com/zh-tw/library/aa998864\(v=exchg.150\))。
 

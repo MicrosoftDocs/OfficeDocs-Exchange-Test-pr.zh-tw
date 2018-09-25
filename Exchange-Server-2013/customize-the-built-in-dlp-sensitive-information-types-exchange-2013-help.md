@@ -61,17 +61,19 @@ _**上次修改主題的時間：** 2016-05-26_
 
 3.  尋找**Func\_credit\_card**尋找信用卡號規則定義。（xml 規則名稱不得包含空格，因此通常具有底線取代空格和規則名稱有時候會縮寫。此範例是美國社會安全號碼規則，這是縮寫"SSN"。信用卡號規則 XML 應看來如下列程式碼範例。
     
-        <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
-               patternsProximity="300" recommendedConfidence="85">
-              <Pattern confidenceLevel="85">
-               <IdMatch idRef="Func_credit_card" />
-                <Any minMatches="1">
-                  <Match idRef="Keyword_cc_verification" />
-                  <Match idRef="Keyword_cc_name" />
-                  <Match idRef="Func_expiration_date" />
-                </Any>
-              </Pattern>
-            </Entity>
+    ```XML
+    <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
+            patternsProximity="300" recommendedConfidence="85">
+          <Pattern confidenceLevel="85">
+            <IdMatch idRef="Func_credit_card" />
+            <Any minMatches="1">
+              <Match idRef="Keyword_cc_verification" />
+              <Match idRef="Keyword_cc_name" />
+              <Match idRef="Func_expiration_date" />
+            </Any>
+          </Pattern>
+        </Entity>
+    ```
 
 既然您已在 XML 中找到信用卡號規則定義，您可以自訂以符合您需求的規則的 XML。（如重新整理程式在 XML 定義，請參閱本主題的結尾字詞字彙 （英文） ）。
 
@@ -81,32 +83,34 @@ _**上次修改主題的時間：** 2016-05-26_
 
 所有 XML 規則定義之內都建下列一般範本。您必須複製並貼信用卡號定義 XML 範本，修改某些 （請注意"...\\"版面配置區在下列範例） 的值，而然後將修改後的 XML 上傳新規則是可用於原則。
 
-    <?xml version="1.0" encoding="utf-16"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-      <RulePack id=". . .">
-        <Version major="1" minor="0" build="0" revision="0" />
-        <Publisher id=". . ." /> 
-        <Details defaultLangCode=". . .">
-          <LocalizedDetails langcode=" . . . ">
-             <PublisherName>. . .</PublisherName>
-             <Name>. . .</Name>
-             <Description>. . .</Description>
-          </LocalizedDetails>
-        </Details>
-      </RulePack>
-      
-     <Rules>
-       <!-- Paste the Credit Card Number rule definition here.--> 
-    
-          <LocalizedStrings>
-             <Resource idRef=". . .">
-               <Name default="true" langcode=" . . . ">. . .</Name>
-               <Description default="true" langcode=". . ."> . . .</Description>
-             </Resource>
-          </LocalizedStrings>
-    
-       </Rules>
-    </RulePackage>
+```XML
+<?xml version="1.0" encoding="utf-16"?>
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+  <RulePack id=". . .">
+    <Version major="1" minor="0" build="0" revision="0" />
+    <Publisher id=". . ." /> 
+    <Details defaultLangCode=". . .">
+      <LocalizedDetails langcode=" . . . ">
+          <PublisherName>. . .</PublisherName>
+          <Name>. . .</Name>
+          <Description>. . .</Description>
+      </LocalizedDetails>
+    </Details>
+  </RulePack>
+  
+  <Rules>
+    <!-- Paste the Credit Card Number rule definition here.--> 
+
+      <LocalizedStrings>
+          <Resource idRef=". . .">
+            <Name default="true" langcode=" . . . ">. . .</Name>
+            <Description default="true" langcode=". . ."> . . .</Description>
+          </Resource>
+      </LocalizedStrings>
+
+    </Rules>
+</RulePackage>
+```
 
 現在，您必須看起來類似下列 XML 程式碼所示的內容。因為其唯一 Guid 識別規則套件與規則，您需要產生兩個 Guid： 一個規則套件和應用程式，來取代信用卡號規則的 GUID。（如下列程式碼範例中的實體識別碼的 GUID 是您需要取代為一份新我們內建的規則定義，一種）。有數種方式來產生的 Guid，但是您可以進行輕鬆 PowerShell 輸入**\[guid\]::NewGuid()**。
 

@@ -51,7 +51,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 下列範例會顯示可供您檢視 **Get-Mailbox** Cmdlet 所傳回之相同資料的不同方式。
 
-    Get-Mailbox TestUser1
+```powershell
+Get-Mailbox TestUser1
+```
     
     Name                      Alias                ServerName       ProhibitSendQuo
                                                                     ta
@@ -60,7 +62,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 在第一個範例中，會呼叫不含特定格式的 **Get-Mailbox** Cmdlet，使預設輸出的格式為表格格式，並包含預定的內容集。
 
-    Get-Mailbox TestUser1 | Format-List -Property Name,Alias,EmailAddresses
+```powershell
+Get-Mailbox TestUser1 | Format-List -Property Name,Alias,EmailAddresses
+```
     
     Name           : TestUser1
     Alias          : TestUser1
@@ -68,7 +72,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 在第二個範例中，**Get-Mailbox** Cmdlet 的輸出連同特定內容，會以管線傳輸至 **Format-List** Cmdlet。誠如所見，此輸出的格式和內容大不相同。
 
-    Get-Mailbox TestUser1 | Format-List -Property Name, Alias, Email*
+```powershell
+Get-Mailbox TestUser1 | Format-List -Property Name, Alias, Email*
+```
     Name                      : Test User
     Alias                     : TestUser1
     EmailAddresses            : {SMTP:TestUser1@contoso.com}
@@ -78,7 +84,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 如果有多個物件傳遞至 **Format-List** Cmdlet，則物件的所有指定內容會按物件顯示並加以群組。顯示順序視 Cmdlet 的預設參數而定。最常見的預設參數是 *Name* 參數或 *Identity* 參數。例如，呼叫 **Get-Childitem** Cmdlet 時，預設顯示順序是按英文字母順序排列的檔案名稱。若要變更此行為，您必須呼叫 **Format-List** Cmdlet，連同 *GroupBy* 參數，以及您要用來將輸出加以群組的內容值名稱。例如，下列命令會列出目錄中的所有檔案，然後按副檔名將這些檔案加以群組。
 
-    Get-Childitem | Format-List Name,Length -GroupBy Extension
+```powershell
+Get-Childitem | Format-List Name,Length -GroupBy Extension
+```
     
         Extension: .xml
     
@@ -116,17 +124,25 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 在第一個範例中，使用 **Get-Command** Cmdlet 來顯示 **Get-Process** Cmdlet 的相關命令資訊時，*Definition* 內容的資訊會遭到截斷。
 
-    Get-Command Get-Process | Format-Table Name,Definition
+```powershell
+Get-Command Get-Process | Format-Table Name,Definition
+```
     
     Name                                    Definition
     ----                                    ----------
-    get-process                             get-process [[-ProcessName] String[]...
+```powershell
+get-process                             get-process [[-ProcessName] String[]...
+```
 
 在第二個範例中，*Wrap* 參數會新增至命令中，以強迫顯示 *Definition* 內容的完整內容。
 
-    Get-Command Get-Process | Format-Table Name,Definition -Wrap
+```powershell
+Get-Command Get-Process | Format-Table Name,Definition -Wrap
+```
     
-    Get-Process                             Get-Process [[-Name] <String[]>] [-Comp
+```powershell
+Get-Process                             Get-Process [[-Name] <String[]>] [-Comp
+```
                                             uterName <String[]>] [-Module] [-FileVe
                                             rsionInfo] [-Verbose] [-Debug] [-ErrorA
                                             ction <ActionPreference>] [-WarningActi
@@ -134,14 +150,18 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
                                             <String>] [-WarningVariable <String>] [
                                             -OutVariable <String>] [-OutBuffer <Int
                                             32>]
-                                            Get-Process -Id <Int32[]> [-ComputerNam
+                                        ```powershell
+        Get-Process -Id <Int32[]> [-ComputerNam
+        ```
                                             e <String[]>] [-Module] [-FileVersionIn
                                             fo] [-Verbose] [-Debug] [-ErrorAction <
                                             ActionPreference>] [-WarningAction <Act
                                             ionPreference>] [-ErrorVariable <String
                                             >] [-WarningVariable <String>] [-OutVar
                                             iable <String>] [-OutBuffer <Int32>]
-                                            Get-Process [-ComputerName <String[]>]
+                                        ```powershell
+        Get-Process [-ComputerName <String[]>]
+        ```
                                             [-Module] [-FileVersionInfo] -InputObje
                                             ct <Process[]> [-Verbose] [-Debug] [-Er
                                             rorAction <ActionPreference>] [-Warning
@@ -158,7 +178,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 在最基本的用法中，呼叫不含任何參數的 **Format-Wide** Cmdlet，會儘量以頁面可容納的最多欄數來排列輸出。例如，如果執行 **Get-Childitem** Cmdlet，並以管線將其輸出傳輸至 **Format-Wide** Cmdlet，您會看到下列的顯示資訊：
 
-    Get-ChildItem | Format-Wide
+```powershell
+Get-ChildItem | Format-Wide
+```
     
         Directory: FileSystem::C:\WorkingFolder
     
@@ -179,7 +201,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 一般而言，呼叫不含任何參數的 **Get-Childitem** Cmdlet，會顯示內容表格中之目錄內所有檔案的名稱。在這個範例中，以管線將 **Get-Childitem** Cmdlet 的輸出傳輸至 **Format-Wide** Cmdlet 之後，該輸出會以兩欄名稱顯示。請注意，一次只能顯示一個內容類型，這是由 **Format-Wide** Cmdlet 後面的內容名稱所指定。如果新增 *Autosize* 參數，該輸出將從兩欄變更為螢幕寬度可容納的欄數。
 
-    Get-ChildItem | Format-Wide -AutoSize
+```powershell
+Get-ChildItem | Format-Wide -AutoSize
+```
     
         Directory: FileSystem::C:\WorkingFolder
     
@@ -192,7 +216,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 在這個範例中，表格會排列成五欄，而非兩欄。*Column* 參數提供更大的控制，可讓您指定要顯示資訊的最大欄數，如下所示：
 
-    Get-ChildItem | Format-Wide -Column 4
+```powershell
+Get-ChildItem | Format-Wide -Column 4
+```
     
         Directory: FileSystem::C:\WorkingFolder
     
@@ -212,11 +238,15 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 **Out-Host** Cmdlet 是位於管線尾端、不會顯示的預設 Cmdlet。在套用所有格式化之後，**Out-Host** Cmdlet 會將最後輸出傳送至主控台視窗，以進行顯示。您不必明確地呼叫 **Out-Host** Cmdlet，因為它是預設輸出。您可以呼叫 **Out-File** Cmdlet 做為命令的最後一個 Cmdlet，來置換將輸出傳送至主控台視窗的行為。**Out-File** Cmdlet 則會接著將輸出寫至您在命令中指定的檔案，如下列範例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 在這個範例中，**Out-File** Cmdlet 會將 **Get-ChildItem | Format-Wide -Column 4** 命令所顯示的資訊寫至名為 `OutputFile.txt` 的檔案中。您也可以使用重新導向運算子，即右角括弧 (`>`)，將管線輸出重新導向至檔案。若要將命令的管線輸出附加至現有檔案而不取代原始檔案，請使用雙右角括弧 (`>>`)，如下列範例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 在這個範例中，**Get-Childitem** Cmdlet 的輸出會以管線傳輸至 **Format-Wide** Cmdlet 進行格式化，然後寫至 `OutputFile.txt` 檔案的結尾。請注意，如果 `OutputFile.txt` 檔案不存在，則使用雙右角括弧 (`>>`) 將會建立該檔案。
 
@@ -230,14 +260,20 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 下列範例會顯示如何使用簡易指令碼來輸出命令所傳回的資料，並將它顯示在 Internet Explorer 中。這個指令碼會取得透過管線傳遞的物件、開啟 Internet Explorer 視窗，然後在 Internet Explorer 中顯示資料：
 
-    $Ie = New-Object -Com InternetExplorer.Application
-    $Ie.Navigate("about:blank")
+```powershell
+$Ie = New-Object -Com InternetExplorer.Application
+$Ie.Navigate("about:blank")
+```
     While ($Ie.Busy) { Sleep 1 }
-    $Ie.Visible = $True
-    $Ie.Document.Write("$Input")
+```powershell
+$Ie.Visible = $True
+$Ie.Document.Write("$Input")
+```
     # If the previous line doesn't work on your system, uncomment the line below.
     # $Ie.Document.IHtmlDocument2_Write(\"$Input\")
-    $Ie
+```powershell
+$Ie
+```
 
 若要使用此指令碼，請將它儲存到要執行此指令碼之電腦上的 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 目錄中。將該檔案命名為 `Out-Ie.ps1`。儲存該檔案之後，您就可以使用該指令碼做為一般 Cmdlet。
 
@@ -250,7 +286,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 `Out-Ie` 指令碼會假設它接收的資料是有效的 HTML。若要將您想檢視的資料轉換成 HTML，必須以管線將命令的結果傳輸至 **ConvertTo-Html** Cmdlet。然後，以管線將該命令的結果傳輸至 `Out-Ie` 指令碼。下列範例會顯示如何在 Internet Explorer 視窗中檢視目錄清單：
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## 如何篩選資料
 
@@ -330,7 +368,9 @@ Exchange 管理命令介面提供數個方法，供您用來格式化命令輸�
 
 **Clear-Host** Cmdlet 是用來清除主控台視窗。在這個範例中，如果您執行下列命令，即可找到 **Clear-Host** Cmdlet 的所有已定義別名：
 
-    Get-Alias | Where {$_.Definition -eq "Clear-Host"}
+```powershell
+Get-Alias | Where {$_.Definition -eq "Clear-Host"}
+```
     
     CommandType     Name                            Definition
     -----------     ----                            ----------

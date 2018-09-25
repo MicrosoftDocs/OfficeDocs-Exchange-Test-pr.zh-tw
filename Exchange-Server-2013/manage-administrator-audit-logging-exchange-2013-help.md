@@ -48,7 +48,9 @@ _**上次修改主題的時間：** 2013-05-17_
 
 根據預設，稽核記錄會建立的日誌項目執行的每個指令程式。如果您正在啟用稽核記錄的第一次並想要的行為表現方式，您不需要變更指令程式的 \[稽核\] 清單。如果您先前指定稽核及現在要稽核所有 cmdlet 的指令程式，您可以都稽核所有 cmdlet 搭配**Set-AdminAuditLogConfig**指令程式上*AdminAuditLogCmdlets*參數指定星號 （\*） 萬用字元下列命令所示。
 
-    Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+```
 
 您可以指定哪些 cmdlet 以稽核在所提供的使用*AdminAuditLogCmdlets*參數的 cmdlet 清單。當您提供的稽核的 cmdlet 清單時，您可以提供單一的 cmdlet，使用星號 （\*） 萬用字元或兩者的混合 cmdlet。在清單中的每個項目是以逗號分隔。下列的值為所有有效項目：
 
@@ -62,7 +64,9 @@ _**上次修改主題的時間：** 2013-05-17_
 
 本範例將稽核上述清單中所指定的指令程式。
 
-    Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-tw/library/dd298169\(v=exchg.150\))。
 
@@ -70,7 +74,9 @@ _**上次修改主題的時間：** 2013-05-17_
 
 根據預設，稽核記錄會建立的日誌項目執行時，不論參數指定每個指令程式。如果您正在啟用稽核記錄的第一次並想要的行為表現方式，您不需要變更參數稽核清單。如果您先前指定稽核及現在要稽核的所有參數的參數，您可以這麼**Set-AdminAuditLogConfig**指令程式上*AdminAuditLogParameters*參數指定星號 （\*） 萬用字元以下列命令所示。
 
-    Set-AdminAuditLogConfig -AdminAuditLogParameters *
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogParameters *
+```
 
 您可以指定您想要使用*AdminAuditLogParameters*參數稽核哪些的參數。當您提供以稽核在參數清單時，您可以提供單一參數，星號 （\*） 萬用字元或兩者的混合的參數。在清單中的每個項目是以逗號分隔。下列的值為所有有效項目：
 
@@ -91,7 +97,9 @@ _**上次修改主題的時間：** 2013-05-17_
 
 本範例將稽核上述清單中所指定的參數。
 
-    Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-tw/library/dd298169\(v=exchg.150\))。
 
@@ -117,7 +125,9 @@ _**上次修改主題的時間：** 2013-05-17_
 
 此範例指定保留限制為兩年六個月。
 
-    Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-tw/library/dd298169\(v=exchg.150\))。
 
@@ -127,11 +137,15 @@ _**上次修改主題的時間：** 2013-05-17_
 
 此命令可啟用 **Test**指令程式的記錄。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```
 
 此命令可停用 **Test**指令程式的記錄。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-tw/library/dd298169\(v=exchg.150\))。
 
@@ -139,17 +153,23 @@ _**上次修改主題的時間：** 2013-05-17_
 
 若要停用系統管理員稽核記錄，請使用下列命令。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```
 
 ## 啟用系統管理員稽核記錄
 
 若要啟用系統管理員稽核記錄，請使用下列命令。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```
 
 ## 檢視系統管理員稽核記錄設定
 
 如果要檢視您為組織設定的系統管理員稽核記錄設定，請使用下列命令。
 
-    Get-AdminAuditLogConfig
+```powershell
+Get-AdminAuditLogConfig
+```
 

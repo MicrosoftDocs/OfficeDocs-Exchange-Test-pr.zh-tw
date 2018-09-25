@@ -42,27 +42,32 @@ _**上次修改主題的時間：** 2017-03-27_
     
     在 Exchange 2010 中執行下列命令。此命令會將信箱資料庫排除在信箱佈建負載平衡器以外。這樣可以防止自動將新的信箱新增至此資料庫中。
     
-        New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```powershell
+    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```
     
     在 Exchange 2007 中執行下列命令：
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+    New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```
     
     > [!NOTE]  
     > 我們建議您增加到此資料庫的唯一信箱就是您將在步驟 3 中建立的 Proxy 信箱。不得在此信箱資料庫上建立其他信箱。
 
 
 3.  在新的信箱資料庫中建立 Proxy 信箱，然後在通訊錄中隱藏該信箱。「自動探索」會傳回此信箱的 SMTP 作為 *DefaultPublicFolderMailbox* SMTP，因此只要解析此 SMTP，用戶端即可連到舊版 Exchange 伺服器來存取公用資料夾。
-    ```
+    
+    ```powershell
     New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
-    ```
-    ```
     Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
     ```
 
 4.  在 Exchange 2010 中，讓「自動探索」傳回 Proxy 公用資料夾信箱。對於 Exchange 2007，無須執行此步驟。
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```
 
 5.  對組織中的每部公用資料夾伺服器重複前述步驟。
 
@@ -72,7 +77,9 @@ _**上次修改主題的時間：** 2017-03-27_
 
 讓 Exchange Server 2013 內部部署使用者能夠存取舊版公用資料夾。您將會指向先前在[Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)中建立的所有 Proxy 公用資料夾信箱。從套用 CU5 或更新版本更新的 Exchange 2013 伺服器執行下列命令。
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```
 
 
 > [!NOTE]  

@@ -60,15 +60,21 @@ _**上次修改主題的時間：** 2014-05-07_
 
 若要從佇列移除郵件，請使用下列語法。
 
-    Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```powershell
+Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```
 
 此範例會移除佇列中主旨為「Win Big」的郵件，但不傳送 NDR。
 
-    Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```powershell
+Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```
 
 此範例會從 Mailbox01 伺服器上無法存取的佇列中移除郵件 ID 為 3 的郵件，並傳送 NDR。
 
-    Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```powershell
+Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```
 
 ## 如何知道這是否正常運作？
 
@@ -106,15 +112,21 @@ _**上次修改主題的時間：** 2014-05-07_
 
 若要繼續傳送郵件，請使用下列語法：
 
-    Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 此範例會繼續 Contoso.com 網域中從任何寄件者傳送的所有郵件。
 
-    Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 此範例會繼續伺服器 Hub01 上無法存取之佇列中訊息識別碼為 3 的郵件。
 
-    Resume-Message -Identity Hub01\Unreachable\3
+```powershell
+Resume-Message -Identity Hub01\Unreachable\3
+```
 
 若要重新提交有害郵件佇列中的郵件，請執行下列其中一個步驟：
 
@@ -148,15 +160,21 @@ _**上次修改主題的時間：** 2014-05-07_
 
 若要擱置郵件，請使用下列語法：
 
-    Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 此範例會擱置佇列中來自 contoso.com 網域之任何寄件者的所有郵件。
 
-    Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 此範例會擱置 Mailbox01 伺服器上無法存取之佇列中郵件識別碼為 3 的郵件：
 
-    Suspend-Message -Identity Mailbox01\Unreachable\3
+```powershell
+Suspend-Message -Identity Mailbox01\Unreachable\3
+```
 
 ## 如何知道這是否正常運作？
 

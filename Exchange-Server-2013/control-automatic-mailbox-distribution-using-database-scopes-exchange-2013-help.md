@@ -65,11 +65,15 @@ _**上次修改主題的時間：** 2015-04-07_
 
 如果要定義應包含在此範圍中的信箱資料庫靜態清單，請使用資料庫清單。使用下列語法，可建立資料庫清單範圍。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 這個範例會建立只套用至資料庫 Database 1、Database 2 和 Database 3 的範圍。
 
-    New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd335137\(v=exchg.150\))。
 
@@ -81,11 +85,15 @@ _**上次修改主題的時間：** 2015-04-07_
 
 使用下列語法，可建立資料庫篩選器範圍。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 這個範例會建立一個範圍，此範圍包括資料庫 **Name** 屬性中包含 "ACCT" 字串的所有資料庫。
 
-    New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```powershell
+New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd335137\(v=exchg.150\))。
 
@@ -103,12 +111,16 @@ _**上次修改主題的時間：** 2015-04-07_
 
 請使用下列語法，在您要指派的管理角色與新角色群組之間，以新的資料庫範圍建立角色指派。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```
 
 下列範例使用「會計資料庫」資料庫範圍，在「郵件收件者」和「建立郵件收件者」與「會計系統管理員」角色群組之間建立角色指派。
 
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -120,12 +132,16 @@ _**上次修改主題的時間：** 2015-04-07_
 
 請使用下列語法，在您要套用資料庫範圍的管理角色與現有角色群組之間修改角色指派。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```
 
 此範例會將「會計資料庫」資料庫範圍，新增至指派給「會計系統管理員」角色群組的「郵件收件者」和「建立郵件收件者」角色。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\)) 或 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335173\(v=exchg.150\))。
 

@@ -89,9 +89,7 @@ _**上次修改主題的時間：** 2012-11-02_
 
 4.  在 \[詳細資料\] 窗格中的 \[**資料庫副本**，按一下 \[**更新**下您想要植入被動資料庫副本。
 
-5.  
-    
-    根據預設，使用中資料庫副本的來源資料庫植入時才使用。如果您偏好使用之資料庫的被動副本植入，請按一下 \[選取包含您想要使用的來源被動資料庫副本的伺服器的 \[**瀏覽...** \]。
+5.  根據預設，使用中資料庫副本的來源資料庫植入時才使用。如果您偏好使用之資料庫的被動副本植入，請按一下 \[選取包含您想要使用的來源被動資料庫副本的伺服器的 \[**瀏覽...** \]。
 
 6.  按一下 \[**儲存**\] 以更新被動資料庫副本。
 
@@ -99,25 +97,35 @@ _**上次修改主題的時間：** 2012-11-02_
 
 本範例會示範如何植入 MBX1 上資料庫 DB1 的複本。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 本範例會示範如何植入資料庫 DB1 的副本 MBX1 上使用植入來源信箱伺服器 MBX2。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```
 
 本範例會示範如何不含植入內容索引類別目錄植入 MBX1 上資料庫 DB1 的複本。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```
 
 本範例會示範如何植入內容索引類別目錄 MBX1 上資料庫 DB1 副本沒有植入資料庫檔案。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 ## 手動複製離線的資料庫
 
 1.  如果爲資料庫啟用循環記錄，則在繼續之前必須將其停用。您可以使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\)) 指令程式來停用信箱資料庫的循環記錄，如此範例中所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 2.  卸載資料庫。您可以使用[Dismount-Database](https://technet.microsoft.com/zh-tw/library/bb124936\(v=exchg.150\))指令程式，此範例所示。
     
@@ -133,11 +141,15 @@ _**上次修改主題的時間：** 2012-11-02_
 
 6.  此範例所示使用*SeedingPostponed*參數使用[Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd298105\(v=exchg.150\))指令程式新增信箱資料庫副本。
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```powershell
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```
 
 7.  如果資料庫啟用循環記錄，啟用它再次使用[Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\))指令程式，此範例所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 ## 如何知道這是否正常運作？
 
@@ -147,7 +159,9 @@ _**上次修改主題的時間：** 2012-11-02_
 
   - 在命令介面中執行下列命令來確認信箱資料庫副本成功植入且狀況良好。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     狀態與內容索引狀態皆應為 \[正常\]。
 

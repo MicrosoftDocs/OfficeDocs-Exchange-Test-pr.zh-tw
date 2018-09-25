@@ -78,19 +78,22 @@ _**上次修改主題的時間：** 2014-02-24_
 
 例如，您會執行下列命令以啟動 eDiscovery 搜尋名為*Fabrikam 調查*，將搜尋結果複製到指定的探索信箱。
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 如果您要取得的搜尋結果的估計*EstimateOnly*參數，您必須之前可以複製搜尋結果中移除交換器。您也必須指定將搜尋結果複製到探索信箱。例如，之後使用下列命令建立僅預估搜尋：
 
-    New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```powershell
+New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```
 
 若要將此搜尋結果複製到探索信箱，您會執行下列命令：
-  ```
-  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-  ```
-  ```
-  Start-MailboxSearch "FY13 Q2 Financial Results"
-  ```
+  
+```powershell
+Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+Start-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 ## 複製搜尋結果的詳細資訊
 

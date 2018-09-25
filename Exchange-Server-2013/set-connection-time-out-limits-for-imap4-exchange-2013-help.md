@@ -90,7 +90,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  驗證連線設定是否正確。
 

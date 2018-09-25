@@ -47,7 +47,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
   - 若要確認您想連接使用者帳戶的被刪除信箱是否仍存在於信箱資料庫中，而且不是虛刪除的信箱，請執行下列命令。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     已刪除的信箱已存在於信箱資料庫中且*DisconnectReason*屬性的值設為`Disabled`。如果已經被從資料庫清除信箱，此命令將不會傳回任何結果。
 
@@ -98,7 +100,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 此範例會連線使用者信箱。*Identity*參數會指定已刪除的信箱保留在名為 MBXDB01 信箱資料庫中的顯示名稱。*User*參數會指定要連線至信箱的 Active Directory 使用者帳戶。
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 
 > [!NOTE]  
@@ -109,19 +113,27 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 此範例會連線連結的信箱。*Identity*參數會指定已刪除的信箱上名為 MBXDB02 的信箱資料庫。*LinkedMasterAccount*參數會指定您想要連線的信箱帳戶樹系中 Active Directory 使用者帳戶。*LinkedDomainController*參數會指定帳戶樹系中的網域控制站。
 
-    Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```powershell
+Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```
 
 這個範例會連線會議室信箱。
 
-    Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```powershell
+Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```
 
 這個範例會連線設備信箱。
 
-    Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```powershell
+Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```
 
 這個範例會連接共用的信箱。
 
-    Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```powershell
+Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```
 
 
 > [!NOTE]  
@@ -142,7 +154,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
   - 在命令介面中，執行下列命令。
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     *RecipientType*屬性的**UserMailbox**值會指出已連線的使用者帳戶和信箱。您也可以執行**Get-Mailbox \<identity\>**命令，以確認已連線的信箱。
 
@@ -163,15 +177,21 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 若要建立信箱還原要求，您必須使用顯示名稱、 舊版的辨別的名稱 (DN) 或信箱已刪除信箱的 GUID。使用**Get-MailboxStatistics**指令程式來顯示您想要還原已刪除信箱`DisplayName`、 `MailboxGuid`，以及`LegacyDN`屬性的值。例如，執行下列命令以傳回所有此資訊已停用和刪除您組織中的信箱。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 此範例會還原刪除的信箱，由其*SourceStoreMailbox*參數所識別並位於要目標信箱蔡 Garcia MBXDB01 信箱資料庫。*AllowLegacyDNMismatch*參數會在來源信箱可以還原至不同的信箱，都不會有相同的傳統 DN 值的其中一個因此。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 此範例會為 Pilar Pinilla 刪除的封存信箱還原至其目前的封存信箱。因為主要信箱和其對應的封存信箱有相同的傳統 DN *AllowLegacyDNMismatch*參數不必要的。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829875\(v=exchg.150\))。
 
@@ -183,7 +203,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 1.  取得完整網域名稱 (FQDN) 的 Active Directory 樹系與網域控制站執行下列 cmdlet：
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+    Get-OrganizationConfig | fl OriginatingServer
+    ```
 
 2.  步驟 1 所傳回的資訊、 搜尋 Deleted Objects 容器 Active Directory 中的公用資料夾信箱 GUID 以及 GUID 或刪除公用資料夾信箱已包含在信箱資料庫的名稱。
     
@@ -195,15 +217,21 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 1.  執行下列命令 （可能系統提示您提供適當的認證） 來建立新的 Active Directory 物件：
     
-        New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
+    ```powershell
+    New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
+    ```
         
-        Get-MailUser <mailUserName> | Disable-MailUser
+    ```powershell
+    Get-MailUser <mailUserName> | Disable-MailUser
+    ```
     
     其中`<mailUserName>`、 `<emailAddress>`，以及`<mailUserName>`是值您選擇。您必須在下一個步驟中使用相同的`<mailUserName>`值。
 
 2.  刪除公用資料夾信箱連接至您剛才建立透過執行下列命令 Active Directory 物件：
     
-        Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```powershell
+    Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```
     
     > [!NOTE]  
     > <code>Identity</code>參數指定要連線至 Active Directory 使用者物件的 Exchange 資料庫將信箱物件。上述範例會指定公用資料夾信箱的 GUID，但您也可以使用顯示名稱或 LegacyExchangeDN 值。
@@ -211,7 +239,9 @@ Exchange 信箱資料庫會永久刪除已刪除的信箱，直到您可以使�
 
 3.  對公用資料夾信箱，根據下面範例執行`Update-StoreMailboxState` ：
     
-        Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```powershell
+    Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```
     
     如步驟 2 所示的`Identity`參數會接受 GUID、 顯示名稱或公用資料夾信箱的 LegacyExchangeDN 值。
 

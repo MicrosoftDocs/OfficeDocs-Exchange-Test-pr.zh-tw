@@ -61,5 +61,7 @@ _**上次修改主題的時間：** 2013-04-29_
 
 此範例將憑證指派給整合通訊和 UM Call Router 服務。
 
-    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+```powershell
+Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+```
 

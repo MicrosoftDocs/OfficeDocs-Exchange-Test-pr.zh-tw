@@ -113,15 +113,21 @@ _**上次修改主題的時間：** 2015-03-09_
 
 本範例傳回 DB2 資料庫所有複本的狀態資訊。
 
-    Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```
 
 本範例傳回信箱伺服器 MBX2 上所有資料庫複本的狀態。
 
-    Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```
 
 此範例傳回本機 Mailbox Server 上所有資料庫副本的狀態。
 
-    Get-MailboxDatabaseCopyStatus -Local | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Local | Format-List
+```
 
 如需使用 **Get-MailboxDatabaseCopyStatus** 指令程式的相關資訊，請參閱 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-tw/library/dd298044\(v=exchg.150\))。
 
@@ -225,7 +231,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 這個範例使用 **Test-ReplicationHealth** 指令程式來測試 Mailbox Server MBX1 的複寫狀況。
 
-    Test-ReplicationHealth -Identity MBX1
+```powershell
+Test-ReplicationHealth -Identity MBX1
+```
 
 ## Crimson 通道事件記錄
 

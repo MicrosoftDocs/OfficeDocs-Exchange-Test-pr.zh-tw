@@ -58,11 +58,15 @@ Edge Transport Server 組態資訊會儲存在 Active Directory 輕量型目錄�
 
 2.  若要將來源伺服器組態資料匯出至來源伺服器上的檔案，請使用下列語法。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```powershell
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```
     
     例如，若要將來源伺服器組態資料匯出至檔案 C:\\CloneConfigData.xml，請執行下列命令。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```powershell
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -76,11 +80,15 @@ Edge Transport Server 組態資訊會儲存在 Active Directory 輕量型目錄�
 
 3.  若要驗證組態檔，並使用結果在目標伺服器上建立回應檔案，請使用下列語法。
     
-        ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
+    ```powershell
+    ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
+    ```
     
     例如，若要驗證組態檔 C:\\CloneConfigData.xml，並建立回應檔案 C:\\CloneConfigAnswer.xml，請執行下列命令。
     
-        ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+    ```powershell
+    ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+    ```
 
 4.  開啟回應檔案並修改任何對目標伺服器無效的設定。如果不需要修改，回應檔案將不含任何項目。儲存變更。
 
@@ -92,11 +100,15 @@ Edge Transport Server 組態資訊會儲存在 Active Directory 輕量型目錄�
 
 若要在目標伺服器上匯入組態檔，請使用下列語法。
 
-    ./ImportEdgeConfig.ps1 -CloneConfigData:"<Configuration file>" -IsImport $true -CloneConfigAnswer:"<answer file>"
+```powershell
+./ImportEdgeConfig.ps1 -CloneConfigData:"<Configuration file>" -IsImport $true -CloneConfigAnswer:"<answer file>"
+```
 
 例如，若要使用回應檔案 C:\\CloneConfigAnswer.xml 匯入組態檔 C:\\CloneConfigData.xml，請執行下列命令。
 
-    ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+```powershell
+./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
