@@ -30,7 +30,7 @@ _**上次修改主題的時間：** 2015-07-07_
 
 儲存配額通常是以每個資料庫為基礎來設定。這表示，設定的信箱資料庫配額會套用至該資料庫中的所有信箱。如需管理每個資料庫之信箱設定的詳細資訊，請參閱[管理 Exchange 2013 中的信箱資料庫](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
 
-本主題說明如何自訂特定信箱的儲存設定，而不使用信箱資料庫的儲存設定。關於與使用者信箱相關的其他管理工作，請參閱[管理使用者信箱](manage-user-mailboxes-exchange-2013-help.md)。
+本主題說明如何自訂特定信箱的儲存設定，而不使用信箱資料庫的儲存設定。關於與使用者信箱相關的其他管理工作，請參閱[管理使用者信箱](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。
 
 ## 開始之前有哪些須知？
 
