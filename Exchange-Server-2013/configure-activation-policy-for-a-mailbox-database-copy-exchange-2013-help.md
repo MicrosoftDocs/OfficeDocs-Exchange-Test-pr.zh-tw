@@ -40,15 +40,11 @@ _**上次修改主題的時間：** 2012-11-02_
 
 ## 使用 EAC 設定信箱資料庫副本的啟動原則
 
-1.  
-    
-    在 EAC 中，移至 \[伺服器\] \> \[資料庫\]。
+1.  在 EAC 中，移至 \[伺服器\] \> \[資料庫\]。
 
 2.  選取想要設定的資料庫。
 
-3.  
-    
-    在 \[詳細資料\] 窗格的 \[資料庫副本\] 下方，找出想要設定的資料庫副本，然後按一下 \[擱置\]。
+3.  在 \[詳細資料\] 窗格的 \[資料庫副本\] 下方，找出想要設定的資料庫副本，然後按一下 \[擱置\]。
 
 4.  可選擇性加入備註，然後選取 \[此副本僅能以手動操作方式啟動\] 核取方塊。
 
@@ -99,12 +95,12 @@ Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
   - 在命令介面中，執行以下命令來驗證資料庫副本的啟動設定。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```
 
   - 在命令介面中，執行以下命令來驗證 DAG 成員的啟動設定。
     
     ```powershell
-Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-```
+    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```
 

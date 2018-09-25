@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_<strong>適用版本：</strong> Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_<strong>上次修改主題的時間：</strong> 2012-10-30_
+_**上次修改主題的時間：** 2012-10-30_
 
 當您新增信箱資料庫複本時，連續複寫會自動啟用現有的資料庫和資料庫副本之間。資料庫副本自動指派給 identity 的格式為 \<*DatabaseName*\> \\ \<*HostMailboxServerName*\>。例如，伺服器 MBX3 裝載 DB1 的複本是資料庫的 DB1\\MBX3。
 
@@ -50,23 +50,19 @@ _<strong>上次修改主題的時間：</strong> 2012-10-30_
 
 ## 使用 EAC 來新增信箱資料庫副本
 
-1.  
-    
-    在 EAC 中，移至 \[伺服器\] \> \[資料庫\]。
+1.  在 EAC 中，移至 \[伺服器\] \> \[資料庫\]。
 
 2.  選取您要複製的資料庫，然後按一下 \[ ![加入資料庫複本](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "加入資料庫複本")。
 
-3.  
-    
-    在 \[<strong>新增信箱資料庫複本</strong>\] 頁面上，按一下 \[<strong>瀏覽...</strong>、 選取信箱伺服器將裝載資料庫副本，並再按一下 \[<strong>確定\]</strong>。
+3.  在 \[**新增信箱資料庫複本**\] 頁面上，按一下 \[**瀏覽...**、 選取信箱伺服器將裝載資料庫副本，並再按一下 \[**確定\]**。
 
-4.  （選用） 設定資料庫副本的<strong>啟動喜好設定數字</strong>。
+4.  （選用） 設定資料庫副本的**啟動喜好設定數字**。
 
-5.  按一下 \[<strong>其他選項\]</strong>來指定為延遲的資料庫副本的資料庫副本設定重新顯示延遲時間，或是延後自動植入資料庫副本。
+5.  按一下 \[**其他選項\]**來指定為延遲的資料庫副本的資料庫副本設定重新顯示延遲時間，或是延後自動植入資料庫副本。
 
-6.  按一下 \[<strong>儲存</strong>\] 以儲存設定變更，並新增信箱資料庫副本。
+6.  按一下 \[**儲存**\] 以儲存設定變更，並新增信箱資料庫副本。
 
-7.  按一下<strong>\[確定\]</strong>確認出現任何訊息。
+7.  按一下**\[確定\]**確認出現任何訊息。
 
 ## 使用命令介面來新增信箱資料庫副本
 
@@ -84,19 +80,21 @@ Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 
 
 本範例會新增到信箱伺服器 MBX5 信箱資料庫 DB3 的副本。重新顯示延遲時間設為 3 天、 截斷延遲時間維持預設值為零，並啟動喜好設定會設定與`4`的值。
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已成功建立信箱資料庫複本，請執行下列其中一項：
 
-  - 在 EAC 中，瀏覽至 \[<strong>伺服器</strong>\><strong>資料庫</strong>。選取 \[複製的資料庫。在 \[詳細資料\] 窗格中會顯示的資料庫副本和其內容索引狀態，以及目前的複製佇列長度。
+  - 在 EAC 中，瀏覽至 \[**伺服器**\>**資料庫**。選取 \[複製的資料庫。在 \[詳細資料\] 窗格中會顯示的資料庫副本和其內容索引狀態，以及目前的複製佇列長度。
 
   - 在命令介面中，執行下列指令以確認已建立信箱資料庫副本與其狀況：
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     狀態與內容索引狀態皆應為 \[正常\]。
 

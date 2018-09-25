@@ -69,7 +69,9 @@ _**上次修改主題的時間：** 2015-07-16_
 
 1.  在命令介面中，執行下列命令。
     
-        Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+    ```powershell
+    Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+    ```
 
 ## 如何才能了解這是否正常運作？
 
@@ -79,7 +81,9 @@ _**上次修改主題的時間：** 2015-07-16_
 
 2.  在命令介面中，執行下列命令。
     
-        Get-CASMailbox -Identity tony@contoso.com 
+    ```powershell
+    Get-CASMailbox -Identity tony@contoso.com 
+    ```
 
 ## 同時變更多個使用者的行動裝置信箱原則
 
@@ -105,8 +109,10 @@ _**上次修改主題的時間：** 2015-07-16_
 
 1.  在命令介面中，執行下列命令。
     
-        Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
-         } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
+    ```powershell
+    Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"    
+     } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
+    ```
     
     > [!NOTE]  
     > 您可以改用<code>CustomAttribute1</code>任何<strong>Get-Mailbox</strong>物件上的內容。若要檢視的完整清單，請輸入： <code>Get-Mailbox username |fl</code>。
@@ -121,6 +127,6 @@ _**上次修改主題的時間：** 2015-07-16_
 2.  在命令介面中，執行下列命令。
     
     ```powershell
-Get-CASMailbox -Identity tony@contoso.com
-```
+    Get-CASMailbox -Identity tony@contoso.com
+    ```
 

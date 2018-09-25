@@ -69,24 +69,32 @@ _**上次修改主題的時間：** 2012-10-03_
 2.  以變數儲存外部 Active Directory 樹系認證。
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  透過變數儲存指派至 組織管理 角色群組的所有角色。
     
-        $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```powershell
+    $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```
 
 4.  建立 組織管理 連結角色群組，並新增指派至內建 組織管理 角色群組的角色。
     
-        New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```powershell
+    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```
 
 5.  移除新 組織管理 連結角色群組及 My\* 一般使用者角色之間的所有一般指派。
     
-        Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```
 
 6.  新增新 組織管理 連結角色群組及所有管理角色間的委派角色指派。
     
-        Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```powershell
+    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```
 
 此範例假設下列值用於每個參數：
 
@@ -98,11 +106,11 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+$OrgMgmt  = Get-RoleGroup "Organization Management"
+New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
 ```
-    $OrgMgmt  = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
-    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
-    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
 
 ## 建立所有其他連結的角色群組
 
@@ -113,19 +121,21 @@ $ForeignCredential = Get-Credential
 2.  儲存在變數中的外部Active Directory樹系認證。您只需要一次執行這項作業。
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  擷取使用下列 Cmdlet 的角色群組清單。
     
     ```powershell
-Get-RoleGroup
-```
+    Get-RoleGroup
+    ```
 
 4.  針對 組織管理 角色群組以外的每個角色群組，請執行下列作業。
     
-        $RoleGroup = Get-RoleGroup <name of role group to re-create>
-        New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to re-create>
+    New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+    ```
 
 5.  針對想重新建立為連結角色群組的每個內建角色群組，重複先前步驟。
 
@@ -143,14 +153,12 @@ Get-RoleGroup
 
 ```powershell
 $ForeignCredential = Get-Credential
-```
-```powershell
 Get-RoleGroup
+$RoleGroup = Get-RoleGroup "Recipient Management"
+New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+$RoleGroup = Get-RoleGroup "Server Management"
+New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
 ```
-    $RoleGroup = Get-RoleGroup "Recipient Management"
-    New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
-    $RoleGroup = Get-RoleGroup "Server Management"
-    New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
 
 ## 其他工作
 

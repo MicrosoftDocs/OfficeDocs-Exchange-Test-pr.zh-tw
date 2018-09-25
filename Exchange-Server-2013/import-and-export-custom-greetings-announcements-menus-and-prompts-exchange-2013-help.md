@@ -35,7 +35,7 @@ _**上次修改主題的時間：** 2015-04-08_
 
 如需與 UM 撥號對應表相關的其他管理工作，請參閱 [UM 撥號對應表規劃程序](um-dial-plan-procedures-exchange-2013-help.md)。
 
-如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)。
+如需與 UM 自動語音應答相關的其他管理工作，請參閱[UM 自動語音應答程序](um-auto-attendant-procedures-exchange-2013-help.md)。
 
 ## 開始之前有哪些須知？
 
@@ -43,9 +43,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱「 UM 撥號對應表 」 和 「 UM 自動語音應答？[整合的通訊權限](unified-messaging-permissions-exchange-2013-help.md)主題中的項目。
 
-  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)。
+  - 在執行這些程序之前，請確認已建立 UM 撥號對應表。如需詳細步驟，請參閱[建立 UM 撥號對應表](create-a-um-dial-plan-exchange-2013-help.md)。
 
-  - 執行這些程序之前，請確認已建立 UM 自動語音應答。如需詳細步驟，請參閱[建立 UM 自動語音應答](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant)。
+  - 執行這些程序之前，請確認已建立 UM 自動語音應答。如需詳細步驟，請參閱[建立 UM 自動語音應答](create-a-um-auto-attendant-exchange-2013-help.md)。
 
   - 您只能使用命令介面來執行此程序。
 
@@ -64,23 +64,31 @@ _**上次修改主題的時間：** 2015-04-08_
 
 本範例會將歡迎使用問候語檔案 welcomegreeting.wav 從 d:\\UMPrompts 匯入至 UM 撥號對應表 `MyUMDialPlan` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 本範例會將歡迎使用問候語檔案 welcomegreeting.wav 從 d:\\UMPrompts 匯入至 UM 自動語音應答 `MyUMAutoAttendant` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 ## 使用命令介面從 UM 撥號對應表和自動語音應答匯出自訂問候語、宣告、功能表和提示
 
 本範例會匯出 UM 撥號對應表 `MyUMDialPlan` 的歡迎使用問候語，並將其儲存為名為 welcomegreeting.wav 的檔案。
 
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
-    set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+$prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
+set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 本範例會匯出 UM 自動語音應答 `MYUMAutoAttendant` 的上班時間歡迎使用問候語，並將其儲存為名為 BusinessHoursWelcomeGreeting.wav 的檔案。
 
-    $prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
-    set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+$prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
+set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 

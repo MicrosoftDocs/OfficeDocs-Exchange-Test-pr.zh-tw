@@ -80,7 +80,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 現在您可以為 *CustomAttribute1* 內容等於 SalesOU 的所有收件者建立電子郵件地址原則，如此範例所示。
 
-    New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```powershell
+New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```
 
 ## 含 ConditionalCustomAttributes 參數的自訂屬性範例
 
@@ -88,7 +90,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 此範例根據 *CustomAttribute1* 設為 SalesOU 的收件者建立動態通訊群組。
 
-    New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```powershell
+New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```
 
 
 > [!NOTE]  
@@ -107,7 +111,9 @@ Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 
 下一步\] 動態通訊群組的所有學生都註冊 MATH307 會建立使用*ExtensionCustomAttribute1*等於 MATH307 *RecipientFilter*參數。使用*ExtentionCustomAttributes*參數時，您可以使用`-eq`運算子，而不是`-like`運算子。
 
-    New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```powershell
+New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```
 
 在此範例中，Kweku 的 *ExtensionCustomAttribute1* 值將更新以反映他已加入 ENGL210 課程並移除 ECON202 課程。
 

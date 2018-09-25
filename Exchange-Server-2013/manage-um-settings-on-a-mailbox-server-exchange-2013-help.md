@@ -59,11 +59,15 @@ Set-UMService -Identity MyMailboxServer -DialPlans $null
 
 此範例會將名為 `MyMailboxServer` 的信箱伺服器r，新增到名稱為 `MySIPDialPlanName` 的 UM SIP 撥號對應表中，同時設定傳入語音呼叫數目的上限。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150 
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150 
+```
 
 此範例會在名為 `MyUMServer` 的信箱伺服器上將啟動模式設為雙重模式。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual 
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual 
+```
 
 ## 使用命令介面檢視信箱伺服器內容
 

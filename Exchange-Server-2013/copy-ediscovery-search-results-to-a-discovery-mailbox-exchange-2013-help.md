@@ -25,9 +25,9 @@ _**上次修改主題的時間：** 2014-02-24_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [郵件原則及符合性權限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主題中的「就地 eDiscovery」項目。
 
-  - EDiscovery 搜尋具有要建立使用 EAC 或命令介面中，您可以複製搜尋結果之前。如需詳細資訊，請參閱[建立就地 eDiscovery 搜尋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)。
+  - EDiscovery 搜尋具有要建立使用 EAC 或命令介面中，您可以複製搜尋結果之前。如需詳細資訊，請參閱[建立就地 eDiscovery 搜尋](create-an-in-place-ediscovery-search-exchange-2013-help.md)。
 
-  - Exchange 2013安裝程式會建立稱為 「**探索搜尋信箱**複製搜尋結果的探索信箱。\[探索搜尋信箱也會建立預設Exchange Online。您可以建立其他探索信箱。如需詳細資訊，請參閱[建立探索信箱](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox)。
+  - Exchange 2013安裝程式會建立稱為 「**探索搜尋信箱**複製搜尋結果的探索信箱。\[探索搜尋信箱也會建立預設Exchange Online。您可以建立其他探索信箱。如需詳細資訊，請參閱[建立探索信箱](create-a-discovery-mailbox-exchange-2013-help.md)。
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -72,7 +72,7 @@ _**上次修改主題的時間：** 2014-02-24_
 
 使用之後**New-MailboxSearch**指令程式來建立就地 eDiscovery 搜尋，您必須啟動，將郵件複製到探索信箱*TargetMailbox*參數所指定的搜尋。如需建立使用命令介面中的 eDiscovery 搜尋，請參閱：
 
-  - [使用命令介面來建立就地 eDiscovery 搜尋](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
+  - [使用命令介面來建立就地 eDiscovery 搜尋](create-an-in-place-ediscovery-search-exchange-2013-help.md)
 
   - [New-MailboxSearch](https://technet.microsoft.com/zh-tw/library/dd298064\(v=exchg.150\))
 
@@ -84,19 +84,20 @@ Start-MailboxSearch "Fabrikam Investigation"
 
 如果您要取得的搜尋結果的估計*EstimateOnly*參數，您必須之前可以複製搜尋結果中移除交換器。您也必須指定將搜尋結果複製到探索信箱。例如，之後使用下列命令建立僅預估搜尋：
 
-    New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```powershell
+New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```
 
 若要將此搜尋結果複製到探索信箱，您會執行下列命令：
-  ```
-  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-  ```
-  ```
-  Start-MailboxSearch "FY13 Q2 Financial Results"
-  ```
+  
+```powershell
+Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+Start-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 ## 複製搜尋結果的詳細資訊
 
-  - 將搜尋結果複製到探索信箱後，您可以將搜尋結果匯出至 PST 檔案。如需詳細資訊，請參閱[將 eDiscovery 搜尋結果匯出至 PST 檔](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/export-search-results)。
+  - 將搜尋結果複製到探索信箱後，您可以將搜尋結果匯出至 PST 檔案。如需詳細資訊，請參閱[將 eDiscovery 搜尋結果匯出至 PST 檔](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)。
 
   - 如需無法搜尋之項目的詳細資訊，請參閱[Exchange eDiscovery 中項目\] 無法搜尋](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)。
 
@@ -108,5 +109,5 @@ Start-MailboxSearch "Fabrikam Investigation"
     
       - **預覽搜尋結果**  此選項可讓您預覽，而不必將它複製到探索信箱來檢視不是搜尋傳回的搜尋結果。這可讓您快速決定是否有相關的搜尋結果。預覽結果之後，您可以修改搜尋查詢來縮小搜尋結果並重新執行搜尋。因此您不能移動、 編輯、 刪除或轉寄 \[預覽\] 頁面上的實際的搜尋結果中的唯讀版本會在 \[預覽\] 頁面上的項目。
     
-    如需詳細資訊，請參閱[預估或預覽搜尋結果](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)。
+    如需詳細資訊，請參閱[預估或預覽搜尋結果](create-an-in-place-ediscovery-search-exchange-2013-help.md)。
 

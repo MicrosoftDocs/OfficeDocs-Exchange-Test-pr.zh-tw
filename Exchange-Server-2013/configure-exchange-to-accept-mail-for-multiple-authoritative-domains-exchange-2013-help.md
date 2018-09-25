@@ -74,11 +74,15 @@ _**上次修改主題的時間：** 2016-06-15_
 
 若要建立新的授權網域，請使用下列語法。
 
-    New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```powershell
+New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```
 
 例如，若要為網域 fourthcoffee.com 建立名稱為 "Fourth Coffee subsidiary" 的新授權網域，請執行下列命令：
 
-    New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```powershell
+New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -120,11 +124,15 @@ _**上次修改主題的時間：** 2016-06-15_
 
 若要變更現有的主要電子郵件地址，並保留舊的主要電子郵件地址作為 Proxy 地址，請執行下列命令：
 
-    Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```powershell
+Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```
 
 例如，假設您組織中的電子郵件地址原則使用電子郵件地址格式 *useralias*`@contoso.com`。本範例會將電子郵件地址原則 (名稱為 "Default Policy") 中主要 (回覆) 地址的網域變更為 `@fourthcoffee.com`，並保留 `@contoso.com` 網域中舊的主要回覆地址作為 Proxy (次要) 地址。
 
-    Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```powershell
+Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```
 
 
 > [!NOTE]  
@@ -184,9 +192,7 @@ Update-EmailAddressPolicy "Default Policy"
 
 6.  按一下 \[預覽原則適用於下列內容的收件者\]，查看此通訊清單將套用的收件者。
 
-7.  
-    
-    按一下 \[儲存\] 以儲存變更並建立原則。
+7.  按一下 \[儲存\] 以儲存變更並建立原則。
 
 8.  您會看到警告，告知您除非加以更新，否則不會套用電子郵件地址原則。建立後，將其選取，接著在詳細資料窗格中按一下 \[套用\]。
 
@@ -194,11 +200,15 @@ Update-EmailAddressPolicy "Default Policy"
 
 若要取代一組已篩選收件者的主要電子郵件地址，請使用下列命令：
 
-    New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+```powershell
+New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+```
 
 本範例會建立名稱為 "Fourth Coffee Recipients" 的電子郵件地址原則、將該原則指派給 Fourth Coffee 部門中的信箱使用者，並對該電子郵件地址原則設定最高優先順序，以便最先套用該原則。請注意，不會為這些收件者保留舊的主要電子郵件地址，因此他們無法在其舊的主要電子郵件地址收到電子郵件。
 
-    New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```powershell
+New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```
 
 若要將新的電子郵件地址原則套用至受影響的收件者，請執行下列命令：
 

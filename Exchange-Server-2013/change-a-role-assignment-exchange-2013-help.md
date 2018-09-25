@@ -86,7 +86,9 @@ Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
 
 若要在角色指派上變更或新增預先定義的範圍，請使用下列語法。
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```
 
 此範例會將 John's Assignment 角色指派上的預先定義範圍變更為 MyDistributionGroups。
 
@@ -102,11 +104,15 @@ Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope M
 
 若要指定新的收件者篩選式範圍，或取代現有的範圍，請使用下列語法。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```
 
 此範例會新增收件者篩選式範圍或將收件者篩選式範圍變更為 Redmond Recipients。
 
-    Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```powershell
+Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```
 
 如果您想將同一個收件者篩選器型範圍套用至角色指派但變更用來比對收件者物件的收件者篩選，您需要變更為範圍本身上的收件者篩選器。如需如何變更範圍的詳細資訊，請參閱[角色範圍變更](change-a-role-scope-exchange-2013-help.md)。
 
@@ -124,7 +130,9 @@ Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role sco
 
 此範例會新增組態範圍或將組態範圍變更為 Redmond Servers。
 
-    Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```powershell
+Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```
 
 如果您想將同一個組態範圍套用至角色指派但變更伺服器篩選或範圍中的 \[伺服器\] 清單，您需要變更組態範圍本身擷取。如需如何變更範圍的詳細資訊，請參閱[角色範圍變更](change-a-role-scope-exchange-2013-help.md)。
 
@@ -162,7 +170,9 @@ Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope
 
 此範例會將 contoso.com 網域中的 Engineering\\Users OU 新增到 Engineering Help Desk 角色指派。
 
-    Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```powershell
+Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335173\(v=exchg.150\))。
 
@@ -178,7 +188,9 @@ Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope
 
 此範例會變更獨佔收件者寫入範圍。
 
-    Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```powershell
+Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335173\(v=exchg.150\))。
 

@@ -60,7 +60,9 @@ New-RemoteDomain -Name Contoso -DomainName contoso.com
 
 此範例能針對傳送給 fabrikam.com 網域和所有子網域的郵件建立遠端網域項目。
 
-    New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```powershell
+New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```
 
 ## 如何才能了解這是否正常運作？
 

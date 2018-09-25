@@ -172,11 +172,15 @@ netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
 
 指令碼中使用的命令如下：
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```
 
 上述命令會建立 DAG (DAG1)、設定 CAS1 做為見證伺服器、設定特定的見證目錄 (C:\\DAGWitness\\DAG1.contoso.com)，以及為 DAG 設定兩個 IP 地址 (MAPI 網路上的每個子網路各一個)。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```
 
 上述命令設定 DAG1 使用 CAS4 的備用見證伺服器及使用 CAS1 上設定之相同路徑的 CAS4 上的備用見證目錄。
 
@@ -187,10 +191,12 @@ netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
 
 
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```
 
 上述命令將每個信箱伺服器新增到 DAG 中，一次一個。該命令也會在每個信箱伺服器上安裝 Windows 容錯移轉叢集 (如果尚未安裝)、建立容錯移轉叢集，並將每個信箱伺服器加入新建立的叢集。
 
@@ -218,39 +224,47 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
 
 在 MBX1 上，執行下列命令。
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```
 
 在 MBX2 上，執行下列命令。
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```
 
 在 MBX3 上，執行下列命令。
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```
 
 在 MBX4 上，執行下列命令。
 
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```
 
 在上述 **Add-MailboxDatabaseCopy** 指令程式的範例中，並未指定 *ActivationPreference* 參數。該工作會隨著他們所新增的每個副本自動遞增啟動喜好設定編號。原始資料庫的喜好設定編號一定是 1。使用 **Add-MailboxDatabaseCopy** 指令程式新增的第一個副本的喜好設定編號會自動指派為 2。假設沒有任何副本移除，新增的下一個副本的喜好設定編號會自動指派為 3，依此類推。因此，在上述範例中，與作用中副本在同一個資料中心中的被動副本的啟動喜好設定編號為 2、遠端資料中心中的非延遲被動副本的啟動喜好設定編號為 3，而遠端資料中心中的延遲被動副本的啟動喜好設定編號則為 4。
 

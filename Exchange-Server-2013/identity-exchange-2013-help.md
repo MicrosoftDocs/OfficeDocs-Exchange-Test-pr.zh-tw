@@ -35,8 +35,10 @@ The *Identity* parameter is also considered a positional parameter. The first ar
 
 The following example shows the use of the *Identity* parameter by using the Receive connector's unique *Name* parameter value. This example also shows how you can omit the *Identity* parameter name because *Identity* is a positional parameter.
 
-    Get-ReceiveConnector -Identity "From the Internet"
-    Get-ReceiveConnector "From the Internet"
+```powershell
+Get-ReceiveConnector -Identity "From the Internet"
+Get-ReceiveConnector "From the Internet"
+```
 
 Like all objects in Exchange 2013, this Receive connector can also be referred to by its unique GUID. For example, if the Receive connector named `"From the Internet"` is also assigned the GUID `63d64005-42c5-4f8f-b310-14f6cb125bf3`, you can also retrieve the Receive connector by using the following command:
 
@@ -85,20 +87,26 @@ For more information about the makeup of the *Identity* parameter when it's used
 The examples in this section refer to management role entries that make up management roles in Exchange 2013. Management roles are used to control the permissions that are granted to administrators and end users. Management role entries are made up of two parts: the management role they're associated with and a cmdlet. The Identity parameter is likewise made up of both the management role name and the cmdlet name. For example, the following is the role entry for the **Set-Mailbox** cmdlet on the `Mail Recipients` role:
 
 ```powershell
-Mail Recipients\Set-Mailbox
-```
+Mail Recipients\Set-Mailbox```
+
 
 The `Mail Recipients\Set-Mailbox` role entry is one of several entries on the `Mail Recipients` role. To view all the role entries on the `Mail Recipients` role, you can use the following command:
 
-    Get-ManagementRoleEntry "Mail Recipients\*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*"
+```
 
 To view all the role entries on the `Mail Recipients` role that contain the string "`Mailbox`", use the following command:
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```
 
 To view all the management roles where **Set-Mailbox** is one of the role entries, use the following command:
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 With role entries you can use the wildcard character in a variety of ways to query Exchange 2013 for the information you're interested in.
 

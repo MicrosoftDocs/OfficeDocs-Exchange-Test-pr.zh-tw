@@ -61,7 +61,9 @@ _**上次修改主題的時間：** 2014-01-23_
 
 執行下列命令：
 
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```powershell
+& $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
@@ -102,8 +104,8 @@ Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
 1.  執行下列命令：
     
     ```powershell
-Get-TransportConfig | Format-List InternalSMTPServers
-```
+    Get-TransportConfig | Format-List InternalSMTPServers
+    ```
 
 2.  確認至少一個有效內部 SMTP 伺服器的 IP 位址隨即顯示。
 

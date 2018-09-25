@@ -67,8 +67,8 @@ Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagN
   - 在命令介面中，執行下列命令以顯示 DAG 網路組態設定，並確認 DAG 網路已成功設定。
     
     ```powershell
-Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
-```
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## 相關資訊
 

@@ -76,5 +76,7 @@ Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
 
 此範例會擷取伺服器 EXCH01 上的所有 IRM 記錄內容。
 
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```powershell
+Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```
 

@@ -80,7 +80,9 @@ Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
 
 本範例會設定與重新顯示延遲時間和截斷延遲時間的 1 天及 2 的啟動喜好設定號碼 Server1 裝載資料庫 DB1 的複本。
 
-    Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
+```powershell
+Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
+```
 
 ## 如何知道這是否正常運作？
 
@@ -91,8 +93,8 @@ Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
   - 在命令介面中執行下列命令來顯示資料庫副本的組態資訊。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## 相關資訊
 

@@ -67,9 +67,11 @@ _**上次修改主題的時間：** 2016-08-09_
 
 本範例會匯入的自訂 DLP 原則範本檔案在檔案 C:\\My Documents\\DLP Backup.xml。從 XML 檔案匯入的 DLP 原則集合中移除或組織內定義的所有原先既 DLP 原則會覆寫。請確定符合您目前的 DLP 原則集合的備份再匯入並覆寫目前的 DLP 原則。
 
-    Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+```powershell
+Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+```
 
 ## 相關資訊
 
-[資料遺失防護](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+[資料遺失防護](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
 

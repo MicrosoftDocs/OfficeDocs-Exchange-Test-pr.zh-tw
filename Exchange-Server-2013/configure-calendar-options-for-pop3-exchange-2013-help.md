@@ -46,7 +46,9 @@ Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
 
 此範例會啟用 POP3 使用者從內部伺服器存取行事曆資訊。
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```powershell
+Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 
 此範例會啟用 POP3 使用者從外部伺服器上網際網路存取行事曆資訊。
 

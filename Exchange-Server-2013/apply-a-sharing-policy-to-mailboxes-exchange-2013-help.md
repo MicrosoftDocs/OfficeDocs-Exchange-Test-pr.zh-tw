@@ -75,7 +75,9 @@ Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "C
 
 此範例會傳回已套用共用原則 Contoso 的所有信箱，並將使用者排序到只顯示使用者別名及電子郵件地址的表格中。
 
-    Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+```powershell
+Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) 與 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))。
 
@@ -88,8 +90,8 @@ Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "C
   - 執行下列命令介面指令，確認已將共用原則指派到使用者信箱。確認正確的共用原則列在 *SharingPolicy* 參數中。
     
     ```powershell
-Get-Mailbox <user name> | format-list
-```
+    Get-Mailbox <user name> | format-list
+    ```
 
 
 > [!TIP]  

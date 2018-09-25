@@ -71,8 +71,8 @@ Restart-Service MSExchangeTransport
 1.  執行下列命令：
     
     ```powershell
-Get-TransportAgent "Attachment Filtering Agent"
-```
+    Get-TransportAgent "Attachment Filtering Agent"
+    ```
 
 2.  如果 **\[已啟用\]** 的值為 `True`，表示已啟用附件篩選。如果值為 `False`，則表示附件篩選是停用的。
 
@@ -104,7 +104,9 @@ Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
 
 例如，若要檢視 JPEG 附件的副檔名項目，請執行下列命令：
 
-    Get-AttachmentFilteringEntry FileName:*.jpg
+```powershell
+Get-AttachmentFilteringEntry FileName:*.jpg
+```
 
 ## 使用命令介面新增附件篩選項目
 
@@ -128,7 +130,9 @@ Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 
 下列範例會篩選具有.jpg 副檔名的附件。
 
-    Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```powershell
+Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```
 
 ## 如何知道這是否正常運作？
 
@@ -137,8 +141,8 @@ Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 1.  執行下列命令，以確認篩選項目是否存在。
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  在簡訊中加入禁止的附件，並將其從外部信箱傳送給內部收件者，然後確認該郵件是否遭到拒絕、移除或刪除。
 
@@ -164,7 +168,9 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 
 下列範例會移除.jpg 副檔名的檔案名稱項目。
 
-    Remove-AttachmentFilterEntry FileName:*.jpg
+```powershell
+Remove-AttachmentFilterEntry FileName:*.jpg
+```
 
 ## 如何知道這是否正常運作？
 
@@ -173,8 +179,8 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 1.  執行下列命令，以確認篩選項目是否已移除。
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  在簡訊中加入允許的附件，並將其從外部信箱傳送給內部收件者，然後確認該郵件是否連同附件順利傳遞。
 
@@ -190,7 +196,9 @@ Get-AttachmentFilterListConfig
 
 若要設定在郵件中偵測到禁止附件時所將採取的附件篩選動作，請使用下列語法：
 
-    Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```powershell
+Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```
 
 本範例會對附件篩選組態進行下列變更：
 
@@ -200,7 +208,9 @@ Get-AttachmentFilterListConfig
 
 <!-- end list -->
 
-    Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```powershell
+Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```
 
 如需詳細資訊，請參閱[Set-AttachmentFilterListConfig](https://technet.microsoft.com/zh-tw/library/bb123483\(v=exchg.150\))。
 

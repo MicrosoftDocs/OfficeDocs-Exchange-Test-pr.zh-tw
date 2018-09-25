@@ -45,28 +45,34 @@ _**上次修改主題的時間：** 2014-12-16_
 1.  在 Mailbox Server 或 Edge Transport Server 上的命令提示字元視窗中，執行以下命令以在記事本中開啟 EdgeTransport.exe.config 檔案。
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  找出下列位於 `<appSettings>` 區段的機碼。
     
-        <add key="QueueGlitchRetryCount" value="<Integer>" />
-        <add key="QueueGlitchRetryInterval" value="<hh:mm:ss>" />
-        <add key="MailboxDeliveryQueueRetryInterval" value="<hh:mm:ss>" />
-        <add key="MaxIdleTimeBeforeResubmit" value="<hh:mm:ss>" />
+    ```powershell
+    <add key="QueueGlitchRetryCount" value="<Integer>" />
+    <add key="QueueGlitchRetryInterval" value="<hh:mm:ss>" />
+    <add key="MailboxDeliveryQueueRetryInterval" value="<hh:mm:ss>" />
+    <add key="MaxIdleTimeBeforeResubmit" value="<hh:mm:ss>" />
+    ```
     
     此範例會將佇列問題重試計數變更為 6、將佇列問題重試間隔變更為 30 秒、將信箱傳遞佇列重試間隔變更為 3 分鐘，以及將重新提交間隔前的閒置時間上限變更為 6 小時。
     
-        <add key="QueueGlitchRetryCount" value="6" />
-        <add key="QueueGlitchRetryInterval" value="00:00:30" />
-        <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
-        <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
+    ```powershell
+    <add key="QueueGlitchRetryCount" value="6" />
+    <add key="QueueGlitchRetryInterval" value="00:00:30" />
+    <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
+    <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
+    ```
 
 3.  完成後，儲存並關閉 EdgeTransport.exe.config 檔案。
 
 4.  執行下列命令，以重新啟動 Microsoft Exchange 傳輸服務：
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 設定暫時性失敗重試嘗試、暫時性失敗重試間隔及輸出連線失敗重試間隔
 
@@ -88,7 +94,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 使用下列語法設定 Mailbox Server 上之傳輸服務中或 Edge Transport Server 上的暫時性失敗重試嘗試、暫時性失敗重試間隔及輸出連線失敗重試間隔。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 此範例會變更 Edge Transport Server Exchange01 上名為 Mailbox01: 之 Mailbox Server 上的以下各值。
 
@@ -100,7 +108,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 
 > [!NOTE]  
@@ -123,7 +133,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 使用下列語法設定 Mailbox Server 上之傳輸服務中或 Edge Transport Server 上的暫時性失敗重試嘗試、暫時性失敗重試間隔及輸出連線失敗重試間隔。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 此範例會變更 Edge Transport Server Exchange01 上名為 Mailbox01: 之 Mailbox Server 上的以下各值。
 
@@ -135,7 +147,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 
 > [!NOTE]  
@@ -197,7 +211,9 @@ Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
 
 使用下列語法來設定延遲 DSN 通知設定。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```
 
 這個範例會禁止向外部寄件者傳送延遲 DSN 通知郵件。
 

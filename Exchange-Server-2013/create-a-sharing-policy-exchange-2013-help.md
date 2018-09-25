@@ -111,28 +111,34 @@ _**上次修改主題的時間：** 2015-04-07_
   - 這個範例會為外部同盟網域 contoso.com 建立共用原則 Contoso。這個原則可讓 contoso.com 網域中的使用者查看您的使用者的詳細行事曆可用性 (空閒/忙碌) 資訊。預設會啟用這個原則。
     
     ```powershell
-New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
-```
+    New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```
 
   - 此範例會針對兩個不同的同盟網域 (contoso.com 和 woodgrovebank.com) 建立共用原則 ContosoWoodgrove，並為每個網域設定不同的共用動作。這個原則已停用。
     
-        New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+    ```powershell
+    New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+    ```
 
   - 此範例會為含有用戶端存取伺服器 CAS01 與信箱伺服器 MAIL01 的 Exchange 組織建立共用原則 Anonymous，並針對有限的行事曆可用性資訊設定共用動作。這個原則可讓您 Exchange 組織中的使用者寄送連結給擁有網際網路存取權的使用者，邀請其檢視自己的行事曆可用性資訊。已啟用原則。
     
     1.  設定 MAIL01 的 Web Proxy URL。
         
         ```powershell
-Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
-```
+        Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```
     
     2.  在 CAS01 上啟用發行虛擬目錄。
         
-            Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+        ```powershell
+        Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+        ```
     
     3.  建立共用原則 Anonymous，並設定有限的行事曆資訊共用。
         
-            New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+        ```powershell
+        New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+        ```
 
 如需詳細的語法及參數資訊，請參閱下列主題：
 

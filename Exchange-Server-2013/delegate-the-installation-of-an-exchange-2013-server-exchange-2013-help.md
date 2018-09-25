@@ -13,15 +13,15 @@ ms.translationtype: MT
 
  
 
-_<strong>適用版本：</strong> Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_<strong>上次修改主題的時間：</strong> 2014-07-31_
+_**上次修改主題的時間：** 2014-07-31_
 
 Exchange Server 2013可讓您不Exchange 2013組織管理角色群組之成員的人員委派Exchange伺服器的安裝。這通常是很有幫助大型公司中安裝及設定伺服器的人員其中不相同管理服務，例如Exchange的人員。如果此聲音想要執行的某個項目，本主題會為您。
 
 一般而言， Exchange安裝時，安裝它的人員需要[組織管理](organization-management-exchange-2013-help.md)角色群組的成員。這是因為Exchange安裝時，變更Active Directory，而且只有Exchange 、 身為系統管理員 「 組織管理角色群組的成員，可以進行這些變更。下列清單說明所做的變更：
 
-  - <strong>CN=Servers,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=\<Organization Name\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<Root Domain\></strong>組態磁碟分割中建立伺服器物件。
+  - **CN=Servers,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=\<Organization Name\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<Root Domain\>**組態磁碟分割中建立伺服器物件。
 
   - 下列的存取控制項目 (Ace) 會新增至 「 委派安裝 」 角色群組的組態磁碟分割內的伺服器物件：
     
@@ -59,29 +59,29 @@ Exchange Server 2013可讓您不Exchange 2013組織管理角色群組之成員�
 
 您需要使用佈建伺服器的命令會取決於是否要從您正在佈建的電腦執行安裝程式或您是否正在執行它從另一部電腦。選擇此命令中找出您正在執行安裝程式的下列步驟：
 
-1.  按Windows鍵 + 'R' 若要開啟 \[<strong>執行</strong>\] 視窗。
+1.  按Windows鍵 + 'R' 若要開啟 \[**執行**\] 視窗。
 
-2.  在 \[<strong>開啟</strong>\]，輸入<strong>cmd.exe</strong>，並按 Enter 以開啟<strong>Windows 命令提示字元</strong>。
+2.  在 \[**開啟**\]，輸入**cmd.exe**，並按 Enter 以開啟**Windows 命令提示字元**。
 
 3.  下載並展開Exchange 2013安裝檔案的位置變更到目錄。如果安裝檔案位於`C:\Downloads\Exchange 2013`，使用下列命令。
     
     ```powershell
-CD "C:\Downloads\Exchange 2013"
-```
+    CD "C:\Downloads\Exchange 2013"
+    ```
 
 4.  選擇 \[找出您正在執行安裝程式的命令：
     
-      - <strong>如果您正在執行佈建的電腦上的安裝程式</strong>，請執行下列命令：
+      - **如果您正在執行佈建的電腦上的安裝程式**，請執行下列命令：
         
         ```powershell
-Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+        ```
     
-      - <strong>如果您正在執行安裝程式在另一部電腦上的</strong>，執行下列命令：
+      - **如果您正在執行安裝程式在另一部電腦上的**，執行下列命令：
         
         ```powershell
-Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+        ```
 
 5.  佈建伺服器之後，您需要確定您已新增應該能夠以委派安裝 」 角色群組的佈建伺服器上安裝Exchange的使用者。若要了解如何將使用者新增至角色群組，請參閱[Add members to a role group](manage-role-group-members-exchange-2013-help.md)。
 
@@ -91,11 +91,11 @@ Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerm
 
 若要確定伺服器已正確佈建Exchange，您可以執行下列動作：
 
-1.  移至 \[<strong>開始</strong>\> \[<strong>系統管理工具</strong>\]，並再開啟 \[ <strong>Active Directory 使用者及電腦</strong>。
+1.  移至 \[**開始**\> \[**系統管理工具**\]，並再開啟 \[ **Active Directory 使用者及電腦**。
 
-2.  選取 \[ <strong>Microsoft Exchange Security Groups</strong>、 按兩下 \[ <strong>Exchange 伺服器</strong>\]，然後選取 \[<strong>成員</strong>\] 索引標籤。
+2.  選取 \[ **Microsoft Exchange Security Groups**、 按兩下 \[ **Exchange 伺服器**\]，然後選取 \[**成員**\] 索引標籤。
 
-3.  在 \[<strong>成員</strong>\] 索引標籤查看您剛佈建的伺服器已列為安全性群組的成員。
+3.  在 \[**成員**\] 索引標籤查看您剛佈建的伺服器已列為安全性群組的成員。
 
 如果您的伺服器已列為Exchange伺服器安全性群組的成員，它已正確佈建。某人身為 「 委派安裝 」 角色群組的成員現在可以在該伺服器上安裝Exchange 。
 

@@ -132,8 +132,8 @@ Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  驗證 *MessageRetrievalMimeFormat* 設定是否正確。
 
@@ -231,8 +231,8 @@ Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  驗證 *MessageRetrievalMimeFormat* 設定是否正確。
 
@@ -302,8 +302,8 @@ Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  驗證 *PopMessagesRetrievalMimeFormat* 的值是否正確。
 
@@ -373,8 +373,8 @@ Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  驗證 *ImapMessagesRetrievalMimeFormat* 的值是否正確。
 

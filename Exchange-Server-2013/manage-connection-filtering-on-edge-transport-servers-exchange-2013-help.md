@@ -88,7 +88,9 @@ Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
 
 若要檢視 IP 封鎖清單的組態，請執行下列命令：
 
-    Get-IPBlockListConfig | Format-List *Enabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *Enabled,*Response
+```
 
 ## 使用命令介面啟用或停用 IP 封鎖清單
 
@@ -116,7 +118,9 @@ Get-IPBlockListConfig | Format-List Enabled
 
 若要設定 IP 封鎖清單，請使用下列語法：
 
-    Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```powershell
+Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```
 
 此範例會使用下述的設定來設定 IP 封鎖清單：
 
@@ -128,13 +132,17 @@ Get-IPBlockListConfig | Format-List Enabled
 
 <!-- end list -->
 
-    Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```powershell
+Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```
 
 ## 如何知道這是否正常運作？
 
 若要確認您已順利設定 IP 封鎖清單，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```
 
 ## 使用命令介面檢視 IP 封鎖清單項目
 
@@ -169,7 +177,9 @@ Get-IPBlockListEntry -IPAddress 192.168.1.13
 
 若要新增 IP 封鎖清單項目，請使用下列語法：
 
-    Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```powershell
+Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```
 
 下列範例會為 192.168.1.10 到 192.168.1.15 這個 IP 位址範圍新增一個 IP 封鎖清單項目，並設定此 IP 封鎖清單項目在 2014 年 7 月 4 日 15:00 到期。
 
@@ -223,7 +233,9 @@ Get-IPBlockListEntry
 
 若要檢視連線篩選使用所有 IP 封鎖清單提供者的方式，請執行下列命令：
 
-    Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```
 
 ## 使用命令介面啟用或停用所有 IP 封鎖清單提供者
 
@@ -251,7 +263,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 若要設定連線篩選使用所有 IP 封鎖清單提供者的方式，請使用下列語法：
 
-    Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 下列範例使用下列設定來設定所有 IP 封鎖清單提供者：
 
@@ -261,7 +275,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 <!-- end list -->
 
-    Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```powershell
+Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```
 
 如需詳細資訊，請參閱 [Set-IPBlockListProvidersConfig](https://technet.microsoft.com/zh-tw/library/aa998543\(v=exchg.150\))。
 
@@ -269,7 +285,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 若要確認您已順利設定所有 IP 封鎖清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```
 
 ## 使用命令介面檢視 IP 封鎖清單提供者
 
@@ -287,13 +305,17 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity>
 
 下列範例顯示名稱為「Contoso IP Block List Provider」之提供者的詳細資料。
 
-    Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```powershell
+Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```
 
 ## 使用命令介面新增 IP 封鎖清單提供者
 
 若要新增 IP 封鎖清單提供者，請使用下列語法：
 
-    Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 此範例會使用下列選項來建立名稱為 "Contoso IP Block List Provider" 的 IP 封鎖清單提供者：
 
@@ -303,7 +325,9 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity>
 
 <!-- end list -->
 
-    Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 
 > [!NOTE]  
@@ -356,7 +380,9 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
 
 若要設定現有 IP 封鎖清單提供者，請使用下列語法：
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 例如，若要將 IP 位址狀態碼 127.0.0.1 新增至名稱為 Contoso IP Block List Provider 之提供者的現有狀態碼清單，請執行下列命令：
 
@@ -420,7 +446,9 @@ Get-IPBlockListProvider
 
 若要檢視 IP 允許清單的組態，請執行下列命令。
 
-    Get-IPAllowListConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListConfig | Format-List *Enabled
+```
 
 ## 使用命令介面啟用或停用 IP 允許清單
 
@@ -448,7 +476,9 @@ Get-IPAllowListConfig | Format-List Enabled
 
 若要設定 IP 允許清單，請使用下列語法：
 
-    Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```powershell
+Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```
 
 此範例會設定 IP 允許清單來篩選來自內部和外部郵件伺服器的傳入連線。預設只會篩選來自外部郵件伺服器的連線 (*ExternalMailEnabled* 設定為 `$true`，而 *InternalMailEnabled* 設定為 `$false`)。來自外部合作夥伴的未驗證連線和已驗證連線皆視為外部連線。
 
@@ -460,7 +490,9 @@ Set-IPAllowListConfig -InternalMailEnabled $true
 
 若要確認您已順利設定 IP 允許清單，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPAllowListConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListConfig | Format-List *MailEnabled
+```
 
 ## 使用命令介面檢視 IP 允許清單項目
 
@@ -495,7 +527,9 @@ Get-IPAllowListEntry -IPAddress 192.168.1.13
 
 若要新增 IP 允許清單項目，請使用下列語法：
 
-    Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```powershell
+Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```
 
 下列範例會為 192.168.1.10 到 192.168.1.15 這個 IP 位址範圍新增一個 IP 允許清單項目，並設定此 IP 允許清單項目在 2014 年 7 月 4 日 15:00 到期。
 
@@ -549,7 +583,9 @@ Get-IPAllowListEntry
 
 若要檢視連線篩選使用所有 IP 允許清單提供者的方式，請執行下列命令：
 
-    Get-IPAllowListProvidersConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *Enabled
+```
 
 ## 使用命令介面啟用或停用所有 IP 允許清單提供者
 
@@ -570,14 +606,16 @@ Set-IPAllowListProvidersConfig -Enabled $true
 若要確認您已啟用或停用所有 IP 允許清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
 ```powershell
-Get-IPAllowListProvidersConfig | Format-List *Enabled
+Get-IPAllowListProvidersConfig | Format-List Enabled
 ```
 
 ## 使用命令介面設定所有 IP 允許清單提供者
 
 若要設定連線篩選使用所有 IP 允許清單提供者的方式，請使用下列語法：
 
-    Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 此範例會設定所有 IP 允許清單提供者來篩選來自內部和外部郵件伺服器的傳入連線。預設只會篩選來自外部郵件伺服器的連線 (*ExternalMailEnabled* 設定為 `$true`，而 *InternalMailEnabled* 設定為 `$false`)。來自外部合作夥伴的未驗證連線和已驗證連線皆視為外部連線。
 
@@ -591,7 +629,9 @@ Set-IPAllowListProvidersConfig -InternalMailEnabled $true
 
 若要確認您已順利設定所有 IP 允許清單提供者，請執行下列命令，並確認顯示的值就是您設定的值。
 
-    Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```
 
 ## 使用命令介面檢視 IP 允許清單提供者
 
@@ -609,13 +649,17 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity>
 
 此範例顯示名稱為 Contoso IP Allow List Provider 之提供者的詳細資料。
 
-    Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```powershell
+Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```
 
 ## 使用命令介面新增 IP 允許清單提供者
 
 若要新增 IP 允許清單提供者，請使用下列語法：
 
-    Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 此範例會使用下列選項來建立名稱為 "Contoso IP Allow List Provider" 的 IP 允許清單提供者：
 
@@ -625,7 +669,9 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity>
 
 <!-- end list -->
 
-    Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 
 > [!NOTE]  
@@ -678,7 +724,9 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
 
 若要設定現有 IP 允許清單提供者，請使用下列語法：
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 例如，若要將 IP 位址狀態碼 127.0.0.1 新增至名稱為 Contoso IP Allow List Provider 之提供者的現有狀態碼清單，請執行下列命令：
 

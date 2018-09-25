@@ -276,7 +276,9 @@ Cd $env:ExchangeInstallPath\Scripts
 
 若要在 Scripts 資料夾中執行指令碼，請使用下列語法：
 
-    .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```powershell
+.\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```
 
 如需關於使用指令碼的使用資訊，請執行下列命令：
 

@@ -54,7 +54,9 @@ New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
 
 此範例建立套用至所有主管的電子郵件地址原則，其中，電子郵件地址的本機部份由其名字的前兩個字母和整個姓氏組成。
 
-    New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+```powershell
+New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+```
 
 如需詳細語法及參數的資訊，請參閱 [New-EmailAddressPolicy](https://technet.microsoft.com/zh-tw/library/aa996800\(v=exchg.150\))。
 

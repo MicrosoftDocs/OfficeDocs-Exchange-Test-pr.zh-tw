@@ -105,5 +105,7 @@ Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
 
 此範例會擷取 Ben Smith 的信箱設定，並將指定的稽核設定 (包括稽核記錄保留天數) 傳送至 **Format-List** Cmdlet。
 
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+```powershell
+Get-Mailbox "Ben Smith" | Format-List *audit*
+```
 

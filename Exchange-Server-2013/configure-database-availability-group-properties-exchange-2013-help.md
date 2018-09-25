@@ -85,7 +85,9 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
 
 本範例預先設定 DAG DAG1 的替代見證伺服器 CAS3 和替代見證目錄 C:\\DAGFileShareWitnesses\\DAG1.contoso.com。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 此範例會將名為 DAG1 的 DAG 設定為使用動態主機設定通訊協定 (DHCP) 以取得 IP 位址。
 
@@ -131,8 +133,8 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
   - 在命令介面中，執行下列命令來顯示 DAG 組態設定並驗證 DAG 已成功設定。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 相關資訊
 

@@ -640,7 +640,9 @@ Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationE
 
 依預設，DAG 會對所有偵測到和已設定為由基礎叢集使用的網路執行探索。這包括由於為一或多個 DAG 成員使用 iSCSI 儲存而在使用中的任何 Internet SCSI (iSCSI) 網路。最佳作法是，iSCSI 儲存應該使用專用的網路和網路介面卡。這些網路不應由 DAG 或其叢集進行管理，或用作 DAG 網路 (MAPI 或複寫)。相反地，這些網路應該手動停用不讓 DAG 使用，這樣它們才能專用於 iSCSI 儲存流量。若要停用 iSCSI 網路以防止受偵測並作為 DAG 網路使用，請使用 [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/zh-tw/library/dd298008\(v=exchg.150\)) 指令程式將 DAG 設定為忽略任何目前偵測到的 iSCSI 網路，如以下範例所示：
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```
 
 此指令同時將停用叢集使用網路。雖然 iSCSI 網路將繼續顯示為 DAG 網路，執行上述指令後，不會為 MAPI 或複寫流量使用網路。
 
