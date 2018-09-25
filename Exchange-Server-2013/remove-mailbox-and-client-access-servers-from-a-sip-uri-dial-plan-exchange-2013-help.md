@@ -36,8 +36,6 @@ _**上次修改主題的時間：** 2013-04-16_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
-
-
 ## 您要執行的工作
 
 ## 使用 EAC 從 SIP URI 撥號對應表移除信箱伺服器
@@ -54,10 +52,12 @@ _**上次修改主題的時間：** 2013-04-16_
 
 此範例會從名為 `MySIPDialPlan` 的 SIP URI 撥號對應表，移除名為 `MyMailboxServer` 的信箱伺服器。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMService MyMailboxServer
-    $s.dialplans-=$dp.identity
-    Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMService MyMailboxServer
+$s.dialplans-=$dp.identity
+Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```
 
 在這個範例中，有三個 SIP URI 撥號對應表： SipDP1、 SipDP2 及 SipDP3。此範例會移除名為`MyMailboxServer` SipDP3 撥號對應表從信箱伺服器。
 
@@ -91,11 +91,12 @@ Set-UMService -id MyUMServer -DialPlans $null
 
 此範例會從名為 `MySIPDialPlan` 的 SIP URI 撥號對應表，移除名為 `MyClientAccessServer` 的 Client Access Server。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMCallRouterSettings MyClientAccessServer
-    $s.dialplans-=$dp.identity
-    Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
-
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMCallRouterSettings MyClientAccessServer
+$s.dialplans-=$dp.identity
+Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```
 在這個範例中，有三個 SIP URI 撥號對應表： SipDP1、 SipDP2 及 SipDP3。此範例會移除名為`MyClientAccessServer` SipDP3 撥號對應表從用戶端存取伺服器。
 
 ```powershell

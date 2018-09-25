@@ -100,23 +100,31 @@ Get-Mailbox -Arbitration |fl
 
 此範例會匯出 UM 撥號對應表 `MyUMDialPlan` 的歡迎使用問候語，並將它儲存為檔案 `welcomegreeting.wav`。
 
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
-    set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+$prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
+set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 此範例會將歡迎使用問候語 `welcomegreeting.wav` 從 d:\\UMPrompts 匯入 UM 撥號對應表 `MyUMDialPlan` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 此範例會匯出 UM 自動語音應答 `MyUMAutoAttendant` 的自訂問候語，並將它儲存為檔案 `welcomegreetingbackup.wav`。
 
-    Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
-    set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
+Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
+set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 此範例會將歡迎使用問候語 `welcomegreeting.wav` 從 d:\\UMPrompts 匯入 UM 自動語音應答 `MyUMAutoAttendant` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 若要深入了解 UM 的自訂提示，請參閱：
 
@@ -163,8 +171,10 @@ Get-Mailbox -Arbitration |fl
     
     在命令介面中執行下列命令，來建立 Exchange 自我簽署憑證。
     
-        New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-    
+```powershell
+New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```
+
     > [!NOTE]  
     > 如果您使用 <em>Services</em> 參數指定要啟用的服務，將會收到要您啟用所建立憑證之服務的提示。在此範例中，您會收到要您啟用憑證的整合通訊及整合通訊呼叫路由器服務的提示。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
 
@@ -181,7 +191,9 @@ Get-Mailbox -Arbitration |fl
     
     在命令介面中執行下列命令，來啟用 Exchange 自我簽署憑證。
     
-        Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```powershell   
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```
 
   - 將任何新的或現有的 UM 撥號對應表設定為「SIP 安全」或「安全」。
 
@@ -245,7 +257,9 @@ Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupM
 
 在命令介面中執行下列命令，於 Exchange 2013 Mailbox Server 上設定 UM 啟動模式。
 
-    Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```
 
 ## 步驟 7：建立或設定現有的 UM 撥號對應表
 
@@ -293,7 +307,9 @@ New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -Vo
 
 如有需要，您可以使用命令介面，來設定現有的 UM 撥號對應表：
 
-    Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```powershell
+Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```
 
 在部署 Exchange 2010 整合通訊時，必須新增 Unified Messaging Server 至 UM 撥號對應表，才能接聽來電。這不再是必要條件。在 Exchange 2013 中，Client Access Server 及 Mailbox Server 無法與電話分機或 E.164 撥號對應表連結，但必須連結至 SIP URI 撥號對應表。用戶端存取及信箱伺服器將接聽全部類型的撥號對應表所有的來電。
 
@@ -337,7 +353,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 若要在命令介面中設定現有的 UM IP 閘道器，請在命令介面中執行下列命令。
 
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```powershell
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```
 
 ## 步驟 9：建立 UM 群組搜尋
 
@@ -363,7 +381,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 群組搜尋。
 
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```powershell
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```
 
 
 > [!TIP]  
@@ -402,7 +422,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 自動語音應答。
 
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```powershell
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```
 
 如有需要，您可以使用 EAC 來設定現有的自動語音應答，如下所示：
 
@@ -412,8 +434,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 如有需要，您可以在命令介面中執行下列命令來設定現有的自動語音應答。
 
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
-
+```powershell
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```
 ## 步驟 11：建立或設定 UM 信箱原則
 
 根據您現有的 Exchange 2010 部署，您可能需要建立新的 UM 信箱原則，或設定現有的 UM 信箱原則。當您開啟使用者使用整合通訊時，必須使用 UM 信箱原則。每個已啟用 UM 之使用者的信箱都必須連結到單一 UM 信箱原則。建立 UM 信箱原則後，就可以將一或多個啟用 UM 的信箱連結到 UM 信箱原則。這樣可讓您控制 PIN 碼安全性設定，如 PIN 碼最小位數或連結至 UM 信箱原則的已啟用 UM 之使用者的登入嘗試次數上限。如需詳細資訊，請參閱 [UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)。
@@ -450,7 +473,9 @@ New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 
 如有需要，您可以在命令介面中執行下列命令來設定現有的 UM 信箱原則。
 
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```powershell
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```
 
 ## 步驟 12：將現有的啟用 UM 的信箱移至 Exchange 2013
 
@@ -518,7 +543,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
 
 若要使用命令介面讓使用者啟用整合通訊，請執行下列命令。
 
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```powershell
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```
 
 如有需要，您可以使用 EAC 來設定已啟用 UM 的使用者：
 
@@ -548,7 +575,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
 
 如有需要，您可以在命令介面中執行下列命令來設定已啟用 UM 的使用者：
 
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```powershell
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```
 
 ## 步驟 14：將 VoIP 閘道、IP PBX 及已啟用 SIP 的 PBX 設定為傳送所有來電至 Exchange 2013 Client Access Server
 
@@ -617,10 +646,12 @@ Disable-UMServer -Identity MyUMServer -Immediate $true
 
 若要使用命令介面從撥號對應表中移除 Exchange 2010 UM Server，請執行下列命令。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMServer -id MyUMServer
-    $s.dialplans-=$dp.identity
-    Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMServer -id MyUMServer
+$s.dialplans-=$dp.identity
+Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```
 
 此範例中有三個 SIP URI 撥號對應表：SipDP1、SipDP2 及 SipDP3。此範例會從 SipDP3 撥號對應表中移除名為 `MyUMServer` 的 UM Server。
 

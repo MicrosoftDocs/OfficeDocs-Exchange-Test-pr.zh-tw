@@ -36,24 +36,25 @@ Microsoft Exchange Server 2013系統管理員可以手動下載反惡意程式�
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
-
-
 ## 使用命令介面手動下載引擎和定義更新
 
 若要下載引擎和定義更新，請執行以下命令：
 
+```powershell
     & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
-
+```
 本範例會手動下載引擎和定義更新名為 mailbox01.contoso.com Exchange伺服器上：
 
+```powershell
     & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
-
+```
 （選用） 您可以使用*EngineUpdatePath*參數從兩者`http://forefrontdl.microsoft.com/server/scanengineupdate`的預設位置以外下載更新。您可以使用此參數可指定替代的 HTTP 位址或 UNC 路徑。如果您指定的 UNC 路徑，網路服務必須可以存取路徑。
 
 本範例會手動下載引擎和定義更新名為 mailbox01.contoso.com 從 UNC 路徑`\\FileServer01\Data\MalwareUpdates`Exchange伺服器上：
 
+```powershell
     & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\FileServer01\Data\MalwareUpdates
-
+```
 ## 如何知道這是否正常運作？
 
 若要驗證是否成功下載更新，您必須存取 \[事件檢視器\] 並檢視事件記錄。我們建議您只篩選 FIPFS 事作，程序如下所述。
@@ -89,22 +90,23 @@ Microsoft Exchange Server 2013系統管理員可以手動下載反惡意程式�
 1.  執行下列命令：
     
     ```powershell
-Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
-```
+    Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
+    ```
 
 2.  使用**Get-ProxySettings**和**Set-ProxySettings** cmdlet 來檢視和設定可用來下載反惡意程式碼更新之 proxy 伺服器設定。**Set-ProxySettings**指令程式會使用下列語法：
     
+    ```powershell
         Set-ProxySettings -Enabled <$true | $false> -Server <Name or IP address of proxy server> -Port <TCP port of proxy server>
+    ```
     
     例如，若要設定要使用的 proxy 伺服器位址 172.17.17.10 TCP 連接埠 80 的反惡意程式碼更新，請執行下列命令。
     
     ```powershell
-Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
-```
+    Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
+    ```
     
     若要確認 proxy 伺服器設定，請執行**Get-ProxySettings**指令程式。
 
 ## 相關資訊
 
 [設定反惡意程式碼原則](configure-anti-malware-policies-exchange-2013-help.md)
-

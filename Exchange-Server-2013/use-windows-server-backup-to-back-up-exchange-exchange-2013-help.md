@@ -84,7 +84,9 @@ _**上次修改主題的時間：** 2014-06-18_
 
   - 在 Exchange 管理命令介面中執行下列命令，以驗證所選取的磁碟區上的每個資料庫都已成功備份：
     
-        Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```powershell
+    Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```
     
     資料庫的 *SnapshotLastFullBackup* 和 *LastFullBackup* 屬性指出上次成功備份的時間，以及是否為 VSS 完整備份。
 

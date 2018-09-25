@@ -69,10 +69,12 @@ _**上次修改主題的時間：** 2016-12-09_
     
     該命令的輸出如下：
     
-        fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
-        fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
-        mail1.fabrikam.com internet address = 192.168.1.10
-        mail2 fabrikam.com internet address = 192.168.1.20
+    ```powershell
+    fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
+    fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
+    mail1.fabrikam.com internet address = 192.168.1.10
+    mail2 fabrikam.com internet address = 192.168.1.20
+    ```
     
     您可以使用與 MX 記錄關聯的任何主機名稱或 IP 位址作為目的 SMTP 伺服器。SMTP 伺服器的喜好設定值愈低表示優先順序愈高。您可以使用多筆 MX 記錄及不同的喜好設定值，以供進行負載平衡及容錯。
 
@@ -105,8 +107,13 @@ _**上次修改主題的時間：** 2016-12-09_
 > <ul>
 > <li><p>Telnet 用戶端中的命令不區分大小寫。SMTP 命令動詞會大寫，以方便識別。</p></li>
 > <li><p>在 Telnet 工作階段中，連接至目的 SMTP 伺服器之後，不能使用退格鍵。如果您在輸入 SMTP 命令時打錯字，則必須按 ENTER，然後重新輸入命令。無法辨識的 SMTP 命令或語法錯誤會產生錯誤訊息，如下所示：</p>
-> <pre><code>500 5.3.3 Unrecognized command</code></pre></li>
+> 
+> ```powershell
+> 500 5.3.3 Unrecognized command</code></pre></li>
+> ```
+> 
 > </ul>
+
 
 
 1.  在命令提示字元中，輸入 **telnet**，然後按 ENTER 鍵。此命令會開啟 Telnet 工作階段。
@@ -126,8 +133,8 @@ _**上次修改主題的時間：** 2016-12-09_
 8.  輸入 **DATA**，然後按 ENTER 鍵。您會收到如下回應：
     
     ```powershell
-354 Start mail input; end with <CLRF>.<CLRF>
-```
+    354 Start mail input; end with <CLRF>.<CLRF>
+    ```
 
 9.  輸入**主旨：Contoso 的測試郵件**，然後按 ENTER 鍵。
 
@@ -138,14 +145,14 @@ _**上次修改主題的時間：** 2016-12-09_
 12. 按 ENTER，輸入一個句點 ( **.** )，然後按 ENTER 鍵。您會收到如下回應：
     
     ```powershell
-250 2.6.0 <GUID> Queued mail for delivery
-```
+    250 2.6.0 <GUID> Queued mail for delivery
+    ```
 
 13. 若要中斷與目的 SMTP 伺服器的連線，請輸入 **QUIT**，然後按 ENTER 鍵。您會收到如下回應：
     
     ```powershell
-221 2.0.0 Service closing transmission channel
-```
+    221 2.0.0 Service closing transmission channel
+    ```
 
 14. 若要關閉 Telnet 工作階段，請輸入 **quit**，然後按 ENTER 鍵。
 

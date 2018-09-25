@@ -41,13 +41,17 @@ _**上次修改主題的時間：** 2012-11-29_
 
   - 執行下列命令可確認您要連接使用者帳戶的虛刪除信箱仍存在信箱資料庫中，而且不是停用的信箱。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
-    
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
+
     虛刪除信箱必須存在於信箱資料庫中，而且*DisconnectReason*屬性的值已設為`SoftDeleted`。如果已經被從資料庫清除信箱，此命令將不會傳回任何結果。
     
     或者，您可以執行下列命令顯示組織中的所有虛刪除信箱。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
 
   - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 [Exchange 系統管理中心的鍵盤快速鍵](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -61,15 +65,21 @@ _**上次修改主題的時間：** 2012-11-29_
 
 若要建立信箱還原要求，您必須使用的顯示名稱、 信箱的 GUID，或舊版的辨別名稱 (DN) 虛刪除信箱。使用**Get-MailboxStatistics**指令程式來顯示針對您想要還原虛刪除信箱**DisplayName**、 **MailboxGuid**，以及**LegacyDN**屬性的值。例如，執行下列命令以傳回組織中所有已停用和虛刪除信箱此資訊。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 此範例會還原虛刪除信箱，以識別由*SourceStoreMailbox*參數中的顯示名稱以及位於 MBXDB01 信箱資料庫，名為蔡 Garcia 的目標信箱。*AllowLegacyDNMismatch*參數使用因此來源信箱可以還原至都不會有相同的傳統 DN 值作為虛刪除信箱的信箱。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 此範例會為 Pilar Pinilla 虛刪除封存信箱的信箱 GUID 識別還原至其目前的封存信箱。因為主要信箱和其對應的封存信箱有相同的傳統 DN *AllowLegacyDNMismatch*參數不必要的。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-tw/library/ff829875\(v=exchg.150\))。
 

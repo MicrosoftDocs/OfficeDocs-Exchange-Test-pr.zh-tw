@@ -44,7 +44,9 @@ OAB 考量
 
 在 Exchange 2007 和 Exchange 2010 中，您可以使用 **Move-OfflineAddressBook** Cmdlet 將 OAB 產生檔移動到另一個信箱伺服器中。Exchange 2013 僅支援 OAB (版本 4)。這與 Exchange 2010 中預設的 OAB 版本相同，您無法設定 Exchange 2013 產生其他 OAB 版本，OAB 產生是在與組織信箱所在的信箱伺服器上進行。因此，在 Exchange 2013 中，若要移動 OAB 產生檔，您必須移動組織信箱。您只能將 OAB 產生檔移動到另一個 Exchange 2013 信箱資料庫。您不能將 OAB 產生檔移動到舊版的 Exchange 中。若要尋找 Exchange 2013 OAB 組織信箱，請執行下列命令介面命令：
 
-    Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+  ```powershell
+  Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+  ```
 
 然後，您可以使用 **MoveRequest** Cmdlet 移動信箱。
 

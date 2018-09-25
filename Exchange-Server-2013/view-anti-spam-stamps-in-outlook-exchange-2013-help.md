@@ -44,9 +44,11 @@ _**上次修改主題的時間：** 2012-10-03_
 
 3.  在 \[內容\] 對話方塊的 \[網際網路標頭\] 區段中，使用捲軸檢視如下例所示的反垃圾郵件戳記。
     
-        X-MS-Exchange-Organization-PCL:7
-        X-MS-Exchange-Organization-SCL:6
-        X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```powershell
+    X-MS-Exchange-Organization-PCL:7
+    X-MS-Exchange-Organization-SCL:6
+    X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```
 
 ## 使用 Outlook 2007 檢視反垃圾郵件戳記
 
@@ -56,7 +58,8 @@ _**上次修改主題的時間：** 2012-10-03_
 
 3.  在 \[郵件選項\] 對話方塊的 \[網際網路標頭\] 區段中，使用捲軸檢視如下例所示的反垃圾郵件戳記。
     
-        X-MS-Exchange-Organization-PCL:7
-        X-MS-Exchange-Organization-SCL:6
-        X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
-
+    ```powershell
+    X-MS-Exchange-Organization-PCL:7
+    X-MS-Exchange-Organization-SCL:6
+    X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```    

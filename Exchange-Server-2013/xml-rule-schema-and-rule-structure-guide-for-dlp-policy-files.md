@@ -88,7 +88,8 @@ DLP 原則範本會以 XML 文件呈現。單一 XML 架構會用於 Exchange �
 
 原則範本是以遵循以下架構的 XML 文件呈現。請注意，XML 區分大小寫。例如，`dlpPolicyTemplates` 將會運作，但是 `DlpPolicyTemplates` 將不會運作。
 
-    <?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
     <dlpPolicyTemplates>
       <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
         <contentVersion>4</contentVersion>
@@ -114,10 +115,13 @@ DLP 原則範本會以 XML 文件呈現。單一 XML 架構會用於 Exchange �
         <policyCommandsResources></policyCommandsResources>
       </dlpPolicyTemplate>
     </dlpPolicyTemplates>
+```
 
 如果您針對任何元素加入 XML 檔案中的參數含有空格，必須以雙引號包覆該參數，否則會無法正常運作。在以下範例中，`-SentToScope` 之後的參數是可接受的；因為它是不含空格的連續字元字串，因此沒有雙引號。然而，提供給 –`Comments` 的參數將不會出現在 Exchange 系統管理中心內，因為它含有空格但未以雙引號包覆。
 
-    <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+```powershell
+<CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+```
 
 ## localizedString 元素
 
@@ -225,15 +229,17 @@ DLP 原則範本會以 XML 文件呈現。單一 XML 架構會用於 Exchange �
 
 此部分的原則範本包含用來實例化原則定義之 Exchange 管理命令介面命令的清單。匯入程序將執行每一個命令作為實例化程序的一部分。這裡提供原則命令範例。
 
-    <PolicyCommands>
+```xml
+<PolicyCommands>
         <!-- The contents below are applied/executed as rules directly in PS - -->
           <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
           <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
       </PolicyCommands> 
+```
 
 指令程式的格式是指令程式使用的標準 Exchange 管理命令介面指令程式語法。命令會依序執行。每一個命令節點可能包含結合多個命令的指令碼區塊。以下範例說明如何內嵌分類規則套件在 DLP 原則範本中，以及安裝規則套件作為原則建立程序的一部分。分類規則套件內嵌至原則範本中，然後以參數傳遞至範本中的指令程式：
 
-``` 
+```xml
 <CommandBlock>
   <![CDATA[
 $rulePack = [system.Text.Encoding]::Unicode.GetBytes('<?xml version="1.0" encoding="utf-16"?>

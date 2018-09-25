@@ -81,11 +81,13 @@ Get-JournalRule | Enable-JournalRule -Confirm
 
 When you run this example command, the following confirmation prompt is returned by the Shell:
 
-    Confirm
-    Are you sure you want to perform this action?
-    Enabling journal rule "Litigation Journal Rule".
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
-    (default is "Y"):
+```powershell
+Confirm
+Are you sure you want to perform this action?
+Enabling journal rule "Litigation Journal Rule".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
+(default is "Y"):
+```
 
 The confirmation prompt gives you the following choices:
 

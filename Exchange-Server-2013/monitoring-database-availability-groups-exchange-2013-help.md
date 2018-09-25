@@ -369,14 +369,17 @@ Exchange 2013 包含稱為 CollectOverMetrics.ps1 的指令碼，您可以在 Sc
 
 下列範例會收集 DAG DAG1 中符合 DB\* (包含萬用字元) 的所有資料庫度量資訊。收集度量資訊之後，會產生並顯示 HTML 報告。
 
-    CollectOverMetrics.ps1 -DatabaseAvailabilityGroup DAG1 -Database:"DB*" -GenerateHTMLReport -ShowHTMLReport
+```powershell
+CollectOverMetrics.ps1 -DatabaseAvailabilityGroup DAG1 -Database:"DB*" -GenerateHTMLReport -ShowHTMLReport
+```
 
 下列範例示範摘要 HTML 報告可以使用的篩選方法。第一種範例使用 *Database* 參數取得資料庫名稱的清單，讓摘要報告中只包含這些資料庫的相關資料。後面兩個範例則使用 *ReportFilter* 選項。最後一個範例會篩選出所有的預設資料庫。
 
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { $_.DatabaseName -notlike "Mailbox Database*" }
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { ($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*") }
-
+```powershell
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { $_.DatabaseName -notlike "Mailbox Database*" }
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { ($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*") }
+```
 ## CollectReplicationMetrics.ps1 指令碼
 
 另一個包含在 Exchange 2013 內的狀況度量指令碼是 CollectReplicationMetrics.ps1。這個指令碼在執行時即時收集度量資訊，所以提供了一種主動形式的監視。CollectReplicationMetrics.ps1 會從與資料庫複寫相關的效能計數器收集資料。此指令碼會收集多個信箱伺服器的計數器資料、將每部伺服器的資料寫入 .csv 檔案，然後報告所有資料的各種統計資料 (例如每個副本失敗或擱置的時間長度、平均的複製佇列長度或重新顯示佇列長度，或是副本不符合容錯移轉準則的時間長度)。
@@ -462,5 +465,6 @@ CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:
 
 下列範例會從符合 CounterData\* 的所有檔案讀取資料，然後再產生摘要報告。
 
-    CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
-
+```powershell
+CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
+```

@@ -95,8 +95,8 @@ Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
 1.  在命令介面中執行下列命令。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  驗證連線設定是否正確。
 

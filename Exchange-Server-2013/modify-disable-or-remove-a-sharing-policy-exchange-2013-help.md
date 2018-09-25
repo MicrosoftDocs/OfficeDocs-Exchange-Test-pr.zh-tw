@@ -77,8 +77,6 @@ _**上次修改主題的時間：** 2014-02-15_
 > 在移除共用原則之前，必須先移除所有使用者信箱中的共用原則。
 
 
-
-
 1.  瀏覽至 **\[組織\]** \> **\[共用\]**。
 
 2.  在 \[單獨共享\] 下，選取一個共享原則，然後按一下 \[刪除\]![刪除圖示](images/JJ651670.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "刪除圖示")。
@@ -90,36 +88,33 @@ _**上次修改主題的時間：** 2014-02-15_
   - 本範例針對 contoso.com 這個您組織的外部網域修改共用原則 Contoso。此原則可讓 Contoso 網域的使用者看見簡單的空閒/忙碌資訊。
     
     ```powershell
-Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
-```
+    Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
+    ```
 
   - 本範例將第二個網域新增至共用原則 Contoso。當您要將某網域新增至現有的原則時，必須包括先前所有已包含的網域。
     
-        Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
+    ```powershell
+    Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
+    ```
 
   - 此範例會將共用原則 Contoso 設定為預設的共用原則。
     
     ```powershell
-Set-SharingPolicy -Identity Contoso -Default $True
-```
-
+    Set-SharingPolicy -Identity Contoso -Default $True
+    ```
   - 此範例會停用共用原則 Contoso。
     
     ```powershell
-Set-SharingPolicy -Identity "Contoso" -Enabled $False
-```
+    Set-SharingPolicy -Identity "Contoso" -Enabled $False
+    ```
 
   - 第一個範例會移除共用原則 Contoso。第二個範例會移除共用原則 Contoso，並抑制您想移除原則的確認。
-      ```
-  ```powershell
-Remove-SharingPolicy -Identity Contoso
-```
-      ```
-      ```
-  ```powershell
-Remove-SharingPolicy -Identity Contoso -Confirm
-```
-      ```
+      
+    ```powershell
+    Remove-SharingPolicy -Identity Contoso
+    ```
+    ```powershell
+    Remove-SharingPolicy -Identity Contoso -Confirm
+    ```
 
 如需詳細的語法及參數資訊，請參閱 [Set-SharingPolicy](https://technet.microsoft.com/zh-tw/library/dd297931\(v=exchg.150\)) 與 [Remove-SharingPolicy](https://technet.microsoft.com/zh-tw/library/dd351071\(v=exchg.150\))。
-

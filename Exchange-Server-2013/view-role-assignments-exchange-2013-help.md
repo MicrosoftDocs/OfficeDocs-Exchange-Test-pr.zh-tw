@@ -50,7 +50,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 您可以檢視執行**Get-ManagementRoleAssignment**指令程式來設定在組織中的所有角色指派的清單。如果您想要擷取的角色指派符合您指定的部分字串清單，使用萬用字元 （\*）。此範例會擷取開頭字串"層 1"的所有角色指派的清單。
 
-    Get-ManagementRoleAssignment "Tier 1*"
+```powershell
+Get-ManagementRoleAssignment "Tier 1*"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -108,7 +110,9 @@ Get-ManagementRoleAssignment -Role "Mail Recipients"
 
 若要檢視使用特定預先定義範圍之角色指派的清單，請使用下列語法。
 
-    Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```
 
 此範例會擷取使用「組織」預先定義範圍的所有角色指派。
 
@@ -128,7 +132,9 @@ Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
 
 此範例會擷取在 contoso.com 網域中範圍已被限定為 North America\\Engineering\\Users OU 的所有角色指派。
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
@@ -194,7 +200,9 @@ Get-ManagementRoleAssignment -WritableRecipient "Brian"
 
 您可以合併*WritableRecipient*和*WritableServer*參數的其他參數，例如*RoleAssignee*參數和*GetEffectiveUsers*切換精簡查詢並依序展開 \[任何角色群組或 Usg。本範例會擷取所有使用者誰可以修改 server EX02 與人員指派給伺服器管理角色群組。
 
-    Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351024\(v=exchg.150\))。
 
