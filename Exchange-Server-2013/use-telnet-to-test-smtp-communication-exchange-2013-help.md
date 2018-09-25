@@ -105,8 +105,11 @@ _**上次修改主題的時間：** 2016-12-09_
 > <ul>
 > <li><p>Telnet 用戶端中的命令不區分大小寫。SMTP 命令動詞會大寫，以方便識別。</p></li>
 > <li><p>在 Telnet 工作階段中，連接至目的 SMTP 伺服器之後，不能使用退格鍵。如果您在輸入 SMTP 命令時打錯字，則必須按 ENTER，然後重新輸入命令。無法辨識的 SMTP 命令或語法錯誤會產生錯誤訊息，如下所示：</p>
-> <pre><code>500 5.3.3 Unrecognized command</code></pre></li>
-> </ul>
+> 
+> ```powershell
+> 500 5.3.3 Unrecognized command
+> ```
+> </LI></UL>
 
 
 1.  在命令提示字元中，輸入 **telnet**，然後按 ENTER 鍵。此命令會開啟 Telnet 工作階段。
