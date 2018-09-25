@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2015-04-08_
 
   - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [收件者權限](recipients-permissions-exchange-2013-help.md)主題中的「群組計量」項目。
 
-  - 群組計量資料僅用於郵件提示。請確定郵件提示會啟用該群組計量組織中。如需詳細步驟，請參閱[管理郵件提示的組織關係](manage-mailtips-for-organization-relationships-exchange-2013-help.md)。
+  - 群組計量資料僅用於郵件提示。請確定郵件提示會啟用該群組計量組織中。如需詳細步驟，請參閱[管理郵件提示的組織關係](https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships)。
 
   - 您只能使用命令介面來執行此程序。
 
