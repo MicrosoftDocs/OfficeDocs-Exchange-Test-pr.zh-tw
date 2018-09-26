@@ -52,9 +52,9 @@ _**上次修改主題的時間：** 2015-09-30_
 ## 使用命令介面來刪除不處於保留狀態或不需要啟用單一項目復原信箱 \[可復原的項目\] 資料夾中項目
 
 本範例會永久刪除 Gurinder Singh \[可復原的項目\] 資料夾中的項目和也將項目複製到探索搜尋信箱 （ Exchange安裝程式所建立的探索信箱） 的 GurinderSingh RecoverableItems 資料夾。
-
+```powershell
     Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
-
+```
 
 > [!NOTE]  
 > 若要刪除信箱中的項目而不將其複製到另一個信箱，使用不含<em>TargetMailbox</em>和<em>TargetFolder</em>參數以上的命令。
@@ -90,36 +90,36 @@ _**上次修改主題的時間：** 2015-09-30_
     
     > [!NOTE]  
     > 如果<em>UseDatabaseQuotaDefaults</em>參數設為<code>$true</code>，不會套用先前的配額設定。在信箱資料庫上設定相對應的配額設定會套用，即使個別信箱設定會填入。
-    
+    ```powershell
         Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
-
+    ````
 2.  擷取信箱的信箱存取設定。請務必注意這些設定的更新版本。
-    
+    ```powershell
         Get-CASMailbox "Gurinder Singh" | Format-List EwsEnabled, ActiveSyncEnabled, MAPIEnabled, OWAEnabled, ImapEnabled, PopEnabled
-
+    ```
 3.  擷取目前可復原的項目\] 資料夾的大小。讓您可以引發的配額步驟 6 中記下大小。
-    
+    ```powershell
         Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
-
+    ```
 4.  擷取目前的受管理的資料夾助理員工作週期設定。請務必注意供日後的設定。
     
     ```powershell
-Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
-```
+    Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```
 
 5.  停用用戶端的信箱存取權以確保可以此程序期間信箱資料進行任何變更。
-    
+    ```powershell
         Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
-
+    ```
 6.  若要確定會從 \[可復原的項目\] 資料夾刪除任何項目，增加可復原的項目配額、 增加的可復原的項目警告配額，並值設為已刪除的項目保留期間高於目前使用者的 \[可復原的項目\] 資料夾的大小。這是特別重要的保留信箱處於就地保留和訴訟暫止狀態的訊息。我們建議引發這些設定到其目前大小的兩倍。
-    
+    ```powershell
         Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
-
+    ```
 7.  停用受管理的資料夾助理員 Mailbox server 上。
     
     ```powershell
-Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
-```
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```
     
     > [!IMPORTANT]  
     > 如果信箱位於信箱資料庫上的資料庫可用性群組 (DAG) 中，您必須停用受管理的資料夾助理員裝載資料庫副本的每個 DAG 成員上。如果資料庫容錯移轉至另一部伺服器，這可防止受管理的資料夾助理員該伺服器上刪除信箱資料。
@@ -128,21 +128,21 @@ Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
 8.  停用單一項目復原並移除信箱訴訟暫止狀態。
     
     ```powershell
-Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
-```
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```
     
     > [!IMPORTANT]  
     > 執行此命令之後，可能需要一小時停用單一項目復原或訴訟暫止狀態。我們建議您在此期間經過之後才執行下一個步驟。
 
 
 9.  將項目從 \[可復原的項目\] 資料夾複製到 \[探索搜尋信箱中的資料夾及刪除來源信箱中的內容。
-    
+    ```powershell
         Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
-    
+    ```
     如果您需要刪除符合指定的條件的郵件，請使用*SearchQuery*參數以指定的條件。此範例會刪除 \[**主旨**\] 欄位中含有"Your bank statement"字串的郵件。
-    
+    ```powershell
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
-    
+    ```
     > [!NOTE]  
     > 它不被必要項目複製到 [探索搜尋信箱。您可以將郵件複製到任何信箱。不過，若要防止敏感性信箱資料存取，建議將郵件複製到已授權的記錄管理員限制存取的信箱。根據預設，預設探索搜尋信箱存取僅限於至探索管理角色群組的成員。如需詳細資訊，請參閱<a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地 eDiscovery</a>。
 
@@ -150,8 +150,8 @@ Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEn
 10. 如果信箱處於訴訟暫止狀態或鎖稍早啟用單一項目復原，重新啟用這些功能。
     
     ```powershell
-Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
-```
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```
     
     > [!IMPORTANT]  
     > 執行此命令之後，可能需要一小時啟用單一項目復原] 或 [訴訟暫止狀態。建議您啟用受管理的資料夾助理員並允許用戶端存取 （步驟 11 和 12） 只是在這之後經過期間。
@@ -174,19 +174,19 @@ Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEna
       - *UseDatabaseRetentionDefaults*
     
     在這個範例中，從保留移除信箱、 刪除項目保留期間屬性重設為預設值為 14 天，和可復原的項目配額設定成使用相同的值做為信箱資料庫。如果您在步驟 1 中記下的值不同，您必須使用上述參數指定每個值並將*UseDatabaseQuotaDefaults*參數設為`$false`。如果*RetainDeletedItemsForand UseDatabaseRetentionDefaults*參數先前已設為不同的值，則也必須回復這些步驟 1 中記下的值。
-    
+    ```powershell
         Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
-
+    ```
 12. 啟用受管理的資料夾助理員將工作週期後述步驟 4 的值。本範例會將一天的工作週期。
     
     ```powershell
-Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
-```
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```
 
 13. 啟用用戶端存取。
-    
+    ```powershell
         Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
-
+    ```
 如需詳細的語法及參數資訊，請參閱下列主題：
 
   - [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))
@@ -210,6 +210,6 @@ Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 若要確認您已順利清除向上信箱 \[可復原的項目\] 資料夾，請使用[Get-MailboxFolderStatistics](https://technet.microsoft.com/zh-tw/library/aa996762\(v=exchg.150\))指令程式\] 核取 \[可復原的項目\] 資料夾的大小。
 
 此範例會擷取可復原的項目\] 資料夾的大小和及其子資料夾和項目計數資料夾與每一個子資料夾中。
-
+```powershell
     Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
-
+```

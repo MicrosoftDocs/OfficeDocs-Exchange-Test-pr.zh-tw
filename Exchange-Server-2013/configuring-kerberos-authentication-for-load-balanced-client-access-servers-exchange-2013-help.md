@@ -54,9 +54,9 @@ _**上次修改主題的時間：** 2016-12-09_
 1.  已加入網域的電腦上，執行 Windows PowerShell 或 Exchange 管理命令介面。
     
     若要匯入 Active Directory 模組中使用**Import-Module**指令程式。
-    
+    ```powershell
         Import-Module ActiveDirectory
-
+    ```
 2.  使用**New-ADComputer**指令程式來建立新的 Active Directory 電腦帳戶使用此 cmdlet 的語法：
     
     ```powershell

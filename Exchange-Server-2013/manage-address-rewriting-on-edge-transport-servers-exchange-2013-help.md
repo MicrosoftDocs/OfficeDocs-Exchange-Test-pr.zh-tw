@@ -59,15 +59,15 @@ _**上次修改主題的時間：** 2015-04-08_
 若要完全啟用或停用地址修正，您可以啟用或停用地址修正代理程式。根據預設，Edge Transport Server 會啟用地址修正代理程式。
 
 若要停用地址修正，請執行下列命令：
-
+```powershell
     Disable-TransportAgent "Address Rewriting Inbound Agent"
     Disable-TransportAgent "Address Rewriting Outbound Agent"
-
+```
 若要啟用地址修正，請執行下列命令：
-
+```powershell
     Enable-TransportAgent "Address Rewriting Inbound Agent"
     Enable-TransportAgent "Address Rewriting Outbound Agent"
-
+```
 ## 如何知道這是否正常運作？
 
 若要確認您是否已順利啟用或停用地址修正，請執行下列動作：
@@ -75,8 +75,8 @@ _**上次修改主題的時間：** 2015-04-08_
 1.  執行下列命令：
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
 
 2.  確認地址修正輸入代理程式和地址修正輸出代理程式的 **\[已啟用\]** 內容值，是您所設定的值。
 
@@ -105,41 +105,41 @@ Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-L
 ## 修正單一收件者的電子郵件地址
 
 若要修正單一收件者的電子郵件地址，請使用下列語法：
-
+```powershell
     New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
-
+```
 下列範例會為收件者 joe@contoso.com 修正所有進入及離開 Exchange 組織之郵件的電子郵件地址。輸出郵件經過修正後，看起來會像是來自 support@nortwindtraders.com。傳送至 support@northwindtraders.com 的輸入郵件會修正為 joe@contoso.com，以傳遞給收件者 (*OutboundOnly* 參數預設為 `$false`)。
-
+```powershell
     New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
-
+```
 ## 為單一網域或子網域中的收件者修正電子郵件地址
 
 若要為單一網域或子網域中的收件者修正電子郵件地址，請使用下列語法：
-
+```powershell
     New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
-
+```
 下列範例會為 contoso.com 網域中的收件者修正所有進入及離開 Exchange 組織之郵件的電子郵件地址。輸出郵件經過修正後，看起來會像是來自 fabrikam.com 網域。傳送至 fabrikam.com 電子郵件地址的輸入郵件會修正為 contoso.com，以傳遞給收件者 (*OutboundOnly* 參數預設為 `$false`)。
-
+```powershell
     New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
-
+```
 下列範例會為 sales.contoso.com 子網域中的收件者從 Exchange 組織傳送出去的所有郵件修正電子郵件地址。輸出郵件經過修正後，看起來會像是來自 contoso.com 網域。傳送至 contoso.com 電子郵件地址的輸入郵件不會進行修正。
-
+```powershell
     New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
-
+```
 ## 為多個子網域中的收件者修正電子郵件地址
 
 若要為一個網域和所有子網域中的收件者修正電子郵件地址，請使用下列語法。
-
+```powershell
     New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
-
+```
 下列範例會為 contoso.com 網域和所有子網域中的收件者從 Exchange 組織傳送出去的所有郵件修正電子郵件地址。輸出郵件經過修正後，看起來會像是來自 contoso.com 網域。傳送給 contoso.com 收件者的輸入郵件無法進行修正，因為 *InternalAddress* 參數中使用了萬用字元。
-
+```powershell
     New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
-
+```
 下列範例與前述範例類似，差別在於，此時 legal.contoso.com 和 corp.contoso.com 子網域中的收件者所傳送的郵件一律不會進行修正：
-
+```powershell
     New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
-
+```
 ## 如何知道這是否正常運作？
 
 若要確認您是否已順利建立地址修正項目，請執行下列動作：
@@ -157,9 +157,9 @@ Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-L
 ## 修改單一收件者的地址修正項目
 
 若要對修正單一收件者之電子郵件地址的地址修正項目進行修改，請使用下列語法：
-
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
-
+````
 下列範例會針對名為「joe@contoso.com 修正為 support@nortwindtraders.com」的單一收件者地址修正項目，進行下列內容的修改：
 
   - 將外部地址變更為 support@northwindtraders.net。
@@ -169,15 +169,15 @@ Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-L
   - 將 *OutboundOnly* 的值變更為 `$true`。請注意，在進行此變更時，您必須將在 Joe 的信箱上將 support@northwindtraders.net 設定為 Proxy 位址。
 
 <!-- end list -->
-
+```powershell
     Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
-
+```
 ## 為單一網域或子網域中的收件者修改地址修正項目
 
 若要修改為單一網域或子網域中的收件者進行電子郵件地址修正的地址修正項目，請使用下列語法。
-
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
-
+```
 下列範例會變更單一網域的地址修正項目「Northwind Traders 修正為 Contoso」的內部地址值。
 
 ```powershell
@@ -189,23 +189,23 @@ Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwind
 若要修改為一個網域和所有子網域中的收件者進行電子郵件地址修正的地址修正項目，請使用下列語法。
 
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
-
+```
 若要取代多重子網域地址修正項目的現有例外狀況清單值，請使用下列語法：
-
+```powershell```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
-
+```
 下列範例會將多重子網域地址修正項目「Contoso 修正為 Northwind Traders」的現有例外狀況清單，取代為 marketing.contoso.com 值和 legal.contoso.com 值：
-
+```powershell
     Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
-
+```
 若要在多重子網域地址修正項目中選擇性地新增或移除例外狀況清單值，而不修改任何現有的例外狀況清單值，請使用下列語法：
-
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
-
+```
 下列範例會在多重子網域地址修正項目「Contoso 修正為 Northwind Traders」的例外狀況清單中新增 finanace.contoso.com 並移除 marketing.contoso.com：
-
+```powershell
     Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
-
+```
 ## 如何知道這是否正常運作？
 
 若要確認您是否已順利修改地址修正項目，請執行下列動作：
@@ -231,9 +231,9 @@ Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
 ```
 
 若要移除多個地址修正項目，請使用下列語法：
-
+```powershell
     Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
-
+```
 下列範例會移除所有的地址修正項目：
 
 ```powershell
@@ -241,13 +241,13 @@ Get-AddressRewriteEntry | Remove-AddressRewriteEntry
 ```
 
 下列範例會模擬如何移除在名稱中含有「修正為 contoso.com」等字詞的地址修正項目。*WhatIf* 參數可讓您直接預覽結果而不需認可任何變更。
-
+```powershell
     Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
-
+```
 如果您接受結果，請再執行一次不含 *WhatIf* 參數的命令，以移除地址修正項目。
-
+```powershell
     Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
-
+```
 ## 如何知道這是否正常運作？
 
 若要確認您是否已順利移除地址修正項目，請執行下列動作：

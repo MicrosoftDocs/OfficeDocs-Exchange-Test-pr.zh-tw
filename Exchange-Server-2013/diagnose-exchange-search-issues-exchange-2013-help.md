@@ -59,8 +59,8 @@ Exchange搜尋索引的信箱與支援Exchange信箱中的附件。增加磁碟�
 2.  **檢查信箱資料庫的組態**   是否已將使用者信箱資料庫的 *IndexEnabled* 參數設定為 True？如果是，請跳至步驟 3。否則，請在命令介面中執行下列命令來確認 *IndexEnabled* 旗標是否設為 True。
     
     ```powershell
-Get-MailboxDatabase | Format-Table Name,IndexEnabled
-```
+    Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```
     
     如需詳細語法及參數的資訊，請參閱 [Get-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb124924\(v=exchg.150\))。
 
@@ -87,16 +87,16 @@ Get-MailboxDatabase | Format-Table Name,IndexEnabled
     使用 \[效能監視器的相關資訊，請參閱[效能與可靠性監控快速入門指南 for Windows Server 2008](https://go.microsoft.com/fwlink/p/?linkid=178005)
 
 4.  **檢查資料庫副本索引的健康狀況**   內容索引是否正常？使用 **Get-MailboxDatabaseCopyStatus** 指令程式來檢查資料庫副本的內容索引健康狀況。
-    
+    ```powershell
         Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
-    
+    ```
     如需詳細的語法及參數資訊，請參閱 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-tw/library/dd298044\(v=exchg.150\))。
 
 5.  **執行 Test-ExchangeSearch 指令程式**   如果已對信箱資料庫進行編目，則可以針對信箱資料庫或特定信箱執行 **Test-ExchangeSearch** 指令程式。
     
     ```powershell
-Test-ExchangeSearch -Identity AlanBrewer@contoso.com
-```
+    Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```
     
     如需詳細的語法及參數資訊，請參閱 [Test-ExchangeSearch](https://technet.microsoft.com/zh-tw/library/bb124733\(v=exchg.150\))。
 

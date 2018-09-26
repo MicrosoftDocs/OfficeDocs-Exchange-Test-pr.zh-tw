@@ -40,9 +40,9 @@ The *WhatIf*, *Confirm*, and *ValidateOnly* switches are especially useful when 
 The *WhatIf* switch instructs the command to which it is applied to run but only to display the objects that would be affected by running the command and what changes would be made to those objects. The switch does not actually change any of those objects. When you use the *WhatIf* switch, you can see whether the changes that would be made to those objects match your expectations, without the worry of modifying those objects.
 
 When you run a command together with the *WhatIf* switch, you put the *WhatIf* switch at the end of the command, as in the following example:
-
+```powershell
     New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
-
+```
 When you run this example command, the following text is returned by the Shell:
 
 ```powershell

@@ -62,13 +62,13 @@ _**上次修改主題的時間：** 2012-10-03_
 指令碼必須位於執行Exchange 2013其中使用者可能連接至執行指令碼每台伺服器上的 Microsoft Exchange Server 2013安裝路徑中的指令碼目錄。如果使用者存取執行指令碼，但指令碼不位於使用者連線至Exchange 2013伺服器上，會發生錯誤。根據預設，指令碼目錄路徑為 C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts。
 
 將指令碼複製至適當的 Exchange 2013 伺服器並決定要使用的指令碼參數後，可使用下列語法建立角色項目。
-
+```powershell
     Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
-
+```
 此範例會將 BulkProvisionUsers.ps1 指令碼以及 *Name* 和 *Location* 參數新增至 IT Scripts 角色。
-
+```powershell
     Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
-
+```
 
 > [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增指令碼中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後新增或移除參數，您必須手動更新包含指令碼的角色項目。
@@ -85,13 +85,14 @@ _**上次修改主題的時間：** 2012-10-03_
 如果您將非 Exchange Cmdlet 新增至新角色，Cmdlet 必須安裝在每部 Exchange 2013 伺服器上，而使用者可能連線至此處以執行 Cmdlet。若要了解如何正確安裝與註冊包含您想要使用之 Cmdlet 的 Windows PowerShell 嵌入式管理單元，請參閱產品的說明文件。
 
 在您於適當的 Windows 伺服器上安裝包含 Cmdlet 的 Exchange 2013 PowerShell 嵌入式管理單元，並決定應使用哪些 Cmdlet 參數之後，可使用以下語法建立角色項目。
-
+```powershell
     Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 此範例會將 Contoso.Admin.Cmdlets 嵌入式管理單元中的 **Set-WidgetConfiguration** Cmdlet 以及 *Database* 和 *Size* 參數新增至 Widget Cmdlets 角色。
-
+```powershell
     Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
-
+```
 
 > [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> Cmdlet 會執行基本驗證，以確定您只新增 Cmdlet 中存在的參數。不過，在新增角色項目後不會進行進一步的驗證。如果稍後變更 Cmdlet 並新增或移除參數，您必須手動更新包含 Cmdlet 的角色項目。

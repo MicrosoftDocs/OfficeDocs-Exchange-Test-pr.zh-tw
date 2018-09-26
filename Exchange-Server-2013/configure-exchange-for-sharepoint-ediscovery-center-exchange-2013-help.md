@@ -47,18 +47,18 @@ Microsoft Exchange Server 2013 包含可搭配 Microsoft SharePoint Server 2013 
 ## 步驟 1：將 Exchange 2013 的伺服器對伺服器驗證設定在執行 SharePoint Server 2013 的伺服器上
 
 執行以下命令將 Exchange 2013 建立為 SharePoint 2013 中受到信任的安全性權杖發行者。
-
+```powershell
     New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
-
+```
 ## 步驟 2：將 SharePoint 2013 的伺服器對伺服器授權設定在執行 Exchange 2013 的伺服器上
 
 在 Exchange 2013 伺服器上執行此步驟。您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱[共用和協同作業的權限](sharing-and-collaboration-permissions-exchange-2013-help.md)主題中的「協力廠商應用程式 - 設定」項目。
 
 執行此命令以設定 SharePoint 夥伴應用程式。
-
+```powershell
     cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
     .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
-
+```
 ## 步驟 3：將經過授權的使用者新增至探索管理角色群組
 
 將必須使用 SharePoint 2013 執行 eDiscovery 搜尋的使用者新增至 Exchange 2013 中的探索管理角色群組。如需詳細資訊，請參閱[Exchange 中指派 eDiscovery 權限](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)。

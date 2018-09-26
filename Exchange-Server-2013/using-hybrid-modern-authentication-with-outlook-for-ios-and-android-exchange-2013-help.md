@@ -393,12 +393,12 @@ And here's an example of what users see when AutoDetect isn't able to discover t
 In either scenario, verify that your on-premises environment is correctly configured. To do this: from the TechNet Gallery, download and execute the script for [Validating Hybrid Modern Authentication setup for Outlook for iOS and Android](https://gallery.technet.microsoft.com/scriptcenter/validating-hybrid-modern-ad4c2b16).
 
 When you review the output from the script, you should be seeing the following from AutoDiscover:
-
+```powershell
     {
         "Protocol": "activesync",
         "Url": "https://mail.contoso.com/Microsoft-Server-ActiveSync"
     }
-
+```
 The on-premises ActiveSync endpoint should return the following response, where the WWW-Authenticate header includes an authorization\_uri:
 
 ```powershell
