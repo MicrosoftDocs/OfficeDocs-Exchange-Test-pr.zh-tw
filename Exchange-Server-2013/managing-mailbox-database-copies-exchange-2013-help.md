@@ -629,7 +629,9 @@ RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference 
 
 此範例會使用啟動喜好設定來轉散發及平衡 DAG 中的使用中信箱資料庫副本，並產生散發的摘要。
 
+```powershell
     RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+```
 
 ## 監視資料庫副本
 
