@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2014-05-07_
 
 > [!CAUTION]  
 > 停用 Exchange 搜尋會影響全文搜尋的功能和效能，這些搜尋是使用者在線上模式或在 Windows 行動裝置上使用 Outlook 執行的。<br />
-> <a href="https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地 eDiscovery</a> 也依賴 Exchange 搜尋。如果您針對信箱資料庫或 Mailbox Server 停用 Exchange 搜尋，則就地 eDiscovery 搜尋就不會從資料庫或伺服器傳回任何郵件。
+> <a href="https://technet.microsoft.com/zh-tw/library/dd298021(v=exchg.150)">就地 eDiscovery</a> 也依賴 Exchange 搜尋。如果您針對信箱資料庫或 Mailbox Server 停用 Exchange 搜尋，則就地 eDiscovery 搜尋就不會從資料庫或伺服器傳回任何郵件。
 
 
 如需其他與 Exchange 搜尋相關的管理工作，請參閱 [Exchange 搜尋程序](exchange-search-procedures-exchange-2013-help.md)。
@@ -53,11 +53,15 @@ _**上次修改主題的時間：** 2014-05-07_
 
 此命令會針對名稱為 EXCH01 的信箱資料庫停用 Exchange 搜尋。
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```
 
 此命令會針對名稱為 EXCH01 的信箱資料庫啟用 Exchange 搜尋。
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```
 
 如需詳細語法及參數的資訊，請參閱[Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\))。
 
@@ -86,17 +90,21 @@ _**上次修改主題的時間：** 2014-05-07_
 **使用命令介面**
 
 執行下列命令來停止並停用 Microsoft Exchange 搜尋服務。
-```
+
+```powershell
 Stop-Service MSExchangeFastSearch
 ```
-```
+
+```powershell
 Set-Service MSExchangeFastSearch -StartupType Disabled
 ```
 
 執行下列命令將 Exchange 搜尋服務設定為自動啟動，然後啟動此服務。
-```
+
+```powershell
 Set-Service MSExchangeFastSearch -StartupType Automatic
 ```
-```
+
+```powershell
 Start-Service MSExchangeFastSearch
 ```

@@ -33,11 +33,15 @@ _**上次修改主題的時間：** 2017-07-25_
     
     若要以單一連線 URL 設定 Outlook Anywhere，您必須提供主機名稱、指出是否需要 SSL，並在 Exchange 管理命令介面中使用下列命令來指定 AutoPackage：
     
-        Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```powershell
+    Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```
     
     您也可以在 Exchange 管理命令介面中使用下列命令，來指定可與外部連線的端點：
     
-        Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```powershell
+    Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```
     
     > [!TIP]  
 	> 雖然 Exchange 2013 支援 Outlook Anywhere HTTP 交涉驗證，但此方法僅應用在環境中的所有伺服器都執行 Exchange 2013 時。
@@ -45,19 +49,27 @@ _**上次修改主題的時間：** 2017-07-25_
 
   - 若要設定 Exchange ActiveSync，請執行下列命令：
     
-        Set-ActiveSyncVirtualDirectory -Identity "<CAS2013>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl "https://mail.contoso.com/Microsoft-Server-ActiveSync"
+    ```powershell
+    Set-ActiveSyncVirtualDirectory -Identity "<CAS2013>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl "https://mail.contoso.com/Microsoft-Server-ActiveSync"
+    ```
 
   - 若要設定 Exchange Web 服務虛擬目錄，請執行下列命令。
     
-        Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalUrl https://mail.contoso.com/EWS/Exchange.asmx
+    ```powershell
+    Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalUrl https://mail.contoso.com/EWS/Exchange.asmx
+    ```
 
   - 使用下列命令來設定離線通訊錄：
     
-        Set-OABVirtualDirectory -Identity "<CAS2013>\OAB (Default Web Site)" -ExternalUrl "https://mail.contoso.com/OAB"
+    ```powershell
+    Set-OABVirtualDirectory -Identity "<CAS2013>\OAB (Default Web Site)" -ExternalUrl "https://mail.contoso.com/OAB"
+    ```
 
   - 若要設定服務連線點，請執行下列命令。
     
-        Set-ClientAccessServer -Identity <CAS2013> -AutoDiscoverServiceInternalURI https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml
+    ```powershell
+    Set-ClientAccessServer -Identity <CAS2013> -AutoDiscoverServiceInternalURI https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml
+    ```
 
 ## 從 Exchange 2007 及 2010 用戶端存取升級
 
@@ -67,23 +79,31 @@ _**上次修改主題的時間：** 2017-07-25_
 
 1.  若要設定 Outlook Web App 的外部 URL，請在 Exchange 管理命令介面中執行下列命令。
     
-        Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
+    ```powershell
+    Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
+    ```
     
     設定好 Outlook Web App 虛擬目錄後，在命令提示字元中執行下列命令。
-      ```
-      Net stop IISAdmin /y
-      ```
-      ```
-      Net start W3SVC
-      ```
+    
+    ```powershell
+    Net stop IISAdmin /y
+    ```
+    
+    ```powershell
+    Net start W3SVC
+    ```
 
 2.  若要設定外部 EAC 存取，請在 Exchange 管理命令介面中執行下列命令。
     
-        Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 
+    ```powershell
+    Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 
+    ```
 
 3.  若要設定可用性服務，請在 Exchange 管理命令介面中執行下列命令。
     
-        Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalURL https://mail.contoso.com/EWS/Exchange.asmx
+    ```powershell
+    Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalURL https://mail.contoso.com/EWS/Exchange.asmx
+    ```
 
 若要確認的外部 URL 已正確設定Exchange ActiveSync或Outlook Web App，您可以使用 Remote Connectivity Analyzer Microsoft 提供的免費 Web 式工具。您可以找到 Remote Connectivity Analyzer[以下](http://go.microsoft.com/fwlink/?linkid=154308)。
 
@@ -97,9 +117,13 @@ _**上次修改主題的時間：** 2017-07-25_
 
   - 若要在 Exchange ActiveSync 虛擬目錄上設定外部 URL，請在 Exchange 管理命令介面中執行下列命令。
     
-        Set-ActiveSyncVirtualDirectory -Identity "<CAS2007>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://mail.contoso.com/Microsoft-Server-ActiveSync
+    ```powershell
+    Set-ActiveSyncVirtualDirectory -Identity "<CAS2007>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://mail.contoso.com/Microsoft-Server-ActiveSync
+    ```
 
   - 若要在 Outlook Web App 虛擬目錄上設定外部 URL，請在 Exchange 管理命令介面中執行下列命令。
     
-        Set-OwaVirtualDirectory -Identity "<CAS2007>\owa (Default Web Site)" -ExternalUrl https://legacy.contoso.com/owa
+    ```powershell
+    Set-OwaVirtualDirectory -Identity "<CAS2007>\owa (Default Web Site)" -ExternalUrl https://legacy.contoso.com/owa
+    ```
 

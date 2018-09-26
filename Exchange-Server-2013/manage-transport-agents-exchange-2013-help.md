@@ -36,8 +36,6 @@ _**上次修改主題的時間：** 2015-04-08_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
-
-
 ## 您要執行的工作
 
 ## 關於用戶端存取伺服器上，前端傳輸服務的傳輸代理程式程序
@@ -49,19 +47,21 @@ _**上次修改主題的時間：** 2015-04-08_
 > 不支援 Windows PowerShell 中執行 Exchange cmdlet 的非管理傳輸代理程式的前端傳輸服務中的工作。在 Windows PowerShell 中執行 Exchange cmdlet 有嚴重導致若您略過的 Exchange 管理命令介面和角色型存取控制 (RBAC) 的後果。您一律應在 Exchange 管理命令介面中執行 Exchange 指令程式。如需詳細資訊，請參閱<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 版本資訊</a>。
 
 
-
-
 若要在前端傳輸服務中執行本主題所述的任一傳輸代理程式程序，您必須執行下列額外步驟：
 
 1.  在用戶端存取伺服器上，開啟 Windows PowerShell 並執行下列命令：
     
-        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```powershell
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 
 2.  執行命令所述，但命令中加入下列值： `-TransportService FrontEnd`。
     
     例如，若要檢視用戶端存取伺服器上前端傳輸服務中的傳輸代理程式，請執行下列命令：
     
-        Get-TransportAgent -TransportService FrontEnd
+    ```powershell
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## 使用命令介面安裝傳輸代理程式
 
@@ -73,11 +73,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 請使用下列語法來安裝傳輸代理程式。
 
-    Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```powershell
+Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```
 
 此範例會在信箱伺服器的傳輸服務中，安裝名為 Contoso Transport Agent 的虛擬傳輸代理程式。
 
-    Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```powershell
+Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -87,11 +91,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 請使用下列語法來啟用傳輸代理程式。
 
-    Enable-TransportAgent <TransportAgentIdentity>
+```powershell
+Enable-TransportAgent <TransportAgentIdentity>
+```
 
 此範例會在信箱伺服器的傳輸服務中，啟用名為 Contoso Transport Agent 的傳輸代理程式。
 
-    Enable-TransportAgent "Contoso Transport Agent"
+```powershell
+Enable-TransportAgent "Contoso Transport Agent"
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -101,11 +109,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 請使用下列語法來停用傳輸代理程式：
 
-    Disable-TransportAgent <TransportAgentIdentity>
+```powershell
+Disable-TransportAgent <TransportAgentIdentity>
+```
 
 此範例會在信箱伺服器的傳輸服務中，停用名為 Fabirkam Transport Agent 的傳輸代理程式。
 
-    Disable-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Disable-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -115,15 +127,21 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要檢視傳輸代理程式的摘要清單，請執行下列命令：
 
-    Get-TransportAgent
+```powershell
+Get-TransportAgent
+```
 
 若要檢視特定傳輸代理程式的詳細組態，請執行下列命令：
 
-    Get-TransportAgent <TransportAgentIdentity> | Format-List
+```powershell
+Get-TransportAgent <TransportAgentIdentity> | Format-List
+```
 
 此範例會提供名為 Transport Rule Agent 之傳輸代理程式的詳細組態。
 
-    Get-TransportAgent "Transport Rule Agent" | Format-List
+```powershell
+Get-TransportAgent "Transport Rule Agent" | Format-List
+```
 
 ## 使用命令介面設定傳輸代理程式的優先順序
 
@@ -131,11 +149,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要修改現有傳輸代理程式的優先順序，請執行下列命令：
 
-    Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```powershell
+Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```
 
 此範例會在信箱伺服器的傳輸服務中，將名為 Contoso Transport Agent 之現有傳輸代理程式的優先順序代理程式值設為 3。
 
-    Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```powershell
+Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -147,11 +169,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要解除安裝傳輸代理程式，請執行下列命令：
 
-    Uninstall-TransportAgent <TransportAgentIdentity>
+```powershell
+Uninstall-TransportAgent <TransportAgentIdentity>
+```
 
 此範例會在信箱伺服器的傳輸服務中，解除安裝名為 Fabrikam Transport Agent 的傳輸代理程式。
 
-    Uninstall-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Uninstall-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 如何才能了解這是否正常運作？
 

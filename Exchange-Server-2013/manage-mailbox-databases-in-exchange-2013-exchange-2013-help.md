@@ -60,7 +60,9 @@ _**上次修改主題的時間：** 2013-04-29_
 
   - 在命令介面中，執行下列命令，確認資料庫建立在伺服器 Mailbox01 上。
     
-        Get-MailboxDatabase -Server "Mailbox01"
+    ```powershell
+    Get-MailboxDatabase -Server "Mailbox01"
+    ```
 
 ## 取得信箱資料庫內容
 
@@ -151,7 +153,9 @@ _**上次修改主題的時間：** 2013-04-29_
 
   - 從命令介面執行下列命令，以擷取信箱資料庫內容。
     
-        Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
+    ```powershell
+    Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
+    ```
 
 ## 移動信箱資料庫路徑
 
@@ -183,7 +187,9 @@ _**上次修改主題的時間：** 2013-04-29_
 
   - 從命令介面執行下列命令，以針對所有信箱資料庫擷取信箱資料庫內容。
     
-        Get-MailboxDatabase -IncludePreExchange2013
+    ```powershell
+    Get-MailboxDatabase -IncludePreExchange2013
+    ```
 
 ## 卸載信箱資料庫
 
@@ -215,7 +221,9 @@ _**上次修改主題的時間：** 2013-04-29_
 
 1.  執行以下命令，移除信箱資料庫 MyDatabase。
     
-        Remove-MailboxDatabase -Identity "MyDatabase"
+    ```powershell
+    Remove-MailboxDatabase -Identity "MyDatabase"
+    ```
 
 2.  提示您是否確定要執行動作時，請輸入 **Y**。
 

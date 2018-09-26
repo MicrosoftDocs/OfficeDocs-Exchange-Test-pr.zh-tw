@@ -65,8 +65,6 @@ _**上次修改主題的時間：** 2017-03-20_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
-
-
 ## Active Directory 準備
 
 您要用於為 Exchange 2013 準備 Active Directory 的電腦必須滿足一些特定先決條件。
@@ -85,11 +83,15 @@ _**上次修改主題的時間：** 2017-03-20_
     
       - 在 Windows Server 2012 R2 或 Windows Server 2012 電腦上，執行下列命令。
         
-            Install-WindowsFeature RSAT-ADDS
+        ```powershell
+        Install-WindowsFeature RSAT-ADDS
+        ```
     
       - 在 Windows Server 2008 R2 SP1 電腦上，執行下列命令。
         
-            Add-WindowsFeature RSAT-ADDS
+        ```powershell
+        Add-WindowsFeature RSAT-ADDS
+        ```
 
 ## Windows Server 2012 R2 和 Windows Server 2012 先決條件
 
@@ -111,7 +113,9 @@ _**上次修改主題的時間：** 2017-03-20_
 
 2.  執行下列命令來安裝所需的 Windows 元件。
     
+    ```powershell
         Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+    ```
 
 安裝作業系統角色與功能後，請依照以下顯示順序安裝軟體：
 
@@ -135,7 +139,9 @@ _**上次修改主題的時間：** 2017-03-20_
 
 2.  執行下列命令來安裝所需的 Windows 元件。
     
-        Install-WindowsFeature ADLDS
+    ```powershell
+    Install-WindowsFeature ADLDS
+    ```
 
 安裝對應於您要安裝之 Exchange 2013 版本的 Windows Management Framework 版本。
 
@@ -167,11 +173,15 @@ _**上次修改主題的時間：** 2017-03-20_
 
 2.  執行下列命令以載入伺服器管理員模組。
     
-        Import-Module ServerManager
+    ```powershell
+    Import-Module ServerManager
+    ```
 
 3.  執行下列命令來安裝所需的 Windows 元件。
     
+    ```powershell
         Add-WindowsFeature Desktop-Experience, NET-Framework, NET-HTTP-Activation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Web-Server, WAS-Process-Model, Web-Asp-Net, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
+    ```
 
 安裝作業系統角色與功能後，請依照以下顯示順序安裝軟體：
 
@@ -205,11 +215,15 @@ _**上次修改主題的時間：** 2017-03-20_
 
 2.  執行下列命令以載入伺服器管理員模組。
     
-        Import-Module ServerManager
+    ```powershell
+    Import-Module ServerManager
+    ```
 
 3.  執行下列命令來安裝所需的 Windows 元件。
     
-        Add-WindowsFeature NET-Framework, ADLDS
+    ```powershell
+    Add-WindowsFeature NET-Framework, ADLDS
+    ```
 
 安裝作業系統角色與功能後，請依照以下顯示順序安裝軟體：
 

@@ -22,8 +22,6 @@ _**上次修改主題的時間：** 2017-01-18_
 > 我們已延後 2017 年 7 月 1 日的期限以在 Exchange Online 中建立新的就地保留 (在 Office 365 和 Exchange Online 獨立計劃中)。但今年稍晚或明年初，您將無法在 Exchange Online 中建立新的就地保留。使用就地保留的替代方法是，您可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=780738">eDiscovery 案例</a>或 Office 365 安全性和規範中心的<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留原則</a>。在我們解除委任新就地保留後，您仍然可以修改現有的就地保留，而在 Exchange Server 2013 和 Exchange混合部署中建立新的就地保留仍會受到支援。而且，您依然能夠讓信箱處於「訴訟暫止」。
 
 
-
-
 您的組織可能需要以保留指定期限內的所有信箱資料。您可以使用訴訟暫止狀態或就地保留功能來滿足此需求。將信箱置於訴訟暫止或就地保留功能之後，可修改或永久刪除的信箱項目會保留在 \[可復原的項目\] 資料夾。如需詳細資訊，請參閱[就地保留與訴訟暫止](https://docs.microsoft.com/zh-tw/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
 將組織中的所有信箱設為訴訟暫止或就地保留狀態之前，請考慮下列事項：
@@ -106,8 +104,9 @@ _**上次修改主題的時間：** 2017-01-18_
 
 您可以快速和輕鬆地將所有信箱保留無限期或在指定的期間使用命令介面。此命令會將所有信箱都置於保留 2555 天 （大約 7 年）。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
-
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 此範例使用[Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))指令程式和收件者篩選器來擷取組織中的所有使用者信箱，然後將 \[ [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))指令程式來啟用訴訟暫止狀態及保留持續時間指定信箱的清單。如需詳細資訊，請參閱[將信箱設為訴訟暫止](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)。
 
 ## 將所有信箱設為就地保留
@@ -118,9 +117,6 @@ _**上次修改主題的時間：** 2017-01-18_
 > [!TIP]  
 > 若要將 500 個以上的使用者設為就地保留，使用命令介面。請參閱<a href="https://technet.microsoft.com/zh-tw/library/dd298064(v=exchg.150)">New-MailboxSearch</a>。
 
-
-
-
 ## 其他資訊
 
   - 當您將所有信箱保留在組織中時，只存在於您執行命令的時間的信箱已處於保留狀態。如果您建立新的信箱之後，再次執行命令置於 \[保留。如果您經常建立新的信箱，您可以做為排程工作所需經常執行命令。
@@ -130,21 +126,21 @@ _**上次修改主題的時間：** 2017-01-18_
   - 本主題中用來將所有信箱的訴訟暫止狀態的 PowerShell 命令使用會傳回所有使用者信箱的收件者篩選器。您可以使用其他收件者的屬性來傳回您可以再透過管線傳到**Set-Mailbox**指令程式置於訴訟保留這些信箱的特定信箱的清單。
     
     以下是一些範例使用**Get-Mailbox**與**Get-Recipient** cmdlet 可傳回根據常見的使用者或信箱內容的信箱的子集。下列範例會假設相關信箱內容 （例如*CustomAttributeN*或*Department*） 已填入。
-    ```
+
+    ```powershell
     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
-    ```
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
     ```
-    ```
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
     ```
-    ```
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
     ```
-    ```
+    ```powershell
     Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
     ```
-
     您可以使用篩選器中的其他使用者信箱屬性以包含或排除信箱。如需詳細資訊，請參閱[可篩選的內容-Filter 參數](https://technet.microsoft.com/zh-tw/library/bb738155\(v=exchg.150\))。
 

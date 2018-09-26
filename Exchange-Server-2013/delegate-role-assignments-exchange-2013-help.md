@@ -73,11 +73,15 @@ _**上次修改主題的時間：** 2012-10-02_
 
 此範例會建立委派角色指派，讓「資深系統管理員」角色群組的成員可以指派「郵件收件者」角色給 Exchange 組織中的任一角色受託人。
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+```powershell
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+```
 
 此範例會建立委派角色指派，讓「資深系統管理員」角色群組的成員只能指派「郵件收件者」角色給 contoso.com 網域銷售\\使用者 OU 中的使用者。
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+```powershell
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 

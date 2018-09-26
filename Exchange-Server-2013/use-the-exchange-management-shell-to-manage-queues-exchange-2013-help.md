@@ -315,7 +315,9 @@ Exchange 2013 新增了名為 **Get-QueueDigest** 的佇列指令程式。此指
 
 此範例會傳回名為 Mailbox01、Mailbox02 及 Mailbox03 等 Exchange 2013 Mailbox Server 上所有非空白的外部佇列。
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 回到頁首
 
@@ -516,11 +518,15 @@ Exchange 2013 新增了名為 **Get-QueueDigest** 的佇列指令程式。此指
 
 此範例會顯示目的地是任何以 Contoso.com 為結尾的 SMTP 網域名稱而且目前包含超過 500 封郵件之佇列的清單。
 
-    Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```powershell
+Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```
 
 此範例會顯示從 contoso.com 網域中任何電子郵件地址傳送且 SCL 大於 5 之郵件的清單。
 
-    Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```powershell
+Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```
 
 回到頁首
 
@@ -595,15 +601,19 @@ Exchange 2013 新增了名為 **Get-QueueDigest** 的佇列指令程式。此指
 
 1.  開啟命令介面，並輸入下列命令以擷取第一個結果頁面。
     
-        $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
-
+    ```powershell
+    $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 2.  若要設定書籤物件，請輸入下列命令，以將第一頁的最後一個元素儲存至變數中。
     
-        $temp=$results[$results.length-1]
+    ```powershell
+    $temp=$results[$results.length-1]
+    ```
 
 3.  若要擷取所指定伺服器上的下 500 個物件，以及排除書籤物件，請輸入下列命令。
     
-        Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
-
+    ```powershell
+    Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 回到頁首
 

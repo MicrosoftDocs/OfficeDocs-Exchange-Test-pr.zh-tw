@@ -56,7 +56,9 @@ _**上次修改主題的時間：** 2012-10-31_
 
 此範例會將子網路 10.0.0.0 和子網路遮罩 255.0.0.0 新增至 DAG DAG1 的 DAG 網路 MapiDagNetwork。
 
-    Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -64,7 +66,9 @@ _**上次修改主題的時間：** 2012-10-31_
 
   - 在命令介面中，執行下列命令以顯示 DAG 網路組態設定，並確認 DAG 網路已成功設定。
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## 相關資訊
 

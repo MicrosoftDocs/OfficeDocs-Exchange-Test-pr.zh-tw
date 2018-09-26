@@ -49,21 +49,25 @@ _**上次修改主題的時間：** 2013-12-02_
 ## 使用命令介面檢視伺服器健全狀況
 
 執行下列任一個命令，檢視執行 Exchange 2013 的伺服器的健全設定和健全狀況資訊。
-```
+```powershell
 Get-HealthReport -Identity <ServerName>
 ```
-```
+
+```powershell
 Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
 ```
 
 執行下列任何一個命令，檢視執行 Exchange 2013 的伺服器或資料庫可用性群組的健全設定。
-```
+
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup
 ```
-```
+
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 ```
-```
+
+```powershell
 (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
@@ -75,7 +79,9 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 
 執行下列命令，檢視執行 Exchange 2013 的伺服器的健全設定。
 
-    Get-HealthReport -Server <ServerName>
+```powershell
+Get-HealthReport -Server <ServerName>
+```
 
 ## 檢視健全設定的探查、監視器和回應程式
 
@@ -85,7 +91,9 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 
 執行下列命令檢視與執行 Exchange 2013 的伺服器的健全設定相關聯的探查、監視器及回應程式。
 
-    Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+```powershell
+Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+```
 
 ## 檢視監視器及其目前健全狀況的清單
 
@@ -95,5 +103,7 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 
 執行下列命令檢視執行 Exchange 2013 的伺服器的監視器及其目前健全狀況的清單。
 
-    Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
+```powershell
+Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
+```
 

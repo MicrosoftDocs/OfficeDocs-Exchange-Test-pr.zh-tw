@@ -68,9 +68,9 @@ _**上次修改主題的時間：** 2016-12-09_
 2.  將使用者**FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042**新增至新的通訊群組。同盟信箱位於系統信箱與因此在 EAC 中不可見。若要將其新增至通訊群組，您必須使用命令介面從[Add-DistributionGroupMember](https://technet.microsoft.com/zh-tw/library/bb124340\(v=exchg.150\))指令程式。
     
     此範例會將同盟信箱新增至 ADRMSSuperUsers 通訊群組。
-    
+    ```powershell
         Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
-
+    ```
 如需詳細的語法及參數資訊，請參閱 [Add-DistributionGroupMember](https://technet.microsoft.com/zh-tw/library/bb124340\(v=exchg.150\))。
 
 ## 步驟 2： 使用 AD RMS 超級使用者群組設定
@@ -101,8 +101,8 @@ AD RMS 叢集上執行下列程序。用來執行此程序的帳戶必須是 AD 
     
     > [!IMPORTANT]  
     > Windows Server 2008 R2 和更新版本上可取得 ADRMSAdmin PowerShell 模組。
-    
+    ```powershell
         Import-Module ADRMSAdmin
         New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 
         Get-ItemProperty -Path MyRmsAdmin:\SecurityPolicy\SuperUser
-
+    ```

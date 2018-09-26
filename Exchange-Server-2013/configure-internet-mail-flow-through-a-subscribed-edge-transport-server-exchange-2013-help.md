@@ -48,21 +48,29 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  在 Edge Transport Server 上，使用下列語法建立 Edge 訂閱檔案。
     
-        New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    ```powershell
+    New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    ```
     
     下列範例在 C:\\My Documents 資料夾中建立名為 EdgeSubscriptionInfo.xml 的 Edge 訂閱檔案。*Force* 參數會抑制用以確認將停用命令的提示，以及抑制 Edge Transport Server 的組態資料將被覆寫的警告。
     
-        New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```powershell
+    New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```
 
 2.  將產生的 Edge 訂閱檔案複製到您訂閱 Edge Transport Server 的 Active Directory 站台中的 Mailbox Server。
 
 3.  在 Mailbox Server 上，使用下列語法匯入 Edge 訂閱檔案。
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    ```
     
     此範例從 D:\\Data 資料夾匯入名為 EdgeSubscriptionInfo.xml 的 Edge 訂閱檔案，並且向名為 "Default-First-Site-Name" 的 Active Directory 站台訂閱 Edge Transport Server。
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    ```
     
     > [!NOTE]  
     > 您可以使用 <em>CreateInternetSendConnector</em> 或 <em>CreateInboundSendConnector</em> 參數，防止自動建立一或兩個必要的傳送連接器。如需詳細資訊，請參閱<a href="edge-subscriptions-exchange-2013-help.md">Edge 訂閱</a>。
@@ -70,7 +78,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 4.  在 Mailbox Server 上，執行下列命令以開始第一次 EdgeSync 同步處理。
     
-        Start-EdgeSynchronization
+    ```powershell
+    Start-EdgeSynchronization
+    ```
 
 5.  完成時，強烈建議您同時從 Edge Transport Server 和 Mailbox Server 中刪除 Edge 訂閱檔案。Edge 訂閱檔案包含在 LDAP 通訊處理期間使用的認證相關資訊。
 

@@ -282,8 +282,13 @@ Exchange 2013 伺服器的建議硬體需求會因許多因素而有所不同，
 > <ul>
 > <li><p><strong>Windows Server 2008 R2：</strong>重新安裝 Windows Server 並選擇 [完整安裝] 選項。</p></li>
 > <li><p><strong>Windows Server 2012 R2</strong> 或 <strong>Windows Server 2012：</strong>執行下列指令，將您的 Windows Server Core 模式伺服器轉換為完整安裝。</p>
-> <pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li>
+> </li>
 > </ul>
+
+```powershell
+Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart
+```
+
 
 
 **Exchange 2013 所支援的作業系統**

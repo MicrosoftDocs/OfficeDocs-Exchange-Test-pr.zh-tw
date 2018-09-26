@@ -51,15 +51,21 @@ _**上次修改主題的時間：** 2016-12-09_
 
 若要設定外部郵件管理員地址，請使用下列語法。
 
-    Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```
 
 例如，若要將外部郵件管理員地址設為 `postmaster@contoso.com`，請執行下列命令
 
-    Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```
 
 若要將外部郵件管理員地址回復為預設值，請執行下列命令：
 
-    Set-TransportConfig -ExternalPostmasterAddress $null
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress $null
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -67,7 +73,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 1.  在 Mailbox Server 上執行下列命令來確認外部郵件管理員地址值：
     
-        Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```powershell
+    Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```
 
 2.  從外部電子郵件帳號傳送一則訊息將會產生傳遞狀態通知 (DSN) 您 Exchange 組織。例如，您可以設定傳輸規則來傳送未傳遞回報 (NDR) 中包含特定關鍵字的寄件者的郵件。請確認 DSN 中的寄件者的電子郵件地址符合您指定的值。
 

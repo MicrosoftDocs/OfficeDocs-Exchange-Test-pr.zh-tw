@@ -55,17 +55,23 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 此範例說明如何設定資料庫的根路徑。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```
 
 此範例說明如何設定儲存磁碟區的根路徑。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
 若要確認您是否已成功設定資料庫與磁碟區的根路徑，請執行以下命令。
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 
 *AutoDagDatabasesRootFolderPath* 與 *AutoDagVolumesRootFolderPath* 的輸入應該反映設定的路徑。
 
@@ -75,13 +81,17 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 此範例說明如何為已設為每一個磁碟區有 4 個資料庫的 DAG 設定此 AutoReseed 設定。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
 若要確認您是否已成功設定每一個磁碟區的資料庫數量，請執行以下命令。
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 
 *AutoDagDatabaseCopiesPerVolume* 的輸出應該反映設定值。
 
@@ -89,14 +99,18 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 接著，建立您在步驟 1 中所設定之根目錄所對應的目錄。此範例顯示如何使用命令提示字元建立預設目錄。
 
-    md C:\ExchangeDatabases
-    md C:\ExchangeVolumes
+```powershell
+md C:\ExchangeDatabases
+md C:\ExchangeVolumes
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
 若要確認您是否已成功設定資料庫與磁碟區的根目錄，請執行以下命令。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 建立的目錄應出現在輸出清單中。
 
@@ -116,23 +130,29 @@ AutoReseed 是快速地還原資料庫備援磁碟故障後的功能。如果磁
 
 若要確認您是否已成功裝載磁碟區資料夾，請執行以下命令。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 裝載的磁碟區應該出現在輸出清單中。
 
 ## 步驟 5： 建立的資料庫資料夾
 
 接下來，建立根路徑 C:\\ExchangeDatabases 下的 \[資料庫\] 目錄。本範例會說明如何使用 4 個資料庫在每個磁碟區上建立目錄的儲存設定。
-```
+
+```powershell
 md c:\ExchangeDatabases\db001
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db002
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db003
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db004
 ```
 
@@ -140,7 +160,9 @@ md c:\ExchangeDatabases\db004
 
 若要確認您是否已成功裝載資料庫資料夾，請執行以下命令。
 
-    Dir C:\ExchangeDatabases
+```powershell
+Dir C:\ExchangeDatabases
+```
 
 建立的目錄應出現在輸出清單中。
 
@@ -148,13 +170,17 @@ md c:\ExchangeDatabases\db004
 
 建立每個資料庫的掛接點並連結到正確的磁碟區掛接點。例如，db001 裝載的資料夾應該在 C:\\ExchangeDatabases\\db001。您可以使用 diskmgmt.msc 或 mountvol.exe 為達成此目的。本範例會說明如何裝載至 C:\\ExchangeDatabases\\db001 使用 mountvol.exe db001。
 
-    Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```powershell
+Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
 若要確認您是否已成功建立資料庫的掛接點，請執行以下命令。
 
-    Mountvol.exe C:\ExchangeDatabases\db001 /L
+```powershell
+Mountvol.exe C:\ExchangeDatabases\db001 /L
+```
 
 裝載的磁碟區應該出現在掛接點清單中。
 
@@ -167,28 +193,36 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 此範例說明如何為儲存在磁碟區 1 的 4 個資料庫建立目錄：
-```
+
+```powershell
 md c:\ExchangeDatabases\db001\db001.db
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db001\db001.log
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db002\db002.db
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db002\db002.log
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db003\db003.db
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db003\db003.log
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db004\db004.db
 ```
-```
+
+```powershell
 md c:\ExchangeDatabases\db004\db004.log
 ```
 
@@ -198,7 +232,9 @@ md c:\ExchangeDatabases\db004\db004.log
 
 若要確認您是否已成功建立資料庫目錄架構，請執行以下命令。
 
-    Dir C:\ExchangeDatabases /s
+```powershell
+Dir C:\ExchangeDatabases /s
+```
 
 建立的目錄應出現在輸出清單中。
 
@@ -206,13 +242,17 @@ md c:\ExchangeDatabases\db004\db004.log
 
 建立資料庫與記錄檔及資料庫設定的適當資料夾的路徑。本範例會說明如何建立儲存新建立的目錄和掛接點結構中的資料庫。
 
-    New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```powershell
+New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```
 
 ## 如何才能了解此步驟是否正常運作？
 
 若要確認您已在適當資料夾中成功建立資料庫，請執行以下命令。
 
-    Get-MailboxDatabase db001 | Format List *path*
+```powershell
+Get-MailboxDatabase db001 | Format List *path*
+```
 
 傳回的資料庫屬性應指明資料庫檔案與記錄檔儲存在上述資料夾中。
 
@@ -222,12 +262,16 @@ md c:\ExchangeDatabases\db004\db004.log
 
 1.  執行下列命令，確認已正確設定 DAG。
     
-        Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```powershell
+    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```
 
 2.  執行下列命令，確認已正確設定目錄架構 (以下為預設路徑；請視需要將路徑替換成您正在使用的路徑)。
-    ```
+
+    ```powershell
     Dir c:\ExchangeDatabases /s
     ```
-    ```
+    
+    ```powershell
     Dir c:\ExchangeVolumes /s
     ```

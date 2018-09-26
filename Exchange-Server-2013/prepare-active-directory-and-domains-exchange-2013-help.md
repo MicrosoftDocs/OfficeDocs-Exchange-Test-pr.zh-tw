@@ -9,9 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: HT
 ---
 
-# 準備 Active Directory 及網域
-
- 
+# 準備 Active Directory 及網域 
 
 _**適用版本：** Exchange Server 2013_
 
@@ -22,8 +20,6 @@ _**上次修改主題的時間：** 2016-12-09_
 
 > [!NOTE]  
 > 不論這是您第一次在環境中安裝 Exchange，或是您已經有舊版的 Exchange Server 正在執行，您需要準備適用於 Exchange 2013 的 Active Directory。您可以參閱 <a href="exchange-2013-active-directory-schema-changes-exchange-2013-help.md">Exchange 2013 Active Directory 架構變更</a>以取得 Exchange 2013 新增至 Active Directory 的新架構類別與屬性的詳細資料，包括 Service Packs (SP) 和 累積更新 (CU) 所做的變更。
-
-
 
 
 有幾種方法可以為 Exchange 準備 Active Directory。第一種是讓 Exchange 2013 安裝精靈為您準備。如果您沒有大型的 Active Directory 部署，也沒有獨立的團隊來管理 Active Directory，則建議使用精靈。您使用的帳戶必須同時為 Schema Admins 與 Enterprise Admins 安全性群組的成員。如需有關如何使用安裝精靈的詳細資訊，請參閱＜[使用安裝精靈安裝 Exchange 2013](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)＞。
@@ -58,9 +54,6 @@ _**上次修改主題的時間：** 2016-12-09_
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
-
-
-
 ## 1\. 擴充 Active Directory 架構
 
 讓組織開始使用 Exchange 2013 的第一步是擴充 Active Directory 架構。Exchange 會將許多資訊儲存在 Active Directory 中，但在此之前，需要先加入和更新類別、屬性及其他項目。如果想要了解擴充架構時所發生的變更，請參閱＜[Exchange 2013 Active Directory 架構變更](exchange-2013-active-directory-schema-changes-exchange-2013-help.md)＞。
@@ -80,8 +73,6 @@ _**上次修改主題的時間：** 2016-12-09_
 > 如果您沒有獨立的團隊來管理 Active Directory 架構，請略過此步驟，直接進入準備 Active Directory。如果在步驟 1 中未擴充架構，則步驟 2 的命令會為您擴充架構。如果決定略過步驟 1，您仍然必須謹記上述資訊。
 
 
-
-
 準備好時，請執行下列動作來擴充 Active Directory 架構。如果您有多個 Active Directory 樹系，請確定您登入正確的樹系。
 
 1.  請確定電腦可執行 Exchange 2013 安裝程式。如需有關執行安裝程式的需求，請參閱＜[Exchange 2013 必要條件](exchange-2013-prerequisites-exchange-2013-help.md)＞的＜[Active Directory preparation](exchange-2013-prerequisites-exchange-2013-help.md)＞一節。
@@ -90,7 +81,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 3.  執行下列命令來擴充架構。
     
-        Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```
 
 當安裝程式擴充架構完成之後，您需要稍候讓 Active Directory 將變更複寫到所有網域控制站。如果想要查看複寫進度，您可以使用 `repadmin` 工具。Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 的 `Repadmin` 網域服務工具中包含 Active Directory。如需此工具用法的詳細資訊，請參閱 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)。
 
@@ -126,8 +119,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  執行下列命令：
     
-        Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
-
+      ```powershell
+      Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+      ```
 當安裝程式為 Exchange 準備好 Active Directory 之後，您需要稍候讓 Active Directory 將變更複寫到所有網域控制站。如果想要查看複寫進度，您可以使用 `repadmin` 工具。Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 的 Active Directory 網域服務工具中包含 `repadmin`。如需有關如何使用此工具的詳細資訊，請參閱 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)。
 
 ## 3\. 準備 Active Directory 網域
@@ -152,7 +146,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  執行下列命令：
     
-        Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 讓我選擇想要準備的 Active Directory 網域
 
@@ -178,8 +174,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  執行下列命令。包含您要準備的網域的 FQDN。如果要準備您正在執行命令的網域，您不需要包含 FQDN。
     
-        Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
-
+      ```powershell
+      Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
+      ```
 3.  對於您將安裝 Exchange 伺服器或放置啟用郵件功能之使用者的每一個 Active Directory 網域，重複這些步驟。
 
 ## 如何知道這是否正常運作？
@@ -191,20 +188,15 @@ _**上次修改主題的時間：** 2016-12-09_
 > 除非得到 Microsoft 技術支援人的指示，否則請勿在 ADSI 編輯器中變更任何值。在 ADSI 編輯器中變更任何值可能對 Exchange 組織和 Active Directory 造成無法彌補的損害。
 
 
-
-
 在 Exchange 延伸您的 Active Directory 結構描述，並為 Exchange 準備 Active Directory 之後，數個屬性會更新以顯示準備已完成。請使用下列清單中的資訊，確定這些屬性的值正確。每個屬性必須符合下表中您所安裝之 Exchange 2013 版本的值。
 
-  - 在 **\[架構\]** 命名內容中，確認 **ms-Exch-Schema-Verision-Pt** 上的 **rangeUpper** 屬性，已設為＜Exchange 2013 Active Directory 版本＞表格中您的 Exchange 2013 版本所顯示的值。
-    
+  - 在 **\[架構\]** 命名內容中，確認 **ms-Exch-Schema-Verision-Pt** 上的 **rangeUpper** 屬性，已設為＜Exchange 2013 Active Directory 版本＞表格中您的 Exchange 2013 版本所顯示的值。   
      
 
-  - 在 **\[設定\]** 命名內容中，確認 CN=\<*您的組織*\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<*網域*\> 容器中的 **objectVersion** 屬性，已設為＜Exchange 2013 Active Directory 版本＞表格中您的 Exchange 2013 版本所顯示的值。
-    
+  - 在 **\[設定\]** 命名內容中，確認 CN=\<*您的組織*\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<*網域*\> 容器中的 **objectVersion** 屬性，已設為＜Exchange 2013 Active Directory 版本＞表格中您的 Exchange 2013 版本所顯示的值。  
      
 
-  - 在 **\[預設\]** 命名內容中，確認 DC=\<*根網域* 下 \[Microsoft Exchange 系統物件\] 容器中的 **objectVersion** 內容，已設為＜Exchange 2013 Active Directory 版本＞表格中您的 Exchange 2013 版本所顯示的值。
-    
+  - 在 **\[預設\]** 命名內容中，確認 DC=\<*根網域* 下 \[Microsoft Exchange 系統物件\] 容器中的 **objectVersion** 內容，已設為＜Exchange 2013 Active Directory 版本＞表格中您的 Exchange 2013 版本所顯示的值。   
      
 
 您也可以檢查 Exchange 安裝記錄檔，確認 Active Directory 準備已成功完成。如需詳細資訊，請參閱 [確認 Exchange 2013 安裝](verify-an-exchange-2013-installation-exchange-2013-help.md)。除非在 Active Directory 站台中完成至少一個 Mailbox server role 和一個 Client Access server role 的安裝，否則無法使用＜[確認 Exchange 2013 安裝](verify-an-exchange-2013-installation-exchange-2013-help.md)＞主題中提及的 **Get-ExchangeServer** 指令程式。

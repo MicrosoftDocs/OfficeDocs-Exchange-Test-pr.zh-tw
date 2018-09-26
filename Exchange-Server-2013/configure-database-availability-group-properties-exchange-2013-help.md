@@ -79,31 +79,45 @@ _**上次修改主題的時間：** 2014-06-24_
 
 本範例將名為 DAG1 的 DAG 的見證目錄設定為 C:\\DAG1DIR。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```
 
 本範例預先設定 DAG DAG1 的替代見證伺服器 CAS3 和替代見證目錄 C:\\DAGFileShareWitnesses\\DAG1.contoso.com。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 此範例會將名為 DAG1 的 DAG 設定為使用動態主機設定通訊協定 (DHCP) 以取得 IP 位址。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```
 
 本範例將名為 DAG1 的 DAG 設定為使用靜態 IP 位址 10.0.0.8。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 本範例以多重靜態 IP 位址設定名為 DAG1 的多重子網路 DAG。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```
 
 本範例針對 DAC 模式設定 DAG DAG1。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 此範例會將名爲 DAG1 的 DAG 複寫連接埠設定為 63132。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```
 
 
 > [!NOTE]  
@@ -118,7 +132,9 @@ _**上次修改主題的時間：** 2014-06-24_
 
   - 在命令介面中，執行下列命令來顯示 DAG 組態設定並驗證 DAG 已成功設定。
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 相關資訊
 

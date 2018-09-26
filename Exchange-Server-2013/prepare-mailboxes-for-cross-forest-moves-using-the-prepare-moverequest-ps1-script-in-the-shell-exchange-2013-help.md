@@ -43,9 +43,6 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
-
-
-
 ## 使用 Prepare-MoveRequest.ps1 指令碼準備信箱的跨樹系移動
 
 從命令介面中執行指令碼執行Exchange 2013目標Exchange 2013樹系中的伺服器角色。指令碼會複製來源樹系中的信箱屬性。
@@ -57,17 +54,18 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 > 呼叫此指令碼時，請確定對本機樹系和遠端樹系使用兩個單獨的認證。
 
 
-
-
 1.  執行下列命令以取得本機樹系和遠端樹系認證。
     
+      ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
+      ```
 
 2.  執行下列命令，將認證資訊傳送到 Prepare-MoveRequest.ps1 指令碼中的 *LocalForestCredential* 與 *RemoteForestCredential*參數。
-    
-        Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
 
+      ```powershell    
+        Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
+      ```
 ## 腳本參數集
 
 下表描述指令碼的參數集。
@@ -176,13 +174,17 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 此範例在本機樹系中提供了一個已連結的啟用郵件功能的使用者，同時遠端樹系和本機樹系之間存在樹系信任。
 
 1.  執行下列命令以取得本機樹系和遠端樹系認證。
-    
+
+      ```powershell    
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
+      ```
 
 2.  執行下列命令，將認證資訊傳送到 Prepare-MoveRequest.ps1 指令碼中的 *LocalForestCredential* 與 *RemoteForestCredential* 參數。
     
+      ```powershell
         Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser 
+      ```
 
 ## 範例： 管線
 
@@ -190,12 +192,15 @@ Microsoft Exchange 2013支援信箱移動和移轉使用**New-MoveRequest**與**
 
 1.  執行下列命令。
     
-        $UserCredentials = Get-Credential
+    ```powershell
+       $UserCredentials = Get-Credential
+    ```
 
 2.  執行下列命令，將認證資訊傳送到 Prepare-MoveRequest.ps1 指令碼中的 *RemoteForestCredential* 參數。
-    
-        "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
 
+      ```powershell    
+        "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+      ```
 ## 範例： 使用.csv 檔案大量建立擁有郵件功能的使用者
 
 您可以從來源樹系產生包含信箱識別碼清單的 .csv 檔案，從而可以將此檔案內容以管線傳輸至指令碼，以大量建立啟用郵件功能的目標使用者。
@@ -214,11 +219,15 @@ Cindy@contoso.com
 
 1.  執行下列命令以取得遠端樹系認證。
     
+    ```powershell
         $UserCredentials = Get-Credential
+    ```
 
 2.  執行下列命令，將認證資訊傳送到 Prepare-MoveRequest.ps1 指令碼中的 *RemoteForestCredential* 參數。
-    
+
+      ```powershell    
         Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+      ```
 
 ## 依據目標物件的指令碼行為
 

@@ -60,23 +60,29 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視特定角色上角色項目的清單，請使用下列語法。
 
-    Get-ManagementRoleEntry <role name>\*
-
+```powershell
+Get-ManagementRoleEntry <role name>\*
+```
 此範例會擷取 `Recipient Administrators` 角色上的所有角色項目。
 
-    Get-ManagementRole "Recipient Administrators\*"
-
+```powershell
+Get-ManagementRole "Recipient Administrators\*"
+```
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd335210\(v=exchg.150\))。
 
 ## 檢視包含特定角色項目之角色的清單
 
 若要檢視所有包含特定角色項目之角色的清單，請使用下列語法。
 
-    Get-ManagementRoleEntry *\<cmdlet name>
+```powershell
+Get-ManagementRoleEntry *\<cmdlet name>
+```
 
 此範例會擷取所有包含 **Set-Mailbox** 角色項目的角色。
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd335210\(v=exchg.150\))。
 
@@ -84,11 +90,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視包含具有類似名稱的指令程式之目標角色的清單，請使用下列語法。
 
-    Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```powershell
+Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```
 
 此範例會針對名稱包含字串 `Tier 1` 的角色，傳回這些角色上包含字串 `Mailbox` 之角色項目的清單。
 
-    Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd335210\(v=exchg.150\))。
 
@@ -96,11 +106,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視單一角色項目的詳細資料，請使用下列語法。
 
-    Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```powershell
+Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```
 
 此範例會擷取 `Recipient Administrators` 角色上 **Set-Mailbox** 角色項目的詳細資料。
 
-    Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```powershell
+Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```
 
 如果您使用 **Format-List** 指令程式時，檢視的角色項目有太多參數要列出，請參閱本主題稍後的＜檢視單一角色項目上的參數＞。
 
@@ -112,11 +126,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要檢視角色項目物件的 **Parameters** 內容上儲存的參數，請使用下列語法。
 
-    (Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```powershell
+(Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```
 
 此範例會擷取「郵件收件者」角色上 **Set-Mailbox** 角色項目的參數。
 
-    (Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```powershell
+(Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-ManagementRoleEntry](https://technet.microsoft.com/zh-tw/library/dd335210\(v=exchg.150\))。
 

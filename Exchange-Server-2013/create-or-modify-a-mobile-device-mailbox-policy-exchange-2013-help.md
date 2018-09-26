@@ -79,7 +79,9 @@ _**上次修改主題的時間：** 2012-10-16_
 
 1.  在命令介面中，執行下列命令。
     
-        New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+    ```powershell
+    New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+    ```
 
 ## 如何才能了解這是否正常運作？
 
@@ -89,7 +91,9 @@ _**上次修改主題的時間：** 2012-10-16_
 
 2.  在命令介面中，執行下列命令。
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
+    ```powershell
+    Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
+    ```
 
 ## 編輯現有的行動裝置信箱原則
 
@@ -129,7 +133,9 @@ _**上次修改主題的時間：** 2012-10-16_
 
 1.  在命令介面中，執行下列命令。
     
-        Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+    ```powershell
+    Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+    ```
 
 ## 如何才能了解這是否正常運作？
 
@@ -139,5 +145,7 @@ _**上次修改主題的時間：** 2012-10-16_
 
 2.  在命令介面中，執行下列命令。
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```powershell
+    Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```
 

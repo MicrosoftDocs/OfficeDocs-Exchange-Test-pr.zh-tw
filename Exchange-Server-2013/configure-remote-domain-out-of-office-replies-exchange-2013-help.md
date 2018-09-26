@@ -42,9 +42,13 @@ _**上次修改主題的時間：** 2015-04-08_
 
 本範例為名為 Contoso 的遠端網域停用外出訊息。
 
-    Set-RemoteDomain Contoso -AllowedOOFType None
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType None
+```
 
 此範例只允許外部郵件答錄機訊息。
 
-    Set-RemoteDomain Contoso -AllowedOOFType External
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType External
+```
 

@@ -52,13 +52,17 @@ Exchange Server 2013允許其他應用程式使用 OAuth 對 Exchange 進行驗�
 
 此範例會設定 SharePoint 2013的 OAuth 驗證。
 
-    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
-    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
+```powershell
+Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
+Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
+```
 
 此範例會設定 Lync Server 2013的 OAuth 驗證。
 
-    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
-    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
+```powershell
+Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
+Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
+```
 
 ## 如何知道這是否正常運作？
 

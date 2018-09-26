@@ -70,11 +70,15 @@ _**上次修改主題的時間：** 2014-06-09_
 
 未限定範圍的頂層角色沒有上層角色。您需要指定 *UnscopedTopLevel* 參數來建立沒有上層的角色。使用下列語法建立新角色。
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 此範例會建立 IT 指令碼未限定範圍的頂層角色。
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 建立角色之後，在新增指令碼或非 Exchange Cmdlet 給角色之前，角色都是空的。
 
@@ -90,11 +94,15 @@ _**上次修改主題的時間：** 2014-06-09_
 
 將指令碼複製至適當的 Exchange 2013 伺服器並決定要使用的指令碼參數後，可使用下列語法建立角色項目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 此範例會將 BulkProvisionUsers.ps1 指令碼以及 *Name* 和 *Location* 參數新增至 IT Scripts 角色。
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 
 > [!NOTE]  
@@ -113,11 +121,15 @@ _**上次修改主題的時間：** 2014-06-09_
 
 在您於適當的 Windows 伺服器上安裝包含 Cmdlet 的 Exchange 2013 PowerShell 嵌入式管理單元，並決定應該使用哪些 Cmdlet 參數之後，可使用以下語法建立角色項目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 此範例會將 Contoso.Admin.Cmdlets 嵌入式管理單元中的 **Set-WidgetConfiguration** Cmdlet 以及 *Database* 和 *Size* 參數新增至 Widget Cmdlets 角色。
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 
 > [!NOTE]  
@@ -162,11 +174,15 @@ _**上次修改主題的時間：** 2014-06-09_
 
 使用下列語法建立新角色。
 
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```powershell
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```
 
 此範例會將 IT 全域指令碼角色及其管理角色項目複製到診斷 IT 指令碼角色。
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd298073\(v=exchg.150\))。
 

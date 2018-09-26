@@ -49,7 +49,9 @@ Exchange 系統管理中心 (EAC) 是在 Exchange Server 2013 中的 web 式管�
 
 此範例將以格式化清單來傳回 ECP 虛擬目錄名稱、內部 URL 以及外部 URL。
 
-    Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```powershell
+Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```
 
 當命令完成時，使用網頁瀏覽器中的 *InternalURL* 或 *ExternalURL* 值來啟動 EAC。
 

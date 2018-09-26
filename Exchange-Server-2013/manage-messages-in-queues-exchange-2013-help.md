@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_<strong>適用版本：</strong> Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_<strong>上次修改主題的時間：</strong> 2014-05-07_
+_**上次修改主題的時間：** 2014-05-07_
 
 在 Microsoft Exchange Server 2013 中，您可以使用 Exchange 工具箱中的佇列檢視器或 Exchange 管理命令介面來管理佇列中的郵件。如需在 Exchange 管理命令介面中使用郵件管理指令程式的相關資訊，請參閱[使用 Exchange 管理命令介面管理佇列](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md)。
 
@@ -46,11 +46,11 @@ _<strong>上次修改主題的時間：</strong> 2014-05-07_
 
 2.  在 \[郵件流程工具\] 區段下，按兩下 \[佇列檢視器\]，在新視窗中開啟工具。
 
-3.  在佇列檢視器中，按一下 \[郵件\] 索引標籤。畫面會顯示所連線之伺服器上所有郵件的清單。若要調整單一佇列的動作，請按一下 <strong>\[佇列\]</strong> 索引標籤，連按兩下佇列名稱，再按一下出現的 *\[服器佇列\]* 索引標籤。
+3.  在佇列檢視器中，按一下 \[郵件\] 索引標籤。畫面會顯示所連線之伺服器上所有郵件的清單。若要調整單一佇列的動作，請按一下 **\[佇列\]** 索引標籤，連按兩下佇列名稱，再按一下出現的 *\[服器佇列\]* 索引標籤。
 
-4.  選取清單中的一或多則郵件，按一下滑鼠右鍵，然後選取 <strong>\[移除郵件 (含未傳遞回報 (NDR))\]</strong> 或 <strong>\[移除郵件 (不含未傳遞回報 (NDR))\]</strong>。此時會出現一個對話方塊，確認選取的動作並顯示 \[您要繼續嗎?\]按一下 <strong>\[是\]</strong>。
+4.  選取清單中的一或多則郵件，按一下滑鼠右鍵，然後選取 **\[移除郵件 (含未傳遞回報 (NDR))\]** 或 **\[移除郵件 (不含未傳遞回報 (NDR))\]**。此時會出現一個對話方塊，確認選取的動作並顯示 \[您要繼續嗎?\]按一下 **\[是\]**。
 
-5.  若要移除特定佇列中的所有郵件，請按一下 \[佇列\] 索引標籤。選取一個佇列，按一下滑鼠右鍵，然後選取 <strong>\[移除郵件 (含未傳遞回報 (NDR))\]</strong> 或 <strong>\[移除郵件 (不含未傳遞回報 (NDR))\]</strong>。此時會出現一個對話方塊，確認選取的動作並顯示 <strong>\[您要繼續嗎?\]</strong>按一下 <strong>\[是\]</strong>。
+5.  若要移除特定佇列中的所有郵件，請按一下 \[佇列\] 索引標籤。選取一個佇列，按一下滑鼠右鍵，然後選取 **\[移除郵件 (含未傳遞回報 (NDR))\]** 或 **\[移除郵件 (不含未傳遞回報 (NDR))\]**。此時會出現一個對話方塊，確認選取的動作並顯示 **\[您要繼續嗎?\]**按一下 **\[是\]**。
     
     > [!NOTE]  
     > 若您使用的是篩選過的清單，則所顯示的頁面可能不會包括篩選器中的所有項目。在這種情況下會出現下列提示：<strong>此動作將影響這個頁面上的所有項目。若要擴充此動作的範圍以納入此篩選中所有的項目，請先核取下列方塊，然後按一下 [確定]。</strong>
@@ -60,15 +60,21 @@ _<strong>上次修改主題的時間：</strong> 2014-05-07_
 
 若要從佇列移除郵件，請使用下列語法。
 
-    Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```powershell
+Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```
 
 此範例會移除佇列中主旨為「Win Big」的郵件，但不傳送 NDR。
 
-    Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```powershell
+Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```
 
 此範例會從 Mailbox01 伺服器上無法存取的佇列中移除郵件 ID 為 3 的郵件，並傳送 NDR。
 
-    Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```powershell
+Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```
 
 ## 如何知道這是否正常運作？
 
@@ -76,7 +82,7 @@ _<strong>上次修改主題的時間：</strong> 2014-05-07_
 
   - 在佇列檢視器中，選取佇列或建立篩選器，確認郵件已不再存在。
 
-  - 使用 <strong>Get-Message</strong> 指令程式搭配 *Queue* 或 *Filter* 參數，確認郵件已不再存在。如需詳細資訊，請參閱 [Get-Message](https://technet.microsoft.com/zh-tw/library/bb124738\(v=exchg.150\))。
+  - 使用 **Get-Message** 指令程式搭配 *Queue* 或 *Filter* 參數，確認郵件已不再存在。如需詳細資訊，請參閱 [Get-Message](https://technet.microsoft.com/zh-tw/library/bb124738\(v=exchg.150\))。
 
 ## 移除佇列中的郵件
 
@@ -106,15 +112,21 @@ _<strong>上次修改主題的時間：</strong> 2014-05-07_
 
 若要繼續傳送郵件，請使用下列語法：
 
-    Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 此範例會繼續 Contoso.com 網域中從任何寄件者傳送的所有郵件。
 
-    Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 此範例會繼續伺服器 Hub01 上無法存取之佇列中訊息識別碼為 3 的郵件。
 
-    Resume-Message -Identity Hub01\Unreachable\3
+```powershell
+Resume-Message -Identity Hub01\Unreachable\3
+```
 
 若要重新提交有害郵件佇列中的郵件，請執行下列其中一個步驟：
 
@@ -124,13 +136,13 @@ _<strong>上次修改主題的時間：</strong> 2014-05-07_
 
   - 在佇列檢視器中，選取佇列或建立篩選器，確認郵件不再擱置。
 
-  - 使用 <strong>Get-Message</strong> 指令程式搭配 *Queue* 或 *Filter* 參數，確認郵件不再擱置。如需詳細資訊，請參閱 [Get-Message](https://technet.microsoft.com/zh-tw/library/bb124738\(v=exchg.150\))。
+  - 使用 **Get-Message** 指令程式搭配 *Queue* 或 *Filter* 參數，確認郵件不再擱置。如需詳細資訊，請參閱 [Get-Message](https://technet.microsoft.com/zh-tw/library/bb124738\(v=exchg.150\))。
 
 請注意，如果在伺服器上的任何佇列中找不到此郵件，這可能表示此郵件已成功傳遞至下一個躍點。
 
 ## 擱置佇列中的郵件
 
-擱置郵件時可以防止傳遞郵件。出現在佇列中但正在傳遞的郵件將無法擱置。傳遞將會繼續，而且郵件的狀態會是 <strong>PendingSuspend</strong>。如果傳遞失敗，郵件將會重新進入佇列，然後郵件會被擱置。您無法擱置提交佇列或有害郵件佇列中的郵件。
+擱置郵件時可以防止傳遞郵件。出現在佇列中但正在傳遞的郵件將無法擱置。傳遞將會繼續，而且郵件的狀態會是 **PendingSuspend**。如果傳遞失敗，郵件將會重新進入佇列，然後郵件會被擱置。您無法擱置提交佇列或有害郵件佇列中的郵件。
 
 正要傳送給多位收件者的訊息可能會在多個佇列中。若要在單一作業中擱置位於多個佇列中的郵件，您必須使用篩選器。
 
@@ -148,15 +160,21 @@ _<strong>上次修改主題的時間：</strong> 2014-05-07_
 
 若要擱置郵件，請使用下列語法：
 
-    Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 此範例會擱置佇列中來自 contoso.com 網域之任何寄件者的所有郵件。
 
-    Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 此範例會擱置 Mailbox01 伺服器上無法存取之佇列中郵件識別碼為 3 的郵件：
 
-    Suspend-Message -Identity Mailbox01\Unreachable\3
+```powershell
+Suspend-Message -Identity Mailbox01\Unreachable\3
+```
 
 ## 如何知道這是否正常運作？
 
@@ -164,5 +182,5 @@ _<strong>上次修改主題的時間：</strong> 2014-05-07_
 
   - 在佇列檢視器中，選取佇列或建立篩選器，確認郵件已擱置。
 
-  - 使用 <strong>Get-Message</strong> 指令程式搭配 *Queue* 或 *Filter* 參數，確認郵件已擱置。如需詳細資訊，請參閱 [Get-Message](https://technet.microsoft.com/zh-tw/library/bb124738\(v=exchg.150\))。
+  - 使用 **Get-Message** 指令程式搭配 *Queue* 或 *Filter* 參數，確認郵件已擱置。如需詳細資訊，請參閱 [Get-Message](https://technet.microsoft.com/zh-tw/library/bb124738\(v=exchg.150\))。
 

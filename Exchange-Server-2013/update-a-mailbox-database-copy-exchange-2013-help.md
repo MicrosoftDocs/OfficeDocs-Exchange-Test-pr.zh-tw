@@ -99,45 +99,63 @@ _**上次修改主題的時間：** 2012-11-02_
 
 本範例會示範如何植入 MBX1 上資料庫 DB1 的複本。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 本範例會示範如何植入資料庫 DB1 的副本 MBX1 上使用植入來源信箱伺服器 MBX2。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```
 
 本範例會示範如何不含植入內容索引類別目錄植入 MBX1 上資料庫 DB1 的複本。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```
 
 本範例會示範如何植入內容索引類別目錄 MBX1 上資料庫 DB1 副本沒有植入資料庫檔案。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 ## 手動複製離線的資料庫
 
 1.  如果爲資料庫啟用循環記錄，則在繼續之前必須將其停用。您可以使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\)) 指令程式來停用信箱資料庫的循環記錄，如此範例中所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 2.  卸載資料庫。您可以使用[Dismount-Database](https://technet.microsoft.com/zh-tw/library/bb124936\(v=exchg.150\))指令程式，此範例所示。
     
-        Dismount-Database DB1 -Confirm $false
+    ```powershell
+    Dismount-Database DB1 -Confirm $false
+    ```
 
 3.  手動將資料庫檔案 （資料庫檔案與所有記錄檔） 複製到第二個位置，例如外部的磁碟機或網路共用。
 
 4.  裝載的資料庫。您可以使用[Mount-Database](https://technet.microsoft.com/zh-tw/library/aa998871\(v=exchg.150\))指令程式，此範例所示。
     
-        Mount-Database DB1
+    ```powershell
+    Mount-Database DB1
+    ```
 
 5.  在伺服器上主控之複本，複製資料庫檔案的外部的磁碟機或網路共用相同路徑為作用中資料庫副本。例如，如果作用中副本的資料庫路徑是 D:\\DB1\\DB1.edb 及記錄檔路徑是 D:\\DB1，您將資料庫將檔案複製到 D:\\DB1 主控之複本的伺服器上。
 
 6.  此範例所示使用*SeedingPostponed*參數使用[Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-tw/library/dd298105\(v=exchg.150\))指令程式新增信箱資料庫副本。
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```powershell
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```
 
 7.  如果資料庫啟用循環記錄，啟用它再次使用[Set-MailboxDatabase](https://technet.microsoft.com/zh-tw/library/bb123971\(v=exchg.150\))指令程式，此範例所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 ## 如何知道這是否正常運作？
 
@@ -147,7 +165,9 @@ _**上次修改主題的時間：** 2012-11-02_
 
   - 在命令介面中執行下列命令來確認信箱資料庫副本成功植入且狀況良好。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     狀態與內容索引狀態皆應為 \[正常\]。
 

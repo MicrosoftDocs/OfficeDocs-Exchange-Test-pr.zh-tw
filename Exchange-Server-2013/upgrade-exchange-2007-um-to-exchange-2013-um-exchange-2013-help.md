@@ -57,7 +57,9 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 此範例使用 setup.exe 來安裝日文 (ja-JP) UM 語言套件。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## 步驟 2： 將 Exchange 2007 的自訂問候語、 宣告、 功能表及提示移至 Exchange 2013 系統信箱
 
@@ -67,11 +69,15 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 此命令會傳回所有系統信箱的清單。
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 此命令會傳回系統信箱的清單，以及其個別內容或設定。
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 當您正在匯入的自訂問候語、 宣告、 功能表及提示從 Exchange 2007 到 Exchange 2013 時，您必須使用 MigrateUMCustomPrompts.ps1 指令碼。您無法使用 EAC 匯入的自訂問候語、 宣告、 功能表及提示。MigrateUMCustomPrompts.ps1 指令碼會將一份所有的 Exchange Server 2007 UM 自訂問候語、 宣告、 功能表及提示移轉至 Exchange 2013 UM。根據預設，MigrateUMCustomPrompts.ps1 指令碼位於 Exchange 2013 Mailbox server 上的*\<Program Files\>*\\Microsoft\\Exchange Server\\V15\\Scripts 資料夾而必須執行從 Exchange 2013 Mailbox server。執行指令碼：
 
@@ -126,9 +132,9 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
     > 使用 EAC 建立憑證時，不會收到要您啟用憑證服務的提示。憑證建立好後，即可使用 EAC 來啟用服務。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
     
     在命令介面中執行下列命令，來建立 Exchange 自我簽署憑證。
-    
+    ```powershell
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-    
+    ```
     > [!TIP]  
 	> 如果您使用 <em>Services</em> 參數指定要啟用的服務，將會收到要您啟用所建立憑證之服務的提示。在此範例中，您會收到要您啟用憑證的整合通訊及整合通訊呼叫路由器服務的提示。如需如何啟用憑證服務的詳細資訊，請參閱<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">將憑證指派給 UM 及 UM 呼叫路由器服務</a>。
 
@@ -144,9 +150,9 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
     2.  在 **\[程序\]** 頁面上，依序選取 **\[服務\]**、**\[整合通訊\]** 和 **\[整合通訊呼叫路由器\]**。
     
     在命令介面中執行下列命令，來啟用 Exchange 自我簽署憑證。
-    
+    ```powershell
         Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
-
+    ```
   - 將任何新的或現有的 UM 撥號對應表設定為「SIP 安全」或「安全」。
 
   - 在您組織的 Client Access Server 及 Mailbox Server 上，將 UM 啟動模式設定為 TLS 或雙重。
@@ -181,7 +187,9 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 
 在命令介面中執行下列命令，於 Exchange 2013 Client Access Server 上設定 UM 啟動模式。
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## 步驟 5： 在所有 Exchange 2013 Mailbox server 上設定 UM 啟動模式
 
@@ -206,9 +214,9 @@ UM 語言套件可讓來電者和 Outlook 語音存取使用者，以多種語�
 5.  選取 UM 啟動模式之後，按一下 **\[儲存\]**。
 
 在命令介面中執行下列命令，於 Exchange 2013 Mailbox Server 上設定 UM 啟動模式。
-
+```powershell
     Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
-
+```
 ## 步驟 6︰ 建立或設定現有的 UM 撥號計劃
 
 依據您現有的 Exchange 2007 部署，您可能需要建立新的 UM 撥號或設定現有的撥號計劃。UM 撥號對應表代表繁體中文或已啟用 SIP 的專用交換機 (Pbx)、 IP Pbx 或已啟用 SIP 的 Pbx 共用一般使用者的分機號碼的一組。繁體中文或已啟用 SIP 的 Pbx 或 IP Pbx 上常駐撥號對應表的所有使用者的分機包含相同數目的數字。使用者可以撥打彼此的電話分機而擴充附加的特殊的數字或完整的電話號碼來撥號。
@@ -241,7 +249,9 @@ UM 撥號對應表會用於整合通訊以確保使用者電話分機是唯一�
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 撥號對應表。
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 如有需要，您可以使用 EAC 來設定現有的 UM 撥號對應表：
 
@@ -252,9 +262,9 @@ UM 撥號對應表會用於整合通訊以確保使用者電話分機是唯一�
 3.  在 \[UM 撥號對應表\] 頁面上，按一下 \[設定\]。使用組態選項來檢視特定的撥號對應表設定，以及啟用或停用功能。
 
 如有需要，您可以在命令介面中執行下列命令來設定現有的 UM 撥號對應表。
-
+```powershell
     Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
-
+```
 當您部署 Exchange 2007 整合通訊時，您將需要將整合通訊伺服器新增至 UM 撥號對應其接聽來電。這是不再需要。在 Exchange 2013 用戶端存取和信箱伺服器無法連結與電話分機號碼或 E.164 撥號對應表，但必須連結至 SIP URI 撥號對應表。用戶端存取和信箱伺服器會回應所有的傳入呼叫所有類型的撥號對應表。
 
 ## 步驟 7： 建立或設定現有的 UM IP 閘道
@@ -285,7 +295,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM IP 閘道。
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 如有需要，您可以使用 EAC 來設定現有的 UM IP 閘道：
 
@@ -294,9 +306,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 2.  在 **\[UM IP 閘道器\]** 頁面上，按一下 **\[設定\]**。使用組態選項來檢視特定的 UM IP 閘道器設定，以及啟用或停用功能。
 
 如有需要，您可以在命令介面中執行下列命令來設定現有的 UM IP 閘道。
-
+```powershell
     Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
-
+```
 ## 步驟 8： 建立 UM 群組搜尋
 
 依據您現有的 Exchange 2007 部署，您可能需要建立新 UM 群組搜尋。電話語音群組搜尋提供一種方式來散佈至多個副檔名的電話通話從單一數字或電話號碼。整合通訊中 UM 群組搜尋群組的電話語音搜尋，以邏輯方式呈現，且其連結至 UM 撥號對應表 UM IP 閘道器。
@@ -320,9 +332,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 4.  按一下 **\[儲存\]**。
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 群組搜尋。
-
+```powershell
     New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
-
+```
 
 > [!TIP]  
 > 您無法設定或變更 UM 群組搜尋的設定。如果想要變更 UM 群組搜尋的組態設定，您必須刪除它，然後利用正確設定來新增 UM 群組搜尋。
@@ -360,9 +372,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 4.  按一下 **\[儲存\]**。
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 自動語音應答。
-
+```powershell
     New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
-
+```
 如有需要，您可以使用 EAC 來設定現有的自動語音應答：
 
 1.  在 EAC 中，瀏覽至 **\[整合通訊\]** \> **\[UM 撥號對應表\]**，然後按一下 **\[編輯\]**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
@@ -370,9 +382,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 2.  在 **\[UM 撥號對應表\]** 頁面的 **\[UM 自動語音應答\]** 下，選取您要檢視或設定的 UM 自動語音應答，然後按一下 **\[編輯\]**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。使用組態選項來檢視特定的自動語音應答設定，以及啟用或停用功能。
 
 如有需要，您可以在命令介面中執行下列命令來設定現有的自動語音應答。
-
+```powershell
     Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
-
+```
 ## 步驟 10： 建立或設定 UM 信箱原則
 
 依據您現有的 Exchange 2007 部署，您可能需要建立新的 UM 信箱原則或設定現有的 UM 信箱原則。當您啟用使用者的整合通訊 UM 信箱原則是必要的。每個已啟用 UM 之使用者的信箱必須連結至單一的 UM 信箱原則。建立 UM 信箱原則之後，您會連結至 UM 信箱原則的一或多個已啟用 UM 的信箱。這可讓您控制 PIN 安全性設定，例如 PIN 的數字數目最小值或連結到的 UM 信箱原則的 UM 啟用使用者的登入嘗試的數目上限。如需詳細資訊，請參閱[UM 信箱原則](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)。
@@ -397,7 +409,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 如有需要，您可以在命令介面中執行下列命令來建立 UM 信箱原則。
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 如有需要，您可以使用 EAC 來設定現有的 UM 信箱原則：
 
@@ -406,9 +420,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 2.  在 **\[UM 撥號對應表\]** 頁面的 **\[UM 信箱原則\]** 下，選取您要檢視或設定的 UM 信箱原則，然後按一下 **\[編輯\]**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。使用組態選項來檢視特定的 UM 信箱原則設定，以及啟用或停用功能。
 
 如有需要，您可以在命令介面中執行下列命令來設定現有的 UM 信箱原則。
-
+```powershell
     Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
-
+```
 ## 步驟 11： 將現有的啟用 UM 的信箱移至 Exchange 2013
 
 在 Exchange 2007 Unified Messaging 後已啟用組織內的使用者使用 \[語音信箱、 一組預設 UM 屬性會套用至使用者，以便他們可以使用 UM 功能。如需詳細資訊，請參閱[使用者的語音信箱](https://docs.microsoft.com/zh-tw/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)。
@@ -435,7 +449,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 
 若要使用命令介面將 Exchange 2007 信箱移至 Exchange 2013 Mailbox Server，請執行下列命令。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## 步驟 12： 新的使用者啟用 um，或設定現有已啟用 UM 之使用者的設定
 
@@ -472,9 +488,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 6.  在 \[啟用 UM 信箱\] 頁面上，檢閱您的設定。按一下 **\[完成\]**，讓使用者啟用整合通訊。按一下 **\[上一步\]** 可以變更組態。
 
 在命令介面中對使用者啟用整合通訊，請執行下列命令。
-
+```powershell
     Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
-
+```
 如有需要，您可以使用 EAC 來設定已啟用 UM 的使用者：
 
 1.  在 EAC 中，瀏覽至 \[收件者\] \> \[信箱\]。
@@ -502,9 +518,9 @@ UM IP 閘道器代表實體 VoIP (Voice over IP) 閘道、IP PBX 或已啟用 SI
 6.  如果您做了任何變更，請按一下 \[儲存\]。
 
 如有需要，您可以在命令介面中執行下列命令來設定已啟用 UM 的使用者：
-
+```powershell
     Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
-
+```
 ## 步驟 13： 設定 VoIP 閘道、 IP Pbx 及已啟用 SIP 的 pbx 設定為傳送所有來電至 Exchange 2013 Client Access server
 
 Exchange 2013 Client Access Server 及 Mailbox Server 會在安裝時自動啟用，以便可以接聽撥入及撥出的語音電話，並將語音信箱訊息路由傳送至預定的收件者。您在安裝 Exchange 2013 Client Access Server 及 Mailbox Server 以及部署整合通訊時，不需要將 Exchange 2013 Client Access Server 或 Mailbox Server 連結或新增至 UM 撥號對應表。Exchange 2013 Client Access Server 和 Mailbox Server 會於接聽來電後，使用 UM 撥號對應表找出使用者。
@@ -541,7 +557,9 @@ Exchange 2013 Client Access Server 是任何來電或整合通訊之工作階段
 
 若要使用命令介面來停用 Exchange 2007 UM Server 上的整合通訊，請執行下列命令：
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 
 > [!TIP]  
@@ -569,19 +587,23 @@ Exchange 2013 Client Access Server 是任何來電或整合通訊之工作階段
 6.  按一下 **\[確定\]** 關閉內容視窗。
 
 若要使用命令介面從撥號對應表中移除 Exchange 2007 UM Server，請執行下列命令：
-
+```powershell
     $dp= Get-UMDialPlan "MySIPDialPlan"
     $s=Get-UMServer -id MyUMServer
     $s.dialplans-=$dp.identity
     Set-UMServer -id MyUMServer -dialplans:$s.dialplans
-
+```
 此範例中有三個 SIP URI 撥號對應表：SipDP1、SipDP2 及 SipDP3。此範例會從 SipDP3 撥號對應表中移除名為 `MyUMServer` 的 UM Server。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 此範例中有兩個 SIP URI 撥號對應表：SipDP1 及 SipDP2。此範例會從 SipDP2 撥號對應表中移除名為 `MyUMServer` 的 UM Server。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 
 > [!TIP]  

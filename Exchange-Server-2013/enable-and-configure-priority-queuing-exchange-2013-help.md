@@ -44,25 +44,31 @@ _**上次修改主題的時間：** 2014-12-16_
 
 1.  在命令提示字元視窗中執行下列命令，即可在記事本中開啟 EdgeTransport.exe.config 應用程式組態檔：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  在 `<appSettings>` 區段中尋找下列機碼。
     
-        <add key="PriorityQueuingEnabled" value="false" />
-        <add key="MaxPerDomainHighPriorityConnections" value="3" />
-        <add key="MaxPerDomainNormalPriorityConnections" value="15" />
-        <add key="MaxPerDomainLowPriorityConnections" value="2" />
-        <add key="HighPriorityMessageExpirationTimeout" value="8:00:00" />
-        <add key="NormalPriorityMessageExpirationTimeout" value="2.00:00:00" />
-        <add key="LowPriorityMessageExpirationTimeout" value="2.00:00:00" />
-        <add key="HighPriorityDelayNotificationTimeout" value="00:30:00" />
-        <add key="NormalPriorityDelayNotificationTimeout" value="4:00:00" />
-        <add key="LowPriorityDelayNotificationTimeout" value="8:00:00" />
-        <add key="MaxHighPriorityMessageSize" value="250KB" />
+    ```powershell
+    <add key="PriorityQueuingEnabled" value="false" />
+    <add key="MaxPerDomainHighPriorityConnections" value="3" />
+    <add key="MaxPerDomainNormalPriorityConnections" value="15" />
+    <add key="MaxPerDomainLowPriorityConnections" value="2" />
+    <add key="HighPriorityMessageExpirationTimeout" value="8:00:00" />
+    <add key="NormalPriorityMessageExpirationTimeout" value="2.00:00:00" />
+    <add key="LowPriorityMessageExpirationTimeout" value="2.00:00:00" />
+    <add key="HighPriorityDelayNotificationTimeout" value="00:30:00" />
+    <add key="NormalPriorityDelayNotificationTimeout" value="4:00:00" />
+    <add key="LowPriorityDelayNotificationTimeout" value="8:00:00" />
+    <add key="MaxHighPriorityMessageSize" value="250KB" />
+    ```
     
     若要在 Mailbox Server 的傳輸服務中啟用優先佇列，請使用下列值：
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```powershell
+    <add key="PriorityQueuingEnabled" value="true" />
+    ```
     
     設定剩餘的優先佇列值，或讓它們沿用預設值。
 
@@ -70,7 +76,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 4.  執行下列命令，以重新啟動 Microsoft Exchange 傳輸服務：
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 如何才能了解這是否正常運作？
 

@@ -51,11 +51,15 @@ _**上次修改主題的時間：** 2014-02-17_
 
 這個範例停用 OrgID，並停用 Exchange 組織的同盟及同盟共用。
 
-    Set-FederatedOrganizationIdentifier -Enabled $false
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $false
+```
 
 這個範例啟用 OrgID，並重新啟用 Exchange 組織的同盟及同盟共用。
 
-    Set-FederatedOrganizationIdentifier -Enabled $true
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/zh-tw/library/dd351037\(v=exchg.150\))。
 
@@ -65,7 +69,9 @@ _**上次修改主題的時間：** 2014-02-17_
 
 若要進一步確認成功，請執行下列命令介面，並確認 *Enabled* 參數的傳回值
 
-    Get-FederatedOrganizationIdentifier
+```powershell
+Get-FederatedOrganizationIdentifier
+```
 
 
 > [!TIP]  

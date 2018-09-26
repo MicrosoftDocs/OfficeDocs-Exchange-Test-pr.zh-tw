@@ -63,7 +63,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本範例啟用傳輸解密Exchange 2013組織。要拒絕無法解密的郵件的郵件和 NDR 傳回給傳送者。
 
-    Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 
@@ -71,7 +73,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本範例會停用傳輸解密Exchange 2013組織。
 
-    Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 

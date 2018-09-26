@@ -63,11 +63,15 @@ _**上次修改主題的時間：** 2015-09-30_
 
 這個範例會啟用 Ben Smith 信箱的信箱稽核記錄。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```
 
 這個範例會停用 Ben Smith 信箱的信箱稽核記錄。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 
@@ -77,15 +81,21 @@ _**上次修改主題的時間：** 2015-09-30_
 
 這個範例指定會為 Ben Smith 信箱記錄委派使用者執行的 `SendAs` 或 `SendOnBehalf` 動作。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```
 
 這個範例指定會為 Ben Smith 的信箱記錄系統管理員執行的 `MessageBind` 和 `FolderBind` 動作。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```
 
 這個範例指定將會為 Ben Smith 信箱記錄信箱擁有者執行的 `HardDelete` 動作。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\))。
 
@@ -95,5 +105,7 @@ _**上次修改主題的時間：** 2015-09-30_
 
 此範例會擷取 Ben Smith 的信箱設定，並將指定的稽核設定 (包括稽核記錄保留天數) 傳送至 **Format-List** Cmdlet。
 
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+```powershell
+Get-Mailbox "Ben Smith" | Format-List *audit*
+```
 

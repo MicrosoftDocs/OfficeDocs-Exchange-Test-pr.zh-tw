@@ -94,7 +94,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
 4.  您需要有**PAW**啟用您的 Office 365 租用戶移轉功能。若要確認此，請在 Exchange Online PowerShell 中執行下列命令：
     
-        Get-MigrationConfig
+    ```powershell
+    Get-MigrationConfig
+    ```
     
     如果**功能**下的輸出會列出**PAW**，則會啟用的功能和您可以繼續*步驟 3： 建立.csv 檔案*。
     
@@ -110,13 +112,17 @@ _**上次修改主題的時間：** 2018-04-30_
 
   - **TargetGroupMailbox**。Office 365 中的目標群組的 SMTP 地址。您可以執行下列命令，請參閱的主要 SMTP 位址。
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+    Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```
 
 範例.csv：
 
-    "FolderPath","TargetGroupMailbox"
-    "\Sales","sales@contoso.onmicrosoft.com"
-    "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+```powershell
+"FolderPath","TargetGroupMailbox"
+"\Sales","sales@contoso.onmicrosoft.com"
+"\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+```
 
 請注意的郵件資料夾和行事曆\] 資料夾可被合併到 Office 365 中的單一群組。不過，合併成一個群組的多個公用資料夾的任何其他案例不支援內的單一遷移批次。如果您需要將多個公用資料夾對應至相同的 Office 365 群組，您可以完成這個動作執行不同的移轉批次，應該要執行連續、 之後彼此。您可以在每一個遷移批次中有最多 500 個項目。
 
@@ -130,38 +136,53 @@ _**上次修改主題的時間：** 2018-04-30_
     
     1.  尋找**LegacyExchangeDN**輸入下列命令來為公用資料夾系統管理員角色成員的使用者帳戶。請注意這個相同的使用者需要更新版本中，在此程序的步驟 3 中的認證。
         
-            Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```powershell
+        Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```
     
     2.  輸入下列命令，以尋找任何具有公用資料夾資料庫的 mailbox server 的 LegacyExchangeDN：
         
-            Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```powershell
+        Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```
     
     3.  找出 「 Outlook 無所不在 」 主機 Fully-Qualified 網域名稱 (FQDN)。這是外部主機名稱。如果您有多個執行個體的 「 Outlook 無所不在 」，我們建議您選取為最接近之遷移端點至其中一個或一個組織的 Exchange Server 2010 中的公用資料夾複本到最接近的執行個體。下列命令將會尋找 「 Outlook 無所不在 」 的所有執行個體：
         
-            Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```powershell
+        Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```
 
 2.  在Exchange Online PowerShell，使用步驟 1 到執行下列命令中上面所傳回的資訊。這些命令中的變數會是步驟 1 中的值。
     
     1.  在 Exchange 2010 環境中的使用管理員權限的使用者認證傳遞至變數`$Source_Credential`中。當您最後執行遷移要求在 Exchange Online 時，您會使用此認證以透過 Outlook 無所不在 」 在 Exchange 2010 伺服器存取時會才能透過複製內容。
         
-            $Source_Credential = Get-Credential
-            <source_domain>\<PublicFolder_Administrator_Account>
+        ```powershell$Source_Credential = Get-Credential
+        <source_domain>\<PublicFolder_Administrator_Account>
+        ```
     
     2.  您在步驟 1a 中找到上方並將該值傳至變數`$Source_RemoteMailboxLegacyDN`舊版 Exchange 伺服器上使用之遷移使用者的 ExchangeLegacyDN。
         
-            $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```powershell
+        $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```
     
     3.  使用您在上述步驟 1b 中找到上方並將該值傳至變數`$Source_RemotePublicFolderServerLegacyDN`之公用資料夾伺服器的 ExchangeLegacyDN。
         
-            $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+        ```powershell
+        $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+        ```
     
     4.  使用外部主機名稱的 Outlook 無所不在 」 在步驟 1 c 上述傳回並將該值傳至變數`$Source_OutlookAnywhereExternalHostName`。
         
-            $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```powershell
+        $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```
 
 3.  在Exchange Online PowerShell，執行下列命令來建立遷移端點：
     
-        $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+    ```powershell
+    $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+    ```
 
 4.  執行下列命令以建立新公用資料夾至 Office 365 群組遷移批次。在此命令：
     
@@ -175,11 +196,15 @@ _**上次修改主題的時間：** 2018-04-30_
     
     <!-- end list -->
     
-        New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+    ```powershell
+    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+    ```
 
 5.  Exchange Online PowerShell中執行下列命令來啟動移轉。請注意這是必要步驟只有在`-AutoStart`參數已無法使用時在步驟 4 中建立的批次以上。
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+    Start-MigrationBatch PublicFolderToGroupMigration
+    ```
 
 雖然批次移轉需要建立Exchange Online PowerShell中使用`New-MigrationBatch`指令程式，可以檢視及Exchange 系統管理中心中受管理移轉的進度。您也可以藉由執行[Get-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219164\(v=exchg.150\))和[Get-MigrationUser](https://technet.microsoft.com/zh-tw/library/jj218702\(v=exchg.150\))指令程式檢視移轉的進度。`New-MigrationBatch`指令程式會移轉使用者的每個 Office 365 群組信箱，且您可以檢視信箱移轉\] 頁面上使用這些要求的狀態。
 
@@ -209,7 +234,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
 <!-- end list -->
 
-    .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 一旦使用者已新增至 Office 365 中的群組，他們可以開始使用它。
 
@@ -236,13 +263,17 @@ _**上次修改主題的時間：** 2018-04-30_
 
 <!-- end list -->
 
-    .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 ## 步驟 7： 完成公用資料夾至 Office 365 群組移轉
 
 您的公用資料夾進行唯讀之後，您需要重新執行移轉。這是必要資料的最終累加複本。您可以執行一次移轉之前，您必須移除現有的批次，您可以執行下列命令：
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 下一步\] 建立新的批次以相同的.csv 檔案執行下列命令。在此命令：
 
@@ -254,11 +285,15 @@ _**上次修改主題的時間：** 2018-04-30_
 
 <!-- end list -->
 
-    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+```powershell
+New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+```
 
 建立新的批次之後，請Exchange Online PowerShell中執行下列命令來啟動移轉。請注意此步驟只需要是否`-AutoStart`參數是不在以上的命令。
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 完成此步驟 （批次狀態為**\[已完成**） 之後，確認所有的資料有已複製到 Office 365 群組。屆時，您必須是滿意群組經驗，即可開始刪除已移轉的公用資料夾從 Exchange 2010 環境。
 
@@ -439,7 +474,9 @@ _**上次修改主題的時間：** 2018-04-30_
 
 <!-- end list -->
 
-    .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 請注意任何項目新增至 Office 365\] 群組中或在群組中執行任何編輯作業不複製回您的公用資料夾。因此會有資料遺失，假設新資料已時新增的公用資料夾群組。
 

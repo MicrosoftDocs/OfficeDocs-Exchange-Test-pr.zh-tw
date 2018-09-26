@@ -54,11 +54,15 @@ _**上次修改主題的時間：** 2014-06-23_
 
 本範例執行名為 MBX1 之伺服器的伺服器轉換。系統會為 MBX1 上的每個作用中資料庫自動選取最佳的信箱伺服器。
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 本範例執行名為 MBX4 之信箱伺服器的伺服器轉換。當命令完成時，MBX5 會裝載先前於 MBX4 上作用的資料庫主動複本。
 
-    Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```powershell
+Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```
 
 如需詳細的語法及參數資訊，請參閱 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/zh-tw/library/dd298068\(v=exchg.150\))。
 

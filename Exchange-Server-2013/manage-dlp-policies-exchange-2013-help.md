@@ -73,7 +73,9 @@ DLP 相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-
 
 此範例會傳回與名為 Employee Numbers 的虛擬 DLP 原則有關的資訊。 此命令會透過管道傳送至 **Format-List** 指令程式，以顯示所指定 DLP 原則的詳細組態。
 
-    Get-DlpPolicy "Employee Numbers" | Format-List
+```powershell
+Get-DlpPolicy "Employee Numbers" | Format-List
+```
 
 如需語法及參數資訊，請參閱 [Get-DlpPolicy](https://technet.microsoft.com/zh-tw/library/jj215752\(v=exchg.150\))。
 
@@ -103,7 +105,9 @@ DLP 相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-
 
 您可以使用 Exchange 管理命令介面指定原則的動作和通知層級。 此範例會設定名為 Employee Numbers 的虛擬 DLP 原則的模式，如此便不會強制執行動作且不會顯示通知郵件。
 
-    Set-DlpPolicy "Employee Numbers" -Mode Audit
+```powershell
+Set-DlpPolicy "Employee Numbers" -Mode Audit
+```
 
 如需語法及參數資訊，請參閱 [Set-DlpPolicy](https://technet.microsoft.com/zh-tw/library/jj215778\(v=exchg.150\))。
 
@@ -123,7 +127,9 @@ DLP 相關的其他管理工作，請參閱[DLP 程序](dlp-procedures-exchange-
 
 此範例會移除名為 Employee Numbers 的虛擬 DLP 原則。
 
-    Remove-DlpPolicy "Employee Numbers"
+```powershell
+Remove-DlpPolicy "Employee Numbers"
+```
 
 如需語法及參數資訊，請參閱 [Remove-DlpPolicy](https://technet.microsoft.com/zh-tw/library/jj215677\(v=exchg.150\))。
 

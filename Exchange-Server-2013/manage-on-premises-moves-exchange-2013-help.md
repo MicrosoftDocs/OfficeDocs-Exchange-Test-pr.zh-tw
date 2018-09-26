@@ -52,7 +52,9 @@ _**上次修改主題的時間：** 2013-02-25_
 
 此範例會使用*WhatIf*參數測試 Tony Smith 之信箱是否已準備好要移至新的資料庫 DB01 和是否有任何命令中的錯誤。當您使用*WhatIf*參數時，系統會執行信箱上的檢查。如果信箱不是準備好要移動，您會收到錯誤。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219166\(v=exchg.150\)) 與 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
@@ -82,7 +84,9 @@ _**上次修改主題的時間：** 2013-02-25_
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -108,10 +112,10 @@ _**上次修改主題的時間：** 2013-02-25_
 ## 使用命令介面建立批次移動要求
 
 此範例會建立指定之的.csv 檔案的信箱移動至不同的信箱資料庫的本機移動遷移批次。此.csv 檔案包含單一欄包含每個要移動的信箱的電子郵件地址。**EmailAddress**檔案名稱為此資料行的標題。必須手動啟動遷移批次在此範例使用**Start-MigrationBatch**指令程式或 Exchange 系統管理中心 (EAC)。或者，您可以使用*AutoStart*參數為自動啟動遷移批次。
-```
+```powershell
 New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 ```
-```
+```powershell
 Start-MigrationBatch -Identity LocalMove1
 ```
 
@@ -125,7 +129,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -147,7 +153,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 本範例會將 Tony Smith 之主要信箱移至 DB01。封存並未移動。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
@@ -159,19 +167,21 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
 ## 使用 .csv 批次檔案來建立跨樹系移動
 
 此範例可設定遷移端點，並使用 .csv 檔案從來源樹系將跨樹系批次移動建立到目標樹系。
-
+```powershell
     New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
     
     $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
     New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
-
+```
 如需更多關於準備跨樹系移動的樹系資訊，請參閱以下主題：
 
   - [準備跨樹系移動要求的信箱](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md)
@@ -188,7 +198,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -206,7 +218,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 本範例會將 Tony Smith 的封存信箱移至 DB03。不移動主要信箱。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219166\(v=exchg.150\)) 與 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
@@ -216,16 +230,18 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
 ## 將使用者的主要信箱和封存信箱移至不同的資料庫
 
 此範例會將 Ayla 的主要信箱和封存信箱來分隔的資料庫。主要資料庫移至 DB01、 及封存會移至 DB03。
-
+```powershell
     New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
-
+```
 如需詳細的語法及參數資訊，請參閱 [New-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219166\(v=exchg.150\)) 與 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
 ## 如何才能了解這是否正常運作？
@@ -234,7 +250,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 
@@ -253,9 +271,9 @@ Start-MigrationBatch -Identity LocalMove1
 ## 使用命令介面移動使用者的主要信箱並允許較大的錯誤項目限制
 
 本範例會移動 Lisa 的主要信箱到信箱資料庫 DB01 並將錯誤項目設為`100`。若要設定的大型的錯誤項目限制，您必須使用*AcceptLargeDataLoss*參數。
-
+```powershell
     New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
-
+```
 如需詳細的語法及參數資訊，請參閱 [New-MigrationBatch](https://technet.microsoft.com/zh-tw/library/jj219166\(v=exchg.150\)) 與 [New-MoveRequest](https://technet.microsoft.com/zh-tw/library/dd351123\(v=exchg.150\))。
 
 ## 如何才能了解這是否正常運作？
@@ -264,7 +282,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 從介面執行下列命令，以擷取信箱移動資訊。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 如需詳細資訊，請參閱 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-tw/library/jj218695\(v=exchg.150\))。
 

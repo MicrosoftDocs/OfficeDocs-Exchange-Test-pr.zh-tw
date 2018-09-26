@@ -55,11 +55,15 @@ _**上次修改主題的時間：** 2012-10-17_
 
 使用下列語法建立新角色。
 
-    New-ManagementRole -Parent <existing role to copy> -Name <name of new role>
+```powershell
+New-ManagementRole -Parent <existing role to copy> -Name <name of new role>
+```
 
 此範例會將「郵件收件者」角色及其管理角色項目複製到「西雅圖收件者管理員」角色。
 
-    New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
+```powershell
+New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd298073\(v=exchg.150\))。
 

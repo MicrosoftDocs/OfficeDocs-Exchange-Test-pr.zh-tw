@@ -316,7 +316,9 @@ MAPI 網路介面卡的 TCP/IP v4 內容設定如下：
 
 針對 Outlook 無所不在用戶端，建議您在每個資料中心使用單一主體別名 (SAN) 憑證，並在憑證中加入多個主機名稱。若要在資料庫、伺服器或資料中心轉換後確保 Outlook 無所不在的連線能力，您必須在每個憑證上使用相同的憑證主體名稱，並在 Outlook 中以 Microsoft 標準表單 (msstd) 中相同的主體名稱來設定 Active Directory Provider Configuration 物件。例如，如果您使用憑證主體名稱 mail.contoso.com，則設定屬性的方式如下。
 
-    Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```powershell
+Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```
 
 與 Exchange 整合的某些應用程式可能有需要使用其他憑證的特定憑證需求。Exchange 2013 可以與 Office Communications Server (OCS) 共存。OCS 需要 1024 位元或更大的憑證，這些憑證會使用 OCS 伺服器名稱作為憑證主體名稱。使用 OCS 伺服器名稱作為憑證主體名稱會使 Outlook 無所不在無法正確運作，因此您需要在 OCS 環境使用額外和不同的憑證。
 

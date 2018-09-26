@@ -33,7 +33,9 @@ Exchange 2007 的安裝程式要求失敗的伺服器角色安裝都必須有成
 
 2.  執行下列命令：
     
-        Setup /roles:<Failed Server Role>
+    ```powershell
+    Setup /roles:<Failed Server Role>
+    ```
     
     選取一或多個以逗號分隔的清單中的下列角色：
     

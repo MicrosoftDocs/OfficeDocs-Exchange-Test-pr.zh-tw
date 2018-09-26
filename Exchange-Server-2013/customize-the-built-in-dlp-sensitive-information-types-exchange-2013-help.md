@@ -61,6 +61,7 @@ _<strong>上次修改主題的時間：</strong> 2016-05-26_
 
 3.  尋找<strong>Func\_credit\_card</strong>尋找信用卡號規則定義。（xml 規則名稱不得包含空格，因此通常具有底線取代空格和規則名稱有時候會縮寫。此範例是美國社會安全號碼規則，這是縮寫"SSN"。信用卡號規則 XML 應看來如下列程式碼範例。
     
+      ```xml
         <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
                patternsProximity="300" recommendedConfidence="85">
               <Pattern confidenceLevel="85">
@@ -72,7 +73,7 @@ _<strong>上次修改主題的時間：</strong> 2016-05-26_
                 </Any>
               </Pattern>
             </Entity>
-
+      ```
 既然您已在 XML 中找到信用卡號規則定義，您可以自訂以符合您需求的規則的 XML。（如重新整理程式在 XML 定義，請參閱本主題的結尾字詞字彙 （英文） ）。
 
 ## 修改 XML 並建立新的敏感資訊類型
@@ -81,6 +82,7 @@ _<strong>上次修改主題的時間：</strong> 2016-05-26_
 
 所有 XML 規則定義之內都建下列一般範本。您必須複製並貼信用卡號定義 XML 範本，修改某些 （請注意"...\\"版面配置區在下列範例） 的值，而然後將修改後的 XML 上傳新規則是可用於原則。
 
+  ```xml
     <?xml version="1.0" encoding="utf-16"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
       <RulePack id=". . .">
@@ -107,9 +109,10 @@ _<strong>上次修改主題的時間：</strong> 2016-05-26_
     
        </Rules>
     </RulePackage>
-
+  ```
 現在，您必須看起來類似下列 XML 程式碼所示的內容。因為其唯一 Guid 識別規則套件與規則，您需要產生兩個 Guid： 一個規則套件和應用程式，來取代信用卡號規則的 GUID。（如下列程式碼範例中的實體識別碼的 GUID 是您需要取代為一份新我們內建的規則定義，一種）。有數種方式來產生的 Guid，但是您可以進行輕鬆 PowerShell 輸入<strong>\[guid\]::NewGuid()</strong>。
 
+  ```xml
     <?xml version="1.0" encoding="utf-16"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
       <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
@@ -147,21 +150,23 @@ _<strong>上次修改主題的時間：</strong> 2016-05-26_
     
        </Rules>
     </RulePackage>
-
+  ```
 ## 佐證性證據需求移除機密資訊類型
 
 現在您有新的敏感資訊類型，您就可以將上傳至Exchange環境下, 一步就是讓更具體的規則。修改規則，讓它只會尋找 16 位數數字會傳遞總和檢查碼但不需要其他 （佐證性） 證據 （例如關鍵字）。為達成此目的，您需要移除尋找佐證性證據的 xml 組件。佐證性證據是非常實用中降低誤判因為通常有特定關鍵字\] 或 \[到期日附近信用卡號。如果您移除該證據，應調整方式有信心您是您透過降低<strong>confidenceLevel</strong>，這在範例 85 找到信用卡號。
 
+  ```xml
     <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
           <Pattern confidenceLevel="85">
             <IdMatch idRef="Func_credit_card" />
           </Pattern>
         </Entity>
-
+  ```
 ## 貴組織專屬的關鍵字的外觀
 
 可能會想要需要佐證性證據但想要不同或其他關鍵字及也許您想要變更要尋找該證據。您可以調整<strong>patternsProximity</strong>即可展開或壓縮佐證性證據周圍 16 位數的視窗。若要新增您自己的關鍵字，您需要定義關鍵字清單並參照在您的規則。下列 XML 程式碼新增的關鍵字 「 公司卡 」 與 「 Contoso 卡片"使任何包含這些片語內之信用卡號 150 個字元的郵件會被識別為信用卡號。
 
+  ```xml
     <Rules>
     <! -- Modify the patternsProximity to be "150" rather than "300." -->
         <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
@@ -183,7 +188,7 @@ _<strong>上次修改主題的時間：</strong> 2016-05-26_
             <Term caseSensitive="false">Contoso card</Term>
           </Group>
         </Keyword>
-
+  ```
 ## 上傳您的規則
 
 若要上傳您的規則，您需要執行下列動作。

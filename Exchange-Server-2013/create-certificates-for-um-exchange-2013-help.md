@@ -13,13 +13,13 @@ ms.translationtype: MT
 
  
 
-_<strong>適用版本：</strong> Exchange Server 2013, Exchange Server 2016_
+_**適用版本：** Exchange Server 2013, Exchange Server 2016_
 
-_<strong>上次修改主題的時間：</strong> 2013-04-29_
+_**上次修改主題的時間：** 2013-04-29_
 
 您可以使用 EAC 或命令介面中的 \[新增 Exchange 憑證\] 精靈來建立自我簽署的憑證或內部公開金鑰基礎結構 (PKI) 憑證的憑證要求。整合通訊 (UM)，您可以使用這些憑證的其中一個 Microsoft Exchange 整合通訊服務和 Microsoft Exchange Unified Messaging Call Router 服務。您可以使用這兩個服務的相同的憑證或不同的每個服務。您也可以購買及匯入 UM 服務的協力廠商商業憑證。如果您使用自我簽署的憑證 um，您可能需要在主體替代名稱 (SAN) 中包含用戶端存取和信箱伺服器的名稱。
 
-根據預設，當您安裝Exchange Server 2013、 兩個自我簽署的憑證建立 ︰ <strong>Microsoft Exchange 伺服器驗證憑證</strong>和<strong>Microsoft Exchange</strong>。<strong>Microsoft Exchange</strong>自我簽署的憑證可供使用 UM 以加密資料，但您必須將憑證指派給 UM 及 UM 呼叫路由器服務。您將憑證指派給整合通訊服務之後，它可以複製到並匯入至 VoIP 閘道、 IP Pbx 及已啟用 SIP 的 Pbx。不過，而不是使用預設的自我簽署的憑證，您可能需要建立專屬的整合通訊的另一個。
+根據預設，當您安裝Exchange Server 2013、 兩個自我簽署的憑證建立 ︰ **Microsoft Exchange 伺服器驗證憑證**和**Microsoft Exchange**。**Microsoft Exchange**自我簽署的憑證可供使用 UM 以加密資料，但您必須將憑證指派給 UM 及 UM 呼叫路由器服務。您將憑證指派給整合通訊服務之後，它可以複製到並匯入至 VoIP 閘道、 IP Pbx 及已啟用 SIP 的 Pbx。不過，而不是使用預設的自我簽署的憑證，您可能需要建立專屬的整合通訊的另一個。
 
 
 > [!CAUTION]  
@@ -49,55 +49,57 @@ _<strong>上次修改主題的時間：</strong> 2013-04-29_
 
 ## 使用 EAC 建立 UM 的憑證要求
 
-1.  在 EAC 中，瀏覽至 <strong>\[伺服器\]</strong> \> <strong>\[憑證\]</strong>，然後按一下 <strong>\[新增\]</strong>![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
+1.  在 EAC 中，瀏覽至 **\[伺服器\]** \> **\[憑證\]**，然後按一下 **\[新增\]**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
 
-2.  在 <strong>\[新增 Exchange 憑證\]</strong> 頁面，選取 <strong>\[建立向憑證授權單位索取憑證的要求\]</strong>，然後按 <strong>\[下一步\]</strong>。
+2.  在 **\[新增 Exchange 憑證\]** 頁面，選取 **\[建立向憑證授權單位索取憑證的要求\]**，然後按 **\[下一步\]**。
 
-3.  輸入好記的憑證名稱，然後按 <strong>\[下一步\]</strong>。
+3.  輸入好記的憑證名稱，然後按 **\[下一步\]**。
 
-4.  如果您不需要萬用字元憑證，按一下 \[<strong>下一步</strong>\]。如果您需要萬用字元憑證，請選取 \[<strong>萬用字元憑證要求\]。萬用字元憑證可以用來保護您使用單一憑證的根網域下的所有子網域</strong>、 輸入之根網域名稱，然後再按 \[<strong>下一步</strong>。
+4.  如果您不需要萬用字元憑證，按一下 \[**下一步**\]。如果您需要萬用字元憑證，請選取 \[**萬用字元憑證要求\]。萬用字元憑證可以用來保護您使用單一憑證的根網域下的所有子網域**、 輸入之根網域名稱，然後再按 \[**下一步**。
 
-5.  \[<strong>存放區此伺服器上的憑證要求</strong>，請按一下 \[<strong>瀏覽\]</strong>以移至您要儲存檔案的位置。您可以在 Exchange 組織中任何用戶端存取或 Mailbox server 上儲存的憑證要求。選取的位置、 按一下 \[<strong>確定</strong>\] 和 \[<strong>下一步</strong>。
+5.  \[**存放區此伺服器上的憑證要求**，請按一下 \[**瀏覽\]**以移至您要儲存檔案的位置。您可以在 Exchange 組織中任何用戶端存取或 Mailbox server 上儲存的憑證要求。選取的位置、 按一下 \[**確定**\] 和 \[**下一步**。
 
 6.  如果您要求萬用字元憑證，請跳至步驟 9。
 
-7.  如果您沒有要求萬用字元憑證，必須指定您想要包含在您的憑證中的網域。如果您想要編輯的網域，按一下 \[<strong>編輯</strong>![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")，並再按 \[<strong>下一步</strong>。
+7.  如果您沒有要求萬用字元憑證，必須指定您想要包含在您的憑證中的網域。如果您想要編輯的網域，按一下 \[**編輯**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")，並再按 \[**下一步**。
 
-8.  在您的選擇<strong>架構下的下列網域將會包含在您的憑證。您可以新增其他網域這裡，或變更</strong>、 您可以新增、 編輯、 移除或檢查會列在底下<strong>網域</strong>的網域名稱。然後按 \[<strong>下一步</strong>。
+8.  在您的選擇**架構下的下列網域將會包含在您的憑證。您可以新增其他網域這裡，或變更**、 您可以新增、 編輯、 移除或檢查會列在底下**網域**的網域名稱。然後按 \[**下一步**。
 
-9.  下<strong>指定組織的資訊。這必要的憑證授權單位所</strong>，輸入下列內容：
+9.  下**指定組織的資訊。這必要的憑證授權單位所**，輸入下列內容：
     
-      - <strong>組織名稱</strong>
+      - **組織名稱**
     
-      - <strong>部門名稱</strong>
+      - **部門名稱**
     
-      - <strong>城市/位置</strong>
+      - **城市/位置**
     
-      - <strong>縣/市</strong>
+      - **縣/市**
     
-      - <strong>國家/地區名稱</strong>：在此選項中，請使用下拉式清單來選取國家或地區。
+      - **國家/地區名稱**：在此選項中，請使用下拉式清單來選取國家或地區。
 
-10. 在 <strong>\[儲存憑證要求到下列檔案\]</strong> 下，輸憑證檔的名稱，然後按一下 <strong>\[完成\]</strong>。
+10. 在 **\[儲存憑證要求到下列檔案\]** 下，輸憑證檔的名稱，然後按一下 **\[完成\]**。
 
 ## 使用命令介面建立 UM 的憑證要求
 
 此範例會使用易記名稱 `CertUM` 建立新的 Exchange 憑證要求，以供名為 `MyMailboxServer` 的 Mailbox Server 使用。
 
-    New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```powershell
+New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```
 
 ## 使用 EAC 建立 UM 的自我簽署憑證
 
-1.  在 EAC 中，瀏覽至 <strong>\[伺服器\]</strong> \> <strong>\[憑證\]</strong>，然後按一下 <strong>\[新增\]</strong>![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
+1.  在 EAC 中，瀏覽至 **\[伺服器\]** \> **\[憑證\]**，然後按一下 **\[新增\]**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")。
 
-2.  在 <strong>\[新增 Exchange 憑證\]</strong> 頁面，選擇 <strong>\[建立自我簽署憑證\]</strong>，然後選取 <strong>\[下一步\]</strong>。
+2.  在 **\[新增 Exchange 憑證\]** 頁面，選擇 **\[建立自我簽署憑證\]**，然後選取 **\[下一步\]**。
 
-3.  輸入好記的憑證名稱，然後選取 <strong>\[下一步\]</strong>。
+3.  輸入好記的憑證名稱，然後選取 **\[下一步\]**。
 
-4.  按一下 <strong>\[新增\]</strong>![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")，選取要套用此憑證的 Exchange 伺服器，然後選取 <strong>\[下一步\]</strong>。
+4.  按一下 **\[新增\]**![加入圖示](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "加入圖示")，選取要套用此憑證的 Exchange 伺服器，然後選取 **\[下一步\]**。
 
-5.  指定要包含在憑證中的網域，然後選取 <strong>\[下一步\]</strong>。如果要新增服務的網域，請按一下 <strong>\[編輯\]</strong>![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
+5.  指定要包含在憑證中的網域，然後選取 **\[下一步\]**。如果要新增服務的網域，請按一下 **\[編輯\]**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
 
-6.  確認您包含的網域正確，然後選取 <strong>\[完成\]</strong>。
+6.  確認您包含的網域正確，然後選取 **\[完成\]**。
 
 
 > [!IMPORTANT]  
@@ -110,7 +112,9 @@ _<strong>上次修改主題的時間：</strong> 2013-04-29_
 
 此範例會使用易記名稱 `UMCert` 建立新的 Exchange 自我簽署憑證，以供名為 `MyMailboxServer` 的 Mailbox Server 使用。
 
-    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```powershell
+New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```
 
 
 > [!TIP]  

@@ -44,7 +44,9 @@ _**上次修改主題的時間：** 2014-08-05_
 
 此範例會建立套用至組織中的所有使用者節流原則。您省略任何參數會繼承預設的節流原則 GlobalThrottlingPolicy 中的值。
 
-    New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```powershell
+New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```
 
 如需詳細的語法及參數的詳細資訊，請參閱[New-ThrottlingPolicy](https://technet.microsoft.com/zh-tw/library/dd351045\(v=exchg.150\))。
 
@@ -54,13 +56,17 @@ _**上次修改主題的時間：** 2014-08-05_
 
 1.  執行下列命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  確認組織節流您剛才建立的原則會列在欄中顯示 GlobalThrottlingPolicy 物件。
 
 3.  執行下列命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  確認新的組織原則的內容符合您所設定的值。
 

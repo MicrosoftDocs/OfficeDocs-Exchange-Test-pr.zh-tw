@@ -42,7 +42,9 @@ _**上次修改主題的時間：** 2013-02-14_
 
 在命令提示字元中，執行下列命令。
 
-    Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```powershell
+Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```
 
 在上述命令中，*\<UmLanguagePackName\>* 是 UM 語言套件的名稱。例如 fr-FR。
 

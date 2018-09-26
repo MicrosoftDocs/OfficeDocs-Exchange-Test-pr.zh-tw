@@ -166,7 +166,9 @@ DAG 網路的加密和壓縮是在 DAG 層級中設定。預設設定為僅針�
 
 遲延副本減少行為預設為停用，並可透過執行下列命令來予以啟用。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 啟用之後，當副本少於三個時便會發生減少行為。您可以修改下列 DWORD 登錄值來變更預設值 3。
 
@@ -615,15 +617,21 @@ Exchange 2013 Service Pack 1 (SP1) 引進稱為「鬆散截斷」(預設予以�
 
 此範例顯示 DAG 目前的資料庫散發，包括喜好設定計數清單。
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```
 
 此範例會使用啟動喜好設定來轉散發及平衡 DAG 中的使用中信箱資料庫副本。
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```
 
 此範例會使用啟動喜好設定來轉散發及平衡 DAG 中的使用中信箱資料庫副本，並產生散發的摘要。
 
+```powershell
     RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+```
 
 ## 監視資料庫副本
 

@@ -99,16 +99,22 @@ _**上次修改主題的時間：** 2012-10-08_
 
 1.  使用下列語法將您要複製的角色群組儲存到變數中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  使用以下語法建立新角色群組，新增成員至該角色群組，並指定誰可以將新角色群組委派給其他使用者。
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
+    ```
 
 例如，下列命令複製組織管理角色群組，並命名為新的角色群組的 「 有限的組織管理 」。它會新增成員 Isabelle、 Carter、 及 Lukas 並可由黎和產業 katie 了委派。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members Isabelle, Carter, Lukas -ManagedBy Jenny, Katie
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members Isabelle, Carter, Lukas -ManagedBy Jenny, Katie
+```
 
 建立新角色群組之後，您可以新增或移除角色、變更角色上角色指派的範圍以及進行其他作業。
 
@@ -118,16 +124,22 @@ _**上次修改主題的時間：** 2012-10-08_
 
 1.  使用下列語法將您要複製的角色群組儲存到變數中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  使用下列語法建立具有自訂範圍的新角色群組。
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```
 
 例如，以下命令將複製 Organization Management 角色群組，並建立名為 Vancouver Organization Management 的新角色群組，新群組的收件者範圍是 Vancouver Users，組態範圍是 Vancouver Servers。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
+```
 
 您也可以新增成員至角色群組時使用*Members*參數所示使用命令介面來複製角色群組範圍無法使用本主題前述所建立。如需管理範圍的詳細資訊，請參閱[了解管理角色範圍](understanding-management-role-scopes-exchange-2013-help.md)。
 
@@ -139,16 +151,22 @@ _**上次修改主題的時間：** 2012-10-08_
 
 1.  使用下列語法將您要複製的角色群組儲存到變數中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  使用下列語法建立具有自訂範圍的新角色群組。
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```
 
 例如，以下命令將複製 Recipient Management 角色群組，並建立名為 Toronto Recipient Management 的新角色群組，新群組僅允許對 Toronto Users OU 中的使用者進行管理。
 
-    $RoleGroup = Get-RoleGroup "Recipient Management"
-    New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
+```powershell
+$RoleGroup = Get-RoleGroup "Recipient Management"
+New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
+```
 
 您也可以新增成員至角色群組時使用*Members*參數所示使用命令介面來複製角色群組範圍無法使用本主題前述所建立。如需管理範圍的詳細資訊，請參閱[了解管理角色範圍](understanding-management-role-scopes-exchange-2013-help.md)。
 
@@ -223,11 +241,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 使用下列語法來將沒有任何範圍的角色指派給角色群組。如果您沒有指定一個，會自動建立角色指派名稱。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 本範例將「傳輸規則」管理角色指派給「西雅圖規範」角色群組。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -239,11 +261,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 使用下列語法來將角色指派給角色群組與預先定義的範圍。如果您沒有指定一個，會自動建立角色指派名稱。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```
 
 本範例將「郵件追蹤」角色指派給「企業支援」角色群組，並套用「組織」預先定義的範圍。
 
-    New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -261,11 +287,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 使用下列語法來指派角色給收件者篩選器型範圍的角色群組。如果您沒有指定一個，會自動建立角色指派名稱。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```
 
 本範例將「郵件追蹤」角色指派給「西雅圖收件者管理員」角色群組，並套用「西雅圖收件者」範圍。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -283,11 +313,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 使用下列語法來指派角色給組態範圍的角色群組。如果您沒有指定一個，會自動建立角色指派名稱。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <role scope name>
+```
 
 本範例將「資料庫」角色指派給「西雅圖伺服器管理員」角色群組，並套用「西雅圖伺服器」範圍。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -303,11 +337,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 使用下列命令，將角色指派給角色群組和角色寫入範圍限制在特定 OU。如果您沒有指定一個，會自動建立角色指派名稱。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```
 
 本範例將「郵件收件者」角色指派給「西雅圖收件者管理員」角色群組，並將指派的範圍設定為 Contoso.com 網域中的銷售\\使用者 OU。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -355,11 +393,15 @@ _**上次修改主題的時間：** 2012-10-08_
 
 若要從角色群組中移除角色，請使用下列語法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment
+```
 
 本範例會移除通訊群組的角色，讓管理員能夠管理通訊群組、 西雅圖 Recipient Administrators 角色群組。因為我們想要移除提供管理通訊群組的權限的角色指派， *Delegating*參數會設為`$False`，這只會傳回一般角色指派。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351205\(v=exchg.150\))。
 
@@ -422,11 +464,15 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 若要同時在角色群組上的所有角色指派上設定範圍，請使用以下語法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <name of role group> | Set-ManagementRoleAssignment -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <name of role group> | Set-ManagementRoleAssignment -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+```
 
 您使用僅參數則需要設定想要使用的範圍。例如，如果您想要變更 「 銷售收件者管理 」 角色群組上的所有角色指派的收件者範圍為直接銷售員工，使用下列命令。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
+```
 
 
 > [!NOTE]  
@@ -455,17 +501,23 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  若要尋找名稱的所有角色指派的角色群組，請使用下列命令。透過管線傳送 format-list 管理角色指派給**Format-List**指令程式，您可以檢視工作分派的完整名稱。
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```
 
 2.  尋找您想要變更角色指派的名稱。下一個步驟中使用的角色指派的名稱。
 
 3.  若要在個別指派上設定範圍，請使用下列語法。
     
-        Set-ManagementRoleAssignment <role assignment name> -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+    ```powershell
+    Set-ManagementRoleAssignment <role assignment name> -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+    ```
 
 您使用僅參數則需要設定想要使用的範圍。例如，如果您想要變更收件者範圍的郵件 Recipients\_Sales 收件者管理角色指派給所有銷售員工，使用下列命令。
 
-    Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
+```powershell
+Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
+```
 
 如需變更管理角色指派的詳細資訊，請參閱[變更角色指派](change-a-role-assignment-exchange-2013-help.md)。
 
@@ -485,7 +537,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
     
     1.  在命令介面中執行下列命令。
         
-            Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
+        ```powershell
+        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
+        ```
     
     2.  確認角色指派的寫入範圍已變更為您指定的範圍。
 
@@ -511,11 +565,15 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  使用下列命令，透過變數儲存角色群組。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  使用以下命令新增代理人到儲存於變數中的角色群組。
     
-        $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
+    ```powershell
+    $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
+    ```
     
     > [!NOTE]  
     > 如果您想新增 USG，請使用 <strong>Get-Group</strong> Cmdlet。
@@ -525,13 +583,17 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 4.  使用下列命令，將新的委派清單套用至實際的角色群組。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 此範例會在 組織管理 角色群組上新增使用者 David Strome 以做為代理人。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    $RoleGroup.ManagedBy += (Get-User "David Strome").Identity
-    Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+$RoleGroup.ManagedBy += (Get-User "David Strome").Identity
+Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-RoleGroup](https://technet.microsoft.com/zh-tw/library/dd638182\(v=exchg.150\))。
 
@@ -541,11 +603,15 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  使用下列命令，透過變數儲存角色群組。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  使用以下命令移除儲存於變數中之角色群組的代理人。
     
-        $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
+    ```powershell
+    $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
+    ```
     
     > [!NOTE]  
     > 如果您想移除 USG，請使用 <strong>Get-Group</strong> Cmdlet。
@@ -555,13 +621,17 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 4.  使用下列命令，將新的委派清單套用至實際的角色群組。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 此範例會移除在 組織管理 角色群組做為代理人的使用者 David Strome。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    $RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
-    Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+$RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
+Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-RoleGroup](https://technet.microsoft.com/zh-tw/library/dd638182\(v=exchg.150\))。
 
@@ -571,7 +641,9 @@ Exchange 2013包含範圍會套用預設角色指派時所不建立的任何自�
 
 1.  在命令介面中，執行下列命令。
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+    Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```
 
 2.  確認 *ManagedBy* 內容上列出的委派僅包含能夠管理角色群組的委派。
 

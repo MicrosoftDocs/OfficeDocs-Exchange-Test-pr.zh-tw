@@ -42,7 +42,9 @@ _**上次修改主題的時間：** 2012-10-14_
 
 這個範例使用通訊清單的 GUID，將通訊清單移動至 All Users\\Sales 容器的 Building 4 容器。
 
-    Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Users\Sales\Building4"
+```powershell
+Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Users\Sales\Building4"
+```
 
 輸入 **Y** 以確認您要移動此通訊清單，然後按 ENTER。
 

@@ -71,11 +71,15 @@ _**上次修改主題的時間：** 2014-02-15_
 
 此範例會停用名稱為 **Internet** 的專用網際網路行事曆發佈共用原則。
 
-    Set-SharingPolicy -Identity "Internet" -Enabled $false
+```powershell
+Set-SharingPolicy -Identity "Internet" -Enabled $false
+```
 
 此範例會刪除名稱為 **Internet** 的專用網際網路行事曆發佈共用原則。
 
-    Remove-SharingPolicy -Identity "Internet"
+```powershell
+Remove-SharingPolicy -Identity "Internet"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-SharingPolicy](https://technet.microsoft.com/zh-tw/library/dd297931\(v=exchg.150\))。
 
@@ -83,7 +87,9 @@ _**上次修改主題的時間：** 2014-02-15_
 
 若要驗證您是否已成功移除或更新共用原則，請執行下列命令介面命令並確認共用原則資訊。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 如果您移除了專用的網際網路行事曆發佈共用原則，便不會在 Cmdlet 結果中看到該原則。
 
@@ -109,7 +115,9 @@ _**上次修改主題的時間：** 2014-02-15_
 
 此範例會停用用戶端存取伺服器 CAS01 上 Outlook Web App 虛擬目錄的匿名功能。
 
-    Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-OwaVirtualDirectory](https://technet.microsoft.com/zh-tw/library/bb123515\(v=exchg.150\))。
 
@@ -117,7 +125,9 @@ _**上次修改主題的時間：** 2014-02-15_
 
 若要驗證您是否已成功停用用戶端伺服器上 Outlook Web App 虛擬目錄的匿名功能，請執行下列命令介面命令，並確認 *AnonymousFeaturesEnabled* 參數為 `$false`。
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-OwaVirtualDirectory](https://technet.microsoft.com/zh-tw/library/aa998588\(v=exchg.150\))。
 

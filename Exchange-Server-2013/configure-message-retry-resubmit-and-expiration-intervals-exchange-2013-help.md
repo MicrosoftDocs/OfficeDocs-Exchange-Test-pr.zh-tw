@@ -44,27 +44,35 @@ _**上次修改主題的時間：** 2014-12-16_
 
 1.  在 Mailbox Server 或 Edge Transport Server 上的命令提示字元視窗中，執行以下命令以在記事本中開啟 EdgeTransport.exe.config 檔案。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  找出下列位於 `<appSettings>` 區段的機碼。
     
-        <add key="QueueGlitchRetryCount" value="<Integer>" />
-        <add key="QueueGlitchRetryInterval" value="<hh:mm:ss>" />
-        <add key="MailboxDeliveryQueueRetryInterval" value="<hh:mm:ss>" />
-        <add key="MaxIdleTimeBeforeResubmit" value="<hh:mm:ss>" />
+    ```powershell
+    <add key="QueueGlitchRetryCount" value="<Integer>" />
+    <add key="QueueGlitchRetryInterval" value="<hh:mm:ss>" />
+    <add key="MailboxDeliveryQueueRetryInterval" value="<hh:mm:ss>" />
+    <add key="MaxIdleTimeBeforeResubmit" value="<hh:mm:ss>" />
+    ```
     
     此範例會將佇列問題重試計數變更為 6、將佇列問題重試間隔變更為 30 秒、將信箱傳遞佇列重試間隔變更為 3 分鐘，以及將重新提交間隔前的閒置時間上限變更為 6 小時。
     
-        <add key="QueueGlitchRetryCount" value="6" />
-        <add key="QueueGlitchRetryInterval" value="00:00:30" />
-        <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
-        <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
+    ```powershell
+    <add key="QueueGlitchRetryCount" value="6" />
+    <add key="QueueGlitchRetryInterval" value="00:00:30" />
+    <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
+    <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
+    ```
 
 3.  完成後，儲存並關閉 EdgeTransport.exe.config 檔案。
 
 4.  執行下列命令，以重新啟動 Microsoft Exchange 傳輸服務：
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 設定暫時性失敗重試嘗試、暫時性失敗重試間隔及輸出連線失敗重試間隔
 
@@ -86,7 +94,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 使用下列語法設定 Mailbox Server 上之傳輸服務中或 Edge Transport Server 上的暫時性失敗重試嘗試、暫時性失敗重試間隔及輸出連線失敗重試間隔。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 此範例會變更 Edge Transport Server Exchange01 上名為 Mailbox01: 之 Mailbox Server 上的以下各值。
 
@@ -98,7 +108,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 
 > [!NOTE]  
@@ -121,7 +133,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 使用下列語法設定 Mailbox Server 上之傳輸服務中或 Edge Transport Server 上的暫時性失敗重試嘗試、暫時性失敗重試間隔及輸出連線失敗重試間隔。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 此範例會變更 Edge Transport Server Exchange01 上名為 Mailbox01: 之 Mailbox Server 上的以下各值。
 
@@ -133,7 +147,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 
 > [!NOTE]  
@@ -148,11 +164,15 @@ _**上次修改主題的時間：** 2014-12-16_
 
 使用以下語法來設定郵件重試間隔。
 
-    Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```
 
 本範例會將郵件重試間隔變更為 20 分鐘名為 Mailbox01 的 Mailbox server 上。
 
-    Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```powershell
+Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```
 
 ## 設定延遲 DSN 逾時設定
 
@@ -177,25 +197,35 @@ _**上次修改主題的時間：** 2014-12-16_
 
 使用以下語法來設定郵件重試間隔。
 
-    Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```
 
 此範例會將名為 Mailbox01 之 Mailbox Server 上的延遲 DSN 郵件通知逾時間隔變更為 6 小時。
 
-    Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```powershell
+Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```
 
 ## 使用命令介面來啟用或停用將延遲 DSN 通知傳送給外部或內部郵件寄件者的傳送功能
 
 使用下列語法來設定延遲 DSN 通知設定。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```
 
 這個範例會禁止向外部寄件者傳送延遲 DSN 通知郵件。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled $false
+```
 
 這個範例會禁止向內部寄件者傳送延遲 DSN 通知郵件。
 
-    Set-TransportConfig -InternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -InternalDelayDSNEnabled $false
+```
 
 ## 設定郵件到期逾時間隔
 
@@ -211,9 +241,13 @@ _**上次修改主題的時間：** 2014-12-16_
 
 若要設定郵件到期逾時間隔，請使用下列語法。
 
-    Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```
 
 此範例會將名為 Mailbox01 之 Exchange 伺服器上的郵件到期逾時間隔變更為 4 天。
 
-    Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```
 

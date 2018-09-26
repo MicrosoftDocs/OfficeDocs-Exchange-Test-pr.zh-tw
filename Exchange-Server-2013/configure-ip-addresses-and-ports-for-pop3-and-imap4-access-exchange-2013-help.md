@@ -75,11 +75,15 @@ _**上次修改主題的時間：** 2012-11-28_
 
 本範例會設定的 IP 位址及連接埠進行通訊的Exchange使用 POP3 使用 Secure Sockets Layer (SSL)。
 
-    Set-PopSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-PopSettings -SSLBindings: IPaddress:Port
+```
 
 本範例會設定的 IP 位址及連接埠進行通訊的Exchange使用 POP3 未加密或傳輸層安全性 (TLS) 加密。
 
-    Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```powershell
+Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```
 
 您已設定 POP3 的 IP 位址和連接埠設定之後，您必須重新啟動 POP3 服務的設定才會生效。如需如何重新啟動 POP3 服務的資訊，請參閱[啟動及停止 \[POP3 服務](start-and-stop-the-pop3-services-exchange-2013-help.md)。
 
@@ -91,7 +95,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  確認*UnencryptedOrTLSBindings* \] 及 \[ *SSLBindings*設定正確。
 
@@ -125,11 +131,15 @@ _**上次修改主題的時間：** 2012-11-28_
 
 本範例會設定的 IP 位址及連接埠進行通訊的Exchange使用 IMAP4。
 
-    Set-ImapSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-ImapSettings -SSLBindings: IPaddress:Port
+```
 
 本範例會設定的 IP 位址及連接埠進行通訊的Exchange使用 IMAP4 未加密或 TLS 加密。
 
-    Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```powershell
+Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```
 
 您已設定 IMAP4 的 IP 位址和連接埠設定之後，您必須重新啟動 IMAP4 服務的設定才會生效。如需如何重新啟動 IMAP4 服務的資訊，請參閱[啟動及停止 IMAP4 服務](start-and-stop-the-imap4-services-exchange-2013-help.md)。
 
@@ -141,7 +151,9 @@ _**上次修改主題的時間：** 2012-11-28_
 
 1.  在命令介面中執行下列命令。
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  確認*UnencryptedOrTLSBindings* \] 及 \[ *SSLBindings*設定正確。
 

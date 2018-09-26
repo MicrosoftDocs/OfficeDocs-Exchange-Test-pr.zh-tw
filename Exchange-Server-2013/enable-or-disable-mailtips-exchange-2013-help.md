@@ -40,7 +40,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 您可以使用**Set-OrganizationConfig**指令程式來啟用或停用組織中的郵件提示。當您安裝新的Exchange組織時依預設啟用的郵件提示。本範例會示範如何在組織中啟用 \[寄件提醒。
 
-    Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```powershell
+Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-OrganizationConfig](https://technet.microsoft.com/zh-tw/library/aa997443\(v=exchg.150\))。
 

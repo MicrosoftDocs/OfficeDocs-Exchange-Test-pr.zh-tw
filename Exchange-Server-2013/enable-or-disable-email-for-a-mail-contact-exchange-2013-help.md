@@ -36,8 +36,6 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
-
-
 ## 您要執行的工作
 
 ## 停用郵件連絡人的電子郵件
@@ -60,7 +58,9 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
 
 本範例會停用 Neil 黑色的郵件連絡人的電子郵件。
 
-    Disable-MailContact -Identity "Neil Black"
+```powershell
+Disable-MailContact -Identity "Neil Black"
+```
 
 如需詳細的語法及參數資訊，請參閱[Disable-MailContact](https://technet.microsoft.com/zh-tw/library/aa997465\(v=exchg.150\))。
 
@@ -74,13 +74,17 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
 
 3.  在命令介面中，執行下列命令。
     
-        Get-MailContact
+    ```powershell
+    Get-MailContact
+    ```
     
     將不會在結果中傳回停用的電子郵件連絡人，因為此指令程式只會傳回擁有郵件功能的連絡人。
 
 4.  在命令介面中，執行下列命令。
     
-        Get-Contact
+    ```powershell
+    Get-Contact
+    ```
     
     因為此 cmdlet 會傳回所有 Active Directory 連絡人物件的結果被傳回停用的電子郵件連絡人。
 
@@ -92,7 +96,9 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
 
 本範例會啟用郵件功能的連絡人 Rene Valdes。您必須提供外部電子郵件地址。
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 使用命令介面和 CSV 檔案來啟用多個連絡人的郵件功能
 
@@ -100,10 +106,12 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
 
 1.  執行下列命令以匯出不上名為 Contacts.csv 的系統管理員的桌面檔案具有郵件功能的現有連絡人的清單。
     
+    ```powershell
         Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
-    
+    ```    
     產生的檔案類似下列檔案。
     
+    ```powershell
         Name
         Walter Harp
         James Alvord
@@ -111,9 +119,11 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
         Susan Burk
         Ian Tien
         ...
+    ```
 
 2.  新增名為<strong>EmailAddress</strong>欄標題，並再檔案中新增的每位連絡人的電子郵件地址。必須以逗號分隔的名稱和每個連絡人的外部電子郵件地址。更新的 CSV 檔案應該類似下列的檔案。
     
+    ```powershell
         Name,EmailAddress
         James Alvord,james@contoso.com
         Susan Burk,sburk@tailspintoys.com
@@ -121,10 +131,13 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
         Ian Tien,iant@tailspintoys.com
         Rainer Witt,rainerw@fourthcoffee.com
         ...
+    ```
 
 3.  執行下列命令，以使用 CSV 檔案中的資料檔案中所列的連絡人啟用郵件功能。
     
+    ```powershell
         Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
     
     命令結果會顯示新的擁有郵件功能連絡人的相關資訊。
 
@@ -140,5 +153,6 @@ _<strong>上次修改主題的時間：</strong> 2012-12-05_
 
   - 在命令介面中執行下列命令以顯示新郵件連絡人的相關資訊。
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
-
+    ```powershell
+    Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```

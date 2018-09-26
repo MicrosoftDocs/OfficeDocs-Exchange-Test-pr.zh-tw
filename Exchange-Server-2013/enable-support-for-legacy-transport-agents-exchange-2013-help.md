@@ -113,38 +113,42 @@ _**上次修改主題的時間：** 2015-03-09_
 
 1.  在命令提示字元視窗中，在要設定舊版傳輸代理程式支援的 Exchange 2013 伺服器上，執行下列命令來開啟記事本中的適當應用程式：
     
-        Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```
     
     例如，若要開啟信箱伺服器的 EdgeTransport.exe.config，請執行下列命令：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  在檔案末端找到 *\</configuration\>* 金鑰，並將下列金鑰貼在 *\</configuration\>* 金鑰之前：
-    
+    ```powershell
         <startup useLegacyV2RuntimeActivationPolicy="true">
            <supportedRuntime version="v4.0" />
            <supportedRuntime version="v3.5" />
            <supportedRuntime version="v3.0" />
            <supportedRuntime version="v2.0" />
         </startup>
-
+    ```
 3.  完成後，儲存並關閉應用程式設定檔案。
 
 4.  重複步驟 1 到 3，修改其他應用程式設定檔案。
 
 5.  執行下列命令，重新開始關聯的 Windows 服務：
-    
+    ```powershell
         net stop <service> && net start <service>
-    
+    ```
     例如，若要修改 EdgeTransport.exe.config 檔案，必須執行下列命令來重新開啟 Microsoft Exchange 傳輸服務：
-    
+    ```powershell
         net stop MSExchangeTransport && net start MSExchangeTransport
-
+    ```
 6.  重複步驟 5 來重新開啟與其他修改的應用程式設定檔案關聯的服務。
 
 ## 如何才能了解這是否正常運作？
 
 您會知道此程序的運作是否舊版傳輸代理程式安裝成功。如果您嘗試安裝舊版的傳輸代理程式沒有執行本主題中的程序，您會收到類似下列的錯誤：
-
+```powershell
     Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
-
+```

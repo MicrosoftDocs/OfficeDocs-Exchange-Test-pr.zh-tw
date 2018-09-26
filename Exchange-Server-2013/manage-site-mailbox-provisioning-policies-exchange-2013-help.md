@@ -54,27 +54,37 @@ _**上次修改主題的時間：** 2013-02-21_
 
 <!-- end list -->
 
-    New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```powershell
+New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```
 
 ## 檢視網站信箱佈建原則的設定
 
 此範例會傳回組織中所有關於站台信箱佈建原則的詳細資訊。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List
+```
 
 此範例會傳回組織中所有原則，但僅會顯示 `IsDefault` 資訊，以識別何者為預設原則。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```
 
 ## 對現有的網站信箱佈建原則進行變更
 
 此範例會變更站台信箱佈建原則名為允許的站台信箱到 25 MB 可以接收的電子郵件大小上限的預設值。（當您安裝 Exchange 時，具有**預設**名稱即會建立佈建原則）。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```
 
 本範例會變更警告配額至 9.5 GB，限制傳送與接收配額至 10 GB。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```
 
 ## 設定站台信箱名稱前置詞
 
@@ -82,7 +92,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 此範例會將 *DefaultAliasPrefixEnabled* 參數設為 $false，以停用前置詞命名。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```
 
 此範例會變更預設佈建原則，並將 *AliasPrefix* 設為 FOREST01。
 
@@ -93,7 +105,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```
 
 
 > [!NOTE]  
@@ -106,7 +120,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 此範例刪除在 Exchange 安裝期間建立的網站信箱佈建原則。
 
-    Remove-SiteMailboxProvisioningPolicy -Identity Default
+```powershell
+Remove-SiteMailboxProvisioningPolicy -Identity Default
+```
 
 
 > [!IMPORTANT]  

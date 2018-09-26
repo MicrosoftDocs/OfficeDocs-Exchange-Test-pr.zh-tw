@@ -46,11 +46,15 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要移除沒有子項角色的角色，請使用下列語法。
 
-    Remove-ManagementRole <role name>
+```powershell
+Remove-ManagementRole <role name>
+```
 
 此範例會移除「西雅圖伺服器系統管理員」角色。
 
-    Remove-ManagementRole "Seattle Server Administrators"
+```powershell
+Remove-ManagementRole "Seattle Server Administrators"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351170\(v=exchg.150\))。
 
@@ -67,13 +71,17 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要確定您移除您要移除的角色，使用*WhatIf*參數與您的命令來確認其正確。使用下列語法。
 
-    Remove-ManagementRole <role name> -Recurse -WhatIf
+```powershell
+Remove-ManagementRole <role name> -Recurse -WhatIf
+```
 
 *WhatIf*參數執行命令但不認可所有的變更與哪些角色就已移除的報告。如需關於*WhatIf*切換，請參閱[WhatIf、Confirm 及 ValidateOnly 參數](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)。
 
 確認 \[僅限您想要移除的角色將會移除之後，請執行含*WhatIf*參數在同一個命令。此範例會移除倫敦系統管理員角色及其所有子系角色。
 
-    Remove-ManagementRole "London Administrators" -Recurse
+```powershell
+Remove-ManagementRole "London Administrators" -Recurse
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-ManagementRole](https://technet.microsoft.com/zh-tw/library/dd351170\(v=exchg.150\))。
 
@@ -81,7 +89,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 若要移除未限定範圍的角色，可以使用本主題前述所移除管理角色與任何子系角色和移除管理角色與子系角色中所提供的相同程序。唯一的不同是當您移除未限定範圍的角色，您必須指定*UnScopedTopLevel*交換器當您執行命令。此範例會移除未限定範圍的角色及其所有子系角色。
 
-    Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```powershell
+Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```
 
 與移除其他角色一樣，您應該使用 *WhatIf* 參數來確認移除的是正確角色。
 

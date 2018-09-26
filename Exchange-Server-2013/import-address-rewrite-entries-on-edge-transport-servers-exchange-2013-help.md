@@ -117,20 +117,26 @@ CSV 檔案的第一列或*「標題列」*會列出參數名稱。每個參數�
 
 下列範例顯示如何在填入 CSV 檔案時，同時包含選用的 *ExceptionList* 及 *OutboundOnly* 參數：
 
+  ```powershell
     Name,InternalAddress,ExternalAddress,ExceptionList,OutboundOnly
     "Wingtip UK",*.wingtiptoys.co.uk,tailspintoys.com,"legal.wingtiptoys.co.uk,finance.wingtiptoys.co.uk,support.wingtiptoys.co.uk",True
     "Wingtip USA",*.wingtiptoys.com,tailspintoys.com,"legal.wingtiptoys.com,finance.wingtiptoys.com,support.wingtiptoys.com,corp.wingtiptoys.com",True
     "Wingtip Canada",*.wingtiptoys.ca,tailspintoys.com,"legal.wingtiptoys.ca,finance.wingtiptoys.ca,support.wingtiptoys.ca",True
+  ```
 
 ## 步驟 2：匯入 CSV 檔案
 
 若要匯入 CSV 檔案，請使用下列語法：
 
+  ```powershell
     Import-Csv <FileNameAndPath> | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
+  ```
 
 此範例會從 C:\\My Documents\\ImportAddressRewriteEntries.csv 匯入地址修正項目。
 
+  ```powershell
     Import-Csv "C:\My Documents\ImportAddressRewriteEntries.csv" | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
+  ```
 
 ## 如何才能了解此步驟是否正常運作？
 

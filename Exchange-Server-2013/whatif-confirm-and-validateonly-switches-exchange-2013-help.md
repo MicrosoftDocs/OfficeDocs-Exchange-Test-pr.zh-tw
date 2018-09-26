@@ -40,12 +40,14 @@ The *WhatIf*, *Confirm*, and *ValidateOnly* switches are especially useful when 
 The *WhatIf* switch instructs the command to which it is applied to run but only to display the objects that would be affected by running the command and what changes would be made to those objects. The switch does not actually change any of those objects. When you use the *WhatIf* switch, you can see whether the changes that would be made to those objects match your expectations, without the worry of modifying those objects.
 
 When you run a command together with the *WhatIf* switch, you put the *WhatIf* switch at the end of the command, as in the following example:
-
+```powershell
     New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
-
+```
 When you run this example command, the following text is returned by the Shell:
 
-    What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```powershell
+What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```
 
 ## Confirm switch
 
@@ -73,15 +75,19 @@ When a cmdlet runs that has any of these verbs, the Shell automatically stops th
 
 If you want to manually apply the *Confirm* switch to a command, include the *Confirm* switch at the end of the command, as in the following example:
 
-    Get-JournalRule | Enable-JournalRule -Confirm
+```powershell
+Get-JournalRule | Enable-JournalRule -Confirm
+```
 
 When you run this example command, the following confirmation prompt is returned by the Shell:
 
-    Confirm
-    Are you sure you want to perform this action?
-    Enabling journal rule "Litigation Journal Rule".
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
-    (default is "Y"):
+```powershell
+Confirm
+Are you sure you want to perform this action?
+Enabling journal rule "Litigation Journal Rule".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
+(default is "Y"):
+```
 
 The confirmation prompt gives you the following choices:
 
@@ -99,7 +105,9 @@ The confirmation prompt gives you the following choices:
 
 If you want to override the default behavior of the Shell and suppress the confirmation prompt for cmdlets on which it is automatically applied, you can include the *Confirm* switch with a value of `$False`, as in the following example:
 
-    Get-JournalRule | Disable-JournalRule -Confirm:$False
+```powershell
+Get-JournalRule | Disable-JournalRule -Confirm:$False
+```
 
 In this case, no confirmation prompt is displayed.
 

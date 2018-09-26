@@ -66,21 +66,29 @@ _<strong>上次修改主題的時間：</strong> 2012-11-02_
 
 此範例會擱置副本 DB1 的 mailbox server MBX1 上主控之資料庫的連續複寫。也已指定選用的註解。
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```
 
 此範例會擱置伺服器 MBX2 主控 DB2 之資料庫的副本啟用。
 
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```
 
 ## 使用命令介面來繼續信箱資料庫副本
 
 此範例會繼續的 mailbox server MBX1 上資料庫 DB1 的複本。
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 此範例會繼續資料庫副本的 DB2 只複寫伺服器 MBX2 上。
 
-    Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```
 
 ## 如何知道這是否正常運作？
 
@@ -90,5 +98,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-02_
 
   - 在命令介面中，執行下列指令以顯示資料庫副本的狀態資訊。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

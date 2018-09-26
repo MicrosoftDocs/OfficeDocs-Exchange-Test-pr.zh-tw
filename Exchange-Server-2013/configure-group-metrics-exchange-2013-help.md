@@ -17,7 +17,7 @@ _**適用版本：** Exchange Server 2013_
 
 _**上次修改主題的時間：** 2015-04-08_
 
-提供資訊的通訊群組和動態通訊群組大小的郵件提示會依賴群組計量資料。在指定的信箱伺服器上產生群組計量資料。如需群組計量的詳細資訊，請參閱[群組計量 」 和 「 郵件提示](group-metrics-and-https://docs.microsoft.com/zh-tw/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips)。
+提供資訊的通訊群組和動態通訊群組大小的郵件提示會依賴群組計量資料。在指定的信箱伺服器上產生群組計量資料。如需群組計量的詳細資訊，請參閱[群組計量 」 和 「 郵件提示](group-metrics-and-mailtips-exchange-2013-help.md)。
 
 您可以在 Mailbox Server 上啟用或停用群組計量的產生作業。
 
@@ -51,11 +51,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要啟用或停用信箱伺服器上的群組計量產生作業，請執行以下命令：
 
-    Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```powershell
+Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```
 
 此範例會啟用名為 MBX1 的信箱伺服器上的群組計量產生作業。
 
-    Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```powershell
+Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -63,7 +67,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  執行下列命令：
     
-        Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```powershell
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  驗證顯示的設定是您配置的設定。
 

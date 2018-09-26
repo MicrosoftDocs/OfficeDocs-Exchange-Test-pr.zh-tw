@@ -54,7 +54,9 @@ IRM 記錄使用下列一組通用的參數：
 
 此範例會在信箱伺服器上啟用 IRM 記錄。
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-TransportService](https://technet.microsoft.com/zh-tw/library/jj215682\(v=exchg.150\))。
 
@@ -62,7 +64,9 @@ IRM 記錄使用下列一組通用的參數：
 
 此範例會在信箱伺服器上停用 IRM 記錄。
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-TransportService](https://technet.microsoft.com/zh-tw/library/jj215682\(v=exchg.150\))。
 
@@ -72,5 +76,7 @@ IRM 記錄使用下列一組通用的參數：
 
 此範例會擷取伺服器 EXCH01 上的所有 IRM 記錄內容。
 
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```powershell
+Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```
 

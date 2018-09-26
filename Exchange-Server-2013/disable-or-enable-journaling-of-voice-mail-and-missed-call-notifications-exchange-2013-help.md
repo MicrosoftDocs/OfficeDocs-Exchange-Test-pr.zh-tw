@@ -42,11 +42,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 此範例會藉由將 *VoicemailJournalingEnabled* 參數設定為 `$false`，停用語音信箱和未接來電通知的日誌記錄。
 
-    Set-TransportConfig -VoicemailJournalingEnabled $false
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $false
+```
 
 此範例會藉由將相同參數設定為 `$true`，啟用語音信箱和未接來電通知的日誌記錄。
 
-    Set-TransportConfig -VoicemailJournalingEnabled $true
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-TransportConfig](https://technet.microsoft.com/zh-tw/library/bb124151\(v=exchg.150\))。
 

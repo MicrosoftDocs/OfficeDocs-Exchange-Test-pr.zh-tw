@@ -23,7 +23,7 @@ _**上次修改主題的時間：** 2017-03-27_
 
 ## 有關公用資料夾移轉的常見問題
 
-本節包含有關公用資料夾移轉的常見問題。如需詳細資訊，請參閱[使用批次移轉公用資料夾從舊版移轉至 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)、 [使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)或[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)。
+本節包含有關公用資料夾移轉的常見問題。如需詳細資訊，請參閱[使用批次移轉公用資料夾從舊版移轉至 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)、 [使用批次移轉至 Office 365 和 Exchange Online 移轉舊版公用資料夾](https://technet.microsoft.com/zh-tw/library/dn874017(v=exchg.150))或[使用批次移轉至 Exchange 2013 公用資料夾移轉至 Exchange Online](https://technet.microsoft.com/zh-tw/library/mt798260(v=exchg.150))。
 
 ## 有哪些支援公用資料夾遷移情況？
 
@@ -53,7 +53,9 @@ _**上次修改主題的時間：** 2017-03-27_
 
 您可以藉由執行以下 Shell 命令，在完成之前 (鎖定來源之前) 強制進行差異同步：
 
-    Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```powershell
+Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```
 
 如需詳細的語法及參數資訊，請參閱 [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/zh-tw/library/jj218689\(v=exchg.150\))。
 
@@ -63,7 +65,9 @@ _**上次修改主題的時間：** 2017-03-27_
 
 輸入的 .csv 檔案可藉由執行命令檔 `AggregatePFData.ps1` 而產生，其位於目錄 \<*Exchange 安裝目錄*\>\\V15\\Scripts 中。執行命令檔，如下所示：
 
-    .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+```powershell
+.\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+```
 
 ## 現有的公用資料夾權限可移轉嗎？
 
@@ -104,7 +108,9 @@ Outlook Web App 支援，但有一些限制。 您可以新增和移除我的最
 
 執行下列命令：
 
-    Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```powershell
+Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```
 
 如需詳細的語法及參數資訊，請參閱 [Get-OrganizationConfig](https://technet.microsoft.com/zh-tw/library/aa997571\(v=exchg.150\))。
 
@@ -112,9 +118,11 @@ Outlook Web App 支援，但有一些限制。 您可以新增和移除我的最
 
 請執行以下命令建立第一個主要階層共用資料夾與次要階層信箱。
 
-    New-Mailbox -PublicFolder -Name <name of public folder>
+```powershell
+New-Mailbox -PublicFolder -Name <name of public folder>
+```
 
-如需詳細資料，請參閱[建立公用資料夾](https://docs.microsoft.com/zh-tw/exchange/collaboration-exo/public-folders/create-public-folder)。
+如需詳細資料，請參閱[建立公用資料夾](https://technet.microsoft.com/zh-tw/library/bb691104(v=exchg.150))。
 
 ## 在舊版 Exchange 中，每一個信箱資料庫都有一個選項，可指定其公用資料夾資料庫。如何在 Exchange 2013 中運作？
 
@@ -148,7 +156,9 @@ Exchange 2013 中沒有資料庫層級設定。Exchange 2013 具有信箱層級�
 
 在 Exchange 2007 與 Exchange 2010 中，您可以指定哪些使用者可以存取特定公用資料夾。在 Exchange 2013 中，您可以依使用者設定預設公用資料夾信箱。方法是執行 [Set-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123981\(v=exchg.150\)) Cmdlet 搭配 *DefaultPublicFolderMailbox* 參數。
 
-    Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```powershell
+Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```
 
 ## 如果主要階層下降，對使用者有何影響？
 

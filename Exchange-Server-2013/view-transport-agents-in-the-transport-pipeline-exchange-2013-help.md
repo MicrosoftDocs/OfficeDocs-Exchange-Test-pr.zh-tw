@@ -48,11 +48,15 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要使用命令介面來檢視 Exchange 伺服器上傳輸管線中之傳輸代理程式的清單，請執行下列命令：
 
-    Get-TransportPipeline | Format-List
+```powershell
+Get-TransportPipeline | Format-List
+```
 
 若要將結果匯出至名為 C:\\My Documents\\Transport Agents.txt 的文字檔，請執行下列命令：
 
-    Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```powershell
+Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```
 
 ## 如何才能了解這是否正常運作？
 

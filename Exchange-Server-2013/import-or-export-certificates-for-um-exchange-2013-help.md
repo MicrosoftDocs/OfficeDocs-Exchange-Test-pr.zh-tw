@@ -52,8 +52,6 @@ _**上次修改主題的時間：** 2013-12-18_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
-
-
 ## 您要執行的工作
 
 ## 使用 EAC 匯出憑證
@@ -68,7 +66,9 @@ _**上次修改主題的時間：** 2013-12-18_
 
 此範例說明如何在系統提示您輸入使用者名稱和密碼後，將指紋 (Thumbprint) 為 A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC 的憑證匯出至檔案。
 
+  ```powershell
     $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+  ```
 
 此範例會執行下列動作：
 
@@ -79,10 +79,11 @@ _**上次修改主題的時間：** 2013-12-18_
 3.  輸入使用者名稱和密碼後，將憑證匯出至檔案。
 
 <!-- end list -->
-  ```
+
+  ```powershell
   $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
   ```
-  ```
+  ```powershell
   Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
   ```
 
@@ -98,5 +99,6 @@ _**上次修改主題的時間：** 2013-12-18_
 
 此範例說明如何在系統提示您輸入使用者名稱和密碼後，從 d:\\certificates\\exchange\\SelfSignedUMCert.pfx 憑證檔案匯入憑證。
 
-    Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
-
+  ```powershell
+  Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
+  ```

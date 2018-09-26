@@ -96,20 +96,22 @@ _**上次修改主題的時間：** 2014-06-19_
     > [!IMPORTANT]  
     > 若您已啟用使用者存取控制 (UAC)，必須從更高的命令提示字元安裝 <code>Setup.exe</code>。
     
-        Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
-        [/Roles:<server roles to install>] [/InstallWindowsComponents] 
-        [/OrganizationName:<name for the new Exchange organization>] 
-        [/TargetDir:<target directory>] [/SourceDir:<source directory>]
-        [/UpdatesDir:<directory from which to install updates>] 
-        [/DomainController:<FQDN of domain controller>] [/DisableAMFiltering]
-        [/AnswerFile:<filename>] [/DoNotStartTransport] 
-        [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] 
-        [/AddUmLanguagePack:<UM language pack name>] 
-        [/RemoveUmLanguagePack:<UM language pack name>] 
-        [/NewProvisionedServer:<server>] [/RemoveProvisionedServer:<server>] 
-        [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>] 
-        [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
-        [/TenantOrganizationConfig:<path>]
+    ```powershell
+    Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
+    [/Roles:<server roles to install>] [/InstallWindowsComponents] 
+    [/OrganizationName:<name for the new Exchange organization>] 
+    [/TargetDir:<target directory>] [/SourceDir:<source directory>]
+    [/UpdatesDir:<directory from which to install updates>] 
+    [/DomainController:<FQDN of domain controller>] [/DisableAMFiltering]
+    [/AnswerFile:<filename>] [/DoNotStartTransport] 
+    [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] 
+    [/AddUmLanguagePack:<UM language pack name>] 
+    [/RemoveUmLanguagePack:<UM language pack name>] 
+    [/NewProvisionedServer:<server>] [/RemoveProvisionedServer:<server>] 
+    [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>] 
+    [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
+    [/TenantOrganizationConfig:<path>]
+    ```
 
 4.  安裝程式會在本機將安裝檔案複製到要安裝 Exchange 2013 的電腦上。
 

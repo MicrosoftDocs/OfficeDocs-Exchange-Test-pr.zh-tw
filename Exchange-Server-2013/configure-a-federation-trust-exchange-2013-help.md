@@ -65,7 +65,9 @@ _**上次修改主題的時間：** 2017-07-26_
     
     建議所有Exchange組織的同盟信任都使用Azure AD驗證系統的商務執行個體。之前設定兩個的 Exchange 組織之間的同盟共用，您必須確認每個Exchange組織使用的任何現有的同盟信任之Azure AD驗證系統執行個體。若要判斷Exchange組織要使用現有的同盟信任之Azure AD驗證系統執行個體，請執行下列命令介面。
     
-        Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+    ```powershell
+    Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+    ```
     
     商務執行個體傳回 *TokenIssuerURIs* 參數的 `<uri:federation:MicrosoftOnline>` 值。
     
@@ -113,31 +115,45 @@ _**上次修改主題的時間：** 2017-07-26_
 
 1.  執行此命令來建立同盟信任憑證的唯一主體金鑰識別碼：
     
-        $ski = [System.Guid]::NewGuid().ToString("N")
+    ```powershell
+    $ski = [System.Guid]::NewGuid().ToString("N")
+    ```
 
 2.  若要建立自我簽署的憑證的同盟信任使用下列語法：
     
-        New-ExchangeCertificate -FriendlyName "<Descriptive Name>" -DomainName <domain> -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```powershell
+    New-ExchangeCertificate -FriendlyName "<Descriptive Name>" -DomainName <domain> -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```
     
     此範例會對Azure AD驗證系統建立同盟信任的自我簽署的憑證。憑證使用 Exchange 同盟共用的易記名稱值和網域值從**USERDNSDOMAIN**環境變數來擷取。
     
-        New-ExchangeCertificate -FriendlyName "Exchange Federated Sharing" -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```powershell
+    New-ExchangeCertificate -FriendlyName "Exchange Federated Sharing" -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```
 
 3.  若要建立同盟信任和自動部署在組織中Exchange伺服器上一個步驟中所建立的自我簽署的憑證，使用下列語法：
     
-        Get-ExchangeCertificate | ?{$_.FriendlyName -eq "<FriendlyName>"} | New-FederationTrust -Name "<Descriptive Name>"
+    ```powershell
+    Get-ExchangeCertificate | ?{$_.FriendlyName -eq "<FriendlyName>"} | New-FederationTrust -Name "<Descriptive Name>"
+    ```
     
     本範例會建立名為 Azure AD 驗證的同盟信任和部署名為 Exchange 同盟共用的自我簽署的憑證。
     
-        Get-ExchangeCertificate | ?{$_.FriendlyName -eq "Exchange Federated Sharing"} | New-FederationTrust -Name "Azure AD Authentication"
+    ```powershell
+    Get-ExchangeCertificate | ?{$_.FriendlyName -eq "Exchange Federated Sharing"} | New-FederationTrust -Name "Azure AD Authentication"
+    ```
 
 4.  使用此語法來傳回證明網域擁有權具有所需的任何設定同盟信任的網域的 TXT 記錄。
     
-        Get-FederatedDomainProof -DomainName <domain>
+    ```powershell
+    Get-FederatedDomainProof -DomainName <domain>
+    ```
     
     此範例會傳回證明網域擁有權具有所需的主要共用的網域 contoso.com 的 TXT 記錄。
     
-        Get-FederatedDomainProof -DomainName contoso.com
+    ```powershell
+    Get-FederatedDomainProof -DomainName contoso.com
+    ```
     
     **附註：** 
     
@@ -149,23 +165,33 @@ _**上次修改主題的時間：** 2017-07-26_
 
 6.  執行此命令可從Azure AD擷取的中繼資料和憑證：
     
-        Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+    ```powershell
+    Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+    ```
 
 7.  使用此語法來設定您在步驟 3 中建立同盟信任的主要共用的網域。您指定的網域將用來設定同盟信任的組織識別碼 (OrgID)。如需 OrgID 的詳細資訊，請參閱 ＜[同盟組織識別碼](federation-exchange-2013-help.md)。
     
-        Set-FederatedOrganizationIdentifier -DelegationFederationTrust "<Federation Trust Name>" -AccountNamespace <Accepted Domain> -Enabled $true
+    ```powershell
+    Set-FederatedOrganizationIdentifier -DelegationFederationTrust "<Federation Trust Name>" -AccountNamespace <Accepted Domain> -Enabled $true
+    ```
     
     此範例會將公認的網域 contoso.com 為主要共用同盟信任的網域名為 Azure AD 驗證。
     
-        Set-FederatedOrganizationIdentifier -DelegationFederationTrust "Azure AD authentication" -AccountNamespace contoso.com -Enabled $true
+    ```powershell
+    Set-FederatedOrganizationIdentifier -DelegationFederationTrust "Azure AD authentication" -AccountNamespace contoso.com -Enabled $true
+    ```
 
 8.  若要新增其他網域同盟信任，請使用下列語法：
     
-        Add-FederatedDomain -DomainName <AdditionalDomain>
+    ```powershell
+    Add-FederatedDomain -DomainName <AdditionalDomain>
+    ```
     
     此範例將子網域 sales.contoso.com 新增至同盟信任，因為與 sales.contoso.com 網域中的電子郵件地址的使用者需要同盟共用的功能。
     
-        Add-FederatedDomain -DomainName sales.contoso.com
+    ```powershell
+    Add-FederatedDomain -DomainName sales.contoso.com
+    ```
     
     請記住，任何網域或子網域新增至同盟信任需要證明網域擁有權 TXT 記錄
 
@@ -179,11 +205,15 @@ _**上次修改主題的時間：** 2017-07-26_
 
 1.  執行下列命令介面命令，確認同盟信任資訊。
     
-        Get-FederationTrust | Format-List
+    ```powershell
+    Get-FederationTrust | Format-List
+    ```
 
 2.  *\<PrimarySharedDomain\>*取代為您主要的共用網域，並執行下列命令介面命令來確認可以從您的組織擷取同盟資訊。
     
-        Get-FederationInformation -DomainName <PrimarySharedDomain>
+    ```powershell
+    Get-FederationInformation -DomainName <PrimarySharedDomain>
+    ```
 
 如需詳細的語法及參數資訊，請參閱 [Get-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd351262\(v=exchg.150\)) 與 [Get-FederationInformation](https://technet.microsoft.com/zh-tw/library/dd351221\(v=exchg.150\))。
 

@@ -42,7 +42,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 執行下列命令：
 
-    Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+```powershell
+Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+```
 
 此範例會設定名為 Mailbox01 的 Mailbox server 的下列代理程式記錄檔設定：
 
@@ -56,7 +58,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+```powershell
+Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+```
 
 > [!NOTE]  
 > <ul>
@@ -73,7 +77,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 1.  在命令介面中，執行下列命令：
     
-        Get-TransportService <ServerIdentity> | Format-List AgentLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List AgentLog*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

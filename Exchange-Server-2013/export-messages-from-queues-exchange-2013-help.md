@@ -54,35 +54,47 @@ _**上次修改主題的時間：** 2014-05-05_
 
 若要從特定佇列中匯出特定郵件，請執行下列命令：
 
-    Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```powershell
+Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```
 
 此範例會將伺服器 Exchange01 的 contoso.com 傳遞佇列中具有 **InternalMessageID** 值 1234 的郵件副本，匯出至路徑 D:\\Contoso Export 中名為 export.eml 的檔案。
 
-    Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```powershell
+Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```
 
 ## 使用命令介面從特定的佇列匯出所有的郵件
 
 若要從特定佇列中匯出所有郵件，並使用每個郵件的 **InternetMessageID** 值作為檔名，請使用下列語法。
 
-    Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 請注意，**InternetMessageID** 值包含角括弧 (\> 和 \<)，但檔名中不允許此值，所以必須予以移除。
 
 此範例會從伺服器 Mailbox01 上的 contoso.com 傳遞佇列中，將所有郵件的副本匯出至名為 D:\\Contoso Export 的本機目錄。
 
-    Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 ## 使用命令介面從伺服器上的所有佇列匯出特定的郵件
 
 若要從伺服器的所有佇列中匯出特定郵件，並使用每個郵件的 **InternetMessageID** 值作為檔名，請使用下列語法。
 
-    Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 請注意，**InternetMessageID** 值包含角括弧 (\> 和 \<)，但檔名中不允許此值，所以必須予以移除。
 
 此範例會從伺服器 Mailbox01 上所有佇列中，將 contoso.com 網域的寄件者寄來的所有郵件的副本，匯出至名為 D:\\Contoso Export 的本機目錄。
 
-    Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 
 > [!NOTE]  

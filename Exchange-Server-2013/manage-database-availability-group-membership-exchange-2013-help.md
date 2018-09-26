@@ -64,15 +64,21 @@ _**上次修改主題的時間：** 2014-08-13_
 
 此範例會新增 DAG DAG1 中的信箱伺服器 MBX1。
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 此範例會自 DAG DAG1 中移除信箱伺服器 MBX1。執行此命令之前，請確定信箱伺服器上沒有重複的資料庫。
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 本範例從 DAG DAG2 移除 MBX4 的 Mailbox Server 之組態設定。MBX4 預計會離線一段時間，以便在離線期間從 DAG 移除其組態，同時與其他仍在線上的 DAG 成員建立仲裁。
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```
 
 ## 如何知道這是否正常運作？
 
@@ -82,7 +88,9 @@ _**上次修改主題的時間：** 2014-08-13_
 
   - 在命令介面中，執行下列命令以顯示 DAG 成員資格資訊。
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```
 
 ## 相關資訊
 

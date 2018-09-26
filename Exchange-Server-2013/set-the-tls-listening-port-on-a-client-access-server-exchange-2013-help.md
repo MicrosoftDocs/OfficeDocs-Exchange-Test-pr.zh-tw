@@ -68,5 +68,7 @@ _**上次修改主題的時間：** 2013-02-17_
 
 此範例會將 `MyClientAccessServer` Client Access Server 上的 TLS 接聽埠設為 5561。
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```
 

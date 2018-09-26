@@ -67,11 +67,15 @@ _**上次修改主題的時間：** 2014-01-06_
 
 本範例會啟用使用者 John Smith 的 POP3。
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```
 
 本範例會停用使用者 John Smith 的 POP3。
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```
 
 ## 如何知道這是否正常運作？
 

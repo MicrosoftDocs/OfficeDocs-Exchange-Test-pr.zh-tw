@@ -253,7 +253,9 @@ Exchange 2013 藉由納入其他嚴重情況的新行為，來增強伺服器和
 
 遲延副本減少行為預設為停用，並可透過執行下列命令來予以啟用。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 啟用之後，當副本少於三個時便會發生減少行為。您可以修改下列 DWORD 登錄值來變更預設值 3。
 

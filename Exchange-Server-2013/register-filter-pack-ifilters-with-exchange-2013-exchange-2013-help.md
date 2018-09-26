@@ -43,8 +43,6 @@ _**上次修改主題的時間：** 2016-12-09_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
-
-
 ## 您要執行的工作
 
 ## 註冊 Microsoft Office 2010 Filter Pack
@@ -70,15 +68,15 @@ _**上次修改主題的時間：** 2016-12-09_
 > 您必須在組織中所有的信箱伺服器上執行此程序。
 
 
-
-
 1.  下載並從[Microsoft 下載中心](https://go.microsoft.com/fwlink/?linkid=191548)儲存 Microsoft Office 2010 Filter Pack (`FilterPack64bit.exe`)。
 
 2.  在您的信箱伺服器上執行 `FilterPack64bit.exe` 檔案，並遵循指示完成安裝。
 
 3.  啟動登錄編輯程式，並尋找下列登錄子機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```powershell
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 4.  在 \[CLSID\] 底下新增 OneNote 檔案的子機碼，如下所示：
     
@@ -106,7 +104,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 6.  找到下列登錄機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```powershell
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 7.  在 \[篩選器\] 底下新增 .one 副檔名的子機碼，如下所示。
     
@@ -162,9 +162,6 @@ _**上次修改主題的時間：** 2016-12-09_
 > [!IMPORTANT]  
 > Microsoft 尚未使用傳輸規則測試協力廠商 IFilter，因此建議您先在測試環境中部署和測試任何協力廠商 IFilter，再部署至實際執行環境。
 
-
-
-
 ## 部署 Adobe PDF IFilter
 
 此程序將示範如何部署[Adobe PDF IFilter](https://www.adobe.com/support/downloads/detail.jsp?ftpid=4025)傳輸規則中支援的 PDF 附件處理。
@@ -173,14 +170,13 @@ _**上次修改主題的時間：** 2016-12-09_
 > [!NOTE]  
 > Exchange 2013 預設會支援傳輸規則中的 PDF 檔案掃描。簡單使用此處的 PDF 範例，說明您可以如何使用協力廠商 IFilter 來擴充支援其他檔案類型。
 
-
-
-
 1.  下載[Adobe PDF IFilter](https://www.adobe.com/support/downloads/detail.jsp?ftpid=4025)與然後按照安裝指示。
 
 2.  啟動登錄編輯程式，並尋找下列子機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```powershell
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 3.  在 \[CLSID\] 底下新增 PDF 檔案的子機碼，如下所示：
     
@@ -195,7 +191,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 4.  找到下列登錄機碼：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```powershell
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 5.  在 \[篩選器\] 底下新增 .pdf 副檔名的子機碼，如下所示：
     

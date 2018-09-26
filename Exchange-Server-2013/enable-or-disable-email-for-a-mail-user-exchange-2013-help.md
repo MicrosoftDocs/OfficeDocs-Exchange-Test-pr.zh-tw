@@ -26,8 +26,6 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 > 郵件使用者 （也稱為<em>擁有郵件功能的使用者</em>） 的方式不同於組織中沒有信箱的使用者。主要差異是郵件使用者代表 Exchange 組織外部的使用者具有的外部電子郵件地址。沒有在組織中的信箱。如需有您組織中的信箱的使用者和郵件使用者之間的差異的詳細資訊，請參閱<a href="recipients-exchange-2013-help.md">收件者</a>。
 
 
-
-
 關於與郵件使用者相關的其他管理工作，請參閱[管理郵件使用者](https://docs.microsoft.com/zh-tw/exchange/recipients-in-exchange-online/manage-mail-users)。
 
 ## 開始之前有哪些須知？
@@ -41,8 +39,6 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
-
-
 
 
 ## 您要執行的工作
@@ -67,7 +63,9 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 
 此範例會停用郵件使用者 Yan Li 的電子郵件。
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 如需詳細的語法及參數資訊，請參閱 [Disable-MailUser](https://technet.microsoft.com/zh-tw/library/aa998578\(v=exchg.150\))。
 
@@ -81,13 +79,17 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 
 3.  在命令介面中，執行下列命令。
     
-        Get-MailUser
+    ```powershell
+    Get-MailUser
+    ```
     
     您停用其電子郵件的郵件使用者不會回到結果中，因為此 Cmdlet 只會傳回啟用郵件功能的使用者。
 
 4.  在命令介面中，執行下列命令。
     
-        Get-User
+    ```powershell
+    Get-User
+    ```
     
     您停用其電子郵件的郵件使用者會回到結果中，因為此 Cmdlet 會傳回所有 Active Directory 使用者物件。
 
@@ -99,7 +101,9 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 
 本範例會啟用郵件功能的使用者 Sanjay Shah。您必須提供外部電子郵件地址。
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 使用命令介面和 CSV 檔啟用多個使用者的郵件功能
 
@@ -107,10 +111,13 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 
 1.  執行下列命令，將未啟用郵件功能且在您組織中沒有信箱的現有使用者清單匯出到管理員桌面上名為 UsersToMailEnable.csv 的檔案。
     
+    ```powershell
         Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```
     
     產生的檔案類似下列檔案。
     
+    ```powershell
         Name            RecipientType
         ----            -------------
         Guest           User
@@ -123,6 +130,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
         Spencer Low     User
         Toni Poe        User
         ...
+    ```
 
 2.  對 CSV 檔進行下列變更：
     
@@ -134,6 +142,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
     
     更新的 CSV 檔應該類似下列檔案。
     
+    ```powershell
         Name,EmailAddress
         David Pelton,davidp@contoso.com
         Kim Akers,kakers@tailspintoys.com
@@ -142,10 +151,13 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
         Spencer Low,spencerl@fouthcoffee.com
         Toni Poe,tonip@contoso.com
         ...
+    ```
 
 3.  執行下列命令，以使用 CSV 檔中的資料啟用檔案中所列使用者的郵件功能。
     
+    ```powershell
         Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
     
     命令結果會顯示啟用郵件功能之新使用者的相關資訊。
 
@@ -161,5 +173,7 @@ _<strong>上次修改主題的時間：</strong> 2012-11-14_
 
   - 在命令介面中，執行下列命令以顯示新郵件使用者的相關資訊。
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

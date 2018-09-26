@@ -231,7 +231,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
   - 部署 Abp 不會防止從另一個虛擬組織中的使用者傳送電子郵件的一部虛擬組織中的使用者。若要防止使用者傳送電子郵件與跨組織，建議您建立傳輸規則。例如，若要建立的傳輸規則會防止 Contoso 使用者接收的郵件來自 Fabrikam 的使用者，但仍可讓 Fabrikam 的資深領導小組將郵件傳送至 Contoso 的使用者，執行下列命令介面命令：
     
-        New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
+    ```powershell
+    New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
+    ```
 
   - 如果您想要強制執行的功能類似 Lync 用戶端 ABP，您可以在特定使用者物件上設定`msRTCSIP-GroupingID`屬性。如需詳細資訊，請參閱[取代成 Msrtcsip-groupingid](https://go.microsoft.com/fwlink/p/?linkid=232306)主題。
 
@@ -287,21 +289,29 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會建立 AL\_TAIL\_Users\_DGs 的地址清單。通訊清單包含所有的使用者和 CustomAttribute15 其中等於條紋的通訊群組。
 
-    New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+```powershell
+New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+```
 
 如需更多有關使用收件者篩選器建立通訊清單的資訊，請參閱[使用收件者篩選器來建立通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)。
 
 可建立將 ABP，您必須提供會議室通訊清單。如果您的組織如會議室或設備信箱沒有資源信箱，我們建議您建立的空白會議室通訊清單。下列範例會在因為在組織中有無會議室信箱建立空白會議室通訊清單。
 
-    New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+```powershell
+New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+```
 
 不過，在此案例中，Fabrikam 與 Contoso 有會議室信箱。本範例會建立會議室清單為 Fabrikam 使用其中 CustomAttribute15 等於 FAB 收件者篩選器。
 
-    New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+```powershell
+New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+```
 
 將 ABP 中所使用的全域通訊清單必須是更多的地址清單。不會有較少物件比存在於中任一或所有 ABP.通訊清單建立 GAL本範例會建立包含所有存在之收件者地址清單和會議室通訊清單中的 Tailspin Toys 的全域通訊清單。
 
-    New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+```powershell
+New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+```
 
 如需詳細資訊，請參閱 [建立全域通訊清單](https://docs.microsoft.com/zh-tw/exchange/address-books/address-lists/create-global-address-list)。
 
@@ -309,7 +319,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會為 Fabrikam 建立名為 OAB\_FAB 的離線通訊錄 (OAB)。
 
-    New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```powershell
+New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```
 
 如需詳細資訊，請參閱 [建立離線通訊錄](https://docs.microsoft.com/zh-tw/exchange/address-books/offline-address-books/create-offline-address-book)。
 
@@ -317,7 +329,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 您已建立的所有必要物件之後，您可以建立 ABP.此範例會建立名為 ABP\_TAIL ABP。
 
-    New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+```powershell
+New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+```
 
 如需詳細資訊，請參閱 [建立通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/create-an-address-book-policy)。
 
@@ -327,7 +341,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 此範例會指派 ABP\_FAB 給 CustomAttribute15 等於 "FAB" 的所有信箱。
 
-    Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+```powershell
+Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+```
 
 如需詳細資訊，請參閱 [通訊錄原則指派給郵件使用者](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)。
 

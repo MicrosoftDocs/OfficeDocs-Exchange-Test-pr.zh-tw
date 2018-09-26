@@ -52,7 +52,9 @@ _**上次修改主題的時間：** 2012-11-16_
 
 本範例會移除 DAG DAG1。
 
-    Remove-DatabaseAvailabilityGroup -Identity DAG1
+```powershell
+Remove-DatabaseAvailabilityGroup -Identity DAG1
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -62,7 +64,9 @@ _**上次修改主題的時間：** 2012-11-16_
 
   - 在命令介面中執行下列命令以查看 DAG 是否仍存在：
     
+    ```powershell
         Get-DatabaseAvailabilityGroup <DAGName>
+    ```
     
     若成功刪除 DAG，先前的命令將產生一則錯誤訊息表示找不到物件。
 

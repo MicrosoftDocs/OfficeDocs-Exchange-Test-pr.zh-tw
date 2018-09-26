@@ -74,19 +74,27 @@ Verify EdgeSync results
 
 1.  若要從 Edge Transport Server 中移除 Edge 訂閱，請使用下列語法。
     
-        Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```powershell
+    Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     例如，若要在名為 Edge01 的 Edge Transport Server 上移除 Edge 訂閱，請執行下列命令。
     
-        Remove-EdgeSubscription Edge01
+    ```powershell
+    Remove-EdgeSubscription Edge01
+    ```
 
 2.  若要從信箱伺服器中移除 Edge 訂閱，請使用下列語法。
     
-        Remove-EdgeSubscription <MailboxServerIdentity>
+    ```powershell
+    Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     例如，若要在名為 Mailbox01 的信箱伺服器上移除 Edge 訂閱，執行下列命令。
     
-        Remove-EdgeSubscription Mailbox01
+    ```powershell
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 在下列情況下，您將必須移除 Edge 訂閱：
 
@@ -142,7 +150,9 @@ Verify EdgeSync results
 
 若要以手動方式執行 EdgeSync，請使用下列語法。
 
-    Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+```powershell
+Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+```
 
 下列範例將使用以下選項啟動 EdgeSync：
 
@@ -154,7 +164,9 @@ Verify EdgeSync results
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -Server Mailbox01
+```powershell
+Start-EdgeSynchronization -Server Mailbox01
+```
 
 此範例會使用下列選項啟動 EdgeSync：
 
@@ -166,7 +178,9 @@ Verify EdgeSync results
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```powershell
+Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```
 
 ## 驗證 EdgeSync 結果
 
@@ -180,11 +194,15 @@ Verify EdgeSync results
 
 若要驗證單一收件者的 EdgeSync 結果，請在已訂閱的 Active Directory 站台中的信箱伺服器上使用下列語法。
 
-    Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```powershell
+Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```
 
 此範例會驗證使用者 kate@contoso.com 的 EdgeSync 結果。
 
-    Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```powershell
+Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```
 
 回到頁首
 

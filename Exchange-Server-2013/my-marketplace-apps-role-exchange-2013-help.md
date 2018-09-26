@@ -46,7 +46,9 @@ My Marketplace Apps 管理角色可讓個別使用者從 Microsoft Office 市集
 
 如果您要檢視指派給此角色的角色群組、使用者或 USG 的清單，請使用下列命令。
 
-    Get-ManagementRoleAssignment -Role "<role name>"
+```powershell
+Get-ManagementRoleAssignment -Role "<role name>"
+```
 
 ## 一般和委派角色指派
 

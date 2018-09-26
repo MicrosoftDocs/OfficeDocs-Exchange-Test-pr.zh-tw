@@ -98,11 +98,15 @@ Exchange 2013隨附稱為 「*仲裁信箱*的五個系統信箱。仲裁信箱�
 
 1.  如果缺少任何仲裁信箱，請執行下列命令：
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 管理命令介面，執行下列命令：
     
-        Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    ```powershell
+    Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    ```
 
 ## 重新建立 Microsoft Exchange 核准小幫手的信箱
 
@@ -110,27 +114,35 @@ Exchange 2013隨附稱為 「*仲裁信箱*的五個系統信箱。仲裁信箱�
 
 1.  如果缺少任何仲裁信箱，請執行下列命令：
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 管理命令介面，執行下列命令：
-    
+    ```powershell
         Get-User | Where-Object {$_.Name -like "SystemMailbox{1f05a927-7709-4e35-9dbe-d0f608fb781a}"} | Enable-Mailbox -Arbitration
-
+    ```
 ## 重新建立 Microsoft Exchange 遷移信箱
 
 若要重新建立的仲裁信箱 Migration.8f3e7716-2011年-43e4-96b1-aba62d229136：
 
 1.  如果缺少任何仲裁信箱，請執行下列命令：
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 管理命令介面，執行下列命令：
     
-        Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+    ```powershell
+    Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+    ```
 
 3.  在Exchange 管理命令介面、 設定保存功能 (msExchCapabilityIdentifiers) 中執行下列命令：
     
-        Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    ```powershell
+    Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    ```
 
 ## 重新建立 Microsoft Exchange 探索系統信箱
 
@@ -138,7 +150,9 @@ Exchange 2013隨附稱為 「*仲裁信箱*的五個系統信箱。仲裁信箱�
 
 1.  執行下列命令：
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 重新建立 Oab Microsoft Exchange 組織信箱
 
@@ -146,25 +160,31 @@ Exchange 2013隨附稱為 「*仲裁信箱*的五個系統信箱。仲裁信箱�
 
 1.  如果缺少任何仲裁信箱，請執行下列命令：
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 管理命令介面，執行下列命令：
     
-        Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+    ```powershell
+    Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+    ```
 
 3.  在Exchange 管理命令介面、 設定保存功能 (msExchCapabilityIdentifiers) 中執行下列命令：
-    
+    ```powershell
         Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar:$True -OABGen:$True -GMGen:$True -ClientExtensions:$True -MessageTracking:$True -PstProvider:$True -MaxSendSize 1GB -Force
-
+    ```
 完成時，如果您執行命令`$OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration (Get-ADUser $OABMBX.SamAccountName -Properties *).msExchCapabilityIdentifiers`您會看到 46、 47，以及 51 會遺失。執行下列命令以新增所有後的功能：
-
+```powershell
     Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
-
+```
 ## 如何知道這是否正常運作？
 
 若要確認您已順利重新建立的仲裁信箱，請使用具有*Arbitration*參數**Get-Mailbox**指令程式來擷取系統信箱。
 
-    Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```powershell
+Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```
 
 檢視命令來確認已重新建立該適當的系統信箱，其中會根據名稱或從上方\] 表格中的顯示名稱的結果。
 

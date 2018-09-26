@@ -37,7 +37,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## 語法
 
-    RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```powershell
+RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```
 
 ## 詳細描述
 
@@ -94,7 +96,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 當您執行的指令碼的輸出以互動方式與-verbose 旗標應該指出哪些指令碼作業成功。若要確認已更新用戶端存取伺服器，您可以確認 ASA 認證上的上次修改的時間戳記。下列範例會將會產生的用戶端存取伺服器清單和上次更新的備用服務帳戶。
 
-    Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```powershell
+Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```
 
 您也可以檢查事件記錄檔在其執行指令碼之電腦上。指令碼的事件記錄項目都在應用程式事件記錄檔並從來源*MSExchange Management Application*。下表列出所記錄的事件及事件的意義。
 
@@ -245,25 +249,33 @@ _**上次修改主題的時間：** 2015-03-09_
 
 此範例會使用指令碼推送到首次設定的樹系中的所有用戶端存取伺服器的認證。
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```
 
 ## 範例 2
 
 此範例會產生新密碼的使用者帳戶 ASA 認證並分散每個圖形的名稱必須符合其中的用戶端存取伺服器陣列中的所有成員的密碼 \* 信箱 \*。
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```
 
 ## 範例 3
 
 本範例會排程一個月一次的自動化的密碼 roll 排定的工作稱為 「 Exchange RollAsa"。將會更新整個樹系中的所有用戶端存取伺服器 ASA 認證使用新的、 指令碼產生的密碼。建立排定的工作時，但不是執行指令碼。執行排定的工作時，會在自動模式中執行指令碼。
 
-    .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```
 
 ## 範例 4
 
 此範例會更新名為 CAS01 的 Client Access server 陣列中的所有用戶端存取伺服器 ASA 認證。它會從 Contoso 網域中的Active Directory電腦帳戶 ServiceAc1 取得認證。
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```
 
 ## 範例 5
 
@@ -271,5 +283,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 您需要更新 ASA 認證之前的用戶端存取伺服器會接收的流量。從任何已正確設定的用戶端存取伺服器複製共用的 ASA 認證。例如，如果伺服器的目前已使用 ASA 認證與您剛新增伺服器 B 陣列，您可用於指令碼複製 （包括密碼） 認證來自伺服器的伺服器 b。這是有用如果 Server B 是向下或尚未陣列當密碼彙上次的成員。
 
-    .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```
 

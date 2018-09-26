@@ -64,7 +64,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本範例會在Exchange組織的用戶端存取伺服器上啟用 IRM。
 
-    Set-IRMConfiguration -ClientAccessServerEnabled $true
+```powershell
+Set-IRMConfiguration -ClientAccessServerEnabled $true
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 
@@ -72,7 +74,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 本範例會停用 IRM Exchange組織的 Client Access server 上。
 
-    Set-IRMConfiguration -ClientAccessServerEnabled $false
+```powershell
+Set-IRMConfiguration -ClientAccessServerEnabled $false
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-IRMConfiguration](https://technet.microsoft.com/zh-tw/library/dd979792\(v=exchg.150\))。
 

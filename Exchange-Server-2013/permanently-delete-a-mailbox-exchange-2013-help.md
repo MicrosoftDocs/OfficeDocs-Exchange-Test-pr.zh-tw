@@ -35,9 +35,6 @@ _**上次修改主題的時間：** 2012-11-16_
 > [!NOTE]  
 > 您無法使用 EAC 永久刪除作用中的信箱或中斷連線的信箱。
 
-
-
-
 ## 開始之前有哪些須知？
 
   - 預估完成時間：2 分鐘。
@@ -50,9 +47,6 @@ _**上次修改主題的時間：** 2012-11-16_
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
-
-
-
 ## 您要執行的工作
 
 ## 永久刪除作用中的信箱
@@ -61,13 +55,12 @@ _**上次修改主題的時間：** 2012-11-16_
 
 執行下列命令以永久刪除作用中信箱和相關聯的 Active Directory 使用者帳戶。
 
-    Remove-Mailbox -Identity <identity> -Permanent $true
-
+```powershell
+Remove-Mailbox -Identity <identity> -Permanent $true
+```
 
 > [!NOTE]  
 > 如果您未包含<em>Permanent</em>參數，刪除的信箱會保留信箱資料庫中 30 天內，預設會永久刪除之前。
-
-
 
 
 如需詳細語法及參數的資訊，請參閱 [Remove-Mailbox](https://technet.microsoft.com/zh-tw/library/aa995948\(v=exchg.150\))。
@@ -82,7 +75,9 @@ _**上次修改主題的時間：** 2012-11-16_
 
 3.  執行下列命令來確認信箱已成功清除從 Exchange 信箱資料庫。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+    ```
     
     如果您已順利將清除信箱，此命令將不會傳回任何結果。如果未清除信箱，此命令會傳回信箱的相關資訊。
 
@@ -94,32 +89,39 @@ _**上次修改主題的時間：** 2012-11-16_
 
 執行下列命令以判斷是否已中斷連線的信箱已停用或虛刪除。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 中斷連線信箱*DisconnectReason*屬性的值將會是`Disabled`或`SoftDeleted`。
 
 您可以執行下列命令以顯示您組織中所有已中斷連線信箱的類型。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
-
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 > [!WARNING]  
 > 當您要永久刪除 [中斷連線的信箱使用<strong>Remove-StoreMailbox</strong>指令程式時，及其所有內容會從信箱資料庫都清除及資料遺失是永久性動作。
 
 
-
-
 這個範例會從信箱資料庫 MBD01 中，永久刪除 UID 為 2ab32ce3-fae1-4402-9489-c67e3ae173d3 的已停用信箱。
 
-    Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```
 
 此範例會永久刪除的虛刪除信箱 Dan 跳轉的信箱資料庫 mbd01。
 
-    Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```
 
 這個範例會從信箱資料庫 MBD01 中，永久刪除所有虛刪除信箱。
 
-    Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```powershell
+Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-StoreMailbox](https://technet.microsoft.com/zh-tw/library/ff829913\(v=exchg.150\)) 與 [Get-MailboxStatistics](https://technet.microsoft.com/zh-tw/library/bb124612\(v=exchg.150\))。
 
@@ -127,7 +129,8 @@ _**上次修改主題的時間：** 2012-11-16_
 
 若要確認您是否已永久刪除已中斷連線的信箱和成功已清除從 Exchange 信箱資料庫，請執行下列命令。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
 
 如果您已順利將清除信箱，此命令將不會傳回任何結果。如果未清除信箱，此命令會傳回信箱的相關資訊。
-

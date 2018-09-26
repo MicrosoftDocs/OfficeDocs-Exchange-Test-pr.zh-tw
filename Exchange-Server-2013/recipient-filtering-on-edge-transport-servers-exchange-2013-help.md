@@ -69,7 +69,9 @@ Multiple namespaces
 
 若要在 SMTP 傳回 `550 5.1.1 User unknown` 前設定延遲，您何以使用 **Set-ReceiveConnector** Cmdlet 上的 *TarpitInterval* 參數來設定垃圾郵件防堵間隔。語法為：
 
-    Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```powershell
+Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```
 
 預設值是 `00:00:05` 或 5 秒。Edge Transport Server 上的預設接收連接器名稱是 `Default internal receive connector <server name>`。
 

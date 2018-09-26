@@ -128,7 +128,9 @@ _**上次修改主題的時間：** 2018-04-16_
     
     2.  執行下列命令。
         
-            Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```powershell
+        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```
     
     3.  正常執行傳輸代理程式管理工作。
     
@@ -158,7 +160,9 @@ _**上次修改主題的時間：** 2018-04-16_
     
     若要解決此問題，您需要從 Exchange 2013 Client Access Server 的用戶端接收連接器移除 `Integrated` 驗證方法。若要從用戶端接收連接器移除 `Integrated` 驗證方法，請在各個 Exchange 2013 Client Access Server (從執行**Send-MailMessage** 指令程式的電腦接收連線) 上執行下列命令：
     
-        Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+      ```powershell
+      Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+      ```
 
   - **升級至 Exchange 2013 SP1 時，MAPI over HTTP 的效能可能會變差**   如果您從 Exchange 2013 累計更新升級至 Exchange 2013 SP1，並啟用 MAPI over HTTP，則使用此通訊協定連接到 Exchange 2013 SP1 伺服器的用戶端可能會出現效能變差的狀況。這是由於從累計更新升級至 Exchange 2013 SP1 期間未配置必要設定所致。如果您從 Exchange 2013 RTM 升級至 Exchange 2013 SP1，或是安裝新的 Exchange 2013 SP1 或更新版本的伺服器，就不會發生此問題。
     
@@ -169,14 +173,15 @@ _**上次修改主題的時間：** 2018-04-16_
     
     1.  在執行 Client Access server role 的伺服器上，使用 Windows 命令提示字元執行下列命令：
         
+          ```powershell
             set AppCmdLocation=%windir%\System32\inetsrv
             set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
             
             %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
             %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
-    
+          ```    
     2.  在執行 Mailbox server role 的伺服器上，使用 Windows 命令提示字元執行下列命令：
-        
+          ```powershell
             set AppCmdLocation=%windir%\System32\inetsrv
             set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
             
@@ -185,7 +190,7 @@ _**上次修改主題的時間：** 2018-04-16_
             
             %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
             %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
-
+          ```
 ## Exchange 2010 共存
 
   - **當透過 Exchange 2013 Client Access Server 進行 Proxy 處理時，存取 Exchange 2010 信箱的要求可能無法運作**   在某些情況中，未安裝任何更新彙總套件的 Exchange 2013 和 Exchange 2010 Service Pack 3 (SP3) Client Access Server 之間的 Proxy 要求可能無法正常運作，且會出現錯誤。當下列條件全部成立時，就會發生此情況：
