@@ -555,7 +555,7 @@ Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄�
 在兩個使用者之間傳送未引發事件的郵件時，會在郵件追蹤記錄檔中產生數個項目。您可以使用 **Get-MessageTrackingLog** Cmdlet 來查看結果。如需詳細資訊，請參閱＜[搜尋郵件追蹤記錄檔](search-message-tracking-logs-exchange-2013-help.md)＞。
 
 以下是當使用者 chris@contoso.com 順利將測試郵件傳送給使用者 michelle@contoso.com 時，所建立之郵件追蹤記錄項目的範例節錄。這兩名使用者在同一部伺服器上都有信箱。
-
+```powershell
     EventId    Source      Sender            Recipients             MessageSubject
     -------    ------      ------            ----------             --------------
     NOTIFYMAPI STOREDRIVER                   {}
@@ -566,7 +566,7 @@ Exchange 預設會根據檔案大小及檔案保留天數，使用循環記錄�
     AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
     SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
     DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
-
+```
 回到頁首
 
 ## 郵件追蹤記錄的安全性考量

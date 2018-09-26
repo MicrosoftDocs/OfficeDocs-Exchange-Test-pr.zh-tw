@@ -242,9 +242,9 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
         Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         ```
        
-    ```powershell
-    Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-    ```
+        ```powershell
+        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
     
 
 如需詳細的語法及參數資訊，請參閱下列主題：
@@ -326,9 +326,9 @@ Exchange 支援從下列舊版 Exchange Server 移轉公用資料夾：
        ```
 
 2.  在 Exchange 2013 伺服器上，執行下列命令：
-    
+    ```powershell
         New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
-
+    ```
 3.  開始移轉使用下列命令：
     
     ```powershell

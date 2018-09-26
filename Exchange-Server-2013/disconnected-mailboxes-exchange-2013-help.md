@@ -33,15 +33,15 @@ _**上次修改主題的時間：** 2015-03-09_
     > 如果使用 <strong>Remove-Mailbox</strong> Cmdlet 以及 <em>Permanent</em> 或 <em>StoreMailboxIdentity</em> 參數刪除信箱，則會立即從信箱資料庫刪除該信箱。
     
     若要識別組織中已停用的信箱，請在命令介面中執行下列命令。
-    
+    ```powershell
         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
-
+    ```
   - **虛刪除信箱**   將信箱移動至其他的信箱資料庫時，Exchange 不會在移動完成之後將信箱從來源信箱資料庫中完全刪除。而是會將來源信箱資料庫中的信箱切換到「虛刪除」狀態。如同停用的信箱，虛刪除的信箱會保留在來源資料庫中，直到刪除的信箱保留期間到期或直到使用 **Remove-StoreMailbox** Cmdlet 清除信箱。
     
     請執行下列命令，識別組織中的虛刪除信箱。
-    
+    ```powershell
         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
-
+    ```
 **目錄**
 
 使用已停用的信箱

@@ -95,9 +95,9 @@ _**上次修改主題的時間：** 2016-12-09_
         建立一個將可用性要求從 Exchange 2007 信箱使用者導向 Exchange 2007 組織中 Exchange 2010 SP2 用戶端伺服器之遠端 Exchange 2013 組織的可用位址空間。此設定能讓遠端 Exchange 2013 組織的使用者，透過 Exchange 2007 組織中的 Exchange 2010 用戶端存取伺服器來代理 Exchange 2007 使用者的使用者可用性要求。Exchange 2007 中的 Exchange 2010 用戶端存取伺服器會利用同盟信任及組織關係，將可用性要求傳送至遠端 Exchange 2013 組織樹系可用性端點。
         
         若要設定可用性位址空間，請在 Exchange 2007 組織中之 Exchange 2010 用戶端存取伺服器的 Exchange 管理命令介面執行以下命令：
-        
+        ```powershell
             Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
-        
+        ```
         如需詳細的語法及參數資訊，查看[Add-availabilityaddressspace](https://go.microsoft.com/fwlink/p/?linkid=268413)
 
 ## 在 Exchange 2013 和 Exchange 2003 組織之間設定空閒/忙碌共用

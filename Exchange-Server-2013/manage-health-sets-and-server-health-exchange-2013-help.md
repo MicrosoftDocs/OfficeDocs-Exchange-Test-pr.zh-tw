@@ -49,7 +49,7 @@ _**上次修改主題的時間：** 2013-12-02_
 ## 使用命令介面檢視伺服器健全狀況
 
 執行下列任一個命令，檢視執行 Exchange 2013 的伺服器的健全設定和健全狀況資訊。
-```
+```powershell
 Get-HealthReport -Identity <ServerName>
 ```
 

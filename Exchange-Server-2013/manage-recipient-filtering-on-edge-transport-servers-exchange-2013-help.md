@@ -39,8 +39,8 @@ _**上次修改主題的時間：** 2015-04-08_
   - **Set-AcceptedDomain**指令程式的 *AddressBookEnabled* 參數可以啟用或停用公認的網域中，對於收件者的收件者篩選功能。依預設，會為授權網域啟用收件者篩選，為內部轉送網域和外部轉送網域停用收件者篩選。若要檢視組織中公認的網域之 *AddressBookEnabled* 參數的狀態，請執行下列命令：
     
     ```powershell
-Get-AcceptedDomain | Format-List Name,AddressBookEnabled
-```
+    Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+    ```
 
   - 如果使用本主題中的程序停用收件者篩選，則會停用收件者篩選功能，但基礎的 \[收件者篩選器\] 代理程式仍維持啟用。
 
@@ -83,8 +83,8 @@ Set-RecipientFilterConfig -Enabled $true
 1.  執行下列命令：
     
     ```powershell
-Get-RecipientFilterConfig | Format-List Enabled
-```
+    Get-RecipientFilterConfig | Format-List Enabled
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -109,8 +109,8 @@ Set-RecipientFilterConfig -BlockListEnabled $true
 1.  執行下列命令：
     
     ```powershell
-Get-RecipientFilterConfig | Format-List BlockListEnabled
-```
+    Get-RecipientFilterConfig | Format-List BlockListEnabled
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -129,13 +129,13 @@ Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
 ```
 
 若要新增或移除項目而不修改任何現有的值，請執行下列命令：
-
+```powershell
     Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
-
+```
 本範例將 chris@contoso.com 加入收件者清單，並從收件者封鎖清單的收件者清單中，移除 michelle@contoso.com：
-
+```powershell
     Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
-
+```
 ## 如何知道這是否正常運作？
 
 若要確認您是否已成功設定收件者封鎖清單，請執行下列動作：
@@ -143,8 +143,8 @@ Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
 1.  執行下列命令：
     
     ```powershell
-Get-RecipientFilterConfig | Format-List BlockedRecipients
-```
+    Get-RecipientFilterConfig | Format-List BlockedRecipients
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -169,8 +169,8 @@ Set-RecipientFilterConfig -RecipientValidationEnabled $true
 1.  執行下列命令：
     
     ```powershell
-Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
-```
+    Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
