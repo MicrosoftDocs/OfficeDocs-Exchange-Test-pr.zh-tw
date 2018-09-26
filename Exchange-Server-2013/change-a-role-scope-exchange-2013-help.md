@@ -108,7 +108,9 @@ Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> 
 
 此範例會變更伺服器篩選器以比對所有 **ServerSite** 屬性設定為 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' 的伺服器物件。
 
+```powershell
     Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd297996\(v=exchg.150\))。
 
@@ -136,7 +138,9 @@ Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filt
 
 此範例會變更資料庫篩選，以符合 **Name** 內容包含字串「Executive」的所有資料庫物件。
 
+```powershell
     Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+```
 
 如需詳細的語法及參數資訊，請參閱 [Set-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd297996\(v=exchg.150\))。
 
