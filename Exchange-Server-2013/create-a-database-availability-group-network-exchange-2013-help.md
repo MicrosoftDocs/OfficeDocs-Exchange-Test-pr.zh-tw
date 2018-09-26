@@ -63,7 +63,9 @@ _**上次修改主題的時間：** 2012-11-02_
 
 本範例會建立網路 ReplicationDagNetwork02 10.0.0.0 的子網路與 8 DAG DAG1 中的位元遮罩。複寫已啟用的網路，並也新增網路的選用描述。
 
-    New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+```powershell
+New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -74,8 +76,8 @@ _**上次修改主題的時間：** 2012-11-02_
   - 在命令介面中，執行下列命令來驗證是否已建立 DAG 網路並顯示 DAG 網路的組態資訊。
     
     ```powershell
-Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
-```
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## 相關資訊
 

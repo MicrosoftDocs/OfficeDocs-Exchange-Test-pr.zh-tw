@@ -62,17 +62,21 @@ DAG 會利用*「增量部署」*(Incremental Deployment) 的概念，可在 Exc
 
 此範例顯示如何使用命令介面建立擁有三部伺服器且具有叢集管理存取點的 DAG。其中兩部伺服器 (EX1 和 EX2) 位於同一個子網路 (10.0.0.0)，而第三部伺服器 (EX3) 位於另一個子網路 (192.168.0.0)。
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```
 
 建立沒有叢集管理存取點之 DAG 的命令非常類似：
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```
 
 將 EX1 新增至 DAG 時，會建立 DAG1 的叢集。在叢集建立期間，**Add-DatabaseAvailabilityGroupServer** 指令程式會擷取為 DAG 設定的 IP 位址，並忽略在 EX1 上發現但不符合任何子網路的位址。在上面的第一個範例中，會以 10.0.0.5 的 IP 位址來建立 DAG1 叢集，並忽略 192.168.0.5 的 IP 位址。在上面的第二個範例中，*DatabaseAvailabilityGroupIPAddresses* 參數的值會指示工作建立沒有管理存取點之 DAG 的容錯移轉叢集。因此，會使用核心叢集資源群組中的 IP 位址或網路名稱資源來建立叢集。
 

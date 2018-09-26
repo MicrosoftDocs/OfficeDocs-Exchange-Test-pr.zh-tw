@@ -40,8 +40,6 @@ _**上次修改主題的時間：** 2012-11-06_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
-
-
 ## 您要執行的工作
 
 ## 使用 EAC 移除信箱資料庫副本
@@ -74,9 +72,9 @@ Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
 
   - 在命令介面中，執行下列指令以確認移除複本。
     
-    ```powershell
-Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
-```
+  ```powershell
+  Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+  ```
     
-    移除的被動副本將不會再列出。
+  移除的被動副本將不會再列出。
 

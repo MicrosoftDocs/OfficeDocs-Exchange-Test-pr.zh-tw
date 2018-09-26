@@ -68,8 +68,8 @@ Set-SenderIDConfig -Enabled $true
 1.  執行下列命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List Enabled
-```
+    Get-SenderIDConfig | Format-List Enabled
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -94,8 +94,8 @@ Set-SenderIDConfig -SpoofedDomainAction Reject
 1.  執行下列命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List SpoofedDomainAction
-```
+    Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -122,8 +122,8 @@ Set-SenderIDConfig -TempErrorAction StampStatus
 1.  執行下列命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List TempErrorAction
-```
+    Get-SenderIDConfig | Format-List TempErrorAction
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 
@@ -131,15 +131,21 @@ Get-SenderIDConfig | Format-List TempErrorAction
 
 若要取代現有的值，請執行下列命令：
 
-    Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```powershell
+Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 此範例設定寄件者識別碼代理程式來略過傳送至 kim@contoso.com 及 john@contoso.com 的郵件寄件者識別碼檢查，並忽略來自 fabrikam.com 網域的郵件寄件者識別碼檢查。
 
-    Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```powershell
+Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```
 
 若要新增或移除項目而不修改任何現有的值，請執行下列命令：
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 此範例透過以下資訊設定寄件者識別碼代理程式：
 
@@ -149,7 +155,9 @@ Get-SenderIDConfig | Format-List TempErrorAction
 
 <!-- end list -->
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -158,8 +166,8 @@ Get-SenderIDConfig | Format-List TempErrorAction
 1.  執行下列命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
-```
+    Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

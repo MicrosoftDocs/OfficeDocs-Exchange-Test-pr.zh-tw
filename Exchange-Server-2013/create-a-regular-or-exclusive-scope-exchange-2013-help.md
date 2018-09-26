@@ -67,11 +67,15 @@ _**上次修改主題的時間：** 2015-04-07_
 
 使用下列語法，能以基本 OU 來建立網域限制篩選器範圍。
 
-    New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```powershell
+New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```
 
 此範例會建立包含 contoso.com/Sales OU 中所有信箱的範圍。
 
-    New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```powershell
+New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```
 
 
 > [!NOTE]  
@@ -96,7 +100,9 @@ New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
 
 此範例會建立包含 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD (Active Directory) 站台內所有伺服器的範圍。
 
-    New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```powershell
+New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd335137\(v=exchg.150\))。
 
@@ -139,7 +145,9 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 
 這個範例會建立一個範圍，而此範圍包括資料庫 **Name** 屬性中包含 "Executive" 字串的所有資料庫。
 
-    New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```powershell
+New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd335137\(v=exchg.150\))。
 
@@ -181,11 +189,15 @@ New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Datab
 
 此範例會建立符合 Executives 部門中任何使用者的獨佔收件者篩選器式範圍。
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```
 
 根據預設，建立獨佔範圍之後，您正在需要確認您建立獨佔範圍和您知道獨佔範圍對未獨佔的現有角色指派的影響。如果您想要隱藏警告中，您可以使用*Force*參數。此範例會建立同一個範圍上一個範例中，但不包含一則警告訊息。
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementScope](https://technet.microsoft.com/zh-tw/library/dd335137\(v=exchg.150\))。
 

@@ -189,17 +189,20 @@ Azure 管理入口網站目前不允許您設定多個網站 VPN。此設定，�
 
 在任何 XML 編輯器中開啟您匯出的檔案。閘道連線至內部網站列示於"ConnectionsToLocalNetwork 」 一節。找出 \[\] 區段中的 XML 檔中搜尋該字詞。本節中的設定檔看起來像下列 （假設您建立本機網站的 「 站台的 「 站台名稱）。
 
-    <ConnectionsToLocalNetwork>
+```powershell
+<ConnectionsToLocalNetwork>
     
         <LocalNetworkSiteRef name="Site A">
     
             <Connection type="IPsec" />
     
     </LocalNetworkSiteRef>
+```
 
 若要設定您的第二個網站，新增另一個"LocalNetworkSiteRef"區段的 \["ConnectionsToLocalNetwork 」 一節。 更新的設定檔中區段看起來像下列 （假設站台名稱的第二個本機網站是"網站 B"）。
 
-    <ConnectionsToLocalNetwork>
+```powershell
+<ConnectionsToLocalNetwork>
     
         <LocalNetworkSiteRef name="Site A">
     
@@ -210,6 +213,7 @@ Azure 管理入口網站目前不允許您設定多個網站 VPN。此設定，�
             <Connection type="IPsec" />
     
     </LocalNetworkSiteRef>
+```
 
 將更新的組態設定檔案儲存。
 
@@ -227,9 +231,11 @@ Azure 管理入口網站目前不允許您設定多個網站 VPN。此設定，�
 
 使用[Get AzureVNetGatewayKey](http://msdn.microsoft.com/en-us/library/azure/dn495198.aspx) cmdlet 可擷取前共用的機碼。執行此指令程式一次的每個通道。下列範例所示的命令會您需要執行以解壓縮虛擬網路"Azure Site"和"Site 的"和"網站 B 」 的網站之間的通道的機碼在這個範例中，輸出會儲存到不同的檔案。或者，您可以使用管線處理其他 PowerShell cmdlet 這些機碼或指令碼中使用。
 
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
+```powershell
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
     
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```
 
 ## 設定內部部署 VPN 裝置
 
@@ -265,17 +271,21 @@ Microsoft Azure 提供支援的 VPN 裝置 VPN 裝置組態指令碼。按一下
 
 此時，兩個網站會連線到透過 VPN 閘道 Azure 虛擬網路。您可以 PowerShell 中執行下列命令來驗證多個網站 VPN 的狀態。
 
-    Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```powershell
+Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```
 
 如果這兩個通道會啟動並執行，此命令的輸出看起來像下列。
 
-    LocalNetworkSiteName    ConnectivityState
+```powershell
+LocalNetworkSiteName    ConnectivityState
     
     --------------------    -----------------
     
     Site A                  Connected
     
     Site B                  Connected
+```
 
 您也可以透過 Azure management portal 中檢視虛擬網路儀表板驗證連線。兩個網站的 \[**狀態**\] 欄位會顯示為**已連接**。
 
@@ -294,9 +304,11 @@ Microsoft Azure 提供支援的 VPN 裝置 VPN 裝置組態指令碼。按一下
 
 2.  指定慣用的網域控制站和使用 Azure PowerShell 檔案伺服器的 IP 位址。當您指定的虛擬機器的慣用的 IP 位址時，則需要更新，這將會需要重新啟動虛擬機器。下列範例中的 IP 位址 Azure DC 與 Azure FSW 10.0.0.10 與 10.0.0.11 將分別設定為。
     
-        Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
+    ```powershell
+    Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
         
-        Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    ```
     
     > [!NOTE]  
     > 慣用的 IP 位址的 VM 會嘗試使用該位址。不過，如果該位址已指派給不同的虛擬機器，也不會啟動喜好的 IP 位址設定虛擬機器。若要避免此情況下，請確定您使用 IP 位址不指派給其他虛擬機器。請參閱<a href="http://msdn.microsoft.com/library/azure/dn630228.aspx">Configure VM 靜態內部 IP 位址</a>的詳細資訊。
@@ -329,8 +341,8 @@ Microsoft Azure 提供支援的 VPN 裝置 VPN 裝置組態指令碼。按一下
 2.  執行下列命令以設定您的 Dag 的見證伺服器。
     
     ```powershell
-Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
-```
+    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```
 
 請參閱下列主題的詳細資訊：
 
@@ -344,21 +356,23 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
 
 1.  執行下列命令來驗證 DAG 組態。
     
-        Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
+    ```powershell
+    Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
     
     *WitnessServer*參數設為在 Azure 上檔案伺服器、 *WitnessDirectory*參數設為正確的路徑及*WitnessShareInUse*參數會顯示**Primary**確認。
+    ```
 
 2.  如果 DAG 有偶數的節點，即會設定檔案共用見證。 驗證檔案共用見證叢集屬性設定來執行下列命令。*SharePath*參數值應指向 \[檔案伺服器並顯示正確路徑。
     
     ```powershell
-Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
-```
+    Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```
 
 3.  下一步\] 執行下列命令來確認 「 檔案共用見證 」 叢集資源的狀態。叢集資源*State*應該顯示**Online**。
     
     ```powershell
-Get-ClusterResource -Cluster MBX1
-```
+    Get-ClusterResource -Cluster MBX1
+    ```
 
 4.  最後，驗證共用已成功建立檔案伺服器上透過檢閱在檔案總管\] 中的資料夾及共用在 \[伺服器管理員。
 

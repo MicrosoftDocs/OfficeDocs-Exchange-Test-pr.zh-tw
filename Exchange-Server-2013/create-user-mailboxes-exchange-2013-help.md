@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_<strong>適用版本：</strong> Exchange Online, Exchange Server 2013_
+_**適用版本：** Exchange Online, Exchange Server 2013_
 
-_<strong>上次修改主題的時間：</strong> 2013-04-12_
+_**上次修改主題的時間：** 2013-04-12_
 
 信箱位於 Exchange 組織中的資訊工作者所使用的最常見收件者類型。每個信箱相關聯的 Active Directory 使用者帳戶。使用者可以使用信箱傳送及接收的郵件，並儲存郵件、 約會 （英文）、 工作、 記事及文件。使用 EAC 或命令介面來建立使用者信箱。
 
@@ -48,7 +48,7 @@ _<strong>上次修改主題的時間：</strong> 2013-04-12_
 
 2.  按一下 \[新增\] \> \[使用者信箱\]。
 
-3.  在 \[<strong>新的使用者信箱</strong>\] 頁面上 \[<strong>別名</strong>\] 方塊中輸入使用者的別名，這會指定使用者的電子郵件別名。使用者的別名為左側的電子郵件地址的部分在 (@) 符號。其必須是唯一的樹系中。
+3.  在 \[**新的使用者信箱**\] 頁面上 \[**別名**\] 方塊中輸入使用者的別名，這會指定使用者的電子郵件別名。使用者的別名為左側的電子郵件地址的部分在 (@) 符號。其必須是唯一的樹系中。
     
     > [!NOTE]  
     > 如果方塊為空白，會使用 [使用者登入名稱] 的使用者名稱部分之數值作為電子郵件別名。
@@ -58,57 +58,57 @@ _<strong>上次修改主題的時間：</strong> 2013-04-12_
     
       - \[現有使用者\]   選取可啟用現有使用者的郵件，並建立信箱。
         
-        按一下 \[<strong>瀏覽\]</strong>以開啟 \[<strong>選取使用者 – 整個樹系</strong>\] 對話方塊。此對話方塊會顯示未啟用郵件功能或沒有 Exchange 信箱的樹系中 Active Directory 使用者帳戶清單。選取您想要啟用郵件功能的使用者帳戶，然後按一下 \[<strong>確定\]</strong>。如果您選取這個選項，您不需要因為這項資訊已經存在於 Active Directory 提供使用者帳戶資訊。
+        按一下 \[**瀏覽\]**以開啟 \[**選取使用者 – 整個樹系**\] 對話方塊。此對話方塊會顯示未啟用郵件功能或沒有 Exchange 信箱的樹系中 Active Directory 使用者帳戶清單。選取您想要啟用郵件功能的使用者帳戶，然後按一下 \[**確定\]**。如果您選取這個選項，您不需要因為這項資訊已經存在於 Active Directory 提供使用者帳戶資訊。
     
-      - <strong>新的使用者</strong>  選取 \[Active Directory 中建立新的使用者帳戶並建立該使用者的信箱。如果您選取這個選項，您必須提供必要的使用者帳戶資訊。
+      - **新的使用者**  選取 \[Active Directory 中建立新的使用者帳戶並建立該使用者的信箱。如果您選取這個選項，您必須提供必要的使用者帳戶資訊。
     
     > [!NOTE]  
     > Active Directory帳戶相關聯使用者信箱必須位於相同的樹系Exchange伺服器。若要建立的信箱位於受信任的樹系中的使用者帳戶，您必須建立連結的信箱。請參閱<a href="manage-linked-mailboxes-exchange-2013-help.md">管理連結的信箱</a>。
 
 
-5.  如果您在步驟 4 中選取<strong>新的使用者</strong>，填妥下列方塊在<strong>新的使用者信箱</strong>\] 頁面上。否則請跳至步驟 7。
+5.  如果您在步驟 4 中選取**新的使用者**，填妥下列方塊在**新的使用者信箱**\] 頁面上。否則請跳至步驟 7。
     
-      - <strong>名字</strong> 使用此方塊輸入使用者的名字。
+      - **名字** 使用此方塊輸入使用者的名字。
     
-      - <strong>縮寫</strong> 使用此方塊輸入使用者的縮寫。
+      - **縮寫** 使用此方塊輸入使用者的縮寫。
     
-      - <strong>姓氏</strong> 使用此方塊輸入使用者的姓氏。
+      - **姓氏** 使用此方塊輸入使用者的姓氏。
     
-      - \* <strong>顯示名稱</strong>  使用此方塊可輸入使用者的顯示名稱。這是在 EAC 中與共用的通訊錄中的信箱清單中所列的名稱。根據預設，此方塊會填入您在 \[<strong>名字</strong>、<strong>縮寫</strong>和<strong>姓氏</strong>\] 方塊中輸入的名稱。如果您未使用這些方塊，您必須仍輸入名稱在此方塊因為有必要。名稱不可超過 64 個字元。
+      - \* **顯示名稱**  使用此方塊可輸入使用者的顯示名稱。這是在 EAC 中與共用的通訊錄中的信箱清單中所列的名稱。根據預設，此方塊會填入您在 \[**名字**、**縮寫**和**姓氏**\] 方塊中輸入的名稱。如果您未使用這些方塊，您必須仍輸入名稱在此方塊因為有必要。名稱不可超過 64 個字元。
     
-      - \* <strong>名稱</strong>  使用此方塊可輸入使用者的名稱。這是在Active Directory中所列的名稱。此方塊也會填入您在 \[<strong>名字</strong>、<strong>縮寫</strong>和<strong>姓氏</strong>\] 方塊中輸入的名稱。如果您未使用這些方塊，您仍必須在因為此方塊所輸入的名稱。此名稱也不可超過 64 個字元。
+      - \* **名稱**  使用此方塊可輸入使用者的名稱。這是在Active Directory中所列的名稱。此方塊也會填入您在 \[**名字**、**縮寫**和**姓氏**\] 方塊中輸入的名稱。如果您未使用這些方塊，您仍必須在因為此方塊所輸入的名稱。此名稱也不可超過 64 個字元。
     
       - \[組織單位\]   您可選取預設值以外但在收件者範圍中的組織單位 (OU)。如果將收件者範圍設定為樹系，則預設值會設定為正在執行 EAC 的電腦包含在內的 Active Directory 網域中出現的 \[使用者\] 容器。若收件者範圍設為特定網域，則依預設會選取該網域的使用者容器。若收件者範圍設為特定 OU，則依預設會選取該 OU。
         
         若要選取不同的 OU，請按一下 \[瀏覽\]。此對話方塊會顯示樹系中在指定範圍內的所有 OU。選取所需的 OU，然後按一下 \[確定\]。
     
-      - \* <strong>使用者登入名稱</strong>  使用此方塊可輸入使用者將會使用登入至信箱與登入網域的名稱。使用者登入名稱所組成的左側的使用者名稱在 (@) 符號和右邊的後置詞。通常，尾碼為件所在的使用者帳戶的網域名稱。請注意您無法使用單引號 （'） 或引號 （"） 在使用者登入名稱因為這些字元不受支援。
+      - \* **使用者登入名稱**  使用此方塊可輸入使用者將會使用登入至信箱與登入網域的名稱。使用者登入名稱所組成的左側的使用者名稱在 (@) 符號和右邊的後置詞。通常，尾碼為件所在的使用者帳戶的網域名稱。請注意您無法使用單引號 （'） 或引號 （"） 在使用者登入名稱因為這些字元不受支援。
         
         > [!NOTE]  
         > 如果使用者名稱的值不同於 [別名] 方塊中使用的值，則使用者的電子郵件地址和使用者登入名稱將不同。
     
-      - \* <strong>新密碼</strong>   使用此方塊以輸入使用者必須使用以登入信箱的密碼。
+      - \* **新密碼**   使用此方塊以輸入使用者必須使用以登入信箱的密碼。
         
         > [!NOTE]  
         > 請確定您提供的密碼符合您正在其中建立使用者帳戶之網域的密碼長度、複雜性和歷程需求。
     
       - \[\* 確認密碼\]   使用這個方塊確認您在 \[密碼\] 方塊中輸入的密碼。
     
-      - <strong>下次登入需要密碼變更</strong>   如果您想要使用者在首次登入信箱時重設密碼，請選取此方塊。
+      - **下次登入需要密碼變更**   如果您想要使用者在首次登入信箱時重設密碼，請選取此方塊。
         
         如果您選取此核取方塊，在第一部登入、 新的使用者將會提示與要變更密碼\] 對話方塊。不允許使用者執行任何工作直到成功變更密碼。
 
-6.  按一下 \[<strong>更多選項</strong>來設定下列方塊。否則，請跳至步驟 7 儲存新的使用者信箱。
+6.  按一下 \[**更多選項**來設定下列方塊。否則，請跳至步驟 7 儲存新的使用者信箱。
     
       - \[指定信箱資料庫\]   使用這個選項指定信箱資料庫，而不讓 Exchange 為您選取資料庫。按一下 \[瀏覽\] 以開啟 \[選取信箱資料庫\] 對話方塊。這個對話方塊會列出您 Exchange 組織中所有的信箱資料庫。依預設，信箱資料庫是以名稱排序。您也可以按一下對應欄位的標題，依照伺服器名稱或版本來排序資料庫。選取您要使用的信箱資料庫，然後按一下 \[確定\]。
     
-      - <strong>此使用者建立本機封存存放區</strong>  選取此核取方塊來建立封存信箱的信箱。如果您建立封存信箱，信箱項目將會移動自動從主要信箱的封存，根據預設保留原則設定\] 或 \[那些您定義。
+      - **此使用者建立本機封存存放區**  選取此核取方塊來建立封存信箱的信箱。如果您建立封存信箱，信箱項目將會移動自動從主要信箱的封存，根據預設保留原則設定\] 或 \[那些您定義。
         
         按一下 \[瀏覽\] 選取位於本機樹系中的資料庫，用來儲存封存信箱。
         
         若要深入了解，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - <strong>通訊錄原則</strong>  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies)。
+      - **通訊錄原則**  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](https://technet.microsoft.com/zh-tw/library/hh529948(v=exchg.150))。
         
         在下拉式清單中，選取要與這個信箱產生關聯的原則。
 
@@ -132,7 +132,9 @@ _<strong>上次修改主題的時間：</strong> 2013-04-12_
 
 <!-- end list -->
 
-    New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+```powershell
+New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+```
 
 如需語法及參數資訊，請參閱 [New-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997663\(v=exchg.150\))。
 
@@ -140,13 +142,13 @@ _<strong>上次修改主題的時間：</strong> 2013-04-12_
 
 若要驗證是否成功建立使用者信箱，請執行以下其中一個操作：
 
-  - 在 EAC 中，瀏覽至 \[<strong>收件者</strong>\><strong>信箱</strong>。新的使用者信箱會顯示在 \[信箱\] 清單中。<strong>信箱類型</strong>\] 底下類型是<strong>使用者</strong>。
+  - 在 EAC 中，瀏覽至 \[**收件者**\>**信箱**。新的使用者信箱會顯示在 \[信箱\] 清單中。**信箱類型**\] 底下類型是**使用者**。
 
   - 在命令介面中，執行以下命令以顯示新使用者信箱的資訊。
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
 
 ## 建立現有使用者的信箱
 
@@ -158,7 +160,7 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
 
 2.  按一下 \[新增\] \> \[使用者信箱\]。
 
-3.  在 \[<strong>新的使用者信箱</strong>\] 頁面上 \[<strong>別名</strong>\] 方塊中輸入使用者的別名，這會指定使用者的電子郵件別名。使用者的別名為左側的電子郵件地址的部分在 (@) 符號。其必須是唯一的樹系中。
+3.  在 \[**新的使用者信箱**\] 頁面上 \[**別名**\] 方塊中輸入使用者的別名，這會指定使用者的電子郵件別名。使用者的別名為左側的電子郵件地址的部分在 (@) 符號。其必須是唯一的樹系中。
     
     > [!NOTE]  
     > 如果方塊為空白，會使用 [使用者登入名稱] 的使用者名稱部分之數值作為電子郵件別名。
@@ -166,7 +168,7 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
 
 4.  按一下 \[現有的使用者\]。
 
-5.  按一下 \[<strong>瀏覽\]</strong>以開啟 \[<strong>選取使用者 – 整個樹系</strong>\] 對話方塊。此對話方塊會顯示未啟用郵件功能或沒有 Exchange 信箱的樹系中 Active Directory 使用者帳戶清單。選取您想要啟用郵件功能的使用者帳戶，然後按一下 \[<strong>確定\]</strong>。
+5.  按一下 \[**瀏覽\]**以開啟 \[**選取使用者 – 整個樹系**\] 對話方塊。此對話方塊會顯示未啟用郵件功能或沒有 Exchange 信箱的樹系中 Active Directory 使用者帳戶清單。選取您想要啟用郵件功能的使用者帳戶，然後按一下 \[**確定\]**。
     
     當您為現有使用者建立信箱後，您不必提供帳戶資訊，因為此資訊已存在於 Active Directory 中。
     
@@ -174,17 +176,17 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
     > Active Directory帳戶相關聯使用者信箱必須位於相同的樹系Exchange伺服器。若要建立的信箱位於受信任的樹系中的使用者帳戶，您必須建立連結的信箱。請參閱<a href="manage-linked-mailboxes-exchange-2013-help.md">管理連結的信箱</a>。
 
 
-6.  按一下 \[<strong>更多選項</strong>來設定下列方塊。否則，請跳至步驟 7 儲存新的使用者信箱。
+6.  按一下 \[**更多選項**來設定下列方塊。否則，請跳至步驟 7 儲存新的使用者信箱。
     
       - \[指定信箱資料庫\]   使用這個選項指定信箱資料庫，而不讓 Exchange 為您選取資料庫。按一下 \[瀏覽\] 以開啟 \[選取信箱資料庫\] 對話方塊。這個對話方塊會列出您 Exchange 組織中所有的信箱資料庫。依預設，信箱資料庫是以名稱排序。您也可以按一下對應欄位的標題，依照伺服器名稱或版本來排序資料庫。選取您要使用的信箱資料庫，然後按一下 \[確定\]。
     
-      - <strong>此使用者建立本機封存存放區</strong>  選取此核取方塊來建立封存信箱的信箱。如果您建立封存信箱，信箱項目將會移動自動從主要信箱的封存，根據預設保留原則設定\] 或 \[那些您定義。
+      - **此使用者建立本機封存存放區**  選取此核取方塊來建立封存信箱的信箱。如果您建立封存信箱，信箱項目將會移動自動從主要信箱的封存，根據預設保留原則設定\] 或 \[那些您定義。
         
         按一下 \[瀏覽\] 選取位於本機樹系中的資料庫，用來儲存封存信箱。
         
         若要深入了解，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - <strong>通訊錄原則</strong>  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies)。
+      - **通訊錄原則**  使用此選項可指定通訊錄原則 (ABP) 信箱。Abp 包含全域通訊清單 (GAL)、 離線通訊錄 (OAB)、 \[聊天室\] 清單中，以及一組通訊清單。時指派給使用者的信箱、 ABP 提供這些存取 Outlook 和 Outlook Web App 中的自訂 GAL。若要深入了解，請參閱[通訊錄原則](https://technet.microsoft.com/zh-tw/library/hh529948(v=exchg.150))。
         
         在下拉式清單中，選取要與這個信箱產生關聯的原則。
 
@@ -198,9 +200,9 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
 Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
 ```
 
-您也可以使用<strong>Enable-Mailbox</strong>指令程式來啟用多個使用者的郵件功能。您可以將傳送<strong>Get-User</strong>指令程式在<strong>Enable-Mailbox</strong> cmdlet 的結果。當您執行<strong>Get-User</strong>指令程式時，您必須傳回都已啟用郵件功能的使用者。若要這樣做，您需要使用*RecipientTypeDetails*參數指定使用者的值。您也可以限制所要求符合您指定的準則的使用者使用*Filter*參數傳回的結果。接著，您將傳送到<strong>Enable-Mailbox</strong> cmdlet 的結果。
+您也可以使用**Enable-Mailbox**指令程式來啟用多個使用者的郵件功能。您可以將傳送**Get-User**指令程式在**Enable-Mailbox** cmdlet 的結果。當您執行**Get-User**指令程式時，您必須傳回都已啟用郵件功能的使用者。若要這樣做，您需要使用*RecipientTypeDetails*參數指定使用者的值。您也可以限制所要求符合您指定的準則的使用者使用*Filter*參數傳回的結果。接著，您將傳送到**Enable-Mailbox** cmdlet 的結果。
 
-例如，以下命令會啟用原本未啟用信箱且 <strong>UserPrincipalName</strong> 屬性中有值之使用者的信箱，確保您不會不小心將系統帳戶轉換為信箱。
+例如，以下命令會啟用原本未啟用信箱且 **UserPrincipalName** 屬性中有值之使用者的信箱，確保您不會不小心將系統帳戶轉換為信箱。
 
 ```powershell
 Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
@@ -214,13 +216,13 @@ Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | En
 
 若要驗證是否成功建立現有使用者的信箱，請執行以下其中一個操作：
 
-  - 在 EAC 中，瀏覽至 \[<strong>收件者</strong>\><strong>信箱</strong>。新信箱功能的使用者會顯示在 \[信箱\] 清單中。<strong>信箱類型</strong>\] 底下類型是<strong>使用者</strong>。
+  - 在 EAC 中，瀏覽至 \[**收件者**\>**信箱**。新信箱功能的使用者會顯示在 \[信箱\] 清單中。**信箱類型**\] 底下類型是**使用者**。
 
   - 在命令介面中，執行以下命令以顯示新啟用信箱之使用者的資訊。
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
     
     請注意，*RecipientTypeDetails* 的屬性值是 `UserMailbox`。
 

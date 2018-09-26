@@ -63,12 +63,14 @@ Set-SenderReputationConfig -Enabled $true
 1.  執行下列命令，確認 \[通訊協定分析\] 代理程式已安裝並啟用：
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
 
 2.  執行下列命令，驗證您設定的寄件者信譽值：
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 ## 使用命令介面，對內部或外部郵件啟用或停用寄件者信譽
 
@@ -104,7 +106,9 @@ Set-SenderReputationConfig -InternalMailEnabled $true
 
 1.  執行下列命令：
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 2.  請確認顯示的值符合您所設定的值。
 
@@ -129,8 +133,8 @@ Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
 1.  執行下列命令：
     
     ```powershell
-Get-SenderReputationConfig
-```
+    Get-SenderReputationConfig
+    ```
 
 2.  請確認顯示的值符合您所設定的值。
 
@@ -169,11 +173,15 @@ Get-SenderReputationConfig
 
 若要設定輸出存取以偵測開放式 Proxy 伺服器，請執行下列命令：
 
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```powershell
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 本範例會設定寄件者信譽來使用名為 SERVER01 的開放式 Proxy 伺服器，此伺服器將使用連接埠 80 上的 HTTP CONNECT 通訊協定。
 
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```powershell
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## 如何才能了解這是否正常運作？
 
@@ -181,7 +189,9 @@ Get-SenderReputationConfig
 
 1.  執行下列命令：
     
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    ```powershell
+    Get-SenderReputationConfig | Format-List ProxyServer*
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

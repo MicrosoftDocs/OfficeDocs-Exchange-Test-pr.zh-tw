@@ -58,7 +58,9 @@ _**上次修改主題的時間：** 2013-04-16_
 
 此範例會將名為`MyMailboxServer`至名為`MySIPDialPlan` SIP URI 撥號對應表的信箱伺服器並防止接受新的來電。它也會設定為雙模式，可讓接受 TCP 與 TLS 要求之信箱伺服器的啟動模式。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```
 
 本範例會將名稱為 `MyMailboxServer` 的 Mailbox Server 新增至兩個名稱分別為 `MySIPDialPlan` 及 `MySIPDialPlan2` 的 SIP 撥號對應表，並設定下列項目：
 
@@ -70,7 +72,9 @@ _**上次修改主題的時間：** 2013-04-16_
 
 <!-- end list -->
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```
 
 ## 使用 EAC 來新增 Client Access Server 至 SIP URI 撥號對應表
 
@@ -94,5 +98,7 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -
 
 本範例會將名稱為 `MyClientAccessServer` 的 Client Access Server 新增至兩個名稱分別為 `MySIPDialPlan` 及 `MySIPDialPlan2` 的 SIP 撥號對應表，並允許伺服器同時使用 IPv4 及 IPv6 位址。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```
 

@@ -44,7 +44,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 執行下列命令。
 
-    Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+```powershell
+Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+```
 
 
 > [!NOTE]  

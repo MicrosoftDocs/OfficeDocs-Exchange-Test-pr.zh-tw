@@ -45,22 +45,18 @@ _**上次修改主題的時間：** 2016-11-16_
 > [!TIP]  
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
-
-
-
 ## 您要執行的工作
 
 ## 移動單一公用資料夾
 
 此範例會啟動將公用資料夾 \\CustomerEnagagements 從公用資料夾信箱 DeveloperReports 移至 DeveloperReports01 的要求
 
-    New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
-
+```powershell
+New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```
 
 > [!NOTE]  
 > 作用中的移動要求時將會鎖定的目標公用資料夾信箱。
-
-
 
 
 如需詳細的語法及參數資訊，請參閱 [New-PublicFolderMoveRequest](https://technet.microsoft.com/zh-tw/library/jj878081\(v=exchg.150\))。
@@ -69,14 +65,12 @@ _**上次修改主題的時間：** 2016-11-16_
 
 此範例一開始 \\Dev 公用資料夾分支下的目標公用資料夾信箱 DeveloperReports01 的公用資料夾移動要求。本範例會不會移動公用資料夾 \\Dev。
 
-    New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
-
+```powershell
+New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```
 
 > [!NOTE]  
 > 作用中的移動要求時將會鎖定的目標公用資料夾信箱。
-
-
-
 
 如需詳細的語法及參數資訊，請參閱 [New-PublicFolderMoveRequest](https://technet.microsoft.com/zh-tw/library/jj878081\(v=exchg.150\))。
 
@@ -84,9 +78,11 @@ _**上次修改主題的時間：** 2016-11-16_
 
 此範例會使用`Move-PublicFolderBranch.ps1`指令碼來移動公用資料夾的分支。這會啟動公用資料夾 \\Dev 和所有子資料夾至公用資料夾信箱 DeveloperReports01 的移動要求。指令碼的 scripts 資料夾位於與必須從該位置執行。
 
-    CD $env:ExchangeInstallPath\scripts
+```powershell
+CD $env:ExchangeInstallPath\scripts
     
-    .\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+.\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```
 
 ## 如何才能了解這是否正常運作？
 

@@ -47,14 +47,26 @@ _**上次修改主題的時間：** 2015-09-10_
 <td><p>此屬性會傳回在任何索引屬性中含有特定字串的所有郵件。例如，如果您要匯出以 &quot;Ayla&quot; 為收件者、寄件者或在郵件內文中提及此名稱的所有郵件，請使用此屬性。</p></td>
 <td><p>字串</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {All -like &#39;*Ayla*&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {All -like '*Ayla*'}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Attachment</p></td>
 <td><p>此屬性會傳回在附件內容或附件檔名中含有指定字串的郵件。</p></td>
 <td><p>字串</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {Attachment -like &#39;*.jpg&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Attachment -like '*.jpg'}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>BCC</p></td>
@@ -64,21 +76,39 @@ _**上次修改主題的時間：** 2015-09-10_
 <p>SMTP 位址</p>
 <p>LegacyDN</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {(BCC -eq &#39;ayla@contoso.com&#39;) -or (BCC -eq &#39;tony@contoso.com&#39;)}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {(BCC -eq 'ayla@contoso.com') -or (BCC -eq 'tony@contoso.com')}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Body</p></td>
 <td><p>此屬性會傳回在郵件內文含有指定字串的郵件。</p></td>
 <td><p>字串</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {Body -like &#39;*prospectus*&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Body -like '*prospectus*'}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Category</p></td>
 <td><p>此屬性會傳回具有相符類別的郵件。類別由使用者或 [收件匣] 規則設定。</p></td>
 <td><p>字串</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {Category -like &#39;*Blue*&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Category -like '*Blue*'}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>CC</p></td>
@@ -88,20 +118,38 @@ _**上次修改主題的時間：** 2015-09-10_
 <p>SMTP 位址</p>
 <p>LegacyDN</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {(CC -eq &#39;ayla@contoso.com&#39;) -or (CC -eq &#39;tony@contoso.com&#39;)}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {(CC -eq 'ayla@contoso.com') -or (CC -eq 'tony@contoso.com')}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Expires</p></td>
 <td><p>此屬性傳回具有指定到期時間戳記的郵件。</p></td>
 <td><p>日期時間戳記</p></td>
-<td><pre><code>-ContentFilter {Expires -lt &#39;01/01/2013&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Expires -lt '01/01/2013'}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>HasAttachment</p></td>
 <td><p>此屬性會傳回包含或不含附件的郵件。</p></td>
 <td><p>布林值</p>
 <p><code>$true</code> 或<code>$false</code></p></td>
-<td><pre><code>-ContentFilter {HasAttachment -eq $true}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {HasAttachment -eq $true}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Importance</p></td>
@@ -109,22 +157,46 @@ _**上次修改主題的時間：** 2015-09-10_
 <td><p>0 或 &quot;Low&quot;</p>
 <p>1 或 &quot;Normal&quot;</p>
 <p>2 或 &quot;High&quot;</p></td>
-<td><pre><code>-ContentFilter {Importance -eq &#39;high&#39;}</code></pre>
-<pre><code>-ContentFilter {Importance -eq 2}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Importance -eq 'high'}
+```
+
+
+
+
+```powershell
+-ContentFilter {Importance -eq 2}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>IsFlagged</p></td>
 <td><p>此屬性會傳回已由使用者或 [收件匣] 規則加上標幟的郵件。</p></td>
 <td><p>布林值</p>
 <p><code>$true</code> 或<code>$false</code></p></td>
-<td><pre><code>-ContentFilter {IsFlagged -eq $true}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {IsFlagged -eq $true}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>IsRead</p></td>
 <td><p>此屬性會傳回使用者已閱讀或未閱讀的郵件。</p></td>
 <td><p>布林值</p>
 <p><code>$true</code> 或<code>$false</code></p></td>
-<td><pre><code>-ContentFilter {IsRead -eq $true}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {IsRead -eq $true}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>MessageKind</p></td>
@@ -141,15 +213,36 @@ _**上次修改主題的時間：** 2015-09-10_
 <p>RSSFeed</p>
 <p>工作</p>
 <p>語音信箱</p></td>
-<td><pre><code>-ContentFilter {MessageKind -eq &#39;Calendar&#39;}</code></pre>
-<pre><code>-ContentFilter {MessageKind -ne &#39;Email&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {MessageKind -eq 'Calendar'}
+```
+
+
+
+
+```powershell
+-ContentFilter {MessageKind -ne 'Email'}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>MessageLocalee</p></td>
 <td><p>此屬性會傳回屬於指定地區設定的郵件。</p></td>
 <td><p>CultureInfo</p></td>
-<td><pre><code>-ContentFilter {MessageLocale -ne &#39;en-US&#39;}</code></pre>
-<pre><code>-ContentFilter {MessageLocale -eq &#39;tr-TR&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {MessageLocale -ne 'en-US'}
+```
+
+```powershell
+-ContentFilter {MessageLocale -eq 'tr-TR'}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Participants</p></td>
@@ -159,7 +252,13 @@ _**上次修改主題的時間：** 2015-09-10_
 <p>SMTP 位址</p>
 <p>LegacyDN</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {(Participants -eq &#39;ayla@contoso.com&#39;) -or (Participants -eq &#39;tony@contoso.com&#39;)}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {(Participants -eq 'ayla@contoso.com') -or (Participants -eq 'tony@contoso.com')}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>PolicyTag</p></td>
@@ -167,14 +266,32 @@ _**上次修改主題的時間：** 2015-09-10_
 <p>如果指定的值不是 GUID，此命令會使用 Active Directory 資訊將名稱解析為 GUID。</p></td>
 <td><p>字串</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {PolicyTag -ne &#39;00000000-0000-0000-0000-000000000000&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {PolicyTag -ne '00000000-0000-0000-0000-000000000000'}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Received</p></td>
 <td><p>此屬性會傳回已收到且具有指定收件時間戳記的郵件。</p></td>
 <td><p>日期時間戳記</p></td>
-<td><pre><code>-ContentFilter {Received -lt &#39;01/01/2013 9:00&#39;}</code></pre>
-<pre><code>-ContentFilter {(Received -lt &#39;01/01/2013&#39;) -and (Received -gt &#39;01/01/2012&#39;)}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Received -lt '01/01/2013 9:00'}
+```
+
+
+
+
+```powershell
+-ContentFilter {(Received -lt '01/01/2013') -and (Received -gt '01/01/2012')}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Sender</p></td>
@@ -184,14 +301,29 @@ _**上次修改主題的時間：** 2015-09-10_
 <p>SMTP 位址</p>
 <p>LegacyDN</p>
 <p>萬用字元</p></td>
-<td><pre><code>ContentFilter {Sender -eq &#39;tony&#39;}</code></pre></td>
+<td>
+
+```powershell
+ContentFilter {Sender -eq 'tony'}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Sent</p></td>
 <td><p>此屬性會傳回已傳送且具有指定傳送時間戳記的郵件。</p></td>
 <td><p>日期時間戳記</p></td>
-<td><pre><code>-ContentFilter {Sent -lt &#39;01/01/2013 9:00&#39;}</code></pre>
-<pre><code>-ContentFilter {(Sent -lt &#39;01/01/2013&#39;) -and (Sent -gt &#39;01/01/2012&#39;)}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Sent -lt '01/01/2013 9:00'}
+```
+
+```powershell
+-ContentFilter {(Sent -lt '01/01/2013') -and (Sent -gt '01/01/2012')}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
@@ -199,14 +331,26 @@ _**上次修改主題的時間：** 2015-09-10_
 <td><p>B (位元組)</p>
 <p>KB (千位元組)</p>
 <p>MB (百萬位元組)</p></td>
-<td><pre><code>-ContentFilter {Size -gt &#39;10KB&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Size -gt '10KB'}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Subject</p></td>
 <td><p>此屬性會傳回在郵件主旨內含有指定字串的郵件。</p></td>
 <td><p>字串</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {Subject -like &#39;*meeting*&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {Subject -like '*meeting*'}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>To</p></td>
@@ -216,8 +360,13 @@ _**上次修改主題的時間：** 2015-09-10_
 <p>SMTP 位址</p>
 <p>LegacyDN</p>
 <p>萬用字元</p></td>
-<td><pre><code>-ContentFilter {To -eq &#39;aylakol&#39;}</code></pre></td>
+<td>
+
+```powershell
+-ContentFilter {To -eq 'aylakol'}
+```
+
+</td>
 </tr>
 </tbody>
 </table>
-

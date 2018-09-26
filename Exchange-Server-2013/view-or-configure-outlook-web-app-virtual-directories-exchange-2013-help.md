@@ -129,7 +129,9 @@ _**上次修改主題的時間：** 2013-08-12_
 
 本範例啟用 Contoso 伺服器之預設 Outlook Web App 虛擬目錄上的表單型驗證。
 
-    set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```powershell
+set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```
 
 如需語法及參數的相關資訊，請參閱 [Set-OwaVirtualDirectory](https://technet.microsoft.com/zh-tw/library/bb123515\(v=exchg.150\))。
 
@@ -143,7 +145,9 @@ Get-OWAVirtualDirectory
 
 此範例讓您在本機Outlook Web App 伺服器的預設 IIS 網站上檢視 Exchange 虛擬目錄的屬性。
 
-    Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```powershell
+Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```
 
 此範例讓您在特定 Outlook Web App 伺服器的 IIS 網站上檢視所有 Exchange 虛擬目錄的屬性。
 

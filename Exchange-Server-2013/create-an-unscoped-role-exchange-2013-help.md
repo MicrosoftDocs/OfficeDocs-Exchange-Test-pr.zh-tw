@@ -94,11 +94,15 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 將指令碼複製至適當的 Exchange 2013 伺服器並決定要使用的指令碼參數後，可使用下列語法建立角色項目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 此範例會將 BulkProvisionUsers.ps1 指令碼以及 *Name* 和 *Location* 參數新增至 IT Scripts 角色。
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 
 > [!NOTE]  
@@ -117,11 +121,15 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 在您於適當的 Windows 伺服器上安裝包含 Cmdlet 的 Exchange 2013 PowerShell 嵌入式管理單元，並決定應該使用哪些 Cmdlet 參數之後，可使用以下語法建立角色項目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 此範例會將 Contoso.Admin.Cmdlets 嵌入式管理單元中的 **Set-WidgetConfiguration** Cmdlet 以及 *Database* 和 *Size* 參數新增至 Widget Cmdlets 角色。
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 
 > [!NOTE]  
@@ -166,7 +174,9 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 使用下列語法建立新角色。
 
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```powershell
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```
 
 此範例會將 IT 全域指令碼角色及其管理角色項目複製到診斷 IT 指令碼角色。
 

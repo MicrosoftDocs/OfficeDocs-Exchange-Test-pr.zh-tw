@@ -9,9 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 移除同盟信任
-
- 
+# 移除同盟信任 
 
 _**適用版本：** Exchange Server 2013_
 
@@ -21,11 +19,8 @@ _**上次修改主題的時間：** 2015-01-04_
 
 若欲瞭解更多與同盟信任相關的管理工作，請參閱[同盟程序](federation-procedures-exchange-2013-help.md)。
 
-
 > [!IMPORTANT]  
 > 此 Exchange Server 2013 功能與中國的 21Vianet 所運作的 Office 365 不完全相容，部分功能可能受限。如需詳細資訊，請參閱<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解 21Vianet 運作的 Office 365</a>。
-
-
 
 
 ## 開始之前有哪些須知？
@@ -68,11 +63,10 @@ Remove-FederationTrust
 
   - 在命令介面中執行下列命令，確認未傳回您 Exchange 組織的同盟信任資訊。
     
-    ```powershell
-Get-FederationTrust
-```
-    
-    如需詳細的語法及參數資訊，請參閱 [Get-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd351262\(v=exchg.150\))。
+  ```powershell
+  Get-FederationTrust
+  ```    
+  如需詳細的語法及參數資訊，請參閱 [Get-FederationTrust](https://technet.microsoft.com/zh-tw/library/dd351262\(v=exchg.150\))。
 
 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
 

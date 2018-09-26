@@ -13,17 +13,17 @@ ms.translationtype: MT
 
  
 
-_<strong>適用版本：</strong> Exchange Server 2013_
+_**適用版本：** Exchange Server 2013_
 
-_<strong>上次修改主題的時間：</strong> 2013-07-02_
+_**上次修改主題的時間：** 2013-07-02_
 
 信箱複寫服務 Proxy (MRS Proxy) 有助於跨樹系信箱移動及遠端移動遷移內部Exchange組織與Exchange Online之間。在Exchange 2013、 MRS Proxy 隨附於信箱伺服器角色 （也稱為*信箱伺服器*）。在跨樹系及遠端移動遷移期間用戶端存取伺服器會做為傳入的移動要求之信箱伺服器的 proxy。預設為停用用戶端存取伺服器接受這些要求的能力。若要允許用戶端存取伺服器接受傳入的移動要求，您必須啟用 MRS Proxy 端點。
 
 啟用哪部 Client Access Server 上的 MRS Proxy 端點，視信箱移動的類型和方向而定。
 
-  - <strong>跨樹系企業移動</strong>  針對跨樹系移動起始從目標環境 （稱為*提取*移動類型），您必須啟用 MRS Proxy 端點來源環境中的用戶端存取伺服器上。針對跨樹系移動起始從來源環境 （稱為*推入*移動類型），您必須啟用 MRS Proxy 端點目標環境中的用戶端存取伺服器上。
+  - **跨樹系企業移動**  針對跨樹系移動起始從目標環境 （稱為*提取*移動類型），您必須啟用 MRS Proxy 端點來源環境中的用戶端存取伺服器上。針對跨樹系移動起始從來源環境 （稱為*推入*移動類型），您必須啟用 MRS Proxy 端點目標環境中的用戶端存取伺服器上。
 
-  - <strong>內部部署 Exchange 組織和 Exchange Online 之間的遠端移動遷移</strong>   針對 Onboarding 和 Offboarding 遠端移動遷移，您都需啟用內部部署組織中 Client Access Server 上的 MRS Proxy 端點。
+  - **內部部署 Exchange 組織和 Exchange Online 之間的遠端移動遷移**   針對 Onboarding 和 Offboarding 遠端移動遷移，您都需啟用內部部署組織中 Client Access Server 上的 MRS Proxy 端點。
 
 
 > [!NOTE]  
@@ -55,21 +55,23 @@ _<strong>上次修改主題的時間：</strong> 2013-07-02_
 
 ## 使用 EAC 啟用 MRS Proxy 端點
 
-1.  在 EAC 中，瀏覽至 <strong>\[收件者\]</strong> \> <strong>\[伺服器\]</strong> \> <strong>\[虛擬目錄\]</strong>。
+1.  在 EAC 中，瀏覽至 **\[收件者\]** \> **\[伺服器\]** \> **\[虛擬目錄\]**。
 
-2.  在 \[<strong>選取伺服器</strong>\] 下拉式清單中，選取您要啟用 MRS Proxy 端點的用戶端存取伺服器的名稱。或選取組織中的所有用戶端存取伺服器上顯示的虛擬目錄的<strong>所有伺服器</strong>。
+2.  在 \[**選取伺服器**\] 下拉式清單中，選取您要啟用 MRS Proxy 端點的用戶端存取伺服器的名稱。或選取組織中的所有用戶端存取伺服器上顯示的虛擬目錄的**所有伺服器**。
 
-3.  在 <strong>\[選取類型\]</strong> 下拉式清單中，選取 <strong>\[EWS\]</strong> 以顯示選定伺服器的 Exchange Web 服務 (EWS) 虛擬目錄。
+3.  在 **\[選取類型\]** 下拉式清單中，選取 **\[EWS\]** 以顯示選定伺服器的 Exchange Web 服務 (EWS) 虛擬目錄。
 
-4.  在虛擬目錄清單中，按一下您要設定之 Client Access Server 的 <strong>\[EWS (預設網站)\]</strong>，然後按一下 <strong>\[編輯\]</strong>![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
+4.  在虛擬目錄清單中，按一下您要設定之 Client Access Server 的 **\[EWS (預設網站)\]**，然後按一下 **\[編輯\]**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
 
-5.  在 \[ <strong>EWS （預設網站）</strong>內容\] 頁面上選取 \[<strong>啟用 MRS Proxy 端點</strong>\] 核取方塊，和 \[<strong>儲存</strong>。
+5.  在 \[ **EWS （預設網站）**內容\] 頁面上選取 \[**啟用 MRS Proxy 端點**\] 核取方塊，和 \[**儲存**。
 
 ## 使用命令介面啟用 MRS Proxy 端點
 
 下列命令可啟用名為 EXCH-SRV-01 之 Client Access Server 上的 MRS Proxy 端點。
 
-    Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+```powershell
+Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+```
 
 下列命令可啟用您 Exchange 組織中所有 Client Access Server 上的 MRS Proxy 端點。
 
@@ -88,11 +90,11 @@ Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabl
 
 若要確認您是否已成功啟用 MRS Proxy 端點，請執行下列其中一項操作：
 
-1.  在 EAC 中，瀏覽至 <strong>\[收件者\]</strong> \> <strong>\[伺服器\]</strong> \> <strong>\[虛擬目錄\]</strong>。
+1.  在 EAC 中，瀏覽至 **\[收件者\]** \> **\[伺服器\]** \> **\[虛擬目錄\]**。
 
-2.  在虛擬目錄清單中，按一下 <strong>\[EWS (預設網站)\]</strong> 並在詳細資料窗格中確認已啟用 MRS Proxy 端點。
+2.  在虛擬目錄清單中，按一下 **\[EWS (預設網站)\]** 並在詳細資料窗格中確認已啟用 MRS Proxy 端點。
     
-    或者，您可以按一下 \[<strong>編輯</strong>![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")檢視<strong>EWS （預設網站）</strong>的 \[內容\] 頁面並確認已選取 \[<strong>啟用 MRS Proxy 端點</strong>\] 核取方塊。
+    或者，您可以按一下 \[**編輯**![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")檢視**EWS （預設網站）**的 \[內容\] 頁面並確認已選取 \[**啟用 MRS Proxy 端點**\] 核取方塊。
 
 或
 
@@ -104,13 +106,15 @@ Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
 
 確認 *MRSProxyEnabled* 參數已設為 `True`。
 
-若要確認已啟用 MRS Proxy 端點的另一種方式是使用<strong>Test-MigrationServerAvailability</strong>指令程式來測試通訊是 offboarding Exchange Online信箱移轉至內部部署組織、 內部部署組織中的伺服器或是與遠端伺服器主控您要移動的信箱的能力。如需詳細資訊，請參閱[Test-MigrationServerAvailability](https://technet.microsoft.com/zh-tw/library/jj219169\(v=exchg.150\))。
+若要確認已啟用 MRS Proxy 端點的另一種方式是使用**Test-MigrationServerAvailability**指令程式來測試通訊是 offboarding Exchange Online信箱移轉至內部部署組織、 內部部署組織中的伺服器或是與遠端伺服器主控您要移動的信箱的能力。如需詳細資訊，請參閱[Test-MigrationServerAvailability](https://technet.microsoft.com/zh-tw/library/jj219169\(v=exchg.150\))。
 
 下列範例測試能否連線至 corp.contoso.com 樹系中的伺服器。
-```
+
+```powershell
 $Credentials = Get-Credential
 ```
-```
+
+```powershell
 Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
 ```
 

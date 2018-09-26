@@ -117,7 +117,9 @@ Edge Transport Server 沒有 Active Directory 的直接存取權。Edge Transpor
 
 此範例會讓指定的站台訂閱 Edge Transport Server，並自動建立網際網路傳送連接器，以及從 Edge Transport Server 至信箱伺服器的傳送連接器。
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```
 
 
 > [!NOTE]  

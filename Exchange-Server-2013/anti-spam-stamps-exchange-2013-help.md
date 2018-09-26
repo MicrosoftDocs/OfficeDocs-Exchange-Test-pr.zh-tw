@@ -29,7 +29,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 反垃圾郵件報告是已套用至電子郵件訊息的反垃圾郵件篩選結果的摘要報告。內容篩選器代理程式適用於此戳記 x-header 表單中的郵件信封，如下所示。
 
-    X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance 
+```XML
+X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance
+``` 
 
 下表說明可以出現在反垃圾郵件報告中的篩選器資訊。
 
@@ -67,8 +69,13 @@ _**上次修改主題的時間：** 2016-12-09_
 <li><p><strong>PermError   </strong>DNS 記錄無效 (如記錄格式錯誤)。</p></li>
 </ul>
 <p>在郵件信封中，寄件者識別碼戳記會顯示為 X 標頭 (如下所示)：</p>
-<pre><code>X-MS-Exchange-Organization-SenderIdResult:&lt;status&gt;</code></pre>
-<p>如需寄件者識別碼的相關資訊，請參閱<a href="sender-id-exchange-2013-help.md">寄件者識別碼</a>。</p></td>
+
+```powershell
+X-MS-Exchange-Organization-SenderIdResult:&lt;status&gt;
+```
+
+<p>如需寄件者識別碼的相關資訊，請參閱<a href="sender-id-exchange-2013-help.md">寄件者識別碼</a>。</p>
+</td>
 </tr>
 <tr class="even">
 <td><p>DV</p></td>
@@ -92,13 +99,22 @@ _**上次修改主題的時間：** 2016-12-09_
 <p>PCL 值可介於 1 到 8。介於 1 到 3 PCL 分級會傳回<code>Neutral</code>狀態。這表示郵件內容不太可能是網路釣魚。從 4 到 8 PCL 分級會傳回<code>Suspicious</code>狀態。這表示郵件是可能是網路釣魚。</p>
 <p>值會用來決定 Outlook 郵件採取的動作。Outlook 會使用 PCL 戳記来封鎖的可疑郵件內容。</p>
 <p>在郵件信封中，PCL 戳記會顯示為 X 標頭 (如下所示)：</p>
-<pre><code>X-MS-Exchange-Organization-PCL:&lt;status&gt;</code></pre></td>
+
+```powershell
+X-MS-Exchange-Organization-PCL:&lt;status&gt;
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>SCL</p></td>
 <td><p>垃圾郵件信賴等級 (SCL) 戳記的郵件顯示其內容為基礎之郵件的評等。內容篩選器代理程式會使用 Microsoft SmartScreen 技術來評估郵件的內容並指派給每個郵件的 scl。SCL 值是從 0 至 9，其中 0 會被視為較可能是垃圾郵件和 9 會被視為多可能是垃圾郵件。Exchange 與 Outlook 採取動作取決於您的 SCL 閾值設定。</p>
 <p>在郵件信封中，SCL 戳記會顯示為 X 標頭 (如下所示)：</p>
-<pre><code>X-MS-Exchange-Organization-SCL:&lt;status&gt;</code></pre>
+
+```powershell
+X-MS-Exchange-Organization-SCL:&lt;status&gt;
+```
+
 <p>如需 SCL 閾值及動作的相關資訊，請參閱<a href="spam-confidence-level-threshold-exchange-2013-help.md">垃圾郵件信賴等級閾值</a>。</p></td>
 </tr>
 <tr class="odd">

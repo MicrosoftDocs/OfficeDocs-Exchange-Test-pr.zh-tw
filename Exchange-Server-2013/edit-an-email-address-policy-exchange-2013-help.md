@@ -50,9 +50,7 @@ _**上次修改主題的時間：** 2012-12-10_
 
 2.  在清單檢視中，選取您要變更的電子郵件地址原則，然後按一下 \[編輯\]![編輯圖示](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編輯圖示")。
 
-3.  
-    
-    在 \[電子郵件地址原則\] 中，按一下 \[套用至\] 並修改設定。
+3.  在 \[電子郵件地址原則\] 中，按一下 \[套用至\] 並修改設定。
 
 ## 使用 EAC 變更電子郵件地址原則的優先順序
 
@@ -66,7 +64,9 @@ _**上次修改主題的時間：** 2012-12-10_
 
 此範例會編輯目前有位於 Georgia、Alabama 及 Louisiana 的收件者包含在其中的東南區辦公室電子郵件地址原則，以同時包含位於 Texas 的收件者。
 
-    Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```powershell
+Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```
 
 
 > [!NOTE]  

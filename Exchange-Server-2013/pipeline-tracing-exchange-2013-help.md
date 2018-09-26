@@ -103,12 +103,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
 每個郵件快照檔案開頭新增至訊息內容及列出郵件快照檔案與 SMTP 事件和傳輸代理程式標頭。這些標頭`X-CreatedBy: MessageSnapshot-Begin injected headers`的開頭和結尾`X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers`。這些標頭所取代每個後續傳輸代理程式及 SMTP 事件中每個郵件快照檔案。以下是會新增至電子郵件訊息檔標頭的範例：
 
+  ```powershell
     X-CreatedBy: MessageSnapshot-Begin injected headers
     X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
     X-MessageSnapshot-Record-Id: 21474836486
     X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
     X-Receiver: chris@contoso.com
     X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
+  ```
 
 郵件的快照標頭之後, 的檔案包含包括所有原始的郵件標頭郵件的內容。如果傳輸代理程式會修改郵件的內容，所做的變更會出現訊息整合。當郵件處理每個傳輸代理程式中，每個代理程式所做的變更會套用至訊息內容。如果傳輸代理程式對訊息內容不進行任何變更，該代理程式所建立郵件快照將會與上一個傳輸代理程式所建立郵件快照相同。
 

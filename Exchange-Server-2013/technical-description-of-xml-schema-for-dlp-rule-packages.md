@@ -63,7 +63,8 @@ For more information
 
 三個額外的支援項目所用的定義處理的詳細資料和參照中的主要元件： 關鍵字、 Regex 及函數。藉由使用參考資料，支援的項目，社會安全號碼，例如單一定義可用來在多個實體或相似性規則。以 XML 格式的基本規則結構可以看起來會有如下。
 
-    <?xml version="1.0" encoding="utf-8"?>
+```powershell
+<?xml version="1.0" encoding="utf-8"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
     
       <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
@@ -111,6 +112,8 @@ For more information
         </LocalizedStrings>
       </Rules>
     </RulePackage>
+```
+
 
 ## 實體規則
 
@@ -136,7 +139,8 @@ For more information
 
 IdMatch 和相符項目執行動作未定義的詳細資料的內容為何需要符合但改用參照到 idRef 屬性。這會升階定義多個圖樣建構中重複使用的性。
 
-    <Entity id="..." patternsProximity="300" > 
+```powershell
+<Entity id="..." patternsProximity="300" > 
         <Pattern confidenceLevel="85">
             <IdMatch idRef="FormattedSSN" />
             <Any minMatches="1">
@@ -156,6 +160,8 @@ IdMatch 和相符項目執行動作未定義的詳細資料的內容為何需要
             </Any>
         </Pattern>
     </Entity> 
+```
+
 
 在之前的 XML 中以 \&quot;…\&quot; 呈現的實體識別碼元素應為 GUID，且地語系化的字串區段會參照此識別碼。
 
@@ -211,7 +217,8 @@ CLEntity= 1 – \[(1 – CLPattern1) X (1 – CLPattern1)\]
 
 證據元素有一或多個相符項目或任何子元素。如果所有的子相符項目與任何項目相符，並找到證據的信賴等級為全球都能提供來規則信賴等級計算。同一個說明適用於相符項目或與實體規則親和性規則的任何項目。
 
-    <Affinity id="..." 
+```powershell
+<Affinity id="..." 
               evidencesProximity="1000"
               thresholdConfidenceLevel="65">
         <Evidence confidenceLevel="40">
@@ -231,6 +238,8 @@ CLEntity= 1 – \[(1 – CLPattern1) X (1 – CLPattern1)\]
             </Any> 
         </Evidence>
     </Affinity>
+```
+
 
 ## 親和性近似值視窗
 
@@ -327,7 +336,8 @@ CLAffinity= 1 – \[(1 – CLEvidence 1) X (1 – CLEvidence 2) X (1 – CLEvide
 
 規則結構描述支援儲存的本地化的名稱和描述的每個實體與親和性的元素。每個實體與親和性元素必須包含在 LocalizedStrings\] 區段中的對應元素。若要找出每個元素，包含 Resource 元素儲存名稱與說明每個元素的多個地區 LocalizedStrings 元素的子。Resource 元素包含必要的 idRef 屬性以找出對應 idRef 屬性為正在進行當地語系化每個項目。Resource 元素的地區設定子元素包含的本地化的名稱與說明每個指定的地區設定。
 
-    <LocalizedStrings>
+```powershell
+<LocalizedStrings>
         <Resource idRef="guid">
             <Locale langcode="en-US" default="true"> 
                 <Name>affinity name en-us</Name> 
@@ -343,10 +353,12 @@ CLAffinity= 1 – \[(1 – CLEvidence 1) X (1 – CLEvidence 2) X (1 – CLEvide
             </Locale> 
         </Resource>
     </LocalizedStrings>
+```
 
 ## 分類規則套件 XML 架構定義
 
-    <?xml version="1.0" encoding="utf-8"?>
+```powershell
+<?xml version="1.0" encoding="utf-8"?>
     <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
                targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
                xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -621,6 +633,7 @@ CLAffinity= 1 – \[(1 – CLEvidence 1) X (1 – CLEvidence 2) X (1 – CLEvide
         </xs:simpleContent>
       </xs:complexType>
     </xs:schema>
+```    
 
 ## 相關資訊
 

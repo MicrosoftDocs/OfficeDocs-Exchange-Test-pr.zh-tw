@@ -55,16 +55,15 @@ Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPol
 ```
 
 您不需要使用**Set-ThrottlingPolicyAssociation** cmdlet 可讓使用者與原則產生關聯。下列命令會顯示其他方法可以將於 tonysmith 關聯的節流原則 itstaffpolicy 關聯。
-```
+
 ```powershell
 $b = Get-ThrottlingPolicy ITStaffPolicy
 ```
-```
-```
+
 ```powershell
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
-```
+
 如需語法及參數的詳細資訊，請參閱[New-ThrottlingPolicy](https://technet.microsoft.com/zh-tw/library/dd351045\(v=exchg.150\))和[Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/zh-tw/library/ff459231\(v=exchg.150\))。
 
 ## 如何知道這是否正常運作？
@@ -74,24 +73,24 @@ Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 1.  執行下列命令。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  確認節流您剛才建立的原則規則會列在欄中顯示 GlobalThrottlingPolicy 物件。
 
 3.  執行下列命令。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  確認新的一般原則的摘要資訊符合您所設定的值。
 
 5.  執行下列命令。
     
     ```powershell
-Get-ThrottlingPolicyAssociation
-```
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  確認新的一般原則相關聯之使用者或您它具有關聯的使用者。
 

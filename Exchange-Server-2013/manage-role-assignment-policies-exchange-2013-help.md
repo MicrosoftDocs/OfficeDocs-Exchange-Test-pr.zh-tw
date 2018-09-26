@@ -69,7 +69,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
 
 這個範例會建立明確指派原則「限制的信箱組態」，並對它指派 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色。
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638101\(v=exchg.150\))。
 
@@ -83,7 +85,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDe
 
 這個範例會建立預設指派原則「限制的信箱組態」，並對它指派 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色。
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638101\(v=exchg.150\))。
 
@@ -200,7 +204,7 @@ Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
 這個範例會傳回預設的指派原則。
 
 ```powershell
-Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }
 ```
 
 如需詳細的語法及參數資訊，請參閱 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 或 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638195\(v=exchg.150\))。
@@ -218,13 +222,13 @@ Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsD
 使用下列語法。
 
 ```powershell
-Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }
 ```
 
 此範例會找出所有均指派溫哥華一般使用者原則的信箱。
 
 ```powershell
-Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }
 ```
 
 如需詳細的語法及參數資訊，請參閱 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\)) 或 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-tw/library/dd638195\(v=exchg.150\))。
@@ -279,11 +283,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 若要在角色和指派原則之間建立管理角色指派，請使用以下語法。
 
-    New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```powershell
+New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```
 
 此範例會在 MyVoicemail 角色和 Seattle 使用者指派原則之間建立角色指派 Seattle 使用者 - 語音信箱。
 
-    New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```powershell
+New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd335193\(v=exchg.150\))。
 
@@ -311,11 +319,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 若要從指派原則移除角色，請使用下列語法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```
 
 這個範例會移除 Seattle Users 指派原則中的 MyVoicemail 管理角色，該角色可讓使用者管理其語音信箱選項。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```
 
 如需詳細的語法及參數資訊，請參閱 [Remove-ManagementRoleAssignment](https://technet.microsoft.com/zh-tw/library/dd351205\(v=exchg.150\))。
 

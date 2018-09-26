@@ -72,25 +72,28 @@ Microsoft Exchange 2010 UM 疑難排解工具是名為 **Test-ExchangeUMCallFlow
 
 3.  在 Windows PowerShell 命令提示字元下，移至安裝 UM 疑難排解工具的資料夾，並執行下列命令。
     
-        C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```powershell
+    C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```
 
 4.  如果您要在 Windows Vista、Windows 7 或 Windows 8 上執行 UM 疑難排解工具，則請在 Windows PowerShell 命令提示字元下執行下列命令。
     
     ```powershell
-Set-ExecutionPolicy RemoteSigned
-```
+    Set-ExecutionPolicy RemoteSigned
+    ```
 
 5.  從 **\[開始\]** 功能表中，開啟 **\[Microsoft Exchange 2010 UM 疑難排解工具\]**。
 
 6.  在 **\[Microsoft Exchange 2010 UM 疑難排解工具\]** 視窗中，於提示字元處輸入以下命令，然後按 Enter。
     
     ```powershell
-$cred=Get-Credential
-```
+    $cred=Get-Credential
+    ```
 
 7.  在 **\[Windows PowerShell 認證要求\]** 視窗中，輸入網域\\使用者名稱和密碼，然後按一下 **\[確定\]**。
 
 8.  在 **\[Microsoft Exchange 2010 UM 疑難排解工具\]** 視窗中，指定測試呼叫流程所需的 Cmdlet 參數。例如：
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
-
+    ```powershell
+    Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```

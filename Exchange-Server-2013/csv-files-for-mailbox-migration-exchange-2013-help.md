@@ -396,7 +396,9 @@ IMAP 遷移批次的 CSV 檔案可以有最大值為 50000 個列。但是很好
 
 例如，我們說您建立的批次Exchange 管理命令介面跨樹系企業移動來移動使用者的主要和封存信箱移轉至目標樹系與下列Exchange 管理命令介面命令。
 
-    New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```powershell
+New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```
 
 
 > [!NOTE]  
@@ -407,26 +409,32 @@ IMAP 遷移批次的 CSV 檔案可以有最大值為 50000 個列。但是很好
 
 此遷移批次所用的 CrossForestBatch1.csv 檔有一部分看起來像這樣：
 
-    EmailAddress,TargetDatabase,TargetArchiveDatabase
-    user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
-    user2@contoso.com,,
-    user3@contoso.com,EXCH-MBX-01,
-    ...
+```powershell
+EmailAddress,TargetDatabase,TargetArchiveDatabase
+user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
+user2@contoso.com,,
+user3@contoso.com,EXCH-MBX-01,
+...
+```
 
 因為 CSV 檔案中的值覆寫的遷移批次，主要的值，並為 user1 的封存信箱移至 NM-EXCH-UM-1ST MBX 01 和 NM-EXCH-UM-2ND MBX A01，分別在目標樹系中。主要和 user2 的封存信箱移至 NM-EXCH-UM-1ST-MBX-02 或 NM-EXCH-UM-1ST-MBX-03。User3 的主要信箱移至 NM-EXCH-UM-1ST MBX 01 和封存信箱移至 NM-EXCH-UM-1ST-MBX-A02 或 NM-EXCH-UM-1ST-MBX-A03。
 
 在另一個範例中，假設您將封存信箱移至Exchange Online採用下列命令在混合部署中建立的 onboarding 遠端移動遷移批次。
 
-    New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```powershell
+New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```
 
 但您也想要移動所選使用者的主要信箱，所以此遷移批次所用的 OnBoarding1.csv 檔有一部分看起來像這樣：
 
-    EmailAddress,MailboxType
-    user1@contoso.com,
-    user2@contoso.com,
-    user3@cloud.contoso.com,PrimaryAndArchive
-    user4@cloud.contoso.com,PrimaryAndArchive
-    ...
+```powershell
+EmailAddress,MailboxType
+user1@contoso.com,
+user2@contoso.com,
+user3@cloud.contoso.com,PrimaryAndArchive
+user4@cloud.contoso.com,PrimaryAndArchive
+...
+```
 
 因為 CSV 檔案中的信箱類型的值會覆寫在命令中建立的批次*MailboxType*參數的值、 只封存信箱 user1 和 user2 已移轉至Exchange Online。但主要和 user3 和 user4 封存信箱移動至Exchange Online。
 

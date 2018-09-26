@@ -47,20 +47,22 @@ _**上次修改主題的時間：** 2014-12-16_
 1.  在 \[命令提示字元\] 視窗中開啟 MSExchangeMailboxAssistants.exe.config 檔案在 \[記事本\] 執行下列命令：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
+    ```
 
 2.  找出檔案結尾處*\</appsettings\>*機碼並貼上*\</appsettings\>*按鍵之前的下列機碼：
     
-    ```command line
-<add key="IncludeSafeDomains" value="true" />
-```
+    ```powershell
+    <add key="IncludeSafeDomains" value="true" />
+    ```
 
 3.  完成時，儲存並關閉 MSExchangeMailboxAssistants.exe.config 檔案。
 
 4.  執行下列命令以重新啟動 Microsoft Exchange 信箱助理員服務：
     
-        net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```powershell
+    net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```
 
 ## 如何知道這是否正常運作？
 

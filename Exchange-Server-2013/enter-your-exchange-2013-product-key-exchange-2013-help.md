@@ -115,9 +115,13 @@ Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
 
 2.  執行下列命令，以檢視特定 Exchange 伺服器的授權狀態。
     
-        Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```powershell
+    Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```
 
 3.  (選用) 執行下列命令，以檢視您組織中所有 Exchange 伺服器的授權狀態。
     
-        Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```powershell
+    Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```
 

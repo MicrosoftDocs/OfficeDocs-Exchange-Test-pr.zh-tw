@@ -55,13 +55,9 @@ _**上次修改主題的時間：** 2016-12-09_
 
 2.  按兩下 \[UMLanguagePack。*\<CultureCode\>.exe*檔案。例如德文 UM 語言套件，您會下載名為 UMLanguagePack.de DE.exe 的檔案。
 
-3.  
-    
-    Exchange 2013安裝精靈\] 中 \[**授權合約**\] 頁面上的閱讀合約中的條款，選取 \[**我接受授權合約中的條款\]**，並再按 \[**下一步**。
+3.  Exchange 2013安裝精靈\] 中 \[**授權合約**\] 頁面上的閱讀合約中的條款，選取 \[**我接受授權合約中的條款\]**，並再按 \[**下一步**。
 
-4.  
-    
-    在 **\[整合通訊語言套件\]** 頁面上，確認正確的語言已列於 **\[將安裝下列整合通訊語言套件\]** 視窗中，然後按一下 **\[安裝\]**。
+4.  在 **\[整合通訊語言套件\]** 頁面上，確認正確的語言已列於 **\[將安裝下列整合通訊語言套件\]** 視窗中，然後按一下 **\[安裝\]**。
 
 5.  按一下 **\[完成\]** 來完成 UM 語言套件的安裝。
 
@@ -75,7 +71,9 @@ setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchan
 
 此範例會安裝墨西哥西班牙文 (ES-MX) 和德文 (DE-DE) UM 語言套件已下載至信箱伺服器上的 \[D:\\Exchange\\UMLanguagePacks\] 資料夾。
 
-    setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 
 > [!WARNING]  

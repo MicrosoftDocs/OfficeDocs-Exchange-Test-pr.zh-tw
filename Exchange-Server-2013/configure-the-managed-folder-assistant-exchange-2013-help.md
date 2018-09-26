@@ -58,7 +58,9 @@ Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 
 此命令會擷取組織中的所有 Mailbox server 及輸出的每一部伺服器以表格格式的受管理的資料夾助理員的工作週期屬性。*Auto*參數用來自動調整欄寬。
 
-    Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```powershell
+Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```
 
 ## 使用命令介面來啟動 \[受管理的資料夾助理員
 

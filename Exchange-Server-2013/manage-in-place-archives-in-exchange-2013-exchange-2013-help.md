@@ -72,7 +72,7 @@ _**上次修改主題的時間：** 2016-02-01_
         
         若要深入了解，請參閱[就地封存 in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通訊錄原則**   使用這個清單可選取信箱的通訊錄原則 (ABP)。ABP 包含全域通訊清單 (GAL)、離線通訊錄 (OAB)、會議室清單和一組通訊清單。在指派 ABP 給信箱使用者時，他們就可以存取在 Outlook 和 Outlook Web App 中自訂的 GAL。若要深入了解，請參閱[通訊錄原則](https://docs.microsoft.com/zh-tw/exchange/address-books/address-book-policies/address-book-policies)。
+      - **通訊錄原則**   使用這個清單可選取信箱的通訊錄原則 (ABP)。ABP 包含全域通訊清單 (GAL)、離線通訊錄 (OAB)、會議室清單和一組通訊清單。在指派 ABP 給信箱使用者時，他們就可以存取在 Outlook 和 Outlook Web App 中自訂的 GAL。若要深入了解，請參閱[通訊錄原則](https://technet.microsoft.com/zh-tw/library/hh529948(v=exchg.150))。
 
 6.  完成作業後，按一下 \[儲存\] 建立信箱。
 
@@ -80,8 +80,10 @@ _**上次修改主題的時間：** 2016-02-01_
 
 此範例會在 Active Directory 中建立使用者 Chris Ashton，並在信箱資料庫 DB01 上建立信箱及啟用封存。必須在下次登入時重設密碼。為了設定密碼的初始值，此範例會建立變數 ($password)、提示您輸入密碼，並將該密碼指派給變數作為 SecureString 物件。
 
-    $password = Read-Host "Enter password" -AsSecureString
-    New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```powershell
+$password = Read-Host "Enter password" -AsSecureString
+New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```
 
 如需詳細的語法及參數資訊，請參閱 [New-Mailbox](https://technet.microsoft.com/zh-tw/library/aa997663\(v=exchg.150\))。
 
@@ -93,7 +95,9 @@ _**上次修改主題的時間：** 2016-02-01_
 
   - 在命令介面中，執行下列命令來顯示關於新使用者信箱與封存的資訊。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```
 
   - 在命令介面中，使用 **Test-ArchiveConnectivity** 指令程式測試封存的連線。如需如何測試封存連線的範例，請參閱 [Test-ArchiveConnectivity](https://technet.microsoft.com/zh-tw/library/hh529914\(v=exchg.150\)) 中的＜範例＞一節。
 
@@ -125,7 +129,9 @@ Enable-Mailbox "Tony Smith" -Archive
 
 此範例會擷取資料庫 DB01 中的信箱，該資料庫未啟用內部部署或雲端架構封存，也沒有以 DiscoverySearchMailbox 為開頭的名稱。其將結果以管線輸出至 **Enable-Mailbox** 指令程式來啟用所有在信箱資料庫 DB01 上的封存。
 
-    Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```powershell
+Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```
 
 如需詳細的語法及參數資訊，請參閱 [Enable-Mailbox](https://technet.microsoft.com/zh-tw/library/aa998251\(v=exchg.150\)) 與 [Get-Mailbox](https://technet.microsoft.com/zh-tw/library/bb123685\(v=exchg.150\))。
 
@@ -137,7 +143,9 @@ Enable-Mailbox "Tony Smith" -Archive
 
   - 在命令介面中，執行下列命令來顯示關於新增封存的資訊。
     
-        Get-Mailbox <Name> | FL Name,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,*Archive*
+    ```
 
   - 在命令介面中，使用 **Test-ArchiveConnectivity** 指令程式測試封存的連線。如需如何測試封存連線的範例，請參閱[Test-ArchiveConnectivity](https://technet.microsoft.com/zh-tw/library/hh529914\(v=exchg.150\))中的範例。
 
@@ -184,7 +192,9 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
   - 在命令介面中，執行以下命令來查看信箱使用者的封存屬性。
     
-        Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```powershell
+    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```
     
     若封存已停用，下列值將回復為封存相關屬性。
     
@@ -243,11 +253,15 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
 1.  如果不知道封存的名稱，您可以透過執行下列命令，在命令介面中檢視。此範例會擷取 DB01 信箱資料庫，以管線輸出至 **Get-MailboxStatistics** 指令程式來擷取資料庫上所有信箱的信箱統計資料，然後使用 **Where-Object** 指令程式來篩選結果並擷取連線中斷封存的清單。命令顯示關於每個封存的額外資訊，如 GUID 與項目計數。
     
-        Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```powershell
+    Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```
 
 2.  將封存連線至主要信箱。這個範例將 Chris Ashton 的封存連線至 Chris Ashton 的主要信箱，並使用 GUID 作為封存的識別。
     
-        Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```powershell
+    Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```
 
 如需詳細的語法及參數資訊，請參閱下列主題：
 
@@ -261,5 +275,7 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
 若要確認您是否已成功將連線中斷的封存連接至信箱使用者，執行下列命令介面命令來擷取信箱使用者的封存屬性並驗證回復至 *ArchiveGuid* 與 *ArchiveDatabase* 屬性的值：
 
-    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```powershell
+Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```
 

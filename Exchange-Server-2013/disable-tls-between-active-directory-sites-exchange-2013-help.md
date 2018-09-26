@@ -80,7 +80,9 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 若要在 Mailbox Server 上建立接收連接器，請執行下列命令：
 
-    New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+```powershell
+New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+```
 
 本範例會利用下列設定，在名稱為 Mailbox01 的伺服器上建立名稱為 WAN 的接收連接器：
 

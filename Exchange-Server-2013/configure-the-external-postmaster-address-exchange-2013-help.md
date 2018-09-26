@@ -74,8 +74,8 @@ Set-TransportConfig -ExternalPostmasterAddress $null
 1.  在 Mailbox Server 上執行下列命令來確認外部郵件管理員地址值：
     
     ```powershell
-Get-TransportConfig | Format-List ExternalPostmasterAddress
-```
+    Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```
 
 2.  從外部電子郵件帳號傳送一則訊息將會產生傳遞狀態通知 (DSN) 您 Exchange 組織。例如，您可以設定傳輸規則來傳送未傳遞回報 (NDR) 中包含特定關鍵字的寄件者的郵件。請確認 DSN 中的寄件者的電子郵件地址符合您指定的值。
 

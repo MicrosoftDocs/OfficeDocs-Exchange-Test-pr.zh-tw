@@ -48,7 +48,9 @@ _**上次修改主題的時間：** 2015-04-08_
 
 若要設定最大安全寄件者與封鎖的寄件者數量，請執行下列命令：
 
-    Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```powershell
+Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```
 
 此範例會將信箱 john@contoso.com 的安全寄件者上限設為 2,000，而封鎖的寄件者上限設為 200。
 
@@ -62,7 +64,9 @@ Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
 
 1.  執行下列命令：
     
-        Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```powershell
+    Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```
 
 2.  請確認顯示的值符合您所設定的值。
 
@@ -87,14 +91,14 @@ Update-Safelist john@contoso.com -Type SafeSenders
 1.  執行下列命令：
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  如果輸出顯示 *Enabled* 參數為 `True`，則表示已啟用內容篩選。若沒有，請執行以下命令來啟用 Exchange 伺服器上的內容篩選以及內容篩選代理程式：
     
     ```powershell
-Set-ContentFilterConfig -Enabled $true
-```
+    Set-ContentFilterConfig -Enabled $true
+    ```
 
 ## 步驟 2：(選用) 使用 ADSI Edit 來驗證安全清單彙總資料是否複寫至 Edge Transport Server
 

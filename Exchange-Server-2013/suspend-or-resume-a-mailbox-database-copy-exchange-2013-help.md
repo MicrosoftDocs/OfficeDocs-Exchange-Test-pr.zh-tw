@@ -99,6 +99,6 @@ Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
   - 在命令介面中，執行下列指令以顯示資料庫副本的狀態資訊。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

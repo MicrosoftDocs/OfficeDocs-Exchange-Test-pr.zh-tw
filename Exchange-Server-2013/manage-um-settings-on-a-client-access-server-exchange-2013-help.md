@@ -63,7 +63,9 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClient
 
 此範例會在名為 `MyClientAccessServer` 的 Client Access Server 上將 SIP TCP 接聽埠設定為 5077，以及將啟動模式設定為雙重模式。
 
-    Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+```powershell
+Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+```
 
 ## 使用命令介面來檢視 Client Access Server 內容
 

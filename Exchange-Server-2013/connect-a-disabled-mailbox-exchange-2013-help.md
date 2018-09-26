@@ -43,7 +43,9 @@ _**上次修改主題的時間：** 2012-11-13_
 
   - 請執行下列命令，確認您想連接使用者帳戶的已停用信箱是否仍存在於信箱資料庫中，而且不是虛刪除的信箱。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     若要連接已停用的信箱，該信箱必須存在於信箱資料庫中，而且 *DisconnectReason* 屬性的值必須設為 `Disabled`。如果信箱已從資料庫中清除，此命令將不會傳回任何結果。
 
@@ -90,11 +92,15 @@ Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
 
 這個範例會連接到連結的信箱。*Identity* 參數指定 Exchange 資料庫中的中斷連線信箱。*LinkedMasterAccount* 參數指定您要重新連接信箱到樹系中哪一個 Active Directory 使用者帳戶。*Alias* 參數指定欲重新連接之信箱的別名，也就是電子郵件地址中 at (@) 符號左側的部分。
 
-    Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```powershell
+Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```
 
 這個範例會連接共用的信箱。
 
-    Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
+```powershell
+Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
+```
 
 
 > [!NOTE]  
@@ -116,8 +122,8 @@ Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
   - 在命令介面中，執行下列命令。
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     *RecipientType* 屬性的 **UserMailbox** 值指出使用者帳戶和信箱已連接。您也可以執行 **Get-Mailbox** Cmdlet 來確認信箱是否存在。
 

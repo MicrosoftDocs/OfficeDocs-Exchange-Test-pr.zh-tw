@@ -53,6 +53,6 @@ EAC 中會顯示目前使用者的信箱與同步處理的行動裝置的清單�
 1.  執行下列命令。
     
     ```powershell
-Get-MobileDevice -Mailbox useralias
-```
+    Get-MobileDevice -Mailbox useralias
+    ```
 

@@ -45,14 +45,14 @@ _**上次修改主題的時間：** 2013-02-19_
 1.  執行以下命令來驗證 Exchange 伺服器上已安裝並啟用內容篩選器代理程式：
     
     ```powershell
-Get-TransportAgent "Content Filter Agent"
-```
+    Get-TransportAgent "Content Filter Agent"
+    ```
 
 2.  執行以下命令來驗證啟用了內容篩選：
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 如需詳細資訊，請參閱 [管理內容篩選](manage-content-filtering-exchange-2013-help.md)。
 
@@ -95,8 +95,8 @@ Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
 1.  執行下列命令：
     
     ```powershell
-Get-ContentFilterConfig | Format-List QuarantineMailbox
-```
+    Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```
 
 2.  請確認顯示的值是您所設定的值。
 

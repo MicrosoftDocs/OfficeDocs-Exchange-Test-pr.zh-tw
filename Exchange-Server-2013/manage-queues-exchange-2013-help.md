@@ -32,8 +32,6 @@ _**上次修改主題的時間：** 2014-01-31_
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
-
-
 ## 您要執行的工作
 
 ## 檢視佇列
@@ -52,7 +50,9 @@ _**上次修改主題的時間：** 2014-01-31_
 
 若要檢視佇列，請使用下列語法。
 
-    Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```powershell
+Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```
 
 此範例會顯示名為 Mailbox01 之 Exchange 2013 Mailbox Server 上所有非空白之佇列的基本資訊。
 
@@ -75,11 +75,11 @@ Get-Queue -Filter {MessageCount -gt 100} | Format-List
 > 依預設，<strong>Get-QueueDigest</strong> 指令程式會顯示包含十封郵件以上的傳遞佇列，而且會是一到二分鐘之前的結果。如需如何變更這些預設值的指示，請參閱<a href="configure-get-queuedigest-exchange-2013-help.md">設定 Get-QueueDigest</a>。
 
 
-
-
 若要檢視多部 Exchange 伺服器上的佇列摘要資訊，請執行以下命令：
 
-    Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```powershell
+Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```
 
 此範例會針對名為 FirstSite 之 Active Directory 站台內的所有 Exchange 2013 Mailbox Server，顯示郵件計數大於 100 之佇列的摘要資訊。
 
@@ -171,7 +171,9 @@ Resume-Queue -Identity Mailbox01\contoso.com
 
 若要重試佇列，請使用下列語法。
 
-    Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```
 
 此範例會重試本機伺服器上所有處於 \[重試\] 狀態的佇列。
 
@@ -207,8 +209,9 @@ Retry-Queue -Identity Mailbox01\contoso.com
 
 若要重新提交郵件，請使用下列語法。
 
-    Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
-
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+```
 此範例會重新提交名為 Mailbox01 之伺服器上任何處於「重試」狀態之傳遞佇列中的所有郵件。
 
 ```powershell
@@ -229,9 +232,6 @@ Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
 > [!NOTE]  
 > 毒藥郵件佇列包含在伺服器失敗之後，被判斷為對 Exchange 系統有害的郵件。郵件的內容或格式可能的確是有害。或者，郵件可能是因設計不良的代理程式在處理可能有害的郵件時，造成 Exchange 伺服器無法運作的犧牲品。如果您不確定毒藥郵件佇列中的郵件是否安全，則應將郵件匯出到檔案以進行檢驗。如需詳細資訊，請參閱 <a href="export-messages-from-queues-exchange-2013-help.md">從佇列匯出訊息</a>。
 
-
-
-
 ## 使用 Exchange 工具箱內的佇列檢視器來重新提交毒藥郵件佇列中的郵件
 
 1.  按一下 \[開始\] \> \[所有程式\] \> \[Microsoft Exchange 2013\] \> \[Exchange 工具箱\]。
@@ -251,20 +251,20 @@ Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
 1.  執行以下命令來找出郵件的識別碼。
     
     ```powershell
-Get-Message -Queue Poison | Format-Table Identity
-```
+    Get-Message -Queue Poison | Format-Table Identity
+    ```
 
 2.  將在上個步驟找出來的郵件識別碼用於以下命令中。
     
     ```powershell
-Resume-Message <PoisonMessageIdentity>
-```
+    Resume-Message <PoisonMessageIdentity>
+    ```
     
     此範例會繼續傳遞毒藥郵件佇列中郵件識別碼值為 222 的郵件。
     
     ```powershell
-Resume-Message 222
-```
+    Resume-Message 222
+    ```
 
 ## 如何知道這是否正常運作？
 
@@ -296,8 +296,9 @@ Resume-Message 222
 
 若要擱置佇列，請使用下列語法。
 
-    Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
-
+```powershell
+Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 本範例會擱置本機伺服器上郵件計數等於或大於 1,000，而且狀態為「重試」的所有佇列。
 
 ```powershell
