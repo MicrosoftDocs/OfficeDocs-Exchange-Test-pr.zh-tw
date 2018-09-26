@@ -121,7 +121,9 @@ Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
 
 若要繼續佇列，請使用下列語法。
 
+```powershell
     Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 此範例會繼續本機伺服器上具有 \[擱置中\] 狀態的所有佇列。
 
